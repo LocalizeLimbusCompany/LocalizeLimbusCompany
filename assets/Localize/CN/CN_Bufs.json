@@ -1,0 +1,913 @@
+{
+  "dataList": [
+    {
+      "id": "Enhancement",
+      "name": "强壮",
+      "desc": "本回合技能最终威力+{0}",
+      "summary": "攻击技能最终威力+{0}",
+      "undefined": "-"
+    },
+    {
+      "id": "Agility",
+      "name": "迅捷",
+      "desc": "本回合速度值+{0}",
+      "summary": "速度值+{0}",
+      "undefined": "-"
+    },
+    {
+      "id": "Endurance",
+      "name": "忍耐",
+      "desc": "本回合守备技能最终威力+{0}",
+      "summary": "守备技能最终威力+{0}",
+      "undefined": "-"
+    },
+    {
+      "id": "Reduction",
+      "name": "虚弱",
+      "desc": "本回合技能最终威力-{0}",
+      "summary": "攻击技能最终威力-{0}",
+      "undefined": "-"
+    },
+    {
+      "id": "Binding",
+      "name": "束缚",
+      "desc": "本回合速度值-{0}",
+      "summary": "速度值-{0}",
+      "undefined": "-"
+    },
+    {
+      "id": "Vulnerable",
+      "name": "破绽",
+      "desc": "本回合受到的伤害+{0}0%（最大10层）",
+      "summary": "受到伤害+{0}0%",
+      "undefined": "-"
+    },
+    {
+      "id": "Taunt",
+      "name": "嘲讽",
+      "desc": "",
+      "undefined": "-"
+    },
+    {
+      "id": "ElectricShock",
+      "name": "感电",
+      "desc": "本回合受到攻击时额外受到{0}点固定伤害。"
+    },
+    {
+      "id": "Target",
+      "name": "Marked",
+      "desc": "Targeted by the character with the passive ability [Sharp Shivs]",
+      "undefined": "-"
+    },
+    {
+      "id": "SelfHarm_LowMorale",
+      "name": "自责（士气低下）",
+      "desc": "回合开始时：获得2层迅捷和2层破绽。",
+      "undefined": "-"
+    },
+    {
+      "id": "SelfHarm_Panic",
+      "name": "自责（陷入恐慌）",
+      "desc": "回合开始时：失去10点体力。",
+      "undefined": "-"
+    },
+    {
+      "id": "Blame_LowMorale",
+      "name": "责怪（士气低下）",
+      "desc": "回合开始时：获得2层强壮和2层破绽。",
+      "undefined": "-"
+    },
+    {
+      "id": "Blame_Panic",
+      "name": "责怪（陷入恐慌）",
+      "desc": "回合开始时：随机友方失去20点体力。",
+      "undefined": "-"
+    },
+    {
+      "id": "EgoErode",
+      "name": "E.G.O侵蚀",
+      "desc": "失去控制，仅能使用侵蚀技能。",
+      "summary": "失去控制；使用侵蚀技能",
+      "undefined": "-"
+    },
+    {
+      "id": "Charge",
+      "name": "充能",
+      "desc": "部分技能发动附加效果所需的资源。最大20层。回合结束层数降低1层。",
+      "summary": "特定技能的资源",
+      "undefined": "-"
+    },
+    {
+      "id": "DamageOverTime",
+      "name": "Ongoing Damage",
+      "desc": "Turn Start: Take {0} fixed HP damage",
+      "summary": "{0} fixed HP damage"
+    },
+    {
+      "id": "ResultEnhancement",
+      "name": "Power Up",
+      "desc": "Skill Final Power +{0} for this turn.",
+      "summary": "Skill Final Power +{0}"
+    },
+    {
+      "id": "Protection",
+      "name": "Protect",
+      "desc": "Take -{0}0% damage this turn (Up to 10 stacks)",
+      "summary": "-{0}0% Damage Taken"
+    },
+    {
+      "id": "AttackDmgUp",
+      "name": "Damage Up",
+      "desc": "Deal +{0}0% damage with skills this turn (Up to 10 stacks)",
+      "summary": "+{0}0% Damage Dealt"
+    },
+    {
+      "id": "DefenseUp",
+      "name": "坚忍",
+      "desc": "本回合内防御等级+{0}0%（最多10层）",
+      "summary": "防御等级+{0}0%"
+    },
+    {
+      "id": "PlusCoinValueUp",
+      "name": "Plus Coin Boost",
+      "desc": "Plus Coin Power +{0} for this turn",
+      "summary": "Plus Coin Power +{0}"
+    },
+    {
+      "id": "MinusCoinValueUp",
+      "name": "Minus Coin Boost",
+      "desc": "Minus Coin Power +{0} for this turn",
+      "summary": "Minus Coin Power +{0}"
+    },
+    {
+      "id": "TimesCoinValueUp",
+      "name": "Multiply Coin Boost",
+      "desc": "Multiply Coin Power +{0} for this turn",
+      "summary": "Multiply Coin Power +{0}"
+    },
+    {
+      "id": "Disarming",
+      "name": "Defense Power Down",
+      "desc": "Defense Skill Final Power -{0} for this turn",
+      "summary": "DEF Skill Final Power -{0}"
+    },
+    {
+      "id": "ResultReduction",
+      "name": "Power Down",
+      "desc": "Skill Final Power -{0} for this turn.",
+      "summary": "Skill Final Power -{0}"
+    },
+    {
+      "id": "AttackDmgDown",
+      "name": "Damage Down",
+      "desc": "Deal -{0}0% damage with skills this turn (Up to 10 stacks)",
+      "summary": "-{0}0% Damage Dealt"
+    },
+    {
+      "id": "DefenseDown",
+      "name": "动摇",
+      "desc": "本回合内防御-{0}0%（最多10层）",
+      "summary": "防御-{0}0%"
+    },
+    {
+      "id": "Paralysis",
+      "name": "麻痹",
+      "desc": "本回合使{0}枚硬币的数值变为0。",
+      "summary": "{0}枚的数值变为0"
+    },
+    {
+      "id": "PlusCoinValueDown",
+      "name": "Plus Coin Drop",
+      "desc": "Plus Coin Power -{0} for this turn",
+      "summary": "Plus Coin Power -{0}"
+    },
+    {
+      "id": "MinusCoinValueDown",
+      "name": "Minus Coin Drop",
+      "desc": "Minus Coin Power -{0} for this turn",
+      "summary": "Minus Coin Power -{0}"
+    },
+    {
+      "id": "TimesCoinValueDown",
+      "name": "Multiply Coin Drop",
+      "desc": "Multiply Coin Power -{0} for this turn",
+      "summary": "Multiply Coin Power -{0}"
+    },
+    {
+      "id": "BeingGolden",
+      "name": "Golden Sheen",
+      "desc": "Turn Start: Heal 10 HP per Count.",
+      "summary": "HP recovery"
+    },
+    {
+      "id": "MoonLight",
+      "name": "Moonlight",
+      "desc": "Resource used by certain skills for additional effects.",
+      "summary": "Additional effects"
+    },
+    {
+      "id": "Daunted_LowMorale",
+      "name": "Atrophied",
+      "desc": "Turn Start: Self-apply 2 Attack Power Down",
+      "summary": "Self-apply 2 Attack Power Down",
+      "undefined": "-"
+    },
+    {
+      "id": "Daunted_Panic",
+      "name": "Atrophied",
+      "desc": "Turn Start: Self-apply 4 Attack Power Down",
+      "summary": "Self-apply 4 Attack Power Down"
+    },
+    {
+      "id": "Overwhelm_LowMorale",
+      "name": "Overwhelmed",
+      "desc": "Turn Start: Self-apply 2 Attack Power Down",
+      "summary": "Self-apply 2 Attack Power Down",
+      "undefined": "-"
+    },
+    {
+      "id": "Overwhelm_Panic",
+      "name": "Overwhelmed",
+      "desc": "Does not act for this turn.",
+      "summary": "No action",
+      "undefined": "-"
+    },
+    {
+      "id": "Anger_LowMorale",
+      "name": "Agitated",
+      "desc": "Turn Start: Self-apply 1 Damage Up and 2 Fragile.",
+      "summary": "Self-apply 1 Damage Up and 2 Fragile"
+    },
+    {
+      "id": "Anger_Panic",
+      "name": "Agitated",
+      "desc": "Turn Start: Self-apply 2 Damage Up and 5 Fragile.",
+      "summary": "Self-apply 2 Damage Up and 5 Fragile"
+    },
+    {
+      "id": "Anger",
+      "name": "Rage",
+      "desc": "Spent by certain skills. Required for the use of certain skills.",
+      "summary": "Resource for certain skills"
+    },
+    {
+      "id": "Run_LowMorale",
+      "name": "Running",
+      "desc": "Does not act. When hit, this unit is defeated after the skill ends.",
+      "summary": "No action"
+    },
+    {
+      "id": "Nail",
+      "name": "Nails",
+      "desc": "Turn Start: Self-apply 1 Bleed and increase the Bleed Count by this effect’s stack.",
+      "summary": "Self-apply 1 Bleed and add Bleed Count by this effect’s stack"
+    },
+    {
+      "id": "Inactible",
+      "name": "无法行动",
+      "desc": "本回合无法行动。",
+      "summary": "无法行动"
+    },
+    {
+      "id": "Combustion",
+      "name": "烧伤",
+      "desc": "回合结束时：受到{0}点固定伤害。持续{1}回合。",
+      "summary": "{0}点固定伤害"
+    },
+    {
+      "id": "Laceration",
+      "name": "流血",
+      "desc": "下{1}次掷出硬币时受到{0}点固定伤害。",
+      "summary": "{0}点固定伤害"
+    },
+    {
+      "id": "Vibration",
+      "name": "震颤",
+      "desc": "受到引爆震颤的攻击时，混乱阈值前移{0}。持续{1}回合。",
+      "summary": "混乱阈值前移{0}"
+    },
+    {
+      "id": "Burst",
+      "name": "爆裂",
+      "desc": "下{1}次被攻击时，追加{0}点固定伤害。",
+      "summary": "{0}点固定伤害"
+    },
+    {
+      "id": "Sinking",
+      "name": "沉沦",
+      "desc": "下{1}次被攻击时，追加{0}点固定神志伤害。(对异想体则造成忧郁属性伤害)",
+      "summary": "{0}点沉沦伤害"
+    },
+    {
+      "id": "Breath",
+      "name": "呼吸法",
+      "desc": "在下{1}个回合内有{0}%的概率产生暴击。",
+      "summary": "{0}%暴击率"
+    },
+    {
+      "id": "BloodPocket",
+      "name": "Blood Sac",
+      "desc": "Use a powerful attack after the Count reaches a certain amount.",
+      "summary": "Readies powerful attack"
+    },
+    {
+      "id": "WaterPocket",
+      "name": "Fluid Sac",
+      "desc": "Gain healing proportional to the Count.",
+      "summary": "HP heal boost"
+    },
+    {
+      "id": "DogThunder",
+      "name": "Lightning",
+      "desc": "This unit powers itself up after the Count reaches a certain amount.",
+      "summary": "Strengthens self"
+    },
+    {
+      "id": "Run_Panic",
+      "name": "Oppression",
+      "desc": "Cannot act for this turn. When hit, flees battle after the attacker’s skill has finished.",
+      "summary": "No action"
+    },
+    {
+      "id": "Operation",
+      "name": "Surgery",
+      "desc": "Die when Count reaches 5.\nReduce Max HP by 20% per Count ({0}).\nDeal 20% more damage per Count ({0}).\nTurn Start: Self-apply {0} Haste.",
+      "summary": "Dies at 5 stacks"
+    },
+    {
+      "id": "Emergency_Operation",
+      "name": "Makeshift Surgery",
+      "desc": "Boost Max HP by 25% and skill Power by 1 per this effect’s Count.\nEach turn, increase this effect’s Count by 1.\nDie when Count reaches 5.",
+      "summary": "Dies at 5 stacks"
+    },
+    {
+      "id": "BabayagaTimeLimit",
+      "name": "Baba Yaga’s Coming!",
+      "desc": "Baba Yaga is closing in. Clear the way or face certain death.",
+      "summary": "Baba Yaga is approaching"
+    },
+    {
+      "id": "PinkRibbon",
+      "name": "Pink Ribbons",
+      "desc": "Turn End: If at 5+ Count, remove this effect and self-apply ‘Desirous’ next turn.",
+      "summary": "Become ‘Desirous’"
+    },
+    {
+      "id": "PinkRibbon_Ishmael",
+      "name": "Pink Ribbons",
+      "desc": "Increase Count by 1 whenever the affected unit tosses an attack skill Coin.\nTurn End: Inflict Bind by the Count, then remove this status.",
+      "summary": "Self-apply {0} Bind"
+    },
+    {
+      "id": "Muckworm",
+      "name": "Maggots",
+      "desc": "Turn End: Take Gluttony damage by the Count, then lower it by 1; Bleed Count +1.",
+      "summary": "Gluttony damage; Add +1 Bleed count"
+    },
+    {
+      "id": "AttackUp",
+      "name": "锐意",
+      "desc": "本回合内攻击等级+{0}0%（最多10层）",
+      "summary": "攻击等级+{0}0%"
+    },
+    {
+      "id": "AttackDown",
+      "name": "顿挫",
+      "desc": "本回合内攻击等级-{0}0%（最多10层）",
+      "summary": "攻击等级-{0}0%"
+    },
+    {
+      "id": "Liu_Meursault_Guard_Buff",
+      "name": "Great Mountain",
+      "desc": "When attacked, inflict +1 Burn Count to the attacker.",
+      "summary": "Add +1 Burn count"
+    },
+    {
+      "id": "SlashResistUp",
+      "name": "Slash Resist Up",
+      "desc": ""
+    },
+    {
+      "id": "PenetrateResistUp",
+      "name": "Pierce Resist Up",
+      "desc": ""
+    },
+    {
+      "id": "HitResistUp",
+      "name": "Blunt Resist Up",
+      "desc": ""
+    },
+    {
+      "id": "SlashDamageUp",
+      "name": "Slash DMG Up",
+      "desc": "Deal +{0}0% damage with Slash skills this turn (Up to 10 stacks)",
+      "summary": "Slash damage +{0}0%"
+    },
+    {
+      "id": "PenetrateDamageUp",
+      "name": "Pierce DMG Up",
+      "desc": "Deal +{0}0% damage with Pierce skills this turn (Up to 10 stacks)",
+      "summary": "Pierce damage +{0}0%"
+    },
+    {
+      "id": "HitDamageUp",
+      "name": "Blunt DMG Up",
+      "desc": "Deal +{0}0% damage with Blunt skills this turn (Up to 10 stacks)",
+      "summary": "Blunt damage +{0}0%"
+    },
+    {
+      "id": "SlashResistDown",
+      "name": "Slash Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "PenetrateResistDown",
+      "name": "Pierce Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "HitResistDown",
+      "name": "Blunt Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "SlashDamageDown",
+      "name": "Slash DMG Down",
+      "desc": "Deal -{0}0% damage with Slash skills this turn (Up to 10 stacks)",
+      "summary": "Slash damage -{0}0%"
+    },
+    {
+      "id": "PenetrateDamageDown",
+      "name": "Pierce DMG Down",
+      "desc": "Deal -{0}0% damage with Pierce skills this turn (Up to 10 stacks)",
+      "summary": "Pierce damage -{0}0%"
+    },
+    {
+      "id": "HitDamageDown",
+      "name": "Blunt DMG Down",
+      "desc": "Deal -{0}0% damage with Blunt skills this turn (Up to 10 stacks)",
+      "summary": "Blunt damage -{0}0%"
+    },
+    {
+      "id": "CrimsonResistDown",
+      "name": "Wrath Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "ScarletResistDown",
+      "name": "Lust Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "AmberResistDown",
+      "name": "Sloth Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "ShamrockResistDown",
+      "name": "Gluttony Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "AzureResistDown",
+      "name": "Gloom Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "IndigoResistDown",
+      "name": "Pride Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "VioletResistDown",
+      "name": "Envy Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "CrimsonResistUp",
+      "name": "Wrath Resist Up",
+      "desc": ""
+    },
+    {
+      "id": "ScarletResistUp",
+      "name": "Lust Resist Up",
+      "desc": ""
+    },
+    {
+      "id": "AmberResistUp",
+      "name": "Sloth Resist Up",
+      "desc": ""
+    },
+    {
+      "id": "ShamrockResistUp",
+      "name": "Gluttony Resist Up",
+      "desc": ""
+    },
+    {
+      "id": "AzureResistUp",
+      "name": "Gloom Resist Up",
+      "desc": ""
+    },
+    {
+      "id": "IndigoResistUp",
+      "name": "Pride Resist Up",
+      "desc": ""
+    },
+    {
+      "id": "VioletResistUp",
+      "name": "Envy Resist Up",
+      "desc": ""
+    },
+    {
+      "id": "CrimsonDamageDown",
+      "name": "Wrath DMG Down",
+      "desc": "Deal -{0}0% damage with Wrath skills this turn (Up to 10 stacks)",
+      "summary": "Wrath damage -{0}0%"
+    },
+    {
+      "id": "ScarletDamageDown",
+      "name": "Lust DMG Down",
+      "desc": "Deal -{0}0% damage with Lust skills this turn (Up to 10 stacks)",
+      "summary": "Lust damage -{0}0%"
+    },
+    {
+      "id": "AmberDamageDown",
+      "name": "Sloth DMG Down",
+      "desc": "Deal -{0}0% damage with Sloth skills this turn (Up to 10 stacks)",
+      "summary": "Sloth damage -{0}0%"
+    },
+    {
+      "id": "ShamrockDamageDown",
+      "name": "Gluttony DMG Down",
+      "desc": "Deal -{0}0% damage with Gluttony skills this turn (Up to 10 stacks)",
+      "summary": "Gluttony damage -{0}0%"
+    },
+    {
+      "id": "AzureDamageDown",
+      "name": "Gloom DMG Down",
+      "desc": "Deal -{0}0% damage with Gloom skills this turn (Up to 10 stacks)",
+      "summary": "Gloom damage -{0}0%"
+    },
+    {
+      "id": "IndigoDamageDown",
+      "name": "Pride DMG Down",
+      "desc": "Deal -{0}0% damage with Pride skills this turn (Up to 10 stacks)",
+      "summary": "Pride damage -{0}0%"
+    },
+    {
+      "id": "VioletDamageDown",
+      "name": "Envy DMG Down",
+      "desc": "Deal -{0}0% damage with Envy skills this turn (Up to 10 stacks)",
+      "summary": "Envy damage -{0}0%"
+    },
+    {
+      "id": "CrimsonDamageUp",
+      "name": "Wrath DMG Up",
+      "desc": "Deal +{0}0% damage with Wrath skills this turn (Up to 10 stacks)",
+      "summary": "Wrath damage +{0}0%"
+    },
+    {
+      "id": "ScarletDamageUp",
+      "name": "Lust DMG Up",
+      "desc": "Deal +{0}0% damage with Lust skills this turn (Up to 10 stacks)",
+      "summary": "Lust damage +{0}0%"
+    },
+    {
+      "id": "AmberDamageUp",
+      "name": "Sloth DMG Up",
+      "desc": "Deal +{0}0% damage with Sloth skills this turn (Up to 10 stacks)",
+      "summary": "Sloth damage +{0}0%"
+    },
+    {
+      "id": "ShamrockDamageUp",
+      "name": "Gluttony DMG Up",
+      "desc": "Deal +{0}0% damage with Gluttony skills this turn (Up to 10 stacks)",
+      "summary": "Gluttony damage +{0}0%"
+    },
+    {
+      "id": "AzureDamageUp",
+      "name": "Gloom DMG Up",
+      "desc": "Deal +{0}0% damage with Gloom skills this turn (Up to 10 stacks)",
+      "summary": "Gloom damage +{0}0%"
+    },
+    {
+      "id": "IndigoDamageUp",
+      "name": "Pride DMG Up",
+      "desc": "Deal +{0}0% damage with Pride skills this turn (Up to 10 stacks)",
+      "summary": "Pride damage +{0}0%"
+    },
+    {
+      "id": "VioletDamageUp",
+      "name": "Envy DMG Up",
+      "desc": "Deal +{0}0% damage with Envy skills this turn (Up to 10 stacks)",
+      "summary": "Envy damage +{0}0%"
+    },
+    {
+      "id": "Curse",
+      "name": "Curse",
+      "desc": "Turn End: Self-apply 1 of the following, then reduce this effect’s Count by 1.\n1 Attack Power Down/1 Defense Power Down/1 Offense Level Down/1 Defense Down",
+      "summary": "Self-apply a negative status effect, then reduce stack by 1"
+    },
+    {
+      "id": "AttackDmgUp_Weak",
+      "name": "Weak-resist DMG Boost",
+      "desc": "Boost the damage of attacks against Weak resistances by {0}0%.",
+      "summary": "+{0}0% damage to Weak resistances"
+    },
+    {
+      "id": "Bullet",
+      "name": "Ammo",
+      "desc": "Spent by certain skills. Some attacks cancel if lacking Ammo.",
+      "summary": "Resource for certain skills"
+    },
+    {
+      "id": "Meursault_Last_Remodeling",
+      "name": "Final Augment",
+      "desc": "Turn Start: Gain 3 Attack Power Up, Defense Power Up, and Haste; Dies in {0} turns"
+    },
+    {
+      "id": "WigglingRibbon",
+      "name": "Writhing Ribbon",
+      "desc": "설명 입력해주세요"
+    },
+    {
+      "id": "Choice_90103301",
+      "name": "Struggling",
+      "desc": "Speed +1 for this battle",
+      "summary": "SPD +1"
+    },
+    {
+      "id": "Choice_90103402",
+      "name": "Relieved",
+      "desc": "Speed +2 for this battle",
+      "summary": "SPD +2"
+    },
+    {
+      "id": "Choice_901001",
+      "name": "Spreading Flame",
+      "desc": "At the start of the battle, allies without Wrath Affinity are inflicted with 5 Burn"
+    },
+    {
+      "id": "Choice_901007",
+      "name": "Gentle Sendoff",
+      "desc": "Turn Start: Heal 10 HP and SP",
+      "summary": "HP, SP +10"
+    },
+    {
+      "id": "Choice_901009",
+      "name": "Photopia",
+      "desc": "Skill Power -1 at the start of the battle",
+      "summary": "Skill Power -1"
+    },
+    {
+      "id": "Choice_901010",
+      "name": "Emptied",
+      "desc": "At the start of the battle, allies without Lust Affinity are Staggered"
+    },
+    {
+      "id": "Choice_901019",
+      "name": "Contamination",
+      "desc": "Speed -2 at the start of the battle",
+      "summary": "SPD -2"
+    },
+    {
+      "id": "Choice_1030301",
+      "name": "Event Effect",
+      "desc": "Gain 3 Attack Power Up at the start of the battle",
+      "summary": "Gain 3 Attack Power Up"
+    },
+    {
+      "id": "Choice_1030501",
+      "name": "Event Effect",
+      "desc": "Self-apply 5 Attack Power Down each turn",
+      "summary": "Self-apply 5 Attack Power Down"
+    },
+    {
+      "id": "Choice_1031001",
+      "name": "Event Effect",
+      "desc": "Self-apply 3 Damage Down each turn",
+      "summary": "Self-apply 3 Damage Down"
+    },
+    {
+      "id": "Assemble",
+      "name": "Fanatic",
+      "desc": "Final Power +{0} against units with Nails",
+      "summary": "Final Power +{0}"
+    },
+    {
+      "id": "ReinforcedAssemble",
+      "name": "Kromer’s Whistles",
+      "desc": "We shall fear not, for the One Who Grips is with us."
+    },
+    {
+      "id": "Greedy",
+      "name": "Desirous",
+      "desc": "Self-apply 2 Fragile and 10 Bind this turn. Gain a skill slot and change behavior.",
+      "summary": "Self-apply 2 Fragile and 10 Bind"
+    },
+    {
+      "id": "Desire",
+      "name": "Urge",
+      "desc": "Turn End: At 5+ stacks, take 30 SP damage, self-apply 2 Fragile and 10 Bind, and remove this effect.",
+      "summary": "Self-apply 30 SP damage, 2 Fragile, and 10 Bind"
+    },
+    {
+      "id": "GreedyReady",
+      "name": "Constricting Desires",
+      "desc": "Use a skill that applies ‘Desirous’ in {0} turn(s)."
+    },
+    {
+      "id": "Decay",
+      "name": "Rotting Skin",
+      "desc": "When attacked, inflict 3 Poison to the attacker.",
+      "summary": "Inflict 3 Poison to attacker"
+    },
+    {
+      "id": "Poison",
+      "name": "Poison",
+      "desc": "Turn End: Take {0} fixed damage, then halve the Count.",
+      "summary": "{0} HP damage"
+    },
+    {
+      "id": "Cromer_Target",
+      "name": "Gaze of the One Who Grips",
+      "desc": "Staggered for this turn. Take +100% damage from Kromer."
+    },
+    {
+      "id": "Cromer_Boredom",
+      "name": "Accept the Pain!",
+      "desc": "Deal and take 100% more damage.\nDefense Skill Final Power -5."
+    },
+    {
+      "id": "Cromer_Ecstasy",
+      "name": "Ecstatic",
+      "desc": "All the Maw’s physical resistances change to ‘Fatal’.",
+      "summary": "Weaken part's phys. resistance"
+    },
+    {
+      "id": "Cromer_Madness",
+      "name": "Purity",
+      "desc": "All parts gain 3 Bind and 3 Damage Up, and their phys. resistances change to ‘Fatal’."
+    },
+    {
+      "id": "Hardening",
+      "name": "Hardening",
+      "desc": "Turn Start: At 3+ Count, the Arms change into a “perfect” state."
+    },
+    {
+      "id": "Perfected",
+      "name": "Perfect Shell",
+      "desc": "Turn Start: The Arms gain 2 Attack Power Up. Removed when the Arms’ health falls below 50%",
+      "summary": "Gain 2 Attack Power Up"
+    },
+    {
+      "id": "Enrage",
+      "name": "Frenzy",
+      "desc": "Self-apply 3 Attack Power Up and 3 Fragile this turn, and change behavior. Does not gain Instincts when attacked.",
+      "summary": "Self-apply 3 Attack Power Up and 3 Fragile"
+    },
+    {
+      "id": "Aggressive",
+      "name": "Instincts",
+      "desc": "Turn End: At 4+ Count, change to an “aggressive” state."
+    },
+    {
+      "id": "Whistle_Courage",
+      "name": "Courage to Triumph Fear",
+      "desc": "Turn Start: Self-apply 1 Attack Power Up and 2 Protection",
+      "summary": "Self-apply 1 Attack Power Up and 2 Protection"
+    },
+    {
+      "id": "Whistle_Fear",
+      "name": "Fearsome Whistles",
+      "desc": "Turn Start: Self-apply 1 Bind and 1 Paralyze.",
+      "summary": "Self-apply 1 Bind and 1 Paralysis"
+    },
+    {
+      "id": "SlashTakeDamageDown",
+      "name": "Slash Protection",
+      "desc": "Take -{0}0% damage from Slash skills this turn (Up to 10 stacks)",
+      "summary": "Slash damage taken -{0}0%"
+    },
+    {
+      "id": "PenetrateTakeDamageDown",
+      "name": "Pierce Protection",
+      "desc": "Take -{0}0% damage from Pierce skills this turn (Up to 10 stacks)",
+      "summary": "Pierce damage taken -{0}0%"
+    },
+    {
+      "id": "HitTakeDamageDown",
+      "name": "Blunt Protection",
+      "desc": "Take -{0}0% damage from Blunt skills this turn (Up to 10 stacks)",
+      "summary": "Blunt damage taken -{0}0%"
+    },
+    {
+      "id": "CrimsonTakeDamageDown",
+      "name": "Wrath Protection",
+      "desc": "Take -{0}0% damage from Wrath skills this turn (Up to 10 stacks)",
+      "summary": "Wrath damage taken -{0}0%"
+    },
+    {
+      "id": "ScarletTakeDamageDown",
+      "name": "Lust Protection",
+      "desc": "Take -{0}0% damage from Lust skills this turn (Up to 10 stacks)",
+      "summary": "Lust damage taken -{0}0%"
+    },
+    {
+      "id": "AmberTakeDamageDown",
+      "name": "Sloth Protection",
+      "desc": "Take -{0}0% damage from Sloth skills this turn (Up to 10 stacks)",
+      "summary": "Sloth damage taken -{0}0%"
+    },
+    {
+      "id": "ShamrockTakeDamageDown",
+      "name": "Gluttony Protection",
+      "desc": "Take -{0}0% damage from Gluttony skills this turn (Up to 10 stacks)",
+      "summary": "Gluttony damage taken -{0}0%"
+    },
+    {
+      "id": "AzureTakeDamageDown",
+      "name": "Gloom Protection",
+      "desc": "Take -{0}0% damage from Gloom skills this turn (Up to 10 stacks)",
+      "summary": "Gloom damage taken -{0}0%"
+    },
+    {
+      "id": "IndigoTakeDamageDown",
+      "name": "Pride Protection",
+      "desc": "Take -{0}0% damage from Pride skills this turn (Up to 10 stacks)",
+      "summary": "Pride damage taken -{0}0%"
+    },
+    {
+      "id": "VioletTakeDamageDown",
+      "name": "Envy Protection",
+      "desc": "Take -{0}0% damage from Envy skills this turn (Up to 10 stacks)",
+      "summary": "Envy damage taken -{0}0%"
+    },
+    {
+      "id": "SlashTakeDamageUp",
+      "name": "Slash Fragility",
+      "desc": "Take +{0}0% damage from Slash skills this turn (Up to 10 stacks)",
+      "summary": "Slash damage taken +{0}0%"
+    },
+    {
+      "id": "PenetrateTakeDamageUp",
+      "name": "Pierce Fragility",
+      "desc": "Take +{0}0% damage from Pierce skills this turn (Up to 10 stacks)",
+      "summary": "Pierce damage taken +{0}0%"
+    },
+    {
+      "id": "HitTakeDamageUp",
+      "name": "Blunt Fragility",
+      "desc": "Take +{0}0% damage from Blunt skills this turn (Up to 10 stacks)",
+      "summary": "Blunt damage taken +{0}0%"
+    },
+    {
+      "id": "CrimsonTakeDamageUp",
+      "name": "Wrath Fragility",
+      "desc": "Take +{0}0% damage from Wrath skills this turn (Up to 10 stacks)",
+      "summary": "Wrath damage taken +{0}0%"
+    },
+    {
+      "id": "ScarletTakeDamageUp",
+      "name": "Lust Fragility",
+      "desc": "Take +{0}0% damage from Lust skills this turn (Up to 10 stacks)",
+      "summary": "Lust damage taken +{0}0%"
+    },
+    {
+      "id": "AmberTakeDamageUp",
+      "name": "Sloth Fragility",
+      "desc": "Take +{0}0% damage from Sloth skills this turn (Up to 10 stacks)",
+      "summary": "Sloth damage taken +{0}0%"
+    },
+    {
+      "id": "ShamrockTakeDamageUp",
+      "name": "Gluttony Fragility",
+      "desc": "Take +{0}0% damage from Gluttony skills this turn (Up to 10 stacks)",
+      "summary": "Gluttony damage taken +{0}0%"
+    },
+    {
+      "id": "AzureTakeDamageUp",
+      "name": "Gloom Fragility",
+      "desc": "Take +{0}0% damage from Gloom skills this turn (Up to 10 stacks)",
+      "summary": "Gloom damage taken +{0}0%"
+    },
+    {
+      "id": "IndigoTakeDamageUp",
+      "name": "Pride Fragility",
+      "desc": "Take +{0}0% damage from Pride skills this turn (Up to 10 stacks)",
+      "summary": "Pride damage taken +{0}0%"
+    },
+    {
+      "id": "VioletTakeDamageUp",
+      "name": "Envy Fragility",
+      "desc": "Take +{0}0% damage from Envy skills this turn (Up to 10 stacks)",
+      "summary": "Envy damage taken +{0}0%"
+    },
+    {
+      "id": "LittleCourage",
+      "name": "A Sign",
+      "desc": "Sinclair's determination to stand up to Kromer. After three strokes have been drawn...",
+      "summary": "Sinclair's Will"
+    }
+  ]
+}

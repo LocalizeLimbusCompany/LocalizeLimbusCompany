@@ -1,0 +1,652 @@
+{
+  "dataList": [
+    {
+      "id": "AreaAtk",
+      "name": "群体攻击",
+      "desc": "同时选取2个及以上敌人作为目标。"
+    },
+    {
+      "id": "Enhancement",
+      "name": "Attack Power Up",
+      "desc": "Attack skills gain final Power by the effect’s Potency."
+    },
+    {
+      "id": "Agility",
+      "name": "Haste",
+      "desc": "Speed increases by the effect’s Potency for one turn."
+    },
+    {
+      "id": "Endurance",
+      "name": "Defense Power Up",
+      "desc": "Defense skills gain final Power by the effect’s Potency for one turn."
+    },
+    {
+      "id": "Reduction",
+      "name": "Attack Power Down",
+      "desc": "Attack skills lose final Power by the effect’s Potency for one turn."
+    },
+    {
+      "id": "Binding",
+      "name": "Bind",
+      "desc": "Speed decreases by the effect’s Potency for one turn."
+    },
+    {
+      "id": "Vulnerable",
+      "name": "Fragile",
+      "desc": "Take more damage from skills based on the effect's Potency for one turn. (Max. 10)",
+      "summary": "Damage Taken +{0}0"
+    },
+    {
+      "id": "Taunt",
+      "name": "Taunt",
+      "desc": ""
+    },
+    {
+      "id": "Stun",
+      "name": "Stun",
+      "desc": ""
+    },
+    {
+      "id": "ElectricShock",
+      "name": "Shock",
+      "desc": "Take more damage by the effect’s Potency."
+    },
+    {
+      "id": "Burn",
+      "name": "Burn",
+      "desc": "At the end of the turn, take fixed damage by the effect’s Potency, then halve it."
+    },
+    {
+      "id": "Bleeding",
+      "name": "Bleed",
+      "desc": "When attacking, take fixed damage equal to (Potency)% of current HP, then halve it."
+    },
+    {
+      "id": "Target",
+      "name": "Marked",
+      "desc": "Targeted by the character with the Passive [Sharp Shivs]."
+    },
+    {
+      "id": "SelfHarm_LowMorale",
+      "name": "Compulsion (Low Morale)",
+      "desc": "At the start of the turn, self-apply 2 Haste and 2 Fragile."
+    },
+    {
+      "id": "SelfHarm_Panic",
+      "name": "Compulsion (Panic)",
+      "desc": "At the start of the turn, lose 10 HP."
+    },
+    {
+      "id": "Blame_LowMorale",
+      "name": "Outlash (Low Morale)",
+      "desc": "Turn Start: Self-apply 2 Attack Power Up and 2 Fragile"
+    },
+    {
+      "id": "Blame_Panic",
+      "name": "Outlash (Panic)",
+      "desc": "At the start of the turn, a random ally loses 20 SP."
+    },
+    {
+      "id": "Charge",
+      "name": "Charge",
+      "desc": "Resource used by certain skills for additional effects. Its Count can go up to 20. It lowers by 1 at the end of each turn."
+    },
+    {
+      "id": "DamageOverTime",
+      "name": "Ongoing Damage",
+      "desc": "At the start of the turn, take fixed damage by the effect’s Potency."
+    },
+    {
+      "id": "ResultEnhancement",
+      "name": "Attack Power Up",
+      "desc": "Attack skills gain final Power by the effect’s Potency for one turn.",
+      "summary": "ATK Skill Final Power +{0}"
+    },
+    {
+      "id": "Protection",
+      "name": "Protect",
+      "desc": "Take less damage from skills based on the effect's Potency for one turn. (Max. 10)",
+      "summary": "-{0}0% Damage Taken"
+    },
+    {
+      "id": "AttackDmgUp",
+      "name": "Damage Up",
+      "desc": "Deal more damage with skills based on the effect's Potency for one turn. (Max. 10)",
+      "summary": "+{0}0% Damage Dealt"
+    },
+    {
+      "id": "DefenseUp",
+      "name": "Defense Up",
+      "desc": "Defense increases based on the effect's Potency for one turn. (Max. 10)",
+      "summary": "DEF +{0}0%"
+    },
+    {
+      "id": "PlusCoinValueUp",
+      "name": "Plus Coin Boost",
+      "desc": "Raise the Power of Plus Coins by the effect’s Potency."
+    },
+    {
+      "id": "MinusCoinValueUp",
+      "name": "Minus Coin Boost",
+      "desc": "Raise the Power of Minus Coins by the effect’s Potency."
+    },
+    {
+      "id": "TimesCoinValueUp",
+      "name": "Multiply Coin Boost",
+      "desc": "Raise the Power of Multiply Coins by the effect’s Potency."
+    },
+    {
+      "id": "Disarming",
+      "name": "Defense Power Down",
+      "desc": "Defense skills lose final Power by the effect’s Potency for one turn."
+    },
+    {
+      "id": "ResultReduction",
+      "name": "Power Down",
+      "desc": "All skills lose final Power by the effect’s Potency for one turn.",
+      "summary": "Skill Final Power -{0}"
+    },
+    {
+      "id": "AttackDmgDown",
+      "name": "Damage-down",
+      "desc": "Deal less damage with skills based on the effect's Potency for one turn. (Max. 10)",
+      "summary": "-{0}0% Damage Dealt"
+    },
+    {
+      "id": "DefenseDown",
+      "name": "Defense-down",
+      "desc": "Defense decreases based on the effect's Potency for one turn. (Max. 10)",
+      "summary": "DEF -{0}0%"
+    },
+    {
+      "id": "Paralysis",
+      "name": "Paralyze",
+      "desc": "Fix the Power of X Coin(s) to 0 for one turn."
+    },
+    {
+      "id": "PlusCoinValueDown",
+      "name": "Plus Coin Drop",
+      "desc": "Reduce the power of Plus Coins by the effect’s Potency."
+    },
+    {
+      "id": "MinusCoinValueDown",
+      "name": "Minus Coin Drop",
+      "desc": "Reduce the power of Minus Coins by the effect’s Potency."
+    },
+    {
+      "id": "TimesCoinValueDown",
+      "name": "Multiply Coin Drop",
+      "desc": "Reduce the power of Multiply Coins by the effect’s Potency."
+    },
+    {
+      "id": "MoonLight",
+      "name": "Moonlight",
+      "desc": "Resource used by certain skills for additional effects."
+    },
+    {
+      "id": "Anger",
+      "name": "Rage",
+      "desc": "Spent by certain skills. Required for the use of certain skills."
+    },
+    {
+      "id": "Inactible",
+      "name": "Immobilize",
+      "desc": "Does not act for the turn."
+    },
+    {
+      "id": "Combustion",
+      "name": "Burn",
+      "desc": "At the end of the turn, take fixed damage by the effect’s Potency.\nThen, reduce its Count by 1."
+    },
+    {
+      "id": "Laceration",
+      "name": "Bleed",
+      "desc": "When tossing an attack Coin, take fixed damage by the effect’s Potency.\nThen, reduce its Count by 1."
+    },
+    {
+      "id": "Vibration",
+      "name": "Tremor",
+      "desc": "When attacked by skills that burst Tremor, raise the Stagger threshold by the effect’s Potency.\nAt the end of the turn, reduce the Count by 1."
+    },
+    {
+      "id": "Burst",
+      "name": "Rupture",
+      "desc": "When hit by an attack, take fixed damage by the effect’s Potency.\nThen, reduce its Count by 1."
+    },
+    {
+      "id": "Sinking",
+      "name": "Sinking",
+      "desc": "The next {1} time(s) the unit is hit by an attack skill, take {0} fixed SP damage. (Applies as Gloom-affinity damage to Abnormalities)\nThen, reduce its Count by 1."
+    },
+    {
+      "id": "Breath",
+      "name": "Poise",
+      "desc": "On hit, gain a Potency-based chance to deal critical damage, reducing the Count by 1 if successful.\nAt the end of the turn, reduce the Count by 1."
+    },
+    {
+      "id": "BloodPocket",
+      "name": "Blood Sac",
+      "desc": "Use a powerful attack after the Count reaches a certain amount."
+    },
+    {
+      "id": "WaterPocket",
+      "name": "Fluid Sac",
+      "desc": "Gain healing proportional to the Count."
+    },
+    {
+      "id": "DogThunder",
+      "name": "Lightning",
+      "desc": "This unit powers itself up after the Count reaches a certain amount."
+    },
+    {
+      "id": "Run_Panic",
+      "name": "Overwhelmed",
+      "desc": "Cannot act for one turn. When hit, flees battle after the attacker’s skill has finished."
+    },
+    {
+      "id": "Operation",
+      "name": "Surgery",
+      "desc": "Die when Potency reaches 5.\nReduce Max HP by 20% (per Potency).\nDeal 20% (per Potency) more damage.\nAt the start of the turn, self-apply Haste by the effect’s Potency."
+    },
+    {
+      "id": "Emergency_Operation",
+      "name": "Makeshift Surgery",
+      "desc": "Boost Max HP by 25% and skill Power by 1 per this effect’s Potency.\nEach turn, increase this effect’s Potency by 1.\nDie when Potency reaches 5."
+    },
+    {
+      "id": "BabayagaTimeLimit",
+      "name": "Baba Yaga’s Coming!",
+      "desc": ""
+    },
+    {
+      "id": "PinkRibbon",
+      "name": "Pink Ribbons",
+      "desc": "At the end of the turn, if at 5+ Potency, remove this effect and apply ‘Desirous’ next turn."
+    },
+    {
+      "id": "PinkRibbonGreed",
+      "name": "Desirous",
+      "desc": "At the start of the turn, self-apply 10 Bind.\nAll phys. resistances change to ‘Fatal’.\nAttack Skill Power +2.\nDefense Skill Power -2."
+    },
+    {
+      "id": "PinkRibbon_Ishmael",
+      "name": "Pink Ribbons",
+      "desc": "Count increases by 1 whenever the affected unit tosses an attack skill Coin.\nAt the end of the turn, inflict Bind by the effect’s Count, then remove this status."
+    },
+    {
+      "id": "Muckworm",
+      "name": "Maggots",
+      "desc": "At the end of the turn, take Gluttony damage by the Count, increase Bleed Count by 1, then reduce this effect’s Count by 1."
+    },
+    {
+      "id": "AttackUp",
+      "name": "Offense Level-up",
+      "desc": "Offense level increases based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "AttackDown",
+      "name": "Offense Level-down",
+      "desc": "Offense level decreases based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "Liu_Meursault_Guard_Buff",
+      "name": "Great Mountain",
+      "desc": "When attacked, inflict +1 Burn Count to the attacker."
+    },
+    {
+      "id": "SlashResistUp",
+      "name": "Slash Resist Up",
+      "desc": "Increase Slash Resistance by a % based on Potency.\n(0.1% per Potency)"
+    },
+    {
+      "id": "PenetrateResistUp",
+      "name": "Pierce Resist Up",
+      "desc": "Increase Pierce Resistance by a % based on Potency.\n(0.1% per Potency)"
+    },
+    {
+      "id": "HitResistUp",
+      "name": "Blunt Resist Up",
+      "desc": "Increase Blunt Resistance by a % based on Potency.\n(0.1% per Potency)"
+    },
+    {
+      "id": "SlashDamageUp",
+      "name": "Slash DMG Up",
+      "desc": "Deal more damage with Slash skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "PenetrateDamageUp",
+      "name": "Pierce DMG Up",
+      "desc": "Deal more damage with Pierce skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "HitDamageUp",
+      "name": "Blunt DMG Up",
+      "desc": "Deal more damage with Blunt skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "SlashResistDown",
+      "name": "Slash Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "PenetrateResistDown",
+      "name": "Pierce Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "HitResistDown",
+      "name": "Blunt Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "SlashDamageDown",
+      "name": "Slash DMG Down",
+      "desc": "Deal less damage with Slash skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "PenetrateDamageDown",
+      "name": "Pierce DMG Down",
+      "desc": "Deal less damage with Pierce skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "HitDamageDown",
+      "name": "Blunt DMG Down",
+      "desc": "Deal less damage with Blunt skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "CrimsonResistDown",
+      "name": "Wrath Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "ScarletResistDown",
+      "name": "Lust Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "AmberResistDown",
+      "name": "Sloth Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "ShamrockResistDown",
+      "name": "Gluttony Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "AzureResistDown",
+      "name": "Gloom Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "IndigoResistDown",
+      "name": "Pride Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "VioletResistDown",
+      "name": "Envy Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "CrimsonResistUp",
+      "name": "Wrath Resist Up",
+      "desc": "Increase Wrath Resistance by a % based on Potency.\n(0.1% per Potency)"
+    },
+    {
+      "id": "ScarletResistUp",
+      "name": "Lust Resist Up",
+      "desc": "Increase Lust Resistance by a % based on Potency.\n(0.1% per Potency)"
+    },
+    {
+      "id": "AmberResistUp",
+      "name": "Sloth Resist Up",
+      "desc": "Increase Sloth Resistance by a % based on Potency.\n(0.1% per Potency)"
+    },
+    {
+      "id": "ShamrockResistUp",
+      "name": "Gluttony Resist Up",
+      "desc": "Increase Gluttony Resistance by a % based on Potency.\n(0.1% per Potency)"
+    },
+    {
+      "id": "AzureResistUp",
+      "name": "Gloom Resist Up",
+      "desc": "Increase Gloom Resistance by a % based on Potency.\n(0.1% per Potency)"
+    },
+    {
+      "id": "IndigoResistUp",
+      "name": "Pride Resist Up",
+      "desc": "Increase Pride Resistance by a % based on Potency.\n(0.1% per Potency)"
+    },
+    {
+      "id": "VioletResistUp",
+      "name": "Envy Resist Up",
+      "desc": "Increase Envy Resistance by a % based on Potency.\n(0.1% per Potency)"
+    },
+    {
+      "id": "CrimsonDamageDown",
+      "name": "Wrath DMG Down",
+      "desc": "Deal less damage with Wrath skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "ScarletDamageDown",
+      "name": "Lust DMG Down",
+      "desc": "Deal less damage with Lust skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "AmberDamageDown",
+      "name": "Sloth DMG Down",
+      "desc": "Deal less damage with Sloth skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "ShamrockDamageDown",
+      "name": "Gluttony DMG Down",
+      "desc": "Deal less damage with Gluttony skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "AzureDamageDown",
+      "name": "Gloom DMG Down",
+      "desc": "Deal less damage with Gloom skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "IndigoDamageDown",
+      "name": "Pride DMG Down",
+      "desc": "Deal less damage with Pride skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "VioletDamageDown",
+      "name": "Envy DMG Down",
+      "desc": "Deal less damage with Envy skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "CrimsonDamageUp",
+      "name": "Wrath DMG Up",
+      "desc": "Deal more damage with Wrath skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "ScarletDamageUp",
+      "name": "Lust DMG Up",
+      "desc": "Deal more damage with Lust skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "AmberDamageUp",
+      "name": "Sloth DMG Up",
+      "desc": "Deal more damage with Sloth skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "ShamrockDamageUp",
+      "name": "Gluttony DMG Up",
+      "desc": "Deal more damage with Gluttony skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "AzureDamageUp",
+      "name": "Gloom DMG Up",
+      "desc": "Deal more damage with Gloom skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "IndigoDamageUp",
+      "name": "Pride DMG Up",
+      "desc": "Deal more damage with Pride skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "VioletDamageUp",
+      "name": "Envy DMG Up",
+      "desc": "Deal more damage with Envy skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "Curse",
+      "name": "Curse",
+      "desc": "Turn End: Self-apply 1 of the following, then reduce this effect’s Count by 1.\n1 Attack Power Down/1 Defense Power Down/1 Offense Level Down/1 Defense Down"
+    },
+    {
+      "id": "AttackDmgUp_Weak",
+      "name": "Weak-resist Damage Boost",
+      "desc": "Boost the damage of attacks against Weak resistances by (Potency)%."
+    },
+    {
+      "id": "Bullet",
+      "name": "Ammo",
+      "desc": "Spent by certain skills.\nSome attacks cancel if lacking Ammo."
+    },
+    {
+      "id": "Meursault_Last_Remodeling",
+      "name": "Final Augmentation",
+      "desc": "Turn Start: Gain 3 Attack Power Up, Defense Power Up, and Haste; Dies in 3 turns"
+    },
+    {
+      "id": "Aggressive",
+      "name": "Instincts",
+      "desc": "At the end of the turn, if the Count is at 4+, change to an “aggressive” state."
+    },
+    {
+      "id": "Cromer_Target",
+      "name": "Gaze of the One Who Grips",
+      "desc": "Staggered for a turn. Take +100% damage from Kromer."
+    },
+    {
+      "id": "Poison",
+      "name": "Poison",
+      "desc": "Turn End: Take fixed damage by the Count, then halve the Count."
+    },
+    {
+      "id": "Desire",
+      "name": "Urge",
+      "desc": "Turn End: At 5+ stacks, take 30 SP damage, apply 2 Fragile and 10 Bind, and remove this status"
+    },
+    {
+      "id": "Assemble",
+      "name": "Fanaticism",
+      "desc": "Final Power +1 against units with Nails"
+    },
+    {
+      "id": "Nail",
+      "name": "Nails",
+      "desc": "Turn Start: Apply 1 Bleed to self, and increase Bleed count by this effect's Count. Turn End: Reduce Count by 1."
+    },
+    {
+      "id": "BeingGolden",
+      "name": "Golden Sheen",
+      "desc": "Turn Start: Heal 10 HP per Count."
+    },
+    {
+      "id": "SlashTakeDamageDown",
+      "name": "Slash Protection",
+      "desc": "Take less damage from Slash skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "PenetrateTakeDamageDown",
+      "name": "Pierce Protection",
+      "desc": "Take less damage from Pierce skills based on the effect's Potency for one turn. (max 10)"
+    },
+    {
+      "id": "HitTakeDamageDown",
+      "name": "Blunt Protection",
+      "desc": "Take less damage from Blunt skills based on the effect's Potency for one turn. (max 10)"
+    },
+    {
+      "id": "CrimsonTakeDamageDown",
+      "name": "Wrath Protection",
+      "desc": "Take less damage from Wrath skills based on the effect's Potency for one turn. (max 10)"
+    },
+    {
+      "id": "ScarletTakeDamageDown",
+      "name": "Lust Protection",
+      "desc": "Take less damage from Lust skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "AmberTakeDamageDown",
+      "name": "Sloth Protection",
+      "desc": "Take less damage from Sloth skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "ShamrockTakeDamageDown",
+      "name": "Gluttony Protection",
+      "desc": "Take less damage from Gluttony skills based on the effect's Potency for one turn. (max 10)"
+    },
+    {
+      "id": "AzureTakeDamageDown",
+      "name": "Gloom Protection",
+      "desc": "Take less damage from Gloom skills based on the effect's Potency for one turn. (max 10)"
+    },
+    {
+      "id": "IndigoTakeDamageDown",
+      "name": "Pride Protection",
+      "desc": "Take less damage from Pride skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "VioletTakeDamageDown",
+      "name": "Envy Protection",
+      "desc": "Take less damage from Envy skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "SlashTakeDamageUp",
+      "name": "Slash Fragility",
+      "desc": "Take more damage from Slash skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "PenetrateTakeDamageUp",
+      "name": "Pierce Fragility",
+      "desc": "Take more damage from Pierce skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "HitTakeDamageUp",
+      "name": "Blunt Fragility",
+      "desc": "Take more damage from Blunt skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "CrimsonTakeDamageUp",
+      "name": "Wrath Fragility",
+      "desc": "Take more damage from Wrath skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "ScarletTakeDamageUp",
+      "name": "Lust Fragility",
+      "desc": "Take more damage from Lust skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "AmberTakeDamageUp",
+      "name": "Sloth Fragility",
+      "desc": "Take more damage from Sloth skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "ShamrockTakeDamageUp",
+      "name": "Gluttony Fragility",
+      "desc": "Take more damage from Gluttony skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "AzureTakeDamageUp",
+      "name": "Gloom Fragility",
+      "desc": "Take more damage from Gloom skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "IndigoTakeDamageUp",
+      "name": "Pride Fragility",
+      "desc": "Take more damage from Pride skills based on the effect's Potency for one turn. (Max. 10)"
+    },
+    {
+      "id": "VioletTakeDamageUp",
+      "name": "Envy Fragility",
+      "desc": "Take more damage from Envy skills based on the effect's Potency for one turn. (max 10)"
+    }
+  ]
+}
