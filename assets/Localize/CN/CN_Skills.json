@@ -6,7 +6,7 @@
         {
           "level": 1,
           "name": "防御",
-          "desc": "频点胜利时，对方的混乱阈值前移"
+          "desc": "拼点胜利时，对方的混乱阈值前移"
         }
       ]
     },
@@ -16,7 +16,7 @@
         {
           "level": 1,
           "name": "闪避",
-          "desc": "拼点成功时，自身的混乱阈值后移"
+          "desc": "拼点胜利时，自身的混乱阈值后移"
         }
       ]
     },
@@ -35,7 +35,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Deflect",
+          "name": "攻击偏转",
           "desc": "",
           "keywords": [],
           "coinlist": [
@@ -50,7 +50,7 @@
         },
         {
           "level": 2,
-          "name": "Deflect",
+          "name": "攻击偏转",
           "desc": "",
           "keywords": [],
           "coinlist": [
@@ -94,7 +94,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 施加1层沉沦；目标的沉沦强度+1"
+                  "desc": "[命中时] 施加1层沉沦；目标的沉沦强度+1"
                 }
               ]
             }
@@ -116,7 +116,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 目标的神志值低于0时，施加1层破绽"
+                  "desc": "[命中时] 目标的神志值低于0时，施加1层破绽"
                 }
               ]
             }
@@ -173,21 +173,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 最后一个硬币施加状态的层数+1"
+                  "desc": "[命中时] 最后一个硬币施加状态的层数+1"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 最后一个硬币施加状态的层数+1"
+                  "desc": "[命中时] 最后一个硬币施加状态的层数+1"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下一回合施加1层突刺破绽"
+                  "desc": "[命中时] 下一回合施加1层突刺破绽"
                 }
               ]
             }
@@ -201,7 +201,7 @@
         {
           "level": 1,
           "name": "Riposte",
-          "desc": "[WinDuel] 下一回合施加3层麻痹",
+          "desc": "[拼点胜利] 下一回合施加3层麻痹",
           "keywords": [
             "Paralysis"
           ],
@@ -225,7 +225,7 @@
         {
           "level": 2,
           "name": "Riposte",
-          "desc": "[WinDuel] 下一回合施加3层麻痹",
+          "desc": "[拼点胜利] 下一回合施加3层麻痹",
           "keywords": [
             "Paralysis"
           ],
@@ -240,7 +240,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下一回合施加1层破绽"
+                  "desc": "[命中时] 下一回合施加1层破绽"
                 }
               ]
             }
@@ -275,7 +275,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下一回合获得3层呼吸法"
+                  "desc": "[命中时] 下一回合获得3层呼吸法"
                 }
               ]
             }
@@ -289,7 +289,7 @@
         {
           "level": 1,
           "name": "剑刃回旋",
-          "desc": "[WinDuel] 下一回合自身的呼吸法强度+1",
+          "desc": "[拼点胜利] 下一回合自身的呼吸法强度+1",
           "keywords": [],
           "coinlist": [
             {},
@@ -299,7 +299,7 @@
         {
           "level": 2,
           "name": "剑刃回旋",
-          "desc": "[WinDuel] 下一回合自身的呼吸法强度+2",
+          "desc": "[拼点胜利] 下一回合自身的呼吸法强度+2",
           "keywords": [],
           "coinlist": [
             {},
@@ -313,7 +313,7 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Flank Thrust",
+          "name": "左翼突刺",
           "desc": "",
           "keywords": [],
           "coinlist": [
@@ -355,7 +355,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Downward Slash",
+          "name": "下劈",
           "desc": "",
           "keywords": [],
           "coinlist": [
@@ -370,14 +370,14 @@
         },
         {
           "level": 2,
-          "name": "Downward Slash",
+          "name": "下劈",
           "desc": "",
           "keywords": [],
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 施加1层破绽"
+                  "desc": "[命中时] 施加1层破绽"
                 }
               ]
             }
@@ -390,7 +390,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Upward Slash",
+          "name": "上劈",
           "desc": "",
           "keywords": [],
           "coinlist": [
@@ -406,7 +406,7 @@
         },
         {
           "level": 2,
-          "name": "Upward Slash",
+          "name": "上劈",
           "desc": "",
           "keywords": [],
           "coinlist": [
@@ -414,7 +414,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Offense Level Down next turn"
+                  "desc": "[命中时] Inflict 2 Offense Level Down next turn"
                 }
               ]
             }
@@ -441,7 +441,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Attack Power Down next turn"
+                  "desc": "[命中时] Inflict 1 Attack Power Down next turn"
                 }
               ]
             }
@@ -454,13 +454,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Energy Cycle",
+          "name": "能源循环",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 1 Charge"
+                  "desc": "[命中时] 获得1层充能"
                 }
               ]
             }
@@ -468,13 +468,13 @@
         },
         {
           "level": 2,
-          "name": "Energy Cycle",
+          "name": "能源循环",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Charge"
+                  "desc": "[命中时] 获得2层充能"
                 }
               ]
             }
@@ -487,14 +487,14 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Leap",
+          "name": "腾跃攻击",
           "desc": "",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Spend 3 Charge to inflict 4 Bind next turn"
+                  "desc": "[命中时] 消耗3层充能，下一回合施加4层束缚"
                 }
               ]
             }
@@ -502,14 +502,14 @@
         },
         {
           "level": 2,
-          "name": "Leap",
+          "name": "腾跃攻击",
           "desc": "",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Spend 3 Charge to inflict 4 Bind next turn"
+                  "desc": "[命中时] 消耗3层充能，下一回合施加4层束缚"
                 }
               ]
             }
@@ -522,7 +522,7 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Overcharge",
+          "name": "过度充能",
           "desc": "",
           "coinlist": [
             {},
@@ -530,7 +530,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Spend 5 Charge to inflict 2 Attack Power Down next turn. Inflict 3 Paralysis"
+                  "desc": "[命中时] 消耗5层充能，inflict 2 Attack Power Down next turn。 施加3层麻痹。"
                 }
               ]
             }
@@ -657,7 +657,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Evade",
+          "name": "闪避",
           "desc": "",
           "coinlist": [
             {}
@@ -712,8 +712,8 @@
       "levelList": [
         {
           "level": 3,
-          "name": "For Justice!",
-          "desc": "Coin Power +2 at 10+ Speed",
+          "name": "为了正义!",
+          "desc": "速度高于10时，硬币点数+2",
           "coinlist": [
             {},
             {},
@@ -853,7 +853,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Catch Breath",
+          "name": "调整呼吸",
           "desc": "",
           "coinlist": [
             {
@@ -867,7 +867,7 @@
         },
         {
           "level": 2,
-          "name": "Catch Breath",
+          "name": "调整呼吸",
           "desc": "",
           "coinlist": [
             {
@@ -933,7 +933,7 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Overbreathe",
+          "name": "过度呼吸",
           "desc": "Skill Power +3 at 10+ Speed",
           "coinlist": [
             {}
@@ -1128,7 +1128,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Counter",
+          "name": "反击",
           "desc": "",
           "coinlist": []
         }
