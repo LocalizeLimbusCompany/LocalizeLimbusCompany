@@ -42,7 +42,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] 施加1层沉沦"
+                  "desc": "[OnSucceedAttackHead] 施加1层沉沦"
                 }
               ]
             }
@@ -57,7 +57,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] 施加2层沉沦"
+                  "desc": "[OnSucceedAttackHead] 施加2层沉沦"
                 }
               ]
             }
@@ -78,7 +78,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] 目标的沉沦强度+1"
+                  "desc": "[OnSucceedAttackHead] 目标的沉沦强度+1"
                 }
               ]
             }
@@ -94,7 +94,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] 施加1层沉沦；目标的沉沦强度+1"
+                  "desc": "[OnSucceedAttack] 施加1层沉沦；目标的沉沦强度+1"
                 }
               ]
             }
@@ -116,7 +116,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] 目标的神志值低于0时，施加1层破绽"
+                  "desc": "[OnSucceedAttack] 目标的神志值低于0时，施加1层破绽"
                 }
               ]
             }
@@ -136,7 +136,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] 施加1层爆裂"
+                  "desc": "[OnSucceedAttackHead] 施加1层爆裂"
                 }
               ]
             }
@@ -151,7 +151,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] 施加2层爆裂"
+                  "desc": "[OnSucceedAttackHead] 施加2层爆裂"
                 }
               ]
             }
@@ -173,21 +173,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] 最后一个硬币施加状态的层数+1"
+                  "desc": "[OnSucceedAttack] 最后一个硬币施加状态的层数+1"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] 最后一个硬币施加状态的层数+1"
+                  "desc": "[OnSucceedAttack] 最后一个硬币施加状态的层数+1"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] 下一回合施加1层突刺破绽"
+                  "desc": "[OnSucceedAttack] 下一回合施加1层突刺破绽"
                 }
               ]
             }
@@ -201,7 +201,7 @@
         {
           "level": 1,
           "name": "格挡反击",
-          "desc": "[拼点胜利] 下一回合施加3层麻痹",
+          "desc": "[WinDuel] 下一回合施加3层麻痹",
           "keywords": [
             "Paralysis"
           ],
@@ -225,7 +225,7 @@
         {
           "level": 2,
           "name": "格挡反击",
-          "desc": "[拼点胜利] 下一回合施加3层麻痹",
+          "desc": "[WinDuel] 下一回合施加3层麻痹",
           "keywords": [
             "Paralysis"
           ],
@@ -240,7 +240,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] 下一回合施加1层破绽"
+                  "desc": "[OnSucceedAttack] 下一回合施加1层破绽"
                 }
               ]
             }
@@ -260,7 +260,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] 下一回合获得1层呼吸法"
+                  "desc": "[OnSucceedAttackHead] 下一回合获得1层呼吸法"
                 }
               ]
             }
@@ -275,7 +275,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] 下一回合获得3层呼吸法"
+                  "desc": "[OnSucceedAttack] 下一回合获得3层呼吸法"
                 }
               ]
             }
@@ -289,7 +289,7 @@
         {
           "level": 1,
           "name": "剑刃回旋",
-          "desc": "[拼点胜利] 下一回合自身的呼吸法强度+1",
+          "desc": "[WinDuel] 下一回合自身的呼吸法强度+1",
           "keywords": [],
           "coinlist": [
             {},
@@ -299,7 +299,7 @@
         {
           "level": 2,
           "name": "剑刃回旋",
-          "desc": "[拼点胜利] 下一回合自身的呼吸法强度+2",
+          "desc": "[WinDuel] 下一回合自身的呼吸法强度+2",
           "keywords": [],
           "coinlist": [
             {},
@@ -320,7 +320,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] 下一回合获得2层呼吸法"
+                  "desc": "[OnSucceedAttackHead] 下一回合获得2层呼吸法"
                 }
               ]
             },
@@ -328,7 +328,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "暴击时额外造成50%伤害"
+                  "desc": "CriticalOnSucceedAttack额外造成50%伤害"
                 }
               ]
             }
@@ -362,7 +362,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] 施加1层麻痹"
+                  "desc": "[OnSucceedAttackHead] 施加1层麻痹"
                 }
               ]
             }
@@ -377,7 +377,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] 施加1层麻痹"
+                  "desc": "[OnSucceedAttack] 施加1层麻痹"
                 }
               ]
             }
@@ -398,7 +398,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] 下一回合施加1层顿挫"
+                  "desc": "[OnSucceedAttackHead] 下一回合施加1层顿挫"
                 }
               ]
             }
@@ -414,7 +414,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] 下一回合施加2层顿挫"
+                  "desc": "[OnSucceedAttack] 下一回合施加2层顿挫"
                 }
               ]
             }
@@ -434,14 +434,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] 下一回合施加1层顿挫"
+                  "desc": "[OnSucceedAttackHead] 下一回合施加1层顿挫"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] 下一回合施加1层顿挫"
+                  "desc": "[OnSucceedAttack] 下一回合施加1层顿挫"
                 }
               ]
             }
@@ -460,7 +460,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] 获得1层充能"
+                  "desc": "[OnSucceedAttack] 获得1层充能"
                 }
               ]
             }
@@ -474,7 +474,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] 获得2层充能"
+                  "desc": "[OnSucceedAttack] 获得2层充能"
                 }
               ]
             }
@@ -494,7 +494,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] 消耗3层充能，下一回合施加4层束缚"
+                  "desc": "[OnSucceedAttack] 消耗3层充能，下一回合施加4层束缚"
                 }
               ]
             }
@@ -509,7 +509,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] 消耗3层充能，下一回合施加4层束缚"
+                  "desc": "[OnSucceedAttack] 消耗3层充能，下一回合施加4层束缚"
                 }
               ]
             }
@@ -530,7 +530,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] 消耗5层充能，下一回合获得2层强壮。施加3层麻痹"
+                  "desc": "[OnSucceedAttack] 消耗5层充能，下一回合获得2层强壮。施加3层麻痹"
                 }
               ]
             }
@@ -549,7 +549,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Rupture"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
                 }
               ]
             }
@@ -563,7 +563,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
                 }
               ]
             }
@@ -582,21 +582,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttackHead] Gain 1 Poise next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttackHead] Gain 1 Poise next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain 2 Haste next turn"
+                  "desc": "[OnSucceedAttackHead] Gain 2 Haste next turn"
                 }
               ]
             }
@@ -610,21 +610,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttack] Gain 1 Poise next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttack] Gain 1 Poise next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain 4 Haste next turn"
+                  "desc": "[OnSucceedAttack] Gain 4 Haste next turn"
                 }
               ]
             }
@@ -644,7 +644,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 5 Rupture"
+                  "desc": "[OnSucceedAttackHead] Inflict 5 Rupture"
                 }
               ]
             }
@@ -671,7 +671,7 @@
         {
           "level": 1,
           "name": "Joust",
-          "desc": "[拼点胜利] Gain 1 Haste next turn",
+          "desc": "[WinDuel] Gain 1 Haste next turn",
           "coinlist": [
             {}
           ]
@@ -679,7 +679,7 @@
         {
           "level": 2,
           "name": "Joust",
-          "desc": "[拼点胜利] Gain 2 Haste next turn",
+          "desc": "[WinDuel] Gain 2 Haste next turn",
           "coinlist": [
             {}
           ]
@@ -692,7 +692,7 @@
         {
           "level": 1,
           "name": "Galloping Tilt",
-          "desc": "[拼点胜利] Gain 1 Attack Power Up next turn",
+          "desc": "[WinDuel] Gain 1 Attack Power Up next turn",
           "coinlist": [
             {}
           ]
@@ -700,7 +700,7 @@
         {
           "level": 2,
           "name": "Galloping Tilt",
-          "desc": "[拼点胜利] Gain 2 Attack Power Up next turn",
+          "desc": "[WinDuel] Gain 2 Attack Power Up next turn",
           "coinlist": [
             {}
           ]
@@ -733,7 +733,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Rupture"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
                 }
               ]
             }
@@ -747,10 +747,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 1 Rupture"
                 },
                 {
-                  "desc": "[正面命中] Gain +2 Charge count"
+                  "desc": "[OnSucceedAttackHead] Gain +2 Charge count"
                 }
               ]
             }
@@ -771,7 +771,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Fragile"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Fragile"
                 }
               ]
             }
@@ -785,21 +785,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain +4 Charge count"
+                  "desc": "[OnSucceedAttack] Gain +4 Charge count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain +4 Charge count"
+                  "desc": "[OnSucceedAttack] Gain +4 Charge count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 2 Fragile"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Fragile"
                 }
               ]
             }
@@ -840,7 +840,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 5 Rupture"
+                  "desc": "[OnSucceedAttackHead] Inflict 5 Rupture"
                 }
               ]
             }
@@ -859,7 +859,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain 2 Poise next turn"
+                  "desc": "[OnSucceedAttackHead] Gain 2 Poise next turn"
                 }
               ]
             }
@@ -873,7 +873,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain 2 Poise next turn"
+                  "desc": "[OnSucceedAttack] Gain 2 Poise next turn"
                 }
               ]
             }
@@ -892,14 +892,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttackHead] Gain 1 Poise next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain 2 Haste next turn"
+                  "desc": "[OnSucceedAttack] Gain 2 Haste next turn"
                 }
               ]
             }
@@ -913,14 +913,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttack] Gain 1 Poise next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain 2 Haste next turn"
+                  "desc": "[OnSucceedAttack] Gain 2 Haste next turn"
                 }
               ]
             }
@@ -952,7 +952,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttackHead] Gain 1 Poise next turn"
                 }
               ]
             }
@@ -966,7 +966,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain 2 Poise next turn"
+                  "desc": "[OnSucceedAttack] Gain 2 Poise next turn"
                 }
               ]
             }
@@ -1047,7 +1047,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
                 }
               ]
             }
@@ -1061,7 +1061,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
                 }
               ]
             }
@@ -1075,12 +1075,12 @@
         {
           "level": 1,
           "name": "Upper Slash",
-          "desc": "[拼点胜利] Gain 1 Attack Power Up next turn",
+          "desc": "[WinDuel] Gain 1 Attack Power Up next turn",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Defense Down"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Defense Down"
                 }
               ]
             }
@@ -1089,12 +1089,12 @@
         {
           "level": 2,
           "name": "Upper Slash",
-          "desc": "Skill Power +2 against units with Slash Fragility\n[拼点胜利] Gain 1 Attack Power Up next turn",
+          "desc": "Skill Power +2 against units with Slash Fragility\n[WinDuel] Gain 1 Attack Power Up next turn",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Defense Down"
+                  "desc": "[OnSucceedAttack] Inflict 1 Defense Down"
                 }
               ]
             }
@@ -1108,12 +1108,12 @@
         {
           "level": 3,
           "name": "Swash",
-          "desc": "[拼点胜利] This skill applies 2 additional stacks of Slash Fragility",
+          "desc": "[WinDuel] This skill applies 2 additional stacks of Slash Fragility",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 3 Slash Fragility next turn"
+                  "desc": "[OnSucceedAttack] Inflict 3 Slash Fragility next turn"
                 }
               ]
             },
@@ -1145,7 +1145,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Paralysis"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Paralysis"
                 }
               ]
             }
@@ -1159,7 +1159,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 3 Paralysis"
+                  "desc": "[OnSucceedAttack] Inflict 3 Paralysis"
                 }
               ]
             }
@@ -1178,14 +1178,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Apply +1 Bleed count "
+                  "desc": "[OnSucceedAttackHead] Apply +1 Bleed count "
                 }
               ]
             }
@@ -1199,17 +1199,17 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Apply +1 Bleed count "
+                  "desc": "[OnSucceedAttackHead] Apply +1 Bleed count "
                 },
                 {
-                  "desc": "[正面命中] Inflict 2 Damage Down"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Damage Down"
                 }
               ]
             }
@@ -1228,17 +1228,17 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Apply +3 Bleed count"
+                  "desc": "[OnSucceedAttack] Apply +3 Bleed count"
                 },
                 {
-                  "desc": "[命中时] Inflict 3 Offense Level Down"
+                  "desc": "[OnSucceedAttack] Inflict 3 Offense Level Down"
                 }
               ]
             }
@@ -1257,14 +1257,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
                 }
               ]
             }
@@ -1278,14 +1278,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 1 Tremor"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 1 Tremor"
                 }
               ]
             }
@@ -1304,7 +1304,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Burst Tremor"
+                  "desc": "[OnSucceedAttack] Burst Tremor"
                 }
               ]
             }
@@ -1318,7 +1318,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Burst Tremor"
+                  "desc": "[OnSucceedAttack] Burst Tremor"
                 }
               ]
             }
@@ -1340,7 +1340,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Apply +2 Tremor count"
+                  "desc": "[OnSucceedAttackHead] Apply +2 Tremor count"
                 }
               ]
             }
@@ -1372,14 +1372,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
                 }
               ]
             }
@@ -1393,14 +1393,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
                 }
               ]
             }
@@ -1419,14 +1419,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Burn"
+                  "desc": "[OnSucceedAttack] Inflict 2 Burn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
                 }
               ]
             }
@@ -1440,17 +1440,17 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Burn"
+                  "desc": "[OnSucceedAttack] Inflict 2 Burn"
                 },
                 {
-                  "desc": "[命中时] If target has 6+ Burn, inflict 2 Burn to 2 random enemies"
+                  "desc": "[OnSucceedAttack] If target has 6+ Burn, inflict 2 Burn to 2 random enemies"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
                 }
               ]
             }
@@ -1469,7 +1469,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 3 Burn"
+                  "desc": "[OnSucceedAttackHead] Inflict 3 Burn"
                 }
               ]
             },
@@ -1483,10 +1483,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Apply +3 Burn count"
+                  "desc": "[OnSucceedAttack] Apply +3 Burn count"
                 },
                 {
-                  "desc": "[命中时] If target has 6+ Burn, inflict 3 Burn to 2 random enemies"
+                  "desc": "[OnSucceedAttack] If target has 6+ Burn, inflict 3 Burn to 2 random enemies"
                 }
               ]
             }
@@ -1532,7 +1532,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain +3 Charge count "
+                  "desc": "[OnSucceedAttack] Gain +3 Charge count "
                 }
               ]
             }
@@ -1551,21 +1551,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Rupture"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Rupture"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
                 }
               ]
             }
@@ -1579,24 +1579,24 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Rupture"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Rupture"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 3 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 3 Rupture"
                 },
                 {
-                  "desc": "[命中时] Spend 3 Charge count to inflict 2 Slash Fragility"
+                  "desc": "[OnSucceedAttack] Spend 3 Charge count to inflict 2 Slash Fragility"
                 }
               ]
             }
@@ -1615,28 +1615,28 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Spend 2 Charge count to inflict 1 Defense Down"
+                  "desc": "[OnSucceedAttack] Spend 2 Charge count to inflict 1 Defense Down"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Spend 2 Charge count to inflict 1 Defense Down"
+                  "desc": "[OnSucceedAttack] Spend 2 Charge count to inflict 1 Defense Down"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Spend 2 Charge count to inflict 1 Defense Down"
+                  "desc": "[OnSucceedAttack] Spend 2 Charge count to inflict 1 Defense Down"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Spend 2 Charge count to inflict 1 Defense Down"
+                  "desc": "[OnSucceedAttack] Spend 2 Charge count to inflict 1 Defense Down"
                 }
               ]
             }
@@ -1655,7 +1655,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Sinking"
                 }
               ]
             }
@@ -1669,7 +1669,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
                 }
               ]
             }
@@ -1688,14 +1688,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Sinking"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
                 }
               ]
             }
@@ -1709,14 +1709,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
                 }
               ]
             }
@@ -1736,7 +1736,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 2 Attack Power Down"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Attack Power Down"
                 }
               ]
             }
@@ -1756,7 +1756,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
                 }
               ]
             }
@@ -1771,7 +1771,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
                 }
               ]
             }
@@ -1791,14 +1791,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Bleed"
+                  "desc": "[OnSucceedAttack] Inflict 1 Bleed"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
                 }
               ]
             }
@@ -1813,14 +1813,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Bleed"
+                  "desc": "[OnSucceedAttack] Inflict 1 Bleed"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
                 }
               ]
             }
@@ -1839,21 +1839,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 5 Paralysis"
+                  "desc": "[OnSucceedAttack] Inflict 5 Paralysis"
                 }
               ]
             }
@@ -1872,7 +1872,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
                 }
               ]
             }
@@ -1886,7 +1886,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 4 Bleed"
+                  "desc": "[OnSucceedAttackHead] Inflict 4 Bleed"
                 }
               ]
             }
@@ -1905,14 +1905,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Damage +2"
+                  "desc": "[OnSucceedAttackHead] Damage +2"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Damage +2"
+                  "desc": "[OnSucceedAttackHead] Damage +2"
                 }
               ]
             },
@@ -1927,24 +1927,24 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Damage +3"
+                  "desc": "[OnSucceedAttackHead] Damage +3"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Damage +3"
+                  "desc": "[OnSucceedAttackHead] Damage +3"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] If target has less than 25% HP, use this Coin an additional time if target survives.\nHeads: +50% Damage for this Coin"
+                  "desc": "[OnSucceedAttackHead] If target has less than 25% HP, use this Coin an additional time if target survives.\nHeads: +50% Damage for this Coin"
                 },
                 {
-                  "desc": "[重新使用 - 正面命中] +50% Damage for this Coin"
+                  "desc": "[重新使用 - OnSucceedAttackHead] +50% Damage for this Coin"
                 }
               ]
             }
@@ -1963,10 +1963,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Damage +7"
+                  "desc": "[OnSucceedAttackHead] Damage +7"
                 },
                 {
-                  "desc": "[重新使用 - 正面命中] +100% Damage for this Coin"
+                  "desc": "[重新使用 - OnSucceedAttackHead] +100% Damage for this Coin"
                 }
               ]
             }
@@ -1985,7 +1985,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 3 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 3 Tremor"
                 }
               ]
             }
@@ -1999,7 +1999,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 3 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 3 Tremor"
                 }
               ]
             }
@@ -2051,14 +2051,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Next Coin has +2 Power"
+                  "desc": "[OnSucceedAttackHead] Next Coin has +2 Power"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Burst Tremor"
+                  "desc": "[OnSucceedAttack] Burst Tremor"
                 }
               ]
             }
@@ -2186,7 +2186,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain +1 Charge count"
+                  "desc": "[OnSucceedAttack] Gain +1 Charge count"
                 }
               ]
             }
@@ -2217,7 +2217,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain +3 Charge count"
+                  "desc": "[OnSucceedAttack] Gain +3 Charge count"
                 }
               ]
             }
@@ -2236,21 +2236,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [命中时] Inflict 1 Bleed"
+                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 1 Bleed"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [命中时] Inflict 1 Bleed"
+                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 1 Bleed"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [命中时] Inflict 1 Bleed"
+                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 1 Bleed"
                 }
               ]
             },
@@ -2265,21 +2265,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [命中时] Inflict 1 Bleed"
+                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 1 Bleed"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [命中时] Inflict 1 Bleed"
+                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 1 Bleed"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [命中时] Inflict 1 Bleed"
+                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 1 Bleed"
                 }
               ]
             },
@@ -2299,35 +2299,35 @@
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [命中时] Inflict 2 Fragile"
+                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 2 Fragile"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [命中时] Inflict 2 Fragile"
+                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 2 Fragile"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 1 Rupture"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 3 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 3 Rupture"
                 }
               ]
             }
@@ -2365,7 +2365,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Apply +1 Tremor count"
+                  "desc": "[OnSucceedAttackHead] Apply +1 Tremor count"
                 }
               ]
             }
@@ -2379,7 +2379,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Apply +1 Tremor count"
+                  "desc": "[OnSucceedAttack] Apply +1 Tremor count"
                 }
               ]
             }
@@ -2393,7 +2393,7 @@
         {
           "level": 1,
           "name": "Slide",
-          "desc": "[拼点胜利] Inflict 1 Defense Power Down",
+          "desc": "[WinDuel] Inflict 1 Defense Power Down",
           "coinlist": [
             {}
           ]
@@ -2401,7 +2401,7 @@
         {
           "level": 2,
           "name": "Slide",
-          "desc": "[拼点胜利] Inflict 3 Defense Power Down",
+          "desc": "[WinDuel] Inflict 3 Defense Power Down",
           "coinlist": [
             {}
           ]
@@ -2419,7 +2419,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Burst Tremor; Inflict 1 Blunt Fragility"
+                  "desc": "[OnSucceedAttack] Burst Tremor; Inflict 1 Blunt Fragility"
                 }
               ]
             }
@@ -2438,14 +2438,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Sinking"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Sinking"
                 }
               ]
             }
@@ -2459,20 +2459,20 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
                 },
                 {
-                  "desc": "[正面命中] Gain +2 Charge count"
+                  "desc": "[OnSucceedAttackHead] Gain +2 Charge count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
                 },
                 {
-                  "desc": "[正面命中] Gain +2 Charge count"
+                  "desc": "[OnSucceedAttackHead] Gain +2 Charge count"
                 }
               ]
             }
@@ -2491,7 +2491,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Apply +3 Sinking count"
+                  "desc": "[OnSucceedAttackHead] Apply +3 Sinking count"
                 }
               ]
             }
@@ -2505,7 +2505,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Apply +3 Sinking count"
+                  "desc": "[OnSucceedAttackHead] Apply +3 Sinking count"
                 }
               ]
             }
@@ -2524,28 +2524,28 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
                 }
               ]
             }
@@ -2572,7 +2572,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain 2 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
                 }
               ]
             }
@@ -2594,7 +2594,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] Gain 2 Poise"
                 }
               ]
             }
@@ -2614,14 +2614,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain +1 Poise count "
+                  "desc": "[OnSucceedAttackHead] Gain +1 Poise count "
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain +1 Poise count "
+                  "desc": "[OnSucceedAttackHead] Gain +1 Poise count "
                 }
               ]
             }
@@ -2636,14 +2636,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain +1 Poise count "
+                  "desc": "[OnSucceedAttack] Gain +1 Poise count "
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain +1 Poise count "
+                  "desc": "[OnSucceedAttack] Gain +1 Poise count "
                 }
               ]
             }
@@ -2663,14 +2663,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain 2 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[暴击时] At less than 25% HP, heal 100% of damage dealt"
+                  "desc": "[CriticalOnSucceedAttack] At less than 25% HP, heal 100% of damage dealt"
                 }
               ]
             }
@@ -2704,7 +2704,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Paralysis"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Paralysis"
                 }
               ]
             }
@@ -2718,7 +2718,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 3 Paralysis"
+                  "desc": "[OnSucceedAttack] Inflict 3 Paralysis"
                 }
               ]
             }
@@ -2737,21 +2737,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Attack Power Down"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Attack Power Down"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [命中时] Inflict 4 Tremor"
+                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 4 Tremor"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [命中时] Inflict 4 Tremor"
+                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 4 Tremor"
                 }
               ]
             }
@@ -2765,21 +2765,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Attack Power Down"
+                  "desc": "[OnSucceedAttack] Inflict 1 Attack Power Down"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [命中时] Inflict 8 Tremor; Apply +2 Tremor count"
+                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 8 Tremor; Apply +2 Tremor count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [命中时] Inflict 8 Tremor; Apply +2 Tremor count"
+                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 8 Tremor; Apply +2 Tremor count"
                 }
               ]
             }
@@ -2798,28 +2798,28 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Burst Tremor"
+                  "desc": "[OnSucceedAttack] Burst Tremor"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [命中时] Inflict 4 Rupture; Apply +2 Rupture count"
+                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 4 Rupture; Apply +2 Rupture count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [命中时] Inflict 4 Rupture; Apply +2 Rupture count"
+                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 4 Rupture; Apply +2 Rupture count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [命中时] Inflict 5 Fragile."
+                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 5 Fragile."
                 }
               ]
             }
@@ -2851,7 +2851,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
                 }
               ]
             }
@@ -2865,7 +2865,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
                 }
               ]
             }
@@ -2884,14 +2884,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
                 }
               ]
             }
@@ -2905,14 +2905,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
                 }
               ]
             }
@@ -2934,7 +2934,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Deal +20% Damage if target has +6 Bleed"
+                  "desc": "[OnSucceedAttack] Deal +20% Damage if target has +6 Bleed"
                 }
               ]
             }
@@ -2953,7 +2953,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain 2 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
                 }
               ]
             }
@@ -2967,7 +2967,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain 4 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 4 Poise"
                 }
               ]
             }
@@ -2986,20 +2986,20 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain 1 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 1 Poise"
                 },
                 {
-                  "desc": "[命中时] Inflict 1 Bleed"
+                  "desc": "[OnSucceedAttack] Inflict 1 Bleed"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain 2 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
                 },
                 {
-                  "desc": "[命中时] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
                 }
               ]
             }
@@ -3013,20 +3013,20 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] Gain 2 Poise"
                 },
                 {
-                  "desc": "[命中时] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain 3 Poise"
+                  "desc": "[OnSucceedAttack] Gain 3 Poise"
                 },
                 {
-                  "desc": "[命中时] Inflict 3 Bleed"
+                  "desc": "[OnSucceedAttack] Inflict 3 Bleed"
                 }
               ]
             }
@@ -3045,7 +3045,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[暴击时] Inflict 10 Bleed"
+                  "desc": "[CriticalOnSucceedAttack] Inflict 10 Bleed"
                 }
               ]
             }
@@ -3077,7 +3077,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[暴击时] Inflict 10 Bleed"
+                  "desc": "[CriticalOnSucceedAttack] Inflict 10 Bleed"
                 }
               ]
             }
@@ -3096,7 +3096,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Paralysis"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Paralysis"
                 }
               ]
             }
@@ -3110,7 +3110,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 3 Paralysis"
+                  "desc": "[OnSucceedAttackHead] Inflict 3 Paralysis"
                 }
               ]
             }
@@ -3130,7 +3130,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Defense Power Down"
+                  "desc": "[OnSucceedAttack] Inflict 2 Defense Power Down"
                 }
               ]
             }
@@ -3145,7 +3145,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 4 Defense Power Down"
+                  "desc": "[OnSucceedAttack] Inflict 4 Defense Power Down"
                 }
               ]
             }
@@ -3164,17 +3164,17 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 4 Defense Power Down"
+                  "desc": "[OnSucceedAttackHead] Inflict 4 Defense Power Down"
                 },
                 {
-                  "desc": "[命中时] Inflict 2 Defense Down"
+                  "desc": "[OnSucceedAttack] Inflict 2 Defense Down"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 3 Paralysis"
+                  "desc": "[OnSucceedAttackHead] Inflict 3 Paralysis"
                 }
               ]
             }
@@ -3193,7 +3193,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
                 }
               ]
             }
@@ -3207,7 +3207,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
                 }
               ]
             }
@@ -3221,7 +3221,7 @@
         {
           "level": 1,
           "name": "Halberd Combo",
-          "desc": "[拼点胜利] +10% damage",
+          "desc": "[WinDuel] +10% damage",
           "coinlist": [
             {},
             {},
@@ -3231,7 +3231,7 @@
         {
           "level": 2,
           "name": "Halberd Combo",
-          "desc": "[拼点胜利] +30% damage",
+          "desc": "[WinDuel] +30% damage",
           "coinlist": [
             {},
             {},
@@ -3246,7 +3246,7 @@
         {
           "level": 3,
           "name": "Ravaging Cut",
-          "desc": "[拼点胜利] Gain 1 Attack Power Up",
+          "desc": "[WinDuel] Gain 1 Attack Power Up",
           "coinlist": [
             {},
             {},
@@ -3280,7 +3280,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain +1 Poise count"
+                  "desc": "[OnSucceedAttackHead] Gain +1 Poise count"
                 }
               ]
             }
@@ -3295,7 +3295,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain +2 Poise count "
+                  "desc": "[OnSucceedAttack] Gain +2 Poise count "
                 }
               ]
             }
@@ -3314,21 +3314,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain 2 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain 1 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 1 Poise"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain 1 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 1 Poise"
                 }
               ]
             }
@@ -3342,21 +3342,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] Gain 2 Poise"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain 1 Poise"
+                  "desc": "[OnSucceedAttack] Gain 1 Poise"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain 1 Poise"
+                  "desc": "[OnSucceedAttack] Gain 1 Poise"
                 }
               ]
             }
@@ -3375,10 +3375,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 5 Paralysis"
+                  "desc": "[OnSucceedAttack] Inflict 5 Paralysis"
                 },
                 {
-                  "desc": "[命中时] Inflict 3 Bleed"
+                  "desc": "[OnSucceedAttack] Inflict 3 Bleed"
                 }
               ]
             }
@@ -3410,7 +3410,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Tremor"
                 }
               ]
             }
@@ -3424,7 +3424,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
                 }
               ]
             }
@@ -3444,10 +3444,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 3 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 3 Tremor"
                 },
                 {
-                  "desc": "[命中时] Inflict 1 Damage Down next turn"
+                  "desc": "[OnSucceedAttack] Inflict 1 Damage Down next turn"
                 }
               ]
             }
@@ -3462,10 +3462,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 6 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 6 Tremor"
                 },
                 {
-                  "desc": "[命中时] Inflict 2 Damage Down next turn"
+                  "desc": "[OnSucceedAttack] Inflict 2 Damage Down next turn"
                 }
               ]
             }
@@ -3484,10 +3484,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Burst Tremor"
+                  "desc": "[OnSucceedAttack] Burst Tremor"
                 },
                 {
-                  "desc": "[命中时] Inflict 2 Blunt Fragility"
+                  "desc": "[OnSucceedAttack] Inflict 2 Blunt Fragility"
                 }
               ]
             }
@@ -3506,7 +3506,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Sinking"
                 }
               ]
             },
@@ -3521,7 +3521,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 4 Sinking"
+                  "desc": "[OnSucceedAttackHead] Inflict 4 Sinking"
                 }
               ]
             },
@@ -3541,21 +3541,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] Gain 2 Poise"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
                 }
               ]
             }
@@ -3569,27 +3569,27 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] Gain 2 Poise"
                 },
                 {
-                  "desc": "[正面命中] Gain +1 Poise count"
+                  "desc": "[OnSucceedAttackHead] Gain +1 Poise count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
                 },
                 {
-                  "desc": "[正面命中] Apply +1 Sinking count"
+                  "desc": "[OnSucceedAttackHead] Apply +1 Sinking count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
                 }
               ]
             }
@@ -3608,7 +3608,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Raise user's stagger threshold by 50% of damage dealt"
+                  "desc": "[OnSucceedAttackHead] Raise user's stagger threshold by 50% of damage dealt"
                 }
               ]
             }
@@ -3641,7 +3641,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
                 }
               ]
             },
@@ -3657,7 +3657,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
                 }
               ]
             },
@@ -3737,7 +3737,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain 2 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
                 }
               ]
             }
@@ -3751,7 +3751,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain 4 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 4 Poise"
                 }
               ]
             }
@@ -3771,7 +3771,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain 1 Slash DMG Up next turn"
+                  "desc": "[OnSucceedAttackHead] Gain 1 Slash DMG Up next turn"
                 }
               ]
             }
@@ -3780,13 +3780,13 @@
         {
           "level": 2,
           "name": "Acupuncture",
-          "desc": "[拼点胜利] Gain +1 Poise count",
+          "desc": "[WinDuel] Gain +1 Poise count",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Gain 2 Slash DMG Up next turn"
+                  "desc": "[OnSucceedAttackHead] Gain 2 Slash DMG Up next turn"
                 }
               ]
             }
@@ -3806,7 +3806,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[暴击时] Raise first stagger threshold by 20% of damage dealt"
+                  "desc": "[CriticalOnSucceedAttack] Raise first stagger threshold by 20% of damage dealt"
                 }
               ]
             }
@@ -3838,7 +3838,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Give 1 Protection to the ally with the lowest speed"
+                  "desc": "[OnSucceedAttack] Give 1 Protection to the ally with the lowest speed"
                 }
               ]
             }
@@ -3852,7 +3852,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Give 2 Protection to the ally with the lowest speed"
+                  "desc": "[OnSucceedAttack] Give 2 Protection to the ally with the lowest speed"
                 }
               ]
             }
@@ -3871,7 +3871,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Give 1 Damage Up to the ally with the lowest speed"
+                  "desc": "[OnSucceedAttackHead] Give 1 Damage Up to the ally with the lowest speed"
                 }
               ]
             }
@@ -3885,7 +3885,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Give 2 Damage Up to the ally with the lowest speed"
+                  "desc": "[OnSucceedAttackHead] Give 2 Damage Up to the ally with the lowest speed"
                 }
               ]
             }
@@ -3904,10 +3904,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 5 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 5 Sinking"
                 },
                 {
-                  "desc": "[命中时] Inflict 2 Attack Power Down"
+                  "desc": "[OnSucceedAttack] Inflict 2 Attack Power Down"
                 }
               ]
             }
@@ -3926,7 +3926,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
                 }
               ]
             }
@@ -3940,7 +3940,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 4 Rupture"
+                  "desc": "[OnSucceedAttackHead] Inflict 4 Rupture"
                 }
               ]
             }
@@ -3959,7 +3959,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Apply +1 Rupture count"
+                  "desc": "[OnSucceedAttackHead] Apply +1 Rupture count"
                 }
               ]
             }
@@ -3973,10 +3973,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Apply +1 Rupture count "
+                  "desc": "[OnSucceedAttack] Apply +1 Rupture count "
                 },
                 {
-                  "desc": "[正面命中] Inflict 1 Pierce Fragility"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Pierce Fragility"
                 }
               ]
             }
@@ -3995,17 +3995,17 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] +10% Damage if target has Rupture"
+                  "desc": "[OnSucceedAttack] +10% Damage if target has Rupture"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] +10% Damage if target has Rupture"
+                  "desc": "[OnSucceedAttack] +10% Damage if target has Rupture"
                 },
                 {
-                  "desc": "[正面命中] Heal by 30% of damage dealt"
+                  "desc": "[OnSucceedAttackHead] Heal by 30% of damage dealt"
                 }
               ]
             }
@@ -4024,14 +4024,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
                 }
               ]
             }
@@ -4045,14 +4045,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
                 }
               ]
             }
@@ -4073,7 +4073,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 3 Burn"
+                  "desc": "[OnSucceedAttack] Inflict 3 Burn"
                 }
               ]
             }
@@ -4087,24 +4087,24 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 3 Burn"
+                  "desc": "[OnSucceedAttack] Inflict 3 Burn"
                 },
                 {
-                  "desc": "[命中时] If target has 6+ Burn, gain 1 Attack Level Up next turn"
+                  "desc": "[OnSucceedAttack] If target has 6+ Burn, gain 1 Attack Level Up next turn"
                 }
               ]
             }
@@ -4123,28 +4123,28 @@
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 3 Burn"
+                  "desc": "[OnSucceedAttack] Inflict 3 Burn"
                 }
               ]
             }
@@ -4158,12 +4158,12 @@
         {
           "level": 1,
           "name": "Hack",
-          "desc": "[拼点胜利] +20% damage",
+          "desc": "[WinDuel] +20% damage",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Heal 30% of damage dealt"
+                  "desc": "[OnSucceedAttackHead] Heal 30% of damage dealt"
                 }
               ]
             },
@@ -4173,12 +4173,12 @@
         {
           "level": 2,
           "name": "Hack",
-          "desc": "[拼点胜利] +40% damage",
+          "desc": "[WinDuel] +40% damage",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Heal 50% of damage dealt"
+                  "desc": "[OnSucceedAttackHead] Heal 50% of damage dealt"
                 }
               ]
             },
@@ -4198,7 +4198,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 5 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 5 Rupture"
                 }
               ]
             }
@@ -4212,10 +4212,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Inflict 5 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 5 Rupture"
                 },
                 {
-                  "desc": "[正面命中] Heal 50% of damage dealt"
+                  "desc": "[OnSucceedAttackHead] Heal 50% of damage dealt"
                 }
               ]
             }
@@ -4234,28 +4234,28 @@
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Deal 30% of damage dealt as bonus damage if target has Rupture"
+                  "desc": "[OnSucceedAttack] Deal 30% of damage dealt as bonus damage if target has Rupture"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Deal 30% of damage dealt as bonus damage if target has Rupture"
+                  "desc": "[OnSucceedAttack] Deal 30% of damage dealt as bonus damage if target has Rupture"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[命中时] Deal 30% of damage dealt as bonus damage if target has Rupture"
+                  "desc": "[OnSucceedAttack] Deal 30% of damage dealt as bonus damage if target has Rupture"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[正面命中] Heal 100% of damage dealt"
+                  "desc": "[OnSucceedAttackHead] Heal 100% of damage dealt"
                 }
               ]
             }
