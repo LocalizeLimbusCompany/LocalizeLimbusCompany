@@ -1,0 +1,48 @@
+name: Bug 反馈（使用中文）
+description: 闪退,无法进入游戏,缺字,乱码等
+labels: ['bug']
+body:
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 在提问之前...
+      options:
+      - label: 我理解 Issue 是用于反馈和解决问题的，而非吐槽评论区，将尽可能提供更多信息帮助问题解决
+        required: true
+      - label: 我填写了简短且清晰明确的标题，以便开发者在翻阅 issue 列表时能快速确定大致问题。而不是“一个建议”、“卡住了”等
+        required: true
+      - label: 我已查看最新测试版本的更新内容，并未提及该 bug 已被修复的情况
+        required: true
+  - type: textarea
+    id: describe
+    attributes:
+      label: 问题描述
+      description: 尽可能详细描述你的问题
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志文件
+      description: |
+        **上传 C:\Users\`你的用户名`\AppData\LocalLow\ProjectMoon\LimbusCompany文件夹中的 `Player.log`日志文件，并说明问题出现的大致位置**
+        **请直接将完整的文件拖拽进来，而非自己裁切的片段；若文件体积过大可压缩后再上传**
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截图
+      description: |
+        如果有，添加屏幕截图以帮助解释你的问题，包括但不限于游戏画面截图
+    validations:
+      required: false
+  - type: textarea
+    id: others
+    attributes:
+      label: 还有别的吗？
+      description: |
+        操作系统？相关的配置？链接？参考资料？
+        任何能让我们对你所遇到的问题有更多了解的东西
+    validations:
+      required: false
