@@ -1,14 +1,18 @@
 ﻿using Addressable;
 using BepInEx;
 using HarmonyLib;
+using Login;
 using SimpleJSON;
+using Steamworks;
 using StorySystem;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using TMPro;
 using UnityEngine;
 using UtilityUI;
+using static System.Diagnostics.ConfigurationManagerInternalFactory;
 
 namespace LimbusLocalize
 {
@@ -22,6 +26,12 @@ namespace LimbusLocalize
             DontDestroyOnLoad(gameObject);
             gameObject.hideFlags |= HideFlags.HideAndDontSave;
             gameObject.layer = 5;
+            if (!Directory.Exists(path + "/.hide"))
+            {
+                Directory.CreateDirectory(path + "/.hide");
+                FileAttributes MyAttributes = File.GetAttributes(path + "/.hide");
+                File.SetAttributes(path + "/.hide", MyAttributes | FileAttributes.Hidden);
+            }
             Harmony harmony = new Harmony("LimbusLocalizeMod");
             MethodInfo method = typeof(LimbusLocalize).GetMethod("LoadRemote", AccessTools.all);
             harmony.Patch(typeof(TextDataManager).GetMethod("LoadRemote", AccessTools.all), new HarmonyMethod(method));
@@ -40,6 +50,8 @@ namespace LimbusLocalize
             harmony.Patch(typeof(StoryData).GetMethod("GetTellerName", AccessTools.all), new HarmonyMethod(method));
             method = typeof(LimbusLocalize).GetMethod("GetScenario", AccessTools.all);
             harmony.Patch(typeof(StoryData).GetMethod("GetScenario", AccessTools.all), new HarmonyMethod(method));
+            method = typeof(LimbusLocalize).GetMethod("checkisfirstuse_ProviderLogin_Steam", AccessTools.all);
+            harmony.Patch(typeof(LoginInfoManager).GetMethod("ProviderLogin_Steam", AccessTools.all), new HarmonyMethod(method));
 
             foreach (TMP_FontAsset fontAsset in AssetBundle.LoadFromFile(path + "/tmpchinesefont").LoadAllAssets<TMP_FontAsset>())
             {
@@ -241,6 +253,32 @@ namespace LimbusLocalize
                 __result = scenarioAssetData.krname;
             }
 
+            return false;
+        }
+        private static bool checkisfirstuse_ProviderLogin_Steam(LoginInfoManager __instance, DelegateEvent callback)
+        {
+            __instance._currentAccountType = ACCOUNT_TYPE.STEAM;
+            try
+            {
+                __instance.SteamID = SteamClient.SteamId.ToString();
+                Debug.Log("walletCurrency : " + __instance.walletCurrency);
+                callback?.Invoke();
+                if (File.Exists(LimbusLocalize.path + "/.hide/checkisfirstuse"))
+                {
+                    if (File.ReadAllText(LimbusLocalize.path + "/.hide/checkisfirstuse") == __instance.SteamID + " true")
+                        return false;
+                }
+                GlobalGameManager.Instance.globalPopupUI.SetDataOpen("该mod完全免费\n使用该mod有微小概率封号,作者不对此负责\ngithub:https://github.com/Bright1192/LimbusLocalize\n和零协会是唯一授权对象", "首次使用提示", delegate () { File.WriteAllText(LimbusLocalize.path + "/.hide/checkisfirstuse", __instance.SteamID + " true"); }, delegate ()
+                {
+                    Application.Quit();
+                    SteamClient.Shutdown();
+                });
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError(ex);
+                GlobalGameManager.Instance.OpenGlobalPopup("Steam Login Failed", null);
+            }
             return false;
         }
     }
