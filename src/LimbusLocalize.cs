@@ -63,29 +63,9 @@ namespace LimbusLocalize
         private static bool set_fontMaterial(TextMeshProUGUI __instance, Material value)
         {
             value = __instance.font.material;
-            if (__instance.fontSize == 50f)
+            if (__instance.fontSize >= 50f)
             {
-                __instance.fontSize = 35f;
-            }
-            if (__instance.fontSize == 60f)
-            {
-                __instance.fontSize = 32f;
-            }
-            if (__instance.fontSize == 70f)
-            {
-                __instance.fontSize = 42f;
-            }
-            if (__instance.fontSize == 80f)
-            {
-                __instance.fontSize = 56f;
-            }
-            if (__instance.fontSize == 100f)
-            {
-                __instance.fontSize = 53f;
-            }
-            if (__instance.fontSize == 160f)
-            {
-                __instance.fontSize = 115f;
+                __instance.fontSize -= __instance.fontSize / 50f * 20f;
             }
             if (__instance.m_sharedMaterial != null && __instance.m_sharedMaterial.GetInstanceID() == value.GetInstanceID())
             {
@@ -268,10 +248,13 @@ namespace LimbusLocalize
                     if (File.ReadAllText(LimbusLocalize.path + "/.hide/checkisfirstuse") == __instance.SteamID + " true")
                         return false;
                 }
-                GlobalGameManager.Instance.globalPopupUI.SetDataOpen("该mod完全免费\n使用该mod有微小概率封号,作者不对此负责\ngithub:https://github.com/Bright1192/LimbusLocalize\n和零协会是唯一授权对象", "首次使用提示", delegate () { File.WriteAllText(LimbusLocalize.path + "/.hide/checkisfirstuse", __instance.SteamID + " true"); }, delegate ()
+                GlobalGameManager.Instance.globalPopupUI.SetDataOpen("该mod完全免费\n使用该mod有微小概率封号,作者不对此负责\ngithub:https://github.com/Bright1192/LimbusLocalize\n和零协会是唯一授权对象", "首次使用提示", delegate ()
                 {
-                    Application.Quit();
+                    File.WriteAllText(LimbusLocalize.path + "/.hide/checkisfirstuse", __instance.SteamID + " true");
+                }, delegate ()
+                {
                     SteamClient.Shutdown();
+                    Application.Quit();
                 });
             }
             catch (Exception ex)
