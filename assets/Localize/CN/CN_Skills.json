@@ -6,7 +6,7 @@
         {
           "level": 1,
           "name": "防御",
-          "desc": "频点胜利时，对方的混乱阈值前移"
+          "desc": "拼点胜利时，对方的混乱阈值前移"
         }
       ]
     },
@@ -16,7 +16,7 @@
         {
           "level": 1,
           "name": "闪避",
-          "desc": "拼点成功时，自身的混乱阈值后移"
+          "desc": "拼点胜利时，自身的混乱阈值后移"
         }
       ]
     },
@@ -136,7 +136,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 施加1层爆裂"
+                  "desc": "[OnSucceedAttackHead] 施加1层破裂"
                 }
               ]
             }
@@ -151,7 +151,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 施加2层爆裂"
+                  "desc": "[OnSucceedAttackHead] 施加2层破裂"
                 }
               ]
             }
@@ -530,7 +530,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 消耗5层充能，下一回合获得2层强壮。施加3层麻痹"
+                  "desc": "[OnSucceedAttack] 消耗5层充能，施加3层麻痹，下一回合施加2层虚弱"
                 }
               ]
             }
@@ -543,13 +543,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Sole Strike",
+          "name": "单打独斗",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
+                  "desc": "[OnSucceedAttackHead] 施加1层破裂"
                 }
               ]
             }
@@ -557,13 +557,13 @@
         },
         {
           "level": 2,
-          "name": "Sole Strike",
+          "name": "单打独斗",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttack] 施加2层破裂"
                 }
               ]
             }
@@ -576,27 +576,27 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Deep Cuts",
+          "name": "深度割裂",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttackHead] 下一回合获得1层呼吸法"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttackHead] 下一回合获得1层呼吸法"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Haste next turn"
+                  "desc": "[OnSucceedAttackHead] 下一回合获得2层迅捷"
                 }
               ]
             }
@@ -604,27 +604,27 @@
         },
         {
           "level": 2,
-          "name": "Deep Cuts",
+          "name": "深度割裂",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttack] 下一回合获得1层呼吸法"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttack] 下一回合获得1层呼吸法"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 4 Haste next turn"
+                  "desc": "[OnSucceedAttack] 下一回合获得4层迅捷"
                 }
               ]
             }
@@ -637,14 +637,14 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Opportunistic Slash",
-          "desc": "Coin Power +3 If user took no damage last turn",
+          "name": "藏器待时",
+          "desc": "如果上一回合没有受到任何伤害，硬币威力+3",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 5 Rupture"
+                  "desc": "[OnSucceedAttackHead] 施加5层破裂"
                 }
               ]
             }
@@ -671,7 +671,7 @@
         {
           "level": 1,
           "name": "Joust",
-          "desc": "[WinDuel] Gain 1 Haste next turn",
+          "desc": "[WinDuel] 下一回合获得1层迅捷",
           "coinlist": [
             {}
           ]
@@ -679,7 +679,7 @@
         {
           "level": 2,
           "name": "Joust",
-          "desc": "[WinDuel] Gain 2 Haste next turn",
+          "desc": "[WinDuel] 下一回合获得2层迅捷",
           "coinlist": [
             {}
           ]
@@ -713,7 +713,7 @@
         {
           "level": 3,
           "name": "为了正义！",
-          "desc": "Coin Power +2 at 10+ Speed",
+          "desc": "速度值高于10时，硬币威力+2",
           "coinlist": [
             {},
             {},
@@ -727,13 +727,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Rip",
+          "name": "次元裂隙",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
+                  "desc": "[OnSucceedAttackHead] 施加1层破裂"
                 }
               ]
             }
@@ -741,16 +741,16 @@
         },
         {
           "level": 2,
-          "name": "Rip",
+          "name": "次元裂隙",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Rupture"
+                  "desc": "[OnSucceedAttack] 施加1层破裂"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +2 Charge count"
+                  "desc": "[OnSucceedAttackHead] 获得2层充能"
                 }
               ]
             }
@@ -771,7 +771,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Fragile"
+                  "desc": "[OnSucceedAttackHead] 施加1层易损"
                 }
               ]
             }
@@ -785,21 +785,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +4 Charge count"
+                  "desc": "[OnSucceedAttack] 获得4层充能"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +4 Charge count"
+                  "desc": "[OnSucceedAttack] 获得4层充能"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Fragile"
+                  "desc": "[OnSucceedAttackHead] 施加2层易损"
                 }
               ]
             }
@@ -812,8 +812,8 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Rip Space",
-          "desc": "[WhenUse] Spend 10 Charge count to gain +4 Skill Power\nAt less than 10 Charge count, lose 20% HP",
+          "name": "空间撕裂",
+          "desc": "[WhenUse] 消耗10层充能，技能威力+4\n充能层数低于10时，失去最大体力20%的体力",
           "coinlist": [
             {
               "coindescs": [
@@ -840,7 +840,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 5 Rupture"
+                  "desc": "[OnSucceedAttackHead] 施加5层破裂"
                 }
               ]
             }
@@ -853,13 +853,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Catch Breath",
+          "name": "喘息未定",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Poise next turn"
+                  "desc": "[OnSucceedAttackHead] 下一回合获得2层呼吸法"
                 }
               ]
             }
@@ -873,7 +873,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise next turn"
+                  "desc": "[OnSucceedAttack] 下一回合获得2层呼吸法"
                 }
               ]
             }
@@ -892,14 +892,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttackHead] 下一回合获得1层呼吸法"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Haste next turn"
+                  "desc": "[OnSucceedAttack] 下一回合获得2层迅捷"
                 }
               ]
             }
@@ -908,19 +908,19 @@
         {
           "level": 2,
           "name": "Dual Strike",
-          "desc": "[WhenUse] At less than 50% HP, gain 2 Haste next turn",
+          "desc": "[WhenUse] 体力低于50%时，下一回合获得2层迅捷",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttack] 下一回合获得1层呼吸法"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Haste next turn"
+                  "desc": "[OnSucceedAttack] 下一回合获得2层迅捷"
                 }
               ]
             }
@@ -933,8 +933,8 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Overbreathe",
-          "desc": "Skill Power +3 at 10+ Speed",
+          "name": "过度呼吸",
+          "desc": "速度值高于10时，技能威力+3",
           "coinlist": [
             {}
           ]
@@ -952,7 +952,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttackHead] 下一回合获得1层呼吸法"
                 }
               ]
             }
@@ -966,7 +966,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise next turn"
+                  "desc": "[OnSucceedAttack] 下一回合获得2层呼吸法"
                 }
               ]
             }
@@ -1047,7 +1047,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttackHead] 施加2层破裂"
                 }
               ]
             }
@@ -1061,7 +1061,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttack] 施加2层破裂"
                 }
               ]
             }
@@ -1145,7 +1145,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Paralysis"
+                  "desc": "[OnSucceedAttackHead] 施加1层麻痹"
                 }
               ]
             }
@@ -1159,7 +1159,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Paralysis"
+                  "desc": "[OnSucceedAttack] 施加3层麻痹"
                 }
               ]
             }
@@ -1178,14 +1178,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttack] 施加2层流血"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Apply +1 Bleed count "
+                  "desc": "[OnSucceedAttackHead] 目标的流血强度+1 "
                 }
               ]
             }
@@ -1199,14 +1199,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttack] 施加2层流血"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Apply +1 Bleed count "
+                  "desc": "[OnSucceedAttackHead] 目标的流血强度+1 "
                 },
                 {
                   "desc": "[OnSucceedAttackHead] Inflict 2 Damage Down"
@@ -1228,7 +1228,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttackHead] 施加2层流血"
                 }
               ]
             },
@@ -1257,14 +1257,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttackHead] 施加1层震颤"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttackHead] 施加1层震颤"
                 }
               ]
             }
@@ -1278,14 +1278,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttack] 施加1层震颤"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttack] 施加1层震颤"
                 }
               ]
             }
@@ -1372,14 +1372,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] 施加1层烧伤"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] 施加1层烧伤"
                 }
               ]
             }
@@ -1393,14 +1393,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttack] 施加1层烧伤"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttack] 施加1层烧伤"
                 }
               ]
             }
@@ -1419,14 +1419,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Burn"
+                  "desc": "[OnSucceedAttack] 施加2层烧伤"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] 施加1层烧伤"
                 }
               ]
             }
@@ -1440,17 +1440,17 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Burn"
+                  "desc": "[OnSucceedAttack] 施加2层烧伤"
                 },
                 {
-                  "desc": "[OnSucceedAttack] If target has 6+ Burn, inflict 2 Burn to 2 random enemies"
+                  "desc": "[OnSucceedAttack] 如果目标烧伤层数不低于6，对随机2个敌人施加2层烧伤"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttack] 施加1层烧伤"
                 }
               ]
             }
@@ -1469,7 +1469,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 3 Burn"
+                  "desc": "[OnSucceedAttackHead] 施加3层烧伤"
                 }
               ]
             },
@@ -1486,7 +1486,7 @@
                   "desc": "[OnSucceedAttack] Apply +3 Burn count"
                 },
                 {
-                  "desc": "[OnSucceedAttack] If target has 6+ Burn, inflict 3 Burn to 2 random enemies"
+                  "desc": "[OnSucceedAttack] 如果目标烧伤层数不低于6，对随机2个敌人施加3层烧伤"
                 }
               ]
             }
@@ -1551,21 +1551,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
+                  "desc": "[OnSucceedAttackHead] 施加1层破裂"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
+                  "desc": "[OnSucceedAttackHead] 施加1层破裂"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttack] 施加2层破裂"
                 }
               ]
             }
@@ -1579,21 +1579,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
+                  "desc": "[OnSucceedAttackHead] 施加1层破裂"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
+                  "desc": "[OnSucceedAttackHead] 施加1层破裂"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                  "desc": "[OnSucceedAttack] 施加3层破裂"
                 },
                 {
                   "desc": "[OnSucceedAttack] Spend 3 Charge count to inflict 2 Slash Fragility"
@@ -1655,7 +1655,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttackHead] 施加2层沉沦"
                 }
               ]
             }
@@ -1669,7 +1669,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttack] 施加2层沉沦"
                 }
               ]
             }
@@ -1688,14 +1688,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttackHead] 施加1层沉沦"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttackHead] 施加2层破裂"
                 }
               ]
             }
@@ -1704,19 +1704,19 @@
         {
           "level": 2,
           "name": "Dual Strike",
-          "desc": "Coin Power +1 If user took no damage last turn",
+          "desc": "如果上一回合没有受到任何伤害，硬币威力+1",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] 施加1层沉沦"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttack] 施加2层破裂"
                 }
               ]
             }
@@ -1730,7 +1730,7 @@
         {
           "level": 3,
           "name": "Whirlwind",
-          "desc": "Coin Power +2 If user took no damage last turn",
+          "desc": "如果上一回合没有受到任何伤害，硬币威力+2",
           "coinlist": [
             {},
             {
@@ -1756,7 +1756,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttackHead] 施加2层流血"
                 }
               ]
             }
@@ -1771,7 +1771,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttack] 施加2层流血"
                 }
               ]
             }
@@ -1791,14 +1791,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Bleed"
+                  "desc": "[OnSucceedAttack] 施加1层流血"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttack] 施加2层流血"
                 }
               ]
             }
@@ -1807,20 +1807,20 @@
         {
           "level": 2,
           "name": "斩破长空",
-          "desc": "[BeforeAttack] If target has less than 4 Bleed, use Coin 1 and 2 an additional time",
+          "desc": "[BeforeAttack] 如果目标的流血层数低于4，第1和2颗骰子将重复使用一遍",
           "keywords": [],
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Bleed"
+                  "desc": "[OnSucceedAttack] 施加1层流血"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttack] 施加2层流血"
                 }
               ]
             }
@@ -1834,26 +1834,26 @@
         {
           "level": 3,
           "name": "冲天烈火",
-          "desc": "[StartBattle] This skill applies 1 additional stacks of Bleed and Paralysis",
+          "desc": "[StartBattle] 该技能施加的麻痹与流血层数+1",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttackHead] 施加2层流血"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttackHead] 施加2层流血"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 5 Paralysis"
+                  "desc": "[OnSucceedAttack] 施加5层麻痹"
                 }
               ]
             }
@@ -1872,7 +1872,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttackHead] 施加2层流血"
                 }
               ]
             }
@@ -1886,7 +1886,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 4 Bleed"
+                  "desc": "[OnSucceedAttackHead] 施加4层流血"
                 }
               ]
             }
@@ -1905,14 +1905,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Damage +2"
+                  "desc": "[OnSucceedAttackHead] 造成的伤害+2"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Damage +2"
+                  "desc": "[OnSucceedAttackHead] 造成的伤害+2"
                 }
               ]
             },
@@ -1927,14 +1927,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Damage +3"
+                  "desc": "[OnSucceedAttackHead] 造成的伤害+3"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Damage +3"
+                  "desc": "[OnSucceedAttackHead] 造成的伤害+3"
                 }
               ]
             },
@@ -1958,15 +1958,15 @@
         {
           "level": 3,
           "name": "Mutilate",
-          "desc": "[EnemyKill] Use this skill 1 more time",
+          "desc": "[EnemyKill] 再次使用该技能",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Damage +7"
+                  "desc": "[OnSucceedAttackHead] 造成的伤害+7"
                 },
                 {
-                  "desc": "[ReUseOnSucceedAttackHead] +100% Damage for this Coin"
+                  "desc": "[ReUseOnSucceedAttackHead] 这个硬币的伤害+100%"
                 }
               ]
             }
@@ -1985,7 +1985,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 3 Tremor"
+                  "desc": "[OnSucceedAttackHead] 施加3层震颤"
                 }
               ]
             }
@@ -1999,7 +1999,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Tremor"
+                  "desc": "[OnSucceedAttack] 施加3层震颤"
                 }
               ]
             }
@@ -2085,16 +2085,16 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Extreme Edge",
-          "desc": "+1 Skill Power at less than 25% HP",
+          "name": "极意之剑",
+          "desc": "体力低于25%时，技能威力+1",
           "coinlist": [
             {}
           ]
         },
         {
           "level": 2,
-          "name": "Extreme Edge",
-          "desc": "+2 Skill Power at less than 25% HP",
+          "name": "极意之剑",
+          "desc": "体力低于25%时，技能威力+2",
           "coinlist": [
             {}
           ]
@@ -2107,7 +2107,7 @@
         {
           "level": 1,
           "name": "飞剑刺杀",
-          "desc": "+1 Skill Power at less than 25% HP",
+          "desc": "体力低于25%时，技能威力+1",
           "coinlist": [
             {}
           ]
@@ -2115,7 +2115,7 @@
         {
           "level": 2,
           "name": "飞剑刺杀",
-          "desc": "+2 Skill Power at less than 25% HP",
+          "desc": "体力低于25%时，技能威力+2",
           "coinlist": [
             {}
           ]
@@ -2128,19 +2128,19 @@
         {
           "level": 3,
           "name": "闪击战术",
-          "desc": "+2 Skill Power at less than 25% HP",
+          "desc": "体力低于25%时，技能威力+2",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[BeforeAttack] Lose 5 HP; +50% Skill Damage for this Coin"
+                  "desc": "[BeforeAttack] 失去5点体力，该硬币的技能伤害+50%"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[BeforeAttack] Lose 5 HP; +50% Skill Damage for this Coin"
+                  "desc": "[BeforeAttack] 失去5点体力，该硬币的技能伤害+50%"
                 }
               ]
             }
@@ -2172,21 +2172,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo"
+                  "desc": "消耗1层弹药"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo"
+                  "desc": "消耗1层弹药"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +1 Charge count"
+                  "desc": "[OnSucceedAttack] 获得1层充能"
                 }
               ]
             }
@@ -2200,7 +2200,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo"
+                  "desc": "消耗1层弹药"
                 },
                 {
                   "desc": ""
@@ -2210,14 +2210,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo"
+                  "desc": "消耗1层弹药"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +3 Charge count"
+                  "desc": "[OnSucceedAttack] 获得3层充能"
                 }
               ]
             }
@@ -2236,21 +2236,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 1 Bleed"
+                  "desc": "消耗1层弹药 [OnSucceedAttack] 施加1层流血"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 1 Bleed"
+                  "desc": "消耗1层弹药 [OnSucceedAttack] 施加1层流血"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 1 Bleed"
+                  "desc": "消耗1层弹药 [OnSucceedAttack] 施加1层流血"
                 }
               ]
             },
@@ -2265,21 +2265,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 1 Bleed"
+                  "desc": "消耗1层弹药 [OnSucceedAttack] 施加1层流血"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 1 Bleed"
+                  "desc": "消耗1层弹药 [OnSucceedAttack] 施加1层流血"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 1 Bleed"
+                  "desc": "消耗1层弹药 [OnSucceedAttack] 施加1层流血"
                 }
               ]
             },
@@ -2294,40 +2294,40 @@
         {
           "level": 1,
           "name": "快速压制",
-          "desc": "Coin Power +2 at 6+ Speed",
+          "desc": "速度值高于6时，硬币威力+2",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 2 Fragile"
+                  "desc": "消耗1层弹药 [OnSucceedAttack] 施加2层易损"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 2 Fragile"
+                  "desc": "消耗1层弹药 [OnSucceedAttack] 施加2层易损"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Rupture"
+                  "desc": "[OnSucceedAttack] 施加1层破裂"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttack] 施加2层破裂"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                  "desc": "[OnSucceedAttack] 施加3层破裂"
                 }
               ]
             }
@@ -2432,20 +2432,20 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Mind Strike",
+          "name": "精神打击",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttackHead] 施加1层沉沦"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttackHead] 施加1层沉沦"
                 }
               ]
             }
@@ -2453,26 +2453,26 @@
         },
         {
           "level": 2,
-          "name": "Mind Strike",
+          "name": "精神打击",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] 施加1层沉沦"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +2 Charge count"
+                  "desc": "[OnSucceedAttackHead] 获得2层充能"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] 施加1层沉沦"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +2 Charge count"
+                  "desc": "[OnSucceedAttackHead] 获得2层充能"
                 }
               ]
             }
@@ -2485,13 +2485,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Flaying Surge",
+          "name": "电浪鞭挞",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Apply +3 Sinking count"
+                  "desc": "[OnSucceedAttackHead] 目标的沉沦强度+3"
                 }
               ]
             }
@@ -2499,13 +2499,13 @@
         },
         {
           "level": 2,
-          "name": "Flaying Surge",
-          "desc": "[WhenUse] Gain +5 Charge count",
+          "name": "电浪鞭挞",
+          "desc": "[WhenUse] 获得5层充能",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Apply +3 Sinking count"
+                  "desc": "[OnSucceedAttackHead] 目标的沉沦强度+3"
                 }
               ]
             }
@@ -2518,34 +2518,34 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Mind Whip",
-          "desc": "Spend all Charge count.\nAt less than 10 Charge count, target a random unit for an unopposed attack",
+          "name": "精神鞭挞",
+          "desc": "消耗所有充能\n充能低于10层时，对随机1个角色进行单方面攻击",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] 施加1层沉沦"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] 施加1层沉沦"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] 施加1层沉沦"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] 施加1层沉沦"
                 }
               ]
             }
@@ -2572,7 +2572,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
+                  "desc": "[OnSucceedAttackHead] 获得2层呼吸法"
                 }
               ]
             }
@@ -2581,7 +2581,7 @@
         {
           "level": 2,
           "name": "飞剑刺杀",
-          "desc": "At less than 50% HP, this skill applies 1 additional stack of Poise",
+          "desc": "体力低于50%时，该技能施加的呼吸法层数+1",
           "keywords": [],
           "coinlist": [
             {
@@ -2594,7 +2594,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] 获得2层呼吸法"
                 }
               ]
             }
@@ -2614,14 +2614,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +1 Poise count "
+                  "desc": "[OnSucceedAttackHead] 自身的呼吸法强度+1"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +1 Poise count "
+                  "desc": "[OnSucceedAttackHead] 自身的呼吸法强度+1"
                 }
               ]
             }
@@ -2630,20 +2630,20 @@
         {
           "level": 2,
           "name": "闪击战术",
-          "desc": "[WhenUse] At less than 50% HP, use Coin 1 and 2 an additional time",
+          "desc": "[WhenUse] 体力低于50%时，第1和2颗骰子将重复使用一遍",
           "keywords": [],
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +1 Poise count "
+                  "desc": "[OnSucceedAttack] 自身的呼吸法强度+1"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +1 Poise count "
+                  "desc": "[OnSucceedAttack] 自身的呼吸法强度+1"
                 }
               ]
             }
@@ -2656,21 +2656,21 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Catch Breath",
+          "name": "喘息未定",
           "desc": "",
           "keywords": [],
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
+                  "desc": "[OnSucceedAttackHead] 获得2层呼吸法"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[CriticalOnSucceedAttack] At less than 25% HP, heal 100% of damage dealt"
+                  "desc": "[CriticalOnSucceedAttack] 体力低于25%时，恢复与造成伤害等量的体力"
                 }
               ]
             }
@@ -2704,7 +2704,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Paralysis"
+                  "desc": "[OnSucceedAttackHead] 施加1层麻痹"
                 }
               ]
             }
@@ -2718,7 +2718,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Paralysis"
+                  "desc": "[OnSucceedAttack] 施加3层麻痹"
                 }
               ]
             }
@@ -2744,14 +2744,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 4 Tremor"
+                  "desc": "消耗1层弹药 [OnSucceedAttack] 施加4层震颤"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 4 Tremor"
+                  "desc": "消耗1层弹药 [OnSucceedAttack] 施加4层震颤"
                 }
               ]
             }
@@ -2772,14 +2772,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 8 Tremor; Apply +2 Tremor count"
+                  "desc": "消耗1层弹药 [OnSucceedAttack] Inflict 8 Tremor; Apply +2 Tremor count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 8 Tremor; Apply +2 Tremor count"
+                  "desc": "消耗1层弹药 [OnSucceedAttack] Inflict 8 Tremor; Apply +2 Tremor count"
                 }
               ]
             }
@@ -2805,21 +2805,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 4 Rupture; Apply +2 Rupture count"
+                  "desc": "消耗1层弹药 [OnSucceedAttack] 施加4层破裂; Apply +2 Rupture count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 4 Rupture; Apply +2 Rupture count"
+                  "desc": "消耗1层弹药 [OnSucceedAttack] 施加4层破裂; Apply +2 Rupture count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo. [OnSucceedAttack] Inflict 5 Fragile."
+                  "desc": "消耗1层弹药 [OnSucceedAttack] Inflict 5 Fragile."
                 }
               ]
             }
@@ -2851,7 +2851,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttackHead] 施加2层流血"
                 }
               ]
             }
@@ -2865,7 +2865,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttack] 施加2层流血"
                 }
               ]
             }
@@ -2884,14 +2884,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttackHead] 施加2层流血"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttackHead] 施加2层流血"
                 }
               ]
             }
@@ -2905,14 +2905,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttack] 施加2层流血"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttack] 施加2层流血"
                 }
               ]
             }
@@ -2926,7 +2926,7 @@
         {
           "level": 3,
           "name": "就地处斩",
-          "desc": "Skill Power +1 at lower than 0 SP",
+          "desc": "如果SP低于0，技能威力+1",
           "coinlist": [
             {},
             {},
@@ -2934,7 +2934,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Deal +20% Damage if target has +6 Bleed"
+                  "desc": "[OnSucceedAttack] 如果目标流血层数不低于6，造成的伤害+20%"
                 }
               ]
             }
@@ -2953,7 +2953,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
+                  "desc": "[OnSucceedAttackHead] 获得2层呼吸法"
                 }
               ]
             }
@@ -2967,7 +2967,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 4 Poise"
+                  "desc": "[OnSucceedAttackHead] 获得4层呼吸法"
                 }
               ]
             }
@@ -2986,20 +2986,20 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 1 Poise"
+                  "desc": "[OnSucceedAttackHead] 获得1层呼吸法"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Bleed"
+                  "desc": "[OnSucceedAttack] 施加1层流血"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
+                  "desc": "[OnSucceedAttackHead] 获得2层呼吸法"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttack] 施加2层流血"
                 }
               ]
             }
@@ -3008,25 +3008,25 @@
         {
           "level": 2,
           "name": "Scattering Slash",
-          "desc": "[WhenUse] Gain +1 Poise count",
+          "desc": "[WhenUse] 自身的呼吸法强度+1",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] 获得2层呼吸法"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttack] 施加2层流血"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 3 Poise"
+                  "desc": "[OnSucceedAttack] 获得3层呼吸法"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Bleed"
+                  "desc": "[OnSucceedAttack] 施加3层流血"
                 }
               ]
             }
@@ -3040,12 +3040,12 @@
         {
           "level": 3,
           "name": "斩破长空",
-          "desc": "If target has 6+ Bleed, double the crit chance",
+          "desc": "如果目标的流血层数不低于6，暴击概率X2",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[CriticalOnSucceedAttack] Inflict 10 Bleed"
+                  "desc": "[CriticalOnSucceedAttack] 施加10层流血"
                 }
               ]
             }
@@ -3072,12 +3072,12 @@
         {
           "level": 3,
           "name": "斩破长空",
-          "desc": "If target has 6+ Bleed, double the crit chance",
+          "desc": "如果目标的流血层数不低于6，暴击概率X2",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[CriticalOnSucceedAttack] Inflict 10 Bleed"
+                  "desc": "[CriticalOnSucceedAttack] 施加10层流血"
                 }
               ]
             }
@@ -3096,7 +3096,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Paralysis"
+                  "desc": "[OnSucceedAttackHead] 施加1层麻痹"
                 }
               ]
             }
@@ -3110,7 +3110,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 3 Paralysis"
+                  "desc": "[OnSucceedAttackHead] 施加3层麻痹"
                 }
               ]
             }
@@ -3174,7 +3174,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 3 Paralysis"
+                  "desc": "[OnSucceedAttackHead] 施加3层麻痹"
                 }
               ]
             }
@@ -3193,7 +3193,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttackHead] 施加2层破裂"
                 }
               ]
             }
@@ -3207,7 +3207,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttack] 施加2层破裂"
                 }
               ]
             }
@@ -3280,7 +3280,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +1 Poise count"
+                  "desc": "[OnSucceedAttackHead] 自身的呼吸法强度+1"
                 }
               ]
             }
@@ -3295,7 +3295,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +2 Poise count "
+                  "desc": "[OnSucceedAttack] 自身的呼吸法强度+2 "
                 }
               ]
             }
@@ -3314,21 +3314,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
+                  "desc": "[OnSucceedAttackHead] 获得2层呼吸法"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 1 Poise"
+                  "desc": "[OnSucceedAttackHead] 获得1层呼吸法"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 1 Poise"
+                  "desc": "[OnSucceedAttackHead] 获得1层呼吸法"
                 }
               ]
             }
@@ -3342,21 +3342,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] 获得2层呼吸法"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 1 Poise"
+                  "desc": "[OnSucceedAttack] 获得1层呼吸法"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 1 Poise"
+                  "desc": "[OnSucceedAttack] 获得1层呼吸法"
                 }
               ]
             }
@@ -3375,10 +3375,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 5 Paralysis"
+                  "desc": "[OnSucceedAttack] 施加5层麻痹"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Bleed"
+                  "desc": "[OnSucceedAttack] 施加3层流血"
                 }
               ]
             }
@@ -3410,7 +3410,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttackHead] 施加2层震颤"
                 }
               ]
             }
@@ -3424,7 +3424,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttack] 施加2层震颤"
                 }
               ]
             }
@@ -3444,7 +3444,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 3 Tremor"
+                  "desc": "[OnSucceedAttackHead] 施加3层震颤"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 1 Damage Down next turn"
@@ -3462,7 +3462,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 6 Tremor"
+                  "desc": "[OnSucceedAttack] 施加6层震颤"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 2 Damage Down next turn"
@@ -3506,7 +3506,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttackHead] 施加2层沉沦"
                 }
               ]
             },
@@ -3521,7 +3521,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 4 Sinking"
+                  "desc": "[OnSucceedAttackHead] 施加4层沉沦"
                 }
               ]
             },
@@ -3541,21 +3541,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] 获得2层呼吸法"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] 施加1层沉沦"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] 施加1层沉沦"
                 }
               ]
             }
@@ -3569,17 +3569,17 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] 获得2层呼吸法"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +1 Poise count"
+                  "desc": "[OnSucceedAttackHead] 自身的呼吸法强度+1"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttack] 施加2层沉沦"
                 },
                 {
                   "desc": "[OnSucceedAttackHead] Apply +1 Sinking count"
@@ -3589,7 +3589,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttack] 施加2层沉沦"
                 }
               ]
             }
@@ -3641,7 +3641,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttackHead] 施加2层破裂"
                 }
               ]
             },
@@ -3657,7 +3657,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttack] 施加2层破裂"
                 }
               ]
             },
@@ -3737,7 +3737,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
+                  "desc": "[OnSucceedAttackHead] 获得2层呼吸法"
                 }
               ]
             }
@@ -3751,7 +3751,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 4 Poise"
+                  "desc": "[OnSucceedAttackHead] 获得4层呼吸法"
                 }
               ]
             }
@@ -3780,7 +3780,7 @@
         {
           "level": 2,
           "name": "Acupuncture",
-          "desc": "[WinDuel] Gain +1 Poise count",
+          "desc": "[WinDuel] 自身的呼吸法强度+1",
           "coinlist": [
             {},
             {
@@ -3904,7 +3904,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 5 Sinking"
+                  "desc": "[OnSucceedAttack] 施加5层沉沦"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 2 Attack Power Down"
@@ -3926,7 +3926,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttackHead] 施加2层破裂"
                 }
               ]
             }
@@ -3940,7 +3940,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 4 Rupture"
+                  "desc": "[OnSucceedAttackHead] 施加4层破裂"
                 }
               ]
             }
@@ -4024,14 +4024,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] 施加1层烧伤"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] 施加1层烧伤"
                 }
               ]
             }
@@ -4045,14 +4045,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttack] 施加1层烧伤"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttack] 施加1层烧伤"
                 }
               ]
             }
@@ -4073,7 +4073,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Burn"
+                  "desc": "[OnSucceedAttack] 施加3层烧伤"
                 }
               ]
             }
@@ -4087,21 +4087,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] 施加1层烧伤"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] 施加1层烧伤"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Burn"
+                  "desc": "[OnSucceedAttack] 施加3层烧伤"
                 },
                 {
                   "desc": "[OnSucceedAttack] If target has 6+ Burn, gain 1 Attack Level Up next turn"
@@ -4123,28 +4123,28 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] 施加1层烧伤"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] 施加1层烧伤"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] 施加1层烧伤"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Burn"
+                  "desc": "[OnSucceedAttack] 施加3层烧伤"
                 }
               ]
             }
@@ -4198,7 +4198,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 5 Rupture"
+                  "desc": "[OnSucceedAttack] 施加5层破裂"
                 }
               ]
             }
@@ -4212,7 +4212,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 5 Rupture"
+                  "desc": "[OnSucceedAttack] 施加5层破裂"
                 },
                 {
                   "desc": "[OnSucceedAttackHead] Heal 50% of damage dealt"
