@@ -61,26 +61,26 @@
     },
     {
       "id": "SelfHarm_LowMorale",
-      "name": "自责（士气低下）",
+      "name": "自责",
       "desc": "回合开始时：对自身施加2层“迅捷”和2层“易损”。",
       "undefined": "-"
     },
     {
       "id": "SelfHarm_Panic",
-      "name": "自责（陷入恐慌）",
+      "name": "自残",
       "desc": "回合开始时：失去10点体力。",
       "undefined": "-"
     },
     {
       "id": "Blame_LowMorale",
-      "name": "责怪（士气低下）",
+      "name": "狂躁",
       "desc": "回合开始时：对自身施加2层“强壮”和2层“易损”。",
       "undefined": "-"
     },
     {
       "id": "Blame_Panic",
-      "name": "责怪（陷入恐慌）",
-      "desc": "回合开始时：随机友方失去20点体力。",
+      "name": "迁怒",
+      "desc": "回合开始时：随机友方失去20点理智。",
       "undefined": "-"
     },
     {
@@ -129,21 +129,21 @@
     },
     {
       "id": "PlusCoinValueUp",
-      "name": "硬币增幅：正",
-      "desc": "本回合内变动值为正数的硬币基础值+{0}",
-      "summary": "正数硬币基础值+{0}"
+      "name": "基础值增加：加算",
+      "desc": "本回合内变动值为加算的技能基础值+{0}",
+      "summary": "加算技能基础值+{0}"
     },
     {
       "id": "MinusCoinValueUp",
-      "name": "硬币增幅：负",
-      "desc": "本回合内变动值为负数的硬币基础值+{0}",
-      "summary": "负数硬币基础值+{0}"
+      "name": "基础值增加：减算",
+      "desc": "本回合内变动值为减算的技能基础值+{0}",
+      "summary": "减算技能基础值+{0}"
     },
     {
       "id": "TimesCoinValueUp",
-      "name": "硬币增幅：乘",
-      "desc": "本回合内变动值为乘数的硬币基础值+{0}",
-      "summary": "乘数硬币基础值+{0}"
+      "name": "基础值增加：乘算",
+      "desc": "本回合内变动值为乘算的技能基础值+{0}",
+      "summary": "乘算技能基础值+{0}"
     },
     {
       "id": "Disarming",
@@ -177,21 +177,21 @@
     },
     {
       "id": "PlusCoinValueDown",
-      "name": "硬币削弱：正",
-      "desc": "本回合内变动值为正数的硬币基础值-{0}",
-      "summary": "正数硬币基础值-{0}"
+      "name": "基础值减少：加算",
+      "desc": "本回合内变动值为加算的技能基础值-{0}",
+      "summary": "加算技能基础值-{0}"
     },
     {
       "id": "MinusCoinValueDown",
-      "name": "硬币削弱：负",
-      "desc": "本回合内变动值为负数的硬币基础值-{0}",
-      "summary": "负数硬币基础值-{0}"
+      "name": "基础值减少：减算",
+      "desc": "本回合内变动值为减算的技能基础值-{0}",
+      "summary": "减算技能基础值-{0}"
     },
     {
       "id": "TimesCoinValueDown",
-      "name": "硬币削弱：乘",
-      "desc": "本回合内变动值为乘数的硬币基础值-{0}",
-      "summary": "负数硬币基础值-{0}"
+      "name": "基础值减少：乘算",
+      "desc": "本回合内变动值为乘算的技能基础值-{0}",
+      "summary": "乘算技能基础值-{0}"
     },
     {
       "id": "BeingGolden",
@@ -214,33 +214,33 @@
     },
     {
       "id": "Daunted_Panic",
-      "name": "畏缩",
+      "name": "胆怯",
       "desc": "回合开始时：对自身施加4层“虚弱”",
       "summary": "对自身施加4层“虚弱”"
     },
     {
       "id": "Overwhelm_LowMorale",
-      "name": "压倒",
+      "name": "焦虑",
       "desc": "回合开始时：对自身施加2层“虚弱”",
       "summary": "对自身施加2层“虚弱”",
       "undefined": "-"
     },
     {
       "id": "Overwhelm_Panic",
-      "name": "压倒",
+      "name": "无措",
       "desc": "本回合无法行动。",
       "summary": "无法行动",
       "undefined": "-"
     },
     {
       "id": "Anger_LowMorale",
-      "name": "焦虑",
+      "name": "愤怒",
       "desc": "回合开始时：对自身施加1层“强袭”和2层“易损”。",
       "summary": "对自身施加1层“强袭”和2层“易损”"
     },
     {
       "id": "Anger_Panic",
-      "name": "焦虑",
+      "name": "狂怒",
       "desc": "回合开始时：对自身施加1层“强袭”和5层“易损”。",
       "summary": "对自身施加1层“强袭”和5层“易损”"
     },
@@ -253,7 +253,7 @@
     {
       "id": "Run_LowMorale",
       "name": "溃退",
-      "desc": "无法行动。受到攻击时，在攻击完毕后战败。",
+      "desc": "无法行动。受到攻击时，在攻击结束后战败。",
       "summary": "无法行动"
     },
     {
@@ -295,7 +295,7 @@
     {
       "id": "Sinking",
       "name": "沉沦",
-      "desc": "下{1}次被攻击时，额外受到{0}点固定神志伤害。(对异想体则造成忧郁属性伤害)",
+      "desc": "下{1}次被攻击时，额外受到{0}点固定理智伤害。(对异想体则造成忧郁属性伤害)",
       "summary": "{0}点沉沦伤害"
     },
     {
@@ -324,9 +324,9 @@
     },
     {
       "id": "Run_Panic",
-      "name": "Oppression",
-      "desc": "Cannot act for this turn. When hit, flees battle after the attacker’s skill has finished.",
-      "summary": "No action"
+      "name": "脱逃",
+      "desc": "本回合无法行动。受到攻击时，在攻击结束后逃离战斗。",
+      "summary": "无法行动"
     },
     {
       "id": "Operation",
