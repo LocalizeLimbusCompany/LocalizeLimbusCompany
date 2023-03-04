@@ -3,42 +3,42 @@
     {
       "id": "Enhancement",
       "name": "强壮",
-      "desc": "本回合攻击技能最终威力+{0}",
-      "summary": "攻击技能最终威力+{0}",
+      "desc": "本回合内攻击技能威力+{0}",
+      "summary": "攻击技能威力+{0}",
       "undefined": "-"
     },
     {
       "id": "Agility",
       "name": "迅捷",
-      "desc": "本回合速度值+{0}",
+      "desc": "本回合内速度值+{0}",
       "summary": "速度值+{0}",
       "undefined": "-"
     },
     {
       "id": "Endurance",
       "name": "忍耐",
-      "desc": "本回合守备技能最终威力+{0}",
-      "summary": "守备技能最终威力+{0}",
+      "desc": "本回合内守备技能威力+{0}",
+      "summary": "守备技能威力+{0}",
       "undefined": "-"
     },
     {
       "id": "Reduction",
       "name": "虚弱",
-      "desc": "本回合技能最终威力-{0}",
-      "summary": "攻击技能最终威力-{0}",
+      "desc": "本回合内攻击技能威力-{0}",
+      "summary": "攻击技能威力-{0}",
       "undefined": "-"
     },
     {
       "id": "Binding",
       "name": "束缚",
-      "desc": "本回合速度值-{0}",
+      "desc": "本回合内速度值-{0}",
       "summary": "速度值-{0}",
       "undefined": "-"
     },
     {
       "id": "Vulnerable",
       "name": "易损",
-      "desc": "本回合受到的伤害+{0}0%（最大10层）",
+      "desc": "本回合内受到的伤害+{0}0%（最大10层）",
       "summary": "受到伤害+{0}0%",
       "undefined": "-"
     },
@@ -51,18 +51,18 @@
     {
       "id": "ElectricShock",
       "name": "感电",
-      "desc": "本回合受到攻击时额外受到{0}点固定伤害。"
+      "desc": "本回合内受到攻击时额外受到{0}点固定伤害。"
     },
     {
       "id": "Target",
-      "name": "目标",
-      "desc": "将被带有被动技能[Sharp Shivs]的角色瞄准",
+      "name": "标记",
+      "desc": "已被拥有[Sharp Shivs]的角色指定为目标。",
       "undefined": "-"
     },
     {
       "id": "SelfHarm_LowMorale",
       "name": "自责（士气低下）",
-      "desc": "回合开始时：获得2层迅捷和2层易损。",
+      "desc": "回合开始时：对自身施加2层“迅捷”和2层“易损”。",
       "undefined": "-"
     },
     {
@@ -74,7 +74,7 @@
     {
       "id": "Blame_LowMorale",
       "name": "责怪（士气低下）",
-      "desc": "回合开始时：获得2层强壮和2层易损。",
+      "desc": "回合开始时：对自身施加2层“强壮”和2层“易损”。",
       "undefined": "-"
     },
     {
@@ -93,33 +93,33 @@
     {
       "id": "Charge",
       "name": "充能",
-      "desc": "部分技能发动附加效果所需的资源。最大20层。回合结束层数降低1层。",
+      "desc": "部分技能发动附加效果所需的资源。最大20层。回合结束时层数降低1层。",
       "summary": "特定技能的资源",
       "undefined": "-"
     },
     {
       "id": "DamageOverTime",
-      "name": "Ongoing Damage",
-      "desc": "回合开始时: 失去{0}点体力",
-      "summary": "失去{0}点体力"
+      "name": "持续损伤",
+      "desc": "回合开始时：受到{0}点固定伤害。",
+      "summary": "{0}点固定伤害"
     },
     {
       "id": "ResultEnhancement",
-      "name": "Power Up",
-      "desc": "本回合技能最终威力+{0}。",
-      "summary": "技能最终威力+{0}"
+      "name": "集中",
+      "desc": "本回合内全技能威力+{0}。",
+      "summary": "技能威力+{0}"
     },
     {
       "id": "Protection",
-      "name": "守护",
-      "desc": "本回合内受到的伤害-{0}0%(至多10层)。",
-      "summary": "受到的伤害-{0}0%"
+      "name": "防护",
+      "desc": "本回合内所受伤害-{0}0%（最大10层）",
+      "summary": "所受伤害-{0}0%"
     },
     {
       "id": "AttackDmgUp",
-      "name": "力量",
-      "desc": "本回合内技能造成的伤害+{0}0%(至多10层)。",
-      "summary": "造成的伤害+{0}0%"
+      "name": "强袭",
+      "desc": "本回合内造成的伤害+{0}0%（最大10层）",
+      "summary": "造成伤害+{0}0%"
     },
     {
       "id": "DefenseUp",
@@ -129,39 +129,39 @@
     },
     {
       "id": "PlusCoinValueUp",
-      "name": "Plus Coin Boost",
-      "desc": "Plus Coin Power +{0} for this turn",
-      "summary": "Plus Coin Power +{0}"
+      "name": "硬币增幅：正",
+      "desc": "本回合内变动值为正数的硬币基础值+{0}",
+      "summary": "正数硬币基础值+{0}"
     },
     {
       "id": "MinusCoinValueUp",
-      "name": "Minus Coin Boost",
-      "desc": "Minus Coin Power +{0} for this turn",
-      "summary": "Minus Coin Power +{0}"
+      "name": "硬币增幅：负",
+      "desc": "本回合内变动值为负数的硬币基础值+{0}",
+      "summary": "负数硬币基础值+{0}"
     },
     {
       "id": "TimesCoinValueUp",
-      "name": "Multiply Coin Boost",
-      "desc": "Multiply Coin Power +{0} for this turn",
-      "summary": "Multiply Coin Power +{0}"
+      "name": "硬币增幅：乘",
+      "desc": "本回合内变动值为乘数的硬币基础值+{0}",
+      "summary": "乘数硬币基础值+{0}"
     },
     {
       "id": "Disarming",
-      "name": "Defense Power Down",
-      "desc": "Defense Skill Final Power -{0} for this turn",
-      "summary": "DEF Skill Final Power -{0}"
+      "name": "破绽",
+      "desc": "本回合内防御技能的威力-{0}",
+      "summary": "防御技能威力-{0}"
     },
     {
       "id": "ResultReduction",
-      "name": "Power Down",
-      "desc": "Skill Final Power -{0} for this turn.",
-      "summary": "Skill Final Power -{0}"
+      "name": "涣散",
+      "desc": "本回合内全技能威力-{0}。",
+      "summary": "技能威力-{0}"
     },
     {
       "id": "AttackDmgDown",
-      "name": "Damage Down",
-      "desc": "Deal -{0}0% damage with skills this turn (Up to 10 stacks)",
-      "summary": "-{0}0% Damage Dealt"
+      "name": "钝刃",
+      "desc": "本回合内造成的伤害-{0}0%（最大10层）",
+      "summary": "造成伤害-{0}0%"
     },
     {
       "id": "DefenseDown",
@@ -172,100 +172,100 @@
     {
       "id": "Paralysis",
       "name": "麻痹",
-      "desc": "本回合使{0}枚硬币的数值变为0。",
-      "summary": "{0}枚的数值变为0"
+      "desc": "本回合内使{0}枚硬币的数值变为0。",
+      "summary": "{0}枚硬币数值为0"
     },
     {
       "id": "PlusCoinValueDown",
-      "name": "Plus Coin Drop",
-      "desc": "Plus Coin Power -{0} for this turn",
-      "summary": "Plus Coin Power -{0}"
+      "name": "硬币削弱：正",
+      "desc": "本回合内变动值为正数的硬币基础值-{0}",
+      "summary": "正数硬币基础值-{0}"
     },
     {
       "id": "MinusCoinValueDown",
-      "name": "Minus Coin Drop",
-      "desc": "Minus Coin Power -{0} for this turn",
-      "summary": "Minus Coin Power -{0}"
+      "name": "硬币削弱：负",
+      "desc": "本回合内变动值为负数的硬币基础值-{0}",
+      "summary": "负数硬币基础值-{0}"
     },
     {
       "id": "TimesCoinValueDown",
-      "name": "Multiply Coin Drop",
-      "desc": "Multiply Coin Power -{0} for this turn",
-      "summary": "Multiply Coin Power -{0}"
+      "name": "硬币削弱：乘",
+      "desc": "本回合内变动值为乘数的硬币基础值-{0}",
+      "summary": "负数硬币基础值-{0}"
     },
     {
       "id": "BeingGolden",
-      "name": "金色光辉",
-      "desc": "回合开始时: 每层恢复10点体力。",
-      "summary": "恢复体力"
+      "name": "光辉",
+      "desc": "回合开始时：每拥有1层则恢复10点体力。",
+      "summary": "体力恢复"
     },
     {
       "id": "MoonLight",
-      "name": "月光",
+      "name": "月华",
       "desc": "部分技能发动附加效果所需的资源。",
-      "summary": "特定技能的资源",
+      "summary": "附加效果"
     },
     {
       "id": "Daunted_LowMorale",
-      "name": "Atrophied",
-      "desc": "Turn Start: Self-apply 2 Attack Power Down",
-      "summary": "Self-apply 2 Attack Power Down",
+      "name": "畏缩",
+      "desc": "回合开始时：对自身施加2层“虚弱”",
+      "summary": "对自身施加2层“虚弱”",
       "undefined": "-"
     },
     {
       "id": "Daunted_Panic",
-      "name": "Atrophied",
-      "desc": "Turn Start: Self-apply 4 Attack Power Down",
-      "summary": "Self-apply 4 Attack Power Down"
+      "name": "畏缩",
+      "desc": "回合开始时：对自身施加4层“虚弱”",
+      "summary": "对自身施加4层“虚弱”"
     },
     {
       "id": "Overwhelm_LowMorale",
-      "name": "Overwhelmed",
-      "desc": "Turn Start: Self-apply 2 Attack Power Down",
-      "summary": "Self-apply 2 Attack Power Down",
+      "name": "压倒",
+      "desc": "回合开始时：对自身施加2层“虚弱”",
+      "summary": "对自身施加2层“虚弱”",
       "undefined": "-"
     },
     {
       "id": "Overwhelm_Panic",
-      "name": "不知所措",
-      "desc": "本回合内无法行动。",
+      "name": "压倒",
+      "desc": "本回合无法行动。",
       "summary": "无法行动",
       "undefined": "-"
     },
     {
       "id": "Anger_LowMorale",
-      "name": "Agitated",
-      "desc": "Turn Start: Self-apply 1 Damage Up and 2 Fragile.",
-      "summary": "Self-apply 1 Damage Up and 2 Fragile"
+      "name": "焦虑",
+      "desc": "回合开始时：对自身施加1层“强袭”和2层“易损”。",
+      "summary": "对自身施加1层“强袭”和2层“易损”"
     },
     {
       "id": "Anger_Panic",
-      "name": "Agitated",
-      "desc": "Turn Start: Self-apply 2 Damage Up and 5 Fragile.",
-      "summary": "Self-apply 2 Damage Up and 5 Fragile"
+      "name": "焦虑",
+      "desc": "回合开始时：对自身施加1层“强袭”和5层“易损”。",
+      "summary": "对自身施加1层“强袭”和5层“易损”"
     },
     {
       "id": "Anger",
-      "name": "Rage",
-      "desc": "Spent by certain skills. Required for the use of certain skills.",
-      "summary": "Resource for certain skills"
+      "name": "怒气",
+      "desc": "部分技能使用时所消耗的资源。",
+      "summary": "部分技能使用时所消耗的资源"
     },
     {
       "id": "Run_LowMorale",
-      "name": "Running",
-      "desc": "Does not act. When hit, this unit is defeated after the skill ends.",
-      "summary": "No action"
+      "name": "溃退",
+      "desc": "无法行动。受到攻击时，在攻击完毕后战败。",
+      "summary": "无法行动"
     },
     {
       "id": "Nail",
-      "name": "Nails",
-      "desc": "Turn Start: Self-apply 1 Bleed and increase the Bleed Count by this effect’s stack.",
-      "summary": "Self-apply 1 Bleed and add Bleed Count by this effect’s stack"
+      "name": "尖钉",
+      "desc": "回合开始时：对自身施加1层强度为尖钉层数的“流血”。",
+      "summary": "对自身施加1层强度为尖钉层数的“流血”"
     },
     {
       "id": "Inactible",
       "name": "无法行动",
-      "desc": "本回合内无法行动。",
+      "desc": "本回合无法行动。",
       "summary": "无法行动"
     },
     {
@@ -288,38 +288,38 @@
     },
     {
       "id": "Burst",
-      "name": "爆裂",
-      "desc": "下{1}次被攻击时，追加{0}点固定伤害。",
+      "name": "破裂",
+      "desc": "下{1}次被攻击时，额外受到{0}点固定伤害。",
       "summary": "{0}点固定伤害"
     },
     {
       "id": "Sinking",
       "name": "沉沦",
-      "desc": "下{1}次被攻击时，追加{0}点固定神志伤害。(对异想体则造成忧郁属性伤害)",
+      "desc": "下{1}次被攻击时，额外受到{0}点固定神志伤害。(对异想体则造成忧郁属性伤害)",
       "summary": "{0}点沉沦伤害"
     },
     {
       "id": "Breath",
       "name": "呼吸法",
-      "desc": "在下{1}个回合内有{0}%的概率产生暴击。",
+      "desc": "下{1}次攻击命中时有{0}%的概率产生暴击。",
       "summary": "{0}%暴击率"
     },
     {
       "id": "BloodPocket",
-      "name": "Blood Sac",
-      "desc": "达到特定的层数后将发动一次强力攻击。",
-      "summary": "强力攻击准备就绪"
+      "name": "血囊",
+      "desc": "达到一定层数后将释放强力攻击。",
+      "summary": "强力攻击预备"
     },
     {
       "id": "WaterPocket",
-      "name": "Fluid Sac",
-      "desc": "Gain healing proportional to the Count.",
-      "summary": "HP heal boost"
+      "name": "液囊",
+      "desc": "恢复体力时额外恢复等同于层数的体力",
+      "summary": "额外体力恢复"
     },
     {
       "id": "DogThunder",
-      "name": "Lightning",
-      "desc": "达到特定的层数后这个角色将强化自身。",
+      "name": "带电状态",
+      "desc": "积蓄特定层数后将进入强化状态。",
       "summary": "强化自身"
     },
     {
@@ -342,9 +342,9 @@
     },
     {
       "id": "BabayagaTimeLimit",
-      "name": "Baba Yaga来咯!",
-      "desc": "Baba Yaga正在接近。为她扫清障碍，或是去死。",
-      "summary": "Baba Yaga正在接近"
+      "name": "Baba Yaga’s Coming!",
+      "desc": "Baba Yaga is closing in. Clear the way or face certain death.",
+      "summary": "Baba Yaga is approaching"
     },
     {
       "id": "PinkRibbon",
@@ -372,7 +372,7 @@
     },
     {
       "id": "AttackDown",
-      "name": "钝挫",
+      "name": "顿挫",
       "desc": "本回合内攻击等级-{0}0%（最多10层）",
       "summary": "攻击等级-{0}0%"
     },
