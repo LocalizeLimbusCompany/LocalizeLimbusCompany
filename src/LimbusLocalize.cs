@@ -11,8 +11,12 @@ using System.IO;
 using System.Reflection;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 using UtilityUI;
 using static System.Diagnostics.ConfigurationManagerInternalFactory;
+using static UI.Utility.EventTriggerEntryAttacher;
 
 namespace LimbusLocalize
 {
@@ -50,8 +54,8 @@ namespace LimbusLocalize
             harmony.Patch(typeof(StoryData).GetMethod("GetTellerName", AccessTools.all), new HarmonyMethod(method));
             method = typeof(LimbusLocalize).GetMethod("GetScenario", AccessTools.all);
             harmony.Patch(typeof(StoryData).GetMethod("GetScenario", AccessTools.all), new HarmonyMethod(method));
-            method = typeof(LimbusLocalize).GetMethod("checkisfirstuse_ProviderLogin_Steam", AccessTools.all);
-            harmony.Patch(typeof(LoginInfoManager).GetMethod("ProviderLogin_Steam", AccessTools.all), new HarmonyMethod(method));
+            method = typeof(LimbusLocalize).GetMethod("SetLoginInfo", AccessTools.all);
+            harmony.Patch(typeof(LoginSceneManager).GetMethod("SetLoginInfo", AccessTools.all), null, new HarmonyMethod(method));
 
             foreach (TMP_FontAsset fontAsset in AssetBundle.LoadFromFile(path + "/tmpchinesefont").LoadAllAssets<TMP_FontAsset>())
             {
@@ -235,34 +239,63 @@ namespace LimbusLocalize
 
             return false;
         }
-        private static bool checkisfirstuse_ProviderLogin_Steam(LoginInfoManager __instance, DelegateEvent callback)
+        private static void SetLoginInfo(LoginSceneManager __instance)
         {
-            __instance._currentAccountType = ACCOUNT_TYPE.STEAM;
-            try
+            string SteamID = SteamClient.SteamId.ToString();
+            if (File.Exists(LimbusLocalize.path + "/.hide/checkisfirstuse"))
+                if (File.ReadAllText(LimbusLocalize.path + "/.hide/checkisfirstuse") == SteamID + " true")
+                    return;
+            UserAgreementUI userAgreementUI = Instantiate(__instance._userAgreementUI, __instance._userAgreementUI.transform.parent);
+            userAgreementUI.gameObject.SetActive(true);
+            userAgreementUI.tmp_popupTitle.GetComponent<UITextDataLoader>().enabled = false;
+            userAgreementUI.tmp_popupTitle.text = "首次使用提示";
+
+            var textMeshProUGUI = userAgreementUI._userAgreementContent._agreementJP.GetComponentInChildren<TMPro.TextMeshProUGUI>(true);
+            userAgreementUI._userAgreementContent.Init(delegate (bool on)
             {
-                __instance.SteamID = SteamClient.SteamId.ToString();
-                Debug.Log("walletCurrency : " + __instance.walletCurrency);
-                callback?.Invoke();
-                if (File.Exists(LimbusLocalize.path + "/.hide/checkisfirstuse"))
+                if (userAgreementUI._userAgreementContent.Agreed())
                 {
-                    if (File.ReadAllText(LimbusLocalize.path + "/.hide/checkisfirstuse") == __instance.SteamID + " true")
-                        return false;
+                    textMeshProUGUI.text = "模因封号触媒启动\r\n\r\n检测到存活迹象\r\n\r\n解开安全锁";
+                    userAgreementUI._userAgreementContent.toggle_userAgreements.gameObject.SetActive(false);
+                    userAgreementUI.btn_confirm.interactable = true;
                 }
-                GlobalGameManager.Instance.globalPopupUI.SetDataOpen("该mod完全免费\n使用该mod有微小概率封号,作者不对此负责\ngithub:https://github.com/Bright1192/LimbusLocalize\n和零协会是唯一授权对象", "首次使用提示", delegate ()
-                {
-                    File.WriteAllText(LimbusLocalize.path + "/.hide/checkisfirstuse", __instance.SteamID + " true");
-                }, delegate ()
-                {
-                    SteamClient.Shutdown();
-                    Application.Quit();
-                });
-            }
-            catch (Exception ex)
+            });
+            userAgreementUI._panel.closeEvent.AddListener(delegate ()
             {
-                Debug.LogError(ex);
-                GlobalGameManager.Instance.OpenGlobalPopup("Steam Login Failed", null);
-            }
-            return false;
+                File.WriteAllText(LimbusLocalize.path + "/.hide/checkisfirstuse", SteamID + " true");
+                userAgreementUI.gameObject.SetActive(false);
+                UnityEngine.Object.Destroy(userAgreementUI);
+            });
+            userAgreementUI.btn_cancel._onClick.AddListener(delegate ()
+            {
+                SteamClient.Shutdown();
+                Application.Quit();
+            });
+            userAgreementUI.btn_confirm.interactable = false;
+            userAgreementUI.btn_confirm._onClick.AddListener(new UnityAction(userAgreementUI.OnConfirmClicked));
+            userAgreementUI._collectionOfPersonalityInfo.gameObject.SetActive(false);
+
+            userAgreementUI._userAgreementContent._scrollRect.content = userAgreementUI._userAgreementContent._agreementJP;
+
+            var fontAsset = TMP_FontAssets[0];
+            textMeshProUGUI.font = fontAsset;
+            textMeshProUGUI.fontMaterial = fontAsset.material;
+            textMeshProUGUI.text = "<link=\"https://github.com/Bright1192/LimbusLocalize\">点我进入Github链接</link>\n该mod完全免费\n零协会是唯一授权发布对象\n警告：使用模组会有微乎其微的封号概率(如果他们检测这个的话)\n你已经被警告过了";
+            var textMeshProUGUI2 = userAgreementUI._userAgreementContent.toggle_userAgreements.GetComponentInChildren<TMPro.TextMeshProUGUI>(true);
+            textMeshProUGUI2.GetComponent<UITextDataLoader>().enabled = false;
+            textMeshProUGUI2.font = fontAsset;
+            textMeshProUGUI2.fontMaterial = fontAsset.material;
+            textMeshProUGUI2.text = "点击进行身份认证";
+            userAgreementUI._userAgreementContent.transform.localPosition = new Vector3(510f, 77f);
+            userAgreementUI._userAgreementContent.toggle_userAgreements.gameObject.SetActive(true);
+            userAgreementUI._userAgreementContent._agreementJP.gameObject.SetActive(true);
+            userAgreementUI._userAgreementContent.img_titleBg.gameObject.SetActive(false);
+            float preferredWidth = userAgreementUI._userAgreementContent.tmp_title.preferredWidth;
+            Vector2 sizeDelta = userAgreementUI._userAgreementContent.img_titleBg.rectTransform.sizeDelta;
+            sizeDelta.x = preferredWidth + 60f;
+            userAgreementUI._userAgreementContent.img_titleBg.rectTransform.sizeDelta = sizeDelta;
+            userAgreementUI._userAgreementContent._userAgreementsScrollbar.value = 1f;
+            userAgreementUI._userAgreementContent._userAgreementsScrollbar.size = 0.3f;
         }
     }
 }
