@@ -110,7 +110,7 @@ namespace LimbusLocalize
 
                 //从本地加载KR对比用数据
                 bool hasfile = File.Exists(LimbusLocalize.path + "/Localize/KR/" + rawkrText.Key);
-                var json2 = JSONNode.Parse(File.ReadAllText(LimbusLocalize.path + "/Localize/KR/" + rawkrText.Key));
+                var json2 = hasfile ? JSONNode.Parse(File.ReadAllText(LimbusLocalize.path + "/Localize/KR/" + rawkrText.Key)) : null;
                 Dictionary<string, JSONObject> cachekr = hasfile ? json2[0].Children.ToDictionary(jsonroot =>
                 {
                     JSONObject obj = (jsonroot as JSONObject);
