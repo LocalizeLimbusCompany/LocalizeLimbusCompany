@@ -29,7 +29,7 @@ namespace LimbusLocalize
         public static string CachePath;
         public static string CacheLang;
 #endif
-        public const string VERSION = "1.0.1";
+        public const string VERSION = "0.1.2";
         public static string path;
         public void Awake()
         {
@@ -45,6 +45,7 @@ namespace LimbusLocalize
                 File.SetAttributes(path + "/.hide", MyAttributes | FileAttributes.Hidden);
             }
             gameObject.AddComponent<TranslateJSON>();
+            gameObject.AddComponent<UpdateChecker>();
 #if false
             if (!File.Exists(LimbusLocalize.path + "/Localize/Cache/HowToLoadCache"))
             {
@@ -107,7 +108,7 @@ namespace LimbusLocalize
             __instance.SetMaterialDirty();
             return false;
         }
-        [HarmonyPatch(typeof(TextMeshProLanguageSetter),nameof(TextMeshProLanguageSetter.UpdateTMP))]
+        [HarmonyPatch(typeof(TextMeshProLanguageSetter), nameof(TextMeshProLanguageSetter.UpdateTMP))]
         [HarmonyPrefix]
         private static bool UpdateTMP(TextMeshProLanguageSetter __instance, LOCALIZE_LANGUAGE lang)
         {
@@ -129,7 +130,7 @@ namespace LimbusLocalize
             }
             return false;
         }
-        [HarmonyPatch(typeof(TextDataManager),nameof(TextDataManager.LoadRemote))]
+        [HarmonyPatch(typeof(TextDataManager), nameof(TextDataManager.LoadRemote))]
         [HarmonyPrefix]
         private static bool LoadRemote(LOCALIZE_LANGUAGE lang)
         {
@@ -195,7 +196,7 @@ namespace LimbusLocalize
             tm._battleHint.Init(localizeFileList.BattleHint);
             return false;
         }
-        [HarmonyPatch(typeof(StoryData),nameof(StoryData.Init))]
+        [HarmonyPatch(typeof(StoryData), nameof(StoryData.Init))]
         [HarmonyPrefix]
         private static bool StoryDataInit(StoryData __instance)
         {
@@ -253,7 +254,7 @@ namespace LimbusLocalize
             __result = scenario;
             return false;
         }
-        [HarmonyPatch(typeof(StoryData),nameof(StoryData.GetTellerTitle))]
+        [HarmonyPatch(typeof(StoryData), nameof(StoryData.GetTellerTitle))]
         [HarmonyPrefix]
         private static bool GetTellerTitle(StoryData __instance, string name, LOCALIZE_LANGUAGE lang, ref string __result)
         {
@@ -271,7 +272,7 @@ namespace LimbusLocalize
                 __result = scenarioAssetData.krname;
             return false;
         }
-        [HarmonyPatch(typeof(LoginSceneManager),nameof(LoginSceneManager.SetLoginInfo))]
+        [HarmonyPatch(typeof(LoginSceneManager), nameof(LoginSceneManager.SetLoginInfo))]
         [HarmonyPostfix]
         private static void SetLoginInfo(LoginSceneManager __instance)
         {
@@ -283,6 +284,11 @@ namespace LimbusLocalize
             __instance.tmp_loginAccount.fontMaterial = fontAsset.material;
             __instance.tmp_loginAccount.text = "LimbusLocalizeMod v." + VERSION;
             //增加首次使用弹窗，告知使用者不用花钱买/使用可能有封号概率等
+            if (UpdateChecker.UpdateCall != null)
+            {
+                TranslateJSON.OpenGlobalPopup("模组更新已下载,点击确认将打开下载路径并退出游戏", default, default, "确认", delegate () { UpdateChecker.UpdateCall(); });
+                return;
+            }
             if (File.Exists(LimbusLocalize.path + "/.hide/checkisfirstuse"))
                 if (File.ReadAllText(LimbusLocalize.path + "/.hide/checkisfirstuse") == SteamID + " true")
                     return;
