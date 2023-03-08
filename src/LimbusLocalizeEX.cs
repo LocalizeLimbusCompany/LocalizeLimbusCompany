@@ -9,19 +9,34 @@ namespace LimbusLocalize
     {
         public static void Init<T>(this JsonDataList<T> jsonDataList, List<string> list) where T : LocalizeTextData, new()
         {
-            string Localizepath = LimbusLocalize.path + "/Localize/CN/";
+            string Localizepath = LimbusLocalize.path + "/Localize/";
             string text = "CN";
             foreach (string text2 in list)
             {
-                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(File.ReadAllText(string.Format("{0}{1}_{2}.json", Localizepath, text, text2)));
-                foreach (T t in localizeTextData.DataList)
+                var file = string.Format("{0}{1}/{1}_{2}.json", Localizepath, text, text2);
+                if (File.Exists(file))
                 {
-                    jsonDataList._dic[t.ID.ToString()]= t;
+                    var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(File.ReadAllText(file));
+                    foreach (T t in localizeTextData.DataList)
+                    {
+                        jsonDataList._dic[t.ID.ToString()] = t;
+                    }
                 }
-
+                if (LimbusLocalize.UseCache)
+                {
+                    var cachefile = string.Format("{0}/{1}_{2}.json", LimbusLocalize.CachePath, LimbusLocalize.CacheLang, text2);
+                    if (File.Exists(cachefile))
+                    {
+                        var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(File.ReadAllText(cachefile));
+                        foreach (T t in localizeTextData.DataList)
+                        {
+                            jsonDataList._dic[t.ID.ToString()] = t;
+                        }
+                    }
+                }
             }
         }
-        
+
         public static void AbEventCharDlgRootInit(this AbEventCharDlgRoot root, List<string> jsonFiles)
         {
             root._personalityDict = new Dictionary<int, AbEventKeyDictionaryContainer>();
