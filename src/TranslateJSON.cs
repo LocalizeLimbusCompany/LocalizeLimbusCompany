@@ -30,7 +30,7 @@ namespace LimbusLocalize
         }
         public static void StartTranslate()
         {
-            TranslateJSON.__instance.StartCoroutine(__instance.Translate());
+            __instance.StartCoroutine(__instance.Translate());
         }
         public static void OpenGlobalPopup(string description, string title = "", string close = "取消", string confirm = "确认", DelegateEvent confirmEvent = null, DelegateEvent closeEvent = null)
         {
@@ -198,11 +198,11 @@ namespace LimbusLocalize
 
             }
             TranslateCall();
-            TranslateJSON.OpenGlobalPopup("完成", "当前进度,避免你无聊");
+            OpenGlobalPopup("完成", "当前进度,避免你无聊");
         }
         public static void StartTranslateTextFromGoogle(string text, Action<string> action)
         {
-            TranslateJSON.__instance.StartCoroutine(__instance.TranslateTextFromGoogle(text, action));
+            __instance.StartCoroutine(__instance.TranslateTextFromGoogle(text, action));
         }
         private IEnumerator TranslateTextFromGoogle(string text, Action<string> action)
         {
@@ -220,7 +220,7 @@ namespace LimbusLocalize
         }
         public static void StartTranslateTextFromYouDao(string text, Action<string> action)
         {
-            TranslateJSON.__instance.StartCoroutine(__instance.TranslateTextFromYouDao(text, action));
+           __instance.StartCoroutine(__instance.TranslateTextFromYouDao(text, action));
         }
         private IEnumerator TranslateTextFromYouDao(string text, Action<string> action)
         {
@@ -243,7 +243,7 @@ namespace LimbusLocalize
         public static bool DoTranslate;
         public static void UpdateGoogleCanUse()
         {
-            TranslateJSON.__instance.StartCoroutine(__instance.CheckGoogleCanUse());
+            __instance.StartCoroutine(__instance.CheckGoogleCanUse());
         }
     }
 }
