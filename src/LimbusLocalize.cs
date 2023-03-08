@@ -23,9 +23,11 @@ namespace LimbusLocalize
     [BepInPlugin("Bright.LimbusLocalizeMod", "LimbusLocalizeMod", VERSION)]
     public class LimbusLocalize : BaseUnityPlugin
     {
+#if false
         public static bool UseCache;
         public static string CachePath;
         public static string CacheLang;
+#endif
         public const string VERSION = "1.0.1";
         public static string path;
         public void Awake()
@@ -42,6 +44,7 @@ namespace LimbusLocalize
                 File.SetAttributes(path + "/.hide", MyAttributes | FileAttributes.Hidden);
             }
             gameObject.AddComponent<TranslateJSON>();
+#if false
             if (!File.Exists(LimbusLocalize.path + "/Localize/Cache/HowToLoadCache"))
             {
                 UseCache = false;
@@ -72,6 +75,7 @@ namespace LimbusLocalize
                     CacheLang = lang[lang.Length - 1];
                 }
             }
+#endif
             //hook方法
             Harmony harmony = new Harmony("LimbusLocalizeMod");
             MethodInfo method = typeof(LimbusLocalize).GetMethod("LoadRemote", AccessTools.all);
@@ -92,8 +96,10 @@ namespace LimbusLocalize
             harmony.Patch(typeof(StoryData).GetMethod("GetScenario", AccessTools.all), new HarmonyMethod(method));
             method = typeof(LimbusLocalize).GetMethod("SetLoginInfo", AccessTools.all);
             harmony.Patch(typeof(LoginSceneManager).GetMethod("SetLoginInfo", AccessTools.all), null, new HarmonyMethod(method));
+#if DEBUG
             method = typeof(LimbusLocalize).GetMethod("OnDownloadingYes", AccessTools.all);
             harmony.Patch(typeof(AddressablePopup).GetMethod("OnDownloadingYes", AccessTools.all), new HarmonyMethod(method));
+#endif
             //使用AssetBundle技术载入中文字库
             foreach (TMP_FontAsset fontAsset in AssetBundle.LoadFromFile(path + "/tmpchinesefont").LoadAllAssets<TMP_FontAsset>())
                 TMP_FontAssets.Add(fontAsset);
@@ -332,6 +338,8 @@ namespace LimbusLocalize
             userAgreementUI._userAgreementContent._userAgreementsScrollbar.value = 1f;
             userAgreementUI._userAgreementContent._userAgreementsScrollbar.size = 0.3f;
         }
+
+#if DEBUG
         private static bool OnDownloadingYes(AddressablePopup __instance)
         {
             TranslateJSON.OpenGlobalPopup("检测到游戏进行了热更新,是否机翻更新后变动/新增的文本?\n如果是将根据你是否挂梯子使用谷歌/有道翻译\n如果否将根据你是否挂梯子将更新后文本保留为韩文/英文", default, default, default, delegate ()
@@ -357,5 +365,6 @@ namespace LimbusLocalize
             });
             return false;
         }
+#endif
     }
 }
