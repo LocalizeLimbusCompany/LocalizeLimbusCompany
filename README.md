@@ -4,6 +4,9 @@ LimbusLocalize
 
 一个给边狱巴士应用汉化的模组
 
+# Installs
+在steam主界面右键游戏点击管理 浏览本地文件夹 将压缩包内所有东西不 要 新 建 文 件 夹的解压到上述弹出的文件夹中
+
 # [Releases](../../releases)
 
 <p align="center">

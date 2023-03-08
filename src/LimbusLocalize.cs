@@ -21,6 +21,7 @@ using static UI.Utility.EventTriggerEntryAttacher;
 namespace LimbusLocalize
 {
     [BepInPlugin("Bright.LimbusLocalizeMod", "LimbusLocalizeMod", VERSION)]
+    [HarmonyPatch]
     public class LimbusLocalize : BaseUnityPlugin
     {
 #if false
@@ -78,35 +79,15 @@ namespace LimbusLocalize
 #endif
             //hook方法
             Harmony harmony = new Harmony("LimbusLocalizeMod");
-            MethodInfo method = typeof(LimbusLocalize).GetMethod("LoadRemote", AccessTools.all);
-            harmony.Patch(typeof(TextDataManager).GetMethod("LoadRemote", AccessTools.all), new HarmonyMethod(method));
-            method = typeof(LimbusLocalize).GetMethod("LoadLocal", AccessTools.all);
-            harmony.Patch(typeof(TextDataManager).GetMethod("LoadLocal", AccessTools.all), new HarmonyMethod(method));
-            method = typeof(LimbusLocalize).GetMethod("UpdateTMP", AccessTools.all);
-            harmony.Patch(typeof(TextMeshProLanguageSetter).GetMethod("UpdateTMP", AccessTools.all), new HarmonyMethod(method));
-            method = typeof(LimbusLocalize).GetMethod("set_fontMaterial", AccessTools.all);
-            harmony.Patch(typeof(TextMeshProUGUI).GetMethod("set_fontMaterial", AccessTools.all), new HarmonyMethod(method));
-            method = typeof(LimbusLocalize).GetMethod("StoryDataInit", AccessTools.all);
-            harmony.Patch(typeof(StoryData).GetMethod("Init", AccessTools.all), new HarmonyMethod(method));
-            method = typeof(LimbusLocalize).GetMethod("GetTellerTitle", AccessTools.all);
-            harmony.Patch(typeof(StoryData).GetMethod("GetTellerTitle", AccessTools.all), new HarmonyMethod(method));
-            method = typeof(LimbusLocalize).GetMethod("GetTellerName", AccessTools.all);
-            harmony.Patch(typeof(StoryData).GetMethod("GetTellerName", AccessTools.all), new HarmonyMethod(method));
-            method = typeof(LimbusLocalize).GetMethod("GetScenario", AccessTools.all);
-            harmony.Patch(typeof(StoryData).GetMethod("GetScenario", AccessTools.all), new HarmonyMethod(method));
-            method = typeof(LimbusLocalize).GetMethod("SetLoginInfo", AccessTools.all);
-            harmony.Patch(typeof(LoginSceneManager).GetMethod("SetLoginInfo", AccessTools.all), null, new HarmonyMethod(method));
-#if DEBUG
-            method = typeof(LimbusLocalize).GetMethod("OnDownloadingYes", AccessTools.all);
-            harmony.Patch(typeof(AddressablePopup).GetMethod("OnDownloadingYes", AccessTools.all), new HarmonyMethod(method));
-#endif
+            harmony.PatchAll(typeof(LimbusLocalize));
             //使用AssetBundle技术载入中文字库
             foreach (TMP_FontAsset fontAsset in AssetBundle.LoadFromFile(path + "/tmpchinesefont").LoadAllAssets<TMP_FontAsset>())
                 TMP_FontAssets.Add(fontAsset);
         }
         public static List<TMP_FontAsset> TMP_FontAssets = new List<TMP_FontAsset>();
-
-        private static bool set_fontMaterial(TextMeshProUGUI __instance, Material value)
+        [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.fontMaterial), MethodType.Setter)]
+        [HarmonyPrefix]
+        private static bool set_fontMaterial(TMP_Text __instance, Material value)
         {
             //防止字库变动
             value = __instance.font.material;
@@ -126,6 +107,8 @@ namespace LimbusLocalize
             __instance.SetMaterialDirty();
             return false;
         }
+        [HarmonyPatch(typeof(TextMeshProLanguageSetter),nameof(TextMeshProLanguageSetter.UpdateTMP))]
+        [HarmonyPrefix]
         private static bool UpdateTMP(TextMeshProLanguageSetter __instance, LOCALIZE_LANGUAGE lang)
         {
             //使用中文字库
@@ -146,6 +129,8 @@ namespace LimbusLocalize
             }
             return false;
         }
+        [HarmonyPatch(typeof(TextDataManager),nameof(TextDataManager.LoadRemote))]
+        [HarmonyPrefix]
         private static bool LoadRemote(LOCALIZE_LANGUAGE lang)
         {
             //载入所有文本
@@ -199,6 +184,8 @@ namespace LimbusLocalize
             return false;
         }
         public static bool isgameupdate;
+        [HarmonyPatch(typeof(TextDataManager), nameof(TextDataManager.LoadLocal))]
+        [HarmonyPrefix]
         private static bool LoadLocal(LOCALIZE_LANGUAGE lang)
         {
             var tm = TextDataManager.Instance;
@@ -208,6 +195,8 @@ namespace LimbusLocalize
             tm._battleHint.Init(localizeFileList.BattleHint);
             return false;
         }
+        [HarmonyPatch(typeof(StoryData),nameof(StoryData.Init))]
+        [HarmonyPrefix]
         private static bool StoryDataInit(StoryData __instance)
         {
             //载入所有剧情
@@ -231,6 +220,8 @@ namespace LimbusLocalize
                 __instance._emotionMap.Add(__instance._emotions[i].prefab.Name.ToLower(), __instance._emotions[i]);
             return false;
         }
+        [HarmonyPatch(typeof(StoryData), nameof(StoryData.GetScenario))]
+        [HarmonyPrefix]
         private static bool GetScenario(StoryData __instance, string scenarioID, LOCALIZE_LANGUAGE lang, ref Scenario __result)
         {
             //读取剧情
@@ -262,6 +253,8 @@ namespace LimbusLocalize
             __result = scenario;
             return false;
         }
+        [HarmonyPatch(typeof(StoryData),nameof(StoryData.GetTellerTitle))]
+        [HarmonyPrefix]
         private static bool GetTellerTitle(StoryData __instance, string name, LOCALIZE_LANGUAGE lang, ref string __result)
         {
             //剧情称号
@@ -269,6 +262,8 @@ namespace LimbusLocalize
                 __result = scenarioAssetData.nickName;
             return false;
         }
+        [HarmonyPatch(typeof(StoryData), nameof(StoryData.GetTellerName))]
+        [HarmonyPrefix]
         private static bool GetTellerName(StoryData __instance, string name, LOCALIZE_LANGUAGE lang, ref string __result)
         {
             //剧情名字
@@ -276,6 +271,8 @@ namespace LimbusLocalize
                 __result = scenarioAssetData.krname;
             return false;
         }
+        [HarmonyPatch(typeof(LoginSceneManager),nameof(LoginSceneManager.SetLoginInfo))]
+        [HarmonyPostfix]
         private static void SetLoginInfo(LoginSceneManager __instance)
         {
             string SteamID = SteamClient.SteamId.ToString();
@@ -340,6 +337,8 @@ namespace LimbusLocalize
         }
 
 #if DEBUG
+        [HarmonyPatch(typeof(AddressablePopup), nameof(AddressablePopup.OnDownloadingYes))]
+        [HarmonyPrefix]
         private static bool OnDownloadingYes(AddressablePopup __instance)
         {
             TranslateJSON.OpenGlobalPopup("检测到游戏进行了热更新,是否机翻更新后变动/新增的文本?\n如果是将根据你是否挂梯子使用谷歌/有道翻译\n如果否将根据你是否挂梯子将更新后文本保留为韩文/英文", default, default, default, delegate ()
