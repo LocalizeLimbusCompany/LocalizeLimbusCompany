@@ -22,6 +22,7 @@ namespace LimbusLocalize
                         jsonDataList._dic[t.ID.ToString()] = t;
                     }
                 }
+#if false
                 if (LimbusLocalize.UseCache)
                 {
                     var cachefile = string.Format("{0}/{1}_{2}.json", LimbusLocalize.CachePath, LimbusLocalize.CacheLang, text2);
@@ -34,6 +35,7 @@ namespace LimbusLocalize
                         }
                     }
                 }
+#endif
             }
         }
 
