@@ -55,8 +55,8 @@ namespace LimbusLocalize
             globalPopupUI.tmp_description.text = description;
             globalPopupUI._confirmEvent = delegate () { confirmEvent?.Invoke(); btn_canceltl.enabled = true; btn_oktl.enabled = true; };
             globalPopupUI._closeEvent = delegate () { closeEvent?.Invoke(); btn_canceltl.enabled = true; btn_oktl.enabled = true; };
-            globalPopupUI.btn_cancel.gameObject.SetActive(confirmEvent != null);
-            globalPopupUI._gridLayoutGroup.cellSize = new Vector2(confirmEvent != null ? 500 : 700, 100f);
+            globalPopupUI.btn_cancel.gameObject.SetActive(!string.IsNullOrEmpty(close));
+            globalPopupUI._gridLayoutGroup.cellSize = new Vector2(!string.IsNullOrEmpty(close) ? 500 : 700, 100f);
             globalPopupUI.Open();
         }
         public static void CreateKR()
@@ -98,7 +98,7 @@ namespace LimbusLocalize
                 string CNfilename = "CN" + rawkrText.Key.Remove(0, 2);
                 string TFfilename = TranslateFrom + rawkrText.Key.Remove(0, 2);
                 FileInfo fileInfo = new FileInfo(LimbusLocalize.path + "/Localize/CN/" + CNfilename);
-                TranslateJSON.OpenGlobalPopup(fileInfo.Name, "当前进度,避免你无聊");
+                OpenGlobalPopup(fileInfo.Name, "当前进度,避免你无聊", default);
                 //从本地加载汉化数据
                 var json = JSONNode.Parse(File.ReadAllText(fileInfo.FullName));
                 Dictionary<string, JSONObject> cn = json[0].Children.ToDictionary(jsonroot =>
@@ -198,7 +198,7 @@ namespace LimbusLocalize
 
             }
             TranslateCall();
-            OpenGlobalPopup("完成", "当前进度,避免你无聊");
+            OpenGlobalPopup("完成", "当前进度,避免你无聊",default);
         }
         public static void StartTranslateTextFromGoogle(string text, Action<string> action)
         {
