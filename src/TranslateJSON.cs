@@ -3,14 +3,12 @@ using Il2CppInterop.Runtime.Injection;
 using Il2CppMainUI;
 using Il2CppSimpleJSON;
 using Il2CppSteamworks;
-using Il2CppSystem.Collections.Generic;
+using System.Collections.Generic;
 using Il2CppSystem.Linq;
 using Il2CppTMPro;
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -98,8 +96,10 @@ namespace LimbusLocalize
         }
         public IEnumerator TranslateNickName(string TranslateFrom)
         {
+            foreach(var x in JSONNode.Parse(Resources.Load<TextAsset>("Story/ScenarioModelCode").ToString())[0].AsArray.m_List
+
             Dictionary<string, JSONObject> scenarioAssetDataDic = JSONNode.Parse(Resources.Load<TextAsset>("Story/ScenarioModelCode").ToString())[0].Children.ToDictionary(scenario => scenario[0].Value, scenario => scenario as JSONObject);
-            Dictionary<string, JSONObject> scenarioAssetDataDic2 = JSONNode.Parse(File.ReadAllText(LimbusLocalize.path + "/Localize/CN/CN_NickName.json"))[0].Children.ToDictionary(scenario => scenario[0].Value, scenario => scenario as JSONObject);
+            Dictionary<string, JSONObject> scenarioAssetDataDic2 = JSONNode.Parse(File.ReadAllText(LimbusLocalizeMod.path + "/Localize/CN/CN_NickName.json"))[0].Children.ToDictionary(scenario => scenario[0].Value, scenario => scenario as JSONObject);
 
             JSONObject cachechangejson = new JSONObject();
             JSONArray cachechangeroot = new JSONArray();
