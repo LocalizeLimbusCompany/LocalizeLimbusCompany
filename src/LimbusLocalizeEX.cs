@@ -1,5 +1,6 @@
 ﻿using Il2Cpp;
 using Il2CppSystem.Collections.Generic;
+using Il2CppSystem.Linq;
 using System;
 using System.IO;
 using UnityEngine;
@@ -10,6 +11,7 @@ namespace LimbusLocalize
     {
         public static void Init<T>(this JsonDataList<T> jsonDataList, List<string> list) where T : LocalizeTextData, new()
         {
+
             string Localizepath = LimbusLocalizeMod.path + "/Localize/";
             string text = "CN";
             foreach (string text2 in list)
@@ -49,7 +51,9 @@ namespace LimbusLocalize
             string text = "CN";
             foreach (string text2 in jsonFiles)
             {
-                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_AbnormalityEventCharDlg>>(File.ReadAllText(string.Format("{0}{1}_{2}.json", Localizepath, text, text2)));
+                var file = string.Format("{0}{1}_{2}.json", Localizepath, text, text2);
+                if (!File.Exists(file)) { return; }
+                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_AbnormalityEventCharDlg>>(File.ReadAllText(file));
                 foreach (var t in localizeTextData.DataList)
                 {
                     var entries = root._personalityDict._entries;
@@ -81,7 +85,9 @@ namespace LimbusLocalize
             string text = "CN";
             foreach (string text2 in jsonFilePathList)
             {
-                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_PersonalityVoice>>(File.ReadAllText(string.Format("{0}{1}_{2}.json", Localizepath, text, text2)));
+                var file = string.Format("{0}{1}_{2}.json", Localizepath, text, text2);
+                if (!File.Exists(file)) { return; }
+                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_PersonalityVoice>>(File.ReadAllText(file));
                 string[] array = text2.Split('_');
                 string text3 = array[array.Length - 1];
                 jsonDataList._voiceDictionary.Add(text3, localizeTextData);
@@ -95,7 +101,9 @@ namespace LimbusLocalize
             string text = "CN";
             foreach (string text2 in jsonFilePathList)
             {
-                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_AnnouncerVoice>>(File.ReadAllText(string.Format("{0}{1}_{2}.json", Localizepath, text, text2)));
+                var file = string.Format("{0}{1}_{2}.json", Localizepath, text, text2);
+                if (!File.Exists(file)) { return; }
+                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_AnnouncerVoice>>(File.ReadAllText(file));
                 string[] array = text2.Split('_');
                 string text3 = array[array.Length - 1];
                 jsonDataList._voiceDictionary.Add(text3, localizeTextData);
@@ -109,7 +117,9 @@ namespace LimbusLocalize
             string text = "CN";
             foreach (string text2 in jsonFilePathList)
             {
-                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_UI>>(File.ReadAllText(string.Format("{0}{1}_{2}.json", Localizepath, text, text2)));
+                var file = string.Format("{0}{1}_{2}.json", Localizepath, text, text2);
+                if (!File.Exists(file)) { return; }
+                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_UI>>(File.ReadAllText(file));
                 string[] array = text2.Split('_');
                 string text3 = array[array.Length - 1];
                 jsonDataList._lyricsDictionary.Add(text3, localizeTextData);
@@ -123,7 +133,9 @@ namespace LimbusLocalize
             string text = "CN";
             foreach (string text2 in jsonFilePathList)
             {
-                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_EGOVoice>>(File.ReadAllText(string.Format("{0}{1}_{2}.json", Localizepath, text, text2)));
+                var file = string.Format("{0}{1}_{2}.json", Localizepath, text, text2);
+                if (!File.Exists(file)) { return; }
+                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_EGOVoice>>(File.ReadAllText(file));
                 string[] array = text2.Split('_');
                 string text3 = array[array.Length - 1];
                 jsonDataList._voiceDictionary.Add(text3, localizeTextData);
