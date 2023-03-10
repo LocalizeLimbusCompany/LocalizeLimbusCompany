@@ -1,4 +1,5 @@
-﻿using SimpleJSON;
+﻿using Il2Cpp;
+using Il2CppSimpleJSON;
 using System;
 using System.Collections;
 using System.IO;
@@ -6,13 +7,13 @@ using UnityEngine;
 using UnityEngine.Networking;
 namespace LimbusLocalize
 {
-    public class UpdateChecker : MonoBehaviour
+    public static class UpdateChecker
     {
-        public void Awake()
+        static UpdateChecker()
         {
-            StartCoroutine(CheckModUpdates());
+            CheckModUpdates().StartCoroutine();
         }
-        IEnumerator CheckModUpdates()
+        static IEnumerator CheckModUpdates()
         {
             UnityWebRequest www = UnityWebRequest.Get("https://api.github.com/repos/Bright1192/LimbusLocalize/releases");
             www.timeout = 4;
@@ -30,7 +31,7 @@ namespace LimbusLocalize
                 string latest2ReleaseTag = releases.m_List.Count > 1 ? releases[1]["tag_name"].Value : string.Empty;
 
                 string download = string.Empty;
-                var ver = "v" + LimbusLocalize.VERSION;
+                var ver = "v" + LimbusLocalizeMod.VERSION;
                 if (latest2ReleaseTag == ver)
                 {
                     download = "https://github.com/Bright1192/LimbusLocalize/releases/download/" + latestReleaseTag + "/LimbusLocalize_OTA_" + latestReleaseTag + ".rar";
