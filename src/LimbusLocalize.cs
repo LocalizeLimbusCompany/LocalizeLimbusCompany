@@ -1,91 +1,53 @@
-﻿using Addressable;
-using BepInEx;
-using HarmonyLib;
-using Login;
-using SimpleJSON;
-using Steamworks;
-using StorySystem;
+﻿using HarmonyLib;
+using Il2Cpp;
+using Il2CppAddressable;
+using Il2CppSimpleJSON;
+using Il2CppSteamworks;
+using Il2CppStorySystem;
+using Il2CppSystem;
+using Il2CppSystem.Collections.Generic;
+using Il2CppTMPro;
+using Il2CppUtilityUI;
+using LimbusLocalize;
+using MelonLoader;
 using System;
-using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
-using TMPro;
+using System.Text;
+using System.Text.Json.Nodes;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using UtilityUI;
-using static System.Diagnostics.ConfigurationManagerInternalFactory;
-using static UI.Utility.EventTriggerEntryAttacher;
 
+[assembly: MelonInfo(typeof(LimbusLocalizeMod), LimbusLocalizeMod.NAME, LimbusLocalizeMod.VERSION, LimbusLocalizeMod.AUTHOR)]
 namespace LimbusLocalize
 {
-    [BepInPlugin("Bright.LimbusLocalizeMod", "LimbusLocalizeMod", VERSION)]
-    [HarmonyPatch]
-    public class LimbusLocalize : BaseUnityPlugin
+    public class LimbusLocalizeMod : MelonMod
     {
-#if false
-        public static bool UseCache;
-        public static string CachePath;
-        public static string CacheLang;
-#endif
-        public const string VERSION = "0.1.2";
         public static string path;
-        public void Awake()
+        public static TMP_FontAsset tmpchinesefont;
+        public const string NAME = "LimbusLocalizeMod";
+        public const string VERSION = "0.1.3";
+        public const string AUTHOR = "Bright";
+        public override void OnInitializeMelon()
         {
-            //禁止销毁对象,创建隐藏文件夹,创建机翻实例,检查缓存
             path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            DontDestroyOnLoad(gameObject);
-            gameObject.hideFlags |= HideFlags.HideAndDontSave;
-            gameObject.layer = 5;
             if (!Directory.Exists(path + "/.hide"))
             {
                 Directory.CreateDirectory(path + "/.hide");
                 FileAttributes MyAttributes = File.GetAttributes(path + "/.hide");
                 File.SetAttributes(path + "/.hide", MyAttributes | FileAttributes.Hidden);
             }
-            gameObject.AddComponent<TranslateJSON>();
-            gameObject.AddComponent<UpdateChecker>();
-#if false
-            if (!File.Exists(LimbusLocalize.path + "/Localize/Cache/HowToLoadCache"))
-            {
-                UseCache = false;
-            }
-            else
-            {
-                var HowToLoadCache = File.ReadAllText(LimbusLocalize.path + "/Localize/Cache/HowToLoadCache").Split(' ');
-                var ver = HowToLoadCache[0].Split('.');
-                var ver2 = VERSION.Split('.');
-                bool isnew = false;
-                for (int i = 0; i < ver2.Length; i++)
-                {
-                    if (int.Parse(ver2[i]) > int.Parse(ver[i]))
-                    {
-                        isnew = true;
-                    }
-                }
-                if (isnew)
-                {
-                    Directory.Delete(LimbusLocalize.path + "/Localize/Cache");
-                    UseCache = false;
-                }
-                else
-                {
-                    UseCache = true;
-                    CachePath = LimbusLocalize.path + "/Localize/Cache/" + HowToLoadCache[1];
-                    var lang = CachePath.Split('/');
-                    CacheLang = lang[lang.Length - 1];
-                }
-            }
-#endif
-            //hook方法
-            Harmony harmony = new Harmony("LimbusLocalizeMod");
-            harmony.PatchAll(typeof(LimbusLocalize));
+            TranslateJSON.Setup();
+            HarmonyLib.Harmony harmony = new("LimbusLocalizeMod");
+            harmony.PatchAll(typeof(LimbusLocalizeMod));
+
             //使用AssetBundle技术载入中文字库
-            foreach (TMP_FontAsset fontAsset in AssetBundle.LoadFromFile(path + "/tmpchinesefont").LoadAllAssets<TMP_FontAsset>())
-                TMP_FontAssets.Add(fontAsset);
+            tmpchinesefont = AssetBundle.LoadFromFile(path + "/tmpchinesefont").LoadAsset("assets/sourcehansanssc-heavy sdf.asset").Cast<TMP_FontAsset>();
         }
-        public static List<TMP_FontAsset> TMP_FontAssets = new List<TMP_FontAsset>();
         [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.fontMaterial), MethodType.Setter)]
         [HarmonyPrefix]
         private static bool set_fontMaterial(TMP_Text __instance, Material value)
@@ -113,7 +75,7 @@ namespace LimbusLocalize
         private static bool UpdateTMP(TextMeshProLanguageSetter __instance, LOCALIZE_LANGUAGE lang)
         {
             //使用中文字库
-            var fontAsset = TMP_FontAssets[0];
+            var fontAsset = tmpchinesefont;
             __instance._text.font = fontAsset;
             __instance._text.fontMaterial = fontAsset.material;
             if (__instance._matSetter != null)
@@ -130,6 +92,7 @@ namespace LimbusLocalize
             }
             return false;
         }
+
         [HarmonyPatch(typeof(TextDataManager), nameof(TextDataManager.LoadRemote))]
         [HarmonyPrefix]
         private static bool LoadRemote(LOCALIZE_LANGUAGE lang)
@@ -182,6 +145,7 @@ namespace LimbusLocalize
             tm._announcerVoiceText.AnnouncerVoiceJsonDataListInit(romoteLocalizeFileList.AnnouncerVoice);
             tm._bgmLyricsText.BgmLyricsJsonDataListInit(romoteLocalizeFileList.BgmLyrics);
             tm._egoVoiceText.EGOVoiceJsonDataListInit(romoteLocalizeFileList.EGOVoice);
+
             return false;
         }
         public static bool isgameupdate;
@@ -201,7 +165,7 @@ namespace LimbusLocalize
         private static bool StoryDataInit(StoryData __instance)
         {
             //载入所有剧情
-            ScenarioAssetDataList scenarioAssetDataList = JsonUtility.FromJson<ScenarioAssetDataList>(File.ReadAllText(LimbusLocalize.path + "/Localize/CN/CN_NickName.json"));
+            ScenarioAssetDataList scenarioAssetDataList = JsonUtility.FromJson<ScenarioAssetDataList>(File.ReadAllText(LimbusLocalizeMod.path + "/Localize/CN/CN_NickName.json"));
             __instance._modelAssetMap = new Dictionary<string, ScenarioAssetData>();
             __instance._standingAssetMap = new Dictionary<string, StandingAsset>();
             __instance._standingAssetPathMap = new Dictionary<string, string>();
@@ -226,7 +190,7 @@ namespace LimbusLocalize
         private static bool GetScenario(StoryData __instance, string scenarioID, LOCALIZE_LANGUAGE lang, ref Scenario __result)
         {
             //读取剧情
-            string item = File.ReadAllText(LimbusLocalize.path + "/Localize/CN/CN_" + scenarioID + ".json");
+            string item = File.ReadAllText(LimbusLocalizeMod.path + "/Localize/CN/CN_" + scenarioID + ".json");
             TextAsset textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
             if (textAsset == null)
             {
@@ -236,8 +200,8 @@ namespace LimbusLocalize
             string text4 = textAsset.ToString();
             Scenario scenario = new Scenario();
             scenario.ID = scenarioID;
-            JSONArray jsonarray = (JSONArray)JSONNode.Parse(text3)["dataList"];
-            JSONArray jsonarray2 = (JSONArray)JSONNode.Parse(text4)["dataList"];
+            JSONArray jsonarray = JSONNode.Parse(text3)["dataList"].AsArray;
+            JSONArray jsonarray2 = JSONNode.Parse(text4)["dataList"].AsArray;
             for (int i = 0; i < jsonarray.Count; i++)
             {
                 int num = jsonarray[i]["id"];
@@ -279,25 +243,25 @@ namespace LimbusLocalize
             string SteamID = SteamClient.SteamId.ToString();
 
             //在主页右下角增加一段文本，用于指示版本号和其他内容
-            var fontAsset = TMP_FontAssets[0];
+            var fontAsset = tmpchinesefont;
             __instance.tmp_loginAccount.font = fontAsset;
             __instance.tmp_loginAccount.fontMaterial = fontAsset.material;
             __instance.tmp_loginAccount.text = "LimbusLocalizeMod v." + VERSION;
             //增加首次使用弹窗，告知使用者不用花钱买/使用可能有封号概率等
             if (UpdateChecker.UpdateCall != null)
             {
-                TranslateJSON.OpenGlobalPopup("模组更新已下载,点击确认将打开下载路径并退出游戏", default, default, "确认", delegate () { UpdateChecker.UpdateCall(); });
+                TranslateJSON.OpenGlobalPopup("模组更新已下载,点击确认将打开下载路径并退出游戏", default, default, "确认", UpdateChecker.UpdateCall);
                 return;
             }
-            if (File.Exists(LimbusLocalize.path + "/.hide/checkisfirstuse"))
-                if (File.ReadAllText(LimbusLocalize.path + "/.hide/checkisfirstuse") == SteamID + " true")
+            if (File.Exists(LimbusLocalizeMod.path + "/.hide/checkisfirstuse"))
+                if (File.ReadAllText(LimbusLocalizeMod.path + "/.hide/checkisfirstuse") == SteamID + " true")
                     return;
-            UserAgreementUI userAgreementUI = Instantiate(__instance._userAgreementUI, __instance._userAgreementUI.transform.parent);
+            UserAgreementUI userAgreementUI = UnityEngine.Object.Instantiate(__instance._userAgreementUI, __instance._userAgreementUI.transform.parent);
             userAgreementUI.gameObject.SetActive(true);
             userAgreementUI.tmp_popupTitle.GetComponent<UITextDataLoader>().enabled = false;
             userAgreementUI.tmp_popupTitle.text = "首次使用提示";
-            var textMeshProUGUI = userAgreementUI._userAgreementContent._agreementJP.GetComponentInChildren<TMPro.TextMeshProUGUI>(true);
-            userAgreementUI._userAgreementContent.Init(delegate (bool on)
+            var textMeshProUGUI = userAgreementUI._userAgreementContent._agreementJP.GetComponentInChildren<TextMeshProUGUI>(true);
+            System.Action<bool> _ontogglevaluechange = delegate (bool on)
             {
                 if (userAgreementUI._userAgreementContent.Agreed())
                 {
@@ -305,27 +269,31 @@ namespace LimbusLocalize
                     userAgreementUI._userAgreementContent.toggle_userAgreements.gameObject.SetActive(false);
                     userAgreementUI.btn_confirm.interactable = true;
                 }
-            });
-            userAgreementUI._panel.closeEvent.AddListener(delegate ()
+            };
+            userAgreementUI._userAgreementContent.Init(_ontogglevaluechange);
+            System.Action _onclose = delegate ()
             {
-                File.WriteAllText(LimbusLocalize.path + "/.hide/checkisfirstuse", SteamID + " true");
+                File.WriteAllText(LimbusLocalizeMod.path + "/.hide/checkisfirstuse", SteamID + " true");
                 userAgreementUI.gameObject.SetActive(false);
                 UnityEngine.Object.Destroy(userAgreementUI);
                 UnityEngine.Object.Destroy(userAgreementUI.gameObject);
-            });
-            userAgreementUI.btn_cancel._onClick.AddListener(delegate ()
+            };
+            userAgreementUI._panel.closeEvent.AddListener(_onclose);
+            System.Action _oncancel = delegate ()
             {
                 SteamClient.Shutdown();
                 Application.Quit();
-            });
+            };
+            userAgreementUI.btn_cancel._onClick.AddListener(_oncancel);
             userAgreementUI.btn_confirm.interactable = false;
-            userAgreementUI.btn_confirm._onClick.AddListener(new UnityAction(userAgreementUI.OnConfirmClicked));
+            System.Action _onconfirm = userAgreementUI.OnConfirmClicked;
+            userAgreementUI.btn_confirm._onClick.AddListener(_onconfirm);
             userAgreementUI._collectionOfPersonalityInfo.gameObject.SetActive(false);
             userAgreementUI._userAgreementContent._scrollRect.content = userAgreementUI._userAgreementContent._agreementJP;
             textMeshProUGUI.font = fontAsset;
             textMeshProUGUI.fontMaterial = fontAsset.material;
             textMeshProUGUI.text = "<link=\"https://github.com/Bright1192/LimbusLocalize\">点我进入Github链接</link>\n该mod完全免费\n零协会是唯一授权发布对象\n警告：使用模组会有微乎其微的封号概率(如果他们检测这个的话)\n你已经被警告过了";
-            var textMeshProUGUI2 = userAgreementUI._userAgreementContent.toggle_userAgreements.GetComponentInChildren<TMPro.TextMeshProUGUI>(true);
+            var textMeshProUGUI2 = userAgreementUI._userAgreementContent.toggle_userAgreements.GetComponentInChildren<TextMeshProUGUI>(true);
             textMeshProUGUI2.GetComponent<UITextDataLoader>().enabled = false;
             textMeshProUGUI2.font = fontAsset;
             textMeshProUGUI2.fontMaterial = fontAsset.material;

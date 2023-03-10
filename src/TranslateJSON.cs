@@ -1,48 +1,59 @@
-﻿using Addressable;
-using SimpleJSON;
+﻿using Il2Cpp;
+using Il2CppInterop.Runtime.Injection;
+using Il2CppMainUI;
+using Il2CppSimpleJSON;
+using Il2CppSteamworks;
+using Il2CppSystem.Collections.Generic;
+using Il2CppSystem.Linq;
+using Il2CppTMPro;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Reflection;
+using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Networking;
-using static System.Collections.Specialized.GenericAdapter;
 
 namespace LimbusLocalize
 {
     public class TranslateJSON : MonoBehaviour
     {
+        internal static void Setup()
+        {
+            ClassInjector.RegisterTypeInIl2Cpp<TranslateJSON>();
+            GameObject obj = new GameObject("TranslateJSON");
+            DontDestroyOnLoad(obj);
+            obj.hideFlags |= HideFlags.HideAndDontSave;
+            Instance = obj.AddComponent<TranslateJSON>();
+        }
+        public static TranslateJSON Instance;
+
+        public TranslateJSON(IntPtr ptr)
+            : base(ptr)
+        {
+            
+        }
+
         public void Start()
         {
             __instance = this;
         }
         static TranslateJSON __instance;
-        public static void StartTranslateText(string text, Action<string> action)
-        {
-            if (GoogleCanUse)
-                StartTranslateTextFromGoogle(text, action);
-            else
-                StartTranslateTextFromYouDao(text, action);
-        }
-        public static void StartTranslate()
-        {
-            __instance.StartCoroutine(__instance.Translate());
-        }
         public static void OpenGlobalPopup(string description, string title = "", string close = "取消", string confirm = "确认", DelegateEvent confirmEvent = null, DelegateEvent closeEvent = null)
         {
-            MainUI.TextOkUIPopup globalPopupUI = GlobalGameManager.Instance.globalPopupUI;
-            TMPro.TMP_FontAsset fontAsset = LimbusLocalize.TMP_FontAssets[0];
-            TMPro.TextMeshProUGUI btn_canceltmp = globalPopupUI.btn_cancel.GetComponentInChildren<TMPro.TextMeshProUGUI>(true);
+            TextOkUIPopup globalPopupUI = GlobalGameManager.Instance.globalPopupUI;
+            TMP_FontAsset fontAsset = LimbusLocalizeMod.tmpchinesefont;
+            TextMeshProUGUI btn_canceltmp = globalPopupUI.btn_cancel.GetComponentInChildren<TextMeshProUGUI>(true);
             btn_canceltmp.font = fontAsset;
             btn_canceltmp.fontMaterial = fontAsset.material;
             UITextDataLoader btn_canceltl = globalPopupUI.btn_cancel.GetComponentInChildren<UITextDataLoader>(true);
             btn_canceltl.enabled = false;
             btn_canceltmp.text = close;
-            TMPro.TextMeshProUGUI btn_oktmp = globalPopupUI.btn_ok.GetComponentInChildren<TMPro.TextMeshProUGUI>(true);
+            TextMeshProUGUI btn_oktmp = globalPopupUI.btn_ok.GetComponentInChildren<TextMeshProUGUI>(true);
             btn_oktmp.font = fontAsset;
             btn_oktmp.fontMaterial = fontAsset.material;
             UITextDataLoader btn_oktl = globalPopupUI.btn_ok.GetComponentInChildren<UITextDataLoader>(true);
@@ -53,22 +64,86 @@ namespace LimbusLocalize
             globalPopupUI._titleObject.SetActive(!string.IsNullOrEmpty(title));
             globalPopupUI.tmp_title.text = title;
             globalPopupUI.tmp_description.text = description;
-            globalPopupUI._confirmEvent = delegate () { confirmEvent?.Invoke(); btn_canceltl.enabled = true; btn_oktl.enabled = true; };
-            globalPopupUI._closeEvent = delegate () { closeEvent?.Invoke(); btn_canceltl.enabled = true; btn_oktl.enabled = true; };
+            Action _onconfirm = delegate () { confirmEvent?.Invoke(); btn_canceltl.enabled = true; btn_oktl.enabled = true; };
+            globalPopupUI._confirmEvent = _onconfirm;
+            Action _onclose = delegate () { closeEvent?.Invoke(); btn_canceltl.enabled = true; btn_oktl.enabled = true; };
+            globalPopupUI._closeEvent = _onclose;
             globalPopupUI.btn_cancel.gameObject.SetActive(!string.IsNullOrEmpty(close));
             globalPopupUI._gridLayoutGroup.cellSize = new Vector2(!string.IsNullOrEmpty(close) ? 500 : 700, 100f);
             globalPopupUI.Open();
         }
+
         public static void CreateKR()
         {
-            if (!Directory.Exists(LimbusLocalize.path + "/Localize/KR"))
-                Directory.CreateDirectory(LimbusLocalize.path + "/Localize/KR");
-            foreach ((string, TextAsset raw) LocalizeKR in (from TextAsset raw in Resources.LoadAll<TextAsset>("Localize/KR")
-                                                            select (raw.name + ".json", raw)))
+            if (!Directory.Exists(LimbusLocalizeMod.path + "/Localize/KR"))
+                Directory.CreateDirectory(LimbusLocalizeMod.path + "/Localize/KR");
+            foreach (TextAsset textAsset in Resources.LoadAll<TextAsset>("Localize/KR"))
             {
-                File.WriteAllText(LimbusLocalize.path + "/Localize/KR/" + LocalizeKR.Item1, LocalizeKR.raw.text);
+                File.WriteAllText(LimbusLocalizeMod.path + "/Localize/KR/" + textAsset.name + ".json", textAsset.text);
+            }
+            File.WriteAllText(LimbusLocalizeMod.path + "/Localize/KR/KR_NickName.json", Resources.Load<TextAsset>("Story/ScenarioModelCode").ToString());
+
+        }
+#if false
+        public static void StartTranslateText(string text, Action<string> action)
+        {
+            if (GoogleCanUse)
+                StartTranslateTextFromGoogle(text, action);
+            else
+                StartTranslateTextFromYouDao(text, action);
+        }
+        public static void StartTranslate()
+        {
+            __instance.Translate().StartCoroutine();
+        }
+        public IEnumerator TranslateNickName(string TranslateFrom)
+        {
+            Dictionary<string, JSONObject> scenarioAssetDataDic = JSONNode.Parse(Resources.Load<TextAsset>("Story/ScenarioModelCode").ToString())[0].Children.ToDictionary(scenario => scenario[0].Value, scenario => scenario as JSONObject);
+            Dictionary<string, JSONObject> scenarioAssetDataDic2 = JSONNode.Parse(File.ReadAllText(LimbusLocalize.path + "/Localize/CN/CN_NickName.json"))[0].Children.ToDictionary(scenario => scenario[0].Value, scenario => scenario as JSONObject);
+
+            JSONObject cachechangejson = new JSONObject();
+            JSONArray cachechangeroot = new JSONArray();
+            cachechangejson["dataList"] = cachechangeroot;
+
+            foreach (var sa in scenarioAssetDataDic)
+                if (scenarioAssetDataDic2.TryGetValue(sa.Key, out var sa2))
+                {
+                    foreach (KeyValuePair<string, JSONNode> sas in sa.Value.m_Dict)
+                        if (sa2.m_Dict[sas.Key] != sas.Value)
+                            cachechangeroot.Add(sa.Value);
+                }
+                else
+                {
+                    cachechangeroot.Add(sa.Value);
+                }
+            if (cachechangeroot.m_List.Count == 0)
+                yield break;
+            File.WriteAllText(string.Format("{0}/Localize/Cache/Change/{1}/{1}_NickName.json", LimbusLocalize.path, TranslateFrom), cachechangejson.ToString());
+            if (!DoTranslate)
+                yield break;
+            //翻译队列
+            List<Action> TranslateCalls = new List<Action>();
+
+
+            foreach (var krname in from JSONObject jsonroot in cachechangeroot.Children
+                                   select jsonroot.m_Dict["krname"])
+            {
+                Action<string> action = delegate (string s)
+                {
+                    TranslateCalls.Add(delegate ()
+                    {
+                        krname.Value = s;
+                    });
+                };
+                if (GoogleCanUse)
+                    yield return TranslateTextFromGoogle(krname.Value, action);
+                else
+                    yield return TranslateTextFromYouDao(krname.Value, action);
             }
 
+            foreach (Action TranslateCall in TranslateCalls)
+                TranslateCall();
+            File.WriteAllText(LimbusLocalize.path + "/Localize/Cache/CN/CN_NickName.json", cachechangejson.ToString());
         }
         public IEnumerator Translate()
         {
@@ -92,7 +167,7 @@ namespace LimbusLocalize
             }
             Dictionary<string, TextAsset> rawkrdic = Resources.LoadAll<TextAsset>("Localize/KR").ToDictionary(raw => raw.name + ".json", raw => raw);
             Dictionary<string, TextAsset> TranslateFromDic = Resources.LoadAll<TextAsset>("Localize/" + TranslateFrom).ToDictionary(raw => raw.name + ".json", raw => raw);
-
+            yield return TranslateNickName(TranslateFrom);
             foreach (KeyValuePair<string, TextAsset> rawkrText in rawkrdic)
             {
                 string CNfilename = "CN" + rawkrText.Key.Remove(0, 2);
@@ -198,7 +273,7 @@ namespace LimbusLocalize
 
             }
             TranslateCall();
-            OpenGlobalPopup("完成", "当前进度,避免你无聊",default);
+            OpenGlobalPopup("完成", "当前进度,避免你无聊", default);
         }
         public static void StartTranslateTextFromGoogle(string text, Action<string> action)
         {
@@ -220,7 +295,7 @@ namespace LimbusLocalize
         }
         public static void StartTranslateTextFromYouDao(string text, Action<string> action)
         {
-           __instance.StartCoroutine(__instance.TranslateTextFromYouDao(text, action));
+            __instance.StartCoroutine(__instance.TranslateTextFromYouDao(text, action));
         }
         private IEnumerator TranslateTextFromYouDao(string text, Action<string> action)
         {
@@ -245,5 +320,6 @@ namespace LimbusLocalize
         {
             __instance.StartCoroutine(__instance.CheckGoogleCanUse());
         }
+#endif
     }
 }
