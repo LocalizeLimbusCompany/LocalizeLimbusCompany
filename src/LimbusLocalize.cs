@@ -223,7 +223,10 @@ namespace LimbusLocalize
         private static bool GetTellerTitle(StoryData __instance, string name, LOCALIZE_LANGUAGE lang, ref string __result)
         {
             //剧情称号
-            if (__instance._modelAssetMap.TryGetValue(name, out ScenarioAssetData scenarioAssetData))
+            var entries = __instance._modelAssetMap._entries;
+            var Entr = __instance._modelAssetMap.FindEntry(name);
+            ScenarioAssetData scenarioAssetData = Entr == -1 ? null : entries?[Entr].value;
+            if (scenarioAssetData != null)
                 __result = scenarioAssetData.nickName;
             return false;
         }
@@ -232,7 +235,10 @@ namespace LimbusLocalize
         private static bool GetTellerName(StoryData __instance, string name, LOCALIZE_LANGUAGE lang, ref string __result)
         {
             //剧情名字
-            if (__instance._modelAssetMap.TryGetValue(name, out ScenarioAssetData scenarioAssetData))
+            var entries = __instance._modelAssetMap._entries;
+            var Entr = __instance._modelAssetMap.FindEntry(name);
+            ScenarioAssetData scenarioAssetData = Entr == -1 ? null : entries?[Entr].value;
+            if (scenarioAssetData!=null)
                 __result = scenarioAssetData.krname;
             return false;
         }
