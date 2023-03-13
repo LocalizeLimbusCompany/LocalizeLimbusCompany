@@ -1,6 +1,7 @@
 ﻿using HarmonyLib;
 using Il2Cpp;
 using Il2CppAddressable;
+using Il2CppBattleUI.Abnormality;
 using Il2CppSimpleJSON;
 using Il2CppSteamworks;
 using Il2CppStorySystem;
@@ -48,14 +49,32 @@ namespace LimbusLocalize
             //使用AssetBundle技术载入中文字库
             tmpchinesefont = AssetBundle.LoadFromFile(path + "/tmpchinesefont").LoadAsset("assets/sourcehansanssc-heavy sdf.asset").Cast<TMP_FontAsset>();
         }
+        [HarmonyPatch(typeof(AbnormalityChoiceDialogController), nameof(AbnormalityChoiceDialogController.SetDialogAfterJudgementData))]
+        [HarmonyPrefix]
+        public static bool SetDialogAfterJudgementData(AbnormalityChoiceDialogController __instance, CHOICE_EVENT_RESULT state)
+        {
+            AB_DLG_EVENT_TYPE ab_DLG_EVENT_TYPE = (state.Equals(CHOICE_EVENT_RESULT.SUCCESS) ? AB_DLG_EVENT_TYPE.SUCCESS : AB_DLG_EVENT_TYPE.FAILURE);
+            string voiceId = string.Format("{0}_{1}", (ab_DLG_EVENT_TYPE == AB_DLG_EVENT_TYPE.SUCCESS) ? "choice_success_p" : "choice_fail_n", __instance._characterID);
+            System.Func<TextData_PersonalityVoice, bool> Findmatch = (TextData_PersonalityVoice x) => x.ID.Contains(voiceId);
+            TextData_PersonalityVoice textData_PersonalityVoice = Singleton<TextDataManager>.Instance.personalityVoiceText.GetDataList(__instance._characterID)?.DataList.Find(Findmatch);
+            if (textData_PersonalityVoice != null)
+            {
+                __instance._dialogAfterJudgementText = textData_PersonalityVoice.GetDialog();
+                VoiceGenerator.PlayBasicVoice(__instance._characterID, textData_PersonalityVoice.ID);
+                return false;
+            }
+            __instance._dialogAfterJudgementText = Singleton<TextDataManager>.Instance.AbnormalityEventCharDlg.GetDlg(__instance._characterID, ab_DLG_EVENT_TYPE);
+            return false;
+        }
         [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.fontMaterial), MethodType.Setter)]
         [HarmonyPrefix]
         private static bool set_fontMaterial(TMP_Text __instance, Material value)
         {
             //防止字库变动
             value = __instance.font.material;
+            bool check = __instance.gameObject.name.StartsWith("[Tmpro]SkillMinPower") || __instance.gameObject.name.StartsWith("[Tmpro]SkillMaxPower");
             //处理不正确大小
-            if (__instance.fontSize >= 50f)
+            if (!check && __instance.fontSize >= 50f)
             {
                 __instance.fontSize -= __instance.fontSize / 50f * 20f;
             }
@@ -238,7 +257,7 @@ namespace LimbusLocalize
             var entries = __instance._modelAssetMap._entries;
             var Entr = __instance._modelAssetMap.FindEntry(name);
             ScenarioAssetData scenarioAssetData = Entr == -1 ? null : entries?[Entr].value;
-            if (scenarioAssetData!=null)
+            if (scenarioAssetData != null)
                 __result = scenarioAssetData.krname;
             return false;
         }
@@ -247,7 +266,7 @@ namespace LimbusLocalize
         private static void SetLoginInfo(LoginSceneManager __instance)
         {
             string SteamID = SteamClient.SteamId.ToString();
-
+            LoadLocal(LOCALIZE_LANGUAGE.EN);
             //在主页右下角增加一段文本，用于指示版本号和其他内容
             var fontAsset = tmpchinesefont;
             __instance.tmp_loginAccount.font = fontAsset;
