@@ -1,9 +1,14 @@
 ﻿using Il2Cpp;
+using Il2CppInterop.Runtime.InteropTypes.Arrays;
+using Il2CppSteamworks.Ugc;
+using Il2CppStorySystem;
 using Il2CppSystem.Collections.Generic;
 using Il2CppSystem.Linq;
 using System;
 using System.IO;
+using System.Xml.Linq;
 using UnityEngine;
+using static MelonLoader.MelonLogger;
 
 namespace LimbusLocalize
 {
@@ -149,6 +154,17 @@ namespace LimbusLocalize
         public static Coroutine StartCoroutine(this System.Collections.IEnumerator routine)
         {
             return TranslateJSON.Instance.StartCoroutine(routine.WrapToIl2Cpp());
+        }
+        public static Dictionary<TKey, TElement> ToDictionary<TSource, TKey, TElement>(this IEnumerable<TSource> source, Func<TSource, TKey> keySelector, Func<TSource, TElement> elementSelector)
+        {
+            return Enumerable.ToDictionary<TSource, TKey, TElement>(source, keySelector, elementSelector, null);
+        }
+        public static bool TryGetValueEX<TKey, TValue>(this Dictionary<TKey, TValue> dic, TKey key, out TValue value)
+        {
+            var entries = dic._entries;
+            var Entr = dic.FindEntry(key);
+            value = Entr == -1 ? default : entries == null ? default : entries[Entr].value;
+            return value != null;
         }
     }
 }
