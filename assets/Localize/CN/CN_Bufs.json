@@ -106,7 +106,7 @@
     {
       "id": "ResultEnhancement",
       "name": "集中",
-      "desc": "本回合内全技能威力+{0}。",
+      "desc": "本回合内技能威力+{0}。",
       "summary": "技能威力+{0}"
     },
     {
@@ -154,7 +154,7 @@
     {
       "id": "ResultReduction",
       "name": "涣散",
-      "desc": "本回合内全技能威力-{0}。",
+      "desc": "本回合内技能威力-{0}。",
       "summary": "技能威力-{0}"
     },
     {
@@ -166,13 +166,13 @@
     {
       "id": "DefenseDown",
       "name": "动摇",
-      "desc": "本回合内防御-{0}0%（最多10层）",
-      "summary": "防御-{0}0%"
+      "desc": "本回合内防御等级-{0}0%（最多10层）",
+      "summary": "防御等级-{0}0%"
     },
     {
       "id": "Paralysis",
       "name": "麻痹",
-      "desc": "本回合内使{0}枚硬币的数值变为0。",
+      "desc": "本回合内使{0}枚硬币的数值固定为0。",
       "summary": "{0}枚硬币数值为0"
     },
     {
@@ -247,7 +247,7 @@
     {
       "id": "Anger",
       "name": "怒气",
-      "desc": "部分技能使用时所消耗的资源。",
+      "desc": "使用部分技能时所消耗的资源。",
       "summary": "部分技能使用时所消耗的资源"
     },
     {
@@ -301,25 +301,25 @@
     {
       "id": "Breath",
       "name": "呼吸法",
-      "desc": "下{1}次攻击命中时有{0}%的概率产生暴击。",
-      "summary": "{0}%暴击率"
+      "desc": "下{1}次攻击命中时有{0}x5%的概率产生暴击。",
+      "summary": "{0}x5%暴击率"
     },
     {
       "id": "BloodPocket",
-      "name": "血囊",
-      "desc": "达到一定层数后将释放强力攻击。",
+      "name": "血袋",
+      "desc": "积蓄到特定层数后将释放强力攻击。",
       "summary": "强力攻击预备"
     },
     {
       "id": "WaterPocket",
-      "name": "液囊",
-      "desc": "恢复体力时额外恢复等同于层数的体力",
+      "name": "水袋",
+      "desc": "恢复体力时基于层数增加回复量。",
       "summary": "额外体力恢复"
     },
     {
       "id": "DogThunder",
       "name": "带电状态",
-      "desc": "积蓄特定层数后将进入强化状态。",
+      "desc": "积蓄到特定层数后将进入强化状态。",
       "summary": "强化自身"
     },
     {
@@ -330,13 +330,13 @@
     },
     {
       "id": "Operation",
-      "name": "Surgery",
+      "name": "手术",
       "desc": "Die when Count reaches 5.\nReduce Max HP by 20% per Count ({0}).\nDeal 20% more damage per Count ({0}).\nTurn Start: Self-apply {0} Haste.",
       "summary": "Dies at 5 stacks"
     },
     {
       "id": "Emergency_Operation",
-      "name": "Makeshift Surgery",
+      "name": "应急手术",
       "desc": "Boost Max HP by 25% and skill Power by 1 per this effect’s Count.\nEach turn, increase this effect’s Count by 1.\nDie when Count reaches 5.",
       "summary": "Dies at 5 stacks"
     },
@@ -348,19 +348,19 @@
     },
     {
       "id": "PinkRibbon",
-      "name": "Pink Ribbons",
+      "name": "粉色缎带",
       "desc": "Turn End: If at 5+ Count, remove this effect and self-apply ‘Desirous’ next turn.",
       "summary": "Become ‘Desirous’"
     },
     {
       "id": "PinkRibbon_Ishmael",
-      "name": "Pink Ribbons",
+      "name": "粉色缎带",
       "desc": "Increase Count by 1 whenever the affected unit tosses an attack skill Coin.\nTurn End: Inflict Bind by the Count, then remove this status.",
       "summary": "Self-apply {0} Bind"
     },
     {
       "id": "Muckworm",
-      "name": "Maggots",
+      "name": "蛆虫",
       "desc": "Turn End: Take Gluttony damage by the Count, then lower it by 1; Bleed Count +1.",
       "summary": "Gluttony damage; Add +1 Bleed count"
     },
@@ -378,73 +378,73 @@
     },
     {
       "id": "Liu_Meursault_Guard_Buff",
-      "name": "Great Mountain",
+      "name": "坚如泰山",
       "desc": "When attacked, inflict +1 Burn Count to the attacker.",
       "summary": "Add +1 Burn count"
     },
     {
       "id": "SlashResistUp",
-      "name": "Slash Resist Up",
+      "name": "斩击抗性提升",
       "desc": ""
     },
     {
       "id": "PenetrateResistUp",
-      "name": "Pierce Resist Up",
+      "name": "突刺抗性提升",
       "desc": ""
     },
     {
       "id": "HitResistUp",
-      "name": "Blunt Resist Up",
+      "name": "打击抗性提升",
       "desc": ""
     },
     {
       "id": "SlashDamageUp",
-      "name": "Slash DMG Up",
+      "name": "斩击强袭",
       "desc": "Deal +{0}0% damage with Slash skills this turn (Up to 10 stacks)",
       "summary": "Slash damage +{0}0%"
     },
     {
       "id": "PenetrateDamageUp",
-      "name": "Pierce DMG Up",
+      "name": "突刺强袭",
       "desc": "Deal +{0}0% damage with Pierce skills this turn (Up to 10 stacks)",
       "summary": "Pierce damage +{0}0%"
     },
     {
       "id": "HitDamageUp",
-      "name": "Blunt DMG Up",
+      "name": "打击强袭",
       "desc": "Deal +{0}0% damage with Blunt skills this turn (Up to 10 stacks)",
       "summary": "Blunt damage +{0}0%"
     },
     {
       "id": "SlashResistDown",
-      "name": "Slash Resist Down",
+      "name": "斩击抗性下降",
       "desc": ""
     },
     {
       "id": "PenetrateResistDown",
-      "name": "Pierce Resist Down",
+      "name": "突刺抗性下降",
       "desc": ""
     },
     {
       "id": "HitResistDown",
-      "name": "Blunt Resist Down",
+      "name": "打击抗性下降",
       "desc": ""
     },
     {
       "id": "SlashDamageDown",
-      "name": "Slash DMG Down",
+      "name": "斩击钝刃",
       "desc": "Deal -{0}0% damage with Slash skills this turn (Up to 10 stacks)",
       "summary": "Slash damage -{0}0%"
     },
     {
       "id": "PenetrateDamageDown",
-      "name": "Pierce DMG Down",
+      "name": "突刺钝刃",
       "desc": "Deal -{0}0% damage with Pierce skills this turn (Up to 10 stacks)",
       "summary": "Pierce damage -{0}0%"
     },
     {
       "id": "HitDamageDown",
-      "name": "Blunt DMG Down",
+      "name": "打击钝刃",
       "desc": "Deal -{0}0% damage with Blunt skills this turn (Up to 10 stacks)",
       "summary": "Blunt damage -{0}0%"
     },
