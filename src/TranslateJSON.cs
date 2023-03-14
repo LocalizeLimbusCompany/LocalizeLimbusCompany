@@ -3,11 +3,11 @@ using Il2CppInterop.Runtime.Injection;
 using Il2CppMainUI;
 using Il2CppSimpleJSON;
 using Il2CppSteamworks;
-using System.Collections.Generic;
 using Il2CppSystem.Linq;
 using Il2CppTMPro;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Text;
@@ -33,7 +33,7 @@ namespace LimbusLocalize
         public TranslateJSON(IntPtr ptr)
             : base(ptr)
         {
-            
+
         }
 
         public void Start()
@@ -71,15 +71,26 @@ namespace LimbusLocalize
             globalPopupUI.Open();
         }
 
-        public static void CreateKR()
+        public static void CreateLocalize()
         {
+            if (!Directory.Exists(LimbusLocalizeMod.path + "/Localize/EN"))
+                Directory.CreateDirectory(LimbusLocalizeMod.path + "/Localize/EN");
             if (!Directory.Exists(LimbusLocalizeMod.path + "/Localize/KR"))
                 Directory.CreateDirectory(LimbusLocalizeMod.path + "/Localize/KR");
+            if (!Directory.Exists(LimbusLocalizeMod.path + "/Localize/_CN"))
+                Directory.CreateDirectory(LimbusLocalizeMod.path + "/Localize/_CN");
+            foreach (TextAsset textAsset in Resources.LoadAll<TextAsset>("Localize/EN"))
+            {
+                File.WriteAllText(LimbusLocalizeMod.path + "/Localize/EN/" + textAsset.name + ".json", textAsset.text);
+                File.WriteAllText(LimbusLocalizeMod.path + "/Localize/_CN/CN_" + textAsset.name.Remove(0, 2) +".json", textAsset.text);
+            }
             foreach (TextAsset textAsset in Resources.LoadAll<TextAsset>("Localize/KR"))
             {
                 File.WriteAllText(LimbusLocalizeMod.path + "/Localize/KR/" + textAsset.name + ".json", textAsset.text);
             }
-            File.WriteAllText(LimbusLocalizeMod.path + "/Localize/KR/KR_NickName.json", Resources.Load<TextAsset>("Story/ScenarioModelCode").ToString());
+            string NickName = Resources.Load<TextAsset>("Story/ScenarioModelCode").ToString();
+            File.WriteAllText(LimbusLocalizeMod.path + "/Localize/EN/EN_NickName.json", NickName);
+            File.WriteAllText(LimbusLocalizeMod.path + "/Localize/KR/KR_NickName.json", NickName);
 
         }
 #if false
