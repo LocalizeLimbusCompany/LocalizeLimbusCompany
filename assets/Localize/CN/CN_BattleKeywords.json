@@ -8,33 +8,33 @@
     {
       "id": "Enhancement",
       "name": "强壮",
-      "desc": "Attack skills gain final Power by the effect’s Potency."
+      "desc": "进攻技能的威力增加等同于效果层数的数值。"
     },
     {
       "id": "Agility",
       "name": "迅捷",
-      "desc": "Speed increases by the effect’s Potency for one turn."
+      "desc": "一回合内速度值增加等同于效果层数的数值。"
     },
     {
       "id": "Endurance",
       "name": "忍耐",
-      "desc": "Defense skills gain final Power by the effect’s Potency for one turn."
+      "desc": "守备技能的威力增加等同于效果层数的数值。"
     },
     {
       "id": "Reduction",
       "name": "虚弱",
-      "desc": "Attack skills lose final Power by the effect’s Potency for one turn."
+      "desc": "进攻技能的威力减少等同于效果层数的数值。"
     },
     {
       "id": "Binding",
       "name": "束缚",
-      "desc": "Speed decreases by the effect’s Potency for one turn."
+      "desc": "一回合内速度值减少等同于效果层数的数值。"
     },
     {
       "id": "Vulnerable",
       "name": "易损",
-      "desc": "Take more damage from skills based on the effect's Potency for one turn. (Max. 10)",
-      "summary": "Damage Taken +{0}0"
+      "desc": "一回合内基于效果层数增加受到的伤害。（最大10层）",
+      "summary": "所受伤害+{0}0"
     },
     {
       "id": "Taunt",
@@ -48,200 +48,200 @@
     },
     {
       "id": "ElectricShock",
-      "name": "Shock",
-      "desc": "Take more damage by the effect’s Potency."
+      "name": "感电",
+      "desc": "一回合内受到攻击时额外受到等同于效果层数的固定伤害。"
     },
     {
       "id": "Burn",
       "name": "烧伤",
-      "desc": "At the end of the turn, take fixed damage by the effect’s Potency, then halve it."
+      "desc": "回合结束时，受到等同于效果强度的固定伤害，随后使效果强度减半。"
     },
     {
       "id": "Bleeding",
       "name": "流血",
-      "desc": "When attacking, take fixed damage equal to (Potency)% of current HP, then halve it."
+      "desc": "进行攻击时，受到等同于效果强度的固定伤害，随后使效果强度减半。"
     },
     {
       "id": "Target",
       "name": "标记",
-      "desc": "Targeted by the character with the Passive [Sharp Shivs]."
+      "desc": "已被拥有[Sharp Shivs]的角色指定为目标。"
     },
     {
       "id": "SelfHarm_LowMorale",
-      "name": "Compulsion (Low Morale)",
-      "desc": "At the start of the turn, self-apply 2 Haste and 2 Fragile."
+      "name": "自责",
+      "desc": "回合开始时，对自身施加2层“迅捷”和2层“易损”。"
     },
     {
       "id": "SelfHarm_Panic",
-      "name": "Compulsion (Panic)",
-      "desc": "At the start of the turn, lose 10 HP."
+      "name": "自残",
+      "desc": "回合开始时，失去10点体力。"
     },
     {
       "id": "Blame_LowMorale",
-      "name": "Outlash (Low Morale)",
-      "desc": "Turn Start: Self-apply 2 Attack Power Up and 2 Fragile"
+      "name": "狂躁",
+      "desc": "回合开始时，对自身施加2层“强壮”和2层“易损”。"
     },
     {
       "id": "Blame_Panic",
-      "name": "Outlash (Panic)",
-      "desc": "At the start of the turn, a random ally loses 20 SP."
+      "name": "迁怒",
+      "desc": "回合开始时，随机友方失去20点理智。"
     },
     {
       "id": "Charge",
       "name": "充能",
-      "desc": "Resource used by certain skills for additional effects. Its Count can go up to 20. It lowers by 1 at the end of each turn."
+      "desc": "部分技能发动附加效果所需的资源。最大可叠加至20层。回合结束时层数会降低1层。"
     },
     {
       "id": "DamageOverTime",
-      "name": "Ongoing Damage",
-      "desc": "At the start of the turn, take fixed damage by the effect’s Potency."
+      "name": "持续损伤",
+      "desc": "回合开始时，受到等同于效果层数的固定伤害。"
     },
     {
       "id": "ResultEnhancement",
-      "name": "强壮",
-      "desc": "Attack skills gain final Power by the effect’s Potency for one turn.",
+      "name": "集中",
+      "desc": "一回合内技能的威力提升等同于效果层数的数值。",
       "summary": "ATK Skill Final Power +{0}"
     },
     {
       "id": "Protection",
       "name": "守护",
-      "desc": "Take less damage from skills based on the effect's Potency for one turn. (Max. 10)",
+      "desc": "一回合内基于效果层数减少受到的伤害（最大10层）",
       "summary": "-{0}0% Damage Taken"
     },
     {
       "id": "AttackDmgUp",
-      "name": "伤害提升",
-      "desc": "Deal more damage with skills based on the effect's Potency for one turn. (Max. 10)",
+      "name": "强袭",
+      "desc": "一回合内基于效果层数增加造成的伤害（最大10层）",
       "summary": "+{0}0% Damage Dealt"
     },
     {
       "id": "DefenseUp",
-      "name": "防御提升",
-      "desc": "Defense increases based on the effect's Potency for one turn. (Max. 10)",
+      "name": "坚忍",
+      "desc": "一回合内基于效果层数增加防御等级（最多10层）",
       "summary": "DEF +{0}0%"
     },
     {
       "id": "PlusCoinValueUp",
-      "name": "Plus Coin Boost",
-      "desc": "Raise the Power of Plus Coins by the effect’s Potency."
+      "name": "基础值增加：加算",
+      "desc": "变动值为加算的技能基础值提高等同于效果层数的数值。"
     },
     {
       "id": "MinusCoinValueUp",
-      "name": "Minus Coin Boost",
-      "desc": "Raise the Power of Minus Coins by the effect’s Potency."
+      "name": "基础值增加：减算",
+      "desc": "变动值为减算的技能基础值提高等同于效果层数的数值。"
     },
     {
       "id": "TimesCoinValueUp",
-      "name": "Multiply Coin Boost",
-      "desc": "Raise the Power of Multiply Coins by the effect’s Potency."
+      "name": "基础值增加：乘算",
+      "desc": "变动值为乘算的技能基础值提高等同于效果层数的数值。"
     },
     {
       "id": "Disarming",
       "name": "破绽",
-      "desc": "Defense skills lose final Power by the effect’s Potency for one turn."
+      "desc": "一回合内防御技能的威力降低等同于效果层数的数值。"
     },
     {
       "id": "ResultReduction",
-      "name": "虚弱",
-      "desc": "All skills lose final Power by the effect’s Potency for one turn.",
+      "name": "涣散",
+      "desc": "一回合内技能的威力降低等同于效果层数的数值。",
       "summary": "Skill Final Power -{0}"
     },
     {
       "id": "AttackDmgDown",
-      "name": "伤害降低",
-      "desc": "Deal less damage with skills based on the effect's Potency for one turn. (Max. 10)",
+      "name": "钝刃",
+      "desc": "一回合内基于效果层数减少造成的伤害（最大10层）",
       "summary": "-{0}0% Damage Dealt"
     },
     {
       "id": "DefenseDown",
-      "name": "防御降低",
-      "desc": "Defense decreases based on the effect's Potency for one turn. (Max. 10)",
+      "name": "动摇",
+      "desc": "一回合内基于效果层数降低防御等级（最多10层）",
       "summary": "DEF -{0}0%"
     },
     {
       "id": "Paralysis",
       "name": "麻痹",
-      "desc": "Fix the Power of X Coin(s) to 0 for one turn."
+      "desc": "一回合内使X枚硬币的数值固定为0。"
     },
     {
       "id": "PlusCoinValueDown",
-      "name": "Plus Coin Drop",
-      "desc": "Reduce the power of Plus Coins by the effect’s Potency."
+      "name": "基础值减少：加算",
+      "desc": "变动值为加算的技能基础值减少等同于效果层数的数值。"
     },
     {
       "id": "MinusCoinValueDown",
-      "name": "Minus Coin Drop",
-      "desc": "Reduce the power of Minus Coins by the effect’s Potency."
+      "name": "基础值减少：减算",
+      "desc": "变动值为减算的技能基础值减少等同于效果层数的数值。"
     },
     {
       "id": "TimesCoinValueDown",
-      "name": "Multiply Coin Drop",
-      "desc": "Reduce the power of Multiply Coins by the effect’s Potency."
+      "name": "基础值减少：乘算",
+      "desc": "变动值为乘算的技能基础值减少等同于效果层数的数值。"
     },
     {
       "id": "MoonLight",
       "name": "月华",
-      "desc": "Resource used by certain skills for additional effects."
+      "desc": "部分技能发动附加效果所需的资源。"
     },
     {
       "id": "Anger",
       "name": "怒气",
-      "desc": "Spent by certain skills. Required for the use of certain skills."
+      "desc": "使用部分技能时所需的资源。"
     },
     {
       "id": "Inactible",
       "name": "无法行动",
-      "desc": "Does not act for the turn."
+      "desc": "本回合无法行动。"
     },
     {
       "id": "Combustion",
       "name": "烧伤",
-      "desc": "At the end of the turn, take fixed damage by the effect’s Potency.\nThen, reduce its Count by 1."
+      "desc": "回合结束时，受到等同于效果强度的固定伤害，随后使效果的层数-1。"
     },
     {
       "id": "Laceration",
       "name": "流血",
-      "desc": "When tossing an attack Coin, take fixed damage by the effect’s Potency.\nThen, reduce its Count by 1."
+      "desc": "掷出硬币时，受到等同于效果强度的固定伤害，随后使效果的层数-1。"
     },
     {
       "id": "Vibration",
-      "name": "动摇",
-      "desc": "When attacked by skills that burst Tremor, raise the Stagger threshold by the effect’s Potency.\nAt the end of the turn, reduce the Count by 1."
+      "name": "震颤",
+      "desc": "受到引爆震颤的攻击时，混乱阈值前移等同于效果强度的数值。\n回合结束时，效果的层数-1。"
     },
     {
       "id": "Burst",
-      "name": "爆破",
-      "desc": "When hit by an attack, take fixed damage by the effect’s Potency.\nThen, reduce its Count by 1."
+      "name": "破裂",
+      "desc": "遭到攻击时，受到等同于效果强度的固定伤害，随后使效果的层数-1。"
     },
     {
       "id": "Sinking",
       "name": "沉沦",
-      "desc": "The next {1} time(s) the unit is hit by an attack skill, take {0} fixed SP damage. (Applies as Gloom-affinity damage to Abnormalities)\nThen, reduce its Count by 1."
+      "desc": "下{1}次被攻击时，额外受到{0}点固定理智伤害。(对异想体则造成忧郁属性伤害)\n随后使效果的层数-1。"
     },
     {
       "id": "Breath",
       "name": "呼吸法",
-      "desc": "On hit, gain a Potency-based chance to deal critical damage, reducing the Count by 1 if successful.\nAt the end of the turn, reduce the Count by 1."
+      "desc": "攻击命中时，基于效果强度提高该次攻击的暴击率，触发暴击时使效果层数-1。\n回合结束时，效果的层数-1。"
     },
     {
       "id": "BloodPocket",
-      "name": "血囊",
-      "desc": "Use a powerful attack after the Count reaches a certain amount."
+      "name": "血袋",
+      "desc": "积蓄到特定层数后将释放强力攻击。"
     },
     {
       "id": "WaterPocket",
-      "name": "液囊",
-      "desc": "Gain healing proportional to the Count."
+      "name": "水袋",
+      "desc": "恢复体力时基于层数增加回复量。"
     },
     {
       "id": "DogThunder",
-      "name": "迅疾",
-      "desc": "This unit powers itself up after the Count reaches a certain amount."
+      "name": "带电状态",
+      "desc": "积蓄到特定层数后将进入强化状态。"
     },
     {
       "id": "Run_Panic",
-      "name": "不知所措",
-      "desc": "Cannot act for one turn. When hit, flees battle after the attacker’s skill has finished."
+      "name": "脱逃",
+      "desc": "本回合无法行动。受到攻击时，在攻击结束后逃离战斗。"
     },
     {
       "id": "Operation",
@@ -250,7 +250,7 @@
     },
     {
       "id": "Emergency_Operation",
-      "name": "紧急手术",
+      "name": "应急手术",
       "desc": "Boost Max HP by 25% and skill Power by 1 per this effect’s Potency.\nEach turn, increase this effect’s Potency by 1.\nDie when Potency reaches 5."
     },
     {
@@ -260,7 +260,7 @@
     },
     {
       "id": "PinkRibbon",
-      "name": "粉色绸带",
+      "name": "粉色缎带",
       "desc": "At the end of the turn, if at 5+ Potency, remove this effect and apply ‘Desirous’ next turn."
     },
     {
@@ -280,12 +280,12 @@
     },
     {
       "id": "AttackUp",
-      "name": "Offense Level-up",
+      "name": "锐意",
       "desc": "Offense level increases based on the effect's Potency for one turn. (Max. 10)"
     },
     {
       "id": "AttackDown",
-      "name": "Offense Level-down",
+      "name": "钝挫",
       "desc": "Offense level decreases based on the effect's Potency for one turn. (Max. 10)"
     },
     {
@@ -310,17 +310,17 @@
     },
     {
       "id": "SlashDamageUp",
-      "name": "斩击伤害提升",
+      "name": "斩击强袭",
       "desc": "Deal more damage with Slash skills based on the effect's Potency for one turn. (Max. 10)"
     },
     {
       "id": "PenetrateDamageUp",
-      "name": "突刺伤害提升",
+      "name": "突刺强袭",
       "desc": "Deal more damage with Pierce skills based on the effect's Potency for one turn. (Max. 10)"
     },
     {
       "id": "HitDamageUp",
-      "name": "打击伤害提升",
+      "name": "打击强袭",
       "desc": "Deal more damage with Blunt skills based on the effect's Potency for one turn. (Max. 10)"
     },
     {
@@ -340,17 +340,17 @@
     },
     {
       "id": "SlashDamageDown",
-      "name": "斩击伤害下降",
+      "name": "斩击钝刃",
       "desc": "Deal less damage with Slash skills based on the effect's Potency for one turn. (Max. 10)"
     },
     {
       "id": "PenetrateDamageDown",
-      "name": "突刺伤害下降",
+      "name": "突刺钝刃",
       "desc": "Deal less damage with Pierce skills based on the effect's Potency for one turn. (Max. 10)"
     },
     {
       "id": "HitDamageDown",
-      "name": "打击伤害下降",
+      "name": "打击钝刃",
       "desc": "Deal less damage with Blunt skills based on the effect's Potency for one turn. (Max. 10)"
     },
     {
@@ -646,7 +646,17 @@
     {
       "id": "VioletTakeDamageUp",
       "name": "Envy Fragility",
-      "desc": "Take more damage from Envy skills based on the effect's Potency for one turn. (max 10)"
+      "desc": "Take more damage from Envy skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "NailPersonality",
+      "name": "Nails",
+      "desc": "At the start of the turn, gain 1 Bleed and increase the Bleed Count by this effect’s Count.\nAt the end of the turn, halve the Count."
+    },
+    {
+      "id": "AssemblePersonality",
+      "name": "Fanatic",
+      "desc": "Raise Skill Final Power by the effect’s Count against units with Nails."
     }
   ]
 }
