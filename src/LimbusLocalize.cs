@@ -334,7 +334,13 @@ namespace LimbusLocalize
             userAgreementUI._userAgreementContent._userAgreementsScrollbar.value = 1f;
             userAgreementUI._userAgreementContent._userAgreementsScrollbar.size = 0.3f;
         }
-
+        //Il2CppMainUI.NoticeUIPopup
+        //Il2Cpp.MainLobbyRightUpperUIButton
+        //待开始功能-贡献
+        public static void OPEN()
+        {
+            string x = "{\"list\":[{\"formatKey\":\"SubTitle\",\"formatValue\":\"Github\"},{\"formatKey\":\"HyperLink\",\"formatValue\":\"https://github.com/Bright1192/LimbusLocalize\"}]}";
+        }
 #if DEBUG
         [HarmonyPatch(typeof(AddressablePopup), nameof(AddressablePopup.OnDownloadingYes))]
         [HarmonyPrefix]
