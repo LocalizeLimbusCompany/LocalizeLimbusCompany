@@ -638,7 +638,7 @@
         {
           "level": 3,
           "name": "伺机而动",
-          "desc": "若使用者在上回合未受到伤害则使基础值+3",
+          "desc": "若使用者在上回合未受到伤害则使硬币威力+3",
           "coinlist": [
             {},
             {
@@ -713,7 +713,7 @@
         {
           "level": 3,
           "name": "为了正义！",
-          "desc": "自身速度值大于10时，使技能基础值+2",
+          "desc": "自身速度值大于10时，使硬币威力+2",
           "coinlist": [
             {},
             {},
@@ -985,14 +985,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "若目标本回合已受到伤害，则额外造成10%伤害"
+                  "desc": "若目标本回合已受到伤害，则本硬币额外造成10%伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "若目标本回合已受到伤害，则额外造成10%伤害"
+                  "desc": "若目标本回合已受到伤害，则本硬币额外造成10%伤害"
                 }
               ]
             }
@@ -1006,14 +1006,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "若目标本回合已受到伤害，则额外造成30%伤害"
+                  "desc": "若目标本回合已受到伤害，则本硬币额外造成30%伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "若目标本回合已受到伤害，则额外造成30%伤害"
+                  "desc": "若目标本回合已受到伤害，则本硬币额外造成30%伤害"
                 }
               ]
             }
@@ -1704,7 +1704,7 @@
         {
           "level": 2,
           "name": "祸不单行",
-          "desc": "若使用者上回合未受到伤害则使基础值+1",
+          "desc": "若使用者上回合未受到伤害则使硬币威力+1",
           "coinlist": [
             {
               "coindescs": [
@@ -1730,7 +1730,7 @@
         {
           "level": 3,
           "name": "白刃风暴",
-          "desc": "若使用者上回合未受到伤害则使基础值+2",
+          "desc": "若使用者上回合未受到伤害则使硬币威力+2",
           "coinlist": [
             {},
             {
@@ -2051,7 +2051,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 下一个硬币的基础值+2"
+                  "desc": "[OnSucceedAttackHead] 下一个硬币的威力+2"
                 }
               ]
             },
@@ -2260,7 +2260,7 @@
         {
           "level": 2,
           "name": "火力集中",
-          "desc": "自身的速度值大于6时，使技能基础值+1",
+          "desc": "自身的速度值大于6时，使硬币威力+1",
           "coinlist": [
             {
               "coindescs": [
@@ -2294,7 +2294,7 @@
         {
           "level": 1,
           "name": "快速压制",
-          "desc": "自身的速度值大于6时，使技能基础值+2",
+          "desc": "自身的速度值大于6时，使硬币威力+2",
           "coinlist": [
             {
               "coindescs": [
@@ -3040,12 +3040,12 @@
         {
           "level": 3,
           "name": "斩破长空",
-          "desc": "If target has 6+ Bleed, double the crit chance",
+          "desc": "若目标的流血强度高于6级，则自身的暴击率翻倍",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[CriticalOnSucceedAttack] Inflict 10 Bleed"
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加10级“流血”强度"
                 }
               ]
             }
@@ -3058,8 +3058,8 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Counter",
-          "desc": "[WhenUse] Gain 1 Protection",
+          "name": "反击",
+          "desc": "[WhenUse] 使自身获得1层守护",
           "coinlist": [
             {}
           ]
@@ -3072,12 +3072,12 @@
         {
           "level": 3,
           "name": "斩破长空",
-          "desc": "If target has 6+ Bleed, double the crit chance",
+          "desc": "若目标的流血强度高于6级，则自身的暴击率翻倍",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[CriticalOnSucceedAttack] Inflict 10 Bleed"
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加10级“流血”强度"
                 }
               ]
             }
@@ -3090,13 +3090,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Bludgeon",
+          "name": "当头一棒",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Paralysis"
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层“麻痹”"
                 }
               ]
             }
@@ -3104,13 +3104,13 @@
         },
         {
           "level": 2,
-          "name": "Bludgeon",
+          "name": "当头一棒",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 3 Paralysis"
+                  "desc": "[OnSucceedAttackHead] 对目标施加3层“麻痹”"
                 }
               ]
             }
@@ -3123,14 +3123,14 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Thrust",
+          "name": "重棍前戳",
           "desc": "",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Defense Power Down"
+                  "desc": "[OnSucceedAttackHead] 对目标施加2层“破绽”"
                 }
               ]
             }
@@ -3138,14 +3138,14 @@
         },
         {
           "level": 2,
-          "name": "Thrust",
+          "name": "重棍前戳",
           "desc": "",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 4 Defense Power Down"
+                  "desc": "[OnSucceedAttack] 对目标施加4层“破绽”"
                 }
               ]
             }
@@ -3158,23 +3158,23 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Suppress",
-          "desc": "Coin Power +2 If target took no damage from attacks this turn",
+          "name": "武力压制",
+          "desc": "若目标本回合未受到攻击，则使硬币威力+2",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 4 Defense Power Down"
+                  "desc": "[OnSucceedAttackHead] 对目标施加4层“破绽”"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Defense Down"
+                  "desc": "[OnSucceedAttack] 对目标施加2层“动摇”"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 3 Paralysis"
+                  "desc": "[OnSucceedAttackHead] 对目标施加3层“麻痹”"
                 }
               ]
             }
