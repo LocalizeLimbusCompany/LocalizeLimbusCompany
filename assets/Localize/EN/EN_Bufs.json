@@ -123,9 +123,9 @@
     },
     {
       "id": "DefenseUp",
-      "name": "Defense Up",
-      "desc": "Defense +{0}0% for this turn. (Max 100%)",
-      "summary": "DEF +{0}0%"
+      "name": "Defense Level Up",
+      "desc": "Defense Level +{0}0% for this turn. (Max 100%)",
+      "summary": "Defense Level +{0}0%"
     },
     {
       "id": "PlusCoinValueUp",
@@ -165,9 +165,9 @@
     },
     {
       "id": "DefenseDown",
-      "name": "Defense Down",
-      "desc": "Defense -{0}0% for this turn. (Max 100%)",
-      "summary": "DEF -{0}0%"
+      "name": "Defense Level Down",
+      "desc": "Defense Level -{0}0% for this turn. (Max 100%)",
+      "summary": "Defense Level -{0}0%"
     },
     {
       "id": "Paralysis",
@@ -207,48 +207,42 @@
     },
     {
       "id": "Daunted_LowMorale",
-      "name": "Atrophied",
+      "name": "Atrophied (Low Morale)",
       "desc": "Turn Start: Gain 2 Attack Power Down.",
       "summary": "Gain 2 Attack Power Down",
       "undefined": "-"
     },
     {
       "id": "Daunted_Panic",
-      "name": "Atrophied",
+      "name": "Atrophied (Panic)",
       "desc": "Turn Start: Gain 4 Attack Power Down.",
       "summary": "Gain 4 Attack Power Down"
     },
     {
       "id": "Overwhelm_LowMorale",
-      "name": "Overwhelmed",
+      "name": "Overwhelmed (Low Morale)",
       "desc": "Turn Start: Gain 2 Attack Power Down.",
       "summary": "Gain 2 Attack Power Down",
       "undefined": "-"
     },
     {
       "id": "Overwhelm_Panic",
-      "name": "Overwhelmed",
+      "name": "Overwhelmed (Panic)",
       "desc": "Does not act for this turn.",
       "summary": "Inactive",
       "undefined": "-"
     },
     {
       "id": "Anger_LowMorale",
-      "name": "Agitated",
+      "name": "Agitated (Low Morale)",
       "desc": "Turn Start: Gain 1 Damage Up and 2 Fragile.",
       "summary": "Gain 1 Damage Up and 2 Fragile"
     },
     {
       "id": "Anger_Panic",
-      "name": "Agitated",
+      "name": "Agitated (Panic)",
       "desc": "Turn Start: Gain 2 Damage Up and 5 Fragile.",
       "summary": "Gain 2 Damage Up and 5 Fragile"
-    },
-    {
-      "id": "Anger",
-      "name": "Rage",
-      "desc": "Spent by certain skills. Required for the use of certain skills.",
-      "summary": "Resource for certain skills"
     },
     {
       "id": "Run_LowMorale",
@@ -258,14 +252,14 @@
     },
     {
       "id": "Nail",
-      "name": "Nails",
-      "desc": "Turn Start: Gain 1 Bleed and increase the Bleed Count by {0}, then reduce this effect’s Count by 1.",
+      "name": "N Corp’s Nails",
+      "desc": "Turn Start: Gain 1 Bleed and increase the Bleed Count by {0}.\nTurn End: Reduce this effect by 1.",
       "summary": "Gain 1 Bleed and add +{0} Bleed Count"
     },
     {
       "id": "Inactible",
-      "name": "Immobilize",
-      "desc": "Does not act for the turn.",
+      "name": "Immobilized",
+      "desc": "Does not act for this turn.",
       "summary": "Inactive"
     },
     {
@@ -347,12 +341,6 @@
       "summary": "Baba Yaga approaches!"
     },
     {
-      "id": "PinkRibbon",
-      "name": "Pink Ribbons",
-      "desc": "Turn End: If at 5+ Count, remove this effect and gain ‘Desirous’ next turn.",
-      "summary": "Become ‘Desirous’"
-    },
-    {
       "id": "PinkRibbon_Ishmael",
       "name": "Pink Ribbons",
       "desc": "Increase Count by 1 whenever the unit tosses an attack skill Coin.\nTurn End: Gain Bind by the Count, then remove this effect.",
@@ -367,14 +355,14 @@
     {
       "id": "AttackUp",
       "name": "Offense Level Up",
-      "desc": "Offense level +{0}0% for this turn. (Max 100%)",
-      "summary": "Offense level +{0}0%"
+      "desc": "Offense Level +{0}0% for this turn. (Max 100%)",
+      "summary": "Offense Level +{0}0%"
     },
     {
       "id": "AttackDown",
       "name": "Offense Level Down",
-      "desc": "Offense level -{0}0% for this turn. (Max 100%)",
-      "summary": "Offense level -{0}0%"
+      "desc": "Offense Level -{0}0% for this turn. (Max 100%)",
+      "summary": "Offense Level -{0}0%"
     },
     {
       "id": "Liu_Meursault_Guard_Buff",
@@ -605,7 +593,7 @@
     {
       "id": "Curse",
       "name": "Curse",
-      "desc": "Turn End: Gain one of the following, then reduce this effect’s Count by 1.\n1 Attack Power Down/1 Defense Power Down/1 Offense Level Down/1 Defense Down",
+      "desc": "Turn End: Gain one of the following, then reduce this effect’s Count by 1.\n1 Attack Power Down/1 Defense Power Down/1 Offense Level Down/1 Defense Level Down.",
       "summary": "Gain a negative status effect, then reduce Count by 1"
     },
     {
@@ -624,11 +612,6 @@
       "id": "Meursault_Last_Remodeling",
       "name": "Final Augment",
       "desc": "Turn Start: Gain 3 Attack Power Up, Defense Power Up, and Haste; die in {0} turn(s)."
-    },
-    {
-      "id": "WigglingRibbon",
-      "name": "Writhing Ribbon",
-      "desc": "설명 입력해주세요"
     },
     {
       "id": "Choice_90103301",
@@ -691,7 +674,7 @@
     {
       "id": "Assemble",
       "name": "Fanatic",
-      "desc": "Skill Final Power +{0} against units with Nails.",
+      "desc": "Skill Final Power +{0} against units with Nails for this turn.",
       "summary": "Final Power +{0}"
     },
     {
@@ -912,13 +895,13 @@
     {
       "id": "NailPersonality",
       "name": "Nails",
-      "desc": "Turn Start: Gain 1 Bleed and increase the Bleed Count by {0}.\nTurn End: Halve this effect’s Count.",
+      "desc": "Turn Start: Gain 1 Bleed and increase the Bleed Count by {0}.\nTurn End: Halve this effect’s Count. (Rounded down)",
       "summary": "Gain 1 Bleed and add +{0} Bleed Count"
     },
     {
       "id": "AssemblePersonality",
       "name": "Fanatic",
-      "desc": "Skill Final Power +{0} against units with Nails.",
+      "desc": "Skill Final Power +{0} against units with Nails for this turn.",
       "summary": "Final Power +{0}"
     }
   ]

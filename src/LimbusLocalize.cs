@@ -2,6 +2,7 @@
 using Il2Cpp;
 using Il2CppAddressable;
 using Il2CppBattleUI.Abnormality;
+using Il2CppChoiceEvent;
 using Il2CppSimpleJSON;
 using Il2CppSteamworks;
 using Il2CppStorySystem;
@@ -48,23 +49,6 @@ namespace LimbusLocalize
 
             //使用AssetBundle技术载入中文字库
             tmpchinesefont = AssetBundle.LoadFromFile(path + "/tmpchinesefont").LoadAsset("assets/sourcehansanssc-heavy sdf.asset").Cast<TMP_FontAsset>();
-        }
-        [HarmonyPatch(typeof(AbnormalityChoiceDialogController), nameof(AbnormalityChoiceDialogController.SetDialogAfterJudgementData))]
-        [HarmonyPrefix]
-        public static bool SetDialogAfterJudgementData(AbnormalityChoiceDialogController __instance, CHOICE_EVENT_RESULT state)
-        {
-            AB_DLG_EVENT_TYPE ab_DLG_EVENT_TYPE = (state.Equals(CHOICE_EVENT_RESULT.SUCCESS) ? AB_DLG_EVENT_TYPE.SUCCESS : AB_DLG_EVENT_TYPE.FAILURE);
-            string voiceId = string.Format("{0}_{1}", (ab_DLG_EVENT_TYPE == AB_DLG_EVENT_TYPE.SUCCESS) ? "choice_success_p" : "choice_fail_n", __instance._characterID);
-            System.Func<TextData_PersonalityVoice, bool> Findmatch = (TextData_PersonalityVoice x) => x.ID.Contains(voiceId);
-            TextData_PersonalityVoice textData_PersonalityVoice = Singleton<TextDataManager>.Instance.personalityVoiceText.GetDataList(__instance._characterID)?.DataList.Find(Findmatch);
-            if (textData_PersonalityVoice != null)
-            {
-                __instance._dialogAfterJudgementText = textData_PersonalityVoice.GetDialog();
-                VoiceGenerator.PlayBasicVoice(__instance._characterID, textData_PersonalityVoice.ID);
-                return false;
-            }
-            __instance._dialogAfterJudgementText = Singleton<TextDataManager>.Instance.AbnormalityEventCharDlg.GetDlg(__instance._characterID, ab_DLG_EVENT_TYPE);
-            return false;
         }
         [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.fontMaterial), MethodType.Setter)]
         [HarmonyPrefix]
