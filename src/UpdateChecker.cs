@@ -25,7 +25,7 @@ namespace LimbusLocalize
             }
             else
             {
-                JSONArray releases = (JSONArray)JSONNode.Parse(www.downloadHandler.text);
+                JSONArray releases = JSONNode.Parse(www.downloadHandler.text).AsArray;
 
                 string latestReleaseTag = releases[0]["tag_name"].Value;
                 string latest2ReleaseTag = releases.m_List.Count > 1 ? releases[1]["tag_name"].Value : string.Empty;
