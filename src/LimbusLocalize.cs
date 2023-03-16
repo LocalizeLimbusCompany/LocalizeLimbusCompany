@@ -32,7 +32,7 @@ namespace LimbusLocalize
         public static string path;
         public static TMP_FontAsset tmpchinesefont;
         public const string NAME = "LimbusLocalizeMod";
-        public const string VERSION = "0.1.3";
+        public const string VERSION = "0.1.4";
         public const string AUTHOR = "Bright";
         public override void OnInitializeMelon()
         {
@@ -44,6 +44,7 @@ namespace LimbusLocalize
                 File.SetAttributes(path + "/.hide", MyAttributes | FileAttributes.Hidden);
             }
             TranslateJSON.Setup();
+            _ = UpdateChecker.UpdateCall;
             HarmonyLib.Harmony harmony = new("LimbusLocalizeMod");
             harmony.PatchAll(typeof(LimbusLocalizeMod));
 
@@ -55,7 +56,8 @@ namespace LimbusLocalize
         private static bool set_fontMaterial(TMP_Text __instance, Material value)
         {
             //防止字库变动
-            __instance.font = tmpchinesefont;
+            if (__instance.font.name == "KOTRA_BOLD SDF")
+                __instance.font = tmpchinesefont;
             value = __instance.font.material;
             bool check = __instance.gameObject.name.StartsWith("[Tmpro]SkillMinPower") || __instance.gameObject.name.StartsWith("[Tmpro]SkillMaxPower");
             //处理不正确大小
