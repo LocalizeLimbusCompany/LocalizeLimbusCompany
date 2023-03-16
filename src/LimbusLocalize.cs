@@ -55,6 +55,7 @@ namespace LimbusLocalize
         private static bool set_fontMaterial(TMP_Text __instance, Material value)
         {
             //防止字库变动
+            __instance.font = tmpchinesefont;
             value = __instance.font.material;
             bool check = __instance.gameObject.name.StartsWith("[Tmpro]SkillMinPower") || __instance.gameObject.name.StartsWith("[Tmpro]SkillMaxPower");
             //处理不正确大小
@@ -95,14 +96,16 @@ namespace LimbusLocalize
             }
             return false;
         }
-
         [HarmonyPatch(typeof(TextDataManager), nameof(TextDataManager.LoadRemote))]
         [HarmonyPrefix]
-        private static bool LoadRemote(LOCALIZE_LANGUAGE lang)
+        private static void LoadRemote(ref LOCALIZE_LANGUAGE lang)
+        {
+            lang = LOCALIZE_LANGUAGE.EN;
+        }
+        private static void LoadRemote2(LOCALIZE_LANGUAGE lang)
         {
             //载入所有文本
             var tm = TextDataManager.Instance;
-            tm._isLoadedRemote = true;
             TextDataManager.RomoteLocalizeFileList romoteLocalizeFileList = JsonUtility.FromJson<TextDataManager.RomoteLocalizeFileList>(SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Localize", "RemoteLocalizeFileList", null, null).Item1.ToString());
             tm._uiList.Init(romoteLocalizeFileList.UIFilePaths);
             tm._characterList.Init(romoteLocalizeFileList.CharacterFilePaths);
@@ -149,11 +152,35 @@ namespace LimbusLocalize
             tm._bgmLyricsText.BgmLyricsJsonDataListInit(romoteLocalizeFileList.BgmLyrics);
             tm._egoVoiceText.EGOVoiceJsonDataListInit(romoteLocalizeFileList.EGOVoice);
 
+        }
+        [HarmonyPatch(typeof(EGOVoiceJsonDataList), nameof(EGOVoiceJsonDataList.Init))]
+        [HarmonyPrefix]
+        private static bool EGOVoiceJsonDataListInit(EGOVoiceJsonDataList __instance, List<string> jsonFilePathList)
+        {
+            __instance._voiceDictionary = new Dictionary<string, LocalizeTextDataRoot<TextData_EGOVoice>>();
+            int callcount = 0;
+            foreach (string jsonFilePath in jsonFilePathList)
+            {
+                System.Action<LocalizeTextDataRoot<TextData_EGOVoice>> LoadLocalizeDel = delegate (LocalizeTextDataRoot<TextData_EGOVoice> data)
+                                {
+                                    if (data != null)
+                                    {
+                                        string[] array = jsonFilePath.Split('_');
+                                        string text = array[array.Length - 1];
+                                        text = text.Replace(".json", "");
+                                        __instance._voiceDictionary.Add(text, data);
+                                    }
+                                    else
+                                        Util.DebugLog("There is no VoiceData: " + jsonFilePath);
+                                    callcount++;
+                                    if (callcount == jsonFilePathList.Count)
+                                        LoadRemote2(LOCALIZE_LANGUAGE.EN);
+                                };
+                AddressableManager.Instance.LoadLocalizeJsonAssetAsync<TextData_EGOVoice>(jsonFilePath, LoadLocalizeDel);
+            }
             return false;
         }
         public static bool isgameupdate;
-        [HarmonyPatch(typeof(TextDataManager), nameof(TextDataManager.LoadLocal))]
-        [HarmonyPrefix]
         private static bool LoadLocal(LOCALIZE_LANGUAGE lang)
         {
             var tm = TextDataManager.Instance;
