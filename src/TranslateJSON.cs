@@ -77,20 +77,22 @@ namespace LimbusLocalize
                 Directory.CreateDirectory(LimbusLocalizeMod.path + "/Localize/EN");
             if (!Directory.Exists(LimbusLocalizeMod.path + "/Localize/KR"))
                 Directory.CreateDirectory(LimbusLocalizeMod.path + "/Localize/KR");
-            if (!Directory.Exists(LimbusLocalizeMod.path + "/Localize/_CN"))
-                Directory.CreateDirectory(LimbusLocalizeMod.path + "/Localize/_CN");
+            if (!Directory.Exists(LimbusLocalizeMod.path + "/Localize/JP"))
+                Directory.CreateDirectory(LimbusLocalizeMod.path + "/Localize/JP");
             foreach (TextAsset textAsset in Resources.LoadAll<TextAsset>("Localize/EN"))
             {
                 File.WriteAllText(LimbusLocalizeMod.path + "/Localize/EN/" + textAsset.name + ".json", textAsset.text);
-                File.WriteAllText(LimbusLocalizeMod.path + "/Localize/_CN/CN_" + textAsset.name.Remove(0, 2) +".json", textAsset.text);
             }
             foreach (TextAsset textAsset in Resources.LoadAll<TextAsset>("Localize/KR"))
             {
                 File.WriteAllText(LimbusLocalizeMod.path + "/Localize/KR/" + textAsset.name + ".json", textAsset.text);
             }
+            foreach (TextAsset textAsset in Resources.LoadAll<TextAsset>("Localize/JP"))
+            {
+                File.WriteAllText(LimbusLocalizeMod.path + "/Localize/JP/" + textAsset.name + ".json", textAsset.text);
+            }
             string NickName = Resources.Load<TextAsset>("Story/ScenarioModelCode").ToString();
-            File.WriteAllText(LimbusLocalizeMod.path + "/Localize/EN/EN_NickName.json", NickName);
-            File.WriteAllText(LimbusLocalizeMod.path + "/Localize/KR/KR_NickName.json", NickName);
+            File.WriteAllText(LimbusLocalizeMod.path + "/Localize/NickName.json", NickName);
 
         }
 #if false
