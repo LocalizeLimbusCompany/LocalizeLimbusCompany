@@ -1097,7 +1097,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 방어력 감소 1 부여"
+                  "desc": "[OnSucceedAttackHead] 방어 레벨 감소 1 부여"
                 }
               ]
             }
@@ -1111,7 +1111,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 방어력 감소 1 부여"
+                  "desc": "[OnSucceedAttack] 방어 레벨 감소 1 부여"
                 }
               ]
             }
@@ -1644,28 +1644,28 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 충전 횟수 2를 소모하여 방어력 감소 1 부여"
+                  "desc": "[OnSucceedAttack] 충전 횟수 2를 소모하여 방어 레벨 감소 1 부여"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 충전 횟수 2를 소모하여 방어력 감소 1 부여"
+                  "desc": "[OnSucceedAttack] 충전 횟수 2를 소모하여 방어 레벨 감소 1 부여"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 충전 횟수 2를 소모하여 방어력 감소 1 부여"
+                  "desc": "[OnSucceedAttack] 충전 횟수 2를 소모하여 방어 레벨 감소 1 부여"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 충전 횟수 2를 소모하여 방어력 감소 1 부여"
+                  "desc": "[OnSucceedAttack] 충전 횟수 2를 소모하여 방어 레벨 감소 1 부여"
                 }
               ]
             }
@@ -3223,7 +3223,7 @@
                   "desc": "[OnSucceedAttackHead] 수비 위력 감소 4 부여"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 방어력 감소 2 부여"
+                  "desc": "[OnSucceedAttack] 방어 레벨 감소 2 부여"
                 }
               ]
             },
@@ -4378,14 +4378,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 다음 턴에 못 1 부여"
+                  "desc": "[OnSucceedAttack] 피해량의 30%만큼 흐트러짐 회복"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 다음 턴에 못 1 부여"
+                  "desc": "[OnSucceedAttack] 피해량의 30%만큼 흐트러짐 회복"
                 }
               ]
             }
@@ -4399,20 +4399,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 다음 턴에 못 1 부여"
-                },
-                {
-                  "desc": "[OnSucceedAttack] 출혈 1 부여"
+                  "desc": "[OnSucceedAttack] 피해량의 60%만큼 흐트러짐 회복"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 다음 턴에 못 1 부여"
-                },
-                {
-                  "desc": "[OnSucceedAttack] 출혈 1 부여"
+                  "desc": "[OnSucceedAttack] 피해량의 60%만큼 흐트러짐 회복"
                 }
               ]
             }
@@ -4431,14 +4425,15 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 못 3 부여"
+                  "desc": "[OnSucceedAttack] 못 3 부여",
+                  "summary": "[OnSucceedAttack] 못 3 부여"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 다음 턴에 속박 5 부여"
+                  "desc": "[OnSucceedAttack] 다음 턴에 속박 3 부여"
                 }
               ]
             }
@@ -4452,17 +4447,18 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 못 3 부여"
+                  "desc": "[OnSucceedAttack] 못 3 부여",
+                  "summary": "[OnSucceedAttack] 못 3 부여"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 다음 턴에 속박 5 부여"
+                  "desc": "[OnSucceedAttack] 다음 턴에 속박 3 부여"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 대상에게 못이 5 이상 있으면, 다음 턴에 마비 3, 공격 위력 감소 1 부여"
+                  "desc": "[OnSucceedAttack] 대상에게 못이 5 이상 있으면, 다음 턴에 속박 2, 공격 위력 감소 1 부여"
                 }
               ]
             }
@@ -4476,19 +4472,19 @@
         {
           "level": 3,
           "name": "이단 말살",
-          "desc": "대상에게 못이 5 이상 있으면 피해량 +30%",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 피해량의 50%만큼 흐트러짐 회복"
+                  "desc": "[OnSucceedAttack] 다음 턴에 못 2 부여"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 피해량의 50%만큼 흐트러짐 회복"
+                  "desc": "[OnSucceedAttack] 피해량의 50%만큼 체력 회복"
                 }
               ]
             }
@@ -4502,7 +4498,7 @@
         {
           "level": 1,
           "name": "어리석도다...!",
-          "desc": "[StartBattle] 보호 2를 얻음\n체력이 50% 미만이면 최종 위력 + 2",
+          "desc": "[StartBattle] 보호 1을 얻음\n체력이 50% 미만이면 최종 위력 + 2",
           "coinlist": [
             {}
           ]
@@ -4541,17 +4537,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 출혈 2 부여"
+                  "desc": "[OnSucceedAttack] 출혈 1 부여"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 출혈 2 부여"
-                },
-                {
-                  "desc": "[OnSucceedAttackHead] 다음 턴에 못 1 부여"
+                  "desc": "[OnSucceedAttack] 출혈 1 부여"
                 }
               ]
             }
@@ -4570,14 +4563,15 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 다음 턴에 못 1 부여"
+                  "desc": "[OnSucceedAttack] 다음 턴에 못 1 부여",
+                  "summary": "[OnSucceedAttack] 다음 턴에 못 1 부여"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 다음 턴에 공격 위력 감소 1 부여"
+                  "desc": "[OnSucceedAttack] 다음 턴에 마비 1 부여"
                 }
               ]
             }
@@ -4591,14 +4585,15 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 다음 턴에 못 1 부여"
+                  "desc": "[OnSucceedAttack] 다음 턴에 못 1 부여",
+                  "summary": "[OnSucceedAttack] 다음 턴에 못 1 부여"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 다음 턴에 공격 위력 감소 1 부여"
+                  "desc": "[OnSucceedAttack] 다음 턴에 마비 1 부여"
                 }
               ]
             }
@@ -4612,30 +4607,37 @@
         {
           "level": 3,
           "name": "철의 단죄",
-          "desc": "자신에게 광신이 있으면 피해량 +20%",
+          "desc": "자신에게 광신이 있으면 피해량 +15%",
           "coinlist": [
+            {},
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 다음 턴에 못 1 부여"
+                  "desc": "[OnSucceedAttackHead] 출혈 1 부여"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 출혈 2 부여"
-                }
-              ]
-            },
-            {
-              "coindescs": [
-                {
-                  "desc": "[OnSucceedAttack] 다음 턴에 공격 위력 감소 2 부여"
+                  "desc": "[OnSucceedAttackHead] 출혈 2 부여"
                 }
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1090404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "반격",
+          "desc": "",
+          "coinlist": [
+            {}
           ]
         }
       ]
