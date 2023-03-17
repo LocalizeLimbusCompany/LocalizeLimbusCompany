@@ -116,7 +116,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 目标的理智值低于0时，对其对目标施加1层“破绽”"
+                  "desc": "[OnSucceedAttack] 目标的理智值低于0时，对其施加1层“破绽”"
                 }
               ]
             }
@@ -638,7 +638,7 @@
         {
           "level": 3,
           "name": "伺机而动",
-          "desc": "若使用者在上回合未受到伤害则使硬币威力+3",
+          "desc": "若自身在上回合未受到伤害则使硬币威力+3",
           "coinlist": [
             {},
             {
@@ -908,7 +908,7 @@
         {
           "level": 2,
           "name": "二连斩击",
-          "desc": "[WhenUse] 若自身的体力低于50%，则下回合开始时使自身获得2层“迅捷”",
+          "desc": "[WhenUse] 若自身的体力低于50%，则在下回合开始时使自身获得2层“迅捷”",
           "coinlist": [
             {
               "coindescs": [
@@ -1089,7 +1089,7 @@
         {
           "level": 2,
           "name": "上斩",
-          "desc": "攻击带有“斩击易损”的目标时技能威力+2\n[WinDuel] 下回合开始时使自身获得1层“强壮”",
+          "desc": "攻击带有“斩击易损”的目标时，本技能威力+2\n[WinDuel] 下回合开始时使自身获得1层“强壮”",
           "coinlist": [
             {
               "coindescs": [
@@ -1704,7 +1704,7 @@
         {
           "level": 2,
           "name": "祸不单行",
-          "desc": "若使用者上回合未受到伤害则使硬币威力+1",
+          "desc": "若自身上回合未受到伤害则使硬币威力+1",
           "coinlist": [
             {
               "coindescs": [
@@ -1730,7 +1730,7 @@
         {
           "level": 3,
           "name": "白刃风暴",
-          "desc": "若使用者上回合未受到伤害则使硬币威力+2",
+          "desc": "若自身上回合未受到伤害则使硬币威力+2",
           "coinlist": [
             {},
             {
@@ -1941,7 +1941,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 目标的体力低于25%时，若本硬币未造成击杀则额外使用一次。\n正面命中：本硬币的伤害+50%"
+                  "desc": "[OnSucceedAttackHead] 目标的体力低于25%时，若本硬币未造成击杀则额外使用一次。\n正面命中：本硬币造成的伤害+50%"
                 },
                 {
                   "desc": "[ReUseOnSucceedAttackHead] 本硬币造成的伤害+50%"
@@ -3040,7 +3040,7 @@
         {
           "level": 3,
           "name": "斩破长空",
-          "desc": "若目标的流血强度高于6级，则自身的暴击率翻倍",
+          "desc": "若目标的流血强度高于6级，则使自身的暴击率翻倍",
           "coinlist": [
             {
               "coindescs": [
@@ -3072,7 +3072,7 @@
         {
           "level": 3,
           "name": "斩破长空",
-          "desc": "若目标的流血强度高于6级，则自身的暴击率翻倍",
+          "desc": "若目标的流血强度高于6级，则使自身的暴击率翻倍",
           "coinlist": [
             {
               "coindescs": [
@@ -3187,13 +3187,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Downward Swing",
+          "name": "巨刃纵斩",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级“破裂”强度"
                 }
               ]
             }
@@ -3201,13 +3201,13 @@
         },
         {
           "level": 2,
-          "name": "Downward Swing",
+          "name": "巨刃纵斩",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttack] 使目标增加2级“破裂”强度"
                 }
               ]
             }
@@ -3220,8 +3220,8 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Halberd Combo",
-          "desc": "[WinDuel] +10% damage",
+          "name": "戟锋连舞",
+          "desc": "[WinDuel] 本技能造成的伤害+10%",
           "coinlist": [
             {},
             {},
@@ -3230,8 +3230,8 @@
         },
         {
           "level": 2,
-          "name": "Halberd Combo",
-          "desc": "[WinDuel] +30% damage",
+          "name": "戟锋连舞",
+          "desc": "[WinDuel] 本技能造成的伤害+30%",
           "coinlist": [
             {},
             {},
@@ -3245,8 +3245,8 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Ravaging Cut",
-          "desc": "[WinDuel] Gain 1 Attack Power Up",
+          "name": "摧残斩切",
+          "desc": "[WinDuel] 使自身获得1层“强壮”",
           "coinlist": [
             {},
             {},
@@ -3260,7 +3260,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Counter",
+          "name": "反击",
           "desc": "",
           "coinlist": [
             {}
@@ -3273,14 +3273,14 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Slice then Stab",
+          "name": "斩叶穿眉",
           "desc": "",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +1 Poise count"
+                  "desc": "[OnSucceedAttackHead] 使自身获得1层“呼吸法”"
                 }
               ]
             }
@@ -3288,14 +3288,14 @@
         },
         {
           "level": 2,
-          "name": "Slice then Stab",
+          "name": "斩叶穿眉",
           "desc": "",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +2 Poise count "
+                  "desc": "[OnSucceedAttack] 使自身获得2层“呼吸法”"
                 }
               ]
             }
@@ -3308,27 +3308,27 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Slash Series",
+          "name": "刃如流水",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
+                  "desc": "[OnSucceedAttackHead] 使自身增加2级“呼吸法”强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 1 Poise"
+                  "desc": "[OnSucceedAttackHead] 使自身增加1级“呼吸法”强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 1 Poise"
+                  "desc": "[OnSucceedAttackHead] 使自身增加1级“呼吸法”强度"
                 }
               ]
             }
@@ -3336,27 +3336,27 @@
         },
         {
           "level": 2,
-          "name": "Slash Series",
-          "desc": "[DefeatDuel] Gain 2 Attack Power Up next turn",
+          "name": "刃如流水",
+          "desc": "[DefeatDuel] 下回合开始时，使自身获得2层“强壮”",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] 使自身增加2级“呼吸法”强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 1 Poise"
+                  "desc": "[OnSucceedAttack] 使自身增加1级“呼吸法”强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 1 Poise"
+                  "desc": "[OnSucceedAttack] 使自身增加1级“呼吸法”强度"
                 }
               ]
             }
@@ -3375,10 +3375,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 5 Paralysis"
+                  "desc": "[OnSucceedAttack] 对目标施加5层“麻痹”"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Bleed"
+                  "desc": "[OnSucceedAttack] 使目标增加3级“流血”强度"
                 }
               ]
             }
@@ -3391,8 +3391,8 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Newsprung Counter",
-          "desc": "[WhenUse] Gain 1 Damage Up next turn",
+          "name": "反击 - 展锋",
+          "desc": "[WhenUse] 下回合开始时，使自身获得1层“强袭”",
           "coinlist": [
             {}
           ]
@@ -3404,13 +3404,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Baton",
+          "name": "棍棒打击",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级“震颤”强度"
                 }
               ]
             }
@@ -3418,13 +3418,13 @@
         },
         {
           "level": 2,
-          "name": "Baton",
+          "name": "棍棒打击",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttack] 使目标增加2级“震颤”强度"
                 }
               ]
             }
@@ -3437,17 +3437,17 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Suppress",
+          "name": "武力压制",
           "desc": "",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 3 Tremor"
+                  "desc": "[OnSucceedAttackHead] 使目标增加3级“震颤”强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Damage Down next turn"
+                  "desc": "[OnSucceedAttack] 下回合开始时对目标施加1层“钝刃”"
                 }
               ]
             }
@@ -3455,17 +3455,17 @@
         },
         {
           "level": 2,
-          "name": "Suppress",
+          "name": "武力压制",
           "desc": "",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 6 Tremor"
+                  "desc": "[OnSucceedAttack] 使目标增加6级“震颤”强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Damage Down next turn"
+                  "desc": "[OnSucceedAttack] 下回合开始时对目标施加2层“钝刃”"
                 }
               ]
             }
@@ -3478,16 +3478,16 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Strong Strike",
-          "desc": "[WhenUse] Give 1 Protection to the ally with the lowest HP",
+          "name": "突然袭击",
+          "desc": "[WhenUse] 使体力最低的友方获得1层“守护”",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Burst Tremor"
+                  "desc": "[OnSucceedAttack] 引爆目标的“震颤”"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Blunt Fragility"
+                  "desc": "[OnSucceedAttack] 对目标施加2层“打击易损”"
                 }
               ]
             }
@@ -3500,13 +3500,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Baile y Rola",
+          "name": "一起跳舞吧！",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级“沉沦”强度"
                 }
               ]
             },
@@ -3515,13 +3515,13 @@
         },
         {
           "level": 2,
-          "name": "Baile y Rola",
+          "name": "一起跳舞吧！",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 4 Sinking"
+                  "desc": "[OnSucceedAttackHead] 使目标增加4级“沉沦”强度"
                 }
               ]
             },
@@ -3535,27 +3535,27 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Danza de Pasión",
+          "name": "再来点激情！",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] 使自身增加2级“呼吸法”强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] 使目标增加1级“沉沦”强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] 使目标增加1级“沉沦”强度"
                 }
               ]
             }
@@ -3563,33 +3563,33 @@
         },
         {
           "level": 2,
-          "name": "Danza de Pasión",
+          "name": "再来点激情！",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] 使自身增加2级“呼吸法”强度"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +1 Poise count"
+                  "desc": "[OnSucceedAttackHead] 使自身增加1级“呼吸法”强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttack] 使目标增加2级“沉沦”强度"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Apply +1 Sinking count"
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层“沉沦”"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttack] 使目标增加2级“沉沦”强度"
                 }
               ]
             }
@@ -3602,13 +3602,13 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Pañata Party",
-          "desc": "If target's SP is below 0, boost crit chance proportional to target's SP",
+          "name": "皮纳塔派对！",
+          "desc": "若目标的理智值低于0，则基于目标的理智值按比例增加自身的暴击率",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Raise user's stagger threshold by 50% of damage dealt"
+                  "desc": "[OnSucceedAttackHead] 使自身的混乱阈值后移本硬币造成伤害的50%"
                 }
               ]
             }
@@ -3621,7 +3621,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Evade",
+          "name": "闪避",
           "desc": "",
           "coinlist": [
             {}
@@ -3634,14 +3634,14 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Pulled Blade",
+          "name": "拔剑向敌",
           "desc": "",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级“破裂”强度"
                 }
               ]
             },
@@ -3650,14 +3650,14 @@
         },
         {
           "level": 2,
-          "name": "Pulled Blade",
+          "name": "拔剑向敌",
           "desc": "",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttack] 使目标增加2级“破裂”强度"
                 }
               ]
             },
@@ -3671,20 +3671,20 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Backslash",
+          "name": "瞬身绕袭",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "+10% Damage if user's speed is higher than target's"
+                  "desc": "若自身的速度值高于目标，则使本硬币造成的伤害+10%"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "+10% Damage if user's speed is higher than target's"
+                  "desc": "若自身的速度值高于目标，则使本硬币造成的伤害+10%"
                 }
               ]
             }
@@ -3692,20 +3692,20 @@
         },
         {
           "level": 2,
-          "name": "Backslash",
+          "name": "瞬身绕袭",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "+20% Damage if user's speed is higher than target's"
+                  "desc": "若自身的速度值高于目标，则使本硬币造成的伤害+20%"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "+20% Damage if user's speed is higher than target's"
+                  "desc": "若自身的速度值高于目标，则使本硬币造成的伤害+20%"
                 }
               ]
             }
@@ -3718,8 +3718,8 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Piercing Thrust",
-          "desc": "+20% Damage if target's HP is above 50%",
+          "name": "利刃穿身",
+          "desc": "若目标的体力高于50%，则本技能造成的伤害+20%",
           "coinlist": [
             {}
           ]
@@ -3731,13 +3731,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Draw of the Sword",
+          "name": "寒芒出鞘",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
+                  "desc": "[OnSucceedAttackHead] 使自身增加2级“呼吸法”强度"
                 }
               ]
             }
@@ -3745,13 +3745,13 @@
         },
         {
           "level": 2,
-          "name": "Draw of the Sword",
+          "name": "寒芒出鞘",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 4 Poise"
+                  "desc": "[OnSucceedAttackHead] 使自身增加4级“呼吸法”强度"
                 }
               ]
             }
@@ -3764,14 +3764,14 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Acupuncture",
+          "name": "穿刺剑法",
           "desc": "",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 1 Slash DMG Up next turn"
+                  "desc": "[OnSucceedAttackHead] 下回合开始时，使自身获得1层“斩击强袭”"
                 }
               ]
             }
@@ -3779,14 +3779,14 @@
         },
         {
           "level": 2,
-          "name": "Acupuncture",
-          "desc": "[WinDuel] Gain +1 Poise count",
+          "name": "穿刺剑法",
+          "desc": "[WinDuel] 使自身增加1级“呼吸”强度",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Slash DMG Up next turn"
+                  "desc": "[OnSucceedAttackHead] 下回合开始时，使自身获得2层“斩击强袭”"
                 }
               ]
             }
@@ -3799,14 +3799,14 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Decisive Dive",
-          "desc": "Final Power +2 if target's HP is below 25%",
+          "name": "腰击剑势",
+          "desc": "若目标的体力低于25%，则使本技能的最终威力+2",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[CriticalOnSucceedAttack] Raise first stagger threshold by 20% of damage dealt"
+                  "desc": "[CriticalOnSucceedAttack] 使目标的第一个混乱阈值前移本硬币造成伤害的20%"
                 }
               ]
             }
@@ -3819,7 +3819,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Evade",
+          "name": "闪避",
           "desc": "",
           "coinlist": [
             {}
@@ -3832,13 +3832,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Order",
+          "name": "下达指示",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Give 1 Protection to the ally with the lowest speed"
+                  "desc": "[OnSucceedAttack] 使速度值最低的友方获得1层“守护”"
                 }
               ]
             }
@@ -3846,13 +3846,13 @@
         },
         {
           "level": 2,
-          "name": "Order",
+          "name": "下达指示",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Give 2 Protection to the ally with the lowest speed"
+                  "desc": "[OnSucceedAttack] 使速度值最低的友方获得2层“守护”"
                 }
               ]
             }
@@ -3865,13 +3865,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Onslaught Command",
+          "name": "突击命令",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Give 1 Damage Up to the ally with the lowest speed"
+                  "desc": "[OnSucceedAttackHead] 使速度值最低的友方获得1层“强袭”"
                 }
               ]
             }
@@ -3879,13 +3879,13 @@
         },
         {
           "level": 2,
-          "name": "Onslaught Command",
-          "desc": "[WhenUse] Give 1 Attack Power Up to the ally with the lowest speed",
+          "name": "突击命令",
+          "desc": "[WhenUse] 使速度值最低的友方获得1层“强壮”",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Give 2 Damage Up to the ally with the lowest speed"
+                  "desc": "[OnSucceedAttackHead] 使速度值最低的友方获得2层“强袭”"
                 }
               ]
             }
@@ -3898,16 +3898,16 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Focus",
+          "name": "精神集中",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 5 Sinking"
+                  "desc": "[OnSucceedAttack] 使目标增加5级“沉沦”强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Attack Power Down"
+                  "desc": "[OnSucceedAttack] 对目标施加2层“虚弱”"
                 }
               ]
             }
@@ -3920,13 +3920,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Swipe",
+          "name": "挥扫",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级“破裂”强度"
                 }
               ]
             }
@@ -3934,13 +3934,13 @@
         },
         {
           "level": 2,
-          "name": "Swipe",
+          "name": "挥扫",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 4 Rupture"
+                  "desc": "[OnSucceedAttackHead] 使目标增加4级“破裂”强度"
                 }
               ]
             }
@@ -3953,13 +3953,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Jag",
+          "name": "锯裂",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Apply +1 Rupture count"
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层“破裂”"
                 }
               ]
             }
@@ -3967,16 +3967,16 @@
         },
         {
           "level": 2,
-          "name": "Jag",
+          "name": "锯裂",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Apply +1 Rupture count "
+                  "desc": "[OnSucceedAttack] 对目标施加1层“破裂”"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Pierce Fragility"
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层“穿刺易损”"
                 }
               ]
             }
@@ -3989,23 +3989,23 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Chop Up",
+          "name": "剁碎",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] +10% Damage if target has Rupture"
+                  "desc": "[OnSucceedAttack] 攻击带有“破裂”的敌人时，本硬币造成的伤害+10%"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] +10% Damage if target has Rupture"
+                  "desc": "[OnSucceedAttack] 攻击带有“破裂”的敌人时，本硬币造成的伤害+10%"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Heal by 30% of damage dealt"
+                  "desc": "[OnSucceedAttackHead] 恢复本硬币造成伤害30%的体力"
                 }
               ]
             }
@@ -4018,20 +4018,20 @@
       "levelList": [
         {
           "level": 1,
-          "name": "一点突破",
+          "name": "封喉一刺",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级“烧伤”强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级“烧伤”强度"
                 }
               ]
             }
@@ -4039,20 +4039,20 @@
         },
         {
           "level": 2,
-          "name": "一点突破",
+          "name": "封喉一刺",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttack] 使目标增加1级“烧伤”强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttack] 使目标增加1级“烧伤”强度"
                 }
               ]
             }
@@ -4065,7 +4065,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Rush Down",
+          "name": "一决雌雄",
           "desc": "",
           "coinlist": [
             {},
@@ -4073,7 +4073,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Burn"
+                  "desc": "[OnSucceedAttack] 使目标增加3级“烧伤”强度"
                 }
               ]
             }
@@ -4081,30 +4081,30 @@
         },
         {
           "level": 2,
-          "name": "Rush Down",
+          "name": "一决雌雄",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级“烧伤”强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级“烧伤”强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Burn"
+                  "desc": "[OnSucceedAttack] 使目标增加3级“烧伤”强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] If target has 6+ Burn, gain 1 Attack Level Up next turn"
+                  "desc": "[OnSucceedAttack] 若目标的“烧伤”强度高于6级，则在下回合开始时使自身获得1层“锐意”"
                 }
               ]
             }
@@ -4117,34 +4117,34 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Perfected Palm Strike",
+          "name": "万锻连掌",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级“烧伤”强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级“烧伤”强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级“烧伤”强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Burn"
+                  "desc": "[OnSucceedAttack] 使目标增加3级“烧伤”强度"
                 }
               ]
             }
@@ -4157,13 +4157,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Hack",
-          "desc": "[WinDuel] +20% damage",
+          "name": "野蛮劈砍",
+          "desc": "[WinDuel] 使本技能造成的伤害+20%",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Heal 30% of damage dealt"
+                  "desc": "[OnSucceedAttackHead] 恢复本硬币造成伤害30%的体力"
                 }
               ]
             },
@@ -4172,13 +4172,13 @@
         },
         {
           "level": 2,
-          "name": "Hack",
-          "desc": "[WinDuel] +40% damage",
+          "name": "野蛮劈砍",
+          "desc": "[WinDuel] 使本技能造成的伤害+40%",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Heal 50% of damage dealt"
+                  "desc": "[OnSucceedAttackHead] 恢复本硬币造成伤害50%的体力"
                 }
               ]
             },
@@ -4192,13 +4192,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Dismember",
+          "name": "四肢拆解",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 5 Rupture"
+                  "desc": "[OnSucceedAttack] 使目标增加5级“破裂”强度"
                 }
               ]
             }
@@ -4206,16 +4206,16 @@
         },
         {
           "level": 2,
-          "name": "Dismember",
+          "name": "四肢拆解",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 5 Rupture"
+                  "desc": "[OnSucceedAttack] 使目标增加5级“破裂”强度"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Heal 50% of damage dealt"
+                  "desc": "[OnSucceedAttackHead] 恢复本硬币造成伤害50%的体力"
                 }
               ]
             }
@@ -4228,34 +4228,34 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Eviscerate",
+          "name": "开膛破腹",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Deal 30% of damage dealt as bonus damage if target has Rupture"
+                  "desc": "[OnSucceedAttack] 攻击带有“破裂”的目标时，本硬币额外造成30%的伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Deal 30% of damage dealt as bonus damage if target has Rupture"
+                  "desc": "[OnSucceedAttack] 攻击带有“破裂”的目标时，本硬币额外造成30%的伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Deal 30% of damage dealt as bonus damage if target has Rupture"
+                  "desc": "[OnSucceedAttack] 攻击带有“破裂”的目标时，本硬币额外造成30%的伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Heal 100% of damage dealt"
+                  "desc": "[OnSucceedAttackHead] 恢复本硬币造成伤害100%的体力"
                 }
               ]
             }
@@ -4268,7 +4268,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Guard",
+          "name": "防御",
           "desc": ""
         }
       ]
@@ -4278,7 +4278,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Evade",
+          "name": "闪避",
           "desc": ""
         }
       ]
@@ -4288,7 +4288,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Counter",
+          "name": "反击",
           "desc": ""
         }
       ]
@@ -4299,20 +4299,20 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Drive",
+          "name": "穿刺钉刑",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Nails next turn"
+                  "desc": "[OnSucceedAttackHead] 下回合开始时对目标施加1层“尖钉”"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Nails next turn"
+                  "desc": "[OnSucceedAttackHead] 下回合开始时对目标施加1层“尖钉”"
                 }
               ]
             }
@@ -4320,26 +4320,26 @@
         },
         {
           "level": 2,
-          "name": "Drive",
+          "name": "穿刺钉刑",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Nails next turn"
+                  "desc": "[OnSucceedAttackHead] 下回合开始时对目标施加1层“尖钉”"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Bleed"
+                  "desc": "[OnSucceedAttack] 使目标增加1级“流血”强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Nails next turn"
+                  "desc": "[OnSucceedAttackHead] 下回合开始时对目标施加1层“尖钉”"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Bleed"
+                  "desc": "[OnSucceedAttack] 使目标增加1级“流血”强度"
                 }
               ]
             }
@@ -4352,20 +4352,20 @@
       "levelList": [
         {
           "level": 1,
-          "name": "You Are Cleansed of Sin",
+          "name": "涤净汝罪",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Nails"
+                  "desc": "[OnSucceedAttack] 对目标施加3层“尖钉”"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 5 Bind next turn"
+                  "desc": "[OnSucceedAttack] 下回合开始时对目标施加5层“束缚”"
                 }
               ]
             }
@@ -4373,23 +4373,23 @@
         },
         {
           "level": 2,
-          "name": "You Are Cleansed of Sin",
+          "name": "涤净汝罪",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Nails"
+                  "desc": "[OnSucceedAttack] 对目标施加3层“尖钉”"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 5 Bind next turn"
+                  "desc": "[OnSucceedAttack] 下回合开始时对目标施加5层“束缚”"
                 },
                 {
-                  "desc": "[OnSucceedAttack] If target has 5+ Nails, inflict 3 Paralyze and 1 Attack Power Down next turn"
+                  "desc": "[OnSucceedAttack] 若目标的“尖钉”层数高于5层，则在下回合开始时对目标施加3层“麻痹”和1层“虚弱”"
                 }
               ]
             }
@@ -4402,20 +4402,20 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Annihilate Heretics",
-          "desc": "+30% Damage to targets with 5+ Nails",
+          "name": "异端抹杀",
+          "desc": "若目标的“尖钉”层数高于5层，则使本技能造成的伤害+30%",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Lower user’s Stagger Threshold by 50% of damage dealt"
+                  "desc": "[OnSucceedAttack] 使自身的混乱阈值后移本硬币造成伤害的50%"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Lower user’s Stagger Threshold by 50% of damage dealt"
+                  "desc": "[OnSucceedAttack] 使自身的混乱阈值后移本硬币造成伤害的50%"
                 }
               ]
             }
@@ -4428,8 +4428,8 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Foolishness…!",
-          "desc": "[StartBattle] Gain 2 Protection\nAt less than 50% HP, Final Power +2",
+          "name": "愚不可及…！",
+          "desc": "[StartBattle] 使自身获得2层“守护”\n若自身的体力低于50%，则使本技能的最终威力+2",
           "coinlist": [
             {}
           ]
