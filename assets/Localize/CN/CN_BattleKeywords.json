@@ -33,7 +33,7 @@
     {
       "id": "Vulnerable",
       "name": "易损",
-      "desc": "一回合内基于效果层数增加受到的伤害。（最大10层）",
+      "desc": "一回合内基于本效果层数增加受到的伤害。(最大10层)",
       "summary": "所受伤害+{0}0"
     },
     {
@@ -103,21 +103,21 @@
       "summary": "技能最终威力+{0}"
     },
     {
-      "id": "Protection",
+      "id": "守护",
       "name": "守护",
-      "desc": "一回合内基于效果层数减少受到的伤害（最大10层）",
+      "desc": "一回合内基于本效果层数减少受到的伤害。(最大10层)",
       "summary": "受到伤害-{0}0%"
     },
     {
       "id": "AttackDmgUp",
       "name": "强袭",
-      "desc": "一回合内基于效果层数增加造成的伤害（最大10层）",
+      "desc": "一回合内基于本效果层数增加造成的伤害。(最大10层)",
       "summary": "造成伤害+{0}0%"
     },
     {
       "id": "DefenseUp",
       "name": "坚忍",
-      "desc": "一回合内基于效果层数增加防御等级（最多10层）",
+      "desc": "一回合内基于本效果层数增加防御等级。(最大10层)",
       "summary": "防御等级+{0}0%"
     },
     {
@@ -149,13 +149,13 @@
     {
       "id": "AttackDmgDown",
       "name": "钝刃",
-      "desc": "一回合内基于效果层数减少造成的伤害（最大10层）",
+      "desc": "一回合内基于本效果层数减少造成的伤害。(最大10层)",
       "summary": "造成伤害-{0}0%"
     },
     {
       "id": "DefenseDown",
       "name": "动摇",
-      "desc": "一回合内基于效果层数降低防御等级（最多10层）",
+      "desc": "一回合内基于本效果层数降低防御等级。(最大10层)",
       "summary": "防御等级-{0}0%"
     },
     {
@@ -225,12 +225,12 @@
     },
     {
       "id": "BloodPocket",
-      "name": "血袋",
+      "name": "血囊",
       "desc": "积蓄到特定层数后将释放强力攻击。"
     },
     {
       "id": "WaterPocket",
-      "name": "水袋",
+      "name": "水囊",
       "desc": "恢复体力时基于层数增加回复量。"
     },
     {
@@ -261,402 +261,397 @@
     {
       "id": "PinkRibbon",
       "name": "粉色绸带",
-      "desc": "At the end of the turn, if at 5+ Potency, remove this effect and apply ‘Desirous’ next turn."
-    },
-    {
-      "id": "PinkRibbonGreed",
-      "name": "渴望",
-      "desc": "At the start of the turn, self-apply 10 Bind.\nAll phys. resistances change to ‘Fatal’.\nAttack Skill Power +2.\nDefense Skill Power -2."
+      "desc": "回合结束时，若本效果的层数高于5层，则解除本效果并在下回合开始时对自身施加“渴望”。"
     },
     {
       "id": "PinkRibbon_Ishmael",
       "name": "粉色绸带",
-      "desc": "Count increases by 1 whenever the affected unit tosses an attack skill Coin.\nAt the end of the turn, inflict Bind by the effect’s Count, then remove this status."
+      "desc": "本回合内，每次掷出攻击技能硬币时使本效果的层数增加1层。\n回合结束时：对自身施加层数与本效果相同的“束缚”，随后解除本效果。"
     },
     {
       "id": "Muckworm",
       "name": "蛆虫",
-      "desc": "At the end of the turn, take Gluttony damage by the Count, increase Bleed Count by 1, then reduce this effect’s Count by 1."
+      "desc": "回合结束时，受到数值等同于本效果层数的暴食伤害并施加1层“流血”，随后使该效果的层数减少1层。"
     },
     {
       "id": "AttackUp",
       "name": "锐意",
-      "desc": "Offense level increases based on the effect's Potency for one turn. (Max. 10)"
+      "desc": "一回合内基于本效果层数提高攻击等级。(最大10层)"
     },
     {
       "id": "AttackDown",
       "name": "钝挫",
-      "desc": "Offense level decreases based on the effect's Potency for one turn. (Max. 10)"
+      "desc": "一回合内基于本效果层数降低攻击等级。(最大10层)"
     },
     {
       "id": "Liu_Meursault_Guard_Buff",
       "name": "坚如泰山",
-      "desc": "When attacked, inflict +1 Burn Count to the attacker."
+      "desc": "受到攻击时，对进攻者施加1层“烧伤”。"
     },
     {
       "id": "SlashResistUp",
-      "name": "斩击抗性提升",
-      "desc": "Increase Slash Resistance by a % based on Potency.\n(0.1% per Potency)"
+      "name": "斩击耐性",
+      "desc": "基于本效果层数提高斩击抗性。(每层0.1%)"
     },
     {
       "id": "PenetrateResistUp",
-      "name": "突刺抗性提升",
-      "desc": "Increase Pierce Resistance by a % based on Potency.\n(0.1% per Potency)"
+      "name": "突刺耐性",
+      "desc": "基于本效果层数提高突刺抗性。(每层0.1%)"
     },
     {
       "id": "HitResistUp",
-      "name": "打击抗性提升",
-      "desc": "Increase Blunt Resistance by a % based on Potency.\n(0.1% per Potency)"
+      "name": "打击耐性",
+      "desc": "基于本效果层数提高打击抗性。(每层0.1%)"
     },
     {
       "id": "SlashDamageUp",
-      "name": "斩击强袭",
-      "desc": "Deal more damage with Slash skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "强袭：斩击",
+      "desc": "一回合内基于本效果层数提高斩击伤害。(最大10层)"
     },
     {
       "id": "PenetrateDamageUp",
-      "name": "突刺强袭",
-      "desc": "Deal more damage with Pierce skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "强袭：突刺",
+      "desc": "一回合内基于本效果层数提高突刺伤害。(最大10层)"
     },
     {
       "id": "HitDamageUp",
-      "name": "打击强袭",
-      "desc": "Deal more damage with Blunt skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "强袭：打击",
+      "desc": "一回合内基于本效果层数提高打击伤害。(最大10层)"
     },
     {
       "id": "SlashResistDown",
-      "name": "斩击抗性下降",
-      "desc": ""
+      "name": "斩击脆弱",
+      "desc": "基于本效果层数降低斩击抗性。(每层0.1%)"
     },
     {
       "id": "PenetrateResistDown",
-      "name": "突刺抗性下降",
-      "desc": ""
+      "name": "突刺脆弱",
+      "desc": "基于本效果层数降低突刺抗性。(每层0.1%)"
     },
     {
       "id": "HitResistDown",
-      "name": "打击抗性下降",
-      "desc": ""
+      "name": "打击脆弱",
+      "desc": "基于本效果层数降低打击抗性。(每层0.1%)"
     },
     {
       "id": "SlashDamageDown",
-      "name": "斩击钝刃",
-      "desc": "Deal less damage with Slash skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "钝刃：斩击",
+      "desc": "一回合内基于本效果层数降低斩击伤害。(最大10层)"
     },
     {
       "id": "PenetrateDamageDown",
-      "name": "突刺钝刃",
-      "desc": "Deal less damage with Pierce skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "钝刃：突刺",
+      "desc": "一回合内基于本效果层数降低突刺伤害。(最大10层)"
     },
     {
       "id": "HitDamageDown",
-      "name": "打击钝刃",
-      "desc": "Deal less damage with Blunt skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "钝刃：打击",
+      "desc": "一回合内基于本效果层数降低打击伤害。(最大10层)"
     },
     {
       "id": "CrimsonResistDown",
-      "name": "Wrath Resist Down",
-      "desc": ""
+      "name": "暴怒脆弱",
+      "desc": "基于本效果层数降低暴怒抗性。(每层0.1%)"
     },
     {
       "id": "ScarletResistDown",
-      "name": "Lust Resist Down",
-      "desc": ""
+      "name": "色欲脆弱",
+      "desc": "基于本效果层数降低色欲抗性。(每层0.1%)"
     },
     {
       "id": "AmberResistDown",
-      "name": "Sloth Resist Down",
-      "desc": ""
+      "name": "懒惰脆弱",
+      "desc": "基于本效果层数降低懒惰抗性。(每层0.1%)"
     },
     {
       "id": "ShamrockResistDown",
-      "name": "Gluttony Resist Down",
-      "desc": ""
+      "name": "暴食脆弱",
+      "desc": "基于本效果层数降低暴食抗性。(每层0.1%)"
     },
     {
       "id": "AzureResistDown",
-      "name": "Gloom Resist Down",
-      "desc": ""
+      "name": "忧郁脆弱",
+      "desc": "基于本效果层数降低忧郁抗性。(每层0.1%)"
     },
     {
       "id": "IndigoResistDown",
-      "name": "Pride Resist Down",
-      "desc": ""
+      "name": "傲慢脆弱",
+      "desc": "基于本效果层数降低傲慢抗性。(每层0.1%)"
     },
     {
       "id": "VioletResistDown",
-      "name": "Envy Resist Down",
-      "desc": ""
+      "name": "嫉妒脆弱",
+      "desc": "基于本效果层数降低嫉妒抗性。(每层0.1%)"
     },
     {
       "id": "CrimsonResistUp",
-      "name": "Wrath Resist Up",
-      "desc": "Increase Wrath Resistance by a % based on Potency.\n(0.1% per Potency)"
+      "name": "暴怒耐性",
+      "desc": "基于本效果层数提高暴怒抗性。(每层0.1%)"
     },
     {
       "id": "ScarletResistUp",
-      "name": "Lust Resist Up",
-      "desc": "Increase Lust Resistance by a % based on Potency.\n(0.1% per Potency)"
+      "name": "色欲耐性",
+      "desc": "基于本效果层数提高色欲抗性。(每层0.1%)"
     },
     {
       "id": "AmberResistUp",
-      "name": "Sloth Resist Up",
-      "desc": "Increase Sloth Resistance by a % based on Potency.\n(0.1% per Potency)"
+      "name": "懒惰耐性",
+      "desc": "基于本效果层数提高懒惰抗性。(每层0.1%)"
     },
     {
       "id": "ShamrockResistUp",
-      "name": "Gluttony Resist Up",
-      "desc": "Increase Gluttony Resistance by a % based on Potency.\n(0.1% per Potency)"
+      "name": "暴食耐性",
+      "desc": "基于本效果层数提高暴食抗性。(每层0.1%)"
     },
     {
       "id": "AzureResistUp",
-      "name": "Gloom Resist Up",
-      "desc": "Increase Gloom Resistance by a % based on Potency.\n(0.1% per Potency)"
+      "name": "忧郁耐性",
+      "desc": "基于本效果层数提高忧郁抗性。(每层0.1%)"
     },
     {
       "id": "IndigoResistUp",
-      "name": "Pride Resist Up",
-      "desc": "Increase Pride Resistance by a % based on Potency.\n(0.1% per Potency)"
+      "name": "傲慢耐性",
+      "desc": "基于本效果层数提高傲慢抗性。(每层0.1%)"
     },
     {
       "id": "VioletResistUp",
-      "name": "Envy Resist Up",
-      "desc": "Increase Envy Resistance by a % based on Potency.\n(0.1% per Potency)"
+      "name": "嫉妒耐性",
+      "desc": "基于本效果层数提高嫉妒抗性。(每层0.1%)"
     },
     {
       "id": "CrimsonDamageDown",
-      "name": "Wrath DMG Down",
-      "desc": "Deal less damage with Wrath skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "钝刃：暴怒",
+      "desc": "一回合内基于本效果层数降低暴怒伤害。(最大10层)"
     },
     {
       "id": "ScarletDamageDown",
-      "name": "Lust DMG Down",
-      "desc": "Deal less damage with Lust skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "钝刃：色欲",
+      "desc": "一回合内基于本效果层数降低色欲伤害。(最大10层)"
     },
     {
       "id": "AmberDamageDown",
-      "name": "Sloth DMG Down",
-      "desc": "Deal less damage with Sloth skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "钝刃：懒惰",
+      "desc": "一回合内基于本效果层数降低懒惰伤害。(最大10层)"
     },
     {
       "id": "ShamrockDamageDown",
-      "name": "Gluttony DMG Down",
-      "desc": "Deal less damage with Gluttony skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "钝刃：暴食",
+      "desc": "一回合内基于本效果层数降低暴食伤害。(最大10层)"
     },
     {
       "id": "AzureDamageDown",
-      "name": "Gloom DMG Down",
-      "desc": "Deal less damage with Gloom skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "钝刃：忧郁",
+      "desc": "一回合内基于本效果层数降低忧郁伤害。(最大10层)"
     },
     {
       "id": "IndigoDamageDown",
-      "name": "Pride DMG Down",
-      "desc": "Deal less damage with Pride skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "钝刃：傲慢",
+      "desc": "一回合内基于本效果层数降低傲慢伤害。(最大10层)"
     },
     {
       "id": "VioletDamageDown",
-      "name": "Envy DMG Down",
-      "desc": "Deal less damage with Envy skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "钝刃：嫉妒",
+      "desc": "一回合内基于本效果层数降低嫉妒伤害。(最大10层)"
     },
     {
       "id": "CrimsonDamageUp",
-      "name": "Wrath DMG Up",
-      "desc": "Deal more damage with Wrath skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "强袭：暴怒",
+      "desc": "一回合内基于本效果层数提高暴怒伤害。(最大10层)"
     },
     {
       "id": "ScarletDamageUp",
-      "name": "Lust DMG Up",
-      "desc": "Deal more damage with Lust skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "强袭：色欲",
+      "desc": "一回合内基于本效果层数提高色欲伤害。(最大10层)"
     },
     {
       "id": "AmberDamageUp",
-      "name": "Sloth DMG Up",
-      "desc": "Deal more damage with Sloth skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "强袭：懒惰",
+      "desc": "一回合内基于本效果层数提高懒惰伤害。(最大10层)"
     },
     {
       "id": "ShamrockDamageUp",
-      "name": "Gluttony DMG Up",
-      "desc": "Deal more damage with Gluttony skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "强袭：暴食",
+      "desc": "一回合内基于本效果层数提高暴食伤害。(最大10层)"
     },
     {
       "id": "AzureDamageUp",
-      "name": "Gloom DMG Up",
-      "desc": "Deal more damage with Gloom skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "强袭：忧郁",
+      "desc": "一回合内基于本效果层数提高忧郁伤害。(最大10层)"
     },
     {
       "id": "IndigoDamageUp",
-      "name": "Pride DMG Up",
-      "desc": "Deal more damage with Pride skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "强袭：傲慢",
+      "desc": "一回合内基于本效果层数提高傲慢伤害。(最大10层)"
     },
     {
       "id": "VioletDamageUp",
-      "name": "Envy DMG Up",
-      "desc": "Deal more damage with Envy skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "强袭：嫉妒",
+      "desc": "一回合内基于本效果层数提高嫉妒伤害。(最大10层)"
     },
     {
       "id": "Curse",
       "name": "诅咒",
-      "desc": "Turn End: Self-apply 1 of the following, then reduce this effect’s Count by 1.\n1 Attack Power Down/1 Defense Power Down/1 Offense Level Down/1 Defense Down"
+      "desc": "回合结束时：对自身施加1层随机效果，随后使本效果的层数减少1层。\n随机效果包括虚弱、破绽、钝挫、动摇。"
     },
     {
       "id": "AttackDmgUp_Weak",
-      "name": "Weak-resist Damage Boost",
-      "desc": "Boost the damage of attacks against Weak resistances by (Potency)%."
+      "name": "痛击",
+      "desc": "攻击抗性为脆弱的目标时造成的伤害增加(本效果层数)%。"
     },
     {
       "id": "Bullet",
-      "name": "子弹",
-      "desc": "Spent by certain skills.\nSome attacks cancel if lacking Ammo."
+      "name": "弹药",
+      "desc": "部分技能进行攻击时消耗的资源。\n缺少弹药时这些攻击将不会发动。"
     },
     {
       "id": "Meursault_Last_Remodeling",
-      "name": "Final Augmentation",
-      "desc": "Turn Start: Gain 3 Attack Power Up, Defense Power Up, and Haste; Dies in 3 turns"
+      "name": "最终改造",
+      "desc": "回合开始时：使自身获得3层“强壮”、“防御”和“迅捷”；在{0}回合后死亡。"
     },
     {
       "id": "Aggressive",
-      "name": "Instincts",
-      "desc": "At the end of the turn, if the Count is at 4+, change to an “aggressive” state."
+      "name": "本能",
+      "desc": "回合结束时，若本效果的层数高于4层，则进入进攻状态。"
     },
     {
       "id": "Cromer_Target",
-      "name": "Gaze of the One Who Grips",
-      "desc": "Staggered for a turn. Take +100% damage from Kromer."
+      "name": "执柄者的凝视",
+      "desc": "陷入混乱一回合。克罗默对自身造成的伤害+100%。"
     },
     {
       "id": "Poison",
-      "name": "中毒",
-      "desc": "Turn End: Take fixed damage by the Count, then halve the Count."
+      "name": "剧毒",
+      "desc": "回合结束时：受到数值等同于本效果层数的固定伤害，随后使本效果的层数减半。"
     },
     {
       "id": "Desire",
-      "name": "渴望",
-      "desc": "Turn End: At 5+ stacks, take 30 SP damage, apply 2 Fragile and 10 Bind, and remove this status"
+      "name": "欲望",
+      "desc": "回合结束时：若本效果的层数高于5层，则受到30点理智伤害，并对自身施加2层“易损”和10层“束缚”，随后解除本效果。"
     },
     {
       "id": "Assemble",
-      "name": "狂热",
-      "desc": "Final Power +1 against units with Nails"
+      "name": "狂信",
+      "desc": "一回合内，攻击带有“尖钉”的目标时，技能威力提升等同于本效果层数的数值。"
     },
     {
       "id": "Nail",
-      "name": "钉",
-      "desc": "Turn Start: Apply 1 Bleed to self, and increase Bleed count by this effect's Count. Turn End: Reduce Count by 1."
+      "name": "尖钉",
+      "desc": "回合开始时：增加1级“流血”强度并施加层数与本效果相同的“流血”。回合结束时：本效果的层数减少1层。"
     },
     {
       "id": "BeingGolden",
-      "name": "金光闪闪",
-      "desc": "Turn Start: Heal 10 HP per Count."
+      "name": "光辉",
+      "desc": "回合开始时：每拥有1层则恢复10点体力。"
     },
     {
       "id": "SlashTakeDamageDown",
-      "name": "Slash Protection",
-      "desc": "Take less damage from Slash skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "守护：斩击",
+      "desc": "一回合内基于本效果层数减少受到的斩击伤害。(最大10层)"
     },
     {
       "id": "PenetrateTakeDamageDown",
-      "name": "Pierce Protection",
-      "desc": "Take less damage from Pierce skills based on the effect's Potency for one turn. (max 10)"
+      "name": "守护：穿刺",
+      "desc": "一回合内基于本效果层数减少受到的穿刺伤害。(最大10层)"
     },
     {
       "id": "HitTakeDamageDown",
-      "name": "Blunt Protection",
-      "desc": "Take less damage from Blunt skills based on the effect's Potency for one turn. (max 10)"
+      "name": "守护：打击",
+      "desc": "一回合内基于本效果层数减少受到的打击伤害。(最大10层)"
     },
     {
       "id": "CrimsonTakeDamageDown",
-      "name": "Wrath Protection",
-      "desc": "Take less damage from Wrath skills based on the effect's Potency for one turn. (max 10)"
+      "name": "守护：暴怒",
+      "desc": "一回合内基于本效果层数减少受到的暴怒伤害。(最大10层)"
     },
     {
       "id": "ScarletTakeDamageDown",
-      "name": "Lust Protection",
-      "desc": "Take less damage from Lust skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "守护：色欲",
+      "desc": "一回合内基于本效果层数减少受到的色欲伤害。(最大10层)"
     },
     {
       "id": "AmberTakeDamageDown",
-      "name": "Sloth Protection",
-      "desc": "Take less damage from Sloth skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "守护：懒惰",
+      "desc": "一回合内基于本效果层数减少受到的懒惰伤害。(最大10层)"
     },
     {
       "id": "ShamrockTakeDamageDown",
-      "name": "Gluttony Protection",
-      "desc": "Take less damage from Gluttony skills based on the effect's Potency for one turn. (max 10)"
+      "name": "守护：暴食",
+      "desc": "一回合内基于本效果层数减少受到的暴食伤害。(最大10层)"
     },
     {
       "id": "AzureTakeDamageDown",
-      "name": "Gloom Protection",
-      "desc": "Take less damage from Gloom skills based on the effect's Potency for one turn. (max 10)"
+      "name": "守护：忧郁",
+      "desc": "一回合内基于本效果层数减少受到的忧郁伤害。(最大10层)"
     },
     {
       "id": "IndigoTakeDamageDown",
-      "name": "Pride Protection",
-      "desc": "Take less damage from Pride skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "守护：傲慢",
+      "desc": "一回合内基于本效果层数减少受到的傲慢伤害。(最大10层)"
     },
     {
       "id": "VioletTakeDamageDown",
-      "name": "Envy Protection",
-      "desc": "Take less damage from Envy skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "守护：嫉妒",
+      "desc": "一回合内基于本效果层数减少受到的嫉妒伤害。(最大10层)"
     },
     {
       "id": "SlashTakeDamageUp",
-      "name": "Slash Fragility",
-      "desc": "Take more damage from Slash skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "易损：斩击",
+      "desc": "一回合内基于本效果层数增加受到的斩击伤害。(最大10层)"
     },
     {
       "id": "PenetrateTakeDamageUp",
-      "name": "Pierce Fragility",
-      "desc": "Take more damage from Pierce skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "易损：穿刺",
+      "desc": "一回合内基于本效果层数增加受到的穿刺伤害。(最大10层)"
     },
     {
       "id": "HitTakeDamageUp",
-      "name": "Blunt Fragility",
-      "desc": "Take more damage from Blunt skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "易损：打击",
+      "desc": "一回合内基于本效果层数增加受到的打击伤害。(最大10层)"
     },
     {
       "id": "CrimsonTakeDamageUp",
-      "name": "Wrath Fragility",
-      "desc": "Take more damage from Wrath skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "易损：暴怒",
+      "desc": "一回合内基于本效果层数增加受到的暴怒伤害。(最大10层)"
     },
     {
       "id": "ScarletTakeDamageUp",
-      "name": "Lust Fragility",
-      "desc": "Take more damage from Lust skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "易损：色欲",
+      "desc": "一回合内基于本效果层数增加受到的色欲伤害。(最大10层)"
     },
     {
       "id": "AmberTakeDamageUp",
-      "name": "Sloth Fragility",
-      "desc": "Take more damage from Sloth skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "易损：懒惰",
+      "desc": "一回合内基于本效果层数增加受到的懒惰伤害。(最大10层)"
     },
     {
       "id": "ShamrockTakeDamageUp",
-      "name": "Gluttony Fragility",
-      "desc": "Take more damage from Gluttony skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "易损：暴食",
+      "desc": "一回合内基于本效果层数增加受到的暴食伤害。(最大10层)"
     },
     {
       "id": "AzureTakeDamageUp",
-      "name": "Gloom Fragility",
-      "desc": "Take more damage from Gloom skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "易损：忧郁",
+      "desc": "一回合内基于本效果层数增加受到的忧郁伤害。(最大10层)"
     },
     {
       "id": "IndigoTakeDamageUp",
-      "name": "Pride Fragility",
-      "desc": "Take more damage from Pride skills based on the effect's Potency for one turn. (Max. 10)"
+      "name": "易损：傲慢",
+      "desc": "一回合内基于本效果层数增加受到的傲慢伤害。(最大10层)"
     },
     {
       "id": "VioletTakeDamageUp",
-      "name": "Envy Fragility",
-      "desc": "Take more damage from Envy skills based on the effect’s Count for one turn. (Max 10)"
+      "name": "易损：嫉妒",
+      "desc": "一回合内基于本效果层数增加受到的嫉妒伤害。(最大10层)"
     },
     {
       "id": "NailPersonality",
-      "name": "Nails",
-      "desc": "At the start of the turn, gain 1 Bleed and increase the Bleed Count by this effect’s Count.\nAt the end of the turn, halve the Count."
+      "name": "尖钉",
+      "desc": "回合开始时，增加1级“流血”强度并施加层数与本效果相同的“流血”。\n回合结束时：使本效果的层数减半。"
     },
     {
       "id": "AssemblePersonality",
-      "name": "Fanatic",
-      "desc": "Raise Skill Final Power by the effect’s Count against units with Nails."
+      "name": "狂信",
+      "desc": "一回合内，攻击带有“尖钉”的目标时，技能威力提升等同于本效果层数的数值。"
     }
   ]
 }
