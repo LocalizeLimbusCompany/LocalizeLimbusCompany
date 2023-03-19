@@ -94,7 +94,7 @@
       "id": "Charge",
       "name": "充能",
       "desc": "部分技能发动附加效果所需的资源。最大20层。回合结束时本效果的层数降低1层。",
-      "summary": "特定技能的资源",
+      "summary": "部分技能的资源",
       "undefined": "-"
     },
     {
@@ -112,14 +112,14 @@
     {
       "id": "Protection",
       "name": "守护",
-      "desc": "本回合内所受伤害-{0}0%（最大10层）",
-      "summary": "所受伤害-{0}0%"
+      "desc": "本回合内受到的伤害-{0}0%（最大10层）",
+      "summary": "受到的伤害-{0}0%"
     },
     {
       "id": "AttackDmgUp",
       "name": "强袭",
       "desc": "本回合内造成的伤害+{0}0%（最大10层）",
-      "summary": "造成伤害+{0}0%"
+      "summary": "造成的伤害+{0}0%"
     },
     {
       "id": "DefenseUp",
@@ -161,7 +161,7 @@
       "id": "AttackDmgDown",
       "name": "钝刃",
       "desc": "本回合内造成的伤害-{0}0%（最大10层）",
-      "summary": "造成伤害-{0}0%"
+      "summary": "造成的伤害-{0}0%"
     },
     {
       "id": "DefenseDown",
@@ -203,7 +203,7 @@
       "id": "MoonLight",
       "name": "月华",
       "desc": "部分技能发动附加效果所需的资源。",
-      "summary": "附加效果"
+      "summary": "部分技能的资源"
     },
     {
       "id": "Daunted_LowMorale",
@@ -248,7 +248,7 @@
       "id": "Anger",
       "name": "怒气",
       "desc": "使用部分技能时所消耗的资源。",
-      "summary": "部分技能使用时所消耗的资源"
+      "summary": "部分技能的资源"
     },
     {
       "id": "Run_LowMorale",
@@ -258,7 +258,7 @@
     },
     {
       "id": "Nail",
-      "name": "N公司尖钉",
+      "name": "尖钉",
       "desc": "回合开始时：对自身施加1层强度等同于本效果层数的“流血”。",
       "summary": "对自身施加1层强度为本效果层数的“流血”"
     },
@@ -337,7 +337,7 @@
     {
       "id": "Emergency_Operation",
       "name": "紧急手术",
-      "desc": "每层使最大体力增加25%，技能威力+1。\n本效果的每回合层数+1。\n层数达到5层时，角色直接死亡。",
+      "desc": "每层使最大体力增加25%，技能威力+1。\n本效果的每回合层数增加1层。\n层数达到5层时，角色直接死亡。",
       "summary": "层数达到5层时直接死亡"
     },
     {
@@ -348,20 +348,20 @@
     },
     {
       "id": "PinkRibbon",
-      "name": "粉色缎带",
+      "name": "粉色绸带",
       "desc": "回合结束时：若本效果的层数高于5层，则移除本效果并在下回合开始时对自身施加“渴望”。",
       "summary": "变得“渴望”"
     },
     {
       "id": "PinkRibbon_Ishmael",
-      "name": "粉色缎带",
-      "desc": "本回合内，每次掷出攻击技能硬币时使本效果的层数+1。\n回合结束时：对自身施加层数与本效果相同的“束缚”，随后移除本效果。",
+      "name": "粉色绸带",
+      "desc": "本回合内，每次掷出攻击技能硬币时使本效果的层数增加1层。\n回合结束时：对自身施加层数与本效果相同的“束缚”，随后移除本效果。",
       "summary": "对自身施加{0}层“束缚”"
     },
     {
       "id": "Muckworm",
       "name": "蛆虫",
-      "desc": "回合结束时：受到数值等同于本效果层数的暴食伤害并施加1层“流血”，随后使该效果的层数-1。",
+      "desc": "回合结束时：受到数值等同于本效果层数的暴食伤害并施加1层“流血”，随后使该效果的层数减少1层。",
       "summary": "受到暴食伤害；施加1层“流血”"
     },
     {
@@ -400,241 +400,236 @@
     {
       "id": "SlashDamageUp",
       "name": "斩击强袭",
-      "desc": "Deal +{0}0% damage with Slash skills this turn (Up to 10 stacks)",
-      "summary": "Slash damage +{0}0%"
+      "desc": "本回合内造成的斩击伤害+{0}0%（最大10层）",
+      "summary": "斩击伤害+{0}0%"
     },
     {
       "id": "PenetrateDamageUp",
       "name": "突刺强袭",
-      "desc": "Deal +{0}0% damage with Pierce skills this turn (Up to 10 stacks)",
-      "summary": "Pierce damage +{0}0%"
+      "desc": "本回合内造成的突刺伤害+{0}0%（最大10层）",
+      "summary": "突刺伤害+{0}0%"
     },
     {
       "id": "HitDamageUp",
       "name": "打击强袭",
-      "desc": "Deal +{0}0% damage with Blunt skills this turn (Up to 10 stacks)",
-      "summary": "Blunt damage +{0}0%"
+      "desc": "本回合内造成的打击伤害+{0}0%（最大10层）",
+      "summary": "打击伤害+{0}0%"
     },
     {
       "id": "SlashResistDown",
-      "name": "斩击抗性下降",
+      "name": "斩击脆弱",
       "desc": ""
     },
     {
       "id": "PenetrateResistDown",
-      "name": "突刺抗性下降",
+      "name": "突刺脆弱",
       "desc": ""
     },
     {
       "id": "HitResistDown",
-      "name": "打击抗性下降",
+      "name": "打击脆弱",
       "desc": ""
     },
     {
       "id": "SlashDamageDown",
       "name": "斩击钝刃",
-      "desc": "Deal -{0}0% damage with Slash skills this turn (Up to 10 stacks)",
-      "summary": "Slash damage -{0}0%"
+      "desc": "本回合内造成的斩击伤害-{0}0%（最大10层）",
+      "summary": "斩击伤害-{0}0%"
     },
     {
       "id": "PenetrateDamageDown",
       "name": "突刺钝刃",
-      "desc": "Deal -{0}0% damage with Pierce skills this turn (Up to 10 stacks)",
-      "summary": "Pierce damage -{0}0%"
+      "desc": "本回合内造成的突刺伤害-{0}0%（最大10层）",
+      "summary": "突刺伤害-{0}0%"
     },
     {
       "id": "HitDamageDown",
       "name": "打击钝刃",
-      "desc": "Deal -{0}0% damage with Blunt skills this turn (Up to 10 stacks)",
-      "summary": "Blunt damage -{0}0%"
+      "desc": "本回合内造成的打击伤害-{0}0%（最大10层）",
+      "summary": "打击伤害-{0}0%"
     },
     {
       "id": "CrimsonResistDown",
-      "name": "Wrath Resist Down",
+      "name": "暴怒脆弱",
       "desc": ""
     },
     {
       "id": "ScarletResistDown",
-      "name": "Lust Resist Down",
+      "name": "色欲脆弱",
       "desc": ""
     },
     {
       "id": "AmberResistDown",
-      "name": "Sloth Resist Down",
+      "name": "懒惰脆弱",
       "desc": ""
     },
     {
       "id": "ShamrockResistDown",
-      "name": "Gluttony Resist Down",
+      "name": "暴食脆弱",
       "desc": ""
     },
     {
       "id": "AzureResistDown",
-      "name": "Gloom Resist Down",
+      "name": "忧郁脆弱",
       "desc": ""
     },
     {
       "id": "IndigoResistDown",
-      "name": "Pride Resist Down",
+      "name": "傲慢脆弱",
       "desc": ""
     },
     {
       "id": "VioletResistDown",
-      "name": "Envy Resist Down",
+      "name": "嫉妒脆弱",
       "desc": ""
     },
     {
       "id": "CrimsonResistUp",
-      "name": "Wrath Resist Up",
+      "name": "暴怒耐性",
       "desc": ""
     },
     {
       "id": "ScarletResistUp",
-      "name": "Lust Resist Up",
+      "name": "色欲耐性",
       "desc": ""
     },
     {
       "id": "AmberResistUp",
-      "name": "Sloth Resist Up",
+      "name": "懒惰耐性",
       "desc": ""
     },
     {
       "id": "ShamrockResistUp",
-      "name": "Gluttony Resist Up",
+      "name": "暴食耐性",
       "desc": ""
     },
     {
       "id": "AzureResistUp",
-      "name": "Gloom Resist Up",
+      "name": "忧郁耐性",
       "desc": ""
     },
     {
       "id": "IndigoResistUp",
-      "name": "Pride Resist Up",
+      "name": "傲慢耐性",
       "desc": ""
     },
     {
       "id": "VioletResistUp",
-      "name": "Envy Resist Up",
+      "name": "嫉妒耐性",
       "desc": ""
     },
     {
       "id": "CrimsonDamageDown",
-      "name": "Wrath DMG Down",
-      "desc": "Deal -{0}0% damage with Wrath skills this turn (Up to 10 stacks)",
-      "summary": "Wrath damage -{0}0%"
+      "name": "暴怒钝刃",
+      "desc": "本回合内造成的暴怒伤害-{0}0%（最大10层）",
+      "summary": "暴怒伤害-{0}0%"
     },
     {
       "id": "ScarletDamageDown",
-      "name": "Lust DMG Down",
-      "desc": "Deal -{0}0% damage with Lust skills this turn (Up to 10 stacks)",
-      "summary": "Lust damage -{0}0%"
+      "name": "色欲钝刃",
+      "desc": "本回合内造成的色欲伤害-{0}0%（最大10层）",
+      "summary": "色欲伤害-{0}0%"
     },
     {
       "id": "AmberDamageDown",
-      "name": "Sloth DMG Down",
-      "desc": "Deal -{0}0% damage with Sloth skills this turn (Up to 10 stacks)",
-      "summary": "Sloth damage -{0}0%"
+      "name": "懒惰钝刃",
+      "desc": "本回合内造成的懒惰伤害-{0}0%（最大10层）",
+      "summary": "懒惰伤害-{0}0%"
     },
     {
       "id": "ShamrockDamageDown",
-      "name": "Gluttony DMG Down",
-      "desc": "Deal -{0}0% damage with Gluttony skills this turn (Up to 10 stacks)",
-      "summary": "Gluttony damage -{0}0%"
+      "name": "暴食钝刃",
+      "desc": "本回合内造成的暴食伤害-{0}0%（最大10层）",
+      "summary": "暴食伤害-{0}0%"
     },
     {
       "id": "AzureDamageDown",
-      "name": "Gloom DMG Down",
-      "desc": "Deal -{0}0% damage with Gloom skills this turn (Up to 10 stacks)",
-      "summary": "Gloom damage -{0}0%"
+      "name": "忧郁钝刃",
+      "desc": "本回合内造成的忧郁伤害-{0}0%（最大10层）",
+      "summary": "忧郁伤害-{0}0%"
     },
     {
       "id": "IndigoDamageDown",
-      "name": "Pride DMG Down",
-      "desc": "Deal -{0}0% damage with Pride skills this turn (Up to 10 stacks)",
-      "summary": "Pride damage -{0}0%"
+      "name": "傲慢钝刃",
+      "desc": "本回合内造成的傲慢伤害-{0}0%（最大10层）",
+      "summary": "傲慢伤害-{0}0%"
     },
     {
       "id": "VioletDamageDown",
-      "name": "Envy DMG Down",
-      "desc": "Deal -{0}0% damage with Envy skills this turn (Up to 10 stacks)",
-      "summary": "Envy damage -{0}0%"
+      "name": "嫉妒钝刃",
+      "desc": "本回合内造成的嫉妒伤害-{0}0%（最大10层）",
+      "summary": "嫉妒伤害-{0}0%"
     },
     {
       "id": "CrimsonDamageUp",
-      "name": "Wrath DMG Up",
-      "desc": "Deal +{0}0% damage with Wrath skills this turn (Up to 10 stacks)",
-      "summary": "Wrath damage +{0}0%"
+      "name": "暴怒强袭",
+      "desc": "本回合内造成的暴怒伤害+{0}0%（最大10层）",
+      "summary": "暴怒伤害+{0}0%"
     },
     {
       "id": "ScarletDamageUp",
-      "name": "Lust DMG Up",
-      "desc": "Deal +{0}0% damage with Lust skills this turn (Up to 10 stacks)",
-      "summary": "Lust damage +{0}0%"
+      "name": "色欲强袭",
+      "desc": "本回合内造成的色欲伤害+{0}0%（最大10层）",
+      "summary": "色欲伤害+{0}0%"
     },
     {
       "id": "AmberDamageUp",
-      "name": "Sloth DMG Up",
-      "desc": "Deal +{0}0% damage with Sloth skills this turn (Up to 10 stacks)",
-      "summary": "Sloth damage +{0}0%"
+      "name": "懒惰强袭",
+      "desc": "本回合内造成的懒惰伤害+{0}0%（最大10层）",
+      "summary": "懒惰伤害+{0}0%"
     },
     {
       "id": "ShamrockDamageUp",
-      "name": "Gluttony DMG Up",
-      "desc": "Deal +{0}0% damage with Gluttony skills this turn (Up to 10 stacks)",
-      "summary": "Gluttony damage +{0}0%"
+      "name": "暴食强袭",
+      "desc": "本回合内造成的暴食伤害+{0}0%（最大10层）",
+      "summary": "暴食伤害+{0}0%"
     },
     {
       "id": "AzureDamageUp",
-      "name": "Gloom DMG Up",
-      "desc": "Deal +{0}0% damage with Gloom skills this turn (Up to 10 stacks)",
-      "summary": "Gloom damage +{0}0%"
+      "name": "忧郁强袭",
+      "desc": "本回合内造成的忧郁伤害+{0}0%（最大10层）",
+      "summary": "忧郁伤害+{0}0%"
     },
     {
       "id": "IndigoDamageUp",
-      "name": "Pride DMG Up",
-      "desc": "Deal +{0}0% damage with Pride skills this turn (Up to 10 stacks)",
-      "summary": "Pride damage +{0}0%"
+      "name": "傲慢强袭",
+      "desc": "本回合内造成的傲慢伤害+{0}0%（最大10层）",
+      "summary": "傲慢伤害+{0}0%"
     },
     {
       "id": "VioletDamageUp",
-      "name": "Envy DMG Up",
-      "desc": "Deal +{0}0% damage with Envy skills this turn (Up to 10 stacks)",
-      "summary": "Envy damage +{0}0%"
+      "name": "嫉妒强袭",
+      "desc": "本回合内造成的嫉妒伤害+{0}0%（最大10层）",
+      "summary": "嫉妒伤害+{0}0%"
     },
     {
       "id": "Curse",
-      "name": "Curse",
-      "desc": "Turn End: Self-apply 1 of the following, then reduce this effect’s Count by 1.\n1 Attack Power Down/1 Defense Power Down/1 Offense Level Down/1 Defense Down",
-      "summary": "Self-apply a negative status effect, then reduce stack by 1"
+      "name": "诅咒",
+      "desc": "回合结束时：对自身施加1层随机效果，随后使本效果的层数减少1层。\n随机效果包括虚弱、破绽、钝挫、动摇",
+      "summary": "对自身施加1层随即效果，随后层数减少1层"
     },
     {
       "id": "AttackDmgUp_Weak",
-      "name": "Weak-resist DMG Boost",
-      "desc": "Boost the damage of attacks against Weak resistances by {0}0%.",
-      "summary": "+{0}0% damage to Weak resistances"
+      "name": "痛击",
+      "desc": "攻击抗性为脆弱的目标时造成的伤害+{0}0%",
+      "summary": "对脆弱目标造成的伤害+{0}0%"
     },
     {
       "id": "Bullet",
-      "name": "Ammo",
-      "desc": "Spent by certain skills. Some attacks cancel if lacking Ammo.",
-      "summary": "Resource for certain skills"
+      "name": "弹药",
+      "desc": "部分技能进行攻击时消耗的资源。缺少弹药时这些攻击将不会发动。",
+      "summary": "部分技能的资源"
     },
     {
       "id": "Meursault_Last_Remodeling",
-      "name": "Final Augment",
-      "desc": "Turn Start: Gain 3 Attack Power Up, Defense Power Up, and Haste; Dies in {0} turns"
-    },
-    {
-      "id": "WigglingRibbon",
-      "name": "Writhing Ribbon",
-      "desc": "설명 입력해주세요"
+      "name": "最终改造",
+      "desc": "回合开始时：使自身获得3层“强壮”、“防御”和“迅捷”；在{0}回合后死亡"
     },
     {
       "id": "Choice_90103301",
-      "name": "Struggling",
-      "desc": "Speed +1 for this battle",
-      "summary": "SPD +1"
+      "name": "奋战",
+      "desc": "本场战斗速度值+1",
+      "summary": "速度值+1"
     },
     {
       "id": "Choice_90103402",
@@ -691,7 +686,7 @@
     {
       "id": "Assemble",
       "name": "狂信",
-      "desc": "攻击带有“N公司尖钉”的目标时，技能威力+{0}",
+      "desc": "攻击带有“尖钉”的目标时，技能威力+{0}",
       "summary": "Final Power +{0}"
     },
     {
@@ -774,8 +769,8 @@
     {
       "id": "Whistle_Courage",
       "name": "Courage to Triumph Fear",
-      "desc": "Turn Start: Self-apply 1 Attack Power Up and 2 Protection",
-      "summary": "Self-apply 1 Attack Power Up and 2 Protection"
+      "desc": "Turn Start: Self-apply 1 Attack Power Up and 2守护",
+      "summary": "Self-apply 1 Attack Power Up and 2守护"
     },
     {
       "id": "Whistle_Fear",
@@ -785,123 +780,123 @@
     },
     {
       "id": "SlashTakeDamageDown",
-      "name": "Slash Protection",
-      "desc": "Take -{0}0% damage from Slash skills this turn (Up to 10 stacks)",
-      "summary": "Slash damage taken -{0}0%"
+      "name": "斩击守护",
+      "desc": "本回合内受到的斩击伤害-{0}0%（最大10层）",
+      "summary": "受到的斩击伤害-{0}0%"
     },
     {
       "id": "PenetrateTakeDamageDown",
-      "name": "Pierce Protection",
-      "desc": "Take -{0}0% damage from Pierce skills this turn (Up to 10 stacks)",
-      "summary": "Pierce damage taken -{0}0%"
+      "name": "穿刺守护",
+      "desc": "本回合内受到的穿刺伤害-{0}0%（最大10层）",
+      "summary": "受到的穿刺伤害-{0}0%"
     },
     {
       "id": "HitTakeDamageDown",
-      "name": "Blunt Protection",
-      "desc": "Take -{0}0% damage from Blunt skills this turn (Up to 10 stacks)",
-      "summary": "Blunt damage taken -{0}0%"
+      "name": "打击守护",
+      "desc": "本回合内受到的打击伤害-{0}0%（最大10层）",
+      "summary": "受到的打击伤害-{0}0%"
     },
     {
       "id": "CrimsonTakeDamageDown",
-      "name": "Wrath Protection",
-      "desc": "Take -{0}0% damage from Wrath skills this turn (Up to 10 stacks)",
-      "summary": "Wrath damage taken -{0}0%"
+      "name": "暴怒守护",
+      "desc": "本回合内受到的暴怒伤害-{0}0%（最大10层）",
+      "summary": "受到的暴怒伤害-{0}0%"
     },
     {
       "id": "ScarletTakeDamageDown",
-      "name": "Lust Protection",
-      "desc": "Take -{0}0% damage from Lust skills this turn (Up to 10 stacks)",
-      "summary": "Lust damage taken -{0}0%"
+      "name": "色欲守护",
+      "desc": "本回合内受到的色欲伤害-{0}0%（最大10层）",
+      "summary": "受到的色欲伤害-{0}0%"
     },
     {
       "id": "AmberTakeDamageDown",
-      "name": "Sloth Protection",
-      "desc": "Take -{0}0% damage from Sloth skills this turn (Up to 10 stacks)",
-      "summary": "Sloth damage taken -{0}0%"
+      "name": "懒惰守护",
+      "desc": "本回合内受到的懒惰伤害-{0}0%（最大10层）",
+      "summary": "受到的懒惰伤害-{0}0%"
     },
     {
       "id": "ShamrockTakeDamageDown",
-      "name": "Gluttony Protection",
-      "desc": "Take -{0}0% damage from Gluttony skills this turn (Up to 10 stacks)",
-      "summary": "Gluttony damage taken -{0}0%"
+      "name": "暴食守护",
+      "desc": "本回合内受到的暴食伤害-{0}0%（最大10层）",
+      "summary": "受到的暴食伤害-{0}0%"
     },
     {
       "id": "AzureTakeDamageDown",
-      "name": "Gloom Protection",
-      "desc": "Take -{0}0% damage from Gloom skills this turn (Up to 10 stacks)",
-      "summary": "Gloom damage taken -{0}0%"
+      "name": "忧郁守护",
+      "desc": "本回合内受到的忧郁伤害-{0}0%（最大10层）",
+      "summary": "受到的忧郁伤害-{0}0%"
     },
     {
       "id": "IndigoTakeDamageDown",
-      "name": "Pride Protection",
-      "desc": "Take -{0}0% damage from Pride skills this turn (Up to 10 stacks)",
-      "summary": "Pride damage taken -{0}0%"
+      "name": "傲慢守护",
+      "desc": "本回合内受到的傲慢伤害-{0}0%（最大10层）",
+      "summary": "受到的傲慢伤害-{0}0%"
     },
     {
       "id": "VioletTakeDamageDown",
-      "name": "Envy Protection",
-      "desc": "Take -{0}0% damage from Envy skills this turn (Up to 10 stacks)",
-      "summary": "Envy damage taken -{0}0%"
+      "name": "嫉妒守护",
+      "desc": "本回合内受到的嫉妒伤害-{0}0%（最大10层）",
+      "summary": "受到的嫉妒伤害-{0}0%"
     },
     {
       "id": "SlashTakeDamageUp",
-      "name": "Slash Fragility",
-      "desc": "Take +{0}0% damage from Slash skills this turn (Up to 10 stacks)",
-      "summary": "Slash damage taken +{0}0%"
+      "name": "斩击易损",
+      "desc": "本回合内受到的斩击伤害+{0}0%（最大10层）",
+      "summary": "受到的斩击伤害+{0}0%"
     },
     {
       "id": "PenetrateTakeDamageUp",
-      "name": "Pierce Fragility",
-      "desc": "Take +{0}0% damage from Pierce skills this turn (Up to 10 stacks)",
-      "summary": "Pierce damage taken +{0}0%"
+      "name": "穿刺易损",
+      "desc": "本回合内受到的穿刺伤害+{0}0%（最大10层）",
+      "summary": "受到的穿刺伤害+{0}0%"
     },
     {
       "id": "HitTakeDamageUp",
-      "name": "Blunt Fragility",
-      "desc": "Take +{0}0% damage from Blunt skills this turn (Up to 10 stacks)",
-      "summary": "Blunt damage taken +{0}0%"
+      "name": "打击易损",
+      "desc": "本回合内受到的打击伤害+{0}0%（最大10层）",
+      "summary": "受到的打击伤害+{0}0%"
     },
     {
       "id": "CrimsonTakeDamageUp",
-      "name": "Wrath Fragility",
-      "desc": "Take +{0}0% damage from Wrath skills this turn (Up to 10 stacks)",
-      "summary": "Wrath damage taken +{0}0%"
+      "name": "暴怒易损",
+      "desc": "本回合内受到的暴怒伤害+{0}0%（最大10层）",
+      "summary": "受到的暴怒伤害+{0}0%"
     },
     {
       "id": "ScarletTakeDamageUp",
-      "name": "Lust Fragility",
-      "desc": "Take +{0}0% damage from Lust skills this turn (Up to 10 stacks)",
-      "summary": "Lust damage taken +{0}0%"
+      "name": "色欲易损",
+      "desc": "本回合内受到的色欲伤害+{0}0%（最大10层）",
+      "summary": "受到的色欲伤害+{0}0%"
     },
     {
       "id": "AmberTakeDamageUp",
-      "name": "Sloth Fragility",
-      "desc": "Take +{0}0% damage from Sloth skills this turn (Up to 10 stacks)",
-      "summary": "Sloth damage taken +{0}0%"
+      "name": "懒惰易损",
+      "desc": "本回合内受到的懒惰伤害+{0}0%（最大10层）",
+      "summary": "受到的懒惰伤害+{0}0%"
     },
     {
       "id": "ShamrockTakeDamageUp",
-      "name": "Gluttony Fragility",
-      "desc": "Take +{0}0% damage from Gluttony skills this turn (Up to 10 stacks)",
-      "summary": "Gluttony damage taken +{0}0%"
+      "name": "暴食易损",
+      "desc": "本回合内受到的暴食伤害+{0}0%（最大10层）",
+      "summary": "受到的暴食伤害+{0}0%"
     },
     {
       "id": "AzureTakeDamageUp",
-      "name": "Gloom Fragility",
-      "desc": "Take +{0}0% damage from Gloom skills this turn (Up to 10 stacks)",
-      "summary": "Gloom damage taken +{0}0%"
+      "name": "忧郁易损",
+      "desc": "本回合内受到的忧郁伤害+{0}0%（最大10层）",
+      "summary": "受到的忧郁伤害+{0}0%"
     },
     {
       "id": "IndigoTakeDamageUp",
-      "name": "Pride Fragility",
-      "desc": "Take +{0}0% damage from Pride skills this turn (Up to 10 stacks)",
-      "summary": "Pride damage taken +{0}0%"
+      "name": "傲慢易损",
+      "desc": "本回合内受到的傲慢伤害+{0}0%（最大10层）",
+      "summary": "受到的傲慢伤害+{0}0%"
     },
     {
       "id": "VioletTakeDamageUp",
-      "name": "Envy Fragility",
-      "desc": "Take +{0}0% damage from Envy skills this turn (Up to 10 stacks)",
-      "summary": "Envy damage taken +{0}0%"
+      "name": "嫉妒易损",
+      "desc": "本回合内受到的嫉妒伤害+{0}0%（最大10层）",
+      "summary": "受到的嫉妒伤害+{0}0%"
     },
     {
       "id": "LittleCourage",
