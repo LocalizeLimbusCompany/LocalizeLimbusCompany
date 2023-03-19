@@ -45,7 +45,7 @@
     {
       "id": "Taunt",
       "name": "嘲讽",
-      "desc": "",
+      "desc": "你必须先攻击那名带有“嘲讽”的角色！",
       "undefined": "-"
     },
     {
@@ -258,9 +258,9 @@
     },
     {
       "id": "Nail",
-      "name": "尖钉",
-      "desc": "回合开始时：对自身施加1层强度等同于本效果层数的“流血”。",
-      "summary": "对自身施加1层强度为本效果层数的“流血”"
+      "name": "N公司的尖钉",
+      "desc": "回合开始时：增加1级“流血”强度并施加{0}层“流血”。\n回合结束时：本效果的层数减少1层。",
+      "summary": "对自身施加1层强度等同于本效果层数的“流血”"
     },
     {
       "id": "Inactible",
@@ -349,13 +349,13 @@
     {
       "id": "PinkRibbon",
       "name": "粉色绸带",
-      "desc": "回合结束时：若本效果的层数高于5层，则移除本效果并在下回合开始时对自身施加“渴望”。",
+      "desc": "回合结束时：若本效果的层数高于5层，则解除本效果并在下回合开始时对自身施加“渴望”。",
       "summary": "变得“渴望”"
     },
     {
       "id": "PinkRibbon_Ishmael",
       "name": "粉色绸带",
-      "desc": "本回合内，每次掷出攻击技能硬币时使本效果的层数增加1层。\n回合结束时：对自身施加层数与本效果相同的“束缚”，随后移除本效果。",
+      "desc": "本回合内，每次掷出攻击技能硬币时使本效果的层数增加1层。\n回合结束时：对自身施加层数与本效果相同的“束缚”，随后解除本效果。",
       "summary": "对自身施加{0}层“束缚”"
     },
     {
@@ -384,228 +384,228 @@
     },
     {
       "id": "SlashResistUp",
-      "name": "斩击抗性提升",
-      "desc": ""
+      "name": "斩击耐性",
+      "desc": "基于效果层数提高斩击抗性。(每层0.1%)"
     },
     {
       "id": "PenetrateResistUp",
-      "name": "突刺抗性提升",
-      "desc": ""
+      "name": "突刺耐性",
+      "desc": "基于效果层数提高突刺抗性。(每层0.1%)"
     },
     {
       "id": "HitResistUp",
-      "name": "打击抗性提升",
-      "desc": ""
+      "name": "打击耐性",
+      "desc": "基于效果层数提高打击抗性。(每层0.1%)"
     },
     {
       "id": "SlashDamageUp",
-      "name": "斩击强袭",
+      "name": "强袭：斩击",
       "desc": "本回合内造成的斩击伤害+{0}0%（最大10层）",
       "summary": "斩击伤害+{0}0%"
     },
     {
       "id": "PenetrateDamageUp",
-      "name": "突刺强袭",
+      "name": "强袭：突刺",
       "desc": "本回合内造成的突刺伤害+{0}0%（最大10层）",
       "summary": "突刺伤害+{0}0%"
     },
     {
       "id": "HitDamageUp",
-      "name": "打击强袭",
+      "name": "强袭：打击",
       "desc": "本回合内造成的打击伤害+{0}0%（最大10层）",
       "summary": "打击伤害+{0}0%"
     },
     {
       "id": "SlashResistDown",
       "name": "斩击脆弱",
-      "desc": ""
+      "desc": "基于效果层数降低斩击抗性。(每层0.1%)"
     },
     {
       "id": "PenetrateResistDown",
       "name": "突刺脆弱",
-      "desc": ""
+      "desc": "基于效果层数降低突刺抗性。(每层0.1%)"
     },
     {
       "id": "HitResistDown",
       "name": "打击脆弱",
-      "desc": ""
+      "desc": "基于效果层数降低打击抗性。(每层0.1%)"
     },
     {
       "id": "SlashDamageDown",
-      "name": "斩击钝刃",
+      "name": "钝刃：斩击",
       "desc": "本回合内造成的斩击伤害-{0}0%（最大10层）",
       "summary": "斩击伤害-{0}0%"
     },
     {
       "id": "PenetrateDamageDown",
-      "name": "突刺钝刃",
+      "name": "钝刃：突刺",
       "desc": "本回合内造成的突刺伤害-{0}0%（最大10层）",
       "summary": "突刺伤害-{0}0%"
     },
     {
       "id": "HitDamageDown",
-      "name": "打击钝刃",
+      "name": "钝刃：打击",
       "desc": "本回合内造成的打击伤害-{0}0%（最大10层）",
       "summary": "打击伤害-{0}0%"
     },
     {
       "id": "CrimsonResistDown",
       "name": "暴怒脆弱",
-      "desc": ""
+      "desc": "基于效果层数降低暴怒抗性。(每层0.1%)"
     },
     {
       "id": "ScarletResistDown",
       "name": "色欲脆弱",
-      "desc": ""
+      "desc": "基于效果层数降低色欲抗性。(每层0.1%)"
     },
     {
       "id": "AmberResistDown",
       "name": "懒惰脆弱",
-      "desc": ""
+      "desc": "基于效果层数降低懒惰抗性。(每层0.1%)"
     },
     {
       "id": "ShamrockResistDown",
       "name": "暴食脆弱",
-      "desc": ""
+      "desc": "基于效果层数降低暴食抗性。(每层0.1%)"
     },
     {
       "id": "AzureResistDown",
       "name": "忧郁脆弱",
-      "desc": ""
+      "desc": "基于效果层数降低忧郁抗性。(每层0.1%)"
     },
     {
       "id": "IndigoResistDown",
       "name": "傲慢脆弱",
-      "desc": ""
+      "desc": "基于效果层数降低傲慢抗性。(每层0.1%)"
     },
     {
       "id": "VioletResistDown",
       "name": "嫉妒脆弱",
-      "desc": ""
+      "desc": "基于效果层数降低嫉妒抗性。(每层0.1%)"
     },
     {
       "id": "CrimsonResistUp",
       "name": "暴怒耐性",
-      "desc": ""
+      "desc": "基于效果层数提高暴怒抗性。(每层0.1%)"
     },
     {
       "id": "ScarletResistUp",
       "name": "色欲耐性",
-      "desc": ""
+      "desc": "基于效果层数提高色欲抗性。(每层0.1%)"
     },
     {
       "id": "AmberResistUp",
       "name": "懒惰耐性",
-      "desc": ""
+      "desc": "基于效果层数提高懒惰抗性。(每层0.1%)"
     },
     {
       "id": "ShamrockResistUp",
       "name": "暴食耐性",
-      "desc": ""
+      "desc": "基于效果层数提高暴食抗性。(每层0.1%)"
     },
     {
       "id": "AzureResistUp",
       "name": "忧郁耐性",
-      "desc": ""
+      "desc": "基于效果层数提高忧郁抗性。(每层0.1%)"
     },
     {
       "id": "IndigoResistUp",
       "name": "傲慢耐性",
-      "desc": ""
+      "desc": "基于效果层数提高傲慢抗性。(每层0.1%)"
     },
     {
       "id": "VioletResistUp",
       "name": "嫉妒耐性",
-      "desc": ""
+      "desc": "基于效果层数提高嫉妒抗性。(每层0.1%)"
     },
     {
       "id": "CrimsonDamageDown",
-      "name": "暴怒钝刃",
+      "name": "钝刃：暴怒",
       "desc": "本回合内造成的暴怒伤害-{0}0%（最大10层）",
       "summary": "暴怒伤害-{0}0%"
     },
     {
       "id": "ScarletDamageDown",
-      "name": "色欲钝刃",
+      "name": "钝刃：色欲",
       "desc": "本回合内造成的色欲伤害-{0}0%（最大10层）",
       "summary": "色欲伤害-{0}0%"
     },
     {
       "id": "AmberDamageDown",
-      "name": "懒惰钝刃",
+      "name": "钝刃：懒惰",
       "desc": "本回合内造成的懒惰伤害-{0}0%（最大10层）",
       "summary": "懒惰伤害-{0}0%"
     },
     {
       "id": "ShamrockDamageDown",
-      "name": "暴食钝刃",
+      "name": "钝刃：暴食",
       "desc": "本回合内造成的暴食伤害-{0}0%（最大10层）",
       "summary": "暴食伤害-{0}0%"
     },
     {
       "id": "AzureDamageDown",
-      "name": "忧郁钝刃",
+      "name": "钝刃：忧郁",
       "desc": "本回合内造成的忧郁伤害-{0}0%（最大10层）",
       "summary": "忧郁伤害-{0}0%"
     },
     {
       "id": "IndigoDamageDown",
-      "name": "傲慢钝刃",
+      "name": "钝刃：傲慢",
       "desc": "本回合内造成的傲慢伤害-{0}0%（最大10层）",
       "summary": "傲慢伤害-{0}0%"
     },
     {
       "id": "VioletDamageDown",
-      "name": "嫉妒钝刃",
+      "name": "钝刃：嫉妒",
       "desc": "本回合内造成的嫉妒伤害-{0}0%（最大10层）",
       "summary": "嫉妒伤害-{0}0%"
     },
     {
       "id": "CrimsonDamageUp",
-      "name": "暴怒强袭",
+      "name": "强袭：暴怒",
       "desc": "本回合内造成的暴怒伤害+{0}0%（最大10层）",
       "summary": "暴怒伤害+{0}0%"
     },
     {
       "id": "ScarletDamageUp",
-      "name": "色欲强袭",
+      "name": "强袭：色欲",
       "desc": "本回合内造成的色欲伤害+{0}0%（最大10层）",
       "summary": "色欲伤害+{0}0%"
     },
     {
       "id": "AmberDamageUp",
-      "name": "懒惰强袭",
+      "name": "强袭：懒惰",
       "desc": "本回合内造成的懒惰伤害+{0}0%（最大10层）",
       "summary": "懒惰伤害+{0}0%"
     },
     {
       "id": "ShamrockDamageUp",
-      "name": "暴食强袭",
+      "name": "强袭：暴食",
       "desc": "本回合内造成的暴食伤害+{0}0%（最大10层）",
       "summary": "暴食伤害+{0}0%"
     },
     {
       "id": "AzureDamageUp",
-      "name": "忧郁强袭",
+      "name": "强袭：忧郁",
       "desc": "本回合内造成的忧郁伤害+{0}0%（最大10层）",
       "summary": "忧郁伤害+{0}0%"
     },
     {
       "id": "IndigoDamageUp",
-      "name": "傲慢强袭",
+      "name": "强袭：傲慢",
       "desc": "本回合内造成的傲慢伤害+{0}0%（最大10层）",
       "summary": "傲慢伤害+{0}0%"
     },
     {
       "id": "VioletDamageUp",
-      "name": "嫉妒强袭",
+      "name": "强袭：嫉妒",
       "desc": "本回合内造成的嫉妒伤害+{0}0%（最大10层）",
       "summary": "嫉妒伤害+{0}0%"
     },
     {
       "id": "Curse",
       "name": "诅咒",
-      "desc": "回合结束时：对自身施加1层随机效果，随后使本效果的层数减少1层。\n随机效果包括虚弱、破绽、钝挫、动摇",
+      "desc": "回合结束时：对自身施加1层随机效果，随后使本效果的层数减少1层。\n随机效果包括虚弱、破绽、钝挫、动摇。",
       "summary": "对自身施加1层随即效果，随后层数减少1层"
     },
     {
@@ -623,88 +623,88 @@
     {
       "id": "Meursault_Last_Remodeling",
       "name": "最终改造",
-      "desc": "回合开始时：使自身获得3层“强壮”、“防御”和“迅捷”；在{0}回合后死亡"
+      "desc": "回合开始时：使自身获得3层“强壮”、“防御”和“迅捷”；在{0}回合后死亡。"
     },
     {
       "id": "Choice_90103301",
-      "name": "奋战",
-      "desc": "本场战斗速度值+1",
+      "name": "挣扎",
+      "desc": "本场战斗速度值+1。",
       "summary": "速度值+1"
     },
     {
       "id": "Choice_90103402",
-      "name": "Relieved",
-      "desc": "Speed +2 for this battle",
-      "summary": "SPD +2"
+      "name": "安心",
+      "desc": "本场战斗速度值+2。",
+      "summary": "速度值+2"
     },
     {
       "id": "Choice_901001",
-      "name": "Spreading Flame",
-      "desc": "At the start of the battle, allies without Wrath Affinity are inflicted with 5 Burn"
+      "name": "燎原",
+      "desc": "战斗开场时，技能组内没有暴怒属性技能的友方增加5级“烧伤”强度。"
     },
     {
       "id": "Choice_901007",
-      "name": "Gentle Sendoff",
-      "desc": "Turn Start: Heal 10 HP and SP",
-      "summary": "HP, SP +10"
+      "name": "惜别",
+      "desc": "回合开始时：恢复10点体力与理智值。",
+      "summary": "体力与理智值+10"
     },
     {
       "id": "Choice_901009",
-      "name": "Photopia",
-      "desc": "Skill Power -1 at the start of the battle",
-      "summary": "Skill Power -1"
+      "name": "眩目",
+      "desc": "战斗开场时，技能威力-1。",
+      "summary": "技能威力-1"
     },
     {
       "id": "Choice_901010",
-      "name": "Emptied",
-      "desc": "At the start of the battle, allies without Lust Affinity are Staggered"
+      "name": "空虚",
+      "desc": "战斗开场时，技能组内没有色欲属性技能的友方陷入混乱。"
     },
     {
       "id": "Choice_901019",
-      "name": "Contamination",
-      "desc": "Speed -2 at the start of the battle",
-      "summary": "SPD -2"
+      "name": "秽物",
+      "desc": "战斗开场时，速度值-2。",
+      "summary": "速度值-2"
     },
     {
       "id": "Choice_1030301",
-      "name": "Event Effect",
-      "desc": "Gain 3 Attack Power Up at the start of the battle",
-      "summary": "Gain 3 Attack Power Up"
+      "name": "事件效果",
+      "desc": "战斗开场时，获得3层“强壮”。",
+      "summary": "获得3层“强壮”"
     },
     {
       "id": "Choice_1030501",
-      "name": "Event Effect",
-      "desc": "Self-apply 5 Attack Power Down each turn",
-      "summary": "Self-apply 5 Attack Power Down"
+      "name": "事件效果",
+      "desc": "每回合开始时对自身施加5层“虚弱”。",
+      "summary": "对自身施加5层“虚弱”"
     },
     {
       "id": "Choice_1031001",
-      "name": "Event Effect",
-      "desc": "Self-apply 3 Damage Down each turn",
-      "summary": "Self-apply 3 Damage Down"
+      "name": "事件效果",
+      "desc": "每回合开始时对自身施加5层“钝刃”。",
+      "summary": "对自身施加5层“钝刃”"
     },
     {
       "id": "Assemble",
       "name": "狂信",
-      "desc": "攻击带有“尖钉”的目标时，技能威力+{0}",
+      "desc": "本回合内攻击带有“尖钉”的目标时，技能威力+{0}。",
       "summary": "Final Power +{0}"
     },
     {
       "id": "ReinforcedAssemble",
-      "name": "Kromer’s Whistles",
-      "desc": "We shall fear not, for the One Who Grips is with us."
+      "name": "克罗默的哨音",
+      "desc": "我们无所畏惧，与执柄者同在。"
     },
     {
       "id": "Greedy",
       "name": "渴望",
-      "desc": "Self-apply 2 Fragile and 10 Bind this turn. Gain a skill slot and change behavior.",
-      "summary": "Self-apply 2 Fragile and 10 Bind"
+      "desc": "本回合对自身施加2层“易损”和10层“束缚”。获得一个行动槽并改变自身的行动。",
+      "summary": "对自身施加2层“易损”和10层“束缚”"
     },
     {
       "id": "Desire",
-      "name": "Urge",
-      "desc": "Turn End: At 5+ stacks, take 30 SP damage, self-apply 2 Fragile and 10 Bind, and remove this effect.",
-      "summary": "Self-apply 30 SP damage, 2 Fragile, and 10 Bind"
+      "name": "欲望",
+      "desc": "回合结束时：若本效果的层数高于5层，则受到30点理智伤害，并对自身施加2层“易损”和10层“束缚”，随后解除本效果。",
+      "summary": "受到30点理智伤害，对自身施加2层“易损”和10层“束缚”"
     },
     {
       "id": "GreedyReady",
@@ -713,208 +713,208 @@
     },
     {
       "id": "Decay",
-      "name": "Rotting Skin",
-      "desc": "When attacked, inflict 3 Poison to the attacker.",
-      "summary": "Inflict 3 Poison to attacker"
+      "name": "腐化外皮",
+      "desc": "受到攻击时，对攻击者施加3层“剧毒”。",
+      "summary": "对攻击者施加3层“剧毒”"
     },
     {
       "id": "Poison",
-      "name": "Poison",
-      "desc": "Turn End: Take {0} fixed damage, then halve the Count.",
+      "name": "剧毒",
+      "desc": "回合结束时：受到{0}点固定伤害，随后使本效果的层数减半。",
       "summary": "{0} HP damage"
     },
     {
       "id": "Cromer_Target",
-      "name": "Gaze of the One Who Grips",
-      "desc": "Staggered for this turn. Take +100% damage from Kromer."
+      "name": "执柄者的凝视",
+      "desc": "本回合陷入混乱。克罗默对自身造成的伤害+100%。"
     },
     {
       "id": "Cromer_Boredom",
-      "name": "Accept the Pain!",
-      "desc": "Deal and take 100% more damage.\nDefense Skill Final Power -5."
+      "name": "接受痛苦吧！",
+      "desc": "造成与承受的伤害量+100%。\n守备技能的威力-5。"
     },
     {
       "id": "Cromer_Ecstasy",
-      "name": "Ecstatic",
-      "desc": "All the Maw’s physical resistances change to ‘Fatal’.",
-      "summary": "Weaken part's phys. resistance"
+      "name": "狂喜",
+      "desc": "口部部位的物理抗性全部变为“致命”。",
+      "summary": "部位的物理抗性变弱"
     },
     {
       "id": "Cromer_Madness",
-      "name": "Purity",
-      "desc": "All parts gain 3 Bind and 3 Damage Up, and their phys. resistances change to ‘Fatal’."
+      "name": "纯粹",
+      "desc": "对所有部位施加3层“束缚”和3层“强袭”，且它们的物理抗性全部变为“致命”。"
     },
     {
       "id": "Hardening",
-      "name": "Hardening",
-      "desc": "Turn Start: At 3+ Count, the Arms change into a “perfect” state."
+      "name": "硬化",
+      "desc": "回合开始时：若本效果的层数高于3层，则使手臂进入完整状态。"
     },
     {
       "id": "Perfected",
-      "name": "Perfect Shell",
-      "desc": "Turn Start: The Arms gain 2 Attack Power Up. Removed when the Arms’ health falls below 50%",
-      "summary": "Gain 2 Attack Power Up"
+      "name": "完整外壳",
+      "desc": "回合开始时：使手臂获得2层“强壮”。当手臂的体力低于50%解除本效果",
+      "summary": "获得2层“强壮”"
     },
     {
       "id": "Enrage",
-      "name": "Frenzy",
-      "desc": "Self-apply 3 Attack Power Up and 3 Fragile this turn, and change behavior. Does not gain Instincts when attacked.",
-      "summary": "Self-apply 3 Attack Power Up and 3 Fragile"
+      "name": "狂暴",
+      "desc": "本回合对自身施加3层“强壮”和3层“易损”，并改变自身的行为。被攻击时不再积蓄“本能”层数。",
+      "summary": "对自身施加3层“强壮”和3层“易损”"
     },
     {
       "id": "Aggressive",
-      "name": "Instincts",
-      "desc": "Turn End: At 4+ Count, change to an “aggressive” state."
+      "name": "本能",
+      "desc": "回合结束时：若本效果的层数高于4层，则进入进攻状态。"
     },
     {
       "id": "Whistle_Courage",
-      "name": "Courage to Triumph Fear",
-      "desc": "Turn Start: Self-apply 1 Attack Power Up and 2守护",
-      "summary": "Self-apply 1 Attack Power Up and 2守护"
+      "name": "战胜恐惧的勇气",
+      "desc": "回合开始时：使自身获得1层“强壮”和2层“守护”。",
+      "summary": "使自身获得1层“强壮”和2层“守护”"
     },
     {
       "id": "Whistle_Fear",
-      "name": "Fearsome Whistles",
-      "desc": "Turn Start: Self-apply 1 Bind and 1 Paralyze.",
-      "summary": "Self-apply 1 Bind and 1 Paralysis"
+      "name": "令人恐惧的哨音",
+      "desc": "回合开始时：使自身获得1层“束缚壮”和1层“麻痹”。",
+      "summary": "使自身获得1层“束缚壮”和1层“麻痹”"
     },
     {
       "id": "SlashTakeDamageDown",
-      "name": "斩击守护",
+      "name": "守护：斩击",
       "desc": "本回合内受到的斩击伤害-{0}0%（最大10层）",
       "summary": "受到的斩击伤害-{0}0%"
     },
     {
       "id": "PenetrateTakeDamageDown",
-      "name": "穿刺守护",
+      "name": "守护：穿刺",
       "desc": "本回合内受到的穿刺伤害-{0}0%（最大10层）",
       "summary": "受到的穿刺伤害-{0}0%"
     },
     {
       "id": "HitTakeDamageDown",
-      "name": "打击守护",
+      "name": "守护：打击",
       "desc": "本回合内受到的打击伤害-{0}0%（最大10层）",
       "summary": "受到的打击伤害-{0}0%"
     },
     {
       "id": "CrimsonTakeDamageDown",
-      "name": "暴怒守护",
+      "name": "守护：暴怒",
       "desc": "本回合内受到的暴怒伤害-{0}0%（最大10层）",
       "summary": "受到的暴怒伤害-{0}0%"
     },
     {
       "id": "ScarletTakeDamageDown",
-      "name": "色欲守护",
+      "name": "守护：色欲",
       "desc": "本回合内受到的色欲伤害-{0}0%（最大10层）",
       "summary": "受到的色欲伤害-{0}0%"
     },
     {
       "id": "AmberTakeDamageDown",
-      "name": "懒惰守护",
+      "name": "守护：懒惰",
       "desc": "本回合内受到的懒惰伤害-{0}0%（最大10层）",
       "summary": "受到的懒惰伤害-{0}0%"
     },
     {
       "id": "ShamrockTakeDamageDown",
-      "name": "暴食守护",
+      "name": "守护：暴食",
       "desc": "本回合内受到的暴食伤害-{0}0%（最大10层）",
       "summary": "受到的暴食伤害-{0}0%"
     },
     {
       "id": "AzureTakeDamageDown",
-      "name": "忧郁守护",
+      "name": "守护：忧郁",
       "desc": "本回合内受到的忧郁伤害-{0}0%（最大10层）",
       "summary": "受到的忧郁伤害-{0}0%"
     },
     {
       "id": "IndigoTakeDamageDown",
-      "name": "傲慢守护",
+      "name": "守护：傲慢",
       "desc": "本回合内受到的傲慢伤害-{0}0%（最大10层）",
       "summary": "受到的傲慢伤害-{0}0%"
     },
     {
       "id": "VioletTakeDamageDown",
-      "name": "嫉妒守护",
+      "name": "守护：嫉妒",
       "desc": "本回合内受到的嫉妒伤害-{0}0%（最大10层）",
       "summary": "受到的嫉妒伤害-{0}0%"
     },
     {
       "id": "SlashTakeDamageUp",
-      "name": "斩击易损",
+      "name": "易损：斩击",
       "desc": "本回合内受到的斩击伤害+{0}0%（最大10层）",
       "summary": "受到的斩击伤害+{0}0%"
     },
     {
       "id": "PenetrateTakeDamageUp",
-      "name": "穿刺易损",
+      "name": "易损：穿刺",
       "desc": "本回合内受到的穿刺伤害+{0}0%（最大10层）",
       "summary": "受到的穿刺伤害+{0}0%"
     },
     {
       "id": "HitTakeDamageUp",
-      "name": "打击易损",
+      "name": "易损：打击",
       "desc": "本回合内受到的打击伤害+{0}0%（最大10层）",
       "summary": "受到的打击伤害+{0}0%"
     },
     {
       "id": "CrimsonTakeDamageUp",
-      "name": "暴怒易损",
+      "name": "易损：暴怒",
       "desc": "本回合内受到的暴怒伤害+{0}0%（最大10层）",
       "summary": "受到的暴怒伤害+{0}0%"
     },
     {
       "id": "ScarletTakeDamageUp",
-      "name": "色欲易损",
+      "name": "易损：色欲",
       "desc": "本回合内受到的色欲伤害+{0}0%（最大10层）",
       "summary": "受到的色欲伤害+{0}0%"
     },
     {
       "id": "AmberTakeDamageUp",
-      "name": "懒惰易损",
+      "name": "易损：懒惰",
       "desc": "本回合内受到的懒惰伤害+{0}0%（最大10层）",
       "summary": "受到的懒惰伤害+{0}0%"
     },
     {
       "id": "ShamrockTakeDamageUp",
-      "name": "暴食易损",
+      "name": "易损：暴食",
       "desc": "本回合内受到的暴食伤害+{0}0%（最大10层）",
       "summary": "受到的暴食伤害+{0}0%"
     },
     {
       "id": "AzureTakeDamageUp",
-      "name": "忧郁易损",
+      "name": "易损：忧郁",
       "desc": "本回合内受到的忧郁伤害+{0}0%（最大10层）",
       "summary": "受到的忧郁伤害+{0}0%"
     },
     {
       "id": "IndigoTakeDamageUp",
-      "name": "傲慢易损",
+      "name": "易损：傲慢",
       "desc": "本回合内受到的傲慢伤害+{0}0%（最大10层）",
       "summary": "受到的傲慢伤害+{0}0%"
     },
     {
       "id": "VioletTakeDamageUp",
-      "name": "嫉妒易损",
+      "name": "易损：嫉妒",
       "desc": "本回合内受到的嫉妒伤害+{0}0%（最大10层）",
       "summary": "受到的嫉妒伤害+{0}0%"
     },
     {
       "id": "LittleCourage",
-      "name": "A Sign",
-      "desc": "Sinclair’s determination to stand up to Kromer. Once three strokes have been drawn…",
-      "summary": "Sinclair’s Will"
+      "name": "记号",
+      "desc": "代表辛克莱向克罗默抗争的决心。刻下3个记号的话…",
+      "summary": "辛克莱的决心"
     },
     {
       "id": "NailPersonality",
-      "name": "Nails",
-      "desc": "Turn Start: Gain 1 Bleed and increase the Bleed Count by {0}.\nTurn End: Halve this effect’s Count.",
-      "summary": "Gain 1 Bleed and add +{0} Bleed Count"
+      "name": "尖钉",
+      "desc": "回合开始时：增加1级“流血”强度并施加{0}层“流血”。\n回合结束时：使本效果的层数减半。(向下取整)",
+      "summary": "使“流血”强度增加1级并施加{0}层“流血”"
     },
     {
       "id": "AssemblePersonality",
-      "name": "Fanatic",
-      "desc": "Skill Final Power +{0} against units with Nails.",
-      "summary": "Final Power +{0}"
+      "name": "狂信",
+      "desc": "本回合内攻击带有“尖钉”的目标时，技能威力+{0}。",
+      "summary": "技能威力+{0}"
     }
   ]
 }
