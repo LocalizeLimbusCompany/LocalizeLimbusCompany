@@ -93,7 +93,7 @@
     {
       "id": "Charge",
       "name": "充能",
-      "desc": "部分技能发动附加效果所需的资源。最大20层。回合结束时层数降低1层。",
+      "desc": "部分技能发动附加效果所需的资源。最大20层。回合结束时本效果的层数降低1层。",
       "summary": "特定技能的资源",
       "undefined": "-"
     },
@@ -259,8 +259,8 @@
     {
       "id": "Nail",
       "name": "尖钉",
-      "desc": "回合开始时：对自身施加1层强度为尖钉层数的“流血”。",
-      "summary": "对自身施加1层强度为尖钉层数的“流血”"
+      "desc": "回合开始时：对自身施加1层强度等同于本效果层数的“流血”。",
+      "summary": "对自身施加1层强度为本效果层数的“流血”"
     },
     {
       "id": "Inactible",
@@ -313,7 +313,7 @@
     {
       "id": "WaterPocket",
       "name": "水囊",
-      "desc": "恢复体力时基于层数增加回复量。",
+      "desc": "恢复体力时基于本效果层数增加回复量。",
       "summary": "额外体力恢复"
     },
     {
@@ -342,27 +342,27 @@
     },
     {
       "id": "BabayagaTimeLimit",
-      "name": "Baba Yaga’s Coming!",
-      "desc": "Baba Yaga is closing in. Clear the way or face certain death.",
-      "summary": "Baba Yaga is approaching"
+      "name": "芭芭雅嘎的追猎",
+      "desc": "芭芭雅嘎正在迫近。杀出一条血路，不战斗就无法生存。",
+      "summary": "芭芭雅嘎正在迫近"
     },
     {
       "id": "PinkRibbon",
       "name": "粉色缎带",
-      "desc": "Turn End: If at 5+ Count, remove this effect and self-apply ‘Desirous’ next turn.",
-      "summary": "Become ‘Desirous’"
+      "desc": "回合结束时：若本效果的层数高于5层，则移除本效果并在下回合开始时对自身施加“渴望”。",
+      "summary": "变得“渴望”"
     },
     {
       "id": "PinkRibbon_Ishmael",
       "name": "粉色缎带",
-      "desc": "Increase Count by 1 whenever the affected unit tosses an attack skill Coin.\nTurn End: Inflict Bind by the Count, then remove this status.",
-      "summary": "Self-apply {0} Bind"
+      "desc": "本回合内，每次掷出攻击技能硬币时使本效果的层数+1。\n回合结束时：对自身施加层数与本效果相同的“束缚”，随后移除本效果。",
+      "summary": "对自身施加{0}层“束缚”"
     },
     {
       "id": "Muckworm",
       "name": "蛆虫",
-      "desc": "Turn End: Take Gluttony damage by the Count, then lower it by 1; Bleed Count +1.",
-      "summary": "Gluttony damage; Add +1 Bleed count"
+      "desc": "回合结束时：受到数值等同于本效果层数的暴食伤害并施加1层“流血”，随后使该效果的层数-1。",
+      "summary": "受到暴食伤害；施加1层“流血”"
     },
     {
       "id": "AttackUp",
@@ -379,8 +379,8 @@
     {
       "id": "Liu_Meursault_Guard_Buff",
       "name": "坚如泰山",
-      "desc": "When attacked, inflict +1 Burn Count to the attacker.",
-      "summary": "Add +1 Burn count"
+      "desc": "受到攻击时，对进攻者施加1层“烧伤”。",
+      "summary": "施加1层“烧伤”"
     },
     {
       "id": "SlashResistUp",
@@ -701,7 +701,7 @@
     },
     {
       "id": "Greedy",
-      "name": "Desirous",
+      "name": "渴望",
       "desc": "Self-apply 2 Fragile and 10 Bind this turn. Gain a skill slot and change behavior.",
       "summary": "Self-apply 2 Fragile and 10 Bind"
     },
@@ -713,8 +713,8 @@
     },
     {
       "id": "GreedyReady",
-      "name": "Constricting Desires",
-      "desc": "Use a skill that applies ‘Desirous’ in {0} turn(s)."
+      "name": "极度渴望",
+      "desc": "在{0}回合后使用会施加“渴望”的技能。"
     },
     {
       "id": "Decay",
