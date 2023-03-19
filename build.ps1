@@ -1,15 +1,34 @@
+param(
+    [string]$version
+)
 # ----------- MelonLoader IL2CPP Interop (net6) -----------
 dotnet build src/LimbusLocalize_ml_ilcpp.sln -c Release_ML_Cpp_net6_interop
 $Path = "Release"
-# ILRepack
-lib/ILRepack.exe /target:library /lib:lib/net6 /lib:lib/interop /lib:$Path /internalize /out:$Path/LimbusLocalize_ml_ilcpp.dll $Path/LimbusLocalize_ml_ilcpp.dll $Path/mcs.dll 
 # (cleanup and move files)
 Remove-Item $Path/LimbusLocalize.deps.json
 Remove-Item $Path/Tomlet.dll
-Remove-Item $Path/mcs.dll
 Remove-Item $Path/Iced.dll
 Remove-Item $Path/Il2CppInterop.Common.dll
 Remove-Item $Path/Il2CppInterop.Runtime.dll
 Remove-Item $Path/Microsoft.Extensions.Logging.Abstractions.dll
-New-Item -Path "$Path" -Name "Mods" -ItemType "directory" -Force
-Move-Item -Path $Path/LimbusLocalize.dll -Destination $Path/Mods -Force
+# Full
+New-Item -Path "$Path" -Name "LimbusLocalize" -ItemType "directory" -Force
+New-Item -Path "$Path/LimbusLocalize" -Name "Mods" -ItemType "directory" -Force
+New-Item -Path "$Path/LimbusLocalize/Mods" -Name "Localize" -ItemType "directory" -Force
+New-Item -Path "$Path/LimbusLocalize/Mods/Localize" -Name "CN" -ItemType "directory" -Force
+Copy-Item -Path assets/Localize/CN/* -Destination $Path/LimbusLocalize/Mods/Localize/CN -Force
+Copy-Item -Path $Path/LimbusLocalize.dll -Destination $Path/LimbusLocalize/Mods -Force
+7z a -t7z "$Path/LimbusLocalize_$version.7z" "./$Path/LimbusLocalize/*" -mx=9 -ms
+$changedFiles=$(git diff --name-only HEAD $(git describe --tags --abbrev=0) -- assets/Localize/CN/)
+# OTA
+New-Item -Path "$Path" -Name "LimbusLocalize_OTA" -ItemType "directory" -Force
+New-Item -Path "$Path/LimbusLocalize_OTA" -Name "Mods" -ItemType "directory" -Force
+Copy-Item -Path $Path/LimbusLocalize.dll -Destination $Path/LimbusLocalize_OTA/Mods -Force
+New-Item -Path "$Path/LimbusLocalize_OTA/Mods" -Name "Localize" -ItemType "directory" -Force
+New-Item -Path "$Path/LimbusLocalize_OTA/Mods/Localize" -Name "CN" -ItemType "directory" -Force
+# Copy the changed files to the release directory
+$changedFilesList = $changedFiles -split " "
+foreach ($file in $changedFilesList) {
+    Copy-Item -Path $file -Destination $Path/LimbusLocalize_OTA/Mods/Localize/CN -Force
+}
+7z a -t7z "$Path/LimbusLocalize_OTA_$version.7z" "./$Path/LimbusLocalize_OTA/*" -mx=9 -ms
