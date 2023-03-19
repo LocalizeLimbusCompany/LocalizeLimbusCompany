@@ -3,6 +3,7 @@ using Il2Cpp;
 using Il2CppAddressable;
 using Il2CppBattleUI.Abnormality;
 using Il2CppChoiceEvent;
+using Il2CppMainUI.Gacha;
 using Il2CppSimpleJSON;
 using Il2CppSteamworks;
 using Il2CppStorySystem;
@@ -12,7 +13,9 @@ using Il2CppTMPro;
 using Il2CppUtilityUI;
 using LimbusLocalize;
 using MelonLoader;
+using Mono.CSharp;
 using System;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -23,6 +26,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using IFormattable = System.IFormattable;
 
 [assembly: MelonInfo(typeof(LimbusLocalizeMod), LimbusLocalizeMod.NAME, LimbusLocalizeMod.VERSION, LimbusLocalizeMod.AUTHOR)]
 namespace LimbusLocalize
@@ -51,6 +55,31 @@ namespace LimbusLocalize
             //使用AssetBundle技术载入中文字库
             tmpchinesefont = AssetBundle.LoadFromFile(path + "/tmpchinesefont").LoadAsset("assets/sourcehansanssc-heavy sdf.asset").Cast<TMP_FontAsset>();
         }
+        //屏蔽没有意义的Warning
+        [HarmonyPatch(typeof(Logger), nameof(Logger.Log), new System.Type[]
+        {
+            typeof(LogType),
+            typeof(Il2CppSystem.Object)
+        })]
+        [HarmonyPrefix]
+        private static bool Log(UnityEngine.Logger __instance, UnityEngine.LogType __0, Il2CppSystem.Object __1)
+        {
+            if (__0 == LogType.Warning)
+            {
+                string LogString = Logger.GetString(__1);
+                if (!LogString.Contains("DOTWEEN"))
+                    __instance.logHandler.LogFormat(__0, null, "{0}", new Il2CppSystem.Object[] { LogString });
+                return false;
+            }
+            return true;
+        }
+        [HarmonyPatch(typeof(GachaEffectEventSystem), nameof(GachaEffectEventSystem.LinkToCrackPosition))]
+        [HarmonyPrefix]
+        private static bool LinkToCrackPosition(GachaCrackController[] crackList)
+        {
+            return false;
+        }
+
         [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.fontMaterial), MethodType.Setter)]
         [HarmonyPrefix]
         private static bool set_fontMaterial(TMP_Text __instance, Material value)
