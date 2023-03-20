@@ -1,12 +1,14 @@
 ﻿using HarmonyLib;
 using Il2Cpp;
 using Il2CppAddressable;
+using Il2CppChoiceEvent;
 using Il2CppMainUI.Gacha;
 using Il2CppSimpleJSON;
 using Il2CppSteamworks;
 using Il2CppStorySystem;
 using Il2CppSystem.Collections.Generic;
 using Il2CppTMPro;
+using Il2CppUI.Utility;
 using Il2CppUtilityUI;
 using LimbusLocalize;
 using MelonLoader;
@@ -40,6 +42,38 @@ namespace LimbusLocalize
 
             //使用AssetBundle技术载入中文字库
             tmpchinesefont = AssetBundle.LoadFromFile(path + "/tmpchinesefont").LoadAsset("assets/sourcehansanssc-heavy sdf.asset").Cast<TMP_FontAsset>();
+        }
+        //去tmd文字描述成功率
+        [HarmonyPatch(typeof(UITextMaker), nameof(UITextMaker.GetSuccessRateText))]
+        [HarmonyPrefix]
+        public static bool GetSuccessRateText(float rate, ref string __result)
+        {
+            __result = ((int)(rate * 100.0f)).ToString() + "%";
+            return false;
+        }
+        [HarmonyPatch(typeof(UITextMaker), nameof(UITextMaker.GetSuccessRateToText))]
+        [HarmonyPrefix]
+        public static bool GetSuccessRateToText(float rate, ref string __result)
+        {
+            __result = ((int)(rate * 100.0f)).ToString() + "%";
+            return false;
+        }
+        [HarmonyPatch(typeof(PossibleResultData), nameof(PossibleResultData.GetProb))]
+        [HarmonyPrefix]
+        public static bool GetProb(PossibleResultData __instance, float probAdder, ref float __result)
+        {
+            float num = 0f;
+            float num2 = __instance._defaultProb + probAdder;
+            float num3 = 1f - num2;
+            int i = 0;
+            int count = __instance._headTailCntList.Count;
+            while (i < count)
+            {
+                num += Mathf.Pow(num2, __instance._headTailCntList[i].HeadCnt) * Mathf.Pow(num3, __instance._headTailCntList[i].TailCnt);
+                i++;
+            }
+            __result = num;
+            return false;
         }
         //屏蔽没有意义的Warning
         [HarmonyPatch(typeof(Logger), nameof(Logger.Log), new System.Type[]
