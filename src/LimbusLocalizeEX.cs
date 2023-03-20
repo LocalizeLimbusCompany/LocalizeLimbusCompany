@@ -1,14 +1,9 @@
 ﻿using Il2Cpp;
-using Il2CppInterop.Runtime.InteropTypes.Arrays;
-using Il2CppSteamworks.Ugc;
-using Il2CppStorySystem;
 using Il2CppSystem.Collections.Generic;
 using Il2CppSystem.Linq;
 using System;
 using System.IO;
-using System.Xml.Linq;
 using UnityEngine;
-using static MelonLoader.MelonLogger;
 
 namespace LimbusLocalize
 {

@@ -1,9 +1,27 @@
-# 安装
-下载全量包 在steam主界面右键游戏点击管理 浏览本地文件夹 将压缩包内所有东西不 要 新 建 文 件 夹的解压到上述弹出的文件夹中
+# 安装[![](https://img.shields.io/github/downloads/Bright1192/LimbusLocalize/total.svg)](../../releases)
 
-如果你知道自己在做什么的话，可以下载增量更新或git变动文件覆盖至相应文件
+[![](https://img.shields.io/github/release/Bright1192/LimbusLocalize.svg?label=version)](../../releases/latest) [![](https://img.shields.io/github/downloads/Bright1192/LimbusLocalize/latest/total.svg)](../../releases/latest)
+1. 安装模组框架
 
-# [Releases](../../releases)
+     从[MelonLoader](https://github.com/LavaGang/MelonLoader)下载v0.6.0或更新版本的模组框架
+
+     在steam主界面右键游戏点击管理 浏览本地文件夹 将压缩包内所有东西**不 要 新 建 文 件 夹**的解压到上述弹出的文件夹中
+2. 安装字体文件
+
+    从[蓝奏云](https://wwlf.lanzoue.com/iQe9n0qhj5tc)密码:ha8u下载字体文件 后解压到上述文件夹中
+3. 安装汉化
+
+    从[最新版](../../releases)下载全量包 后解压到上述文件夹中
+
+    如果你知道**自己在做什么**，可以下载增量更新或git变动文件覆盖至相应文件
+    
+	[最新开发版](../../actions/workflows/dev.yml) 总是最新的
+	
+	[最新预览版](../../actions/workflows/beta.yml) 每周六更新
+- 我是谁?我在哪?我要干什么?
+
+    [适用于看不懂上面的安装&更新程序](https://github.com/Bright1192/LimbusLocalize/releases/download/v0.1.5/LimbusCompanyModInstaller.rar)
+
 
 # to do list
 - 体验优化：

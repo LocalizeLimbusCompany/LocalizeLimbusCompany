@@ -1,5 +1,4 @@
-﻿using Il2Cpp;
-using Il2CppSimpleJSON;
+﻿using Il2CppSimpleJSON;
 using System;
 using System.Collections;
 using System.IO;
@@ -34,11 +33,11 @@ namespace LimbusLocalize
                 var ver = "v" + LimbusLocalizeMod.VERSION;
                 if (latest2ReleaseTag == ver)
                 {
-                    download = "https://github.com/Bright1192/LimbusLocalize/releases/download/" + latestReleaseTag + "/LimbusLocalize_OTA_" + latestReleaseTag + ".rar";
+                    download = "https://github.com/Bright1192/LimbusLocalize/releases/download/" + latestReleaseTag + "/LimbusLocalize_OTA_" + latestReleaseTag + ".7z";
                 }
                 else if (latestReleaseTag != ver)
                 {
-                    download = "https://github.com/Bright1192/LimbusLocalize/releases/download/" + latestReleaseTag + "/LimbusLocalize_" + latestReleaseTag + ".rar";
+                    download = "https://github.com/Bright1192/LimbusLocalize/releases/download/" + latestReleaseTag + "/LimbusLocalize_" + latestReleaseTag + ".7z";
                 }
                 if (!string.IsNullOrEmpty(download))
                 {

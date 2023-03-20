@@ -1,0 +1,29 @@
+name: Dev Build LimbusLocalize
+on:
+  push:
+    branches: [ master_ilcpp ]
+    paths:
+      - 'src/**'
+  pull_request:
+    branches: [ master_ilcpp ]
+    paths:
+      - 'src/**'
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Run build script
+        run: |
+          ./build.ps1 Dev
+      - name: Upload Full
+        uses: actions/upload-artifact@v3
+        with:
+          name: LimbusLocalize_Dev.7z
+          path: Release/LimbusLocalize_Dev.7z
+      - name: Upload OTA
+        uses: actions/upload-artifact@v3
+        with:
+          name: LimbusLocalize_OTA_Dev.7z
+          path: Release/LimbusLocalize_OTA_Dev.7z
