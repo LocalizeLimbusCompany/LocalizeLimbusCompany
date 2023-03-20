@@ -1,32 +1,18 @@
 ﻿using HarmonyLib;
 using Il2Cpp;
 using Il2CppAddressable;
-using Il2CppBattleUI.Abnormality;
-using Il2CppChoiceEvent;
 using Il2CppMainUI.Gacha;
 using Il2CppSimpleJSON;
 using Il2CppSteamworks;
 using Il2CppStorySystem;
-using Il2CppSystem;
 using Il2CppSystem.Collections.Generic;
 using Il2CppTMPro;
 using Il2CppUtilityUI;
 using LimbusLocalize;
 using MelonLoader;
-using Mono.CSharp;
-using System;
-using System.Globalization;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Text.Json.Nodes;
-using System.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.EventSystems;
-using UnityEngine.UI;
-using IFormattable = System.IFormattable;
 
 [assembly: MelonInfo(typeof(LimbusLocalizeMod), LimbusLocalizeMod.NAME, LimbusLocalizeMod.VERSION, LimbusLocalizeMod.AUTHOR)]
 namespace LimbusLocalize
@@ -36,7 +22,7 @@ namespace LimbusLocalize
         public static string path;
         public static TMP_FontAsset tmpchinesefont;
         public const string NAME = "LimbusLocalizeMod";
-        public const string VERSION = "0.1.4";
+        public const string VERSION = "0.1.5";
         public const string AUTHOR = "Bright";
         public override void OnInitializeMelon()
         {
@@ -381,7 +367,7 @@ namespace LimbusLocalize
         //待开始功能-贡献
         public static void OPEN()
         {
-            string x = "{\"list\":[{\"formatKey\":\"SubTitle\",\"formatValue\":\"Github\"},{\"formatKey\":\"HyperLink\",\"formatValue\":\"https://github.com/Bright1192/LimbusLocalize\"}]}";
+            //string x = "{\"list\":[{\"formatKey\":\"SubTitle\",\"formatValue\":\"Github\"},{\"formatKey\":\"HyperLink\",\"formatValue\":\"https://github.com/Bright1192/LimbusLocalize\"}]}";
         }
 #if DEBUG
         [HarmonyPatch(typeof(AddressablePopup), nameof(AddressablePopup.OnDownloadingYes))]
