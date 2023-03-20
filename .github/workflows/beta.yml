@@ -1,0 +1,24 @@
+name: Beta Build LimbusLocalize
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 6'
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Run build script
+        run: |
+          ./build.ps1 Beta
+      - name: Upload Full
+        uses: actions/upload-artifact@v3
+        with:
+          name: LimbusLocalize_Beta.7z
+          path: Release/LimbusLocalize_Beta.7z
+      - name: Upload OTA
+        uses: actions/upload-artifact@v3
+        with:
+          name: LimbusLocalize_OTA_Beta.7z
+          path: Release/LimbusLocalize_OTA_Beta.7z
