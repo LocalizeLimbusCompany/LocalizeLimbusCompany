@@ -57,7 +57,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 使目标增加1级沉沦 强度"
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级沉沦 强度"
                 }
               ]
             }
@@ -328,7 +328,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[CriticalOnSucceedAttack] 额外造成50%伤害"
+                  "desc": "暴击时本硬币造成的伤害+50%"
                 }
               ]
             }
@@ -638,13 +638,13 @@
         {
           "level": 3,
           "name": "伺机而动",
-          "desc": "若自身在上回合未受到伤害则使硬币威力+3",
+          "desc": "若自身在上回合未受到伤害，则使本技能的硬币威力+3",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 对目标施加5层破裂 "
+                  "desc": "[OnSucceedAttackHead] 使目标增加5级破裂 强度"
                 }
               ]
             }
@@ -713,7 +713,7 @@
         {
           "level": 3,
           "name": "为了正义！",
-          "desc": "自身速度值大于10时，使硬币威力+2",
+          "desc": "自身的速度值大于10时，使本技能的硬币威力+2",
           "coinlist": [
             {},
             {},
@@ -813,7 +813,7 @@
         {
           "level": 3,
           "name": "空间撕裂",
-          "desc": "[WhenUse] 消耗10层充能 并使本技能威力+4\n充能 层数不足10层时，使自身失去20%体力",
+          "desc": "[WhenUse] 消耗10层充能 并使本技能的威力+4\n充能 层数不足10层时，使自身失去20%体力",
           "coinlist": [
             {
               "coindescs": [
@@ -934,7 +934,7 @@
         {
           "level": 3,
           "name": "过度呼吸",
-          "desc": "自身速度值大于10时，使本技能威力+3",
+          "desc": "自身的速度值大于10时，使本技能的威力+3",
           "coinlist": [
             {}
           ]
@@ -1027,7 +1027,7 @@
         {
           "level": 3,
           "name": "工笔细描",
-          "desc": "[StartBattle] 下回合开始时使自身获得2层强袭：斩击 ",
+          "desc": "[StartBattle] 使自身获得2层强袭：斩击 ",
           "coinlist": [
             {},
             {},
@@ -1089,7 +1089,7 @@
         {
           "level": 2,
           "name": "上斩",
-          "desc": "攻击带有易损：斩击 的目标时，本技能威力+2\n[WinDuel] 下回合开始时使自身获得1层强壮 ",
+          "desc": "攻击带有易损：斩击 的目标时，本技能的威力+2\n[WinDuel] 下回合开始时使自身获得1层强壮 ",
           "coinlist": [
             {
               "coindescs": [
@@ -1704,7 +1704,7 @@
         {
           "level": 2,
           "name": "祸不单行",
-          "desc": "若自身上回合未受到伤害则使硬币威力+1",
+          "desc": "若自身上回合未受到伤害，则使本技能的硬币威力+1",
           "coinlist": [
             {
               "coindescs": [
@@ -1730,7 +1730,7 @@
         {
           "level": 3,
           "name": "白刃风暴",
-          "desc": "若自身上回合未受到伤害则使硬币威力+2",
+          "desc": "若自身上回合未受到伤害，则使本技能的硬币威力+2",
           "coinlist": [
             {},
             {
@@ -1820,7 +1820,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
                 }
               ]
             }
@@ -2086,7 +2086,7 @@
         {
           "level": 1,
           "name": "极意之剑",
-          "desc": "自身的体力低于25%时，使本技能威力+1",
+          "desc": "自身的体力低于25%时，使本技能的威力+1",
           "coinlist": [
             {}
           ]
@@ -2094,7 +2094,7 @@
         {
           "level": 2,
           "name": "极意之剑",
-          "desc": "自身的体力低于25%时，使本技能威力+2",
+          "desc": "自身的体力低于25%时，使本技能的威力+2",
           "coinlist": [
             {}
           ]
@@ -2107,7 +2107,7 @@
         {
           "level": 1,
           "name": "飞剑刺杀",
-          "desc": "自身的体力低于25%时，使本技能威力+1",
+          "desc": "自身的体力低于25%时，使本技能的威力+1",
           "coinlist": [
             {}
           ]
@@ -2115,7 +2115,7 @@
         {
           "level": 2,
           "name": "飞剑刺杀",
-          "desc": "自身的体力低于25%时，使本技能威力+2",
+          "desc": "自身的体力低于25%时，使本技能的威力+2",
           "coinlist": [
             {}
           ]
@@ -2128,19 +2128,19 @@
         {
           "level": 3,
           "name": "闪击战术",
-          "desc": "自身的体力低于25%时，使本技能威力+2",
+          "desc": "自身的体力低于25%时，使本技能的威力+2",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[BeforeAttack] 使自身失去5点体力；造成的伤害+50%"
+                  "desc": "[BeforeAttack] 使自身失去5点体力；本硬币造成的伤害+50%"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[BeforeAttack] 使自身失去5点体力；造成的伤害+50%"
+                  "desc": "[BeforeAttack] 使自身失去5点体力；本硬币造成的伤害+50%"
                 }
               ]
             }
@@ -2236,21 +2236,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 。\n[OnSucceedAttack] 使目标增加1级流血 强度"
+                  "desc": "消耗1发弹药\n[OnSucceedAttack] 使目标增加1级流血 强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 。\n[OnSucceedAttack] 使目标增加1级流血 强度"
+                  "desc": "消耗1发弹药\n[OnSucceedAttack] 使目标增加1级流血 强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 。\n[OnSucceedAttack] 使目标增加1级流血 强度"
+                  "desc": "消耗1发弹药\n[OnSucceedAttack] 使目标增加1级流血 强度"
                 }
               ]
             },
@@ -2260,26 +2260,26 @@
         {
           "level": 2,
           "name": "火力集中",
-          "desc": "自身的速度值大于6时，使硬币威力+1",
+          "desc": "自身的速度值大于6时，使本技能的硬币威力+1",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 。\n[OnSucceedAttack] 使目标增加1级流血 强度"
+                  "desc": "消耗1发弹药\n[OnSucceedAttack] 使目标增加1级流血 强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 。\n[OnSucceedAttack] 使目标增加1级流血 强度"
+                  "desc": "消耗1发弹药\n[OnSucceedAttack] 使目标增加1级流血 强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 。\n[OnSucceedAttack] 使目标增加1级流血 强度"
+                  "desc": "消耗1发弹药\n[OnSucceedAttack] 使目标增加1级流血 强度"
                 }
               ]
             },
@@ -2294,19 +2294,19 @@
         {
           "level": 1,
           "name": "快速压制",
-          "desc": "自身的速度值大于6时，使硬币威力+2",
+          "desc": "自身的速度值大于6时，使本技能的硬币威力+2",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 。\n[OnSucceedAttack] 对目标施加2层易损 "
+                  "desc": "消耗1发弹药\n[OnSucceedAttack] 对目标施加2层易损 "
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 。\n[OnSucceedAttack] 对目标施加2层易损 "
+                  "desc": "消耗1发弹药\n[OnSucceedAttack] 对目标施加2层易损 "
                 }
               ]
             },
@@ -2581,7 +2581,7 @@
         {
           "level": 2,
           "name": "飞剑刺杀",
-          "desc": "自身的体力低于50%时，本技能使自身获得的呼吸法 强度额外+1级",
+          "desc": "自身的体力低于50%时，本技能使自身增加的呼吸法 强度额外+1级",
           "keywords": [],
           "coinlist": [
             {
@@ -2744,14 +2744,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 。\n[OnSucceedAttack] 使目标增加4级震颤 强度"
+                  "desc": "消耗1发弹药\n[OnSucceedAttack] 使目标增加4级震颤 强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 。\n[OnSucceedAttack] 使目标增加4级震颤 强度"
+                  "desc": "消耗1发弹药\n[OnSucceedAttack] 使目标增加4级震颤 强度"
                 }
               ]
             }
@@ -2772,14 +2772,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 。\n[OnSucceedAttack] 使目标增加8级震颤 强度；对目标施加2层震颤 "
+                  "desc": "消耗1发弹药\n[OnSucceedAttack] 使目标增加8级震颤 强度；对目标施加2层震颤 "
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 。\n[OnSucceedAttack] 使目标增加8级震颤 强度；对目标施加2层震颤 "
+                  "desc": "消耗1发弹药\n[OnSucceedAttack] 使目标增加8级震颤 强度；对目标施加2层震颤 "
                 }
               ]
             }
@@ -2805,21 +2805,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 。\n[OnSucceedAttack] 使目标增加4级破裂 强度；对目标施加2层破裂 "
+                  "desc": "消耗1发弹药\n[OnSucceedAttack] 使目标增加4级破裂 强度；对目标施加2层破裂 "
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 。\n[OnSucceedAttack] 使目标增加4级破裂 强度；对目标施加2层破裂 "
+                  "desc": "消耗1发弹药\n[OnSucceedAttack] 使目标增加4级破裂 强度；对目标施加2层破裂 "
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 。\n[OnSucceedAttack] 对目标施加5层易损 "
+                  "desc": "消耗1发弹药\n[OnSucceedAttack] 对目标施加5层易损 "
                 }
               ]
             }
@@ -2926,7 +2926,7 @@
         {
           "level": 3,
           "name": "就地处斩",
-          "desc": "自身的理智值低于0时，使本技能威力+1",
+          "desc": "自身的理智值低于0时，使本技能的威力+1",
           "coinlist": [
             {},
             {},
@@ -3008,7 +3008,7 @@
         {
           "level": 2,
           "name": "散乱之舞",
-          "desc": "[WhenUse] 使自身增加1级呼吸法 强度",
+          "desc": "[WhenUse] 使自身获得1层呼吸法 ",
           "coinlist": [
             {
               "coindescs": [
@@ -3159,7 +3159,7 @@
         {
           "level": 3,
           "name": "武力压制",
-          "desc": "若目标本回合未受到攻击，则使硬币威力+2",
+          "desc": "若目标本回合未受到攻击，则使本技能的硬币威力+2",
           "coinlist": [
             {
               "coindescs": [
@@ -3391,7 +3391,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "反击 - 展锋",
+          "name": "反击：展锋",
           "desc": "[WhenUse] 下回合开始时，使自身获得1层强袭 ",
           "coinlist": [
             {}
@@ -3572,7 +3572,7 @@
                   "desc": "[OnSucceedAttack] 使自身增加2级呼吸法 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 使自身增加1级呼吸法 强度"
+                  "desc": "[OnSucceedAttackHead] 使自身获得1层呼吸法 "
                 }
               ]
             },
@@ -3780,7 +3780,7 @@
         {
           "level": 2,
           "name": "穿刺剑法",
-          "desc": "[WinDuel] 使自身增加1级呼吸法 强度",
+          "desc": "[WinDuel] 使自身获得1层呼吸法 ",
           "coinlist": [
             {},
             {
@@ -4292,7 +4292,6 @@
           "desc": ""
         }
       ]
-      
     },
     {
       "id": 1050401,
@@ -4305,14 +4304,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 下回合开始时对目标施加1层尖钉 "
+                  "desc": "[OnSucceedAttack] 使自身的混乱阈值后移本硬币造成伤害的30%"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 下回合开始时对目标施加1层尖钉 "
+                  "desc": "[OnSucceedAttack] 使自身的混乱阈值后移本硬币造成伤害的30%"
                 }
               ]
             }
@@ -4326,20 +4325,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 下回合开始时对目标施加1层尖钉 "
-                },
-                {
-                  "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
+                  "desc": "[OnSucceedAttack] 使自身的混乱阈值后移本硬币造成伤害的60%"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 下回合开始时对目标施加1层尖钉 "
-                },
-                {
-                  "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
+                  "desc": "[OnSucceedAttack] 使自身的混乱阈值后移本硬币造成伤害的60%"
                 }
               ]
             }
@@ -4358,14 +4351,15 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加3层尖钉 "
+                  "desc": "[OnSucceedAttack] 对目标施加3层尖钉 ",
+                  "summary": "[OnSucceedAttack] 对目标施加3层尖钉 "
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合开始时对目标施加5层束缚 "
+                  "desc": "[OnSucceedAttack] 下回合开始时对目标施加3层束缚 "
                 }
               ]
             }
@@ -4379,14 +4373,15 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加3层尖钉 "
+                  "desc": "[OnSucceedAttack] 对目标施加3层尖钉 ",
+                  "summary": "[OnSucceedAttack] 对目标施加3层尖钉 "
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合开始时对目标施加5层束缚 "
+                  "desc": "[OnSucceedAttack] 下回合开始时对目标施加3层束缚 "
                 },
                 {
                   "desc": "[OnSucceedAttack] 若目标的尖钉 层数高于5层，则在下回合开始时对目标施加3层麻痹 和1层虚弱 "
@@ -4403,19 +4398,19 @@
         {
           "level": 3,
           "name": "异端抹杀",
-          "desc": "若目标的尖钉 层数高于5层，则使本技能造成的伤害+30%",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身的混乱阈值后移本硬币造成伤害的50%"
+                  "desc": "[OnSucceedAttack] 下回合开始时对目标施加2层尖钉 "
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身的混乱阈值后移本硬币造成伤害的50%"
+                  "desc": "[OnSucceedAttack] 使自身恢复本硬币造成伤害50%的体力"
                 }
               ]
             }
@@ -4429,7 +4424,7 @@
         {
           "level": 1,
           "name": "愚不可及…！",
-          "desc": "[StartBattle] 使自身获得2层守护 \n若自身的体力低于50%，则使本技能的最终威力+2",
+          "desc": "[StartBattle] 使自身获得1层守护 \n若自身的体力低于50%，则使本技能的最终威力+2",
           "coinlist": [
             {}
           ]
@@ -4468,17 +4463,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
-                },
-                {
-                  "desc": "[OnSucceedAttackHead] 下回合开始时对目标施加1层尖钉 "
+                  "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
                 }
               ]
             }
@@ -4497,14 +4489,15 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合开始时对目标施加1层尖钉 "
+                  "desc": "[OnSucceedAttack] 下回合开始时对目标施加1层尖钉 ",
+                  "summary": "[OnSucceedAttack] 下回合开始时对目标施加1层尖钉 "
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合开始时对目标施加1层虚弱 "
+                  "desc": "[OnSucceedAttack] 下回合开始时对目标施加1层麻痹 "
                 }
               ]
             }
@@ -4518,14 +4511,15 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合开始时对目标施加1层尖钉 "
+                  "desc": "[OnSucceedAttack] 下回合开始时对目标施加1层尖钉 ",
+                  "summary": "[OnSucceedAttack] 下回合开始时对目标施加1层尖钉 "
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合开始时对目标施加1层虚弱 "
+                  "desc": "[OnSucceedAttack] 下回合开始时对目标施加1层麻痹 "
                 }
               ]
             }
@@ -4539,30 +4533,37 @@
         {
           "level": 3,
           "name": "钢铁裁决",
-          "desc": "目标带有尖钉 时，技能伤害+20%",
+          "desc": "自身带有狂信 时，本技能造成的伤害+15%",
           "coinlist": [
+            {},
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 下回合开始时对目标施加1层尖钉 "
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级流血 强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
-                }
-              ]
-            },
-            {
-              "coindescs": [
-                {
-                  "desc": "[OnSucceedAttack] 下回合开始时对目标施加2层虚弱 "
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级流血 强度"
                 }
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1090404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "反击",
+          "desc": "",
+          "coinlist": [
+            {}
           ]
         }
       ]
