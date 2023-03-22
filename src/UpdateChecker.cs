@@ -1,6 +1,7 @@
 ﻿using Il2CppSimpleJSON;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -10,7 +11,19 @@ namespace LimbusLocalize
     {
         static UpdateChecker()
         {
-            CheckModUpdates().StartCoroutine();
+        }
+        public static void CheckModUpdate()
+        {
+            var CheckModUpdatesIE = CheckModUpdates();
+            while (CheckModUpdatesIE.MoveNext())
+            {
+                if (CheckModUpdatesIE.Current is UnityWebRequestAsyncOperation)
+                {
+                    var SendWebRequest = CheckModUpdatesIE.Current as UnityWebRequestAsyncOperation;
+                    while(!SendWebRequest.isDone)
+                    { }
+                }
+            }
         }
         static IEnumerator CheckModUpdates()
         {
@@ -46,8 +59,13 @@ namespace LimbusLocalize
                     UnityWebRequest wwwdownload = UnityWebRequest.Get(download);
                     yield return wwwdownload.SendWebRequest();
                     var dir = new DirectoryInfo(Application.dataPath).Parent.FullName;
-
-                    File.WriteAllBytes(dir + "/" + filename, wwwdownload.downloadHandler.GetData());
+                    var NativeData = wwwdownload.downloadHandler.GetNativeData();
+                    List<byte> datas = new();
+                    foreach (var file in NativeData)
+                    {
+                        datas.Add(file);
+                    }
+                    File.WriteAllBytes(dir + "/" + filename, datas.ToArray());
                     UpdateCall = delegate () { Application.OpenURL(dir); Application.Quit(); };
                 }
             }

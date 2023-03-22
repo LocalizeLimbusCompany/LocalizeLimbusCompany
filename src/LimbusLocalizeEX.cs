@@ -25,20 +25,6 @@ namespace LimbusLocalize
                         jsonDataList._dic[t.ID.ToString()] = t;
                     }
                 }
-#if false
-                if (LimbusLocalize.UseCache)
-                {
-                    var cachefile = string.Format("{0}/{1}_{2}.json", LimbusLocalize.CachePath, LimbusLocalize.CacheLang, text2);
-                    if (File.Exists(cachefile))
-                    {
-                        var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(File.ReadAllText(cachefile));
-                        foreach (T t in localizeTextData.DataList)
-                        {
-                            jsonDataList._dic[t.ID.ToString()] = t;
-            }
-        }
-                }
-#endif
             }
         }
 
@@ -142,14 +128,6 @@ namespace LimbusLocalize
             }
         }
 
-        public static Il2CppSystem.Collections.IEnumerator WrapToIl2Cpp(this System.Collections.IEnumerator self)
-        {
-            return new Il2CppSystem.Collections.IEnumerator(new Il2CppManagedEnumerator(self).Pointer);
-        }
-        public static Coroutine StartCoroutine(this System.Collections.IEnumerator routine)
-        {
-            return TranslateJSON.Instance.StartCoroutine(routine.WrapToIl2Cpp());
-        }
         public static Dictionary<TKey, TElement> ToDictionary<TSource, TKey, TElement>(this IEnumerable<TSource> source, Func<TSource, TKey> keySelector, Func<TSource, TElement> elementSelector)
         {
             return Enumerable.ToDictionary<TSource, TKey, TElement>(source, keySelector, elementSelector, null);

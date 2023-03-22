@@ -15,8 +15,10 @@ Remove-Item $Path/Microsoft.Extensions.Logging.Abstractions.dll
 New-Item -Path "$Path" -Name "LimbusLocalize" -ItemType "directory" -Force
 New-Item -Path "$Path/LimbusLocalize" -Name "Mods" -ItemType "directory" -Force
 New-Item -Path "$Path/LimbusLocalize/Mods" -Name "Localize" -ItemType "directory" -Force
+New-Item -Path "$Path/LimbusLocalize/Mods/Localize" -Name "Readme" -ItemType "directory" -Force
 New-Item -Path "$Path/LimbusLocalize/Mods/Localize" -Name "CN" -ItemType "directory" -Force
 Copy-Item -Path assets/Localize/CN/* -Destination $Path/LimbusLocalize/Mods/Localize/CN -Force
+Copy-Item -Path assets/Localize/Readme/* -Destination $Path/LimbusLocalize/Mods/Localize/Readme -Force
 Copy-Item -Path $Path/LimbusLocalize.dll -Destination $Path/LimbusLocalize/Mods -Force
 7z a -t7z "$Path/LimbusLocalize_$version.7z" "./$Path/LimbusLocalize/*" -mx=9 -ms
 $changedFiles=$(git diff --name-only HEAD $(git describe --tags --abbrev=0) -- assets/Localize/CN/)
@@ -25,7 +27,9 @@ New-Item -Path "$Path" -Name "LimbusLocalize_OTA" -ItemType "directory" -Force
 New-Item -Path "$Path/LimbusLocalize_OTA" -Name "Mods" -ItemType "directory" -Force
 Copy-Item -Path $Path/LimbusLocalize.dll -Destination $Path/LimbusLocalize_OTA/Mods -Force
 New-Item -Path "$Path/LimbusLocalize_OTA/Mods" -Name "Localize" -ItemType "directory" -Force
+New-Item -Path "$Path/LimbusLocalize_OTA/Mods/Localize" -Name "Readme" -ItemType "directory" -Force
 New-Item -Path "$Path/LimbusLocalize_OTA/Mods/Localize" -Name "CN" -ItemType "directory" -Force
+Copy-Item -Path assets/Localize/Readme/* -Destination $Path/LimbusLocalize_OTA/Mods/Localize/Readme -Force
 # Copy the changed files to the release directory
 $changedFilesList = $changedFiles -split " "
 foreach ($file in $changedFilesList) {

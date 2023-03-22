@@ -1,8 +1,10 @@
 ﻿using HarmonyLib;
 using Il2Cpp;
 using Il2CppAddressable;
-using Il2CppChoiceEvent;
+using Il2CppMainUI;
 using Il2CppMainUI.Gacha;
+using Il2CppMainUI.NoticeUI;
+using Il2CppServer;
 using Il2CppSimpleJSON;
 using Il2CppSteamworks;
 using Il2CppStorySystem;
@@ -15,6 +17,10 @@ using MelonLoader;
 using System.IO;
 using System.Reflection;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using ILObject = Il2CppSystem.Object;
+using RawObject = System.Object;
+using UObject = UnityEngine.Object;
 
 [assembly: MelonInfo(typeof(LimbusLocalizeMod), LimbusLocalizeMod.NAME, LimbusLocalizeMod.VERSION, LimbusLocalizeMod.AUTHOR)]
 namespace LimbusLocalize
@@ -35,11 +41,10 @@ namespace LimbusLocalize
                 FileAttributes MyAttributes = File.GetAttributes(path + "/.hide");
                 File.SetAttributes(path + "/.hide", MyAttributes | FileAttributes.Hidden);
             }
-            TranslateJSON.Setup();
-            _ = UpdateChecker.UpdateCall;
+            ModManager.Setup();
             HarmonyLib.Harmony harmony = new("LimbusLocalizeMod");
             harmony.PatchAll(typeof(LimbusLocalizeMod));
-
+            UpdateChecker.CheckModUpdate();
             //使用AssetBundle技术载入中文字库
             tmpchinesefont = AssetBundle.LoadFromFile(path + "/tmpchinesefont").LoadAsset("assets/sourcehansanssc-heavy sdf.asset").Cast<TMP_FontAsset>();
         }
@@ -75,24 +80,43 @@ namespace LimbusLocalize
             __result = num;
             return false;
         }
-        //屏蔽没有意义的Warning
+        #region 屏蔽没有意义的Warning
         [HarmonyPatch(typeof(Logger), nameof(Logger.Log), new System.Type[]
         {
             typeof(LogType),
-            typeof(Il2CppSystem.Object)
+            typeof(ILObject)
         })]
         [HarmonyPrefix]
-        private static bool Log(UnityEngine.Logger __instance, UnityEngine.LogType __0, Il2CppSystem.Object __1)
+        private static bool Log(Logger __instance, LogType __0, ILObject __1)
         {
             if (__0 == LogType.Warning)
             {
                 string LogString = Logger.GetString(__1);
                 if (!LogString.Contains("DOTWEEN"))
-                    __instance.logHandler.LogFormat(__0, null, "{0}", new Il2CppSystem.Object[] { LogString });
+                    __instance.logHandler.LogFormat(__0, null, "{0}", new ILObject[] { LogString });
                 return false;
             }
             return true;
         }
+        [HarmonyPatch(typeof(Logger), nameof(Logger.Log), new System.Type[]
+        {
+            typeof(LogType),
+            typeof(ILObject),
+            typeof(UObject)
+        })]
+        [HarmonyPrefix]
+        private static bool Log(Logger __instance, LogType logType, ILObject message, UObject context)
+        {
+            if (logType == LogType.Warning)
+            {
+                string LogString = Logger.GetString(message);
+                if (!LogString.Contains("Material"))
+                    __instance.logHandler.LogFormat(logType, context, "{0}", new ILObject[] { LogString });
+                return false;
+            }
+            return true;
+        }
+        #endregion
         [HarmonyPatch(typeof(GachaEffectEventSystem), nameof(GachaEffectEventSystem.LinkToCrackPosition))]
         [HarmonyPrefix]
         private static bool LinkToCrackPosition(GachaCrackController[] crackList)
@@ -231,7 +255,6 @@ namespace LimbusLocalize
             }
             return false;
         }
-        public static bool isgameupdate;
         private static bool LoadLocal(LOCALIZE_LANGUAGE lang)
         {
             var tm = TextDataManager.Instance;
@@ -334,10 +357,12 @@ namespace LimbusLocalize
             __instance.tmp_loginAccount.font = fontAsset;
             __instance.tmp_loginAccount.fontMaterial = fontAsset.material;
             __instance.tmp_loginAccount.text = "LimbusLocalizeMod v." + VERSION;
+
+            ReadmeManager.InitReadmeList();
             //增加首次使用弹窗，告知使用者不用花钱买/使用可能有封号概率等
             if (UpdateChecker.UpdateCall != null)
             {
-                TranslateJSON.OpenGlobalPopup("模组更新已下载,点击确认将打开下载路径并退出游戏", default, default, "确认", UpdateChecker.UpdateCall);
+                ModManager.OpenGlobalPopup("模组更新已下载,点击确认将打开下载路径并退出游戏", default, default, "确认", UpdateChecker.UpdateCall);
                 return;
             }
             if (File.Exists(LimbusLocalizeMod.path + "/.hide/checkisfirstuse"))
@@ -396,41 +421,51 @@ namespace LimbusLocalize
             userAgreementUI._userAgreementContent._userAgreementsScrollbar.value = 1f;
             userAgreementUI._userAgreementContent._userAgreementsScrollbar.size = 0.3f;
         }
-        //Il2CppMainUI.NoticeUIPopup
-        //Il2Cpp.MainLobbyRightUpperUIButton
-        //待开始功能-贡献
-        public static void OPEN()
+        [HarmonyPatch(typeof(NoticeUIPopup), nameof(NoticeUIPopup.Initialize))]
+        [HarmonyPostfix]
+        public static void NoticeUIPopupInitialize(NoticeUIPopup __instance)
         {
-            //string x = "{\"list\":[{\"formatKey\":\"SubTitle\",\"formatValue\":\"Github\"},{\"formatKey\":\"HyperLink\",\"formatValue\":\"https://github.com/Bright1192/LimbusLocalize\"}]}";
+            if (!ReadmeManager.NoticeUIInstance)
+            {
+                var NoticeUIPopupInstance = UObject.Instantiate(__instance, __instance.transform.parent);
+                ReadmeManager.NoticeUIInstance = NoticeUIPopupInstance;
+                ReadmeManager.Initialize();
+            }
         }
-#if DEBUG
-        [HarmonyPatch(typeof(AddressablePopup), nameof(AddressablePopup.OnDownloadingYes))]
-        [HarmonyPrefix]
-        private static bool OnDownloadingYes(AddressablePopup __instance)
+        [HarmonyPatch(typeof(MainLobbyUIPanel), nameof(MainLobbyUIPanel.Initialize))]
+        [HarmonyPostfix]
+        public static void MainLobbyUIPanelInitialize(MainLobbyUIPanel __instance)
         {
-            TranslateJSON.OpenGlobalPopup("检测到游戏进行了热更新,是否机翻更新后变动/新增的文本?\n如果是将根据你是否挂梯子使用谷歌/有道翻译\n如果否将根据你是否挂梯子将更新后文本保留为韩文/英文", default, default, default, delegate ()
+            var UIButtonInstance = UObject.Instantiate(__instance.button_notice, __instance.button_notice.transform.parent);
+            ReadmeManager._redDot_Notice = UIButtonInstance.gameObject.GetComponentInChildren<RedDotWriggler>(true);
+            ReadmeManager._redDot_Notice.gameObject.SetActive(ReadmeManager.IsValidRedDot());
+            UIButtonInstance._onClick.RemoveAllListeners();
+            System.Action onClick = delegate
+                        {
+                            ReadmeManager.Open();
+                        };
+            UIButtonInstance._onClick.AddListener(onClick);
+            UIButtonInstance.transform.SetSiblingIndex(1);
+        }
+        [HarmonyPatch(typeof(NoticeUIContentImage), nameof(NoticeUIContentImage.SetData))]
+        [HarmonyPrefix]
+        public static bool ImageSetData(NoticeUIContentImage __instance, string formatValue)
+        {
+            if (formatValue.StartsWith("Readme_"))
             {
-                TranslateJSON.DoTranslate = true;
-                TranslateJSON.TranslateCall = delegate ()
-                {
-                    __instance._updateMovieScreen.SetActive(false);
-                    SingletonBehavior<AddressableManager>.Instance.InitLoad();
-                    __instance.Close();
-                };
-                TranslateJSON.StartTranslate();
-            }, delegate ()
-            {
-                TranslateJSON.DoTranslate = false;
-                TranslateJSON.TranslateCall = delegate ()
-                {
-                    __instance._updateMovieScreen.SetActive(false);
-                    SingletonBehavior<AddressableManager>.Instance.InitLoad();
-                    __instance.Close();
-                };
-                TranslateJSON.StartTranslate();
-            });
+                Sprite image = ReadmeManager.GetReadmeSprite(formatValue);
+                __instance.gameObject.SetActive(true);
+                __instance.SetImage(image);
+                return false;
+            }
+            return true;
+        }
+        [HarmonyPatch(typeof(NoticeUIContentHyperLink), nameof(NoticeUIContentHyperLink.OnPointerClick))]
+        [HarmonyPrefix]
+        public static bool HyperLinkOnPointerClick(NoticeUIContentHyperLink __instance, PointerEventData eventData)
+        {
+            Application.OpenURL(__instance.tmp_main.text);
             return false;
         }
-#endif
     }
 }
