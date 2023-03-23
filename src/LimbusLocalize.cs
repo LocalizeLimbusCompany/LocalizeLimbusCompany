@@ -18,6 +18,7 @@ using System.IO;
 using System.Reflection;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 using ILObject = Il2CppSystem.Object;
 using RawObject = System.Object;
 using UObject = UnityEngine.Object;
@@ -48,7 +49,7 @@ namespace LimbusLocalize
             //使用AssetBundle技术载入中文字库
             tmpchinesefont = AssetBundle.LoadFromFile(path + "/tmpchinesefont").LoadAsset("assets/sourcehansanssc-heavy sdf.asset").Cast<TMP_FontAsset>();
         }
-        //去tmd文字描述成功率
+        #region 去tmd文字描述成功率
         [HarmonyPatch(typeof(UITextMaker), nameof(UITextMaker.GetSuccessRateText))]
         [HarmonyPrefix]
         public static bool GetSuccessRateText(float rate, ref string __result)
@@ -80,6 +81,7 @@ namespace LimbusLocalize
             __result = num;
             return false;
         }
+        #endregion
         #region 屏蔽没有意义的Warning
         [HarmonyPatch(typeof(Logger), nameof(Logger.Log), new System.Type[]
         {
@@ -436,7 +438,7 @@ namespace LimbusLocalize
         [HarmonyPostfix]
         public static void MainLobbyUIPanelInitialize(MainLobbyUIPanel __instance)
         {
-            var UIButtonInstance = UObject.Instantiate(__instance.button_notice, __instance.button_notice.transform.parent);
+            var UIButtonInstance = UObject.Instantiate(__instance.button_notice, __instance.button_notice.transform.parent).Cast<MainLobbyRightUpperUIButton>();
             ReadmeManager._redDot_Notice = UIButtonInstance.gameObject.GetComponentInChildren<RedDotWriggler>(true);
             ReadmeManager._redDot_Notice.gameObject.SetActive(ReadmeManager.IsValidRedDot());
             UIButtonInstance._onClick.RemoveAllListeners();
@@ -446,6 +448,12 @@ namespace LimbusLocalize
                         };
             UIButtonInstance._onClick.AddListener(onClick);
             UIButtonInstance.transform.SetSiblingIndex(1);
+            var spriteSetting = new ButtonSprites()
+            {
+                _enabled = ReadmeManager.GetReadmeSprite("Readme_Zero"),
+                _hover = ReadmeManager.GetReadmeSprite("Readme_Zero")
+            };
+            UIButtonInstance.spriteSetting = spriteSetting;
         }
         [HarmonyPatch(typeof(NoticeUIContentImage), nameof(NoticeUIContentImage.SetData))]
         [HarmonyPrefix]

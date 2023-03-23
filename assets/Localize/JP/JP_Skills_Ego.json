@@ -607,7 +607,7 @@
           "level": 1,
           "name": "4本目のマッチの火",
           "abName": "燃え尽きた少女",
-          "desc": "[CantIdentify]\n足しように火傷 があればスキル威力+2\n[EnemyKill] 次のターンに攻撃威力増加 2を得る\n[EnemyKillFail] 次のターンに火傷 10を得る",
+          "desc": "[CantIdentify]\n対象に火傷 があればスキル威力+2\n[EnemyKill] 次のターンに攻撃威力増加 2を得る\n[EnemyKillFail] 次のターンに火傷 10を得る",
           "coinlist": [
             {
               "coindescs": [
@@ -622,7 +622,7 @@
           "level": 3,
           "name": "4本目のマッチの火",
           "abName": "燃え尽きた少女",
-          "desc": "[CantIdentify]\n足しように火傷 があればスキル威力+4\n[EnemyKill] 次のターンに攻撃威力増加 2を得る\n[EnemyKillFail] 次のターンに攻撃威力増加 3、火傷 10を得る",
+          "desc": "[CantIdentify]\n対象に火傷 があればスキル威力+4\n[EnemyKill] 次のターンに攻撃威力増加 2を得る\n[EnemyKillFail] 次のターンに攻撃威力増加 3、火傷 10を得る",
           "coinlist": [
             {
               "coindescs": [
@@ -1832,7 +1832,7 @@
         {
           "level": 1,
           "name": "まやかし",
-          "abName": "황금빛의 거짓사과",
+          "abName": "黄金色の林檎",
           "desc": "[Wide] スロット3枠指定",
           "coinlist": [
             {
@@ -1850,7 +1850,7 @@
         {
           "level": 3,
           "name": "まやかし",
-          "abName": "황금빛의 거짓사과",
+          "abName": "黄金色の林檎",
           "desc": "[Wide] スロット3枠指定",
           "coinlist": [
             {
@@ -1876,7 +1876,7 @@
         {
           "level": 1,
           "name": "まやかし",
-          "abName": "황금빛의 거짓사과",
+          "abName": "黄金色の林檎",
           "desc": "[CantIdentify][Wide] スロット3枠指定",
           "coinlist": [
             {
@@ -1894,7 +1894,7 @@
         {
           "level": 3,
           "name": "まやかし",
-          "abName": "황금빛의 거짓사과",
+          "abName": "黄金色の林檎",
           "desc": "[CantIdentify][Wide] スロット3枠指定",
           "coinlist": [
             {
@@ -1983,6 +1983,82 @@
                 },
                 {
                   "desc": "[OnSucceedAttackHead] 破裂 5を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2030311,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "電信柱",
+          "abName": "路地の番犬",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 充電 回数10を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "電信柱",
+          "abName": "路地の番犬",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 充電 回数10を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 嫉妬共鳴の数に比例し、全味方に充電 回数を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2030321,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "電信柱",
+          "abName": "路地の番犬",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 充電 回数10、破裂 10を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "電信柱",
+          "abName": "路地の番犬",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 充電 回数10、破裂 10を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 全味方に脆弱 5、破裂 10、充電 回数10を付与"
                 }
               ]
             }
