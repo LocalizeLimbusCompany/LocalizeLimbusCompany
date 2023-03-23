@@ -30,18 +30,21 @@ namespace LimbusLocalize
         public static void Initialize()
         {
             NoticeUIInstance.Initialize();
-            Action _back = delegate () { Close(); };
-            NoticeUIInstance.btn_back._onClick.RemoveAllListeners();
-            NoticeUIInstance.btn_back._onClick.AddListener(_back);
             InitReadmeSprites();
             NoticeUIInstance.btn_systemNotice.GetComponentInChildren<UITextDataLoader>(true).enabled = false;
             NoticeUIInstance.btn_systemNotice.GetComponentInChildren<TextMeshProUGUI>(true).text = "更新公告";
             NoticeUIInstance.btn_eventNotice.GetComponentInChildren<UITextDataLoader>(true).enabled = false;
             NoticeUIInstance.btn_eventNotice.GetComponentInChildren<TextMeshProUGUI>(true).text = "贡献,反馈,赞助";
         }
-
+        public static void AddClosedel()
+        {
+            NoticeUIInstance.btn_back._onClick.RemoveAllListeners();
+            Action _back = delegate () { Close(); };
+            NoticeUIInstance.btn_back._onClick.AddListener(_back);
+        }
         public static void Open()
         {
+            AddClosedel();
             NoticeUIInstance.Open();
             NoticeUIInstance._popupPanel.Open();
             List<Notice> notices = ReadmeList;
