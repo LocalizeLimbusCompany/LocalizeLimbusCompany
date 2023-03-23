@@ -233,7 +233,7 @@ namespace LimbusLocalize
         [HarmonyPrefix]
         public static bool PersonalityVoiceGetDataList(PersonalityVoiceJsonDataList __instance, int personalityId, ref LocalizeTextDataRoot<TextData_PersonalityVoice> __result)
         {
-            if (!__instance._voiceDictionary.TryGetValue(personalityId.ToString(), out LocalizeTextDataRoot<TextData_PersonalityVoice> localizeTextDataRoot))
+            if (!__instance._voiceDictionary.TryGetValueEX(personalityId.ToString(), out LocalizeTextDataRoot<TextData_PersonalityVoice> localizeTextDataRoot))
             {
                 Debug.LogError("PersonalityVoice no id:" + personalityId.ToString());
                 localizeTextDataRoot = new LocalizeTextDataRoot<TextData_PersonalityVoice>() { dataList = new List<TextData_PersonalityVoice>() };
