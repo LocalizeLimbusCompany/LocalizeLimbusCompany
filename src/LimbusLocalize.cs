@@ -215,14 +215,13 @@ namespace LimbusLocalize
             tm._abBattleResultHint.Init(romoteLocalizeFileList.AbBattleHint);
             tm._tutorialDesc.Init(romoteLocalizeFileList.TutorialDesc);
             tm._iapProductText.Init(romoteLocalizeFileList.IAPProduct);
-            tm._userInfoBannerDesc.Init(romoteLocalizeFileList.UserInfoBannerDesc);
             tm._illustGetConditionText.Init(romoteLocalizeFileList.GetConditionText);
             tm._choiceEventResultDesc.Init(romoteLocalizeFileList.ChoiceEventResult);
             tm._battlePassMission.Init(romoteLocalizeFileList.BattlePassMission);
             tm._gachaTitle.Init(romoteLocalizeFileList.GachaTitle);
             tm._introduceCharacter.Init(romoteLocalizeFileList.IntroduceCharacter);
             tm._userBanner.Init(romoteLocalizeFileList.UserBanner);
-
+            
             tm._abnormalityEventCharDlg.AbEventCharDlgRootInit(romoteLocalizeFileList.abnormalityCharDlgFilePath);
             tm._personalityVoiceText.PersonalityVoiceJsonDataListInit(romoteLocalizeFileList.PersonalityVoice);
             tm._announcerVoiceText.AnnouncerVoiceJsonDataListInit(romoteLocalizeFileList.AnnouncerVoice);
@@ -440,7 +439,7 @@ namespace LimbusLocalize
         {
             var UIButtonInstance = UObject.Instantiate(__instance.button_notice, __instance.button_notice.transform.parent).Cast<MainLobbyRightUpperUIButton>();
             ReadmeManager._redDot_Notice = UIButtonInstance.gameObject.GetComponentInChildren<RedDotWriggler>(true);
-            ReadmeManager._redDot_Notice.gameObject.SetActive(ReadmeManager.IsValidRedDot());
+            ReadmeManager.UpdateNoticeRedDot();
             UIButtonInstance._onClick.RemoveAllListeners();
             System.Action onClick = delegate
                         {
