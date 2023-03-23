@@ -7,6 +7,7 @@ using Il2CppSystem.Collections.Generic;
 using Il2CppTMPro;
 using System;
 using System.IO;
+using System.Linq;
 using UnityEngine;
 using static MelonLoader.MelonLogger;
 
@@ -30,6 +31,7 @@ namespace LimbusLocalize
         {
             NoticeUIInstance.Initialize();
             Action _back = delegate () { Close(); };
+            NoticeUIInstance.btn_back._onClick.RemoveAllListeners();
             NoticeUIInstance.btn_back._onClick.AddListener(_back);
             InitReadmeSprites();
             NoticeUIInstance.btn_systemNotice.GetComponentInChildren<UITextDataLoader>(true).enabled = false;
@@ -54,7 +56,7 @@ namespace LimbusLocalize
         {
             ReadmeSprites = new Dictionary<string, Sprite>();
 
-            foreach (FileInfo fileInfo in new DirectoryInfo(LimbusLocalizeMod.path + "/Localize/Readme").GetFiles("*.jpg"))
+            foreach (FileInfo fileInfo in new DirectoryInfo(LimbusLocalizeMod.path + "/Localize/Readme").GetFiles().Where(f => f.Extension != ".json"))
             {
                 Texture2D texture2D = new(2, 2);
                 ImageConversion.LoadImage(texture2D, File.ReadAllBytes(fileInfo.FullName));

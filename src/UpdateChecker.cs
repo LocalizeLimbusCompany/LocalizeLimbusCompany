@@ -14,6 +14,7 @@ namespace LimbusLocalize
         }
         public static void CheckModUpdate()
         {
+            Debug.LogWarning("正在检查汉化模组更新");
             var CheckModUpdatesIE = CheckModUpdates();
             while (CheckModUpdatesIE.MoveNext())
             {
