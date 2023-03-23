@@ -221,13 +221,25 @@ namespace LimbusLocalize
             tm._gachaTitle.Init(romoteLocalizeFileList.GachaTitle);
             tm._introduceCharacter.Init(romoteLocalizeFileList.IntroduceCharacter);
             tm._userBanner.Init(romoteLocalizeFileList.UserBanner);
-            
+
             tm._abnormalityEventCharDlg.AbEventCharDlgRootInit(romoteLocalizeFileList.abnormalityCharDlgFilePath);
             tm._personalityVoiceText.PersonalityVoiceJsonDataListInit(romoteLocalizeFileList.PersonalityVoice);
             tm._announcerVoiceText.AnnouncerVoiceJsonDataListInit(romoteLocalizeFileList.AnnouncerVoice);
             tm._bgmLyricsText.BgmLyricsJsonDataListInit(romoteLocalizeFileList.BgmLyrics);
             tm._egoVoiceText.EGOVoiceJsonDataListInit(romoteLocalizeFileList.EGOVoice);
 
+        }
+        [HarmonyPatch(typeof(PersonalityVoiceJsonDataList), nameof(PersonalityVoiceJsonDataList.GetDataList))]
+        [HarmonyPrefix]
+        public static bool PersonalityVoiceGetDataList(PersonalityVoiceJsonDataList __instance, int personalityId, ref LocalizeTextDataRoot<TextData_PersonalityVoice> __result)
+        {
+            if (!__instance._voiceDictionary.TryGetValue(personalityId.ToString(), out LocalizeTextDataRoot<TextData_PersonalityVoice> localizeTextDataRoot))
+            {
+                Debug.LogError("PersonalityVoice no id:" + personalityId.ToString());
+                localizeTextDataRoot = new LocalizeTextDataRoot<TextData_PersonalityVoice>() { dataList = new List<TextData_PersonalityVoice>() };
+            }
+            __result = localizeTextDataRoot;
+            return false;
         }
         [HarmonyPatch(typeof(EGOVoiceJsonDataList), nameof(EGOVoiceJsonDataList.Init))]
         [HarmonyPrefix]
