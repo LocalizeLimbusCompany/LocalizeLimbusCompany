@@ -31,7 +31,7 @@ namespace LimbusLocalize
         public static string path;
         public static TMP_FontAsset tmpchinesefont;
         public const string NAME = "LimbusLocalizeMod";
-        public const string VERSION = "0.1.5";
+        public const string VERSION = "0.1.6";
         public const string AUTHOR = "Bright";
         public override void OnInitializeMelon()
         {
