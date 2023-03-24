@@ -461,8 +461,8 @@ namespace LimbusLocalize
             UIButtonInstance.transform.SetSiblingIndex(1);
             var spriteSetting = new ButtonSprites()
             {
-                _enabled = ReadmeManager.GetReadmeSprite("Readme_Zero"),
-                _hover = ReadmeManager.GetReadmeSprite("Readme_Zero")
+                _enabled = ReadmeManager.GetReadmeSprite("Readme_Zero_Button"),
+                _hover = ReadmeManager.GetReadmeSprite("Readme_Zero_Button")
             };
             UIButtonInstance.spriteSetting = spriteSetting;
         }
