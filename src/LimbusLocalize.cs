@@ -14,6 +14,7 @@ using Il2CppUI.Utility;
 using Il2CppUtilityUI;
 using LimbusLocalize;
 using MelonLoader;
+using System;
 using System.IO;
 using System.Reflection;
 using UnityEngine;
@@ -33,8 +34,14 @@ namespace LimbusLocalize
         public const string NAME = "LimbusLocalizeMod";
         public const string VERSION = "0.1.6";
         public const string AUTHOR = "Bright";
+        public static Action<string> OnLogError { get; set; }
+        public static Action<string> OnLogWarning { get; set; }
+        public static LimbusLocalizeMod Instance;
         public override void OnInitializeMelon()
         {
+            Instance = this;
+            OnLogError = delegate (string log) { base.LoggerInstance.Error(log); Debug.LogError(log); };
+            OnLogWarning = delegate (string log) { base.LoggerInstance.Warning(log); Debug.LogWarning(log); };
             path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             if (!Directory.Exists(path + "/.hide"))
             {
@@ -42,12 +49,22 @@ namespace LimbusLocalize
                 FileAttributes MyAttributes = File.GetAttributes(path + "/.hide");
                 File.SetAttributes(path + "/.hide", MyAttributes | FileAttributes.Hidden);
             }
-            ModManager.Setup();
-            HarmonyLib.Harmony harmony = new("LimbusLocalizeMod");
-            harmony.PatchAll(typeof(LimbusLocalizeMod));
-            UpdateChecker.CheckModUpdate();
-            //使用AssetBundle技术载入中文字库
-            tmpchinesefont = AssetBundle.LoadFromFile(path + "/tmpchinesefont").LoadAsset("assets/sourcehansanssc-heavy sdf.asset").Cast<TMP_FontAsset>();
+            try
+            {
+                ModManager.Setup();
+                HarmonyLib.Harmony harmony = new("LimbusLocalizeMod");
+                harmony.PatchAll(typeof(LimbusLocalizeMod));
+                UpdateChecker.CheckModUpdate();
+                if (File.Exists(path + "/tmpchinesefont"))
+                    //使用AssetBundle技术载入中文字库
+                    tmpchinesefont = AssetBundle.LoadFromFile(path + "/tmpchinesefont").LoadAsset("assets/sourcehansanssc-heavy sdf.asset").Cast<TMP_FontAsset>();
+                else
+                    OnLogError("Fatal Error!!!\nYou Not Have Chinese Font, Please Read GitHub Readme To Download Or Use Mod Installer To Automatically Download It");
+            }
+            catch (Exception e)
+            {
+                OnLogError("Mod Has Unknown Fatal Error!!!\n" + e.ToString());
+            }
         }
         #region 去tmd文字描述成功率
         [HarmonyPatch(typeof(UITextMaker), nameof(UITextMaker.GetSuccessRateText))]
@@ -125,7 +142,7 @@ namespace LimbusLocalize
         {
             return false;
         }
-
+        #region 字体
         [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.fontMaterial), MethodType.Setter)]
         [HarmonyPrefix]
         private static bool set_fontMaterial(TMP_Text __instance, Material value)
@@ -173,6 +190,8 @@ namespace LimbusLocalize
             }
             return false;
         }
+        #endregion
+        #region 载入,应用汉化
         [HarmonyPatch(typeof(TextDataManager), nameof(TextDataManager.LoadRemote))]
         [HarmonyPrefix]
         private static void LoadRemote(ref LOCALIZE_LANGUAGE lang)
@@ -359,6 +378,7 @@ namespace LimbusLocalize
                 __result = scenarioAssetData.krname;
             return false;
         }
+        #endregion
         [HarmonyPatch(typeof(LoginSceneManager), nameof(LoginSceneManager.SetLoginInfo))]
         [HarmonyPostfix]
         private static void SetLoginInfo(LoginSceneManager __instance)
@@ -434,6 +454,7 @@ namespace LimbusLocalize
             userAgreementUI._userAgreementContent._userAgreementsScrollbar.value = 1f;
             userAgreementUI._userAgreementContent._userAgreementsScrollbar.size = 0.3f;
         }
+        #region 公告相关
         [HarmonyPatch(typeof(NoticeUIPopup), nameof(NoticeUIPopup.Initialize))]
         [HarmonyPostfix]
         public static void NoticeUIPopupInitialize(NoticeUIPopup __instance)
@@ -485,6 +506,14 @@ namespace LimbusLocalize
         {
             Application.OpenURL(__instance.tmp_main.text);
             return false;
+        }
+        #endregion
+        [HarmonyPatch(typeof(GachaResultUI), nameof(GachaResultUI.SetData))]
+        [HarmonyPostfix]
+        public static void GachaResultUISetData(GachaResultUI __instance, List<GachaLogDetail> gachaLogDetails)
+        {
+            __instance._isExternal = true;
+            __instance.btn_getNewCardskipAll.gameObject.SetActive(true);
         }
     }
 }
