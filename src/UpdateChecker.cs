@@ -14,14 +14,14 @@ namespace LimbusLocalize
         }
         public static void CheckModUpdate()
         {
-            Debug.LogWarning("正在检查汉化模组更新");
+            LimbusLocalizeMod.OnLogWarning("Check Mod Update");
             var CheckModUpdatesIE = CheckModUpdates();
             while (CheckModUpdatesIE.MoveNext())
             {
                 if (CheckModUpdatesIE.Current is UnityWebRequestAsyncOperation)
                 {
                     var SendWebRequest = CheckModUpdatesIE.Current as UnityWebRequestAsyncOperation;
-                    while(!SendWebRequest.isDone)
+                    while (!SendWebRequest.isDone)
                     { }
                 }
             }
@@ -34,7 +34,7 @@ namespace LimbusLocalize
 
             if (www.result != UnityWebRequest.Result.Success)
             {
-                Debug.Log(www.error);
+                LimbusLocalizeMod.OnLogWarning("Can't access GitHub!!!" + www.error);
             }
             else
             {
@@ -56,7 +56,7 @@ namespace LimbusLocalize
                 if (!string.IsNullOrEmpty(download))
                 {
                     var dirs = download.Split('/');
-                    string filename = dirs[dirs.Length - 1];
+                    string filename = dirs[^1];
                     UnityWebRequest wwwdownload = UnityWebRequest.Get(download);
                     yield return wwwdownload.SendWebRequest();
                     var dir = new DirectoryInfo(Application.dataPath).Parent.FullName;
