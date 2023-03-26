@@ -148,7 +148,7 @@ namespace LimbusLocalize
         private static bool set_fontMaterial(TMP_Text __instance, Material value)
         {
             //防止字库变动
-            if (__instance.font.name == "KOTRA_BOLD SDF" || __instance.font.name == "Corporate-Logo-Bold-ver2 SDF" || __instance.font.name == "HigashiOme-Gothic-C-1.3 SDF" || __instance.font.name == "Pretendard-Regular SDF" || __instance.font.name == "SCDream5 SDF" || __instance.font.name == "LiberationSans SDF" || __instance.font.name == "Mikodacs SDF")
+            if (__instance.font != tmpchinesefont && (__instance.font.name == "KOTRA_BOLD SDF" || __instance.font.name.StartsWith("Corporate-Logo-Bold") || __instance.font.name.StartsWith("HigashiOme-Gothic-C") || __instance.font.name == "Pretendard-Regular SDF" || __instance.font.name.StartsWith("SCDream") || __instance.font.name == "LiberationSans SDF" || __instance.font.name == "Mikodacs SDF" || __instance.font.name == "BebasKai SDF"))
                 __instance.font = tmpchinesefont;
             value = __instance.font.material;
             bool check = __instance.gameObject.name.StartsWith("[Tmpro]SkillMinPower") || __instance.gameObject.name.StartsWith("[Tmpro]SkillMaxPower");
@@ -486,6 +486,14 @@ namespace LimbusLocalize
                 _hover = ReadmeManager.GetReadmeSprite("Readme_Zero_Button")
             };
             UIButtonInstance.spriteSetting = spriteSetting;
+            var transform = __instance.button_notice.transform.parent;
+            var layoutGroup = transform.GetComponent<HorizontalLayoutGroup>();
+            layoutGroup.childScaleHeight = true;
+            layoutGroup.childScaleWidth = true;
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                transform.GetChild(i).localScale = new Vector3(0.8f, 0.8f, 1f);
+            }
         }
         [HarmonyPatch(typeof(NoticeUIContentImage), nameof(NoticeUIContentImage.SetData))]
         [HarmonyPrefix]
