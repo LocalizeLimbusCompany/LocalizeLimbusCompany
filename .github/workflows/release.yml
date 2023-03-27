@@ -22,6 +22,7 @@ jobs:
           repo_token: ${{ secrets.Release }}
           file_glob: true
           file: Release/*.7z
+          release_name: LimbusLocalize_ml_ilcpp_${{ github.event.inputs.version }}_Beta
           body: "# 下载\n- LimbusLocalize_${{ github.event.inputs.version }}.7z 全量包\n- LimbusLocalize_OTA_${{ github.event.inputs.version }}.7z 增量更新"
           tag: ${{ github.event.inputs.version }}
           overwrite: true
