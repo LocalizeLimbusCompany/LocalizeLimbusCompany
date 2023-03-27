@@ -22,8 +22,8 @@ Copy-Item -Path assets/Localize/Readme/* -Destination $Path/LimbusLocalize/Mods/
 Copy-Item -Path $Path/LimbusLocalize.dll -Destination $Path/LimbusLocalize/Mods -Force
 7z a -t7z "$Path/LimbusLocalize_$version.7z" "./$Path/LimbusLocalize/*" -mx=9 -ms
 $tag=$(git describe --tags --abbrev=0)
-$changedFiles=$(git diff --name-only --diff-filter=d HEAD $tag -- assets/Localize/CN/)
-$changedFiles2=$(git diff --name-only --diff-filter=D HEAD $tag -- assets/Localize/Readme/)
+$changedFiles=$(git diff --name-only HEAD $tag -- assets/Localize/CN/)
+$changedFiles2=$(git diff --name-only HEAD $tag -- assets/Localize/Readme/)
 # OTA
 New-Item -Path "$Path" -Name "LimbusLocalize_OTA" -ItemType "directory" -Force
 New-Item -Path "$Path/LimbusLocalize_OTA" -Name "Mods" -ItemType "directory" -Force
@@ -34,10 +34,14 @@ New-Item -Path "$Path/LimbusLocalize_OTA/Mods/Localize" -Name "CN" -ItemType "di
 # Copy the changed files to the release directory
 $changedFilesList = $changedFiles -split " "
 foreach ($file in $changedFilesList) {
+	if(Test-Path $file){
     Copy-Item -Path $file -Destination $Path/LimbusLocalize_OTA/Mods/Localize/CN -Force
+    }
 }
 $changedFilesList2 = $changedFiles2 -split " "
 foreach ($file2 in $changedFilesList2) {
+	if(Test-Path $file2){
     Copy-Item -Path $file2 -Destination $Path/LimbusLocalize_OTA/Mods/Localize/Readme -Force
+    }
 }
 7z a -t7z "$Path/LimbusLocalize_OTA_$version.7z" "./$Path/LimbusLocalize_OTA/*" -mx=9 -ms

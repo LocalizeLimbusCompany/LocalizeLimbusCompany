@@ -17,6 +17,7 @@ using MelonLoader;
 using System;
 using System.IO;
 using System.Reflection;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -65,6 +66,15 @@ namespace LimbusLocalize
             {
                 OnLogError("Mod Has Unknown Fatal Error!!!\n" + e.ToString());
             }
+        }
+        public override void OnApplicationQuit()
+        {
+            var gamepath = new DirectoryInfo(Application.dataPath).Parent.FullName;
+            File.Copy(gamepath + "/MelonLoader/Latest.log", gamepath + "/框架日志.log", true);
+            var Latestlog = File.ReadAllText(gamepath + "/框架日志.log");
+            Latestlog = Regex.Replace(Latestlog, "(\r\n)?[0-9:\\.\\[\\]]+ During invoking native->managed trampoline(\r\n)?", "");
+            File.WriteAllText(gamepath + "/框架日志.log", Latestlog);
+            File.Copy(Application.consoleLogPath, gamepath + "/游戏日志.log", true);
         }
         #region 去tmd文字描述成功率
         [HarmonyPatch(typeof(UITextMaker), nameof(UITextMaker.GetSuccessRateText))]
