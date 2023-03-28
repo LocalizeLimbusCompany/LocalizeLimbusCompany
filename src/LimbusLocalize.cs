@@ -33,14 +33,12 @@ namespace LimbusLocalize
         public static string path;
         public static TMP_FontAsset tmpchinesefont;
         public const string NAME = "LimbusLocalizeMod";
-        public const string VERSION = "0.1.6";
+        public const string VERSION = "0.1.7";
         public const string AUTHOR = "Bright";
         public static Action<string> OnLogError { get; set; }
         public static Action<string> OnLogWarning { get; set; }
-        public static LimbusLocalizeMod Instance;
         public override void OnInitializeMelon()
         {
-            Instance = this;
             OnLogError = delegate (string log) { base.LoggerInstance.Error(log); Debug.LogError(log); };
             OnLogWarning = delegate (string log) { base.LoggerInstance.Warning(log); Debug.LogWarning(log); };
             path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
@@ -153,24 +151,34 @@ namespace LimbusLocalize
             return false;
         }
         #region 字体
+        [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.font), MethodType.Setter)]
+        [HarmonyPrefix]
+        private static bool set_font(TMP_Text __instance, TMP_FontAsset value)
+        {
+            if (__instance.m_fontAsset == tmpchinesefont)
+                return false;
+            if (__instance.font.name == "KOTRA_BOLD SDF" || __instance.font.name.StartsWith("Corporate-Logo-Bold") || __instance.font.name.StartsWith("HigashiOme-Gothic-C") || __instance.font.name == "Pretendard-Regular SDF" || __instance.font.name.StartsWith("SCDream") || __instance.font.name == "LiberationSans SDF" || __instance.font.name == "Mikodacs SDF" || __instance.font.name == "BebasKai SDF")
+                value = tmpchinesefont;
+            if (__instance.m_fontAsset == value)
+                return false;
+            __instance.m_fontAsset = value;
+            __instance.LoadFontAsset();
+            __instance.m_havePropertiesChanged = true;
+            __instance.SetVerticesDirty();
+            __instance.SetLayoutDirty();
+            return false;
+        }
         [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.fontMaterial), MethodType.Setter)]
         [HarmonyPrefix]
         private static bool set_fontMaterial(TMP_Text __instance, Material value)
         {
-            //防止字库变动
-            if (__instance.font != tmpchinesefont && (__instance.font.name == "KOTRA_BOLD SDF" || __instance.font.name.StartsWith("Corporate-Logo-Bold") || __instance.font.name.StartsWith("HigashiOme-Gothic-C") || __instance.font.name == "Pretendard-Regular SDF" || __instance.font.name.StartsWith("SCDream") || __instance.font.name == "LiberationSans SDF" || __instance.font.name == "Mikodacs SDF" || __instance.font.name == "BebasKai SDF"))
-                __instance.font = tmpchinesefont;
-            value = __instance.font.material;
             bool check = __instance.gameObject.name.StartsWith("[Tmpro]SkillMinPower") || __instance.gameObject.name.StartsWith("[Tmpro]SkillMaxPower");
             //处理不正确大小
             if (!check && __instance.fontSize >= 50f)
-            {
                 __instance.fontSize -= __instance.fontSize / 50f * 20f;
-            }
+            value = __instance.font.material;
             if (__instance.m_sharedMaterial != null && __instance.m_sharedMaterial.GetInstanceID() == value.GetInstanceID())
-            {
                 return false;
-            }
             __instance.m_sharedMaterial = value;
             __instance.m_padding = __instance.GetPaddingForMaterial();
             __instance.m_havePropertiesChanged = true;
@@ -530,7 +538,6 @@ namespace LimbusLocalize
         [HarmonyPostfix]
         public static void GachaResultUISetData(GachaResultUI __instance, List<GachaLogDetail> gachaLogDetails)
         {
-            __instance._isExternal = true;
             __instance.btn_getNewCardskipAll.gameObject.SetActive(true);
         }
     }
