@@ -132,6 +132,12 @@ namespace LimbusLocalize
         {
             return Enumerable.ToDictionary<TSource, TKey, TElement>(source, keySelector, elementSelector, null);
         }
+        public static List<T> AddEX<T>(this List<T> list, params T[] values)
+        {
+            foreach (var value in values)
+                list.Add(value);
+            return list;
+        }
         public static bool TryGetValueEX<TKey, TValue>(this Dictionary<TKey, TValue> dic, TKey key, out TValue value)
         {
             var entries = dic._entries;

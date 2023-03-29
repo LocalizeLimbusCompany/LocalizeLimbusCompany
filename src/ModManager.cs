@@ -57,7 +57,32 @@ namespace LimbusLocalize
             globalPopupUI._gridLayoutGroup.cellSize = new Vector2(!string.IsNullOrEmpty(close) ? 500 : 700, 100f);
             globalPopupUI.Open();
         }
-
+        public static void OpenGachResultUI(List<GachaLogDetail> gachas)
+        {
+            _gachaPresenter.OpenGachaResultUI(gachas);
+            GlobalGameManager.Instance.StartTutorialManager.ProgressTutorial();
+        }
+        public static void OpenGachResultUI()
+        {
+            var gachaids = new List<int>().AddEX(10103, 10103, 10103, 10103, 10103, 10103, 10103, 10103, 10103, 10103);
+            List<GachaLogDetail> list = new();
+            for (int i = 0; i < gachaids.Count; i++)
+            {
+                var GachaLog = new GachaLogDetail(ELEMENT_TYPE.PERSONALITY, gachaids[i])
+                {
+                    ex = new Element(ELEMENT_TYPE.ITEM, 10101, 50)
+                };
+                list.Add(GachaLog);
+            }
+            OpenGachResultUI(list);
+        }
+        private static GachaUIPresenter _gachaPresenter
+        {
+            get
+            {
+                return SingletonBehavior<UIController>.Instance.GetPresenter(MAINUI_PHASE_TYPE.Gacha).Cast<GachaUIPresenter>();
+            }
+        }
         public static void CreateLocalize()
         {
             if (!Directory.Exists(LimbusLocalizeMod.path + "/Localize/EN"))
