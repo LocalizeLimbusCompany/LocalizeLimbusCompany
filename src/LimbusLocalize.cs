@@ -19,7 +19,9 @@ using System.IO;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.Playables;
 using UnityEngine.UI;
 using ILObject = Il2CppSystem.Object;
 using RawObject = System.Object;
@@ -33,7 +35,7 @@ namespace LimbusLocalize
         public static string path;
         public static TMP_FontAsset tmpchinesefont;
         public const string NAME = "LimbusLocalizeMod";
-        public const string VERSION = "0.1.7";
+        public const string VERSION = "0.1.6";
         public const string AUTHOR = "Bright";
         public static Action<string> OnLogError { get; set; }
         public static Action<string> OnLogWarning { get; set; }
@@ -534,11 +536,5 @@ namespace LimbusLocalize
             return false;
         }
         #endregion
-        [HarmonyPatch(typeof(GachaResultUI), nameof(GachaResultUI.SetData))]
-        [HarmonyPostfix]
-        public static void GachaResultUISetData(GachaResultUI __instance, List<GachaLogDetail> gachaLogDetails)
-        {
-            __instance.btn_getNewCardskipAll.gameObject.SetActive(true);
-        }
     }
 }
