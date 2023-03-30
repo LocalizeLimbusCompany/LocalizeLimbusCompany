@@ -59,6 +59,7 @@ namespace LimbusLocalize
         }
         public static void OpenGachResultUI(List<GachaLogDetail> gachas)
         {
+            lowerControlPanel.OnClickLowerControllButton(4);
             _gachaPresenter.OpenGachaResultUI(gachas);
             GlobalGameManager.Instance.StartTutorialManager.ProgressTutorial();
         }
@@ -75,6 +76,13 @@ namespace LimbusLocalize
                 list.Add(GachaLog);
             }
             OpenGachResultUI(list);
+        }
+        private static LowerControlUIPanel lowerControlPanel
+        {
+            get
+            {
+                return UIPresenter.Controller.GetPanel(MAINUI_PANEL_TYPE.LOWER_CONTROL).Cast<LowerControlUIPanel>();
+            }
         }
         private static GachaUIPresenter _gachaPresenter
         {
