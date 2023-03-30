@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.Networking;
 namespace LimbusLocalize
@@ -22,7 +23,9 @@ namespace LimbusLocalize
                 {
                     var SendWebRequest = CheckModUpdatesIE.Current as UnityWebRequestAsyncOperation;
                     while (!SendWebRequest.isDone)
-                    { }
+                    {
+                        Thread.Sleep(100);
+                    }
                 }
             }
         }
