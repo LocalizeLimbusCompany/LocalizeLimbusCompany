@@ -72,7 +72,7 @@ namespace LimbusLocalize
             var gamepath = new DirectoryInfo(Application.dataPath).Parent.FullName;
             File.Copy(gamepath + "/MelonLoader/Latest.log", gamepath + "/框架日志.log", true);
             var Latestlog = File.ReadAllText(gamepath + "/框架日志.log");
-            Latestlog = Regex.Replace(Latestlog, "[0-9:\\.\\[\\]]+ During invoking native->managed trampoline(\r\n)?", "");
+            Latestlog = Regex.Replace(Latestlog, "(\r\n)?[0-9:\\.\\[\\]]+ During invoking native->managed trampoline(\r\n)?", "");
             File.WriteAllText(gamepath + "/框架日志.log", Latestlog);
             File.Copy(Application.consoleLogPath, gamepath + "/游戏日志.log", true);
         }
@@ -533,12 +533,12 @@ namespace LimbusLocalize
         public static bool HyperLinkOnPointerClick(NoticeUIContentHyperLink __instance, PointerEventData eventData)
         {
             string URL = __instance.tmp_main.text;
-            if (URL.StartsWith("<link="))
+            if (URL.StartsWith("<link"))
             {
-                int startIndex = URL.IndexOf('\"');
+                int startIndex = URL.IndexOf('=');
                 if (startIndex != -1)
                 {
-                    int endIndex = URL.IndexOf('\\', startIndex + 1);
+                    int endIndex = URL.IndexOf('>', startIndex + 1);
                     if (endIndex != -1)
                     {
                         URL = URL.Substring(startIndex + 1, endIndex - startIndex - 1);
