@@ -53,7 +53,7 @@ namespace LimbusLocalize
             Func<Notice, bool> findeve = (Notice x) => x.noticeType == NOTICE_TYPE.Event;
             NoticeUIInstance._eventNotices = notices.FindAll(findeve);
             NoticeUIInstance.EventTapClickEvent();
-            (NoticeUIInstance.btn_eventNotice as UISelectedButton).SetSelected(true);
+            NoticeUIInstance.btn_eventNotice.Cast<UISelectedButton>().SetSelected(true);
         }
         private static void InitReadmeSprites()
         {

@@ -72,7 +72,7 @@ namespace LimbusLocalize
             var gamepath = new DirectoryInfo(Application.dataPath).Parent.FullName;
             File.Copy(gamepath + "/MelonLoader/Latest.log", gamepath + "/框架日志.log", true);
             var Latestlog = File.ReadAllText(gamepath + "/框架日志.log");
-            Latestlog = Regex.Replace(Latestlog, "(\r\n)?[0-9:\\.\\[\\]]+ During invoking native->managed trampoline(\r\n)?", "");
+            Latestlog = Regex.Replace(Latestlog, "[0-9:\\.\\[\\]]+ During invoking native->managed trampoline(\r\n)?", "");
             File.WriteAllText(gamepath + "/框架日志.log", Latestlog);
             File.Copy(Application.consoleLogPath, gamepath + "/游戏日志.log", true);
         }
@@ -148,9 +148,9 @@ namespace LimbusLocalize
         #endregion
         [HarmonyPatch(typeof(GachaEffectEventSystem), nameof(GachaEffectEventSystem.LinkToCrackPosition))]
         [HarmonyPrefix]
-        private static bool LinkToCrackPosition(GachaCrackController[] crackList)
+        private static bool LinkToCrackPosition(GachaEffectEventSystem __instance, GachaCrackController[] crackList)
         {
-            return false;
+            return __instance._parent.EffectChainCamera;
         }
         #region 字体
         [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.font), MethodType.Setter)]
