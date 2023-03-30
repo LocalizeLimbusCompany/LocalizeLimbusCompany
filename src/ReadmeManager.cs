@@ -9,7 +9,6 @@ using System;
 using System.IO;
 using System.Linq;
 using UnityEngine;
-using static MelonLoader.MelonLogger;
 
 namespace LimbusLocalize
 {/*{
@@ -35,8 +34,7 @@ namespace LimbusLocalize
             NoticeUIInstance.btn_systemNotice.GetComponentInChildren<TextMeshProUGUI>(true).text = "更新公告";
             NoticeUIInstance.btn_eventNotice.GetComponentInChildren<UITextDataLoader>(true).enabled = false;
             NoticeUIInstance.btn_eventNotice.GetComponentInChildren<TextMeshProUGUI>(true).text = "贡献,反馈,赞助";
-
-            ReadmeActions["Action_测试抽卡_十个李箱"] = () => { Close();ModManager.OpenGachResultUI(); };
+            ReadmeActions["Action_TestGacha_Ten_Yi_Sang"] = () => { Close(); ModManager.OpenGachResultUI(); };
         }
         public static void AddClosedel()
         {
@@ -86,7 +84,7 @@ namespace LimbusLocalize
         }
         public static List<Notice> ReadmeList = new();
         public static Dictionary<string, Sprite> ReadmeSprites = new();
-        public static Dictionary<string, Action> ReadmeActions = new();
+        public static System.Collections.Generic.Dictionary<string, Action> ReadmeActions = new();
 
         public static void Close()
         {
