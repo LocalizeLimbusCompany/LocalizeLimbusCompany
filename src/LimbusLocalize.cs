@@ -293,7 +293,7 @@ namespace LimbusLocalize
                                     if (data != null)
                                     {
                                         string[] array = jsonFilePath.Split('_');
-                                        string text = array[array.Length - 1];
+                                        string text = array[^1];
                                         text = text.Replace(".json", "");
                                         __instance._voiceDictionary.Add(text, data);
                                     }
@@ -354,19 +354,25 @@ namespace LimbusLocalize
             }
             string text3 = item;
             string text4 = textAsset.ToString();
-            Scenario scenario = new Scenario();
-            scenario.ID = scenarioID;
-            JSONArray jsonarray = JSONNode.Parse(text3)["dataList"].AsArray;
-            JSONArray jsonarray2 = JSONNode.Parse(text4)["dataList"].AsArray;
+            Scenario scenario = new()
+            {
+                ID = scenarioID
+            };
+            JSONArray jsonarray = JSONNode.Parse(text3)[0].AsArray;
+            JSONArray jsonarray2 = JSONNode.Parse(text4)[0].AsArray;
             for (int i = 0; i < jsonarray.Count; i++)
             {
-                int num = jsonarray[i]["id"];
+                int num = jsonarray[i][0].AsInt;
                 if (num >= 0)
                 {
-                    JSONNode jsonnode = new JSONObject();
-                    if (jsonarray2[i]["id"] == num)
+                    JSONNode jsonnode;
+                    if (jsonarray2[i][0].AsInt == num)
                     {
                         jsonnode = jsonarray2[i];
+                    }
+                    else
+                    {
+                        jsonnode = new JSONObject();
                     }
                     scenario.Scenarios.Add(new Dialog(num, jsonarray[i], jsonnode));
                 }
