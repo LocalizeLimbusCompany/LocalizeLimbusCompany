@@ -22,11 +22,7 @@ namespace LimbusLocalize
         }
         public static ModManager Instance;
 
-        public ModManager(IntPtr ptr)
-            : base(ptr)
-        {
-
-        }
+        public ModManager(IntPtr ptr) : base(ptr) { }
 
         public static void OpenGlobalPopup(string description, string title = "", string close = "取消", string confirm = "确认", DelegateEvent confirmEvent = null, DelegateEvent closeEvent = null)
         {
