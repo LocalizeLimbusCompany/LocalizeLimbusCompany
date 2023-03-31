@@ -346,38 +346,55 @@ namespace LimbusLocalize
         private static bool GetScenario(StoryData __instance, string scenarioID, LOCALIZE_LANGUAGE lang, ref Scenario __result)
         {
             //读取剧情
-            string item = File.ReadAllText(LimbusLocalizeMod.path + "/Localize/CN/CN_" + scenarioID + ".json");
-            TextAsset textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
-            if (textAsset == null)
+            string file= LimbusLocalizeMod.path + "/Localize/CN/CN_" + scenarioID + ".json";
+            if (File.Exists(file))
             {
-                textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", "SDUMMY", null, null).Item1;
-            }
-            string text3 = item;
-            string text4 = textAsset.ToString();
-            Scenario scenario = new()
-            {
-                ID = scenarioID
-            };
-            JSONArray jsonarray = JSONNode.Parse(text3)[0].AsArray;
-            JSONArray jsonarray2 = JSONNode.Parse(text4)[0].AsArray;
-            for (int i = 0; i < jsonarray.Count; i++)
-            {
-                int num = jsonarray[i][0].AsInt;
-                if (num >= 0)
+                string item = File.ReadAllText(file);
+                TextAsset textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
+                if (textAsset == null)
                 {
-                    JSONNode jsonnode;
-                    if (jsonarray2[i][0].AsInt == num)
+                    textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", "SDUMMY", null, null).Item1;
+                }
+                string text3 = item;
+                string text4 = textAsset.ToString();
+                Scenario scenario = new()
+                {
+                    ID = scenarioID
+                };
+                JSONArray jsonarray = JSONNode.Parse(text3)[0].AsArray;
+                JSONArray jsonarray2 = JSONNode.Parse(text4)[0].AsArray;
+                for (int i = 0; i < jsonarray.Count; i++)
+                {
+                    int num = jsonarray[i][0].AsInt;
+                    if (num >= 0)
                     {
-                        jsonnode = jsonarray2[i];
+                        JSONNode jsonnode;
+                        if (jsonarray2[i][0].AsInt == num)
+                        {
+                            jsonnode = jsonarray2[i];
+                        }
+                        else
+                        {
+                            jsonnode = new JSONObject();
+                        }
+                        scenario.Scenarios.Add(new Dialog(num, jsonarray[i], jsonnode));
                     }
-                    else
-                    {
-                        jsonnode = new JSONObject();
-                    }
-                    scenario.Scenarios.Add(new Dialog(num, jsonarray[i], jsonnode));
+                }
+                __result = scenario;
+            }
+            else
+            {
+                file = LimbusLocalizeMod.path + "/Localize/CN/SP_" + scenarioID + ".json";
+                if (File.Exists(file))
+                {
+                    __result = JsonUtility.FromJson<Scenario>(File.ReadAllText(file));
+                }
+                else
+                {
+                    OnLogError("Error!Con'n Find CN Story File,Use Raw Story");
+                    return true;
                 }
             }
-            __result = scenario;
             return false;
         }
         [HarmonyPatch(typeof(StoryData), nameof(StoryData.GetTellerTitle))]
