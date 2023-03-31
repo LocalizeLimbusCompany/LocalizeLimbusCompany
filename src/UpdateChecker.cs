@@ -1,9 +1,9 @@
 ﻿using Il2CppSimpleJSON;
+using Il2CppSystem.Threading;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Threading;
 using UnityEngine;
 using UnityEngine.Networking;
 namespace LimbusLocalize
@@ -13,28 +13,21 @@ namespace LimbusLocalize
         static UpdateChecker()
         {
         }
-        public static void CheckModUpdate()
+        public static void StartCheckUpdates()
         {
             LimbusLocalizeMod.OnLogWarning("Check Mod Update");
-            var CheckModUpdatesIE = CheckModUpdates();
-            while (CheckModUpdatesIE.MoveNext())
-            {
-                if (CheckModUpdatesIE.Current is UnityWebRequestAsyncOperation)
-                {
-                    var SendWebRequest = CheckModUpdatesIE.Current as UnityWebRequestAsyncOperation;
-                    while (!SendWebRequest.isDone)
-                    {
-                        Thread.Sleep(100);
-                    }
-                }
-            }
+            Action ModUpdate = CheckModUpdate;
+            new Thread(ModUpdate).Start();
         }
-        static IEnumerator CheckModUpdates()
+        static void CheckModUpdate()
         {
             UnityWebRequest www = UnityWebRequest.Get("https://api.github.com/repos/Bright1192/LimbusLocalize/releases");
             www.timeout = 4;
-            yield return www.SendWebRequest();
-
+            www.SendWebRequest();
+            while (!www.isDone)
+            {
+                Thread.Sleep(100);
+            }
             if (www.result != UnityWebRequest.Result.Success)
             {
                 LimbusLocalizeMod.OnLogWarning("Can't access GitHub!!!" + www.error);
@@ -61,18 +54,70 @@ namespace LimbusLocalize
                     var dirs = download.Split('/');
                     string filename = dirs[^1];
                     UnityWebRequest wwwdownload = UnityWebRequest.Get(download);
-                    yield return wwwdownload.SendWebRequest();
-                    var dir = new DirectoryInfo(Application.dataPath).Parent.FullName;
+                    wwwdownload.SendWebRequest();
+                    while (!wwwdownload.isDone)
+                    {
+                        Thread.Sleep(100);
+                    }
                     var NativeData = wwwdownload.downloadHandler.GetNativeData();
                     List<byte> datas = new();
                     foreach (var file in NativeData)
                     {
                         datas.Add(file);
                     }
-                    File.WriteAllBytes(dir + "/" + filename, datas.ToArray());
-                    UpdateCall = delegate () { Application.OpenURL(dir); Application.Quit(); };
+                    File.WriteAllBytes(LimbusLocalizeMod.gamepath + "/" + filename, datas.ToArray());
+                    UpdateCall = UpdateDel;
                 }
+                LimbusLocalizeMod.OnLogWarning("Check Chinese Font Asset Update");
+                Action FontAssetUpdate = CheckChineseFontAssetUpdate;
+                new Thread(FontAssetUpdate).Start();
             }
+        }
+        static void CheckChineseFontAssetUpdate()
+        {
+            UnityWebRequest www = UnityWebRequest.Get("https://api.github.com/repos/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/latest");
+            string FilePath = LimbusLocalizeMod.path + "/tmpchinesefont";
+            var LastWriteTime = File.Exists(FilePath) ? new FileInfo(FilePath).LastWriteTime.ToString("yyMMdd") : string.Empty;
+            www.SendWebRequest();
+            while (!www.isDone)
+            {
+                Thread.Sleep(100);
+            }
+            var latest = JSONNode.Parse(www.downloadHandler.text).AsObject;
+            string latestReleaseTag = latest["tag_name"].Value;
+            if (LastWriteTime != latestReleaseTag)
+            {
+                string download = "https://github.com/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/download/" + latestReleaseTag + "/tmpchinesefont_" + latestReleaseTag + ".7z";
+                UnityWebRequest wwwdownload = UnityWebRequest.Get(download);
+                wwwdownload.SendWebRequest();
+                while (!wwwdownload.isDone)
+                {
+                    Thread.Sleep(100);
+                }
+                var dirs = download.Split('/');
+                string filename = dirs[^1];
+                var NativeData = wwwdownload.downloadHandler.GetNativeData();
+                List<byte> datas = new();
+                foreach (var file in NativeData)
+                {
+                    datas.Add(file);
+                }
+                File.WriteAllBytes(LimbusLocalizeMod.gamepath + "/" + filename, datas.ToArray());
+                UpdateCall = UpdateDel;
+            }
+        }
+        static void UpdateDel()
+        {
+            Application.OpenURL(LimbusLocalizeMod.gamepath);
+            Application.Quit();
+        }
+        static void CheckChineseLocalizeUpdate()
+        {
+            UnityWebRequest www = UnityWebRequest.Get("https://api.github.com/repos/LocalizeLimbusCompany/LLC_ChineseLocalize/releases");
+        }
+        static void CheckReadmeUpdate()
+        {
+            UnityWebRequest www = UnityWebRequest.Get("https://api.github.com/repos/LocalizeLimbusCompany/LLC_Readme/releases");
         }
         public static Action UpdateCall;
     }

@@ -33,9 +33,10 @@ namespace LimbusLocalize
     public class LimbusLocalizeMod : MelonMod
     {
         public static string path;
+        public static string gamepath;
         public static TMP_FontAsset tmpchinesefont;
         public const string NAME = "LimbusLocalizeMod";
-        public const string VERSION = "0.1.6";
+        public const string VERSION = "0.1.7";
         public const string AUTHOR = "Bright";
         public static Action<string> OnLogError { get; set; }
         public static Action<string> OnLogWarning { get; set; }
@@ -44,6 +45,7 @@ namespace LimbusLocalize
             OnLogError = delegate (string log) { base.LoggerInstance.Error(log); Debug.LogError(log); };
             OnLogWarning = delegate (string log) { base.LoggerInstance.Warning(log); Debug.LogWarning(log); };
             path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            gamepath = new DirectoryInfo(Application.dataPath).Parent.FullName;
             if (!Directory.Exists(path + "/.hide"))
             {
                 Directory.CreateDirectory(path + "/.hide");
@@ -55,7 +57,7 @@ namespace LimbusLocalize
                 ModManager.Setup();
                 HarmonyLib.Harmony harmony = new("LimbusLocalizeMod");
                 harmony.PatchAll(typeof(LimbusLocalizeMod));
-                UpdateChecker.CheckModUpdate();
+                UpdateChecker.StartCheckUpdates();
                 if (File.Exists(path + "/tmpchinesefont"))
                     //使用AssetBundle技术载入中文字库
                     tmpchinesefont = AssetBundle.LoadFromFile(path + "/tmpchinesefont").LoadAsset("assets/sourcehansanssc-heavy sdf.asset").Cast<TMP_FontAsset>();
@@ -69,7 +71,6 @@ namespace LimbusLocalize
         }
         public override void OnApplicationQuit()
         {
-            var gamepath = new DirectoryInfo(Application.dataPath).Parent.FullName;
             File.Copy(gamepath + "/MelonLoader/Latest.log", gamepath + "/框架日志.log", true);
             var Latestlog = File.ReadAllText(gamepath + "/框架日志.log");
             Latestlog = Regex.Replace(Latestlog, "[0-9:\\.\\[\\]]+ During invoking native->managed trampoline(\r\n)?", "");
@@ -391,7 +392,7 @@ namespace LimbusLocalize
                 }
                 else
                 {
-                    OnLogError("Error!Con'n Find CN Story File,Use Raw Story");
+                    OnLogError("Error!Can'n Find CN Story File,Use Raw Story");
                     return true;
                 }
             }
