@@ -261,6 +261,7 @@ namespace LimbusLocalize
             tm._gachaTitle.Init(romoteLocalizeFileList.GachaTitle);
             tm._introduceCharacter.Init(romoteLocalizeFileList.IntroduceCharacter);
             tm._userBanner.Init(romoteLocalizeFileList.UserBanner);
+            tm._threadDungeon.Init(romoteLocalizeFileList.ThreadDungeon);
 
             tm._abnormalityEventCharDlg.AbEventCharDlgRootInit(romoteLocalizeFileList.abnormalityCharDlgFilePath);
             tm._personalityVoiceText.PersonalityVoiceJsonDataListInit(romoteLocalizeFileList.PersonalityVoice);
