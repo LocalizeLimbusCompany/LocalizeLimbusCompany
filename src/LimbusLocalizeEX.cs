@@ -56,7 +56,7 @@ namespace LimbusLocalize
                         string[] array2 = array[i].Split(',');
                         int num = int.Parse(array2[0].Trim());
                         AB_DLG_EVENT_TYPE ab_DLG_EVENT_TYPE = (AB_DLG_EVENT_TYPE)Enum.Parse(typeof(AB_DLG_EVENT_TYPE), array2[1].Trim());
-                        AbEventKey abEventKey = new AbEventKey(num, ab_DLG_EVENT_TYPE);
+                        AbEventKey abEventKey = new(num, ab_DLG_EVENT_TYPE);
                         abEventKeyDictionaryContainer.AddDlgWithEvent(abEventKey, t);
                     }
                 }
@@ -74,9 +74,7 @@ namespace LimbusLocalize
                 var file = string.Format("{0}{1}_{2}.json", Localizepath, text, text2);
                 if (!File.Exists(file)) { return; }
                 var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_PersonalityVoice>>(File.ReadAllText(file));
-                string[] array = text2.Split('_');
-                string text3 = array[array.Length - 1];
-                jsonDataList._voiceDictionary.Add(text3, localizeTextData);
+                jsonDataList._voiceDictionary.Add(text2.Split('_')[^1], localizeTextData);
             }
         }
         public static void AnnouncerVoiceJsonDataListInit(this AnnouncerVoiceJsonDataList jsonDataList, List<string> jsonFilePathList)
@@ -90,9 +88,7 @@ namespace LimbusLocalize
                 var file = string.Format("{0}{1}_{2}.json", Localizepath, text, text2);
                 if (!File.Exists(file)) { return; }
                 var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_AnnouncerVoice>>(File.ReadAllText(file));
-                string[] array = text2.Split('_');
-                string text3 = array[array.Length - 1];
-                jsonDataList._voiceDictionary.Add(text3, localizeTextData);
+                jsonDataList._voiceDictionary.Add(text2.Split('_')[^1], localizeTextData);
             }
         }
         public static void BgmLyricsJsonDataListInit(this BgmLyricsJsonDataList jsonDataList, List<string> jsonFilePathList)
@@ -106,9 +102,7 @@ namespace LimbusLocalize
                 var file = string.Format("{0}{1}_{2}.json", Localizepath, text, text2);
                 if (!File.Exists(file)) { return; }
                 var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_UI>>(File.ReadAllText(file));
-                string[] array = text2.Split('_');
-                string text3 = array[array.Length - 1];
-                jsonDataList._lyricsDictionary.Add(text3, localizeTextData);
+                jsonDataList._lyricsDictionary.Add(text2.Split('_')[^1], localizeTextData);
             }
         }
         public static void EGOVoiceJsonDataListInit(this EGOVoiceJsonDataList jsonDataList, List<string> jsonFilePathList)
@@ -122,9 +116,7 @@ namespace LimbusLocalize
                 var file = string.Format("{0}{1}_{2}.json", Localizepath, text, text2);
                 if (!File.Exists(file)) { return; }
                 var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_EGOVoice>>(File.ReadAllText(file));
-                string[] array = text2.Split('_');
-                string text3 = array[array.Length - 1];
-                jsonDataList._voiceDictionary.Add(text3, localizeTextData);
+                jsonDataList._voiceDictionary.Add(text2.Split('_')[^1], localizeTextData);
             }
         }
 
