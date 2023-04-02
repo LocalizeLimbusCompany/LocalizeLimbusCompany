@@ -347,7 +347,7 @@ namespace LimbusLocalize
         private static bool GetScenario(StoryData __instance, string scenarioID, LOCALIZE_LANGUAGE lang, ref Scenario __result)
         {
             //读取剧情
-            string file= LimbusLocalizeMod.path + "/Localize/CN/CN_" + scenarioID + ".json";
+            string file = LimbusLocalizeMod.path + "/Localize/CN/CN_" + scenarioID + ".json";
             if (File.Exists(file))
             {
                 string item = File.ReadAllText(file);
@@ -382,21 +382,13 @@ namespace LimbusLocalize
                     }
                 }
                 __result = scenario;
+                return false;
             }
             else
             {
-                file = LimbusLocalizeMod.path + "/Localize/CN/SP_" + scenarioID + ".json";
-                if (File.Exists(file))
-                {
-                    __result = JsonUtility.FromJson<Scenario>(File.ReadAllText(file));
-                }
-                else
-                {
-                    OnLogError("Error!Can'n Find CN Story File,Use Raw Story");
-                    return true;
-                }
+                OnLogError("Error!Can'n Find CN Story File,Use Raw Story");
+                return true;
             }
-            return false;
         }
         [HarmonyPatch(typeof(StoryData), nameof(StoryData.GetTellerTitle))]
         [HarmonyPrefix]
