@@ -1,26 +1,26 @@
-# 安装[![](https://img.shields.io/github/downloads/Bright1192/LimbusLocalize/total.svg)](../../releases)
+# 安装[![](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/total.svg)](../../releases)
 
-[![](https://img.shields.io/github/release/Bright1192/LimbusLocalize.svg?label=version)](../../releases/latest) [![](https://img.shields.io/github/downloads/Bright1192/LimbusLocalize/latest/total.svg)](../../releases/latest)
+[![](https://img.shields.io/github/release/LocalizeLimbusCompany/LocalizeLimbusCompany.svg?label=version)](../../releases/latest) [![](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/latest/total.svg)](../../releases/latest)
 1. 安装模组框架
 
-     从[MelonLoader](https://github.com/LavaGang/MelonLoader)下载v0.6.0或更高版本的模组框架
+    从[MelonLoader](https://github.com/LavaGang/MelonLoader)下载v0.6.0或更高版本的模组框架
 
-     在steam主界面右键游戏点击管理 浏览本地文件夹 将压缩包内所有东西**不 要 新 建 文 件 夹**的解压到上述弹出的文件夹中
+    在steam主界面右键游戏点击管理 浏览本地文件夹 将压缩包内所有东西**不 要 新 建 文 件 夹**的解压到上述弹出的文件夹中
 2. 安装字体文件
 
-    从[蓝奏云](https://wwlf.lanzoue.com/ioxNe0rocb0f)密码:6fxw下载字体文件 后解压到上述文件夹中
+    从[LLC_ChineseFontAsset](../../../LLC_ChineseFontAsset) 或者 [蓝奏云镜像](https://wwlf.lanzoue.com/ioxNe0rocb0f)密码:6fxw下载字体文件 后解压到上述文件夹中
 3. 安装汉化
 
     从[最新版](../../releases)下载全量包 后解压到上述文件夹中
 
     如果你知道**自己在做什么**，可以下载增量更新或git变动文件覆盖至相应文件
     
-	[最新开发版](../../actions/workflows/dev.yml) 总是最新的
+    [最新开发版](../../actions/workflows/dev.yml) 总是最新的
 	
-	[最新预览版](../../actions/workflows/beta.yml) 每周六更新
+    [最新预览版](../../actions/workflows/beta.yml) 每周六更新
 - 我是谁?我在哪?我要干什么?
 
-    [适用于看不懂上面的安装&更新程序](https://github.com/Bright1192/LimbusLocalize/releases/download/v0.1.5/LimbusCompanyModInstaller.rar)
+    [适用于看不懂上面的安装&更新程序](../../releases/download/v0.1.5/LimbusCompanyModInstaller.rar)
 
 
 # to do list
@@ -36,6 +36,13 @@
 
 - 增加错误弹窗，用于更好的Debug 10% by Bright
 - 修复字体大小不正常问题 20% by Bright 10% by 茜
-- 修复2-2战后剧情黑屏 0%
 
 - 将所有服务器响应改到本地，使边狱公司成为一个单机游戏 0%
+
+# 相关项目
+- [LLC_ChineseLocalize](../../../LLC_ChineseLocalize)中文翻译 汉化组的最新进展
+- [LLC_Readme](../../../LLC_Readme)模组公告
+- [LLC_ChineseFontAsset](../../../LLC_ChineseFontAsset)中文字体
+- [LLC_MOD_Installer](../../../LLC_MOD_Installer)模组傻瓜安装更新程序
+- [LLC_GAME_V1.1.0_Raw](../../../LLC_GAME_V1.1.0_Raw)边狱公司游戏未加密版本的存档
+- [填充辅助程序](https://github.com/kkr223/limbusTranslator)让翻译者更方便的填充汉化程序
