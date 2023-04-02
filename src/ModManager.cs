@@ -6,6 +6,7 @@ using Il2CppTMPro;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.IO;
+using System.Linq;
 using UnityEngine;
 
 namespace LimbusLocalize
@@ -86,30 +87,6 @@ namespace LimbusLocalize
             {
                 return SingletonBehavior<UIController>.Instance.GetPresenter(MAINUI_PHASE_TYPE.Gacha).Cast<GachaUIPresenter>();
             }
-        }
-        public static void CreateLocalize()
-        {
-            if (!Directory.Exists(LimbusLocalizeMod.path + "/Localize/EN"))
-                Directory.CreateDirectory(LimbusLocalizeMod.path + "/Localize/EN");
-            if (!Directory.Exists(LimbusLocalizeMod.path + "/Localize/KR"))
-                Directory.CreateDirectory(LimbusLocalizeMod.path + "/Localize/KR");
-            if (!Directory.Exists(LimbusLocalizeMod.path + "/Localize/JP"))
-                Directory.CreateDirectory(LimbusLocalizeMod.path + "/Localize/JP");
-            foreach (TextAsset textAsset in Resources.LoadAll<TextAsset>("Localize/EN"))
-            {
-                File.WriteAllText(LimbusLocalizeMod.path + "/Localize/EN/" + textAsset.name + ".json", textAsset.text);
-            }
-            foreach (TextAsset textAsset in Resources.LoadAll<TextAsset>("Localize/KR"))
-            {
-                File.WriteAllText(LimbusLocalizeMod.path + "/Localize/KR/" + textAsset.name + ".json", textAsset.text);
-            }
-            foreach (TextAsset textAsset in Resources.LoadAll<TextAsset>("Localize/JP"))
-            {
-                File.WriteAllText(LimbusLocalizeMod.path + "/Localize/JP/" + textAsset.name + ".json", textAsset.text);
-            }
-            string NickName = Resources.Load<TextAsset>("Story/ScenarioModelCode").ToString();
-            File.WriteAllText(LimbusLocalizeMod.path + "/Localize/NickName.json", NickName);
-
         }
         public static void MirrorDungeonGiveToString()
         {
