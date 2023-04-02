@@ -11,7 +11,6 @@ namespace LimbusLocalize
     {
         public static void Init<T>(this JsonDataList<T> jsonDataList, List<string> list) where T : LocalizeTextData, new()
         {
-
             string Localizepath = LimbusLocalizeMod.path + "/Localize/";
             string text = "CN";
             foreach (string text2 in list)
@@ -31,7 +30,6 @@ namespace LimbusLocalize
         public static void AbEventCharDlgRootInit(this AbEventCharDlgRoot root, List<string> jsonFiles)
         {
             root._personalityDict = new Dictionary<int, AbEventKeyDictionaryContainer>();
-
 
             string Localizepath = LimbusLocalizeMod.path + "/Localize/CN/";
             string text = "CN";
