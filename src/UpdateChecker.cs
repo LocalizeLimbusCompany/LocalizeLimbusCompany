@@ -21,7 +21,7 @@ namespace LimbusLocalize
         }
         static void CheckModUpdate()
         {
-            UnityWebRequest www = UnityWebRequest.Get("https://api.github.com/repos/Bright1192/LimbusLocalize/releases");
+            UnityWebRequest www = UnityWebRequest.Get("https://api.github.com/repos/LocalizeLimbusCompany/LocalizeLimbusCompany/releases");
             www.timeout = 4;
             www.SendWebRequest();
             while (!www.isDone)
@@ -43,11 +43,11 @@ namespace LimbusLocalize
                 var ver = "v" + LimbusLocalizeMod.VERSION;
                 if (latest2ReleaseTag == ver)
                 {
-                    download = "https://github.com/Bright1192/LimbusLocalize/releases/download/" + latestReleaseTag + "/LimbusLocalize_OTA_" + latestReleaseTag + ".7z";
+                    download = "https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/releases/download/" + latestReleaseTag + "/LimbusLocalize_OTA_" + latestReleaseTag + ".7z";
                 }
                 else if (latestReleaseTag != ver)
                 {
-                    download = "https://github.com/Bright1192/LimbusLocalize/releases/download/" + latestReleaseTag + "/LimbusLocalize_" + latestReleaseTag + ".7z";
+                    download = "https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/releases/download/" + latestReleaseTag + "/LimbusLocalize_" + latestReleaseTag + ".7z";
                 }
                 if (!string.IsNullOrEmpty(download))
                 {
