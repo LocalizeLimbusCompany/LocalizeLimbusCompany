@@ -11,18 +11,14 @@ namespace LimbusLocalize
     {
         public static void Init<T>(this JsonDataList<T> jsonDataList, List<string> list) where T : LocalizeTextData, new()
         {
-            string Localizepath = LimbusLocalizeMod.path + "/Localize/";
-            string text = "CN";
             foreach (string text2 in list)
             {
-                var file = string.Format("{0}{1}/{1}_{2}.json", Localizepath, text, text2);
-                if (File.Exists(file))
+                var file = ModManager.Localizes[text2];
+                if (string.IsNullOrEmpty(file)) { continue; }
+                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(file);
+                foreach (T t in localizeTextData.DataList)
                 {
-                    var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(File.ReadAllText(file));
-                    foreach (T t in localizeTextData.DataList)
-                    {
-                        jsonDataList._dic[t.ID.ToString()] = t;
-                    }
+                    jsonDataList._dic[t.ID.ToString()] = t;
                 }
             }
         }
@@ -31,19 +27,14 @@ namespace LimbusLocalize
         {
             root._personalityDict = new Dictionary<int, AbEventKeyDictionaryContainer>();
 
-            string Localizepath = LimbusLocalizeMod.path + "/Localize/CN/";
-            string text = "CN";
             foreach (string text2 in jsonFiles)
             {
-                var file = string.Format("{0}{1}_{2}.json", Localizepath, text, text2);
-                if (!File.Exists(file)) { return; }
-                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_AbnormalityEventCharDlg>>(File.ReadAllText(file));
+                var file = ModManager.Localizes[text2];
+                if (string.IsNullOrEmpty(file)) { continue; }
+                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_AbnormalityEventCharDlg>>(file);
                 foreach (var t in localizeTextData.DataList)
                 {
-                    var entries = root._personalityDict._entries;
-                    var Entr = root._personalityDict.FindEntry(t.PersonalityID);
-                    AbEventKeyDictionaryContainer abEventKeyDictionaryContainer = Entr == -1 ? null : entries?[Entr].value;
-                    if (abEventKeyDictionaryContainer == null)
+                    if (!root._personalityDict.TryGetValueEX(t.PersonalityID, out var abEventKeyDictionaryContainer))
                     {
                         abEventKeyDictionaryContainer = new AbEventKeyDictionaryContainer();
                         root._personalityDict[t.PersonalityID] = abEventKeyDictionaryContainer;
@@ -65,13 +56,11 @@ namespace LimbusLocalize
         {
             jsonDataList._voiceDictionary = new Dictionary<string, LocalizeTextDataRoot<TextData_PersonalityVoice>>();
 
-            string Localizepath = LimbusLocalizeMod.path + "/Localize/CN/";
-            string text = "CN";
             foreach (string text2 in jsonFilePathList)
             {
-                var file = string.Format("{0}{1}_{2}.json", Localizepath, text, text2);
-                if (!File.Exists(file)) { return; }
-                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_PersonalityVoice>>(File.ReadAllText(file));
+                var file = ModManager.Localizes[text2];
+                if (string.IsNullOrEmpty(file)) { continue; }
+                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_PersonalityVoice>>(file);
                 jsonDataList._voiceDictionary.Add(text2.Split('_')[^1], localizeTextData);
             }
         }
@@ -79,13 +68,11 @@ namespace LimbusLocalize
         {
             jsonDataList._voiceDictionary = new Dictionary<string, LocalizeTextDataRoot<TextData_AnnouncerVoice>>();
 
-            string Localizepath = LimbusLocalizeMod.path + "/Localize/CN/";
-            string text = "CN";
             foreach (string text2 in jsonFilePathList)
             {
-                var file = string.Format("{0}{1}_{2}.json", Localizepath, text, text2);
-                if (!File.Exists(file)) { return; }
-                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_AnnouncerVoice>>(File.ReadAllText(file));
+                var file = ModManager.Localizes[text2];
+                if (string.IsNullOrEmpty(file)) { continue; }
+                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_AnnouncerVoice>>(file);
                 jsonDataList._voiceDictionary.Add(text2.Split('_')[^1], localizeTextData);
             }
         }
@@ -93,13 +80,11 @@ namespace LimbusLocalize
         {
             jsonDataList._lyricsDictionary = new Dictionary<string, LocalizeTextDataRoot<TextData_UI>>();
 
-            string Localizepath = LimbusLocalizeMod.path + "/Localize/CN/";
-            string text = "CN";
             foreach (string text2 in jsonFilePathList)
             {
-                var file = string.Format("{0}{1}_{2}.json", Localizepath, text, text2);
-                if (!File.Exists(file)) { return; }
-                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_UI>>(File.ReadAllText(file));
+                var file = ModManager.Localizes[text2];
+                if (string.IsNullOrEmpty(file)) { continue; }
+                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_UI>>(file);
                 jsonDataList._lyricsDictionary.Add(text2.Split('_')[^1], localizeTextData);
             }
         }
@@ -107,13 +92,11 @@ namespace LimbusLocalize
         {
             jsonDataList._voiceDictionary = new Dictionary<string, LocalizeTextDataRoot<TextData_EGOVoice>>();
 
-            string Localizepath = LimbusLocalizeMod.path + "/Localize/CN/";
-            string text = "CN";
             foreach (string text2 in jsonFilePathList)
             {
-                var file = string.Format("{0}{1}_{2}.json", Localizepath, text, text2);
-                if (!File.Exists(file)) { return; }
-                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_EGOVoice>>(File.ReadAllText(file));
+                var file = ModManager.Localizes[text2];
+                if (string.IsNullOrEmpty(file)) { continue; }
+                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_EGOVoice>>(file);
                 jsonDataList._voiceDictionary.Add(text2.Split('_')[^1], localizeTextData);
             }
         }
