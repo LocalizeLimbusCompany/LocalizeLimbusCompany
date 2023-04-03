@@ -54,6 +54,21 @@ namespace LimbusLocalize
             globalPopupUI._gridLayoutGroup.cellSize = new Vector2(!string.IsNullOrEmpty(close) ? 500 : 700, 100f);
             globalPopupUI.Open();
         }
+        public static void InitLocalizes(DirectoryInfo directory)
+        {
+            foreach (FileInfo fileInfo in directory.GetFiles())
+            {
+                var value = File.ReadAllText(fileInfo.FullName);
+                string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(fileInfo.FullName).Remove(0,3);
+                Localizes[fileNameWithoutExtension] = value;
+            }
+            foreach (DirectoryInfo directoryInfo in directory.GetDirectories())
+            {
+                InitLocalizes(directoryInfo);
+            }
+
+        }
+        public static Dictionary<string, string> Localizes = new();
         public static void OpenGachResultUI(List<GachaLogDetail> gachas)
         {
             lowerControlPanel.OnClickLowerControllButton(4);
