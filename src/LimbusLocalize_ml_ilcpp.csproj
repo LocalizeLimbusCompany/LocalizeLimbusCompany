@@ -13,6 +13,7 @@
         <LangVersion>10.0</LangVersion>
         <Configurations>ML_Cpp_net6_interop</Configurations>
         <IsPublishable>True</IsPublishable>
+        <Platforms>x64</Platforms>
     </PropertyGroup>
     <!-- ~~~~~ CONFIGURATIONS ~~~~~ -->
     <!-- ML IL2CPP Interop net6 -->
@@ -21,7 +22,7 @@
         <OutputPath>..\Release</OutputPath>
 		<AssemblyName>LimbusLocalize</AssemblyName>
     </PropertyGroup>
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ML_Cpp_net6_interop|AnyCPU'">
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ML_Cpp_net6_interop|x64'">
       <NoWarn>1701;1702;2211;CA2211;IDE1006;IDE0060</NoWarn>
       <DefineConstants>TRACE</DefineConstants>
       <DebugType>embedded</DebugType>
