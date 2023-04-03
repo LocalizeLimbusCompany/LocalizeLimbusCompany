@@ -55,9 +55,10 @@ namespace LimbusLocalize
             try
             {
                 ModManager.Setup();
+                ModManager.InitLocalizes(new DirectoryInfo(path + "/Localize/CN"));
+                UpdateChecker.StartCheckUpdates();
                 HarmonyLib.Harmony harmony = new("LimbusLocalizeMod");
                 harmony.PatchAll(typeof(LimbusLocalizeMod));
-                UpdateChecker.StartCheckUpdates();
                 if (File.Exists(path + "/tmpchinesefont"))
                     //使用AssetBundle技术载入中文字库
                     tmpchinesefont = AssetBundle.LoadFromFile(path + "/tmpchinesefont").LoadAsset("assets/sourcehansanssc-heavy sdf.asset").Cast<TMP_FontAsset>();
@@ -323,7 +324,7 @@ namespace LimbusLocalize
         private static bool StoryDataInit(StoryData __instance)
         {
             //载入所有剧情
-            ScenarioAssetDataList scenarioAssetDataList = JsonUtility.FromJson<ScenarioAssetDataList>(File.ReadAllText(LimbusLocalizeMod.path + "/Localize/CN/CN_NickName.json"));
+            ScenarioAssetDataList scenarioAssetDataList = JsonUtility.FromJson<ScenarioAssetDataList>(ModManager.Localizes["NickName"]);
             __instance._modelAssetMap = new Dictionary<string, ScenarioAssetData>();
             __instance._standingAssetMap = new Dictionary<string, StandingAsset>();
             __instance._standingAssetPathMap = new Dictionary<string, string>();
@@ -348,22 +349,19 @@ namespace LimbusLocalize
         private static bool GetScenario(StoryData __instance, string scenarioID, LOCALIZE_LANGUAGE lang, ref Scenario __result)
         {
             //读取剧情
-            string file = LimbusLocalizeMod.path + "/Localize/CN/CN_" + scenarioID + ".json";
-            if (File.Exists(file))
+            if (ModManager.Localizes.TryGetValueEX(scenarioID, out string file))
             {
-                string item = File.ReadAllText(file);
                 TextAsset textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
                 if (textAsset == null)
                 {
                     textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", "SDUMMY", null, null).Item1;
                 }
-                string text3 = item;
                 string text4 = textAsset.ToString();
                 Scenario scenario = new()
                 {
                     ID = scenarioID
                 };
-                JSONArray jsonarray = JSONNode.Parse(text3)[0].AsArray;
+                JSONArray jsonarray = JSONNode.Parse(file)[0].AsArray;
                 JSONArray jsonarray2 = JSONNode.Parse(text4)[0].AsArray;
                 for (int i = 0; i < jsonarray.Count; i++)
                 {
