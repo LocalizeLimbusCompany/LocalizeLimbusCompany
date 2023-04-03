@@ -1,6 +1,6 @@
 # 安装[![](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/total.svg)](../../releases)
 
-[![](https://img.shields.io/github/release/LocalizeLimbusCompany/LocalizeLimbusCompany.svg?label=version)](../../releases/latest) [![](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/latest/total.svg)](../../releases/latest)
+[![](https://img.shields.io/github/release/LocalizeLimbusCompany/LocalizeLimbusCompany.svg?label=version)![](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/latest/total.svg)](../../releases/latest)
 1. 安装模组框架
 
     从[MelonLoader](https://github.com/LavaGang/MelonLoader)下载v0.6.0或更高版本的模组框架
@@ -37,7 +37,7 @@
 - 增加错误弹窗，用于更好的Debug 10% by Bright
 - 修复字体大小不正常问题 20% by Bright 10% by 茜
 
-- 将所有服务器响应改到本地，使边狱公司成为一个单机游戏 0%
+- ~~将所有服务器响应改到本地，使边狱公司成为一个单机游戏 0%~~
 
 # 相关项目
 - [LLC_ChineseLocalize](../../../LLC_ChineseLocalize)中文翻译 汉化组的最新进展
@@ -45,4 +45,4 @@
 - [LLC_ChineseFontAsset](../../../LLC_ChineseFontAsset)中文字体
 - [LLC_MOD_Installer](../../../LLC_MOD_Installer)模组傻瓜安装更新程序
 - [LLC_GAME_V1.1.0_Raw](../../../LLC_GAME_V1.1.0_Raw)边狱公司游戏未加密版本的存档
-- [填充辅助程序](https://github.com/kkr223/limbusTranslator)让翻译者更方便的填充汉化程序
+- ~~[填充辅助程序](https://github.com/kkr223/limbusTranslator)让翻译者更方便的填充汉化程序~~
