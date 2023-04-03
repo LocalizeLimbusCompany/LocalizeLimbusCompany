@@ -15,10 +15,8 @@ Remove-Item $Path/Microsoft.Extensions.Logging.Abstractions.dll
 New-Item -Path "$Path" -Name "LimbusLocalize" -ItemType "directory" -Force
 New-Item -Path "$Path/LimbusLocalize" -Name "Mods" -ItemType "directory" -Force
 New-Item -Path "$Path/LimbusLocalize/Mods" -Name "Localize" -ItemType "directory" -Force
-New-Item -Path "$Path/LimbusLocalize/Mods/Localize" -Name "Readme" -ItemType "directory" -Force
-New-Item -Path "$Path/LimbusLocalize/Mods/Localize" -Name "CN" -ItemType "directory" -Force
-Copy-Item -Path assets/Localize/CN/* -Destination $Path/LimbusLocalize/Mods/Localize/CN -Force
-Copy-Item -Path assets/Localize/Readme/* -Destination $Path/LimbusLocalize/Mods/Localize/Readme -Force
+Copy-Item -Path assets/Localize/CN $Path/LimbusLocalize/Mods/Localize -Force -Recurse
+Copy-Item -Path assets/Localize/Readme $Path/LimbusLocalize/Mods/Localize -Force -Recurse
 Copy-Item -Path $Path/LimbusLocalize.dll -Destination $Path/LimbusLocalize/Mods -Force
 7z a -t7z "$Path/LimbusLocalize_$version.7z" "./$Path/LimbusLocalize/*" -mx=9 -ms
 $tag=$(git describe --tags --abbrev=0)
@@ -34,14 +32,20 @@ New-Item -Path "$Path/LimbusLocalize_OTA/Mods/Localize" -Name "CN" -ItemType "di
 # Copy the changed files to the release directory
 $changedFilesList = $changedFiles -split " "
 foreach ($file in $changedFilesList) {
-	if(Test-Path $file){
-    Copy-Item -Path $file -Destination $Path/LimbusLocalize_OTA/Mods/Localize/CN -Force
+    if (Test-Path -Path $file) {
+        $destination = "$Path/LimbusLocalize_OTA/Mods/Localize/CN/$file"
+        $destination = $destination.Replace("assets/Localize/CN/", "")
+        $destinationDirectory = Split-Path -Path $destination -Parent
+        if (!(Test-Path -Path $destinationDirectory)) {
+            New-Item -ItemType Directory -Force -Path $destinationDirectory
+        }
+        Copy-Item -Path $file -Destination $destination -Force -Recurse
     }
 }
 $changedFilesList2 = $changedFiles2 -split " "
 foreach ($file2 in $changedFilesList2) {
 	if(Test-Path $file2){
-    Copy-Item -Path $file2 -Destination $Path/LimbusLocalize_OTA/Mods/Localize/Readme -Force
+		Copy-Item -Path $file2 $Path/LimbusLocalize_OTA/Mods/Localize/Readme -Force
     }
 }
 7z a -t7z "$Path/LimbusLocalize_OTA_$version.7z" "./$Path/LimbusLocalize_OTA/*" -mx=9 -ms
