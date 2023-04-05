@@ -2,7 +2,7 @@ name: Beta Build LimbusLocalize
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 16 * * 5'
+    - cron: '0 16 * * 2'
 jobs:
   release:
     runs-on: windows-latest
