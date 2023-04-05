@@ -88,21 +88,24 @@ namespace LimbusLocalize
             if (LastWriteTime != latestReleaseTag)
             {
                 string download = "https://github.com/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/download/" + latestReleaseTag + "/tmpchinesefont_" + latestReleaseTag + ".7z";
-                UnityWebRequest wwwdownload = UnityWebRequest.Get(download);
-                wwwdownload.SendWebRequest();
-                while (!wwwdownload.isDone)
-                {
-                    Thread.Sleep(100);
-                }
                 var dirs = download.Split('/');
                 string filename = dirs[^1];
-                var NativeData = wwwdownload.downloadHandler.GetNativeData();
-                List<byte> datas = new();
-                foreach (var file in NativeData)
+                if (!File.Exists(filename))
                 {
-                    datas.Add(file);
+                    UnityWebRequest wwwdownload = UnityWebRequest.Get(download);
+                    wwwdownload.SendWebRequest();
+                    while (!wwwdownload.isDone)
+                    {
+                        Thread.Sleep(100);
+                    }
+                    var NativeData = wwwdownload.downloadHandler.GetNativeData();
+                    List<byte> datas = new();
+                    foreach (var file in NativeData)
+                    {
+                        datas.Add(file);
+                    }
+                    File.WriteAllBytes(LimbusLocalizeMod.gamepath + "/" + filename, datas.ToArray());
                 }
-                File.WriteAllBytes(LimbusLocalizeMod.gamepath + "/" + filename, datas.ToArray());
                 UpdateCall = UpdateDel;
             }
         }
