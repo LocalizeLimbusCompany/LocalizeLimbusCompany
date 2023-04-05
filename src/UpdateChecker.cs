@@ -3,6 +3,7 @@ using Il2CppSystem.Threading;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -108,6 +109,9 @@ namespace LimbusLocalize
                 }
                 UpdateCall = UpdateDel;
             }
+            LimbusLocalizeMod.OnLogWarning("Check Readme Update");
+            Action ReadmeUpdate = CheckReadmeUpdate;
+            new Thread(ReadmeUpdate).Start();
         }
         static void UpdateDel()
         {
@@ -120,7 +124,26 @@ namespace LimbusLocalize
         }
         static void CheckReadmeUpdate()
         {
-            UnityWebRequest www = UnityWebRequest.Get("https://api.github.com/repos/LocalizeLimbusCompany/LLC_Readme/releases");
+            UnityWebRequest www = UnityWebRequest.Get("https://LocalizeLimbusCompany.github.io/LocalizeLimbusCompany/LatestUpdateTime.txt");
+            string FilePath = LimbusLocalizeMod.path + "/Localize/Readme/Readme.json";
+            var LastWriteTime = new FileInfo(FilePath).LastWriteTime;
+            www.SendWebRequest();
+            while (!www.isDone)
+            {
+                Thread.Sleep(100);
+            }
+            if(LastWriteTime < DateTime.Parse(www.downloadHandler.text))
+            {
+                UnityWebRequest www2 = UnityWebRequest.Get("https://LocalizeLimbusCompany.github.io/LocalizeLimbusCompany/Readme.json"); 
+                www2.SendWebRequest();
+                while (!www2.isDone)
+                {
+                    Thread.Sleep(100);
+                }
+                ReadmeManager.ReadmeList.Clear();
+                File.WriteAllText(FilePath, www.downloadHandler.text);
+                ReadmeManager.InitReadmeList();
+            }
         }
         public static Action UpdateCall;
     }
