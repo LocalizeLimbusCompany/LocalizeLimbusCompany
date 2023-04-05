@@ -58,6 +58,7 @@ namespace LimbusLocalize
                 ModManager.InitLocalizes(new DirectoryInfo(path + "/Localize/CN"));
                 UpdateChecker.StartCheckUpdates();
                 HarmonyLib.Harmony harmony = new("LimbusLocalizeMod");
+                harmony.PatchAll(typeof(ReadmeManager));
                 harmony.PatchAll(typeof(LimbusLocalizeMod));
                 if (File.Exists(path + "/tmpchinesefont"))
                     //使用AssetBundle技术载入中文字库
@@ -489,85 +490,6 @@ namespace LimbusLocalize
             userAgreementUI._userAgreementContent._userAgreementsScrollbar.value = 1f;
             userAgreementUI._userAgreementContent._userAgreementsScrollbar.size = 0.3f;
         }
-        #region 公告相关
-        [HarmonyPatch(typeof(NoticeUIPopup), nameof(NoticeUIPopup.Initialize))]
-        [HarmonyPostfix]
-        public static void NoticeUIPopupInitialize(NoticeUIPopup __instance)
-        {
-            if (!ReadmeManager.NoticeUIInstance)
-            {
-                var NoticeUIPopupInstance = UObject.Instantiate(__instance, __instance.transform.parent);
-                ReadmeManager.NoticeUIInstance = NoticeUIPopupInstance;
-                ReadmeManager.Initialize();
-            }
-        }
-        [HarmonyPatch(typeof(MainLobbyUIPanel), nameof(MainLobbyUIPanel.Initialize))]
-        [HarmonyPostfix]
-        public static void MainLobbyUIPanelInitialize(MainLobbyUIPanel __instance)
-        {
-            var UIButtonInstance = UObject.Instantiate(__instance.button_notice, __instance.button_notice.transform.parent).Cast<MainLobbyRightUpperUIButton>();
-            ReadmeManager._redDot_Notice = UIButtonInstance.gameObject.GetComponentInChildren<RedDotWriggler>(true);
-            ReadmeManager.UpdateNoticeRedDot();
-            UIButtonInstance._onClick.RemoveAllListeners();
-            System.Action onClick = delegate
-                        {
-                            ReadmeManager.Open();
-                        };
-            UIButtonInstance._onClick.AddListener(onClick);
-            UIButtonInstance.transform.SetSiblingIndex(1);
-            var spriteSetting = new ButtonSprites()
-            {
-                _enabled = ReadmeManager.GetReadmeSprite("Readme_Zero_Button"),
-                _hover = ReadmeManager.GetReadmeSprite("Readme_Zero_Button")
-            };
-            UIButtonInstance.spriteSetting = spriteSetting;
-            var transform = __instance.button_notice.transform.parent;
-            var layoutGroup = transform.GetComponent<HorizontalLayoutGroup>();
-            layoutGroup.childScaleHeight = true;
-            layoutGroup.childScaleWidth = true;
-            for (int i = 0; i < transform.childCount; i++)
-            {
-                transform.GetChild(i).localScale = new Vector3(0.8f, 0.8f, 1f);
-            }
-        }
-        [HarmonyPatch(typeof(NoticeUIContentImage), nameof(NoticeUIContentImage.SetData))]
-        [HarmonyPrefix]
-        public static bool ImageSetData(NoticeUIContentImage __instance, string formatValue)
-        {
-            if (formatValue.StartsWith("Readme_"))
-            {
-                Sprite image = ReadmeManager.GetReadmeSprite(formatValue);
-                __instance.gameObject.SetActive(true);
-                __instance.SetImage(image);
-                return false;
-            }
-            return true;
-        }
-        [HarmonyPatch(typeof(NoticeUIContentHyperLink), nameof(NoticeUIContentHyperLink.OnPointerClick))]
-        [HarmonyPrefix]
-        public static bool HyperLinkOnPointerClick(NoticeUIContentHyperLink __instance, PointerEventData eventData)
-        {
-            string URL = __instance.tmp_main.text;
-            if (URL.StartsWith("<link"))
-            {
-                int startIndex = URL.IndexOf('=');
-                if (startIndex != -1)
-                {
-                    int endIndex = URL.IndexOf('>', startIndex + 1);
-                    if (endIndex != -1)
-                    {
-                        URL = URL.Substring(startIndex + 1, endIndex - startIndex - 1);
-                    }
-                }
-                if (URL.StartsWith("Action_"))
-                {
-                    ReadmeManager.ReadmeActions[URL]?.Invoke();
-                    return false;
-                }
-            }
-            Application.OpenURL(URL);
-            return false;
-        }
-        #endregion
+        
     }
 }

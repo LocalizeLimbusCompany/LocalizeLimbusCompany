@@ -69,40 +69,7 @@ namespace LimbusLocalize
 
         }
         public static Dictionary<string, string> Localizes = new();
-        public static void OpenGachResultUI(List<GachaLogDetail> gachas)
-        {
-            lowerControlPanel.OnClickLowerControllButton(4);
-            _gachaPresenter.OpenGachaResultUI(gachas);
-            GlobalGameManager.Instance.StartTutorialManager.ProgressTutorial();
-        }
-        public static void OpenGachResultUI()
-        {
-            var gachaids = new List<int>().AddEX(10103, 10103, 10103, 10103, 10103, 10103, 10103, 10103, 10103, 10103);
-            List<GachaLogDetail> list = new();
-            for (int i = 0; i < gachaids.Count; i++)
-            {
-                var GachaLog = new GachaLogDetail(ELEMENT_TYPE.PERSONALITY, gachaids[i])
-                {
-                    ex = new Element(ELEMENT_TYPE.ITEM, 10101, 50)
-                };
-                list.Add(GachaLog);
-            }
-            OpenGachResultUI(list);
-        }
-        private static LowerControlUIPanel lowerControlPanel
-        {
-            get
-            {
-                return UIPresenter.Controller.GetPanel(MAINUI_PANEL_TYPE.LOWER_CONTROL).Cast<LowerControlUIPanel>();
-            }
-        }
-        private static GachaUIPresenter _gachaPresenter
-        {
-            get
-            {
-                return SingletonBehavior<UIController>.Instance.GetPresenter(MAINUI_PHASE_TYPE.Gacha).Cast<GachaUIPresenter>();
-            }
-        }
+        
         public static void MirrorDungeonGiveToString()
         {
             string MirrorDungeonGive = "Bright#1192 制作";
