@@ -17,10 +17,10 @@
     
     [最新开发版](../../actions/workflows/dev.yml) 总是最新的
 	
-    [最新预览版](../../actions/workflows/beta.yml) 每周六更新
+    [最新预览版](../../actions/workflows/beta.yml) 每周三更新
 - 我是谁?我在哪?我要干什么?
 
-    [适用于看不懂上面的安装&更新程序](../../releases/download/v0.1.5/LimbusCompanyModInstaller.rar)
+    [适用于看不懂上面的安装&更新程序](../../../LLC_MOD_Installer/releases)
 
 
 # to do list
