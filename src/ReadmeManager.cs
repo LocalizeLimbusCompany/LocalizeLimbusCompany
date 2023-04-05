@@ -39,7 +39,6 @@ namespace LimbusLocalize
             NoticeUIInstance.btn_systemNotice.GetComponentInChildren<TextMeshProUGUI>(true).text = "更新公告";
             NoticeUIInstance.btn_eventNotice.GetComponentInChildren<UITextDataLoader>(true).enabled = false;
             NoticeUIInstance.btn_eventNotice.GetComponentInChildren<TextMeshProUGUI>(true).text = "贡献,反馈,赞助";
-            ReadmeActions["Action_TestGacha_Ten_Yi_Sang"] = () => { Close(); ModManager.OpenGachResultUI(); };
         }
         public static void AddClosedel()
         {
