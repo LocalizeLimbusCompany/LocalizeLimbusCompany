@@ -118,10 +118,6 @@ namespace LimbusLocalize
             Application.OpenURL(LimbusLocalizeMod.gamepath);
             Application.Quit();
         }
-        static void CheckChineseLocalizeUpdate()
-        {
-            UnityWebRequest www = UnityWebRequest.Get("https://api.github.com/repos/LocalizeLimbusCompany/LLC_ChineseLocalize/releases");
-        }
         static void CheckReadmeUpdate()
         {
             UnityWebRequest www = UnityWebRequest.Get("https://LocalizeLimbusCompany.github.io/LocalizeLimbusCompany/LatestUpdateTime.txt");
@@ -142,6 +138,7 @@ namespace LimbusLocalize
                 }
                 ReadmeManager.ReadmeList.Clear();
                 File.WriteAllText(FilePath, www2.downloadHandler.text);
+                Thread.Sleep(100);
                 ReadmeManager.InitReadmeList();
             }
         }

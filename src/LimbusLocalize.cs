@@ -1,10 +1,7 @@
 ﻿using HarmonyLib;
 using Il2Cpp;
 using Il2CppAddressable;
-using Il2CppMainUI;
 using Il2CppMainUI.Gacha;
-using Il2CppMainUI.NoticeUI;
-using Il2CppServer;
 using Il2CppSimpleJSON;
 using Il2CppSteamworks;
 using Il2CppStorySystem;
@@ -19,12 +16,7 @@ using System.IO;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.EventSystems;
-using UnityEngine.Playables;
-using UnityEngine.UI;
 using ILObject = Il2CppSystem.Object;
-using RawObject = System.Object;
 using UObject = UnityEngine.Object;
 
 [assembly: MelonInfo(typeof(LimbusLocalizeMod), LimbusLocalizeMod.NAME, LimbusLocalizeMod.VERSION, LimbusLocalizeMod.AUTHOR)]
