@@ -141,7 +141,7 @@ namespace LimbusLocalize
                     Thread.Sleep(100);
                 }
                 ReadmeManager.ReadmeList.Clear();
-                File.WriteAllText(FilePath, www.downloadHandler.text);
+                File.WriteAllText(FilePath, www2.downloadHandler.text);
                 ReadmeManager.InitReadmeList();
             }
         }

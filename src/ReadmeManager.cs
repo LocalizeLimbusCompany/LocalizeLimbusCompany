@@ -81,6 +81,13 @@ namespace LimbusLocalize
             {
                 ReadmeList.Add(new Notice(JsonUtility.FromJson<NoticeFormat>(notices.ToString()), LOCALIZE_LANGUAGE.KR));
             }
+
+            Func<Notice, bool> value = x => x.ID == -1192;
+            if (ReadmeList.FindAll(value).Count == 0)
+            {
+                Singleton<UserLocalSaveDataRoot>.Instance.NoticeRedDotSaveModel.RemoveByContent(-1192);
+                Singleton<UserLocalSaveDataRoot>.Instance.NoticeRedDotSaveModel.Save();
+            }
         }
         public static List<Notice> ReadmeList = new();
         public static Dictionary<string, Sprite> ReadmeSprites = new();
