@@ -8,7 +8,7 @@
     {
       "id": 1010201,
       "name": "观察",
-      "desc": "进行拼点时，使对方的拼点威力减少(暴食共鸣数/4)点。"
+      "desc": "进行拼点时，使对方的拼点威力-2。"
     },
     {
       "id": 1010301,
@@ -53,12 +53,12 @@
     {
       "id": 1040201,
       "name": "刀.断.",
-      "desc": "本回合使自身的内斩击伤害+(暴食共鸣数/2)%。"
+      "desc": "本回合使自身的斩击伤害+10%。"
     },
     {
       "id": 1040301,
       "name": "黑云道",
-      "desc": "使自身对带有流血 的目标造成的伤害+(色欲共鸣数)%。"
+      "desc": "使自身对带有流血 的目标造成的伤害+10%。"
     },
     {
       "id": 1050101,
@@ -68,7 +68,7 @@
     {
       "id": 1050201,
       "name": "Great Mountain",
-      "desc": "受到攻击时，使对方增加1级烧伤 强度。\n单个回合最多生效(色欲共鸣数/2)次。"
+      "desc": "受到攻击时，对一名随机敌人增加1级烧伤 强度。\n（最多生效6次）"
     },
     {
       "id": 1050301,
@@ -83,7 +83,7 @@
     {
       "id": 1060201,
       "name": "黑云道",
-      "desc": "使位于连锁末尾的技能中最后一个硬币会令目标增加(色欲共鸣数/3)级流血 强度。"
+      "desc": "使位于连锁末尾的技能中最后一个硬币会令目标增加3级流血 强度。"
     },
     {
       "id": 1060301,
@@ -128,7 +128,7 @@
     {
       "id": 1090101,
       "name": "Split Evil",
-      "desc": "使自身的攻击在命中时，有(暴怒共鸣x10)%的概率使目标增加1级流血 强度。"
+      "desc": "使自身的攻击在命中时，有50%的概率使目标增加1级流血 强度。"
     },
     {
       "id": 1090201,
@@ -138,7 +138,7 @@
     {
       "id": 1090301,
       "name": "Breach Defense",
-      "desc": "对本回合使用了守备技能的目标造成的伤害+(嫉妒共鸣数)%。"
+      "desc": "对本回合使用了守备技能的目标造成的伤害+10%。"
     },
     {
       "id": 1100101,
@@ -148,7 +148,7 @@
     {
       "id": 1100201,
       "name": "Slayer",
-      "desc": "The last Coin on the last skill in the chain deals +(2x Pride Res.)% damage."
+      "desc": "The last Coin on the last skill in the chain deals +20% damage."
     },
     {
       "id": 1100301,
@@ -168,7 +168,7 @@
     {
       "id": 1110201,
       "name": "Levelheaded",
-      "desc": "Deal +(2x Pride Res.)% damage to enemies with less than 25% HP."
+      "desc": "Deal +20% damage to targets below 25% HP."
     },
     {
       "id": 1110301,
@@ -183,12 +183,12 @@
     {
       "id": 1120201,
       "name": "Ignition",
-      "desc": "The 3rd and subsequent Coins of a skill inflict (Sloth Res. / 3) Burn on hit."
+      "desc": "The 3rd and subsequent Coins of a skill inflict 1 Burn on hit."
     },
     {
       "id": 1120301,
       "name": "Emergency Rations",
-      "desc": "At less than 25% HP, heal (Gluttony Res. / 3)% HP on clash win."
+      "desc": "At less than 25% HP, heal by 5% of Max HP after winning a clash."
     },
     {
       "id": 1010121,
@@ -489,6 +489,26 @@
       "id": 1070421,
       "name": "Cantillation",
       "desc": "1 ally with the highest Speed inflicts +1 Nails."
+    },
+    {
+      "id": 1110401,
+      "name": "Grasping Vulnerabilities",
+      "desc": "When attacking a target with a damage type the target is “Weak” or “Fatal” to, deal +10% damage."
+    },
+    {
+      "id": 1110421,
+      "name": "Relay Intelligence",
+      "desc": "1 ally with the highest Speed deals +10% damage when attacking a target with a damage type the target is “Weak” or “Fatal” to."
+    },
+    {
+      "id": 1060401,
+      "name": "Flaring Up~",
+      "desc": "At 30+ SP, inflict +1 Burn Count with the effects of attack skills/coins."
+    },
+    {
+      "id": 1060421,
+      "name": "Isn’t It Warm?",
+      "desc": "1 ally with the highest SP inflicts +1 Burn Count with the effects of their attack skills/coins."
     }
   ]
 }
