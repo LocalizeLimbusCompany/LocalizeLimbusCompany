@@ -68,7 +68,7 @@ namespace LimbusLocalize
             }
 
         }
-        public static Dictionary<string, string> Localizes = new();
+        public static System.Collections.Generic.Dictionary<string, string> Localizes = new();
         
         public static void MirrorDungeonGiveToString()
         {
@@ -87,7 +87,7 @@ namespace LimbusLocalize
             }
             File.WriteAllText(LimbusLocalizeMod.path + "/镜牢进度对应奖励一览.txt", MirrorDungeonGive);
         }
-        public static string RewardToString(MirrorDungeonSectorRewardBaseData rewardBaseData)
+        public static string RewardToString(DungeonSectorRewardStaticData rewardBaseData)
         {
             int PASS_POINT = 0;
             string ITEM = "";

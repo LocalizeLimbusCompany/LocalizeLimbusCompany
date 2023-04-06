@@ -256,6 +256,9 @@ namespace LimbusLocalize
             tm._introduceCharacter.Init(romoteLocalizeFileList.IntroduceCharacter);
             tm._userBanner.Init(romoteLocalizeFileList.UserBanner);
             tm._threadDungeon.Init(romoteLocalizeFileList.ThreadDungeon);
+            tm._railwayDungeonText.Init(romoteLocalizeFileList.RailwayDungeon);
+            tm._railwayDungeonNodeText.Init(romoteLocalizeFileList.RailwayDungeonNodeInfo);
+            tm._railwayDungeonStationName.Init(romoteLocalizeFileList.RailwayDungeonStationName);
 
             tm._abnormalityEventCharDlg.AbEventCharDlgRootInit(romoteLocalizeFileList.abnormalityCharDlgFilePath);
             tm._personalityVoiceText.PersonalityVoiceJsonDataListInit(romoteLocalizeFileList.PersonalityVoice);
@@ -342,7 +345,7 @@ namespace LimbusLocalize
         private static bool GetScenario(StoryData __instance, string scenarioID, LOCALIZE_LANGUAGE lang, ref Scenario __result)
         {
             //读取剧情
-            if (ModManager.Localizes.TryGetValueEX(scenarioID, out string file))
+            if (ModManager.Localizes.TryGetValue(scenarioID, out string file))
             {
                 TextAsset textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
                 if (textAsset == null)

@@ -127,11 +127,11 @@ namespace LimbusLocalize
         [HarmonyPostfix]
         public static void NoticeUIPopupInitialize(NoticeUIPopup __instance)
         {
-            if (!ReadmeManager.NoticeUIInstance)
+            if (!NoticeUIInstance)
             {
                 var NoticeUIPopupInstance = UObject.Instantiate(__instance, __instance.transform.parent);
-                ReadmeManager.NoticeUIInstance = NoticeUIPopupInstance;
-                ReadmeManager.Initialize();
+                NoticeUIInstance = NoticeUIPopupInstance;
+                Initialize();
             }
         }
         [HarmonyPatch(typeof(MainLobbyUIPanel), nameof(MainLobbyUIPanel.Initialize))]
@@ -139,19 +139,19 @@ namespace LimbusLocalize
         public static void MainLobbyUIPanelInitialize(MainLobbyUIPanel __instance)
         {
             var UIButtonInstance = UObject.Instantiate(__instance.button_notice, __instance.button_notice.transform.parent).Cast<MainLobbyRightUpperUIButton>();
-            ReadmeManager._redDot_Notice = UIButtonInstance.gameObject.GetComponentInChildren<RedDotWriggler>(true);
-            ReadmeManager.UpdateNoticeRedDot();
+            _redDot_Notice = UIButtonInstance.gameObject.GetComponentInChildren<RedDotWriggler>(true);
+            UpdateNoticeRedDot();
             UIButtonInstance._onClick.RemoveAllListeners();
             System.Action onClick = delegate
             {
-                ReadmeManager.Open();
+                Open();
             };
             UIButtonInstance._onClick.AddListener(onClick);
             UIButtonInstance.transform.SetSiblingIndex(1);
             var spriteSetting = new ButtonSprites()
             {
-                _enabled = ReadmeManager.GetReadmeSprite("Readme_Zero_Button"),
-                _hover = ReadmeManager.GetReadmeSprite("Readme_Zero_Button")
+                _enabled = GetReadmeSprite("Readme_Zero_Button"),
+                _hover = GetReadmeSprite("Readme_Zero_Button")
             };
             UIButtonInstance.spriteSetting = spriteSetting;
             var transform = __instance.button_notice.transform.parent;
@@ -169,7 +169,7 @@ namespace LimbusLocalize
         {
             if (formatValue.StartsWith("Readme_"))
             {
-                Sprite image = ReadmeManager.GetReadmeSprite(formatValue);
+                Sprite image = GetReadmeSprite(formatValue);
                 __instance.gameObject.SetActive(true);
                 __instance.SetImage(image);
                 return false;
@@ -194,7 +194,7 @@ namespace LimbusLocalize
                 }
                 if (URL.StartsWith("Action_"))
                 {
-                    ReadmeManager.ReadmeActions[URL]?.Invoke();
+                    ReadmeActions[URL]?.Invoke();
                     return false;
                 }
             }
