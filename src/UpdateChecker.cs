@@ -11,9 +11,6 @@ namespace LimbusLocalize
 {
     public static class UpdateChecker
     {
-        static UpdateChecker()
-        {
-        }
         public static void StartCheckUpdates()
         {
             LimbusLocalizeMod.OnLogWarning("Check Mod Update");
@@ -136,9 +133,7 @@ namespace LimbusLocalize
                 {
                     Thread.Sleep(100);
                 }
-                ReadmeManager.ReadmeList.Clear();
                 File.WriteAllText(FilePath, www2.downloadHandler.text);
-                Thread.Sleep(100);
                 ReadmeManager.InitReadmeList();
             }
         }
