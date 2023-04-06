@@ -301,19 +301,19 @@
     {
       "id": "BloodPocket",
       "name": "Blood Sac",
-      "desc": "Use a powerful attack after the Count reaches a certain amount.",
+      "desc": "Use a powerful attack at a certain Count.",
       "summary": "Readies a powerful attack"
     },
     {
       "id": "WaterPocket",
       "name": "Fluid Sac",
-      "desc": "Gain healing proportional to the Count.",
+      "desc": "Heals {0} x 20 HP.",
       "summary": "HP heal boost"
     },
     {
       "id": "DogThunder",
       "name": "Lightning",
-      "desc": "This unit powers itself up after the Count reaches a certain amount.",
+      "desc": "Powers up at a certain Count.",
       "summary": "Strengthens self"
     },
     {
@@ -628,7 +628,7 @@
     {
       "id": "Choice_901001",
       "name": "Spreading Flame",
-      "desc": "At the start of the battle, allies without Wrath Affinity are inflicted with 5 Burn."
+      "desc": "Combat Start: Allies without Wrath Affinity are inflicted with 5 Burn."
     },
     {
       "id": "Choice_901007",
@@ -639,24 +639,24 @@
     {
       "id": "Choice_901009",
       "name": "Photopia",
-      "desc": "Skill Power -1 at the start of the battle.",
-      "summary": "Skill Power -1"
+      "desc": "Combat Start: Skill Final Power -1.",
+      "summary": "Skill Final Power -1"
     },
     {
       "id": "Choice_901010",
       "name": "Emptied",
-      "desc": "At the start of the battle, allies without Lust Affinity are Staggered."
+      "desc": "Combat Start: Allies without Lust Affinity are Staggered."
     },
     {
       "id": "Choice_901019",
       "name": "Contamination",
-      "desc": "Speed -2 at the start of the battle.",
+      "desc": "Combat Start: Speed -2.",
       "summary": "SPD -2"
     },
     {
       "id": "Choice_1030301",
       "name": "Event Effect",
-      "desc": "At the start of the battle, gain 3 Attack Power Up.",
+      "desc": "Combat Start: Gain 3 Attack Power Up.",
       "summary": "Gain 3 Attack Power Up"
     },
     {
@@ -915,6 +915,36 @@
       "name": "Blunt Power Up",
       "desc": "Blunt Skill Final Power +{0} for this turn.",
       "summary": "Blunt Skill Final Power +{0}"
+    },
+    {
+      "id": "WeaknessAnalysis",
+      "name": "Weakness Analyzed",
+      "desc": "A random “Endure” or “Normal” attack type resistance is weakened [+0.2 to damage multiplier] for this turn.",
+      "summary": "Weaken [+0.2 dmg multi] an “Endured” or “Normal” resistance"
+    },
+    {
+      "id": "Cycle",
+      "name": "Karma",
+      "desc": "Take +{0}% damage. Turn End: Die at 108+ Count.",
+      "summary": "My Form Empties’ Passive"
+    },
+    {
+      "id": "Duress",
+      "name": "Captivity",
+      "desc": "Become Staggered for 3 turns.\nTurn Start: If Kqe-1j-23 is Staggered, remove this status.",
+      "summary": "Kqe’s Passive"
+    },
+    {
+      "id": "VioletResultUp",
+      "name": "Envy Power Up",
+      "desc": "Envy Skill Final Power +{0} for this turn.",
+      "summary": "Envy Skill Final Power +{0}"
+    },
+    {
+      "id": "CyclingKarma",
+      "name": "Cyclical Karma",
+      "desc": "All units transfer their Karma to their targets after a successful attack.\nKarma is not transferred to My Form Empties as long as its allies are alive.",
+      "summary": "Karma transfers on hit"
     }
   ]
 }

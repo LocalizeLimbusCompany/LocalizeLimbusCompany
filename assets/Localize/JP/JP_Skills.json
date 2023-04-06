@@ -4370,7 +4370,7 @@
                   "desc": "[OnSucceedAttack] 火傷 3を付与"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 対象の出血 が6以上のとき、次のターンに攻撃威力増加 1を得る"
+                  "desc": "[OnSucceedAttack] 対象の火傷 が6以上のとき、次のターンに攻撃威力増加 1を得る"
                 }
               ]
             }
@@ -5123,6 +5123,275 @@
     },
     {
       "id": 1070404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ガード",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1000104,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "E.G.O侵蝕",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "id": 1110401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "予測分析",
+          "desc": "マッチ進行時、対象のマッチ威力 -1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに麻痺 1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "予測分析",
+          "desc": "マッチ進行時、対象のマッチ威力 -2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに麻痺 1を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "現場指揮",
+          "desc": "マッチ進行時、対象のマッチ威力 -1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 破裂 回数が1増加"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに防御レベル減少 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 破裂 回数が1増加"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに防御レベル減少 1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "現場指揮",
+          "desc": "マッチ進行時、対象のマッチ威力 -2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 破裂 回数が1増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに防御レベル減少 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 破裂 回数が1増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに防御レベル減少 1を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "隙看破",
+          "desc": "マッチ進行時、対象のマッチ威力 -2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに攻撃レベル減少 1を付与"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ダメージ量の15%分、斬撃追加ダメージ"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに弱点分析 を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "前へ出よう",
+          "desc": "[WhenUse] 次のターンにクイック 1、守備威力増加 1を得る",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "身体をほぐす",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 火傷 1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "身体をほぐす",
+          "desc": "[WhenUse] 精神力を3回復",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 火傷 1を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "流れる火花",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 火傷 1を付与。対象に火傷 がある場合、追加で1付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 火傷 回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "流れる火花",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 火傷 1を付与。対象に火傷 がある場合、追加で1付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 火傷 回数が1増加。自分の精神力が30以上なら1、45以上なら追加で2増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "紅炎拳",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 火傷 1を付与。対象に火傷がある場合、火傷 回数を追加で1付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 精神力を6回復 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の火傷 回数が6以上なら、ダメージ量の30%分混乱区間を前進"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060404,
       "levelList": [
         {
           "level": 1,
