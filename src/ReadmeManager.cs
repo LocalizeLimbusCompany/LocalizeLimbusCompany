@@ -123,6 +123,22 @@ namespace LimbusLocalize
             return false;
         }
         #region 公告相关
+        [HarmonyPatch(typeof(UserLocalNoticeRedDotModel), nameof(UserLocalNoticeRedDotModel.InitNoticeList))]
+        [HarmonyPrefix]
+        public static bool InitNoticeList(UserLocalNoticeRedDotModel __instance, List<int> severNoticeList)
+        {
+            for (int i = 0; i < __instance.GetDataList().Count; i++)
+            {
+                Func<int, bool> func = x =>
+                {
+                    Func<Notice, bool> value1 = x2 => x2.ID == x;
+                    return !severNoticeList.Contains(x) && ReadmeList.FindAll(value1).Count == 0;
+                };
+                __instance.idList.RemoveAll(func);
+            }
+            __instance.Save();
+            return false;
+        }
         [HarmonyPatch(typeof(NoticeUIPopup), nameof(NoticeUIPopup.Initialize))]
         [HarmonyPostfix]
         public static void NoticeUIPopupInitialize(NoticeUIPopup __instance)
@@ -132,6 +148,7 @@ namespace LimbusLocalize
                 var NoticeUIPopupInstance = UObject.Instantiate(__instance, __instance.transform.parent);
                 NoticeUIInstance = NoticeUIPopupInstance;
                 Initialize();
+                AddClosedel();
             }
         }
         [HarmonyPatch(typeof(MainLobbyUIPanel), nameof(MainLobbyUIPanel.Initialize))]
