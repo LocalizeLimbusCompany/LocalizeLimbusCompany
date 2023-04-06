@@ -1,9 +1,13 @@
 param(
     [string]$version
 )
+$Path = "Release"
+if (Test-Path $Path)
+	{
+	Remove-Item -Path "$Path" -Recurse
+	}
 # ----------- MelonLoader IL2CPP Interop (net6) -----------
 dotnet build src/LimbusLocalize_ml_ilcpp.sln -c Release_ML_Cpp_net6_interop
-$Path = "Release"
 # (cleanup and move files)
 Remove-Item $Path/LimbusLocalize.deps.json
 Remove-Item $Path/Tomlet.dll
