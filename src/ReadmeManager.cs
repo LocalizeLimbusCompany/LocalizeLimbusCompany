@@ -81,6 +81,7 @@ namespace LimbusLocalize
         }
         public static void InitReadmeList()
         {
+            ReadmeList.Clear();
             foreach (var notices in JSONNode.Parse(File.ReadAllText(LimbusLocalizeMod.path + "/Localize/Readme/Readme.json"))[0].AsArray.m_List)
             {
                 ReadmeList.Add(new Notice(JsonUtility.FromJson<NoticeFormat>(notices.ToString()), LOCALIZE_LANGUAGE.KR));
