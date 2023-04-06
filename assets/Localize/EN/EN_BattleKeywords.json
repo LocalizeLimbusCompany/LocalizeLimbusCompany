@@ -231,12 +231,12 @@
     {
       "id": "WaterPocket",
       "name": "Fluid Sac",
-      "desc": "Gain healing proportional to the Count."
+      "desc": "Heals HP based on the Count."
     },
     {
       "id": "DogThunder",
       "name": "Lightning",
-      "desc": "This unit powers itself up after the Count reaches a certain amount."
+      "desc": "Powers up after the Count reaches a certain amount."
     },
     {
       "id": "Run_Panic",
@@ -536,7 +536,7 @@
     {
       "id": "Assemble",
       "name": "Fanatic",
-      "desc": "Raise Skill Final Power by the effect’s Count against units with Nails for this turn."
+      "desc": "Raise Skill Final Power by the effect’s Count against units with Nails for the turn."
     },
     {
       "id": "Nail",
@@ -667,6 +667,32 @@
       "id": "HitResultUp",
       "name": "Blunt Power Up",
       "desc": "Blunt skills gain final Power by the effect’s Count for one turn."
+    },
+    {
+      "id": "WeaknessAnalysis",
+      "name": "Weakness Analyzed",
+      "desc": "A random “Endure” or “Normal” attack type resistance is weakened [+0.2 to damage multiplier] for one turn."
+    },
+    {
+      "id": "Cycle",
+      "name": "Karma",
+      "desc": "Take +1% damage per Count. At the end of the turn, if at 108+ Count, the unit dies."
+    },
+    {
+      "id": "Duress",
+      "name": "Captivity",
+      "desc": "The affected unit becomes Staggered for 3 turns.\nAt the start of the turn, if Kqe-1j-23 is Staggered, remove this status."
+    },
+    {
+      "id": "VioletResultUp",
+      "name": "Envy Power Up",
+      "desc": "Envy skills gain final Power by the effect’s Count for one turn."
+    },
+    {
+      "id": "CyclingKarma",
+      "name": "Cyclical Karma",
+      "desc": "All units transfer their Karma to their targets after a successful attack.\nKarma is not transferred to My Form Empties as long as its allies are alive.",
+      "summary": "Karma transferred on Clash win"
     }
   ]
 }
