@@ -200,7 +200,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加1层易损：突刺 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层突刺易损 "
                 }
               ]
             }
@@ -1193,7 +1193,7 @@
         {
           "level": 2,
           "name": "上斩",
-          "desc": "攻击带有易损：斩击 的目标时，本技能的威力+2\n[WinDuel] 下回合使自身获得1层强壮 ",
+          "desc": "攻击带有斩击易损 的目标时，本技能的威力+2\n[WinDuel] 下回合使自身获得1层强壮 ",
           "coinlist": [
             {
               "coindescs": [
@@ -1212,12 +1212,12 @@
         {
           "level": 3,
           "name": "花斩",
-          "desc": "[WinDuel] 本技能额外对目标施加2层易损：斩击 ",
+          "desc": "[WinDuel] 本技能额外对目标施加2层斩击易损 ",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加3层易损：斩击 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加3层斩击易损 "
                 }
               ]
             },
@@ -1630,7 +1630,7 @@
         {
           "level": 1,
           "name": "裂断打击",
-          "desc": "[WhenUse] 使自身获得1层守护：斩击 ",
+          "desc": "[WhenUse] 使自身获得1层斩击守护 ",
           "coinlist": [
             {
               "coindescs": [
@@ -1644,7 +1644,7 @@
         {
           "level": 2,
           "name": "裂断打击",
-          "desc": "[WhenUse] 使自身获得2层守护：斩击 ",
+          "desc": "[WhenUse] 使自身获得2层斩击守护 ",
           "coinlist": [
             {
               "coindescs": [
@@ -1713,7 +1713,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加3级破裂 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 消耗3层充能 并对目标施加2层易损：斩击 "
+                  "desc": "[OnSucceedAttack] 消耗3层充能 并对目标施加2层斩击易损 "
                 }
               ]
             }
@@ -2588,7 +2588,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 引爆目标的震颤 ；对其施加1层易损：打击 "
+                  "desc": "[OnSucceedAttack] 引爆目标的震颤 ；对其施加1层打击易损 "
                 }
               ]
             }
@@ -3708,7 +3708,7 @@
                   "desc": "[OnSucceedAttack] 引爆目标的震颤 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层易损：打击 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层打击易损 "
                 }
               ]
             }
@@ -4236,7 +4236,7 @@
                   "desc": "[OnSucceedAttack] 对目标施加1层破裂 "
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 对目标施加1层易损：突刺 "
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层突刺易损 "
                 }
               ]
             }
@@ -5130,6 +5130,275 @@
     },
     {
       "id": 1070404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "防御",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1000104,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "E.G.O侵蚀",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "id": 1110401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "预测分析",
+          "desc": "拼点时，敌方硬币威力-1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层麻痹 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "预测分析",
+          "desc": "拼点时，敌方硬币威力-2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层麻痹 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "临场指挥",
+          "desc": "拼点时，敌方硬币威力-1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层破裂 "
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层防御等级降低 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层破裂 "
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加一层防御等级降低 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "临场指挥",
+          "desc": "拼点时，敌方硬币威力-2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层破裂 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加一层防御等级降低 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层破裂 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加一层防御等级降低 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "要害勘破",
+          "desc": "拼点时，敌方硬币威力-2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加一层攻击等级降低 "
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 斩击伤害增加伤害量的15%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加一层弱点分析 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "身先士卒",
+          "desc": "[WhenUse] 下回合获得一层迅捷 与忍耐 ",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "战前热身",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "战前热身",
+          "desc": "[WhenUse] 使自身恢复3点理智值",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "星火流转",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度;如果目标已带有烧伤 ,则额外使其增加1级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层烧伤 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "星火流转",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度;如果目标已带有烧伤 ,则额外使其增加1级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层烧伤 ;理智值大于30,则额外施加1层烧伤 ;理智值大于45, 则额外施加2层烧伤 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "赤炎爆拳",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度;如果目标已带有烧伤 ,则对目标施加1层烧伤 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使自身恢复6点理智值"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标已带有6+层烧伤 ,使目标的混乱阈值前移本硬币造成伤害的30%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060404,
       "levelList": [
         {
           "level": 1,
