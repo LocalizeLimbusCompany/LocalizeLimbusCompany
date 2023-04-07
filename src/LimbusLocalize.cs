@@ -28,7 +28,7 @@ namespace LimbusLocalize
         public static string gamepath;
         public static TMP_FontAsset tmpchinesefont;
         public const string NAME = "LimbusLocalizeMod";
-        public const string VERSION = "0.1.7";
+        public const string VERSION = "0.1.8";
         public const string AUTHOR = "Bright";
         public static Action<string> OnLogError { get; set; }
         public static Action<string> OnLogWarning { get; set; }
@@ -422,7 +422,6 @@ namespace LimbusLocalize
             __instance.tmp_loginAccount.fontMaterial = fontAsset.material;
             __instance.tmp_loginAccount.text = "LimbusLocalizeMod v." + VERSION;
 
-            ReadmeManager.InitReadmeList();
             //增加首次使用弹窗，告知使用者不用花钱买/使用可能有封号概率等
             if (UpdateChecker.UpdateCall != null)
             {
