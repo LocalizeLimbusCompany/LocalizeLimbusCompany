@@ -33,8 +33,9 @@ namespace LimbusLocalize
         public static RedDotWriggler _redDot_Notice;
         public static void Initialize()
         {
-            NoticeUIInstance.Initialize();
+            InitReadmeList();
             InitReadmeSprites();
+            NoticeUIInstance.Initialize();
             NoticeUIInstance.btn_systemNotice.GetComponentInChildren<UITextDataLoader>(true).enabled = false;
             NoticeUIInstance.btn_systemNotice.GetComponentInChildren<TextMeshProUGUI>(true).text = "更新公告";
             NoticeUIInstance.btn_eventNotice.GetComponentInChildren<UITextDataLoader>(true).enabled = false;
