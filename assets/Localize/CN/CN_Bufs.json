@@ -919,19 +919,19 @@
     {
       "id": "WeaknessAnalysis",
       "name": "弱点分析",
-      "desc": "本回合内随机削弱一个为“耐性”或“一般”的攻击类型抗性[伤害倍数+0.2]。",
-      "summary": "削弱[伤害倍数+0.2]一个为“耐性”或“一般”的攻击类型抗性"
+      "desc": "本回合内使随机1个抗性等级为“耐性”或“一般”的攻击类型[承伤系数+0.2]。",
+      "summary": "使抗性为“耐性”或“一般”的攻击类型[承伤系数+0.2]"
     },
     {
       "id": "Cycle",
-      "name": "Karma",
-      "desc": "Take +{0}% damage. Turn End: Die at 108+ Count.",
-      "summary": "My Form Empties’ Passive"
+      "name": "业报",
+      "desc": "造成的伤害s+{0}%。回合结束时,若本效果的层数高于108层,则使角色直接死亡。",
+      "summary": "无相佛的被动"
     },
     {
       "id": "Duress",
       "name": "禁锢",
-      "desc": "使目标在3回合内陷入混乱。\n回合开始时若Kqe-1j-23陷入混乱,则移除本效果。",
+      "desc": "使目标在3回合内陷入混乱。\n回合开始时若Kqe-1j-23陷入混乱,则解除本效果。",
       "summary": "Kqe的被动"
     },
     {
@@ -942,9 +942,9 @@
     },
     {
       "id": "CyclingKarma",
-      "name": "Cyclical Karma",
-      "desc": "All units transfer their Karma to their targets after a successful attack.\nKarma is not transferred to My Form Empties as long as its allies are alive.",
-      "summary": "Karma transfers on hit"
+      "name": "业报轮回",
+      "desc": "场上所有角色在攻击命中时会将自身的部分业报 转移给目标。\n场上有无相佛以外的敌人存活时，业报 无法转移给无相佛。",
+      "summary": "攻击命中时转移业报"
     }
   ]
 }
