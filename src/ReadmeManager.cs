@@ -128,6 +128,7 @@ namespace LimbusLocalize
         [HarmonyPrefix]
         public static bool InitNoticeList(UserLocalNoticeRedDotModel __instance, List<int> severNoticeList)
         {
+            UpdateChecker.CheckReadmeUpdate();
             for (int i = 0; i < __instance.GetDataList().Count; i++)
             {
                 Func<int, bool> func = x =>
@@ -138,6 +139,7 @@ namespace LimbusLocalize
                 __instance.idList.RemoveAll(func);
             }
             __instance.Save();
+            UpdateNoticeRedDot();
             return false;
         }
         [HarmonyPatch(typeof(NoticeUIPopup), nameof(NoticeUIPopup.Initialize))]
