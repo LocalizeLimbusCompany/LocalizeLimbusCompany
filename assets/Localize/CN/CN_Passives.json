@@ -138,7 +138,7 @@
     {
       "id": 1090301,
       "name": "Breach Defense",
-      "desc": "对本回合使用了守备技能的目标造成的伤害+10%。"    
+      "desc": "对本回合使用了守备技能的目标造成的伤害+10%。"
     },
     {
       "id": 1100101,
@@ -188,7 +188,7 @@
     {
       "id": 1120301,
       "name": "应急干粮",
-      "desc": "体力低于25%时，拼点成功后恢复最大体力的5%。"
+      "desc": "体力低于25%时，拼点成功后恢复体力上限的5%。"
     },
     {
       "id": 1010121,
@@ -268,7 +268,7 @@
     {
       "id": 1060121,
       "name": "无心戏言",
-      "desc": "战斗开始时，使理智值友方恢复6理智值。"
+      "desc": "战斗开始时，使理智值最低的友方恢复6理智值。"
     },
     {
       "id": 1060221,
@@ -283,7 +283,7 @@
     {
       "id": 1070121,
       "name": "Spite-driven",
-      "desc": "使最大体力值最低的1名友方造成的打击伤害+10%。"
+      "desc": "使体力上限最低的1名友方造成的打击伤害+10%。"
     },
     {
       "id": 1070221,
@@ -363,22 +363,22 @@
     {
       "id": 1110321,
       "name": "决心",
-      "desc": "战斗开始时，使体力值1名友方"
+      "desc": "战斗开始时，使体力值最高的友方随机获得1层强壮 ，1层忍耐 或1层守护 。"
     },
     {
       "id": 1120121,
       "name": "G-0基因",
-      "desc": "At the start of the combat phase, the ally with the lowest HP heals 5 HP."
+      "desc": "战斗开始时，使体力值最低的友方恢复5体力值"
     },
     {
       "id": 1120221,
       "name": "Rushing Heart",
-      "desc": "1 ally with the lowest Speed deals +30% damage with their 3rd and subsequent Coins."
+      "desc": "使速度值最低的1名友方的技能中第三枚及其之后的硬币伤害+30%。"
     },
     {
       "id": 1120321,
       "name": "G-3基因",
-      "desc": "The ally with the lowest HP heals 5 HP after winning a clash."
+      "desc": "使体力值最低的1名友方拼点胜利后恢复5体力值。"
     },
     {
       "id": 1000101,
@@ -453,62 +453,62 @@
     {
       "id": 1050401,
       "name": "执念之锤",
-      "desc": "When below 50% HP, remove 1 negative status effect and gain 1 Fanatic, 1 Attack Power Up, and 3 Protection at the start of the combat phase."
+      "desc": "若自身体力值低于50%，战斗开始时移除1项负面效果并获得1层狂信 ，1层强壮 与3层守护。"
     },
     {
       "id": 1090401,
       "name": "Joy of Execution",
-      "desc": "After an enemy is defeated, gain 1 Haste and 1 Damage Up next turn.\nIf this unit defeated an enemy, also gain 1 Fanatic. (Once per turn.)"
+      "desc": "敌人被击杀后，获得1层迅捷 与1层伤害强化 。\n自身击杀敌人时，同时获得1层狂信 。（每回合1次。）"
     },
     {
       "id": 1050421,
       "name": "无上荣光",
-      "desc": "Apply 1 Attack Power Up and 1 Protection to the ally with the lowest HP.\nIf the ally is from N Corp, also apply 1 Fanatic."
+      "desc": "使体力值最低的1名友方获得1层强壮 与1层守护 。\n若该友方来自N公司，同时使其获得1层狂信 。"
     },
     {
       "id": 1090421,
       "name": "Rising Faith",
-      "desc": "After an enemy is defeated, apply 1 Haste and 1 Damage Up to the ally with the highest SP. (Once per turn.)"
+      "desc": "敌人被击杀后，使理智值最高的1名友方获得1层迅捷 与1层伤害强化 。（每回合1次。）"
     },
     {
       "id": 1020401,
       "name": "哨声",
-      "desc": "At the start of the combat phase, heal 2 allies with the lowest SP for 15 SP. If the ally is from N Corp, also apply 1 Fanatic."
+      "desc": "战斗开始时，使理智值最低的2名友方恢复15理智值。若该友方来自N公司，同时使其获得1层狂信 。"
     },
     {
       "id": 1020421,
       "name": "低语",
-      "desc": "At the start of the combat phase, heal the ally with the lowest SP for 15 SP. If the ally is from N Corp, also apply 1 Fanatic."
+      "desc": "战斗开始时，使理智值最低的1名友方恢复15理智值。若该友方来自N公司，同时使其获得1层狂信 。"
     },
     {
       "id": 1070401,
       "name": "Bugger…",
-      "desc": "When an ally is defeated, lose 10 SP and gain 1 Blunt Power Up next turn."
+      "desc": "友方被击杀时，下回合使自身失去10点理智值并获得1层打击强壮 。"
     },
     {
       "id": 1070421,
       "name": "Cantillation",
-      "desc": "1 ally with the highest Speed inflicts +1 Nails."
+      "desc": "使速度值最高的一名友方令目标增加的尖钉 额外+1层。"
     },
     {
       "id": 1110401,
       "name": "弱点洞悉",
-      "desc": "When attacking a target with a damage type the target is “Weak” or “Fatal” to, deal +10% damage."
+      "desc": "使用目标抗性为“脆弱”或“致命”的技能攻击目标时，使自身造成的伤害+10%。"
     },
     {
       "id": 1110421,
       "name": "情报共享",
-      "desc": "1 ally with the highest Speed deals +10% damage when attacking a target with a damage type the target is “Weak” or “Fatal” to."
+      "desc": "速度值最高的一名友方使用目标抗性为“脆弱”或“致命”的技能攻击目标时，使其造成的伤害+10%"
     },
     {
       "id": 1060401,
       "name": "真火热呢~",
-      "desc": "At 30+ SP, inflict +1 Burn Count with the effects of attack skills/coins."
+      "desc": "自身理智值高于30点时，inflict +1 Burn Count with the effects of attack skills/coins."
     },
     {
       "id": 1060421,
       "name": "很温暖吧？",
-      "desc": "1 ally with the highest SP inflicts +1 Burn Count with the effects of their attack skills/coins."
+      "desc": "使理智值最高的1名友方inflicts +1 Burn Count with the effects of their attack skills/coins."
     }
   ]
 }
