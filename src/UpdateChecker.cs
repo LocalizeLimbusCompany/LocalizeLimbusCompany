@@ -50,26 +50,32 @@ namespace LimbusLocalize
                 if (!string.IsNullOrEmpty(download))
                 {
                     var dirs = download.Split('/');
-                    string filename = dirs[^1];
-                    UnityWebRequest wwwdownload = UnityWebRequest.Get(download);
-                    wwwdownload.SendWebRequest();
-                    while (!wwwdownload.isDone)
+                    string filename = LimbusLocalizeMod.gamepath + "/" + dirs[^1];
+                    if (!File.Exists(filename))
                     {
-                        Thread.Sleep(100);
+                        UnityWebRequest wwwdownload = UnityWebRequest.Get(download);
+                        wwwdownload.SendWebRequest();
+                        while (!wwwdownload.isDone)
+                        {
+                            Thread.Sleep(100);
+                        }
+                        var NativeData = wwwdownload.downloadHandler.GetNativeData();
+                        List<byte> datas = new();
+                        foreach (var file in NativeData)
+                        {
+                            datas.Add(file);
+                        }
+                        File.WriteAllBytes(filename, datas.ToArray());
                     }
-                    var NativeData = wwwdownload.downloadHandler.GetNativeData();
-                    List<byte> datas = new();
-                    foreach (var file in NativeData)
-                    {
-                        datas.Add(file);
-                    }
-                    File.WriteAllBytes(LimbusLocalizeMod.gamepath + "/" + filename, datas.ToArray());
                     UpdateCall = UpdateDel;
                 }
                 LimbusLocalizeMod.OnLogWarning("Check Chinese Font Asset Update");
                 Action FontAssetUpdate = CheckChineseFontAssetUpdate;
                 new Thread(FontAssetUpdate).Start();
             }
+            LimbusLocalizeMod.OnLogWarning("Check Readme Update");
+            Action ReadmeUpdate = CheckReadmeUpdate;
+            new Thread(ReadmeUpdate).Start();
         }
         static void CheckChineseFontAssetUpdate()
         {
@@ -87,7 +93,7 @@ namespace LimbusLocalize
             {
                 string download = "https://github.com/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/download/" + latestReleaseTag + "/tmpchinesefont_" + latestReleaseTag + ".7z";
                 var dirs = download.Split('/');
-                string filename = dirs[^1];
+                string filename = LimbusLocalizeMod.gamepath + "/" + dirs[^1];
                 if (!File.Exists(filename))
                 {
                     UnityWebRequest wwwdownload = UnityWebRequest.Get(download);
@@ -102,32 +108,30 @@ namespace LimbusLocalize
                     {
                         datas.Add(file);
                     }
-                    File.WriteAllBytes(LimbusLocalizeMod.gamepath + "/" + filename, datas.ToArray());
+                    File.WriteAllBytes(filename, datas.ToArray());
                 }
                 UpdateCall = UpdateDel;
             }
-            LimbusLocalizeMod.OnLogWarning("Check Readme Update");
-            Action ReadmeUpdate = CheckReadmeUpdate;
-            new Thread(ReadmeUpdate).Start();
         }
         static void UpdateDel()
         {
             Application.OpenURL(LimbusLocalizeMod.gamepath);
             Application.Quit();
         }
-        static void CheckReadmeUpdate()
+        public static void CheckReadmeUpdate()
         {
             UnityWebRequest www = UnityWebRequest.Get("https://LocalizeLimbusCompany.github.io/LocalizeLimbusCompany/LatestUpdateTime.txt");
+            www.timeout = 1;
+            www.SendWebRequest();
             string FilePath = LimbusLocalizeMod.path + "/Localize/Readme/Readme.json";
             var LastWriteTime = new FileInfo(FilePath).LastWriteTime;
-            www.SendWebRequest();
             while (!www.isDone)
             {
                 Thread.Sleep(100);
             }
-            if(LastWriteTime < DateTime.Parse(www.downloadHandler.text))
+            if (www.result == UnityWebRequest.Result.Success && LastWriteTime < DateTime.Parse(www.downloadHandler.text))
             {
-                UnityWebRequest www2 = UnityWebRequest.Get("https://LocalizeLimbusCompany.github.io/LocalizeLimbusCompany/Readme.json"); 
+                UnityWebRequest www2 = UnityWebRequest.Get("https://LocalizeLimbusCompany.github.io/LocalizeLimbusCompany/Readme.json");
                 www2.SendWebRequest();
                 while (!www2.isDone)
                 {
