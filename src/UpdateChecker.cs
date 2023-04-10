@@ -1,8 +1,9 @@
 ﻿using Il2CppSimpleJSON;
 using Il2CppSystem.Threading;
 using System;
-using System.Collections.Generic;
 using System.IO;
+using System.Net.Http;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Networking;
 namespace LimbusLocalize
@@ -51,19 +52,7 @@ namespace LimbusLocalize
                     string filename = LimbusLocalizeMod.gamepath + "/" + dirs[^1];
                     if (!File.Exists(filename))
                     {
-                        UnityWebRequest wwwdownload = UnityWebRequest.Get(download);
-                        wwwdownload.SendWebRequest();
-                        while (!wwwdownload.isDone)
-                        {
-                            Thread.Sleep(100);
-                        }
-                        var NativeData = wwwdownload.downloadHandler.GetNativeData();
-                        List<byte> datas = new();
-                        foreach (var file in NativeData)
-                        {
-                            datas.Add(file);
-                        }
-                        File.WriteAllBytes(filename, datas.ToArray());
+                        DownloadFileAsync(download, filename).GetAwaiter().GetResult();
                     }
                     UpdateCall = UpdateDel;
                 }
@@ -94,19 +83,7 @@ namespace LimbusLocalize
                 string filename = LimbusLocalizeMod.gamepath + "/" + dirs[^1];
                 if (!File.Exists(filename))
                 {
-                    UnityWebRequest wwwdownload = UnityWebRequest.Get(download);
-                    wwwdownload.SendWebRequest();
-                    while (!wwwdownload.isDone)
-                    {
-                        Thread.Sleep(100);
-                    }
-                    var NativeData = wwwdownload.downloadHandler.GetNativeData();
-                    List<byte> datas = new();
-                    foreach (var file in NativeData)
-                    {
-                        datas.Add(file);
-                    }
-                    File.WriteAllBytes(filename, datas.ToArray());
+                    DownloadFileAsync(download, filename).GetAwaiter().GetResult();
                 }
                 UpdateCall = UpdateDel;
             }
@@ -115,6 +92,14 @@ namespace LimbusLocalize
         {
             Application.OpenURL(LimbusLocalizeMod.gamepath);
             Application.Quit();
+        }
+        static async Task DownloadFileAsync(string url, string filePath)
+        {
+            using HttpClient client = new();
+            using HttpResponseMessage response = await client.GetAsync(url);
+            using HttpContent content = response.Content;
+            using FileStream fileStream = new(filePath, FileMode.Create);
+            await content.CopyToAsync(fileStream);
         }
         public static void CheckReadmeUpdate()
         {
