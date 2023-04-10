@@ -2,18 +2,17 @@
 using Il2CppSystem.Collections.Generic;
 using Il2CppSystem.Linq;
 using System;
-using System.IO;
 using UnityEngine;
 
 namespace LimbusLocalize
 {
     public static class LimbusLocalizeEX
     {
-        public static void Init<T>(this JsonDataList<T> jsonDataList, List<string> list) where T : LocalizeTextData, new()
+        public static void Init<T>(this JsonDataList<T> jsonDataList, List<string> jsonFilePathList) where T : LocalizeTextData, new()
         {
-            foreach (string text2 in list)
+            foreach (string text in jsonFilePathList)
             {
-                var file = ModManager.Localizes[text2];
+                var file = ModManager.Localizes[text];
                 if (string.IsNullOrEmpty(file)) { continue; }
                 var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(file);
                 foreach (T t in localizeTextData.DataList)
@@ -23,13 +22,11 @@ namespace LimbusLocalize
             }
         }
 
-        public static void AbEventCharDlgRootInit(this AbEventCharDlgRoot root, List<string> jsonFiles)
+        public static void AbEventCharDlgRootInit(this AbEventCharDlgRoot root, List<string> jsonFilePathList)
         {
-            root._personalityDict = new Dictionary<int, AbEventKeyDictionaryContainer>();
-
-            foreach (string text2 in jsonFiles)
+            foreach (string text in jsonFilePathList)
             {
-                var file = ModManager.Localizes[text2];
+                var file = ModManager.Localizes[text];
                 if (string.IsNullOrEmpty(file)) { continue; }
                 var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_AbnormalityEventCharDlg>>(file);
                 foreach (var t in localizeTextData.DataList)
@@ -52,55 +49,16 @@ namespace LimbusLocalize
 
             }
         }
-        public static void PersonalityVoiceJsonDataListInit(this PersonalityVoiceJsonDataList jsonDataList, List<string> jsonFilePathList)
+        public static void JsonDataListInit<T>(this Dictionary<string, LocalizeTextDataRoot<T>> jsonDataList, List<string> jsonFilePathList)
         {
-            jsonDataList._voiceDictionary = new Dictionary<string, LocalizeTextDataRoot<TextData_PersonalityVoice>>();
-
-            foreach (string text2 in jsonFilePathList)
+            foreach (string text in jsonFilePathList)
             {
-                var file = ModManager.Localizes[text2];
+                var file = ModManager.Localizes[text];
                 if (string.IsNullOrEmpty(file)) { continue; }
-                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_PersonalityVoice>>(file);
-                jsonDataList._voiceDictionary.Add(text2.Split('_')[^1], localizeTextData);
+                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(file);
+                jsonDataList[text.Split('_')[^1]] = localizeTextData;
             }
         }
-        public static void AnnouncerVoiceJsonDataListInit(this AnnouncerVoiceJsonDataList jsonDataList, List<string> jsonFilePathList)
-        {
-            jsonDataList._voiceDictionary = new Dictionary<string, LocalizeTextDataRoot<TextData_AnnouncerVoice>>();
-
-            foreach (string text2 in jsonFilePathList)
-            {
-                var file = ModManager.Localizes[text2];
-                if (string.IsNullOrEmpty(file)) { continue; }
-                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_AnnouncerVoice>>(file);
-                jsonDataList._voiceDictionary.Add(text2.Split('_')[^1], localizeTextData);
-            }
-        }
-        public static void BgmLyricsJsonDataListInit(this BgmLyricsJsonDataList jsonDataList, List<string> jsonFilePathList)
-        {
-            jsonDataList._lyricsDictionary = new Dictionary<string, LocalizeTextDataRoot<TextData_UI>>();
-
-            foreach (string text2 in jsonFilePathList)
-            {
-                var file = ModManager.Localizes[text2];
-                if (string.IsNullOrEmpty(file)) { continue; }
-                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_UI>>(file);
-                jsonDataList._lyricsDictionary.Add(text2.Split('_')[^1], localizeTextData);
-            }
-        }
-        public static void EGOVoiceJsonDataListInit(this EGOVoiceJsonDataList jsonDataList, List<string> jsonFilePathList)
-        {
-            jsonDataList._voiceDictionary = new Dictionary<string, LocalizeTextDataRoot<TextData_EGOVoice>>();
-
-            foreach (string text2 in jsonFilePathList)
-            {
-                var file = ModManager.Localizes[text2];
-                if (string.IsNullOrEmpty(file)) { continue; }
-                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_EGOVoice>>(file);
-                jsonDataList._voiceDictionary.Add(text2.Split('_')[^1], localizeTextData);
-            }
-        }
-
         public static Dictionary<TKey, TElement> ToDictionary<TSource, TKey, TElement>(this IEnumerable<TSource> source, Func<TSource, TKey> keySelector, Func<TSource, TElement> elementSelector)
         {
             return Enumerable.ToDictionary<TSource, TKey, TElement>(source, keySelector, elementSelector, null);

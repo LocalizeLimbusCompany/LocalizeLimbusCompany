@@ -1,9 +1,7 @@
 ﻿using Il2CppSimpleJSON;
 using Il2CppSystem.Threading;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Globalization;
 using System.IO;
 using UnityEngine;
 using UnityEngine.Networking;
