@@ -76,10 +76,6 @@ namespace LimbusLocalize
             }
 
         }
-        public static Sprite GetReadmeSprite(string key)
-        {
-            return ReadmeSprites[key];
-        }
         public static void InitReadmeList()
         {
             ReadmeList.Clear();
@@ -170,8 +166,8 @@ namespace LimbusLocalize
             UIButtonInstance.transform.SetSiblingIndex(1);
             var spriteSetting = new ButtonSprites()
             {
-                _enabled = GetReadmeSprite("Readme_Zero_Button"),
-                _hover = GetReadmeSprite("Readme_Zero_Button")
+                _enabled = ReadmeSprites["Readme_Zero_Button"],
+                _hover = ReadmeSprites["Readme_Zero_Button"]
             };
             UIButtonInstance.spriteSetting = spriteSetting;
             var transform = __instance.button_notice.transform.parent;
@@ -189,7 +185,7 @@ namespace LimbusLocalize
         {
             if (formatValue.StartsWith("Readme_"))
             {
-                Sprite image = GetReadmeSprite(formatValue);
+                Sprite image = ReadmeSprites[formatValue];
                 __instance.gameObject.SetActive(true);
                 __instance.SetImage(image);
                 return false;
