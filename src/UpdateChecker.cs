@@ -12,7 +12,7 @@ namespace LimbusLocalize
     {
         public static void StartCheckUpdates()
         {
-            LimbusLocalizeMod.OnLogWarning("Check Mod Update");
+            LimbusLocalizeMod.LogWarning("Check Mod Update");
             Action ModUpdate = CheckModUpdate;
             new Thread(ModUpdate).Start();
         }
@@ -27,7 +27,7 @@ namespace LimbusLocalize
             }
             if (www.result != UnityWebRequest.Result.Success)
             {
-                LimbusLocalizeMod.OnLogWarning("Can't access GitHub!!!" + www.error);
+                LimbusLocalizeMod.LogWarning("Can't access GitHub!!!" + www.error);
             }
             else
             {
@@ -56,18 +56,18 @@ namespace LimbusLocalize
                     }
                     UpdateCall = UpdateDel;
                 }
-                LimbusLocalizeMod.OnLogWarning("Check Chinese Font Asset Update");
+                LimbusLocalizeMod.LogWarning("Check Chinese Font Asset Update");
                 Action FontAssetUpdate = CheckChineseFontAssetUpdate;
                 new Thread(FontAssetUpdate).Start();
             }
-            LimbusLocalizeMod.OnLogWarning("Check Readme Update");
+            LimbusLocalizeMod.LogWarning("Check Readme Update");
             Action ReadmeUpdate = CheckReadmeUpdate;
             new Thread(ReadmeUpdate).Start();
         }
         static void CheckChineseFontAssetUpdate()
         {
             UnityWebRequest www = UnityWebRequest.Get("https://api.github.com/repos/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/latest");
-            string FilePath = LimbusLocalizeMod.path + "/tmpchinesefont";
+            string FilePath = LimbusLocalizeMod.modpath + "/tmpchinesefont";
             var LastWriteTime = File.Exists(FilePath) ? new FileInfo(FilePath).LastWriteTime.ToString("yyMMdd") : string.Empty;
             www.SendWebRequest();
             while (!www.isDone)
@@ -87,6 +87,11 @@ namespace LimbusLocalize
                 }
                 UpdateCall = UpdateDel;
             }
+            if (UpdateCall != null)
+            {
+                ModManager.OpenGlobalPopup("模组更新已下载,点击确认将打开下载路径并退出游戏", default, "取消", "确认", UpdateCall);
+            }
+
         }
         static void UpdateDel()
         {
@@ -106,7 +111,7 @@ namespace LimbusLocalize
             UnityWebRequest www = UnityWebRequest.Get("https://LocalizeLimbusCompany.github.io/LocalizeLimbusCompany/LatestUpdateTime.txt");
             www.timeout = 1;
             www.SendWebRequest();
-            string FilePath = LimbusLocalizeMod.path + "/Localize/Readme/Readme.json";
+            string FilePath = LimbusLocalizeMod.modpath + "/Localize/Readme/Readme.json";
             var LastWriteTime = new FileInfo(FilePath).LastWriteTime;
             while (!www.isDone)
             {
