@@ -16,24 +16,13 @@ using UnityEngine.UI;
 using UObject = UnityEngine.Object;
 
 namespace LimbusLocalize
-{/*{
-      "id": id
-      "version": 版本,
-      "type": 1贡献 0更新,
-      "startDate": 开始时间,
-      "endDate": 结束时间,
-      "sprNameList": ["图片key"],
-      "title_KR": "左侧标题",
-      "content_KR": {\"formatKey\":\"SubTitle\",\"formatValue\":\"<size=49>标题</size>\"} HyperLink超链接 Image图片 Text正常文本 PassTable通行证任务点数更改特供
-    },*/
-
+{
     public static class ReadmeManager
     {
         public static NoticeUIPopup NoticeUIInstance;
         public static RedDotWriggler _redDot_Notice;
         public static void Initialize()
         {
-            InitReadmeList();
             InitReadmeSprites();
             NoticeUIInstance.Initialize();
             NoticeUIInstance.btn_systemNotice.GetComponentInChildren<UITextDataLoader>(true).enabled = false;
@@ -60,11 +49,11 @@ namespace LimbusLocalize
             NoticeUIInstance.EventTapClickEvent();
             NoticeUIInstance.btn_eventNotice.Cast<UISelectedButton>().SetSelected(true);
         }
-        private static void InitReadmeSprites()
+        public static void InitReadmeSprites()
         {
             ReadmeSprites = new Dictionary<string, Sprite>();
 
-            foreach (FileInfo fileInfo in new DirectoryInfo(LimbusLocalizeMod.path + "/Localize/Readme").GetFiles().Where(f => f.Extension != ".json"))
+            foreach (FileInfo fileInfo in new DirectoryInfo(LimbusLocalizeMod.modpath + "/Localize/Readme").GetFiles().Where(f => f.Extension != ".json"))
             {
                 Texture2D texture2D = new(2, 2);
                 ImageConversion.LoadImage(texture2D, File.ReadAllBytes(fileInfo.FullName));
@@ -79,16 +68,9 @@ namespace LimbusLocalize
         public static void InitReadmeList()
         {
             ReadmeList.Clear();
-            foreach (var notices in JSONNode.Parse(File.ReadAllText(LimbusLocalizeMod.path + "/Localize/Readme/Readme.json"))[0].AsArray.m_List)
+            foreach (var notices in JSONNode.Parse(File.ReadAllText(LimbusLocalizeMod.modpath + "/Localize/Readme/Readme.json"))[0].AsArray.m_List)
             {
                 ReadmeList.Add(new Notice(JsonUtility.FromJson<NoticeFormat>(notices.ToString()), LOCALIZE_LANGUAGE.KR));
-            }
-
-            Func<Notice, bool> value = x => x.ID == -1192;
-            if (ReadmeList.FindAll(value).Count == 0)
-            {
-                Singleton<UserLocalSaveDataRoot>.Instance.NoticeRedDotSaveModel.RemoveByContent(-1192);
-                Singleton<UserLocalSaveDataRoot>.Instance.NoticeRedDotSaveModel.Save();
             }
         }
         public static List<Notice> ReadmeList = new();
