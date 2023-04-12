@@ -1,13 +1,11 @@
 ﻿using HarmonyLib;
 using Il2Cpp;
 using Il2CppAddressable;
-using Il2CppMainUI.Gacha;
 using Il2CppSimpleJSON;
 using Il2CppSteamworks;
 using Il2CppStorySystem;
 using Il2CppSystem.Collections.Generic;
 using Il2CppTMPro;
-using Il2CppUI.Utility;
 using Il2CppUtilityUI;
 using LimbusLocalize;
 using MelonLoader;
@@ -16,7 +14,6 @@ using System.IO;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using UnityEngine;
-using ILObject = Il2CppSystem.Object;
 using UObject = UnityEngine.Object;
 
 [assembly: MelonInfo(typeof(LimbusLocalizeMod), LimbusLocalizeMod.NAME, LimbusLocalizeMod.VERSION, LimbusLocalizeMod.AUTHOR)]
@@ -53,6 +50,7 @@ namespace LimbusLocalize
                 HarmonyLib.Harmony harmony = new("LimbusLocalizeMod");
                 harmony.PatchAll(typeof(ReadmeManager));
                 harmony.PatchAll(typeof(LimbusLocalizeMod));
+                harmony.PatchAll(typeof(GoodLifeHook));
                 if (File.Exists(modpath + "/tmpchinesefont"))
                     tmpchinesefont = AssetBundle.LoadFromFile(modpath + "/tmpchinesefont").LoadAsset("assets/sourcehansanssc-heavy sdf.asset").Cast<TMP_FontAsset>();
                 else
@@ -71,82 +69,7 @@ namespace LimbusLocalize
             File.WriteAllText(gamepath + "/框架日志.log", Latestlog);
             File.Copy(Application.consoleLogPath, gamepath + "/游戏日志.log", true);
         }
-        #region 去tmd文字描述成功率
-        [HarmonyPatch(typeof(UITextMaker), nameof(UITextMaker.GetSuccessRateText))]
-        [HarmonyPrefix]
-        public static bool GetSuccessRateText(float rate, ref string __result)
-        {
-            __result = ((int)(rate * 100.0f)).ToString() + "%";
-            return false;
-        }
-        [HarmonyPatch(typeof(UITextMaker), nameof(UITextMaker.GetSuccessRateToText))]
-        [HarmonyPrefix]
-        public static bool GetSuccessRateToText(float rate, ref string __result)
-        {
-            __result = ((int)(rate * 100.0f)).ToString() + "%";
-            return false;
-        }
-        [HarmonyPatch(typeof(PossibleResultData), nameof(PossibleResultData.GetProb))]
-        [HarmonyPrefix]
-        public static bool GetProb(PossibleResultData __instance, float probAdder, ref float __result)
-        {
-            float num = 0f;
-            float num2 = __instance._defaultProb + probAdder;
-            float num3 = 1f - num2;
-            int i = 0;
-            int count = __instance._headTailCntList.Count;
-            while (i < count)
-            {
-                num += Mathf.Pow(num2, __instance._headTailCntList[i].HeadCnt) * Mathf.Pow(num3, __instance._headTailCntList[i].TailCnt);
-                i++;
-            }
-            __result = num;
-            return false;
-        }
-        #endregion
-        #region 屏蔽没有意义的Warning
-        [HarmonyPatch(typeof(Logger), nameof(Logger.Log), new Type[]
-        {
-            typeof(LogType),
-            typeof(ILObject)
-        })]
-        [HarmonyPrefix]
-        private static bool Log(Logger __instance, LogType __0, ILObject __1)
-        {
-            if (__0 == LogType.Warning)
-            {
-                string LogString = Logger.GetString(__1);
-                if (!LogString.Contains("DOTWEEN"))
-                    __instance.logHandler.LogFormat(__0, null, "{0}", new ILObject[] { LogString });
-                return false;
-            }
-            return true;
-        }
-        [HarmonyPatch(typeof(Logger), nameof(Logger.Log), new Type[]
-        {
-            typeof(LogType),
-            typeof(ILObject),
-            typeof(UObject)
-        })]
-        [HarmonyPrefix]
-        private static bool Log(Logger __instance, LogType logType, ILObject message, UObject context)
-        {
-            if (logType == LogType.Warning)
-            {
-                string LogString = Logger.GetString(message);
-                if (!LogString.Contains("Material"))
-                    __instance.logHandler.LogFormat(logType, context, "{0}", new ILObject[] { LogString });
-                return false;
-            }
-            return true;
-        }
-        #endregion
-        [HarmonyPatch(typeof(GachaEffectEventSystem), nameof(GachaEffectEventSystem.LinkToCrackPosition))]
-        [HarmonyPrefix]
-        private static bool LinkToCrackPosition(GachaEffectEventSystem __instance, GachaCrackController[] crackList)
-        {
-            return __instance._parent.EffectChainCamera;
-        }
+        
         #region 字体
         [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.font), MethodType.Setter)]
         [HarmonyPrefix]
@@ -264,18 +187,6 @@ namespace LimbusLocalize
             tm._bgmLyricsText._lyricsDictionary.JsonDataListInit(romoteLocalizeFileList.BgmLyrics);
             tm._egoVoiceText._voiceDictionary.JsonDataListInit(romoteLocalizeFileList.EGOVoice);
 
-        }
-        [HarmonyPatch(typeof(PersonalityVoiceJsonDataList), nameof(PersonalityVoiceJsonDataList.GetDataList))]
-        [HarmonyPrefix]
-        public static bool PersonalityVoiceGetDataList(PersonalityVoiceJsonDataList __instance, int personalityId, ref LocalizeTextDataRoot<TextData_PersonalityVoice> __result)
-        {
-            if (!__instance._voiceDictionary.TryGetValueEX(personalityId.ToString(), out LocalizeTextDataRoot<TextData_PersonalityVoice> localizeTextDataRoot))
-            {
-                Debug.LogError("PersonalityVoice no id:" + personalityId.ToString());
-                localizeTextDataRoot = new LocalizeTextDataRoot<TextData_PersonalityVoice>() { dataList = new List<TextData_PersonalityVoice>() };
-            }
-            __result = localizeTextDataRoot;
-            return false;
         }
         [HarmonyPatch(typeof(EGOVoiceJsonDataList), nameof(EGOVoiceJsonDataList.Init))]
         [HarmonyPrefix]
