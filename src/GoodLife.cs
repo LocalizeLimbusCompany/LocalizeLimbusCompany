@@ -117,7 +117,7 @@ namespace LimbusLocalize
                 PersonalityStaticData defaultDataByCharacterId = Singleton<StaticDataManager>.Instance.PersonalityStaticDataList.GetData(currentFormation.PersonalityId);
                 __instance._personalityId = defaultDataByCharacterId.ID;
                 __instance._egoArray = new int[5];
-                List<EgoContainIndex> list = new List<EgoContainIndex>();
+                List<EgoContainIndex> list = new();
                 for (int i = 0; i < grade; i++)
                 {
                     int num = egos[i];
