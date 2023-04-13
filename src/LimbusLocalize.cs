@@ -111,7 +111,6 @@ namespace LimbusLocalize
         {
             var fontAsset = tmpchinesefont;
             __instance._text.font = fontAsset;
-            fontAsset.material.shader = __instance._fontInformation[0].fontMaterial.shader;
             __instance._text.fontMaterial = fontAsset.material;
             if (__instance._matSetter != null)
             {
