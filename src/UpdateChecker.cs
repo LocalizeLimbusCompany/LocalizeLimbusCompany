@@ -87,10 +87,6 @@ namespace LimbusLocalize
                 }
                 UpdateCall = UpdateDel;
             }
-            if (UpdateCall != null)
-            {
-                ModManager.OpenGlobalPopup("模组更新已下载,点击确认将打开下载路径并退出游戏", default, "取消", "确认", UpdateCall);
-            }
 
         }
         static void UpdateDel()
