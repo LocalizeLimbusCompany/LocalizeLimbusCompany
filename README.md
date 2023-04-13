@@ -29,7 +29,6 @@
     - 在战斗中始终显示"快速分配剩余骰子"/记忆"敌方攻击目标"按钮的状态 0%
     - 更多热键 0%
     - 事件自动跳过 0%
-    - 镜牢人格ego跟随编队 0%
     - 下载/载入目录迁移 0%
 
 - 增加错误弹窗，用于更好的Debug 10% by Bright
@@ -40,6 +39,3 @@
 - [LLC_ChineseFontAsset](../../../LLC_ChineseFontAsset)中文字体
 - [LLC_MOD_Installer](../../../LLC_MOD_Installer)模组傻瓜安装更新程序
 - [LLC_GAME_V1.1.0_Raw](../../../LLC_GAME_V1.1.0_Raw)边狱公司游戏未加密版本的存档
-- ~~[LLC_ChineseLocalize](../../../LLC_ChineseLocalize)中文翻译 汉化组的最新进展~~
-- ~~[LLC_Readme](../../../LLC_Readme)模组公告~~
-- ~~[填充辅助程序](https://github.com/kkr223/limbusTranslator)让翻译者更方便的填充汉化程序~~
