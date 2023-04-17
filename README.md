@@ -34,7 +34,6 @@
 - 增加错误弹窗，用于更好的Debug 10% by Bright
 - 修复字体大小不正常问题 20% by Bright 10% by 茜
 
-- ~~将所有服务器响应改到本地，使边狱公司成为一个单机游戏 0%~~
 # 相关项目
 - [LLC_ChineseFontAsset](../../../LLC_ChineseFontAsset)中文字体
 - [LLC_MOD_Installer](../../../LLC_MOD_Installer)模组傻瓜安装更新程序
