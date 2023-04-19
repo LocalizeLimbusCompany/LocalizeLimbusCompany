@@ -1,6 +1,5 @@
 ﻿using Il2Cpp;
 using Il2CppSystem.Collections.Generic;
-using Il2CppSystem.Linq;
 using System;
 using UnityEngine;
 
@@ -58,16 +57,6 @@ namespace LimbusLocalize
                 var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(file);
                 jsonDataList[text.Split('_')[^1]] = localizeTextData;
             }
-        }
-        public static Dictionary<TKey, TElement> ToDictionary<TSource, TKey, TElement>(this IEnumerable<TSource> source, Func<TSource, TKey> keySelector, Func<TSource, TElement> elementSelector)
-        {
-            return Enumerable.ToDictionary<TSource, TKey, TElement>(source, keySelector, elementSelector, null);
-        }
-        public static List<T> AddEX<T>(this List<T> list, params T[] values)
-        {
-            foreach (var value in values)
-                list.Add(value);
-            return list;
         }
         public static bool TryGetValueEX<TKey, TValue>(this Dictionary<TKey, TValue> dic, TKey key, out TValue value)
         {

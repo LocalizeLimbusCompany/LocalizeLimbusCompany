@@ -2,7 +2,6 @@
 using Il2Cpp;
 using Il2CppAddressable;
 using Il2CppSimpleJSON;
-using Il2CppSteamworks;
 using Il2CppStorySystem;
 using Il2CppSystem.Collections.Generic;
 using Il2CppTMPro;
@@ -14,7 +13,6 @@ using System.IO;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using UnityEngine;
-using UObject = UnityEngine.Object;
 
 [assembly: MelonInfo(typeof(LimbusLocalizeMod), LimbusLocalizeMod.NAME, LimbusLocalizeMod.VERSION, LimbusLocalizeMod.AUTHOR)]
 namespace LimbusLocalize
@@ -35,12 +33,6 @@ namespace LimbusLocalize
             LogWarning = delegate (string log) { LoggerInstance.Warning(log); Debug.LogWarning(log); };
             modpath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             gamepath = new DirectoryInfo(Application.dataPath).Parent.FullName;
-            if (!Directory.Exists(modpath + "/.hide"))
-            {
-                Directory.CreateDirectory(modpath + "/.hide");
-                FileAttributes MyAttributes = File.GetAttributes(modpath + "/.hide");
-                File.SetAttributes(modpath + "/.hide", MyAttributes | FileAttributes.Hidden);
-            }
             try
             {
                 InitLocalizes(new DirectoryInfo(modpath + "/Localize/CN"));
@@ -49,7 +41,7 @@ namespace LimbusLocalize
                 if (File.Exists(modpath + "/tmpchinesefont"))
                     tmpchinesefont = AssetBundle.LoadFromFile(modpath + "/tmpchinesefont").LoadAsset("assets/sourcehansanssc-heavy sdf.asset").Cast<TMP_FontAsset>();
                 else
-                    LogError("Fatal Error!!!\nYou Not Have Chinese Font, Please Read GitHub Readme To Download Or Use Mod Installer To Automatically Download It");
+                    LogError("Fatal Error!!!\nYou Not Have Chinese Font, Please Read GitHub Readme To Download");
             }
             catch (Exception e)
             {
@@ -64,7 +56,7 @@ namespace LimbusLocalize
             File.WriteAllText(gamepath + "/框架日志.log", Latestlog);
             File.Copy(Application.consoleLogPath, gamepath + "/游戏日志.log", true);
         }
-        
+
         #region 字体
         [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.font), MethodType.Setter)]
         [HarmonyPrefix]
@@ -297,7 +289,7 @@ namespace LimbusLocalize
         [HarmonyPrefix]
         private static bool GetTellerName(StoryData __instance, string name, LOCALIZE_LANGUAGE lang, ref string __result)
         {
-            if (__instance._modelAssetMap.TryGetValueEX(name,out var scenarioAssetData))
+            if (__instance._modelAssetMap.TryGetValueEX(name, out var scenarioAssetData))
                 __result = scenarioAssetData.krname;
             return false;
         }
@@ -320,7 +312,6 @@ namespace LimbusLocalize
         private static void SetLoginInfo(LoginSceneManager __instance)
         {
             LoadLocal(LOCALIZE_LANGUAGE.EN);
-            __instance.tmp_loginAccount.text = "LimbusLocalizeMod v." + VERSION;
         }
 
         public static void InitLocalizes(DirectoryInfo directory)
