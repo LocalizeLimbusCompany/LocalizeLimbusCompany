@@ -19,7 +19,7 @@ Remove-Item $Path/Microsoft.Extensions.Logging.Abstractions.dll
 New-Item -Path "$Path" -Name "LimbusLocalize" -ItemType "directory" -Force
 New-Item -Path "$Path/LimbusLocalize" -Name "Mods" -ItemType "directory" -Force
 New-Item -Path "$Path/LimbusLocalize/Mods" -Name "Localize" -ItemType "directory" -Force
-Copy-Item -Path Localize/CN $Path/LimbusLocalize/Mods/Localize -Force -Recurse-Recurse
+Copy-Item -Path Localize/CN $Path/LimbusLocalize/Mods/Localize -Force -Recurse
 Copy-Item -Path $Path/LimbusLocalize.dll -Destination $Path/LimbusLocalize/Mods -Force
 7z a -t7z "$Path/LimbusLocalize_$version.7z" "./$Path/LimbusLocalize/*" -mx=9 -ms
 $tag=$(git describe --tags --abbrev=0)
@@ -35,7 +35,7 @@ $changedFilesList = $changedFiles -split " "
 foreach ($file in $changedFilesList) {
     if (Test-Path -Path $file) {
         $destination = "$Path/LimbusLocalize_OTA/Mods/Localize/CN/$file"
-        $destination = $destination.Replace("Localize/CN/", "")
+        $destination = $destination.Replace("Localize/CN/Localize/CN/", "Localize/CN/")
         $destinationDirectory = Split-Path -Path $destination -Parent
         if (!(Test-Path -Path $destinationDirectory)) {
             New-Item -ItemType Directory -Force -Path $destinationDirectory
