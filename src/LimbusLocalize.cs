@@ -47,7 +47,6 @@ namespace LimbusLocalize
                 ModManager.InitLocalizes(new DirectoryInfo(modpath + "/Localize/CN"));
                 HarmonyLib.Harmony harmony = new("LimbusLocalizeMod");
                 harmony.PatchAll(typeof(LimbusLocalizeMod));
-                harmony.PatchAll(typeof(GoodLifeHook));
                 if (File.Exists(modpath + "/tmpchinesefont"))
                     tmpchinesefont = AssetBundle.LoadFromFile(modpath + "/tmpchinesefont").LoadAsset("assets/sourcehansanssc-heavy sdf.asset").Cast<TMP_FontAsset>();
                 else
@@ -304,6 +303,19 @@ namespace LimbusLocalize
             return false;
         }
         #endregion
+
+        [HarmonyPatch(typeof(PersonalityVoiceJsonDataList), nameof(PersonalityVoiceJsonDataList.GetDataList))]
+        [HarmonyPrefix]
+        public static bool PersonalityVoiceGetDataList(PersonalityVoiceJsonDataList __instance, int personalityId, ref LocalizeTextDataRoot<TextData_PersonalityVoice> __result)
+        {
+            if (!__instance._voiceDictionary.TryGetValueEX(personalityId.ToString(), out LocalizeTextDataRoot<TextData_PersonalityVoice> localizeTextDataRoot))
+            {
+                Debug.LogError("PersonalityVoice no id:" + personalityId.ToString());
+                localizeTextDataRoot = new LocalizeTextDataRoot<TextData_PersonalityVoice>() { dataList = new List<TextData_PersonalityVoice>() };
+            }
+            __result = localizeTextDataRoot;
+            return false;
+        }
         [HarmonyPatch(typeof(LoginSceneManager), nameof(LoginSceneManager.SetLoginInfo))]
         [HarmonyPostfix]
         private static void SetLoginInfo(LoginSceneManager __instance)
