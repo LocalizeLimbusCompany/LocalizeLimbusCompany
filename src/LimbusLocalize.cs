@@ -23,7 +23,7 @@ namespace LimbusLocalize
         public static string gamepath;
         public static TMP_FontAsset tmpchinesefont;
         public const string NAME = "LimbusLocalizeMod";
-        public const string VERSION = "0.1.9";
+        public const string VERSION = "0.1.9.9";
         public const string AUTHOR = "Bright";
         public static Action<string> LogError { get; set; }
         public static Action<string> LogWarning { get; set; }
