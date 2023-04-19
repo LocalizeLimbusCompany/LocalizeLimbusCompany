@@ -45,9 +45,7 @@ namespace LimbusLocalize
             {
                 ModManager.Setup();
                 ModManager.InitLocalizes(new DirectoryInfo(modpath + "/Localize/CN"));
-                ReadmeManager.InitReadmeList();
                 HarmonyLib.Harmony harmony = new("LimbusLocalizeMod");
-                harmony.PatchAll(typeof(ReadmeManager));
                 harmony.PatchAll(typeof(LimbusLocalizeMod));
                 harmony.PatchAll(typeof(GoodLifeHook));
                 if (File.Exists(modpath + "/tmpchinesefont"))
