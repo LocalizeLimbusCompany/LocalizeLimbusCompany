@@ -43,8 +43,7 @@ namespace LimbusLocalize
             }
             try
             {
-                ModManager.Setup();
-                ModManager.InitLocalizes(new DirectoryInfo(modpath + "/Localize/CN"));
+                InitLocalizes(new DirectoryInfo(modpath + "/Localize/CN"));
                 HarmonyLib.Harmony harmony = new("LimbusLocalizeMod");
                 harmony.PatchAll(typeof(LimbusLocalizeMod));
                 if (File.Exists(modpath + "/tmpchinesefont"))
@@ -222,7 +221,7 @@ namespace LimbusLocalize
         [HarmonyPrefix]
         private static bool StoryDataInit(StoryData __instance)
         {
-            ScenarioAssetDataList scenarioAssetDataList = JsonUtility.FromJson<ScenarioAssetDataList>(ModManager.Localizes["NickName"]);
+            ScenarioAssetDataList scenarioAssetDataList = JsonUtility.FromJson<ScenarioAssetDataList>(Localizes["NickName"]);
             __instance._modelAssetMap = new Dictionary<string, ScenarioAssetData>();
             __instance._standingAssetMap = new Dictionary<string, StandingAsset>();
             __instance._standingAssetPathMap = new Dictionary<string, string>();
@@ -246,7 +245,7 @@ namespace LimbusLocalize
         [HarmonyPrefix]
         private static bool GetScenario(StoryData __instance, string scenarioID, LOCALIZE_LANGUAGE lang, ref Scenario __result)
         {
-            if (ModManager.Localizes.TryGetValue(scenarioID, out string file))
+            if (Localizes.TryGetValue(scenarioID, out string file))
             {
                 TextAsset textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
                 if (textAsset == null)
@@ -320,68 +319,24 @@ namespace LimbusLocalize
         [HarmonyPostfix]
         private static void SetLoginInfo(LoginSceneManager __instance)
         {
-            string SteamID = SteamClient.SteamId.ToString();
             LoadLocal(LOCALIZE_LANGUAGE.EN);
-            var fontAsset = tmpchinesefont;
-            __instance.tmp_loginAccount.font = fontAsset;
-            __instance.tmp_loginAccount.fontMaterial = fontAsset.material;
             __instance.tmp_loginAccount.text = "LimbusLocalizeMod v." + VERSION;
-            if (File.Exists(modpath + "/.hide/checkisfirstuse"))
-                if (File.ReadAllText(modpath + "/.hide/checkisfirstuse") == SteamID + " true")
-                    return;
-            UserAgreementUI userAgreementUI = UObject.Instantiate(__instance._userAgreementUI, __instance._userAgreementUI.transform.parent);
-            userAgreementUI.gameObject.SetActive(true);
-            userAgreementUI.tmp_popupTitle.GetComponent<UITextDataLoader>().enabled = false;
-            userAgreementUI.tmp_popupTitle.text = "首次使用提示";
-            var textMeshProUGUI = userAgreementUI._userAgreementContent._agreementJP.GetComponentInChildren<TextMeshProUGUI>(true);
-            Action<bool> _ontogglevaluechange = delegate (bool on)
-            {
-                if (userAgreementUI._userAgreementContent.Agreed())
-                {
-                    textMeshProUGUI.text = "模因封号触媒启动\r\n\r\n检测到存活迹象\r\n\r\n解开安全锁";
-                    userAgreementUI._userAgreementContent.toggle_userAgreements.gameObject.SetActive(false);
-                    userAgreementUI.btn_confirm.interactable = true;
-                }
-            };
-            userAgreementUI._userAgreementContent.Init(_ontogglevaluechange);
-            Action _onclose = delegate ()
-            {
-                File.WriteAllText(modpath + "/.hide/checkisfirstuse", SteamID + " true");
-                userAgreementUI.gameObject.SetActive(false);
-                UObject.Destroy(userAgreementUI);
-                UObject.Destroy(userAgreementUI.gameObject);
-            };
-            userAgreementUI._panel.closeEvent.AddListener(_onclose);
-            Action _oncancel = delegate ()
-            {
-                SteamClient.Shutdown();
-                Application.Quit();
-            };
-            userAgreementUI.btn_cancel._onClick.AddListener(_oncancel);
-            userAgreementUI.btn_confirm.interactable = false;
-            Action _onconfirm = userAgreementUI.OnConfirmClicked;
-            userAgreementUI.btn_confirm._onClick.AddListener(_onconfirm);
-            userAgreementUI._collectionOfPersonalityInfo.gameObject.SetActive(false);
-            userAgreementUI._userAgreementContent._scrollRect.content = userAgreementUI._userAgreementContent._agreementJP;
-            textMeshProUGUI.font = fontAsset;
-            textMeshProUGUI.fontMaterial = fontAsset.material;
-            textMeshProUGUI.text = "<link=\"https://github.com/Bright1192/LimbusLocalize\">点我进入Github链接</link>\n该mod完全免费\n零协会是唯一授权发布对象\n警告：使用模组会有微乎其微的封号概率(如果他们检测这个的话)\n你已经被警告过了";
-            var textMeshProUGUI2 = userAgreementUI._userAgreementContent.toggle_userAgreements.GetComponentInChildren<TextMeshProUGUI>(true);
-            textMeshProUGUI2.GetComponent<UITextDataLoader>().enabled = false;
-            textMeshProUGUI2.font = fontAsset;
-            textMeshProUGUI2.fontMaterial = fontAsset.material;
-            textMeshProUGUI2.text = "点击进行身份认证";
-            userAgreementUI._userAgreementContent.transform.localPosition = new Vector3(510f, 77f);
-            userAgreementUI._userAgreementContent.toggle_userAgreements.gameObject.SetActive(true);
-            userAgreementUI._userAgreementContent._agreementJP.gameObject.SetActive(true);
-            userAgreementUI._userAgreementContent.img_titleBg.gameObject.SetActive(false);
-            float preferredWidth = userAgreementUI._userAgreementContent.tmp_title.preferredWidth;
-            Vector2 sizeDelta = userAgreementUI._userAgreementContent.img_titleBg.rectTransform.sizeDelta;
-            sizeDelta.x = preferredWidth + 60f;
-            userAgreementUI._userAgreementContent.img_titleBg.rectTransform.sizeDelta = sizeDelta;
-            userAgreementUI._userAgreementContent._userAgreementsScrollbar.value = 1f;
-            userAgreementUI._userAgreementContent._userAgreementsScrollbar.size = 0.3f;
         }
-        
+
+        public static void InitLocalizes(DirectoryInfo directory)
+        {
+            foreach (FileInfo fileInfo in directory.GetFiles())
+            {
+                var value = File.ReadAllText(fileInfo.FullName);
+                string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(fileInfo.FullName).Remove(0, 3);
+                Localizes[fileNameWithoutExtension] = value;
+            }
+            foreach (DirectoryInfo directoryInfo in directory.GetDirectories())
+            {
+                InitLocalizes(directoryInfo);
+            }
+
+        }
+        public static Dictionary<string, string> Localizes = new();
     }
 }
