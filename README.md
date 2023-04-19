@@ -1,6 +1,6 @@
-# 安装[![](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/total.svg?label=下载)](../../releases)
+# 安装[![](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/total.svg?label=下载&style=social)](../../releases)
 
-[![](https://img.shields.io/github/release/LocalizeLimbusCompany/LocalizeLimbusCompany.svg?label=最新版)![](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/latest/total.svg?label=下载)](../../releases/latest)
+[![](https://img.shields.io/github/release/LocalizeLimbusCompany/LocalizeLimbusCompany.svg?label=最新版&style=social)![](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/latest/total.svg?label=下载&style=social)](../../releases/latest)
 ### 0. 安装[.NET 6.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/sdk-6.0.406-windows-x64-installer)
 ### 1. 安装模组框架
    - 从[MelonLoader](https://github.com/LavaGang/MelonLoader)下载v0.6.1或更高版本的模组框架
@@ -8,7 +8,7 @@
    - 在Steam主界面右键游戏点击管理 浏览本地文件夹 将压缩包内所有东西**不 要 新 建 文 件 夹**的解压到上述弹出的文件夹中
 ### 2. 安装字体文件
 
-   - 从[LLC_ChineseFontAsset](../../../LLC_ChineseFontAsset)下载字体文件 后解压到上述文件夹中
+   - 从[LLC_ChineseFontAsset![](https://img.shields.io/github/release/LocalizeLimbusCompany/LLC_ChineseFontAsset.svg?label=最新版)](../../../LLC_ChineseFontAsset)下载字体文件 后解压到上述文件夹中
 ### 3. 安装汉化
 
    - 从[最新版](../../releases)下载全量包 后解压到上述文件夹中
