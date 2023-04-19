@@ -18,23 +18,9 @@
    - [最新开发版](../../actions/workflows/dev.yml) 总是最新的
 	
    - [最新预览版](../../actions/workflows/beta.yml) 每周三自动更新
-## 我是谁?我在哪?我要干什么?
-
-   - [适用于看不懂上面的安装&更新程序](../../../LLC_MOD_Installer/releases)
-# to do list
-- 体验优化：
-    - UI响应优化，修复弱智的等半秒设计 0%
-    - 主线界面优化，主线自动展开并跟随最新进度 0%
-    - 增加关卡收藏/上一次作战功能 0%
-    - 在战斗中始终显示"快速分配剩余骰子"/记忆"敌方攻击目标"按钮的状态 0%
-    - 更多热键 0%
-    - 事件自动跳过 0%
-    - 下载/载入目录迁移 0%
-
-- 增加错误弹窗，用于更好的Debug 10% by Bright
-- 修复字体大小不正常问题 20% by Bright 10% by 茜
+   
+   - 通常情况下模组将在游戏更新后2~3天内更新
 
 # 相关项目
 - [LLC_ChineseFontAsset](../../../LLC_ChineseFontAsset)中文字体
-- [LLC_MOD_Installer](../../../LLC_MOD_Installer)模组傻瓜安装更新程序
 - [LLC_GAME_V1.1.0_Raw](../../../LLC_GAME_V1.1.0_Raw)边狱公司游戏未加密版本的存档
