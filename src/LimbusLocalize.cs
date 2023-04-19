@@ -1,4 +1,4 @@
-﻿using HarmonyLib;
+using HarmonyLib;
 using Il2Cpp;
 using Il2CppAddressable;
 using Il2CppSimpleJSON;
@@ -328,6 +328,6 @@ namespace LimbusLocalize
             }
 
         }
-        public static Dictionary<string, string> Localizes = new();
+        public static System.Collections.Generic.Dictionary<string, string> Localizes = new();
     }
 }
