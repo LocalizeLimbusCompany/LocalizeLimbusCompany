@@ -46,7 +46,6 @@ namespace LimbusLocalize
                 ModManager.Setup();
                 ModManager.InitLocalizes(new DirectoryInfo(modpath + "/Localize/CN"));
                 ReadmeManager.InitReadmeList();
-                UpdateChecker.StartCheckUpdates();
                 HarmonyLib.Harmony harmony = new("LimbusLocalizeMod");
                 harmony.PatchAll(typeof(ReadmeManager));
                 harmony.PatchAll(typeof(LimbusLocalizeMod));
@@ -317,11 +316,6 @@ namespace LimbusLocalize
             __instance.tmp_loginAccount.font = fontAsset;
             __instance.tmp_loginAccount.fontMaterial = fontAsset.material;
             __instance.tmp_loginAccount.text = "LimbusLocalizeMod v." + VERSION;
-            if (UpdateChecker.UpdateCall != null)
-            {
-                ModManager.OpenGlobalPopup("模组更新已下载,点击确认将打开下载路径并退出游戏", default, default, "确认", UpdateChecker.UpdateCall);
-                return;
-            }
             if (File.Exists(modpath + "/.hide/checkisfirstuse"))
                 if (File.ReadAllText(modpath + "/.hide/checkisfirstuse") == SteamID + " true")
                     return;

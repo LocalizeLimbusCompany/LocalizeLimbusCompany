@@ -106,7 +106,6 @@ namespace LimbusLocalize
         [HarmonyPrefix]
         public static bool InitNoticeList(UserLocalNoticeRedDotModel __instance, List<int> severNoticeList)
         {
-            UpdateChecker.CheckReadmeUpdate();
             for (int i = 0; i < __instance.GetDataList().Count; i++)
             {
                 Func<int, bool> func = x =>
