@@ -2700,6 +2700,9 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] 沈潜 1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] ダメージ量の40%分、混乱区間を前進"
                 }
               ]
             },
@@ -2707,6 +2710,9 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] 沈潜 1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] ダメージ量の30%分、混乱区間を前進"
                 }
               ]
             },
@@ -2714,6 +2720,9 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] 沈潜 1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] ダメージ量の20%分、混乱区間を前進"
                 }
               ]
             },
@@ -2721,6 +2730,9 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] 沈潜 1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] ダメージ量の10%分、混乱区間を前進"
                 }
               ]
             }
@@ -5392,6 +5404,294 @@
     },
     {
       "id": 1060404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ガード",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "りょ・し",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 出血 回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 渇き 1を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "りょ・し",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 渇き 1を得る"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "しょ・が",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに束縛 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 出血 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象に出血 または麻痺 があれば次のターンに体力回復減少 1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "しょ・が",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに束縛 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 出血 2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象に出血 または麻痺 があれば次のターンに体力回復減少 3を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "何でも料理できるさ",
+          "desc": "対象の失った体力の5%分、ダメージ量が増加(最大20)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 最終コインのダメージ量が10%増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 最終コインのダメージ量が5%増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 最終コインのダメージ量が5%増加"
+                }
+              ]
+            },
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "しん・ざい発見",
+          "desc": "[OnSucceedEvade] 次のターンにクイック 1を得る",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "鮮度維持",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 麻痺 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 出血 1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "鮮度維持",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 麻痺 1を付与。対象に出血 がある場合、次のターンに麻痺 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 1を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "新鮮な材料か？",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 回数が1増加、次のターンに束縛 1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "新鮮な材料か？",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 回数が2増加、次のターンに束縛 2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "材料解体",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 麻痺 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 麻痺 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の出血に比例して体力を回復(最大20%)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120404,
       "levelList": [
         {
           "level": 1,

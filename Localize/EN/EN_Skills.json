@@ -2700,6 +2700,9 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Raise Stagger Threshold by 40% of damage dealt"
                 }
               ]
             },
@@ -2707,6 +2710,9 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Raise Stagger Threshold by 30% of damage dealt"
                 }
               ]
             },
@@ -2714,6 +2720,9 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Raise Stagger Threshold by 20% of damage dealt"
                 }
               ]
             },
@@ -2721,6 +2730,9 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Raise Stagger Threshold by 10% of damage dealt"
                 }
               ]
             }
@@ -5392,6 +5404,294 @@
     },
     {
       "id": 1060404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Guard",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "P.C.",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict +1 Bleed Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 1 Appetite"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "P.C.",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 1 Appetite"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "I.H.",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Bind next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If target has Bleed or Paralyze, inflict 1 HP Healing Down next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "I.H.",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Bind next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If target has Bleed or Paralyze, inflict 3 HP Healing Down next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "I Can Cook Anything",
+          "desc": "Boost damage by 5% of target’s missing HP (Max 20)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] The final Coin deals +10% damage"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] The final Coin deals +5% damage"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] The final Coin deals +5% damage"
+                }
+              ]
+            },
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "F.I. in Sight",
+          "desc": "[OnSucceedEvade] Gain 1 Haste next turn",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Keep It Fresh",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Paralyze"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bleed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Keep It Fresh",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Paralyze; if target has Bleed, inflict 1 Paralyze next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Bleed"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "You Fresh Enough?",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count; Inflict 1 Bind next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "You Fresh Enough?",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 Bleed Count; Inflict 2 Bind next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Butcher Viand",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Paralyze"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Paralyze"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Heal HP based on target’s Bleed (Max 20%)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120404,
       "levelList": [
         {
           "level": 1,
