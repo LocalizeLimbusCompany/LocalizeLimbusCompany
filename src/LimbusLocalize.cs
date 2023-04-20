@@ -166,7 +166,7 @@ namespace LimbusLocalize
             tm._railwayDungeonText.Init(romoteLocalizeFileList.RailwayDungeon);
             tm._railwayDungeonNodeText.Init(romoteLocalizeFileList.RailwayDungeonNodeInfo);
             tm._railwayDungeonStationName.Init(romoteLocalizeFileList.RailwayDungeonStationName);
-
+            tm._dungeonName.Init(romoteLocalizeFileList.DungeonName);
             tm._abnormalityEventCharDlg.AbEventCharDlgRootInit(romoteLocalizeFileList.abnormalityCharDlgFilePath);
 
             tm._personalityVoiceText._voiceDictionary.JsonDataListInit(romoteLocalizeFileList.PersonalityVoice);
@@ -235,7 +235,7 @@ namespace LimbusLocalize
         }
         [HarmonyPatch(typeof(StoryData), nameof(StoryData.GetScenario))]
         [HarmonyPrefix]
-        private static bool GetScenario(StoryData __instance, string scenarioID, LOCALIZE_LANGUAGE lang, ref Scenario __result)
+        private static bool GetScenario(StoryData __instance, string scenarioID,ref LOCALIZE_LANGUAGE lang, ref Scenario __result)
         {
             if (Localizes.TryGetValue(scenarioID, out string file))
             {
@@ -274,6 +274,7 @@ namespace LimbusLocalize
             else
             {
                 LogError("Error!Can'n Find CN Story File,Use Raw Story");
+                lang = LOCALIZE_LANGUAGE.EN;
                 return true;
             }
         }
@@ -293,7 +294,6 @@ namespace LimbusLocalize
                 __result = scenarioAssetData.krname;
             return false;
         }
-        #endregion
 
         [HarmonyPatch(typeof(PersonalityVoiceJsonDataList), nameof(PersonalityVoiceJsonDataList.GetDataList))]
         [HarmonyPrefix]
@@ -328,6 +328,7 @@ namespace LimbusLocalize
             }
 
         }
+        #endregion
         public static System.Collections.Generic.Dictionary<string, string> Localizes = new();
     }
 }
