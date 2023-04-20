@@ -11,8 +11,7 @@ namespace LimbusLocalize
         {
             foreach (string text in jsonFilePathList)
             {
-                var file = LimbusLocalizeMod.Localizes[text];
-                if (string.IsNullOrEmpty(file)) { continue; }
+                if (!LimbusLocalizeMod.Localizes.TryGetValue(text,out var file)) { continue; }
                 var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(file);
                 foreach (T t in localizeTextData.DataList)
                 {
@@ -25,8 +24,7 @@ namespace LimbusLocalize
         {
             foreach (string text in jsonFilePathList)
             {
-                var file = LimbusLocalizeMod.Localizes[text];
-                if (string.IsNullOrEmpty(file)) { continue; }
+                if (!LimbusLocalizeMod.Localizes.TryGetValue(text,out var file)) { continue; }
                 var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_AbnormalityEventCharDlg>>(file);
                 foreach (var t in localizeTextData.DataList)
                 {
@@ -52,8 +50,7 @@ namespace LimbusLocalize
         {
             foreach (string text in jsonFilePathList)
             {
-                var file = LimbusLocalizeMod.Localizes[text];
-                if (string.IsNullOrEmpty(file)) { continue; }
+                if (!LimbusLocalizeMod.Localizes.TryGetValue(text,out var file)) { continue; }
                 var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(file);
                 jsonDataList[text.Split('_')[^1]] = localizeTextData;
             }
