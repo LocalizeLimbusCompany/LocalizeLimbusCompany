@@ -14,7 +14,7 @@ using System.Reflection;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
-[assembly: MelonInfo(typeof(LimbusLocalizeMod), LimbusLocalizeMod.NAME, LimbusLocalizeMod.VERSION, LimbusLocalizeMod.AUTHOR)]
+[assembly: MelonInfo(typeof(LimbusLocalizeMod), LimbusLocalizeMod.NAME, LimbusLocalizeMod.VERSION, LimbusLocalizeMod.AUTHOR, "https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany")]
 namespace LimbusLocalize
 {
     public class LimbusLocalizeMod : MelonMod
@@ -23,7 +23,7 @@ namespace LimbusLocalize
         public static string gamepath;
         public static TMP_FontAsset tmpchinesefont;
         public const string NAME = "LimbusLocalizeMod";
-        public const string VERSION = "0.1.9.9";
+        public const string VERSION = "0.2.0";
         public const string AUTHOR = "Bright";
         public static Action<string> LogError { get; set; }
         public static Action<string> LogWarning { get; set; }
@@ -38,6 +38,7 @@ namespace LimbusLocalize
                 InitLocalizes(new DirectoryInfo(modpath + "/Localize/CN"));
                 HarmonyLib.Harmony harmony = new("LimbusLocalizeMod");
                 harmony.PatchAll(typeof(LimbusLocalizeMod));
+                harmony.PatchAll(typeof(SafeLLCManager));
                 if (File.Exists(modpath + "/tmpchinesefont"))
                     tmpchinesefont = AssetBundle.LoadFromFile(modpath + "/tmpchinesefont").LoadAsset("assets/sourcehansanssc-heavy sdf.asset").Cast<TMP_FontAsset>();
                 else
