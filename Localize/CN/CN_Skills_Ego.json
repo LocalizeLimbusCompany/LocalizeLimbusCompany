@@ -2153,6 +2153,152 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2030411,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Lifetime Stew",
+          "abName": "Basilisoup",
+          "desc": "[BeforeAttack] Boost damage based on current Lust resources (Up to 25%)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Burn Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Lifetime Stew",
+          "abName": "Basilisoup",
+          "desc": "[BeforeAttack] Boost damage based on current Lust resources (Up to 50%)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +3 Burn Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2030421,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Lifetime Stew",
+          "abName": "Basilisoup",
+          "desc": "[CantIdentify]\nTargets the unit with the most HP\n\n[BeforeAttack] Boost damage based on current Lust resources (Up to 25%)\nThen spend Lust resources by (Lust Reson.); further boost damage by 5% per resource spent",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 Burn Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Lifetime Stew",
+          "abName": "Basilisoup",
+          "desc": "[CantIdentify]\nTargets the unit with the most HP\n\n[BeforeAttack] Boost damage based on current Lust resources (Up to 50%)\nThen spend Lust resources by (Lust Reson.); further boost damage by 10% per resource spent",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +4 Burn Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2100311,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Lifetime Stew",
+          "abName": "Basilisoup",
+          "desc": "[CantIdentify][Wide] Targets 3 slots\nTargets the unit with the least HP\nIf the target is an ally, this deals 0 damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] If the target is an ally, heal them for 5% of user’s Max HP"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict 7 Burn; if target is an ally, give 2 Haste next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Lifetime Stew",
+          "abName": "Basilisoup",
+          "desc": "[CantIdentify][Wide] Targets 3 slots\nTargets the unit with the least HP\nIf the target is an ally, this deals 0 damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] If the target is an ally, heal them for 10% of user’s Max HP"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict 7 Burn; if target is an ally, give 2 Haste and 1 <sprite name=\"GainSinStockAdder\"><color=#f8c200><u><link=\"GainSinStockAdder\">E.G.O Resource Amp</color></link></u> next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2100321,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Lifetime Stew",
+          "abName": "Basilisoup",
+          "desc": "[CantIdentify][Wide] Targets 3 slots\nTargets the unit with the least HP\n\n[BeforeAttack] Spend 3 random E.G.O resources to boost damage by 10%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 Burn Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Lifetime Stew",
+          "abName": "Basilisoup",
+          "desc": "[CantIdentify][Wide] Targets 3 slots\nTargets the unit with the least HP\n\n[BeforeAttack] Spend 3 random E.G.O resources to boost damage by 20%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 Burn Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
