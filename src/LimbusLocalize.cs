@@ -236,22 +236,20 @@ namespace LimbusLocalize
         }
         [HarmonyPatch(typeof(StoryData), nameof(StoryData.GetScenario))]
         [HarmonyPrefix]
-        private static bool GetScenario(StoryData __instance, string scenarioID,ref LOCALIZE_LANGUAGE lang, ref Scenario __result)
+        private static bool GetScenario(StoryData __instance, string scenarioID, ref LOCALIZE_LANGUAGE lang, ref Scenario __result)
         {
-            if (Localizes.TryGetValue(scenarioID, out string file))
+            if (Localizes.TryGetValue(scenarioID, out string text))
             {
                 TextAsset textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
                 if (textAsset == null)
-                {
                     textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", "SDUMMY", null, null).Item1;
-                }
-                string text4 = textAsset.ToString();
+                string text2 = textAsset.ToString();
                 Scenario scenario = new()
                 {
                     ID = scenarioID
                 };
-                JSONArray jsonarray = JSONNode.Parse(file)[0].AsArray;
-                JSONArray jsonarray2 = JSONNode.Parse(text4)[0].AsArray;
+                JSONArray jsonarray = JSONNode.Parse(text)[0].AsArray;
+                JSONArray jsonarray2 = JSONNode.Parse(text2)[0].AsArray;
                 for (int i = 0; i < jsonarray.Count; i++)
                 {
                     int num = jsonarray[i][0].AsInt;
@@ -259,13 +257,9 @@ namespace LimbusLocalize
                     {
                         JSONNode jsonnode;
                         if (jsonarray2[i][0].AsInt == num)
-                        {
                             jsonnode = jsonarray2[i];
-                        }
                         else
-                        {
                             jsonnode = new JSONObject();
-                        }
                         scenario.Scenarios.Add(new Dialog(num, jsonarray[i], jsonnode));
                     }
                 }
@@ -274,7 +268,7 @@ namespace LimbusLocalize
             }
             else
             {
-                LogError("Error!Can'n Find CN Story File,Use Raw Story");
+                LogError("Error!Can'n Find CN Story File,Use Raw EN Story");
                 lang = LOCALIZE_LANGUAGE.EN;
                 return true;
             }
@@ -284,7 +278,7 @@ namespace LimbusLocalize
         private static bool GetTellerTitle(StoryData __instance, string name, LOCALIZE_LANGUAGE lang, ref string __result)
         {
             if (__instance._modelAssetMap.TryGetValueEX(name, out var scenarioAssetData))
-                __result = scenarioAssetData.nickName;
+                __result = scenarioAssetData.nickName ?? string.Empty;
             return false;
         }
         [HarmonyPatch(typeof(StoryData), nameof(StoryData.GetTellerName))]
@@ -292,7 +286,7 @@ namespace LimbusLocalize
         private static bool GetTellerName(StoryData __instance, string name, LOCALIZE_LANGUAGE lang, ref string __result)
         {
             if (__instance._modelAssetMap.TryGetValueEX(name, out var scenarioAssetData))
-                __result = scenarioAssetData.krname;
+                __result = scenarioAssetData.krname ?? string.Empty;
             return false;
         }
 
@@ -301,10 +295,7 @@ namespace LimbusLocalize
         public static bool PersonalityVoiceGetDataList(PersonalityVoiceJsonDataList __instance, int personalityId, ref LocalizeTextDataRoot<TextData_PersonalityVoice> __result)
         {
             if (!__instance._voiceDictionary.TryGetValueEX(personalityId.ToString(), out LocalizeTextDataRoot<TextData_PersonalityVoice> localizeTextDataRoot))
-            {
-                Debug.LogError("PersonalityVoice no id:" + personalityId.ToString());
                 localizeTextDataRoot = new LocalizeTextDataRoot<TextData_PersonalityVoice>() { dataList = new List<TextData_PersonalityVoice>() };
-            }
             __result = localizeTextDataRoot;
             return false;
         }
@@ -324,9 +315,7 @@ namespace LimbusLocalize
                 Localizes[fileNameWithoutExtension] = value;
             }
             foreach (DirectoryInfo directoryInfo in directory.GetDirectories())
-            {
                 InitLocalizes(directoryInfo);
-            }
 
         }
         #endregion
