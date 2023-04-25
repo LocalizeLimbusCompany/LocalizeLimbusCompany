@@ -407,7 +407,7 @@
         {
           "level": 1,
           "name": "桑丘之血",
-          "abName": "唐吉诃德",
+          "abName": "堂吉诃德",
           "desc": "",
           "coinlist": [
             {
@@ -422,7 +422,7 @@
         {
           "level": 3,
           "name": "桑丘之血",
-          "abName": "唐吉诃德",
+          "abName": "堂吉诃德",
           "desc": "",
           "coinlist": [
             {
@@ -1209,7 +1209,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加(暴怒共鸣数÷2)级烧伤 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加(暴怒共鸣数/2)级烧伤 强度"
                 },
                 {
                   "desc": "[OnSucceedAttackHead] 使3名随机敌人增加3级烧伤 强度"
@@ -2159,14 +2159,14 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Lifetime Stew",
-          "abName": "Basilisoup",
-          "desc": "[BeforeAttack] Boost damage based on current Lust resources (Up to 25%)",
+          "name": "一生炖菜",
+          "abName": "鸡蛇汤罐",
+          "desc": "[BeforeAttack] 根据当前色欲资源数增加伤害（最大叠加至25%）",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Burn Count"
+                  "desc": "[OnSucceedAttack] 施加1层烧伤 "
                 }
               ]
             }
@@ -2174,14 +2174,14 @@
         },
         {
           "level": 3,
-          "name": "Lifetime Stew",
-          "abName": "Basilisoup",
-          "desc": "[BeforeAttack] Boost damage based on current Lust resources (Up to 50%)",
+          "name": "生而为饪",
+          "abName": "鸡蛇汤罐",
+          "desc": "[BeforeAttack] 根据当前色欲资源数增加伤害（最大叠加至50%）",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +3 Burn Count"
+                  "desc": "[OnSucceedAttack] 施加3层烧伤 "
                 }
               ]
             }
@@ -2194,14 +2194,14 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Lifetime Stew",
-          "abName": "Basilisoup",
-          "desc": "[CantIdentify]\nTargets the unit with the most HP\n\n[BeforeAttack] Boost damage based on current Lust resources (Up to 25%)\nThen spend Lust resources by (Lust Reson.); further boost damage by 5% per resource spent",
+          "name": "一生炖菜",
+          "abName": "鸡蛇汤罐",
+          "desc": "[CantIdentify]\n指定场上体力值最高的角色\n\n[BeforeAttack] 根据当前色欲资源数增加伤害（最大叠加至25%）\n随后消耗（色欲共鸣数）的色欲资源; 每消耗一个资源增加5%伤害",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +2 Burn Count"
+                  "desc": "[OnSucceedAttack] 施加2层烧伤  "
                 }
               ]
             }
@@ -2209,14 +2209,14 @@
         },
         {
           "level": 3,
-          "name": "Lifetime Stew",
-          "abName": "Basilisoup",
-          "desc": "[CantIdentify]\nTargets the unit with the most HP\n\n[BeforeAttack] Boost damage based on current Lust resources (Up to 50%)\nThen spend Lust resources by (Lust Reson.); further boost damage by 10% per resource spent",
+          "name": "生而为饪",
+          "abName": "鸡蛇汤罐",
+          "desc": "[CantIdentify]\n指定场上体力值最高的角色\n\n[BeforeAttack] 根据当前色欲资源数增加伤害（最大叠加至50%）\n随后消耗（色欲共鸣数）的色欲资源; 每消耗一个资源增加10%伤害",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +4 Burn Count"
+                  "desc": "[OnSucceedAttack] 施加4层烧伤 "
                 }
               ]
             }
@@ -2229,17 +2229,17 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Lifetime Stew",
-          "abName": "Basilisoup",
-          "desc": "[CantIdentify][Wide] Targets 3 slots\nTargets the unit with the least HP\nIf the target is an ally, this deals 0 damage",
+          "name": "一生炖菜",
+          "abName": "鸡蛇汤罐",
+          "desc": "[CantIdentify][Wide] 指定3个行动槽\n指定场上体力值最低的角色\n若指定友方单位，则不会造成伤害",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] If the target is an ally, heal them for 5% of user’s Max HP"
+                  "desc": "[OnSucceedAttackHead] 若指定友方单位，为其恢复体力值上限5%的体力"
                 },
                 {
-                  "desc": "[OnSucceedAttackTail] Inflict 7 Burn; if target is an ally, give 2 Haste next turn"
+                  "desc": "[OnSucceedAttackTail] 增加7级烧伤 强度; 若指定友方单位，下回合使其获得2层迅捷 "
                 }
               ]
             }
@@ -2247,17 +2247,17 @@
         },
         {
           "level": 3,
-          "name": "Lifetime Stew",
-          "abName": "Basilisoup",
-          "desc": "[CantIdentify][Wide] Targets 3 slots\nTargets the unit with the least HP\nIf the target is an ally, this deals 0 damage",
+          "name": "生而为饪",
+          "abName": "鸡蛇汤罐",
+          "desc": "[CantIdentify][Wide] 指定3个行动槽\n指定场上体力值最低的角色\n若指定友方单位，则不会造成伤害",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] If the target is an ally, heal them for 10% of user’s Max HP"
+                  "desc": "[OnSucceedAttackHead] 若指定友方单位，为其恢复体力值上限10%的体力"
                 },
                 {
-                  "desc": "[OnSucceedAttackTail] Inflict 7 Burn; if target is an ally, give 2 Haste and 1 <sprite name=\"GainSinStockAdder\"><color=#f8c200><u><link=\"GainSinStockAdder\">E.G.O Resource Amp</color></link></u> next turn"
+                  "desc": "[OnSucceedAttackTail] 增加7级烧伤 强度;若指定友方单位，下回合使其获得2层迅捷和1层<sprite name=\"GainSinStockAdder\"><color=#f8c200><u><link=\"GainSinStockAdder\">罪孽碎片获取量+</color></link></u>"
                 }
               ]
             }
@@ -2270,14 +2270,14 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Lifetime Stew",
-          "abName": "Basilisoup",
-          "desc": "[CantIdentify][Wide] Targets 3 slots\nTargets the unit with the least HP\n\n[BeforeAttack] Spend 3 random E.G.O resources to boost damage by 10%",
+          "name": "一生炖菜",
+          "abName": "鸡蛇汤罐",
+          "desc": "[CantIdentify][Wide] 指定3个行动槽\n指定场上体力值最低的角色\n\n[BeforeAttack] 随机消耗3个罪孽碎片，增加10%伤害",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +2 Burn Count"
+                  "desc": "[OnSucceedAttack] 施加2层烧伤 "
                 }
               ]
             }
@@ -2285,14 +2285,14 @@
         },
         {
           "level": 3,
-          "name": "Lifetime Stew",
-          "abName": "Basilisoup",
-          "desc": "[CantIdentify][Wide] Targets 3 slots\nTargets the unit with the least HP\n\n[BeforeAttack] Spend 3 random E.G.O resources to boost damage by 20%",
+          "name": "生而为饪",
+          "abName": "鸡蛇汤罐",
+          "desc": "[CantIdentify][Wide] 指定3个行动槽\n指定场上体力值最低的角色\n\n[BeforeAttack] 随机消耗3个罪孽碎片，增加20%伤害",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +2 Burn Count"
+                  "desc": "[OnSucceedAttack] 施加2层烧伤 "
                 }
               ]
             }
