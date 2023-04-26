@@ -5,13 +5,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Crying Slap",
-          "desc": "[WhenUse] Target loses 15 SP",
+          "name": "哭声震天",
+          "desc": "[WhenUse] 使目标失去15点理智值",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 5 Sinking and +5 Sinking Count"
+                  "desc": "[OnSucceedAttackHead] 对目标施加5层沉沦 ，沉沦强度+5"
                 }
               ]
             }
@@ -24,16 +24,16 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Gloomy Slap",
-          "desc": "[StartDuel] Target heals 5 SP",
+          "name": "忧郁痛击",
+          "desc": "[StartDuel] 使目标获得5点理智值",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[AlwaysUse] Deal SP damage by half of damage displayed"
+                  "desc": "[AlwaysUse] 造成显示伤害一半的理智值伤害"
                 },
                 {
-                  "desc": "[AlwaysUse] No HP damage is dealt"
+                  "desc": "[AlwaysUse] 不造成体力值伤害"
                 }
               ]
             }
@@ -46,20 +46,20 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Melty Eyeball",
-          "desc": "[WhenUse] Target loses 5 SP\nIf target’s SP is below 0, +10% Damage",
+          "name": "融化之眼",
+          "desc": "[WhenUse] 使目标损失5点理智值，若目标理智值低于\n0，造成伤害+10%",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Deal bonus damage by target’s Sinking"
+                  "desc": "[OnSucceedAttackHead] 依据目标的沉沦层数造成额外伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Deal bonus SP damage by target’s Sinking"
+                  "desc": "[OnSucceedAttackHead] 依据目标沉沦层数造成额外理智值伤害"
                 }
               ]
             }
@@ -72,27 +72,27 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Gushing Gloom",
-          "desc": "[WhenUse] Target loses 5 SP\nTarget the enemy with the most Sinking",
+          "name": "喷涌而出的忧郁",
+          "desc": "[WhenUse] 使目标损失5点理智值，\n指定场上沉沦 强度最高的角色",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +3 Sinking Count"
+                  "desc": "[OnSucceedAttack] 对目标施加3层沉沦 "
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Deal bonus damage by target’s Sinking"
+                  "desc": "[OnSucceedAttackHead] 依据目标沉沦 强度造成额外伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Deal bonus SP damage by target’s Sinking"
+                  "desc": "[OnSucceedAttackHead] 依据目标沉沦 强度造成额外理智值伤害"
                 }
               ]
             }
@@ -105,13 +105,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Eyeball Weight",
-          "desc": "[Wide] Targets 3 slots\n[DefeatDuel] Cancel all skills\n[DefeatDuel] Gain 3 Fragile\nIf the target is below 0 SP, +10% damage",
+          "name": "眼球的重量",
+          "desc": "[Wide] 指定3个行动槽\n[DefeatDuel] 摧毁自身的所有技能\n[DefeatDuel] 对自身施加3层易损 \n若目标理智值低于0，造成伤害+10%",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Double target’s Sinking and its Count"
+                  "desc": "[OnSucceedAttackHead] 使目标的沉沦 强度与层数变为2倍"
                 }
               ]
             }
@@ -124,13 +124,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Melted Eyeball",
-          "desc": "[WhenUse] Target loses 5 SP\nIf target’s SP is below 0, +10% Damage",
+          "name": "融化的眼球",
+          "desc": "[WhenUse] 使目标损失5点理智值\n若目标理智值低于0，造成伤害+10%",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Deal bonus SP damage by target’s Sinking"
+                  "desc": "[OnSucceedAttackHead] 依据目标沉沦层数造成额外理智值伤害"
                 }
               ]
             }
@@ -143,13 +143,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Melted Eyeball",
-          "desc": "[WhenUse] Target loses 5 SP\nIf target’s SP is below 0, +10% Damage",
+          "name": "融化之眼",
+          "desc": "[WhenUse] 使目标损失5点理智值\n若目标理智值低于0，造成伤害+10%",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Deal bonus damage by target’s Sinking"
+                  "desc": "[OnSucceedAttackHead] 依据目标沉沦 强度造成额外伤害"
                 }
               ]
             }
@@ -162,8 +162,8 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Croohoo",
-          "desc": "[StartBattle] Gain 2 Protection",
+          "name": "呱呱",
+          "desc": "[StartBattle] 使自身获得2层守护 ",
           "coinlist": []
         }
       ]
@@ -173,8 +173,8 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Booting Town Tour",
-          "desc": "[WhenUse] Gain +4 Charge Count",
+          "name": "小镇观光准备",
+          "desc": "[WhenUse] 使自身获得4层充能 ",
           "coinlist": [
             {}
           ]
@@ -186,14 +186,14 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Welcome to the Tour",
+          "name": "欢迎光临",
           "desc": "",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Plus Coin Drop next turn"
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层加算硬币弱化 "
                 }
               ]
             }
@@ -206,13 +206,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Please Cooperate!",
+          "name": "请您配合！",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Paralyze next turn"
+                  "desc": "[OnSucceedAttack] 下回合对目标施加3层麻痹 "
                 }
               ]
             }
@@ -225,13 +225,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Processing Transfer Reg",
-          "desc": "[WhenUse] Spend all Charge",
+          "name": "处理迁入申报",
+          "desc": "[WhenUse] 消耗所有充能 ",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Put target in Captivity"
+                  "desc": "[OnSucceedAttack] 对目标施加禁锢 "
                 }
               ]
             }
@@ -244,13 +244,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Pleased to Meet You, Dear Neighbor",
-          "desc": "Attacks target in Captivity; cannot be clashed with",
+          "name": "请多多关照，邻居先生",
+          "desc": "指定被禁锢的目标; 无法与该技能拼点",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 10 Burn"
+                  "desc": "[OnSucceedAttack] 使目标增加5级烧伤 强度"
                 }
               ]
             }
@@ -263,20 +263,20 @@
       "levelList": [
         {
           "level": 1,
-          "name": "System Error Detected",
-          "desc": "Become Staggered next turn",
+          "name": "已发现系统异常",
+          "desc": "下回合使自身陷入混乱",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Spend 2 Charge to inflict 5 Burn"
+                  "desc": "[OnSucceedAttack] 消耗2层充能 并使目标增加5级烧伤 强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Spend 2 Charge to inflict 5 Burn"
+                  "desc": "[OnSucceedAttack] 消耗2层充能 并使目标增加5级烧伤 强度"
                 }
               ]
             }
@@ -289,8 +289,8 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Processing Computation",
-          "desc": "[WhenUse] Gain 5 Protection",
+          "name": "正在进行计算处理",
+          "desc": "[WhenUse] 使自身获得5层充能 ",
           "coinlist": []
         }
       ]
@@ -300,7 +300,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Rebooting…",
+          "name": "正在重新启动……",
           "desc": "",
           "coinlist": []
         }
@@ -311,13 +311,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Processing Transfer Reg",
-          "desc": "Unclashable; Cannot be redirected; Targets unit with most HP\n[WhenUse] Spend all Charge",
+          "name": "处理新迁入申报",
+          "desc": "无法拼点; 无法改变拼点目标; 指定体力最高的目标\n[WhenUse] 消耗所有充能",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Put target in Captivity"
+                  "desc": "[OnSucceedAttack] 对目标施加禁锢 "
                 }
               ]
             }
@@ -330,13 +330,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Do Not Enter",
+          "name": "禁止入内",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级破裂 强度"
                 }
               ]
             }
@@ -349,20 +349,20 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Subdue",
+          "name": "制伏",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 3 Rupture"
+                  "desc": "[OnSucceedAttackHead] 使目标增加3级破裂 强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +3 Rupture Count"
+                  "desc": "[OnSucceedAttack] 对目标施加3层破裂 "
                 }
               ]
             }
@@ -376,19 +376,19 @@
         {
           "level": 1,
           "name": "Forbid Entry",
-          "desc": "[DefeatDuel] Heal 10 HP",
+          "desc": "[DefeatDuel] 使自身恢复10点体力",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +2 Rupture Count"
+                  "desc": "[OnSucceedAttack] 对目标施加2层破裂 "
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Deal bonus damage by target’s Rupture times its Count\nRemove all Rupture from target"
+                  "desc": "[OnSucceedAttackHead] 对目标造成(破裂 强度x破裂 层数)点伤害\n随后解除目标的破裂效果"
                 }
               ]
             }
@@ -407,7 +407,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 3 Rupture"
+                  "desc": "[OnSucceedAttackHead] 使目标增加3级破裂 强度"
                 }
               ]
             }
@@ -427,7 +427,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 3 Rupture"
+                  "desc": "[OnSucceedAttackHead] 使目标增加3级破裂 强度"
                 }
               ]
             }
@@ -441,27 +441,27 @@
         {
           "level": 1,
           "name": "No Trespassing",
-          "desc": "Target the unit with the most health",
+          "desc": "指定体力最多的角色",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "If Coin 1 lands Heads, +10% Damage"
+                  "desc": "若第1个硬币的朝向为正面，则本硬币造成的伤害+10%"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "If Coin 2 lands Heads, +10% Damage"
+                  "desc": "若第1个硬币的朝向为正面，则本硬币造成的伤害+10%"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "If Coins 2 & 3 land Heads, +30% Damage"
+                  "desc": "若第2和第3个硬币的朝向为正面，则本硬币造成的伤害+30%"
                 }
               ]
             }
@@ -474,14 +474,14 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Dāna",
-          "desc": "[WhenUse] Apply 2 Protection to a random other ally",
+          "name": "布施",
+          "desc": "[WhenUse] 使自身以外的1名随机友方获得2层守护 ",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Damage Down next turn"
+                  "desc": "[OnSucceedAttack] 下回合对目标施加3层伤害弱化 "
                 }
               ]
             }
@@ -495,13 +495,13 @@
         {
           "level": 1,
           "name": "Expound Sutras",
-          "desc": "[WhenUse] Apply 2 Attack Power Up to a random other ally",
+          "desc": "[WhenUse] 使自身以外的1名随机友方获得2层强壮 ",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Apply 2 Attack Power Up to a random other ally next turn"
+                  "desc": "[OnSucceedAttack] 下回合使自身以外的1名随机友方获得2层强壮 "
                 }
               ]
             }
@@ -515,7 +515,7 @@
         {
           "level": 1,
           "name": "Mahāsrī",
-          "desc": "[WhenUse] Give 3 Protection next turn",
+          "desc": "[WhenUse] 下回合使自身获得3层守护 ",
           "coinlist": []
         }
       ]
@@ -526,7 +526,7 @@
         {
           "level": 1,
           "name": "Svāhā",
-          "desc": "[WhenUse] Give 3 Damage Up next turn",
+          "desc": "[WhenUse] 下回合使自身获得3层伤害强化 ",
           "coinlist": []
         }
       ]
@@ -537,12 +537,12 @@
         {
           "level": 1,
           "name": "Prajñāpāramitā",
-          "desc": "[CantIdentify] Target the unit with the most Karma\nDeal more damage based on target’s Karma (+2% per Count)\nIf target has no Karma, -50% Damage",
+          "desc": "[CantIdentify] 指定业报 最多的角色\n基于目标的业报 层数来提升本技能的伤害（每层+2%）\n若目标不带有业报 ，则本技能造成的伤害-50%",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] If target has Karma, inflict 50 Karma"
+                  "desc": "[OnSucceedAttack] 若目标带有业报 ，则对其施加50层业报 "
                 }
               ]
             }
@@ -556,12 +556,12 @@
         {
           "level": 1,
           "name": "Dhyāna",
-          "desc": "[WinDuel] Halve negative status effects on this unit",
+          "desc": "[WinDuel] 使自身的负面状态减半",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Attack Power Down next turn"
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层虚弱 "
                 }
               ]
             }
@@ -575,12 +575,12 @@
         {
           "level": 1,
           "name": "Compulsory Offering",
-          "desc": "[DefeatDuel] Apply 20 Karma to a random other ally next turn",
+          "desc": "[DefeatDuel] 对自身以外的1名随机友方施加20层业报 ",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 20 Karma"
+                  "desc": "[OnSucceedAttack] 对目标施加20层业报 "
                 }
               ]
             }
@@ -594,19 +594,19 @@
         {
           "level": 1,
           "name": "Sluggard Waker",
-          "desc": "[DefeatDuel] Apply 20 Karma to a random other ally next turn",
+          "desc": "[DefeatDuel] 对自身以外的1名随机友方施加20层业报 ",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 10 Karma"
+                  "desc": "[OnSucceedAttack] 对目标施加10层业报 "
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 10 Karma"
+                  "desc": "[OnSucceedAttack] 对目标施加10层业报 "
                 }
               ]
             }
@@ -625,14 +625,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Remove 3 E.G.O resources of a random Affinity"
+                  "desc": "[OnSucceedAttack] 移除随机属性的3个罪孽碎片"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Remove 3 E.G.O resources of a random Affinity"
+                  "desc": "[OnSucceedAttack] 移除随机属性的3个罪孽碎片"
                 }
               ]
             }
@@ -651,17 +651,17 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Samsara"
+                  "desc": "[OnSucceedAttack] 对目标施加1层业报轮回 "
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 3 Paralyze next turn"
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加3层麻痹 "
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Inflict 3 Fragile next turn"
+                  "desc": "下回合对目标施加3层易损 "
                 }
               ]
             }
@@ -675,7 +675,7 @@
         {
           "level": 1,
           "name": "Bodhi Svāhā",
-          "desc": "[WhenUse] Gain 10 Damage Up\nTarget Staggered enemies first",
+          "desc": "[WhenUse] 使自身获得10层伤害强化\n优先指定陷入混乱的角色",
           "coinlist": []
         }
       ]
@@ -685,13 +685,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Drive",
+          "name": "穿刺钉刑",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Damage Down next turn"
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层伤害弱化 "
                 }
               ]
             }
@@ -704,14 +704,14 @@
       "levelList": [
         {
           "level": 1,
-          "name": "…Be Cleansed",
+          "name": "……涤净",
           "desc": "",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Bind next turn"
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层束缚 "
                 }
               ]
             }
@@ -724,13 +724,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Inquisitional Retribution",
+          "name": "异端抹杀",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Paralyze next turn"
+                  "desc": "[OnSucceedAttack] 下回合对目标施加3层麻痹 "
                 }
               ]
             }
@@ -743,13 +743,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Rápidamente~",
+          "name": "快点快点~",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Plus Coin Drop next turn"
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层加算硬币弱化 "
                 }
               ]
             }
@@ -762,13 +762,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Pañata Party~!",
+          "name": "皮纳塔派对~！",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Plus Coin Drop next turn"
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层加算硬币弱化 "
                 }
               ]
             },
@@ -777,7 +777,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Fragile next turn"
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层易损 "
                 }
               ]
             }
@@ -796,7 +796,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Paralyze next turn"
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加2层麻痹 "
                 }
               ]
             }
@@ -815,7 +815,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Damage Down next turn"
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层伤害弱化 "
                 }
               ]
             }

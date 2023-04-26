@@ -622,7 +622,7 @@
           "level": 3,
           "name": "终末火柴之光",
           "abName": "焦化少女",
-          "desc": "[CantIdentify]\n随机指定目标\n攻击带有烧伤 的敌人时，使本技能的威力+4\n[EnemyKill] 下回合使自身获得2层强壮 \n[EnemyKillFail] 下回合使自身获得3层强壮 并增加10级烧伤 强度",
+          "desc": "[CantIdentify]\n随机指定目标\n攻击带有烧伤 的敌人时，使本技能的威力+4\n[EnemyKill] 下回合使自身获得3层强壮 \n[EnemyKillFail] 下回合使自身获得3层强壮 并增加10级烧伤 强度",
           "coinlist": [
             {
               "coindescs": [
@@ -713,7 +713,7 @@
           "level": 3,
           "name": "鲁莽一击",
           "abName": "你想挨打吗？很想？",
-          "desc": "[EndSkill] 使自身获得3层守护 \n[EndSkill] 下回合对自身施加1层手术 ",
+          "desc": "[EndSkill] 使自身获得3层守护 \n[EndSkill] 下回合使自身获得1层手术 ",
           "coinlist": [
             {
               "coindescs": [
@@ -748,7 +748,7 @@
           "level": 3,
           "name": "鲁莽一击",
           "abName": "你想挨打吗？很想？",
-          "desc": "[EndSkill] 下回合对自身施加2层手术 ",
+          "desc": "[EndSkill] 下回合使自身获得2层手术 ",
           "coinlist": [
             {
               "coindescs": [
@@ -1715,7 +1715,7 @@
         {
           "level": 1,
           "name": "空即是色",
-          "abName": "无相佛",
+          "abName": "无我入定",
           "desc": "[EndSkill] 使自身恢复12理智值",
           "coinlist": [
             {
@@ -1730,7 +1730,7 @@
         {
           "level": 3,
           "name": "空即是色",
-          "abName": "无相佛",
+          "abName": "无我入定",
           "desc": "[EndSkill] 使自身恢复18理智值\n[EndSkill] 使自身以外的2名随机友方获得1层强壮 ",
           "coinlist": [
             {
@@ -1750,7 +1750,7 @@
         {
           "level": 1,
           "name": "空即是色",
-          "abName": "无相佛",
+          "abName": "无我入定",
           "desc": "[CantIdentify]\n随机指定目标",
           "coinlist": [
             {
@@ -1771,7 +1771,7 @@
         {
           "level": 3,
           "name": "空即是色",
-          "abName": "无相佛",
+          "abName": "无我入定",
           "desc": "[CantIdentify]\n随机指定目标\n[EndSkill] 使自身以外的2名随机友方获得1层强壮 ",
           "coinlist": [
             {
@@ -2174,7 +2174,7 @@
         },
         {
           "level": 3,
-          "name": "生而为饪",
+          "name": "一生炖菜",
           "abName": "鸡蛇汤罐",
           "desc": "[BeforeAttack] 根据当前色欲资源数增加伤害（最大叠加至50%）",
           "coinlist": [
@@ -2196,7 +2196,7 @@
           "level": 1,
           "name": "一生炖菜",
           "abName": "鸡蛇汤罐",
-          "desc": "[CantIdentify]\n指定场上体力值最高的角色\n\n[BeforeAttack] 根据当前色欲资源数增加伤害（最大叠加至25%）\n随后消耗（色欲共鸣数）的色欲资源; 每消耗一个资源增加5%伤害",
+          "desc": "[CantIdentify]\n指定场上体力最高的角色\n\n[BeforeAttack] 根据当前色欲资源数增加伤害（最大叠加至25%）\n随后消耗（色欲共鸣数）的色欲资源; 每消耗一个资源增加5%伤害",
           "coinlist": [
             {
               "coindescs": [
@@ -2209,9 +2209,9 @@
         },
         {
           "level": 3,
-          "name": "生而为饪",
+          "name": "一生炖菜",
           "abName": "鸡蛇汤罐",
-          "desc": "[CantIdentify]\n指定场上体力值最高的角色\n\n[BeforeAttack] 根据当前色欲资源数增加伤害（最大叠加至50%）\n随后消耗（色欲共鸣数）的色欲资源; 每消耗一个资源增加10%伤害",
+          "desc": "[CantIdentify]\n指定场上体力最高的角色\n\n[BeforeAttack] 根据当前色欲资源数增加伤害（最大叠加至50%）\n随后消耗（色欲共鸣数）的色欲资源; 每消耗一个资源增加10%伤害",
           "coinlist": [
             {
               "coindescs": [
@@ -2231,12 +2231,12 @@
           "level": 1,
           "name": "一生炖菜",
           "abName": "鸡蛇汤罐",
-          "desc": "[CantIdentify][Wide] 指定3个行动槽\n指定场上体力值最低的角色\n若指定友方单位，则不会造成伤害",
+          "desc": "[CantIdentify][Wide] 指定3个行动槽\n指定场上体力最低的角色\n若指定友方单位，则不会造成伤害",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 若指定友方单位，为其恢复体力值上限5%的体力"
+                  "desc": "[OnSucceedAttackHead] 若指定友方单位，为其恢复体力上限5%的体力"
                 },
                 {
                   "desc": "[OnSucceedAttackTail] 增加7级烧伤 强度; 若指定友方单位，下回合使其获得2层迅捷 "
@@ -2247,14 +2247,14 @@
         },
         {
           "level": 3,
-          "name": "生而为饪",
+          "name": "一生炖菜",
           "abName": "鸡蛇汤罐",
-          "desc": "[CantIdentify][Wide] 指定3个行动槽\n指定场上体力值最低的角色\n若指定友方单位，则不会造成伤害",
+          "desc": "[CantIdentify][Wide] 指定3个行动槽\n指定场上体力最低的角色\n若指定友方单位，则不会造成伤害",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 若指定友方单位，为其恢复体力值上限10%的体力"
+                  "desc": "[OnSucceedAttackHead] 若指定友方单位，为其恢复体力上限10%的体力"
                 },
                 {
                   "desc": "[OnSucceedAttackTail] 增加7级烧伤 强度;若指定友方单位，下回合使其获得2层迅捷和1层<sprite name=\"GainSinStockAdder\"><color=#f8c200><u><link=\"GainSinStockAdder\">罪孽碎片获取量+</color></link></u>"
@@ -2272,7 +2272,7 @@
           "level": 1,
           "name": "一生炖菜",
           "abName": "鸡蛇汤罐",
-          "desc": "[CantIdentify][Wide] 指定3个行动槽\n指定场上体力值最低的角色\n\n[BeforeAttack] 随机消耗3个罪孽碎片，增加10%伤害",
+          "desc": "[CantIdentify][Wide] 指定3个行动槽\n指定场上体力最低的角色\n\n[BeforeAttack] 随机消耗3个罪孽碎片，增加10%伤害",
           "coinlist": [
             {
               "coindescs": [
@@ -2285,9 +2285,9 @@
         },
         {
           "level": 3,
-          "name": "生而为饪",
+          "name": "一生炖菜",
           "abName": "鸡蛇汤罐",
-          "desc": "[CantIdentify][Wide] 指定3个行动槽\n指定场上体力值最低的角色\n\n[BeforeAttack] 随机消耗3个罪孽碎片，增加20%伤害",
+          "desc": "[CantIdentify][Wide] 指定3个行动槽\n指定场上体力最低的角色\n\n[BeforeAttack] 随机消耗3个罪孽碎片，增加20%伤害",
           "coinlist": [
             {
               "coindescs": [
