@@ -1,15 +1,82 @@
 ﻿using HarmonyLib;
 using Il2Cpp;
+using Il2CppInterop.Runtime.Injection;
+using Il2CppMainUI;
 using Il2CppMainUI.Gacha;
+using Il2CppTMPro;
 using System;
+using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using ILObject = Il2CppSystem.Object;
 using UObject = UnityEngine.Object;
 
 namespace LimbusLocalize
 {
-    public class SafeLLCManager
+    public class SafeLLCManager : MonoBehaviour
     {
+        static SafeLLCManager()
+        {
+            ClassInjector.RegisterTypeInIl2Cpp<SafeLLCManager>();
+            GameObject obj = new("SafeLLCManager");
+            DontDestroyOnLoad(obj);
+            obj.hideFlags |= HideFlags.HideAndDontSave;
+            Instance = obj.AddComponent<SafeLLCManager>();
+        }
+        public static SafeLLCManager Instance;
+        public SafeLLCManager(IntPtr ptr) : base(ptr) { }
+
+        public static void OpenGlobalPopup(string description, string title = default, string close = "取消", string confirm = "确认", Action confirmEvent = default, Action closeEvent = default)
+        {
+            if (!GlobalGameManager.Instance) { return; }
+            TextOkUIPopup globalPopupUI = GlobalGameManager.Instance.globalPopupUI;
+            TMP_FontAsset fontAsset = LimbusLocalizeMod.tmpchinesefont;
+            if (fontAsset)
+            {
+                TextMeshProUGUI btn_canceltmp = globalPopupUI.btn_cancel.GetComponentInChildren<TextMeshProUGUI>(true);
+                btn_canceltmp.font = fontAsset;
+                btn_canceltmp.fontMaterial = fontAsset.material;
+                UITextDataLoader btn_canceltl = globalPopupUI.btn_cancel.GetComponentInChildren<UITextDataLoader>(true);
+                btn_canceltl.enabled = false;
+                btn_canceltmp.text = close;
+                TextMeshProUGUI btn_oktmp = globalPopupUI.btn_ok.GetComponentInChildren<TextMeshProUGUI>(true);
+                btn_oktmp.font = fontAsset;
+                btn_oktmp.fontMaterial = fontAsset.material;
+                UITextDataLoader btn_oktl = globalPopupUI.btn_ok.GetComponentInChildren<UITextDataLoader>(true);
+                btn_oktl.enabled = false;
+                btn_oktmp.text = confirm;
+                globalPopupUI.tmp_title.font = fontAsset;
+                globalPopupUI.tmp_title.fontMaterial = fontAsset.material;
+                void TextLoaderEnabled() { btn_canceltl.enabled = true; btn_oktl.enabled = true; }
+                confirmEvent += TextLoaderEnabled;
+                closeEvent += TextLoaderEnabled;
+            }
+            globalPopupUI._titleObject.SetActive(!string.IsNullOrEmpty(title));
+            globalPopupUI.tmp_title.text = title;
+            globalPopupUI.tmp_description.text = description;
+            globalPopupUI._confirmEvent = confirmEvent;
+            globalPopupUI._closeEvent = closeEvent;
+            globalPopupUI.btn_cancel.gameObject.SetActive(!string.IsNullOrEmpty(close));
+            globalPopupUI._gridLayoutGroup.cellSize = new Vector2(!string.IsNullOrEmpty(close) ? 500 : 700, 100f);
+            globalPopupUI.Open();
+        }
+        public static void InitLocalizes(DirectoryInfo directory)
+        {
+            foreach (FileInfo fileInfo in directory.GetFiles())
+            {
+                var value = File.ReadAllText(fileInfo.FullName);
+                string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(fileInfo.FullName).Remove(0, 3);
+                Localizes[fileNameWithoutExtension] = value;
+            }
+            foreach (DirectoryInfo directoryInfo in directory.GetDirectories())
+            {
+                InitLocalizes(directoryInfo);
+            }
+
+        }
+        public static Dictionary<string, string> Localizes = new();
+        public static Action FatalErrorAction;
+        public static string FatalError;
         #region 屏蔽没有意义的Warning
         [HarmonyPatch(typeof(Logger), nameof(Logger.Log), new Type[]
         {
@@ -68,5 +135,23 @@ namespace LimbusLocalize
             return false;
         }
         #endregion
+        [HarmonyPatch(typeof(LoginSceneManager), nameof(LoginSceneManager.SetLoginInfo))]
+        [HarmonyPostfix]
+        public static void CheckModActions()
+        {
+            if (UpdateChecker.CheckUpdate && UpdateChecker.UpdateCall != null)
+                OpenGlobalPopup("Mod Has Update!\nOpen Download Path & Quit Game", default, default, "OK", () =>
+                {
+                    UpdateChecker.UpdateCall.Invoke();
+                    UpdateChecker.UpdateCall = null;
+                });
+            else if (FatalErrorAction != null)
+                OpenGlobalPopup(FatalError, "Mod Has Fatal Error!", default, "Open LLC URL", () =>
+                {
+                    FatalErrorAction.Invoke();
+                    FatalErrorAction = null;
+                    FatalError = string.Empty;
+                });
+        }
     }
 }

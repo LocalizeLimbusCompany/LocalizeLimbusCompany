@@ -11,8 +11,8 @@ namespace LimbusLocalize
         {
             foreach (string text in jsonFilePathList)
             {
-                if (!LimbusLocalizeMod.Localizes.TryGetValue(text,out var file)) { continue; }
-                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(file);
+                if (!SafeLLCManager.Localizes.TryGetValue(text, out var text2)) { continue; }
+                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(text2);
                 foreach (T t in localizeTextData.DataList)
                 {
                     jsonDataList._dic[t.ID.ToString()] = t;
@@ -24,8 +24,8 @@ namespace LimbusLocalize
         {
             foreach (string text in jsonFilePathList)
             {
-                if (!LimbusLocalizeMod.Localizes.TryGetValue(text,out var file)) { continue; }
-                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_AbnormalityEventCharDlg>>(file);
+                if (!SafeLLCManager.Localizes.TryGetValue(text, out var text2)) { continue; }
+                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_AbnormalityEventCharDlg>>(text2);
                 foreach (var t in localizeTextData.DataList)
                 {
                     if (!root._personalityDict.TryGetValueEX(t.PersonalityID, out var abEventKeyDictionaryContainer))
@@ -50,8 +50,8 @@ namespace LimbusLocalize
         {
             foreach (string text in jsonFilePathList)
             {
-                if (!LimbusLocalizeMod.Localizes.TryGetValue(text,out var file)) { continue; }
-                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(file);
+                if (!SafeLLCManager.Localizes.TryGetValue(text, out var text2)) { continue; }
+                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(text2);
                 jsonDataList[text.Split('_')[^1]] = localizeTextData;
             }
         }

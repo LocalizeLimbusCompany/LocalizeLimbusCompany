@@ -14,48 +14,54 @@ using System.Reflection;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
-[assembly: MelonInfo(typeof(LimbusLocalizeMod), LimbusLocalizeMod.NAME, LimbusLocalizeMod.VERSION, LimbusLocalizeMod.AUTHOR, "https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany")]
+[assembly: MelonInfo(typeof(LimbusLocalizeMod), LimbusLocalizeMod.NAME, LimbusLocalizeMod.VERSION, LimbusLocalizeMod.AUTHOR, LimbusLocalizeMod.LLCLink)]
 namespace LimbusLocalize
 {
     public class LimbusLocalizeMod : MelonMod
     {
-        public static string modpath;
-        public static string gamepath;
+        public static string ModPath;
+        public static string GamePath;
         public static TMP_FontAsset tmpchinesefont;
         public const string NAME = "LimbusLocalizeMod";
-        public const string VERSION = "0.2.0";
+        public const string VERSION = "0.2.1";
         public const string AUTHOR = "Bright";
+        public const string LLCLink = "https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany";
+        public static Action<string, Action> LogFatalError { get; set; }
         public static Action<string> LogError { get; set; }
         public static Action<string> LogWarning { get; set; }
+        public static void OpenLLCURL() { Application.OpenURL(LLCLink); }
+        public static void OpenGamePath() { Application.OpenURL(GamePath); }
         public override void OnInitializeMelon()
         {
-            LogError = delegate (string log) { LoggerInstance.Error(log); Debug.LogError(log); };
-            LogWarning = delegate (string log) { LoggerInstance.Warning(log); Debug.LogWarning(log); };
-            modpath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            gamepath = new DirectoryInfo(Application.dataPath).Parent.FullName;
+            LogError = (string log) => { LoggerInstance.Error(log); Debug.LogError(log); };
+            LogWarning = (string log) => { LoggerInstance.Warning(log); Debug.LogWarning(log); };
+            LogFatalError = (string log, Action action) => { SafeLLCManager.FatalError += log + "\n"; LogError(log); SafeLLCManager.FatalErrorAction += action; SafeLLCManager.CheckModActions(); };
+            ModPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            GamePath = new DirectoryInfo(Application.dataPath).Parent.FullName;
             try
             {
-                InitLocalizes(new DirectoryInfo(modpath + "/Localize/CN"));
+                SafeLLCManager.InitLocalizes(new DirectoryInfo(ModPath + "/Localize/CN"));
+                UpdateChecker.StartCheckUpdates();
                 HarmonyLib.Harmony harmony = new("LimbusLocalizeMod");
                 harmony.PatchAll(typeof(LimbusLocalizeMod));
                 harmony.PatchAll(typeof(SafeLLCManager));
-                if (File.Exists(modpath + "/tmpchinesefont"))
-                    tmpchinesefont = AssetBundle.LoadFromFile(modpath + "/tmpchinesefont").LoadAsset("assets/sourcehansanssc-bold sdf.asset").Cast<TMP_FontAsset>();
+                if (File.Exists(ModPath + "/tmpchinesefont"))
+                    tmpchinesefont = AssetBundle.LoadFromFile(ModPath + "/tmpchinesefont").LoadAllAssets()[0].Cast<TMP_FontAsset>();
                 else
-                    LogError("Fatal Error!!!\nYou Not Have Chinese Font, Please Read GitHub Readme To Download");
+                    LogFatalError("Fatal Error!!!\nYou Not Have Chinese Font, Please Read GitHub Readme To Download", OpenLLCURL);
             }
             catch (Exception e)
             {
-                LogError("Mod Has Unknown Fatal Error!!!\n" + e.ToString());
+                LogFatalError("Mod Has Unknown Fatal Error!!!\n" + e.ToString(), () => { OpenGamePath(); OpenLLCURL(); });
             }
         }
         public override void OnApplicationQuit()
         {
-            File.Copy(gamepath + "/MelonLoader/Latest.log", gamepath + "/框架日志.log", true);
-            var Latestlog = File.ReadAllText(gamepath + "/框架日志.log");
+            File.Copy(GamePath + "/MelonLoader/Latest.log", GamePath + "/框架日志.log", true);
+            var Latestlog = File.ReadAllText(GamePath + "/框架日志.log");
             Latestlog = Regex.Replace(Latestlog, "[0-9:\\.\\[\\]]+ During invoking native->managed trampoline(\r\n)?", "");
-            File.WriteAllText(gamepath + "/框架日志.log", Latestlog);
-            File.Copy(Application.consoleLogPath, gamepath + "/游戏日志.log", true);
+            File.WriteAllText(GamePath + "/框架日志.log", Latestlog);
+            File.Copy(Application.consoleLogPath, GamePath + "/游戏日志.log", true);
         }
 
         #region 字体
@@ -214,7 +220,7 @@ namespace LimbusLocalize
         [HarmonyPrefix]
         private static bool StoryDataInit(StoryData __instance)
         {
-            ScenarioAssetDataList scenarioAssetDataList = JsonUtility.FromJson<ScenarioAssetDataList>(Localizes["NickName"]);
+            ScenarioAssetDataList scenarioAssetDataList = JsonUtility.FromJson<ScenarioAssetDataList>(SafeLLCManager.Localizes["NickName"]);
             __instance._modelAssetMap = new Dictionary<string, ScenarioAssetData>();
             __instance._standingAssetMap = new Dictionary<string, StandingAsset>();
             __instance._standingAssetPathMap = new Dictionary<string, string>();
@@ -238,7 +244,7 @@ namespace LimbusLocalize
         [HarmonyPrefix]
         private static bool GetScenario(StoryData __instance, string scenarioID, ref LOCALIZE_LANGUAGE lang, ref Scenario __result)
         {
-            if (Localizes.TryGetValue(scenarioID, out string text))
+            if (SafeLLCManager.Localizes.TryGetValue(scenarioID, out string text))
             {
                 TextAsset textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
                 if (textAsset == null)
@@ -295,21 +301,8 @@ namespace LimbusLocalize
         private static void SetLoginInfo(LoginSceneManager __instance)
         {
             LoadLocal(LOCALIZE_LANGUAGE.EN);
-        }
-
-        public static void InitLocalizes(DirectoryInfo directory)
-        {
-            foreach (FileInfo fileInfo in directory.GetFiles())
-            {
-                var value = File.ReadAllText(fileInfo.FullName);
-                string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(fileInfo.FullName).Remove(0, 3);
-                Localizes[fileNameWithoutExtension] = value;
-            }
-            foreach (DirectoryInfo directoryInfo in directory.GetDirectories())
-                InitLocalizes(directoryInfo);
-
+            __instance.tmp_loginAccount.text = "LimbusLocalizeMod v." + VERSION;
         }
         #endregion
-        public static System.Collections.Generic.Dictionary<string, string> Localizes = new();
     }
 }
