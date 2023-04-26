@@ -40,7 +40,7 @@ namespace LimbusLocalize
                 harmony.PatchAll(typeof(LimbusLocalizeMod));
                 harmony.PatchAll(typeof(SafeLLCManager));
                 if (File.Exists(modpath + "/tmpchinesefont"))
-                    tmpchinesefont = AssetBundle.LoadFromFile(modpath + "/tmpchinesefont").LoadAsset("assets/sourcehansanssc-heavy sdf.asset").Cast<TMP_FontAsset>();
+                    tmpchinesefont = AssetBundle.LoadFromFile(modpath + "/tmpchinesefont").LoadAsset("assets/sourcehansanssc-bold sdf.asset").Cast<TMP_FontAsset>();
                 else
                     LogError("Fatal Error!!!\nYou Not Have Chinese Font, Please Read GitHub Readme To Download");
             }
