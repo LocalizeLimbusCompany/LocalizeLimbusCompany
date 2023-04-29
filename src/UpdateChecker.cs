@@ -81,6 +81,5 @@ namespace LimbusLocalize
             await content.CopyToAsync(fileStream);
         }
         public static Action UpdateCall;
-        public static bool CheckUpdate = true;
     }
 }
