@@ -26,7 +26,7 @@ namespace LimbusLocalize
         public static SafeLLCManager Instance;
         public SafeLLCManager(IntPtr ptr) : base(ptr) { }
 
-        public static void OpenGlobalPopup(string description, string title = default, string close = "取消", string confirm = "确认", Action confirmEvent = default, Action closeEvent = default)
+        public static void OpenGlobalPopup(string description, string title = null, string close = "取消", string confirm = "确认", Action confirmEvent = null, Action closeEvent = null)
         {
             if (!GlobalGameManager.Instance) { return; }
             TextOkUIPopup globalPopupUI = GlobalGameManager.Instance.globalPopupUI;
@@ -139,14 +139,14 @@ namespace LimbusLocalize
         [HarmonyPostfix]
         public static void CheckModActions()
         {
-            if (UpdateChecker.CheckUpdate && UpdateChecker.UpdateCall != null)
-                OpenGlobalPopup("Mod Has Update!\nOpen Download Path & Quit Game", default, default, "OK", () =>
+            if (UpdateChecker.UpdateCall != null)
+                OpenGlobalPopup("Mod Has Update!\nOpen Download Path & Quit Game", null, null, "Ok", () =>
                 {
                     UpdateChecker.UpdateCall.Invoke();
                     UpdateChecker.UpdateCall = null;
                 });
             else if (FatalErrorAction != null)
-                OpenGlobalPopup(FatalError, "Mod Has Fatal Error!", default, "Open LLC URL", () =>
+                OpenGlobalPopup(FatalError, "Mod Has Fatal Error!", null, "Open LLC URL", () =>
                 {
                     FatalErrorAction.Invoke();
                     FatalErrorAction = null;
