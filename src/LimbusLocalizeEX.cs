@@ -22,6 +22,7 @@ namespace LimbusLocalize
 
         public static void AbEventCharDlgRootInit(this AbEventCharDlgRoot root, List<string> jsonFilePathList)
         {
+            root._personalityDict = new();
             foreach (string text in jsonFilePathList)
             {
                 if (!SafeLLCManager.Localizes.TryGetValue(text, out var text2)) { continue; }
