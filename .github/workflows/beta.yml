@@ -1,10 +1,10 @@
-name: Beta Build LimbusLocalize
+name: 预览版
 on:
   workflow_dispatch:
   schedule:
     - cron: '0 16 * * 2'
 jobs:
-  release:
+  beta:
     runs-on: windows-latest
     steps:
       - name: Checkout code
