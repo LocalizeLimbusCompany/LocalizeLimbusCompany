@@ -4,11 +4,11 @@ on:
   push:
     branches: [ master_ilcpp ]
     paths:
-      - 'assets/Localize/Readme/Readme.json'
+      - 'Localize/Readme/Readme.json'
   pull_request:
     branches: [ master_ilcpp ]
     paths:
-      - 'assets/Localize/Readme/Readme.json'
+      - 'Localize/Readme/Readme.json'
   workflow_dispatch:
 
 permissions:
@@ -32,7 +32,7 @@ jobs:
       - name: Create pages
         run: |
          mkdir pages
-         mv assets/Localize/Readme/Readme.json pages/
+         mv Localize/Readme/Readme.json pages/
          MODTIME=$(stat -c %y pages/Readme.json)
          FORMATTEDTIME=$(date -d "$MODTIME" --iso-8601=seconds)
          echo $FORMATTEDTIME > pages/LatestUpdateTime.txt
