@@ -76,7 +76,7 @@ namespace LimbusLocalize
         }
         public static Dictionary<string, string> Localizes = new();
         public static Action FatalErrorAction;
-        public static string FatalError;
+        public static string FatalErrorlog;
         #region 屏蔽没有意义的Warning
         [HarmonyPatch(typeof(Logger), nameof(Logger.Log), new Type[]
         {
@@ -140,17 +140,18 @@ namespace LimbusLocalize
         public static void CheckModActions()
         {
             if (UpdateChecker.UpdateCall != null)
-                OpenGlobalPopup("Mod Has Update!\nOpen Download Path & Quit Game", null, null, "Ok", () =>
+                OpenGlobalPopup("Has Update " + UpdateChecker.Updatelog + "!\nOpen Download Path & Quit Game", null, null, "Ok", () =>
                 {
                     UpdateChecker.UpdateCall.Invoke();
                     UpdateChecker.UpdateCall = null;
+                    UpdateChecker.Updatelog = string.Empty;
                 });
             else if (FatalErrorAction != null)
-                OpenGlobalPopup(FatalError, "Mod Has Fatal Error!", null, "Open LLC URL", () =>
+                OpenGlobalPopup(FatalErrorlog, "Mod Has Fatal Error!", null, "Open LLC URL", () =>
                 {
                     FatalErrorAction.Invoke();
                     FatalErrorAction = null;
-                    FatalError = string.Empty;
+                    FatalErrorlog = string.Empty;
                 });
         }
     }

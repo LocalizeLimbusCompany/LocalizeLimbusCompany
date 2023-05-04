@@ -33,7 +33,9 @@ namespace LimbusLocalize
                 string latest2ReleaseTag = releases.m_List.Count > 1 ? releases[1]["tag_name"].Value : string.Empty;
                 if (SemVersion.Parse(LimbusLocalizeMod.VERSION) < SemVersion.Parse(latestReleaseTag.Remove(0, 1)))
                 {
-                    string download = "https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/releases/download/" + latestReleaseTag + (latest2ReleaseTag == "v" + LimbusLocalizeMod.VERSION ? "/LimbusLocalize_OTA_" : "/LimbusLocalize_") + latestReleaseTag + ".7z";
+                    string updatelog = (latest2ReleaseTag == "v" + LimbusLocalizeMod.VERSION ? "LimbusLocalize_OTA_" : "LimbusLocalize_") + latestReleaseTag;
+                    Updatelog += updatelog;
+                    string download = "https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/releases/download/" + latestReleaseTag + "/" + updatelog + ".7z";
                     var dirs = download.Split('/');
                     string filename = LimbusLocalizeMod.GamePath + "/" + dirs[^1];
                     if (!File.Exists(filename))
@@ -60,7 +62,9 @@ namespace LimbusLocalize
             int latestReleaseTag = int.Parse(latest["tag_name"].Value);
             if (LastWriteTime < latestReleaseTag)
             {
-                string download = "https://github.com/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/download/" + latestReleaseTag + "/tmpchinesefont_" + latestReleaseTag + ".7z";
+                string updatelog = "tmpchinesefont_" + latestReleaseTag;
+                Updatelog += updatelog;
+                string download = "https://github.com/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/download/" + latestReleaseTag + "/" + updatelog + ".7z";
                 var dirs = download.Split('/');
                 string filename = LimbusLocalizeMod.GamePath + "/" + dirs[^1];
                 if (!File.Exists(filename))
@@ -105,6 +109,7 @@ namespace LimbusLocalize
                 ReadmeManager.InitReadmeList();
             }
         }
+        public static string Updatelog;
         public static Action UpdateCall;
     }
 }

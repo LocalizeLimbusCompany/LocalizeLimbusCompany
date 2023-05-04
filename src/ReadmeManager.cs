@@ -21,9 +21,8 @@ namespace LimbusLocalize
     {
         public static NoticeUIPopup NoticeUIInstance;
         public static RedDotWriggler _redDot_Notice;
-        public static void Initialize()
+        public static void UIInitialize()
         {
-            InitReadmeList();
             InitReadmeSprites();
             Action _close = () => { Close(); };
             NoticeUIInstance._popupPanel.closeEvent.AddListener(_close);
@@ -38,7 +37,7 @@ namespace LimbusLocalize
             NoticeUIInstance.btn_systemNotice.GetComponentInChildren<UITextDataLoader>(true).enabled = false;
             NoticeUIInstance.btn_systemNotice.GetComponentInChildren<TextMeshProUGUI>(true).text = "更新公告";
             NoticeUIInstance.btn_eventNotice.GetComponentInChildren<UITextDataLoader>(true).enabled = false;
-            NoticeUIInstance.btn_eventNotice.GetComponentInChildren<TextMeshProUGUI>(true).text = "贡献,反馈,赞助";
+            NoticeUIInstance.btn_eventNotice.GetComponentInChildren<TextMeshProUGUI>(true).text = "公告";
         }
         public static void Open()
         {
@@ -64,6 +63,7 @@ namespace LimbusLocalize
                 string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(fileInfo.FullName);
                 texture2D.name = fileNameWithoutExtension;
                 value.name = fileNameWithoutExtension;
+                UObject.DontDestroyOnLoad(value);
                 ReadmeSprites[fileNameWithoutExtension] = value;
             }
 
@@ -131,7 +131,7 @@ namespace LimbusLocalize
             {
                 var NoticeUIPopupInstance = UObject.Instantiate(__instance, __instance.transform.parent);
                 NoticeUIInstance = NoticeUIPopupInstance;
-                Initialize();
+                UIInitialize();
             }
         }
         [HarmonyPatch(typeof(MainLobbyUIPanel), nameof(MainLobbyUIPanel.Initialize))]
