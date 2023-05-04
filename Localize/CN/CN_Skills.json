@@ -116,7 +116,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 目标的理智值低于0时，对其施加1层易损 "
+                  "desc": "[OnSucceedAttack] 若目标的理智值低于0，对其施加1层易损 "
                 }
               ]
             }
@@ -765,7 +765,7 @@
         {
           "level": 3,
           "name": "为了正义！",
-          "desc": "自身的速度值大于10时，使本技能的硬币威力+2",
+          "desc": "若自身的速度值大于10，则使本技能的硬币威力+2",
           "coinlist": [
             {},
             {},
@@ -878,7 +878,7 @@
         {
           "level": 3,
           "name": "空间撕裂",
-          "desc": "[WhenUse] 消耗10层充能 并使本技能的硬币威力+4\n充能 层数不足10层时，使自身失去20%体力",
+          "desc": "[WhenUse] 消耗10层充能 并使本技能的硬币威力+4\n 若充能 层数不足10层，则改为使自身失去20%体力",
           "coinlist": [
             {
               "coindescs": [
@@ -1342,7 +1342,7 @@
                   "desc": "[OnSucceedAttack] 对目标施加3层流血 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加3层钝挫 "
+                  "desc": "[OnSucceedAttack] 对目标施加3层攻击等级降低 "
                 }
               ]
             }
@@ -1950,7 +1950,7 @@
         {
           "level": 2,
           "name": "裁云断雾",
-          "desc": "[BeforeAttack] 若目标的流血 强度低于4级，则本技能的前两个硬币额外使用一次",
+          "desc": "[BeforeAttack] 若目标的流血 层数低于4层，则本技能的前两个硬币额外使用一次",
           "keywords": [],
           "coinlist": [
             {
@@ -1977,7 +1977,7 @@
         {
           "level": 3,
           "name": "黑云摧裂",
-          "desc": "[StartBattle] 本技能对目标施加的流血 与麻痹 层数额外+1层",
+          "desc": "[StartBattle] 本技能对目标施加的流血 强度与麻痹 层数额外+1层",
           "coinlist": [
             {
               "coindescs": [
@@ -2214,7 +2214,7 @@
       "levelList": [
         {
           "level": 3,
-          "name": "暴怒连打",
+          "name": "泄愤暴打",
           "desc": "",
           "coinlist": [
             {
@@ -2582,7 +2582,7 @@
       "levelList": [
         {
           "level": 3,
-          "name": "沉重铁壁",
+          "name": "举盾防御",
           "desc": "",
           "coinlist": [
             {
@@ -3712,7 +3712,7 @@
         {
           "level": 3,
           "name": "突然袭击",
-          "desc": "[WhenUse] 使体力最低的友方获得1层守护 ",
+          "desc": "[WhenUse] 使体力最低的友方单位获得1层守护 ",
           "coinlist": [
             {
               "coindescs": [
@@ -4059,7 +4059,7 @@
         {
           "level": 3,
           "name": "腰击剑势",
-          "desc": "若目标的体力低于25%，则使本技能的最终威力+2",
+          "desc": "若目标的体力低于25%，则使本技能的威力+2",
           "coinlist": [
             {},
             {
@@ -4097,7 +4097,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使速度值最低的友方获得1层守护 "
+                  "desc": "[OnSucceedAttack] 使速度值最低的友方单位获得1层守护 "
                 }
               ]
             }
@@ -4111,7 +4111,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使速度值最低的友方获得2层守护 "
+                  "desc": "[OnSucceedAttack] 使速度值最低的友方单位获得2层守护 "
                 }
               ]
             }
@@ -4130,7 +4130,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 使速度值最低的友方获得1层伤害强化 "
+                  "desc": "[OnSucceedAttackHead] 使速度值最低的友方单位获得1层伤害强化 "
                 }
               ]
             }
@@ -4139,12 +4139,12 @@
         {
           "level": 2,
           "name": "攻击命令",
-          "desc": "[WhenUse] 使速度值最低的友方获得1层强壮 ",
+          "desc": "[WhenUse] 使速度值最低的友方单位获得1层强壮 ",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 使速度值最低的友方获得2层伤害强化 "
+                  "desc": "[OnSucceedAttackHead] 使速度值最低的友方单位获得2层伤害强化 "
                 }
               ]
             }
@@ -4931,7 +4931,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "掌控",
+          "name": "执握",
           "desc": "",
           "coinlist": [
             {},
@@ -4953,7 +4953,7 @@
         },
         {
           "level": 2,
-          "name": "掌控",
+          "name": "执握",
           "desc": "",
           "coinlist": [
             {},
@@ -4984,7 +4984,7 @@
         {
           "level": 3,
           "name": "处刑",
-          "desc": "击杀时，使所有友方恢复10点理智值并获得1层突刺伤害强化 和1层打击伤害强化 ",
+          "desc": "击杀时，使全体友方单位恢复10点理智值并获得1层突刺伤害强化 和1层打击伤害强化 ",
           "coinlist": [
             {
               "coindescs": [
@@ -5016,7 +5016,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "肮脏！",
+          "name": "如此污秽！",
           "desc": "[OnSucceedEvade] 使目标失去3点理智值",
           "coinlist": [
             {}
@@ -5699,6 +5699,303 @@
     },
     {
       "id": 1120404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "防御",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "迫不得已的审判",
+          "desc": "[WhenUse] 使自身失去7点理智值",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 使目标增加2级烧伤 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "迫不得已的审判",
+          "desc": "[WhenUse] 使自身失去7点理智值",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 下回合使自身获得1层狂信 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级烧伤 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "黑白不分的执行",
+          "desc": "[WhenUse] 使自身失去10点理智值\n若自身带有狂信 ，则本技能造成的伤害+5%",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 使目标增加1级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 使目标增加1级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "黑白不分的执行",
+          "desc": "[WhenUse] 使自身失去10点理智值\n若自身带有狂信 ，则本技能造成的伤害+10%",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 使目标增加2级烧伤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 使目标增加2级烧伤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 对目标施加1层烧伤 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "自我毁灭的净化",
+          "desc": "[WhenUse] 使自身失去15点理智值\n- 若自身带有狂信 ，则本技能造成的伤害+15%\n- 若目标属于<机械融合生命体>，则本技能造成的伤害+10%",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币造成伤害50%的数值"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若目标的流血 强度高于5级，则使其增加5级烧伤 强度"
+                },
+                {
+                  "desc": "[EnemyKill] 下回合使自身获得1层打击威力强化 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "够了……",
+          "desc": "[StartBattle] 使自身恢复5~10点理智值",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "正当的净化",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层尖钉 "
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级震颤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级震颤 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "正当的净化",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层尖钉 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 진동 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级震颤 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "执行！",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 震颤爆发"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "执行！",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 震颤爆发"
+                },
+                {
+                  "desc": "若目标的尖钉层数高于5层，则本硬币造成的伤害+20%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "狂热审判",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack]对目标施加1层尖钉 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层尖钉 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层震颤 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 若目标的尖钉 层数高于5层，则下回合对其施加1层虚弱 "
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 若目标的尖钉 层数高于5层，则下回合对其施加2层麻痹 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层震颤 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030404,
       "levelList": [
         {
           "level": 1,
