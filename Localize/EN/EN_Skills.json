@@ -3705,7 +3705,7 @@
         {
           "level": 3,
           "name": "Strong Strike",
-          "desc": "[WhenUse] Apply 1 Protection to the ally with the lowest HP",
+          "desc": "[WhenUse] Apply 1 Protection to the ally with the least HP",
           "coinlist": [
             {
               "coindescs": [
@@ -5692,6 +5692,303 @@
     },
     {
       "id": 1120404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Guard",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Coerced Judgement",
+          "desc": "[WhenUse] Lose 7 SP",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict 2 Burn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Coerced Judgement",
+          "desc": "[WhenUse] Lose 7 SP",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Gain 1 Fanatic next turn"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Burn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Amoral Enactment",
+          "desc": "[WhenUse] Lose 10 SP\nIf this unit is Fanatic, deal +5% damage",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict 1 Burn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict 1 Burn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Amoral Enactment",
+          "desc": "[WhenUse] Lose 10 SP\nIf this unit is Fanatic, deal +10% damage",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict 2 Burn"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict 2 Burn"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict +1 Burn Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Self-destructive Purge",
+          "desc": "[WhenUse] Lose 15 SP\nIf this unit is Fanatic, deal +15% damage\nIf target is a <Mechanical Amalgam>, deal +10% damage",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Raise Stagger Threshold by 50% of damage dealt"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If target has 5+ Bleed, inflict 5 Burn"
+                },
+                {
+                  "desc": "[EnemyKill] Gain 1 Blunt Power Up next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Enough…",
+          "desc": "[StartBattle] Heal 5~10 SP",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Rightful Purge",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Nails"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Rightful Purge",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Nails"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Tremor"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Tremor"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Enactment!",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Burst Tremor"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Enactment!",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Burst Tremor"
+                },
+                {
+                  "desc": "+20% Damage to targets with 5+ Nails"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Fanatical Judgement",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Nails"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Nails"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] If target has 5+ Nails, inflict 1 Attack Power Down next turn"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] If target has 5+ Nails, inflict 2 Paralyze next turn"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030404,
       "levelList": [
         {
           "level": 1,
