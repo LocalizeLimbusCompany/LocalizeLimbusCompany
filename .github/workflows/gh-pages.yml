@@ -1,0 +1,50 @@
+name: 公告热更新
+
+on:
+  push:
+    branches: [ master_ilcpp ]
+    paths:
+      - 'Localize/Readme/Readme.json'
+  pull_request:
+    branches: [ master_ilcpp ]
+    paths:
+      - 'Localize/Readme/Readme.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Create pages
+        run: |
+         mkdir pages
+         mv Localize/Readme/Readme.json pages/
+         MODTIME=$(stat -c %y pages/Readme.json)
+         FORMATTEDTIME=$(date -d "$MODTIME" --iso-8601=seconds)
+         echo $FORMATTEDTIME > pages/LatestUpdateTime.txt
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./pages/
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2

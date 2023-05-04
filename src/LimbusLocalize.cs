@@ -23,7 +23,7 @@ namespace LimbusLocalize
         public static string GamePath;
         public static TMP_FontAsset tmpchinesefont;
         public const string NAME = "LimbusLocalizeMod";
-        public const string VERSION = "0.2.1";
+        public const string VERSION = "0.3.0";
         public const string AUTHOR = "Bright";
         public const string LLCLink = "https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany";
         public static Action<string, Action> LogFatalError { get; set; }
@@ -35,16 +35,17 @@ namespace LimbusLocalize
         {
             LogError = (string log) => { LoggerInstance.Error(log); Debug.LogError(log); };
             LogWarning = (string log) => { LoggerInstance.Warning(log); Debug.LogWarning(log); };
-            LogFatalError = (string log, Action action) => { SafeLLCManager.FatalError += log + "\n"; LogError(log); SafeLLCManager.FatalErrorAction += action; SafeLLCManager.CheckModActions(); };
+            LogFatalError = (string log, Action action) => { LLCManager.FatalError += log + "\n"; LogError(log); LLCManager.FatalErrorAction += action; LLCManager.CheckModActions(); };
             ModPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             GamePath = new DirectoryInfo(Application.dataPath).Parent.FullName;
             try
             {
-                SafeLLCManager.InitLocalizes(new DirectoryInfo(ModPath + "/Localize/CN"));
+                LLCManager.InitLocalizes(new DirectoryInfo(ModPath + "/Localize/CN"));
                 UpdateChecker.StartCheckUpdates();
                 HarmonyLib.Harmony harmony = new("LimbusLocalizeMod");
                 harmony.PatchAll(typeof(LimbusLocalizeMod));
-                harmony.PatchAll(typeof(SafeLLCManager));
+                harmony.PatchAll(typeof(LLCManager));
+                harmony.PatchAll(typeof(ReadmeManager));
                 if (File.Exists(ModPath + "/tmpchinesefont"))
                     tmpchinesefont = AssetBundle.LoadFromFile(ModPath + "/tmpchinesefont").LoadAllAssets()[0].Cast<TMP_FontAsset>();
                 else
@@ -220,7 +221,7 @@ namespace LimbusLocalize
         [HarmonyPrefix]
         private static bool StoryDataInit(StoryData __instance)
         {
-            ScenarioAssetDataList scenarioAssetDataList = JsonUtility.FromJson<ScenarioAssetDataList>(SafeLLCManager.Localizes["NickName"]);
+            ScenarioAssetDataList scenarioAssetDataList = JsonUtility.FromJson<ScenarioAssetDataList>(LLCManager.Localizes["NickName"]);
             __instance._modelAssetMap = new Dictionary<string, ScenarioAssetData>();
             __instance._standingAssetMap = new Dictionary<string, StandingAsset>();
             __instance._standingAssetPathMap = new Dictionary<string, string>();
@@ -244,7 +245,7 @@ namespace LimbusLocalize
         [HarmonyPrefix]
         private static bool GetScenario(StoryData __instance, string scenarioID, ref LOCALIZE_LANGUAGE lang, ref Scenario __result)
         {
-            if (SafeLLCManager.Localizes.TryGetValue(scenarioID, out string text))
+            if (LLCManager.Localizes.TryGetValue(scenarioID, out string text))
             {
                 TextAsset textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
                 if (textAsset == null)
