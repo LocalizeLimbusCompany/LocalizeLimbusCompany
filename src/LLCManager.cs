@@ -13,18 +13,18 @@ using UObject = UnityEngine.Object;
 
 namespace LimbusLocalize
 {
-    public class SafeLLCManager : MonoBehaviour
+    public class LLCManager : MonoBehaviour
     {
-        static SafeLLCManager()
+        static LLCManager()
         {
-            ClassInjector.RegisterTypeInIl2Cpp<SafeLLCManager>();
-            GameObject obj = new("SafeLLCManager");
+            ClassInjector.RegisterTypeInIl2Cpp<LLCManager>();
+            GameObject obj = new(nameof(LLCManager));
             DontDestroyOnLoad(obj);
             obj.hideFlags |= HideFlags.HideAndDontSave;
-            Instance = obj.AddComponent<SafeLLCManager>();
+            Instance = obj.AddComponent<LLCManager>();
         }
-        public static SafeLLCManager Instance;
-        public SafeLLCManager(IntPtr ptr) : base(ptr) { }
+        public static LLCManager Instance;
+        public LLCManager(IntPtr ptr) : base(ptr) { }
 
         public static void OpenGlobalPopup(string description, string title = null, string close = "取消", string confirm = "确认", Action confirmEvent = null, Action closeEvent = null)
         {
