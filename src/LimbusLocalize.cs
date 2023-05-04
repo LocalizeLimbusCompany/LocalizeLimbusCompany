@@ -35,12 +35,13 @@ namespace LimbusLocalize
         {
             LogError = (string log) => { LoggerInstance.Error(log); Debug.LogError(log); };
             LogWarning = (string log) => { LoggerInstance.Warning(log); Debug.LogWarning(log); };
-            LogFatalError = (string log, Action action) => { LLCManager.FatalError += log + "\n"; LogError(log); LLCManager.FatalErrorAction += action; LLCManager.CheckModActions(); };
+            LogFatalError = (string log, Action action) => { LLCManager.FatalErrorlog += log + "\n"; LogError(log); LLCManager.FatalErrorAction += action; LLCManager.CheckModActions(); };
             ModPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             GamePath = new DirectoryInfo(Application.dataPath).Parent.FullName;
             try
             {
                 LLCManager.InitLocalizes(new DirectoryInfo(ModPath + "/Localize/CN"));
+                ReadmeManager.InitReadmeList();
                 UpdateChecker.StartCheckUpdates();
                 HarmonyLib.Harmony harmony = new("LimbusLocalizeMod");
                 harmony.PatchAll(typeof(LimbusLocalizeMod));
