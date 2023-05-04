@@ -5702,6 +5702,303 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1100501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "追い立てられた審判",
+          "desc": "[WhenUse] 精神力 7減少",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 火傷 2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "追い立てられた審判",
+          "desc": "[WhenUse] 精神力 7減少",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 次のターンに狂信 1を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 火傷 2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "判断を止めた執行",
+          "desc": "- [WhenUse] 精神力 10減少\n- 自分に狂信 があるときダメージ量 +5%",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 火傷 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 火傷 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "判断を止めた執行",
+          "desc": "- [WhenUse] 精神力 10減少\n- 自分に狂信 があるときダメージ量 +10%",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 火傷 2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 火傷 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 火傷 2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 火傷 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 火傷 回数が1増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 出血 2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "自滅的浄化",
+          "desc": "- [WhenUse] 精神力 15減少\n- 自分に狂信 があるときダメージ量+15%\n- 対象が<機械融和生命体>ならダメージ量 +10%",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ダメージ量の50%分、混乱区間を前進"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の出血 が5本以上なら、火傷 5を付与"
+                },
+                {
+                  "desc": "[EnemyKill] 次のターンに打撃威力増加 1を得る"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "やめ…",
+          "desc": "[StartBattle] 自分の精神力を5~10回復",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "正しい浄化",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 釘 1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 振動 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 振動 1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "正しい浄化",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 釘 1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 振動 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 振動 1を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "執行！",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 振動 爆発"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "執行！",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 振動 爆発"
+                },
+                {
+                  "desc": "対象の釘 が5本以上なら、ダメージ量+20%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "狂的な審判",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 釘 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 釘 1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 振動 回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 対象の釘 が5本以上なら、次のターンに攻撃威力減少 1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 対象の釘 が5本以上なら、次のターンに麻痺 2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 振動 回数が1増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ガード",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }
