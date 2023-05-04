@@ -1,4 +1,4 @@
-name: Dev Build LimbusLocalize
+name: 开发版
 on:
   push:
     branches: [ master_ilcpp ]
@@ -9,7 +9,7 @@ on:
     paths:
       - 'src/**'
 jobs:
-  release:
+  dev:
     runs-on: windows-latest
     steps:
       - name: Checkout code

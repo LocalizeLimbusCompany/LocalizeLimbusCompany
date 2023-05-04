@@ -1,10 +1,12 @@
-name: Build LimbusLocalize
+name: 释放
 on:
   workflow_dispatch:
     inputs:
       version:
         description: '版本号'
         required: true
+env:
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
 jobs:
   release:
     runs-on: windows-latest
@@ -26,10 +28,10 @@ jobs:
       - name: Create Upload Release   
         uses: svenstaro/upload-release-action@v2
         with:
-          repo_token: ${{ secrets.Release }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
           file_glob: true
           file: Release/*.7z
-          release_name: LimbusLocalize_ml_ilcpp_${{ github.event.inputs.version }}_Beta
+          release_name: LimbusLocalize_ml_ilcpp_${{ github.event.inputs.version }}
           body: "# 下载\n- LimbusLocalize_${{ github.event.inputs.version }}.7z 全量包\n- LimbusLocalize_OTA_${{ github.event.inputs.version }}.7z 增量更新"
           tag: ${{ github.event.inputs.version }}
           overwrite: true
