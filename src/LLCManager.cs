@@ -140,14 +140,14 @@ namespace LimbusLocalize
         public static void CheckModActions()
         {
             if (UpdateChecker.UpdateCall != null)
-                OpenGlobalPopup("Has Update " + UpdateChecker.Updatelog + "!\nOpen Download Path & Quit Game", null, null, "Ok", () =>
+                OpenGlobalPopup("Has Update " + UpdateChecker.Updatelog + "!\nOpen Download Path & Quit Game\n模组存在更新\n点击OK将退出游戏并打开下载目录\n请将" + UpdateChecker.Updatelog + "压缩包解压至该目录", "Mod Has Update\n模组存在更新", null, "OK", () =>
                 {
                     UpdateChecker.UpdateCall.Invoke();
                     UpdateChecker.UpdateCall = null;
                     UpdateChecker.Updatelog = string.Empty;
                 });
             else if (FatalErrorAction != null)
-                OpenGlobalPopup(FatalErrorlog, "Mod Has Fatal Error!", null, "Open LLC URL", () =>
+                OpenGlobalPopup(FatalErrorlog, "Mod Has Fatal Error!\n模组存在致命错误", null, "Open LLC URL", () =>
                 {
                     FatalErrorAction.Invoke();
                     FatalErrorAction = null;
