@@ -71,6 +71,7 @@ namespace LimbusLocalize
         [HarmonyPrefix]
         private static bool set_font(TMP_Text __instance, TMP_FontAsset value)
         {
+
             if (__instance.m_fontAsset == tmpchinesefont)
                 return false;
             if (__instance.font.name == "KOTRA_BOLD SDF" || __instance.font.name.StartsWith("Corporate-Logo-Bold") || __instance.font.name.StartsWith("HigashiOme-Gothic-C") || __instance.font.name == "Pretendard-Regular SDF" || __instance.font.name.StartsWith("SCDream") || __instance.font.name == "LiberationSans SDF" || __instance.font.name == "Mikodacs SDF" || __instance.font.name == "BebasKai SDF")
@@ -88,9 +89,6 @@ namespace LimbusLocalize
         [HarmonyPrefix]
         private static bool set_fontMaterial(TMP_Text __instance, Material value)
         {
-            bool check = __instance.gameObject.name.StartsWith("[Tmpro]SkillMinPower") || __instance.gameObject.name.StartsWith("[Tmpro]SkillMaxPower");
-            if (!check && __instance.fontSize >= 50f)
-                __instance.fontSize -= __instance.fontSize / 50f * 20f;
             value = __instance.font.material;
             if (__instance.m_sharedMaterial != null && __instance.m_sharedMaterial.GetInstanceID() == value.GetInstanceID())
                 return false;
@@ -99,27 +97,6 @@ namespace LimbusLocalize
             __instance.m_havePropertiesChanged = true;
             __instance.SetVerticesDirty();
             __instance.SetMaterialDirty();
-            return false;
-        }
-        [HarmonyPatch(typeof(TextMeshProLanguageSetter), nameof(TextMeshProLanguageSetter.UpdateTMP))]
-        [HarmonyPrefix]
-        private static bool UpdateTMP(TextMeshProLanguageSetter __instance, LOCALIZE_LANGUAGE lang)
-        {
-            var fontAsset = tmpchinesefont;
-            __instance._text.font = fontAsset;
-            __instance._text.fontMaterial = fontAsset.material;
-            if (__instance._matSetter != null)
-            {
-                __instance._matSetter.defaultMat = fontAsset.material;
-                __instance._matSetter.ResetMaterial();
-                return false;
-            }
-            __instance.gameObject.TryGetComponent(out TextMeshProMaterialSetter textMeshProMaterialSetter);
-            if (textMeshProMaterialSetter != null)
-            {
-                textMeshProMaterialSetter.defaultMat = fontAsset.material;
-                textMeshProMaterialSetter.ResetMaterial();
-            }
             return false;
         }
         #endregion
