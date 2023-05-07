@@ -42,13 +42,23 @@ namespace LimbusLocalize
             {
                 LLCManager.InitLocalizes(new DirectoryInfo(ModPath + "/Localize/CN"));
                 ReadmeManager.InitReadmeList();
+                LLCLoadingManager.InitLoadingTexts();
                 UpdateChecker.StartCheckUpdates();
                 HarmonyLib.Harmony harmony = new("LimbusLocalizeMod");
                 harmony.PatchAll(typeof(LimbusLocalizeMod));
                 harmony.PatchAll(typeof(LLCManager));
                 harmony.PatchAll(typeof(ReadmeManager));
+                harmony.PatchAll(typeof(LLCLoadingManager));
                 if (File.Exists(ModPath + "/tmpchinesefont"))
-                    tmpchinesefont = AssetBundle.LoadFromFile(ModPath + "/tmpchinesefont").LoadAllAssets()[0].Cast<TMP_FontAsset>();
+                {
+                    var AllAssets = AssetBundle.LoadFromFile(ModPath + "/tmpchinesefont").LoadAllAssets();
+                    foreach (var Asset in AllAssets)
+                    {
+                        var TryCastFontAsset = Asset.TryCast<TMP_FontAsset>();
+                        if (TryCastFontAsset)
+                            tmpchinesefont = TryCastFontAsset;
+                    }
+                }
                 else
                     LogFatalError("Fatal Error!!!\nYou Not Have Chinese Font, Please Read GitHub Readme To Download", OpenLLCURL);
             }
@@ -84,13 +94,13 @@ namespace LimbusLocalize
             __instance.SetLayoutDirty();
             return false;
         }
-
         [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.fontMaterial), MethodType.Setter)]
         [HarmonyPrefix]
-        private static bool set_fontMaterial(TMP_Text __instance, Material value)
+        private static bool set_fontMaterial(TMP_Text __instance, ref Material value)
         {
-            value = __instance.font.material;
-            return false;
+            if (__instance.m_fontAsset == tmpchinesefont)
+                value = __instance.font.material;
+            return true;
         }
         #endregion
         #region 载入,应用汉化
