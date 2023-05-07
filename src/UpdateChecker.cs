@@ -34,7 +34,7 @@ namespace LimbusLocalize
                 if (SemVersion.Parse(LimbusLocalizeMod.VERSION) < SemVersion.Parse(latestReleaseTag.Remove(0, 1)))
                 {
                     string updatelog = (latest2ReleaseTag == "v" + LimbusLocalizeMod.VERSION ? "LimbusLocalize_OTA_" : "LimbusLocalize_") + latestReleaseTag;
-                    Updatelog += updatelog;
+                    Updatelog += updatelog + ".7z ";
                     string download = "https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/releases/download/" + latestReleaseTag + "/" + updatelog + ".7z";
                     var dirs = download.Split('/');
                     string filename = LimbusLocalizeMod.GamePath + "/" + dirs[^1];
@@ -63,7 +63,7 @@ namespace LimbusLocalize
             if (LastWriteTime < latestReleaseTag)
             {
                 string updatelog = "tmpchinesefont_" + latestReleaseTag;
-                Updatelog += updatelog;
+                Updatelog += updatelog + ".7z ";
                 string download = "https://github.com/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/download/" + latestReleaseTag + "/" + updatelog + ".7z";
                 var dirs = download.Split('/');
                 string filename = LimbusLocalizeMod.GamePath + "/" + dirs[^1];
