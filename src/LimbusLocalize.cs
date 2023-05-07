@@ -71,7 +71,6 @@ namespace LimbusLocalize
         [HarmonyPrefix]
         private static bool set_font(TMP_Text __instance, TMP_FontAsset value)
         {
-
             if (__instance.m_fontAsset == tmpchinesefont)
                 return false;
             if (__instance.font.name == "KOTRA_BOLD SDF" || __instance.font.name.StartsWith("Corporate-Logo-Bold") || __instance.font.name.StartsWith("HigashiOme-Gothic-C") || __instance.font.name == "Pretendard-Regular SDF" || __instance.font.name.StartsWith("SCDream") || __instance.font.name == "LiberationSans SDF" || __instance.font.name == "Mikodacs SDF" || __instance.font.name == "BebasKai SDF")
@@ -85,18 +84,12 @@ namespace LimbusLocalize
             __instance.SetLayoutDirty();
             return false;
         }
+
         [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.fontMaterial), MethodType.Setter)]
         [HarmonyPrefix]
         private static bool set_fontMaterial(TMP_Text __instance, Material value)
         {
             value = __instance.font.material;
-            if (__instance.m_sharedMaterial != null && __instance.m_sharedMaterial.GetInstanceID() == value.GetInstanceID())
-                return false;
-            __instance.m_sharedMaterial = value;
-            __instance.m_padding = __instance.GetPaddingForMaterial();
-            __instance.m_havePropertiesChanged = true;
-            __instance.SetVerticesDirty();
-            __instance.SetMaterialDirty();
             return false;
         }
         #endregion
