@@ -55,7 +55,7 @@ namespace LimbusLocalize
         {
             ReadmeSprites = new Dictionary<string, Sprite>();
 
-            foreach (FileInfo fileInfo in new DirectoryInfo(LimbusLocalizeMod.ModPath + "/Localize/Readme").GetFiles().Where(f => f.Extension != ".json"))
+            foreach (FileInfo fileInfo in new DirectoryInfo(LimbusLocalizeMod.ModPath + "/Localize/Readme").GetFiles().Where(f => f.Extension == ".jpg" || f.Extension == ".png"))
             {
                 Texture2D texture2D = new(2, 2);
                 ImageConversion.LoadImage(texture2D, File.ReadAllBytes(fileInfo.FullName));
@@ -63,7 +63,6 @@ namespace LimbusLocalize
                 string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(fileInfo.FullName);
                 texture2D.name = fileNameWithoutExtension;
                 value.name = fileNameWithoutExtension;
-                UObject.DontDestroyOnLoad(value);
                 ReadmeSprites[fileNameWithoutExtension] = value;
             }
 
@@ -107,7 +106,7 @@ namespace LimbusLocalize
         #region 公告相关
         [HarmonyPatch(typeof(UserLocalNoticeRedDotModel), nameof(UserLocalNoticeRedDotModel.InitNoticeList))]
         [HarmonyPrefix]
-        public static bool InitNoticeList(UserLocalNoticeRedDotModel __instance, List<int> severNoticeList)
+        private static bool InitNoticeList(UserLocalNoticeRedDotModel __instance, List<int> severNoticeList)
         {
             UpdateChecker.CheckReadmeUpdate();
             for (int i = 0; i < __instance.GetDataList().Count; i++)
@@ -125,7 +124,7 @@ namespace LimbusLocalize
         }
         [HarmonyPatch(typeof(NoticeUIPopup), nameof(NoticeUIPopup.Initialize))]
         [HarmonyPostfix]
-        public static void NoticeUIPopupInitialize(NoticeUIPopup __instance)
+        private static void NoticeUIPopupInitialize(NoticeUIPopup __instance)
         {
             if (!NoticeUIInstance)
             {
@@ -136,13 +135,13 @@ namespace LimbusLocalize
         }
         [HarmonyPatch(typeof(MainLobbyUIPanel), nameof(MainLobbyUIPanel.Initialize))]
         [HarmonyPostfix]
-        public static void MainLobbyUIPanelInitialize(MainLobbyUIPanel __instance)
+        private static void MainLobbyUIPanelInitialize(MainLobbyUIPanel __instance)
         {
             var UIButtonInstance = UObject.Instantiate(__instance.button_notice, __instance.button_notice.transform.parent).Cast<MainLobbyRightUpperUIButton>();
             _redDot_Notice = UIButtonInstance.gameObject.GetComponentInChildren<RedDotWriggler>(true);
             UpdateNoticeRedDot();
             UIButtonInstance._onClick.RemoveAllListeners();
-            System.Action onClick = delegate
+            Action onClick = delegate
             {
                 Open();
             };
@@ -160,12 +159,12 @@ namespace LimbusLocalize
             layoutGroup.childScaleWidth = true;
             for (int i = 0; i < transform.childCount; i++)
             {
-                transform.GetChild(i).localScale = new Vector3(0.8f, 0.8f, 1f);
+                transform.GetChild(i).localScale = new Vector3(0.75f, 0.75f, 1f);
             }
         }
         [HarmonyPatch(typeof(NoticeUIContentImage), nameof(NoticeUIContentImage.SetData))]
         [HarmonyPrefix]
-        public static bool ImageSetData(NoticeUIContentImage __instance, string formatValue)
+        private static bool ImageSetData(NoticeUIContentImage __instance, string formatValue)
         {
             if (formatValue.StartsWith("Readme_"))
             {
@@ -178,7 +177,7 @@ namespace LimbusLocalize
         }
         [HarmonyPatch(typeof(NoticeUIContentHyperLink), nameof(NoticeUIContentHyperLink.OnPointerClick))]
         [HarmonyPrefix]
-        public static bool HyperLinkOnPointerClick(NoticeUIContentHyperLink __instance, PointerEventData eventData)
+        private static bool HyperLinkOnPointerClick(NoticeUIContentHyperLink __instance, PointerEventData eventData)
         {
             string URL = __instance.tmp_main.text;
             if (URL.StartsWith("<link"))
