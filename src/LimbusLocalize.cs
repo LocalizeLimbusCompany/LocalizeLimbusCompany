@@ -5,7 +5,6 @@ using Il2CppSimpleJSON;
 using Il2CppStorySystem;
 using Il2CppSystem.Collections.Generic;
 using Il2CppTMPro;
-using Il2CppUtilityUI;
 using LimbusLocalize;
 using MelonLoader;
 using System;
@@ -22,6 +21,7 @@ namespace LimbusLocalize
         public static string ModPath;
         public static string GamePath;
         public static TMP_FontAsset tmpchinesefont;
+        public static string tmpchinesefontname;
         public const string NAME = "LimbusLocalizeMod";
         public const string VERSION = "0.3.0";
         public const string AUTHOR = "Bright";
@@ -56,7 +56,10 @@ namespace LimbusLocalize
                     {
                         var TryCastFontAsset = Asset.TryCast<TMP_FontAsset>();
                         if (TryCastFontAsset)
+                        {
                             tmpchinesefont = TryCastFontAsset;
+                            tmpchinesefontname = tmpchinesefont.name;
+                        }
                     }
                 }
                 else
@@ -79,28 +82,20 @@ namespace LimbusLocalize
         #region 字体
         [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.font), MethodType.Setter)]
         [HarmonyPrefix]
-        private static bool set_font(TMP_Text __instance, TMP_FontAsset value)
+        private static bool set_font(TMP_Text __instance, ref TMP_FontAsset value)
         {
-            if (__instance.m_fontAsset == tmpchinesefont)
+            if (__instance.m_fontAsset.name == tmpchinesefontname)
                 return false;
             if (__instance.font.name == "KOTRA_BOLD SDF" || __instance.font.name.StartsWith("Corporate-Logo-Bold") || __instance.font.name.StartsWith("HigashiOme-Gothic-C") || __instance.font.name == "Pretendard-Regular SDF" || __instance.font.name.StartsWith("SCDream") || __instance.font.name == "LiberationSans SDF" || __instance.font.name == "Mikodacs SDF" || __instance.font.name == "BebasKai SDF")
                 value = tmpchinesefont;
-            if (__instance.m_fontAsset == value)
-                return false;
-            __instance.m_fontAsset = value;
-            __instance.LoadFontAsset();
-            __instance.m_havePropertiesChanged = true;
-            __instance.SetVerticesDirty();
-            __instance.SetLayoutDirty();
-            return false;
+            return true;
         }
         [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.fontMaterial), MethodType.Setter)]
         [HarmonyPrefix]
-        private static bool set_fontMaterial(TMP_Text __instance, ref Material value)
+        private static void set_fontMaterial(TMP_Text __instance, ref Material value)
         {
-            if (__instance.m_fontAsset == tmpchinesefont)
+            if (__instance.m_fontAsset.name == tmpchinesefontname)
                 value = __instance.font.material;
-            return true;
         }
         #endregion
         #region 载入,应用汉化
