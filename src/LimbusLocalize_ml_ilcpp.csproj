@@ -1,19 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <OutputType>Library</OutputType>
-        <PlatformTarget>AnyCPU</PlatformTarget>
-        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <PlatformTarget>x64</PlatformTarget>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <AllowedReferenceRelatedFileExtensions>none</AllowedReferenceRelatedFileExtensions>
         <DebugSymbols>true</DebugSymbols>
-        <DebugType>embedded</DebugType>
         <RootNamespace>LimbusLocalize</RootNamespace>
         <LangVersion>10.0</LangVersion>
         <Configurations>ML_Cpp_net6_interop</Configurations>
         <IsPublishable>True</IsPublishable>
         <Platforms>x64</Platforms>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
     </PropertyGroup>
     <!-- ~~~~~ CONFIGURATIONS ~~~~~ -->
     <!-- ML IL2CPP Interop net6 -->
@@ -24,8 +24,8 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ML_Cpp_net6_interop|x64'">
       <NoWarn>1701;1702;2211;CA2211;IDE1006;IDE0060</NoWarn>
-      <DefineConstants>TRACE</DefineConstants>
-      <DebugType>embedded</DebugType>
+      <DebugType>none</DebugType>
+      <Optimize>True</Optimize>
     </PropertyGroup>
 
     <!-- ~~~~~ NUGET ~~~~~ -->
