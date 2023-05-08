@@ -18,11 +18,14 @@
    - [最新开发版](../../actions/workflows/dev.yml) 总是最新的
    
    - 通常情况下模组将在游戏更新后2~3天内更新
+## 我是谁?我在哪?我要干什么?
+
+   - [适用于看不懂上面的安装&更新程序](../../../LLC_MOD_Installer)
 
 # 相关
 - [QQ群](https://jq.qq.com/?_wv=1027&k=5NE6Kvg2) LLCG 686792849
 - [LLC_ChineseFontAsset](../../../LLC_ChineseFontAsset) 中文字体
-- [LLC_GAME_V1.1.0_Raw](../../../LLC_GAME_V1.1.0_Raw) 边狱公司游戏未加密版本的存档
+- [LLC_MOD_Installer](../../../LLC_MOD_Installer) 模组傻瓜安装更新程序
 - [汉化组B站链接](https://space.bilibili.com/1247764479) 都市零协会汉化组
 - [边狱公司中文WIKI](https://limbuscompany.huijiwiki.com)
 - [ParaTranz 合作翻译项目](https://paratranz.cn/projects/6860) 汉化组的最新进展
