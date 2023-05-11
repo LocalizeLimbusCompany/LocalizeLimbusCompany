@@ -159,7 +159,7 @@ namespace LimbusLocalize
             layoutGroup.childScaleWidth = true;
             for (int i = 0; i < transform.childCount; i++)
             {
-                transform.GetChild(i).localScale = new Vector3(0.75f, 0.75f, 1f);
+                transform.GetChild(i).localScale = new Vector3(0.77f, 0.77f, 1f);
             }
         }
         [HarmonyPatch(typeof(NoticeUIContentImage), nameof(NoticeUIContentImage.SetData))]

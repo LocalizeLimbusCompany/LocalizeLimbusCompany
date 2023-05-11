@@ -151,8 +151,9 @@ namespace LimbusLocalize
             tm._railwayDungeonNodeText.Init(romoteLocalizeFileList.RailwayDungeonNodeInfo);
             tm._railwayDungeonStationName.Init(romoteLocalizeFileList.RailwayDungeonStationName);
             tm._dungeonName.Init(romoteLocalizeFileList.DungeonName);
-            tm._abnormalityEventCharDlg.AbEventCharDlgRootInit(romoteLocalizeFileList.abnormalityCharDlgFilePath);
+            tm._danteNoteDesc.Init(romoteLocalizeFileList.DanteNote);
 
+            tm._abnormalityEventCharDlg.AbEventCharDlgRootInit(romoteLocalizeFileList.abnormalityCharDlgFilePath);
             tm._personalityVoiceText._voiceDictionary.JsonDataListInit(romoteLocalizeFileList.PersonalityVoice);
             tm._announcerVoiceText._voiceDictionary.JsonDataListInit(romoteLocalizeFileList.AnnouncerVoice);
             tm._bgmLyricsText._lyricsDictionary.JsonDataListInit(romoteLocalizeFileList.BgmLyrics);
