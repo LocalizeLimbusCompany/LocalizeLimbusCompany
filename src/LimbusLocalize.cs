@@ -5,6 +5,7 @@ using Il2CppSimpleJSON;
 using Il2CppStorySystem;
 using Il2CppSystem.Collections.Generic;
 using Il2CppTMPro;
+using Il2CppUtilityUI;
 using LimbusLocalize;
 using MelonLoader;
 using System;
@@ -20,8 +21,8 @@ namespace LimbusLocalize
     {
         public static string ModPath;
         public static string GamePath;
-        public static TMP_FontAsset tmpchinesefont;
-        public static string tmpchinesefontname;
+        public static List<TMP_FontAsset> tmpchinesefonts = new();
+        public static List<string> tmpchinesefontnames = new();
         public const string NAME = "LimbusLocalizeMod";
         public const string VERSION = "0.3.0";
         public const string AUTHOR = "Bright";
@@ -49,21 +50,9 @@ namespace LimbusLocalize
                 harmony.PatchAll(typeof(LLCManager));
                 harmony.PatchAll(typeof(ReadmeManager));
                 harmony.PatchAll(typeof(LLCLoadingManager));
-                if (File.Exists(ModPath + "/tmpchinesefont"))
-                {
-                    var AllAssets = AssetBundle.LoadFromFile(ModPath + "/tmpchinesefont").LoadAllAssets();
-                    foreach (var Asset in AllAssets)
-                    {
-                        var TryCastFontAsset = Asset.TryCast<TMP_FontAsset>();
-                        if (TryCastFontAsset)
-                        {
-                            tmpchinesefont = TryCastFontAsset;
-                            tmpchinesefontname = tmpchinesefont.name;
-                        }
-                    }
-                }
-                else
+                if (!AddChineseFont(ModPath + "/tmpchinesefont"))
                     LogFatalError("Fatal Error!!!\nYou Not Have Chinese Font, Please Read GitHub Readme To Download", OpenLLCURL);
+                AddChineseFont(ModPath + "/chinese_dante_notes_font");
             }
             catch (Exception e)
             {
@@ -80,22 +69,93 @@ namespace LimbusLocalize
         }
 
         #region 字体
+        public static bool AddChineseFont(string path)
+        {
+            if (File.Exists(path))
+            {
+                var AllAssets = AssetBundle.LoadFromFile(path).LoadAllAssets();
+                foreach (var Asset in AllAssets)
+                {
+                    var TryCastFontAsset = Asset.TryCast<TMP_FontAsset>();
+                    if (TryCastFontAsset)
+                    {
+                        tmpchinesefonts.Add(TryCastFontAsset);
+                        tmpchinesefontnames.Add(TryCastFontAsset.name);
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+        public static bool IsChineseFont(TMP_FontAsset fontAsset)
+        {
+            return tmpchinesefontnames.Contains(fontAsset.name);
+        }
+        public static bool GetChineseFont(string fontname, out TMP_FontAsset fontAsset)
+        {
+            fontAsset = null;
+            if (fontname == "KOTRA_BOLD SDF" || fontname.StartsWith("Corporate-Logo-Bold") || fontname.StartsWith("HigashiOme-Gothic-C") || fontname == "Pretendard-Regular SDF" || fontname.StartsWith("SCDream") || fontname == "LiberationSans SDF" || fontname == "Mikodacs SDF" || fontname == "BebasKai SDF")
+            {
+                fontAsset = tmpchinesefonts[0];
+                return true;
+            }
+            if (fontname == "Caveat-SemiBold SDF" || fontname == "Cafe24Shiningstar SDF")
+            {
+                fontAsset = tmpchinesefonts[1];
+                return true;
+            }
+            return false;
+        }
         [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.font), MethodType.Setter)]
         [HarmonyPrefix]
         private static bool set_font(TMP_Text __instance, ref TMP_FontAsset value)
         {
-            if (__instance.m_fontAsset.name == tmpchinesefontname)
+            if (IsChineseFont(__instance.m_fontAsset))
                 return false;
-            if (__instance.font.name == "KOTRA_BOLD SDF" || __instance.font.name.StartsWith("Corporate-Logo-Bold") || __instance.font.name.StartsWith("HigashiOme-Gothic-C") || __instance.font.name == "Pretendard-Regular SDF" || __instance.font.name.StartsWith("SCDream") || __instance.font.name == "LiberationSans SDF" || __instance.font.name == "Mikodacs SDF" || __instance.font.name == "BebasKai SDF")
-                value = tmpchinesefont;
+            string fontname = __instance.m_fontAsset.name;
+            if (GetChineseFont(fontname, out TMP_FontAsset font))
+                value = font;
             return true;
         }
         [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.fontMaterial), MethodType.Setter)]
         [HarmonyPrefix]
         private static void set_fontMaterial(TMP_Text __instance, ref Material value)
         {
-            if (__instance.m_fontAsset.name == tmpchinesefontname)
-                value = __instance.font.material;
+            if (IsChineseFont(__instance.m_fontAsset))
+                value = __instance.m_fontAsset.material;
+        }
+        [HarmonyPatch(typeof(TextMeshProLanguageSetter), nameof(TextMeshProLanguageSetter.UpdateTMP))]
+        [HarmonyPrefix]
+        private static bool UpdateTMP(TextMeshProLanguageSetter __instance, LOCALIZE_LANGUAGE lang)
+        {
+            FontInformation fontInformation = __instance._fontInformation.Count > 0 ? __instance._fontInformation[0] : null;
+            if (fontInformation == null)
+                return false;
+            if (fontInformation.fontAsset == null || fontInformation.fontMaterial == null)
+                return false;
+            if (__instance._text == null)
+                return false;
+            var raw_fontAsset = fontInformation.fontAsset;
+            bool use_cn = GetChineseFont(raw_fontAsset.name, out var cn_fontAsset);
+
+            var fontAsset = use_cn ? cn_fontAsset : fontInformation.fontAsset;
+            var fontMaterial = use_cn ? cn_fontAsset.material : fontInformation.fontMaterial;
+
+            __instance._text.font = fontAsset;
+            __instance._text.fontMaterial = fontMaterial;
+            if (__instance._matSetter != null)
+            {
+                __instance._matSetter.defaultMat = fontMaterial;
+                __instance._matSetter.ResetMaterial();
+                return false;
+            }
+            __instance.gameObject.TryGetComponent(out TextMeshProMaterialSetter textMeshProMaterialSetter);
+            if (textMeshProMaterialSetter != null)
+            {
+                textMeshProMaterialSetter.defaultMat = fontMaterial;
+                textMeshProMaterialSetter.ResetMaterial();
+            }
+            return false;
         }
         #endregion
         #region 载入,应用汉化

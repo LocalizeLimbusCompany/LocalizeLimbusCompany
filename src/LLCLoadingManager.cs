@@ -36,8 +36,8 @@ namespace LimbusLocalize
         private static void LSM_Start(LoadingSceneManager __instance)
         {
             var loadingText = __instance._loadingText;
-            loadingText.font = LimbusLocalizeMod.tmpchinesefont;
-            loadingText.fontMaterial = LimbusLocalizeMod.tmpchinesefont.material;
+            loadingText.font = LimbusLocalizeMod.tmpchinesefonts[0];
+            loadingText.fontMaterial = LimbusLocalizeMod.tmpchinesefonts[0].material;
             loadingText.fontSize = 40;
             int random = Random.Range(0, 100);
             if (random < 25)
