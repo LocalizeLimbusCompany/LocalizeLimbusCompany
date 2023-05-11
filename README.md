@@ -8,8 +8,8 @@
    - 在Steam主界面右键游戏点击管理 浏览本地文件夹 将压缩包内所有东西**不 要 新 建 文 件 夹**的解压到上述弹出的文件夹中
 ### 2. 安装字体文件
 
-   - 从[LLC_ChineseFontAsset|中文通用字体![](https://img.shields.io/github/release/LocalizeLimbusCompany/LLC_ChineseFontAsset.svg?label=最新版)](../../../LLC_ChineseFontAsset)下载字体文件 后解压到上述文件夹中
-   - 从[LLC_Dante_Notes_Font|但丁笔记特殊字体![](https://img.shields.io/github/release/LocalizeLimbusCompany/LLC_Dante_Notes_Font.svg?label=最新版)](../../../LLC_Dante_Notes_Font)下载字体文件 后解压到上述文件夹中
+   - 从[LLC_ChineseFontAsset|中文通用字体![](https://img.shields.io/github/release/LocalizeLimbusCompany/LLC_ChineseFontAsset.svg?label=更新日期)](../../../LLC_ChineseFontAsset)下载字体文件 后解压到上述文件夹中
+   - 从[LLC_Dante_Notes_Font|但丁笔记特殊字体![](https://img.shields.io/github/release/LocalizeLimbusCompany/LLC_Dante_Notes_Font.svg?label=更新日期)](../../../LLC_Dante_Notes_Font)下载字体文件 后解压到上述文件夹中
 ### 3. 安装汉化
 
    - 从[最新版](../../releases)下载全量包 后解压到上述文件夹中

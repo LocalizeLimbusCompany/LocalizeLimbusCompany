@@ -24,7 +24,7 @@ namespace LimbusLocalize
         public static List<TMP_FontAsset> tmpchinesefonts = new();
         public static List<string> tmpchinesefontnames = new();
         public const string NAME = "LimbusLocalizeMod";
-        public const string VERSION = "0.3.0";
+        public const string VERSION = "0.4.0";
         public const string AUTHOR = "Bright";
         public const string LLCLink = "https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany";
         public static Action<string, Action> LogFatalError { get; set; }
