@@ -79,6 +79,8 @@ namespace LimbusLocalize
                     var TryCastFontAsset = Asset.TryCast<TMP_FontAsset>();
                     if (TryCastFontAsset)
                     {
+                        UnityEngine.Object.DontDestroyOnLoad(TryCastFontAsset);
+                        TryCastFontAsset.hideFlags |= HideFlags.HideAndDontSave;
                         tmpchinesefonts.Add(TryCastFontAsset);
                         tmpchinesefontnames.Add(TryCastFontAsset.name);
                         return true;
@@ -339,7 +341,7 @@ namespace LimbusLocalize
         private static void SetLoginInfo(LoginSceneManager __instance)
         {
             LoadLocal(LOCALIZE_LANGUAGE.EN);
-            __instance.tmp_loginAccount.text = "LimbusLocalizeMod v." + VERSION;
+            __instance.tmp_loginAccount.text = "LimbusLocalizeMod v" + VERSION;
         }
         #endregion
     }
