@@ -36,7 +36,7 @@ namespace LimbusLocalize
         {
             LogError = (string log) => { LoggerInstance.Error(log); Debug.LogError(log); };
             LogWarning = (string log) => { LoggerInstance.Warning(log); Debug.LogWarning(log); };
-            LogFatalError = (string log, Action action) => { LLCManager.FatalErrorlog += log + "\n"; LogError(log); LLCManager.FatalErrorAction += action; LLCManager.CheckModActions(); };
+            LogFatalError = (string log, Action action) => { LLCManager.FatalErrorlog += log + "\n"; LogError(log); LLCManager.FatalErrorAction = action; LLCManager.CheckModActions(); };
             ModPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             GamePath = new DirectoryInfo(Application.dataPath).Parent.FullName;
             try
@@ -51,12 +51,14 @@ namespace LimbusLocalize
                 harmony.PatchAll(typeof(ReadmeManager));
                 harmony.PatchAll(typeof(LLCLoadingManager));
                 if (!AddChineseFont(ModPath + "/tmpchinesefont"))
-                    LogFatalError("Fatal Error!!!\nYou Not Have Chinese Font, Please Read GitHub Readme To Download", OpenLLCURL);
-                AddChineseFont(ModPath + "/chinese_dante_notes_font");
+                    LogFatalError("You Not Have Chinese Font, Please Read GitHub Readme To Download\n你没有下载中文字体,请阅读GitHub的Readme下载", OpenLLCURL);
+                if (!AddChineseFont(ModPath + "/chinese_dante_notes_font"))
+                    LogFatalError("You Not Have Chinese Dante_Notes Font, Please Read GitHub Readme To Download\n你没有下载但丁笔记特殊字体,请阅读GitHub的Readme下载", OpenLLCURL);
             }
             catch (Exception e)
             {
-                LogFatalError("Mod Has Unknown Fatal Error!!!\n" + e.ToString(), () => { OpenGamePath(); OpenLLCURL(); });
+                LogFatalError("Mod Has Unknown Fatal Error!!!\n模组部分功能出现致命错误,即将打开GitHub,请根据Issues流程反馈", () => { OnApplicationQuit(); OpenGamePath(); OpenLLCURL(); });
+                LogError(e.ToString());
             }
         }
         public override void OnApplicationQuit()
@@ -96,6 +98,8 @@ namespace LimbusLocalize
         public static bool GetChineseFont(string fontname, out TMP_FontAsset fontAsset)
         {
             fontAsset = null;
+            if (tmpchinesefonts.Count == 0)
+                return false;
             if (fontname == "KOTRA_BOLD SDF" || fontname.StartsWith("Corporate-Logo-Bold") || fontname.StartsWith("HigashiOme-Gothic-C") || fontname == "Pretendard-Regular SDF" || fontname.StartsWith("SCDream") || fontname == "LiberationSans SDF" || fontname == "Mikodacs SDF" || fontname == "BebasKai SDF")
             {
                 fontAsset = tmpchinesefonts[0];
@@ -103,7 +107,7 @@ namespace LimbusLocalize
             }
             if (fontname == "Caveat-SemiBold SDF" || fontname == "Cafe24Shiningstar SDF")
             {
-                fontAsset = tmpchinesefonts[1];
+                fontAsset = tmpchinesefonts.Count > 1 ? tmpchinesefonts[1] : tmpchinesefonts[0];
                 return true;
             }
             return false;
