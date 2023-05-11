@@ -71,6 +71,31 @@ namespace LimbusLocalize
                     DownloadFileAsync(download, filename).GetAwaiter().GetResult();
                 UpdateCall = UpdateDel;
             }
+            LimbusLocalizeMod.LogWarning("Check Chinese Dante_Notes Font Asset Update");
+            Action FontAssetUpdate = Check_Dante_Notes_FontUpdate;
+            new Thread(FontAssetUpdate).Start();
+        }
+        static void Check_Dante_Notes_FontUpdate()
+        {
+            UnityWebRequest www = UnityWebRequest.Get("https://api.github.com/repos/LocalizeLimbusCompany/LLC_Dante_Notes_Font/releases/latest");
+            string FilePath = LimbusLocalizeMod.ModPath + "/chinese_dante_notes_font";
+            var LastWriteTime = File.Exists(FilePath) ? int.Parse(new FileInfo(FilePath).LastWriteTime.ToString("yyMMdd")) : 0;
+            www.SendWebRequest();
+            while (!www.isDone)
+                Thread.Sleep(100);
+            var latest = JSONNode.Parse(www.downloadHandler.text).AsObject;
+            int latestReleaseTag = int.Parse(latest["tag_name"].Value);
+            if (LastWriteTime < latestReleaseTag)
+            {
+                string updatelog = "chinese_dante_notes_font_" + latestReleaseTag;
+                Updatelog += updatelog + ".7z ";
+                string download = "https://github.com/LocalizeLimbusCompany/LLC_Dante_Notes_Font/releases/download/" + latestReleaseTag + "/" + updatelog + ".7z";
+                var dirs = download.Split('/');
+                string filename = LimbusLocalizeMod.GamePath + "/" + dirs[^1];
+                if (!File.Exists(filename))
+                    DownloadFileAsync(download, filename).GetAwaiter().GetResult();
+                UpdateCall = UpdateDel;
+            }
         }
         static void UpdateDel()
         {
