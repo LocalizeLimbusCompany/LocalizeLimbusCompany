@@ -25,6 +25,9 @@ jobs:
       - name: Run build script
         run: |
           ./build.ps1 ${{ github.event.inputs.version }}
+          Add-Content -Path CHANGELOG.md -Value "# 下载
+          - LimbusLocalize_${{ github.event.inputs.version }}.7z 全量包
+          - LimbusLocalize_OTA_${{ github.event.inputs.version }}.7z 增量更新"
       - name: Create Upload Release   
         uses: softprops/action-gh-release@v1
         with:
