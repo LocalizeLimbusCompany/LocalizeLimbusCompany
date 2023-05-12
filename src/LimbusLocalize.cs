@@ -137,7 +137,7 @@ namespace LimbusLocalize
             FontInformation fontInformation = __instance._fontInformation.Count > 0 ? __instance._fontInformation[0] : null;
             if (fontInformation == null)
                 return false;
-            if (fontInformation.fontAsset == null || fontInformation.fontMaterial == null)
+            if (fontInformation.fontAsset == null)
                 return false;
             if (__instance._text == null)
                 return false;
@@ -145,7 +145,7 @@ namespace LimbusLocalize
             bool use_cn = GetChineseFont(raw_fontAsset.name, out var cn_fontAsset);
 
             var fontAsset = use_cn ? cn_fontAsset : fontInformation.fontAsset;
-            var fontMaterial = use_cn ? cn_fontAsset.material : fontInformation.fontMaterial;
+            var fontMaterial = use_cn ? cn_fontAsset.material : fontInformation.fontMaterial ?? fontInformation.fontAsset.material;
 
             __instance._text.font = fontAsset;
             __instance._text.fontMaterial = fontMaterial;
