@@ -26,12 +26,10 @@ jobs:
         run: |
           ./build.ps1 ${{ github.event.inputs.version }}
       - name: Create Upload Release   
-        uses: svenstaro/upload-release-action@v2
+        uses: softprops/action-gh-release@v1
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file_glob: true
-          file: Release/*.7z
-          release_name: LimbusLocalize_ml_${{ github.event.inputs.version }}
-          body: "# 下载\n- LimbusLocalize_${{ github.event.inputs.version }}.7z 全量包\n- LimbusLocalize_OTA_${{ github.event.inputs.version }}.7z 增量更新"
-          tag: ${{ github.event.inputs.version }}
-          overwrite: true
+          files: |
+            Release/*.7z
+          body_path: CHANGELOG.md
+          name: LimbusLocalize_ml_${{ github.event.inputs.version }}
+          tag_name: ${{ github.event.inputs.version }}
