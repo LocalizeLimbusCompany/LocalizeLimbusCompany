@@ -29,7 +29,7 @@ namespace LimbusLocalize
                 cntmp.fontMaterial = LCB_Chinese_Font.tmpchinesefonts[0].material;
                 cntmp.text = "中文";
                 Chinese_Setting = _languageToggle;
-                parent.localPosition = new Vector3(2.5f, parent.localPosition.y, parent.localPosition.z);
+                parent.localPosition = new Vector3(parent.localPosition.x - 306f, parent.localPosition.y, parent.localPosition.z);
                 while (__instance._languageToggles.Count > 3)
                     __instance._languageToggles.RemoveAt(__instance._languageToggles.Count - 1);
                 __instance._languageToggles.Add(_languageToggle);
