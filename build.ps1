@@ -8,13 +8,6 @@ if (Test-Path $Path)
 	}
 # ----------- MelonLoader IL2CPP Interop (net6) -----------
 dotnet build src/LimbusLocalize_ml_ilcpp.sln -c Release_ML_Cpp_net6_interop
-# (cleanup and move files)
-Remove-Item $Path/LimbusLocalize.deps.json
-Remove-Item $Path/Tomlet.dll
-Remove-Item $Path/Iced.dll
-Remove-Item $Path/Il2CppInterop.Common.dll
-Remove-Item $Path/Il2CppInterop.Runtime.dll
-Remove-Item $Path/Microsoft.Extensions.Logging.Abstractions.dll
 # Full
 New-Item -Path "$Path" -Name "LimbusLocalize" -ItemType "directory" -Force
 New-Item -Path "$Path/LimbusLocalize" -Name "Mods" -ItemType "directory" -Force

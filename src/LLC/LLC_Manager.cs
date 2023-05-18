@@ -13,24 +13,24 @@ using UObject = UnityEngine.Object;
 
 namespace LimbusLocalize
 {
-    public class LLCManager : MonoBehaviour
+    public class LLC_Manager : MonoBehaviour
     {
-        static LLCManager()
+        static LLC_Manager()
         {
-            ClassInjector.RegisterTypeInIl2Cpp<LLCManager>();
-            GameObject obj = new(nameof(LLCManager));
+            ClassInjector.RegisterTypeInIl2Cpp<LLC_Manager>();
+            GameObject obj = new(nameof(LLC_Manager));
             DontDestroyOnLoad(obj);
             obj.hideFlags |= HideFlags.HideAndDontSave;
-            Instance = obj.AddComponent<LLCManager>();
+            Instance = obj.AddComponent<LLC_Manager>();
         }
-        public static LLCManager Instance;
-        public LLCManager(IntPtr ptr) : base(ptr) { }
+        public static LLC_Manager Instance;
+        public LLC_Manager(IntPtr ptr) : base(ptr) { }
 
         public static void OpenGlobalPopup(string description, string title = null, string close = "取消", string confirm = "确认", Action confirmEvent = null, Action closeEvent = null)
         {
             if (!GlobalGameManager.Instance) { return; }
             TextOkUIPopup globalPopupUI = GlobalGameManager.Instance.globalPopupUI;
-            TMP_FontAsset fontAsset = LimbusLocalizeMod.tmpchinesefonts[0];
+            TMP_FontAsset fontAsset = LCB_Chinese_Font.tmpchinesefonts[0];
             if (fontAsset)
             {
                 TextMeshProUGUI btn_canceltmp = globalPopupUI.btn_cancel.GetComponentInChildren<TextMeshProUGUI>(true);
@@ -139,12 +139,12 @@ namespace LimbusLocalize
         [HarmonyPostfix]
         public static void CheckModActions()
         {
-            if (UpdateChecker.UpdateCall != null)
-                OpenGlobalPopup("Has Update " + UpdateChecker.Updatelog + "!\nOpen Download Path & Quit Game\n模组存在更新\n点击OK将退出游戏并打开下载目录\n请将" + UpdateChecker.Updatelog + "压缩包解压至该目录", "Mod Has Update\n模组存在更新", null, "OK", () =>
+            if (LLC_UpdateChecker.UpdateCall != null)
+                OpenGlobalPopup("Has Update " + LLC_UpdateChecker.Updatelog + "!\nOpen Download Path & Quit Game\n模组存在更新\n点击OK将退出游戏并打开下载目录\n请将" + LLC_UpdateChecker.Updatelog + "压缩包解压至该目录", "Mod Has Update\n模组存在更新", null, "OK", () =>
                 {
-                    UpdateChecker.UpdateCall.Invoke();
-                    UpdateChecker.UpdateCall = null;
-                    UpdateChecker.Updatelog = string.Empty;
+                    LLC_UpdateChecker.UpdateCall.Invoke();
+                    LLC_UpdateChecker.UpdateCall = null;
+                    LLC_UpdateChecker.Updatelog = string.Empty;
                 });
             else if (FatalErrorAction != null)
                 OpenGlobalPopup(FatalErrorlog, "Mod Has Fatal Error!\n模组存在致命错误", null, "Open LLC URL", () =>

@@ -17,7 +17,7 @@ using UObject = UnityEngine.Object;
 
 namespace LimbusLocalize
 {
-    public static class ReadmeManager
+    public static class LLC_ReadmeManager
     {
         public static NoticeUIPopup NoticeUIInstance;
         public static RedDotWriggler _redDot_Notice;
@@ -55,7 +55,7 @@ namespace LimbusLocalize
         {
             ReadmeSprites = new Dictionary<string, Sprite>();
 
-            foreach (FileInfo fileInfo in new DirectoryInfo(LimbusLocalizeMod.ModPath + "/Localize/Readme").GetFiles().Where(f => f.Extension == ".jpg" || f.Extension == ".png"))
+            foreach (FileInfo fileInfo in new DirectoryInfo(LCB_LLCMod.ModPath + "/Localize/Readme").GetFiles().Where(f => f.Extension == ".jpg" || f.Extension == ".png"))
             {
                 Texture2D texture2D = new(2, 2);
                 ImageConversion.LoadImage(texture2D, File.ReadAllBytes(fileInfo.FullName));
@@ -70,7 +70,7 @@ namespace LimbusLocalize
         public static void InitReadmeList()
         {
             ReadmeList.Clear();
-            foreach (var notices in JSONNode.Parse(File.ReadAllText(LimbusLocalizeMod.ModPath + "/Localize/Readme/Readme.json"))[0].AsArray.m_List)
+            foreach (var notices in JSONNode.Parse(File.ReadAllText(LCB_LLCMod.ModPath + "/Localize/Readme/Readme.json"))[0].AsArray.m_List)
             {
                 ReadmeList.Add(new Notice(JsonUtility.FromJson<NoticeFormat>(notices.ToString()), LOCALIZE_LANGUAGE.KR));
             }
@@ -108,7 +108,7 @@ namespace LimbusLocalize
         [HarmonyPrefix]
         private static bool InitNoticeList(UserLocalNoticeRedDotModel __instance, List<int> severNoticeList)
         {
-            UpdateChecker.CheckReadmeUpdate();
+            LLC_UpdateChecker.CheckReadmeUpdate();
             for (int i = 0; i < __instance.GetDataList().Count; i++)
             {
                 Func<int, bool> func = x =>
