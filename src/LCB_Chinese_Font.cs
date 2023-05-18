@@ -1,4 +1,4 @@
-using HarmonyLib;
+﻿using HarmonyLib;
 using Il2Cpp;
 using Il2CppAddressable;
 using Il2CppSimpleJSON;
@@ -6,70 +6,16 @@ using Il2CppStorySystem;
 using Il2CppSystem.Collections.Generic;
 using Il2CppTMPro;
 using Il2CppUtilityUI;
-using LimbusLocalize;
-using MelonLoader;
 using System;
 using System.IO;
-using System.Reflection;
-using System.Text.RegularExpressions;
 using UnityEngine;
 
-[assembly: MelonInfo(typeof(LimbusLocalizeMod), LimbusLocalizeMod.NAME, LimbusLocalizeMod.VERSION, LimbusLocalizeMod.AUTHOR, LimbusLocalizeMod.LLCLink)]
 namespace LimbusLocalize
 {
-    public class LimbusLocalizeMod : MelonMod
+    public static class LCB_Chinese_Font
     {
-        public static string ModPath;
-        public static string GamePath;
         public static List<TMP_FontAsset> tmpchinesefonts = new();
         public static List<string> tmpchinesefontnames = new();
-        public const string NAME = "LimbusLocalizeMod";
-        public const string VERSION = "0.4.0";
-        public const string AUTHOR = "Bright";
-        public const string LLCLink = "https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany";
-        public static Action<string, Action> LogFatalError { get; set; }
-        public static Action<string> LogError { get; set; }
-        public static Action<string> LogWarning { get; set; }
-        public static void OpenLLCURL() { Application.OpenURL(LLCLink); }
-        public static void OpenGamePath() { Application.OpenURL(GamePath); }
-        public override void OnInitializeMelon()
-        {
-            LogError = (string log) => { LoggerInstance.Error(log); Debug.LogError(log); };
-            LogWarning = (string log) => { LoggerInstance.Warning(log); Debug.LogWarning(log); };
-            LogFatalError = (string log, Action action) => { LLCManager.FatalErrorlog += log + "\n"; LogError(log); LLCManager.FatalErrorAction = action; LLCManager.CheckModActions(); };
-            ModPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            GamePath = new DirectoryInfo(Application.dataPath).Parent.FullName;
-            try
-            {
-                LLCManager.InitLocalizes(new DirectoryInfo(ModPath + "/Localize/CN"));
-                ReadmeManager.InitReadmeList();
-                LLCLoadingManager.InitLoadingTexts();
-                UpdateChecker.StartCheckUpdates();
-                HarmonyLib.Harmony harmony = new("LimbusLocalizeMod");
-                harmony.PatchAll(typeof(LimbusLocalizeMod));
-                harmony.PatchAll(typeof(LLCManager));
-                harmony.PatchAll(typeof(ReadmeManager));
-                harmony.PatchAll(typeof(LLCLoadingManager));
-                if (!AddChineseFont(ModPath + "/tmpchinesefont"))
-                    LogFatalError("You Not Have Chinese Font, Please Read GitHub Readme To Download\n你没有下载中文字体,请阅读GitHub的Readme下载", OpenLLCURL);
-                if (!AddChineseFont(ModPath + "/chinese_dante_notes_font"))
-                    LogFatalError("You Not Have Chinese Dante_Notes Font, Please Read GitHub Readme To Download\n你没有下载但丁笔记特殊字体,请阅读GitHub的Readme下载", OpenLLCURL);
-            }
-            catch (Exception e)
-            {
-                LogFatalError("Mod Has Unknown Fatal Error!!!\n模组部分功能出现致命错误,即将打开GitHub,请根据Issues流程反馈", () => { OnApplicationQuit(); OpenGamePath(); OpenLLCURL(); });
-                LogError(e.ToString());
-            }
-        }
-        public override void OnApplicationQuit()
-        {
-            File.Copy(GamePath + "/MelonLoader/Latest.log", GamePath + "/框架日志.log", true);
-            var Latestlog = File.ReadAllText(GamePath + "/框架日志.log");
-            Latestlog = Regex.Replace(Latestlog, "[0-9:\\.\\[\\]]+ During invoking native->managed trampoline(\r\n)?", "");
-            File.WriteAllText(GamePath + "/框架日志.log", Latestlog);
-            File.Copy(Application.consoleLogPath, GamePath + "/游戏日志.log", true);
-        }
-
         #region 字体
         public static bool AddChineseFont(string path)
         {
@@ -91,10 +37,6 @@ namespace LimbusLocalize
             }
             return false;
         }
-        public static bool IsChineseFont(TMP_FontAsset fontAsset)
-        {
-            return tmpchinesefontnames.Contains(fontAsset.name);
-        }
         public static bool GetChineseFont(string fontname, out TMP_FontAsset fontAsset)
         {
             fontAsset = null;
@@ -105,13 +47,13 @@ namespace LimbusLocalize
                 fontAsset = tmpchinesefonts[0];
                 return true;
             }
-            if (fontname == "Caveat-SemiBold SDF" || fontname == "Cafe24Shiningstar SDF")
-            {
-                fontAsset = tmpchinesefonts.Count > 1 ? tmpchinesefonts[1] : tmpchinesefonts[0];
-                return true;
-            }
             return false;
         }
+        public static bool IsChineseFont(TMP_FontAsset fontAsset)
+        {
+            return tmpchinesefontnames.Contains(fontAsset.name);
+        }
+
         [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.font), MethodType.Setter)]
         [HarmonyPrefix]
         private static bool set_font(TMP_Text __instance, ref TMP_FontAsset value)
@@ -164,13 +106,7 @@ namespace LimbusLocalize
             return false;
         }
         #endregion
-        #region 载入,应用汉化
-        [HarmonyPatch(typeof(TextDataManager), nameof(TextDataManager.LoadRemote))]
-        [HarmonyPrefix]
-        private static void LoadRemote(ref LOCALIZE_LANGUAGE lang)
-        {
-            lang = LOCALIZE_LANGUAGE.EN;
-        }
+        #region 载入汉化
         private static void LoadRemote2(LOCALIZE_LANGUAGE lang)
         {
             var tm = TextDataManager.Instance;
@@ -218,13 +154,14 @@ namespace LimbusLocalize
             tm._railwayDungeonStationName.Init(romoteLocalizeFileList.RailwayDungeonStationName);
             tm._dungeonName.Init(romoteLocalizeFileList.DungeonName);
             tm._danteNoteDesc.Init(romoteLocalizeFileList.DanteNote);
+            tm._danteNoteCategoryKeyword.Init(romoteLocalizeFileList.DanteNoteCategoryKeyword);
 
             tm._abnormalityEventCharDlg.AbEventCharDlgRootInit(romoteLocalizeFileList.abnormalityCharDlgFilePath);
+
             tm._personalityVoiceText._voiceDictionary.JsonDataListInit(romoteLocalizeFileList.PersonalityVoice);
             tm._announcerVoiceText._voiceDictionary.JsonDataListInit(romoteLocalizeFileList.AnnouncerVoice);
             tm._bgmLyricsText._lyricsDictionary.JsonDataListInit(romoteLocalizeFileList.BgmLyrics);
             tm._egoVoiceText._voiceDictionary.JsonDataListInit(romoteLocalizeFileList.EGOVoice);
-
         }
         [HarmonyPatch(typeof(EGOVoiceJsonDataList), nameof(EGOVoiceJsonDataList.Init))]
         [HarmonyPrefix]
@@ -251,44 +188,11 @@ namespace LimbusLocalize
             }
             return false;
         }
-        private static bool LoadLocal(LOCALIZE_LANGUAGE lang)
-        {
-            var tm = TextDataManager.Instance;
-            TextDataManager.LocalizeFileList localizeFileList = JsonUtility.FromJson<TextDataManager.LocalizeFileList>(Resources.Load<TextAsset>("Localize/LocalizeFileList").ToString());
-            tm._loginUIList.Init(localizeFileList.LoginUIFilePaths);
-            tm._fileDownloadDesc.Init(localizeFileList.FileDownloadDesc);
-            tm._battleHint.Init(localizeFileList.BattleHint);
-            return false;
-        }
-        [HarmonyPatch(typeof(StoryData), nameof(StoryData.Init))]
-        [HarmonyPrefix]
-        private static bool StoryDataInit(StoryData __instance)
-        {
-            ScenarioAssetDataList scenarioAssetDataList = JsonUtility.FromJson<ScenarioAssetDataList>(LLCManager.Localizes["NickName"]);
-            __instance._modelAssetMap = new Dictionary<string, ScenarioAssetData>();
-            __instance._standingAssetMap = new Dictionary<string, StandingAsset>();
-            __instance._standingAssetPathMap = new Dictionary<string, string>();
-            foreach (ScenarioAssetData scenarioAssetData in scenarioAssetDataList.assetData)
-            {
-                string name = scenarioAssetData.name;
-                __instance._modelAssetMap.Add(name, scenarioAssetData);
-                if (!string.IsNullOrEmpty(scenarioAssetData.fileName) && !__instance._standingAssetPathMap.ContainsKey(scenarioAssetData.fileName))
-                    __instance._standingAssetPathMap.Add(scenarioAssetData.fileName, "Story_StandingModel" + scenarioAssetData.fileName);
-            }
-            ScenarioMapAssetDataList scenarioMapAssetDataList = JsonUtility.FromJson<ScenarioMapAssetDataList>(Resources.Load<TextAsset>("Story/ScenarioMapCode").ToString());
-            __instance._mapAssetMap = new Dictionary<string, ScenarioMapAssetData>();
-            foreach (ScenarioMapAssetData scenarioMapAssetData in scenarioMapAssetDataList.assetData)
-                __instance._mapAssetMap.Add(scenarioMapAssetData.id, scenarioMapAssetData);
-            __instance._emotionMap = new Dictionary<string, EmotionAsset>();
-            for (int i = 0; i < __instance._emotions.Count; i++)
-                __instance._emotionMap.Add(__instance._emotions[i].prefab.Name.ToLower(), __instance._emotions[i]);
-            return false;
-        }
         [HarmonyPatch(typeof(StoryData), nameof(StoryData.GetScenario))]
         [HarmonyPrefix]
         private static bool GetScenario(StoryData __instance, string scenarioID, ref LOCALIZE_LANGUAGE lang, ref Scenario __result)
         {
-            if (LLCManager.Localizes.TryGetValue(scenarioID, out string text))
+            if (LLC_Manager.Localizes.TryGetValue(scenarioID, out string text))
             {
                 TextAsset textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
                 if (textAsset == null)
@@ -318,18 +222,10 @@ namespace LimbusLocalize
             }
             else
             {
-                LogError("Error!Can'n Find CN Story File,Use Raw EN Story");
+                LCB_LLCMod.LogError("Error!Can'n Find CN Story File,Use Raw EN Story");
                 lang = LOCALIZE_LANGUAGE.EN;
                 return true;
             }
-        }
-        [HarmonyPatch(typeof(StoryData), nameof(StoryData.GetTellerTitle))]
-        [HarmonyPrefix]
-        private static bool GetTellerTitle(StoryData __instance, string name, LOCALIZE_LANGUAGE lang, ref string __result)
-        {
-            if (__instance._modelAssetMap.TryGetValueEX(name, out var scenarioAssetData))
-                __result = scenarioAssetData.nickName ?? string.Empty;
-            return false;
         }
         [HarmonyPatch(typeof(StoryData), nameof(StoryData.GetTellerName))]
         [HarmonyPrefix]
@@ -339,14 +235,117 @@ namespace LimbusLocalize
                 __result = scenarioAssetData.krname ?? string.Empty;
             return false;
         }
-
+        [HarmonyPatch(typeof(StoryData), nameof(StoryData.GetTellerTitle))]
+        [HarmonyPrefix]
+        private static bool GetTellerTitle(StoryData __instance, string name, LOCALIZE_LANGUAGE lang, ref string __result)
+        {
+            if (__instance._modelAssetMap.TryGetValueEX(name, out var scenarioAssetData))
+                __result = scenarioAssetData.nickName ?? string.Empty;
+            return false;
+        }
+        private static bool LoadLocal(LOCALIZE_LANGUAGE lang)
+        {
+            var tm = TextDataManager.Instance;
+            TextDataManager.LocalizeFileList localizeFileList = JsonUtility.FromJson<TextDataManager.LocalizeFileList>(Resources.Load<TextAsset>("Localize/LocalizeFileList").ToString());
+            tm._loginUIList.Init(localizeFileList.LoginUIFilePaths);
+            tm._fileDownloadDesc.Init(localizeFileList.FileDownloadDesc);
+            tm._battleHint.Init(localizeFileList.BattleHint);
+            return false;
+        }
+        [HarmonyPatch(typeof(TextDataManager), nameof(TextDataManager.LoadRemote))]
+        [HarmonyPrefix]
+        private static void LoadRemote(ref LOCALIZE_LANGUAGE lang)
+        {
+            lang = LOCALIZE_LANGUAGE.EN;
+        }
+        [HarmonyPatch(typeof(StoryData), nameof(StoryData.Init))]
+        [HarmonyPrefix]
+        private static bool StoryDataInit(StoryData __instance)
+        {
+            ScenarioAssetDataList scenarioAssetDataList = JsonUtility.FromJson<ScenarioAssetDataList>(LLC_Manager.Localizes["NickName"]);
+            __instance._modelAssetMap = new Dictionary<string, ScenarioAssetData>();
+            __instance._standingAssetMap = new Dictionary<string, StandingAsset>();
+            __instance._standingAssetPathMap = new Dictionary<string, string>();
+            foreach (ScenarioAssetData scenarioAssetData in scenarioAssetDataList.assetData)
+            {
+                string name = scenarioAssetData.name;
+                __instance._modelAssetMap.Add(name, scenarioAssetData);
+                if (!string.IsNullOrEmpty(scenarioAssetData.fileName) && !__instance._standingAssetPathMap.ContainsKey(scenarioAssetData.fileName))
+                    __instance._standingAssetPathMap.Add(scenarioAssetData.fileName, "Story_StandingModel" + scenarioAssetData.fileName);
+            }
+            ScenarioMapAssetDataList scenarioMapAssetDataList = JsonUtility.FromJson<ScenarioMapAssetDataList>(Resources.Load<TextAsset>("Story/ScenarioMapCode").ToString());
+            __instance._mapAssetMap = new Dictionary<string, ScenarioMapAssetData>();
+            foreach (ScenarioMapAssetData scenarioMapAssetData in scenarioMapAssetDataList.assetData)
+                __instance._mapAssetMap.Add(scenarioMapAssetData.id, scenarioMapAssetData);
+            __instance._emotionMap = new Dictionary<string, EmotionAsset>();
+            for (int i = 0; i < __instance._emotions.Count; i++)
+                __instance._emotionMap.Add(__instance._emotions[i].prefab.Name.ToLower(), __instance._emotions[i]);
+            return false;
+        }
         [HarmonyPatch(typeof(LoginSceneManager), nameof(LoginSceneManager.SetLoginInfo))]
         [HarmonyPostfix]
         private static void SetLoginInfo(LoginSceneManager __instance)
         {
             LoadLocal(LOCALIZE_LANGUAGE.EN);
-            __instance.tmp_loginAccount.text = "LimbusLocalizeMod v" + VERSION;
+            __instance.tmp_loginAccount.text = "LimbusLocalizeMod v" + LCB_LLCMod.VERSION;
         }
+        private static void Init<T>(this JsonDataList<T> jsonDataList, List<string> jsonFilePathList) where T : LocalizeTextData, new()
+        {
+            foreach (string text in jsonFilePathList)
+            {
+                if (!LLC_Manager.Localizes.TryGetValue(text, out var text2)) { continue; }
+                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(text2);
+                foreach (T t in localizeTextData.DataList)
+                {
+                    jsonDataList._dic[t.ID.ToString()] = t;
+                }
+            }
+        }
+
+        private static void AbEventCharDlgRootInit(this AbEventCharDlgRoot root, List<string> jsonFilePathList)
+        {
+            root._personalityDict = new();
+            foreach (string text in jsonFilePathList)
+            {
+                if (!LLC_Manager.Localizes.TryGetValue(text, out var text2)) { continue; }
+                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_AbnormalityEventCharDlg>>(text2);
+                foreach (var t in localizeTextData.DataList)
+                {
+                    if (!root._personalityDict.TryGetValueEX(t.PersonalityID, out var abEventKeyDictionaryContainer))
+                    {
+                        abEventKeyDictionaryContainer = new AbEventKeyDictionaryContainer();
+                        root._personalityDict[t.PersonalityID] = abEventKeyDictionaryContainer;
+                    }
+                    string[] array = t.Usage.Trim().Split(new char[] { '(', ')' });
+                    for (int i = 1; i < array.Length; i += 2)
+                    {
+                        string[] array2 = array[i].Split(',');
+                        int num = int.Parse(array2[0].Trim());
+                        AB_DLG_EVENT_TYPE ab_DLG_EVENT_TYPE = (AB_DLG_EVENT_TYPE)Enum.Parse(typeof(AB_DLG_EVENT_TYPE), array2[1].Trim());
+                        AbEventKey abEventKey = new(num, ab_DLG_EVENT_TYPE);
+                        abEventKeyDictionaryContainer.AddDlgWithEvent(abEventKey, t);
+                    }
+                }
+
+            }
+        }
+        private static void JsonDataListInit<T>(this Dictionary<string, LocalizeTextDataRoot<T>> jsonDataList, List<string> jsonFilePathList)
+        {
+            foreach (string text in jsonFilePathList)
+            {
+                if (!LLC_Manager.Localizes.TryGetValue(text, out var text2)) { continue; }
+                var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(text2);
+                jsonDataList[text.Split('_')[^1]] = localizeTextData;
+            }
+        }
+
         #endregion
+        public static bool TryGetValueEX<TKey, TValue>(this Dictionary<TKey, TValue> dic, TKey key, out TValue value)
+        {
+            var entries = dic._entries;
+            var Entr = dic.FindEntry(key);
+            value = Entr == -1 ? default : entries == null ? default : entries[Entr].value;
+            return value != null;
+        }
     }
 }
