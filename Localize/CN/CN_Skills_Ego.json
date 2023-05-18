@@ -2020,7 +2020,7 @@
                   "desc": "[OnSucceedAttack] 使自身获得10层充能 "
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 使所全体友方单位获得(嫉妒共鸣数)层充能 "
+                  "desc": "[OnSucceedAttackHead] 使全体友方单位获得(嫉妒共鸣数)层充能 "
                 }
               ]
             }
@@ -2161,7 +2161,7 @@
           "level": 1,
           "name": "一生炖菜",
           "abName": "鸡蛇汤罐",
-          "desc": "[BeforeAttack] 根据当前色欲资源数增加伤害（最大叠加至25%）",
+          "desc": "[BeforeAttack] 根据当前色欲资源数增加伤害（最多叠加至25%）",
           "coinlist": [
             {
               "coindescs": [
@@ -2176,7 +2176,7 @@
           "level": 3,
           "name": "一生炖菜",
           "abName": "鸡蛇汤罐",
-          "desc": "[BeforeAttack] 根据当前色欲资源数增加伤害（最大叠加至50%）",
+          "desc": "[BeforeAttack] 根据当前色欲资源数增加伤害（最多叠加至50%）",
           "coinlist": [
             {
               "coindescs": [
@@ -2196,7 +2196,7 @@
           "level": 1,
           "name": "一生炖菜",
           "abName": "鸡蛇汤罐",
-          "desc": "[CantIdentify]\n指定场上体力最高的角色\n\n[BeforeAttack] 根据当前色欲资源数增加伤害（最大叠加至25%）\n随后消耗（色欲共鸣数）的色欲资源; 每消耗一个资源增加5%伤害",
+          "desc": "[CantIdentify]\n指定场上体力最高的角色\n\n[BeforeAttack] 根据当前色欲资源数增加伤害（最多叠加至25%）\n随后消耗（色欲共鸣数）的色欲资源; 每消耗一个资源增加5%伤害",
           "coinlist": [
             {
               "coindescs": [
@@ -2211,7 +2211,7 @@
           "level": 3,
           "name": "一生炖菜",
           "abName": "鸡蛇汤罐",
-          "desc": "[CantIdentify]\n指定场上体力最高的角色\n\n[BeforeAttack] 根据当前色欲资源数增加伤害（最大叠加至50%）\n随后消耗（色欲共鸣数）的色欲资源; 每消耗一个资源增加10%伤害",
+          "desc": "[CantIdentify]\n指定场上体力最高的角色\n\n[BeforeAttack] 根据当前色欲资源数增加伤害（最多叠加至50%）\n随后消耗（色欲共鸣数）的色欲资源; 每消耗一个资源增加10%伤害",
           "coinlist": [
             {
               "coindescs": [
@@ -2293,6 +2293,158 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] 施加2层烧伤 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2010411,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "次元撕裂者",
+          "abName": "迷失的乘客",
+          "desc": "[BeforeAttack] 消耗充能 层数来增加本技能造成的伤害（最多50%）",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 追加本硬币造成伤害(目标的破裂 强度x7.5)%的傲慢伤害，并使目标的破裂 层数减少5层（最多追加75%）"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "次元撕裂者",
+          "abName": "迷失的乘客",
+          "desc": "[BeforeAttack] 消耗充能 层数来增加本技能造成的伤害（最多75%）",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若消耗了充能 ，则对目标施加3层次元裂痕 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 追加本硬币造成伤害(目标的破裂 强度x10)%的傲慢伤害，并使目标的破裂 层数减少5层（最多追加100%）"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2010421,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "次元撕裂者",
+          "abName": "迷失的乘客",
+          "desc": "[CantIdentify] \n指定随机角色\n\n[BeforeAttack] 消耗充能 层数来增加本技能造成的伤害（最多50%）",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级破裂 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 追加本硬币造成伤害(目标的破裂 强度x7.5)%的傲慢伤害，并使目标的破裂 层数减少5层（最多追加75%）"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "次元撕裂者",
+          "abName": "迷失的乘客",
+          "desc": "[CantIdentify] \n指定随机角色\n\n[BeforeAttack] 消耗充能 层数来增加本技能造成的伤害（最多75%）",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若消耗了充能 ，则对目标施加3层次元裂痕 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加6级破裂 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 追加本硬币造成伤害(目标的破裂 强度x10)%的傲慢伤害，并使目标的破裂 层数减少5层（最多追加100%）"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2060311,
+      "levelList": [
+        {
+          "level": 0,
+          "name": "次元撕裂者",
+          "abName": "迷失的乘客",
+          "desc": "[BeforeAttack] 使自身获得3层充能 ；下回合使自身获得2层迅捷 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层易损 和2层次元裂痕 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "次元撕裂者",
+          "abName": "迷失的乘客",
+          "desc": "[BeforeAttack] 使自身获得5层充能 ；下回合使自身获得2层迅捷 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层易损 和4层次元裂痕 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2060321,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "次元撕裂者",
+          "abName": "迷失的乘客",
+          "desc": "[CantIdentify] \n指定场上体力最高的角色\n\n[BeforeAttack] 下回合使自身获得2层迅捷 。\n消耗10层充能 并使本技能在命中时对目标施加1层易损 和1层次元裂痕 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层易损 和3层次元裂痕 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "次元撕裂者",
+          "abName": "迷失的乘客",
+          "desc": "[CantIdentify] \n指定场上体力最高的角色\n\n[BeforeAttack] 下回合使自身获得3层迅捷 。\n消耗10层充能 并使本技能在命中时对目标施加2层易损 和2层次元裂痕 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层易损 和4层次元裂痕 "
                 }
               ]
             }
