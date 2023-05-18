@@ -7,14 +7,14 @@ using UnityEngine;
 
 namespace LimbusLocalize
 {
-    public static class LLCLoadingManager
+    public static class LLC_LoadingManager
     {
         static List<string> LoadingTexts = new();
         static string Touhou;
         static readonly string Raw = "<bounce f=0.5>NOW LOADING...</bounce>";
         public static void InitLoadingTexts()
         {
-            LoadingTexts = File.ReadAllLines(LimbusLocalizeMod.ModPath + "/Localize/Readme/LoadingTexts.md").ToList();
+            LoadingTexts = File.ReadAllLines(LCB_LLCMod.ModPath + "/Localize/Readme/LoadingTexts.md").ToList();
             for (int i = 0; i < LoadingTexts.Count; i++)
             {
                 string LoadingText = LoadingTexts[i];
@@ -36,8 +36,8 @@ namespace LimbusLocalize
         private static void LSM_Start(LoadingSceneManager __instance)
         {
             var loadingText = __instance._loadingText;
-            loadingText.font = LimbusLocalizeMod.tmpchinesefonts[0];
-            loadingText.fontMaterial = LimbusLocalizeMod.tmpchinesefonts[0].material;
+            loadingText.font = LCB_Chinese_Font.tmpchinesefonts[0];
+            loadingText.fontMaterial = LCB_Chinese_Font.tmpchinesefonts[0].material;
             loadingText.fontSize = 40;
             int random = Random.Range(0, 100);
             if (random < 25)
