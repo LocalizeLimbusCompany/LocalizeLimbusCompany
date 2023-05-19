@@ -5,7 +5,7 @@
 ### 1. Установите фреймворк мод
    - Установите [MelonLoader](https://github.com/LavaGang/MelonLoader) v0.6.1
    
-   - 在Steam主界面右键游戏点击管理 浏览本地文件夹 将压缩包内所有东西**不 要 新 建 文 件 夹**的解压到上述弹出的文件夹中
+   - Перейдите в библиотеку Steam, нажмите ПКМ по игре в списке и перейдите в "Управление > Показать локальные файлы". В открывшуюся папку разархивируйте скаченные файлы, **не создавая новую папку**.
 ### 2. 安装字体文件
    - 从[LLC_ChineseFontAsset|中文通用字体![](https://img.shields.io/github/release/LocalizeLimbusCompany/LLC_ChineseFontAsset.svg?label=更新日期)](../../../LLC_ChineseFontAsset)下载字体文件 后解压到上述文件夹中
 ### 3. 安装汉化
