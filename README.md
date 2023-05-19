@@ -2,7 +2,7 @@
 
 [![](https://img.shields.io/github/release/LocalizeLimbusCompany/LocalizeLimbusCompany.svg?label=最新版&style=social)![](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/latest/total.svg?label=下载&style=social)](../../releases/latest)
 ### 0. Скачайте[.NET 6.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/sdk-6.0.406-windows-x64-installer)
-### 1. Установка фреймворк мода
+### 1. Установите фреймворк мод
    - Установите [MelonLoader](https://github.com/LavaGang/MelonLoader) v0.6.1
    
    - 在Steam主界面右键游戏点击管理 浏览本地文件夹 将压缩包内所有东西**不 要 新 建 文 件 夹**的解压到上述弹出的文件夹中
