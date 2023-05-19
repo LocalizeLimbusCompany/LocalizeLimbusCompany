@@ -19,5 +19,5 @@
 ## Я всё равно ничего не понял(-а), что мне делать? 
    - [Ознакомьтесь с данным руководством](../../../LLC_MOD_Installer).
 # Дополнительные ссылки
-- [Группа перевода]([https://jq.qq.com/?_wv=1027&k=5NE6Kvg2](https://vk.com/limbus_company_ru))
+- [Группа перевода](https://vk.com/limbus_company_ru)
 - [Установщик мода](../../../LLC_MOD_Installer)
