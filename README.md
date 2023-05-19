@@ -1,4 +1,4 @@
-# Установка фреймворк мода[![](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/total.svg?label=下载&style=social)](../../releases)
+# Установка[![](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/total.svg?label=下载&style=social)](../../releases)
 
 [![](https://img.shields.io/github/release/LocalizeLimbusCompany/LocalizeLimbusCompany.svg?label=最新版&style=social)![](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/latest/total.svg?label=下载&style=social)](../../releases/latest)
 ### 0. Скачайте[.NET 6.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/sdk-6.0.406-windows-x64-installer)
