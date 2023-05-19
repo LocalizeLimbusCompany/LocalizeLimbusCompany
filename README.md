@@ -19,8 +19,5 @@
 ## Я всё равно ничего не понял(-а), что мне делать? 
    - [Ознакомьтесь с данным руководством](../../../LLC_MOD_Installer).
 # Дополнительные ссылки
-- [QQ群](https://jq.qq.com/?_wv=1027&k=5NE6Kvg2) LLCG 686792849
-- [LLC_MOD_Installer](../../../LLC_MOD_Installer) 模组傻瓜安装更新程序
-- [汉化组B站链接](https://space.bilibili.com/1247764479) 都市零协会汉化组
-- [边狱公司中文WIKI](https://limbuscompany.huijiwiki.com)
-- [ParaTranz 合作翻译项目](https://paratranz.cn/projects/6860) 汉化组的最新进展
+- [Группа перевода]([https://jq.qq.com/?_wv=1027&k=5NE6Kvg2](https://vk.com/limbus_company_ru))
+- [Установщик мода](../../../LLC_MOD_Installer)
