@@ -45,7 +45,7 @@ namespace LimbusLocalizeRUS
             return false;
         if (fontname == "KOTRA_BOLD SDF" || fontname.StartsWith("Corporate-Logo-Bold") || fontname.StartsWith("HigashiOme-Gothic-C") || fontname == "Pretendard-Regular SDF" || fontname.StartsWith("SCDream") || fontname == "LiberationSans SDF" || fontname == "Mikodacs SDF" || fontname == "BebasKai SDF")
         {
-            fontAsset = tmpcyrillicfonts[9];
+            fontAsset = tmpcyrillicfonts[0];
             return true;
         }
         return false;
