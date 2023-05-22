@@ -32,9 +32,9 @@ namespace LimbusLocalizeRUS
                         TryCastFontAsset.hideFlags |= HideFlags.HideAndDontSave;
                         tmpcyrillicfonts.Add(TryCastFontAsset);
                         tmpcyrillicfontnames.Add(TryCastFontAsset.name);
-                        return true;
                     }
                 }
+                return true;
             }
             return false;
         }
@@ -45,12 +45,12 @@ namespace LimbusLocalizeRUS
                 return false;
             if (fontname == "KOTRA_BOLD SDF" || fontname.StartsWith("Corporate-Logo-Bold") || fontname == "Mikodacs SDF")
             {
-                fontAsset = tmpcyrillicfonts[3];
+                fontAsset = tmpcyrillicfonts[4];
                 return true;
             }
             if (fontname == "Pretendard-Regular SDF"|| fontname.StartsWith("SCDream") || fontname == "LiberationSans SDF")
             {
-                fontAsset = tmpcyrillicfonts[4];
+                fontAsset = tmpcyrillicfonts[5];
                 return true;
             }
             if (fontname == "fontname.StartsWith(\"HigashiOme - Gothic - C\")")
