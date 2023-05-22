@@ -45,17 +45,17 @@ namespace LimbusLocalizeRUS
                 return false;
             if (fontname == "KOTRA_BOLD SDF" || fontname.StartsWith("Corporate-Logo-Bold") || fontname == "Mikodacs SDF")
             {
-                fontAsset = tmpcyrillicfonts[0];
+                fontAsset = tmpcyrillicfonts[3];
                 return true;
             }
             if (fontname == "Pretendard-Regular SDF"|| fontname.StartsWith("SCDream") || fontname == "LiberationSans SDF")
             {
-                fontAsset = tmpcyrillicfonts[0];
+                fontAsset = tmpcyrillicfonts[4];
                 return true;
             }
             if (fontname == "fontname.StartsWith(\"HigashiOme - Gothic - C\")")
             {
-                fontAsset = tmpcyrillicfonts[0];
+                fontAsset = tmpcyrillicfonts[2];
                 return true;
             }
             if (fontname == "BebasKai SDF")
@@ -63,7 +63,6 @@ namespace LimbusLocalizeRUS
                 fontAsset = tmpcyrillicfonts[0];
                 return true;
             }
-
             return false;
     }
         public static bool IsCyrillicFont(TMP_FontAsset fontAsset)
@@ -94,17 +93,17 @@ namespace LimbusLocalizeRUS
         private static bool UpdateTMP(TextMeshProLanguageSetter __instance, LOCALIZE_LANGUAGE lang)
         {
             FontInformation fontInformation = __instance._fontInformation.Count > 0 ? __instance._fontInformation[0] : null;
-            if (fontInformation == null)
-                return false;
-            if (fontInformation.fontAsset == null)
-                return false;
-            if (__instance._text == null)
-                return false;
-            var raw_fontAsset = fontInformation.fontAsset;
-            bool use_cn = GetCyrillicFont(raw_fontAsset.name, out var cn_fontAsset);
+                if (fontInformation == null)
+                    return false;
+                if (fontInformation.fontAsset == null)
+                    return false;
+                if (__instance._text == null)
+                    return false;
+                var raw_fontAsset = fontInformation.fontAsset;
+                bool use_ru = GetCyrillicFont(raw_fontAsset.name, out var ru_fontAsset);
 
-            var fontAsset = use_cn ? cn_fontAsset : fontInformation.fontAsset;
-            var fontMaterial = use_cn ? cn_fontAsset.material : fontInformation.fontMaterial ?? fontInformation.fontAsset.material;
+            var fontAsset = use_ru ? ru_fontAsset : fontInformation.fontAsset;
+            var fontMaterial = use_ru ? ru_fontAsset.material : fontInformation.fontMaterial ?? fontInformation.fontAsset.material;
 
             __instance._text.font = fontAsset;
             __instance._text.fontMaterial = fontMaterial;

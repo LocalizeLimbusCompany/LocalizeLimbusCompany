@@ -44,14 +44,14 @@ namespace LimbusLocalizeRUS
                     UpdateCall = UpdateDel;
                 }
                 LCB_LCBRMod.LogWarning("Check Cyrillic font asset update");
-                Action FontAssetUpdate = CheckChineseFontAssetUpdate;
+                Action FontAssetUpdate = CheckCyrillicFontAssetUpdate;
                 new Thread(FontAssetUpdate).Start();
             }
             LCB_LCBRMod.LogWarning("Check readme update");
             Action ReadmeUpdate = CheckReadmeUpdate;
             new Thread(ReadmeUpdate).Start();
         }
-        static void CheckChineseFontAssetUpdate()
+        static void CheckCyrillicFontAssetUpdate()
         {
             UnityWebRequest www = UnityWebRequest.Get("");
             string FilePath = LCB_LCBRMod.ModPath + "/tmpcyrillicfont";

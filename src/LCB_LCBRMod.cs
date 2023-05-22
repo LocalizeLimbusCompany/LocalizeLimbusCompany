@@ -13,10 +13,10 @@ namespace LimbusLocalizeRUS
     {
         public static string ModPath;
         public static string GamePath;
-        public const string NAME = "LCBRus";
+        public const string NAME = "LimbusCompanyBusRUS";
         public const string VERSION = "0.1.0";
         public const string AUTHOR = "Base: Bright\nRUS version: Knightey";
-        public const string LCBRLink = "";
+        public const string LCBRLink = "Nothing";
         public static MelonPreferences_Category LCBR_Settings = MelonPreferences.CreateCategory("LCBR", "LCBR Settings");
         public static Action<string, Action> LogFatalError { get; set; }
         public static Action<string> LogError { get; set; }
@@ -36,19 +36,23 @@ namespace LimbusLocalizeRUS
                 LCBR_ReadmeManager.InitReadmeList();
                 LCBR_LoadingManager.InitLoadingTexts();
                 LCBR_UpdateChecker.StartCheckUpdates();
-                HarmonyLib.Harmony harmony = new("BustoHellMod");
+                HarmonyLib.Harmony harmony = new("LimbusLocalizeRUS");
                 if (LCBR_Russian_Settings.IsUseRussian.Value)
                     harmony.PatchAll(typeof(LCB_Cyrillic_Font));
-                    harmony.PatchAll(typeof(LCBR_Manager));
-                    harmony.PatchAll(typeof(LCBR_ReadmeManager));
-                    harmony.PatchAll(typeof(LCBR_LoadingManager));
-                    harmony.PatchAll(typeof(LCBR_Russian_Settings));
+                harmony.PatchAll(typeof(LCBR_Manager));
+                harmony.PatchAll(typeof(LCBR_ReadmeManager));
+                harmony.PatchAll(typeof(LCBR_LoadingManager));
+                harmony.PatchAll(typeof(LCBR_Russian_Settings));
                 if (!LCB_Cyrillic_Font.AddCyrillicFont(ModPath + "/tmpcyrillicfonts"))
-                    LogFatalError("Вы забыли поставить мод на обновление шрифтов. Перечитайте README на Гитхабе.\nYou have forgotten to install Font Update Mod. Please, reread README on Github", OpenLCBRURL);
+                    LogFatalError("You have forgotten to install Font Update Mod. Please, reread README on Github.", OpenLCBRURL);
+                foreach (var font in LCB_Cyrillic_Font.tmpcyrillicfontnames)
+                {
+                    LoggerInstance.Msg(font);
+                }
             }
             catch (Exception e)
             {
-                LogFatalError("Произошла фатальная ошибка! Свяжитесь с нами на Гитхабе с логом, пожалуйста.\nMod has met an unknown fatal error! Contact us on Github with the log, please.", () => { OnApplicationQuit(); OpenGamePath(); OpenLCBRURL(); });
+                LogFatalError("Mod has met an unknown fatal error! Contact us on Github with the log, please.", () => { OnApplicationQuit(); OpenGamePath(); OpenLCBRURL(); });
                 LogError(e.ToString());
             }
         }
