@@ -43,19 +43,19 @@ namespace LimbusLocalizeRUS
             fontAsset = null;
             if (tmpcyrillicfonts.Count == 0)
                 return false;
-            if (fontname == "KOTRA_BOLD SDF" || fontname.StartsWith("Corporate-Logo-Bold") || fontname == "Mikodacs SDF")
-            {
-                fontAsset = tmpcyrillicfonts[4];
-                return true;
-            }
-            if (fontname == "Pretendard-Regular SDF"|| fontname.StartsWith("SCDream") || fontname == "LiberationSans SDF")
+            if (fontname == "KOTRA_BOLD SDF" || fontname.StartsWith("Corporate-Logo-Bold") || fontname.StartsWith("Mikodacs SDF"))
             {
                 fontAsset = tmpcyrillicfonts[5];
                 return true;
             }
-            if (fontname == "fontname.StartsWith(\"HigashiOme - Gothic - C\")")
+            if (fontname == "Pretendard-Regular SDF"|| fontname.StartsWith("SCDream") || fontname == "LiberationSans SDF")
             {
-                fontAsset = tmpcyrillicfonts[2];
+                fontAsset = tmpcyrillicfonts[6];
+                return true;
+            }
+            if (fontname == "fontname.StartsWith(HigashiOme - Gothic - C)")
+            {
+                fontAsset = tmpcyrillicfonts[3];
                 return true;
             }
             if (fontname == "BebasKai SDF")
@@ -63,7 +63,12 @@ namespace LimbusLocalizeRUS
                 fontAsset = tmpcyrillicfonts[0];
                 return true;
             }
-            return false;
+            if (fontname == "Caveat-Semibold SDF")
+            {
+                fontAsset = tmpcyrillicfonts[1];
+                return true;
+            }
+            return true;
     }
         public static bool IsCyrillicFont(TMP_FontAsset fontAsset)
         {
