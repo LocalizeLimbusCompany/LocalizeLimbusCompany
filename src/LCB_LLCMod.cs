@@ -43,6 +43,7 @@ namespace LimbusLocalize
                 harmony.PatchAll(typeof(LLC_ReadmeManager));
                 harmony.PatchAll(typeof(LLC_LoadingManager));
                 harmony.PatchAll(typeof(LLC_Chinese_Setting));
+                harmony.PatchAll(typeof(LLC_SpriteUI));
                 if (!LCB_Chinese_Font.AddChineseFont(ModPath + "/tmpchinesefont"))
                     LogFatalError("You Not Have Chinese Font, Please Read GitHub Readme To Download\n你没有下载中文字体,请阅读GitHub的Readme下载", OpenLLCURL);
             }
