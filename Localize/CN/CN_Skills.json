@@ -26,7 +26,7 @@
         {
           "level": 1,
           "name": "反击",
-          "desc": "在自身受到攻击后进行一次不可被拦截的反击"
+          "desc": "在自身受到单方面攻击后进行一次不可被拦截的反击"
         }
       ]
     },
@@ -186,14 +186,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 最后一个硬币对目标施加状态的层数+1"
+                  "desc": "[OnSucceedAttack] 最后一个硬币对目标施加的状态层数+1"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 最后一个硬币对目标施加状态的层数+1"
+                  "desc": "[OnSucceedAttack] 最后一个硬币对目标施加的状态层数+1"
                 }
               ]
             },
@@ -569,7 +569,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 消耗5层充能 ，并在下回合对目标施加2层虚弱 。对目标施加3层麻痹 "
+                  "desc": "[OnSucceedAttack] 消耗5层充能 ，并在下回合对目标施加2层虚弱 、3层麻痹 "
                 }
               ]
             }
@@ -5118,21 +5118,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 本硬币额外造成10%的附加伤害"
+                  "desc": "[OnSucceedAttackHead] 追加本硬币造成伤害量10%的伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 本硬币额外造成10%的附加伤害"
+                  "desc": "[OnSucceedAttackHead] 追加本硬币造成伤害量10%的伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 本硬币额外造成10%的附加伤害"
+                  "desc": "[OnSucceedAttackHead] 追加本硬币造成伤害量10%的伤害"
                 }
               ]
             }
@@ -5220,7 +5220,7 @@
                   "desc": "[OnSucceedAttackHead] 对目标施加1层破裂 "
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 下回合对目标施加一层防御等级降低 "
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层防御等级降低 "
                 }
               ]
             }
@@ -5237,7 +5237,7 @@
                   "desc": "[OnSucceedAttack] 对目标施加1层破裂 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加一层防御等级降低 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层防御等级降低 "
                 }
               ]
             },
@@ -5247,7 +5247,7 @@
                   "desc": "[OnSucceedAttack] 对目标施加1层破裂 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加一层防御等级降低 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层防御等级降低 "
                 }
               ]
             }
@@ -5266,7 +5266,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加一层攻击等级降低 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层攻击等级降低 "
                 }
               ]
             },
@@ -5274,10 +5274,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 斩击伤害增加伤害量的15%"
+                  "desc": "[OnSucceedAttack] 追加本硬币造成伤害量15%的斩击伤害"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加一层弱点分析 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层弱点分析 "
                 }
               ]
             }
@@ -5344,7 +5344,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度;如果目标已带有烧伤 ,则额外使其增加1级烧伤 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度;若目标已带有烧伤 ,则额外使其增加1级烧伤 强度"
                 }
               ]
             },
@@ -5365,14 +5365,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度;如果目标已带有烧伤 ,则额外使其增加1级烧伤 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度;若目标已带有烧伤 ,则额外使其增加1级烧伤 强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层烧伤 ;理智值大于30,则额外施加1层烧伤 ;理智值大于45, 则额外施加2层烧伤 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层烧伤 ;若自身理智值大于30,则额外施加1层烧伤 ;若自身理智值大于45, 则额外施加2层烧伤 "
                 }
               ]
             }
@@ -5401,7 +5401,7 @@
                   "desc": "[OnSucceedAttackHead] 使自身恢复6点理智值"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标已带有6+层烧伤 ,使目标的混乱阈值前移本硬币造成伤害的30%"
+                  "desc": "[OnSucceedAttack] 若目标的烧伤 层数高于6层 ,使目标的混乱阈值前移本硬币造成伤害的30%"
                 }
               ]
             }
@@ -5927,7 +5927,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 震颤爆发"
+                  "desc": "[OnSucceedAttack] 引爆目标的震颤 "
                 }
               ]
             }
@@ -5941,7 +5941,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 震颤爆发"
+                  "desc": "[OnSucceedAttack] 引爆目标的震颤 "
                 },
                 {
                   "desc": "若目标的尖钉层数高于5层，则本硬币造成的伤害+20%"
