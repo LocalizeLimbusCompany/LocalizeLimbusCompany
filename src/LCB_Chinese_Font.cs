@@ -192,40 +192,40 @@ namespace LimbusLocalize
         [HarmonyPrefix]
         private static bool GetScenario(StoryData __instance, string scenarioID, ref LOCALIZE_LANGUAGE lang, ref Scenario __result)
         {
-            if (LLC_Manager.Localizes.TryGetValue(scenarioID, out string text))
+            TextAsset textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
+            if (!textAsset)
             {
-                TextAsset textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
-                if (textAsset == null)
-                    textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", "SDUMMY", null, null).Item1;
-                string text2 = textAsset.ToString();
-                Scenario scenario = new()
+                LCB_LLCMod.LogError("Story Unknown Error!Call Story: Dirty Hacker");
+                scenarioID = "SDUMMY";
+                textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
+            }
+            if (!LLC_Manager.Localizes.TryGetValue(scenarioID, out string text))
+            {
+                LCB_LLCMod.LogError("Story Error!Can'n Find CN Story File,Use Raw EN Story");
+                text = AddressableManager.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Localize/EN/StoryData", "EN_" + scenarioID, null, null).Item1.ToString();
+            }
+            string text2 = textAsset.ToString();
+            Scenario scenario = new()
+            {
+                ID = scenarioID
+            };
+            JSONArray jsonarray = JSONNode.Parse(text)[0].AsArray;
+            JSONArray jsonarray2 = JSONNode.Parse(text2)[0].AsArray;
+            for (int i = 0; i < jsonarray.Count; i++)
+            {
+                int num = jsonarray[i][0].AsInt;
+                if (num >= 0)
                 {
-                    ID = scenarioID
-                };
-                JSONArray jsonarray = JSONNode.Parse(text)[0].AsArray;
-                JSONArray jsonarray2 = JSONNode.Parse(text2)[0].AsArray;
-                for (int i = 0; i < jsonarray.Count; i++)
-                {
-                    int num = jsonarray[i][0].AsInt;
-                    if (num >= 0)
-                    {
-                        JSONNode jsonnode;
-                        if (jsonarray2[i][0].AsInt == num)
-                            jsonnode = jsonarray2[i];
-                        else
-                            jsonnode = new JSONObject();
-                        scenario.Scenarios.Add(new Dialog(num, jsonarray[i], jsonnode));
-                    }
+                    JSONNode jsonnode;
+                    if (jsonarray2[i][0].AsInt == num)
+                        jsonnode = jsonarray2[i];
+                    else
+                        jsonnode = new JSONObject();
+                    scenario.Scenarios.Add(new Dialog(num, jsonarray[i], jsonnode));
                 }
-                __result = scenario;
-                return false;
             }
-            else
-            {
-                LCB_LLCMod.LogError("Error!Can'n Find CN Story File,Use Raw EN Story");
-                lang = LOCALIZE_LANGUAGE.EN;
-                return true;
-            }
+            __result = scenario;
+            return false;
         }
         [HarmonyPatch(typeof(StoryData), nameof(StoryData.GetTellerName))]
         [HarmonyPrefix]
