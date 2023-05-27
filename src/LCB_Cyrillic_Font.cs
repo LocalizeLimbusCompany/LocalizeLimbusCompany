@@ -16,7 +16,7 @@ namespace LimbusLocalizeRUS
     public static class LCB_Cyrillic_Font
     {
         public static List<TMP_FontAsset> tmpcyrillicfonts = new();
-        public static List<string> tmpcyrillicfontnames = new();
+        public static List<string> tmpcyrillicfontsnames = new();
         #region Handwriting
         public static bool AddCyrillicFont(string path)
         {
@@ -31,7 +31,7 @@ namespace LimbusLocalizeRUS
                         UnityEngine.Object.DontDestroyOnLoad(TryCastFontAsset);
                         TryCastFontAsset.hideFlags |= HideFlags.HideAndDontSave;
                         tmpcyrillicfonts.Add(TryCastFontAsset);
-                        tmpcyrillicfontnames.Add(TryCastFontAsset.name);
+                        tmpcyrillicfontsnames.Add(TryCastFontAsset.name);
                     }
                 }
                 return true;
@@ -43,36 +43,66 @@ namespace LimbusLocalizeRUS
             fontAsset = null;
             if (tmpcyrillicfonts.Count == 0)
                 return false;
-            if (fontname == "KOTRA_BOLD SDF" || fontname.StartsWith("Corporate-Logo-Bold") || fontname.StartsWith("Mikodacs SDF"))
-            {
-                fontAsset = tmpcyrillicfonts[5];
-                return true;
-            }
-            if (fontname == "Pretendard-Regular SDF"|| fontname.StartsWith("SCDream") || fontname == "LiberationSans SDF")
-            {
-                fontAsset = tmpcyrillicfonts[6];
-                return true;
-            }
-            if (fontname == "fontname.StartsWith(HigashiOme - Gothic - C)")
-            {
-                fontAsset = tmpcyrillicfonts[3];
-                return true;
-            }
             if (fontname == "BebasKai SDF")
             {
                 fontAsset = tmpcyrillicfonts[0];
                 return true;
             }
-            if (fontname == "Caveat-Semibold SDF")
+            if (fontname == "Caveat Semibold SDF")
             {
                 fontAsset = tmpcyrillicfonts[1];
                 return true;
             }
-            return true;
+            if (fontname == "ExcelsiorSans SDF")
+            {
+                fontAsset = tmpcyrillicfonts[2];
+                return true;
+            }
+            if (fontname.StartsWith("HigashiOme - Gothic - C"))
+            {
+                fontAsset = tmpcyrillicfonts[3];
+                return true;
+            }
+            if (fontname == "KOTRA_BOLD SDF")
+            {
+                fontAsset = tmpcyrillicfonts[5];
+                return true;
+            }
+            if (fontname.StartsWith("Corporate-Logo-Bold"))
+            {
+                fontAsset = tmpcyrillicfonts[5];
+                return true;
+            }
+            if (fontname.StartsWith("Mikodacs SDF"))
+            {
+                fontAsset = tmpcyrillicfonts[5];
+                return true;
+            }
+            if (fontname == "KOTRA_BOLD SDF")
+            {
+                fontAsset = tmpcyrillicfonts[5];
+                return true;
+            }
+            if (fontname == "Pretendard-Regular SDF")
+            {
+                fontAsset = tmpcyrillicfonts[6];
+                return true;
+            }
+            if (fontname.StartsWith("SCDream5"))
+            {
+                fontAsset = tmpcyrillicfonts[6];
+                return true;
+            }
+            if (fontname == "LiberationSans SDF")
+            {
+                fontAsset = tmpcyrillicfonts[6];
+                return true;
+            }
+            return false;
     }
         public static bool IsCyrillicFont(TMP_FontAsset fontAsset)
         {
-            return tmpcyrillicfontnames.Contains(fontAsset.name);
+            return tmpcyrillicfontsnames.Contains(fontAsset.name);
         }
 
         [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.font), MethodType.Setter)]
@@ -213,40 +243,40 @@ namespace LimbusLocalizeRUS
         [HarmonyPrefix]
         private static bool GetScenario(StoryData __instance, string scenarioID, ref LOCALIZE_LANGUAGE lang, ref Scenario __result)
         {
-            if (LCBR_Manager.Localizes.TryGetValue(scenarioID, out string text))
+            TextAsset textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
+            if (!textAsset)
             {
-                TextAsset textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
-                if (textAsset == null)
-                    textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", "SDUMMY", null, null).Item1;
-                string text2 = textAsset.ToString();
-                Scenario scenario = new()
+                LCB_LCBRMod.LogError("Story Unknown Error!Call Story: Dirty Hacker");
+                scenarioID = "SDUMMY";
+                textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
+            }
+            if (!LCBR_Manager.Localizes.TryGetValue(scenarioID, out string text))
+            {
+                LCB_LCBRMod.LogError("Story Error!Can'n Find CN Story File,Use Raw EN Story");
+                text = AddressableManager.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Localize/EN/StoryData", "EN_" + scenarioID, null, null).Item1.ToString();
+            }
+            string text2 = textAsset.ToString();
+            Scenario scenario = new()
+            {
+                ID = scenarioID
+            };
+            JSONArray jsonarray = JSONNode.Parse(text)[0].AsArray;
+            JSONArray jsonarray2 = JSONNode.Parse(text2)[0].AsArray;
+            for (int i = 0; i < jsonarray.Count; i++)
+            {
+                int num = jsonarray[i][0].AsInt;
+                if (num >= 0)
                 {
-                    ID = scenarioID
-                };
-                JSONArray jsonarray = JSONNode.Parse(text)[0].AsArray;
-                JSONArray jsonarray2 = JSONNode.Parse(text2)[0].AsArray;
-                for (int i = 0; i < jsonarray.Count; i++)
-                {
-                    int num = jsonarray[i][0].AsInt;
-                    if (num >= 0)
-                    {
-                        JSONNode jsonnode;
-                        if (jsonarray2[i][0].AsInt == num)
-                            jsonnode = jsonarray2[i];
-                        else
-                            jsonnode = new JSONObject();
-                        scenario.Scenarios.Add(new Dialog(num, jsonarray[i], jsonnode));
-                    }
+                    JSONNode jsonnode;
+                    if (jsonarray2[i][0].AsInt == num)
+                        jsonnode = jsonarray2[i];
+                    else
+                        jsonnode = new JSONObject();
+                    scenario.Scenarios.Add(new Dialog(num, jsonarray[i], jsonnode));
                 }
-                __result = scenario;
-                return false;
             }
-            else
-            {
-                LCB_LCBRMod.LogError("Error! Can't find RU story, so we'll use EN story instead");
-                lang = LOCALIZE_LANGUAGE.EN;
-                return true;
-            }
+            __result = scenario;
+            return false;
         }
         [HarmonyPatch(typeof(StoryData), nameof(StoryData.GetTellerName))]
         [HarmonyPrefix]
@@ -308,7 +338,7 @@ namespace LimbusLocalizeRUS
         private static void SetLoginInfo(LoginSceneManager __instance)
         {
             LoadLocal(LOCALIZE_LANGUAGE.EN);
-            __instance.tmp_loginAccount.text = "LimbusLocalizeMod v" + LCB_LCBRMod.VERSION;
+            __instance.tmp_loginAccount.text = "LCB Rus v" + LCB_LCBRMod.VERSION;
         }
         private static void Init<T>(this JsonDataList<T> jsonDataList, List<string> jsonFilePathList) where T : LocalizeTextData, new()
         {
