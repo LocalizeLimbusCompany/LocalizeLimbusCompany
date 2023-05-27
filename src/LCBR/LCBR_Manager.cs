@@ -30,7 +30,7 @@ namespace LimbusLocalizeRUS
         {
             if (!GlobalGameManager.Instance) { return; }
             TextOkUIPopup globalPopupUI = GlobalGameManager.Instance.globalPopupUI;
-            TMP_FontAsset fontAsset = LCB_Cyrillic_Font.tmpcyrillicfonts[0];
+            TMP_FontAsset fontAsset = LCB_Cyrillic_Font.tmpcyrillicfonts[5];
             if (fontAsset)
             {
                 TextMeshProUGUI btn_canceltmp = globalPopupUI.btn_cancel.GetComponentInChildren<TextMeshProUGUI>(true);

@@ -54,7 +54,7 @@ namespace LimbusLocalizeRUS
         static void CheckCyrillicFontAssetUpdate()
         {
             UnityWebRequest www = UnityWebRequest.Get("");
-            string FilePath = LCB_LCBRMod.ModPath + "/tmpcyrillicfont";
+            string FilePath = LCB_LCBRMod.ModPath + "/tmpcyrillicfonts";
             var LastWriteTime = File.Exists(FilePath) ? int.Parse(new FileInfo(FilePath).LastWriteTime.ToString("ddmmyy")) : 0;
             www.SendWebRequest();
             while (!www.isDone)
