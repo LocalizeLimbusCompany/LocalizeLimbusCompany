@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using Il2Cpp;
+using Il2CppTMPro;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -38,7 +39,7 @@ namespace LimbusLocalizeRUS
             var loadingText = __instance._loadingText;
             loadingText.font = LCB_Cyrillic_Font.tmpcyrillicfonts[3];
             loadingText.fontMaterial = LCB_Cyrillic_Font.tmpcyrillicfonts[3].material;
-            loadingText.fontSize = 40;
+            loadingText.fontSize = 46;
             int random = Random.Range(0, 100);
             if (random < 25)
                 loadingText.text = Raw;

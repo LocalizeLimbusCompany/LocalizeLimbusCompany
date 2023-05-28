@@ -16,7 +16,7 @@ namespace LimbusLocalizeRUS
         public const string NAME = "LimbusCompanyBusRUS";
         public const string VERSION = "0.1.0";
         public const string AUTHOR = "Base: Bright\nRUS version: Knightey";
-        public const string LCBRLink = "Nothing";
+        public const string LCBRLink = "https://github.com/Crescent-Corporation/LimbusCompanyBusRUS";
         public static MelonPreferences_Category LCBR_Settings = MelonPreferences.CreateCategory("LCBR", "LCBR Settings");
         public static Action<string, Action> LogFatalError { get; set; }
         public static Action<string> LogError { get; set; }
@@ -38,12 +38,14 @@ namespace LimbusLocalizeRUS
                 LCBR_UpdateChecker.StartCheckUpdates();
                 HarmonyLib.Harmony harmony = new("LimbusLocalizeRUS");
                 if (LCBR_Russian_Settings.IsUseRussian.Value)
+                {
                     harmony.PatchAll(typeof(LCB_Cyrillic_Font));
-                harmony.PatchAll(typeof(LCBR_Manager));
-                harmony.PatchAll(typeof(LCBR_ReadmeManager));
-                harmony.PatchAll(typeof(LCBR_LoadingManager));
-                harmony.PatchAll(typeof(LCBR_Russian_Settings));
-                harmony.PatchAll(typeof(LCBR_SpriteUI));
+                    harmony.PatchAll(typeof(LCBR_Manager));
+                    harmony.PatchAll(typeof(LCBR_ReadmeManager));
+                    harmony.PatchAll(typeof(LCBR_LoadingManager));
+                    harmony.PatchAll(typeof(LCBR_Russian_Settings));
+                    harmony.PatchAll(typeof(LCBR_SpriteUI));
+                }
                 if (!LCB_Cyrillic_Font.AddCyrillicFont(ModPath + "/tmpcyrillicfonts"))
                     LogFatalError("You have forgotten to install Font Update Mod. Please, reread README on Github.", OpenLCBRURL);
                 foreach (var font in LCB_Cyrillic_Font.tmpcyrillicfontsnames)

@@ -63,37 +63,12 @@ namespace LimbusLocalizeRUS
                 fontAsset = tmpcyrillicfonts[3];
                 return true;
             }
-            if (fontname == "KOTRA_BOLD SDF")
+            if (fontname.StartsWith("Corporate-Logo-Bold") || fontname == "Mikodacs SDF" || fontname == "KOTRA_BOLD SDF")
             {
                 fontAsset = tmpcyrillicfonts[5];
                 return true;
             }
-            if (fontname.StartsWith("Corporate-Logo-Bold"))
-            {
-                fontAsset = tmpcyrillicfonts[5];
-                return true;
-            }
-            if (fontname == "Mikodacs SDF")
-            {
-                fontAsset = tmpcyrillicfonts[5];
-                return true;
-            }
-            if (fontname == "KOTRA_BOLD SDF")
-            {
-                fontAsset = tmpcyrillicfonts[5];
-                return true;
-            }
-            if (fontname == "Pretendard-Regular SDF")
-            {
-                fontAsset = tmpcyrillicfonts[6];
-                return true;
-            }
-            if (fontname.StartsWith("SCDream5"))
-            {
-                fontAsset = tmpcyrillicfonts[6];
-                return true;
-            }
-            if (fontname == "LiberationSans SDF")
+            if (fontname == "Pretendard-Regular SDF" || fontname.StartsWith("SCDream5") || fontname == "LiberationSans SDF")
             {
                 fontAsset = tmpcyrillicfonts[6];
                 return true;
