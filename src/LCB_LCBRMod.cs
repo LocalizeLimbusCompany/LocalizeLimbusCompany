@@ -42,10 +42,10 @@ namespace LimbusLocalizeRUS
                     harmony.PatchAll(typeof(LCB_Cyrillic_Font));
                     harmony.PatchAll(typeof(LCBR_Manager));
                     harmony.PatchAll(typeof(LCBR_ReadmeManager));
-                    harmony.PatchAll(typeof(LCBR_LoadingManager));
                     harmony.PatchAll(typeof(LCBR_Russian_Settings));
-                    harmony.PatchAll(typeof(LCBR_SpriteUI));
                 }
+                harmony.PatchAll(typeof(LCBR_LoadingManager));
+                harmony.PatchAll(typeof(LCBR_SpriteUI));
                 if (!LCB_Cyrillic_Font.AddCyrillicFont(ModPath + "/tmpcyrillicfonts"))
                     LogFatalError("You have forgotten to install Font Update Mod. Please, reread README on Github.", OpenLCBRURL);
                 foreach (var font in LCB_Cyrillic_Font.tmpcyrillicfontsnames)
