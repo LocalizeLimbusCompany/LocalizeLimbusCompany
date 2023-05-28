@@ -1,6 +1,20 @@
-# 安装[![](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/total.svg?label=下载&style=social)](../../releases)
+<div align="center">
+<a href="https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany">
+   <img src="https://avatars.githubusercontent.com/u/129521269" />
+</a>
 
-[![](https://img.shields.io/github/release/LocalizeLimbusCompany/LocalizeLimbusCompany.svg?label=最新版&style=social)![](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/latest/total.svg?label=下载&style=social)](../../releases/latest)
+# LocalizeLimbusCompany
+边狱公司 LimbusCompany 本地化模组
+
+[![Download](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/total.svg?label=Download|下载)](../../releases)
+[![Version](https://img.shields.io/github/release/LocalizeLimbusCompany/LocalizeLimbusCompany.svg?label=Version|最新版)](../../releases/latest)
+[![Localize Limbus Chat Group](https://img.shields.io/badge/Join-QQ群-blue?logo=tencent-qq)](https://jq.qq.com/?_wv=1027&k=5NE6Kvg2)
+
+简体中文 | [Русский](https://github.com/Crescent-Corporation/LimbusCompanyBusRUS)
+</div>
+
+# 安装[![Download](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/total.svg?label=Download|下载)](../../releases)
+[![Version](https://img.shields.io/github/release/LocalizeLimbusCompany/LocalizeLimbusCompany.svg?label=Version|最新版)![Download](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/latest/total.svg?label=Download|下载)](../../releases/latest)
 ### 0. 安装[.NET 6.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/sdk-6.0.406-windows-x64-installer)
 ### 1. 安装模组框架
    - 从[MelonLoader](https://github.com/LavaGang/MelonLoader)下载v0.6.1或更高版本的模组框架
@@ -24,3 +38,13 @@
 - [汉化组B站链接](https://space.bilibili.com/1247764479) 都市零协会汉化组
 - [边狱公司中文WIKI](https://limbuscompany.huijiwiki.com)
 - [ParaTranz 合作翻译项目](https://paratranz.cn/projects/6860) 汉化组的最新进展
+# 声明
+- **使用本模组完全免费。** 根据中华人民共和国《计算机软件保护条例》第十七条规定：「为了学习和研究软件内含的设计思想和原理，通过安装、显示、传输或者存储软件等方式使用软件的，可以不经软件著作权人许可，不向其支付报酬。」本模组仅供用户交流学习与研究使用，用户本人下载后不能用作商业或非法用途，需在24小时之内删除，否则后果均由用户承担责任。
+- **本模组已获得官方认可。** 月亮计划官方已声明不会对汉化模组封号。相关内容请查看[`特别公告`](https://github.com/orgs/LocalizeLimbusCompany/discussions/70)
+# 贡献者
+## 本仓库
+<a href="https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=LocalizeLimbusCompany/LocalizeLimbusCompany" />
+</a>
+
+## [译文ParaTranz项目](https://paratranz.cn/projects/6860/leaderboard)
