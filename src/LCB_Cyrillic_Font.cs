@@ -22,6 +22,7 @@ namespace LimbusLocalizeRUS
         {
             if (File.Exists(path))
             {
+                bool __result = false;
                 var AllAssets = AssetBundle.LoadFromFile(path).LoadAllAssets();
                 foreach (var Asset in AllAssets)
                 {
@@ -32,9 +33,10 @@ namespace LimbusLocalizeRUS
                         TryCastFontAsset.hideFlags |= HideFlags.HideAndDontSave;
                         tmpcyrillicfonts.Add(TryCastFontAsset);
                         tmpcyrillicfontsnames.Add(TryCastFontAsset.name);
+                        __result = true;
                     }
                 }
-                return true;
+                return __result;
             }
             return false;
         }
@@ -45,35 +47,42 @@ namespace LimbusLocalizeRUS
                 return false;
             if (fontname == "BebasKai SDF")
             {
-                fontAsset = tmpcyrillicfonts[0];
+                fontAsset = GetCyrillicFonts(0);
                 return true;
             }
             if (fontname == "Caveat Semibold SDF")
             {
-                fontAsset = tmpcyrillicfonts[1];
+                fontAsset = GetCyrillicFonts(1);
                 return true;
             }
             if (fontname == "ExcelsiorSans SDF")
             {
-                fontAsset = tmpcyrillicfonts[2];
+                fontAsset = GetCyrillicFonts(2);
                 return true;
             }
             if (fontname.StartsWith("HigashiOme - Gothic - C"))
             {
-                fontAsset = tmpcyrillicfonts[3];
+                fontAsset = GetCyrillicFonts(3);
                 return true;
             }
             if (fontname.StartsWith("Corporate-Logo-Bold") || fontname == "Mikodacs SDF" || fontname == "KOTRA_BOLD SDF")
             {
-                fontAsset = tmpcyrillicfonts[5];
+                fontAsset = GetCyrillicFonts(5);
                 return true;
             }
             if (fontname == "Pretendard-Regular SDF" || fontname.StartsWith("SCDream5") || fontname == "LiberationSans SDF")
             {
-                fontAsset = tmpcyrillicfonts[6];
+                fontAsset = GetCyrillicFonts(6);
                 return true;
             }
             return false;
+        }
+        public static TMP_FontAsset GetCyrillicFonts(int idx)
+        {
+            int Count = tmpcyrillicfonts.Count - 1;
+            if(Count < idx)
+                idx=Count;
+            return tmpcyrillicfonts[idx];
         }
         public static bool IsCyrillicFont(TMP_FontAsset fontAsset)
         {
