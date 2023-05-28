@@ -62,12 +62,9 @@ namespace LimbusLocalizeRUS
             {
                 Texture2D texture2D = new(2, 2);
                 ImageConversion.LoadImage(texture2D, File.ReadAllBytes(fileInfo.FullName));
-                Sprite value = Sprite.Create(texture2D, new Rect(0f, 0f, texture2D.width, texture2D.height), new Vector2(0.5f, 0.5f));
                 Sprite sprite = Sprite.Create(texture2D, new Rect(0f, 0f, texture2D.width, texture2D.height), new Vector2(0.5f, 0.5f));
                 string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(fileInfo.FullName);
                 texture2D.name = fileNameWithoutExtension;
-                value.name = fileNameWithoutExtension;
-                ReadmeSprites[fileNameWithoutExtension] = value;
                 sprite.name = fileNameWithoutExtension;
                 UObject.DontDestroyOnLoad(sprite);
                 sprite.hideFlags |= HideFlags.HideAndDontSave;
