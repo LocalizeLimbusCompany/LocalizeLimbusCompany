@@ -38,7 +38,7 @@ namespace LimbusLocalizeRUS
             }
             return false;
         }
-        public static bool GetCyrillicFont(string fontname, out TMP_FontAsset fontAsset)
+        public static bool GetCyrillicFonts(string fontname, out TMP_FontAsset fontAsset)
         {
             fontAsset = null;
             if (tmpcyrillicfonts.Count == 0)
@@ -73,7 +73,7 @@ namespace LimbusLocalizeRUS
                 fontAsset = tmpcyrillicfonts[5];
                 return true;
             }
-            if (fontname.StartsWith("Mikodacs SDF"))
+            if (fontname == "Mikodacs SDF")
             {
                 fontAsset = tmpcyrillicfonts[5];
                 return true;
@@ -99,7 +99,7 @@ namespace LimbusLocalizeRUS
                 return true;
             }
             return false;
-    }
+        }
         public static bool IsCyrillicFont(TMP_FontAsset fontAsset)
         {
             return tmpcyrillicfontsnames.Contains(fontAsset.name);
@@ -112,7 +112,7 @@ namespace LimbusLocalizeRUS
             if (IsCyrillicFont(__instance.m_fontAsset))
                 return false;
             string fontname = __instance.m_fontAsset.name;
-            if (GetCyrillicFont(fontname, out TMP_FontAsset font))
+            if (GetCyrillicFonts(fontname, out TMP_FontAsset font))
                 value = font;
             return true;
         }
@@ -121,7 +121,7 @@ namespace LimbusLocalizeRUS
         private static void set_fontMaterial(TMP_Text __instance, ref Material value)
         {
             if (IsCyrillicFont(__instance.m_fontAsset))
-                value = __instance.m_fontAsset.material;
+            value = __instance.m_fontAsset.material;
         }
         [HarmonyPatch(typeof(TextMeshProLanguageSetter), nameof(TextMeshProLanguageSetter.UpdateTMP))]
         [HarmonyPrefix]
@@ -135,7 +135,7 @@ namespace LimbusLocalizeRUS
                 if (__instance._text == null)
                     return false;
                 var raw_fontAsset = fontInformation.fontAsset;
-                bool use_ru = GetCyrillicFont(raw_fontAsset.name, out var ru_fontAsset);
+                bool use_ru = GetCyrillicFonts(raw_fontAsset.name, out var ru_fontAsset);
 
             var fontAsset = use_ru ? ru_fontAsset : fontInformation.fontAsset;
             var fontMaterial = use_ru ? ru_fontAsset.material : fontInformation.fontMaterial ?? fontInformation.fontAsset.material;
@@ -246,13 +246,13 @@ namespace LimbusLocalizeRUS
             TextAsset textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
             if (!textAsset)
             {
-                LCB_LCBRMod.LogError("Story Unknown Error!Call Story: Dirty Hacker");
+                LCB_LCBRMod.LogError("Story Unknown Error! Call Story: Dirty Hacker");
                 scenarioID = "SDUMMY";
                 textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
             }
             if (!LCBR_Manager.Localizes.TryGetValue(scenarioID, out string text))
             {
-                LCB_LCBRMod.LogError("Story Error!Can'n Find CN Story File,Use Raw EN Story");
+                LCB_LCBRMod.LogError("Story error! We can't find the RU story file, so we'll use EN story");
                 text = AddressableManager.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Localize/EN/StoryData", "EN_" + scenarioID, null, null).Item1.ToString();
             }
             string text2 = textAsset.ToString();
@@ -338,7 +338,7 @@ namespace LimbusLocalizeRUS
         private static void SetLoginInfo(LoginSceneManager __instance)
         {
             LoadLocal(LOCALIZE_LANGUAGE.EN);
-            __instance.tmp_loginAccount.text = "LCB Rus v" + LCB_LCBRMod.VERSION;
+            __instance.tmp_loginAccount.text = "Localize LCB v" + LCB_LCBRMod.VERSION;
         }
         private static void Init<T>(this JsonDataList<T> jsonDataList, List<string> jsonFilePathList) where T : LocalizeTextData, new()
         {
