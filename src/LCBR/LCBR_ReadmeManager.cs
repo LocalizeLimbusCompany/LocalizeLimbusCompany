@@ -77,7 +77,7 @@ namespace LimbusLocalizeRUS
             ReadmeList.Clear();
             foreach (var notices in JSONNode.Parse(File.ReadAllText(LCB_LCBRMod.ModPath + "/Localize/Readme/Readme.json"))[0].AsArray.m_List)
             {
-                ReadmeList.Add(new Notice(JsonUtility.FromJson<NoticeFormat>(notices.ToString()), LOCALIZE_LANGUAGE.EN));
+                ReadmeList.Add(new Notice(JsonUtility.FromJson<NoticeFormat>(notices.ToString()), LOCALIZE_LANGUAGE.KR));
             }
         }
         public static List<Notice> ReadmeList = new();
