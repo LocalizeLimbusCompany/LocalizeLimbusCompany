@@ -38,9 +38,10 @@
 - [汉化组B站链接](https://space.bilibili.com/1247764479) 都市零协会汉化组
 - [边狱公司中文WIKI](https://limbuscompany.huijiwiki.com)
 - [ParaTranz 合作翻译项目](https://paratranz.cn/projects/6860) 汉化组的最新进展
-# 声明
-- **使用本模组完全免费。** 根据中华人民共和国《计算机软件保护条例》第十七条规定：「为了学习和研究软件内含的设计思想和原理，通过安装、显示、传输或者存储软件等方式使用软件的，可以不经软件著作权人许可，不向其支付报酬。」本模组仅供用户交流学习与研究使用，用户本人下载后不能用作商业或非法用途，需在24小时之内删除，否则后果均由用户承担责任。
+# 免责声明
+- **使用本模组完全免费。** 
 - **本模组已获得官方认可。** 月亮计划官方已声明不会对汉化模组封号。相关内容请查看[`特别公告`](https://github.com/orgs/LocalizeLimbusCompany/discussions/70)
+- **我们使用了MIT许可证。** 请前往[`LICENSE`](./LICENSE)或[`CN_LICENSE`](./.github/CN_LICENSE)了解相关许可。
 # 贡献者
 ## 本仓库
 <a href="https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/graphs/contributors">
