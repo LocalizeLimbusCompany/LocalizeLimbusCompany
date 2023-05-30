@@ -23,6 +23,7 @@ namespace LimbusLocalizeRUS
         public static RedDotWriggler _redDot_Notice;
         static LCBR_ReadmeManager()
         {
+            InitReadmeList();
             InitReadmeSprites();
         }
         public static void UIInitialize()

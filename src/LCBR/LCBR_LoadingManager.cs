@@ -12,6 +12,10 @@ namespace LimbusLocalizeRUS
     {
         static List<string> LoadingTexts = new();
         static string Angela;
+        static LCBR_LoadingManager()
+        {
+            InitLoadingTexts();
+        }
         static readonly string Raw = "<bounce f=0.5>NOW LOADING...</bounce>";
         public static void InitLoadingTexts()
         {
@@ -37,8 +41,8 @@ namespace LimbusLocalizeRUS
         private static void LSM_Start(LoadingSceneManager __instance)
         {
             var loadingText = __instance._loadingText;
-            loadingText.font = LCB_Cyrillic_Font.tmpcyrillicfonts[3];
-            loadingText.fontMaterial = LCB_Cyrillic_Font.tmpcyrillicfonts[3].material;
+            loadingText.font = LCB_Cyrillic_Font.GetCyrillicFonts(3);
+            loadingText.fontMaterial = LCB_Cyrillic_Font.GetCyrillicFonts(3).material;
             loadingText.fontSize = 46;
             int random = Random.Range(0, 100);
             if (random < 25)

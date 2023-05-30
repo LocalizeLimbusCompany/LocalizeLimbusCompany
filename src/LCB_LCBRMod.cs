@@ -32,13 +32,11 @@ namespace LimbusLocalizeRUS
             GamePath = new DirectoryInfo(Application.dataPath).Parent.FullName;
             try
             {
-                LCBR_Manager.InitLocalizes(new DirectoryInfo(ModPath + "/Localize/RU"));
-                LCBR_ReadmeManager.InitReadmeList();
-                LCBR_LoadingManager.InitLoadingTexts();
                 LCBR_UpdateChecker.StartCheckUpdates();
                 HarmonyLib.Harmony harmony = new("LimbusLocalizeRUS");
                 if (LCBR_Russian_Settings.IsUseRussian.Value)
                 {
+                    LCBR_Manager.InitLocalizes(new DirectoryInfo(ModPath + "/Localize/RU"));
                     harmony.PatchAll(typeof(LCB_Cyrillic_Font));
                     harmony.PatchAll(typeof(LCBR_ReadmeManager));
                     harmony.PatchAll(typeof(LCBR_LoadingManager));

@@ -1,5 +1,4 @@
-﻿using LimbusLocalizeRUS;
-using HarmonyLib;
+﻿using HarmonyLib;
 using Il2Cpp;
 using Il2CppAddressable;
 using Il2CppSimpleJSON;
@@ -60,19 +59,14 @@ namespace LimbusLocalizeRUS
                 fontAsset = GetCyrillicFonts(2);
                 return true;
             }
-            if (fontname.StartsWith("HigashiOme - Gothic - C"))
+            if (fontname.StartsWith("Corporate-Logo-Bold") || fontname == "Mikodacs SDF" || fontname == "KOTRA_BOLD SDF")
             {
                 fontAsset = GetCyrillicFonts(3);
                 return true;
             }
-            if (fontname.StartsWith("Corporate-Logo-Bold") || fontname == "Mikodacs SDF" || fontname == "KOTRA_BOLD SDF")
+            if (fontname == "Pretendard-Regular SDF" || fontname.StartsWith("SCDream5") || fontname.StartsWith("HigashiOme - Gothic - C"))
             {
-                fontAsset = GetCyrillicFonts(5);
-                return true;
-            }
-            if (fontname == "Pretendard-Regular SDF" || fontname.StartsWith("SCDream5") || fontname == "LiberationSans SDF")
-            {
-                fontAsset = GetCyrillicFonts(6);
+                fontAsset = GetCyrillicFonts(4);
                 return true;
             }
             return false;
