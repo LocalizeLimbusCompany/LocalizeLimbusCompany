@@ -12,6 +12,10 @@ namespace LimbusLocalize
         static List<string> LoadingTexts = new();
         static string Touhou;
         static readonly string Raw = "<bounce f=0.5>NOW LOADING...</bounce>";
+        static LLC_LoadingManager()
+        {
+            InitLoadingTexts();
+        }
         public static void InitLoadingTexts()
         {
             LoadingTexts = File.ReadAllLines(LCB_LLCMod.ModPath + "/Localize/Readme/LoadingTexts.md").ToList();
