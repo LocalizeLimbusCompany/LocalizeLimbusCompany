@@ -32,18 +32,18 @@ namespace LimbusLocalize
             GamePath = new DirectoryInfo(Application.dataPath).Parent.FullName;
             try
             {
-                LLC_Manager.InitLocalizes(new DirectoryInfo(ModPath + "/Localize/CN"));
-                LLC_ReadmeManager.InitReadmeList();
-                LLC_LoadingManager.InitLoadingTexts();
                 LLC_UpdateChecker.StartCheckUpdates();
                 HarmonyLib.Harmony harmony = new("LimbusLocalizeMod");
                 if (LLC_Chinese_Setting.IsUseChinese.Value)
+                {
+                    LLC_Manager.InitLocalizes(new DirectoryInfo(ModPath + "/Localize/CN"));
                     harmony.PatchAll(typeof(LCB_Chinese_Font));
+                    harmony.PatchAll(typeof(LLC_ReadmeManager));
+                    harmony.PatchAll(typeof(LLC_LoadingManager));
+                    harmony.PatchAll(typeof(LLC_SpriteUI));
+                }
                 harmony.PatchAll(typeof(LLC_Manager));
-                harmony.PatchAll(typeof(LLC_ReadmeManager));
-                harmony.PatchAll(typeof(LLC_LoadingManager));
                 harmony.PatchAll(typeof(LLC_Chinese_Setting));
-                harmony.PatchAll(typeof(LLC_SpriteUI));
                 if (!LCB_Chinese_Font.AddChineseFont(ModPath + "/tmpchinesefont"))
                     LogFatalError("You Not Have Chinese Font, Please Read GitHub Readme To Download\n你没有下载中文字体,请阅读GitHub的Readme下载", OpenLLCURL);
             }
