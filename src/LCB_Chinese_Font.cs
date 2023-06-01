@@ -159,6 +159,7 @@ namespace LimbusLocalize
             tm._userTicket_R.Init(romoteLocalizeFileList.UserTicketR);
             tm._userTicket_EGOBg.Init(romoteLocalizeFileList.UserTicketEGOBg);
             tm._panicInfo.Init(romoteLocalizeFileList.PanicInfo);
+            tm._mentalConditionList.Init(romoteLocalizeFileList.mentalCondition);
 
             tm._abnormalityEventCharDlg.AbEventCharDlgRootInit(romoteLocalizeFileList.abnormalityCharDlgFilePath);
 
