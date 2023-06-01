@@ -155,6 +155,10 @@ namespace LimbusLocalize
             tm._dungeonName.Init(romoteLocalizeFileList.DungeonName);
             tm._danteNoteDesc.Init(romoteLocalizeFileList.DanteNote);
             tm._danteNoteCategoryKeyword.Init(romoteLocalizeFileList.DanteNoteCategoryKeyword);
+            tm._userTicket_L.Init(romoteLocalizeFileList.UserTicketL);
+            tm._userTicket_R.Init(romoteLocalizeFileList.UserTicketR);
+            tm._userTicket_EGOBg.Init(romoteLocalizeFileList.UserTicketEGOBg);
+            tm._panicInfo.Init(romoteLocalizeFileList.PanicInfo);
 
             tm._abnormalityEventCharDlg.AbEventCharDlgRootInit(romoteLocalizeFileList.abnormalityCharDlgFilePath);
 
@@ -202,7 +206,7 @@ namespace LimbusLocalize
             if (!LLC_Manager.Localizes.TryGetValue(scenarioID, out string text))
             {
                 LCB_LLCMod.LogError("Story Error!Can'n Find CN Story File,Use Raw EN Story");
-                text = AddressableManager.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Localize/EN/StoryData", "EN_" + scenarioID, null, null).Item1.ToString();
+                text = AddressableManager.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Localize/en/StoryData", "EN_" + scenarioID, null, null).Item1.ToString();
             }
             string text2 = textAsset.ToString();
             Scenario scenario = new()
