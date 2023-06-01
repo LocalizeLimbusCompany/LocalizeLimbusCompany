@@ -1,10 +1,10 @@
-# v0.4.4
-- 功能
-  - Combo本地化
-<img alt="LLC_Combo" src="https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/blob/master_ilcpp/Localize/Readme/LLC_Combo.png" width="256" height="256" />
-
+# v0.4.5
+- 修复
+  - 修复没有相关文件而导致剧情卡死的两个问题
 - 汉化内容跟进
-  - 但丁的笔记活动汉化 更新
+  - “主线剧情4与第2赛季(上)” 本地化内容载入
+  - “主线剧情4与第2赛季(上)” 的汉化内容(上) 更新
+    - 汉化内容将按照《上》、《下》两部分更新
+      - 《上》只是汉化进度100%版本，其内容可能是未经验证的，非最终译本的，请使用者自行抉择
+      - 《下》为校对进度50%+的版本
   - 周常文本更新
-- 其他
-  - 月亮计划已修复E.G.O饰品遮罩问题
