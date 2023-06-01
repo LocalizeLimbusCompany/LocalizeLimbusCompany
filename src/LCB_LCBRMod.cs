@@ -36,7 +36,7 @@ namespace LimbusLocalizeRUS
                 HarmonyLib.Harmony harmony = new("LimbusLocalizeRUS");
                 if (LCBR_Russian_Settings.IsUseRussian.Value)
                 {
-                    LCBR_Manager.InitLocalizes(new DirectoryInfo(ModPath + "/Localize/ru"));
+                    LCBR_Manager.InitLocalizes(new DirectoryInfo(ModPath + "/Localize/RU"));
                     harmony.PatchAll(typeof(LCB_Cyrillic_Font));
                     harmony.PatchAll(typeof(LCBR_ReadmeManager));
                     harmony.PatchAll(typeof(LCBR_LoadingManager));
