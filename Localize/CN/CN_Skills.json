@@ -569,7 +569,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 消耗5层充能 ，并在下回合对目标施加2层虚弱 、3层麻痹 "
+                  "desc": "[OnSucceedAttack] 消耗5层充能 ，并在下回合对目标施加2层虚弱 与3层麻痹 "
                 }
               ]
             }
@@ -1977,7 +1977,7 @@
         {
           "level": 3,
           "name": "黑云摧裂",
-          "desc": "[StartBattle] 本技能对目标施加的流血 强度与麻痹 层数额外+1层",
+          "desc": "[StartBattle] 本技能对目标施加的流血 强度与麻痹 层数额外+1",
           "coinlist": [
             {
               "coindescs": [
@@ -2877,7 +2877,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[CriticalOnSucceedAttack] 自身的体力低于25%时，使自身恢复本硬币伤害量100%的体力。"
+                  "desc": "[CriticalOnSucceedAttack] 若自身的体力低于25%，则使自身恢复本硬币伤害量100%的体力。"
                 }
               ]
             }
@@ -3133,7 +3133,7 @@
         {
           "level": 3,
           "name": "就地处斩",
-          "desc": "自身的理智值低于0时，使本技能的威力+1",
+          "desc": "若自身的理智值低于0，则使本技能的威力+1",
           "coinlist": [
             {},
             {},
@@ -4695,7 +4695,7 @@
                   "desc": "[OnSucceedAttack] 下回合对目标施加3层束缚 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标的尖钉 层数高于5层，则在下回合对目标施加3层麻痹 和1层虚弱 "
+                  "desc": "[OnSucceedAttack] 若目标的尖钉 层数高于5层，则在下回合对目标施加2层束缚 和1层虚弱 "
                 }
               ]
             }
@@ -5118,21 +5118,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 追加本硬币造成伤害量10%的伤害"
+                  "desc": "[OnSucceedAttackHead] 追加本硬币伤害量10%的伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 追加本硬币造成伤害量10%的伤害"
+                  "desc": "[OnSucceedAttackHead] 追加本硬币伤害量10%的伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 追加本硬币造成伤害量10%的伤害"
+                  "desc": "[OnSucceedAttackHead] 追加本硬币伤害量10%的伤害"
                 }
               ]
             }
@@ -5274,7 +5274,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 追加本硬币造成伤害量15%的斩击伤害"
+                  "desc": "[OnSucceedAttack] 追加本硬币伤害量15%的斩击伤害"
                 },
                 {
                   "desc": "[OnSucceedAttack] 下回合对目标施加1层弱点分析 "
@@ -5401,7 +5401,7 @@
                   "desc": "[OnSucceedAttackHead] 使自身恢复6点理智值"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标的烧伤 层数高于6层 ,使目标的混乱阈值前移本硬币造成伤害的30%"
+                  "desc": "[OnSucceedAttack] 若目标的烧伤 层数高于6层 ,使目标的混乱阈值前移本硬币伤害量的30%"
                 }
               ]
             }
@@ -5832,7 +5832,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币造成伤害50%的数值"
+                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的50%"
                 }
               ]
             },
@@ -5842,7 +5842,7 @@
                   "desc": "[OnSucceedAttack] 若目标的流血 强度高于5级，则使其增加5级烧伤 强度"
                 },
                 {
-                  "desc": "[EnemyKill] 下回合使自身获得1层打击威力强化 "
+                  "desc": "[EnemyKill] 下回合使自身获得1层打击强壮 "
                 }
               ]
             }
@@ -5944,7 +5944,7 @@
                   "desc": "[OnSucceedAttack] 引爆目标的震颤 "
                 },
                 {
-                  "desc": "若目标的尖钉层数高于5层，则本硬币造成的伤害+20%"
+                  "desc": "若目标的尖钉 层数高于5层，则本硬币造成的伤害+20%"
                 }
               ]
             }
@@ -5996,6 +5996,309 @@
     },
     {
       "id": 1030404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "防御",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1090501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "发动引擎",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级震颤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得4层充能 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层震颤 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "发动引擎",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级震颤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得4层充能 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层震颤 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1090502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "震动压缩",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层震颤 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级震颤 强度\n若自身的充能 层数高于3层，且本硬币的朝向为正面，重复使用本硬币(至多2次)\n本硬币第2次重复使用时，在使目标增加震颤 强度后引爆震颤 ，而后使目标的震颤 层数减少1层",
+                  "summary": "[OnSucceedAttack] 引爆目标的震颤 。满足条件时重复使用本硬币。重复使用时，使目标额外增加2级震颤 强度。第2次重复使用时，引爆震颤 ，而后使目标的震颤 层数减少"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "震动压缩",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层震颤 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级震颤 强度\n若自身的充能 层数高于3层，且本硬币的朝向为正面，重复使用本硬币(至多2次)\n本硬币第2次重复使用时，在使目标增加震颤 强度后引爆震颤 ，而后使目标的震颤 层数减少1层",
+                  "summary": "[OnSucceedAttack] 引爆目标的震颤 。满足条件时重复使用本硬币。重复使用时，使目标额外增加2级震颤 强度。第2次重复使用时，引爆震颤 ，而后使目标的震颤 层数减少"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1090503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "大干一场",
+          "desc": "[WhenUse] 使自身获得6层充能 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层震颤 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级震颤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 引爆目标的震颤 \n引爆震颤 时，使目标的震颤 层数减少1层"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 引爆目标的震颤 \n引爆震颤 时，使目标的震颤 层数减少1层"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 如果目标陷入混乱状态，追加伤害量25%的伤害"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1090504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "预热",
+          "desc": "[StartBattle] 使自身获得2层充能 ",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1050501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "强加业务处理",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级震颤 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "强加业务处理",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级震颤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级震颤 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1050502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "强制休息",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级震颤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若目标的震颤 强度高于5级，下回合对其施加1层虚弱 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "强制休息",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级震颤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级震颤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若目标的震颤 强度高于5级，则下回合对其施加1层虚弱 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1050503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "加速收工",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使自身获得1层充能 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级震颤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使自身获得2层充能 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级震颤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使自身获得2层充能 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级震颤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 引爆目标的震颤 \n引爆震颤 时，使目标的震颤 层数减少3层。消耗所有充能 并使震颤 引爆时混乱阈值的前移量增加(消耗的充能 层数×5)%（至多50%）",
+                  "summary": "[OnSucceedAttack] 引爆震颤 ，而后使目标的震颤 层数减少3层。消耗充能 并使混乱阈值的前移量增加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1050504,
       "levelList": [
         {
           "level": 1,
