@@ -1,0 +1,957 @@
+{
+  "dataList": [
+    {
+      "id": "AreaAtk",
+      "name": "AoE Атака",
+      "desc": "Имеет 2 и более цели."
+    },
+    {
+      "id": "Enhancement",
+      "name": "Повышение силы атаки",
+      "desc": "Attack skills gain final Power by the effect’s Count for one turn."
+    },
+    {
+      "id": "Agility",
+      "name": "Спешка",
+      "desc": "Speed increases by the effect’s Count for one turn."
+    },
+    {
+      "id": "Endurance",
+      "name": "Повышение силы защиты",
+      "desc": "Defense skills gain final Power by the effect’s Count for one turn."
+    },
+    {
+      "id": "Reduction",
+      "name": "Attack Power Down",
+      "desc": "Attack skills lose final Power by the effect’s Count for one turn."
+    },
+    {
+      "id": "Binding",
+      "name": "Связывание",
+      "desc": "Speed decreases by the effect’s Count for one turn."
+    },
+    {
+      "id": "Vulnerable",
+      "name": "Слабость",
+      "desc": "Take more damage from skills based on the effect’s Count for one turn. (Max 10)",
+      "summary": "+{0}0% Damage Taken"
+    },
+    {
+      "id": "Taunt",
+      "name": "Taunt",
+      "desc": ""
+    },
+    {
+      "id": "Stun",
+      "name": "Stun",
+      "desc": ""
+    },
+    {
+      "id": "ElectricShock",
+      "name": "Shock",
+      "desc": "Take more damage by the effect’s Count."
+    },
+    {
+      "id": "Burn",
+      "name": "Огонь",
+      "desc": "At the end of the turn, take fixed damage by the effect’s Count, then halve it."
+    },
+    {
+      "id": "Bleeding",
+      "name": "Кровотечение",
+      "desc": "When attacking, take fixed damage equal to (Count)% of current HP, then halve it."
+    },
+    {
+      "id": "Target",
+      "name": "Marked",
+      "desc": "Targeted by the character with the Passive [Sharp Edge]."
+    },
+    {
+      "id": "SelfHarm_LowMorale",
+      "name": "Побуждение (Низкий дух)",
+      "desc": "At the start of the turn, gain 2 Haste and 2 Fragile."
+    },
+    {
+      "id": "SelfHarm_Срыв",
+      "name": "Побуждение (Срыв)",
+      "desc": "At the start of the turn, lose 10 HP."
+    },
+    {
+      "id": "Blame_LowMorale",
+      "name": "Всплеск (Низкий дух)",
+      "desc": "At the start of the turn, gain 2 Attack Повышение силы and 2 Fragile."
+    },
+    {
+      "id": "Blame_Срыв",
+      "name": "Всплеск (Срыв)",
+      "desc": "At the start of the turn, a random ally loses 20 SP."
+    },
+    {
+      "id": "Charge",
+      "name": "Заряд",
+      "desc": "Resource used by certain skills for additional effects. Its Count can go up to 20. Count lowers by 1 at the end of each turn."
+    },
+    {
+      "id": "DamageOverTime",
+      "name": "Ongoing Damage",
+      "desc": "At the start of the turn, take fixed damage by the effect’s Count."
+    },
+    {
+      "id": "ResultEnhancement",
+      "name": "Повышение силы атаки",
+      "desc": "Attack skills gain final Power by the effect’s Count for one turn.",
+      "summary": "ATK Skill Final Power +{0}"
+    },
+    {
+      "id": "Protection",
+      "name": "Protection",
+      "desc": "Take less damage from skills based on the effect’s Count for one turn. (Max 10)",
+      "summary": "-{0}0% Damage Taken"
+    },
+    {
+      "id": "AttackDmgUp",
+      "name": "Damage Up",
+      "desc": "Deal more damage with skills based on the effect’s Count for one turn. (Max 10)",
+      "summary": "+{0}0% Damage Dealt"
+    },
+    {
+      "id": "DefenseUp",
+      "name": "Defense Level Up",
+      "desc": "Defense Level increases based on the effect’s Count for one turn. (Max 10)",
+      "summary": "Defense Level +{0}0%"
+    },
+    {
+      "id": "PlusCoinValueUp",
+      "name": "Plus Coin Boost",
+      "desc": "Raise the Power of Plus Coins by the effect’s Count."
+    },
+    {
+      "id": "MinusCoinValueUp",
+      "name": "Minus Coin Boost",
+      "desc": "Raise the Power of Minus Coins by the effect’s Count."
+    },
+    {
+      "id": "TimesCoinValueUp",
+      "name": "Multiply Coin Boost",
+      "desc": "Raise the Power of Multiply Coins by the effect’s Count."
+    },
+    {
+      "id": "Disarming",
+      "name": "Defense Power Down",
+      "desc": "Defense skills lose final Power by the effect’s Count for one turn."
+    },
+    {
+      "id": "ResultReduction",
+      "name": "Power Down",
+      "desc": "All skills lose final Power by the effect’s Count for one turn.",
+      "summary": "Skill Final Power -{0}"
+    },
+    {
+      "id": "AttackDmgDown",
+      "name": "Damage Down",
+      "desc": "Deal less damage with skills based on the effect’s Count for one turn. (Max 10)",
+      "summary": "-{0}0% Damage Dealt"
+    },
+    {
+      "id": "DefenseDown",
+      "name": "Defense Level Down",
+      "desc": "Defense Level decreases based on the effect’s Count for one turn. (Max 10)",
+      "summary": "Defense Level -{0}0%"
+    },
+    {
+      "id": "Paralysis",
+      "name": "Paralyze",
+      "desc": "Fix the Power of Coins to 0 for one turn, with one Coin per the effect’s Count."
+    },
+    {
+      "id": "PlusCoinValueDown",
+      "name": "Plus Coin Drop",
+      "desc": "Reduce the power of Plus Coins by the effect’s Count."
+    },
+    {
+      "id": "MinusCoinValueDown",
+      "name": "Minus Coin Drop",
+      "desc": "Reduce the power of Minus Coins by the effect’s Count."
+    },
+    {
+      "id": "TimesCoinValueDown",
+      "name": "Multiply Coin Drop",
+      "desc": "Reduce the power of Multiply Coins by the effect’s Count."
+    },
+    {
+      "id": "MoonLight",
+      "name": "Moonlight",
+      "desc": "Resource used by certain skills for additional effects."
+    },
+    {
+      "id": "Anger",
+      "name": "Ярость",
+      "desc": "Spent by certain skills. Required for the use of certain skills."
+    },
+    {
+      "id": "Inactible",
+      "name": "Immobilize",
+      "desc": "Does not act for the turn."
+    },
+    {
+      "id": "Combustion",
+      "name": "Огонь",
+      "desc": "At the end of the turn, take fixed damage by the effect’s Potency.\nThen, reduce its Count by 1."
+    },
+    {
+      "id": "Laceration",
+      "name": "Кровотечение",
+      "desc": "When tossing an attack Coin, take fixed damage by the effect’s Potency.\nThen, reduce its Count by 1."
+    },
+    {
+      "id": "Vibration",
+      "name": "Тремор",
+      "desc": "When attacked by skills that burst Tremor, raise the Stagger Threshold by the effect’s Potency.\nAt the end of the turn, reduce the Count by 1."
+    },
+    {
+      "id": "Burst",
+      "name": "Разрыв",
+      "desc": "When hit by an attack, take fixed damage by the effect’s Potency.\nThen, reduce its Count by 1."
+    },
+    {
+      "id": "Sinking",
+      "name": "Утопание",
+      "desc": "When hit by an attack, take fixed SP damage by the effect’s Potency.\n(Abnormalities with no Sanity take Gloom damage instead.)\nThen, reduce its Count by 1."
+    },
+    {
+      "id": "Breath",
+      "name": "Poise",
+      "desc": "On hit, gain a Potency-based chance to deal critical damage, reducing the Count by 1 if successful.\nAt the end of the turn, reduce the Count by 1."
+    },
+    {
+      "id": "BloodPocket",
+      "name": "Кровяной мешок",
+      "desc": "Use a powerful attack after the Count reaches a certain amount."
+    },
+    {
+      "id": "WaterPocket",
+      "name": "Водяной мешок",
+      "desc": "Heals HP based on the Count."
+    },
+    {
+      "id": "DogThunder",
+      "name": "Молния",
+      "desc": "Powers up after the Count reaches a certain amount."
+    },
+    {
+      "id": "Run_Срыв",
+      "name": "Oppression",
+      "desc": "Cannot act for one turn. When hit, flees battle after the attacker’s skill has finished."
+    },
+    {
+      "id": "Operation",
+      "name": "Surgery",
+      "desc": "Die when Count reaches 5.\nReduce Max HP by 20% (per Count).\nDeal 20% (per Count) more damage.\nAt the start of the turn, gain Haste by the effect’s Count."
+    },
+    {
+      "id": "Emergency_Operation",
+      "name": "Makeshift Surgery",
+      "desc": "Boost Max HP by 25% and skill Power by 1 per this effect’s Count.\nEach turn, increase this effect’s Count by 1.\nDie when Count reaches 5."
+    },
+    {
+      "id": "BabayagaTimeLimit",
+      "name": "Баба яга близко!",
+      "desc": ""
+    },
+    {
+      "id": "PinkRibbon",
+      "name": "Розовые ленточки",
+      "desc": "At the end of the turn, if at 5+ Potency, remove this effect and apply ‘Desirous’ next turn."
+    },
+    {
+      "id": "Greedy",
+      "name": "Переполнение желанием",
+      "desc": "At the start of the turn, gain 10 Bind.\nAll phys. resistances change to ‘Fatal’.\nAttack Skill Power +2.\nDefense Skill Power -2."
+    },
+    {
+      "id": "PinkRibbon_Ishmael",
+      "name": "Розовые ленточки",
+      "desc": "Count increases by 1 whenever the affected unit tosses an attack skill Coin.\nAt the end of the turn, inflict Bind by the effect’s Count, then remove the effect."
+    },
+    {
+      "id": "Muckworm",
+      "name": "Личинки",
+      "desc": "Turn End: Take Gluttony damage by the Count, then lower it by 1; Bleed Count +1."
+    },
+    {
+      "id": "AttackUp",
+      "name": "Offense Level Up",
+      "desc": "Offense Level increases based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "AttackDown",
+      "name": "Offense Level Down ",
+      "desc": "Offense Level decreases based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "Liu_Meursault_Guard_Buff",
+      "name": "Great Mountain",
+      "desc": "When attacked, inflict +1 Burn Count on the attacker."
+    },
+    {
+      "id": "SlashResistUp",
+      "name": "Slash Resist Up",
+      "desc": "Increase Slash Resistance by a % based on Count.\n(0.1% per Count)"
+    },
+    {
+      "id": "PenetrateResistUp",
+      "name": "Pierce Resist Up",
+      "desc": "Increase Pierce Resistance by a % based on Count.\n(0.1% per Count)"
+    },
+    {
+      "id": "HitResistUp",
+      "name": "Blunt Resist Up",
+      "desc": "Increase Blunt Resistance by a % based on Count.\n(0.1% per Count)"
+    },
+    {
+      "id": "SlashDamageUp",
+      "name": "Slash DMG Up",
+      "desc": "Deal more damage with Slash skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "PenetrateDamageUp",
+      "name": "Pierce DMG Up",
+      "desc": "Deal more damage with Pierce skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "HitDamageUp",
+      "name": "Blunt DMG Up",
+      "desc": "Deal more damage with Blunt skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "SlashResistDown",
+      "name": "Slash Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "PenetrateResistDown",
+      "name": "Pierce Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "HitResistDown",
+      "name": "Blunt Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "SlashDamageDown",
+      "name": "Slash DMG Down",
+      "desc": "Deal less damage with Slash skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "PenetrateDamageDown",
+      "name": "Pierce DMG Down",
+      "desc": "Deal less damage with Pierce skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "HitDamageDown",
+      "name": "Blunt DMG Down",
+      "desc": "Deal less damage with Blunt skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "CrimsonResistDown",
+      "name": "Wrath Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "ScarletResistDown",
+      "name": "Lust Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "AmberResistDown",
+      "name": "Sloth Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "ShamrockResistDown",
+      "name": "Gluttony Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "AzureResistDown",
+      "name": "Gloom Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "IndigoResistDown",
+      "name": "Pride Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "VioletResistDown",
+      "name": "Envy Resist Down",
+      "desc": ""
+    },
+    {
+      "id": "CrimsonResistUp",
+      "name": "Wrath Resist Up",
+      "desc": "Increase Wrath Resistance by a % based on Count.\n(0.1% per Count)"
+    },
+    {
+      "id": "ScarletResistUp",
+      "name": "Lust Resist Up",
+      "desc": "Increase Lust Resistance by a % based on Count.\n(0.1% per Count)"
+    },
+    {
+      "id": "AmberResistUp",
+      "name": "Sloth Resist Up",
+      "desc": "Increase Sloth Resistance by a % based on Count.\n(0.1% per Count)"
+    },
+    {
+      "id": "ShamrockResistUp",
+      "name": "Gluttony Resist Up",
+      "desc": "Increase Gluttony Resistance by a % based on Count.\n(0.1% per Count)"
+    },
+    {
+      "id": "AzureResistUp",
+      "name": "Gloom Resist Up",
+      "desc": "Increase Gloom Resistance by a % based on Count.\n(0.1% per Count)"
+    },
+    {
+      "id": "IndigoResistUp",
+      "name": "Pride Resist Up",
+      "desc": "Increase Pride Resistance by a % based on Count.\n(0.1% per Count)"
+    },
+    {
+      "id": "VioletResistUp",
+      "name": "Envy Resist Up",
+      "desc": "Increase Envy Resistance by a % based on Count.\n(0.1% per Count)"
+    },
+    {
+      "id": "CrimsonDamageDown",
+      "name": "Wrath DMG Down",
+      "desc": "Deal less damage with Wrath skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "ScarletDamageDown",
+      "name": "Lust DMG Down",
+      "desc": "Deal less damage with Lust skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "AmberDamageDown",
+      "name": "Sloth DMG Down",
+      "desc": "Deal less damage with Sloth skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "ShamrockDamageDown",
+      "name": "Gluttony DMG Down",
+      "desc": "Deal less damage with Gluttony skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "AzureDamageDown",
+      "name": "Gloom DMG Down",
+      "desc": "Deal less damage with Gloom skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "IndigoDamageDown",
+      "name": "Pride DMG Down",
+      "desc": "Deal less damage with Pride skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "VioletDamageDown",
+      "name": "Envy DMG Down",
+      "desc": "Deal less damage with Envy skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "CrimsonDamageUp",
+      "name": "Wrath DMG Up",
+      "desc": "Deal more damage with Wrath skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "ScarletDamageUp",
+      "name": "Lust DMG Up",
+      "desc": "Deal more damage with Lust skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "AmberDamageUp",
+      "name": "Sloth DMG Up",
+      "desc": "Deal more damage with Sloth skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "ShamrockDamageUp",
+      "name": "Gluttony DMG Up",
+      "desc": "Deal more damage with Gluttony skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "AzureDamageUp",
+      "name": "Gloom DMG Up",
+      "desc": "Deal more damage with Gloom skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "IndigoDamageUp",
+      "name": "Pride DMG Up",
+      "desc": "Deal more damage with Pride skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "VioletDamageUp",
+      "name": "Envy DMG Up",
+      "desc": "Deal more damage with Envy skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "Curse",
+      "name": "Curse",
+      "desc": "At the end of the turn, gain one of the following, then reduce this effect’s Count by 1.\n1 Attack Power Down/1 Defense Power Down/1 Offense Level Down/1 Defense Level Down."
+    },
+    {
+      "id": "AttackDmgUp_Weak",
+      "name": "Weak-resist DMG Boost",
+      "desc": "Boost the damage of attacks against Weak resistances by a % based on Count.\n(10% per Count)"
+    },
+    {
+      "id": "Bullet",
+      "name": "Патрон",
+      "desc": "Spent by certain skills.\nSome attacks cancel if lacking Ammo."
+    },
+    {
+      "id": "Meursault_Last_Remodeling",
+      "name": "Final Augment",
+      "desc": "At the start of the turn, gain 3 Attack Повышение силы, Defense Повышение силы, and Haste; die after 3 turns."
+    },
+    {
+      "id": "Aggressive",
+      "name": "Инстинкты",
+      "desc": "At the end of the turn, if the Count is at 4+, change to an “aggressive” state."
+    },
+    {
+      "id": "Cromer_Target",
+      "name": "Взгляд Той, что держит",
+      "desc": "Staggered for one turn. Take +100% damage from Kromer."
+    },
+    {
+      "id": "Poison",
+      "name": "Яд",
+      "desc": "At the end of the turn, take fixed damage by the Count, then halve the Count."
+    },
+    {
+      "id": "Desire",
+      "name": "Urge",
+      "desc": "At the end of the turn, if at 5+ stacks, take 30 SP damage, gain 2 Fragile and 10 Bind, and remove this effect."
+    },
+    {
+      "id": "Assemble",
+      "name": "Фанатизм",
+      "desc": "Raise Skill Final Power by the effect’s Count against units with Nails for the turn."
+    },
+    {
+      "id": "Nail",
+      "name": "N Corp’s Nails",
+      "desc": "At the start of the turn, gain 1 Bleed and increase the Bleed Count by this effect’s Count.\nAt the end of the turn, reduce the Count by 1."
+    },
+    {
+      "id": "BeingGolden",
+      "name": "Золотой отблеск",
+      "desc": "At the start of the turn, heal 10 HP per Count."
+    },
+    {
+      "id": "SlashTakeDamageDown",
+      "name": "Slash Protection",
+      "desc": "Take less damage from Slash skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "PenetrateTakeDamageDown",
+      "name": "Pierce Protection",
+      "desc": "Take less damage from Pierce skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "HitTakeDamageDown",
+      "name": "Blunt Protection",
+      "desc": "Take less damage from Blunt skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "CrimsonTakeDamageDown",
+      "name": "Wrath Protection",
+      "desc": "Take less damage from Wrath skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "ScarletTakeDamageDown",
+      "name": "Lust Protection",
+      "desc": "Take less damage from Lust skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "AmberTakeDamageDown",
+      "name": "Sloth Protection",
+      "desc": "Take less damage from Sloth skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "ShamrockTakeDamageDown",
+      "name": "Gluttony Protection",
+      "desc": "Take less damage from Gluttony skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "AzureTakeDamageDown",
+      "name": "Gloom Protection",
+      "desc": "Take less damage from Gloom skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "IndigoTakeDamageDown",
+      "name": "Pride Protection",
+      "desc": "Take less damage from Pride skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "VioletTakeDamageDown",
+      "name": "Envy Protection",
+      "desc": "Take less damage from Envy skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "SlashTakeDamageUp",
+      "name": "Слабость к режущему урону",
+      "desc": "Take more damage from Slash skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "PenetrateTakeDamageUp",
+      "name": "Слабость к пронзающему урону",
+      "desc": "Take more damage from Pierce skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "HitTakeDamageUp",
+      "name": "Слабость к дробящему урону",
+      "desc": "Take more damage from Blunt skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "CrimsonTakeDamageUp",
+      "name": "Слабость к Гневу",
+      "desc": "Take more damage from Wrath skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "ScarletTakeDamageUp",
+      "name": "Слабость к Похоти",
+      "desc": "Take more damage from Lust skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "AmberTakeDamageUp",
+      "name": "Слабость к Лени",
+      "desc": "Take more damage from Sloth skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "ShamrockTakeDamageUp",
+      "name": "Слабость к Чревоугодию",
+      "desc": "Take more damage from Gluttony skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "AzureTakeDamageUp",
+      "name": "Слабость к Унынию",
+      "desc": "Take more damage from Gloom skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "IndigoTakeDamageUp",
+      "name": "Слабость к Гордыне",
+      "desc": "Take more damage from Pride skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "VioletTakeDamageUp",
+      "name": "Слабость к Зависти",
+      "desc": "Take more damage from Envy skills based on the effect’s Count for one turn. (Max 10)"
+    },
+    {
+      "id": "NailPersonality",
+      "name": "Nails",
+      "desc": "At the start of the turn, gain 1 Bleed and increase the Bleed Count by this effect’s Count.\nAt the end of the turn, halve the Count. (Rounded down)"
+    },
+    {
+      "id": "AssemblePersonality",
+      "name": "Фанатизм",
+      "desc": "Raise Skill Final Power by the effect’s Count against units with Nails for the turn."
+    },
+    {
+      "id": "MarkOfHeresy",
+      "name": "Взгляд",
+      "desc": "Take +20% damage from Pierce and Blunt skills for one turn.\nThe ally that defeats the marked unit heals 10 SP; if the ally is from N Corp, also apply 1 Fanatic next turn."
+    },
+    {
+      "id": "HitResultUp",
+      "name": "Повышение силы дробящего урона",
+      "desc": "Blunt skills gain final Power by the effect’s Count for one turn."
+    },
+    {
+      "id": "WeaknessAnalysis",
+      "name": "Weakness Analyzed",
+      "desc": "A random “Endure” or “Normal” attack type resistance is weakened [+0.2 to damage multiplier] for one turn."
+    },
+    {
+      "id": "Cycle",
+      "name": "Карма",
+      "desc": "Take +1% damage per Count. At the end of the turn, if at 108+ Count, the unit dies."
+    },
+    {
+      "id": "Duress",
+      "name": "Captivity",
+      "desc": "The affected unit becomes Staggered for 3 turns.\nAt the start of the turn, if Kqe-1j-23 is Staggered, remove this status."
+    },
+    {
+      "id": "VioletResultUp",
+      "name": "Повышение силы Зависти",
+      "desc": "Envy skills gain final Power by the effect’s Count for one turn."
+    },
+    {
+      "id": "CyclingKarma",
+      "name": "Цикличная карма",
+      "desc": "All units transfer their Karma to their targets after a successful attack.\nKarma is not transferred to My Form Empties as long as its allies are alive.",
+      "summary": "Karma transferred on Clash win"
+    },
+    {
+      "id": "Cromer_Ecstasy",
+      "name": "Экстаз",
+      "desc": "All the Maw’s physical resistances change to ‘Fatal’."
+    },
+    {
+      "id": "Cromer_Madness",
+      "name": "Чистота",
+      "desc": "All parts gain 3 Bind and 3 Damage Up, and their phys. resistances change to ‘Fatal’."
+    },
+    {
+      "id": "TakeHpHealReduce",
+      "name": "Понижение лечения ОЗ",
+      "desc": "Decreases HP healing provided by Passive abilities, Skills, and Coin effects. (Max 5)"
+    },
+    {
+      "id": "AttackLevelAdder",
+      "name": "Уровень атаки+",
+      "desc": "Offense Level increases by the effect’s Count for one turn."
+    },
+    {
+      "id": "Thirst",
+      "name": "Аппетит",
+      "desc": "Increases the healing provided by the Passive [Rustle Up].\nSpent when the Passive activates."
+    },
+    {
+      "id": "GainSinStockAdder",
+      "name": "Множитель Э.Г.О. ресурсов",
+      "desc": "Increases the amount of E.G.O resources earned from skills by the effect’s Count for one turn."
+    },
+    {
+      "id": "Enrage",
+      "name": "Безумие",
+      "desc": "Gain 3 Attack Повышение силы and 3 Fragile for one turn, and change behavior. Does not gain Aggression when attacked."
+    },
+    {
+      "id": "DimensionRift",
+      "name": "Пространственный разлом",
+      "desc": "At the end of the turn, gain Rupture Count by this effect’s amount. Then, remove this effect."
+    },
+    {
+      "id": "ShardOfUmbrella",
+      "name": "Umbrella Splinters",
+      "desc": "Gain 5 Rupture per Count at turn end",
+      "summary": "Gain 5 Rupture per Count at turn end"
+    },
+    {
+      "id": "WrappedCurseTag",
+      "name": "Entangled Curse Talisman",
+      "desc": "Deal +3% damage per Count\nAt 9+ Count, gain 2 Attack Power Down at turn start",
+      "summary": "Deal +3% damage per Count; At 9+ Count, gain 2 Attack Power Down at turn start"
+    },
+    {
+      "id": "ReattachedCurseTag",
+      "name": "Reattached Curse Talisman",
+      "desc": "At 9+ Count, gain 5 Bind at turn end.\nAt 12+ Count, gain 5 Attack Power Down at turn end.",
+      "summary": "At 9+ Count, gain 5 Bind at turn end.\nAt 12+ Count, gain 5 Attack Power Down at turn end."
+    },
+    {
+      "id": "ElectricStorage",
+      "name": "Capacitor",
+      "desc": "It seems to be storing electricity in its body.",
+      "summary": "표시용"
+    },
+    {
+      "id": "SelfCharge",
+      "name": "Self-charge",
+      "desc": "Electric currents seem to flow around its body.",
+      "summary": "표시용"
+    },
+    {
+      "id": "Exalted",
+      "name": "Morale Boost",
+      "desc": "Gain Damage Up by the the effect's Count every turn (Max 5)\nCannot gain the status while Tipsy",
+      "summary": "Gain Damage Up by the effect's Count every turn; Cannot gain the status while Tipsy"
+    },
+    {
+      "id": "Tipsiness",
+      "name": "Tipsy",
+      "desc": "Lose Clash Power by the effect's Count (Max 5)",
+      "summary": "Lose Clash Power by the effect's Count"
+    },
+    {
+      "id": "Predation",
+      "name": "Predation",
+      "desc": "It seems to be preparing a powerful move.",
+      "summary": "표시용"
+    },
+    {
+      "id": "ATL_EndureCombustion",
+      "name": "Burn Resistance",
+      "desc": "When taking damage from Burn, reduce the damage by 10% per Count (Max 10)",
+      "summary": "When taking damage from Burn, take 10% less damage per Count"
+    },
+    {
+      "id": "Resonate",
+      "name": "Resonant",
+      "desc": "When bursting Tremor or raising stagger threshold, deal 3 fixed damage per Count and further raise stagger threshold by 3% per Count",
+      "summary": "Tremor bursts and stagger threshold raisers deal damage and raise more stagger threshold"
+    },
+    {
+      "id": "VibrationAssimilation",
+      "name": "Tremor Sync",
+      "desc": "In a clash, the opponent has -1 Clash Power for every 5 Tremor they have",
+      "summary": "In a clash, the opponent has -1 Clash Power for every 5 Tremor they have"
+    },
+    {
+      "id": "CollapseAmpoule",
+      "name": "Decay Ampule",
+      "desc": "Take damage by 2% of Max HP per Count",
+      "summary": "Take damage by 2% of Max HP per Count"
+    },
+    {
+      "id": "ATL_EndureLaceration",
+      "name": "Bleed Resistance",
+      "desc": "When taking damage from Bleed, reduce the damage by 10% per Count (Max 10)",
+      "summary": "When taking damage from Bleed, take 10% less damage per Count"
+    },
+    {
+      "id": "Bull_Sadness",
+      "name": "Unresolved Sorrow",
+      "desc": "At the start of the turn, gain Attack Power Down by the Count.\nAt the end of the turn, if this effect is at 3+ Count, changes to Expanding Sorrow",
+      "summary": ""
+    },
+    {
+      "id": "Bull_BuzzingEmotion",
+      "name": "Wavering Emotions",
+      "desc": "Turn Start: Randomly gain Attack Power Down, Paralyze, or Bind by this effect's Count, then remove this effect",
+      "summary": "Turn Start: Randomly gain Attack Power Down, Paralyze, or Bind by this effect's Count, then remove this effect"
+    },
+    {
+      "id": "Scared",
+      "name": "Fear",
+      "desc": "Turn End: At -20 SP or lower, gain 1 Damage Up next turn",
+      "summary": "Turn End: At -20 SP or lower, gain 1 Damage Up next turn"
+    },
+    {
+      "id": "Stressed",
+      "name": "Stressed",
+      "desc": "Turn End: At -25 SP or lower, gain 1 Attack Повышение силы next turn",
+      "summary": "Turn End: At -25 SP or lower, gain 1 Attack Повышение силы next turn"
+    },
+    {
+      "id": "Nervous",
+      "name": "Nervous",
+      "desc": "Turn End: At -15 SP or lower, gain 3 Offense Level Up next turn",
+      "summary": "Turn End: At -15 SP or lower, gain 3 Offense Level Up next turn"
+    },
+    {
+      "id": "ATL_Agility",
+      "name": "Faster!",
+      "desc": "Gain 2 Haste",
+      "summary": "표시용"
+    },
+    {
+      "id": "ATL_Breath",
+      "name": "Aim True!",
+      "desc": "Gain 3 Poise",
+      "summary": "표시용"
+    },
+    {
+      "id": "ATL_Target",
+      "name": "Get 'Em!",
+      "desc": "Simultaneously attacks one unit",
+      "summary": "표시용"
+    },
+    {
+      "id": "Bull_FadedHeat",
+      "name": "Momentary Cool",
+      "desc": "Core and body lose 50% Max HP"
+    },
+    {
+      "id": "Bull_Fever",
+      "name": "Fever",
+      "desc": "Deal +10% damae per Count\nReduced by 1 at turn end",
+      "summary": ""
+    },
+    {
+      "id": "Bull_ReinforcedSadness",
+      "name": "Expanding Sorrow",
+      "desc": "Changes behavior.",
+      "summary": "Changes behavior."
+    },
+    {
+      "id": "Crazy_LowMorale",
+      "name": "Безрассудство (Низкий дух)",
+      "desc": "When at low morale for the first time, targets units indiscriminately",
+      "undefined": "-"
+    },
+    {
+      "id": "Crazy_Panic",
+      "name": "Безрассудство (Срыв)",
+      "desc": "Targets indiscriminately; Clash Power +1, and gain 2 Damage Up",
+      "undefined": "-"
+    },
+    {
+      "id": "Suicide_LowMorale",
+      "name": "Суицидальность (Низкий дух)",
+      "desc": "When at low morale for the first time, become unable to act",
+      "undefined": "-"
+    },
+    {
+      "id": "Suicide_Panic",
+      "name": "Суицидальность (Срыв)",
+      "desc": "Cannot act for 3 turns. Unit dies at turn start; all its allies lose 10 SP",
+      "undefined": "-"
+    },
+    {
+      "id": "Prowl_LowMorale",
+      "name": "Блуждание (Низкий дух)",
+      "desc": "Turn Start: Deal 2 SP damage to allies",
+      "undefined": "-"
+    },
+    {
+      "id": "Prowl_Panic",
+      "name": "Блуждание (Срыв)",
+      "desc": "Turn End: Deal 5 SP damage to allies. Flees from battle after 3 turns have passed",
+      "undefined": "-"
+    },
+    {
+      "id": "Blue_LowMorale",
+      "name": "Подавленность (Низкий дух)",
+      "desc": "In a clash, if any Coin lands tails, Clash Power -1 for the clash",
+      "undefined": "-"
+    },
+    {
+      "id": "Blue_Panic",
+      "name": "Подавленность (Срыв)",
+      "desc": "In a clash, if any Coin lands tails, Clash Power -3 for the clash",
+      "undefined": "-"
+    },
+    {
+      "id": "Fragile_Mind_LowMorale",
+      "name": "Perilous Heart",
+      "desc": "Turn Start: Gain 2 Attack Повышение силы and 3 Bind",
+      "summary": "Turn Start: Gain 2 Attack Повышение силы and 3 Bind"
+    },
+    {
+      "id": "Fragile_Mind_Panic",
+      "name": "Faltering Heart",
+      "desc": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind",
+      "summary": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind"
+    },
+    {
+      "id": "ErodingMind",
+      "name": "Corroding Heart",
+      "desc": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind",
+      "summary": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind"
+    },
+    {
+      "id": "CrimsonResultUp",
+      "name": "Повышение силы Гнева",
+      "desc": "Wrath skills gain final Power by the effect’s Count for one turn."
+    },
+    {
+      "id": "EmittedCurrent",
+      "name": "Spark Discharge",
+      "desc": "When hit, the attacker gains +1 Charge Count; When hit with a Gloom attack, gain +1 Rupture Count, then reduce Count by 1"
+    }
+  ]
+}

@@ -10,8 +10,8 @@
     {
       "id": "Agility",
       "name": "Спешка",
-      "desc": "Speed +{0} for this turn.",
-      "summary": "SPD +{0}",
+      "desc": "Скорость +{0} на этот ход.",
+      "summary": "Скорость +{0}",
       "undefined": "-"
     },
     {
@@ -61,25 +61,25 @@
     },
     {
       "id": "SelfHarm_LowMorale",
-      "name": "Compulsion (Low Morale)",
+      "name": "Побуждение (Низкий дух)",
       "desc": "Turn Start: Gain 2 Haste and 2 Fragile.",
       "undefined": "-"
     },
     {
       "id": "SelfHarm_Panic",
-      "name": "Compulsion (Panic)",
+      "name": "Побуждение (Срыв)",
       "desc": "Turn Start: Lose 10 HP.",
       "undefined": "-"
     },
     {
       "id": "Blame_LowMorale",
-      "name": "Outlash (Low Morale)",
+      "name": "Всплеск (Низкий дух)",
       "desc": "Turn Start: Gain 2 Attack Power Up and 2 Fragile.",
       "undefined": "-"
     },
     {
       "id": "Blame_Panic",
-      "name": "Outlash (Panic)",
+      "name": "Всплеск (Срыв)",
       "desc": "Turn Start: Random ally loses 20 SP.",
       "undefined": "-"
     },
@@ -207,46 +207,46 @@
     },
     {
       "id": "Daunted_LowMorale",
-      "name": "Atrophied (Low Morale)",
+      "name": "Обескураженность (Низкий дух)",
       "desc": "Turn Start: Gain 2 Attack Power Down.",
       "summary": "Gain 2 Attack Power Down",
       "undefined": "-"
     },
     {
       "id": "Daunted_Panic",
-      "name": "Atrophied (Panic)",
+      "name": "Обескураженность (Срыв)",
       "desc": "Turn Start: Gain 4 Attack Power Down.",
       "summary": "Gain 4 Attack Power Down"
     },
     {
       "id": "Overwhelm_LowMorale",
-      "name": "Overwhelmed (Low Morale)",
+      "name": "Ошеломление (Низкий дух)",
       "desc": "Turn Start: Gain 2 Attack Power Down.",
       "summary": "Gain 2 Attack Power Down",
       "undefined": "-"
     },
     {
       "id": "Overwhelm_Panic",
-      "name": "Overwhelmed (Panic)",
+      "name": "Ошеломление (Срыв)",
       "desc": "Does not act for this turn.",
       "summary": "Inactive",
       "undefined": "-"
     },
     {
       "id": "Anger_LowMorale",
-      "name": "Agitated (Low Morale)",
+      "name": "Обозлённость (Низкий дух)",
       "desc": "Turn Start: Gain 1 Damage Up and 2 Fragile.",
       "summary": "Gain 1 Damage Up and 2 Fragile"
     },
     {
       "id": "Anger_Panic",
-      "name": "Agitated (Panic)",
+      "name": "Обозлённость (Срыв)",
       "desc": "Turn Start: Gain 2 Damage Up and 5 Fragile.",
       "summary": "Gain 2 Damage Up and 5 Fragile"
     },
     {
       "id": "Run_LowMorale",
-      "name": "Running",
+      "name": "Побег",
       "desc": "Does not act. When hit, this unit is defeated after the skill ends.",
       "summary": "Inactive & Fleeing"
     },
@@ -960,13 +960,13 @@
     },
     {
       "id": "Thirst",
-      "name": "Appetite",
+      "name": "Аппетит",
       "desc": "+{0}0% healing from [Rustle Up]. Spent when the Passive activates.",
       "summary": "[Rustle Up] healing +{0}0% HP"
     },
     {
       "id": "GainSinStockAdder",
-      "name": "E.G.O Resource Amp",
+      "name": "Множитель Э.Г.О. ресурсов",
       "desc": "Gain +{0} E.G.O resources from using skills this turn.",
       "summary": "+{0} E.G.O resource gain"
     },
@@ -987,6 +987,226 @@
       "name": "Пространственный разлом",
       "desc": "Конец хода: Получает +{0} счётчик Разрыв",
       "summary": "Повышает счётчик Разрыв"
+    },
+    {
+      "id": "Scared",
+      "name": "Fear",
+      "desc": "Turn End: At -20 SP or lower, gain 1 Damage Up next turn",
+      "summary": "Turn End: At -20 SP or lower, gain 1 Damage Up next turn"
+    },
+    {
+      "id": "Stressed",
+      "name": "Stressed",
+      "desc": "Turn End: At -25 SP or lower, gain 1 Attack Power Up next turn",
+      "summary": "Turn End: At -25 SP or lower, gain 1 Attack Power Up next turn"
+    },
+    {
+      "id": "Nervous",
+      "name": "Nervous",
+      "desc": "Turn End: At -15 SP or lower, gain 3 Offense Level Up next turn",
+      "summary": "Turn End: At -15 SP or lower, gain 3 Offense Level Up next turn"
+    },
+    {
+      "id": "ShardOfUmbrella",
+      "name": "Umbrella Splinters",
+      "desc": "Turn End: Gain {0} x 5 Rupture",
+      "summary": "Turn End: Gain {0} x 5 Rupture"
+    },
+    {
+      "id": "WrappedCurseTag",
+      "name": "Entangled Curse Talisman",
+      "desc": "Deal +{0}X3% damage\nAt 9+ Count, gain 2 Attack Power Down at turn start",
+      "summary": "Deal +{0}X3% damage; Gain 2 Attack Power Down at turn start at 9+ Count"
+    },
+    {
+      "id": "ReattachedCurseTag",
+      "name": "Reattached Curse Talisman",
+      "desc": "At 9+ Count, gain 5 Bind at turn end.\nAt 12+ Count, gain 5 Attack Power Down at turn end.",
+      "summary": "At 9+ Count, gain 5 Bind at turn end.\nAt 12+ Count, gain 5 Attack Power Down at turn end."
+    },
+    {
+      "id": "ElectricStorage",
+      "name": "Capacitor",
+      "desc": "It seems to be storing electricity in its body.",
+      "summary": "표시용"
+    },
+    {
+      "id": "SelfCharge",
+      "name": "Self-charge",
+      "desc": "Electric currents seem to flow around its body.",
+      "summary": "표시용"
+    },
+    {
+      "id": "Exalted",
+      "name": "Morale Boost",
+      "desc": "Gain {0} Damage Up every turn (Max 5)\nCannot gain the status while Tipsy",
+      "summary": "Gain Damage Up by the effect's Count every turn; Cannot gain the status while Tipsy"
+    },
+    {
+      "id": "Tipsiness",
+      "name": "Tipsy",
+      "desc": "Clash Power -{0} (Max 5)",
+      "summary": "Lose Clash Power by the effect's Count"
+    },
+    {
+      "id": "Predation",
+      "name": "Predation",
+      "desc": "It seems to be preparing a powerful move.",
+      "summary": "표시용"
+    },
+    {
+      "id": "ATL_Agility",
+      "name": "Faster!",
+      "desc": "Gain 2 Haste",
+      "summary": "표시용"
+    },
+    {
+      "id": "ATL_Breath",
+      "name": "Aim True!",
+      "desc": "Gain 3 Poise",
+      "summary": "표시용"
+    },
+    {
+      "id": "ATL_Target",
+      "name": "Get 'Em!",
+      "desc": "Simultaneously attacks one unit",
+      "summary": "표시용"
+    },
+    {
+      "id": "ATL_EndureCombustion",
+      "name": "Burn Resistance",
+      "desc": "When taking damage from Burn, reduce the damage by {0}0% (Max 10)",
+      "summary": "When taking damage from Burn, take {0}0% less damage"
+    },
+    {
+      "id": "Resonate",
+      "name": "Resonant",
+      "desc": "When bursting Tremor or raising stagger threshold, additionally deal {0} * 3 fixed damage and raise stagger threshold by {0} * 3%",
+      "summary": "Tremor bursts and stagger threshold raisers deal damage and raise more stagger threshold"
+    },
+    {
+      "id": "VibrationAssimilation",
+      "name": "Tremor Sync",
+      "desc": "In a clash, the opponent has -1 Clash Power for every 5 Tremor they have",
+      "summary": "In a clash, the opponent has -1 Clash Power for every 5 Tremor they have"
+    },
+    {
+      "id": "CollapseAmpoule",
+      "name": "Decay Ampule",
+      "desc": "Take damage by {0} * 2% of Max HP",
+      "summary": "Take damage by {0} * 2% of Max HP"
+    },
+    {
+      "id": "Bull_FadedHeat",
+      "name": "Momentary Cool",
+      "desc": "Core and body lose 50% Max HP"
+    },
+    {
+      "id": "Bull_Fever",
+      "name": "Fever",
+      "desc": "Deal +{0}0% damage\nTurn End: Reduce Count by 1",
+      "summary": ""
+    },
+    {
+      "id": "Bull_Sadness",
+      "name": "Unresolved Sorrow",
+      "desc": "Gain Attack Power Down by the Count next turn.\nTurn End: At 3+ Count, changes to Expanding Sorrow.",
+      "summary": ""
+    },
+    {
+      "id": "Bull_ReinforcedSadness",
+      "name": "Expanding Sorrow",
+      "desc": "Changes behavior.",
+      "summary": "Changes behavior."
+    },
+    {
+      "id": "Bull_BuzzingEmotion",
+      "name": "Wavering Emotions",
+      "desc": "Turn Start: Randomly gain Attack Power Down, Paralyze, or Bind by this effect's Count, then remove this effect",
+      "summary": "Turn Start: Randomly gain Attack Power Down, Paralyze, or Bind by this effect's Count, then remove this effect"
+    },
+    {
+      "id": "Crazy_LowMorale",
+      "name": "Безрассудство (Низкий дух)",
+      "desc": "When at low morale for the first time, targets units indiscriminately",
+      "undefined": "-"
+    },
+    {
+      "id": "Crazy_Panic",
+      "name": "Безрассудство (Срыв)",
+      "desc": "Targets indiscriminately; Clash Power +1, and gain 2 Damage Up",
+      "undefined": "-"
+    },
+    {
+      "id": "Suicide_LowMorale",
+      "name": "Суицидальность (Низкий дух)",
+      "desc": "When at low morale for the first time, become unable to act",
+      "undefined": "-"
+    },
+    {
+      "id": "Suicide_Panic",
+      "name": "Суицидальность (Срыв)",
+      "desc": "Cannot act for 3 turns. Unit dies at turn start; all its allies lose 10 SP",
+      "undefined": "-"
+    },
+    {
+      "id": "Prowl_LowMorale",
+      "name": "Блуждание (Низкий дух)",
+      "desc": "Turn Start: Deal 2 SP damage to allies",
+      "undefined": "-"
+    },
+    {
+      "id": "Prowl_Panic",
+      "name": "Блуждание (Срыв)",
+      "desc": "Turn End: Deal 5 SP damage to allies. Flees from battle after 3 turns have passed",
+      "undefined": "-"
+    },
+    {
+      "id": "Fragile_Mind_LowMorale",
+      "name": "Perilous Heart",
+      "desc": "Turn Start: Gain 2 Attack Power Up and 3 Bind",
+      "summary": "Turn Start: Gain 2 Attack Power Up and 3 Bind"
+    },
+    {
+      "id": "Fragile_Mind_Panic",
+      "name": "Faltering Heart",
+      "desc": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind",
+      "summary": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind"
+    },
+    {
+      "id": "ErodingMind",
+      "name": "Corroding Heart",
+      "desc": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind",
+      "summary": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind"
+    },
+    {
+      "id": "Blue_LowMorale",
+      "name": "Подавленность (Низкий дух)",
+      "desc": "In a clash, if any Coin lands tails, Clash Power -1 for the clash",
+      "undefined": "-"
+    },
+    {
+      "id": "Blue_Panic",
+      "name": "Подавленность (Срыв)",
+      "desc": "In a clash, if any Coin lands tails, Clash Power -3 for the clash",
+      "undefined": "-"
+    },
+    {
+      "id": "ATL_EndureLaceration",
+      "name": "Bleed Resistance",
+      "desc": "When taking damage from Bleed, reduce the damage by {0}0% (Max 10)",
+      "summary": "When taking damage from Bleed, take {0}0% less damage"
+    },
+    {
+      "id": "CrimsonResultUp",
+      "name": "Wrath Power Up",
+      "desc": "Wrath Skill Final Power +{0} for this turn",
+      "summary": "Wrath Skill Final Power +{0}"
+    },
+    {
+      "id": "EmittedCurrent",
+      "name": "Spark Discharge",
+      "desc": "When hit, the attacker gains +1 Charge Count; When hit with a Gloom attack, gain +1 Rupture Count, then reduce Count by 1"
     }
   ]
 }
