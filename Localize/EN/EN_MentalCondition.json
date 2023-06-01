@@ -2,23 +2,33 @@
   "dataList": [
     {
       "id": "OnWinDuelAsParryingCountMultiplyAndPlusPercent",
-      "add": "더미더미더미입니다!!!!!!합횟수*{0} + 합횟수*{1}% 증가",
-      "min": "더미더미더미입니다!!!!!!합횟수*{0} + 합횟수*{1}% 감소"
+      "add": "Increases after winning a Clash based on the Clash count\n(Base Value is {0}, raised by {1}% per Clash count after 1)",
+      "min": "Decreases after winning a Clash based on the Clash count\n(Base Value is {0}, raised by {1}% per Clash count after 1)"
     },
     {
       "id": "OnKillEnemyAsLevelRatioMultiply",
-      "add": "더미더미더미입니다!!!!!!적 처치 시 적 레벨 비례 값 * {0} 증가",
-      "min": "더미더미더미입니다!!!!!!적 처치 시 적 레벨 비례 값 * {0} 감소"
+      "add": "If the level of the defeated enemy was higher than the unit’s, increase based on the level difference\n(Base Value is {0}, raised by {0} per level)",
+      "min": "If the level of the defeated enemy was higher than the unit’s, decrease based on the level difference\n(Base Value is {0}, raised by {0} per level)"
     },
     {
       "id": "OnKillEnemyByOtherAllyAsLevelRatioMultiply",
-      "add": "더미더미더미입니다!!!!!!아군이 적 처치 시 적 레벨 비례 값 * {0} 증가",
-      "min": "더미더미더미입니다!!!!!!아군이 적 처치 시 적 레벨 비례 값 * {0} 감소"
+      "add": "If the level of the enemy defeated by an ally was higher than the unit’s, increase based on the level difference\n(Base Value is {0}, raised by {0} per level)",
+      "min": "If the level of the enemy defeated by an ally was higher than the unit’s, decrease based on the level difference\n(Base Value is {0}, raised by {0} per level)"
+    },
+    {
+      "id": "OnLoseDuelAsParryingCountMultiplyAndPlusPercent",
+      "add": "Increases after losing a Clash based on the Clash count\n(Base Value is {0}, raised by {1}% per Clash count after 1)",
+      "min": "Decreases after losing a Clash based on the Clash count\n(Base Value is {0}, raised by {1}% per Clash count after 1)"
     },
     {
       "id": "OnDieAllyAsLevelRatio",
-      "add": "더미더미더미입니다!!!!!!아군 사망 시 레벨 비례 * {0} 증가",
-      "min": "더미더미더미입니다!!!!!!아군 사망 시 레벨 비례 * {0} 감소"
+      "add": "If the level of the defeated ally was higher than the unit’s, increase based on the level difference\n(Base Value is {0}, raised by {0} per level)",
+      "min": "If the level of the defeated ally was higher than the unit’s, decrease based on the level difference\n(Base Value is {0}, raised by {0} per level)"
+    },
+    {
+      "id": "OnRoundStartAfterEvent",
+      "add": "SP increased by {0} at the start of the turn",
+      "min": "SP decreased by {0} at the start of the turn"
     }
   ]
 }

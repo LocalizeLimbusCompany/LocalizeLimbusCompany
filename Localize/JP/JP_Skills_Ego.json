@@ -431,7 +431,7 @@
                   "desc": "[OnSucceedAttack] 出血 6を付与"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] ダメージ量の50%分体力を回復。"
+                  "desc": "[OnSucceedAttackHead] ダメージ量の50%分体力を回復"
                 }
               ]
             }
@@ -1593,7 +1593,7 @@
           "level": 1,
           "name": "ト・パソス・マソス",
           "abName": "ウーティス",
-          "desc": "対象の体力が50%未満のとき、ダメージ量+10%",
+          "desc": "対象の体力が50%未満のとき、ダメージ量 +10%",
           "coinlist": [
             {
               "coindescs": [
@@ -2345,7 +2345,7 @@
           "level": 1,
           "name": "次元裂き",
           "abName": "道を失った乗客",
-          "desc": "[CantIdentify] \nランダムに対象を攻撃\n\n[BeforeAttack] 充電 回数を消耗し、消耗した分ダメージ量を増加(最大50%)",
+          "desc": "[CantIdentify] \nランダムに対象を攻撃\n[EndSkill] 次のターンにクイック 2, 攻撃威力増加 1を得る",
           "coinlist": [
             {
               "coindescs": [
@@ -2363,7 +2363,7 @@
           "level": 3,
           "name": "次元裂き",
           "abName": "道を失った乗客",
-          "desc": "[CantIdentify] \nランダムに対象を攻撃\n\n[BeforeAttack] 充電 回数を消耗し、消耗した分ダメージ量を増加(最大75%)",
+          "desc": "[CantIdentify] \nランダムに対象を攻撃\n[EndSkill] 次のターンにクイック 2, 攻撃威力増加 1を得る",
           "coinlist": [
             {
               "coindescs": [
@@ -2424,7 +2424,7 @@
           "level": 1,
           "name": "次元裂き",
           "abName": "道を失った乗客",
-          "desc": "[CantIdentify] \n現体力が最も高い対象を攻撃\n\n[BeforeAttack] 次のターンにクイック 2を得る。\n充電 回数を10消耗。的中時に付与する脆弱 、次元の亀裂 +1",
+          "desc": "[EndSkill] 次のターンに全ての敵へ攻撃威力増加 2, 憤怒脆弱 1, 打撃脆弱 1を付与",
           "coinlist": [
             {
               "coindescs": [
@@ -2439,12 +2439,200 @@
           "level": 3,
           "name": "次元裂き",
           "abName": "道を失った乗客",
-          "desc": "[CantIdentify] \n現体力が最も高い対象を攻撃\n\n[BeforeAttack] 次のターンにクイック 3を得る。\n充電 回数を10消耗。的中時に付与する脆弱 、次元の亀裂 +2",
+          "desc": "[EndSkill] 次のターンに全ての敵へ攻撃威力増加 2, 憤怒脆弱 2, 打撃脆弱 1を付与",
           "coinlist": [
             {
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] 脆弱 1, 次元の亀裂 4を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2050411,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "カポーテ",
+          "abName": "真鍮の雄牛",
+          "desc": "[EndSkill] 次のターンにクイック1, 憤怒威力増加 1, 打撃威力増加 1を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 火傷 4を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の火傷の数値分、振動を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 振動 爆発。振動 爆発時、振動 回数が3減少。振動 爆発で対象が混乱した場合、ランダムな敵5名の火傷 回数を1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "カポーテ",
+          "abName": "真鍮の雄牛",
+          "desc": "[EndSkill] 次のターンにクイック2, 憤怒威力増加 1, 打撃威力増加 1を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 火傷 7を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の火傷の数値分、振動を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] ランダムな敵5名に火傷 2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 振動 爆発。振動 爆発時、振動 回数が2減少。振動 爆発で対象が混乱した場合、ランダムな敵5名の火傷 回数を2増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2050421,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "カポーテ",
+          "abName": "真鍮の雄牛",
+          "desc": "[CantIdentify] \nランダムに対象を攻撃\n[EndSkill] 次のターンにクイック 1, 憤怒威力増加 1, 打撃威力増加 1を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 火傷 6を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の火傷の数値分、振動を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 振動 爆発。振動 爆発時、振動 回数が3減少。振動 爆発で対象が混乱した場合、ランダムなキャラクター5名の火傷 回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "カポーテ",
+          "abName": "真鍮の雄牛",
+          "desc": "[CantIdentify] \nランダムに対象を攻撃\n[EndSkill] 次のターンにクイック 2, 憤怒威力増加 1, 打撃威力増加 1を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 火傷 10を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の火傷の数値分、振動を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] ランダムなキャラクター5名に火傷 2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 振動 爆発。振動 爆発時、振動 回数が2減少。振動 爆発で対象が混乱した場合、ランダムなキャラクター5名の火傷 回数を3増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2080411,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "カポーテ",
+          "abName": "真鍮の雄牛",
+          "desc": "[EndSkill] 次のターンに味方全体へ憤怒ダメージ量増加 1を付与",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 火傷 3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の精神力を7減少"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "カポーテ",
+          "abName": "真鍮の雄牛",
+          "desc": "[EndSkill] 次のターンに味方全体へ憤怒ダメージ量増加 1を付与",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 火傷 4を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の精神力を15減少"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2080421,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "カポーテ",
+          "abName": "真鍮の雄牛",
+          "desc": "[CantIdentify] \nランダムに対象を攻撃\n[EndSkill] 次のターンに全キャラクターに 憤怒脆弱 , 憤怒ダメージ量増加 1を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 火傷 3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の精神力を7減少"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 振動 爆発。振動 爆発時、振動 回数が2減少"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "カポーテ",
+          "abName": "真鍮の雄牛",
+          "desc": "[CantIdentify] \nランダムに対象を攻撃\n[EndSkill] 次のターンに全キャラクターに 憤怒脆弱 , 憤怒ダメージ量増加 1を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 火傷 5を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の精神力を15減少"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 振動 爆発。振動 爆発時、振動 回数が2減少。振動 爆発で対象が混乱した場合、ランダムなキャラクター3名に火傷 2を付与"
                 }
               ]
             }
