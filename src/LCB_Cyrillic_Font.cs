@@ -64,7 +64,7 @@ namespace LimbusLocalizeRUS
                 fontAsset = GetCyrillicFonts(3);
                 return true;
             }
-            if (fontname == "Pretendard-Regular SDF" || fontname.StartsWith("SCDream5") || fontname.StartsWith("HigashiOme - Gothic - C"))
+            if (fontname == "Pretendard-Regular SDF" || fontname.StartsWith("HigashiOme - Gothic - C")|| fontname.StartsWith("SCDream"))
             {
                 fontAsset = GetCyrillicFonts(4);
                 return true;
@@ -184,6 +184,10 @@ namespace LimbusLocalizeRUS
             tm._dungeonName.Init(romoteLocalizeFileList.DungeonName);
             tm._danteNoteDesc.Init(romoteLocalizeFileList.DanteNote);
             tm._danteNoteCategoryKeyword.Init(romoteLocalizeFileList.DanteNoteCategoryKeyword);
+            tm._userTicket_L.Init(romoteLocalizeFileList.UserTicketL);
+            tm._userTicket_R.Init(romoteLocalizeFileList.UserTicketR);
+            tm._userTicket_EGOBg.Init(romoteLocalizeFileList.UserTicketEGOBg);
+            tm._panicInfo.Init(romoteLocalizeFileList.PanicInfo);
 
             tm._abnormalityEventCharDlg.AbEventCharDlgRootInit(romoteLocalizeFileList.abnormalityCharDlgFilePath);
 
@@ -207,7 +211,7 @@ namespace LimbusLocalizeRUS
                         string[] array = jsonFilePath.Split('_');
                         string text = array[^1];
                         text = text.Replace(".json", "");
-                        __instance._voiceDictionary.Add(text, data);
+                        __instance._voiceDictionary[text] = data;
                     }
                     callcount++;
                     if (callcount == jsonFilePathList.Count)
@@ -231,7 +235,7 @@ namespace LimbusLocalizeRUS
             if (!LCBR_Manager.Localizes.TryGetValue(scenarioID, out string text))
             {
                 LCB_LCBRMod.LogError("Story error! We can't find the RU story file, so we'll use EN story");
-                text = AddressableManager.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Localize/EN/StoryData", "EN_" + scenarioID, null, null).Item1.ToString();
+                text = AddressableManager.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Localize/en/StoryData", "EN_" + scenarioID, null, null).Item1.ToString();
             }
             string text2 = textAsset.ToString();
             Scenario scenario = new()
@@ -288,28 +292,11 @@ namespace LimbusLocalizeRUS
             lang = LOCALIZE_LANGUAGE.EN;
         }
         [HarmonyPatch(typeof(StoryData), nameof(StoryData.Init))]
-        [HarmonyPrefix]
-        private static bool StoryDataInit(StoryData __instance)
+        [HarmonyPostfix]
+        private static void StoryDataInit(StoryData __instance)
         {
-            ScenarioAssetDataList scenarioAssetDataList = JsonUtility.FromJson<ScenarioAssetDataList>(LCBR_Manager.Localizes["NickName"]);
-            __instance._modelAssetMap = new Dictionary<string, ScenarioAssetData>();
-            __instance._standingAssetMap = new Dictionary<string, StandingAsset>();
-            __instance._standingAssetPathMap = new Dictionary<string, string>();
-            foreach (ScenarioAssetData scenarioAssetData in scenarioAssetDataList.assetData)
-            {
-                string name = scenarioAssetData.name;
-                __instance._modelAssetMap.Add(name, scenarioAssetData);
-                if (!string.IsNullOrEmpty(scenarioAssetData.fileName) && !__instance._standingAssetPathMap.ContainsKey(scenarioAssetData.fileName))
-                    __instance._standingAssetPathMap.Add(scenarioAssetData.fileName, "Story_StandingModel" + scenarioAssetData.fileName);
-            }
-            ScenarioMapAssetDataList scenarioMapAssetDataList = JsonUtility.FromJson<ScenarioMapAssetDataList>(Resources.Load<TextAsset>("Story/ScenarioMapCode").ToString());
-            __instance._mapAssetMap = new Dictionary<string, ScenarioMapAssetData>();
-            foreach (ScenarioMapAssetData scenarioMapAssetData in scenarioMapAssetDataList.assetData)
-                __instance._mapAssetMap.Add(scenarioMapAssetData.id, scenarioMapAssetData);
-            __instance._emotionMap = new Dictionary<string, EmotionAsset>();
-            for (int i = 0; i < __instance._emotions.Count; i++)
-                __instance._emotionMap.Add(__instance._emotions[i].prefab.Name.ToLower(), __instance._emotions[i]);
-            return false;
+            foreach (ScenarioAssetData scenarioAssetData in JsonUtility.FromJson<ScenarioAssetDataList>(LCBR_Manager.Localizes["NickName"]).assetData)
+                __instance._modelAssetMap[scenarioAssetData.name] = scenarioAssetData;
         }
         [HarmonyPatch(typeof(LoginSceneManager), nameof(LoginSceneManager.SetLoginInfo))]
         [HarmonyPostfix]

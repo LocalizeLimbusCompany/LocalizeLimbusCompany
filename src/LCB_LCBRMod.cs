@@ -36,14 +36,14 @@ namespace LimbusLocalizeRUS
                 HarmonyLib.Harmony harmony = new("LimbusLocalizeRUS");
                 if (LCBR_Russian_Settings.IsUseRussian.Value)
                 {
-                    LCBR_Manager.InitLocalizes(new DirectoryInfo(ModPath + "/Localize/RU"));
+                    LCBR_Manager.InitLocalizes(new DirectoryInfo(ModPath + "/Localize/ru"));
                     harmony.PatchAll(typeof(LCB_Cyrillic_Font));
                     harmony.PatchAll(typeof(LCBR_ReadmeManager));
                     harmony.PatchAll(typeof(LCBR_LoadingManager));
                     harmony.PatchAll(typeof(LCBR_SpriteUI));
                 }
-                harmony.PatchAll(typeof(LCBR_Russian_Settings));
                 harmony.PatchAll(typeof(LCBR_Manager));
+                harmony.PatchAll(typeof(LCBR_Russian_Settings));
                 if (!LCB_Cyrillic_Font.AddCyrillicFont(ModPath + "/tmpcyrillicfonts"))
                     LogFatalError("You have forgotten to install Font Update Mod. Please, reread README on Github.", OpenLCBRURL);
                 foreach (var font in LCB_Cyrillic_Font.tmpcyrillicfontsnames)
@@ -59,11 +59,11 @@ namespace LimbusLocalizeRUS
         }
         public override void OnApplicationQuit()
         {
-            File.Copy(GamePath + "/MelonLoader/Latest.log", GamePath + "/Framework_Log.log", true);
-            var Latestlog = File.ReadAllText(GamePath + "/Framework_Log.log");
+            File.Copy(GamePath + "/MelonLoader/Latest.log", GamePath + "/Latest.log", true);
+            var Latestlog = File.ReadAllText(GamePath + "/Latest.log");
             Latestlog = Regex.Replace(Latestlog, "[0-9:\\.\\[\\]]+ During invoking native->managed trampoline(\r\n)?", "");
-            File.WriteAllText(GamePath + "/Framework_Log.log", Latestlog);
-            File.Copy(Application.consoleLogPath, GamePath + "/Framework_Log.log", true);
+            File.WriteAllText(GamePath + "/Latest.log", Latestlog);
+            File.Copy(Application.consoleLogPath, GamePath + "/Player.log", true);
         }
     }
 }
