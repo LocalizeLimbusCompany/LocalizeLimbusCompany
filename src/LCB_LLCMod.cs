@@ -55,11 +55,11 @@ namespace LimbusLocalize
         }
         public override void OnApplicationQuit()
         {
-            File.Copy(GamePath + "/MelonLoader/Latest.log", GamePath + "/框架日志.log", true);
-            var Latestlog = File.ReadAllText(GamePath + "/框架日志.log");
+            File.Copy(GamePath + "/MelonLoader/Latest.log", GamePath + "/Latest(框架日志).log", true);
+            var Latestlog = File.ReadAllText(GamePath + "/Latest(框架日志).log");
             Latestlog = Regex.Replace(Latestlog, "[0-9:\\.\\[\\]]+ During invoking native->managed trampoline(\r\n)?", "");
-            File.WriteAllText(GamePath + "/框架日志.log", Latestlog);
-            File.Copy(Application.consoleLogPath, GamePath + "/游戏日志.log", true);
+            File.WriteAllText(GamePath + "/Latest(框架日志).log", Latestlog);
+            File.Copy(Application.consoleLogPath, GamePath + "/Player(游戏日志).log", true);
         }
     }
 }
