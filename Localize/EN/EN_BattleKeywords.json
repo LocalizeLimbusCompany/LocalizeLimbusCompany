@@ -216,7 +216,7 @@
     {
       "id": "Sinking",
       "name": "Sinking",
-      "desc": "When hit by an attack, take fixed SP damage by the effect’s Potency.\n(Abnormalities take Gloom damage instead.)\nThen, reduce its Count by 1."
+      "desc": "When hit by an attack, take fixed SP damage by the effect’s Potency.\n(Abnormalities with no Sanity take Gloom damage instead.)\nThen, reduce its Count by 1."
     },
     {
       "id": "Breath",
@@ -276,7 +276,7 @@
     {
       "id": "Muckworm",
       "name": "Maggots",
-      "desc": "At the end of the turn, take Gluttony damage by the Count, increase Bleed Count by 1, then reduce this effect’s Count by 1."
+      "desc": "Turn End: Take Gluttony damage by the Count, then lower it by 1; Bleed Count +1."
     },
     {
       "id": "AttackUp",
@@ -733,6 +733,225 @@
       "id": "DimensionRift",
       "name": "Dimensional Rift",
       "desc": "At the end of the turn, gain Rupture Count by this effect’s amount. Then, remove this effect."
+    },
+    {
+      "id": "ShardOfUmbrella",
+      "name": "Umbrella Splinters",
+      "desc": "Gain 5 Rupture per Count at turn end",
+      "summary": "Gain 5 Rupture per Count at turn end"
+    },
+    {
+      "id": "WrappedCurseTag",
+      "name": "Entangled Curse Talisman",
+      "desc": "Deal +3% damage per Count\nAt 9+ Count, gain 2 Attack Power Down at turn start",
+      "summary": "Deal +3% damage per Count; At 9+ Count, gain 2 Attack Power Down at turn start"
+    },
+    {
+      "id": "ReattachedCurseTag",
+      "name": "Reattached Curse Talisman",
+      "desc": "At 9+ Count, gain 5 Bind at turn end.\nAt 12+ Count, gain 5 Attack Power Down at turn end.",
+      "summary": "At 9+ Count, gain 5 Bind at turn end.\nAt 12+ Count, gain 5 Attack Power Down at turn end."
+    },
+    {
+      "id": "ElectricStorage",
+      "name": "Capacitor",
+      "desc": "It seems to be storing electricity in its body.",
+      "summary": "표시용"
+    },
+    {
+      "id": "SelfCharge",
+      "name": "Self-charge",
+      "desc": "Electric currents seem to flow around its body.",
+      "summary": "표시용"
+    },
+    {
+      "id": "Exalted",
+      "name": "Morale Boost",
+      "desc": "Gain Damage Up by the the effect's Count every turn (Max 5)\nCannot gain the status while Tipsy",
+      "summary": "Gain Damage Up by the effect's Count every turn; Cannot gain the status while Tipsy"
+    },
+    {
+      "id": "Tipsiness",
+      "name": "Tipsy",
+      "desc": "Lose Clash Power by the effect's Count (Max 5)",
+      "summary": "Lose Clash Power by the effect's Count"
+    },
+    {
+      "id": "Predation",
+      "name": "Predation",
+      "desc": "It seems to be preparing a powerful move.",
+      "summary": "표시용"
+    },
+    {
+      "id": "ATL_EndureCombustion",
+      "name": "Burn Resistance",
+      "desc": "When taking damage from Burn, reduce the damage by 10% per Count (Max 10)",
+      "summary": "When taking damage from Burn, take 10% less damage per Count"
+    },
+    {
+      "id": "Resonate",
+      "name": "Resonant",
+      "desc": "When bursting Tremor or raising stagger threshold, deal 3 fixed damage per Count and further raise stagger threshold by 3% per Count",
+      "summary": "Tremor bursts and stagger threshold raisers deal damage and raise more stagger threshold"
+    },
+    {
+      "id": "VibrationAssimilation",
+      "name": "Tremor Sync",
+      "desc": "In a clash, the opponent has -1 Clash Power for every 5 Tremor they have",
+      "summary": "In a clash, the opponent has -1 Clash Power for every 5 Tremor they have"
+    },
+    {
+      "id": "CollapseAmpoule",
+      "name": "Decay Ampule",
+      "desc": "Take damage by 2% of Max HP per Count",
+      "summary": "Take damage by 2% of Max HP per Count"
+    },
+    {
+      "id": "ATL_EndureLaceration",
+      "name": "Bleed Resistance",
+      "desc": "When taking damage from Bleed, reduce the damage by 10% per Count (Max 10)",
+      "summary": "When taking damage from Bleed, take 10% less damage per Count"
+    },
+    {
+      "id": "Bull_Sadness",
+      "name": "Unresolved Sorrow",
+      "desc": "At the start of the turn, gain Attack Power Down by the Count.\nAt the end of the turn, if this effect is at 3+ Count, changes to Expanding Sorrow",
+      "summary": ""
+    },
+    {
+      "id": "Bull_BuzzingEmotion",
+      "name": "Wavering Emotions",
+      "desc": "Turn Start: Randomly gain Attack Power Down, Paralyze, or Bind by this effect's Count, then remove this effect",
+      "summary": "Turn Start: Randomly gain Attack Power Down, Paralyze, or Bind by this effect's Count, then remove this effect"
+    },
+    {
+      "id": "Scared",
+      "name": "Fear",
+      "desc": "Turn End: At -20 SP or lower, gain 1 Damage Up next turn",
+      "summary": "Turn End: At -20 SP or lower, gain 1 Damage Up next turn"
+    },
+    {
+      "id": "Stressed",
+      "name": "Stressed",
+      "desc": "Turn End: At -25 SP or lower, gain 1 Attack Power Up next turn",
+      "summary": "Turn End: At -25 SP or lower, gain 1 Attack Power Up next turn"
+    },
+    {
+      "id": "Nervous",
+      "name": "Nervous",
+      "desc": "Turn End: At -15 SP or lower, gain 3 Offense Level Up next turn",
+      "summary": "Turn End: At -15 SP or lower, gain 3 Offense Level Up next turn"
+    },
+    {
+      "id": "ATL_Agility",
+      "name": "Faster!",
+      "desc": "Gain 2 Haste",
+      "summary": "표시용"
+    },
+    {
+      "id": "ATL_Breath",
+      "name": "Aim True!",
+      "desc": "Gain 3 Poise",
+      "summary": "표시용"
+    },
+    {
+      "id": "ATL_Target",
+      "name": "Get 'Em!",
+      "desc": "Simultaneously attacks one unit",
+      "summary": "표시용"
+    },
+    {
+      "id": "Bull_FadedHeat",
+      "name": "Momentary Cool",
+      "desc": "Core and body lose 50% Max HP"
+    },
+    {
+      "id": "Bull_Fever",
+      "name": "Fever",
+      "desc": "Deal +10% damae per Count\nReduced by 1 at turn end",
+      "summary": ""
+    },
+    {
+      "id": "Bull_ReinforcedSadness",
+      "name": "Expanding Sorrow",
+      "desc": "Changes behavior.",
+      "summary": "Changes behavior."
+    },
+    {
+      "id": "Crazy_LowMorale",
+      "name": "Maddened (Low Morale)",
+      "desc": "When at low morale for the first time, targets units indiscriminately",
+      "undefined": "-"
+    },
+    {
+      "id": "Crazy_Panic",
+      "name": "Maddened (Panic)",
+      "desc": "Targets indiscriminately; Clash Power +1, and gain 2 Damage Up",
+      "undefined": "-"
+    },
+    {
+      "id": "Suicide_LowMorale",
+      "name": "Suicidal (Low Morale)",
+      "desc": "When at low morale for the first time, become unable to act",
+      "undefined": "-"
+    },
+    {
+      "id": "Suicide_Panic",
+      "name": "Suicidal (Panic)",
+      "desc": "Cannot act for 3 turns. Unit dies at turn start; all its allies lose 10 SP",
+      "undefined": "-"
+    },
+    {
+      "id": "Prowl_LowMorale",
+      "name": "Wandering (Low Morale)",
+      "desc": "Turn Start: Deal 2 SP damage to allies",
+      "undefined": "-"
+    },
+    {
+      "id": "Prowl_Panic",
+      "name": "Wandering (Panic)",
+      "desc": "Turn End: Deal 5 SP damage to allies. Flees from battle after 3 turns have passed",
+      "undefined": "-"
+    },
+    {
+      "id": "Blue_LowMorale",
+      "name": "Dejection (Low Morale)",
+      "desc": "In a clash, if any Coin lands tails, Clash Power -1 for the clash",
+      "undefined": "-"
+    },
+    {
+      "id": "Blue_Panic",
+      "name": "Dejection (Panic)",
+      "desc": "In a clash, if any Coin lands tails, Clash Power -3 for the clash",
+      "undefined": "-"
+    },
+    {
+      "id": "Fragile_Mind_LowMorale",
+      "name": "Perilous Heart",
+      "desc": "Turn Start: Gain 2 Attack Power Up and 3 Bind",
+      "summary": "Turn Start: Gain 2 Attack Power Up and 3 Bind"
+    },
+    {
+      "id": "Fragile_Mind_Panic",
+      "name": "Faltering Heart",
+      "desc": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind",
+      "summary": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind"
+    },
+    {
+      "id": "ErodingMind",
+      "name": "Corroding Heart",
+      "desc": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind",
+      "summary": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind"
+    },
+    {
+      "id": "CrimsonResultUp",
+      "name": "Wrath Power Up",
+      "desc": "Wrath skills gain final Power by the effect’s Count for one turn."
+    },
+    {
+      "id": "EmittedCurrent",
+      "name": "Spark Discharge",
+      "desc": "When hit, the attacker gains +1 Charge Count; When hit with a Gloom attack, gain +1 Rupture Count, then reduce Count by 1"
     }
   ]
 }

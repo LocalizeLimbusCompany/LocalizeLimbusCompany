@@ -878,7 +878,7 @@
         {
           "level": 3,
           "name": "Rip Space",
-          "desc": "[WhenUse] Spend 10 Charge to gain +4 Coin Power\nAt less than 10 Charge Count, lose 20% HP",
+          "desc": "[WhenUse] Spend 10 Charge Count to gain +4 Coin Power\nAt less than 10 Charge Count, lose 20% HP",
           "coinlist": [
             {
               "coindescs": [
@@ -1879,7 +1879,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Evade",
+          "name": "Guard",
           "desc": "",
           "coinlist": [
             {}
@@ -5989,6 +5989,309 @@
     },
     {
       "id": 1030404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Guard",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1090501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Rev Up",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain +4 Charge Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict +1 Tremor Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Rev Up",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain +4 Charge Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1090502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Vibration Compression",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Tremor\nAt 3+ Charge Count, reuse this Coin if it lands Heads (Up to 2 times)\nIf the Coin is reused twice, burst Tremor after inflicting it\nAfter bursting Tremor, reduce Tremor Count by 1",
+                  "summary": "[OnSucceedAttack] Burst Tremor; Reuse Coin if conditions are met; Inflict +2 Tremor if reused; If the Coin is reused twice, burst Tremor then reduce Tremor Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Vibration Compression",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Tremor\nAt 3+ Charge Count, reuse this Coin if it lands Heads (Up to 2 times)\nInflict 2 more Tremor each time the Coin is reused\nIf the Coin is reused twice, burst Tremor after inflicting it\nAfter bursting Tremor, reduce Tremor Count by 1",
+                  "summary": "[OnSucceedAttack] Burst Tremor; Reuse Coin if conditions are met; Inflict +2 Tremor if reused; If the Coin is reused twice, burst Tremor then reduce Tremor Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1090503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Let’s Rack Up Some Scores",
+          "desc": "[WhenUse] Gain +6 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 Tremor Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Tremor"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Burst Tremor\nAfter bursting Tremor, reduce Tremor Count by 1"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Burst Tremor\nAfter bursting Tremor, reduce Tremor Count by 1"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target is Staggered, deal 25% of damage dealt as bonus damage"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1090504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Preheat",
+          "desc": "[StartBattle] Gain +2 Charge Count",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1050501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Saddled Tasks",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Saddled Tasks",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Tremor"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1050502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Forced Break",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Tremor"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If target has 5+ Tremor, inflict 1 Attack Power Down next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Forced Break",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Tremor"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Tremor"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If target has 5+ Tremor, inflict 1 Attack Power Down next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1050503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Finishing Runup",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain +1 Charge Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Tremor"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain +2 Charge Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain +2 Charge Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Tremor"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Burst Tremor\nWhen bursting Tremor, reduce Tremor Count by 3, then spend all Charge to further raise Stagger Threshold by (Charge Count x 5)% (Max 50%)",
+                  "summary": "[OnSucceedAttack] Burst Tremor, then reduce Tremor Count by 3; Spend Charge to further raise Stagger Threshold"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1050504,
       "levelList": [
         {
           "level": 1,
