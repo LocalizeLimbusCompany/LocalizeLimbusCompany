@@ -32,7 +32,7 @@ namespace LimbusLocalize
             GamePath = new DirectoryInfo(Application.dataPath).Parent.FullName;
             try
             {
-                LLC_UpdateChecker.StartCheckUpdates();
+                LLC_UpdateChecker.StartAutoUpdate();
                 HarmonyLib.Harmony harmony = new("LimbusLocalizeMod");
                 if (LLC_Chinese_Setting.IsUseChinese.Value)
                 {

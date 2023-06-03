@@ -7,7 +7,7 @@ if (Test-Path $Path)
 	Remove-Item -Path "$Path" -Recurse
 	}
 # ----------- MelonLoader IL2CPP Interop (net6) -----------
-dotnet build src/LimbusLocalize_ml_ilcpp.sln -c Release_ML_Cpp_net6_interop
+dotnet build src/LimbusLocalize_ml_ilcpp.sln -c ML
 # Full
 New-Item -Path "$Path" -Name "LimbusLocalize" -ItemType "directory" -Force
 New-Item -Path "$Path/LimbusLocalize" -Name "Mods" -ItemType "directory" -Force
