@@ -12,7 +12,7 @@ namespace LimbusLocalize
 {
     public static class LLC_Chinese_Setting
     {
-        public static MelonPreferences_Entry<bool> IsUseChinese = LCB_LLCMod.LLC_Settings.CreateEntry("IsUseChinese", true, null, "为 true 使用汉化,可选 false");
+        public static MelonPreferences_Entry<bool> IsUseChinese = LCB_LLCMod.LLC_Settings.CreateEntry("IsUseChinese", true, null, "是否使用汉化 ( true | false )");
         static bool _isusechinese;
         static Toggle Chinese_Setting;
         [HarmonyPatch(typeof(SettingsPanelGame), nameof(SettingsPanelGame.InitLanguage))]

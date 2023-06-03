@@ -1,5 +1,6 @@
 ﻿using Il2CppSimpleJSON;
 using Il2CppSystem.Threading;
+using MelonLoader;
 using Semver;
 using System;
 using System.IO;
@@ -11,11 +12,18 @@ namespace LimbusLocalize
 {
     public static class LLC_UpdateChecker
     {
-        public static void StartCheckUpdates()
+        public static MelonPreferences_Entry<bool> AutoUpdate = LCB_LLCMod.LLC_Settings.CreateEntry("AutoUpdate", false, null, "是否从GitHub自动检查并下载更新 ( true | false )");
+        public static void StartAutoUpdate()
         {
-            LCB_LLCMod.LogWarning("Check Mod Update");
-            Action ModUpdate = CheckModUpdate;
-            new Thread(ModUpdate).Start();
+            if (AutoUpdate.Value)
+            {
+                LCB_LLCMod.LogWarning("Check Mod Update");
+                Action ModUpdate = CheckModUpdate;
+                new Thread(ModUpdate).Start();
+            }
+            LCB_LLCMod.LogWarning("Check Readme Update");
+            Action ReadmeUpdate = CheckReadmeUpdate;
+            new Thread(ReadmeUpdate).Start();
         }
         static void CheckModUpdate()
         {
@@ -46,9 +54,6 @@ namespace LimbusLocalize
                 Action FontAssetUpdate = CheckChineseFontAssetUpdate;
                 new Thread(FontAssetUpdate).Start();
             }
-            LCB_LLCMod.LogWarning("Check Readme Update");
-            Action ReadmeUpdate = CheckReadmeUpdate;
-            new Thread(ReadmeUpdate).Start();
         }
         static void CheckChineseFontAssetUpdate()
         {
