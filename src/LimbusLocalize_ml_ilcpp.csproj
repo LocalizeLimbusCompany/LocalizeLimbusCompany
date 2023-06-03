@@ -9,7 +9,7 @@
         <DebugSymbols>true</DebugSymbols>
         <RootNamespace>LimbusLocalize</RootNamespace>
         <LangVersion>10.0</LangVersion>
-        <Configurations>ML_Cpp_net6_interop</Configurations>
+        <Configurations>ML</Configurations>
         <IsPublishable>True</IsPublishable>
         <Platforms>x64</Platforms>
         <TargetFramework>net6.0-windows</TargetFramework>
@@ -17,12 +17,12 @@
     </PropertyGroup>
     <!-- ~~~~~ CONFIGURATIONS ~~~~~ -->
     <!-- ML IL2CPP Interop net6 -->
-    <PropertyGroup Condition="'$(Configuration)'=='ML_Cpp_net6_interop'">
+    <PropertyGroup Condition="'$(Configuration)'=='ML'">
         <TargetFramework>net6</TargetFramework>
         <OutputPath>..\Release</OutputPath>
 		<AssemblyName>LimbusLocalize</AssemblyName>
     </PropertyGroup>
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ML_Cpp_net6_interop|x64'">
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ML|x64'">
       <NoWarn>1701;1702;2211;CA2211;IDE1006;IDE0060</NoWarn>
       <DebugType>none</DebugType>
       <Optimize>True</Optimize>
