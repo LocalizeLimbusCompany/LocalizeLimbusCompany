@@ -15,7 +15,7 @@ namespace LimbusLocalize
         public static string GamePath;
         public const string NAME = "LimbusLocalizeMod";
         public const string VERSION = "0.4.5";
-        public const string AUTHOR = "Bright";
+        public const string AUTHOR = "Bright&小元";
         public const string LLCLink = "https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany";
         public static MelonPreferences_Category LLC_Settings = MelonPreferences.CreateCategory("LLC", "LLC Settings");
         public static Action<string, Action> LogFatalError { get; set; }
