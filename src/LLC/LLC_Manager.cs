@@ -26,7 +26,7 @@ namespace LimbusLocalize
         public static LLC_Manager Instance;
         public LLC_Manager(IntPtr ptr) : base(ptr) { }
 
-        public static void OpenGlobalPopup(string description, string title = null, string close = "取消", string confirm = "确认", Action confirmEvent = null, Action closeEvent = null)
+        public static void OpenGlobalPopup(string description, string title = null, string close = "取消", string confirm = "確認", Action confirmEvent = null, Action closeEvent = null)
         {
             if (!GlobalGameManager.Instance) { return; }
             TextOkUIPopup globalPopupUI = GlobalGameManager.Instance.globalPopupUI;
@@ -140,14 +140,14 @@ namespace LimbusLocalize
         public static void CheckModActions()
         {
             if (LLC_UpdateChecker.UpdateCall != null)
-                OpenGlobalPopup("Has Update " + LLC_UpdateChecker.Updatelog + "!\nOpen Download Path & Quit Game\n模组存在更新\n点击OK将退出游戏并打开下载目录\n请将" + LLC_UpdateChecker.Updatelog + "压缩包解压至该目录", "Mod Has Update\n模组存在更新", null, "OK", () =>
+                OpenGlobalPopup("Has Update " + LLC_UpdateChecker.Updatelog + "!\nOpen Download Path & Quit Game\n模組存在更新\n點擊OK將關閉遊戲並打開遊戲目錄\n請將" + LLC_UpdateChecker.Updatelog + "壓縮檔解壓縮至該目錄", "Mod Has Update\n模组存在更新", null, "OK", () =>
                 {
                     LLC_UpdateChecker.UpdateCall.Invoke();
                     LLC_UpdateChecker.UpdateCall = null;
                     LLC_UpdateChecker.Updatelog = string.Empty;
                 });
             else if (FatalErrorAction != null)
-                OpenGlobalPopup(FatalErrorlog, "Mod Has Fatal Error!\n模组存在致命错误", null, "Open LLC URL", () =>
+                OpenGlobalPopup(FatalErrorlog, "Mod Has Fatal Error!\n模組存在致命錯誤", null, "Open LLC URL", () =>
                 {
                     FatalErrorAction.Invoke();
                     FatalErrorAction = null;

@@ -45,11 +45,11 @@ namespace LimbusLocalize
                 harmony.PatchAll(typeof(LLC_Manager));
                 harmony.PatchAll(typeof(LLC_Chinese_Setting));
                 if (!LCB_Chinese_Font.AddChineseFont(ModPath + "/tmpchinesefont"))
-                    LogFatalError("You Not Have Chinese Font, Please Read GitHub Readme To Download\n你没有下载中文字体,请阅读GitHub的Readme下载", OpenLLCURL);
+                    LogFatalError("You Not Have Chinese Font, Please Read GitHub Readme To Download\n你没有下载中文字體,請閱讀GitHub的Readme下載", OpenLLCURL);
             }
             catch (Exception e)
             {
-                LogFatalError("Mod Has Unknown Fatal Error!!!\n模组部分功能出现致命错误,即将打开GitHub,请根据Issues流程反馈", () => { OnApplicationQuit(); OpenGamePath(); OpenLLCURL(); });
+                LogFatalError("Mod Has Unknown Fatal Error!!!\n模组部分功能出現致命錯誤,即將打開GitHub,請根據Issues流程反饋", () => { OnApplicationQuit(); OpenGamePath(); OpenLLCURL(); });
                 LogError(e.ToString());
             }
         }
