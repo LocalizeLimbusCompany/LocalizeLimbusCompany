@@ -140,7 +140,7 @@ namespace LimbusLocalize
         public static void CheckModActions()
         {
             if (LLC_UpdateChecker.UpdateCall != null)
-                OpenGlobalPopup("Has Update " + LLC_UpdateChecker.Updatelog + "!\nOpen Download Path & Quit Game\n模組存在更新\n點擊OK將關閉遊戲並打開遊戲目錄\n請將" + LLC_UpdateChecker.Updatelog + "壓縮檔解壓縮至該目錄", "Mod Has Update\n模组存在更新", null, "OK", () =>
+                OpenGlobalPopup("Has Update " + LLC_UpdateChecker.Updatelog + "!\nOpen Download Path & Quit Game\nMod存在更新\n點擊OK將關閉遊戲並打開遊戲目錄\n請將" + LLC_UpdateChecker.Updatelog + "壓縮檔解壓縮至該目錄", "Mod Has Update\n模组存在更新", null, "OK", () =>
                 {
                     LLC_UpdateChecker.UpdateCall.Invoke();
                     LLC_UpdateChecker.UpdateCall = null;
