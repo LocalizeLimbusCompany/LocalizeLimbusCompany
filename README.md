@@ -21,13 +21,13 @@
    
    - 在Steam裡面右鍵遊戲 點擊管理 瀏覽本機檔案 將壓縮檔内所有東西**不 要 新 建 資 料 夹**的解壓到上面跳出的資料夾中
 ### 2. 安装字體文件
-   - 从[LLC_ChineseFontAsset|中文通用字體![](https://img.shields.io/github/release/SmallYuanSY/LLC_ChineseFontAsset.svg?label=更新日期)](../../../LLC_ChineseFontAsset)下载字体文件 后解压到上述文件夹中
+   - 从[LLC_ChineseFontAsset|中文通用字體![](https://img.shields.io/github/release/SmallYuanSY/LLC_ChineseFontAsset.svg?label=更新日期)](../../../LLC_ChineseFontAsset)下載字體文件 後解壓縮到上述文件夾中
 ### 3. 安装漢化
-   - 从[最新版](../../releases)下载全量包 后解压到上述文件夹中
+   - 从[最新版](../../releases)下載 后解壓縮到上述文件夾中
     
-   - [最新開發版](../../actions/workflows/dev.yml) 总是最新的
-   
-   - 通常情况下模组将在游戏更新后2~3天内更新
+   - 通常情況下模组將在遊戲更新後3~4天内更新
+
+   - 目前繁體漢化只有一位 請各位使用者不要催更XwX
 
 # 相關
 - [巴哈姆特邊獄公司漢化討論貼文](https://forum.gamer.com.tw/C.php?bsn=73052&snA=297&tnum=7)
