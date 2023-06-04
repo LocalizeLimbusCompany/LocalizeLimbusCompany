@@ -10,7 +10,7 @@
 [![Version](https://img.shields.io/github/release/LocalizeLimbusCompany/LocalizeLimbusCompany.svg?label=Version|最新版)](../../releases/latest)
 [![Localize Limbus Chat Group](https://img.shields.io/badge/Join-QQ群-blue?logo=tencent-qq)](https://jq.qq.com/?_wv=1027&k=5NE6Kvg2)
 
-简体中文 | [Русский](https://github.com/Crescent-Corporation/LimbusCompanyBusRUS)
+简体中文 | [繁體中文](https://github.com/SmallYuanSY/LocalizeLimbusCompany) | [Русский](https://github.com/Crescent-Corporation/LimbusCompanyBusRUS)
 </div>
 
 # 安装[![Download](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/total.svg?label=Download|下载)](../../releases)
