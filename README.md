@@ -17,7 +17,7 @@
 [![Version](https://img.shields.io/github/release/SmallYuanSY/LocalizeLimbusCompany.svg?label=Version|最新版)![Download](https://img.shields.io/github/downloads/SmallYuanSY/LocalizeLimbusCompany/latest/total.svg?label=Download|下载)](../../releases/latest)
 ### 0. 安装[.NET 6.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/sdk-6.0.406-windows-x64-installer)
 ### 1. 安装模组框架
-   - 从[MelonLoader](https://github.com/LavaGang/MelonLoader)下载v0.6.1或更高版本的模组框架
+   - 从[MelonLoader](https://github.com/LavaGang/MelonLoader)下載v0.6.1或更高版本的模组框架
    
    - 在Steam裡面右鍵遊戲 點擊管理 瀏覽本機檔案 將壓縮檔内所有東西**不 要 新 建 資 料 夹**的解壓到上面跳出的資料夾中
 ### 2. 安装字體文件
