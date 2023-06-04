@@ -35,7 +35,7 @@ namespace LimbusLocalize
                 {
                     string updatelog = (latest2ReleaseTag == "v" + LCB_LLCMod.VERSION ? "LimbusLocalize_TW_OTA_" : "LimbusLocalize_TW_") + latestReleaseTag;
                     Updatelog += updatelog + ".zip ";
-                    string download = "https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/releases/download/" + latestReleaseTag + "/" + updatelog + ".zip";
+                    string download = "https://github.com/SmallYuanSY/LocalizeLimbusCompany/releases/download/" + latestReleaseTag + "/" + updatelog + ".zip";
                     var dirs = download.Split('/');
                     string filename = LCB_LLCMod.GamePath + "/" + dirs[^1];
                     if (!File.Exists(filename))
