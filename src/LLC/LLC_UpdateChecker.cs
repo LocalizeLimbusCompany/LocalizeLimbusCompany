@@ -88,7 +88,7 @@ namespace LimbusLocalize
         }
         public static void CheckReadmeUpdate()
         {
-            UnityWebRequest www = UnityWebRequest.Get("https://LocalizeLimbusCompany.github.io/LocalizeLimbusCompany/LatestUpdateTime.txt");
+            UnityWebRequest www = UnityWebRequest.Get("https://SmallYuanSY.github.io/LocalizeLimbusCompany/LatestUpdateTime.txt");
             www.timeout = 1;
             www.SendWebRequest();
             string FilePath = LCB_LLCMod.ModPath + "/Localize/Readme/Readme.json";
@@ -99,7 +99,7 @@ namespace LimbusLocalize
             }
             if (www.result == UnityWebRequest.Result.Success && LastWriteTime < DateTime.Parse(www.downloadHandler.text))
             {
-                UnityWebRequest www2 = UnityWebRequest.Get("https://LocalizeLimbusCompany.github.io/LocalizeLimbusCompany/Readme.json");
+                UnityWebRequest www2 = UnityWebRequest.Get("https://SmallYuanSY.github.io/LocalizeLimbusCompany/Readme.json");
                 www2.SendWebRequest();
                 while (!www2.isDone)
                 {
