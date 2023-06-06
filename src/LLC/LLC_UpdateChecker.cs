@@ -21,9 +21,6 @@ namespace LimbusLocalize
                 Action ModUpdate = CheckModUpdate;
                 new Thread(ModUpdate).Start();
             }
-            LCB_LLCMod.LogWarning("Check Readme Update");
-            Action ReadmeUpdate = CheckReadmeUpdate;
-            new Thread(ReadmeUpdate).Start();
         }
         static void CheckModUpdate()
         {
