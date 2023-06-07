@@ -1,3 +1,5 @@
+简体中文 ReadMe | [English ReadMe](./EN_README.md)
+
 <div align="center">
 <a href="https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany">
    <img src="https://avatars.githubusercontent.com/u/129521269" />
