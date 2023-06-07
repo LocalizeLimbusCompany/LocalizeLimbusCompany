@@ -1,9 +1,9 @@
-name: 释放
+name: release
 on:
   workflow_dispatch:
     inputs:
       version:
-        description: '版本号'
+        description: '版本號碼'
         required: true
 env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
