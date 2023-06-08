@@ -6072,7 +6072,7 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Inflict 2 Tremor\nAt 3+ Charge Count, reuse this Coin if it lands Heads (Up to 2 times)\nIf the Coin is reused twice, burst Tremor after inflicting it\nAfter bursting Tremor, reduce Tremor Count by 1",
-                  "summary": "[OnSucceedAttack] Burst Tremor; Reuse Coin if conditions are met; Inflict +2 Tremor if reused; If the Coin is reused twice, burst Tremor then reduce Tremor Count"
+                  "summary": "[OnSucceedAttack] Burst Tremor; Reuse Coin if conditions are met; Inflict +2 Tremor if reused; if the Coin is reused twice, burst Tremor then reduce Tremor Count"
                 }
               ]
             }
@@ -6094,7 +6094,7 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Inflict 2 Tremor\nAt 3+ Charge Count, reuse this Coin if it lands Heads (Up to 2 times)\nInflict 2 more Tremor each time the Coin is reused\nIf the Coin is reused twice, burst Tremor after inflicting it\nAfter bursting Tremor, reduce Tremor Count by 1",
-                  "summary": "[OnSucceedAttack] Burst Tremor; Reuse Coin if conditions are met; Inflict +2 Tremor if reused; If the Coin is reused twice, burst Tremor then reduce Tremor Count"
+                  "summary": "[OnSucceedAttack] Burst Tremor; Reuse Coin if conditions are met; Inflict +2 Tremor if reused; if the Coin is reused twice, burst Tremor then reduce Tremor Count"
                 }
               ]
             }
@@ -6299,6 +6299,300 @@
           "desc": "",
           "coinlist": [
             {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Rev Up",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Rev Up",
+          "desc": "[WhenUse] Gain +2 Charge Count",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Grease Chains",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 Tremor Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Rupture Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Grease Chains",
+          "desc": "[WhenUse] Gain +3 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 Tremor Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Rupture Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120503,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Let's Grind 'Em",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Burst Tremor, then reduce Tremor Count by 2; Spend up to 4 Charge to inflict Rupture Count equal to Charge Count spent"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Rupture"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target is Staggered, deal +10% damage"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Rupture"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target is Staggered, deal +10% damage"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Guard",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1070501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Umbrella Thwack",
+          "desc": "[WhenUse] Gain +1 Sinking Count",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict +1 Sinking Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Umbrella Thwack",
+          "desc": "[WhenUse] Gain +1 Sinking Count",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict +2 Sinking Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1070502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Puddle Stomp",
+          "desc": "[WhenUse] When below -15 SP, Final Power +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict 2 Rupture"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict 2 Rupture"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Burst Tremor"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Puddle Stomp",
+          "desc": "[WhenUse] When below -15 SP, Final Power +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict 3 Rupture"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict 3 Rupture"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 5 Sinking to deal +20% damage"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] Burst Tremor"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1070503,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Spread Out!",
+          "desc": "[WhenUse] Gain 6 Sinking and +3 Sinking Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict 1 Paralyze next turn"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 Rupture"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict 1 Fragile next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1070504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Warning",
+          "desc": "[WhenUse] Gain 3 Sinking",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Gain 1 Paralyze next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 Sinking"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 Rupture"
+                }
+              ]
+            }
           ]
         }
       ]
