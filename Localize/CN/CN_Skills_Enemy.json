@@ -3053,7 +3053,7 @@
         {
           "level": 1,
           "name": "发现 发现 损伤",
-          "desc": "优先攻击拥有破裂 的目标",
+          "desc": "优先攻击拥有破裂 的单位",
           "coinlist": [
             {
               "coindescs": [
@@ -3575,7 +3575,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 引爆目标的震颤"
+                  "desc": "[OnSucceedAttack] 引爆目标的震颤 "
                 }
               ]
             }
@@ -3612,6 +3612,857 @@
           "level": 1,
           "name": "最终预热",
           "desc": "[StartBattle] 使自身获得4层守护 \n恢复15点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "阻止入侵者",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层破裂 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "禁止入内",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级破裂 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005403,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "禁止通行",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加2层易损 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "掩护！掩护！",
+          "desc": "[StartBattle] 恢复体力值上限的5%",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "暂停！暂停！",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级震颤 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "请停下来！",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级震颤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加3级震颤 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005503,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "进行拘捕！",
+          "desc": "优先攻击带有震颤 的目标",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 引爆目标的震颤 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "进行掩护！",
+          "desc": "[StartBattle] 恢复体力值上限的5%",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "注射HP安瓿",
+          "desc": "[CantDuel][WhenUse] 指定友方单位\n使目标恢复等同于伤害量的体力值。\n造成伤害为0",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "注射防御安瓿",
+          "desc": "[CantDuel][WhenUse] 指定友方单位\n使目标获得1层随机属性守护\n造成伤害为0",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005603,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "注射崩解安瓿",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层崩解安瓿 \n下回合对目标施加1层麻痹 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "启动闪避功能",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005701,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "紧急发射崩解安瓿",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层麻痹 "
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 对目标施加2层崩解安瓿 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005702,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "弱点 弱点暴露",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层易损 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加2层易损 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 对目标施加3层崩解安瓿 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005703,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "请继续战斗。",
+          "desc": "[CantDuel] 指定友方单位",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合使目标获得2层伤害强化 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005704,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "请不要爱惜身体。",
+          "desc": "[CantDuel] 指定友方单位",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合使目标获得2层强壮 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层易损 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005705,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "撤退。",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "伤痕诅咒",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层破裂 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "增殖诅咒",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层破裂 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层破裂 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005903,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "伤口开裂",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级破裂 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005904,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "防御护符",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "液体压制",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层束缚 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "液体爆发",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 引爆目标的震颤 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005803,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "液体晃动",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级震颤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层震颤 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9005804,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "液体阻塞",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9006101,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "伤痕诅咒",
+          "desc": "[WhenUse] 使自身获得1层纠缠的咒符 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层破裂 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9006102,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "增殖诅咒",
+          "desc": "[WhenUse] 使自身获得2层纠缠的咒符 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层破裂 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层破裂 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9006103,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "束缚诅咒",
+          "desc": "[WhenUse] 使自身获得2层纠缠的咒符 ",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加2层束缚 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9006104,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "凸显伤口",
+          "desc": "[EndBattle] 消耗全部纠缠的咒符 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层破裂 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层破裂 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层束缚 "
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加5级破裂 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9006105,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "防御护符",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9006001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "液体压制",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合使目标增加2层束缚 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9006002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "液体爆发",
+          "desc": "[WhenUse] 使自身获得1层昂扬 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 引爆目标的震颤 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9006003,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "液体晃动",
+          "desc": "[WhenUse] 使自身获得1层昂扬 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级震颤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层震颤 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9006004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "液体阻塞",
+          "desc": "[WhenUse] 恢复体力值上限的5%\n下回合获得2层易损 \n[EndBattle] 消耗全部醉意 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9100901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "束缚诅咒",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层束缚 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9100902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "打击诅咒",
+          "desc": "[WhenUse] 获得1层复贴的咒符 ",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层打击易损 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9100903,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "增殖护符",
+          "desc": "优先攻击破裂 强度最高的目标",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 根据复贴的咒符 层数，施加相应强度的破裂 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9100904,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "麻痹诅咒",
+          "desc": "[EndBattle] 消耗目标全部的复贴的咒符 ",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 根据消耗的复贴的咒符 层数，对目标施加相应层数的麻痹 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9100905,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "束缚咒符",
+          "desc": "优先攻击复贴的咒符 层数最高的目标",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加5层复贴的咒符 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9100906,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "消灭咒符",
+          "desc": "优先攻击复贴的咒符 层数最多的目标\n[EndBattle] 消耗目标所有的复贴的咒符 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层复贴的咒符 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 目标拥有不低于9层复贴的咒符 时，对目标施加5层麻痹 \n造成伤害量50%的固定伤害"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9100907,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "移动咒符",
+          "desc": "[WhenUse] 对目标施加2层复贴的咒符 ",
           "coinlist": [
             {
               "coindescs": [

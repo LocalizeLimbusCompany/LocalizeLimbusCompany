@@ -1434,7 +1434,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身的混乱阈值前移10；下回合对目标施加5层束缚 "
+                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移10；下回合对目标施加5层束缚 "
                 }
               ]
             }
@@ -2398,7 +2398,7 @@
         {
           "level": 1,
           "name": "咯咯咯咯",
-          "desc": "指定场上理智值最低的角色",
+          "desc": "指定场上理智值最低的单位",
           "coinlist": [
             {
               "coindescs": [
@@ -2417,7 +2417,7 @@
         {
           "level": 1,
           "name": "咯咯咯",
-          "desc": "指定场上理智值最低的角色",
+          "desc": "指定场上理智值最低的单位",
           "coinlist": [
             {},
             {
@@ -2453,7 +2453,7 @@
         {
           "level": 1,
           "name": "咯哦咯",
-          "desc": "指定场上体力最低的角色",
+          "desc": "指定场上体力最低的单位",
           "coinlist": [
             {
               "coindescs": [
@@ -2472,7 +2472,7 @@
         {
           "level": 1,
           "name": "咯咯啵",
-          "desc": "指定场上体力最低的角色",
+          "desc": "指定场上体力最低的单位",
           "coinlist": [
             {},
             {
@@ -2563,7 +2563,7 @@
         {
           "level": 1,
           "name": "咯",
-          "desc": "指定场上体力最高的角色",
+          "desc": "指定场上体力最高的单位",
           "coinlist": [
             {
               "coindescs": [
@@ -2582,7 +2582,7 @@
         {
           "level": 1,
           "name": "咯咕呜",
-          "desc": "指定场上体力最高的角色",
+          "desc": "指定场上体力最高的单位",
           "coinlist": [
             {},
             {
@@ -2644,7 +2644,7 @@
         {
           "level": 1,
           "name": "咯咯！",
-          "desc": "指定场上理智值最低的角色",
+          "desc": "指定场上理智值最低的单位",
           "coinlist": [
             {
               "coindescs": [
@@ -2742,7 +2742,7 @@
         {
           "level": 1,
           "name": "咔咳！",
-          "desc": "指定场上理智值最低的角色\n[OnSucceedAttack] 生成一只生鸡",
+          "desc": "指定场上理智值最低的单位\n[OnSucceedAttack] 生成一只生鸡",
           "coinlist": [
             {
               "coindescs": [
@@ -3010,6 +3010,508 @@
                 }
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804301,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "蛰痛心灵的回忆",
+          "desc": "[WinDuel] 恢复8点理智值\n[DefeatDuel] 损失5点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度，2级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度，2级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度，2级破裂 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804302,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "荆棘蔓生的追忆",
+          "desc": "[WinDuel] 恢复8点理智值\n[DefeatDuel] 损失5点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2层沉沦 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2层破裂 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804303,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "自我防御",
+          "desc": "[DefeatDuel] 使自身损失8点理智值，增加3级沉沦 强度",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层束缚 ，2层虚弱 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804304,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "愈加刺痛的心",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层破裂 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移所造成伤害的50%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804305,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "全部沉沦吧",
+          "desc": "[Wide] 指定7个行动槽\n[WhenUse] 损失30点理智值，使自身增加5级沉沦 强度。下回合获得渐被侵蚀的心灵 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标损失15点理智值"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加8级沉沦 强度，和对目标施加8层剧毒 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804306,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "别过来",
+          "desc": "[OnDefeatEvade] 损失8点理智值",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804307,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "别碰我……！",
+          "desc": "[StartBattle] 使自身获得荆棘 ",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "飞散的香气",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级破裂 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层开花 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级破裂 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层开花 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "刺鼻的香气",
+          "desc": "[Wide]指定3个行动槽",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层开花 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层开花 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804403,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "绽放的花蕾",
+          "desc": "下回合生成2朵花\n已生成4朵花后，作为替换，使阶段最低的随机1朵花上升1个阶段",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层破裂 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层开花 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "如盛放的花一般……",
+          "desc": "[WhenUse] 对目标施加3层开花 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层开花 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层开花 "
+                }
+              ]
+            },
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804405,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "春风烂漫",
+          "desc": "[Wide]指定7个行动槽\n场上存活的每朵即将绽放的花的最终威力 +5\n\n[EndSkill] 移除全部即将绽放的花",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标损失15点理智值"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层开花 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804406,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "必掩埋于沃土",
+          "desc": "[WhenUse] 下回合对目标施加对决 ",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804407,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "百花齐放",
+          "desc": "[StartBattle] 보호 10을 얻음\n[DefeatDuel] 使自身获得1层落英缤纷 ",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804408,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "水流花谢",
+          "desc": "[StartBattle] 使自身获得10层守护 \n[DefeatDuel] 使自身获得3层落英缤纷 ",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804409,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "馥郁芬芳",
+          "desc": "[Wide] 指定15个行动槽\n若目标处于盛放 状态则伤害量增加100%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack]若目标处于盛放 状态，则使目标陷入混乱并解除其盛放 状态"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层易损 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级破裂 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加5层破裂 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804410,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "刺鼻残香",
+          "desc": "[OnSucceedEvade] 对目标施加1层开花 ",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804411,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "静候花时",
+          "desc": "[StartBattle] 使自身获得5层守护 ",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "花风",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层开花 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "芬芳花风",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层开花 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层开花 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805403,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "刺鼻花风",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层开花 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层开花 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层开花 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "含香",
+          "desc": "[WhenUse] 恢复10点体力值",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805405,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "怒放之花",
+          "desc": "[DefeatDuel] 该单位被击杀",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "盛放",
+          "desc": "无法行动\n回合结束时损失20点理智值。\n理智值为-45时，恢复至理智值上限，并在下回合进入恍惚的意识 状态\n若本效果在2回合内没有移除，则在回合结束时移除该效果",
+          "coinlist": [
+            {}
           ]
         }
       ]
