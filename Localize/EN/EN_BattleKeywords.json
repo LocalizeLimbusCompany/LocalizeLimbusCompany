@@ -216,7 +216,7 @@
     {
       "id": "Sinking",
       "name": "Sinking",
-      "desc": "When hit by an attack, take fixed SP damage by the effect’s Potency.\n(Abnormalities with no Sanity take Gloom damage instead.)\nThen, reduce its Count by 1."
+      "desc": "When hit by an attack, take fixed SP damage by the effect’s Potency.\n(Units with no Sanity take Gloom damage instead.)\nThen, reduce its Count by 1."
     },
     {
       "id": "Breath",
@@ -735,34 +735,16 @@
       "desc": "At the end of the turn, gain Rupture Count by this effect’s amount. Then, remove this effect."
     },
     {
-      "id": "ShardOfUmbrella",
-      "name": "Umbrella Splinters",
-      "desc": "Gain 5 Rupture per Count at turn end",
-      "summary": "Gain 5 Rupture per Count at turn end"
-    },
-    {
       "id": "WrappedCurseTag",
       "name": "Entangled Curse Talisman",
-      "desc": "Deal +3% damage per Count\nAt 9+ Count, gain 2 Attack Power Down at turn start",
-      "summary": "Deal +3% damage per Count; At 9+ Count, gain 2 Attack Power Down at turn start"
+      "desc": "Deal +1% damage per Count\nAt 9+ Count, gain 2 Attack Power Down at turn start",
+      "summary": "Deal +1% damage per Count; at 9+ Count, gain 2 Attack Power Down at turn start"
     },
     {
       "id": "ReattachedCurseTag",
       "name": "Reattached Curse Talisman",
       "desc": "At 9+ Count, gain 5 Bind at turn end.\nAt 12+ Count, gain 5 Attack Power Down at turn end.",
       "summary": "At 9+ Count, gain 5 Bind at turn end.\nAt 12+ Count, gain 5 Attack Power Down at turn end."
-    },
-    {
-      "id": "ElectricStorage",
-      "name": "Capacitor",
-      "desc": "It seems to be storing electricity in its body.",
-      "summary": "표시용"
-    },
-    {
-      "id": "SelfCharge",
-      "name": "Self-charge",
-      "desc": "Electric currents seem to flow around its body.",
-      "summary": "표시용"
     },
     {
       "id": "Exalted",
@@ -775,12 +757,6 @@
       "name": "Tipsy",
       "desc": "Lose Clash Power by the effect's Count (Max 5)",
       "summary": "Lose Clash Power by the effect's Count"
-    },
-    {
-      "id": "Predation",
-      "name": "Predation",
-      "desc": "It seems to be preparing a powerful move.",
-      "summary": "표시용"
     },
     {
       "id": "ATL_EndureCombustion",
@@ -827,20 +803,20 @@
     {
       "id": "Scared",
       "name": "Fear",
-      "desc": "Turn End: At -20 SP or lower, gain 1 Damage Up next turn",
-      "summary": "Turn End: At -20 SP or lower, gain 1 Damage Up next turn"
+      "desc": "Turn End: At -20 SP or lower, gain 1 Protection next turn.",
+      "summary": "Turn End: At -20 SP or lower, gain 1 Protection next turn."
     },
     {
       "id": "Stressed",
       "name": "Stressed",
-      "desc": "Turn End: At -25 SP or lower, gain 1 Attack Power Up next turn",
-      "summary": "Turn End: At -25 SP or lower, gain 1 Attack Power Up next turn"
+      "desc": "Turn End: At -25 SP or lower, gain 1 Defense Power Up next turn",
+      "summary": "Turn End: At -25 SP or lower, gain 1 Defense Power Up next turn"
     },
     {
       "id": "Nervous",
       "name": "Nervous",
-      "desc": "Turn End: At -15 SP or lower, gain 3 Offense Level Up next turn",
-      "summary": "Turn End: At -15 SP or lower, gain 3 Offense Level Up next turn"
+      "desc": "Turn End: At -15 SP or lower, gain 3 Defense Level Up next turn",
+      "summary": "Turn End: At -15 SP or lower, gain 3 Defense Level Up next turn"
     },
     {
       "id": "ATL_Agility",
@@ -926,6 +902,48 @@
       "undefined": "-"
     },
     {
+      "id": "DongbaekGrow",
+      "name": "Growing",
+      "desc": "At the end of the turn, add +1 Count, and gain Max HP proportional to the Count. (Max 3)",
+      "summary": "At the end of the turn, add +1 Count, and gain Max HP proportionally to the Count. (Max 3)"
+    },
+    {
+      "id": "DongbaekFlorescence",
+      "name": "Blooming",
+      "desc": "Turn End: At 5+ Count, take Sloth damage by (Count)% of Max HP, and become Fully Bloomed\nAt less than 5 Count, lose (Count * 5) SP, then reduce Count by 1",
+      "summary": ""
+    },
+    {
+      "id": "DongbaekFullBloom",
+      "name": "Fully Bloomed",
+      "desc": "Cannot act\nAt the end of the turn, lose 20 SP; if SP reaches -45, fully heal SP, then gain 'Dazzled Mind' next turn.\nIf this effect isn't removed for 2 turns, remove it at the end of the turn.",
+      "summary": ""
+    },
+    {
+      "id": "DongbaekFascination",
+      "name": "Dazzled Mind",
+      "desc": "Targets allies for attacks\nWhen staggered, remove this effect next turn.\nIf this effect isn't removed for 2 turns, lose 30 SP and remove it at the end of the turn.",
+      "summary": ""
+    },
+    {
+      "id": "DongbaekShowdown",
+      "name": "Dueling",
+      "desc": "Turn Start: Units without this status go into a 'Fully Bloomed' status\nIf Yi Sang has this effect, Dongbaek gains 1 Attack Power Up",
+      "summary": ""
+    },
+    {
+      "id": "DongbaekScatterPetal",
+      "name": "Scattering Petals",
+      "desc": "Turn End: At 6+ Count, become staggered",
+      "summary": ""
+    },
+    {
+      "id": "Thorn",
+      "name": "Thorns",
+      "desc": "When hit, return 50% of the damage taken to the attacker",
+      "summary": "Deal 50% of damage taken to attacker"
+    },
+    {
       "id": "Fragile_Mind_LowMorale",
       "name": "Perilous Heart",
       "desc": "Turn Start: Gain 2 Attack Power Up and 3 Bind",
@@ -934,8 +952,8 @@
     {
       "id": "Fragile_Mind_Panic",
       "name": "Faltering Heart",
-      "desc": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind",
-      "summary": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind"
+      "desc": "In panic, become staggered.",
+      "summary": "In panic, become staggered."
     },
     {
       "id": "ErodingMind",
@@ -951,7 +969,7 @@
     {
       "id": "EmittedCurrent",
       "name": "Spark Discharge",
-      "desc": "When hit, the attacker gains +1 Charge Count; When hit with a Gloom attack, gain +1 Rupture Count, then reduce Count by 1"
+      "desc": "When hit, the attacker gains +1 Charge Count; when hit with a Gloom attack, gain +1 Rupture Count, then reduce Count by 1"
     }
   ]
 }

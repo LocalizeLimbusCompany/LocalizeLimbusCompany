@@ -2639,6 +2639,173 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2110411,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Sunshower",
+          "abName": "Drifting Fox",
+          "desc": "[BeforeAttack] Gain +4 Poise Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Bind next turn"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Burst Tremor"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Sunshower",
+          "abName": "Drifting Fox",
+          "desc": "[BeforeAttack] Gain +6 Poise Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 Sinking"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Bind next turn"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Burst Tremor; Inflict +2 Sinking Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2110421,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Sunshower",
+          "abName": "Drifting Fox",
+          "desc": "[CantIdentify]\nTargets the unit with the least HP\n[BeforeAttack] Gain +5 Poise Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Bind next turn"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Burst Tremor"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Sunshower",
+          "abName": "Drifting Fox",
+          "desc": "[CantIdentify]\nTargets the unit with the least HP\n[BeforeAttack] Gain +7 Poise Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 Sinking"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 Rupture"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Bind next turn"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Burst Tremor; Inflict +2 Sinking Count and Rupture Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2070311,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "AEDD",
+          "abName": "Shock Centipede",
+          "desc": "[BeforeAttack] Gain +1 Charge Count for every 10% of missing HP (Max 5)\nGain 2 Haste next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Paralyze"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "AEDD",
+          "abName": "Shock Centipede",
+          "desc": "[BeforeAttack] Gain +1 Charge Count for every 10% of missing HP (Max 7)\nGain 2 Haste next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Paralyze and 1 Gloom Fragility"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2070321,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "AEDD",
+          "abName": "Shock Centipede",
+          "desc": "[CantIdentify]\nTargets randomly\n[BeforeAttack] Gain +1 Charge Count for every 10% of missing HP (Max 5)\nGain 2 Haste next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Spend all Charge Count to deal bonus Gloom damage by (Charge Count * 1.5)% of damage dealt (Max 30%)"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] After the attack, lose 10% of Max HP to gain +7 Charge Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "AEDD",
+          "abName": "Shock Centipede",
+          "desc": "[CantIdentify]\nTargets randomly\n[BeforeAttack] Gain +1 Charge Count for every 10% of missing HP (Max 7)\nGain 2 Haste next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Spend all Charge Count to deal bonus Gloom damage by (Charge Count * 2.5)% of damage dealt (Max 50%)"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] After the attack, lose 10% of Max HP to gain +10 Charge Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
