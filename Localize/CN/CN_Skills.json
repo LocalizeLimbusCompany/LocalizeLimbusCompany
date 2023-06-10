@@ -6059,7 +6059,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目標增加2級震顫 強度\n若自身的充能 層數高於3層，且本硬幣的朝向為正面，重複使用本硬幣(至多2次)\n本硬幣第2次重複使用時，在使目標增加震顫 強度後引爆震顫 ，而後使目標的震顫 層數減少1層",
+                  "desc": "[OnSucceedAttack] 使目標增加2級震顫 強度\n若自身的充能 層數不低於3層，且本硬幣的朝向為正面，重複使用本硬幣(至多2次)\n本硬幣第2次重複使用時，在使目標增加震顫 強度後引爆震顫 ，而後使目標的震顫 層數減少1層",
                   "summary": "[OnSucceedAttack] 引爆目標的震顫 。滿足條件時重複使用本硬幣。重複使用時，使目標額外增加2級震顫 強度。第2次重複使用時，引爆震顫 ，而後使目標的震顫 層數減少"
                 }
               ]
@@ -6081,7 +6081,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目標增加2級震顫 強度\n若自身的充能 層數高於3層，且本硬幣的朝向為正面，重複使用本硬幣(至多2次)\n本硬幣第2次重複使用時，在使目標增加震顫 強度後引爆震顫 ，而後使目標的震顫 層數減少1層",
+                  "desc": "[OnSucceedAttack] 使目標增加2級震顫 強度\n若自身的充能 層數不低於3層，且本硬幣的朝向為正面，重複使用本硬幣(至多2次)\n本硬幣第2次重複使用時，在使目標增加震顫 強度後引爆震顫 ，而後使目標的震顫 層數減少1層",
                   "summary": "[OnSucceedAttack] 引爆目標的震顫 。滿足條件時重複使用本硬幣。重複使用時，使目標額外增加2級震顫 強度。第2次重複使用時，引爆震顫 ，而後使目標的震顫 層數減少"
                 }
               ]
@@ -6287,6 +6287,300 @@
           "desc": "",
           "coinlist": [
             {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "引擎發動",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目標增加2級破裂 強度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "引擎發動",
+          "desc": "[WhenUse] 使自身獲得2層充能 ",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目標增加2級破裂 強度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "鏈鋸潤滑",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 對目標施加2層震顫 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 對目標施加1層破裂 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "鏈鋸潤滑",
+          "desc": "[WhenUse] 使自身獲得3層充能 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 對目標施加2層震顫 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 對目標施加1層破裂 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120503,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "都切碎吧",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 引爆目標的震顫 。引爆震顫 時使目標的震顫 層數減少2層。消耗4層充能 ，根據消耗的充能 層數額外施加相應層數的破裂 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目標增加1級破裂 強度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 目標處於混亂狀態時，傷害量+10%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目標增加1級破裂 強度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 目標處於混亂狀態時，傷害量+10%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "防禦",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1070501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "雨傘揮打",
+          "desc": "[WhenUse] 對自身施加1層沉淪 ",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目標增加1級沉淪 強度"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 對目標施加1層沉淪 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "雨傘揮打",
+          "desc": "[WhenUse] 對自身施加1層沉淪 ",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目標增加2級沉淪 強度"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 對目標施加2層沉淪 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1070502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "踏入泥濘",
+          "desc": "[WhenUse] 若自身的理智值低於-15，則使本技能的威力+2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 使目標增加2級破裂 強度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 使目標增加2級破裂 強度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 引爆目標的震顫 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "踏入泥濘",
+          "desc": "[WhenUse] 若自身的理智值低於-15，則使本技能的威力+2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 使目標增加3級破裂 強度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 使目標增加3級破裂 強度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗5級沉淪 強度使本技能的傷害+20%"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 引爆目標的震顫 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1070503,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "開！",
+          "desc": "[WhenUse] 使自身增加6級沉淪 強度並對自身施加3層沉淪 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 下回合對目標施加1層麻痺 "
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目標增加5級破裂 強度"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 下回合對目標施加1層易損 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1070504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "警告",
+          "desc": "[WhenUse] 使自身增加3級沉淪 強度",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 下回合對自身施加1層麻痺 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目標增加5級沉淪 強度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目標增加5級破裂 強度"
+                }
+              ]
+            }
           ]
         }
       ]
