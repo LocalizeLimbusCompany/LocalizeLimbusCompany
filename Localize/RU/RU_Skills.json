@@ -2162,7 +2162,7 @@
         },
         {
           "level": 2,
-          "name": "Хуяк битой",
+          "name": "Удар битой",
           "desc": "",
           "coinlist": [
             {
@@ -2214,7 +2214,7 @@
       "levelList": [
         {
           "level": 3,
-          "name": "Эмоциональный всплеск (Град ударов)",
+          "name": "Взбучка",
           "desc": "",
           "coinlist": [
             {
@@ -2694,7 +2694,7 @@
         {
           "level": 3,
           "name": "Хлыст разума",
-          "desc": "Тратит all Charge\nЕсли у грешника менее 10 счётчик Заряд, выбирает цель случайно для односторонней атаки",
+          "desc": "Тратит весь Заряд\nЕсли у грешника менее 10 счётчиков Заряд, выбирает цель случайно для односторонней атаки",
           "coinlist": [
             {
               "coindescs": [
@@ -6299,6 +6299,300 @@
           "desc": "",
           "coinlist": [
             {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Набираем обороты",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Разрыв"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Набираем обороты",
+          "desc": "[WhenUse] Получает +2 счётчика Заряд",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Разрыв"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Смазка цепей",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +2 счётчика Тремор"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчика Разрыв"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Смазка цепей",
+          "desc": "[WhenUse] Получает +3 счётчика Заряд",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит +2 счётчика Тремор"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит +1 счётчика Разрыв"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120503,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Распилим их?",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Провоцирует Тремор, затем снижает счётчик Тремор на 2; Тратит до 4 Заряд для нанесения счётчиков Разрыв равных потраченным счётчикам Заряд"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Разрыв"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Если цель оглушена, наносит +10% урона"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Разрыв"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Если цель оглушена, наносит +10% урона"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Блок",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1070501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Хлобысь зонтом",
+          "desc": "[WhenUse] Получает +1 счётчик Утопание",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 1 Утопание"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] Наносит +1 счётчик Утопание"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Хлобысь зонтом",
+          "desc": "[WhenUse] Получает +1 счётчик Утопание",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Утопание"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] Наносит +2 счётчик Утопание"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1070502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Шлёп по слякоти",
+          "desc": "[WhenUse] При -15 СД и ниже, Финальная сила +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Наносит 2 Разрыв"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Наносит 2 Разрыв"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Провоцирует Тремор"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Шлёп по слякоти",
+          "desc": "[WhenUse] При -15 СД и ниже, Финальная сила +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Наносит 3 Разрыв"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Наносит 3 Разрыв"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Тратит 5 Утопание для нанесения +20% урона"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] Провоцирует Тремор"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1070503,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Раскройся!",
+          "desc": "[WhenUse] Получает 6 Утопание and +3 счётчик Утопание",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Наносит 1 Паралич на следующий ход"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 5 Разрыв"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] Наносит 1 Слабость на следующий ход"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1070504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Предупреждение",
+          "desc": "[WhenUse] Получает 3 Утопание",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Получает 1 Паралич на следующий ход"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 5 Утопание"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Наносит 5 Разрыв"
+                }
+              ]
+            }
           ]
         }
       ]
