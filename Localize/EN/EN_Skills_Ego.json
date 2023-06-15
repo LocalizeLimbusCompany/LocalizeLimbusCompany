@@ -2732,6 +2732,76 @@
       ]
     },
     {
+      "id": 2120411,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "AEDD",
+          "abName": "Shock Centipede",
+          "desc": "[BeforeAttack] Gain +5 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 Spark Discharge"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "AEDD",
+          "abName": "Shock Centipede",
+          "desc": "[BeforeAttack] Gain +7 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 10 Spark Discharge"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120421,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "AEDD",
+          "abName": "Shock Centipede",
+          "desc": "[CantIdentify]\nPrioritizes units with Charge\n[BeforeAttack] Gain +5 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 Spark Discharge and +5 Charge Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "AEDD",
+          "abName": "Shock Centipede",
+          "desc": "[CantIdentify]\nPrioritizes units with Charge\n[BeforeAttack] Gain +7 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 10 Spark Discharge and +5 Charge Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": 2070311,
       "levelList": [
         {
@@ -2800,6 +2870,70 @@
                 },
                 {
                   "desc": "[OnSucceedAttackTail] After the attack, lose 10% of Max HP to gain +10 Charge Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2010511,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Sunshower",
+          "abName": "Drifting Fox",
+          "desc": "[Wide] Targets 5 slots\n[BeforeAttack] Give 1 Sloth Power Up, 1 Sloth DMG Up, and 2 Protection to all allies this turn and next turn",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Sunshower",
+          "abName": "Drifting Fox",
+          "desc": "[Wide] Targets 5 slots\n[BeforeAttack] Give 1 Sloth Power Up, 2 Sloth DMG Up, and 3 Protection to all allies this turn and next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Heal 15 SP"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2010521,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Sunshower",
+          "abName": "Drifting Fox",
+          "desc": "[CantIdentify]\n[Wide] Targets 5 slots\nTargets randomly\n[BeforeAttack] Gain 1 Sloth Power Up and 1 Sloth DMG Up this turn and the next 2 turns",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Sloth Fragility and 1 Pierce Fragility this turn and next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Sunshower",
+          "abName": "Drifting Fox",
+          "desc": "[CantIdentify]\n[Wide] Targets 5 slots\nTargets randomly\n[BeforeAttack] Gain 2 Sloth Power Up and 2 Sloth DMG Up this turn and the next 2 turns",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Sloth Fragility and 2 Pierce Fragility this turn and next turn"
                 }
               ]
             }
