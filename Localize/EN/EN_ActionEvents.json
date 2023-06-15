@@ -841,6 +841,305 @@
           ]
         }
       ]
+    },
+    {
+      "id": 10401,
+      "name": "Looking for a Drone",
+      "desc": "A broken K Corp. drone is tumbling on the floor.\nI can only revive Sinners where I can see the star, so in the meantime...\nWe might be able to find an ampule to use if we search through it.",
+      "options": [
+        {
+          "message": "Rummage through the drone.",
+          "result": [
+            ""
+          ]
+        },
+        {
+          "message": "Leave.",
+          "messageDesc": "Nothing happened.",
+          "result": [
+            "\"What're you looking at. There's clearly nothing to grab.\"\n...A closer look could find something useful, but the sharp pieces and debris look like they might cause injury we could've avoided.\nWe quietly left the room."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040102,
+      "name": "Looking for a Drone",
+      "desc": "Give the drone another try?",
+      "options": [
+        {
+          "message": "Rummage through the drone.",
+          "result": [
+            ""
+          ]
+        },
+        {
+          "message": "Leave again.",
+          "messageDesc": "Nothing happened.",
+          "result": [
+            "There wouldn't be a point risking another injury.\nWe left the room, complaining about the misfortune."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10402,
+      "name": "An Ampule to Use",
+      "desc": "It's filled with K Corp's ampules.\n\"Ooh~ Good for us! Hey Dante, can't we take at least one of those?\"\n\"Negative. The ampule injector is only in this room, so it will not be possible to use them outside of this place.\"\n...What will we do?",
+      "options": [
+        {
+          "message": "Use the ampule.",
+          "result": [
+            ""
+          ]
+        },
+        {
+          "message": "Don't use the ampule.",
+          "messageDesc": "Nothing happened.",
+          "result": [
+            "I'm not sure if it's a good idea to test these things I don't even know well enough on the Sinners.\nWe just decided to leave the room."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040201,
+      "name": "An Ampule to Use",
+      "desc": "\"Lo, warnings are written on the ampules!\"\nSkimming through the glass bottles, I could see tiny notices attached to them.\nHowever, the text was too dense to read properly.\n\"Missing parts… insufficient… stop? I have no idea what this is saying.\"\n\"Manager Esquire! It would appear that this device has two modes: single and group!\"\nIt certainly looks like it's up to me to choose.\nWhat will we do?",
+      "options": [
+        {
+          "message": "Use the ampule for everyone.",
+          "messageDesc": "All allies that lost HP fully heal.\nAllies with full HP lose HP and SP.",
+          "result": [
+            "Shouldn't hurt to let all the Sinners benefit from it.\nI pressed the 'group' button.\n\"Ngh!\"\n\"This is weird... I'm feeling sick all of a sudden.\"\nA number of Sinners groaned in pain.\nThinking about what they had in common...I realized that they were all uninjured.\n\"This must not be something you may administer to healthy individuals.\"\n...Better be careful next time."
+          ]
+        },
+        {
+          "message": "Use the ampule on the Sinner in the worst state.",
+          "messageDesc": "The ally with the least HP heals to full HP.",
+          "result": [
+            "{affectedTarget} looked like the Sinner in the sorriest state, so we stood them at the injector and pressed the 'single' button.\n...The Sinner seems to have gotten much better!"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10403,
+      "name": "Poking at the Egg",
+      "desc": "\"Are these...eggs?\"\n\"Please be careful. It might be an Abnormality.\"\nCome to think of it, I was told that the underground lab K Corp. set up also managed eggs from the L Corp. branch.\n\"Whoa, hey... Is this thing twitching?\"\nAs the Sinner observed, an egg begins to move.\nWhat will we do?",
+      "options": [
+        {
+          "message": "Touch the eggs.",
+          "result": [
+            ""
+          ]
+        },
+        {
+          "message": "Don't touch the eggs.",
+          "messageDesc": "Nothing happened.",
+          "result": [
+            "\"What else do we do? We gotta run!\"\nIt couldn't be more true. We quickly escaped the room."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10404,
+      "name": "PickingRowAndColumn",
+      "desc": "The area twisted, and a cabinet appeared from it.\nYou see some items in its drawers.",
+      "options": [
+        {
+          "message": "Take a closer look."
+        }
+      ]
+    },
+    {
+      "id": 10405,
+      "name": "Make a Wish",
+      "desc": "\"Are those...stars up there?\"\nLooking up, we saw a scenery that looks like a night sky through a crack.\n\"Lo, a shooting star!!\"\nI heard that making a wish while a shooting star falls can make it true.\nMaybe we'll try it?",
+      "options": [
+        {
+          "message": "Make a wish.",
+          "messageDesc": "50% chance to gain an E.G.O Gift",
+          "result": [
+            "\"Romantic.\"\nEveryone quietly made a wish with their eyes closed.\nCould it have evoked a response?\nWhen the eyes were open, a sparkling shard was on the ground. \n\"Hmm, I wonder who wished for this?\"\nThe Sinners commented, but it might not have been related to the wishes after all.\nWe took the shard and left the place.",
+            "\"Romantic.\"\nEveryone quietly made a wish with their eyes closed.\n...However, nothing happened.\n\"Who was it! One of you must have opened your eyes in the middle of it!\"\nCoaxing one infuriated Sinner, we left the room."
+          ]
+        },
+        {
+          "message": "Leave.",
+          "messageDesc": "Nothing happened.",
+          "result": [
+            "If that fanciful tale really was true, I would've gotten my real head back a while ago.\nWe left the room, believing this choice to be better than wasting our time."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10406,
+      "name": "ApproachingTheFlower",
+      "desc": "<i>AFloweringTreestands inthemiddleofthePlain.\nNootherFloweringTreesarenearby(近處).\nTheFloweringTreestood\nWithFlowersbloomedinEarnest(熱心)\nMuchlikehowitthinksofFloweringTreesinitsThoughtsinEarnest.</i>\n\nWhat will you do?",
+      "options": [
+        {
+          "message": "Approach the flower.",
+          "result": [
+            "<i>TheFloweringTreecannotreachtheFloweringTreeinitsThoughts.</i>\n\nA strong shockwave pushed everyone away, denying our approach."
+          ]
+        },
+        {
+          "message": "Leave.",
+          "result": [
+            "<i>ThefloweringTreecannotreachtheFloweringTreeinitsThoughts.\nIranwildly.\nAsthoughIwasdoingit for(爲)asingleFloweringTree, IdidsuchaPeculiarImitation.</i>\n\nRight when you were about to leave, the tree scattered away.\nYou took the branch left in its place."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10407,
+      "name": "Run",
+      "desc": "The space twists.\nAt the same time, a familiar cry is heard from behind.\nIt somehow bears resemblance the cry of an Abnormality we reduced to an egg earlier.\n\"Start running!!\"\nThirteen Sinners haphazardly rushed down the path.\n\"In there!\"\n\"T-That looks like a dead end...\"\nThe Sinners seem scared... Do we still go in there?",
+      "options": [
+        {
+          "message": "Run.",
+          "result": [
+            ""
+          ]
+        },
+        {
+          "message": "Don't run.",
+          "messageDesc": "Begin a combat encounter. Win to gain an E.G.O Gift.",
+          "result": [
+            "Running into a dead end could obviously end in one way.\n\"Kgh!\"\nThe Abnormality rammed the Sinners.\n\"You stubborn bull...\"\nWe have no choice. It has to be suppressed once more."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040701,
+      "name": "Run.",
+      "desc": "We keep running down the closed street.\n\"W-We'll get hit by that thing if we keep up!\"\n\"That bull will only grow faster as the chase goes on...\"\nThe unease is palpable.\nWhat should we do?",
+      "options": [
+        {
+          "message": "Run.",
+          "result": [
+            ""
+          ]
+        },
+        {
+          "message": "Don't run.",
+          "messageDesc": "Begin a combat encounter. Win to gain an E.G.O Gift.",
+          "result": [
+            "There's no other way.\nWe might as well stop running and save ourselves a little energy for the inevitable fight...\n\"Kgh!\"\nThe Abnormality rammed the Sinners.\n\"You stubborn bull...\"\nWe have no choice. It has to be suppressed once more."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040702,
+      "name": "Run.",
+      "desc": "We keep running anyway.\n\"It would be preferable if there were no other circumstances to worry about.\nA Sinner muttered a peculiar remark.\n\"Huh?!\"\nJust then, the wall ahead of us morphed into a wide area.\nWhat will we do now?",
+      "options": [
+        {
+          "message": "Run.",
+          "messageDesc": "Begin a combat encounter. Win to gain an E.G.O Gift.",
+          "result": [
+            "We kept running through the passage.\nEven though we had no idea where it could lead to...\n\"What?\"\nHow long did we run?\nWe ended up in an arena fit for a battle with the Abnormality.\n\"You stubborn bull...\"\nWe have no choice. It has to be suppressed once more."
+          ]
+        },
+        {
+          "message": "Don't run.",
+          "messageDesc": "Gain an E.G.O Gift.",
+          "result": [
+            "This is where the run ends.\nThat scary thing will charge at us, and knowing that makes it doubly scary.\nBut still, I somehow had the feeling that we'll be alright.\n\"Ah...\"\nThe Abnormality passed through us and disappeared into the unknown.\nWe found a blue fluid in its trail."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10408,
+      "name": "Try Talking",
+      "desc": "Mysterious figures glimmer in the window.\nShould we do something?",
+      "options": [
+        {
+          "message": "Try Talking.",
+          "result": [
+            ""
+          ]
+        },
+        {
+          "message": "Keep quiet.",
+          "result": [
+            "I wish that silence was scolded.\nItwouldatleastmakesomenoiseifyoutoreacelestialbodyapart.\nThe window shattered all of a sudden, and its fragments fell on the Sinners.\nAll the Sinners were hurt.\n\"...It hurt physically.\"\nWe left the room, some shards still stuck on our bodies."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805001,
+      "name": "Stand in his way.",
+      "desc": "Dongrang no longer feels pity for test subjects.\n\nEven if his technology isn't recognized...\nEven when he thinks of the yellow calf in his hometown...\nHe isn't sad anymore.\n\n\"The past is all useless. I'll burn it all.\"\n\n\"And Yi Sang, I'd like you gone as well.\"\n\nDongrang begins to rush at Yi Sang.",
+      "options": [
+        {
+          "message": "Stand in his way.",
+          "result": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805003,
+      "name": "Stand in his way.",
+      "desc": "\"I've... decided to erase all of the past.\"\n\n\"In other words, I will have no business left with you once Yi Sang is gone.\"\n\nDongrang frowned, seeming quite displeased.\n\n\"And yet... Why do you keep interrupting?\"\n\nDongrang seems to be preparing a powerful attack. Maybe this gap could be exploited.",
+      "options": [
+        {
+          "message": "Stand in his way.",
+          "result": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805005,
+      "name": "Stand in his way.",
+      "desc": "\"I really shouldn't be wasting my time like this.\"\n\nComing to a sudden realization, Dongrang stopped in place.\nAnd he looked at the ceiling as though he was looking up at stars in the sky.\n\n\"At this very moment... I'm losing out for each second it spends without crying.\"\n\n\"The opportunities and time to change the world... are scattering.\"\n\nDongrang then glared with bloodshot eyes.\n\n\"Yi Sang... It's you, you're the only one who needs to go for this to be over!\"",
+      "options": [
+        {
+          "message": "Stand in his way.",
+          "result": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040402,
+      "name": "Picking a Row and Column",
+      "desc": "Many objects appeared in the hidden compartment.\nThey might be useful for the coming encounters.\nWhat should we take?",
+      "options": [
+        {
+          "message": "Pick the drawer on the second row, fifth column.",
+          "messageDesc": "Gain an E.G.O Gift.",
+          "result": [
+            "You took the item out of the drawer on the second row, fifth column.\nIt's a mysterious green mass.\nWhen you look at it, it kind of resembles a mask.\nSoon, the area began to blur, and the cabinet disappeared."
+          ]
+        },
+        {
+          "message": "Pick the drawer on the fifth row, eighth column.",
+          "messageDesc": "Gain an E.G.O Gift.",
+          "result": [
+            "You took the item out of the drawer on the fifth row, eighth column.\nIt's a mysterious blue mass.\nWhen you look at it, it kind of resembles a knife.\nSoon, the area began to blur, and the cabinet disappeared."
+          ]
+        },
+        {
+          "message": "Pick the drawer on the sixth row, first column.",
+          "messageDesc": "Gain an E.G.O Gift.",
+          "result": [
+            "You took the item out of the drawer on the sixth row, first column.\nIt's a mysterious yellow mass.\nWhen you look at it, it kind of resembles a flower.\nSoon, the area began to blur, and the cabinet disappeared."
+          ]
+        }
+      ]
     }
   ]
 }

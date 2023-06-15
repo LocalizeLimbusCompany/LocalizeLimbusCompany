@@ -4476,6 +4476,187 @@
       ]
     },
     {
+      "id": 9101001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "消滅する呪いの札",
+          "desc": "貼り直された呪いの札 が最も多い対象を優先して攻撃\n[EndBattle] 対象の貼り直された呪いの札 が全て消滅",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 貼り直された呪いの札 2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 貼り直された呪いの札 が9以上なら、麻痺 5付与。\nダメージ量の50%分固定ダメージ"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9006801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "挙不者発見",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 破裂 3を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9006802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "制圧",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 破裂 3を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9006803,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "挙不者遮断",
+          "desc": "体力が一番多い対象を優先して攻撃",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "1コインが裏面ならダメージ量 +10%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "2コインが裏面ならダメージ量 +10%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "2, 3コインが裏面ならダメージ量 +30%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9007001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "噛み合う瞬間",
+          "desc": "[WhenUse] 自分の充電 回数が1増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 噛み合う時間 1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 充電 2消耗時、麻痺 3を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9007002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "時間吸収",
+          "desc": "[WhenUse] 自分の充電 回数が1増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに束縛 2を付与。クイック 1を得る"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9007003,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "加速する瞬間",
+          "desc": "[StartBattle] 自分の充電 回数が3増加\n[WhenUse] 充電 回数が5以上なら、マッチ威力 +2\n次のターンに行動不能状態になる。",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに束縛 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 保有している充電 回数が5以上のとき、充電 回数分与ダメージが +10%。全て消耗。"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 噛み合う時間 1を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9007004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "時間貸与",
+          "desc": "[StartBattle] 時間貸与 3, 充電 回数 1を得る",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
       "id": 9007101,
       "levelList": [
         {
