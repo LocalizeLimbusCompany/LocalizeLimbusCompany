@@ -2732,6 +2732,76 @@
       ]
     },
     {
+      "id": 2120411,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "AEDD",
+          "abName": "衝擊ムカデ",
+          "desc": "[BeforeAttack] 自分の充電 回数が5増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 放出電流 5を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "AEDD",
+          "abName": "衝擊ムカデ",
+          "desc": "[BeforeAttack] 自分の充電 回数が7増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 放出電流 10を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120421,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "AEDD",
+          "abName": "衝擊ムカデ",
+          "desc": "[CantIdentify] \n充電を保有したランダムな対象を優先して攻撃\n[BeforeAttack] 自分の充電 回数が5増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 放出電流 5を付与。対象の充電 回数を5増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "AEDD",
+          "abName": "衝擊ムカデ",
+          "desc": "[CantIdentify] \n充電を保有したランダムな対象を優先して攻撃\n[BeforeAttack] 自分の充電 回数が7増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 放出電流 10を付与。対象の充電 回数を5増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": 2070311,
       "levelList": [
         {
@@ -2800,6 +2870,70 @@
                 },
                 {
                   "desc": "[OnSucceedAttackTail] 攻撃終了時、体力を最大値の10%消耗して自分の充電 回数を10増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2010511,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "狐雨",
+          "abName": "さすらいの狐",
+          "desc": "[Wide] スロット5枠指定\n[BeforeAttack] このターンと次のターンに、全味方へ怠惰威力増加 1, 怠惰ダメージ量増加 1, 保護 2を付与",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 3,
+          "name": "狐雨",
+          "abName": "さすらいの狐",
+          "desc": "[Wide] スロット5枠指定\n[BeforeAttack] このターンと次のターンに、全味方へ怠惰威力増加 1, 怠惰ダメージ量増加 2, 保護 3を付与",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 自分の精神力を15回復"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2010521,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "狐雨",
+          "abName": "さすらいの狐",
+          "desc": "[CantIdentify]\n[Wide] スロット5枠指定\nランダムな対象を攻撃\n[BeforeAttack] このターンと次のターンの2ターン間、怠惰威力増加 1, 怠惰ダメージ量増加 1を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] このターンと次のターンの間、怠惰脆弱 1, 貫通脆弱 1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "狐雨",
+          "abName": "さすらいの狐",
+          "desc": "[CantIdentify]\n[Wide] スロット5枠指定\nランダムな対象を攻撃\n[BeforeAttack] このターンと次のターンの2ターン間、怠惰威力増加 2, 怠惰ダメージ量増加 2を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] このターンと次のターンの間、怠惰脆弱 , 貫通脆弱 2を付与"
                 }
               ]
             }

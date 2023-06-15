@@ -3183,7 +3183,7 @@
         {
           "level": 1,
           "name": "Coil Up",
-          "desc": "[StartBattle] Gain shield by the head's current HP",
+          "desc": "If this skill is on a slot, gain shield by the head's current HP",
           "coinlist": [
             {}
           ]
@@ -3196,7 +3196,7 @@
         {
           "level": 1,
           "name": "Wriggling Head",
-          "desc": "Targets the enemy with the least HP\n[DefeatDuel] Lose 1 Self-charge",
+          "desc": "Targets the enemy with the least HP\n[WhenUse] Spend 2 Self-charge\n[DefeatDuel] Lose 2 Self-charge",
           "coinlist": [
             {},
             {
@@ -3216,7 +3216,7 @@
         {
           "level": 1,
           "name": "Wriggling Tail",
-          "desc": "Targets the enemy with the least HP\n[DefeatDuel] Lose 1 Self-charge",
+          "desc": "Targets the enemy with the least HP\n[WhenUse] Spend 2 Self-charge\n[DefeatDuel] Lose 3 Self-charge",
           "coinlist": [
             {},
             {},
@@ -3268,7 +3268,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 3 Sinking"
                 }
               ]
             }
@@ -3534,7 +3534,7 @@
         {
           "level": 1,
           "name": "I'll Have This!",
-          "desc": "Prioritizes enemies with Morale Boost\n[CantDuel]\nCannot be redirected",
+          "desc": "[CantDuel]\nCannot be redirected\nPrioritizes enemies with Morale Boost\nIf target has no Tipsy, Clash Power +5",
           "coinlist": [
             {
               "coindescs": [
@@ -3545,7 +3545,7 @@
                   "desc": "[OnSucceedAttack] If target has Tipsy, deal 0 damage, and user loses 50 HP"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Remove all Morale Boost and Tipsy"
+                  "desc": "[OnSucceedAttack] Remove all Morale Boost or Tipsy"
                 }
               ]
             }
@@ -3559,7 +3559,7 @@
         {
           "level": 1,
           "name": "I'll Have This!",
-          "desc": "Prioritizes enemies with Morale Boost",
+          "desc": "Prioritizes enemies with Morale Boost\nIf target has no Tipsy, Clash Power +5",
           "coinlist": [
             {
               "coindescs": [
@@ -3570,7 +3570,7 @@
                   "desc": "[OnSucceedAttack] If target has Tipsy, deal 0 damage, and user loses 50 HP"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Remove all Morale Boost and Tipsy"
+                  "desc": "[OnSucceedAttack] Remove all Morale Boost or Tipsy"
                 }
               ]
             }
@@ -3603,7 +3603,7 @@
         {
           "level": 1,
           "name": "You Like This Brew?",
-          "desc": "[OnSucceedEvade] Gain 1 Bind next turn",
+          "desc": "[WhenUse] Gain 1 Bind next turn",
           "coinlist": [
             {}
           ]
@@ -3616,7 +3616,7 @@
         {
           "level": 1,
           "name": "Fairy Wine",
-          "desc": "[DefeatDuel] Convert opponent's Morale Boost into Tipsy",
+          "desc": "[WhenUse] Convert opponent's Morale Boost into Tipsy",
           "coinlist": [
             {}
           ]
@@ -3784,7 +3784,7 @@
         {
           "level": 1,
           "name": "Don't Touch Me...!",
-          "desc": "[StartBattle] Gain 'Thorns'",
+          "desc": "[StartBattle] Gain Thorns",
           "coinlist": [
             {}
           ]
@@ -4132,6 +4132,433 @@
           "level": 1,
           "name": "Full Bloom",
           "desc": "Cannot act\nAt the end of the turn, lose 20 SP\nIf SP reaches -45, fully heal SP, then gain Dazzled Mind next turn\nIf this effect isn't removed for 2 turns, remove it at the end of the turn",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "You're Empty As Well",
+          "desc": "[WhenUse] Inflict Empty Mark next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 10 Rupture"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Prune",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 Rupture"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +3 Rupture Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804903,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Prune",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +3 Rupture Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Heal by damage dealt"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804904,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Thinning",
+          "desc": "Deal +50% damage to targets with Empty Mark\n[DefeatDuel] Gain 1 Fragile next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Heal by damage dealt\nIf target has Empty Mark, gain 1 Attack Power Up next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Heal by damage dealt\nIf target has Empty Mark, gain 1 Attack Power Up next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804905,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Destruction",
+          "desc": "[Wide] Targets 3 slots",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 10 Bleed"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804906,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Still Not Enough...",
+          "desc": "Targets a random friendly unit",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Bleed; Heal by 25% of damage dealt"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Bleed; Heal by 25% of damage dealt"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Absorb 1 random positive status effect from target and gain it next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804907,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Must Fill...",
+          "desc": "Targets a random unit",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Absorb 1 random positive status effect from target and gain it next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Apply +5 Bleed Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804908,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "It's All Empty",
+          "desc": "[DefeatDuel] Gain 10 Rupture",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804909,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "It's Too Late Now",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 Fragile"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804910,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "It's All Burned Up",
+          "desc": "[Wide] Targets 7 slots",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Fragile, 5 Rupture, and 5 Bleed; Heal by 10% of damage dealt"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 804911,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "It's No Use",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Cultivate",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bind and 1 Paralyze next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bind and 1 Paralyze next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Dissemination",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Bind next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Fragile next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Seeds next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805003,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Facilitate",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Seeds; if target already has Seeds, inflict 1 more"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Seeds; if target already has Seeds, inflict 1 more"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Seeds; if target already has Seeds, inflict 1 more"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Overgrowth",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Seeds and Overheal; Heal target's HP by 15"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805005,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Time of Harvest",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Fragile and 10 Bleed\nIf target has Nutrient Drain, heal 20 HP, and gain 2 Attack Power Up next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805006,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Please Be My Nutrient",
+          "desc": "[WhenUse] All Trees of Desires heal 15 HP; If there are no Trees of Desires, spawn one",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Heal 10 HP; Inflict 3 Seeds"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Growing Results",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Seeds"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Seeds"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Expectation",
+          "desc": "",
           "coinlist": [
             {}
           ]

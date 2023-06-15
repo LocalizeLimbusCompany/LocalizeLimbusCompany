@@ -735,6 +735,12 @@
       "desc": "턴 종료 시 파열 횟수가 수치만큼 증가한 뒤 이 효과 소멸"
     },
     {
+      "id": "ShardOfUmbrella",
+      "name": "우산 파편",
+      "desc": "턴 종료 시 수치당 5만큼 파열 얻음",
+      "summary": "턴 종료 시 수치당 5만큼 파열 얻음"
+    },
+    {
       "id": "WrappedCurseTag",
       "name": "얽혀온 저주 부적",
       "desc": "가하는 피해량 수치당 1% 증가\n수치가 9이상이라면, 턴 시작 시 공격 위력 감소 2 얻음",
@@ -747,6 +753,18 @@
       "summary": "수치가 9이상이라면, 턴 종료 시 속박 5 얻음.\n12이상이라면, 턴 종료 시 공격 위력 감소 5 얻음."
     },
     {
+      "id": "ElectricStorage",
+      "name": "축전",
+      "desc": "몸에 전류가 쌓이는 것 같다.",
+      "summary": "표시용"
+    },
+    {
+      "id": "SelfCharge",
+      "name": "자가 충전",
+      "desc": "몸 주변으로 전류가 흐르는 것 같다.",
+      "summary": "표시용"
+    },
+    {
       "id": "Exalted",
       "name": "고양",
       "desc": "매 턴마다 피해량 증가를 수치만큼 얻음 (최대 5)\n취기가 있을 때, 얻을 수 없음.",
@@ -757,6 +775,12 @@
       "name": "취기",
       "desc": "합 위력이 수치만큼 감소 (최대 5)",
       "summary": "합 위력이 수치만큼 감소"
+    },
+    {
+      "id": "Predation",
+      "name": "포식",
+      "desc": "강력한 기술을 사용하는 것 같다.",
+      "summary": "표시용"
     },
     {
       "id": "ATL_EndureCombustion",
@@ -781,6 +805,18 @@
       "name": "붕괴 앰플",
       "desc": "최대 체력의 수치당 2%만큼 피해 입힘.",
       "summary": "최대 체력의 수치당 2%만큼 피해 입힘."
+    },
+    {
+      "id": "InterlockingTime",
+      "name": "맞물리는 시간",
+      "desc": "최종 피해의 30%만큼 감소 및 저장. 수치가 3이 되면, 쌓인 피해량의 1.5배만큼 고정 피해를 입음. 다음 턴에 속박 3 얻음.",
+      "summary": "최종 피해의 30%만큼 감소 및 저장. 수치가 3이 되면, 쌓인 피해량의 1.5배만큼 고정 피해를 입음. 다음 턴에 속박 3 얻음."
+    },
+    {
+      "id": "TimeRental",
+      "name": "시간 대여",
+      "desc": "턴 종료 시 신속 3, 피해량 증가 2 얻음. 턴 종료 시 수치가 1 남았다면, 다음 턴에 속박 4, 공격 위력 감소 1 얻음",
+      "summary": "턴 종료 시 신속 3, 피해량 증가 2 얻음. 턴 종료 시 수치가 1 남았다면, 다음 턴에 속박 4, 공격 위력 감소 1 얻음"
     },
     {
       "id": "ATL_EndureLaceration",
@@ -970,6 +1006,88 @@
       "id": "EmittedCurrent",
       "name": "방출 전류",
       "desc": "피격 시 공격자의 충전 횟수 1 증가. 우울 속성으로 피격 시 자신의 파열 횟수 1 증가. 이후 수치 1 감소"
+    },
+    {
+      "id": "DistortedDongrangRadiantVanity",
+      "name": "빛나는 허영",
+      "desc": "턴 시작 시 동랑에게 보호 1, 공격 위력 증가 1 부여"
+    },
+    {
+      "id": "DistortedDongrangEmptyMark",
+      "name": "텅 빈 징표",
+      "desc": "동랑의 타겟이 됨. 매 턴 시작 시 속박 2를 얻고, 동랑에게 받는 피해량 +50%"
+    },
+    {
+      "id": "DistortedDongrangEarnestAchievement",
+      "name": "간절한 성과",
+      "desc": "이 유닛의 체력을 1로 만들거나, 처치하면 공격자가 강화 효과를 얻음"
+    },
+    {
+      "id": "DistortedDongrangEmptyHonor",
+      "name": "공허한 영예",
+      "desc": "동랑이 이 유닛을 처치하면, 체력을 잃은 뒤 공허함 1을 얻고 다음 턴에 약화됨"
+    },
+    {
+      "id": "DistortedDongrangMomentaryGlory",
+      "name": "찰나의 영광",
+      "desc": "수치가 3 이상이면 동랑이 강화 상태가 됨"
+    },
+    {
+      "id": "DistortedDongrangEmptiness",
+      "name": "공허함",
+      "desc": "수치가 4 이상이면 동랑이 흐트러짐 상태가 됨"
+    },
+    {
+      "id": "DistortedDongrangFruition",
+      "name": "맺힌 결실",
+      "desc": "이 유닛을 처치한 대상은 체력을 회복하고, 다음 턴에 신속 1, 공격 위력 증가 1을 얻음"
+    },
+    {
+      "id": "EgoAwakenDongrangRadiantDesire",
+      "name": "빛나는 욕망",
+      "desc": "동랑이 턴 시작 시 피해량 증가, 보호 1을 얻음"
+    },
+    {
+      "id": "EgoAwakenDongrangSeed",
+      "name": "씨앗",
+      "desc": "턴 종료 시 수치가 5 이상이면, 2턴 동안 양분 흡수 상태가 됨. 수치가 5 미만이면 수치 1 감소"
+    },
+    {
+      "id": "EgoAwakenDongrangTree",
+      "name": "양분 흡수",
+      "desc": "매 턴 종료 시 동랑의 체력 10 회복"
+    },
+    {
+      "id": "EgoAwakenDongrangOverHeal",
+      "name": "과잉 회복",
+      "desc": "동랑이 회복시킨 체력만큼 수치 증가. 수치가 50 이상이 되면 수치만큼 탐식 피해를 주고, 다음 턴에 취약 5 부여 후 효과가 소멸됨."
+    },
+    {
+      "id": "SinkingSurge",
+      "name": "침잠쇄도",
+      "desc": "(침잠 횟수 x 침잠 위력)만큼 정신 피해를 주고, 침잠 제거\n대상의 정신력이 -45 이하면 초과된 정신 피해를 우울 속성 피해로 가함.\n(정신력이 없는 대상에게는 전부 우울 속성 피해로 적용됨)"
+    },
+    {
+      "id": "AmberResultUp",
+      "name": "나태 위력 증가",
+      "desc": "한 턴 동안 나태 속성 스킬의 최종 위력이 수치만큼 증가",
+      "summary": "나태 속성 스킬의 최종 위력 +{0}"
+    },
+    {
+      "id": "Blue",
+      "name": "눈물",
+      "desc": "턴 종료 시, 자신의 정신력 5 감소.\n뒷면 적중 시 침잠 2 부여"
+    },
+    {
+      "id": "EgoAwakenDongrangTreeDisplay",
+      "name": "양분 흡수",
+      "desc": "매 턴 종료 시 동랑의 체력 10 회복"
+    },
+    {
+      "id": "DongbaekFullBloomDisplay",
+      "name": "만개",
+      "desc": "행동 불가\n턴 종료 시 정신력 -20. 정신력이 -45가 된 경우 정신력을 최대로 회복하고, 다음 턴에 아찔한 정신 상태가 됨\n2턴 동안 해제되지 않으면, 턴 종료 시 상태 해제",
+      "summary": ""
     }
   ]
 }

@@ -2792,7 +2792,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Carving up.",
+          "name": "Carving out.",
           "desc": "",
           "coinlist": [
             {
@@ -2881,7 +2881,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Carving up.",
+          "name": "Carving out.",
           "desc": "",
           "coinlist": [
             {},
@@ -4471,6 +4471,187 @@
                 }
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9101001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Expiring Curse Talisman",
+          "desc": "Target the enemy with the most Reattached Curse Talismans\n[EndBattle] Remove all Reattached Curse Talisman from target",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Reattached Curse Talisman"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] If target has 9+ Reattached Curse Talisman, inflict 5 Paralyze\nDeal fixed damage by 50% of damage dealt"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9006801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Suspicious Individuals",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict 3 Rupture"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9006802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Restrain",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict 3 Rupture"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9006803,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "No Trespassing",
+          "desc": "Targets the unit with the most HP",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "If Coin 1 lands Tails, +10% Damage"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "If Coin 2 lands Tails, +10% Damage"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "If Coins 2 & 3 land Tails, +30% Damage"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9007001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Interlocking Moment",
+          "desc": "[WhenUse] Gain +1 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Interlocking Time"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Spend 2 Charge to inflict 3 Paralyze"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9007002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Siphon Time",
+          "desc": "[WhenUse] Gain +1 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 1 Haste; Inflict 2 Bind next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9007003,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Accelerating Moment",
+          "desc": "[StartBattle] Gain +3 Charge Count\n[WhenUse] At 5+ Charge Count, Clash Power +2\nBecome immobilized next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Bind next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] At 5+ Charge Count, spend all Charge Count to deal +10% damage for each Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Interlocking Time"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9007004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Borrow Time",
+          "desc": "[StartBattle] Gain 3 Borrowed Time and +1 Charge Count",
+          "coinlist": [
+            {}
           ]
         }
       ]

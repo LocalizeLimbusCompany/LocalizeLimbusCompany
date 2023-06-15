@@ -735,6 +735,12 @@
       "desc": "At the end of the turn, gain Rupture Count by this effect’s amount. Then, remove this effect."
     },
     {
+      "id": "ShardOfUmbrella",
+      "name": "Umbrella Splinters",
+      "desc": "Gain 5 Rupture per Count at turn end",
+      "summary": "Gain 5 Rupture per Count at turn end"
+    },
+    {
       "id": "WrappedCurseTag",
       "name": "Entangled Curse Talisman",
       "desc": "Deal +1% damage per Count\nAt 9+ Count, gain 2 Attack Power Down at turn start",
@@ -747,6 +753,18 @@
       "summary": "At 9+ Count, gain 5 Bind at turn end.\nAt 12+ Count, gain 5 Attack Power Down at turn end."
     },
     {
+      "id": "ElectricStorage",
+      "name": "Capacitor",
+      "desc": "It seems to be storing electricity in its body.",
+      "summary": "표시용"
+    },
+    {
+      "id": "SelfCharge",
+      "name": "Self-charge",
+      "desc": "Electric currents seem to flow around its body.",
+      "summary": "표시용"
+    },
+    {
       "id": "Exalted",
       "name": "Morale Boost",
       "desc": "Gain Damage Up by the the effect's Count every turn (Max 5)\nCannot gain the status while Tipsy",
@@ -757,6 +775,12 @@
       "name": "Tipsy",
       "desc": "Lose Clash Power by the effect's Count (Max 5)",
       "summary": "Lose Clash Power by the effect's Count"
+    },
+    {
+      "id": "Predation",
+      "name": "Predation",
+      "desc": "It seems to be preparing a powerful move.",
+      "summary": "표시용"
     },
     {
       "id": "ATL_EndureCombustion",
@@ -781,6 +805,18 @@
       "name": "Decay Ampule",
       "desc": "Take damage by 2% of Max HP per Count",
       "summary": "Take damage by 2% of Max HP per Count"
+    },
+    {
+      "id": "InterlockingTime",
+      "name": "Interlocking Time",
+      "desc": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 1.5 times the accumulated damage, and gain 3 Bind next turn.",
+      "summary": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 1.5 times the accumulated damage, and gain 3 Bind next turn."
+    },
+    {
+      "id": "TimeRental",
+      "name": "Borrowed Time",
+      "desc": "At the end of the turn, gain 3 Haste and 2 Damage Up; If only 1 Count remains, gain 4 Bind and 1 Attack Power Down next turn",
+      "summary": "At the end of the turn, gain 3 Haste and 2 Damage Up; If only 1 Count remains, gain 4 Bind and 1 Attack Power Down next turn"
     },
     {
       "id": "ATL_EndureLaceration",
@@ -970,6 +1006,88 @@
       "id": "EmittedCurrent",
       "name": "Spark Discharge",
       "desc": "When hit, the attacker gains +1 Charge Count; when hit with a Gloom attack, gain +1 Rupture Count, then reduce Count by 1"
+    },
+    {
+      "id": "DistortedDongrangRadiantVanity",
+      "name": "Radiant Vanity",
+      "desc": "At the start of the turn, Dongrang gains 1 Protection and 1 Attack Power Up."
+    },
+    {
+      "id": "DistortedDongrangEmptyMark",
+      "name": "Empty Mark",
+      "desc": "Targeted by Dongrang. Gain 2 Bind every turn, and take +50% damage from Dongrang."
+    },
+    {
+      "id": "DistortedDongrangEarnestAchievement",
+      "name": "Earnest Accomplishment",
+      "desc": "If this unit is defeated or its HP is brought to 1, the attacker gains buffs."
+    },
+    {
+      "id": "DistortedDongrangEmptyHonor",
+      "name": "Empty Honor",
+      "desc": "If Dongrang defeats this unit, he loses HP, gains 1 Emptiness, and is weakened next turn."
+    },
+    {
+      "id": "DistortedDongrangMomentaryGlory",
+      "name": "Momentary Glory",
+      "desc": "At 3+ Count, Dongrang becomes more powerful."
+    },
+    {
+      "id": "DistortedDongrangEmptiness",
+      "name": "Emptiness",
+      "desc": "At 4+ Count, Dongrang becomes staggered."
+    },
+    {
+      "id": "DistortedDongrangFruition",
+      "name": "Borne Fruition",
+      "desc": "The unit that defeated this unit heals HP, and gains 1 Haste and 1 Attack Power Up next turn"
+    },
+    {
+      "id": "EgoAwakenDongrangRadiantDesire",
+      "name": "Radiant Desire",
+      "desc": "Turn Start: Dongrang gains 1 Damage Up and 1 Protection."
+    },
+    {
+      "id": "EgoAwakenDongrangSeed",
+      "name": "Seeds",
+      "desc": "Turn End: At 5+ Count, gain Nutrient Drain for 2 turns; at less than 5 Count, reduce Count by 1"
+    },
+    {
+      "id": "EgoAwakenDongrangTree",
+      "name": "Nutrient Drain",
+      "desc": "Turn End: Dongrang heals 10 HP"
+    },
+    {
+      "id": "EgoAwakenDongrangOverHeal",
+      "name": "Overheal",
+      "desc": "Count rises by the amount of HP Dongrang caused to heal; at 50+ Count, take Gluttony damage by the effect's Count, gain 5 Fragile, and remove the effect."
+    },
+    {
+      "id": "SinkingSurge",
+      "name": "Sinking Deluge",
+      "desc": "Deal SP damage by (Sinking Count * Sinking Potency), then remove Sinking\nIf target's SP is -45 or lower, the excess SP damage is dealt as Gloom-affinity HP damage\n(Units with no Sanity take all of it as Gloom HP damage)"
+    },
+    {
+      "id": "AmberResultUp",
+      "name": "Sloth Power Up",
+      "desc": "Sloth skills gain final Power by the effect’s Count for one turn.",
+      "summary": "Sloth Skill Final Power +{0}"
+    },
+    {
+      "id": "Blue",
+      "name": "Tears",
+      "desc": "Turn End: Lose 5 SP\nTails Coins inflict 2 Sinking"
+    },
+    {
+      "id": "EgoAwakenDongrangTreeDisplay",
+      "name": "Nutrient Drain",
+      "desc": "Turn End: Dongrang heals 10 HP"
+    },
+    {
+      "id": "DongbaekFullBloomDisplay",
+      "name": "Fully Bloomed",
+      "desc": "Cannot act\nAt the end of the turn, lose 20 SP; if SP reaches -45, fully heal SP, then gain 'Dazzled Mind' next turn.\nIf this effect isn't removed for 2 turns, remove it at the end of the turn.",
+      "summary": ""
     }
   ]
 }

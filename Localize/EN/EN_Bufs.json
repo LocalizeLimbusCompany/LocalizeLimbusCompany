@@ -1007,16 +1007,34 @@
       "summary": "Turn End: At -15 SP or lower, gain 3 Defense Level Up next turn"
     },
     {
+      "id": "ShardOfUmbrella",
+      "name": "Umbrella Splinters",
+      "desc": "Turn End: Gain {0} x 5 Rupture",
+      "summary": "Turn End: Gain {0} x 5 Rupture"
+    },
+    {
       "id": "WrappedCurseTag",
       "name": "Entangled Curse Talisman",
-      "desc": "Deal +{0} * 1% damage\nAt 9+ Count, gain 2 Attack Power Down at turn start",
-      "summary": "Deal +{0} * 1% damage; Gain 2 Attack Power Down at turn start at 9+ Count"
+      "desc": "Deal +{0}% damage\nAt 9+ Count, gain 2 Attack Power Down at turn start",
+      "summary": "Deal +{0}% damage; at 9+ Count, gain 2 Attack Power Down at turn start"
     },
     {
       "id": "ReattachedCurseTag",
       "name": "Reattached Curse Talisman",
       "desc": "At 9+ Count, gain 5 Bind at turn end.\nAt 12+ Count, gain 5 Attack Power Down at turn end.",
       "summary": "At 9+ Count, gain 5 Bind at turn end.\nAt 12+ Count, gain 5 Attack Power Down at turn end."
+    },
+    {
+      "id": "ElectricStorage",
+      "name": "Capacitor",
+      "desc": "It seems to be storing electricity in its body.",
+      "summary": "표시용"
+    },
+    {
+      "id": "SelfCharge",
+      "name": "Self-charge",
+      "desc": "Electric currents seem to flow around its body.\nAfter the unit faces death, as long as it has Self-charge, its HP is fixed at 1 until it is fully consumed.",
+      "summary": "표시용"
     },
     {
       "id": "Exalted",
@@ -1029,6 +1047,12 @@
       "name": "Tipsy",
       "desc": "Clash Power -{0} (Max 5)",
       "summary": "Lose Clash Power by the effect's Count"
+    },
+    {
+      "id": "Predation",
+      "name": "Predation",
+      "desc": "It seems to be preparing a powerful move.",
+      "summary": "표시용"
     },
     {
       "id": "ATL_Agility",
@@ -1071,6 +1095,18 @@
       "name": "Decay Ampule",
       "desc": "Take damage by {0} * 2% of Max HP",
       "summary": "Take damage by {0} * 2% of Max HP"
+    },
+    {
+      "id": "InterlockingTime",
+      "name": "Interlocking Time",
+      "desc": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 1.5 times the accumulated damage, and gain 3 Bind next turn.",
+      "summary": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 1.5 times the accumulated damage, and gain 3 Bind next turn."
+    },
+    {
+      "id": "TimeRental",
+      "name": "Borrowed Time",
+      "desc": "Turn End: Gain 3 Haste and 2 Damage Up; If only 1 Count remains, gain 4 Bind and 1 Attack Power Down",
+      "summary": "Turn End: Gain 3 Haste and 2 Damage Up; If only 1 Count remains, gain 4 Bind and 1 Attack Power Down"
     },
     {
       "id": "Bull_FadedHeat",
@@ -1225,6 +1261,100 @@
       "id": "EmittedCurrent",
       "name": "Spark Discharge",
       "desc": "When hit, the attacker gains +1 Charge Count; when hit with a Gloom attack, gain +1 Rupture Count, then reduce Count by 1"
+    },
+    {
+      "id": "DistortedDongrangRadiantVanity",
+      "name": "Radiant Vanity",
+      "desc": "Turn Start: Dongrang gains 1 Protection and 1 Attack Power Up"
+    },
+    {
+      "id": "DistortedDongrangEmptyMark",
+      "name": "Empty Mark",
+      "desc": "Targeted by Dongrang. Gain 2 Bind every turn, and take +50% damage from Dongrang."
+    },
+    {
+      "id": "DistortedDongrangEarnestAchievement",
+      "name": "Earnest Accomplishment",
+      "desc": "If this unit is defeated or its HP is brought to 1, the attacker gains buffs"
+    },
+    {
+      "id": "DistortedDongrangEmptyHonor",
+      "name": "Empty Honor",
+      "desc": "If Dongrang defeats this unit, he loses HP, gains 1 Emptiness, and is weakened next turn"
+    },
+    {
+      "id": "DistortedDongrangMomentaryGlory",
+      "name": "Momentary Glory",
+      "desc": "At 3+ Count, Dongrang becomes more powerful"
+    },
+    {
+      "id": "DistortedDongrangEmptiness",
+      "name": "Emptiness",
+      "desc": "At 4+ Count, Dongrang becomes staggered."
+    },
+    {
+      "id": "DistortedDongrangFruition",
+      "name": "Borne Fruition",
+      "desc": "The unit that defeated this unit heals HP, and gains 1 Haste and 1 Attack Power Up next turn"
+    },
+    {
+      "id": "EgoAwakenDongrangRadiantDesire",
+      "name": "Radiant Desire",
+      "desc": "Turn Start: Dongrang gains 1 Damage Up and 1 Protection"
+    },
+    {
+      "id": "EgoAwakenDongrangSeed",
+      "name": "Seeds",
+      "desc": "Turn End: At 5+ Count, gain Nutrient Drain for 2 turns; at less than 5 Count, reduce Count by 1"
+    },
+    {
+      "id": "EgoAwakenDongrangTree",
+      "name": "Nutrient Drain",
+      "desc": "Turn End: Dongrang heals 10 HP"
+    },
+    {
+      "id": "EgoAwakenDongrangOverHeal",
+      "name": "Overheal",
+      "desc": "Count rises by the amount of HP Dongrang caused to heal; at 50+ Count, take Gluttony damage by the effect's Count, gain 5 Fragile, and remove the effect."
+    },
+    {
+      "id": "SinkingSurge",
+      "name": "Sinking Deluge",
+      "desc": "Deal SP damage by (Sinking Count * Sinking Potency), then remove Sinking\nIf target's SP is -45 or lower, the excess SP damage is dealt as Gloom-affinity HP damage\n(Units with no Sanity take all of it as Gloom HP damage)"
+    },
+    {
+      "id": "Blue",
+      "name": "Tears",
+      "desc": "Turn End: Lose 5 SP\nTails Coins inflict 2 Sinking"
+    },
+    {
+      "id": "AmberResultUp",
+      "name": "Sloth Power Up",
+      "desc": "Sloth Skill Final Power +{0} for this turn",
+      "summary": "Sloth Skill Final Power +{0}"
+    },
+    {
+      "id": "EgoAwakenDongrangTreeDisplay",
+      "name": "Nutrient Drain",
+      "desc": "Turn End: Dongrang heals 10 HP"
+    },
+    {
+      "id": "DongbaekFullBloomDisplay",
+      "name": "Fully Bloomed",
+      "desc": "Cannot act\nAt the end of the turn, lose 20 SP; if SP reaches -45, fully heal SP, then gain 'Dazzled Mind' next turn.\nIf this effect isn't removed for 2 turns, remove it at the end of the turn.",
+      "summary": ""
+    },
+    {
+      "id": "EgoAwakenDongrangShardOfBrokenConnection",
+      "name": "Piece of a Broken Bond",
+      "desc": "Yi Sang's skills gain +2 Final Power\nWhen an ally dies, remaining allies gain 1 Haste and 1 Attack Power Up next turn (Once per turn)\nAs long as at least one other ally is alive in this battle, Yi Sang does not die",
+      "summary": ""
+    },
+    {
+      "id": "Choice_1040301",
+      "name": "Unknown Wound",
+      "desc": "Gain 10 Rupture for this turn.",
+      "summary": "Gain 10 Rupture for the turn"
     }
   ]
 }

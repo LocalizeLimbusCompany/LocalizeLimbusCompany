@@ -2732,6 +2732,76 @@
       ]
     },
     {
+      "id": 2120411,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "AEDD",
+          "abName": "충격 지네",
+          "desc": "[BeforeAttack] 자신의 충전 횟수 5 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 방출 전류 5 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "AEDD",
+          "abName": "충격 지네",
+          "desc": "[BeforeAttack] 자신의 충전 횟수 7 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 방출 전류 10 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120421,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "AEDD",
+          "abName": "충격 지네",
+          "desc": "[CantIdentify]\n충전을 보유한 무작위 대상 우선 공격\n[BeforeAttack] 자신의 충전 횟수 5 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 방출 전류 5 부여. 대상의 충전 횟수 5 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "AEDD",
+          "abName": "충격 지네",
+          "desc": "[CantIdentify]\n충전을 보유한 무작위 대상 우선 공격\n[BeforeAttack] 자신의 충전 횟수 7 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 방출 전류 10 부여. 대상의 충전 횟수 5 증가"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": 2070311,
       "levelList": [
         {
@@ -2800,6 +2870,70 @@
                 },
                 {
                   "desc": "[OnSucceedAttackTail] 공격 종료 시 체력을 최대 체력의 10%만큼 소모하여 자신의 충전 횟수 10 증가"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2010511,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "여우비",
+          "abName": "떠돌이 여우",
+          "desc": "[Wide]슬롯 5개 지정\n[BeforeAttack] 이번 턴, 다음 턴 동안 모든 아군에게 나태 위력 증가 1, 나태 피해량 증가 1, 보호 2 부여",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 3,
+          "name": "여우비",
+          "abName": "떠돌이 여우",
+          "desc": "[Wide]슬롯 5개 지정\n[BeforeAttack] 이번 턴, 다음 턴 동안 모든 아군에게 나태 위력 증가 1, 나태 피해량 증가 2, 보호 3 부여",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 자신의 정신력 15 회복"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2010521,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "여우비",
+          "abName": "떠돌이 여우",
+          "desc": "[CantIdentify]\n[Wide]슬롯 5개 지정\n무작위 대상 공격\n[BeforeAttack] 이번 턴과 다음 2턴간 나태 위력 증가 1, 나태 피해량 증가 1를 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 이번 턴, 다음 턴 동안 나태 취약, 관통 취약 1 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "여우비",
+          "abName": "떠돌이 여우",
+          "desc": "[CantIdentify]\n[Wide]슬롯 5개 지정\n무작위 대상 공격\n[BeforeAttack] 이번 턴과 다음 2턴간 나태 위력 증가 2, 나태 피해량 증가 2를 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 이번 턴, 다음 턴 동안 나태 취약, 관통 취약 2 부여"
                 }
               ]
             }
