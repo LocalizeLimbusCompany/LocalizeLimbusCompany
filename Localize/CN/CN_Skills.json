@@ -1560,7 +1560,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加2级烧伤 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标的烧伤 强度高于6级，则使2名随机敌人增加2级烧伤 强度"
+                  "desc": "[OnSucceedAttack] 若目标的烧伤 强度不低于6级，则使2名随机敌人增加2级烧伤 强度"
                 }
               ]
             },
@@ -1603,7 +1603,7 @@
                   "desc": "[OnSucceedAttack] 对目标施加3层烧伤 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标的烧伤 强度高于6级，则使3名随机敌人增加2级烧伤 强度"
+                  "desc": "[OnSucceedAttack] 若目标的烧伤 强度不低于6级，则使3名随机敌人增加2级烧伤 强度"
                 }
               ]
             }
@@ -3141,7 +3141,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标的流血 强度高于6级，则本硬币造成的伤害+20%"
+                  "desc": "[OnSucceedAttack] 若目标的流血 强度不低于6级，则本硬币造成的伤害+20%"
                 }
               ]
             }
@@ -3260,7 +3260,7 @@
         {
           "level": 3,
           "name": "斩破长空",
-          "desc": "若目标的流血强度高于6级，则使自身的暴击率翻倍",
+          "desc": "若目标的流血强度不低于6级，则使自身的暴击率翻倍",
           "coinlist": [
             {
               "coindescs": [
@@ -3965,7 +3965,7 @@
         {
           "level": 3,
           "name": "利刃穿身",
-          "desc": "若目标的体力高于50%，则使本技能造成的伤害+20%",
+          "desc": "若目标的体力不低于50%，则使本技能造成的伤害+20%",
           "coinlist": [
             {}
           ]
@@ -4389,7 +4389,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加3级烧伤 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标的烧伤 强度高于6级，则在下回合使自身获得1层强壮 "
+                  "desc": "[OnSucceedAttack] 若目标的烧伤 强度不低于6级，则在下回合使自身获得1层强壮 "
                 }
               ]
             }
@@ -4695,7 +4695,7 @@
                   "desc": "[OnSucceedAttack] 下回合对目标施加3层束缚 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标的尖钉 层数高于5层，则在下回合对目标施加2层束缚 和1层虚弱 "
+                  "desc": "[OnSucceedAttack] 若目标的尖钉 层数不低于5层，则在下回合对目标施加2层束缚 和1层虚弱 "
                 }
               ]
             }
@@ -5003,7 +5003,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "若目标的尖钉 层数高于5层，则本硬币造成的伤害+50%"
+                  "desc": "若目标的尖钉 层数不低于5层，则本硬币造成的伤害+50%"
                 }
               ]
             }
@@ -5401,7 +5401,7 @@
                   "desc": "[OnSucceedAttackHead] 使自身恢复6点理智值"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标的烧伤 层数高于6层 ,使目标的混乱阈值前移本硬币伤害量的30%"
+                  "desc": "[OnSucceedAttack] 若目标的烧伤 层数不低于6层 ,使目标的混乱阈值前移本硬币伤害量的30%"
                 }
               ]
             }
@@ -6315,7 +6315,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "引擎发动",
+          "name": "发动引擎",
           "desc": "",
           "coinlist": [
             {},
@@ -6330,7 +6330,7 @@
         },
         {
           "level": 2,
-          "name": "引擎发动",
+          "name": "发动引擎",
           "desc": "[WhenUse] 使自身获得2层充能 ",
           "coinlist": [
             {},
@@ -6350,7 +6350,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "链锯润滑",
+          "name": "润滑链锯",
           "desc": "",
           "coinlist": [
             {
@@ -6534,7 +6534,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "消耗5级沉沦 强度使本技能的伤害+20%"
+                  "desc": "消耗5级沉沦 强度使本硬币的伤害+20%"
                 },
                 {
                   "desc": "[OnSucceedAttackTail] 引爆目标的震颤 "
@@ -6600,6 +6600,279 @@
                 }
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "萌生花蕾",
+          "desc": "[WhenUse] 对自身施加2层震颤 ",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层沉沦 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层沉沦 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "萌生花蕾",
+          "desc": "[WhenUse] 对自身施加3层震颤 ",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层沉沦 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层沉沦 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "刹那花风",
+          "desc": "[StartBattle] 消耗6层震颤 并将本技能转化为指定3个行动槽的范围技能",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合使目标增加2级沉沦 强度"
+                }
+              ],
+              "": {
+                "coindescs": [
+                  {
+                    "desc": "[OnSucceedAttackHead] 下回合使目标增加2级沉沦 强度"
+                  }
+                ]
+              }
+            }
+          ],
+          "": {
+            "level": 2,
+            "name": "刹那花风",
+            "desc": "[StartBattle] 消耗6层震颤 并将本技能转化为指定3个行动槽的范围技能",
+            "coinlist": [
+              {
+                "coindescs": [
+                  {
+                    "desc": "[OnSucceedAttack] 下回合使目标增加2级沉沦 强度"
+                  }
+                ]
+              },
+              {
+                "coindescs": [
+                  {
+                    "desc": "[OnSucceedAttack] 下回合使目标增加2级沉沦 强度"
+                  }
+                ]
+              },
+              {
+                "coindescs": [
+                  {
+                    "desc": "[OnSucceedAttack] 下回合使目标增加2级沉沦 强度"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 1010403,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "血染芬芳",
+          "desc": "[DefeatDuel] 使自身失去20点理智值\n[WhenUse] 对自身施加6层震颤 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层沉沦 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层沉沦 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若目标的沉沦 强度高于6级，则使目标的沉沦泛滥 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若自身的震颤 层数高于10层，则追加本硬币伤害量30%的伤害"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "余香飞散",
+          "desc": "[OnSucceedEvade] 使目标增加1级沉沦 强度",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1080501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "好重……！",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层震颤 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "好重……！",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级震颤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层震颤 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1080502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "好晕……！",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级震颤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级震颤 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "好晕……！",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级震颤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级震颤 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1080503,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "腐蚀性粘液打击",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 引爆目标的震颤 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标的震颤 层数减少4层"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 引爆震颤时，使目标增加5级破裂 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1080504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "防御",
+          "desc": "",
+          "coinlist": [
+            {}
           ]
         }
       ]
