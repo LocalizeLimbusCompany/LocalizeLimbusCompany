@@ -596,7 +596,7 @@
       "name": "검문소경비",
       "krname": "安检所警卫",
       "fileName": "K_Employee",
-      "nickName": "K公司安检所",
+      "nickName": "K公司 检查站",
       "staringSide": "left",
       "bottomYPos": -100,
       "nameTagColor": "#282828",
@@ -996,11 +996,12 @@
       "fileName": "Alfonso",
       "nameTagColor": "#282828",
       "nameFontColor": "#00ff00",
+      "bottomYPos": -50,
       "portraitSpritePath": "StoryLog_Alfonso"
     },
     {
       "name": "동백",
-      "krname": "山茶",
+      "krname": "冬柏",
       "fileName": "Dongback",
       "nameTagColor": "#dacfb3",
       "nameFontColor": "#ea9a00",
@@ -1074,7 +1075,7 @@
     },
     {
       "name": "K사앰플기계",
-      "krname": "K公司安瓿机",
+      "krname": "K公司安瓿无人机",
       "fileName": "K_Machine1",
       "nameTagColor": "#282828",
       "nameFontColor": "#00ff00",
@@ -1129,8 +1130,7 @@
       "fileName": "K_Researcher3",
       "nameTagColor": "#282828",
       "nameFontColor": "#00ff00",
-      "bottomYPos": 80,
-      "portraitSpritePath": "StoryLog_K_Researcher3"
+      "bottomYPos": 80
     },
     {
       "name": "기술해방연합1",
@@ -1150,7 +1150,7 @@
     },
     {
       "name": "동백여우각성",
-      "krname": "山茶 狐狸觉醒",
+      "krname": "冬柏 狐狸觉醒",
       "fileName": "Dongback_fox1",
       "bottomYPos": -57,
       "nameTagColor": "#dacfb3",
@@ -1159,7 +1159,7 @@
     },
     {
       "name": "동백에고각성중",
-      "krname": "山茶E.G.O觉醒中",
+      "krname": "冬柏E.G.O觉醒中",
       "fileName": "Dongback_fox2",
       "nameTagColor": "#dacfb3",
       "nameFontColor": "#ea9a00",
@@ -1167,7 +1167,7 @@
     },
     {
       "name": "동백에고각성",
-      "krname": "山茶E.G.O觉醒",
+      "krname": "冬柏E.G.O觉醒",
       "fileName": "Dongback_EGO",
       "nameTagColor": "#dacfb3",
       "nameFontColor": "#ea9a00",
@@ -1175,10 +1175,10 @@
     },
     {
       "name": "과거동백",
-      "krname": "过去的山茶",
+      "krname": "过去的冬柏",
       "fileName": "Dongback_past",
       "bottomYPos": -28,
-      "nameTagColor": "#ea9a00",
+      "nameTagColor": "#a16a3b",
       "nameFontColor": "#ffffff",
       "portraitSpritePath": "StoryLog_Dongback_past"
     },
@@ -1186,21 +1186,22 @@
       "name": "영지",
       "krname": "灵之",
       "fileName": "Empty",
-      "nameTagColor": "#ea9a00",
+      "nameTagColor": "#a16a3b",
       "nameFontColor": "#ffffff"
     },
     {
       "name": "과거구보",
       "krname": "过去的仇甫",
       "fileName": "Gubo_CoatOff",
-      "nameTagColor": "#ea9a00",
-      "nameFontColor": "#ffffff"
+      "nameTagColor": "#a16a3b",
+      "nameFontColor": "#ffffff",
+      "portraitSpritePath": "StoryLog_Gubo_CoatOff"
     },
     {
       "name": "과거동랑",
       "krname": "过去的东朗",
       "fileName": "Empty",
-      "nameTagColor": "#ea9a00",
+      "nameTagColor": "#a16a3b",
       "nameFontColor": "#ffffff",
       "portraitSpritePath": "StoryLog_Dongrang"
     },
@@ -1212,7 +1213,7 @@
     },
     {
       "name": "T사기술청1",
-      "krname": "T公司技术楼1",
+      "krname": "T公司技术厅1",
       "fileName": "T_Employee1",
       "portraitSpritePath": "StoryLog_T_Employee1"
     },
@@ -1222,7 +1223,39 @@
       "fileName": "Dongrang_EGO",
       "nameTagColor": "#dacfb3",
       "nameFontColor": "#ea9a00",
-      "portraitSpritePath": "StoryLog_T_Dongrang_EGO"
+      "scale": 0.9,
+      "bottomYPos": 180,
+      "portraitSpritePath": "StoryLog_Dongrang_EGO"
+    },
+    {
+      "name": "뒤틀린동랑",
+      "krname": "扭曲的东朗",
+      "fileName": "Dongrang_2",
+      "nameTagColor": "#dacfb3",
+      "nameFontColor": "#ea9a00",
+      "scale": 0.8,
+      "bottomYPos": 100,
+      "portraitSpritePath": "StoryLog_Dongrang_2"
+    },
+    {
+      "name": "뒤틀린다친동랑",
+      "krname": "扭曲并受伤的东朗",
+      "fileName": "Dongrang_3",
+      "nameTagColor": "#dacfb3",
+      "nameFontColor": "#ea9a00",
+      "scale": 0.8,
+      "bottomYPos": 200,
+      "portraitSpritePath": "StoryLog_Dongrang_2"
+    },
+    {
+      "name": "다친에고동랑",
+      "krname": "受伤的EGO东朗",
+      "fileName": "Dongrang_EGO_Hurt",
+      "nameTagColor": "#dacfb3",
+      "nameFontColor": "#ea9a00",
+      "scale": 0.9,
+      "bottomYPos": 180,
+      "portraitSpritePath": "StoryLog_Dongrang_EGO"
     },
     {
       "name": "도망치던시민",
@@ -1258,13 +1291,13 @@
     },
     {
       "name": "T사기술청2",
-      "krname": "T公司技术楼2",
+      "krname": "T公司技术厅2",
       "fileName": "T_Employee2",
       "portraitSpritePath": "StoryLog_T_Employee2"
     },
     {
       "name": "변신T사기술청",
-      "krname": "变形的T公司技术楼",
+      "krname": "变形的T公司技术厅",
       "fileName": "T_Employee2_2",
       "scale": 0.9,
       "portraitSpritePath": "StoryLog_T_Employee2_2",
@@ -1279,7 +1312,7 @@
     },
     {
       "name": "옷벗은삼조",
-      "krname": "裸体的三朝",
+      "krname": "脱衣的三朝",
       "fileName": "Samjo_Off",
       "nameTagColor": "#282828",
       "nameFontColor": "#00ff00",
@@ -1287,7 +1320,7 @@
     },
     {
       "name": "동백여우각성_먼지",
-      "krname": "山茶狐狸觉醒_灰尘",
+      "krname": "冬柏狐狸觉醒_灰尘",
       "fileName": "Dongback_fox1_dust",
       "nameTagColor": "#dacfb3",
       "nameFontColor": "#ea9a00",
@@ -1295,7 +1328,7 @@
     },
     {
       "name": "동백에고각성중_먼지",
-      "krname": "山茶E.G.O觉醒中_灰尘",
+      "krname": "冬柏E.G.O觉醒中_灰尘",
       "fileName": "Dongback_fox2_dust",
       "nameTagColor": "#dacfb3",
       "nameFontColor": "#ea9a00",
@@ -1303,7 +1336,7 @@
     },
     {
       "name": "동백에고각성중_다침",
-      "krname": "山茶E.G.O觉醒中_受伤",
+      "krname": "冬柏E.G.O觉醒中_受伤",
       "fileName": "Dongback_EGO_Hurt",
       "nameTagColor": "#dacfb3",
       "nameFontColor": "#ea9a00",
@@ -1320,13 +1353,13 @@
       "name": "과거이상",
       "krname": "过去的李箱",
       "fileName": "Empty",
-      "nameTagColor": "#ea9a00",
+      "nameTagColor": "#a16a3b",
       "nameFontColor": "#ffffff",
       "portraitSpritePath": "StoryLog_YiSang"
     },
     {
       "name": "동백에고각성중_찔림",
-      "krname": "山茶E.G.O觉醒中_被刺",
+      "krname": "冬柏E.G.O觉醒中_被刺",
       "fileName": "Dongback_EGO_Hurt2",
       "nameTagColor": "#dacfb3",
       "nameFontColor": "#ea9a00",
