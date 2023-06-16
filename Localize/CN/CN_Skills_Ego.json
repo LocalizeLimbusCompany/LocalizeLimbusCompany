@@ -1286,7 +1286,7 @@
           "level": 1,
           "name": "覆水难收",
           "abName": "罗佳",
-          "desc": "若目标的体力高于50%，则本技能造成的伤害+10%",
+          "desc": "若目标的体力不低于50%，则本技能造成的伤害+10%",
           "coinlist": [
             {
               "coindescs": [
@@ -1301,7 +1301,7 @@
           "level": 3,
           "name": "覆水难收",
           "abName": "罗佳",
-          "desc": "若目标的体力高于50%，则本技能造成的伤害+30%",
+          "desc": "若目标的体力不低于50%，则本技能造成的伤害+30%",
           "coinlist": [
             {
               "coindescs": [
@@ -1397,7 +1397,7 @@
           "level": 1,
           "name": "冰结之爪",
           "abName": "芭芭雅嘎",
-          "desc": "[Wide] 指定3个行动槽\n若目标的体力高于50%，则本技能造成的伤害+10%",
+          "desc": "[Wide] 指定3个行动槽\n若目标的体力不低于50%，则本技能造成的伤害+10%",
           "coinlist": [
             {
               "coindescs": [
@@ -1415,7 +1415,7 @@
           "level": 3,
           "name": "冰结之爪",
           "abName": "芭芭雅嘎",
-          "desc": "[Wide] 指定3个行动槽\n若目标的体力高于50%，则本技能造成的伤害+30%",
+          "desc": "[Wide] 指定3个行动槽\n若目标的体力不低于50%，则本技能造成的伤害+30%",
           "coinlist": [
             {
               "coindescs": [
@@ -1438,7 +1438,7 @@
           "level": 1,
           "name": "冰结之爪",
           "abName": "芭芭雅嘎",
-          "desc": "[CantIdentify][Wide] 指定3个行动槽\n指定场上体力最高的单位\n若目标的体力高于50%，则本技能造成的伤害+10%",
+          "desc": "[CantIdentify][Wide] 指定3个行动槽\n指定场上体力最高的单位\n若目标的体力不低于50%，则本技能造成的伤害+10%",
           "coinlist": [
             {
               "coindescs": [
@@ -1456,7 +1456,7 @@
           "level": 3,
           "name": "冰结之爪",
           "abName": "芭芭雅嘎",
-          "desc": "[CantIdentify][Wide] 指定3个行动槽\n指定场上体力最高的单位\n若目标的体力高于50%，则本技能造成的伤害+30%",
+          "desc": "[CantIdentify][Wide] 指定3个行动槽\n指定场上体力最高的单位\n若目标的体力不低于50%，则本技能造成的伤害+30%",
           "coinlist": [
             {
               "coindescs": [
@@ -2732,6 +2732,76 @@
       ]
     },
     {
+      "id": 2120411,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "AEDD",
+          "abName": "冲击蜈蚣",
+          "desc": "[BeforeAttack] 使自身获得5层充能 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加5层电流释放 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "AEDD",
+          "abName": "冲击蜈蚣",
+          "desc": "[BeforeAttack] 使自身获得7层充能 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加10层电流释放 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120421,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "AEDD",
+          "abName": "冲击蜈蚣",
+          "desc": "[CantIdentify]\n优先随机指定带有充能的单位\n[BeforeAttack] 使自身获得5层充能 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加5层电流释放 。使目标获得5层充能 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "AEDD",
+          "abName": "冲击蜈蚣",
+          "desc": "[CantIdentify]\n优先随机指定带有充能的单位\n[BeforeAttack] 使自身获得7层充能 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加10层电流释放 。使目标获得5层充能 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": 2070311,
       "levelList": [
         {
@@ -2800,6 +2870,70 @@
                 },
                 {
                   "desc": "[OnSucceedAttackTail] 攻击结束后，消耗自身体力值上限的10%，使自身获得10层充能 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2010511,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "狐雨",
+          "abName": "流浪狐狸",
+          "desc": "[Wide]指定5个行动槽\n[BeforeAttack] 本回合与下回合中，使全体友方单位获得1层怠惰强壮 ，1层怠惰伤害强化 ，2层守护 ",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 3,
+          "name": "狐雨",
+          "abName": "流浪狐狸",
+          "desc": "[Wide]指定5个行动槽\n[BeforeAttack] 本回合与下回合中，使全体友方单位获得1层怠惰强壮 ，2层怠惰伤害强化 ，3层守护",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使自身恢复15点理智值"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2010521,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "狐雨",
+          "abName": "流浪狐狸",
+          "desc": "[CantIdentify]\n[Wide]指定5个行动槽\n随机指定目标\n[BeforeAttack] 本回合和下回合中，使自身获得1层怠惰强壮 ，1层怠惰伤害强化 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 本回合和下回合中，对目标施加1层怠惰易损 ，1层突刺易损 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "狐雨",
+          "abName": "流浪狐狸",
+          "desc": "[CantIdentify]\n[Wide]指定5个行动槽\n随机指定目标\n[BeforeAttack] 本回合和下回合中，使自身获得2层怠惰强壮 ，2层怠惰伤害强化 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 本回合和下回合中，对目标施加2层怠惰易损 ，2层突刺易损 "
                 }
               ]
             }
