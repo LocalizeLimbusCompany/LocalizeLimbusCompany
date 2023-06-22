@@ -6,15 +6,15 @@
 # LocalizeLimbusCompany
 边狱公司 LimbusCompany 本地化模组
 
-[![Download](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/total.svg?label=下载)](../../releases)
+[![下载](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/total.svg?label=下载)](../../releases)
 [![Version](https://img.shields.io/github/release/LocalizeLimbusCompany/LocalizeLimbusCompany.svg?label=最新版)](../../releases/latest)
 [![Localize Limbus Chat Group](https://img.shields.io/badge/加入-QQ群-blue?logo=tencent-qq)](https://jq.qq.com/?_wv=1027&k=5NE6Kvg2)
 
 简体中文 | [繁體中文](https://github.com/SmallYuanSY/LocalizeLimbusCompany) | [Русский](https://github.com/Crescent-Corporation/LimbusCompanyBusRUS) | [English](./.github/EN_README.md)
 </div>
 
-# 安装[![Download](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/total.svg?label=下载)](../../releases)
-[![Version](https://img.shields.io/github/release/LocalizeLimbusCompany/LocalizeLimbusCompany.svg?label=最新版)![Download](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/latest/total.svg?label=下载)](../../releases/latest)
+# 安装[![下载](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/total.svg?label=下载)](../../releases)
+[![Version](https://img.shields.io/github/release/LocalizeLimbusCompany/LocalizeLimbusCompany.svg?label=最新版)![下载](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/latest/total.svg?label=下载)](../../releases/latest)
 ### 0. 安装[.NET 6.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/sdk-6.0.406-windows-x64-installer)
 ### 1. 安装模组框架
    - 从[MelonLoader](https://github.com/LavaGang/MelonLoader)下载v0.6.1或更高版本的模组框架
@@ -34,6 +34,7 @@
    - [适用于看不懂上面的安装&更新程序](../../../LLC_MOD_Installer)
 # 相关
 - [QQ群](https://jq.qq.com/?_wv=1027&k=5NE6Kvg2) LLCG 686792849
+- [Wiki](https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/wiki) 关于风格、翻译以及工作流程的信息
 - [LLC_MOD_Installer](../../../LLC_MOD_Installer) 模组傻瓜安装更新程序
 - [汉化组B站链接](https://space.bilibili.com/1247764479) 都市零协会汉化组
 - [边狱公司中文WIKI](https://limbuscompany.huijiwiki.com)
