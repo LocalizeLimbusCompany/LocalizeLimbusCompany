@@ -114,7 +114,7 @@ namespace LimbusLocalize
             return true;
         }
         #endregion
-        #region 修复一些弱智东西
+        #region 修復一些白癡東西的
         [HarmonyPatch(typeof(GachaEffectEventSystem), nameof(GachaEffectEventSystem.LinkToCrackPosition))]
         [HarmonyPrefix]
         private static bool LinkToCrackPosition(GachaEffectEventSystem __instance, GachaCrackController[] crackList)
