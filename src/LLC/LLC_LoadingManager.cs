@@ -46,7 +46,7 @@ namespace LimbusLocalize
             int random = Random.Range(0, 100);
             if (random < 25)
                 loadingText.text = Raw;
-            else if (random < 50)
+            else if (random < 30)
                 loadingText.text = Touhou;
             else
                 loadingText.text = SelectOne(LoadingTexts);
