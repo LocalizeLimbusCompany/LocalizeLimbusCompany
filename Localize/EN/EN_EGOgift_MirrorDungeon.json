@@ -516,11 +516,630 @@
     {
       "id": 9040,
       "name": "Tomorrow’s Fortune",
-      "desc": "Increase the number of options by 1 when choosing an E.G.O Gift.",
+      "desc": "Increase the number of options by 1 when choosing an E.G.O Gift to get.",
       "simpleDesc": [
         {
           "abilityID": 9040,
           "simpleDesc": "More E.G.O Gift options"
+        }
+      ]
+    },
+    {
+      "id": 9041,
+      "name": "Red Order",
+      "desc": "Whenever an ally inflicts Sinking on enemies with skills, the ally gains 1 Offense Level Up next turn. (Max 3)\n\nAllies with Wrath skills gain 2 Offense Level Up instead. (Max 4)",
+      "simpleDesc": [
+        {
+          "abilityID": 9041,
+          "simpleDesc": "Gain 1 Offense Level Up next turn (Max 3)"
+        },
+        {
+          "abilityID": 90411,
+          "simpleDesc": "Gain 2 Offense Level Up next turn (Max 4)"
+        }
+      ]
+    },
+    {
+      "id": 9042,
+      "name": "Smokes and Wires",
+      "desc": "Allies inflict twice as much Bleed with skills.\n\nAt the end of the turn, enemies with Bleed lose 2 Speed next turn.",
+      "simpleDesc": [
+        {
+          "abilityID": 9042,
+          "simpleDesc": "Double Bleed applied"
+        },
+        {
+          "abilityID": 90421,
+          "simpleDesc": "Lower Speed by 2"
+        }
+      ]
+    },
+    {
+      "id": 9043,
+      "name": "Employee Card",
+      "desc": "Activate the following with Wrath Absolute Resonance or if any allies use a skill whose effect gives Charge Count:\n\nAll allies gain +3 Charge Count at the start of the next turn. (Once per turn)",
+      "simpleDesc": [
+        {
+          "abilityID": 9043,
+          "simpleDesc": "Gain +3 Charge Count"
+        }
+      ]
+    },
+    {
+      "id": 9044,
+      "name": "Oscillating Bracelet",
+      "desc": "Whenever an ally deals HP damage to enemies with a skill, inflict 1 Tremor on the target next turn.\n\nIf the skill's Affinity was Wrath, inflict 2 Tremor instead.",
+      "simpleDesc": [
+        {
+          "abilityID": 9044,
+          "simpleDesc": "Inflict 1 Tremor"
+        },
+        {
+          "abilityID": 90441,
+          "simpleDesc": "Inflict 2 Tremor"
+        }
+      ]
+    },
+    {
+      "id": 9045,
+      "name": "Glimpse of Flames",
+      "desc": "At the start of the turn, enemies with 30+ Burn take fixed damage by (Burn * Burn Count).\n\nFor Abnormalities, if the total sum of Burn on every Part is 60 or higher, the Burn-inflicted Part with the highest Max HP takes fixed damage by (Total Burn * the Burn Count Average of Burn-inflicted Parts).",
+      "simpleDesc": [
+        {
+          "abilityID": 9045,
+          "simpleDesc": "Deal fixed damage by (Burn * Burn Count)"
+        },
+        {
+          "abilityID": 90451,
+          "simpleDesc": "Deal fixed damage by (Total Burn * the Burn Count Average of Burn-inflicted Parts)"
+        }
+      ]
+    },
+    {
+      "id": 9046,
+      "name": "Cigarette Holder",
+      "desc": "At the start of the turn, allies with Poise gain +1 Final Power.\n\nAllies with 5+ Poise Count gain +2 Final Power instead.",
+      "simpleDesc": [
+        {
+          "abilityID": 9046,
+          "simpleDesc": "Gain +1 Final Power"
+        },
+        {
+          "abilityID": 90461,
+          "simpleDesc": "Gain +2 Final Power"
+        }
+      ]
+    },
+    {
+      "id": 9047,
+      "name": "Barbed Snare",
+      "desc": "At the start of the turn, inflict Rupture on all enemies equal to their current Speed values.\n\nWhen activating Lust Absolute Resonance, inflict 3 Rupture and +3 Rupture Count on a random enemy at the start of the combat phase.",
+      "simpleDesc": [
+        {
+          "abilityID": 9047,
+          "simpleDesc": "Inflict Rupture by Speed"
+        },
+        {
+          "abilityID": 90471,
+          "simpleDesc": "Inflict 3 Rupture and +3 Rupture Count"
+        }
+      ]
+    },
+    {
+      "id": 9048,
+      "name": "Rusted Cutting Knife",
+      "desc": "Whenever an ally inflicts Bleed on a non-Staggered enemy with skills, inflict 1 Bleed and +1 Bleed Count on the target.\n\nIf the skill's Affinity was Lust, inflict 3 Bleed and +1 Bleed Count instead.",
+      "simpleDesc": [
+        {
+          "abilityID": 9048,
+          "simpleDesc": "Inflict 1 Bleed and +1 Bleed Count"
+        },
+        {
+          "abilityID": 90481,
+          "simpleDesc": "Inflict 3 Bleed and +1 Bleed Count"
+        }
+      ]
+    },
+    {
+      "id": 9049,
+      "name": "Thorny Path",
+      "desc": "After dealing HP damage with a skill that inflicts Sinking, inflict 3 Sinking and +2 Sinking Count on the target at the end of the turn. (Once per enemy per turn.)\n\nWhen activating Lust Absolute Resonance, inflict 2 Sinking and +3 Sinking Count on all enemies (for Abnormalities, one random Part) at the start of the combat phase.",
+      "simpleDesc": [
+        {
+          "abilityID": 9049,
+          "simpleDesc": "Inflict 3 Sinking and +2 Sinking Count"
+        },
+        {
+          "abilityID": 90491,
+          "simpleDesc": "Inflict 2 Sinking and +3 Sinking Count"
+        }
+      ]
+    },
+    {
+      "id": 9050,
+      "name": "Red-stained Gossypium",
+      "desc": "At the start of the battle, inflict 1 Bleed and +15 Bleed Count on all enemies. (For Abnormalities, all Parts.)\n\nAt the start of the turn, enemies with Bleed have their Offense Level and Defense Level reduced by (Bleed / 3) for the turn. (Max 30)",
+      "simpleDesc": [
+        {
+          "abilityID": 9050,
+          "simpleDesc": "Inflict 1 Bleed and +15 Bleed Count"
+        },
+        {
+          "abilityID": 90501,
+          "simpleDesc": "Offense Level and Defense Level reduced by (Bleed / 3) for the turn. (Max 30)"
+        }
+      ]
+    },
+    {
+      "id": 9051,
+      "name": "Stone Tomb",
+      "desc": "Allies gain 1.5x Poise from skills.\n\nWhen an ally defeats an enemy with a Sloth skill, they gain 2 Poise and +2 Poise Count next turn. (Once per turn)",
+      "simpleDesc": [
+        {
+          "abilityID": 9051,
+          "simpleDesc": "Multiply Poise gain by 1.5"
+        },
+        {
+          "abilityID": 90511,
+          "simpleDesc": "Gain 2 Poise and +2 Poise Count"
+        }
+      ]
+    },
+    {
+      "id": 9052,
+      "name": "Portable Battery Socket",
+      "desc": "At the start of the turn, 2 random allies gain +2 Charge Count.\n\nWhen activating Sloth Absolute Resonance, one random ally gains +3 Charge Count at the start of the combat phase.",
+      "simpleDesc": [
+        {
+          "abilityID": 9052,
+          "simpleDesc": "Gain +2 Charge Count"
+        },
+        {
+          "abilityID": 90521,
+          "simpleDesc": "Gain +3 Charge Count"
+        }
+      ]
+    },
+    {
+      "id": 9053,
+      "name": "Dust to Dust",
+      "desc": "At the start of the battle, inflict 2 Burn and +2 Burn Count on all enemies. (For Abnormalities, one random Part.)\n\nWhen activating Sloth Absolute Resonance, inflict 2 Burn and +2 Burn Count on all enemies (for Abnormalities, one random Part) at the start of the combat phase.",
+      "simpleDesc": [
+        {
+          "abilityID": 9053,
+          "simpleDesc": "Inflict 2 Burn and +2 Burn Count"
+        },
+        {
+          "abilityID": 90531,
+          "simpleDesc": "Inflict 2 Burn and +2 Burn Count"
+        }
+      ]
+    },
+    {
+      "id": 9054,
+      "name": "Melted Spring",
+      "desc": "At the start of the turn, enemies with Sinking have their Offense Level and Defense Level reduced by 3 for the turn.",
+      "simpleDesc": [
+        {
+          "abilityID": 9054,
+          "simpleDesc": "Offense Level and Defense Level reduced by 3 for the turn"
+        }
+      ]
+    },
+    {
+      "id": 9055,
+      "name": "Downpour",
+      "desc": "At the start of the turn, inflict (Current Turn * 2) Tremor and +2 Tremor Count on all enemies. (For Abnormalities, all Parts.)\n\nAt the end of the turn, burst Tremor on all enemies.",
+      "simpleDesc": [
+        {
+          "abilityID": 9055,
+          "simpleDesc": "Inflict (Current Turn * 2) Tremor and +2 Tremor Count"
+        },
+        {
+          "abilityID": 90551,
+          "simpleDesc": "Burst Tremor"
+        }
+      ]
+    },
+    {
+      "id": 9056,
+      "name": "Four-leaf Clover",
+      "desc": "When an ally with Poise lands a critical hit on an enemy with a skill, gain 5 Poise and +2 Poise Count next turn. (Once per turn)\n\nIf the skill's affinity was Gluttony, gain 7 Poise and +3 Poise Count instead.",
+      "simpleDesc": [
+        {
+          "abilityID": 9056,
+          "simpleDesc": "Gain 5 Poise and +2 Poise Count"
+        },
+        {
+          "abilityID": 90561,
+          "simpleDesc": "Gain 7 Poise and +3 Poise Count"
+        }
+      ]
+    },
+    {
+      "id": 9057,
+      "name": "Nightvision Goggles",
+      "desc": "At the start of the turn, activate the following if an ally has 15+ Charge Count:\n\nAt the start of the combat phase, the ally loses 3 Charge Count and gains 5 Offense Level for the turn.",
+      "simpleDesc": [
+        {
+          "abilityID": 9057,
+          "simpleDesc": "Offense Level +5"
+        }
+      ]
+    },
+    {
+      "id": 9058,
+      "name": "Disk Fragment",
+      "desc": "At the start of the turn, gain 1 E.G.O resource of a random Affinity for each non-Gluttony E.G.O skill used last turn.\n\nIf a Gluttony-affinity E.G.O skill was used, gain 3 E.G.O resources of a random Affinity for each Gluttony E.G.O skill used last turn.",
+      "simpleDesc": [
+        {
+          "abilityID": 9058,
+          "simpleDesc": "E.G.O resource +1 for a random Affinity"
+        },
+        {
+          "abilityID": 90581,
+          "simpleDesc": "E.G.O resource +3 for a random Affinity"
+        }
+      ]
+    },
+    {
+      "id": 9059,
+      "name": "Midwinter Nightmare",
+      "desc": "Whenever an ally deals HP damage to enemies with a skill, inflict 3 Sinking on the target.\n\nIf the skill's Affinity was Gluttony, inflict 5 Sinking instead.",
+      "simpleDesc": [
+        {
+          "abilityID": 9059,
+          "simpleDesc": "Inflict 3 Sinking"
+        },
+        {
+          "abilityID": 90591,
+          "simpleDesc": "Inflict 5 Sinking"
+        }
+      ]
+    },
+    {
+      "id": 9060,
+      "name": "Thrill",
+      "desc": "At the start of the turn, inflict 3 Rupture and +3 Rupture Count on all enemies. (For Abnormalities, all Parts.)\n\nAt the end of the turn, all enemies with 3+ Rupture Count (for Abnormalities, each Part is considered individually) take fixed damage by (Rupture * Rupture Count), and reduce Rupture Count by 2.",
+      "simpleDesc": [
+        {
+          "abilityID": 9060,
+          "simpleDesc": "Inflict 3 Rupture and +3 Rupture Count"
+        },
+        {
+          "abilityID": 90601,
+          "simpleDesc": "Deal fixed damage by (Rupture * Rupture Count), then reduce Rupture Count by 2"
+        }
+      ]
+    },
+    {
+      "id": 9061,
+      "name": "Skeletal Crumbs",
+      "desc": "Deal +12.5% damage and take -12.5% damage against enemies that had Sinking at the start of the combat phase.\n\nAllies with Gloom skills deal +20% damage and take -20% damage instead.",
+      "simpleDesc": [
+        {
+          "abilityID": 9061,
+          "simpleDesc": "Deal +12.5% damage"
+        },
+        {
+          "abilityID": 90611,
+          "simpleDesc": "Take -12.5% damage"
+        },
+        {
+          "abilityID": 90612,
+          "simpleDesc": "Deal +20% damage"
+        },
+        {
+          "abilityID": 90613,
+          "simpleDesc": "Take -20% damage"
+        }
+      ]
+    },
+    {
+      "id": 9062,
+      "name": "Curriculum Vitae",
+      "desc": "At the end of the turn, allies with 7+ Charge Count gain 1 Haste next turn.\n\nIf the ally has Gloom skills, gain 2 Haste and 1 Final Power Up instead.",
+      "simpleDesc": [
+        {
+          "abilityID": 9062,
+          "simpleDesc": "Gain 1 Haste next turn"
+        },
+        {
+          "abilityID": 90621,
+          "simpleDesc": "Gain 2 Haste and 1 Final Power Up next turn"
+        }
+      ]
+    },
+    {
+      "id": 9063,
+      "name": "Pendant of Nostalgia",
+      "desc": "At the start of the combat phase, a random ally gains 3 Poise.\n\nPrioritizes allies with Gloom skills; those allies gain 3 Poise and +2 Poise Count.",
+      "simpleDesc": [
+        {
+          "abilityID": 9063,
+          "simpleDesc": "Gain 3 Poise"
+        },
+        {
+          "abilityID": 90631,
+          "simpleDesc": "Gain 3 Poise and +2 Poise Count"
+        }
+      ]
+    },
+    {
+      "id": 9064,
+      "name": "Broken Revolver",
+      "desc": "At the start of the turn, enemies with Rupture have their Offense Level reduced by 3 for the turn.",
+      "simpleDesc": [
+        {
+          "abilityID": 9064,
+          "simpleDesc": "Offense Level reduced by 3 for the turn"
+        }
+      ]
+    },
+    {
+      "id": 9065,
+      "name": "Artistic Sense",
+      "desc": "Deal +35% damage against enemies suffering negative effects (Low Morale, Panic) from SP loss.\n\nWhen Sinking's effect applies to enemies without Sanity, the affinity of the damage inflicted changes to whatever is the most effective.",
+      "simpleDesc": [
+        {
+          "abilityID": 9065,
+          "simpleDesc": "Deal +35% damage"
+        },
+        {
+          "abilityID": 90651,
+          "simpleDesc": "Damage affinity changes to the most effective one"
+        }
+      ]
+    },
+    {
+      "id": 9066,
+      "name": "Nebulizer",
+      "desc": "At the start of the battle, all allies gain 4 Poise and +4 Poise Count.\n\nWhen activating Pride Absolute Resonance, all allies gain 2 Poise and +2 Poise Count.",
+      "simpleDesc": [
+        {
+          "abilityID": 9066,
+          "simpleDesc": "Gain 4 Poise and +4 Poise Count"
+        },
+        {
+          "abilityID": 90661,
+          "simpleDesc": "Gain 2 Poise and +2 Poise Count"
+        }
+      ]
+    },
+    {
+      "id": 9067,
+      "name": "Special Contract",
+      "desc": "Enemies Staggered by taking damage also receive fixed damage by 33% of their Max HP (for Abnormalities, the Part's HP), and are inflicted with 2 Fragile next turn. (Once per battle)",
+      "simpleDesc": [
+        {
+          "abilityID": 9067,
+          "simpleDesc": "Deal 33% of Max HP as fixed damage; Inflict 2 Fragile next turn"
+        }
+      ]
+    },
+    {
+      "id": 9068,
+      "name": "Grand Welcome",
+      "desc": "At the start of the battle, gain +5 Pride E.G.O resources.\n\nWhenever an enemy dies, gain +2 Pride E.G.O resources and +1 E.G.O resource for 2 other random affinities.",
+      "simpleDesc": [
+        {
+          "abilityID": 9068,
+          "simpleDesc": "Gain +5 Pride E.G.O resources"
+        },
+        {
+          "abilityID": 90681,
+          "simpleDesc": "Gain +2 Pride E.G.O resources and +1 E.G.O resource of 2 other random Affinities"
+        }
+      ]
+    },
+    {
+      "id": 9069,
+      "name": "Wrist Guards",
+      "desc": "At the start of the turn, allies with 5+ Charge Count gain 1 Damage Up.\n\nIf the ally has Pride skills, gain 2 Damage Up instead.",
+      "simpleDesc": [
+        {
+          "abilityID": 9069,
+          "simpleDesc": "Gain 1 Damage Up"
+        },
+        {
+          "abilityID": 90691,
+          "simpleDesc": "Gain 2 Damage Up"
+        }
+      ]
+    },
+    {
+      "id": 9070,
+      "name": "Clear Mirror, Calm Water",
+      "desc": "Greatly increase the damage of critical hits that allies land.\n\nIf a critical hit consumes Poise Count, the ally gains 2 Base Power Up next turn.",
+      "simpleDesc": [
+        {
+          "abilityID": 9070,
+          "simpleDesc": "Gain 2 Base Power Up next turn"
+        }
+      ]
+    },
+    {
+      "id": 9071,
+      "name": "Charred Disk",
+      "desc": "When an enemy (for Abnormalities, the targeted Part) with Burn is defeated, half of the Burn is inflicted on the enemy with the least Burn at the start of the next turn. (Rounded up)\n\nAt the start of the turn, enemies with Burn have their Offense Level reduced by 4 for the turn.",
+      "simpleDesc": [
+        {
+          "abilityID": 9071,
+          "simpleDesc": "Inflict half of Burn the defeated enemy had"
+        },
+        {
+          "abilityID": 90711,
+          "simpleDesc": "Offense Level reduced by 4 for the turn"
+        }
+      ]
+    },
+    {
+      "id": 9072,
+      "name": "Lightning Rod",
+      "desc": "At the start of the battle, all allies gain +3 Charge Count.\n\nIf two or more allies participating in battle have Envy skills, all allies gain +5 Charge Count instead.",
+      "simpleDesc": [
+        {
+          "abilityID": 9072,
+          "simpleDesc": "Gain +3 Charge Count"
+        },
+        {
+          "abilityID": 90721,
+          "simpleDesc": "Gain +5 Charge Count"
+        }
+      ]
+    },
+    {
+      "id": 9073,
+      "name": "Endorphin Kit",
+      "desc": "When gaining Poise using skills, gain 1 Poise and +1 Poise Count.\n\nIf the skill's affinity was Envy, gain 2 Poise and +2 Poise instead.",
+      "simpleDesc": [
+        {
+          "abilityID": 9073,
+          "simpleDesc": "Gain 1 Poise and +1 Poise Count"
+        },
+        {
+          "abilityID": 90731,
+          "simpleDesc": "Gain 2 Poise and +2 Poise Count"
+        }
+      ]
+    },
+    {
+      "id": 9074,
+      "name": "Headless Portrait",
+      "desc": "At the start of the combat phase, inflict 2 Sinking on all enemies with less than 0 SP. (In the case of Abnormalities, one random part)\n\nFor each Envy skill used, inflict 1 Sinking between all enemies (In the case of Abnormalities, one random part) next turn.",
+      "simpleDesc": [
+        {
+          "abilityID": 9074,
+          "simpleDesc": "Inflict 2 Sinking"
+        },
+        {
+          "abilityID": 90741,
+          "simpleDesc": "Inflict 1 Sinking between all enemies next turn"
+        }
+      ]
+    },
+    {
+      "id": 9075,
+      "name": "Charge-type Gloves",
+      "desc": "Max Charge Count +10\n\nAt the start of the battle, all allies gain +5 Charge Count.",
+      "simpleDesc": [
+        {
+          "abilityID": 9075,
+          "simpleDesc": "Max Charge Count +10"
+        },
+        {
+          "abilityID": 90751,
+          "simpleDesc": "Gain +5 Charge Count"
+        }
+      ]
+    },
+    {
+      "id": 9076,
+      "name": "First-aid Kit",
+      "desc": "At the start of the turn, one ally under 50% HP heals 25% of Max HP. (Once per battle; does not activate if the ally is dead)",
+      "simpleDesc": [
+        {
+          "abilityID": 9076,
+          "simpleDesc": "Heal 25% of Max HP"
+        }
+      ]
+    },
+    {
+      "id": 9077,
+      "name": "Painkiller",
+      "desc": "At the start of the turn, Staggered allies heal by 12.5% of Max HP and gain 3 Protection.",
+      "simpleDesc": [
+        {
+          "abilityID": 9077,
+          "simpleDesc": "Heal by 12.5% of Max HP; Gain 3 Protection"
+        }
+      ]
+    },
+    {
+      "id": 9078,
+      "name": "Voracious Hammer",
+      "desc": "After winning a combat encounter, gain 3 Cost for each enemy defeated.",
+      "simpleDesc": [
+        {
+          "abilityID": 9078,
+          "simpleDesc": "Gain 3 Cost"
+        }
+      ]
+    },
+    {
+      "id": 9079,
+      "name": "Golden Urn",
+      "desc": "Gain +20% Cost after winning a combat encounter. (Not affected by starter buffs or other E.G.O Gifts)",
+      "simpleDesc": [
+        {
+          "abilityID": 9079,
+          "simpleDesc": "Gain +20% Cost"
+        }
+      ]
+    },
+    {
+      "id": 9080,
+      "name": "Milepost of Survival",
+      "desc": "When moving to the next floor, all Identities heal by 12.5% of Max HP, and gain 100 Cost.",
+      "simpleDesc": [
+        {
+          "abilityID": 9080,
+          "simpleDesc": "Heal by 12.5% of Max HP; Gain 100 Cost"
+        }
+      ]
+    },
+    {
+      "id": 9081,
+      "name": "Faith",
+      "desc": "When using a skill that flips Plus Coins, the ally's SP applies as the maximum value at the start of the next turn (unless corroded).",
+      "simpleDesc": [
+        {
+          "abilityID": 9036,
+          "simpleDesc": "SP applied as the max value"
+        }
+      ]
+    },
+    {
+      "id": 9082,
+      "name": "Piece of Relationship",
+      "desc": "Cost requirement for deploying Identities or E.G.O reduced by 30%.",
+      "simpleDesc": [
+        {
+          "abilityID": 9082,
+          "simpleDesc": "Deal 20% of Max HP as fixed damage"
+        }
+      ]
+    },
+    {
+      "id": 9083,
+      "name": "Lunar Memory",
+      "desc": "All type and affinity resistances of enemies (for Abnormalities, all Parts) change to 'Fatal'.",
+      "simpleDesc": [
+        {
+          "abilityID": 9083,
+          "simpleDesc": "Type and affinity resistances change to 'Fatal'"
+        }
+      ]
+    },
+    {
+      "id": 9084,
+      "name": "Entry Ticket",
+      "desc": "Combat Participant Limit +1",
+      "simpleDesc": [
+        {
+          "abilityID": 9084,
+          "simpleDesc": "Combat Participant Limit +1"
+        }
+      ]
+    },
+    {
+      "id": 9085,
+      "name": "Golden Entry Ticket",
+      "desc": "Combat Participant Limit +2",
+      "simpleDesc": [
+        {
+          "abilityID": 9085,
+          "simpleDesc": "Combat Participant Limit +2"
         }
       ]
     }
