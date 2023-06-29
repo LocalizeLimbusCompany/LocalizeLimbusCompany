@@ -3558,7 +3558,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "これ食べちゃうぞ！",
+          "name": "これ食べちゃうもんね！",
           "desc": "高揚 を持つ対象を優先して攻撃\n対象に酔い が無いなら、マッチ威力 +5",
           "coinlist": [
             {
@@ -4561,6 +4561,317 @@
           "desc": "",
           "coinlist": [
             {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "傷を舐る",
+          "desc": "[WhenUse] 対象が出血を持っている場合、麻痺 1を付与",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 回数が3増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の出血 回数が2以上の時、出血 を5付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "縛られた傷",
+          "desc": "[WhenUse] 対象が出血を持っている場合、次のターンに束縛 1を付与",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 3を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805903,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "引っ付く肉",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象が出血を持っている場合、体力を20回復"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の出血 回数が2以上の時、出血 を5付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805904,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "差し込める陰",
+          "desc": "[WhenUse] 次のターンに巨大クローバーを生成\n[WhenUse] 出血 回数につき、ダメージ量を5%増加\n[DefeatDuel] 巨大クローバーの体力が70%で生成",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 回数を全て消耗"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805905,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "消化",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の出血 1につき、自分の体力を最大値の1%を回復\n出血 回数を全て消耗"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "噛みつく",
+          "coinlist": [
+            {},
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "貪欲な食事",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 体力を1回復"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 体力を1回復"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 体力を1回復"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "転がる",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "怠惰な掌中",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに束縛 3を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "灼く",
+          "coinlist": [
+            {},
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "爆発する憤怒",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに火傷 2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806701,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "撃ちまくる",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806702,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "弾け出る憂鬱",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに沈潜 3を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "振り下ろす",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "貫く欲望",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに出血 2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "削り取る",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "傲慢な粉砕",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに脆弱 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに脆弱 1を付与"
+                }
+              ]
+            }
           ]
         }
       ]

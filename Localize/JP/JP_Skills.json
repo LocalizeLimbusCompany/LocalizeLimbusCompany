@@ -6735,7 +6735,7 @@
                   "desc": "[OnSucceedAttack] 対象の沈潜が6以上なら、沈潜殺到"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 対象の振動 回数が10以上なら、ダメージ量の30%分追加ダメージ"
+                  "desc": "[OnSucceedAttack] 自分の振動 回数が10以上なら、ダメージ量の30%分追加ダメージ"
                 }
               ]
             }
@@ -6871,6 +6871,252 @@
           "level": 1,
           "name": "ガード",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "侵入者遮断",
+          "desc": "対象に破裂 が5以上あるならコイン威力 +1",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 2,
+          "name": "侵入者遮断",
+          "desc": "対象に破裂 が5以上あるならコイン威力 +2",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "崩壊刃",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 破裂 2を付与\n対象に破裂 が10以上あるなら、ダメージ量の20%分体力を回復"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 破裂 2を付与\n対象に破裂 が10以上あるなら、ダメージ量の20%分体力を回復"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "崩壊刃",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 破裂 2を付与\n対象に破裂 が10以上あるなら、ダメージ量の50%分体力を回復"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 破裂 2を付与\n対象に破裂 が10以上あるなら、ダメージ量の50%分体力を回復"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "対象摘出",
+          "desc": "現体力が80%以上の場合、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 破裂 4を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] K社アンプル分、破裂回数を増加。(K社アンプル×5)%分、ダメージ量が増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "アンプル注入",
+          "desc": "[WhenUse] 次のターンにK社アンプル 1を得る",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "傷口浮彫",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 破裂 2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "傷口浮彫",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 破裂 2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 対象の破裂が5以上なら、お札 1を得る"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "増殖するお札",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] お札 1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] お札 1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] お札 1を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "増殖するお札",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] お札 1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] お札 1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] お札 1を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の破裂が3以上なら、お札 1を得る"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "破裂符",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分のお札 を5消耗。お札 を5付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象にお札 がある場合、破裂 回数を1 増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ガード",
+          "desc": "[WhenUse] お札 1を得る",
           "coinlist": [
             {}
           ]
