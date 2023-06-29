@@ -514,6 +514,46 @@
       "desc": "At the start of the turn, gain 3 Attack Power Up, Defense Power Up, and Haste; die after 3 turns."
     },
     {
+      "id": "Choice_90103301",
+      "name": "Struggle",
+      "desc": "Speed +1 for this battle.",
+      "summary": "SPD +1"
+    },
+    {
+      "id": "Choice_90103402",
+      "name": "Relief",
+      "desc": "Speed +2 for this battle.",
+      "summary": "SPD +2"
+    },
+    {
+      "id": "Choice_901001",
+      "name": "Spreading Flame",
+      "desc": "At the start of the battle, allies without Wrath Affinity are inflicted with 5 Burn."
+    },
+    {
+      "id": "Choice_901007",
+      "name": "Gentle Sendoff",
+      "desc": "Turn Start: Heal 10 HP and SP.",
+      "summary": "HP & SP +10"
+    },
+    {
+      "id": "Choice_901009",
+      "name": "Photopia",
+      "desc": "Combat Start: Skill Final Power -1.",
+      "summary": "Skill Final Power -1"
+    },
+    {
+      "id": "Choice_901010",
+      "name": "Emptied",
+      "desc": "At the start of the battle, allies without Lust Affinity are Staggered."
+    },
+    {
+      "id": "Choice_901019",
+      "name": "Contamination",
+      "desc": "Combat Start: Speed -2.",
+      "summary": "SPD -2"
+    },
+    {
       "id": "Aggressive",
       "name": "Instincts",
       "desc": "At the end of the turn, if the Count is at 4+, change to an “aggressive” state."
@@ -681,7 +721,7 @@
     {
       "id": "Duress",
       "name": "Captivity",
-      "desc": "The affected unit becomes Staggered for 3 turns.\nAt the start of the turn, if Kqe-1j-23 is Staggered, remove this status."
+      "desc": "Become Staggered for 3 turns.\nTurn Start: If Kqe-1j-23 is Staggered, remove this status."
     },
     {
       "id": "VioletResultUp",
@@ -711,7 +751,7 @@
     },
     {
       "id": "AttackLevelAdder",
-      "name": "Offense Level+",
+      "name": "Offense level+",
       "desc": "Offense Level increases by the effect’s Count for one turn."
     },
     {
@@ -869,7 +909,7 @@
     {
       "id": "ATL_Target",
       "name": "Get 'Em!",
-      "desc": "Simultaneously attacks one unit",
+      "desc": "Simultaneously attacks one unit.",
       "summary": "표시용"
     },
     {
@@ -880,7 +920,7 @@
     {
       "id": "Bull_Fever",
       "name": "Fever",
-      "desc": "Deal +10% damae per Count\nReduced by 1 at turn end",
+      "desc": "Deal +10% damage per Count\nReduced by 1 at turn end",
       "summary": ""
     },
     {
@@ -941,7 +981,7 @@
       "id": "DongbaekGrow",
       "name": "Growing",
       "desc": "At the end of the turn, add +1 Count, and gain Max HP proportional to the Count. (Max 3)",
-      "summary": "At the end of the turn, add +1 Count, and gain Max HP proportionally to the Count. (Max 3)"
+      "summary": "At the end of the turn, add +1 Count, and gain Max HP proportional to the Count. (Max 3)"
     },
     {
       "id": "DongbaekFlorescence",
@@ -1088,6 +1128,51 @@
       "name": "Fully Bloomed",
       "desc": "Cannot act\nAt the end of the turn, lose 20 SP; if SP reaches -45, fully heal SP, then gain 'Dazzled Mind' next turn.\nIf this effect isn't removed for 2 turns, remove it at the end of the turn.",
       "summary": ""
+    },
+    {
+      "id": "TakeHpHealIncrease",
+      "name": "HP Healing Boost",
+      "desc": "Increases HP healing provided by Passive abilities, Skills, and Coin effects. (Max 5)"
+    },
+    {
+      "id": "SkillPowerUp",
+      "name": "Base Power Up",
+      "desc": "Raise the Base Power of Skills by the effect's Count."
+    },
+    {
+      "id": "MaxHpMultiplier",
+      "name": "Max HP Up",
+      "desc": "Raise the Max HP by 10% per Count."
+    },
+    {
+      "id": "KCorpSerum",
+      "name": "K Corp Ampule",
+      "desc": "Turn Start: At less than 4 Count, heal by (Count * 5)% of Max HP\nAt 4+ Count, the unit dies",
+      "summary": ""
+    },
+    {
+      "id": "Talisman",
+      "name": "Talisman",
+      "desc": "On hit, inflict Rupture by the Count; When hit, gain Rupture by the Count.\nTurn End: At 6+ Count, remove all Talisman and take fixed damage by its Count.",
+      "summary": "Inflict Rupture with attacks and gain Rupture when hit"
+    },
+    {
+      "id": "Choice_90104001",
+      "name": "Understanding",
+      "desc": "At the start of the battle, gain 2 E.G.O resources for every Affinity.",
+      "summary": "Gain +2 E.G.O resource for all Affinities"
+    },
+    {
+      "id": "Choice_9010400101",
+      "name": "Determined",
+      "desc": "All Ally Units gain +2 Skill Final Power for this battle",
+      "summary": "Skill Final Power +2"
+    },
+    {
+      "id": "Choice_90104002",
+      "name": "Longing",
+      "desc": "All Ally Units gain +1 Skill Power for this battle",
+      "summary": "Skill Power +1"
     }
   ]
 }
