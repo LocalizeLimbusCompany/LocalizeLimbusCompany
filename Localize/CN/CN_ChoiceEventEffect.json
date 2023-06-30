@@ -50,43 +50,43 @@
     },
     {
       "id": "RecoverHpOnly",
-      "content": "<color=#ebcaa2>{targets}{conditions}</color> <color=#ebcaa2>恢复</color><color=#00ff9c>{amount}点体力</color>"
+      "content": "<color=#ebcaa2>{conditions}{targets}</color> <color=#ebcaa2>恢复</color><color=#00ff9c>{amount}点体力</color>"
     },
     {
       "id": "RecoverMpOnly",
-      "content": "<color=#ebcaa2>{targets}{conditions}</color> <color=#ebcaa2>恢复</color><color=#80c9ff>{amount}点理智值</color>"
+      "content": "<color=#ebcaa2>{conditions}{targets}</color> <color=#ebcaa2>恢复</color><color=#80c9ff>{amount}点理智值</color>"
     },
     {
       "id": "RecoverHpOnlyUntilMax",
-      "content": "<color=#ebcaa2>{targets}{conditions}</color> <color=#ebcaa2>恢复至</color><color=#00ff9c>体力上限</color>"
+      "content": "<color=#ebcaa2>{conditions}{targets}</color> <color=#ebcaa2>恢复至</color><color=#00ff9c>体力上限</color>"
     },
     {
       "id": "RecoverMpOnlyUntilMax",
-      "content": "<color=#ebcaa2>{targets}{conditions}</color> <color=#ebcaa2>恢复至</color><color=#80c9ff>理智值上限</color>"
+      "content": "<color=#ebcaa2>{conditions}{targets}</color> <color=#ebcaa2>恢复至</color><color=#80c9ff>理智值上限</color>"
     },
     {
       "id": "LoseHpOnly",
-      "content": "<color=#ebcaa2>{targets}{conditions}</color> <color=#ebcaa2>损失</color><color=#e30000>{amount}点体力！</color>"
+      "content": "<color=#ebcaa2>{conditions}{targets}</color> <color=#ebcaa2>损失</color><color=#e30000>{amount}点体力！</color>"
     },
     {
       "id": "LoseMpOnly",
-      "content": "<color=#ebcaa2>{targets}{conditions}</color> <color=#ebcaa2>损失</color><color=#fe4b48>{amount}点理智值！</color>"
+      "content": "<color=#ebcaa2>{conditions}{targets}</color> <color=#ebcaa2>损失</color><color=#fe4b48>{amount}点理智值！</color>"
     },
     {
       "id": "RecoverHpMpSameAmount",
-      "content": "<color=#ebcaa2>{targets}{conditions}</color> <color=#ebcaa2>恢复</color><color=#00ff9c>{amount}点体力</color>及<color=#80c9ff>点理智值</color>"
+      "content": "<color=#ebcaa2>{conditions}{targets}</color> <color=#ebcaa2>恢复</color><color=#00ff9c>{amount}点体力</color>及<color=#80c9ff>点理智值</color>"
     },
     {
       "id": "RecoverHpMpDifferentAmount",
-      "content": "<color=#ebcaa2>{targets}{conditions}</color><color=#ebcaa2>恢复</color> <color=#00ff9c>{amount}点体力</color>及<color=#80c9ff>{amount}点理智值</color>"
+      "content": "<color=#ebcaa2>{conditions}{targets}</color><color=#ebcaa2>恢复</color> <color=#00ff9c>{amount}点体力</color>及<color=#80c9ff>{amount}点理智值</color>"
     },
     {
       "id": "LoseHpMpSameAmount",
-      "content": "<color=#ebcaa2>{targets}{conditions}</color> <color=#ebcaa2>损失</color><color=#e30000>{amount}点体力</color>及<color=#fe4b48>点理智值！</color>"
+      "content": "<color=#ebcaa2>{conditions}{targets}</color> <color=#ebcaa2>损失</color><color=#e30000>{amount}点体力</color>及<color=#fe4b48>点理智值！</color>"
     },
     {
       "id": "LoseHpMpDifferentAmount",
-      "content": "<color=#ebcaa2>{targets}{conditions}</color><color=#ebcaa2>损失</color><color=#e30000>{amount}点体力</color>及<color=#fe4b48>{amount}点理智值！</color>"
+      "content": "<color=#ebcaa2>{conditions}{targets}</color><color=#ebcaa2>损失</color><color=#e30000>{amount}点体力</color>及<color=#fe4b48>{amount}点理智值！</color>"
     },
     {
       "id": "GetConfirmedEgogift",
@@ -114,7 +114,7 @@
     },
     {
       "id": "Choice_901001",
-      "content": "<color=#ebcaa2>战斗开始时，</color>技能组不包含<color=#a0392b>暴怒属性技能</color>的罪人<color=#ebcaa2>将增加</color><color=#e30000>5级烧伤 强度</color>"
+      "content": "<color=#ebcaa2>战斗阶段开始时，</color>技能组不包含<color=#a0392b>暴怒属性技能</color>的罪人<color=#ebcaa2>将增加</color><color=#e30000>5级烧伤 强度</color>"
     },
     {
       "id": "Choice_901007",
@@ -122,15 +122,15 @@
     },
     {
       "id": "Choice_901009",
-      "content": "<color=#ebcaa2>战斗开始时，</color><color=#e30000>技能威力-1</color>"
+      "content": "<color=#ebcaa2>战斗阶段开始时，</color><color=#e30000>技能最终威力-1</color>"
     },
     {
       "id": "Choice_901010",
-      "content": "<color=#ebcaa2>战斗开始时，技能组不包含</color> <color=#bb521f>色欲属性技能</color><color=#ebcaa2>的人格将陷入混乱</color>"
+      "content": "<color=#ebcaa2>下场战斗开始时，技能组不包含</color> <color=#bb521f>色欲属性技能</color><color=#ebcaa2>的人格将陷入混乱</color>"
     },
     {
       "id": "Choice_901019",
-      "content": "<color=#ebcaa2>战斗开始时，</color><color=#e30000>速度-2</color>"
+      "content": "<color=#ebcaa2>战斗阶段开始时，</color><color=#e30000>速度-2</color>"
     },
     {
       "id": "Choice_90103402",
@@ -202,15 +202,15 @@
     },
     {
       "id": "Choice_901004",
-      "content": "<color=#ebcaa2>技能组包含</color><color=#a0392b>暴怒属性技能</color><color=#ebcaa2>的人格恢复</color><color=#fe4b48>15点体力</color>"
+      "content": "<color=#ebcaa2>技能组内包含</color><color=#a0392b>暴怒属性技能</color><color=#ebcaa2>的人格恢复</color><color=#fe4b48>15点体力</color>"
     },
     {
       "id": "Choice_90100701",
-      "content": "<color=#ebcaa2>技能组包含</color><color=#bb521f>色欲属性技能</color></color=#ebcaa2>的人格恢复</color><color=#80c9ff>理智值</color>"
+      "content": "<color=#ebcaa2>技能组内包含</color><color=#bb521f>色欲属性技能</color></color=#ebcaa2>的人格恢复</color><color=#80c9ff>理智值</color>"
     },
     {
       "id": "Choice_901008",
-      "content": "<color=#ebcaa2>技能组包含</color><color=#bb521f>色欲属性技能</color><color=#ebcaa2>的人格恢复</color><color=#fe4b48>10点体力</color>"
+      "content": "<color=#ebcaa2>技能组内包含</color><color=#bb521f>色欲属性技能</color><color=#ebcaa2>的人格恢复</color><color=#fe4b48>10点体力</color>"
     },
     {
       "id": "Choice_90100901",
@@ -226,7 +226,7 @@
     },
     {
       "id": "Choice_90101601",
-      "content": "<color=#ebcaa2>技能组包含</color><color=#61822b>暴食属性技能</color></color=#ebcaa2>的人格恢复</color><color=#80c9ff>理智值</color>"
+      "content": "<color=#ebcaa2>技能组内包含</color><color=#61822b>暴食属性技能</color></color=#ebcaa2>的人格恢复</color><color=#80c9ff>理智值</color>"
     },
     {
       "id": "Choice_901018",
@@ -246,7 +246,7 @@
     },
     {
       "id": "Choice_901024",
-      "content": "<color=#ebcaa2>理智值最低的技能组包含</color><color=#306471>忧郁属性技能</color></color=#ebcaa2>的罪人</color><color=#fe4b48>体力恢复至上限</color>"
+      "content": "<color=#ebcaa2>理智值最低的技能组内包含</color><color=#306471>忧郁属性技能</color></color=#ebcaa2>的罪人</color><color=#fe4b48>体力恢复至上限</color>"
     },
     {
       "id": "Choice_901025",
@@ -254,7 +254,7 @@
     },
     {
       "id": "Choice_90102501",
-      "content": "<color=#ebcaa2>技能组包含</color><color=#306471>忧郁属性技能</color><color=#ebcaa2>的人格恢复</color><color=#fe4b48>20点体力</color>"
+      "content": "<color=#ebcaa2>技能组内包含</color><color=#306471>忧郁属性技能</color><color=#ebcaa2>的人格恢复</color><color=#fe4b48>20点体力</color>"
     },
     {
       "id": "Choice_901026",
@@ -262,7 +262,7 @@
     },
     {
       "id": "Choice_90102601",
-      "content": "<color=#ebcaa2>技能组包含</color><color=#185188>傲慢属性技能</color><color=#ebcaa2>的人格恢复</color><color=#fe4b48>10点体力</color>"
+      "content": "<color=#ebcaa2>技能组内包含</color><color=#185188>傲慢属性技能</color><color=#ebcaa2>的人格恢复</color><color=#fe4b48>10点体力</color>"
     },
     {
       "id": "Choice_901027",
@@ -278,7 +278,7 @@
     },
     {
       "id": "Choice_90102801",
-      "content": "<color=#ebcaa2>技能组包含</color><color=#185188>傲慢属性技能</color><color=#ebcaa2>的人格恢复</color><color=#fe4b48>15点体力</color>"
+      "content": "<color=#ebcaa2>技能组内包含</color><color=#185188>傲慢属性技能</color><color=#ebcaa2>的人格恢复</color><color=#fe4b48>15点体力</color>"
     },
     {
       "id": "Choice_901032",
@@ -294,11 +294,31 @@
     },
     {
       "id": "Choice_90103501",
-      "content": "<color=#ebcaa2>技能组包含</color><color=#7d4e94>嫉妒属性技能</color><color=#ebcaa2>的人格恢复</color><color=#fe4b48>15点体力</color>"
+      "content": "<color=#ebcaa2>技能组内包含</color><color=#7d4e94>嫉妒属性技能</color><color=#ebcaa2>的人格恢复</color><color=#fe4b48>15点体力</color>"
     },
     {
       "id": "Choice_1040301",
       "content": "<color=#ebcaa2>所选人格在下场战斗的1回合中</color> <color=#ebcaa2>增加</color><color=#e30000>10级破裂 强度</color>"
+    },
+    {
+      "id": "MirrorDungeonAcquireCost",
+      "content": "<color=#ebcaa2>获得{amount}经费</color>"
+    },
+    {
+      "id": "MirrorDungeonLossCost",
+      "content": "<color=#ebcaa2>失去{amount}经费</color>"
+    },
+    {
+      "id": "Choice_90104001",
+      "content": "<color=#ebcaa2>下场战斗开始时生效获得所有<color=#f8c200>罪孽碎片各2个</color><color=#ebcaa2></color>"
+    },
+    {
+      "id": "Choice_9010400101",
+      "content": "<color=#ebcaa2>下场战斗所有友方单位<color=#f8c200>技能最终威力+2</color><color=#ebcaa2></color>"
+    },
+    {
+      "id": "Choice_90104002",
+      "content": "<color=#ebcaa2>下场战斗所有友方单位<color=#f8c200>技能威力+1</color><color=#ebcaa2></color>"
     }
   ]
 }
