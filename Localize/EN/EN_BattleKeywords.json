@@ -216,7 +216,7 @@
     {
       "id": "Sinking",
       "name": "Sinking",
-      "desc": "When hit by an attack, take fixed SP damage by the effect’s Potency.\n(Abnormalities with no Sanity take Gloom damage instead.)\nThen, reduce its Count by 1."
+      "desc": "When hit by an attack, take fixed SP damage by the effect’s Potency.\n(Units with no Sanity take Gloom damage instead.)\nThen, reduce its Count by 1."
     },
     {
       "id": "Breath",
@@ -514,6 +514,46 @@
       "desc": "At the start of the turn, gain 3 Attack Power Up, Defense Power Up, and Haste; die after 3 turns."
     },
     {
+      "id": "Choice_90103301",
+      "name": "Struggle",
+      "desc": "Speed +1 for this battle.",
+      "summary": "SPD +1"
+    },
+    {
+      "id": "Choice_90103402",
+      "name": "Relief",
+      "desc": "Speed +2 for this battle.",
+      "summary": "SPD +2"
+    },
+    {
+      "id": "Choice_901001",
+      "name": "Spreading Flame",
+      "desc": "At the start of the battle, allies without Wrath Affinity are inflicted with 5 Burn."
+    },
+    {
+      "id": "Choice_901007",
+      "name": "Gentle Sendoff",
+      "desc": "Turn Start: Heal 10 HP and SP.",
+      "summary": "HP & SP +10"
+    },
+    {
+      "id": "Choice_901009",
+      "name": "Photopia",
+      "desc": "Combat Start: Skill Final Power -1.",
+      "summary": "Skill Final Power -1"
+    },
+    {
+      "id": "Choice_901010",
+      "name": "Emptied",
+      "desc": "At the start of the battle, allies without Lust Affinity are Staggered."
+    },
+    {
+      "id": "Choice_901019",
+      "name": "Contamination",
+      "desc": "Combat Start: Speed -2.",
+      "summary": "SPD -2"
+    },
+    {
       "id": "Aggressive",
       "name": "Instincts",
       "desc": "At the end of the turn, if the Count is at 4+, change to an “aggressive” state."
@@ -681,7 +721,7 @@
     {
       "id": "Duress",
       "name": "Captivity",
-      "desc": "The affected unit becomes Staggered for 3 turns.\nAt the start of the turn, if Kqe-1j-23 is Staggered, remove this status."
+      "desc": "Become Staggered for 3 turns.\nTurn Start: If Kqe-1j-23 is Staggered, remove this status."
     },
     {
       "id": "VioletResultUp",
@@ -711,7 +751,7 @@
     },
     {
       "id": "AttackLevelAdder",
-      "name": "Offense Level+",
+      "name": "Offense level+",
       "desc": "Offense Level increases by the effect’s Count for one turn."
     },
     {
@@ -743,8 +783,8 @@
     {
       "id": "WrappedCurseTag",
       "name": "Entangled Curse Talisman",
-      "desc": "Deal +3% damage per Count\nAt 9+ Count, gain 2 Attack Power Down at turn start",
-      "summary": "Deal +3% damage per Count; At 9+ Count, gain 2 Attack Power Down at turn start"
+      "desc": "Deal +1% damage per Count\nAt 9+ Count, gain 2 Attack Power Down at turn start",
+      "summary": "Deal +1% damage per Count; at 9+ Count, gain 2 Attack Power Down at turn start"
     },
     {
       "id": "ReattachedCurseTag",
@@ -807,6 +847,18 @@
       "summary": "Take damage by 2% of Max HP per Count"
     },
     {
+      "id": "InterlockingTime",
+      "name": "Interlocking Time",
+      "desc": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 1.5 times the accumulated damage, and gain 3 Bind next turn.",
+      "summary": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 1.5 times the accumulated damage, and gain 3 Bind next turn."
+    },
+    {
+      "id": "TimeRental",
+      "name": "Borrowed Time",
+      "desc": "At the end of the turn, gain 3 Haste and 2 Damage Up; If only 1 Count remains, gain 4 Bind and 1 Attack Power Down next turn",
+      "summary": "At the end of the turn, gain 3 Haste and 2 Damage Up; If only 1 Count remains, gain 4 Bind and 1 Attack Power Down next turn"
+    },
+    {
       "id": "ATL_EndureLaceration",
       "name": "Bleed Resistance",
       "desc": "When taking damage from Bleed, reduce the damage by 10% per Count (Max 10)",
@@ -827,20 +879,20 @@
     {
       "id": "Scared",
       "name": "Fear",
-      "desc": "Turn End: At -20 SP or lower, gain 1 Damage Up next turn",
-      "summary": "Turn End: At -20 SP or lower, gain 1 Damage Up next turn"
+      "desc": "Turn End: At -20 SP or lower, gain 1 Protection next turn.",
+      "summary": "Turn End: At -20 SP or lower, gain 1 Protection next turn."
     },
     {
       "id": "Stressed",
       "name": "Stressed",
-      "desc": "Turn End: At -25 SP or lower, gain 1 Attack Power Up next turn",
-      "summary": "Turn End: At -25 SP or lower, gain 1 Attack Power Up next turn"
+      "desc": "Turn End: At -25 SP or lower, gain 1 Defense Power Up next turn",
+      "summary": "Turn End: At -25 SP or lower, gain 1 Defense Power Up next turn"
     },
     {
       "id": "Nervous",
       "name": "Nervous",
-      "desc": "Turn End: At -15 SP or lower, gain 3 Offense Level Up next turn",
-      "summary": "Turn End: At -15 SP or lower, gain 3 Offense Level Up next turn"
+      "desc": "Turn End: At -15 SP or lower, gain 3 Defense Level Up next turn",
+      "summary": "Turn End: At -15 SP or lower, gain 3 Defense Level Up next turn"
     },
     {
       "id": "ATL_Agility",
@@ -857,7 +909,7 @@
     {
       "id": "ATL_Target",
       "name": "Get 'Em!",
-      "desc": "Simultaneously attacks one unit",
+      "desc": "Simultaneously attacks one unit.",
       "summary": "표시용"
     },
     {
@@ -868,7 +920,7 @@
     {
       "id": "Bull_Fever",
       "name": "Fever",
-      "desc": "Deal +10% damae per Count\nReduced by 1 at turn end",
+      "desc": "Deal +10% damage per Count\nReduced by 1 at turn end",
       "summary": ""
     },
     {
@@ -926,6 +978,48 @@
       "undefined": "-"
     },
     {
+      "id": "DongbaekGrow",
+      "name": "Growing",
+      "desc": "At the end of the turn, add +1 Count, and gain Max HP proportional to the Count. (Max 3)",
+      "summary": "At the end of the turn, add +1 Count, and gain Max HP proportional to the Count. (Max 3)"
+    },
+    {
+      "id": "DongbaekFlorescence",
+      "name": "Blooming",
+      "desc": "Turn End: At 5+ Count, take Sloth damage by (Count)% of Max HP, and become Fully Bloomed\nAt less than 5 Count, lose (Count * 5) SP, then reduce Count by 1",
+      "summary": ""
+    },
+    {
+      "id": "DongbaekFullBloom",
+      "name": "Fully Bloomed",
+      "desc": "Cannot act\nAt the end of the turn, lose 20 SP; if SP reaches -45, fully heal SP, then gain 'Dazzled Mind' next turn.\nIf this effect isn't removed for 2 turns, remove it at the end of the turn.",
+      "summary": ""
+    },
+    {
+      "id": "DongbaekFascination",
+      "name": "Dazzled Mind",
+      "desc": "Targets allies for attacks\nWhen staggered, remove this effect next turn.\nIf this effect isn't removed for 2 turns, lose 30 SP and remove it at the end of the turn.",
+      "summary": ""
+    },
+    {
+      "id": "DongbaekShowdown",
+      "name": "Dueling",
+      "desc": "Turn Start: Units without this status go into a 'Fully Bloomed' status\nIf Yi Sang has this effect, Dongbaek gains 1 Attack Power Up",
+      "summary": ""
+    },
+    {
+      "id": "DongbaekScatterPetal",
+      "name": "Scattering Petals",
+      "desc": "Turn End: At 6+ Count, become staggered",
+      "summary": ""
+    },
+    {
+      "id": "Thorn",
+      "name": "Thorns",
+      "desc": "When hit, return 50% of the damage taken to the attacker",
+      "summary": "Deal 50% of damage taken to attacker"
+    },
+    {
       "id": "Fragile_Mind_LowMorale",
       "name": "Perilous Heart",
       "desc": "Turn Start: Gain 2 Attack Power Up and 3 Bind",
@@ -934,8 +1028,8 @@
     {
       "id": "Fragile_Mind_Panic",
       "name": "Faltering Heart",
-      "desc": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind",
-      "summary": "Turn Start: Gain 2 Attack Power Down, 2 Fragile, and 5 Bind"
+      "desc": "In panic, become staggered.",
+      "summary": "In panic, become staggered."
     },
     {
       "id": "ErodingMind",
@@ -951,7 +1045,134 @@
     {
       "id": "EmittedCurrent",
       "name": "Spark Discharge",
-      "desc": "When hit, the attacker gains +1 Charge Count; When hit with a Gloom attack, gain +1 Rupture Count, then reduce Count by 1"
+      "desc": "When hit, the attacker gains +1 Charge Count; when hit with a Gloom attack, gain +1 Rupture Count, then reduce Count by 1"
+    },
+    {
+      "id": "DistortedDongrangRadiantVanity",
+      "name": "Radiant Vanity",
+      "desc": "At the start of the turn, Dongrang gains 1 Protection and 1 Attack Power Up."
+    },
+    {
+      "id": "DistortedDongrangEmptyMark",
+      "name": "Empty Mark",
+      "desc": "Targeted by Dongrang. Gain 2 Bind every turn, and take +50% damage from Dongrang."
+    },
+    {
+      "id": "DistortedDongrangEarnestAchievement",
+      "name": "Earnest Accomplishment",
+      "desc": "If this unit is defeated or its HP is brought to 1, the attacker gains buffs."
+    },
+    {
+      "id": "DistortedDongrangEmptyHonor",
+      "name": "Empty Honor",
+      "desc": "If Dongrang defeats this unit, he loses HP, gains 1 Emptiness, and is weakened next turn."
+    },
+    {
+      "id": "DistortedDongrangMomentaryGlory",
+      "name": "Momentary Glory",
+      "desc": "At 3+ Count, Dongrang becomes more powerful."
+    },
+    {
+      "id": "DistortedDongrangEmptiness",
+      "name": "Emptiness",
+      "desc": "At 4+ Count, Dongrang becomes staggered."
+    },
+    {
+      "id": "DistortedDongrangFruition",
+      "name": "Borne Fruition",
+      "desc": "The unit that defeated this unit heals HP, and gains 1 Haste and 1 Attack Power Up next turn"
+    },
+    {
+      "id": "EgoAwakenDongrangRadiantDesire",
+      "name": "Radiant Desire",
+      "desc": "Turn Start: Dongrang gains 1 Damage Up and 1 Protection."
+    },
+    {
+      "id": "EgoAwakenDongrangSeed",
+      "name": "Seeds",
+      "desc": "Turn End: At 5+ Count, gain Nutrient Drain for 2 turns; at less than 5 Count, reduce Count by 1"
+    },
+    {
+      "id": "EgoAwakenDongrangTree",
+      "name": "Nutrient Drain",
+      "desc": "Turn End: Dongrang heals 10 HP"
+    },
+    {
+      "id": "EgoAwakenDongrangOverHeal",
+      "name": "Overheal",
+      "desc": "Count rises by the amount of HP Dongrang caused to heal; at 50+ Count, take Gluttony damage by the effect's Count, gain 5 Fragile, and remove the effect."
+    },
+    {
+      "id": "SinkingSurge",
+      "name": "Sinking Deluge",
+      "desc": "Deal SP damage by (Sinking Count * Sinking Potency), then remove Sinking\nIf target's SP is -45 or lower, the excess SP damage is dealt as Gloom-affinity HP damage\n(Units with no Sanity take all of it as Gloom HP damage)"
+    },
+    {
+      "id": "AmberResultUp",
+      "name": "Sloth Power Up",
+      "desc": "Sloth skills gain final Power by the effect’s Count for one turn.",
+      "summary": "Sloth Skill Final Power +{0}"
+    },
+    {
+      "id": "Blue",
+      "name": "Tears",
+      "desc": "Turn End: Lose 5 SP\nTails Coins inflict 2 Sinking"
+    },
+    {
+      "id": "EgoAwakenDongrangTreeDisplay",
+      "name": "Nutrient Drain",
+      "desc": "Turn End: Dongrang heals 10 HP"
+    },
+    {
+      "id": "DongbaekFullBloomDisplay",
+      "name": "Fully Bloomed",
+      "desc": "Cannot act\nAt the end of the turn, lose 20 SP; if SP reaches -45, fully heal SP, then gain 'Dazzled Mind' next turn.\nIf this effect isn't removed for 2 turns, remove it at the end of the turn.",
+      "summary": ""
+    },
+    {
+      "id": "TakeHpHealIncrease",
+      "name": "HP Healing Boost",
+      "desc": "Increases HP healing provided by Passive abilities, Skills, and Coin effects. (Max 5)"
+    },
+    {
+      "id": "SkillPowerUp",
+      "name": "Base Power Up",
+      "desc": "Raise the Base Power of Skills by the effect's Count."
+    },
+    {
+      "id": "MaxHpMultiplier",
+      "name": "Max HP Up",
+      "desc": "Raise the Max HP by 10% per Count."
+    },
+    {
+      "id": "KCorpSerum",
+      "name": "K Corp Ampule",
+      "desc": "Turn Start: At less than 4 Count, heal by (Count * 5)% of Max HP\nAt 4+ Count, the unit dies",
+      "summary": ""
+    },
+    {
+      "id": "Talisman",
+      "name": "Talisman",
+      "desc": "On hit, inflict Rupture by the Count; When hit, gain Rupture by the Count.\nTurn End: At 6+ Count, remove all Talisman and take fixed damage by its Count.",
+      "summary": "Inflict Rupture with attacks and gain Rupture when hit"
+    },
+    {
+      "id": "Choice_90104001",
+      "name": "Understanding",
+      "desc": "At the start of the battle, gain 2 E.G.O resources for every Affinity.",
+      "summary": "Gain +2 E.G.O resource for all Affinities"
+    },
+    {
+      "id": "Choice_9010400101",
+      "name": "Determined",
+      "desc": "All Ally Units gain +2 Skill Final Power for this battle",
+      "summary": "Skill Final Power +2"
+    },
+    {
+      "id": "Choice_90104002",
+      "name": "Longing",
+      "desc": "All Ally Units gain +1 Skill Power for this battle",
+      "summary": "Skill Power +1"
     }
   ]
 }

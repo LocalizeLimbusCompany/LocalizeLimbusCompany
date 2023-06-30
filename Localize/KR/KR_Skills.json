@@ -1965,14 +1965,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 출혈 1 부여"
+                  "desc": "[OnSucceedAttackHead] 출혈 2 부여"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 출혈 2 부여"
+                  "desc": "[OnSucceedAttack] 출혈 1 부여"
                 }
               ]
             }
@@ -1987,14 +1987,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 출혈 1 부여"
+                  "desc": "[OnSucceedAttackHead] 출혈 2 부여"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 출혈 2 부여"
+                  "desc": "[OnSucceedAttack] 출혈 1 부여"
                 }
               ]
             }
@@ -6368,6 +6368,827 @@
           "level": 1,
           "name": "가드",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "시동 걸기",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 파열 2 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "시동 걸기",
+          "desc": "[WhenUse] 자신의 충전 횟수 2 증가",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 파열 2 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "사슬 윤활",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 진동 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 파열 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "사슬 윤활",
+          "desc": "[WhenUse] 자신의 충전 횟수 3 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 진동 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 파열 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120503,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "갈아버리자고",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 진동 폭발. 진동 폭발 시 진동 횟수가 2 감소하고, 충전 횟수를 최대 4 소모하여 소모한 충전 횟수만큼 파열 횟수 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 파열 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상이 흐트러진 상태면 피해량 +10%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 파열 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상이 흐트러진 상태면 피해량 +10%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "가드",
+          "desc": "",
+          "coinlist": [
+            {
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1070501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "우산후리기",
+          "desc": "[WhenUse] 자신의 침잠 횟수 1 증가",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 침잠 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 침잠 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "우산후리기",
+          "desc": "[WhenUse] 자신의 침잠 횟수 1 증가",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 침잠 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 침잠 횟수 2 증가"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1070502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "진창다지기",
+          "desc": "[WhenUse] 자신의 정신력이 -15 미만일 때 최종 위력 +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 파열 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 파열 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 진동 폭발"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "진창다지기",
+          "desc": "[WhenUse] 자신의 정신력이 -15 미만일 때 최종 위력 +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 파열 3 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 파열 3 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "자신의 침잠 5를 소모하여 피해량 +20%"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 진동 폭발"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1070503,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "퍼져라!",
+          "desc": "[WhenUse] 침잠 6을 얻고, 자신의 침잠 횟수 3 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 다음 턴에 마비 1 부여"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 파열 5 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 다음 턴에 취약 1 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1070504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "경고",
+          "desc": "[WhenUse] 침잠 3을 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 다음 턴에 마비 1을 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 침잠 5 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 파열 5 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "움트는 봉우리",
+          "desc": "[WhenUse] 진동 횟수 2를 얻음",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 침잠 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 침잠 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "움트는 봉우리",
+          "desc": "[WhenUse] 진동 횟수 3을 얻음",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 침잠 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 침잠 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "찰나의 꽃바람",
+          "desc": "[StartBattle] 자신의 진동 횟수를 6 소모하여 슬롯 3개를 공격하는 광역 스킬로 변경",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 침잠 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 침잠 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 침잠 2 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "찰나의 꽃바람",
+          "desc": "[StartBattle] 자신의 진동 횟수를 6 소모하여 슬롯 3개를 공격하는 광역 스킬로 변경",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 침잠 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 침잠 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 침잠 2 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010403,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "피를 머금은 향기",
+          "desc": "[DefeatDuel] 정신력 20 감소\n[WhenUse] 진동 횟수 6을 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 침잠 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 침잠 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 침잠이 6 이상이면, 침잠쇄도"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신의 진동 횟수가 10 이상이면, 피해량의 30%만큼 추가 피해"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "흩날리는 잔향",
+          "desc": "[OnSucceedEvade] 침잠 1 부여",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1080501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "무거워…!",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 진동 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "무거워…!",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 진동 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 진동 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1080502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "울렁거려...!",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 진동 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 진동 2 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "울렁거려...!",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 진동 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 진동 2 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1080503,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "부식성 점액 타격",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 진동 폭발"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 진동 횟수 4 감소"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 진동 폭발 시 파열 5 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1080504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "가드",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "침입자 차단",
+          "desc": "대상에게 파열이 5 이상 있으면 코인 위력 +1",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 2,
+          "name": "침입자 차단",
+          "desc": "대상에게 파열이 5 이상 있으면 코인 위력 +2",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "붕괴 칼날",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 파열 2 부여\n대상에게 파열이 10 이상 있으면 피해량의 20%만큼 체력 회복"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 파열 2 부여\n대상에게 파열이 10 이상 있으면 피해량의 20%만큼 체력 회복"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "붕괴 칼날",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 파열 2 부여\n대상에게 파열이 10 이상 있으면 피해량의 50%만큼 체력 회복"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 파열 2 부여\n대상에게 파열이 10 이상 있으면 피해량의 50%만큼 체력 회복"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "대상 적출",
+          "desc": "현재 체력이 80% 이상일 때 코인 위력 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 파열 4 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] K사 앰플 만큼 파열 횟수 증가. (K사 앰플 x 5)% 만큼 피해량이 증가함"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "앰플 주입",
+          "desc": "[WhenUse] 다음 턴에 K사 앰플 1 얻음",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "상처 부각",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 파열 2 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "상처 부각",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 파열 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 대상의 파열이 5 이상이면 부적 1 얻음"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "늘어나는 부적",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 부적 1 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 부적 1 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 부적 1 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "늘어나는 부적",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 부적 1 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 부적 1 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 부적 1 얻음"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상의 파열이 3 이상이면 부적 1 얻음"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "파열부",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 부적 5 소모. 부적 5 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상에게 부적이 있으면 파열 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "가드",
+          "desc": "[WhenUse] 부적 1 얻음",
           "coinlist": [
             {}
           ]
