@@ -1924,7 +1924,7 @@
         {
           "level": 1,
           "name": "掌管荣耀",
-          "desc": "[WhenUse] 若目标的体力低于30%，则使本技能造成的伤害+100%",
+          "desc": "[WhenUse] 若目标的体力低于30%，则本技能造成的伤害+100%",
           "coinlist": [
             {
               "coindescs": [
@@ -1943,7 +1943,7 @@
         {
           "level": 1,
           "name": "给我忏悔！！",
-          "desc": "[WhenUse] 若目标的体力低于30%，则使本技能造成的伤害+100%",
+          "desc": "[WhenUse] 若目标的体力低于30%，则本技能造成的伤害+100%",
           "coinlist": [
             {
               "coindescs": [
@@ -2508,7 +2508,7 @@
         {
           "level": 1,
           "name": "咕咕！",
-          "desc": "若自身在上回合未受到伤害，则使本技能的硬币威力+3",
+          "desc": "若自身在上回合未受到伤害，则本技能的硬币威力+3",
           "coinlist": [
             {
               "coindescs": [
@@ -2527,7 +2527,7 @@
         {
           "level": 1,
           "name": "咕咕呜！",
-          "desc": "若自身上回合未受到伤害，则使本技能的硬币威力+3",
+          "desc": "若自身上回合未受到伤害，则本技能的硬币威力+3",
           "coinlist": [
             {},
             {
@@ -3584,12 +3584,12 @@
         {
           "level": 1,
           "name": "这次不行！",
-          "desc": "优先攻击精灵酒",
+          "desc": "优先攻击妖精酒",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 攻击精灵酒时，下回合恢复10%的体力值，使自身获得2层强壮 ，2层迅捷 ，2层守护 "
+                  "desc": "[OnSucceedAttack] 攻击妖精酒时，下回合恢复10%的体力值，使自身获得2层强壮 ，2层迅捷 ，2层守护 "
                 }
               ]
             }
@@ -3602,7 +3602,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "想要这杯精灵酒吗？",
+          "name": "想要这杯妖精酒吗？",
           "desc": "[WhenUse] 下回合使自身获得1层束缚 ",
           "coinlist": [
             {}
@@ -3615,7 +3615,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "精灵酒",
+          "name": "妖精酒",
           "desc": "[WhenUse] 将目标的昂扬 转换为相应层数的醉意 ",
           "coinlist": [
             {}
@@ -4561,6 +4561,317 @@
           "desc": "",
           "coinlist": [
             {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "舔舐伤口",
+          "desc": "[WhenUse] 若目标拥有流血 ，则对目标施加1层麻痹 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层流血 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标拥有不低于2层流血 ，则使目标增加5级流血 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "束缚伤痕",
+          "desc": "[WhenUse]  若目标带有流血 强度，则下回合对目标施加1层束缚 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805903,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "陷于血肉",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标带有流血 强度，则使自身恢复20点体力"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若目标拥有不低于2层流血 ，则使目标增加5级流血 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805904,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "绿荫笼罩",
+          "desc": "[WhenUse] 下回合生成巨大的四叶草\n[WhenUse] 每有5层流血 ，则伤害量增加50%\n[DefeatDuel] 生成体力为70%的巨大的四叶草",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 消耗全部流血 层数"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805905,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "消化",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 目标每拥有1级流血 强度，则自身恢复体力的最大值1%\n消耗全部流血 层数"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "生啃撕咬",
+          "coinlist": [
+            {},
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "填满胃肠",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使自身恢复1点体力"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使自身恢复1点体力"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使自身恢复1点体力"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "翻滚冲撞",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "怠惰之扼",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加3层束缚 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "烈焰烧灼",
+          "coinlist": [
+            {},
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "暴怒迸发",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合使目标增加2级烧伤 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806701,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "悲哀溅射",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806702,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "忧郁决堤",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合使目标增加3级沉沦 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "巨颚重击",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "淫欲绞杀",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合使目标增加2级流血 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "摧残蹂躏",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "傲慢碾碎",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层易损 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层易损 "
+                }
+              ]
+            }
           ]
         }
       ]
