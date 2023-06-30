@@ -4382,7 +4382,7 @@
                   "desc": "[OnSucceedAttack] Наносит 3 Огонь"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Если у цели 6+ Огонь, gain 1 Attack Level Up на следующий ход"
+                  "desc": "[OnSucceedAttack] Если у цели 6+ Огонь, получает 1 Attack Level Up на следующий ход"
                 }
               ]
             }
@@ -6871,6 +6871,252 @@
           "level": 1,
           "name": "Блок",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Задержка нарушителей",
+          "desc": "Сила монет +1 против целей с 5+ Разрыв",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Задержка нарушителей",
+          "desc": "Сила монет +2 против целей с 5+ Разрыв",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Разлагающее лезвие",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Разрыв\nЕсли на цели 10+ Разрыв, восстанавливает 20% нанесённого урона"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Разрыв\nЕсли на цели 10+ Разрыв, восстанавливает 20% нанесённого урона"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Разлагающее лезвие",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Разрыв\nЕсли на цели 10+ Разрыв, восстанавливает 50% нанесённого урона"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Разрыв\nЕсли на цели 10+ Разрыв, восстанавливает 50% нанесённого урона"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Вырезать цель",
+          "desc": "При 80% и более злоровья, Сила монет +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 4 Разрыв"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит счётчики Разрыв в зависимости от количества Ампула Корп. K; Наносит +5% урона за Ампула Корп. K"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Инъекция ампулы",
+          "desc": "[WhenUse] Получает 1 Ампула Корп. K на следующий ход",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Усугубить ранение",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Разрыв"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Усугубить ранение",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Наносит 2 Разрыв"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Если на цели 5+ Разрыв, получает 1 Оберег"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Больше оберегов",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Получает 1 Оберег"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Получает 1 Оберег"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 1 Оберег"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Больше оберегов",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 1 Оберег"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 1 Оберег"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Получает 1 Оберег"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Если на цели 3+ Разрыв, получает 1 Оберег"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Оберег разрыва",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Тратит 5 Оберег на себя; Наносит 5 Оберег"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Если на цели Оберег, наносит +1 счётчик Разрыв"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Блок",
+          "desc": "[WhenUse] Получает 1 Оберег",
           "coinlist": [
             {}
           ]
