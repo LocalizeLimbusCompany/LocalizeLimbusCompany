@@ -34,7 +34,7 @@
    - [适用于看不懂上面的安装&更新程序](../../../LLC_MOD_Installer)
 # 相关
 - [QQ群](https://jq.qq.com/?_wv=1027&k=5NE6Kvg2) LLCG 686792849
-- [LLC Wiki](https://www.zeroasso.top) 关于风格、翻译以及如何安装的详细信息
+- [LLC 官网](https://www.zeroasso.top) 关于风格、翻译以及如何安装的详细信息
 - [LLC_MOD_Installer](../../../LLC_MOD_Installer) 模组傻瓜安装更新程序
 - [汉化组B站链接](https://space.bilibili.com/1247764479) 都市零协会汉化组
 - [边狱公司中文WIKI](https://limbuscompany.huijiwiki.com)
