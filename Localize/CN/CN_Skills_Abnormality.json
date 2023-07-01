@@ -290,8 +290,7 @@
           "level": 1,
           "name": "宇宙熱寂",
           "coinlist": [
-            {
-              }
+            {}
           ]
         }
       ]
@@ -3585,12 +3584,12 @@
         {
           "level": 1,
           "name": "這次不行！",
-          "desc": "優先攻擊精靈酒",
+          "desc": "優先攻擊妖精酒",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 攻擊精靈酒時，下回合恢復10%的體力值，使自身獲得2層強壯 ，2層迅捷 ，2層守護 "
+                  "desc": "[OnSucceedAttack] 攻擊妖精酒時，下回合恢復10%的體力值，使自身獲得2層強壯 ，2層迅捷 ，2層守護 "
                 }
               ]
             }
@@ -3603,7 +3602,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "想要這杯精靈酒嗎？",
+          "name": "想要這杯妖精酒嗎？",
           "desc": "[WhenUse] 下回合使自身獲得1層束縛 ",
           "coinlist": [
             {}
@@ -3616,7 +3615,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "精靈酒",
+          "name": "妖精酒",
           "desc": "[WhenUse] 將目標的昂揚 轉換為相應層數的醉意 ",
           "coinlist": [
             {}
@@ -4562,6 +4561,317 @@
           "desc": "",
           "coinlist": [
             {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "舔舐傷口",
+          "desc": "[WhenUse] 若目標擁有流血 ，則對目標施加1層麻痺 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 對目標施加3層流血 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目標擁有不低於2層流血 ，則使目標增加5級流血 強度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "束縛傷痕",
+          "desc": "[WhenUse]  若目標帶有流血 強度，則下回合對目標施加1層束縛 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目標增加3級流血 強度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805903,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "陷於血肉",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目標增加3級流血 強度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目標帶有流血 強度，則使自身恢復20點體力"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若目標擁有不低於2層流血 ，則使目標增加5級流血 強度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805904,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "綠蔭籠罩",
+          "desc": "[WhenUse] 下回合生成巨大的四葉草\n[WhenUse] 每有5層流血 ，則傷害量增加50%\n[DefeatDuel] 生成體力為70%的巨大的四葉草",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 消耗全部流血 層數"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805905,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "消化",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 目標每擁有1級流血 強度，則自身恢復體力的最大值1%\n消耗全部流血 層數"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "生啃撕咬",
+          "coinlist": [
+            {},
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "填滿胃腸",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使自身恢復1點體力"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使自身恢復1點體力"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使自身恢復1點體力"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "翻滾衝撞",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "怠惰之扼",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合對目標施加3層束縛 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "烈焰燒灼",
+          "coinlist": [
+            {},
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "暴怒迸發",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合使目標增加2級燒傷 強度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806701,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "悲哀濺射",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806702,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "憂鬱決堤",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合使目標增加3級沉淪 強度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "巨顎重擊",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "淫欲絞殺",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合使目標增加2級流血 強度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "摧殘蹂躪",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 806902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "傲慢碾碎",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合對目標施加1層易損 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合對目標施加1層易損 "
+                }
+              ]
+            }
           ]
         }
       ]
