@@ -79,9 +79,9 @@ namespace LimbusLocalize
             FontInformation fontInformation = __instance._fontInformation.Count > 0 ? __instance._fontInformation[0] : null;
             if (fontInformation == null)
                 return false;
-            if (fontInformation.fontAsset == null)
+            if (!fontInformation.fontAsset)
                 return false;
-            if (__instance._text == null)
+            if (!__instance._text)
                 return false;
             var raw_fontAsset = fontInformation.fontAsset;
             bool use_cn = GetChineseFont(raw_fontAsset.name, out var cn_fontAsset);
@@ -91,17 +91,42 @@ namespace LimbusLocalize
 
             __instance._text.font = fontAsset;
             __instance._text.fontMaterial = fontMaterial;
-            if (__instance._matSetter != null)
+            if (__instance._matSetter)
             {
                 __instance._matSetter.defaultMat = fontMaterial;
                 __instance._matSetter.ResetMaterial();
                 return false;
             }
             __instance.gameObject.TryGetComponent(out TextMeshProMaterialSetter textMeshProMaterialSetter);
-            if (textMeshProMaterialSetter != null)
+            if (textMeshProMaterialSetter)
             {
                 textMeshProMaterialSetter.defaultMat = fontMaterial;
                 textMeshProMaterialSetter.ResetMaterial();
+            }
+            return false;
+        }
+        [HarmonyPatch(typeof(TextMeshProMaterialSetter), nameof(TextMeshProMaterialSetter.WriteMaterialProperty))]
+        [HarmonyPrefix]
+        public static bool WriteMaterialProperty(TextMeshProMaterialSetter __instance)
+        {
+            if (!__instance._fontMaterialInstance)
+                return false;
+            if (!GetChineseFont(__instance._text.font.name, out _) && !IsChineseFont(__instance._text.font))
+                return true;
+
+            Color underlayColor = __instance.underlayColor;
+            if (__instance.underlayOn && __instance._fontMaterialInstance.HasProperty(ShaderUtilities.ID_UnderlayColor))
+            {
+                if (__instance.underlayHDRFactor > 0f)
+                {
+                    float num = Mathf.Pow(2f, __instance.underlayHDRFactor);
+                    underlayColor.r *= num;
+                    underlayColor.g *= num;
+                    underlayColor.b *= num;
+                }
+                underlayColor = __instance.underlayHdrColorOn ? __instance.underlayHdrColor : underlayColor;
+                if (underlayColor.r > 0f || underlayColor.g > 0f || underlayColor.b > 0f)
+                    __instance._text.color = underlayColor;
             }
             return false;
         }
