@@ -572,7 +572,7 @@
           "level": 1,
           "name": "终末火柴之光",
           "abName": "焦化少女",
-          "desc": "攻击带有烧伤 的敌人时，使本技能的威力+2\n[EnemyKill] 下回合使自身获得1层强壮 ",
+          "desc": "攻击拥有烧伤 的敌人时，使本技能的威力+2\n[EnemyKill] 下回合使自身获得1层强壮 ",
           "coinlist": [
             {
               "coindescs": [
@@ -587,7 +587,7 @@
           "level": 3,
           "name": "终末火柴之光",
           "abName": "焦化少女",
-          "desc": "攻击带有烧伤 的单位时，使本技能的威力+2\n[EnemyKill] 下回合使自身获得2层强壮 ",
+          "desc": "攻击拥有烧伤 的单位时，使本技能的威力+2\n[EnemyKill] 下回合使自身获得2层强壮 ",
           "coinlist": [
             {
               "coindescs": [
@@ -607,7 +607,7 @@
           "level": 1,
           "name": "终末火柴之光",
           "abName": "焦化少女",
-          "desc": "[CantIdentify]\n随机指定目标\n攻击带有烧伤 的单位时，使本技能的威力+2\n[EnemyKill] 下回合使自身获得2层强壮 \n[EnemyKillFail] 下回合使自身增加10级烧伤 强度",
+          "desc": "[CantIdentify]\n随机指定目标\n攻击拥有烧伤 的单位时，使本技能的威力+2\n[EnemyKill] 下回合使自身获得2层强壮 \n[EnemyKillFail] 下回合使自身增加10级烧伤 强度",
           "coinlist": [
             {
               "coindescs": [
@@ -622,7 +622,7 @@
           "level": 3,
           "name": "终末火柴之光",
           "abName": "焦化少女",
-          "desc": "[CantIdentify]\n随机指定目标\n攻击带有烧伤 的单位时，使本技能的威力+4\n[EnemyKill] 下回合使自身获得3层强壮 \n[EnemyKillFail] 下回合使自身获得3层强壮 并增加10级烧伤 强度",
+          "desc": "[CantIdentify]\n随机指定目标\n攻击拥有烧伤 的单位时，使本技能的威力+4\n[EnemyKill] 下回合使自身获得3层强壮 \n[EnemyKillFail] 下回合使自身获得3层强壮 并增加10级烧伤 强度",
           "coinlist": [
             {
               "coindescs": [
@@ -1803,7 +1803,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加共计3级随机效果的强度，包括烧伤 、流血 、震颤 、破裂 和沉沦 "
+                  "desc": "[OnSucceedAttack] 使目标增加3级单一随机效果的强度，可能为烧伤 、流血 、震颤 、破裂 或沉沦 "
                 }
               ]
             }
@@ -1818,7 +1818,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加共计6级随机效果的强度，包括烧伤 、流血 、震颤 、破裂 和沉沦 "
+                  "desc": "[OnSucceedAttack] 使目标增加6级单一随机效果的强度，可能为烧伤 、流血 、震颤 、破裂 或沉沦 "
                 }
               ]
             }
@@ -2257,7 +2257,7 @@
                   "desc": "[OnSucceedAttackHead] 若指定友方单位，则为其恢复体力上限10%的体力"
                 },
                 {
-                  "desc": "[OnSucceedAttackTail] 使目标增加7级烧伤 强度；若指定友方单位，则下回合使其获得2层迅捷 和1层<sprite name=\"GainSinStockAdder\"><color=#f8c200><u><link=\"GainSinStockAdder\">罪孽碎片获取量+</color></link></u>"
+                  "desc": "[OnSucceedAttackTail] 使目标增加7级烧伤 强度；若指定友方单位，则下回合使其获得2层迅捷 和1层<sprite name=GainSinStockAdder><color=#f8c200><u><link=GainSinStockAdder>罪孽碎片获取量+</color></link></u>"
                 }
               ]
             }
@@ -2773,7 +2773,7 @@
           "level": 1,
           "name": "AEDD",
           "abName": "冲击蜈蚣",
-          "desc": "[CantIdentify]\n优先随机指定带有充能 的单位\n[BeforeAttack] 使自身获得5层充能 ",
+          "desc": "[CantIdentify]\n优先随机指定拥有充能 的单位\n[BeforeAttack] 使自身获得5层充能 ",
           "coinlist": [
             {
               "coindescs": [
@@ -2788,7 +2788,7 @@
           "level": 3,
           "name": "AEDD",
           "abName": "冲击蜈蚣",
-          "desc": "[CantIdentify]\n优先随机指定带有充能 的单位\n[BeforeAttack] 使自身获得7层充能 ",
+          "desc": "[CantIdentify]\n优先随机指定拥有充能 的单位\n[BeforeAttack] 使自身获得7层充能 ",
           "coinlist": [
             {
               "coindescs": [
@@ -2913,7 +2913,7 @@
           "level": 1,
           "name": "狐雨",
           "abName": "流浪狐狸",
-          "desc": "[CantIdentify]\n[Wide]指定5个行动槽\n随机指定目标\n[BeforeAttack] 本回合和下回合中，使自身获得1层怠惰强壮 与1层怠惰伤害强化 ",
+          "desc": "[CantIdentify]\n[Wide]指定5个行动槽\n随机指定目标\n[BeforeAttack] 本回合和下2回合中，使自身获得1层怠惰强壮 与1层怠惰伤害强化 ",
           "coinlist": [
             {
               "coindescs": [
@@ -2928,7 +2928,7 @@
           "level": 3,
           "name": "狐雨",
           "abName": "流浪狐狸",
-          "desc": "[CantIdentify]\n[Wide]指定5个行动槽\n随机指定目标\n[BeforeAttack] 本回合和下回合中，使自身获得2层怠惰强壮 与2层怠惰伤害强化 ",
+          "desc": "[CantIdentify]\n[Wide]指定5个行动槽\n随机指定目标\n[BeforeAttack] 本回合和下2回合中，使自身获得2层怠惰强壮 与2层怠惰伤害强化 ",
           "coinlist": [
             {
               "coindescs": [
@@ -2964,8 +2964,8 @@
         },
         {
           "level": 3,
-          "name": "赤眼",
-          "abName": "蜘蛛のつぼみ",
+          "name": "赤瞳",
+          "abName": "蜘蛛巢",
           "desc": "",
           "coinlist": [
             {
@@ -3010,7 +3010,7 @@
           "level": 3,
           "name": "赤瞳",
           "abName": "蜘蛛巢",
-          "desc": "",
+          "desc": "[CantIdentify]\n随机指定目标",
           "coinlist": [
             {
               "coindescs": [
@@ -3074,7 +3074,7 @@
           "level": 1,
           "name": "赤瞳(开)",
           "abName": "蜘蛛巢",
-          "desc": "[CantIdentify]\n随机指定目标\n[Wide] 指定3个行动槽\n若主要目标的速度低于自身至少3点，则使本技能的威力+7",
+          "desc": "[CantIdentify]\n[Wide] 指定3个行动槽\n随机指定目标\n若主要目标的速度低于自身至少3点，则使本技能的威力+7",
           "coinlist": [
             {
               "coindescs": [
@@ -3089,7 +3089,7 @@
           "level": 3,
           "name": "赤瞳(开)",
           "abName": "蜘蛛巢",
-          "desc": "[CantIdentify]\n随机指定目标\n[Wide] 指定3个行动槽\n若主要目标的速度低于自身至少3点，则使本技能的威力+7",
+          "desc": "[CantIdentify]\n[Wide] 指定3个行动槽\n随机指定目标\n若主要目标的速度低于自身至少3点，则使本技能的威力+7",
           "coinlist": [
             {
               "coindescs": [
