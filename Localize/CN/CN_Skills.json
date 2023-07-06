@@ -116,7 +116,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标的理智值低于0，对其施加1层易损 "
+                  "desc": "[OnSucceedAttack] 若目标的理智值低于0，则下回合对其施加1层易损 "
                 }
               ]
             }
@@ -1193,7 +1193,7 @@
         {
           "level": 2,
           "name": "上斩",
-          "desc": "攻击带有斩击易损 的目标时，本技能的威力+2\n[WinDuel] 下回合使自身获得1层强壮 ",
+          "desc": "攻击拥有斩击易损 的目标时，本技能的威力+2\n[WinDuel] 下回合使自身获得1层强壮 ",
           "coinlist": [
             {
               "coindescs": [
@@ -3133,7 +3133,7 @@
         {
           "level": 3,
           "name": "就地处斩",
-          "desc": "若自身的理智值低于0，则使本技能的威力+1",
+          "desc": "若自身的理智值不高于0，则使本技能的威力+1",
           "coinlist": [
             {},
             {},
@@ -4274,7 +4274,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 攻击带有破裂 的敌人时，本硬币造成的伤害+10%"
+                  "desc": "[OnSucceedAttack] 攻击拥有破裂 的敌人时，本硬币造成的伤害+10%"
                 },
                 {
                   "desc": "[OnSucceedAttackHead] 使自身恢复本硬币伤害量30%的体力"
@@ -4532,21 +4532,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 攻击带有破裂 的目标时，本硬币额外造成30%的伤害"
+                  "desc": "[OnSucceedAttack] 攻击拥有破裂 的目标时，本硬币额外造成30%的伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 攻击带有破裂 的目标时，本硬币额外造成30%的伤害"
+                  "desc": "[OnSucceedAttack] 攻击拥有破裂 的目标时，本硬币额外造成30%的伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 攻击带有破裂 的目标时，本硬币额外造成30%的伤害"
+                  "desc": "[OnSucceedAttack] 攻击拥有破裂 的目标时，本硬币额外造成30%的伤害"
                 }
               ]
             },
@@ -4844,7 +4844,7 @@
         {
           "level": 3,
           "name": "钢铁裁决",
-          "desc": "自身带有狂信 时，使本技能造成的伤害+15%",
+          "desc": "自身拥有狂信 时，使本技能造成的伤害+15%",
           "coinlist": [
             {},
             {},
@@ -5344,7 +5344,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度;若目标已带有烧伤 ,则额外使其增加1级烧伤 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度;若目标已拥有烧伤 ,则额外使其增加1级烧伤 强度"
                 }
               ]
             },
@@ -5365,14 +5365,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度;若目标已带有烧伤 ,则额外使其增加1级烧伤 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度;若目标已拥有烧伤 ,则额外使其增加1级烧伤 强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层烧伤 ;若自身理智值大于30,则额外施加1层烧伤 ;若自身理智值大于45, 则额外施加2层烧伤 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层烧伤 ;若自身理智值不低于30,则额外施加1层烧伤 ;若自身理智值不低于45, 则额外施加2层烧伤 "
                 }
               ]
             }
@@ -5391,7 +5391,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度;如果目标已带有烧伤 ,则对目标施加1层烧伤 "
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度;如果目标已拥有烧伤 ,则对目标施加1层烧伤 "
                 }
               ]
             },
@@ -5494,7 +5494,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标带有流血 或麻痹 ，则在下回合对其施加1层体力恢复降低 "
+                  "desc": "[OnSucceedAttack] 若目标拥有流血 或麻痹 ，则在下回合对其施加1层体力恢复降低 "
                 }
               ]
             }
@@ -5522,7 +5522,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标带有流血 或麻痹 ，则在下回合对其施加3层体力恢复降低 "
+                  "desc": "[OnSucceedAttack] 若目标拥有流血 或麻痹 ，则在下回合对其施加3层体力恢复降低 "
                 }
               ]
             }
@@ -5609,7 +5609,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层麻痹 ；若目标带有流血 ，则在下回合对其施加1层麻痹 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层麻痹 ；若目标拥有流血 ，则在下回合对其施加1层麻痹 "
                 }
               ]
             },
@@ -5754,7 +5754,7 @@
         {
           "level": 1,
           "name": "黑白不分的执行",
-          "desc": "[WhenUse] 使自身失去10点理智值\n若自身带有狂信 ，则本技能造成的伤害+5%",
+          "desc": "[WhenUse] 使自身失去10点理智值\n若自身拥有狂信 ，则本技能造成的伤害+5%",
           "coinlist": [
             {},
             {
@@ -5783,7 +5783,7 @@
         {
           "level": 2,
           "name": "黑白不分的执行",
-          "desc": "[WhenUse] 使自身失去10点理智值\n若自身带有狂信 ，则本技能造成的伤害+10%",
+          "desc": "[WhenUse] 使自身失去10点理智值\n若自身拥有狂信 ，则本技能造成的伤害+10%",
           "coinlist": [
             {},
             {
@@ -5826,7 +5826,7 @@
         {
           "level": 3,
           "name": "自我毁灭的净化",
-          "desc": "[WhenUse] 使自身失去15点理智值\n- 若自身带有狂信 ，则本技能造成的伤害+15%\n- 若目标属于<机械融合生命体>，则本技能造成的伤害+10%",
+          "desc": "[WhenUse] 使自身失去15点理智值\n- 若自身拥有狂信 ，则本技能造成的伤害+15%\n- 若目标属于<机械融合生命体>，则本技能造成的伤害+10%",
           "coinlist": [
             {},
             {
@@ -6890,7 +6890,7 @@
         {
           "level": 1,
           "name": "阻截入侵者",
-          "desc": "若目标拥有不低于5级破裂 强度，则硬币威力 +1",
+          "desc": "若目标的破裂 强度不低于5级，则硬币威力 +1",
           "coinlist": [
             {}
           ]
@@ -6898,7 +6898,7 @@
         {
           "level": 2,
           "name": "阻截入侵者",
-          "desc": "若目标拥有不低于5级破裂 强度，则硬币威力 +2",
+          "desc": "若目标的破裂 强度不低于5级，则硬币威力 +2",
           "coinlist": [
             {}
           ]
@@ -6916,14 +6916,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级破裂 强度\n若目标拥有不低于10级破裂 强度，则自身恢复伤害量的20%"
+                  "desc": "[OnSucceedAttack] 使目标增加2级破裂 强度\n若目标的破裂 强度不低于10级，则使自身恢复本硬币伤害量20%的体力"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级破裂 强度\n若目标拥有不低于10级破裂 强度，则自身恢复伤害量的20%"
+                  "desc": "[OnSucceedAttack] 使目标增加2级破裂 强度\n若目标的破裂 强度不低于10级，则使自身恢复本硬币伤害量20%的体力"
                 }
               ]
             }
@@ -6937,14 +6937,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级破裂 强度\n若目标拥有不低于10级破裂 强度，则自身恢复伤害量的50%"
+                  "desc": "[OnSucceedAttack] 使目标增加2级破裂 强度\n若目标的破裂 强度不低于10级，则使自身恢复本硬币伤害量50%的体力"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级破裂 强度\n若目标拥有不低于10级破裂 强度，则自身恢复伤害量的50%"
+                  "desc": "[OnSucceedAttack] 使目标增加2级破裂 强度\n若目标的破裂 强度不低于10级，则使自身恢复本硬币伤害量50%的体力"
                 }
               ]
             }
@@ -6958,7 +6958,7 @@
         {
           "level": 3,
           "name": "摘除目标",
-          "desc": "现存体力不低于80%时，硬币威力 +1",
+          "desc": "若自身的体力不低于80%，则硬币威力 +1",
           "coinlist": [
             {
               "coindescs": [
@@ -6970,7 +6970,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 根据自身拥有的K公司的安瓿 层数，对目标施加相应层数的破裂 。增加(K公司的安瓿 ×5)%的伤害量"
+                  "desc": "[OnSucceedAttack] 根据自身拥有的K公司的安瓿 层数，对目标施加相应层数的破裂 。本硬币造成的伤害增加(K公司的安瓿 ×5)%"
                 }
               ]
             }
@@ -6984,7 +6984,7 @@
         {
           "level": 1,
           "name": "注射安瓿",
-          "desc": "[WhenUse] 下回合获得1层K公司的安瓿 ",
+          "desc": "[WhenUse] 下回合使自身获得1层K公司的安瓿 ",
           "coinlist": [
             {}
           ]
@@ -7019,7 +7019,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加2级破裂 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 若目标拥有不低于5级破裂 强度，则获得1层符咒 "
+                  "desc": "[OnSucceedAttackHead] 若目标的破裂 强度不低于5级，则使自身获得1层符咒 "
                 }
               ]
             }
@@ -7083,7 +7083,7 @@
                   "desc": "[OnSucceedAttack] 使自身获得1层符咒 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标拥有不低于3级破裂 强度，则使自身获得1层符咒 "
+                  "desc": "[OnSucceedAttack] 若目标的破裂 强度不低于3级，则使自身获得1层符咒 "
                 }
               ]
             }
@@ -7102,7 +7102,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 自身消耗5层符咒 。对目标施加5层符咒 "
+                  "desc": "[OnSucceedAttack] 消耗5层符咒 。对目标施加5层符咒 "
                 }
               ]
             },
@@ -7126,6 +7126,173 @@
           "desc": "[WhenUse] 使自身获得1层符咒 ",
           "coinlist": [
             {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1080601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "丹脚",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "丹脚",
+          "desc": "若目标的烧伤 强度不低于3级，则本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1080602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "长驱直入",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若目标的烧伤 强度不低于6级，则对目标施加2层烧伤 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "长驱直入",
+          "desc": "若目标的烧伤 强度不低于6级，则本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若目标的烧伤 强度不低于6级，则对目标施加2层烧伤 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1080603,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "里门顶肘",
+          "desc": "若目标的烧伤 强度与层数之和不低于6，则本技能造成的伤害+30%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层烧伤 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[EndSkill] 若目标陷入混乱或阵亡，下回合使自身获得1层加算硬币强化 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1080604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "反击",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层烧伤 "
+                }
+              ]
+            }
           ]
         }
       ]
