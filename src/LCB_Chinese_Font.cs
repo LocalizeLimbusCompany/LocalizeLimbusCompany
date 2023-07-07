@@ -95,15 +95,19 @@ namespace LimbusLocalize
             {
                 __instance._matSetter.defaultMat = fontMaterial;
                 __instance._matSetter.ResetMaterial();
-                return false;
-            }
-            __instance.gameObject.TryGetComponent(out TextMeshProMaterialSetter textMeshProMaterialSetter);
-            if (textMeshProMaterialSetter)
-            {
-                textMeshProMaterialSetter.defaultMat = fontMaterial;
-                textMeshProMaterialSetter.ResetMaterial();
             }
             return false;
+        }
+        [HarmonyPatch(typeof(TextMeshProLanguageSetter), nameof(TextMeshProLanguageSetter.Awake))]
+        [HarmonyPrefix]
+        private static void Awake(TextMeshProLanguageSetter __instance)
+        {
+            if (!__instance._text)
+                if (__instance.TryGetComponent<TextMeshProUGUI>(out var textMeshProUGUI))
+                    __instance._text = textMeshProUGUI;
+            if (!__instance._matSetter)
+                if(__instance.TryGetComponent<TextMeshProMaterialSetter>(out var textMeshProMaterialSetter))
+                    __instance._matSetter= textMeshProMaterialSetter;
         }
         [HarmonyPatch(typeof(TextMeshProMaterialSetter), nameof(TextMeshProMaterialSetter.WriteMaterialProperty))]
         [HarmonyPrefix]
