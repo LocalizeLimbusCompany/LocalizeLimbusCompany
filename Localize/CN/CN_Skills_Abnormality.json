@@ -2914,7 +2914,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身获得1层飘忽不定的情绪 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层飘忽不定的情绪 "
                 },
                 {
                   "desc": "[OnSucceedAttack] 对目标施加3层沉沦 "
@@ -2936,7 +2936,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身获得1层飘忽不定的情绪 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层飘忽不定的情绪 "
                 },
                 {
                   "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度"
@@ -2946,7 +2946,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身获得1层飘忽不定的情绪 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层飘忽不定的情绪 "
                 },
                 {
                   "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度"
@@ -3087,7 +3087,7 @@
         {
           "level": 1,
           "name": "电流注入",
-          "desc": "[WhenUse] 使自身获得1层自体发电 \n若目标拥有麻痹 则本技能的伤害+10%",
+          "desc": "[WhenUse] 使自身获得1层自体发电 \n若目标带有麻痹 则本技能的伤害+10%",
           "coinlist": [
             {},
             {
@@ -3107,7 +3107,7 @@
         {
           "level": 1,
           "name": "电流放流",
-          "desc": "[WhenUse] 使自身获得1层自体发电 \n若目标拥有麻痹 则本技能的伤害+10%",
+          "desc": "[WhenUse] 使自身获得1层自体发电 \n若目标带有麻痹 则本技能的伤害+10%",
           "coinlist": [
             {},
             {},
@@ -3128,7 +3128,7 @@
         {
           "level": 1,
           "name": "电流释放",
-          "desc": "[WhenUse] 使自身获得1层自体发电 \n若目标拥有麻痹 则本技能的伤害+20%",
+          "desc": "[WhenUse] 使自身获得1层自体发电 \n若目标带有麻痹 则本技能的伤害+20%",
           "coinlist": [
             {
               "coindescs": [
@@ -3169,7 +3169,7 @@
                   "desc": "[OnSucceedAttack] 若目标处于蓄能 状态，则额外造成最终伤害量40%的固定伤害"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加3层麻痹 于1层蓄能 "
+                  "desc": "[OnSucceedAttack] 对目标施加3层麻痹 与1层蓄能 "
                 }
               ]
             }
@@ -3377,7 +3377,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合使目标增加2层破裂 强度并对其施加2层破裂 "
+                  "desc": "[OnSucceedAttack] 下回合使目标增加2级破裂 强度并对其施加2层破裂 "
                 }
               ]
             }
@@ -3396,7 +3396,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 根据目标拥有的纠缠的咒符 层数，施加相应层数的纠缠的咒符 "
+                  "desc": "[OnSucceedAttack] 根据目标带有的纠缠的咒符 层数，施加相应层数的纠缠的咒符 "
                 }
               ]
             },
@@ -3410,7 +3410,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 下回合使目标增加2层破裂 强度并对其施加2层破裂 "
+                  "desc": "[OnSucceedAttackHead] 下回合使目标增加2级破裂 强度并对其施加2层破裂 "
                 }
               ]
             }
@@ -3463,7 +3463,7 @@
         {
           "level": 1,
           "name": "复制诅咒",
-          "desc": "[WhenUse] 根据目标所拥有纠缠的咒符 的层数，施加相应层数的纠缠的咒符 ",
+          "desc": "[WhenUse] 根据目标所带有纠缠的咒符 的层数，施加相应层数的纠缠的咒符 ",
           "coinlist": [
             {}
           ]
@@ -3481,7 +3481,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级震颤强度并对其施加2层震颤 "
+                  "desc": "[OnSucceedAttack] 使目标增加5级震颤 强度并对其施加2层震颤 "
                 }
               ]
             }
@@ -3514,7 +3514,7 @@
         {
           "level": 1,
           "name": "只剩这些了！",
-          "desc": "进行拼点时，使目标获得1层昂扬 \n指定拥有震颤的单位 ",
+          "desc": "进行拼点时，使目标获得1层昂扬 \n指定带有震颤的单位 ",
           "coinlist": [
             {},
             {
@@ -3534,15 +3534,15 @@
         {
           "level": 1,
           "name": "这个我吃了！",
-          "desc": "[CantDuel]\n无法改变拼点目标\n指定拥有昂扬 的目标\n若目标未拥有醉意 ，则拼点威力+5",
+          "desc": "[CantDuel]\n无法改变拼点目标\n指定带有昂扬 的目标\n若目标未带有醉意 ，则拼点威力+5",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标拥有昂扬 ，则每层昂扬 使本硬币的伤害+10%"
+                  "desc": "[OnSucceedAttack] 若目标带有昂扬 ，则每层昂扬 使本硬币的伤害+10%"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标拥有醉意 且造成0点伤害，则使自身损失50点体力"
+                  "desc": "[OnSucceedAttack] 若目标带有醉意 则造成0点伤害，并使自身损失50点体力"
                 },
                 {
                   "desc": "[OnSucceedAttack] 消耗目标的所有昂扬 或醉意 "
@@ -3559,15 +3559,15 @@
         {
           "level": 1,
           "name": "这个我吃了！",
-          "desc": "指定拥有昂扬 的目标\n若目标未拥有醉意 ，则拼点威力+5",
+          "desc": "指定带有昂扬 的目标\n若目标未带有醉意 ，则拼点威力+5",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标拥有昂扬 ，则每层昂扬 使本硬币的伤害+100%"
+                  "desc": "[OnSucceedAttack] 若目标带有昂扬 ，则每层昂扬 使本硬币的伤害+100%"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标拥有醉意 且造成0点伤害，则使自身损失50点体力"
+                  "desc": "[OnSucceedAttack] 若目标带有醉意 则造成0点伤害，并使自身损失50点体力"
                 },
                 {
                   "desc": "[OnSucceedAttack] 消耗目标的所有昂扬 或醉意 "
@@ -3855,7 +3855,7 @@
         {
           "level": 1,
           "name": "绽放的花蕾",
-          "desc": "下回合生成2朵花\n已生成4朵花后，改为使阶段最低的随机1朵花上升1个阶段",
+          "desc": "下回合生成2朵花\n已生成4朵花后，改为随机使阶段最低的1朵花上升1个阶段",
           "coinlist": [
             {
               "coindescs": [
@@ -3939,7 +3939,7 @@
         {
           "level": 1,
           "name": "百花齐放",
-          "desc": "[StartBattle] 보호 10을 얻음\n[DefeatDuel] 使自身获得1层落英缤纷 ",
+          "desc": "[StartBattle] 使自身获得10层守护 \n[DefeatDuel] 使自身获得1层落英缤纷 ",
           "coinlist": [
             {}
           ]
@@ -4215,19 +4215,19 @@
         {
           "level": 1,
           "name": "疏苗",
-          "desc": "若目标拥有空虚的标记 则本技能的伤害+50%\n[DefeatDuel] 下回合对自身施加1层易损 ",
+          "desc": "若目标带有空虚的标记 则本技能的伤害+50%\n[DefeatDuel] 下回合对自身施加1层易损 ",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 根据伤害量相应恢复体力值\n若目标拥有空虚的标记 则下回合使自身获得1层强壮 "
+                  "desc": "[OnSucceedAttack] 根据伤害量相应恢复体力值\n若目标带有空虚的标记 则下回合使自身获得1层强壮 "
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 根据伤害量相应恢复体力值\n若目标拥有空虚的标记 则下回合使自身获得1层强壮 "
+                  "desc": "[OnSucceedAttack] 根据伤害量相应恢复体力值\n若目标带有空虚的标记 则下回合使自身获得1层强壮 "
                 }
               ]
             }
@@ -4356,7 +4356,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层易损 并使目标增加2级 破裂 强度与5级流血 强度。使自身恢复本硬币伤害量10%的体力"
+                  "desc": "[OnSucceedAttack] 对目标施加2层易损 并使目标增加5级破裂 强度与5级流血 强度。使自身恢复本硬币伤害量10%的体力"
                 }
               ]
             }
@@ -4428,7 +4428,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合使目标增加3级流血 强度"
+                  "desc": "[OnSucceedAttack] 下回合对目标施加3层种子 "
                 }
               ]
             }
@@ -4447,21 +4447,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层种子 ，若目标拥有种子则额外对其施加1层种子 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层种子 ，若目标带有种子则额外对其施加1层种子 "
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层种子 ，若目标拥有种子则额外对其施加1层种子 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层种子 ，若目标带有种子则额外对其施加1层种子 "
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层种子 ，若目标拥有种子则额外对其施加1层种子 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层种子 ，若目标带有种子则额外对其施加1层种子 "
                 }
               ]
             }
@@ -4571,7 +4571,7 @@
         {
           "level": 1,
           "name": "舔舐伤口",
-          "desc": "[WhenUse] 若目标拥有流血 ，则对目标施加1层麻痹 ",
+          "desc": "[WhenUse] 若目标带有流血 ，则对目标施加1层麻痹 ",
           "coinlist": [
             {
               "coindescs": [
@@ -4593,7 +4593,7 @@
         {
           "level": 1,
           "name": "束缚伤痕",
-          "desc": "[WhenUse]  若目标拥有流血 ，则下回合对目标施加1层束缚 ",
+          "desc": "[WhenUse]  若目标带有流血 ，则下回合对目标施加1层束缚 ",
           "coinlist": [
             {
               "coindescs": [
@@ -4620,7 +4620,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标拥有流血 ，则使自身恢复20点体力"
+                  "desc": "[OnSucceedAttack] 若目标带有流血 ，则使自身恢复20点体力"
                 }
               ]
             },
@@ -4641,7 +4641,7 @@
         {
           "level": 1,
           "name": "绿荫笼罩",
-          "desc": "[WhenUse] 下回合生成巨大的四叶草\n[WhenUse] 目标每有5层流血 ，使本技能伤害量+50%\n[DefeatDuel] 生成体力为原体力上限70%的巨大的四叶草",
+          "desc": "[WhenUse] 下回合生成巨大的四叶草\n[WhenUse] 目标每有1层流血 使本技能伤害量+5%\n[DefeatDuel] 生成体力为原体力上限70%的巨大的四叶草",
           "coinlist": [
             {
               "coindescs": [
@@ -4665,7 +4665,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 目标每拥有1级流血 强度，则使自身恢复体力上限1%的体力\n消耗全部流血 层数"
+                  "desc": "[OnSucceedAttack] 目标每带有1级流血 强度，则使自身恢复体力上限1%的体力\n消耗全部流血 层数"
                 }
               ]
             }

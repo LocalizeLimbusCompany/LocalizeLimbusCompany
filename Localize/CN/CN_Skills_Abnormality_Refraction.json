@@ -11,7 +11,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 对目标施加5层沉沦 ，沉沦强度+5"
+                  "desc": "[OnSucceedAttackHead] 使目标增加5级沉沦 强度并对其施加5层沉沦 "
                 }
               ]
             }
@@ -59,7 +59,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 依据目标沉沦层 数造成额外理智伤害"
+                  "desc": "[OnSucceedAttackHead] 依据目标沉沦 层数造成额外理智伤害"
                 }
               ]
             }
@@ -475,7 +475,7 @@
         {
           "level": 1,
           "name": "布施",
-          "desc": "[WhenUse] 使自身以外的1名随机友方单位获得2层守护 ",
+          "desc": "[WhenUse] 随机使除自身以外的1名友方单位获得2层守护 ",
           "coinlist": [
             {},
             {
@@ -495,13 +495,13 @@
         {
           "level": 1,
           "name": "阐经",
-          "desc": "[WhenUse] 使自身以外的1名随机友方单位获得2层强壮 ",
+          "desc": "[WhenUse] 随机使除自身以外的1名友方单位获得2层强壮 ",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合使自身以外的1名随机友方单位获得2层强壮 "
+                  "desc": "[OnSucceedAttack] 下回合随机除使自身以外的1名友方单位获得2层强壮 "
                 }
               ]
             }
@@ -525,7 +525,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "真言",
+          "name": "娑婆诃",
           "desc": "[WhenUse] 下回合使自身获得3层伤害强化 ",
           "coinlist": []
         }
@@ -537,12 +537,12 @@
         {
           "level": 1,
           "name": "般若波罗蜜",
-          "desc": "[CantIdentify] 指定业报 最多的单位\n基于目标的业报 层数来提升本技能的伤害（每层+2%）\n若目标未拥有业报 ，则本技能造成的伤害-50%",
+          "desc": "[CantIdentify] 指定业报 最多的单位\n基于目标的业报 层数来提升本技能的伤害（每层+2%）\n若目标未带有业报 ，则本技能造成的伤害-50%",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标拥有业报 ，则对其施加50层业报 "
+                  "desc": "[OnSucceedAttack] 若目标带有业报 ，则对其施加50层业报 "
                 }
               ]
             }
@@ -555,7 +555,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "参禅",
+          "name": "禅那",
           "desc": "[WinDuel] 使自身的负面状态减半",
           "coinlist": [
             {
@@ -575,7 +575,7 @@
         {
           "level": 1,
           "name": "强制供奉",
-          "desc": "[DefeatDuel] 对自身以外的1名随机友方单位施加20层业报 ",
+          "desc": "[DefeatDuel] 随机对除自身以外的1名友方单位施加20层业报 ",
           "coinlist": [
             {
               "coindescs": [
@@ -594,7 +594,7 @@
         {
           "level": 1,
           "name": "鞭策",
-          "desc": "[DefeatDuel] 对自身以外的1名随机友方单位施加20层业报 ",
+          "desc": "[DefeatDuel] 随机对除自身以外的1名友方单位施加20层业报 ",
           "coinlist": [
             {
               "coindescs": [
@@ -619,7 +619,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "曼陀罗",
+          "name": "曼怛罗",
           "desc": "",
           "coinlist": [
             {
@@ -674,7 +674,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "菩提真言",
+          "name": "菩提娑婆诃",
           "desc": "[WhenUse] 使自身获得10层伤害强化 \n优先指定陷入混乱的单位",
           "coinlist": []
         }

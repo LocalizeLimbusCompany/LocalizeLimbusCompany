@@ -73,7 +73,7 @@
         {
           "level": 1,
           "name": "攻击命令",
-          "desc": "[WhenUse] 下回合使随机友方单位获得1层强壮 "
+          "desc": "[WhenUse] 下回合随机使1名友方单位获得1层强壮 "
         }
       ]
     },
@@ -83,7 +83,7 @@
         {
           "level": 1,
           "name": "防御命令",
-          "desc": "[Wide]，[2xPostLine]\n[WhenUse] 下回合使2名随机友方单位获得2层忍耐 "
+          "desc": "[Wide]，[2xPostLine]\n[WhenUse] 下回合随机使2名友方单位获得2层忍耐 "
         }
       ]
     },
@@ -585,7 +585,7 @@
         {
           "level": 1,
           "name": "防御命令",
-          "desc": "[WhenUse] 下回合使2名随机友方单位获得1层守护 ",
+          "desc": "[WhenUse] 下回合随机使2名友方单位获得1层守护 ",
           "coinlist": [
             {}
           ]
@@ -653,7 +653,7 @@
         {
           "level": 1,
           "name": "攻击命令",
-          "desc": "[WhenUse] 下回合使2名随机友方单位获得1层伤害强化 ",
+          "desc": "[WhenUse] 下回合随机使2名友方单位获得1层伤害强化 ",
           "coinlist": [
             {
               "coindescs": [
@@ -701,7 +701,7 @@
         {
           "level": 1,
           "name": "防御命令",
-          "desc": "[WhenUse] 下回合使2名随机友方单位获得1层守护 ",
+          "desc": "[WhenUse] 下回合随机使2名友方单位获得1层守护 ",
           "coinlist": [
             {
               "coindescs": [
@@ -1462,7 +1462,7 @@
         {
           "level": 1,
           "name": "污言秽语",
-          "desc": "[WinDuel] 使随机友方单位恢复10点理智值",
+          "desc": "[WinDuel] 随机使1名友方单位恢复10点理智值",
           "coinlist": [
             {},
             {
@@ -1638,7 +1638,7 @@
         {
           "level": 1,
           "name": "防护",
-          "desc": "[WinDuel] 下回合使2名随机友方单位获得1层忍耐 ",
+          "desc": "[WinDuel] 下回合随机使2名友方单位获得1层忍耐 ",
           "coinlist": [
             {}
           ]
@@ -1699,7 +1699,7 @@
         {
           "level": 1,
           "name": "掩护",
-          "desc": "[WinDuel] 下回合使自身以外的1名随机友方单位获得2层守护 ",
+          "desc": "[WinDuel] 下回合随机使除自身以外的1名友方单位获得2层守护 ",
           "coinlist": [
             {}
           ]
@@ -2036,7 +2036,7 @@
         {
           "level": 1,
           "name": "集结",
-          "desc": "[WinDuel] 下回合使2名随机友方单位获得1层狂信 ",
+          "desc": "[WinDuel] 下回合随机使2名友方单位获得1层狂信 ",
           "coinlist": [
             {
               "coindescs": [
@@ -2356,7 +2356,7 @@
         {
           "level": 1,
           "name": "异端抹杀",
-          "desc": "若目标拥有N公司的尖钉 ，则使本技能造成的伤害+100%",
+          "desc": "若目标带有N公司的尖钉 ，则使本技能造成的伤害+100%",
           "coinlist": [
             {
               "coindescs": [
@@ -3053,7 +3053,7 @@
         {
           "level": 1,
           "name": "发现 发现 损伤",
-          "desc": "指定拥有破裂 的单位",
+          "desc": "指定带有破裂 的单位",
           "coinlist": [
             {
               "coindescs": [
@@ -3094,7 +3094,7 @@
         {
           "level": 1,
           "name": "崩溃瓦解。",
-          "desc": "指定拥有震颤 的单位",
+          "desc": "指定带有震颤 的单位",
           "coinlist": [
             {
               "coindescs": [
@@ -3116,7 +3116,7 @@
         {
           "level": 1,
           "name": "注意 注意 正在摇晃。",
-          "desc": "优先攻击拥有震颤 的单位",
+          "desc": "优先攻击带有震颤 的单位",
           "coinlist": [
             {
               "coindescs": [
@@ -3493,7 +3493,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 下回合根据目标拥有的震颤 强度，施加相应层数的麻痹 "
+                  "desc": "[OnSucceedAttackHead] 下回合根据目标带有的震颤 强度，施加相应层数的麻痹 "
                 }
               ]
             }
@@ -3512,7 +3512,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 根据目标拥有的震颤 强度，相应增加震颤 强度"
+                  "desc": "[OnSucceedAttack] 根据目标带有的震颤 强度，相应增加震颤 强度"
                 }
               ]
             }
@@ -3539,10 +3539,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 根据目标拥有的震颤 强度，相应增加震颤 强度"
+                  "desc": "[OnSucceedAttack] 根据目标带有的震颤 强度，相应增加震颤 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 下回合根据目标拥有的震颤 强度，施加相应层数的麻痹 "
+                  "desc": "[OnSucceedAttackHead] 下回合根据目标带有的震颤 强度，施加相应层数的麻痹 "
                 }
               ]
             }
@@ -3743,7 +3743,7 @@
         {
           "level": 1,
           "name": "进行拘捕！",
-          "desc": "优先攻击拥有震颤 的单位",
+          "desc": "优先攻击带有震颤 的单位",
           "coinlist": [
             {
               "coindescs": [
@@ -4448,7 +4448,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 若目标拥有不低于9层复贴的咒符 ，则对目标施加5层麻痹 \n造成伤害量50%的固定伤害"
+                  "desc": "[OnSucceedAttackHead] 若目标带有不低于9层复贴的咒符 ，则对目标施加5层麻痹 \n造成伤害量50%的固定伤害"
                 }
               ]
             }
@@ -4493,7 +4493,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 若目标拥有不低于9层复贴的咒符 时，则目标施加5层麻痹 \n造成伤害量50%的固定伤害"
+                  "desc": "[OnSucceedAttackHead] 若目标带有不低于9层复贴的咒符 时，则目标施加5层麻痹 \n造成伤害量50%的固定伤害"
                 }
               ]
             }
@@ -4717,6 +4717,79 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] 下回合对目标施加2层束缚 和3层麻痹 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9008201,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "发现可疑目标",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 施加3层破裂 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9008202,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "制服",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加3级破裂 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9008203,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "拦截可疑目标",
+          "desc": "指定体力最高的单位",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "若第1枚硬币的朝向为正面，则本硬币造成的伤害+10%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "若第1枚硬币的朝向为正面，则本硬币造成的伤害+10%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "若第2和第3枚硬币的朝向为正面，则本硬币造成的伤害+30%"
                 }
               ]
             }
