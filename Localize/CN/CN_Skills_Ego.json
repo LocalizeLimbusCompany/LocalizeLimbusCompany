@@ -208,7 +208,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[EndSkill] 使全体友方单位恢复6点理智值"
+                  "desc": "[EndSkill] 使除自身以外理智值最低的3名友方单位恢复8点理智值"
                 }
               ]
             }
@@ -223,7 +223,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[EndSkill] 使全体友方单位恢复12点理智值"
+                  "desc": "[EndSkill] 使除自身以外理智值最低的3名友方单位恢复10点理智值"
                 }
               ]
             }
@@ -572,7 +572,7 @@
           "level": 1,
           "name": "终末火柴之光",
           "abName": "焦化少女",
-          "desc": "攻击拥有烧伤 的敌人时，使本技能的威力+2\n[EnemyKill] 下回合使自身获得1层强壮 ",
+          "desc": "攻击带有烧伤 的敌人时，使本技能的威力+2\n[EnemyKill] 下回合使自身获得1层强壮 ",
           "coinlist": [
             {
               "coindescs": [
@@ -587,7 +587,7 @@
           "level": 3,
           "name": "终末火柴之光",
           "abName": "焦化少女",
-          "desc": "攻击拥有烧伤 的单位时，使本技能的威力+2\n[EnemyKill] 下回合使自身获得2层强壮 ",
+          "desc": "攻击带有烧伤 的单位时，使本技能的威力+2\n[EnemyKill] 下回合使自身获得2层强壮 ",
           "coinlist": [
             {
               "coindescs": [
@@ -607,7 +607,7 @@
           "level": 1,
           "name": "终末火柴之光",
           "abName": "焦化少女",
-          "desc": "[CantIdentify]\n随机指定目标\n攻击拥有烧伤 的单位时，使本技能的威力+2\n[EnemyKill] 下回合使自身获得2层强壮 \n[EnemyKillFail] 下回合使自身增加10级烧伤 强度",
+          "desc": "[CantIdentify]\n随机指定目标\n攻击带有烧伤 的单位时，使本技能的威力+2\n[EnemyKill] 下回合使自身获得2层强壮 \n[EnemyKillFail] 下回合使自身增加10级烧伤 强度",
           "coinlist": [
             {
               "coindescs": [
@@ -622,7 +622,7 @@
           "level": 3,
           "name": "终末火柴之光",
           "abName": "焦化少女",
-          "desc": "[CantIdentify]\n随机指定目标\n攻击拥有烧伤 的单位时，使本技能的威力+4\n[EnemyKill] 下回合使自身获得3层强壮 \n[EnemyKillFail] 下回合使自身获得3层强壮 并增加10级烧伤 强度",
+          "desc": "[CantIdentify]\n随机指定目标\n攻击带有烧伤 的单位时，使本技能的威力+4\n[EnemyKill] 下回合使自身获得3层强壮 \n[EnemyKillFail] 下回合使自身获得3层强壮 并增加10级烧伤 强度",
           "coinlist": [
             {
               "coindescs": [
@@ -806,7 +806,7 @@
           "level": 1,
           "name": "执行",
           "abName": "天之执行官的书吏",
-          "desc": "[CantIdentify][Wide] 指定3个行动槽\n随机指定目标\n[EndSkill] 下回合对体力上限最低的友方单位施加1层易损 ；下回合使其获得2层伤害强化 ",
+          "desc": "[CantIdentify][Wide] 指定3个行动槽\n随机指定目标\n[EndSkill] 下回合对体力上限最低的友方单位施加1层易损 ，下回合使其获得2层伤害强化 ",
           "coinlist": [
             {
               "coindescs": [
@@ -821,7 +821,7 @@
           "level": 3,
           "name": "执行",
           "abName": "天之执行官的书吏",
-          "desc": "[CantIdentify][Wide] 指定3个行动槽\n随机指定目标\n[EndSkill] 下回合对体力上限最低的友方单位施加2层易损 ；下回合使其获得3层伤害强化 ",
+          "desc": "[CantIdentify][Wide] 指定3个行动槽\n随机指定目标\n[EndSkill] 下回合对体力上限最低的友方单位施加2层易损 ，下回合使其获得3层伤害强化 ",
           "coinlist": [
             {
               "coindescs": [
@@ -1212,7 +1212,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加(暴怒共鸣数/2)级烧伤 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 使3名随机敌方单位增加3级烧伤 强度"
+                  "desc": "[OnSucceedAttackHead] 随机使3名敌方单位增加3级烧伤 强度"
                 }
               ]
             }
@@ -1233,7 +1233,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加(暴怒共鸣数)级烧伤 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 使3名随机敌方单位增加3级烧伤 强度"
+                  "desc": "[OnSucceedAttackHead] 随机使3名敌方单位增加3级烧伤 强度"
                 }
               ]
             }
@@ -1731,7 +1731,7 @@
           "level": 3,
           "name": "空即是色",
           "abName": "无我入定",
-          "desc": "[EndSkill] 使自身恢复18点理智值\n[EndSkill] 使自身以外的2名随机友方单位获得1层强壮 ",
+          "desc": "[EndSkill] 使自身恢复18点理智值\n[EndSkill] 随机使除自身以外的2名友方单位获得1层强壮 ",
           "coinlist": [
             {
               "coindescs": [
@@ -1772,7 +1772,7 @@
           "level": 3,
           "name": "空即是色",
           "abName": "无我入定",
-          "desc": "[CantIdentify]\n随机指定目标\n[EndSkill] 使自身以外的2名随机友方单位获得1层强壮 ",
+          "desc": "[CantIdentify]\n随机指定目标\n[EndSkill] 随机使除自身以外的2名友方单位获得1层强壮 ",
           "coinlist": [
             {
               "coindescs": [
@@ -1803,7 +1803,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加3级单一随机效果的强度，可能为烧伤 、流血 、震颤 、破裂 或沉沦 "
+                  "desc": "[OnSucceedAttack] 随机使目标的1种效果增加3级强度，可能为烧伤 、流血 、震颤 、破裂 或沉沦 "
                 }
               ]
             }
@@ -1818,7 +1818,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加6级单一随机效果的强度，可能为烧伤 、流血 、震颤 、破裂 或沉沦 "
+                  "desc": "[OnSucceedAttack] 随机使目标的1种效果增加6级强度，可能为烧伤 、流血 、震颤 、破裂 或沉沦 "
                 }
               ]
             }
@@ -2467,7 +2467,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加4级烧伤 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 根据目标拥有的烧伤 强度，相应增加震颤 强度"
+                  "desc": "[OnSucceedAttack] 根据目标带有的烧伤 强度，相应增加震颤 强度"
                 },
                 {
                   "desc": "[OnSucceedAttack] 引爆目标的震颤 。引爆震颤 时，使目标的震颤 层数减少3层。若目标因引爆震颤 而陷入混乱，则随机对5名敌方单位施加1层烧伤 "
@@ -2488,7 +2488,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加7级烧伤 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 根据目标拥有的烧伤 强度，相应增加震颤 强度"
+                  "desc": "[OnSucceedAttack] 根据目标带有的烧伤 强度，相应增加震颤 强度"
                 },
                 {
                   "desc": "[OnSucceedAttack] 随机使5名敌方单位增加2级烧伤 强度"
@@ -2517,7 +2517,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加6级烧伤 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 根据目标拥有的烧伤强度 ，相应增加震颤 强度"
+                  "desc": "[OnSucceedAttack] 根据目标带有的烧伤强度 ，相应增加震颤 强度"
                 },
                 {
                   "desc": "[OnSucceedAttack] 引爆目标的震颤 。引爆震颤时，使目标的震颤 层数减少3层。若目标因引爆震颤 而陷入混乱，则随机对5个单位施加2层烧伤 "
@@ -2538,7 +2538,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加10级烧伤 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 根据目标拥有的烧伤强度 ，相应增加震颤 强度"
+                  "desc": "[OnSucceedAttack] 根据目标带有的烧伤强度 ，相应增加震颤 强度"
                 },
                 {
                   "desc": "[OnSucceedAttack] 随机使任意5个单位增加2级烧伤 强度"
@@ -2773,7 +2773,7 @@
           "level": 1,
           "name": "AEDD",
           "abName": "冲击蜈蚣",
-          "desc": "[CantIdentify]\n优先随机指定拥有充能 的单位\n[BeforeAttack] 使自身获得5层充能 ",
+          "desc": "[CantIdentify]\n优先随机指定带有充能 的单位\n[BeforeAttack] 使自身获得5层充能 ",
           "coinlist": [
             {
               "coindescs": [
@@ -2788,7 +2788,7 @@
           "level": 3,
           "name": "AEDD",
           "abName": "冲击蜈蚣",
-          "desc": "[CantIdentify]\n优先随机指定拥有充能 的单位\n[BeforeAttack] 使自身获得7层充能 ",
+          "desc": "[CantIdentify]\n优先随机指定带有充能 的单位\n[BeforeAttack] 使自身获得7层充能 ",
           "coinlist": [
             {
               "coindescs": [
