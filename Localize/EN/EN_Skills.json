@@ -62,6 +62,21 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Deflect",
+          "desc": "",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -99,6 +114,22 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "End-stop Stab",
+          "desc": "",
+          "keywords": [],
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Sinking; Inflict +1 Sinking Count"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -113,6 +144,35 @@
           "coinlist": [
             {},
             {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If target’s SP is below 0, inflict 1 Fragile"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Enjamb",
+          "desc": "",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                }
+              ]
+            },
             {
               "coindescs": [
                 {
@@ -205,6 +265,40 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Moulinet",
+          "desc": "",
+          "keywords": [
+            "Vulnerable"
+          ],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] +1 to Count of effect applied by the last Coin"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] +1 to Count of effect applied by the last Coin"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Pierce Fragility next turn"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Rupture"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -258,6 +352,33 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Riposte",
+          "desc": "[WinDuel] Inflict 3 Paralyze next turn\n[WinDuel] Inflict 1 Rupture Count",
+          "keywords": [
+            "Paralysis"
+          ],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Fragile next turn"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Rupture"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -306,6 +427,21 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Striker’s Stance",
+          "desc": "[WhenUse] Gain +2 Poise Count",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 3 Poise next turn"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -324,6 +460,16 @@
         },
         {
           "level": 2,
+          "name": "Heel Turn",
+          "desc": "[WinDuel] Gain +2 Poise Count next turn",
+          "keywords": [],
+          "coinlist": [
+            {},
+            {}
+          ]
+        },
+        {
+          "level": 4,
           "name": "Heel Turn",
           "desc": "[WinDuel] Gain +2 Poise Count next turn",
           "keywords": [],
@@ -359,6 +505,29 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Flank Thrust",
+          "desc": "[WhenUse] Gain 2 Poise",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain 2 Poise next turn"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "+70% Damage on Critical Hit"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -372,6 +541,21 @@
           "keywords": [],
           "coinlist": [
             {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Counter",
+          "desc": "",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "Deal +70% damage on Critical Hit"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -424,7 +608,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Offense Level Down next turn"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Offense Level Down next turn"
                 }
               ]
             }
@@ -440,7 +624,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Offense Level Down next turn"
+                  "desc": "[OnSucceedAttack] Inflict 3 Offense Level Down next turn"
                 }
               ]
             }
@@ -518,6 +702,20 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Energy Cycle",
+          "desc": "[WhenUse] Gain +2 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +2 Charge Count"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -553,6 +751,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Leap",
+          "desc": "[WhenUse] Gain +3 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +3 Charge Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Spend 3 Charge to inflict 4 Bind next turn"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -563,6 +782,22 @@
           "level": 3,
           "name": "Overcharge",
           "desc": "",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Spend 5 Charge to inflict 2 Attack Power Down next turn; Inflict 3 Paralyze"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Overcharge",
+          "desc": "At 5+ Charge Count, Clash Power +2",
           "coinlist": [
             {},
             {},
@@ -611,6 +846,20 @@
           "level": 2,
           "name": "Sole Strike",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Sole Strike",
+          "desc": "[WhenUse] Gain +2 Poise Count",
           "coinlist": [
             {
               "coindescs": [
@@ -677,6 +926,37 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Gain 4 Haste next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Deep Cuts",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 1 Poise next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 1 Poise next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 4 Haste next turn"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain 1 Poise next turn"
                 }
               ]
             }
@@ -756,6 +1036,20 @@
           "coinlist": [
             {}
           ]
+        },
+        {
+          "level": 4,
+          "name": "Galloping Tilt",
+          "desc": "[WinDuel] Gain 2 Attack Power Up next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -765,11 +1059,39 @@
         {
           "level": 3,
           "name": "For Justice!",
-          "desc": "Coin Power +2 at 10+ Speed",
+          "desc": "At 10+ Speed, Coin Power +2",
           "coinlist": [
             {},
             {},
             {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "For Justice!",
+          "desc": "At 10+ Speed, Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 Bleed count"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -820,6 +1142,23 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Rip",
+          "desc": "At 5+ Charge Count, Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Rupture"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Gain +4 Charge Count"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -846,6 +1185,34 @@
           "level": 2,
           "name": "Leap",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +4 Charge Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +4 Charge Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Fragile"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Leap",
+          "desc": "At 7+ Charge Count, Coin Power +1",
           "coinlist": [
             {
               "coindescs": [
@@ -956,6 +1323,20 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Catch Breath",
+          "desc": "[WhenUse] Gain 2 Haste next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 3 Poise next turn"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1003,6 +1384,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Dual Strike",
+          "desc": "[WhenUse] At less than 50% HP, gain 4 Haste next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 Poise next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 3 Haste next turn"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1012,7 +1414,15 @@
         {
           "level": 3,
           "name": "Overbreathe",
-          "desc": "Skill Power +3 at 10+ Speed",
+          "desc": "At 10+ Speed, Skill Power +3",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Overbreathe",
+          "desc": "At 10+ Speed, Skill Power +5",
           "coinlist": [
             {}
           ]
@@ -1124,6 +1534,22 @@
             {},
             {}
           ]
+        },
+        {
+          "level": 4,
+          "name": "Brushstroke",
+          "desc": "[StartBattle] Gain 2 Slash DMG Up",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 Poise next turn"
+                }
+              ]
+            },
+            {}
+          ]
         }
       ]
     },
@@ -1184,7 +1610,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Defense Level Down"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Defense Level Down"
                 }
               ]
             }
@@ -1198,7 +1624,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Defense Level Down"
+                  "desc": "[OnSucceedAttack] Inflict 2 Defense Level Down"
                 }
               ]
             }
@@ -1235,6 +1661,20 @@
           "name": "Counter",
           "desc": "",
           "coinlist": []
+        },
+        {
+          "level": 4,
+          "name": "Counter",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Slash Fragility"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1259,6 +1699,20 @@
           "level": 2,
           "name": "Focus Strike",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Paralyze"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Focus Strike",
+          "desc": "If target has 2+ Bleed Count, deal +20% damage",
           "coinlist": [
             {
               "coindescs": [
@@ -1318,6 +1772,30 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Clean Up",
+          "desc": "If target has 5+ Bleed Count, deal +20% damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Apply +3 Bleed Count "
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Damage Down"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1342,7 +1820,31 @@
                   "desc": "[OnSucceedAttack] Inflict +3 Bleed Count"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Offense Level Down"
+                  "desc": "[OnSucceedAttack] Inflict 5 Offense Level Down"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Lenticular Swirl",
+          "desc": "If target has 9+ Bleed Count, deal +40% damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +3 Bleed Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 Offense Level Down"
                 }
               ]
             }
@@ -1462,6 +1964,41 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Des Coups",
+          "desc": "[WhenUse] Gain 3 Protection next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 Tremor Count"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1522,6 +2059,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Assault",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Burn"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1572,6 +2130,30 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Stalwart Stance",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Burn"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has 6+ Burn, inflict 3 Burn on 2 random enemies"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1582,6 +2164,37 @@
           "level": 3,
           "name": "Perfected Death Fist",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 3 Burn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +3 Burn Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has 6+ Burn, inflict 3 Burn on 2 random enemies"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Perfected Death Fist",
+          "desc": "If target has 5+ Burn, Coin Power +1",
           "coinlist": [
             {
               "coindescs": [
@@ -1645,6 +2258,20 @@
           "level": 2,
           "name": "Rip",
           "desc": "[WhenUse] Gain 2 Slash Protection",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +3 Charge Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Rip",
+          "desc": "[WhenUse] Gain 2 Slash Protection\nGain +3 Charge Count",
           "coinlist": [
             {
               "coindescs": [
@@ -1718,6 +2345,37 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Energy Cycle",
+          "desc": "If at 5+ Charge Count, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Spend 3 Charge to inflict 2 Slash Fragility"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1732,28 +2390,63 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Spend 2 Charge to inflict 1 Defense Level Down"
+                  "desc": "[OnSucceedAttack] Spend 2 Charge to inflict 2 Defense Level Down"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Spend 2 Charge to inflict 1 Defense Level Down"
+                  "desc": "[OnSucceedAttack] Spend 2 Charge to inflict 2 Defense Level Down"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Spend 2 Charge to inflict 1 Defense Level Down"
+                  "desc": "[OnSucceedAttack] Spend 2 Charge to inflict 2 Defense Level Down"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Spend 2 Charge to inflict 1 Defense Level Down"
+                  "desc": "[OnSucceedAttack] Spend 2 Charge to inflict 2 Defense Level Down"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Energy Current",
+          "desc": "If at 5+ Charge Count, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Spend 2 Charge to inflict 2 Defense Level Down"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Spend 2 Charge to inflict 2 Defense Level Down"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Spend 2 Charge to inflict 2 Defense Level Down"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Spend 2 Charge to inflict 2 Defense Level Down"
                 }
               ]
             }
@@ -1768,6 +2461,14 @@
           "level": 1,
           "name": "Guard",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Guard",
+          "desc": "[StartBattle] Gain +2 Charge Count",
           "coinlist": [
             {}
           ]
@@ -1851,6 +2552,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Dual Strike",
+          "desc": "If user took no damage last turn, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1867,6 +2589,27 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttackHead] Inflict 2 Attack Power Down"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Whirlwind",
+          "desc": "If user took no damage last turn, Coin Power +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Attack Power Down"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
                 }
               ]
             }
@@ -1919,6 +2662,21 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Hack",
+          "desc": "",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Bleed"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1957,6 +2715,28 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Bleed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Cloud Cutter",
+          "desc": "[BeforeAttack] If target has less than 4 Bleed Count, use Coin 1 and 2 an additional time",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
                 }
               ]
             },
@@ -2105,6 +2885,37 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Jag",
+          "desc": "If target has 7+ Bleed, deal +20% damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Damage +3"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Damage +3"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] If target is below 25% HP, use this Coin an additional time if target survives\nHeads: +50% Damage for this Coin"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttackHead] +50% Damage for this Coin"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2127,6 +2938,26 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Mutilate",
+          "desc": "[EnemyKill] Use this skill 1 more time",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Damage +7"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttackHead] +100% damage for this Coin"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttackHead] If target has 10+ Bleed, deal +50% damage"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2137,6 +2968,14 @@
           "level": 1,
           "name": "Evade",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Evade",
+          "desc": "If target has 5+ Bleed, Coin Power +2\n[OnSucceedEvade] Heal 3 SP",
           "coinlist": [
             {}
           ]
@@ -2206,6 +3045,20 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Smackdown",
+          "desc": "[WhenUse] Gain 1 Attack Power Up and Damage Up next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Tremor"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2266,6 +3119,14 @@
           "coinlist": [
             {}
           ]
+        },
+        {
+          "level": 4,
+          "name": "Extreme Edge",
+          "desc": "At less than 50% HP, Skill Power +2\n[WhenUse] Gain +3 Poise Count",
+          "coinlist": [
+            {}
+          ]
         }
       ]
     },
@@ -2284,6 +3145,14 @@
           "level": 2,
           "name": "Flying Sword",
           "desc": "At less than 25% HP, +2 Skill Power",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Flying Sword",
+          "desc": "At less than 50% HP, +2 Skill Power\n[WhenUse] Gain 3 Poise",
           "coinlist": [
             {}
           ]
@@ -2313,6 +3182,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Flashing Strike",
+          "desc": "At 10+ Poise Count, Skill Power +2\nAt less than 50% HP, Atk Weight +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[BeforeAttack] Lose 5 HP; +50% Skill Damage for this Coin"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[BeforeAttack] Lose 5 HP; +50% Skill Damage for this Coin"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2323,6 +3213,14 @@
           "level": 1,
           "name": "Counter",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Counter",
+          "desc": "[WhenUse] Lose 5 HP\nAt 3+ Poise Count, Damage +50%",
           "coinlist": [
             {}
           ]
@@ -2513,6 +3411,14 @@
           "coinlist": [
             {}
           ]
+        },
+        {
+          "level": 4,
+          "name": "Evade",
+          "desc": "[WhenUse] Gain +1 Charge Count",
+          "coinlist": [
+            {}
+          ]
         }
       ]
     },
@@ -2566,6 +3472,20 @@
           "desc": "[WinDuel] Inflict 3 Defense Power Down",
           "coinlist": [
             {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Slide",
+          "desc": "[WinDuel] Inflict 3 Defense Power Down",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Tremor"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -2652,6 +3572,33 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Mind Strike",
+          "desc": "[WhenUse] Gain +2 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain +2 Charge Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain +2 Charge Count"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2681,6 +3628,20 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttackHead] Inflict +3 Sinking Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Flaying Surge",
+          "desc": "[WhenUse] Gain +7 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +3 Sinking Count"
                 }
               ]
             }
@@ -2737,6 +3698,53 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Mind Whip",
+          "desc": "Spend 8 Charge\nAt less than 8 Charge Count, target a random unit for an unopposed attack",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Raise Stagger Threshold by 40% of damage dealt"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Raise Stagger Threshold by 30% of damage dealt"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Raise Stagger Threshold by 20% of damage dealt"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Raise Stagger Threshold by 10% of damage dealt"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2747,6 +3755,14 @@
           "level": 1,
           "name": "Evade",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Guard",
+          "desc": "[OnSucceedEvade] Gain +1 Charge Count",
           "coinlist": [
             {}
           ]
@@ -2781,7 +3797,29 @@
         {
           "level": 2,
           "name": "Flying Sword",
-          "desc": "At less than 50% HP, this skill applies 1 additional stack of Poise",
+          "desc": "At less than 50% HP, this skill gives 1 additional Poise",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 Poise"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Flying Sword",
+          "desc": "At less than 50% HP, this skill gives 3 additional Poise",
           "keywords": [],
           "coinlist": [
             {
@@ -2848,6 +3886,28 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Flashing Strike",
+          "desc": "[WhenUse] At less than 50% HP, use Coin 1 and 2 an additional time",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +2 Poise Count "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +2 Poise Count "
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2858,6 +3918,28 @@
           "level": 3,
           "name": "Catch Breath",
           "desc": "",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] At less than 25% HP, heal 100% of damage dealt"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Catch Breath",
+          "desc": "At 5+ Poise Count, +50% Critical Damage",
           "keywords": [],
           "coinlist": [
             {
@@ -2890,6 +3972,21 @@
             {},
             {}
           ]
+        },
+        {
+          "level": 4,
+          "name": "Counter",
+          "desc": "At 5+ Poise Count, +50% Critical Damage",
+          "keywords": [],
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 Poise Count"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2914,6 +4011,20 @@
           "level": 2,
           "name": "Shove",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Paralyze"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Shove",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\nIf target has 8+ Tremor, Skill Power +2",
           "coinlist": [
             {
               "coindescs": [
@@ -3024,6 +4135,41 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Suppress",
+          "desc": "If target has 5+ Tremor Count, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Burst Tremor"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 Ammo\n[OnSucceedAttack] Inflict 4 Rupture; Inflict +2 Rupture Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 Ammo\n[OnSucceedAttack] Inflict 4 Rupture; Inflict +2 Rupture Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 Ammo\n[OnSucceedAttack] Inflict 5 Fragile"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3034,6 +4180,14 @@
           "level": 1,
           "name": "Guard",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Guard",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\nAt 0 Ammo, gain 2 more Aggro",
           "coinlist": [
             {}
           ]
@@ -3117,6 +4271,30 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Axe Combo",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict +1 Bleed Count"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3134,7 +4312,42 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] If target has +6 Bleed, deal +20% Damage"
+                  "desc": "[OnSucceedAttack] If target has 6+ Bleed, deal +20% damage"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Slay",
+          "desc": "Skill Power +1 when below 0 SP",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If target has 6+ Bleed, deal +20% damage"
                 }
               ]
             }
@@ -3181,6 +4394,20 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttackHead] Gain 4 Poise"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Sharp Edge",
+          "desc": "At 4+ Poise, Coin Power +3",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 4 Poise"
                 }
               ]
             }
@@ -3244,6 +4471,33 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Scattering Slash",
+          "desc": "[WhenUse] Gain +2 Poise Count\nAt 5+ Poise, Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 Poise"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 3 Poise"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Bleed"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3254,6 +4508,20 @@
           "level": 3,
           "name": "Sky-clearing Cut",
           "desc": "If target has 6+ Bleed, double the crit chance",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict 10 Bleed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Sky-clearing Cut",
+          "desc": "If target has 6+ Bleed, double the crit chance\nAt 10+ Poise, +100% Critical Damage",
           "coinlist": [
             {
               "coindescs": [
@@ -3276,6 +4544,14 @@
           "coinlist": [
             {}
           ]
+        },
+        {
+          "level": 4,
+          "name": "Counter",
+          "desc": "[WhenUse] Gain 1 Protection\n[WhenUse] Gain +2 Poise Count",
+          "coinlist": [
+            {}
+          ]
         }
       ]
     },
@@ -3286,6 +4562,20 @@
           "level": 3,
           "name": "Sky-clearing Cut",
           "desc": "If target has 6+ Bleed, double the crit chance",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict 10 Bleed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Sky-clearing Cut",
+          "desc": "If target has 6+ Bleed, double the crit chance\nAt 10+ Poise, +100% Critical Damage",
           "coinlist": [
             {
               "coindescs": [
@@ -3319,6 +4609,20 @@
           "level": 2,
           "name": "Bludgeon",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 3 Paralyze"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Bludgeon",
+          "desc": "If the next skill on the Dashboard does Blunt DMG, this skill's Coin Power +2",
           "coinlist": [
             {
               "coindescs": [
@@ -3363,6 +4667,21 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Thrust",
+          "desc": "If the next skill on the Dashboard does Blunt DMG, this skill's Coin Power +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 Defense Power Down"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3380,7 +4699,31 @@
                   "desc": "[OnSucceedAttackHead] Inflict 4 Defense Power Down"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Defense Level Down"
+                  "desc": "[OnSucceedAttack] Inflict 4 Defense Level Down"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 3 Paralyze"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Suppress",
+          "desc": "If target took no damage from attacks this turn, Coin Power +3",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 4 Defense Power Down"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 Defense Level Down"
                 }
               ]
             },
@@ -3478,6 +4821,34 @@
             {},
             {}
           ]
+        },
+        {
+          "level": 4,
+          "name": "Ravaging Cut",
+          "desc": "[WinDuel] Gain 1 Attack Power Up",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3522,6 +4893,21 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Gain +2 Poise Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Slice then Stab",
+          "desc": "If at 3+ Poise Count, Coin Power +1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +2 Poise Count "
                 }
               ]
             }
@@ -3587,6 +4973,34 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Slash Series",
+          "desc": "[DefeatDuel] Gain 2 Attack Power Up next turn\n[WinDuel] Do not spend Poise Count with critical attacks landed with this skill",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 Poise"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 1 Poise"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 1 Poise"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3609,6 +5023,23 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "To Claim Their Bones",
+          "desc": "At 10+ Poise Count, +150% Critical Damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 Paralyze"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Bleed"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3619,6 +5050,14 @@
           "level": 1,
           "name": "Newsprung Counter",
           "desc": "[WhenUse] Gain 1 Damage Up next turn",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Newsprung Counter",
+          "desc": "[WhenUse] Gain 1 Damage Up next turn\n[WhenUse] Gain +3 Poise Count",
           "coinlist": [
             {}
           ]
@@ -3646,6 +5085,20 @@
           "level": 2,
           "name": "Baton",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Baton",
+          "desc": "[DefeatDuel] Gain 2 Protection",
           "coinlist": [
             {
               "coindescs": [
@@ -3696,6 +5149,24 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Suppress",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[DefeatDuel] Inflict 6 Tremor",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 6 Tremor"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Damage Down next turn"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3705,12 +5176,32 @@
         {
           "level": 3,
           "name": "Strong Strike",
-          "desc": "[WhenUse] Apply 1 Protection to the ally with the least HP",
+          "desc": "[WhenUse] Give 1 Protection to the ally with the least HP",
           "coinlist": [
             {
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Burst Tremor"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Blunt Fragility"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Strong Strike",
+          "desc": "[WhenUse] Give 1 Protection to the ally with the least HP next turn\n[WhenUse] Gain +10 Aggro to this Skill Slot next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Burst Tremor"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has 5+ Tremor upon Tremor Burst, gain 2 Protection next turn"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 2 Blunt Fragility"
@@ -3728,6 +5219,14 @@
           "level": 1,
           "name": "Guard",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Guard",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn",
           "coinlist": [
             {}
           ]
@@ -3761,6 +5260,21 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttackHead] Inflict 4 Sinking"
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Baile y Rola",
+          "desc": "If target has 4+ Sinking, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 Sinking"
                 }
               ]
             },
@@ -3833,6 +5347,40 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Danza de Pasión",
+          "desc": "If target has 6+ Sinking, Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 Poise"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 Poise Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Sinking Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3852,6 +5400,20 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Pañata Party",
+          "desc": "If target's SP is below 0, boost crit chance proportional to target's SP\nIf user has 5+ Poise Count, +30% Critical Damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Lower user’s Stagger Threshold by 50% of damage dealt"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3862,6 +5424,14 @@
           "level": 1,
           "name": "Evade",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Evade",
+          "desc": "[OnSucceedEvade] Gain +1 Poise Count",
           "coinlist": [
             {}
           ]
@@ -3901,6 +5471,28 @@
               ]
             },
             {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Pulled Blade",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -3962,6 +5554,20 @@
           "coinlist": [
             {}
           ]
+        },
+        {
+          "level": 4,
+          "name": "Piercing Thrust",
+          "desc": "If target’s HP is above 50%, deal +20% damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Rupture Count"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4008,6 +5614,20 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Draw of the Sword",
+          "desc": "At 5+ Poise, Coin Power +3",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 4 Poise"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4043,6 +5663,21 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Acupuncture",
+          "desc": "[WinDuel] Gain +2 Poise Count",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain 2 Slash DMG Up next turn"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4063,6 +5698,21 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Decisive Dive",
+          "desc": "If target’s HP is below 50%, Final Power +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] Raise first Stagger Threshold by 20% of damage dealt"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4073,6 +5723,14 @@
           "level": 1,
           "name": "Evade",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Evade",
+          "desc": "At 6+ Poise, Coin Power +3",
           "coinlist": [
             {}
           ]
@@ -4100,6 +5758,20 @@
           "level": 2,
           "name": "Order",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Apply 2 Protection to the ally with the lowest Speed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Order",
+          "desc": "If target has 5+ Sinking, Coin Power +2",
           "coinlist": [
             {
               "coindescs": [
@@ -4142,6 +5814,20 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Onslaught Command",
+          "desc": "[WhenUse] Apply 1 Attack Power Up to the ally with the lowest Speed",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Apply 2 Damage Up to the ally with the lowest Speed"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4160,6 +5846,26 @@
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 2 Attack Power Down"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Focus",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 Sinking"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Attack Power Down"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 4 Sinking"
                 }
               ]
             }
@@ -4242,6 +5948,26 @@
                 },
                 {
                   "desc": "[OnSucceedAttackHead] Inflict 1 Pierce Fragility"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Jag",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Rupture Count"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Pierce Fragility"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
                 }
               ]
             }
@@ -4335,6 +6061,33 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Single-point Stab",
+          "desc": "If target has 6+ Burn, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Burn"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4382,7 +6135,38 @@
                   "desc": "[OnSucceedAttack] Inflict 3 Burn"
                 },
                 {
-                  "desc": "[OnSucceedAttack] If target has 6+ Burn, gain 1 Attack Level Up next turn"
+                  "desc": "[OnSucceedAttack] If target has 6+ Burn, gain 1 Attack Power Up next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Rush Down",
+          "desc": "If target has 6+ Burn, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Burn"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has 6+ Burn, gain 1 Attack Power Up next turn"
                 }
               ]
             }
@@ -4427,6 +6211,41 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Perfected Palm Strike",
+          "desc": "If target has 6+ Burn, deal +10% damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Burn"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4454,7 +6273,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Heal 30% of damage dealt"
+                  "desc": "[OnSucceedAttackHead] Heal by 30% of damage dealt"
                 }
               ]
             },
@@ -4470,6 +6289,21 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttackHead] Heal by 50% of damage dealt"
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Hack",
+          "desc": "[WinDuel] Damage +40%\nIf target has 5+ Rupture Count, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Heal by 50% of damage dealt"
                 }
               ]
             },
@@ -4511,6 +6345,23 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Dismember",
+          "desc": "If target has 5+ Rupture Count, deal +50% damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 Rupture"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Heal by 50% of damage dealt"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4547,6 +6398,41 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttackHead] Heal 100% of damage dealt"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Eviscerate",
+          "desc": "If target has 5+ Rupture Count, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If target has Rupture, deal 30% of damage dealt as bonus damage"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If target has Rupture, deal 30% of damage dealt as bonus damage"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If target has Rupture, deal 30% of damage dealt as bonus damage"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Heal by 100% of damage dealt"
                 }
               ]
             }
@@ -4641,6 +6527,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Drive",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\nAt less than 50% HP, Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Lower user’s Stagger Threshold by 60% of damage dealt"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Lower user’s Stagger Threshold by 60% of damage dealt"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4693,6 +6600,30 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "You Are Cleansed of Sin",
+          "desc": "[WhenUse] Gain +6 Aggro to this Skill Slot next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Nails"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Bind next turn"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has 5+ Nails, inflict 2 Bind and 2 Attack Power Down next turn"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4715,6 +6646,27 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Heal 50% of damage dealt"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Annihilate Heretics",
+          "desc": "[WhenUse] Gain +6 Aggro to this Skill Slot next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Nails next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Heal 50% of damage dealt\nHP Heal +3% for each of target's Nails"
                 }
               ]
             }
@@ -4775,6 +6727,33 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Inflict 1 Bleed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Devoted Hammering",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Bleed"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has Nails, inflict 1 Nails"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Bleed"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has Nails, inflict 1 Nails"
                 }
               ]
             }
@@ -4856,6 +6835,29 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Ironclad Retribution",
+          "desc": "If this unit is Fanatic, deal +15% damage\nDeal +5% damage for each N Corp. ally present in the party",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4868,6 +6870,20 @@
           "desc": "",
           "coinlist": [
             {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Counter",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Nails"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -4968,6 +6984,37 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "The Gripping",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Nails"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Nails"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Paralyze next turn"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict Gaze next turn"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4997,6 +7044,34 @@
               "coindescs": [
                 {
                   "desc": "+50% Damage to targets with 5+ Nails"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Execution",
+          "desc": "On kill, heal all allies for 10 SP and apply 1 Pierce DMG Up and Blunt DMG Up",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Nails"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Nails"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "+70% damage to targets with 5+ Nails"
                 }
               ]
             }
@@ -5060,6 +7135,33 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Inflict 1 Bleed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Gawky Nailing",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Nails next turn"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict 1 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Bleed"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Nails"
                 }
               ]
             }
@@ -5186,6 +7288,23 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Predictive Analysis",
+          "desc": "In a clash, opponent has -2 Clash Power",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Paralyze next turn"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Rupture"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5203,7 +7322,7 @@
                   "desc": "[OnSucceedAttackHead] Inflict +1 Rupture Count"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Defense Level Down next turn"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Defense Level Down next turn"
                 }
               ]
             },
@@ -5213,7 +7332,7 @@
                   "desc": "[OnSucceedAttackHead] Inflict +1 Rupture Count"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Defense Level Down next turn"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Defense Level Down next turn"
                 }
               ]
             }
@@ -5230,7 +7349,7 @@
                   "desc": "[OnSucceedAttack] Inflict +1 Rupture Count"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Defense Level Down next turn"
+                  "desc": "[OnSucceedAttack] Inflict 2 Defense Level Down next turn"
                 }
               ]
             },
@@ -5240,7 +7359,34 @@
                   "desc": "[OnSucceedAttack] Inflict +1 Rupture Count"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Defense Level Down next turn"
+                  "desc": "[OnSucceedAttack] Inflict 2 Defense Level Down next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Field Command",
+          "desc": "In a clash, opponent has -2 Clash Power",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Rupture Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Defense Level Down next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 Rupture Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Defense Level Down next turn"
                 }
               ]
             }
@@ -5259,7 +7405,32 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Offense Level Down next turn"
+                  "desc": "[OnSucceedAttack] Inflict 2 Offense Level Down next turn"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Deal bonus Slash damage by 15% of damage dealt"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict Weakness Analyzed next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Exploit the Gap",
+          "desc": "In a clash, opponent has -2 Clash Power\nIf target has 7+ Rupture, Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Offense Level Down next turn"
                 }
               ]
             },
@@ -5283,7 +7454,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "I’ll Take the Lead",
+          "name": "I'll Take the Lead",
           "desc": "[WhenUse] Gain 1 Haste and 1 Defense Power Up next turn",
           "coinlist": [
             {}
@@ -5365,7 +7536,28 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Burn Count; at 30+ SP, inflict 1 more; at 45+ SP, inflict 2 more."
+                  "desc": "[OnSucceedAttack] Inflict +1 Burn Count; at 30+ SP, inflict 1 more; at 45+ SP, inflict 2 more"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Flowing Flame",
+          "desc": "If target has 6+ Burn Count, Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn; if target already has Burn, inflict 1 more"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Burn Count; at 30+ SP, inflict 1 more; at 45+ SP, inflict 2 more"
                 }
               ]
             }
@@ -5380,6 +7572,30 @@
           "level": 3,
           "name": "Crimson Blaze Fist",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn; if target already has Burn, inflict +1 Burn Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Heal 6 SP"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has 6+ Burn Count, raise Stagger Threshold by 30% of damage dealt"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Crimson Blaze Fist",
+          "desc": "If target has 6+ Burn Count, Coin Power +1",
           "coinlist": [
             {
               "coindescs": [
@@ -5459,6 +7675,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "P.C.",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 Appetite"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5516,6 +7753,34 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] If target has Bleed or Paralyze, inflict 3 HP Healing Down next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "I.H.",
+          "desc": "[WhenUse] Gain 1 Appetite",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Bind next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 3 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If target has Bleed or Paralyze, inflict 4 HP Healing Down next turn"
                 }
               ]
             }
@@ -5614,6 +7879,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Keep It Fresh",
+          "desc": "If target has 4+ Bind, deal +30% damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Paralyze; if target has Bleed, inflict 1 Paralyze next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Bleed"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5647,6 +7933,20 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "You Fresh Enough?",
+          "desc": "If user's speed is higher than target's by 3+, Coin Power +3",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 Bleed Count; Inflict 2 Bind next turn"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5657,6 +7957,41 @@
           "level": 3,
           "name": "Butcher Viand",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Paralyze"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Paralyze"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Heal HP based on target’s Bleed (Max 20%)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Butcher Viand",
+          "desc": "If target has 10+ Bleed Count, Coin Power +1",
           "coinlist": [
             {
               "coindescs": [
@@ -5734,6 +8069,24 @@
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 2 Burn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Coerced Judgement",
+          "desc": "[WhenUse] Lose 7 SP",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Gain 1 Fanatic next turn"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Burn"
                 }
               ]
             }
@@ -5840,6 +8193,31 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Self-destructive Purge",
+          "desc": "- [WhenUse] Lose 15 SP\n- If this unit is Fanatic, deal +15% damage\n- If target is a <Mechanical Amalgam>, deal +10% damage",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Raise Stagger Threshold by 50% of damage dealt"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If target has 5+ Bleed, inflict 7 Burn"
+                },
+                {
+                  "desc": "[EnemyKill] Gain 1 Blunt Power Up next turn"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5906,6 +8284,30 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Rightful Purge",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Nails"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Tremor"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5942,6 +8344,23 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Enactment!",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Burst Tremor"
+                },
+                {
+                  "desc": "+30% damage to targets with 5+ Nails"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5964,6 +8383,43 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttackHead] Inflict 1 Nails"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] If target has 5+ Nails, inflict 1 Attack Power Down next turn"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] If target has 5+ Nails, inflict 2 Paralyze next turn"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Fanatical Judgement",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Nails"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Nails"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
@@ -6050,6 +8506,30 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Rev Up",
+          "desc": "[WhenUse] Gain +2 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain +4 Charge Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6072,7 +8552,7 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Inflict 2 Tremor\nAt 3+ Charge Count, reuse this Coin if it lands Heads (Up to 2 times)\nIf the Coin is reused twice, burst Tremor after inflicting it\nAfter bursting Tremor, reduce Tremor Count by 1",
-                  "summary": "[OnSucceedAttack] Burst Tremor; Reuse Coin if conditions are met; Inflict +2 Tremor if reused; if the Coin is reused twice, burst Tremor then reduce Tremor Count"
+                  "summary": "[OnSucceedAttack] Burst Tremor.\nReuse Coin if conditions are met; Inflict +2 Tremor if reused.\nIf the Coin is reused twice, burst Tremor then reduce Tremor Count"
                 }
               ]
             }
@@ -6094,7 +8574,29 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Inflict 2 Tremor\nAt 3+ Charge Count, reuse this Coin if it lands Heads (Up to 2 times)\nInflict 2 more Tremor each time the Coin is reused\nIf the Coin is reused twice, burst Tremor after inflicting it\nAfter bursting Tremor, reduce Tremor Count by 1",
-                  "summary": "[OnSucceedAttack] Burst Tremor; Reuse Coin if conditions are met; Inflict +2 Tremor if reused; if the Coin is reused twice, burst Tremor then reduce Tremor Count"
+                  "summary": "[OnSucceedAttack] Burst Tremor.\nReuse Coin if conditions are met; Inflict +2 Tremor if reused.\nIf the Coin is reused twice, burst Tremor then reduce Tremor Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Vibration Compression",
+          "desc": "If target has 10+ Tremor Count, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Tremor\nAt 3+ Charge Count, reuse this Coin if it lands Heads (Up to 2 times)\nInflict 2 more Tremor each time the Coin is reused\nIf the Coin is reused twice, burst Tremor after inflicting it\nAfter bursting Tremor, reduce Tremor Count by 1",
+                  "summary": "[OnSucceedAttack] Burst Tremor.\nReuse Coin if conditions are met; Inflict +2 Tremor if reused.\nIf the Coin is reused twice, burst Tremor then reduce Tremor Count"
                 }
               ]
             }
@@ -6187,6 +8689,23 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Saddled Tasks",
+          "desc": "If target has 5+ Tremor Count, Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Tremor"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6237,6 +8756,30 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Forced Break",
+          "desc": "If target has 7+ Tremor Count, Final Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Tremor"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Tremor"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If target has 5+ Tremor, inflict 1 Attack Power Down next turn"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6247,6 +8790,51 @@
           "level": 3,
           "name": "Finishing Runup",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain +1 Charge Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Tremor"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain +2 Charge Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain +2 Charge Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Tremor"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Burst Tremor\nWhen bursting Tremor, reduce Tremor Count by 3, then spend all Charge to further raise Stagger Threshold by (Charge Count x 5)% (Max 50%)",
+                  "summary": "[OnSucceedAttack] Burst Tremor, then reduce Tremor Count by 3; Spend Charge to further raise Stagger Threshold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Finishing Runup",
+          "desc": "If target has 10+ Tremor Count, Coin Power +1",
           "coinlist": [
             {
               "coindescs": [
@@ -6335,6 +8923,24 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Rev Up",
+          "desc": "[WhenUse] Gain +2 Charge Count",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has 5+ Tremor Count, inflict 3 Rupture"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6374,6 +8980,23 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Grease Chains",
+          "desc": "[WhenUse] Gain +3 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 Tremor Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 Rupture Count"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6388,7 +9011,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Burst Tremor, then reduce Tremor Count by 2; Spend up to 4 Charge to inflict Rupture Count equal to Charge Count spent"
+                  "desc": "[OnSucceedAttack] Burst Tremor, then reduce Tremor Count by 2;\nSpend up to 4 Charge to inflict Rupture Count equal to Charge Count spent"
                 }
               ]
             },
@@ -6409,6 +9032,46 @@
                 },
                 {
                   "desc": "[OnSucceedAttack] If target is Staggered, deal +10% damage"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Let's Grind 'Em",
+          "desc": "If target has 5+ Tremor Count, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Burst Tremor, then reduce Tremor Count by 2;\nSpend up to 4 Charge to inflict Rupture Count equal to Charge Count spent"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Rupture"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target is Staggered, deal +10% damage"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has 5+ Tremor Count, inflict 3 Rupture"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Rupture"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target is Staggered, deal +10% damage"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has 5+ Tremor Count, inflict 3 Rupture"
                 }
               ]
             }
@@ -6469,6 +9132,25 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Umbrella Thwack",
+          "desc": "[WhenUse] Gain +1 Sinking Count\n[DefeatDuel] Gain 3 Sinking",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict +2 Sinking Count"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6508,6 +9190,38 @@
           "level": 2,
           "name": "Puddle Stomp",
           "desc": "[WhenUse] When below -15 SP, Final Power +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict 3 Rupture"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict 3 Rupture"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 5 Sinking to deal +20% damage"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] Burst Tremor"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Puddle Stomp",
+          "desc": "[WhenUse] When below -15 SP, Final Power +3\n[WhenUse] When below -25 SP, Final Power +2",
           "coinlist": [
             {},
             {
@@ -6594,6 +9308,30 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Warning",
+          "desc": "[WhenUse] Gain 5 Sinking",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Gain 1 Paralyze next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 Sinking"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 Rupture"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6643,6 +9381,28 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Sprouting Bud",
+          "desc": "[WhenUse] Gain +3 Tremor Count",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Sinking Count next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 Sinking Count next turn"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6652,7 +9412,7 @@
         {
           "level": 1,
           "name": "Moment's Floral Breeze",
-          "desc": "[StartBattle] Spend 6 Tremor Count to turn this into an AoE skill that targets 3 slots",
+          "desc": "[StartBattle] Spend 6 Tremor Count to turn this into an AoE skill with 3 Atk Weight",
           "coinlist": [
             {
               "coindescs": [
@@ -6680,7 +9440,35 @@
         {
           "level": 2,
           "name": "Moment's Floral Breeze",
-          "desc": "[StartBattle] Spend 6 Tremor Count to turn this into an AoE skill that targets 3 slots",
+          "desc": "[StartBattle] Spend 6 Tremor Count to turn this into an AoE skill with 3 Atk Weight",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Sinking next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Sinking next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Sinking next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Moment's Floral Breeze",
+          "desc": "[StartBattle] Spend 6 Tremor Count to turn this into an AoE skill with 3 Atk Weight\nIf main target has 6+ Sinking Count, Coin Power +1",
           "coinlist": [
             {
               "coindescs": [
@@ -6740,6 +9528,37 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Bloodsteeped Scent",
+          "desc": "[DefeatDuel] Lose 20 SP\n[WhenUse] Gain 6 Tremor Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Sinking Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Sinking Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If target has 6+ Sinking, cause Sinking Deluge"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If user has 10+ Tremor Count, deal 40% of damage dealt as bonus damage"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6777,6 +9596,23 @@
           "level": 2,
           "name": "It's Heavy...!",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "It's Heavy...!",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[DefeatDuel] Inflict 2 Tremor and 2 Rupture",
           "coinlist": [
             {
               "coindescs": [
@@ -6836,6 +9672,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "It's Churning...!",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[DefeatDuel] Inflict 3 Tremor and 3 Rupture",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Tremor"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6850,13 +9707,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Burst Tremor"
-                },
+                  "desc": "[OnSucceedAttack] Burst Tremor\nAfter bursting Tremor, reduce Tremor Count by 4. Inflict 5 Rupture"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Corrosive Splash",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[DefeatDuel] Inflict 5 Tremor and 5 Rupture",
+          "coinlist": [
+            {
+              "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Reduce Tremor Count by 4"
-                },
-                {
-                  "desc": "[OnSucceedAttack] After bursting Tremor, inflict 5 Rupture"
+                  "desc": "[OnSucceedAttack] Burst Tremor\nAfter bursting Tremor, reduce Tremor Count by 4. Inflict 5 Rupture"
                 }
               ]
             }
@@ -6871,6 +9736,14 @@
           "level": 1,
           "name": "Guard",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Guard",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn",
           "coinlist": [
             {}
           ]
@@ -6892,6 +9765,14 @@
           "level": 2,
           "name": "Impede the Intruder",
           "desc": "Coin Power +2 to targets with 5+ Rupture",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Impede the Intruder",
+          "desc": "If target has 5+ Rupture, Coin Power +3\n[WhenUse] Gain +5 Aggro to this Skill Slot next turn",
           "coinlist": [
             {}
           ]
@@ -6942,6 +9823,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Decay Blade",
+          "desc": "[WhenUse] Gain +5 Aggro to this Skill Slot next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Rupture\nIf target has 10+ Rupture, heal by 50% of damage dealt"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Rupture\nIf target has 10+ Rupture, heal by 50% of damage dealt"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6968,6 +9870,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Excise Target",
+          "desc": "At 80% or more HP, Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 Rupture"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict Rupture Count by the amount of K Corp Ampule; Deal +5% damage per K Corp Ampule"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6978,6 +9901,14 @@
           "level": 1,
           "name": "Ampule Injection",
           "desc": "[WhenUse] Gain 1 K Corp Ampule next turn",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Ampule Injection",
+          "desc": "[WhenUse] Gain 1 K Corp Ampule next turn\n[WhenUse] Gain +5 Aggro to this Skill Slot next turn",
           "coinlist": [
             {}
           ]
@@ -7013,6 +9944,23 @@
                 },
                 {
                   "desc": "[OnSucceedAttackHead] If target has 5+ Rupture, gain 1 Talisman"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Magnify Wound",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has 5+ Rupture, gain 1 Talisman"
                 }
               ]
             }
@@ -7081,6 +10029,43 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Proliferating Talismans",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 1 Talisman"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has Rupture, gain 1 Talisman"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 1 Talisman"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has Rupture, gain 1 Talisman"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 1 Talisman"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has Rupture, gain 1 Talisman"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -7096,6 +10081,27 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Spend 5 Talisman on self; Give 5 Talisman"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If target has Talisman, inflict +1 Rupture Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Rupturing Talisman",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Spend 5 Talisman on self; Give 7 Talisman"
                 }
               ]
             },
@@ -7151,6 +10157,27 @@
           "level": 2,
           "name": "Red Kick",
           "desc": "If target has 3+ Burn, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Red Kick",
+          "desc": "Coin Power +1 for every 3 Burn on target (Max 2)",
           "coinlist": [
             {
               "coindescs": [
@@ -7228,6 +10255,34 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Frontal Assault",
+          "desc": "Coin Power +1 for every 6 Burn on target (Max 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If target has 6+ Burn, inflict +2 Burn Count"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -7238,6 +10293,41 @@
           "level": 1,
           "name": "Inner Gate Elbow Strike",
           "desc": "If target has 6+ Burn and Burn Count, deal +30% damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Burn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 Burn Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[EndSkill] If target is Staggered or defeated, gain 1 Plus Coin Boost next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Inner Gate Elbow Strike",
+          "desc": "If target has 6+ Burn and Burn Count, deal +50% damage",
           "coinlist": [
             {
               "coindescs": [
@@ -7320,6 +10410,20 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Weighty Bash",
+          "desc": "At 10+ Charge Count, Final Power +1\nAt 7+ Speed, deal +25% Damage\n[WhenUse] Gain +2 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +2 Charge Count"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -7381,6 +10485,34 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Demolish",
+          "desc": "At 7+ Speed, inflict +1 Bleed Count with this Skill\n[WhenUse] Gain +4 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +4 Charge Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -7420,6 +10552,40 @@
             },
             {}
           ]
+        },
+        {
+          "level": 4,
+          "name": "Rhino Ram",
+          "desc": "[WhenUse] At 10+ Charge Count, Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Spend 2 Charge. Inflict +1 Bleed Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Spend 3 Charge. Inflict +1 Bleed Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 Bleed Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Spend 2 Charge. Inflict +1 Bleed Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Spend 3 Charge. Inflict +1 Bleed Count"
+                }
+              ]
+            },
+            {}
+          ]
         }
       ]
     },
@@ -7430,6 +10596,14 @@
           "level": 1,
           "name": "Bioelectricity Induction",
           "desc": "[WhenUse] If attacked while shielded, gain +1 Charge Count (Max 10 per turn)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Bioelectricity Induction",
+          "desc": "[WhenUse] If attacked while shielded, gain +2 Charge Count (Max 10 per turn)",
           "coinlist": [
             {}
           ]
@@ -7480,6 +10654,27 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Careful Obstruction",
+          "desc": "[WhenUse] Gain +2 Aggro to this Skill Slot next turn\n[DefeatDuel] Gain +2 Poise Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 Poise Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 Poise Count"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -7489,7 +10684,7 @@
         {
           "level": 1,
           "name": "Focused Defense",
-          "desc": "[WhenUse] At 15+ Shield, gain +2 Poise Count",
+          "desc": "[WhenUse] At 15+ shield, gain +2 Poise Count",
           "coinlist": [
             {}
           ]
@@ -7497,7 +10692,22 @@
         {
           "level": 2,
           "name": "Focused Defense",
-          "desc": "[WhenUse] At 15+ Shield, gain +2 Poise Count",
+          "desc": "[WhenUse] At 15+ shield, gain +2 Poise Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain +1 Poise Count"
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Focused Defense",
+          "desc": "[WhenUse] At 15+ shield, gain +2 Poise Count\n[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[WhenUse] Gain +2 Poise Count",
           "coinlist": [
             {
               "coindescs": [
@@ -7517,7 +10727,23 @@
         {
           "level": 1,
           "name": "Subdue Threat",
-          "desc": "At 15+ Shield, Coin Power +1",
+          "desc": "At 15+ shield, Coin Power +1",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict 1 Fragile next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Subdue Threat",
+          "desc": "At 15+ Shield, Coin Power +2",
           "coinlist": [
             {},
             {},
@@ -7547,6 +10773,182 @@
                 }
               ]
             }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Guard",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[WhenUse] Gain +5 Aggro to this Skill Slot next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Remise",
+          "desc": "At 7+ Speed, Coin Power +1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[WinDuelAttackHead] Inflict 1 Bind next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Remise",
+          "desc": "At 7+ Speed, Coin Power +1\n[WinDuel] Gain 1 Haste next turn",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[WinDuelAttackHead] Inflict 1 Bind next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Remise",
+          "desc": "At 7+ Speed, Coin Power +2\n[WinDuel] Gain 1 Haste next turn",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[WinDuelAttack] Inflict 1 Bind next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Flèche",
+          "desc": "[WhenUse] Gain 1 Haste next turn",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bind next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Flèche",
+          "desc": "[WhenUse] Gain 2 Haste next turn",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bind next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Flèche",
+          "desc": "[WhenUse] Gain 2 Haste next turn\n[WinDuel] Deal more damage based on Clash count (+5% per Clash count, Max 50%)",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Bind next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Salut!",
+          "desc": "At 10+ Speed, Coin Power +2\n[WinDuel] Deal more damage based on Clash count (+5% per Clash count, Max 50%)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Declare Duel"
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Salut!",
+          "desc": "At 10+ Speed, Coin Power +3\n[WinDuel] Deal more damage based on Clash count (+10% per Clash count, Max 100%)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Declare Duel"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[EnemyKill] Heal 15 SP"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Défensive",
+          "desc": "[OnSucceedEvade] Target loses 3 SP",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Défensive",
+          "desc": "[OnSucceedEvade] Target loses 3 SP",
+          "coinlist": [
+            {}
           ]
         }
       ]
