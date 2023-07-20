@@ -117,8 +117,8 @@
     {
       "id": "DefenseUp",
       "name": "Defense Level Up",
-      "desc": "Defense Level increases based on the effect’s Count for one turn. (Max 10)",
-      "summary": "Defense Level +{0}0%"
+      "desc": "Defense Level increases based on the effect's Potency for one turn.",
+      "summary": "Defense Level +{0}"
     },
     {
       "id": "PlusCoinValueUp",
@@ -155,8 +155,8 @@
     {
       "id": "DefenseDown",
       "name": "Defense Level Down",
-      "desc": "Defense Level decreases based on the effect’s Count for one turn. (Max 10)",
-      "summary": "Defense Level -{0}0%"
+      "desc": "Defense Level decreases based on the effect's Potency for one turn.",
+      "summary": "Defense Level -{0}"
     },
     {
       "id": "Paralysis",
@@ -281,12 +281,12 @@
     {
       "id": "AttackUp",
       "name": "Offense Level Up",
-      "desc": "Offense Level increases based on the effect’s Count for one turn. (Max 10)"
+      "desc": "Offense level increases based on the effect's Potency for one turn."
     },
     {
       "id": "AttackDown",
       "name": "Offense Level Down ",
-      "desc": "Offense Level decreases based on the effect’s Count for one turn. (Max 10)"
+      "desc": "Offense level decreases based on the effect's Potency for one turn."
     },
     {
       "id": "Liu_Meursault_Guard_Buff",
@@ -496,7 +496,7 @@
     {
       "id": "Curse",
       "name": "Curse",
-      "desc": "At the end of the turn, gain one of the following, then reduce this effect’s Count by 1.\n1 Attack Power Down/1 Defense Power Down/1 Offense Level Down/1 Defense Level Down."
+      "desc": "Turn End: Gain one of the following, then reduce this effect’s Count by 1.\n1 Attack Power Down/1 Defense Power Down/2 Offense Level Down/2 Defense Level Down."
     },
     {
       "id": "AttackDmgUp_Weak",
@@ -891,8 +891,8 @@
     {
       "id": "Nervous",
       "name": "Nervous",
-      "desc": "Turn End: At -15 SP or lower, gain 3 Defense Level Up next turn",
-      "summary": "Turn End: At -15 SP or lower, gain 3 Defense Level Up next turn"
+      "desc": "Turn End: At -15 SP or lower, gain 5 Defense Level Up next turn",
+      "summary": "Turn End: At -15 SP or lower, gain 5 Defense Level Up next turn"
     },
     {
       "id": "ATL_Agility",
@@ -1183,6 +1183,16 @@
       "id": "MentalSystemResultDecrease_Typo",
       "name": "SP Loss Efficiency",
       "desc": "Amount of SP lost from SP loss conditions"
+    },
+    {
+      "id": "DuelDeclaration",
+      "name": "Declared Duel",
+      "desc": "In a clash between the unit that inflicted Declared Duel and the unit with the status, the declarer has +1 Clash Power, and gains 1 Haste next turn after a successful attack. (4 times per turn) Expires if the declarer inflicts this status on another target. Replaced when another unit declares a duel."
+    },
+    {
+      "id": "Aggro",
+      "name": "Aggro",
+      "desc": "In focused encounters, slots with higher Aggro values are more likely to be targeted by enemies."
     }
   ]
 }

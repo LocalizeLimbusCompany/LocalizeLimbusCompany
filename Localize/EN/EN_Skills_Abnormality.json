@@ -93,7 +93,7 @@
           "level": 1,
           "name": "Shared Pain",
           "desc": [
-            "[Wide]"
+            ""
           ],
           "coinlist": [
             {
@@ -2099,7 +2099,7 @@
           "keywords": [
             "Bleeding"
           ],
-          "desc": "[Wide]",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
@@ -3154,7 +3154,7 @@
         {
           "level": 1,
           "name": "High-voltage Electric Discharge",
-          "desc": "[Wide] At 11+ Self-charge, deal +10% damage for each Count of Self-charge over 10\nSpend all Self-charge",
+          "desc": "At 11+ Self-charge, deal +10% Damage for each Count of Self-charge over 10\nSpend all Self-charge",
           "coinlist": [
             {
               "coindescs": [
@@ -3337,7 +3337,7 @@
         {
           "level": 1,
           "name": "Cries Seeking Something",
-          "desc": "Targets 5 slots\n[WhenUse] Spawn an Old Umbrella next turn",
+          "desc": "[WhenUse] Spawn an Old Umbrella next turn",
           "coinlist": [
             {
               "coindescs": [
@@ -3749,7 +3749,7 @@
         {
           "level": 1,
           "name": "Sink It All",
-          "desc": "[Wide] Targets 7 slots\n[WhenUse] Lose 30 SP and gain 5 Sinking; Gain Corroding Heart next turn",
+          "desc": "[WhenUse] Lose 30 SP and gain 5 Sinking; Gain Corroding Heart next turn",
           "coinlist": [
             {
               "coindescs": [
@@ -3829,7 +3829,7 @@
         {
           "level": 1,
           "name": "Pungent Fragrance",
-          "desc": "[Wide] Targets 3 slots",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
@@ -3904,7 +3904,7 @@
         {
           "level": 1,
           "name": "Magnificent Spring Breeze",
-          "desc": "[Wide] Targets 7 slots\nGain +5 Final Power for each living Soon-to-bloom Flower\n\n[EndSkill] Remove all Soon-to-bloom Flowers",
+          "desc": "Gain +5 Final Power for each living Soon-to-bloom Flower\n\n[EndSkill] Remove all Soon-to-bloom Flowers",
           "coinlist": [
             {
               "coindescs": [
@@ -3965,7 +3965,7 @@
         {
           "level": 1,
           "name": "Culminating Fragrance",
-          "desc": "[Wide] Targets 15 slots\nIf target is Fully Bloomed, deal +100% damage",
+          "desc": "If target is Fully Bloomed, deal +100% damage",
           "coinlist": [
             {
               "coindescs": [
@@ -4072,7 +4072,7 @@
         {
           "level": 1,
           "name": "Pungent Breeze",
-          "desc": "[Wide] Targets 2 slots",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
@@ -4241,7 +4241,7 @@
         {
           "level": 1,
           "name": "Destruction",
-          "desc": "[Wide] Targets 3 slots",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
@@ -4351,7 +4351,7 @@
         {
           "level": 1,
           "name": "It's All Burned Up",
-          "desc": "[Wide] Targets 7 slots",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
@@ -4559,6 +4559,133 @@
           "level": 1,
           "name": "Expectation",
           "desc": "",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Expanding Roots",
+          "desc": "Base Power -2 if Twig is broken",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +3 Rupture Count"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict +2 Tremor Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Burrowing Roots",
+          "desc": "Base Power -2 if Twig is broken",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict +2 Tremor Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805803,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Quivering Lure",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +3 Tremor Count"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 3 Tremor"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Defense Down next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805804,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Encroaching Stems",
+          "desc": "[WinDuel] If target has Rupture, inflict +2 Rupture Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805805,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Uncovered Abyss",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict Tremor by target's Rupture"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Burst Tremor"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 805806,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Hard Branches",
+          "desc": "[StartBattle] Gain 3 Protection",
           "coinlist": [
             {}
           ]
