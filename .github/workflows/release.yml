@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: '版本号（记得加v）'
+        description: '版本号'
         required: true
 env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
@@ -36,3 +36,9 @@ jobs:
             Release/*.7z
           body_path: CHANGELOG.md
           tag_name: ${{ github.event.inputs.version }}
+      - name: 触发工作流
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          token: ${{ secrets.ROOT }}
+          workflow: update_api.yml
+          repo: ZengXiaoPi/LLC_jsontest

@@ -83,7 +83,7 @@
         {
           "level": 1,
           "name": "防御命令",
-          "desc": "[Wide]，[2xPostLine]\n[WhenUse] 下回合随机使2名友方单位获得2层忍耐 "
+          "desc": "[2xPostLine]\n[WhenUse] 下回合随机使2名友方单位获得2层忍耐 "
         }
       ]
     },
@@ -93,7 +93,7 @@
         {
           "level": 1,
           "name": "精神波动",
-          "desc": "[Wide]，[5xPostLine]\n[OnSucceedAttack] 使目标失去20点理智值"
+          "desc": "[5xPostLine]\n[OnSucceedAttack] 使目标失去20点理智值"
         }
       ]
     },
@@ -672,7 +672,7 @@
         {
           "level": 1,
           "name": "精神波动",
-          "desc": "[Wide]",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
@@ -902,7 +902,7 @@
         {
           "level": 1,
           "name": "入骨尖刀",
-          "desc": "[BeforeAttack] 若目标的体力低于50%，则本技能的前两枚硬币额外使用1次",
+          "desc": "[BeforeAttack] 若目标的体力低于50%，则使本技能的前两枚硬币额外使用1次",
           "coinlist": [
             {
               "coindescs": [
@@ -1417,7 +1417,7 @@
         {
           "level": 1,
           "name": "扒了你的皮",
-          "desc": "若目标的理智值低于自身，则本技能的威力+1",
+          "desc": "若目标的理智值低于自身，则使本技能的威力+1",
           "coinlist": [
             {
               "coindescs": [
@@ -1514,7 +1514,7 @@
         {
           "level": 1,
           "name": "给你开个瓢",
-          "desc": "若目标的理智值低于自身，则本技能的威力+1",
+          "desc": "若目标的理智值低于自身，则使本技能的威力+1",
           "coinlist": [
             {
               "coindescs": [
@@ -2801,7 +2801,7 @@
                   "desc": "[OnSucceedAttackHead] 下回合对目标施加1层易损 "
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 下回合对目标施加3层防御等级降低 "
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加5层防御等级降低 "
                 }
               ]
             }
@@ -2888,7 +2888,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加3层防御等级降低 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加5层防御等级降低 "
                 },
                 {
                   "desc": "[OnSucceedAttack] 下回合对目标施加2层易损 "
@@ -2991,13 +2991,13 @@
       "levelList": [
         {
           "level": 1,
-          "name": "注意 注意 摇晃",
+          "name": "注意 注意 不稳",
           "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加3层攻击等级降低 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加5层攻击等级降低 "
                 }
               ]
             },
@@ -3115,7 +3115,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "注意 注意 正在摇晃。",
+          "name": "注意 注意 正在摇晃",
           "desc": "优先攻击带有震颤 的单位",
           "coinlist": [
             {
@@ -4552,21 +4552,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "若第1枚硬币的朝向为反面，则本硬币造成的伤害+10%"
+                  "desc": "若第1枚硬币的朝向为反面，则使本硬币造成的伤害+10%"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "若第2枚硬币的朝向为反面，则本硬币造成的伤害+10%"
+                  "desc": "若第2枚硬币的朝向为反面，则使本硬币造成的伤害+10%"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "若第2和第3枚硬币的朝向为反面，则本硬币造成的伤害+30%"
+                  "desc": "若第2和第3枚硬币的朝向为反面，则使本硬币造成的伤害+30%"
                 }
               ]
             }
@@ -4633,7 +4633,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若自身的充能 层数不低于5层，则消耗所有的充能，每层使自身的伤害量+ 10%"
+                  "desc": "[OnSucceedAttack] 若自身的充能 层数不低于5层，则消耗所有的充能，每层使自身的伤害量 +10%"
                 },
                 {
                   "desc": "[OnSucceedAttack] 使自身获得1层啮合的时间 "
@@ -4775,21 +4775,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "若第1枚硬币的朝向为正面，则本硬币造成的伤害+10%"
+                  "desc": "若第1枚硬币的朝向为正面，则使本硬币造成的伤害+10%"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "若第1枚硬币的朝向为正面，则本硬币造成的伤害+10%"
+                  "desc": "若第1枚硬币的朝向为正面，则使本硬币造成的伤害+10%"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "若第2和第3枚硬币的朝向为正面，则本硬币造成的伤害+30%"
+                  "desc": "若第2和第3枚硬币的朝向为正面，则使本硬币造成的伤害+30%"
                 }
               ]
             }
