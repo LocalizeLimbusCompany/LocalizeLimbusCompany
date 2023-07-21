@@ -358,8 +358,8 @@
       "levelList": [
         {
           "level": 1,
-          "name": "掌管荣耀",
-          "desc": "[WhenUse] 若目标的体力不高于30%，则本技能造成的伤害+100%",
+          "name": "荣耀执握",
+          "desc": "[WhenUse] 若目标的体力不高于30%，则使本技能造成的伤害+100%",
           "coinlist": [
             {
               "coindescs": [
@@ -378,7 +378,7 @@
         {
           "level": 1,
           "name": "给我忏悔！！",
-          "desc": "[WhenUse] 若目标的体力不高于30%，则本技能造成的伤害+100%",
+          "desc": "[WhenUse] 若目标的体力不高于30%，则使本技能造成的伤害+100%",
           "coinlist": [
             {
               "coindescs": [
@@ -534,7 +534,7 @@
           "keywords": [
             "Bleeding"
           ],
-          "desc": "[Wide]",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
@@ -557,7 +557,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合使目标增加2级流血 强度."
+                  "desc": "[OnSucceedAttack] 下回合使目标增加2级流血 强度"
                 }
               ]
             }
@@ -794,7 +794,7 @@
         {
           "level": 1,
           "name": "电流注入",
-          "desc": "[WhenUse] 使自身获得1层自体发电 \n若目标带有麻痹 则本技能的伤害+10%",
+          "desc": "[WhenUse] 使自身获得1层自体发电 \n若目标带有麻痹 ，则使本技能的伤害+10%",
           "coinlist": [
             {},
             {
@@ -814,7 +814,7 @@
         {
           "level": 1,
           "name": "电流放流",
-          "desc": "[WhenUse] 使自身获得1层自体发电 \n若目标带有麻痹 则本技能的伤害+10%",
+          "desc": "[WhenUse] 使自身获得1层自体发电 \n若目标带有麻痹 ，则使本技能的伤害+10%",
           "coinlist": [
             {},
             {},
@@ -835,7 +835,7 @@
         {
           "level": 1,
           "name": "电流释放",
-          "desc": "[WhenUse] 使自身获得1层自体发电 \n若目标带有麻痹 则本技能的伤害+20%",
+          "desc": "[WhenUse] 使自身获得1层自体发电 \n若目标带有麻痹 ，则使本技能的伤害+20%",
           "coinlist": [
             {
               "coindescs": [
@@ -861,7 +861,7 @@
         {
           "level": 1,
           "name": "超高压电流释放",
-          "desc": "[Wide] 若自身的自体发电 层数不低于10层，则每超过1层使本技能的伤害+10%\n消耗所有自体发电 ",
+          "desc": "若自身的自体发电 层数不低于10层，则每超过1层使本技能的伤害+10%\n消耗所有自体发电 ",
           "coinlist": [
             {
               "coindescs": [
@@ -903,7 +903,7 @@
         {
           "level": 1,
           "name": "蠕动的头",
-          "desc": "优先指定体力最低的敌方单位\n[WhenUse] 消耗2层自体发电 \n[DefeatDuel] 消耗2层自体发电 ",
+          "desc": "指定体力最低的敌方单位\n[WhenUse] 消耗2层自体发电 \n[DefeatDuel] 消耗2层自体发电 ",
           "coinlist": [
             {},
             {
@@ -923,7 +923,7 @@
         {
           "level": 1,
           "name": "蠕动的尾",
-          "desc": "优先指定体力最低的敌方单位\n[WhenUse] 消耗2层自体发电 \n[DefeatDuel] 消耗3层自体发电 ",
+          "desc": "指定体力最低的敌方单位\n[WhenUse] 消耗2层自体发电 \n[DefeatDuel] 消耗3层自体发电 ",
           "coinlist": [
             {},
             {},
@@ -1044,7 +1044,7 @@
         {
           "level": 1,
           "name": "寻找某物的哭声",
-          "desc": "指定5个行动槽\n[WhenUse] 下回合召唤旧伞",
+          "desc": "[WhenUse] 下回合召唤旧伞",
           "coinlist": [
             {
               "coindescs": [
@@ -1052,7 +1052,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加5级沉沦 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 每把旧伞使本技能的伤害+15%"
+                  "desc": "[OnSucceedAttackHead] 每把旧伞使本硬币的伤害+15%"
                 }
               ]
             }
@@ -1066,7 +1066,7 @@
         {
           "level": 1,
           "name": "等待",
-          "desc": "[StartBattle] 全体敌方单位损失20点理智值",
+          "desc": "[StartBattle] 全体敌方单位失去20点理智值",
           "coinlist": [
             {}
           ]
@@ -1170,7 +1170,7 @@
         {
           "level": 1,
           "name": "转移符咒",
-          "desc": "[WhenUse] 消耗目标所有纠缠的咒符 。根据消耗的层数，获得相应层数的复贴的咒符 ",
+          "desc": "[WhenUse] 消耗目标所有纠缠的咒符 。根据消耗的层数，使自身获得相应层数的复贴的咒符 ",
           "coinlist": [
             {}
           ]
@@ -1183,7 +1183,7 @@
         {
           "level": 1,
           "name": "复制诅咒",
-          "desc": "[WhenUse] 根据目标所带有纠缠的咒符 的层数，施加相应层数的纠缠的咒符 ",
+          "desc": "[WhenUse] 根据目标所带有纠缠的咒符 的层数，对其施加相应层数的纠缠的咒符 ",
           "coinlist": [
             {}
           ]
@@ -1262,7 +1262,7 @@
                   "desc": "[OnSucceedAttack] 若目标带有昂扬 ，则每层昂扬 使本硬币的伤害+10%"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标带有醉意 则造成0点伤害，并使自身损失50点体力"
+                  "desc": "[OnSucceedAttack] 若目标带有醉意 则造成0点伤害，并使自身失去50点体力"
                 },
                 {
                   "desc": "[OnSucceedAttack] 消耗目标的所有昂扬 或醉意 "
@@ -1287,7 +1287,7 @@
                   "desc": "[OnSucceedAttack] 若目标带有昂扬 ，则每层昂扬 使本硬币的伤害+100%"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标带有醉意 则造成0点伤害，并使自身损失50点体力"
+                  "desc": "[OnSucceedAttack] 若目标带有醉意 则造成0点伤害，并使自身失去50点体力"
                 },
                 {
                   "desc": "[OnSucceedAttack] 消耗目标的所有昂扬 或醉意 "
@@ -1357,7 +1357,7 @@
                   "desc": "[OnSucceedAttack] 对目标施加3层流血 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标的流血 层数不低于2层，则使目标增加5级流血 强度"
+                  "desc": "[OnSucceedAttack] 若目标的流血 层数高于2层，则使目标增加5级流血 强度"
                 }
               ]
             }
@@ -1405,7 +1405,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标的流血 层数不低于2层，则使目标增加5级流血 强度"
+                  "desc": "[OnSucceedAttack] 若目标的流血 层数高于2层，则使目标增加5级流血 强度"
                 }
               ]
             }
@@ -1419,7 +1419,7 @@
         {
           "level": 1,
           "name": "绿荫笼罩",
-          "desc": "[WhenUse] 下回合生成巨大的四叶草\n[WhenUse] 目标每有1层流血 使本技能伤害量+5%\n[DefeatDuel] 生成体力为原体力上限70%的巨大的四叶草",
+          "desc": "[WhenUse] 下回合生成巨大的四叶草\n[WhenUse] 目标每有1层流血 使本技能造成的伤害+5%\n[DefeatDuel] 生成体力为原体力上限70%的巨大的四叶草",
           "coinlist": [
             {
               "coindescs": [
@@ -1655,7 +1655,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标损失15点理智值"
+                  "desc": "[OnSucceedAttack] 使目标失去15点理智值"
                 },
                 {
                   "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的50%"
