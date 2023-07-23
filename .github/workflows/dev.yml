@@ -2,9 +2,11 @@ name: 开发版
 on:
   workflow_dispatch:
   push:
-    branches: [ master_ilcpp ]
+    branches:
+      - 'master_ilcpp'
     paths:
       - 'src/**'
+      - '!CHANGELOG.md'
 jobs:
   dev:
     runs-on: windows-latest

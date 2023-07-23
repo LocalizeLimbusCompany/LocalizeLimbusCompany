@@ -65,7 +65,7 @@ namespace LimbusLocalize
             foreach (FileInfo fileInfo in directory.GetFiles())
             {
                 var value = File.ReadAllText(fileInfo.FullName);
-                string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(fileInfo.FullName).Remove(0, 3);
+                string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(fileInfo.FullName);
                 Localizes[fileNameWithoutExtension] = value;
             }
             foreach (DirectoryInfo directoryInfo in directory.GetDirectories())
