@@ -529,7 +529,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "该干活了……",
+          "name": "该干活了…",
           "coinlist": [
             {},
             {}
@@ -555,7 +555,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "不眠不休……",
+          "name": "不眠不休…",
           "coinlist": [
             {}
           ]
@@ -567,7 +567,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "收拾掉吧……",
+          "name": "收拾掉吧…",
           "coinlist": [
             {},
             {}
@@ -595,7 +595,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "不眠不休……",
+          "name": "不眠不休…",
           "coinlist": [
             {}
           ]
@@ -1622,7 +1622,7 @@
         {
           "level": 1,
           "name": "净化",
-          "desc": "[WhenUse] 若目标的体力低于30%，则使本技能的威力+2",
+          "desc": "[WhenUse] 若目标的体力不高于30%，则使本技能的威力+2",
           "coinlist": [
             {
               "coindescs": [
@@ -1662,7 +1662,7 @@
         {
           "level": 1,
           "name": "即刻处决！",
-          "desc": "[WhenUse] 若目标的体力低于30%，则使本技能的威力+2",
+          "desc": "[WhenUse] 若目标的体力不高于30%，则使本技能的威力+2",
           "coinlist": [
             {
               "coindescs": [
@@ -1929,7 +1929,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 目标的体力低于30%时，直接击杀目标并使自身恢复30点体力\n下回合使自身获得2层强壮 "
+                  "desc": "[OnSucceedAttackHead] 若目标的体力不高于30%，直接击杀目标并使自身恢复30点体力\n下回合使自身获得2层强壮 "
                 }
               ]
             }
@@ -2662,7 +2662,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "咯……",
+          "name": "咯…",
           "desc": "",
           "coinlist": [
             {}
@@ -2786,7 +2786,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "库库……",
+          "name": "库库…",
           "desc": "",
           "coinlist": [
             {}
@@ -3106,7 +3106,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "电流放流",
+          "name": "电能释放",
           "desc": "[WhenUse] 使自身获得1层自体发电 \n若目标带有麻痹 ，则使本技能的伤害+10%",
           "coinlist": [
             {},
@@ -3127,7 +3127,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "电流释放",
+          "name": "电流放出",
           "desc": "[WhenUse] 使自身获得1层自体发电 \n若目标带有麻痹 ，则使本技能的伤害+20%",
           "coinlist": [
             {
@@ -3153,7 +3153,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "超高压电流释放",
+          "name": "超高压电流放出",
           "desc": "若自身的自体发电 层数不低于10层，则每超过1层使本技能的伤害+10%\n消耗所有自体发电 ",
           "coinlist": [
             {
@@ -3539,7 +3539,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标带有昂扬 ，则每层昂扬 使本硬币的伤害+10%"
+                  "desc": "[OnSucceedAttack] 若目标带有昂扬 ，则每层昂扬 使本硬币的伤害量+10%"
                 },
                 {
                   "desc": "[OnSucceedAttack] 若目标带有醉意 则造成0点伤害，并使自身失去50点体力"
@@ -3564,7 +3564,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标带有昂扬 ，则每层昂扬 使本硬币的伤害+100%"
+                  "desc": "[OnSucceedAttack] 若目标带有昂扬 ，则每层昂扬 使本硬币的伤害量+100%"
                 },
                 {
                   "desc": "[OnSucceedAttack] 若目标带有醉意 则造成0点伤害，并使自身失去50点体力"
@@ -3783,7 +3783,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "别碰我……！",
+          "name": "别碰我…！",
           "desc": "[StartBattle] 使自身获得荆棘 ",
           "coinlist": [
             {}
@@ -3876,7 +3876,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "如盛放的花一般……",
+          "name": "如盛放的花一般…",
           "desc": "[WhenUse] 对目标施加3层开花 ",
           "coinlist": [
             {
@@ -4259,7 +4259,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "还不够……",
+          "name": "还不够…",
           "desc": "随机指定友方单位",
           "coinlist": [
             {
@@ -4292,7 +4292,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "必须填满……",
+          "name": "必须填满…",
           "desc": "随机指定目标",
           "coinlist": [
             {
@@ -4646,7 +4646,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 消耗全部流血 层数"
+                  "desc": "[OnSucceedAttack] 消耗所有流血 层数"
                 }
               ]
             }
@@ -4665,7 +4665,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 目标每带有1级流血 强度，则使自身恢复体力上限1%的体力\n消耗全部流血 层数"
+                  "desc": "[OnSucceedAttack] 目标每带有1级流血 强度，则使自身恢复体力上限1%的体力\n消耗所有流血 层数"
                 }
               ]
             }
