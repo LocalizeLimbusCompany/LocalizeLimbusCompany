@@ -96,7 +96,7 @@
         {
           "level": 1,
           "name": "净化",
-          "desc": "[WhenUse] 若目标的体力低于30%，则使本技能的威力+2",
+          "desc": "[WhenUse] 若目标的体力不高于30%，则使本技能的威力+2",
           "coinlist": [
             {
               "coindescs": [
@@ -364,7 +364,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 目标的体力低于30%时，直接击杀目标并使自身恢复30点体力\n下回合使自身获得2层强壮 "
+                  "desc": "[OnSucceedAttackHead] 若目标的体力不高于30%，则直接击杀目标并使自身恢复30点体力\n下回合使自身获得2层强壮 "
                 }
               ]
             }
@@ -813,7 +813,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "电流放流",
+          "name": "电能释放",
           "desc": "[WhenUse] 使自身获得1层自体发电 \n若目标带有麻痹 ，则使本技能的伤害+10%",
           "coinlist": [
             {},
@@ -834,7 +834,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "电流释放",
+          "name": "电流放出",
           "desc": "[WhenUse] 使自身获得1层自体发电 \n若目标带有麻痹 ，则使本技能的伤害+20%",
           "coinlist": [
             {
@@ -860,7 +860,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "超高压电流释放",
+          "name": "超高压电流放出",
           "desc": "若自身的自体发电 层数不低于10层，则每超过1层使本技能的伤害+10%\n消耗所有自体发电 ",
           "coinlist": [
             {
@@ -1424,7 +1424,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 消耗全部流血 层数"
+                  "desc": "[OnSucceedAttack] 消耗所有流血 层数"
                 }
               ]
             }
@@ -1443,7 +1443,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 目标每带有1级流血 强度，则使自身恢复体力上限1%的体力\n消耗全部流血 层数"
+                  "desc": "[OnSucceedAttack] 目标每带有1级流血 强度，则使自身恢复体力上限1%的体力\n消耗所有流血 层数"
                 }
               ]
             }

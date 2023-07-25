@@ -902,7 +902,7 @@
         {
           "level": 1,
           "name": "入骨尖刀",
-          "desc": "[BeforeAttack] 若目标的体力低于50%，则使本技能的前两枚硬币额外使用1次",
+          "desc": "[BeforeAttack] 若目标的体力不高于50%，则使本技能的前两枚硬币额外使用1次",
           "coinlist": [
             {
               "coindescs": [
@@ -960,7 +960,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "都瞧好了……！",
+          "name": "都瞧好了…！",
           "desc": "[StartBattle] 使自身获得1层强壮 ",
           "coinlist": [
             {}
@@ -1247,7 +1247,7 @@
         {
           "level": 1,
           "name": "笑里藏刀",
-          "desc": "若目标的理智值低于0，则使本技能的威力+1",
+          "desc": "若目标的理智值不高于0，则使本技能的威力+1",
           "coinlist": [
             {}
           ]
@@ -1385,7 +1385,7 @@
         {
           "level": 1,
           "name": "皮纳塔派对~！",
-          "desc": "[WhenUse] 若目标的理智值低于0，则根据其理智值按比例增加自身的暴击率",
+          "desc": "[WhenUse] 若目标的理智值不高于0，则根据其理智值按比例增加自身的暴击率",
           "coinlist": [
             {
               "coindescs": [
@@ -2206,7 +2206,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "圣锤，听命……！",
+          "name": "圣锤，听命…！",
           "desc": "[WinDuel] 下回合使全体友方单位获得1层狂信 ",
           "coinlist": [
             {
@@ -2265,7 +2265,7 @@
         {
           "level": 1,
           "name": "尖钉洗礼",
-          "desc": "自身的体力低于50%时，本技能施加的N公司的尖钉 层数额外+1层",
+          "desc": "若自身的体力不高于50%，则使本技能施加的N公司的尖钉 层数额外+1层",
           "coinlist": [
             {
               "coindescs": [
@@ -2316,7 +2316,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "铸就伟业……！",
+          "name": "铸就伟业…！",
           "desc": "[WhenUse] 下回合使全体友方单位获得1层N公司的尖钉 ",
           "coinlist": [
             {}
@@ -2329,7 +2329,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "涤净……罪孽！",
+          "name": "涤净…罪孽！",
           "desc": "",
           "coinlist": [
             {
@@ -2381,7 +2381,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "愚不可及……！",
+          "name": "愚不可及…！",
           "desc": "",
           "coinlist": [
             {
@@ -2904,7 +2904,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "圆锯……下切。",
+          "name": "圆锯…下切。",
           "desc": "",
           "coinlist": [
             {
@@ -2950,7 +2950,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "装填……发射",
+          "name": "装填…发射",
           "desc": "",
           "coinlist": [
             {
@@ -4193,7 +4193,7 @@
         {
           "level": 1,
           "name": "凸显伤口",
-          "desc": "[EndBattle] 消耗全部纠缠的咒符 ",
+          "desc": "[EndBattle] 消耗所有纠缠的咒符 ",
           "coinlist": [
             {
               "coindescs": [
@@ -4312,7 +4312,7 @@
         {
           "level": 1,
           "name": "液体阻塞",
-          "desc": "[WhenUse] 使自身恢复体力上限5%的体力\n下回合使自身获得2层易损 \n[EndBattle] 消耗全部醉意 ",
+          "desc": "[WhenUse] 使自身恢复体力上限5%的体力\n下回合使自身获得2层易损 \n[EndBattle] 消耗所有醉意 ",
           "coinlist": [
             {
               "coindescs": [
@@ -4493,7 +4493,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 若目标带有不低于9层复贴的咒符 时，则目标施加5层麻痹 \n造成伤害量50%的固定伤害"
+                  "desc": "[OnSucceedAttackHead] 若目标带有不低于9层复贴的咒符 时，则对目标施加5层麻痹 \n追加本硬币伤害量50%的固定伤害"
                 }
               ]
             }
