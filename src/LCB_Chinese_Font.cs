@@ -109,6 +109,14 @@ namespace LimbusLocalize
                 if(__instance.TryGetComponent<TextMeshProMaterialSetter>(out var textMeshProMaterialSetter))
                     __instance._matSetter= textMeshProMaterialSetter;
         }
+        [HarmonyPatch(typeof(BattleSkillViewUIInfo), nameof(BattleSkillViewUIInfo.Init))]
+        [HarmonyPrefix]
+        private static void BattleSkillViewUIInfoInit(BattleSkillViewUIInfo __instance)
+        {
+            __instance._materialSetter_abText.underlayColor = Color.clear;
+            __instance._materialSetter_skillText.underlayColor = Color.clear;
+        }
+
         [HarmonyPatch(typeof(TextMeshProMaterialSetter), nameof(TextMeshProMaterialSetter.WriteMaterialProperty))]
         [HarmonyPrefix]
         public static bool WriteMaterialProperty(TextMeshProMaterialSetter __instance)
