@@ -4,7 +4,6 @@ on:
     inputs:
       version:
         description: '版本号'
-        required: true
 env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
 jobs:
@@ -22,20 +21,28 @@ jobs:
           key: ${{ runner.os }}-nuget-${{ hashFiles('src/*.csproj') }}
           restore-keys: |
             ${{ runner.os }}-nuget-
+      - name: Extract version from CHANGELOG.md
+        id: extract_version
+        run: |
+          $version = "${{ steps.extract_version.outputs.release_tag }}"
+          if (!$version) {
+            $version = Get-Content -Path CHANGELOG.md | Select-Object -First 1 | ForEach-Object { $_ -replace '# ', '' }
+          }
+          echo "release_tag=$version" >> $env:GITHUB_OUTPUT
       - name: Run build script
         run: |
-          ./build.ps1 ${{ github.event.inputs.version }}
+          ./build.ps1 ${{ steps.extract_version.outputs.release_tag }}
           Add-Content -Path CHANGELOG.md -Value "
           # 下载
-          - LimbusLocalize_${{ github.event.inputs.version }}.7z 全量包
-          - LimbusLocalize_OTA_${{ github.event.inputs.version }}.7z 增量更新"
+          - LimbusLocalize_${{ steps.extract_version.outputs.release_tag }}.7z 全量包
+          - LimbusLocalize_OTA_${{ steps.extract_version.outputs.release_tag }}.7z 增量更新"
       - name: Create Upload Release   
         uses: softprops/action-gh-release@v1
         with:
           files: |
             Release/*.7z
           body_path: CHANGELOG.md
-          tag_name: ${{ github.event.inputs.version }}
+          tag_name: ${{ steps.extract_version.outputs.release_tag }}
       - name: 触发工作流
         uses: benc-uk/workflow-dispatch@v1
         with:
