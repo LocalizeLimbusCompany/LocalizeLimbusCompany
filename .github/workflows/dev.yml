@@ -6,7 +6,6 @@ on:
       - 'master_ilcpp'
     paths:
       - 'src/**'
-      - '!CHANGELOG.md'
 jobs:
   dev:
     runs-on: windows-latest
@@ -15,6 +14,23 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+      - name: Check Ver
+        id: extract_version
+        run: |
+          $version = Get-Content -Path CHANGELOG.md | Select-Object -First 1 | ForEach-Object { $_ -replace '# ', '' }
+          if($(git diff --name-only HEAD $(git describe --tags --abbrev=0) -- CHANGELOG.md)){
+          echo "hasnewver=true" >> $env:GITHUB_OUTPUT
+          echo "release_tag=$version" >> $env:GITHUB_OUTPUT
+          }
+      - name: 触发工作流
+        if: steps.extract_version.outputs.hasnewver == 'true'
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: release.yml
+          inputs: '{ "version": "${{ steps.extract_version.outputs.release_tag }}" }'
+      - name: Cancelling
+        if: steps.extract_version.outputs.hasnewver == 'true'
+        uses: andymckay/cancel-action@0.3
       - name: Cache NuGet packages
         uses: actions/cache@v3
         with:
