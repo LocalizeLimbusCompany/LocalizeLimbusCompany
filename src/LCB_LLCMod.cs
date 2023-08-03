@@ -30,7 +30,7 @@ namespace LimbusLocalize
         public static string ModPath;
         public static string GamePath;
         public const string NAME = "LimbusLocalizeMod";
-        public const string VERSION = "0.5.11";
+        public const string VERSION = "0.5.12";
         public const string AUTHOR = "Bright";
         public const string LLCLink = "https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany";
         public static Action<string, Action> LogFatalError { get; set; }

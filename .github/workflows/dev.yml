@@ -28,10 +28,8 @@ jobs:
         with:
           workflow: release.yml
           inputs: '{ "version": "${{ steps.extract_version.outputs.release_tag }}" }'
-      - name: Cancelling
-        if: steps.extract_version.outputs.hasnewver == 'true'
-        uses: andymckay/cancel-action@0.3
       - name: Cache NuGet packages
+        if: steps.extract_version.outputs.hasnewver != 'true'
         uses: actions/cache@v3
         with:
           path: ~/.nuget/packages
@@ -39,24 +37,29 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nuget-
       - name: Run build script
+        if: steps.extract_version.outputs.hasnewver != 'true'
         run: |
           ./build.ps1 Dev
       - name: Upload ML Full
+        if: steps.extract_version.outputs.hasnewver != 'true'
         uses: actions/upload-artifact@v3
         with:
           name: LimbusLocalize_Dev.7z
           path: Release/LimbusLocalize_Dev.7z
       - name: Upload ML OTA
+        if: steps.extract_version.outputs.hasnewver != 'true'
         uses: actions/upload-artifact@v3
         with:
           name: LimbusLocalize_OTA_Dev.7z
           path: Release/LimbusLocalize_OTA_Dev.7z
       - name: Upload BIE Full
+        if: steps.extract_version.outputs.hasnewver != 'true'
         uses: actions/upload-artifact@v3
         with:
           name: LimbusLocalize_BIE_Dev.7z
           path: Release/LimbusLocalize_BIE_Dev.7z
       - name: Upload BIE OTA
+        if: steps.extract_version.outputs.hasnewver != 'true'
         uses: actions/upload-artifact@v3
         with:
           name: LimbusLocalize_BIE_OTA_Dev.7z
