@@ -2,7 +2,8 @@ name: 公告热更新
 
 on:
   push:
-    branches: [ master_ilcpp ]
+    branches:
+      - 'master'
     paths:
       - 'Localize/Readme/Readme.json'
   workflow_dispatch:

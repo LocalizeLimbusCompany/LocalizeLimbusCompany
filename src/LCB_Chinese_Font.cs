@@ -1,11 +1,19 @@
 ﻿using HarmonyLib;
+#if ML
 using Il2Cpp;
 using Il2CppAddressable;
 using Il2CppSimpleJSON;
 using Il2CppStorySystem;
-using Il2CppSystem.Collections.Generic;
-using Il2CppTMPro;
 using Il2CppUtilityUI;
+using Il2CppTMPro;
+#elif BIE
+using Addressable;
+using SimpleJSON;
+using StorySystem;
+using UtilityUI;
+using TMPro;
+#endif
+using Il2CppSystem.Collections.Generic;
 using System;
 using System.IO;
 using UnityEngine;
@@ -16,7 +24,7 @@ namespace LimbusLocalize
     {
         public static List<TMP_FontAsset> tmpchinesefonts = new();
         public static List<string> tmpchinesefontnames = new();
-        #region 字体
+#region 字体
         public static bool AddChineseFont(string path)
         {
             if (File.Exists(path))
@@ -142,8 +150,8 @@ namespace LimbusLocalize
             }
             return false;
         }
-        #endregion
-        #region 载入汉化
+#endregion
+#region 载入汉化
         private static void LoadRemote2(LOCALIZE_LANGUAGE lang)
         {
             var tm = TextDataManager.Instance;
@@ -198,6 +206,7 @@ namespace LimbusLocalize
             tm._panicInfo.Init(romoteLocalizeFileList.PanicInfo);
             tm._mentalConditionList.Init(romoteLocalizeFileList.mentalCondition);
             tm._dungeonStartBuffs.Init(romoteLocalizeFileList.DungeonStartBuffs);
+            tm._railwayDungeonBuffText.Init(romoteLocalizeFileList.RailwayDungeonBuff);
 
             tm._abnormalityEventCharDlg.AbEventCharDlgRootInit(romoteLocalizeFileList.abnormalityCharDlgFilePath);
 
@@ -365,7 +374,7 @@ namespace LimbusLocalize
             }
         }
 
-        #endregion
+#endregion
         public static bool TryGetValueEX<TKey, TValue>(this Dictionary<TKey, TValue> dic, TKey key, out TValue value)
         {
             var entries = dic._entries;

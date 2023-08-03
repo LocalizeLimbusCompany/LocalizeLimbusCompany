@@ -1,5 +1,9 @@
 ﻿using HarmonyLib;
+#if ML
 using Il2CppBattleUI;
+#elif BIE
+using BattleUI;
+#endif
 
 namespace LimbusLocalize
 {

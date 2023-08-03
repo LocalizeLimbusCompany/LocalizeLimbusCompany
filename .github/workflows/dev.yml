@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - 'master_ilcpp'
+      - 'master'
     paths:
       - 'src/**'
 jobs:
@@ -41,13 +41,23 @@ jobs:
       - name: Run build script
         run: |
           ./build.ps1 Dev
-      - name: Upload Full
+      - name: Upload ML Full
         uses: actions/upload-artifact@v3
         with:
           name: LimbusLocalize_Dev.7z
           path: Release/LimbusLocalize_Dev.7z
-      - name: Upload OTA
+      - name: Upload ML OTA
         uses: actions/upload-artifact@v3
         with:
           name: LimbusLocalize_OTA_Dev.7z
           path: Release/LimbusLocalize_OTA_Dev.7z
+      - name: Upload BIE Full
+        uses: actions/upload-artifact@v3
+        with:
+          name: LimbusLocalize_BIE_Dev.7z
+          path: Release/LimbusLocalize_BIE_Dev.7z
+      - name: Upload BIE OTA
+        uses: actions/upload-artifact@v3
+        with:
+          name: LimbusLocalize_BIE_OTA_Dev.7z
+          path: Release/LimbusLocalize_BIE_OTA_Dev.7z
