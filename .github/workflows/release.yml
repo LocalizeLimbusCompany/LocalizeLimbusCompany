@@ -36,7 +36,7 @@ jobs:
           # 下载
           ## ML 版
           - LimbusLocalize_${{ steps.extract_version.outputs.release_tag }}.7z 全量包
-          - LimbusLocalize_OTA_${{ steps.extract_version.outputs.release_tag }}.7z 增量更新"
+          - LimbusLocalize_OTA_${{ steps.extract_version.outputs.release_tag }}.7z 增量更新
           ## BIE 版
           - LimbusLocalize_BIE_${{ steps.extract_version.outputs.release_tag }}.7z 全量包
           - LimbusLocalize_BIE_OTA_${{ steps.extract_version.outputs.release_tag }}.7z 增量更新"
