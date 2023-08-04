@@ -44,7 +44,7 @@ namespace LimbusLocalizeRUS
             fontAsset = null;
             if (tmpcyrillicfonts.Count == 0)
                 return false;
-            if (fontname == "BebasKai SDF")
+            if (fontname == "BebasKai SDF" || fontname == "Liberation Sans SDF")
             {
                 fontAsset = GetCyrillicFonts(0);
                 return true;
@@ -134,6 +134,39 @@ namespace LimbusLocalizeRUS
             }
             return false;
         }
+        [HarmonyPatch(typeof(BattleSkillViewUIInfo), nameof(BattleSkillViewUIInfo.Init))]
+        [HarmonyPrefix]
+        private static void BattleSkillViewUIInfoInit(BattleSkillViewUIInfo __instance)
+        {
+            __instance._materialSetter_abText.underlayColor = Color.clear;
+            __instance._materialSetter_skillText.underlayColor = Color.clear;
+        }
+
+        [HarmonyPatch(typeof(TextMeshProMaterialSetter), nameof(TextMeshProMaterialSetter.WriteMaterialProperty))]
+        [HarmonyPrefix]
+        public static bool WriteMaterialProperty(TextMeshProMaterialSetter __instance)
+        {
+            if (!__instance._fontMaterialInstance)
+                return false;
+            if (!GetCyrillicFonts(__instance._text.font.name, out _) && !IsCyrillicFont(__instance._text.font))
+                return true;
+
+            Color underlayColor = __instance.underlayColor;
+            if (__instance.underlayOn && __instance._fontMaterialInstance.HasProperty(ShaderUtilities.ID_UnderlayColor))
+            {
+                if (__instance.underlayHDRFactor > 0f)
+                {
+                    float num = Mathf.Pow(2f, __instance.underlayHDRFactor);
+                    underlayColor.r *= num;
+                    underlayColor.g *= num;
+                    underlayColor.b *= num;
+                }
+                underlayColor = __instance.underlayHdrColorOn ? __instance.underlayHdrColor : underlayColor;
+                if (underlayColor.r > 0f || underlayColor.g > 0f || underlayColor.b > 0f)
+                    __instance._text.color = underlayColor;
+            }
+            return false;
+        }
         #endregion
         #region Я заебался переводить китайский
         private static void LoadRemote2(LOCALIZE_LANGUAGE lang)
@@ -189,6 +222,7 @@ namespace LimbusLocalizeRUS
             tm._userTicket_EGOBg.Init(romoteLocalizeFileList.UserTicketEGOBg);
             tm._panicInfo.Init(romoteLocalizeFileList.PanicInfo);
             tm._mentalConditionList.Init(romoteLocalizeFileList.mentalCondition);
+            tm._dungeonStartBuffs.Init(romoteLocalizeFileList.DungeonStartBuffs);
 
             tm._abnormalityEventCharDlg.AbEventCharDlgRootInit(romoteLocalizeFileList.abnormalityCharDlgFilePath);
 
@@ -291,6 +325,14 @@ namespace LimbusLocalizeRUS
         private static void LoadRemote(ref LOCALIZE_LANGUAGE lang)
         {
             lang = LOCALIZE_LANGUAGE.EN;
+        }
+        [HarmonyPatch(typeof(TextMeshProLanguageSetter), nameof(TextMeshProLanguageSetter.Awake))]
+        [HarmonyPrefix]
+        private static void Awake(TextMeshProLanguageSetter __instance)
+        {
+            if (!__instance._text)
+                if (__instance.TryGetComponent<TextMeshProUGUI>(out var textMeshProUGUI))
+                    __instance._text = textMeshProUGUI;
         }
         [HarmonyPatch(typeof(StoryData), nameof(StoryData.Init))]
         [HarmonyPostfix]
