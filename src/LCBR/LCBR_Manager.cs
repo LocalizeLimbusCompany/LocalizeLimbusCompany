@@ -65,7 +65,7 @@ namespace LimbusLocalizeRUS
             foreach (FileInfo fileInfo in directory.GetFiles())
             {
                 var value = File.ReadAllText(fileInfo.FullName);
-                string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(fileInfo.FullName).Remove(0, 3);
+                string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(fileInfo.FullName);
                 Localizes[fileNameWithoutExtension] = value;
             }
             foreach (DirectoryInfo directoryInfo in directory.GetDirectories())
@@ -140,7 +140,7 @@ namespace LimbusLocalizeRUS
         public static void CheckModActions()
         {
             if (LCBR_UpdateChecker.UpdateCall != null)
-                OpenGlobalPopup("Has Update " + LCBR_UpdateChecker.Updatelog + "Есть обновление!\nПожалуйста, выйдите из игры и обновите мод.\nThe mod has been updated!\nExit the game and download the update." + LCBR_UpdateChecker.Updatelog + "Распакуйте обновление пжаста", "Мод обновлён!\nThe mod has an update!", null, "OK", () =>
+                OpenGlobalPopup("Есть обновление" + LCBR_UpdateChecker.Updatelog + "Есть обновление!\nПожалуйста, выйдите из игры и обновите мод.\nThe mod has been updated!\nExit the game and download the update." + LCBR_UpdateChecker.Updatelog + "Распакуйте обновление пжаста", "Мод обновлён!\nThe mod has an update!", null, "OK", () =>
                 {
                     LCBR_UpdateChecker.UpdateCall.Invoke();
                     LCBR_UpdateChecker.UpdateCall = null;

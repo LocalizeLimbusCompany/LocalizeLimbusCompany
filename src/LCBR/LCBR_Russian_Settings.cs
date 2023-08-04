@@ -25,7 +25,7 @@ namespace LimbusLocalizeRUS
                 Transform parent = original.transform.parent;
                 var _languageToggle = UnityEngine.Object.Instantiate(original, parent);
                 var rutmp = _languageToggle.GetComponentInChildren<TextMeshProUGUI>(true);
-                rutmp.font = LCB_Cyrillic_Font.GetCyrillicFonts(5);
+                rutmp.font = LCB_Cyrillic_Font.GetCyrillicFonts(4);
                 rutmp.fontMaterial = LCB_Cyrillic_Font.GetCyrillicFonts(4).material;
                 rutmp.text = "<size=40>Русский</size>";
                 Russian_Settings = _languageToggle;
