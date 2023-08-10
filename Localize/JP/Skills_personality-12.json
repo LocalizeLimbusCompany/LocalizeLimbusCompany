@@ -1,5 +1,204 @@
 {
   "dataList": [
-    {}
+    {
+      "id": 1120601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "立ち向かう",
+          "desc": "[WhenUse] 防御レベル増加 2を得る",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンにクイック 1を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "立ち向かう",
+          "desc": "[WhenUse] 防御レベル増加 2を得る\n[DefeatDuel] (自分の防御レベル増加 × 3)だけバリアを得る。次のターンに防御レベル増加 1を得る。",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンにクイック 1を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "立ち向かう",
+          "desc": "[WhenUse] 防御レベル増加 2を得る\n[DefeatDuel] (自分の防御レベル増加 × 5)だけバリアを得る。次のターンに防御レベル増加 2を得る。",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンにクイック 2を得る"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "柔軟な制圧",
+          "desc": "[WhenUse] 防御レベル増加 2を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに防御レベル増加 1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに防御レベル増加 1を得る"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "自分の防御レベル増加 が6以上なら、ダメージ量 +20%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "柔軟な制圧",
+          "desc": "[WhenUse] 防御レベル増加 3を得る\n[WhenUse] 次のターンにこのスキルスロットの挑発値 が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに防御レベル増加 1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに防御レベル増加 1を得る"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "自分の防御レベル増加 が6以上なら、ダメージ量 +30%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "柔軟な制圧",
+          "desc": "[WhenUse] 防御レベル増加 3を得る\n[WhenUse] 次のターンにこのスキルスロットの挑発値 が3増加\n自分の防御レベル増加 が6以上なら、マッチ威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに防御レベル増加 1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに防御レベル増加 1を得る"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "自分の防御レベル増加 が6以上なら、ダメージ量 +40%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "守護者",
+          "desc": "[WhenUse] 全味方へ守備威力増加 2, 防御レベル増加 3を付与。\n自分の防御レベル増加 が6以上なら、コイン威力 +1\n自分の防御レベル増加 が10以上なら、ダメージ量 +30%",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンにて全味方に防御レベル増加 3を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "守護者",
+          "desc": "[WhenUse] 全味方へ守備威力増加 2, 防御レベル増加 3を付与。\n自分の防御レベル増加 6につき、コイン威力 +1(最大3)\n自分の防御レベル増加 が10以上なら、ダメージ量 +50%",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンにて全味方に防御レベル増加 3を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "最善の防御",
+          "desc": "[StartBattle] (自分の防御レベル増加 × 2)だけバリアを得る",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "最善の防御",
+          "desc": "[StartBattle] (自分の防御レベル増加 × 2)だけバリアを得る\n[WhenUse] 次のターンにこのスキルスロットの挑発値 が5増加",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    }
   ]
 }

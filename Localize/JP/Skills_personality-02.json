@@ -1,5 +1,202 @@
 {
   "dataList": [
-    {}
+    {
+      "id": 1020501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "巡察",
+          "desc": "[DefeatDuel] 防御レベル増加 2を得る",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに防御レベル増加 2を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "巡察",
+          "desc": "[DefeatDuel] 防御レベル増加 3を得る",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに防御レベル増加 2を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "巡察",
+          "desc": "[WhenUse] 次のターンにこのスキルスロットの挑発値 が2増加\n[DefeatDuel] 防御レベル増加 3を得る",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに防御レベル増加 2を得る"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1020502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "顧客保護",
+          "desc": "[WhenUse] 現体力の比率が最も低い味方へ防御レベル増加 2を付与。(1ターンにつき最大3回発動)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに防御レベル増加 1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに防御レベル増加 1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに防御レベル増加 1を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "顧客保護",
+          "desc": "[WhenUse] 現体力の比率が最も低い味方へ防御レベル増加 3を付与。(1ターンにつき最大3回発動)\n自分の防御レベル増加 が5以上なら、マッチ威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに防御レベル増加 1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに防御レベル増加 1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに防御レベル増加 1を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "顧客保護",
+          "desc": "[WhenUse] 現体力の比率が最も低い味方へ防御レベル増加 3を付与。(1ターンにつき最大3回発動)\n自分の防御レベル増加 が5以上なら、マッチ威力 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに防御レベル増加 1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに防御レベル増加 1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに防御レベル増加 1を得る"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1020503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "治安守護",
+          "desc": "自分の防御レベル増加 が5以上なら、コイン威力 +1\n[WinDuel] 体力を2回復",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "現体力の比率が最も低い味方へ、次のターンにてクイック 1, 防御レベル増加 2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "治安守護",
+          "desc": "自分の防御レベル増加 が5以上なら、コイン威力 +1\n[WinDuel] 体力を4回復",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "現体力の比率が最も低い味方へ、次のターンにてクイック 1, 防御レベル増加 2を付与"
+                },
+                {
+                  "desc": "対象がツヴァイ協会フィクサーなら、クイック 1、防御レベル増加 1を追加で付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1020504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ガード",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "ガード",
+          "desc": "[WhenUse] 次のターンにこのスキルスロットの挑発値 が3増加",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    }
   ]
 }
