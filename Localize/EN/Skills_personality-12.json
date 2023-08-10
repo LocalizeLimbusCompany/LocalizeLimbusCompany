@@ -1,5 +1,204 @@
 {
   "dataList": [
-    {}
+    {
+      "id": 1120601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Standoff",
+          "desc": "[WhenUse] Gain 2 Defense Level Up",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain 1 Haste next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Standoff",
+          "desc": "[WhenUse] Gain 2 Defense Level Up\n[DefeatDuel] Gain shield by (3 * Defense Level Up on self); Gain 1 Defense Level Up next turn",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 1 Haste next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Standoff",
+          "desc": "[WhenUse] Gain 2 Defense Level Up\n[DefeatDuel] Gain shield by (5 * Defense Level Up on self); Gain 2 Defense Level Up next turn",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 Haste next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Flexible Suppression",
+          "desc": "[WhenUse] Gain 2 Defense Level Up",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain 1 Defense Level Up next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain 1 Defense Level Up next turn"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "At 6+ Defense Level Up, deal +20% damage"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Flexible Suppression",
+          "desc": "[WhenUse] Gain 3 Defense Level Up\n[WhenUse] Gain +2 Aggro to this Skill Slot next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 1 Defense Level Up next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 1 Defense Level Up next turn"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "At 6+ Defense Level Up, deal +30% damage"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Flexible Suppression",
+          "desc": "[WhenUse] Gain 3 Defense Level Up\n[WhenUse] Gain +3 Aggro to this Skill Slot next turn\nAt 6+ Defense Level Up, Clash Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 1 Defense Level Up next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 1 Defense Level Up next turn"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "At 6+ Defense Level Up, deal +40% damage"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Guardian",
+          "desc": "[WhenUse] Apply 2 Defense Power Up and 3 Defense Level Up to all allies\nAt 6+ Defense Level Up, Coin Power +1\nAt 10+ Defense Level Up, deal +30% damage",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Apply 3 Defense Level Up to all allies next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Guardian",
+          "desc": "[WhenUse] Apply 2 Defense Power Up and 3 Defense Level Up to all allies\nCoin Power +1 per 6 Defense Level Up (Max 3)\nAt 10+ Defense Level Up, deal +50% damage",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Apply 3 Defense Level Up to all allies next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "The Best Defense",
+          "desc": "[StartBattle] Gain shield by (2 * Defense Level Up on self)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "The Best Defense",
+          "desc": "[StartBattle] Gain shield by (2 * Defense Level Up on self)\n[WhenUse] Gain +5 Aggro to this Skill Slot next turn",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    }
   ]
 }

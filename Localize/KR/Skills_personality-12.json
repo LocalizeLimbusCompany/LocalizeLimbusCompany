@@ -1,6 +1,204 @@
 {
   "dataList": [
     {
+      "id": 1120601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "맞서기",
+          "desc": "[WhenUse] 방어 레벨 증가 2를 얻음",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 신속 1을 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "맞서기",
+          "desc": "[WhenUse] 방어 레벨 증가 2를 얻음\n[DefeatDuel] (자신의 방어 레벨 증가 X 3)만큼 보호막을 얻음. 다음 턴에 방어 레벨 증가 1을 얻음.",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 신속 1을 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "맞서기",
+          "desc": "[WhenUse] 방어 레벨 증가 2를 얻음\n[DefeatDuel] (자신의 방어 레벨 증가 X 5)만큼 보호막을 얻음. 다음 턴에 방어 레벨 증가 2를 얻음.",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 신속 2를 얻음"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "유연한 제압",
+          "desc": "[WhenUse] 방어 레벨 증가 2를 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 방어 레벨 증가 1을 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 방어 레벨 증가 1을 얻음"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "자신의 방어 레벨 증가 가 6 이상이면, 피해량 +20%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "유연한 제압",
+          "desc": "[WhenUse] 방어 레벨 증가 3을 얻음\n[WhenUse] 다음 턴에 이 스킬 슬롯의 도발치 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 방어 레벨 증가 1을 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 방어 레벨 증가 1을 얻음"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "자신의 방어 레벨 증가 가 6 이상이면, 피해량 +30%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "유연한 제압",
+          "desc": "[WhenUse] 방어 레벨 증가 3을 얻음\n[WhenUse] 다음 턴에 이 스킬 슬롯의 도발치 3 증가\n자신의 방어 레벨 증가 가 6 이상이면, 합 위력 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 방어 레벨 증가 1을 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 방어 레벨 증가 1을 얻음"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "자신의 방어 레벨 증가 가 6 이상이면, 피해량 +40%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "수호자",
+          "desc": "[WhenUse] 모든 아군에게 수비 위력 증가 2, 방어 레벨 증가 3 부여.\n자신의 방어 레벨 증가 가 6 이상이면, 코인 위력 +1\n자신의 방어 레벨 증가 가 10 이상이면, 피해량 +30%",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 모든 아군에게 방어 레벨 증가 3 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "수호자",
+          "desc": "[WhenUse] 모든 아군에게 수비 위력 증가 2, 방어 레벨 증가 3 부여.\n자신의 방어 레벨 증가 6 당 코인 위력 +1 (최대 3)\n자신의 방어 레벨 증가 가 10 이상이면, 피해량 +50%",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 모든 아군에게 방어 레벨 증가 3 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "최선의 방어",
+          "desc": "[StartBattle] (자신의 방어 레벨 증가 X 2)만큼 보호막을 얻음",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "최선의 방어",
+          "desc": "[StartBattle] (자신의 방어 레벨 증가 X 2)만큼 보호막을 얻음\n[WhenUse] 다음 턴에 이 스킬 슬롯의 도발치 5 증가",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }
