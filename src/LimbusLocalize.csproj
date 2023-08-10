@@ -7,7 +7,6 @@
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <AllowedReferenceRelatedFileExtensions>none</AllowedReferenceRelatedFileExtensions>
         <DebugSymbols>true</DebugSymbols>
-        <RootNamespace>LimbusLocalize</RootNamespace>
         <LangVersion>10.0</LangVersion>
         <IsPublishable>True</IsPublishable>
         <TargetFramework>net6</TargetFramework>
@@ -18,6 +17,7 @@
         <NoWarn>1701;1702;2211;CA2211;IDE1006;IDE0060</NoWarn>
         <DebugType>none</DebugType>
         <Optimize>True</Optimize>
+        <RootNamespace>$(MSBuildProjectName)</RootNamespace>
     </PropertyGroup>
     
     <!-- ~~~~~ CONFIGURATIONS ~~~~~ -->
@@ -29,14 +29,12 @@
     <!-- BepinEx -->
     <PropertyGroup Condition="'$(Configuration)'=='BIE'">
 		<DefineConstants>BIE</DefineConstants>
-        <AssemblyName>LimbusLocalize_BIE</AssemblyName>
+        <AssemblyName>$(MSBuildProjectName)_$(Configuration)</AssemblyName>
     </PropertyGroup>
 
     <!-- ~~~~~ NUGET ~~~~~ -->
     <ItemGroup>
         <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile" />
-        <PackageReference Include="Samboy063.Tomlet" Version="3.1.3" />
-		<PackageReference Include="Il2CppInterop.Common" Version="1.0.0" />
 		<PackageReference Include="Il2CppInterop.Runtime" Version="1.0.0" />
 	</ItemGroup>
 
@@ -167,4 +165,8 @@
     <ItemGroup>
       <Folder Include="LLC\" />
     </ItemGroup>
+    <Target Name="CopyFile" AfterTargets="build">
+        <Message Text="Copying BIE files..." Importance="high" Condition="'$(Configuration)' == 'BIE'" />
+        <Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="$(OutputPath)BepInEx\plugins\LLC" Condition="'$(Configuration)' == 'BIE'" />
+    </Target>
 </Project>
