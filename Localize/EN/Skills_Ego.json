@@ -1960,7 +1960,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "Burst Tremor"
+                  "desc": "[OnSucceedAttack] Burst Tremor"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict +3 Sinking Count"
@@ -1978,13 +1978,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "Burst Tremor"
+                  "desc": "[OnSucceedAttack] Burst Tremor"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 5 Sinking"
-                },
-                {
-                  "desc": "[OnSucceedAttack] Inflict +5 Sinking Count"
+                  "desc": "[OnSucceedAttack] Inflict 5 Sinking\n[OnSucceedAttack] Inflict +5 Sinking Count"
                 }
               ]
             }
@@ -2043,10 +2040,7 @@
                   "desc": "[OnSucceedAttack] Burst Tremor"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 10 Sinking"
-                },
-                {
-                  "desc": "[OnSucceedAttack] Inflict +8 Sinking Count"
+                  "desc": "[OnSucceedAttack] Inflict 10 Sinking\n[OnSucceedAttack] Inflict +8 Sinking Count"
                 }
               ]
             }
@@ -2110,9 +2104,11 @@
                 {
                   "desc": "[OnSucceedAttackHead] Lose 10 SP; Gain 1 Attack Power Up next turn"
                 },
+                {},
                 {
                   "desc": "[OnSucceedAttackTail] Heal 10 SP; Gain 1 Protection next turn"
-                }
+                },
+                {}
               ]
             }
           ]
@@ -2131,7 +2127,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[EnemyKill] Heal all allies for 10% of Max HP"
+                  "desc": "[EnemyKill] Heal all allies for 10% of their Max HP"
                 }
               ]
             }
@@ -2146,7 +2142,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[EnemyKill] Gain 1 Attack Power Up next turn\nHeal all allies for 15% of Max HP"
+                  "desc": "[EnemyKill] Gain 1 Attack Power Up next turn"
+                },
+                {
+                  "desc": "[EnemyKill] Heal all allies for 15% of their Max HP"
                 }
               ]
             }
@@ -2161,7 +2160,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[EnemyKill] Gain 1 Attack Power Up next turn\nHeal all allies for 15% of Max HP"
+                  "desc": "[EnemyKill] Gain 1 Attack Power Up next turn"
+                },
+                {
+                  "desc": "[EnemyKill] Heal all allies for 15% of their Max HP"
                 }
               ]
             }
@@ -2528,7 +2530,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "Burst Tremor"
+                  "desc": "[OnSucceedAttack] Burst Tremor"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 4 Tremor"
@@ -2549,7 +2551,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "Burst Tremor"
+                  "desc": "[OnSucceedAttack] Burst Tremor"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 6 Tremor"
