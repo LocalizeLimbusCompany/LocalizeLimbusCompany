@@ -731,7 +731,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 充電 3を消耗し、次のターンに束縛 4を付与"
+                  "desc": "[OnSucceedAttack] 充電 回数3を消耗し、次のターンに束縛 4を付与"
                 }
               ]
             }
@@ -746,7 +746,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 充電 3を消耗し、次のターンに束縛 4を付与"
+                  "desc": "[OnSucceedAttack] 充電 回数3を消耗し、次のターンに束縛 4を付与"
                 }
               ]
             }
@@ -767,7 +767,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 充電 3を消耗し、次のターンに束縛 4を付与"
+                  "desc": "[OnSucceedAttack] 充電 回数3を消耗し、次のターンに束縛 4を付与"
                 }
               ]
             }
@@ -788,7 +788,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 充電 を5消耗し、次のターンに攻撃威力減少 2、麻痺 3を付与"
+                  "desc": "[OnSucceedAttack] 充電 回数を5消耗し、次のターンに攻撃威力減少 2、麻痺 3を付与"
                 }
               ]
             }
@@ -804,7 +804,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 充電 を5消耗し、次のターンに攻撃威力減少 2、麻痺 3を付与"
+                  "desc": "[OnSucceedAttack] 充電 回数を5消耗し、次のターンに攻撃威力減少 2、麻痺 3を付与"
                 }
               ]
             }
@@ -970,7 +970,7 @@
         {
           "level": 3,
           "name": "機会狙い",
-          "desc": "前のターンにて、ダメージを受けていなければコイン威力 +3",
+          "desc": "前のターンにて、ダメージを受けていない場合はコイン威力 +3",
           "coinlist": [
             {},
             {
@@ -2535,7 +2535,7 @@
         {
           "level": 2,
           "name": "二連撃",
-          "desc": "前のターンにて、ダメージを受けていなければコイン威力 +1",
+          "desc": "前のターンにて、ダメージを受けていない場合はコイン威力 +1",
           "coinlist": [
             {
               "coindescs": [
@@ -2556,7 +2556,7 @@
         {
           "level": 4,
           "name": "二連撃",
-          "desc": "前のターンにて、ダメージを受けていなければコイン威力 +1",
+          "desc": "前のターンにて、ダメージを受けていない場合はコイン威力 +1",
           "coinlist": [
             {
               "coindescs": [
@@ -2582,7 +2582,7 @@
         {
           "level": 3,
           "name": "旋風",
-          "desc": "前のターンにて、ダメージを受けていなければコイン威力 +2",
+          "desc": "前のターンにて、ダメージを受けていない場合はコイン威力 +2",
           "coinlist": [
             {},
             {
@@ -2597,7 +2597,7 @@
         {
           "level": 4,
           "name": "旋風",
-          "desc": "前のターンにて、ダメージを受けていなければコイン威力 +2",
+          "desc": "前のターンにて、ダメージを受けていない場合はコイン威力 +2",
           "coinlist": [
             {},
             {
@@ -8824,8 +8824,8 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 振動 爆発\n振動 爆発時、振動 回数が3減少。充電を全て消耗して(消耗した充電 回数 × 5)%分、振動 爆発の混乱区間前進量が増加(最大50%)",
-                  "summary": "[OnSucceedAttack] 振動 爆発。振動 回数が3減少。充電を消耗し、混乱区間前進量が増加"
+                  "desc": "[OnSucceedAttack] 振動 爆発\n振動 爆発時、振動 回数が3減少。充電 回数を全て消耗して(消耗した充電 回数 × 5)%分、振動 爆発の混乱区間前進量が増加(最大50%)",
+                  "summary": "[OnSucceedAttack] 振動 爆発。振動 回数が3減少。充電 回数を消耗し、混乱区間前進量が増加"
                 }
               ]
             }
@@ -8869,8 +8869,8 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 振動 爆発\n振動 爆発時、振動 回数が3減少。充電を全て消耗して(消耗した充電 回数 × 5)%分、振動 爆発の混乱区間前進量が増加(最大50%)",
-                  "summary": "[OnSucceedAttack] 振動 爆発。振動 回数が3減少。充電を消耗し、混乱区間前進量が増加"
+                  "desc": "[OnSucceedAttack] 振動 爆発\n振動 爆発時、振動 回数が3減少。充電 回数を全て消耗して(消耗した充電 回数 × 5)%分、振動 爆発の混乱区間前進量が増加(最大50%)",
+                  "summary": "[OnSucceedAttack] 振動 爆発。振動 回数が3減少。充電 回数を消耗し、混乱区間前進量が増加"
                 }
               ]
             }
@@ -10530,10 +10530,10 @@
                   "desc": "[OnSucceedAttack] 出血 回数が1増加"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 充電 を2消耗、出血 回数が1増加"
+                  "desc": "[OnSucceedAttack] 充電 回数を2消耗、出血 回数が1増加"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 充電 3を消耗、出血 回数が1増加"
+                  "desc": "[OnSucceedAttack] 充電 回数を3消耗、出血 回数が1増加"
                 }
               ]
             },
@@ -10543,10 +10543,10 @@
                   "desc": "[OnSucceedAttack] 出血 回数が1増加"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 充電 を2消耗、出血 回数が1増加"
+                  "desc": "[OnSucceedAttack] 充電 回数を2消耗、出血 回数が1増加"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 充電 3を消耗、出血 回数が1増加"
+                  "desc": "[OnSucceedAttack] 充電 回数を3消耗、出血 回数が1増加"
                 }
               ]
             },
@@ -10564,10 +10564,10 @@
                   "desc": "[OnSucceedAttack] 出血 回数が1増加"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 充電 を2消耗、出血 回数が1増加"
+                  "desc": "[OnSucceedAttack] 充電 回数を2消耗、出血 回数が1増加"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 充電 3を消耗、出血 回数が1増加"
+                  "desc": "[OnSucceedAttack] 充電 回数を3消耗、出血 回数が1増加"
                 }
               ]
             },
@@ -10577,10 +10577,10 @@
                   "desc": "[OnSucceedAttack] 出血 回数が1増加"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 充電 を2消耗、出血 回数が1増加"
+                  "desc": "[OnSucceedAttack] 充電 回数を2消耗、出血 回数が1増加"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 充電 3を消耗、出血 回数が1増加"
+                  "desc": "[OnSucceedAttack] 充電 回数を3消耗、出血 回数が1増加"
                 }
               ]
             },
@@ -10697,7 +10697,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 呼吸 回数が1増加"
+                  "desc": "[OnSucceedAttack] 呼吸 回数が2増加"
                 }
               ]
             },
@@ -10712,7 +10712,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 呼吸 回数が1増加"
+                  "desc": "[OnSucceedAttack] 呼吸 回数が2増加"
                 }
               ]
             },

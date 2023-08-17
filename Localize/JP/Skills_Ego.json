@@ -1960,7 +1960,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "振動爆発"
+                  "desc": "[OnSucceedAttack] 振動 爆発"
                 },
                 {
                   "desc": "[OnSucceedAttack] 沈潜 回数が3増加"
@@ -1978,13 +1978,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "振動爆発"
+                  "desc": "[OnSucceedAttack] 振動 爆発"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 沈潜 5を付与"
-                },
-                {
-                  "desc": "[OnSucceedAttack] 沈潜 回数が5増加"
+                  "desc": "[OnSucceedAttack] 沈潜 を5付与\n[OnSucceedAttack] 沈潜 回数を5付与"
                 }
               ]
             }
@@ -2043,10 +2040,7 @@
                   "desc": "[OnSucceedAttack] 振動 爆発"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 沈潜 10を付与"
-                },
-                {
-                  "desc": "[OnSucceedAttack] 沈潜 回数が8増加"
+                  "desc": "[OnSucceedAttack] 沈潜 を10付与\n[OnSucceedAttack] 沈潜 回数を8付与"
                 }
               ]
             }
@@ -2110,9 +2104,11 @@
                 {
                   "desc": "[OnSucceedAttackHead] 精神力が10減少。次のターンに攻撃威力増加 1を得る"
                 },
+                {},
                 {
-                  "desc": "[OnSucceedAttackTail] 精神力を10回復。次のターンに麻痺 1を得る"
-                }
+                  "desc": "[OnSucceedAttackTail] 精神力を10回復。次のターンに保護 1を得る"
+                },
+                {}
               ]
             }
           ]
@@ -2131,7 +2127,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[EnemyKill] 全味方の体力を、最大値の10%回復"
+                  "desc": "[EnemyKill] 全味方がそれぞれ、体力を最大値の10%回復"
                 }
               ]
             }
@@ -2146,7 +2142,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[EnemyKill] 次のターンに攻撃威力増加 1を得る\n全味方の体力を、最大値の15%回復"
+                  "desc": "[EnemyKill] 次のターンに攻撃威力増加1を得る"
+                },
+                {
+                  "desc": "[EnemyKill] 全味方がそれぞれ、体力を最大値の15%回復"
                 }
               ]
             }
@@ -2161,7 +2160,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[EnemyKill] 次のターンに攻撃威力増加 1を得る\n全味方の体力を、最大値の15%回復"
+                  "desc": "[EnemyKill] 次のターンに攻撃威力増加1を得る"
+                },
+                {
+                  "desc": "[EnemyKill] 全味方がそれぞれ、体力を最大値の15%回復"
                 }
               ]
             }
@@ -2528,7 +2530,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "振動爆発"
+                  "desc": "[OnSucceedAttack] 振動 爆発"
                 },
                 {
                   "desc": "[OnSucceedAttack] 振動 4を付与"
@@ -2549,7 +2551,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "振動爆発"
+                  "desc": "[OnSucceedAttack] 振動 爆発"
                 },
                 {
                   "desc": "[OnSucceedAttack] 振動 6を付与"

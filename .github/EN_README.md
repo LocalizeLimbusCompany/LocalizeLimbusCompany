@@ -16,8 +16,8 @@ LimbusCompany I18N mod
 # Install[![Download](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/total.svg?label=Download)](../../../releases)
 [![Version](https://img.shields.io/github/release/LocalizeLimbusCompany/LocalizeLimbusCompany.svg?label=Version)![Download](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/latest/total.svg?label=Download)](../../../releases/latest)
 ### 0. Install [.NET 6.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/sdk-6.0.406-windows-x64-installer)
-### 1. Install ModLoader
-   - Download the ModLoader v0.6.1 or higher from [MelonLoader](https://github.com/LavaGang/MelonLoader)
+### 1. Install BepInEx
+   - Download the [BepInEx](https://github.com/LocalizeLimbusCompany/BepInEx_For_LLC)
    
    - Right-click Limbus Company on the Steam Library and click "Manage" - "Browse local files", then unzip this zip into the above pop-up folder. **And Do Not Create A New Folder.**
 ### 2. Install Font File
