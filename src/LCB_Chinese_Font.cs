@@ -24,7 +24,7 @@ namespace LimbusLocalize
     {
         public static List<TMP_FontAsset> tmpchinesefonts = new();
         public static List<string> tmpchinesefontnames = new();
-#region 字体
+        #region 字体
         public static bool AddChineseFont(string path)
         {
             if (File.Exists(path))
@@ -114,8 +114,8 @@ namespace LimbusLocalize
                 if (__instance.TryGetComponent<TextMeshProUGUI>(out var textMeshProUGUI))
                     __instance._text = textMeshProUGUI;
             if (!__instance._matSetter)
-                if(__instance.TryGetComponent<TextMeshProMaterialSetter>(out var textMeshProMaterialSetter))
-                    __instance._matSetter= textMeshProMaterialSetter;
+                if (__instance.TryGetComponent<TextMeshProMaterialSetter>(out var textMeshProMaterialSetter))
+                    __instance._matSetter = textMeshProMaterialSetter;
         }
         [HarmonyPatch(typeof(BattleSkillViewUIInfo), nameof(BattleSkillViewUIInfo.Init))]
         [HarmonyPrefix]
@@ -150,8 +150,8 @@ namespace LimbusLocalize
             }
             return false;
         }
-#endregion
-#region 载入汉化
+        #endregion
+        #region 载入汉化
         private static void LoadRemote2(LOCALIZE_LANGUAGE lang)
         {
             var tm = TextDataManager.Instance;
@@ -374,7 +374,7 @@ namespace LimbusLocalize
             }
         }
 
-#endregion
+        #endregion
         public static bool TryGetValueEX<TKey, TValue>(this Dictionary<TKey, TValue> dic, TKey key, out TValue value)
         {
             var entries = dic._entries;

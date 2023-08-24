@@ -902,7 +902,7 @@
         {
           "level": 1,
           "name": "入骨尖刀",
-          "desc": "[BeforeAttack] 若目标的体力不高于50%，则使本技能的前两枚硬币额外使用1次",
+          "desc": "[BeforeAttack] 若目标现存体力不高于50%，则使本技能的前两枚硬币额外使用1次",
           "coinlist": [
             {
               "coindescs": [
@@ -1417,7 +1417,7 @@
         {
           "level": 1,
           "name": "扒了你的皮",
-          "desc": "若目标的理智值低于自身，则使本技能的威力+1",
+          "desc": "若目标的理智值不高于自身，则使本技能的威力+1",
           "coinlist": [
             {
               "coindescs": [
@@ -1514,7 +1514,7 @@
         {
           "level": 1,
           "name": "给你开个瓢",
-          "desc": "若目标的理智值低于自身，则使本技能的威力+1",
+          "desc": "若目标的理智值不高于自身，则使本技能的威力+1",
           "coinlist": [
             {
               "coindescs": [
@@ -2317,7 +2317,7 @@
         {
           "level": 1,
           "name": "铸就伟业…！",
-          "desc": "[WhenUse] 下回合使全体友方单位获得1层N公司的尖钉 ",
+          "desc": "[WhenUse] 下回合使全体友方单位获得1层狂信 ",
           "coinlist": [
             {}
           ]
@@ -3253,7 +3253,7 @@
         {
           "level": 1,
           "name": "发动引擎",
-          "desc": "[WhenUse] 下回合使自身获得1层震颤同步  ",
+          "desc": "[WhenUse] 下回合使自身获得1层震颤同步 ",
           "coinlist": [
             {}
           ]
@@ -3337,7 +3337,7 @@
         {
           "level": 1,
           "name": "发动引擎",
-          "desc": "[WhenUse] 下回合使自身获得1层震颤同步  ",
+          "desc": "[WhenUse] 下回合使自身获得1层震颤同步 ",
           "coinlist": [
             {}
           ]
@@ -4403,7 +4403,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 根据消耗的复贴的咒符 层数，对目标施加相应层数的麻痹 "
+                  "desc": "[OnSucceedAttack] 根据复贴的咒符 层数，对目标施加相应层数的麻痹 "
                 }
               ]
             }
@@ -4585,7 +4585,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 获得1层啮合的时间 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层啮合的时间 "
                 },
                 {
                   "desc": "[OnSucceedAttack] 消耗2层充能 ，对目标施加3层麻痹 "
@@ -4621,22 +4621,22 @@
         {
           "level": 1,
           "name": "加速的瞬间",
-          "desc": "[StartBattle] 使自身获得3层充能 \n[WhenUse] 若自身充能 层数不低于5层，则拼点威力 +2\n下回合陷入无法行动状态",
+          "desc": "[StartBattle] 使自身获得3层充能 \n[WhenUse] 若自身充能 层数不低于5层，则使本技能的拼点威力 +2\n下回合陷入无法行动状态",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack]下回合对目标施加1层束缚 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层束缚 "
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若自身的充能 层数不低于5层，则消耗所有的充能，每层使自身的伤害量 +10%"
+                  "desc": "[OnSucceedAttack] 若自身的充能 层数不低于5层，则消耗所有充能 层数，每层使本硬币造成的伤害 +10%"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使自身获得1层啮合的时间 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层啮合的时间 "
                 }
               ]
             }
@@ -4735,7 +4735,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 施加3层破裂 "
+                  "desc": "[OnSucceedAttackHead] 使目标增加3级破裂 强度"
                 }
               ]
             }
@@ -4782,7 +4782,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "若第1枚硬币的朝向为正面，则使本硬币造成的伤害+10%"
+                  "desc": "若第2枚硬币的朝向为正面，则使本硬币造成的伤害+10%"
                 }
               ]
             },

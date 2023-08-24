@@ -30,7 +30,7 @@ namespace LimbusLocalize
         public static string ModPath;
         public static string GamePath;
         public const string NAME = "LimbusLocalizeMod";
-        public const string VERSION = "0.5.14";
+        public const string VERSION = "0.6.0";
         public const string AUTHOR = "Bright";
         public const string LLCLink = "https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany";
         public static Action<string, Action> LogFatalError { get; set; }
@@ -43,19 +43,20 @@ namespace LimbusLocalize
         {
             LogError = (string log) => { LoggerInstance.Error(log); Debug.LogError(log); };
             LogWarning = (string log) => { LoggerInstance.Warning(log); Debug.LogWarning(log); };
+            LogFatalError = (string log, Action action) => { LLC_Manager.FatalErrorlog += log + "\n"; LogError(log); LLC_Manager.FatalErrorAction = action; };
 #elif BIE
         public override void Load()
         {
             LLC_Settings = Config;
             LogError = (string log) => { Log.LogError(log); Debug.LogError(log); };
             LogWarning = (string log) => { Log.LogWarning(log); Debug.LogWarning(log); };
-#endif
             LogFatalError = (string log, Action action) => { LLC_Manager.FatalErrorlog += log + "\n"; LogError(log); LLC_Manager.FatalErrorAction = action; LLC_Manager.CheckModActions(); };
             ModPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             GamePath = new DirectoryInfo(Application.dataPath).Parent.FullName;
+            LLC_UpdateChecker.StartAutoUpdate();
+#endif
             try
             {
-                LLC_UpdateChecker.StartAutoUpdate();
                 HarmonyLib.Harmony harmony = new(NAME);
                 if (LLC_Chinese_Setting.IsUseChinese.Value)
                 {
@@ -85,7 +86,7 @@ namespace LimbusLocalize
             File.WriteAllText(GamePath + "/Latest(框架日志).log", Latestlog);
             File.Copy(Application.consoleLogPath, GamePath + "/Player(游戏日志).log", true);
         }
-        public override void OnApplicationQuit() => LCB_LLCMod.CopyLog();
+        public override void OnApplicationQuit() => CopyLog();
 #elif BIE
             File.Copy(GamePath + "/BepInEx/LogOutput.log", GamePath + "/Latest(框架日志).log", true);
             File.Copy(Application.consoleLogPath, GamePath + "/Player(游戏日志).log", true);

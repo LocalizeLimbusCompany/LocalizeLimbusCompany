@@ -1,10 +1,6 @@
-﻿#if ML
-using Il2CppSimpleJSON;
-using MelonLoader;
-#elif BIE
+﻿#if BIE
 using SimpleJSON;
 using BepInEx.Configuration;
-#endif
 using Il2CppSystem.Threading;
 using System;
 using System.IO;
@@ -16,11 +12,7 @@ namespace LimbusLocalize
 {
     public static class LLC_UpdateChecker
     {
-#if ML
-        public static MelonPreferences_Entry<bool> AutoUpdate = LCB_LLCMod.LLC_Settings.CreateEntry("AutoUpdate", false, null, "是否从GitHub自动检查并下载更新 ( true | false )");
-#elif BIE
         public static ConfigEntry<bool> AutoUpdate = LCB_LLCMod.LLC_Settings.Bind("LLC Settings", "AutoUpdate", false, "是否从GitHub自动检查并下载更新 ( true | false )");
-#endif
         public static void StartAutoUpdate()
         {
             if (AutoUpdate.Value)
@@ -130,4 +122,5 @@ namespace LimbusLocalize
         public static string Updatelog;
         public static Action UpdateCall;
     }
-}
+}     
+#endif

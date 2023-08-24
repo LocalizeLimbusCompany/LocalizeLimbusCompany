@@ -1,172 +1,173 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-    <PropertyGroup>
-        <OutputType>Library</OutputType>
-        <PlatformTarget>x64</PlatformTarget>
-        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
-        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-        <AllowedReferenceRelatedFileExtensions>none</AllowedReferenceRelatedFileExtensions>
-        <DebugSymbols>true</DebugSymbols>
-        <LangVersion>10.0</LangVersion>
-        <IsPublishable>True</IsPublishable>
-        <TargetFramework>net6</TargetFramework>
-        <Platforms>x64</Platforms>
-        <Configurations>ML;BIE</Configurations>
-        <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
-        <OutputPath>..\Release</OutputPath>
-        <NoWarn>1701;1702;2211;CA2211;IDE1006;IDE0060</NoWarn>
-        <DebugType>none</DebugType>
-        <Optimize>True</Optimize>
-        <RootNamespace>$(MSBuildProjectName)</RootNamespace>
-    </PropertyGroup>
-    
-    <!-- ~~~~~ CONFIGURATIONS ~~~~~ -->
-    <!-- MelonLoader -->
-    <PropertyGroup Condition="'$(Configuration)'=='ML'">
-		<DefineConstants>ML</DefineConstants>
-		<AssemblyName>LimbusLocalize</AssemblyName>
-    </PropertyGroup>
-    <!-- BepinEx -->
-    <PropertyGroup Condition="'$(Configuration)'=='BIE'">
-		<DefineConstants>BIE</DefineConstants>
-        <AssemblyName>$(MSBuildProjectName)_$(Configuration)</AssemblyName>
-    </PropertyGroup>
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <PlatformTarget>x64</PlatformTarget>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AllowedReferenceRelatedFileExtensions>none</AllowedReferenceRelatedFileExtensions>
+    <DebugSymbols>true</DebugSymbols>
+    <LangVersion>10.0</LangVersion>
+    <IsPublishable>True</IsPublishable>
+    <TargetFramework>net6</TargetFramework>
+    <Platforms>x64</Platforms>
+    <Configurations>ML;BIE</Configurations>
+    <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
+    <OutputPath>..\Release</OutputPath>
+    <NoWarn>1701;1702;2211;CA2211;IDE1006;IDE0060</NoWarn>
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <RootNamespace>$(MSBuildProjectName)</RootNamespace>
+  </PropertyGroup>
+  
+  <!-- ~~~~~ CONFIGURATIONS ~~~~~ -->
+  <ItemGroup>
+    <None Remove="Directory.Build.props" />
+    <None Remove="nuget.config" />
+  </ItemGroup>
+  <!-- MelonLoader -->
+  <PropertyGroup Condition="'$(Configuration)'=='ML'">
+    <DefineConstants>ML</DefineConstants>
+    <AssemblyName>LimbusLocalize</AssemblyName>
+  </PropertyGroup>
+  <!-- BepinEx -->
+  <PropertyGroup Condition="'$(Configuration)'=='BIE'">
+    <DefineConstants>BIE</DefineConstants>
+    <AssemblyName>$(MSBuildProjectName)_$(Configuration)</AssemblyName>
+  </PropertyGroup>
 
-    <!-- ~~~~~ NUGET ~~~~~ -->
-    <ItemGroup>
-        <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile" />
-		<PackageReference Include="Il2CppInterop.Runtime" Version="1.0.0" />
-	</ItemGroup>
+  <!-- ~~~~~ NUGET ~~~~~ -->
+  <ItemGroup>
+    <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile" />
+    <PackageReference Include="Il2CppInterop.Runtime" Version="1.0.0" />
+  </ItemGroup>
 
-    <!-- ~~~~~ ASSEMBLY REFERENCES ~~~~~ -->
-    <!-- BepinEx -->
-    <ItemGroup Condition="'$(Configuration)'=='BIE'">
-        <Reference Include="Assembly-CSharp">
-            <HintPath>..\lib\bie\Assembly-CSharp.dll</HintPath>
-        </Reference>
-        <Reference Include="mcs">
-            <HintPath>..\lib\bie\mcs.dll</HintPath>
-        </Reference>
-        <Reference Include="BepInEx">
-            <HintPath>..\lib\bie\BepInEx.Core.dll</HintPath>
-        </Reference>
-        <Reference Include="BepInEx.IL2CPP">
-            <HintPath>..\lib\bie\BepInEx.Unity.IL2CPP.dll</HintPath>
-        </Reference>
-        <Reference Include="Il2CppSystem">
-            <HintPath>..\lib\bie\Il2CppSystem.dll</HintPath>
-        </Reference>
-        <Reference Include="Il2Cppmscorlib">
-            <HintPath>..\lib\bie\Il2Cppmscorlib.dll</HintPath>
-        </Reference>
-        <Reference Include="Il2CppSystem.Core">
-            <HintPath>..\lib\bie\Il2CppSystem.Core.dll</HintPath>
-        </Reference>
-        <Reference Include="Unity.TextMeshPro">
-            <HintPath>..\lib\bie\Unity.TextMeshPro.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine">
-            <HintPath>..\lib\bie\UnityEngine.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.AssetBundleModule">
-            <HintPath>..\lib\bie\UnityEngine.AssetBundleModule.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.AudioModule">
-            <HintPath>..\lib\bie\UnityEngine.AudioModule.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.CoreModule">
-            <HintPath>..\lib\bie\UnityEngine.CoreModule.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.ImageConversionModule">
-            <HintPath>..\lib\bie\UnityEngine.ImageConversionModule.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.JSONSerializeModule">
-            <HintPath>..\lib\bie\UnityEngine.JSONSerializeModule.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.PhysicsModule">
-            <HintPath>..\lib\bie\UnityEngine.PhysicsModule.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.TextRenderingModule">
-            <HintPath>..\lib\bie\UnityEngine.TextRenderingModule.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.UI">
-            <HintPath>..\lib\bie\UnityEngine.UI.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.UIModule">
-            <HintPath>..\lib\bie\UnityEngine.UIModule.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.IMGUIModule">
-            <HintPath>..\lib\bie\UnityEngine.IMGUIModule.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.UnityWebRequestModule">
-            <HintPath>..\lib\bie\UnityEngine.UnityWebRequestModule.dll</HintPath>
-        </Reference>
-    </ItemGroup>
-    <!-- MelonLoader -->
-    <ItemGroup Condition="'$(Configuration)'=='ML'">
-        <Reference Include="Assembly-CSharp">
-            <HintPath>..\lib\ml\Assembly-CSharp.dll</HintPath>
-        </Reference>
-        <Reference Include="MelonLoader">
-            <HintPath>..\lib\ml\MelonLoader.dll</HintPath>
-        </Reference>
-        <Reference Include="mcs">
-            <HintPath>..\lib\ml\mcs.dll</HintPath>
-        </Reference>
-        <Reference Include="Il2CppSystem">
-            <HintPath>..\lib\ml\Il2CppSystem.dll</HintPath>
-        </Reference>
-        <Reference Include="Il2Cppmscorlib">
-            <HintPath>..\lib\ml\Il2Cppmscorlib.dll</HintPath>
-        </Reference>
-        <Reference Include="Il2CppSystem.Core">
-            <HintPath>..\lib\ml\Il2CppSystem.Core.dll</HintPath>
-        </Reference>
-        <Reference Include="Unity.TextMeshPro">
-            <HintPath>..\lib\ml\Unity.TextMeshPro.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine">
-            <HintPath>..\lib\ml\UnityEngine.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.AssetBundleModule">
-            <HintPath>..\lib\ml\UnityEngine.AssetBundleModule.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.AudioModule">
-            <HintPath>..\lib\ml\UnityEngine.AudioModule.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.CoreModule">
-            <HintPath>..\lib\ml\UnityEngine.CoreModule.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.ImageConversionModule">
-            <HintPath>..\lib\ml\UnityEngine.ImageConversionModule.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.JSONSerializeModule">
-            <HintPath>..\lib\ml\UnityEngine.JSONSerializeModule.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.PhysicsModule">
-            <HintPath>..\lib\ml\UnityEngine.PhysicsModule.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.TextRenderingModule">
-            <HintPath>..\lib\ml\UnityEngine.TextRenderingModule.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.UI">
-            <HintPath>..\lib\ml\UnityEngine.UI.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.UIModule">
-            <HintPath>..\lib\ml\UnityEngine.UIModule.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.IMGUIModule">
-            <HintPath>..\lib\ml\UnityEngine.IMGUIModule.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.UnityWebRequestModule">
-            <HintPath>..\lib\ml\UnityEngine.UnityWebRequestModule.dll</HintPath>
-        </Reference>
-    </ItemGroup>
-    <ItemGroup>
-      <Folder Include="LLC\" />
-    </ItemGroup>
-    <Target Name="CopyFile" AfterTargets="build">
-        <Message Text="Copying BIE files..." Importance="high" Condition="'$(Configuration)' == 'BIE'" />
-        <Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="$(OutputPath)BepInEx\plugins\LLC" Condition="'$(Configuration)' == 'BIE'" />
-    </Target>
+  <!-- ~~~~~ ASSEMBLY REFERENCES ~~~~~ -->
+  <!-- BepinEx -->
+  <ItemGroup Condition="'$(Configuration)'=='BIE'">
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\lib\bie\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="mcs">
+      <HintPath>..\lib\bie\mcs.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\lib\bie\BepInEx.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.IL2CPP">
+      <HintPath>..\lib\bie\BepInEx.Unity.IL2CPP.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>..\lib\bie\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\lib\bie\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core">
+      <HintPath>..\lib\bie\Il2CppSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\lib\bie\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\lib\bie\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\lib\bie\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\lib\bie\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\lib\bie\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\lib\bie\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\lib\bie\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\lib\bie\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\lib\bie\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\lib\bie\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\lib\bie\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\lib\bie\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\lib\bie\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <!-- MelonLoader -->
+  <ItemGroup Condition="'$(Configuration)'=='ML'">
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\lib\ml\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MelonLoader">
+      <HintPath>..\lib\ml\MelonLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="mcs">
+      <HintPath>..\lib\ml\mcs.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>..\lib\ml\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\lib\ml\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core">
+      <HintPath>..\lib\ml\Il2CppSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\lib\ml\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\lib\ml\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\lib\ml\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\lib\ml\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\lib\ml\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\lib\ml\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\lib\ml\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\lib\ml\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\lib\ml\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\lib\ml\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\lib\ml\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\lib\ml\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\lib\ml\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Target Name="CopyFile" AfterTargets="build">
+    <Message Text="Copying BIE files..." Importance="high" Condition="'$(Configuration)' == 'BIE'" />
+    <Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="$(OutputPath)BepInEx\plugins\LLC" Condition="'$(Configuration)' == 'BIE'" />
+  </Target>
 </Project>
