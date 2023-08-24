@@ -1,6 +1,198 @@
 {
   "dataList": [
     {
+      "id": 1060601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "에너지 순환",
+          "desc": "[WhenUse] 자신의 충전 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "에너지 순환",
+          "desc": "[WhenUse] 자신의 충전 횟수 3 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "에너지 순환",
+          "desc": "[WhenUse] 자신의 충전 횟수 4 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "정리 지원",
+          "desc": "[WhenUse] 자신의 충전 횟수 2 증가\n자신에게 보호막이 있을 때 합 위력 +1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 자신의 충전 횟수가 10 이상이면, 다음 턴에 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">충전 역장</color></link></u> 2를 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "정리 지원",
+          "desc": "[WhenUse] 자신의 충전 횟수 3 증가\n자신에게 보호막이 있을 때 합 위력 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 3 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수가 10 이상이면, 다음 턴에 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">충전 역장</color></link></u> 2를 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "정리 지원",
+          "desc": "[WhenUse] 자신의 충전 횟수 3 증가\n자신에게 보호막이 있을 때 합 위력 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 3 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수가 5 이상이면, 다음 턴에 충전 횟수 5 당 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">충전 역장</color></link></u> 1을 얻음 (최대 4)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "충전 역장 전개",
+          "desc": "[WhenUse] 자신의 충전 횟수가 10 이상이면, 충전 횟수를 전부 소모하여 자신을 포함하여 현재 체력 비율이 낮은 아군 2명에게 (소모한 충전 횟수/2)만큼 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">충전 역장</color></link></u> 부여 (소수점 버림)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 파열 3 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">충전 역장</color></link></u> 2를 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "충전 역장 전개",
+          "desc": "[WhenUse] 자신의 충전 횟수가 10 이상이면, 충전 횟수를 전부 소모하여 자신을 포함하여 현재 체력 비율이 낮은 아군 2명에게 (소모한 충전 횟수/2)만큼 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">충전 역장</color></link></u> 부여 (소수점 버림)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 파열 5 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">충전 역장</color></link></u> 2를 얻음"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "가드",
+          "desc": "[WhenUse] <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">충전 역장</color></link></u> 2를 얻음 (턴 당 최대 3회)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "가드",
+          "desc": "[WhenUse] <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">충전 역장</color></link></u> <style=\"highlight\">3</style>을 얻음 (턴 당 최대 3회)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }

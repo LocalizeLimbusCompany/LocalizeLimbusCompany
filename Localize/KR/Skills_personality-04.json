@@ -1,6 +1,245 @@
 {
   "dataList": [
     {
+      "id": 1040501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "에.순",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 2 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 2 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "에.순",
+          "desc": "충전 횟수가 10 이상이면, 피해량 +10%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 2 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 2 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "에.순",
+          "desc": "충전 횟수가 10 이상이면, 피해량 +10%\n충전 횟수가 15 이상이면, 추가로 피해량 +10%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 2 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 2 증가"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "도약",
+          "desc": "[WhenUse] 자신의 충전 횟수 5 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 충전 횟수가 10 이상이면, 참격 취약 1 부여"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 체력이 30% 미만이면, 피해량 15% 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "도약",
+          "desc": "[WhenUse] 자신의 충전 횟수 6 증가\n충전 횟수가 10 이상이면, 코인 위력 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 충전 횟수가 10 이상이면, 참격 취약 1 부여"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 체력이 30% 미만이면, 피해량 20% 증가"
+                },
+                {
+                  "desc": "[EnemyKill] 다음 턴에 신속 1을 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "도약",
+          "desc": "[WhenUse] 자신의 충전 횟수 7 증가\n충전 횟수가 10 이상이면, 코인 위력 +1\n충전 횟수가 15 이상이면, 추가로 코인 위력 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 충전 횟수가 10 이상이면, 참격 취약 2 부여"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 체력이 30% 미만이면, 피해량 30% 증가"
+                },
+                {
+                  "desc": "[EnemyKill] 다음 턴에 신속 3을 얻음"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "차.마.공.절",
+          "desc": "[WhenUse] 충전 횟수가 7 이상, 15 미만이면,\n보유한 충전 횟수를 전부 소모하고,\n최대 체력의 3 x (15 - 소모한 충전 횟수)%만큼 체력을 소모하여 코인 위력 +3\n[WhenUse] 충전 횟수를 15 소모하여 코인 위력 +3",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 마지막 코인의 피해량 +5%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 마지막 코인의 피해량 +5%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 마지막 코인의 피해량 +5%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[EnemyKill] 스킬 사용시 충전 횟수를 15 소모했다면, 자신과 자신을 제외한 무작위 아군 1명에게 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">충전 역장</color></link></u> 5 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "차.마.공.절",
+          "desc": "[WhenUse] 충전 횟수가 7 이상, 15 미만이면,\n보유한 충전 횟수를 전부 소모하고,\n최대 체력의 3 x (15 - 소모한 충전 횟수)%만큼 체력을 소모하여 코인 위력 +5\n[WhenUse] 충전 횟수를 15 소모하여 코인 위력 +5",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 마지막 코인의 피해량 +10%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 마지막 코인의 피해량 +10%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 마지막 코인의 피해량 +10%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[EnemyKill] 스킬 사용시 충전 횟수를 15 소모했다면, 자신과 자신을 제외한 무작위 아군 1명에게 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">충전 역장</color></link></u> 7 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "충전 회피",
+          "desc": "충전 횟수 5당 기본 위력 +1 (최대 2)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "충전 회피",
+          "desc": "충전 횟수 5당 기본 위력 +1 (최대 3)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }
