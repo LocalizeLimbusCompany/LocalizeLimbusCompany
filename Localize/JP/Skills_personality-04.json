@@ -1,5 +1,245 @@
 {
   "dataList": [
-    {}
+    {
+      "id": 1040501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "エ・循",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の充電 回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の充電 回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "エ・循",
+          "desc": "充電 回数が10以上なら、ダメージ量 +10%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の充電 回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の充電 回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "エ・循",
+          "desc": "充電 回数が10以上なら、ダメージ量 +10%\n充電 回数が15以上なら、追加でダメージ量 +10%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の充電 回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の充電 回数が2増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "跳躍",
+          "desc": "[WhenUse] 自分の充電 回数が5増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 充電 回数が10以上なら、斬撃脆弱 1を付与"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の体力が30%未満のとき、ダメージ量が15%増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "跳躍",
+          "desc": "[WhenUse] 自分の充電 回数が6増加\n充電 回数が10以上なら、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 充電 回数が10以上なら、斬撃脆弱 1を付与"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の体力が30%未満のとき、ダメージ量が20%増加"
+                },
+                {
+                  "desc": "[EnemyKill] 次のターンにクイック 1を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "跳躍",
+          "desc": "[WhenUse] 自分の充電 回数が7増加\n充電 回数が10以上なら、コイン威力 +1\n充電 回数が15以上なら、追加でコイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 充電 回数が10以上なら、斬撃脆弱 2を付与"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の体力が30%未満のとき、ダメージ量が30%増加"
+                },
+                {
+                  "desc": "[EnemyKill] 次のターンにクイック 3を得る"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "次・魔・空・切",
+          "desc": "[WhenUse] 充電 回数7以上、15未満なら\n保有している充電 回数を全て消耗し、\n体力最大値の3 x (15 - 消耗した充電 回数)%だけ体力を消費してコイン威力 +3\n[WhenUse] 充電 回数を15消耗し、コイン威力 +3",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 最終コインのダメージ量 +5%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 最終コインのダメージ量 +5%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 最終コインのダメージ量 +5%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[EnemyKill] スキル使用時に充電 回数を15消耗したなら、自分と自分を除くランダムな味方1名へ<sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">充電力場</color></link></u>を5付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "次・魔・空・切",
+          "desc": "[WhenUse] 充電 回数7以上、15未満なら\n保有している充電 回数を全て消耗し、\n体力最大値の3 x (15 - 消耗した充電 回数)%だけ体力を消費してコイン威力 +5\n[WhenUse] 充電 回数を15消耗し、コイン威力 +5",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 最終コインのダメージ量 +10%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 最終コインのダメージ量 +10%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 最終コインのダメージ量 +10%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[EnemyKill] スキル使用時に充電 回数を15消耗したなら、自分と自分を除くランダムな味方1名へ<sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">充電力場</color></link></u>を7付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "充電回避",
+          "desc": "充電 回数5につき、基本威力 +1(最大2)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "充電回避",
+          "desc": "充電 回数5につき、基本威力 +1(最大3)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    }
   ]
 }
