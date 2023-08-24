@@ -117,12 +117,14 @@ namespace LimbusLocalize
             }
             return false;
         }
-#region 公告相关
+        #region 公告相关
         [HarmonyPatch(typeof(UserLocalNoticeRedDotModel), nameof(UserLocalNoticeRedDotModel.InitNoticeList))]
         [HarmonyPrefix]
         private static bool InitNoticeList(UserLocalNoticeRedDotModel __instance, List<int> severNoticeList)
         {
+#if BIE
             LLC_UpdateChecker.CheckReadmeUpdate();
+#endif
             for (int i = 0; i < __instance.GetDataList().Count; i++)
             {
                 Func<int, bool> func = x =>
@@ -214,6 +216,6 @@ namespace LimbusLocalize
             Application.OpenURL(URL);
             return false;
         }
-#endregion
+        #endregion
     }
 }

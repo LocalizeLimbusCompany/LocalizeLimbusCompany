@@ -40,18 +40,6 @@ jobs:
         if: steps.extract_version.outputs.hasnewver != 'true'
         run: |
           ./build.ps1 Dev
-      - name: Upload ML Full
-        if: steps.extract_version.outputs.hasnewver != 'true'
-        uses: actions/upload-artifact@v3
-        with:
-          name: LimbusLocalize_Dev.7z
-          path: Release/LimbusLocalize_Dev.7z
-      - name: Upload ML OTA
-        if: steps.extract_version.outputs.hasnewver != 'true'
-        uses: actions/upload-artifact@v3
-        with:
-          name: LimbusLocalize_OTA_Dev.7z
-          path: Release/LimbusLocalize_OTA_Dev.7z
       - name: Upload BIE Full
         if: steps.extract_version.outputs.hasnewver != 'true'
         uses: actions/upload-artifact@v3

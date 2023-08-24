@@ -85,7 +85,7 @@ namespace LimbusLocalize
         public static Dictionary<string, string> Localizes = new();
         public static Action FatalErrorAction;
         public static string FatalErrorlog;
-#region 屏蔽没有意义的Warning
+        #region 屏蔽没有意义的Warning
         [HarmonyPatch(typeof(Logger), nameof(Logger.Log), new Type[]
         {
             typeof(LogType),
@@ -121,8 +121,8 @@ namespace LimbusLocalize
             }
             return true;
         }
-#endregion
-#region 修复一些弱智东西
+        #endregion
+        #region 修复一些弱智东西
         [HarmonyPatch(typeof(GachaEffectEventSystem), nameof(GachaEffectEventSystem.LinkToCrackPosition))]
         [HarmonyPrefix]
         private static bool LinkToCrackPosition(GachaEffectEventSystem __instance, GachaCrackController[] crackList)
@@ -142,7 +142,8 @@ namespace LimbusLocalize
             __result = localizeTextDataRoot;
             return false;
         }
-#endregion
+        #endregion
+#if BIE
         [HarmonyPatch(typeof(LoginSceneManager), nameof(LoginSceneManager.SetLoginInfo))]
         [HarmonyPostfix]
         public static void CheckModActions()
@@ -162,5 +163,6 @@ namespace LimbusLocalize
                     FatalErrorlog = string.Empty;
                 });
         }
+#endif
     }
 }
