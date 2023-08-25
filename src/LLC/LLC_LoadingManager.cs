@@ -1,10 +1,5 @@
-﻿using HarmonyLib;
-#if ML
-using Il2Cpp;
-using MelonLoader;
-#elif BIE
-using BepInEx.Configuration;
-#endif
+﻿using BepInEx.Configuration;
+using HarmonyLib;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -17,13 +12,8 @@ namespace LimbusLocalize
         static List<string> LoadingTexts = new();
         static string Touhou;
         static readonly string Raw = "<bounce f=0.5>NOW LOADING...</bounce>";
-#if ML
-        public static MelonPreferences_Entry<bool> RandomAllLoadCG = LCB_LLCMod.LLC_Settings.CreateEntry("RandomAllLoadCG", true, null, "是否从所有已到达进度中随机选择载入CG ( true | false )");
-        public static MelonPreferences_Entry<bool> RandomLoadText = LCB_LLCMod.LLC_Settings.CreateEntry("RandomLoadText", true, null, "是否随机选择载入标语,即右下角的[NOW LOADING...] ( true | false )");
-#elif BIE
         public static ConfigEntry<bool> RandomAllLoadCG = LCB_LLCMod.LLC_Settings.Bind("LLC Settings", "RandomAllLoadCG", true, "是否从所有已到达进度中随机选择载入CG ( true | false )");
         public static ConfigEntry<bool> RandomLoadText = LCB_LLCMod.LLC_Settings.Bind("LLC Settings", "RandomLoadText", true, "是否随机选择载入标语,即右下角的[NOW LOADING...] ( true | false )");
-#endif
         public static int ArchiveCGId;
         static LLC_LoadingManager()
         {
