@@ -1,18 +1,9 @@
 ﻿using HarmonyLib;
-#if ML
-using Il2Cpp;
-using Il2CppAddressable;
-using Il2CppSimpleJSON;
-using Il2CppStorySystem;
-using Il2CppUtilityUI;
-using Il2CppTMPro;
-#elif BIE
 using Addressable;
 using SimpleJSON;
 using StorySystem;
 using UtilityUI;
 using TMPro;
-#endif
 using Il2CppSystem.Collections.Generic;
 using System;
 using System.IO;
@@ -336,7 +327,6 @@ namespace LimbusLocalize
                 }
             }
         }
-
         private static void AbEventCharDlgRootInit(this AbEventCharDlgRoot root, List<string> jsonFilePathList)
         {
             root._personalityDict = new();
@@ -373,7 +363,6 @@ namespace LimbusLocalize
                 jsonDataList[text.Split('_')[^1]] = localizeTextData;
             }
         }
-
         #endregion
         public static bool TryGetValueEX<TKey, TValue>(this Dictionary<TKey, TValue> dic, TKey key, out TValue value)
         {

@@ -1,34 +1,20 @@
-#if ML
-using LimbusLocalize;
-using MelonLoader;
-using System.Text.RegularExpressions;
-#elif BIE
 using BepInEx;
-using BepInEx.Unity.IL2CPP;
 using BepInEx.Configuration;
-#endif
+using BepInEx.Unity.IL2CPP;
 using System;
 using System.IO;
 using System.Reflection;
 using UnityEngine;
-#if ML
-[assembly: MelonInfo(typeof(LCB_LLCMod), LCB_LLCMod.NAME, LCB_LLCMod.VERSION, LCB_LLCMod.AUTHOR, LCB_LLCMod.LLCLink)]
-#endif
+
 namespace LimbusLocalize
 {
-#if ML
-    public class LCB_LLCMod : MelonMod
-    {
-        public static MelonPreferences_Category LLC_Settings = MelonPreferences.CreateCategory("LLC", "LLC Settings");
-#elif BIE
     [BepInPlugin(GUID, NAME, VERSION)]
     public class LCB_LLCMod : BasePlugin
     {
-        public const string GUID = "Com.Bright.LocalizeLimbusCompany";
         public static ConfigFile LLC_Settings;
-#endif
         public static string ModPath;
         public static string GamePath;
+        public const string GUID = "Com.Bright.LocalizeLimbusCompany";
         public const string NAME = "LimbusLocalizeMod";
         public const string VERSION = "0.6.0";
         public const string AUTHOR = "Bright";
@@ -38,13 +24,6 @@ namespace LimbusLocalize
         public static Action<string> LogWarning { get; set; }
         public static void OpenLLCURL() { Application.OpenURL(LLCLink); }
         public static void OpenGamePath() { Application.OpenURL(GamePath); }
-#if ML
-        public override void OnInitializeMelon()
-        {
-            LogError = (string log) => { LoggerInstance.Error(log); Debug.LogError(log); };
-            LogWarning = (string log) => { LoggerInstance.Warning(log); Debug.LogWarning(log); };
-            LogFatalError = (string log, Action action) => { LLC_Manager.FatalErrorlog += log + "\n"; LogError(log); LLC_Manager.FatalErrorAction = action; };
-#elif BIE
         public override void Load()
         {
             LLC_Settings = Config;
@@ -54,7 +33,6 @@ namespace LimbusLocalize
             ModPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             GamePath = new DirectoryInfo(Application.dataPath).Parent.FullName;
             LLC_UpdateChecker.StartAutoUpdate();
-#endif
             try
             {
                 HarmonyLib.Harmony harmony = new(NAME);
@@ -79,18 +57,8 @@ namespace LimbusLocalize
         }
         public static void CopyLog()
         {
-#if ML
-            File.Copy(GamePath + "/MelonLoader/Latest.log", GamePath + "/Latest(框架日志).log", true);
-            var Latestlog = File.ReadAllText(GamePath + "/Latest(框架日志).log");
-            Latestlog = Regex.Replace(Latestlog, "[0-9:\\.\\[\\]]+ During invoking native->managed trampoline(\r\n)?", "");
-            File.WriteAllText(GamePath + "/Latest(框架日志).log", Latestlog);
-            File.Copy(Application.consoleLogPath, GamePath + "/Player(游戏日志).log", true);
-        }
-        public override void OnApplicationQuit() => CopyLog();
-#elif BIE
             File.Copy(GamePath + "/BepInEx/LogOutput.log", GamePath + "/Latest(框架日志).log", true);
             File.Copy(Application.consoleLogPath, GamePath + "/Player(游戏日志).log", true);
         }
-#endif
     }
 }

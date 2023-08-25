@@ -1,13 +1,13 @@
-﻿#if BIE
-using SimpleJSON;
-using BepInEx.Configuration;
+﻿using BepInEx.Configuration;
 using Il2CppSystem.Threading;
+using SimpleJSON;
 using System;
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Networking;
+
 namespace LimbusLocalize
 {
     public static class LLC_UpdateChecker
@@ -38,11 +38,7 @@ namespace LimbusLocalize
                 string latest2ReleaseTag = releases.m_List.Count > 1 ? releases[1]["tag_name"].Value : string.Empty;
                 if (Version.Parse(LCB_LLCMod.VERSION) < Version.Parse(latestReleaseTag.Remove(0, 1)))
                 {
-#if ML
-                    string updatelog = (latest2ReleaseTag == "v" + LCB_LLCMod.VERSION ? "LimbusLocalize_OTA_" : "LimbusLocalize_") + latestReleaseTag;
-#elif BIE
                     string updatelog = (latest2ReleaseTag == "v" + LCB_LLCMod.VERSION ? "LimbusLocalize_BIE_OTA_" : "LimbusLocalize_BIE_") + latestReleaseTag;
-#endif
                     Updatelog += updatelog + ".7z ";
                     string download = "https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/releases/download/" + latestReleaseTag + "/" + updatelog + ".7z";
                     var dirs = download.Split('/');
@@ -68,11 +64,7 @@ namespace LimbusLocalize
             int latestReleaseTag = int.Parse(latest["tag_name"].Value);
             if (LastWriteTime < latestReleaseTag)
             {
-#if ML
-                string updatelog = "tmpchinesefont_" + latestReleaseTag;
-#elif BIE
                 string updatelog = "tmpchinesefont_BIE_" + latestReleaseTag;
-#endif
                 Updatelog += updatelog + ".7z ";
                 string download = "https://github.com/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/download/" + latestReleaseTag + "/" + updatelog + ".7z";
                 var dirs = download.Split('/');
@@ -122,5 +114,4 @@ namespace LimbusLocalize
         public static string Updatelog;
         public static Action UpdateCall;
     }
-}     
-#endif
+}

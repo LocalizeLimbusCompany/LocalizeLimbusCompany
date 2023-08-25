@@ -1,18 +1,11 @@
 ﻿using HarmonyLib;
-#if ML
-using Il2Cpp;
-using Il2CppMainUI;
-using Il2CppMainUI.Gacha;
-using Il2CppTMPro;
-#elif BIE
+using Il2CppInterop.Runtime.Injection;
 using MainUI;
 using MainUI.Gacha;
-using TMPro;
-#endif
-using Il2CppInterop.Runtime.Injection;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using TMPro;
 using UnityEngine;
 using ILObject = Il2CppSystem.Object;
 using UObject = UnityEngine.Object;
@@ -31,9 +24,7 @@ namespace LimbusLocalize
         }
         public static LLC_Manager Instance;
         public LLC_Manager(IntPtr ptr) : base(ptr) { }
-#if BIE
         void OnApplicationQuit() => LCB_LLCMod.CopyLog();
-#endif
         public static void OpenGlobalPopup(string description, string title = null, string close = "取消", string confirm = "确认", Action confirmEvent = null, Action closeEvent = null)
         {
             if (!GlobalGameManager.Instance) { return; }
@@ -143,7 +134,6 @@ namespace LimbusLocalize
             return false;
         }
         #endregion
-#if BIE
         [HarmonyPatch(typeof(LoginSceneManager), nameof(LoginSceneManager.SetLoginInfo))]
         [HarmonyPostfix]
         public static void CheckModActions()
@@ -163,6 +153,5 @@ namespace LimbusLocalize
                     FatalErrorlog = string.Empty;
                 });
         }
-#endif
     }
 }

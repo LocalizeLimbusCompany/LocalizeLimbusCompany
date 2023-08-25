@@ -1,24 +1,14 @@
 ﻿using HarmonyLib;
-#if ML
-using Il2Cpp;
-using Il2CppLocalSave;
-using Il2CppMainUI;
-using Il2CppMainUI.NoticeUI;
-using Il2CppServer;
-using Il2CppSimpleJSON;
-using Il2CppTMPro;
-#elif BIE
+using Il2CppSystem.Collections.Generic;
 using LocalSave;
 using MainUI;
 using MainUI.NoticeUI;
 using Server;
 using SimpleJSON;
-using TMPro;
-#endif
-using Il2CppSystem.Collections.Generic;
 using System;
 using System.IO;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -122,9 +112,7 @@ namespace LimbusLocalize
         [HarmonyPrefix]
         private static bool InitNoticeList(UserLocalNoticeRedDotModel __instance, List<int> severNoticeList)
         {
-#if BIE
             LLC_UpdateChecker.CheckReadmeUpdate();
-#endif
             for (int i = 0; i < __instance.GetDataList().Count; i++)
             {
                 Func<int, bool> func = x =>
