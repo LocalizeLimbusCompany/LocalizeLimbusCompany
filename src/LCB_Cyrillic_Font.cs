@@ -134,6 +134,17 @@ namespace LimbusLocalizeRUS
             }
             return false;
         }
+        [HarmonyPatch(typeof(TextMeshProLanguageSetter), nameof(TextMeshProLanguageSetter.Awake))]
+        [HarmonyPrefix]
+        private static void Awake(TextMeshProLanguageSetter __instance)
+        {
+            if (!__instance._text)
+                if (__instance.TryGetComponent<TextMeshProUGUI>(out var textMeshProUGUI))
+                    __instance._text = textMeshProUGUI;
+            if (!__instance._matSetter)
+                if (__instance.TryGetComponent<TextMeshProMaterialSetter>(out var textMeshProMaterialSetter))
+                    __instance._matSetter = textMeshProMaterialSetter;
+        }
         [HarmonyPatch(typeof(BattleSkillViewUIInfo), nameof(BattleSkillViewUIInfo.Init))]
         [HarmonyPrefix]
         private static void BattleSkillViewUIInfoInit(BattleSkillViewUIInfo __instance)
@@ -325,14 +336,6 @@ namespace LimbusLocalizeRUS
         private static void LoadRemote(ref LOCALIZE_LANGUAGE lang)
         {
             lang = LOCALIZE_LANGUAGE.EN;
-        }
-        [HarmonyPatch(typeof(TextMeshProLanguageSetter), nameof(TextMeshProLanguageSetter.Awake))]
-        [HarmonyPrefix]
-        private static void Awake(TextMeshProLanguageSetter __instance)
-        {
-            if (!__instance._text)
-                if (__instance.TryGetComponent<TextMeshProUGUI>(out var textMeshProUGUI))
-                    __instance._text = textMeshProUGUI;
         }
         [HarmonyPatch(typeof(StoryData), nameof(StoryData.Init))]
         [HarmonyPostfix]
