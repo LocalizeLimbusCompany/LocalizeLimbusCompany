@@ -64,7 +64,7 @@ namespace LimbusLocalizeRUS
                 fontAsset = GetCyrillicFonts(3);
                 return true;
             }
-            if (fontname == "Pretendard-Regular SDF" || fontname.StartsWith("HigashiOme - Gothic - C")|| fontname.StartsWith("SCDream"))
+            if (fontname == "Pretendard-Regular SDF" || fontname.StartsWith("HigashiOme - Gothic - C") || fontname.StartsWith("SCDream"))
             {
                 fontAsset = GetCyrillicFonts(4);
                 return true;
@@ -74,8 +74,8 @@ namespace LimbusLocalizeRUS
         public static TMP_FontAsset GetCyrillicFonts(int idx)
         {
             int Count = tmpcyrillicfonts.Count - 1;
-            if(Count < idx)
-                idx=Count;
+            if (Count < idx)
+                idx = Count;
             return tmpcyrillicfonts[idx];
         }
         public static bool IsCyrillicFont(TMP_FontAsset fontAsset)
@@ -87,33 +87,66 @@ namespace LimbusLocalizeRUS
         [HarmonyPrefix]
         private static bool set_font(TMP_Text __instance, ref TMP_FontAsset value)
         {
-            if (IsCyrillicFont(__instance.m_fontAsset))
-                return false;
+            if (IsCyrillicFont(__instance.m_fontAsset)) return false;
             string fontname = __instance.m_fontAsset.name;
             if (GetCyrillicFonts(fontname, out TMP_FontAsset font))
+            {
+
+                Material m = __instance.fontMaterial;
+                premat[__instance] = m;
                 value = font;
+                //font.material.shader = Shader.Find("TextMeshPro/Distance Field");
+            }
             return true;
         }
+        public static Dictionary<TMP_Text, Material> premat = new Dictionary<TMP_Text, Material>();
         [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.fontMaterial), MethodType.Setter)]
         [HarmonyPrefix]
         private static void set_fontMaterial(TMP_Text __instance, ref Material value)
         {
+            /*
             if (IsCyrillicFont(__instance.m_fontAsset))
-            value = __instance.m_fontAsset.material;
+            {
+                value = __instance.fontMaterial;
+            }*/
+            if (IsCyrillicFont(__instance.m_fontAsset))
+            {
+                value = __instance.m_fontAsset.material;
+                if (premat.ContainsKey(__instance))
+                {
+                    if (premat[__instance].IsKeywordEnabled("UNDERLAY_ON"))
+                    {
+                        Material pre = premat[__instance];
+                        __instance.m_fontAsset.material.shader = Shader.Find("TextMeshPro/Distance Field");
+                        __instance.m_fontAsset.material.SetColor("_UnderlayColor", pre.GetColor("_UnderlayColor"));
+                        __instance.m_fontAsset.material.SetFloat("_UnderlayOffsetX", pre.GetFloat("_UnderlayOffsetX"));
+                        __instance.m_fontAsset.material.SetFloat("_UnderlayOffsetY", pre.GetFloat("_UnderlayOffsetY"));
+                        __instance.m_fontAsset.material.SetFloat("_UnderlayDilate", pre.GetFloat("_UnderlayDilate"));
+                        __instance.m_fontAsset.material.SetFloat("_UnderlaySoftness", pre.GetFloat("_UnderlaySoftness"));
+
+                        __instance.m_fontAsset.material.EnableKeyword("UNDERLAY_ON");
+                        if (premat[__instance].IsKeywordEnabled("UNDERLAY_INNER"))
+                        {
+                            __instance.m_fontAsset.material.EnableKeyword("UNDERLAY_INNER");
+                        }
+                    }
+                }
+            }
         }
         [HarmonyPatch(typeof(TextMeshProLanguageSetter), nameof(TextMeshProLanguageSetter.UpdateTMP))]
         [HarmonyPrefix]
         private static bool UpdateTMP(TextMeshProLanguageSetter __instance, LOCALIZE_LANGUAGE lang)
         {
+
             FontInformation fontInformation = __instance._fontInformation.Count > 0 ? __instance._fontInformation[0] : null;
-                if (fontInformation == null)
-                    return false;
-                if (fontInformation.fontAsset == null)
-                    return false;
-                if (__instance._text == null)
-                    return false;
-                var raw_fontAsset = fontInformation.fontAsset;
-                bool use_ru = GetCyrillicFonts(raw_fontAsset.name, out var ru_fontAsset);
+            if (fontInformation == null)
+                return false;
+            if (fontInformation.fontAsset == null)
+                return false;
+            if (__instance._text == null)
+                return false;
+            var raw_fontAsset = fontInformation.fontAsset;
+            bool use_ru = GetCyrillicFonts(raw_fontAsset.name, out var ru_fontAsset);
 
             var fontAsset = use_ru ? ru_fontAsset : fontInformation.fontAsset;
             var fontMaterial = use_ru ? ru_fontAsset.material : fontInformation.fontMaterial ?? fontInformation.fontAsset.material;
@@ -134,17 +167,6 @@ namespace LimbusLocalizeRUS
             }
             return false;
         }
-        [HarmonyPatch(typeof(TextMeshProLanguageSetter), nameof(TextMeshProLanguageSetter.Awake))]
-        [HarmonyPrefix]
-        private static void Awake(TextMeshProLanguageSetter __instance)
-        {
-            if (!__instance._text)
-                if (__instance.TryGetComponent<TextMeshProUGUI>(out var textMeshProUGUI))
-                    __instance._text = textMeshProUGUI;
-            if (!__instance._matSetter)
-                if (__instance.TryGetComponent<TextMeshProMaterialSetter>(out var textMeshProMaterialSetter))
-                    __instance._matSetter = textMeshProMaterialSetter;
-        }
         [HarmonyPatch(typeof(BattleSkillViewUIInfo), nameof(BattleSkillViewUIInfo.Init))]
         [HarmonyPrefix]
         private static void BattleSkillViewUIInfoInit(BattleSkillViewUIInfo __instance)
@@ -153,31 +175,31 @@ namespace LimbusLocalizeRUS
             __instance._materialSetter_skillText.underlayColor = Color.clear;
         }
 
-        [HarmonyPatch(typeof(TextMeshProMaterialSetter), nameof(TextMeshProMaterialSetter.WriteMaterialProperty))]
-        [HarmonyPrefix]
-        public static bool WriteMaterialProperty(TextMeshProMaterialSetter __instance)
-        {
-            if (!__instance._fontMaterialInstance)
-                return false;
-            if (!GetCyrillicFonts(__instance._text.font.name, out _) && !IsCyrillicFont(__instance._text.font))
-                return true;
+        //[HarmonyPatch(typeof(TextMeshProMaterialSetter), nameof(TextMeshProMaterialSetter.WriteMaterialProperty))]
+        //[HarmonyPrefix]
+        //public static bool WriteMaterialProperty(TextMeshProMaterialSetter __instance)
+        //{
+        //    if (!__instance._fontMaterialInstance)
+        //        return false;
+        //    if (!GetCyrillicFonts(__instance._text.font.name, out _) && !IsCyrillicFont(__instance._text.font))
+        //        return true;
 
-            Color underlayColor = __instance.underlayColor;
-            if (__instance.underlayOn && __instance._fontMaterialInstance.HasProperty(ShaderUtilities.ID_UnderlayColor))
-            {
-                if (__instance.underlayHDRFactor > 0f)
-                {
-                    float num = Mathf.Pow(2f, __instance.underlayHDRFactor);
-                    underlayColor.r *= num;
-                    underlayColor.g *= num;
-                    underlayColor.b *= num;
-                }
-                underlayColor = __instance.underlayHdrColorOn ? __instance.underlayHdrColor : underlayColor;
-                if (underlayColor.r > 0f || underlayColor.g > 0f || underlayColor.b > 0f)
-                    __instance._text.color = underlayColor;
-            }
-            return false;
-        }
+        //    Color underlayColor = __instance.underlayColor;
+        //    if (__instance.underlayOn && __instance._fontMaterialInstance.HasProperty(ShaderUtilities.ID_UnderlayColor))
+        //    {
+        //        if (__instance.underlayHDRFactor > 0f)
+        //        {
+        //            float num = Mathf.Pow(2f, __instance.underlayHDRFactor);
+        //            underlayColor.r *= num;
+        //            underlayColor.g *= num;
+        //            underlayColor.b *= num;
+        //        }
+        //        underlayColor = __instance.underlayHdrColorOn ? __instance.underlayHdrColor : underlayColor;
+        //        //if (underlayColor.r > 0f || underlayColor.g > 0f || underlayColor.b > 0f)
+        //        //    __instance._text.color = underlayColor;
+        //    }
+        //    return false;
+        //}
         #endregion
         #region Я заебался переводить китайский
         private static void LoadRemote2(LOCALIZE_LANGUAGE lang)
@@ -233,7 +255,7 @@ namespace LimbusLocalizeRUS
             tm._userTicket_EGOBg.Init(romoteLocalizeFileList.UserTicketEGOBg);
             tm._panicInfo.Init(romoteLocalizeFileList.PanicInfo);
             tm._mentalConditionList.Init(romoteLocalizeFileList.mentalCondition);
-            tm._dungeonStartBuffs.Init(romoteLocalizeFileList.DungeonStartBuffs);
+            //tm._dungeonStartBuffs.Init(romoteLocalizeFileList.DungeonStartBuffs);
 
             tm._abnormalityEventCharDlg.AbEventCharDlgRootInit(romoteLocalizeFileList.abnormalityCharDlgFilePath);
 
@@ -336,6 +358,14 @@ namespace LimbusLocalizeRUS
         private static void LoadRemote(ref LOCALIZE_LANGUAGE lang)
         {
             lang = LOCALIZE_LANGUAGE.EN;
+        }
+        [HarmonyPatch(typeof(TextMeshProLanguageSetter), nameof(TextMeshProLanguageSetter.Awake))]
+        [HarmonyPrefix]
+        private static void Awake(TextMeshProLanguageSetter __instance)
+        {
+            if (!__instance._text)
+                if (__instance.TryGetComponent<TextMeshProUGUI>(out var textMeshProUGUI))
+                    __instance._text = textMeshProUGUI;
         }
         [HarmonyPatch(typeof(StoryData), nameof(StoryData.Init))]
         [HarmonyPostfix]
