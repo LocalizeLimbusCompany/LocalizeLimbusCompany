@@ -116,7 +116,7 @@ namespace LimbusLocalizeRUS
 
                 Debug.Log("Material Name : " + __instance.fontMaterial.name);
                 Debug.Log("Test : " + __instance.text);
-                if (__instance.fontMaterial.name.Contains("UnderLine") || __instance.fontMaterial.name.Contains("Underline"))
+                if (__instance.fontMaterial.name.Contains("Mikodacs SDF UnderLine") || __instance.fontMaterial.name.Contains("KOTRA_BOLD SDF Underline"))
                 {
                     if (__instance.fontMaterial.IsKeywordEnabled("UNDERLAY_ON"))
                     {
