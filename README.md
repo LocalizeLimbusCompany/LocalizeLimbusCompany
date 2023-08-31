@@ -20,3 +20,4 @@
    - [Молитесь]().
 # Дополнительные ссылки
 - [Группа перевода](https://vk.com/limbus_company_ru)
+- [Наши друзья из LLC!](https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany)
