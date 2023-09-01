@@ -1,11 +1,10 @@
 # Установка[![]()](../../releases)
 
 [![]()](../../releases/latest)
-### 0. Скачайте[.NET 6.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/sdk-6.0.406-windows-x64-installer)
+### 0. Скачайте[.NET 6.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.413-windows-x64-installer)
 ### 1. Установите фреймворк мод
-   - Установите [MelonLoader](https://github.com/LavaGang/MelonLoader) v0.6.1
-   
-   - Перейдите в библиотеку Steam, нажмите ПКМ по игре в списке и перейдите в "Управление > Показать локальные файлы". В открывшуюся папку разархивируйте скаченные файлы, **не создавая новую папку**.
+   - Установите [MelonLoader v0.6.1](https://github.com/LavaGang/MelonLoader/releases/tag/v0.6.1)
+     (Проще всего скачать .exe установщик и выбрать в нём путь к папке игры)
 ### 2. Установите файлы шрифтов
    - Загрузите файлы шрифтов из [MEGA (всё ещё пытаемся разобраться с GitHub)](https://mega.nz/folder/eeogzRLK#V2sKlXU5t1UvSEJlCRT0tA) и добавьте их в папку "Mods" внутри локальных файлов игры.
 ### 3. Установите локализацию
