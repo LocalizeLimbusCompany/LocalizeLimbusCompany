@@ -117,10 +117,7 @@ namespace LimbusLocalize
         [HarmonyPatch(typeof(GachaEffectEventSystem), nameof(GachaEffectEventSystem.LinkToCrackPosition))]
         [HarmonyPrefix]
         private static bool LinkToCrackPosition(GachaEffectEventSystem __instance, GachaCrackController[] crackList)
-        {
-            return __instance._parent.EffectChainCamera;
-        }
-
+            => __instance._parent.EffectChainCamera;
         [HarmonyPatch(typeof(PersonalityVoiceJsonDataList), nameof(PersonalityVoiceJsonDataList.GetDataList))]
         [HarmonyPrefix]
         private static bool PersonalityVoiceGetDataList(PersonalityVoiceJsonDataList __instance, int personalityId, ref LocalizeTextDataRoot<TextData_PersonalityVoice> __result)

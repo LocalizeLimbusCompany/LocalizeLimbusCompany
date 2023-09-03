@@ -1,13 +1,13 @@
-﻿using HarmonyLib;
-using Addressable;
+﻿using Addressable;
+using HarmonyLib;
+using Il2CppSystem.Collections.Generic;
 using SimpleJSON;
 using StorySystem;
-using UtilityUI;
-using TMPro;
-using Il2CppSystem.Collections.Generic;
 using System;
 using System.IO;
+using TMPro;
 using UnityEngine;
+using UtilityUI;
 
 namespace LimbusLocalize
 {
@@ -49,10 +49,7 @@ namespace LimbusLocalize
             return false;
         }
         public static bool IsChineseFont(TMP_FontAsset fontAsset)
-        {
-            return tmpchinesefontnames.Contains(fontAsset.name);
-        }
-
+            => tmpchinesefontnames.Contains(fontAsset.name);
         [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.font), MethodType.Setter)]
         [HarmonyPrefix]
         private static bool set_font(TMP_Text __instance, ref TMP_FontAsset value)
@@ -298,9 +295,7 @@ namespace LimbusLocalize
         [HarmonyPatch(typeof(TextDataManager), nameof(TextDataManager.LoadRemote))]
         [HarmonyPrefix]
         private static void LoadRemote(ref LOCALIZE_LANGUAGE lang)
-        {
-            lang = LOCALIZE_LANGUAGE.EN;
-        }
+           => lang = LOCALIZE_LANGUAGE.EN;
         [HarmonyPatch(typeof(StoryData), nameof(StoryData.Init))]
         [HarmonyPostfix]
         private static void StoryDataInit(StoryData __instance)
