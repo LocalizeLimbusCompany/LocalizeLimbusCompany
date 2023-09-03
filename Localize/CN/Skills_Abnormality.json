@@ -1382,7 +1382,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身恢复20点体力并对自身施加5层流血 "
+                  "desc": "[OnSucceedAttack] 使自身恢复20点体力并对目标施加5层流血 "
                 }
               ]
             }
@@ -1622,7 +1622,7 @@
         {
           "level": 1,
           "name": "净化",
-          "desc": "[WhenUse] 若目标的体力不高于30%，则使本技能的威力+2",
+          "desc": "[WhenUse] 若目标现存体力不高于30%，则使本技能的威力+2",
           "coinlist": [
             {
               "coindescs": [
@@ -1662,7 +1662,7 @@
         {
           "level": 1,
           "name": "即刻处决！",
-          "desc": "[WhenUse] 若目标的体力不高于30%，则使本技能的威力+2",
+          "desc": "[WhenUse] 若目标现存体力不高于30%，则使本技能的威力+2",
           "coinlist": [
             {
               "coindescs": [
@@ -1924,12 +1924,12 @@
         {
           "level": 1,
           "name": "荣耀执握",
-          "desc": "[WhenUse] 若目标的体力不高于30%，则使本技能造成的伤害+100%",
+          "desc": "[WhenUse] 若目标现存体力不高于30%，则使本技能造成的伤害+100%",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 若目标的体力不高于30%，直接击杀目标并使自身恢复30点体力\n下回合使自身获得2层强壮 "
+                  "desc": "[OnSucceedAttackHead] 若目标现存体力不高于30%，直接击杀目标并使自身恢复30点体力\n下回合使自身获得2层强壮 "
                 }
               ]
             }
@@ -1943,7 +1943,7 @@
         {
           "level": 1,
           "name": "给我忏悔！！",
-          "desc": "[WhenUse] 若目标的体力不高于30%，则使本技能造成的伤害+100%",
+          "desc": "[WhenUse] 若目标现存体力不高于30%，则使本技能造成的伤害+100%",
           "coinlist": [
             {
               "coindescs": [
@@ -2186,7 +2186,7 @@
                   "desc": "[OnSucceedAttack] 下回合对目标施加2层束缚 "
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 下回合对目标施加4层破绽 "
+                  "desc": "[OnSucceedAttackHead] 对目标施加4层破绽 "
                 }
               ]
             }
@@ -2278,7 +2278,7 @@
                   "desc": "[OnSucceedAttack] 下回合对目标施加2层束缚 "
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 下回合对目标施加4层破绽 "
+                  "desc": "[OnSucceedAttackHead] 对目标施加4层破绽 "
                 }
               ]
             }
@@ -2495,7 +2495,7 @@
         {
           "level": 1,
           "name": "咕",
-          "desc": "[OnSucceedEvade] 使目标失去5点理智值",
+          "desc": "[OnSucceedEvade] 使目标失去15点理智值",
           "coinlist": [
             {}
           ]
@@ -2527,7 +2527,7 @@
         {
           "level": 1,
           "name": "咕咕呜！",
-          "desc": "若自身上回合未受到伤害，则使本技能的硬币威力+3",
+          "desc": "若自身在上回合未受到伤害，则使本技能的硬币威力+3",
           "coinlist": [
             {},
             {
@@ -2728,7 +2728,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 引爆目标的震颤"
+                  "desc": "[OnSucceedAttack] 引爆目标的震颤 "
                 }
               ]
             }
@@ -3359,7 +3359,7 @@
         {
           "level": 1,
           "name": "等待",
-          "desc": "[StartBattle] 全体敌方单位失去20点理智值",
+          "desc": "[StartBattle] 使全体敌方单位失去20点理智值",
           "coinlist": [
             {}
           ]
@@ -3514,7 +3514,7 @@
         {
           "level": 1,
           "name": "只剩这些了！",
-          "desc": "进行拼点时，使目标获得1层昂扬 \n指定带有震颤的单位 ",
+          "desc": "进行拼点时，使目标获得1层昂扬 \n指定带有震颤 的单位",
           "coinlist": [
             {},
             {
@@ -3534,7 +3534,7 @@
         {
           "level": 1,
           "name": "这个我吃了！",
-          "desc": "[CantDuel]\n无法改变拼点目标\n指定带有昂扬 的目标\n若目标未带有醉意 ，则拼点威力+5",
+          "desc": "[CantDuel]\n无法改变拼点目标\n指定带有昂扬 的目标\n若目标未带有醉意 ，则使本技能的拼点威力+5",
           "coinlist": [
             {
               "coindescs": [
@@ -3559,7 +3559,7 @@
         {
           "level": 1,
           "name": "这个我吃了！",
-          "desc": "指定带有昂扬 的目标\n若目标未带有醉意 ，则拼点威力+5",
+          "desc": "指定带有昂扬 的目标\n若目标未带有醉意 ，则使本技能的拼点威力+5",
           "coinlist": [
             {
               "coindescs": [
@@ -3970,7 +3970,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack]若目标处于盛放 状态，则使目标陷入混乱并解除其盛放 状态"
+                  "desc": "[OnSucceedAttack] 若目标处于盛放 状态，则使目标陷入混乱并解除其盛放 状态"
                 }
               ]
             },

@@ -21,6 +21,9 @@ Set-Location "$Path/LimbusLocalize"
 7z a -t7z "../LimbusLocalize_BIE_$version.7z" "BepInEx/" -mx=9 -ms
 Set-Location "../../"
 # OTA
+$tag=$(git describe --tags --abbrev=0)
+$changedFiles=$(git diff --name-only HEAD $tag -- Localize/CN/)
+$changedFiles2=$(git diff --name-only HEAD $tag -- Localize/Readme/)
 New-Item -Path "$Path/LimbusLocalize_OTA" -Name "BepInEx" -ItemType "directory" -Force
 New-Item -Path "$Path/LimbusLocalize_OTA/BepInEx" -Name "plugins" -ItemType "directory" -Force
 New-Item -Path "$Path/LimbusLocalize_OTA/BepInEx/plugins" -Name "LLC" -ItemType "directory" -Force
@@ -30,6 +33,7 @@ New-Item -Path "$BIE_OTA_LLC_Path" -Name "Localize" -ItemType "directory" -Force
 New-Item -Path "$BIE_OTA_LLC_Path/Localize" -Name "Readme" -ItemType "directory" -Force
 New-Item -Path "$BIE_OTA_LLC_Path/Localize" -Name "CN" -ItemType "directory" -Force
 # Copy the changed files to the release directory
+$changedFilesList = $changedFiles -split " "
 foreach ($file in $changedFilesList) {
     if (Test-Path -Path $file) {
         $destination = "$BIE_OTA_LLC_Path/Localize/CN/$file"
@@ -41,6 +45,7 @@ foreach ($file in $changedFilesList) {
         Copy-Item -Path $file -Destination $destination -Force -Recurse
     }
 }
+$changedFilesList2 = $changedFiles2 -split " "
 foreach ($file2 in $changedFilesList2) {
 	if(Test-Path $file2){
 		Copy-Item -Path $file2 $BIE_OTA_LLC_Path/Localize/Readme -Force

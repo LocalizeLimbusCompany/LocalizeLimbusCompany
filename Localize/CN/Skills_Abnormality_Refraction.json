@@ -25,7 +25,7 @@
         {
           "level": 1,
           "name": "悲恸拍击",
-          "desc": "[StartDuel] 使目标获得5点理智值",
+          "desc": "[StartDuel] 使目标恢复5点理智值",
           "coinlist": [
             {
               "coindescs": [
@@ -52,14 +52,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 依据目标的沉沦 层数造成额外伤害"
+                  "desc": "[OnSucceedAttackHead] 依据目标的沉沦 强度造成额外伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 依据目标沉沦 层数造成额外理智伤害"
+                  "desc": "[OnSucceedAttackHead] 依据目标沉沦 强度造成额外理智伤害"
                 }
               ]
             }
@@ -125,12 +125,12 @@
         {
           "level": 1,
           "name": "融落之眼",
-          "desc": "[WhenUse] 使目标失去5点理智值\n若目标理智值不高于0，造成伤害+10%",
+          "desc": "[WhenUse] 使目标失去5点理智值\n若目标理智值不高于0，则使本技能造成的伤害+10%",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 依据目标沉沦 层数造成额外理智伤害"
+                  "desc": "[OnSucceedAttackHead] 依据目标沉沦 强度造成额外理智伤害"
                 }
               ]
             }
@@ -144,7 +144,7 @@
         {
           "level": 1,
           "name": "融落之眼",
-          "desc": "[WhenUse] 使目标失去5点理智值\n若目标理智值不高于0，造成伤害+10%",
+          "desc": "[WhenUse] 使目标失去5点理智值\n若目标理智值不高于0，则使本技能造成的伤害+10%",
           "coinlist": [
             {
               "coindescs": [
@@ -388,7 +388,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 对目标造成(破裂 强度x破裂 层数)点伤害\n随后解除目标的破裂效果"
+                  "desc": "[OnSucceedAttackHead] 对目标造成(破裂 强度x破裂 层数)点伤害\n随后解除目标的破裂 效果"
                 }
               ]
             }
@@ -454,7 +454,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "若第1枚硬币的朝向为正面，则使本硬币造成的伤害+10%"
+                  "desc": "若第2枚硬币的朝向为正面，则使本硬币造成的伤害+10%"
                 }
               ]
             },
@@ -515,7 +515,7 @@
         {
           "level": 1,
           "name": "摩诃室利",
-          "desc": "[WhenUse] 下回合使自身获得3层守护 ",
+          "desc": "[WhenUse] 下回合使目标获得3层守护 ",
           "coinlist": []
         }
       ]
@@ -526,7 +526,7 @@
         {
           "level": 1,
           "name": "娑婆诃",
-          "desc": "[WhenUse] 下回合使自身获得3层伤害强化 ",
+          "desc": "[WhenUse] 下回合使目标获得3层伤害强化 ",
           "coinlist": []
         }
       ]

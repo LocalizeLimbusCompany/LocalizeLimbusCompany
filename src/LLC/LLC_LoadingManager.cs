@@ -15,10 +15,7 @@ namespace LimbusLocalize
         public static ConfigEntry<bool> RandomAllLoadCG = LCB_LLCMod.LLC_Settings.Bind("LLC Settings", "RandomAllLoadCG", true, "是否从所有已到达进度中随机选择载入CG ( true | false )");
         public static ConfigEntry<bool> RandomLoadText = LCB_LLCMod.LLC_Settings.Bind("LLC Settings", "RandomLoadText", true, "是否随机选择载入标语,即右下角的[NOW LOADING...] ( true | false )");
         public static int ArchiveCGId;
-        static LLC_LoadingManager()
-        {
-            InitLoadingTexts();
-        }
+        static LLC_LoadingManager() => InitLoadingTexts();
         public static void InitLoadingTexts()
         {
             LoadingTexts = File.ReadAllLines(LCB_LLCMod.ModPath + "/Localize/Readme/LoadingTexts.md").ToList();
@@ -31,13 +28,7 @@ namespace LimbusLocalize
             LoadingTexts.RemoveAt(0);
         }
         public static T SelectOne<T>(List<T> list)
-        {
-            if (list.Count == 0)
-            {
-                return default;
-            }
-            return list[Random.Range(0, list.Count)];
-        }
+            => list.Count == 0 ? default : list[Random.Range(0, list.Count)];
         [HarmonyPatch(typeof(LoadingSceneManager), nameof(LoadingSceneManager.Start))]
         [HarmonyPostfix]
         private static void LSM_Start(LoadingSceneManager __instance)

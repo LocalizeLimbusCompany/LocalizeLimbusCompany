@@ -90,9 +90,7 @@ namespace LimbusLocalize
             UpdateNoticeRedDot();
         }
         public static void UpdateNoticeRedDot()
-        {
-            _redDot_Notice?.gameObject.SetActive(IsValidRedDot());
-        }
+           => _redDot_Notice?.gameObject.SetActive(IsValidRedDot());
         public static bool IsValidRedDot()
         {
             int i = 0;
