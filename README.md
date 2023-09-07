@@ -12,6 +12,7 @@
     
 ## Я всё равно ничего не понял(-а), что мне делать? 
    - Молитесь.
-# Дополнительные ссылки
+# Примечания
 - [Группа перевода](https://vk.com/limbus_company_ru)
 - [Наши друзья из LLC!](https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany)
+- Также благодарим <b>abcdcode</b> за помощь с кодом для улучшения отображения шрифтов!
