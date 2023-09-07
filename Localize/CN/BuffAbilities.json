@@ -1,20 +1,57 @@
 {
   "dataList": [
     {
-      "id": "AtkDamageMultiplierByStack",
-      "desc": "가하는 피해량 {0}%"
+      "id": "AtkDamageMultiplier",
+      "desc": "造成的伤害{0}%",
+      "variation": "造成的{0}伤害{1}%"
     },
     {
       "id": "GiveBuffOnSucceedAttack",
-      "desc": "적중 시 {0} {1} 부여"
+      "desc": "命中时对目标施加{0}{1}"
     },
     {
-      "id": "MaxHpMultiplierByStack",
-      "desc": "최대 체력 {0}%"
+      "id": "MaxHpMultiplier",
+      "desc": "体力上限{0}%"
     },
     {
-      "id": "CoinScaleAdderByStack",
-      "desc": "{0} 코인 위력 {1}"
+      "id": "SlotWeightAdder",
+      "desc": "攻击容量{0}"
+    },
+    {
+      "id": "AtkAdder",
+      "desc": "攻击力{0}"
+    },
+    {
+      "id": "DefAdder",
+      "desc": "防御力{0}"
+    },
+    {
+      "id": "AtkAdderIfNotDamagedPrevTurn",
+      "desc": "若一回合内未受到伤害，则下回合攻击等级{0}（对护盾造成的伤害不计入）"
+    },
+    {
+      "id": "MaxSpeedAdderAsStack",
+      "desc": "最大速度值{0}"
+    },
+    {
+      "id": "MaxSpeedAdder",
+      "desc": "最大速度值{0}"
+    },
+    {
+      "id": "MinSpeedAdder",
+      "desc": "最小速度值{0}"
+    },
+    {
+      "id": "TakeHpHealMultiplier",
+      "desc": "通过技能效果的体力恢复量{0}%"
+    },
+    {
+      "id": "RecoverSelfHpOnSucceedAttackByDmg",
+      "desc": "恢复造成伤害{0}%的体力"
+    },
+    {
+      "id": "RailEnemyBuffF",
+      "desc": "目标使用E.G.O技能时需要的罪孽碎片的数量{0}（只对消耗的罪孽碎片生效）"
     }
   ]
 }
