@@ -307,7 +307,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "格挡反击",
+          "name": "格挡回击",
           "desc": "[WinDuel] 下回合对目标施加3层麻痹 ",
           "keywords": [
             "Paralysis"
@@ -331,7 +331,7 @@
         },
         {
           "level": 2,
-          "name": "格挡反击",
+          "name": "格挡回击",
           "desc": "[WinDuel] 下回合对目标施加3层 麻痹",
           "keywords": [
             "Paralysis"
@@ -355,7 +355,7 @@
         },
         {
           "level": 4,
-          "name": "格挡反击",
+          "name": "格挡回击",
           "desc": "[WinDuel] 下回合对目标施加3层麻痹 \n[WinDuel] 对目标施加1层破裂 ",
           "keywords": [
             "Paralysis"
@@ -5849,7 +5849,7 @@
       "levelList": [
         {
           "level": 3,
-          "name": "摄敌气势",
+          "name": "慑敌气势",
           "desc": "",
           "coinlist": [
             {
@@ -5866,7 +5866,7 @@
         },
         {
           "level": 4,
-          "name": "摄敌气势",
+          "name": "慑敌气势",
           "desc": "",
           "coinlist": [
             {
@@ -10968,6 +10968,466 @@
           "desc": "[OnSucceedEvade] 使目标失去3点理智值",
           "coinlist": [
             {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1070601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "直觉",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级破裂 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "直觉",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级破裂 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "直觉",
+          "desc": "若目标的破裂 强度不低于6级，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级破裂 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级破裂 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级破裂 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1070602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "事后收尾",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层破裂 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "事后收尾",
+          "desc": "[WinDuel] 对目标施加1层破裂 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层防御等级降低 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层破裂 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "事后收尾",
+          "desc": "[WinDuel] 对目标施加1层破裂 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加3层防御等级降低 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层破裂 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1070603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "分析现场资料",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层破裂 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级破裂 强度"
+                },
+                {
+                  "desc": "[EnemyKill] 对破裂 层数最低的1名敌方单位施加2层破裂 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "分析现场资料",
+          "desc": "若目标的破裂 强度不低于6级，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层破裂 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级破裂 强度"
+                },
+                {
+                  "desc": "[EnemyKill] 对破裂 层数最低的1名敌方单位施加2层破裂 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1070604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "防御",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1020601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "预测分析",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级破裂 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "预测分析",
+          "desc": "若目标的破裂 强度不低于3级，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级破裂 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "预测分析",
+          "desc": "目标每带有3级破裂 强度，使本技能的硬币威力+1（最多+2）",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级破裂 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1020602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "目标解体",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加3级破裂 强度"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若目标的破裂 强度不低于6级，则下回合对其施加弱点分析 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "目标解体",
+          "desc": "若目标的破裂 强度不低于6级，则使本技能的硬币威力+1\n[WinDuel] 对目标施加3层破裂 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级破裂 强度"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若目标的破裂 强度不低于6级，则下回合对其施加弱点分析 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "目标解体",
+          "desc": "目标每带有6级破裂 强度，使本技能的硬币威力+1（最多+2）\n[WinDuel] 对目标施加3层破裂 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级破裂 强度"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若目标的破裂 强度不低于6级，则下回合对其施加弱点分析 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1020603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "特征剖析",
+          "desc": "[WhenUse] 目标每带有3级破裂 强度，使本技能造成的伤害+10%（最多+20%）",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[EndSkill] 若使目标陷入混乱或击杀目标，则下回合使自身获得1层迅捷 与1层斩击强壮 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "特征剖析",
+          "desc": "[WhenUse] 目标每带有3级破裂 强度，使本技能造成的伤害+10%（最多+50%）\n[WinDuel] 对目标施加2层破裂 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[EndSkill] 若使目标陷入混乱或击杀目标，则下回合使自身获得1层迅捷 与1层斩击强壮 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1020604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "尽快解决吧",
+          "desc": "[WhenUse] 下回合使自身获得1层迅捷 （每回合最多获得3层）",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "尽快解决吧",
+          "desc": "[WhenUse] 下回合使自身获得1层迅捷 （每回合最多获得3层）",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
           ]
         }
       ]
