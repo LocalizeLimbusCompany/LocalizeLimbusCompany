@@ -14,7 +14,7 @@ namespace LimbusLocalizeRUS
         public static string ModPath;
         public static string GamePath;
         public const string NAME = "LimbusCompanyBusRUS";
-        public const string VERSION = "0.1.0";
+        public const string VERSION = "0.1.3";
         public const string AUTHOR = "Base: Bright\nRUS version: Knightey";
         public const string LCBRLink = "https://github.com/Crescent-Corporation/LimbusCompanyBusRUS";
         public static MelonPreferences_Category LCBR_Settings = MelonPreferences.CreateCategory("LCBR", "LCBR Settings");
