@@ -49,7 +49,7 @@
     {
       "id": "ElectricShock",
       "name": "Shock",
-      "desc": "Take more damage by the effect’s Count."
+      "desc": "Take more damage by the effect’s value for the turn"
     },
     {
       "id": "Burn",
@@ -801,7 +801,7 @@
     {
       "id": "SelfCharge",
       "name": "Self-charge",
-      "desc": "Electric currents seem to flow around its body.",
+      "desc": "Electric currents seem to flow around its body.\nAfter the unit faces death, as long as it has Self-charge, its HP is fixed at 1 until it is fully consumed. (Max 20)",
       "summary": "표시용"
     },
     {
@@ -1233,6 +1233,11 @@
       "id": "SlashResultUp",
       "name": "Slash Power Up",
       "desc": "Slash skills gain final Power by the effect’s Count for one turn."
+    },
+    {
+      "id": "Discard",
+      "name": "Discard",
+      "desc": "- Delete Skills that fit the condition and are selectable during the Chaining Phase from the Dashboard. (Defensive & E.G.O Skills do not count. Does not delete the Skill from the upcoming Skills list)\n- Discarded Skills will not activate Skill effects or Coin effects other than effects from Discard, and will not give E.G.O resources."
     }
   ]
 }

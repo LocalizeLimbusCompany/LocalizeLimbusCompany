@@ -56,7 +56,7 @@ namespace LimbusLocalize
         {
             UnityWebRequest www = UnityWebRequest.Get("https://api.github.com/repos/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/latest");
             string FilePath = LCB_LLCMod.ModPath + "/tmpchinesefont";
-            var LastWriteTime = File.Exists(FilePath) ? int.Parse(new FileInfo(FilePath).LastWriteTime.ToString("yyMMdd")) : 0;
+            var LastWriteTime = File.Exists(FilePath) ? int.Parse(TimeZoneInfo.ConvertTime(new FileInfo(FilePath).LastWriteTime, TimeZoneInfo.FindSystemTimeZoneById("China Standard Time")).ToString("yyMMdd")) : 0;
             www.SendWebRequest();
             while (!www.isDone)
                 Thread.Sleep(100);

@@ -6,28 +6,33 @@
       "variation": "가하는 {0} 피해량 {1}%"
     },
     {
+      "id": "AtkAndTakeAtkDamageMultiplier",
+      "desc": "가하는 / 받는 피해량 {0}%",
+      "variation": "{0} 속성 스킬로 가하는 / 받는 피해량 {1}%"
+    },
+    {
       "id": "GiveBuffOnSucceedAttack",
       "desc": "적중 시 {0} {1} 부여"
     },
     {
-      "id": "MaxHpMultiplier",
+      "id": "MaxHpMultiplierRail",
       "desc": "최대 체력 {0}%"
     },
     {
       "id": "SlotWeightAdder",
-      "desc": "가중치 {0}"
+      "desc": "슬롯 가중치 {0}"
     },
     {
       "id": "AtkAdder",
-      "desc": "공격력 {0}"
+      "desc": "공격 레벨 {0}"
     },
     {
       "id": "DefAdder",
-      "desc": "방어력 {0}"
+      "desc": "방어 레벨 {0}"
     },
     {
       "id": "AtkAdderIfNotDamagedPrevTurn",
-      "desc": "한 턴 동안 체력 피해를 받지 않았다면 다음 턴에 공격 레벨 {0} (보호막 피해는 체력 피해 x)"
+      "desc": "한 턴 동안 체력 피해를 받지 않았다면 다음 턴에 공격 레벨 {0}\n(보호막 피해는 해당되지 않음)"
     },
     {
       "id": "MaxSpeedAdderAsStack",
@@ -51,7 +56,29 @@
     },
     {
       "id": "RailEnemyBuffF",
-      "desc": "상대가 E.G.O 스킬을 사용할 때 필요한 E.G.O 자원의 수량 {0} (소모하는 E.G.O 자원만 해당)"
+      "desc": "수감자가 E.G.O 스킬을 사용할 때 소모하는 E.G.O 자원 수량 {0}"
+    },
+    {
+      "id": "MaxHpMultiplier",
+      "desc": "최대 체력 {0}%"
+    },
+    {
+      "id": "AtkAndDefAdder",
+      "desc": "공격 레벨 {0}, 방어 레벨 {0}"
+    },
+    {
+      "id": "GiveBuffOnRoundStartToAllAlly",
+      "desc": "턴 시작 시 아군 전체에게 {0} {1}, {0} 횟수 {2} 부여",
+      "variation": "턴 시작 시 아군 전체에게 {0} {1} 부여",
+      "variation2": "턴 시작 시 아군 전체에게 {0} 횟수 {1} 부여"
+    },
+    {
+      "id": "GiveBuffOnRoundStartToAllAllyExtra",
+      "desc": "턴 시작 시 아군 전체에게 {0} {1} 부여, {0} 상태인 아군에게는 {0} 횟수 {2} 추가로 부여"
+    },
+    {
+      "id": "GiveBuffOnRoundStartToAllEnemyExtra",
+      "desc": "턴 시작 시 적 전체에게 {0} {1} 부여, {0} 상태인 적에게는 {0} 횟수 {2} 추가로 부여"
     }
   ]
 }

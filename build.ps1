@@ -1,6 +1,6 @@
 param(
     [string]$version
-)
+	)
 $Path = "Release"
 if (Test-Path $Path)
 	{
@@ -17,9 +17,12 @@ New-Item -Path "$BIE_LLC_Path" -Name "Localize" -ItemType "directory" -Force
 Copy-Item -Path Localize/CN $BIE_LLC_Path/Localize -Force -Recurse
 Copy-Item -Path Localize/Readme $BIE_LLC_Path/Localize -Force -Recurse
 Copy-Item -Path $Path/LimbusLocalize_BIE.dll -Destination $BIE_LLC_Path -Force
-Set-Location "$Path/LimbusLocalize"
-7z a -t7z "../LimbusLocalize_BIE_$version.7z" "BepInEx/" -mx=9 -ms
-Set-Location "../../"
+if ($version)
+	{
+	 Set-Location "$Path/LimbusLocalize"
+	 7z a -t7z "../LimbusLocalize_BIE_$version.7z" "BepInEx/" -mx=9 -ms
+	 Set-Location "../../"
+	}
 # OTA
 $tag=$(git describe --tags --abbrev=0)
 $changedFiles=$(git diff --name-only HEAD $tag -- Localize/CN/)
@@ -36,21 +39,24 @@ New-Item -Path "$BIE_OTA_LLC_Path/Localize" -Name "CN" -ItemType "directory" -Fo
 $changedFilesList = $changedFiles -split " "
 foreach ($file in $changedFilesList) {
     if (Test-Path -Path $file) {
-        $destination = "$BIE_OTA_LLC_Path/Localize/CN/$file"
-        $destination = $destination.Replace("Localize/CN/Localize/CN/", "Localize/CN/")
-        $destinationDirectory = Split-Path -Path $destination -Parent
+         $destination = "$BIE_OTA_LLC_Path/Localize/CN/$file"
+         $destination = $destination.Replace("Localize/CN/Localize/CN/", "Localize/CN/")
+         $destinationDirectory = Split-Path -Path $destination -Parent
         if (!(Test-Path -Path $destinationDirectory)) {
-            New-Item -ItemType Directory -Force -Path $destinationDirectory
-        }
-        Copy-Item -Path $file -Destination $destination -Force -Recurse
-    }
-}
+             New-Item -ItemType Directory -Force -Path $destinationDirectory
+			}
+         Copy-Item -Path $file -Destination $destination -Force -Recurse
+		}
+	}
 $changedFilesList2 = $changedFiles2 -split " "
 foreach ($file2 in $changedFilesList2) {
-	if(Test-Path $file2){
-		Copy-Item -Path $file2 $BIE_OTA_LLC_Path/Localize/Readme -Force
-    }
-}
-Set-Location "$Path/LimbusLocalize_OTA"
-7z a -t7z "../LimbusLocalize_BIE_OTA_$version.7z" "BepInEx/" -mx=9 -ms
-Set-Location "../../"
+	if (Test-Path $file2){
+		 Copy-Item -Path $file2 $BIE_OTA_LLC_Path/Localize/Readme -Force
+		}
+	}
+if ($version)
+	{
+	 Set-Location "$Path/LimbusLocalize_OTA"
+	 7z a -t7z "../LimbusLocalize_BIE_OTA_$version.7z" "BepInEx/" -mx=9 -ms
+	 Set-Location "../../"
+	}
