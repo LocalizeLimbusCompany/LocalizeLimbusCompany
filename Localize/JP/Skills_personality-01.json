@@ -1,5 +1,189 @@
 {
   "dataList": [
-    {}
+    {
+      "id": 1010501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "落ち着いて",
+          "desc": "このスキルが捨てられると、自分の振動 回数が3増加",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 振動 回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "落ち着いて",
+          "desc": "このスキルが捨てられると、自分の振動 回数が3増加\n[WhenUse] 自分の振動 回数が2増加",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 振動 回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "落ち着いて",
+          "desc": "このスキルが捨てられると、自分の振動 回数が4増加\n[WhenUse] 自分の振動 回数が2増加\n自分の振動 回数が5以上なら、コイン威力 +1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 振動 回数が2増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ギャンブラー",
+          "desc": "このスキルが捨てられると、自分の振動 回数が3増加\n[WhenUse] 自分の全スキルスロットから、ランクの最も低いスキル1つを捨てる",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の振動 回数が5以上のとき、振動 爆発。対象の振動 回数が2減少"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "ギャンブラー",
+          "desc": "このスキルが捨てられると、自分の振動 回数が4増加\n[WhenUse] 自分の全スキルスロットから、ランクの最も低いスキル1つを捨てる",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 振動 回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の振動 回数が5以上のとき、振動 爆発。対象の振動 回数が2減少"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "ギャンブラー",
+          "desc": "このスキルが捨てられると、自分の振動 回数が4増加\n[WhenUse] 自分の全スキルスロットから、ランクの最も低いスキル1つを捨てる",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 振動 回数が3増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の振動 回数が5以上のとき、振動 爆発。対象の振動 回数が2減少"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "奥歯軋り",
+          "desc": "[WhenUse] 自分の全スキルスロットから、ランクの最も低いスキル1つを捨てる\n[WhenUse] 自分の振動 回数を10消耗してコイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 振動 4を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] スキル使用時、振動 回数を消耗したなら振動 爆発"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 防御レベル減少 2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] スキル使用時、振動 回数を消耗したなら振動 爆発"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "奥歯軋り",
+          "desc": "[WhenUse] 自分の全スキルスロットから、ランクの最も低いスキル1つを捨てる\n[WhenUse] 自分の振動 回数を10消耗してコイン威力 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 振動 4を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] スキル使用時、振動 回数を消耗したなら振動 爆発"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 防御レベル減少 2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] スキル使用時、振動 回数を消耗したなら振動 爆発"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ガード",
+          "desc": "[WhenUse] 自分の全スキルスロットから、ランクの最も低いスキル1つを捨てる",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "ガード",
+          "desc": "[WhenUse] 自分の全スキルスロットから、ランクの最も低いスキル1つを捨てる",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    }
   ]
 }

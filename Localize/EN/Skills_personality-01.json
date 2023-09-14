@@ -1,5 +1,189 @@
 {
   "dataList": [
-    {}
+    {
+      "id": 1010501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Stay Calm",
+          "desc": "Gain +3 Tremor Count if this Skill is Discarded",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict +2 Tremor Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Stay Calm",
+          "desc": "If this Skill is Discarded, gain +4 Tremor Count\n[WhenUse] Gain +2 Tremor Count",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 Tremor Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Stay Calm",
+          "desc": "If this Skill is Discarded, gain +4 Tremor Count\n[WhenUse] Gain +2 Tremor Count\nAt 5+ Tremor Count, gain Coin Power +1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 Tremor Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Gamble",
+          "desc": "If this Skill is Discarded, gain +3 Tremor Count\n[WhenUse] Discard the Skill of lowest rank in all of this unit's Skill Slots",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] At 5+ Tremor Count, Burst Tremor. Reduce target's Tremor Count by 2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Gamble",
+          "desc": "If this Skill is Discarded, gain +4 Tremor Count\n[WhenUse] Discard the Skill of lowest rank in all of this unit's Skill Slots",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 Tremor Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] At 5+ Tremor Count, Burst Tremor. Reduce target's Tremor Count by 2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Gamble",
+          "desc": "If this Skill is Discarded, gain +4 Tremor Count\n[WhenUse] Discard the Skill of lowest rank in all of this unit's Skill Slots",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +3 Tremor Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] At 5+ Tremor Count, Burst Tremor. Reduce target's Tremor Count by 2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Grinding the Molars",
+          "desc": "[WhenUse] Discard the Skill of lowest rank in all of this unit's Skill Slots\n[WhenUse] Spend 10 Tremor Count to gain Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 Tremor"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the Skill spent Tremor Count, Burst Tremor"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Defense Level Down"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the Skill spent Tremor Count, Burst Tremor"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Grinding the Molars",
+          "desc": "[WhenUse] Discard the Skill of lowest rank in all of this unit's Skill Slots\n[WhenUse] Spend 10 Tremor Count to gain Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 Tremor"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the Skill spent Tremor Count, Burst Tremor"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Defense Level Down"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the Skill spent Tremor Count, Burst Tremor"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Guard",
+          "desc": "[WhenUse] Discard the Skill of lowest rank in all of this unit's Skill Slots",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Guard",
+          "desc": "[WhenUse] Discard the Skill of lowest rank in all of this unit's Skill Slots",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    }
   ]
 }
