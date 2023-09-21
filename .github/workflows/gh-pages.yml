@@ -14,15 +14,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Checkout
-        uses: actions/checkout@v3
         with:
          repository: 'ZengXiaoPi/LLC_jsontest'
          path: LLC_jsontest
          token: ${{ secrets.ROOT }}
       - name: Create pages
         run: |
-         mv Localize/Readme/Readme.json LLC_jsontest/
+         curl -o LLC_jsontest/Readme.json https://raw.githubusercontent.com/LocalizeLimbusCompany/LocalizeLimbusCompany/master/Localize/Readme/Readme.json
          MODTIME=$(stat -c %y LLC_jsontest/Readme.json)
          FORMATTEDTIME=$(date -d "$MODTIME" --iso-8601=seconds)
          echo $FORMATTEDTIME > LLC_jsontest/ReadmeLatestUpdateTime.txt

@@ -1021,8 +1021,8 @@
     {
       "id": "ReattachedCurseTag",
       "name": "Reattached Curse Talisman",
-      "desc": "At 9+ Count, gain 5 Bind at turn end.\nAt 12+ Count, gain 5 Attack Power Down at turn end.",
-      "summary": "At 9+ Count, gain 5 Bind at turn end.\nAt 12+ Count, gain 5 Attack Power Down at turn end."
+      "desc": "At 9+, gain 5 Bind at the start of the turn.\nAt 12+, gain 5 Attack Power Down at the start of the turn.",
+      "summary": "At 9+, gain 5 Bind at the start of the turn.\nAt 12+, gain 5 Attack Power Down at the start of the turn."
     },
     {
       "id": "ElectricStorage",
@@ -1164,7 +1164,7 @@
     {
       "id": "Prowl_LowMorale",
       "name": "Wandering (Low Morale)",
-      "desc": "Turn Start: Deal 2 SP damage to allies",
+      "desc": "Turn End: Deal 2 SP damage to allies",
       "undefined": "-"
     },
     {
@@ -1604,6 +1604,10 @@
       "name": "Heal Selected"
     },
     {
+      "id": "RailBuffForLine2_T_ALLY",
+      "name": "Resurrect"
+    },
+    {
       "id": "Discard",
       "name": "Discard",
       "desc": "- Delete Skills that fit the condition and are selectable during the Chaining Phase from the Dashboard. (Defensive & E.G.O Skills do not count. Does not delete the Skill from the upcoming Skills list)\n- Discarded Skills will not activate Skill effects or Coin effects other than effects from Discard, and will not give E.G.O resources."
@@ -1635,6 +1639,11 @@
     {
       "id": "RailBuffForLine2_S_ALLY",
       "name": "Charge Boost"
+    },
+    {
+      "id": "KnowledgeExplored",
+      "name": "Insight",
+      "desc": "Last Discarded Skill Rank: {0} (Base Value: 1)"
     }
   ]
 }
