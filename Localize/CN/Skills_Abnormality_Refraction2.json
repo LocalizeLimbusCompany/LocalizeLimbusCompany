@@ -106,7 +106,7 @@
         {
           "level": 1,
           "name": "寻找某物的哭声",
-          "desc": "拼点时，场上每存活1把旧伞，则使本硬币的拼点威力 +2\n每把旧伞使本技能的伤害 +25%\n回合结束时，移除全部旧伞\n回合结束时，根据本回合获得的保护伞 层数，召唤相应数量的旧伞",
+          "desc": "拼点时，场上每存活1把旧伞，则使本技能的拼点威力 +2\n每把旧伞使本技能造成的伤害 +25%\n回合结束时，移除全部旧伞\n回合结束时，根据首个回合获得的保护伞 层数，获得相应层数的保护伞 ",
           "coinlist": [
             {
               "coindescs": [
@@ -182,7 +182,7 @@
         {
           "level": 1,
           "name": "哀求的哭声",
-          "desc": "进行拼点时，场上每存活1把旧伞，则使本技能拼点威力 +2\n每把旧伞使本技能伤害+25%",
+          "desc": "进行拼点时，场上每存活1把旧伞，则使本技能的拼点威力 +2\n每把旧伞使本技能造成的伤害+25%",
           "coinlist": [
             {
               "coindescs": [
@@ -201,7 +201,7 @@
         {
           "level": 1,
           "name": "散落的悲伤",
-          "desc": "[EndSkill] 对全体敌方单位施加3层破裂 与3层沉沦",
+          "desc": "[EndSkill] 对全体敌方单位施加3层破裂 与3层沉沦 ",
           "coinlist": [
             {
               "coindescs": [
@@ -220,7 +220,7 @@
         {
           "level": 1,
           "name": "电流注入",
-          "desc": "[StartBattle] 使自身获得2层自体发电 \n[DefeatDuel] 消耗2层自体发电 \n若目标带有麻痹 ，则使本技能的伤害+10%",
+          "desc": "[StartBattle] 使自身获得2层自体发电 \n[DefeatDuel] 消耗2层自体发电 \n若目标带有麻痹 ，则使本技能造成的伤害+10%",
           "coinlist": [
             {},
             {
@@ -240,7 +240,7 @@
         {
           "level": 1,
           "name": "电流放流",
-          "desc": "[StartBattle] 使自身获得2层自体发电 \n[DefeatDuel] 消耗2层自体发电 \n若目标带有麻痹 ，则使本技能的伤害+10%",
+          "desc": "[StartBattle] 使自身获得2层自体发电 \n[DefeatDuel] 消耗2层自体发电 \n若目标带有麻痹 ，则使本技能造成的伤害+10%",
           "coinlist": [
             {},
             {},
@@ -261,7 +261,7 @@
         {
           "level": 1,
           "name": "放电",
-          "desc": "[StartBattle] 使自身获得2层自体发电 \n[DefeatDuel] 消耗2层自体发电 \n若目标带有麻痹 ，则使本技能的伤害+10%",
+          "desc": "[StartBattle] 使自身获得2层自体发电 \n[DefeatDuel] 消耗2层自体发电 \n若目标带有麻痹 ，则使本技能造成的伤害+10%",
           "coinlist": [
             {
               "coindescs": [
@@ -290,7 +290,7 @@
         {
           "level": 1,
           "name": "超高压放电",
-          "desc": "[WhenUse] 若自身的自体发电 层数不低于5层，则每超过1层使本技能的伤害+20%\n[WhenUse] 每层自体发电 使本技能拼点威力 +1\n[WhenUse] 消耗所有自体发电 ",
+          "desc": "[WhenUse] 若自身的自体发电 层数不低于5层，则每超过1层使本技能造成的伤害+20%\n[WhenUse] 自身每带有1层自体发电 ，使本技能的拼点威力 +1\n[WhenUse] 消耗所有自体发电 ",
           "coinlist": [
             {
               "coindescs": [
@@ -316,7 +316,7 @@
         {
           "level": 1,
           "name": "盘绕",
-          "desc": "行动槽中存在该技能时，每层自体发电 使头部获得50点护盾\n头部被破坏时，每层自体发电 使头部获得25点护盾\n每失去等同于1层自体发电 的护盾，则使自身消耗1层自体发电 ",
+          "desc": "行动槽中存在本技能时，每层自体发电 使头部获得50点护盾\n若头部被破坏，则每层自体发电 使头部获得25点护盾\n每失去等同于1层自体发电 获取量的护盾，使自身消耗1层自体发电 ",
           "coinlist": [
             {}
           ]
@@ -411,7 +411,7 @@
         {
           "level": 1,
           "name": "只剩这些了！",
-          "desc": "优先攻击带有震颤 的单位。",
+          "desc": "优先攻击带有震颤 的单位",
           "coinlist": [
             {
               "coindescs": [
@@ -426,7 +426,7 @@
                   "desc": "[OnSucceedAttack] 根据目标的震颤 层数，相应引爆目标的震颤 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 消耗目标所有的震颤 层数"
+                  "desc": "[OnSucceedAttack] 消耗目标所有震颤 层数"
                 }
               ]
             }
@@ -612,7 +612,7 @@
         {
           "level": 1,
           "name": "转移符咒",
-          "desc": "[WhenUse] 消耗目标所有纠缠的咒符 。根据消耗的层数，获得相应层数的复贴的咒符 \n[StartBattle] 使所有部位获得3层守护 ",
+          "desc": "[WhenUse] 消耗目标所有纠缠的咒符 。根据消耗的层数，对自身施加相应层数的复贴的咒符 \n[StartBattle] 使所有部位获得3层守护 ",
           "coinlist": [
             {
               "coindescs": [
@@ -658,7 +658,7 @@
                   "desc": "[OnSucceedAttack] 若目标的流血 层数不低于2层，则使目标增加5级流血 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标的流血 层数高于2层，则对目标施加1层麻痹 "
+                  "desc": "[OnSucceedAttack] 若目标的流血 层数不低于2层，则对目标施加1层麻痹 "
                 },
                 {
                   "desc": "[OnSucceedAttack] 对目标施加4层流血 "
@@ -716,7 +716,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标的流血 层数不低于2层，则使目标增加5级流血 强度。"
+                  "desc": "[OnSucceedAttack] 若目标的流血 层数不低于2层，则使目标增加5级流血 强度"
                 },
                 {
                   "desc": "[OnSucceedAttack] 若目标带有流血 ，则使自身恢复25点体力"
@@ -738,7 +738,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 目标每带有1级流血 强度，则使本硬币伤害+5%"
+                  "desc": "[OnSucceedAttack] 目标每带有1级流血 强度，使本硬币造成的伤害+5%"
                 },
                 {
                   "desc": "[OnSucceedAttack] 消耗目标所有流血 强度"
@@ -828,7 +828,7 @@
         {
           "level": 1,
           "name": "只剩这些了！",
-          "desc": "优先攻击带有震颤 的单位。",
+          "desc": "优先攻击带有震颤 的单位",
           "coinlist": [
             {
               "coindescs": [
@@ -843,7 +843,7 @@
                   "desc": "[OnSucceedAttack] 根据目标的震颤 层数，相应引爆目标的震颤 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 消耗目标所有的震颤 层数"
+                  "desc": "[OnSucceedAttack] 消耗目标所有震颤 层数"
                 }
               ]
             }
@@ -879,7 +879,7 @@
         {
           "level": 1,
           "name": "想要这杯妖精酒吗？",
-          "desc": "[WhenUse] 下回合使自身获得3层束缚 ",
+          "desc": "[WhenUse] 下回合对自身施加3层束缚 ",
           "coinlist": [
             {
               "coindescs": [
@@ -933,7 +933,7 @@
         {
           "level": 1,
           "name": "悬挂的诱饵",
-          "desc": "[CantDuel] 妖精存活时，攻击容量增加。\n优先攻击被魅惑的人格。",
+          "desc": "[CantDuel] 根据妖精存活的回合数，相应使本技能的攻击容量增加。\n优先攻击被魅惑 的人格。",
           "coinlist": [
             {
               "coindescs": [
@@ -944,7 +944,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 本体，躯干恢复15点体力"
+                  "desc": "[OnSucceedAttack] 使本体、躯干恢复15点体力"
                 }
               ]
             }
@@ -1007,7 +1007,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] ，目标每带有1级破裂 强度，则使本硬币造成的伤害+5%"
+                  "desc": "[OnSucceedAttack] 目标每带有1级破裂 强度，使本硬币造成的伤害+5%"
                 }
               ]
             }
@@ -1021,7 +1021,7 @@
         {
           "level": 1,
           "name": "显露的深渊",
-          "desc": "目标的破裂 强度不低于5级时，本硬币造成的伤害+100%",
+          "desc": "若目标的破裂 强度不低于5级，则使本技能造成的伤害+100%",
           "coinlist": [
             {
               "coindescs": [
@@ -1123,7 +1123,7 @@
         {
           "level": 1,
           "name": "空间撕裂",
-          "desc": "若充能 层数不低于10，消耗10层充能 并使本技能拼点威力+5，伤害+100%\n充能 层数不足10层时，消耗本体100点体力值。使本技能伤害+80%\n该技能不会使体力变为0。",
+          "desc": "若自身的充能 层数不低于10层，则消耗10层充能 并使本技能的拼点威力+5，造成的伤害+100%\n若自身的充能 层数低于10层，消耗本体100点体力值并使本技能造成的伤害+80%\n本技能不会使自身体力变为0。",
           "coinlist": [
             {
               "coindescs": [
@@ -1181,7 +1181,7 @@
         {
           "level": 1,
           "name": "呕吐副产物",
-          "desc": "[WhenUse] 目标带有次元裂痕 时，使本技能伤害+10%\n[DefeatDuel] 消耗2层充能 ",
+          "desc": "[WhenUse] 若目标带有次元裂痕 ，则使本技能造成的伤害+10%\n[DefeatDuel] 消耗2层充能 ",
           "coinlist": [
             {
               "coindescs": [
@@ -1200,7 +1200,7 @@
         {
           "level": 1,
           "name": "高速空间撕裂",
-          "desc": "根据自身带有层数最高的次元效果，相应增加拼点威力\n每拥有1层次元效果，则使本技能伤害+10%",
+          "desc": "根据自身带有层数最高的次元效果，相应增加拼点威力\n每带有1层次元效果，使本技能造成的伤害+10%",
           "coinlist": [
             {
               "coindescs": [
@@ -1219,7 +1219,7 @@
         {
           "level": 1,
           "name": "把握时机",
-          "desc": "[WhenUse] 目标带有次元裂痕 时，使本技能伤害+20%",
+          "desc": "[WhenUse] 若目标带有次元裂痕 ，使本技能造成的伤害+20%",
           "coinlist": [
             {
               "coindescs": [
@@ -1238,7 +1238,7 @@
         {
           "level": 1,
           "name": "攻击破绽",
-          "desc": "[WhenUse] 目标带有次元裂痕 时，使本技能本硬币伤害+10%",
+          "desc": "[WhenUse] 若目标带有次元裂痕 ，则使本技能造成的伤害+10%",
           "coinlist": [
             {
               "coindescs": [
@@ -1279,7 +1279,7 @@
         {
           "level": 1,
           "name": "吸收时间",
-          "desc": "自身每带有3层充能 ，使本技能的基础威力+1\n[WhenUse] 使自身获得4层充能 ",
+          "desc": "自身每带有3层充能 ，使本技能的威力+1\n[WhenUse] 使自身获得4层充能 ",
           "coinlist": [
             {
               "coindescs": [
@@ -1301,7 +1301,7 @@
         {
           "level": 1,
           "name": "加速的瞬间",
-          "desc": "自身每带有1层借来的时间 ，使本技能的基础威力+1\n[DefeatDuel] 消耗3层充能 ",
+          "desc": "自身每带有1层借来的时间 ，使本技能的威力+1\n[DefeatDuel] 消耗3层充能 ",
           "coinlist": [
             {
               "coindescs": [
@@ -1352,12 +1352,12 @@
         {
           "level": 1,
           "name": "6463",
-          "desc": "每拥有50层积累的过去 ，则使本技能伤害+10%",
+          "desc": "自身每带有50层累积的往昔 ，使本技能造成的伤害+10%",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加3层 束缚"
+                  "desc": "[OnSucceedAttack] 下回合对目标施加3层束缚 "
                 }
               ]
             }
@@ -1371,7 +1371,7 @@
         {
           "level": 1,
           "name": "6753",
-          "desc": "每拥有50层积累的过去 ，则使本技能伤害+10%",
+          "desc": "自身每带有50层累积的往昔 ，使本技能造成的伤害+10%",
           "coinlist": [
             {
               "coindescs": [
@@ -1390,7 +1390,7 @@
         {
           "level": 1,
           "name": "853",
-          "desc": "呼吸法 强度不低于5时，使本技能拼点威力+1",
+          "desc": "若自身的呼吸法 强度不低于5级，则使本技能的拼点威力+1",
           "coinlist": [
             {
               "coindescs": [
@@ -1402,10 +1402,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标混乱阈值前移该硬币伤害的50%"
+                  "desc": "[OnSucceedAttack] 使目标混乱阈值前移本硬币伤害量的50%"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 每拥有1层积累的过去，使本技能伤害+1%（最多50%）"
+                  "desc": "[OnSucceedAttack] 自身每带有1层累积的往昔 ，使本技能造成的伤害+1%（最多50%）"
                 }
               ]
             }
@@ -1419,22 +1419,22 @@
         {
           "level": 1,
           "name": "5384",
-          "desc": "",
+          "desc": "[WhenUse] 使所有部位增加3级呼吸法 强度并获得3层呼吸法 ",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标混乱阈值前移与自身呼吸法 强度相当的数值"
+                  "desc": "[OnSucceedAttack] 使目标混乱阈值前移等同于自身呼吸法 强度的数值"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 每拥有3级呼吸法 强度，使本硬币伤害+20%（最多100%）"
+                  "desc": "[OnSucceedAttack] 自身每带有3级呼吸法 强度，使本硬币造成的伤害+20%（最多100%）"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使自身获得4级呼吸法 强度"
+                  "desc": "[OnSucceedAttack] 使所有部位增加4级呼吸法 强度"
                 }
               ]
             }
@@ -1447,16 +1447,16 @@
       "levelList": [
         {
           "level": 1,
-          "name": "蒸汽枪",
-          "desc": "呼吸法 强度不低于7时，使本技能硬币威力+1",
+          "name": "6475384",
+          "desc": "若自身的呼吸法 强度不低于7级，则使本技能硬币的威力+1",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 呼吸法 强度不低于5时，使目标混乱阈值前移本硬币伤害的50%"
+                  "desc": "[OnSucceedAttack] 若自身的呼吸法 强度不低于5级，则使目标混乱阈值前移本硬币伤害量的50%"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使自身获得4层呼吸法 ，并使自身增加8级呼吸法 强度"
+                  "desc": "[OnSucceedAttack] 使所有部位获得4层呼吸法 并增加8级呼吸法 强度"
                 }
               ]
             }
@@ -1470,12 +1470,12 @@
         {
           "level": 1,
           "name": "974569A",
-          "desc": "呼吸法 强度不低于10时，使本技能基础值+2",
+          "desc": "若自身的呼吸法 强度不低于10级，则使本技能的基础威力+2",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 每拥有1层积累的过去，则使本技能伤害+1%（最多200%）"
+                  "desc": "[OnSucceedAttack] 自身每带有1层累积的往昔 ，使本技能造成的伤害+1%（最多200%）"
                 }
               ]
             }
@@ -1489,7 +1489,7 @@
         {
           "level": 1,
           "name": "前往永恒的庭院",
-          "desc": "[CantDuel]\n[WhenUse] 对目标施加冠冕。消除自身所带有的所有效果\n自身本体体力不足40%时，下回合将会生成被强化的玫瑰单位",
+          "desc": "[CantDuel]\n[WhenUse] 对目标施加冠冕 。解除自身所带有的所有效果\n若自身本体现存体力不高于40%，下回合将会生成被强化的玫瑰单位",
           "coinlist": [
             {}
           ]
@@ -1517,7 +1517,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack]使目标增加2级烧伤 强度与2级震颤 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加2级烧伤 强度与2级震颤 强度"
                 },
                 {
                   "desc": "[OnSucceedAttack] 下回合对目标施加1层麻痹 "
@@ -1652,7 +1652,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "烈烈愤怒",
+          "name": "烈烈暴怒",
           "desc": "",
           "coinlist": [
             {
@@ -1685,7 +1685,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "愤怒四散",
+          "name": "暴怒四散",
           "desc": "",
           "coinlist": [
             {
@@ -1720,7 +1720,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使自身混乱阈值后移该硬币伤害的50%"
+                  "desc": "[OnSucceedAttack] 使自身混乱阈值后移本硬币伤害量的50%"
                 }
               ]
             },
@@ -1730,7 +1730,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使自身混乱阈值后移该硬币伤害的50%"
+                  "desc": "[OnSucceedAttack] 使自身混乱阈值后移本硬币伤害量的50%"
                 }
               ]
             },
@@ -1740,7 +1740,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使自身混乱阈值后移该硬币伤害的50%"
+                  "desc": "[OnSucceedAttack] 使自身混乱阈值后移本硬币伤害量的50%"
                 }
               ]
             }
@@ -1814,7 +1814,7 @@
                   "desc": "[OnSucceedAttack] 对目标施加2层震颤 "
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 引爆目标的震颤"
+                  "desc": "[OnSucceedAttackHead] 引爆目标的震颤 "
                 }
               ]
             }
@@ -1890,28 +1890,28 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 恢复本硬币伤害的25%的体力"
+                  "desc": "[OnSucceedAttack] 使自身恢复本硬币伤害量25%的体力"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 恢复本硬币伤害的25%的体力"
+                  "desc": "[OnSucceedAttack] 使自身恢复本硬币伤害量25%的体力"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 恢复本硬币伤害的25%的体力"
+                  "desc": "[OnSucceedAttack] 使自身恢复本硬币伤害量25%的体力"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 恢复本硬币伤害的25%的体力"
+                  "desc": "[OnSucceedAttack] 使自身恢复本硬币伤害量25%的体力"
                 }
               ]
             }
@@ -2034,7 +2034,7 @@
         {
           "level": 1,
           "name": "尖锐傲慢",
-          "desc": "自身的呼吸法 强度不低于5时，使本技能硬币威力+3",
+          "desc": "自身的呼吸法 强度不低于5级时，使本技能的硬币威力+3",
           "coinlist": [
             {
               "coindescs": [
@@ -2079,7 +2079,7 @@
         {
           "level": 1,
           "name": "嫉妒传播",
-          "desc": "[WhenUse] 消耗10层充能 ，使硬币威力+4",
+          "desc": "[WhenUse] 消耗10层充能 并使本技能的硬币威力+4",
           "coinlist": [
             {
               "coindescs": [
