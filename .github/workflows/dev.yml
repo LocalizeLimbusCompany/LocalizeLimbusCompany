@@ -10,19 +10,19 @@ jobs:
   dev:
     runs-on: windows-latest
     steps:
-    - name: Check Ver
-      id: extract_version
-      run: |
-        $response = Invoke-WebRequest -Uri https://api.github.com/repos/LocalizeLimbusCompany/LocalizeLimbusCompany/releases/latest -Method Get
-        curl -o CHANGELOG.md https://raw.githubusercontent.com/LocalizeLimbusCompany/LocalizeLimbusCompany/master/CHANGELOG.md
-        $version = Get-Content -Path CHANGELOG.md | Select-Object -First 1 | ForEach-Object { $_ -replace '# ', '' }
-        $content = $response.Content | ConvertFrom-Json
-        if (!$content.tag_name -eq $version) {
-            echo "hasnewver=true" >> $env:GITHUB_OUTPUT
-            echo "release_tag=$version" >> $env:GITHUB_OUTPUT
-        } else {
-            echo "no newver"
-        }
+      - name: Check Ver
+        id: extract_version
+        run: |
+          $response = Invoke-WebRequest -Uri https://api.github.com/repos/LocalizeLimbusCompany/LocalizeLimbusCompany/releases/latest -Method Get
+          curl -o CHANGELOG.md https://raw.githubusercontent.com/LocalizeLimbusCompany/LocalizeLimbusCompany/master/CHANGELOG.md
+          $version = Get-Content -Path CHANGELOG.md | Select-Object -First 1 | ForEach-Object { $_ -replace '# ', '' }
+          $content = $response.Content | ConvertFrom-Json
+          if (!$content.tag_name -eq $version) {
+              echo "hasnewver=true" >> $env:GITHUB_OUTPUT
+              echo "release_tag=$version" >> $env:GITHUB_OUTPUT
+          } else {
+              echo "no newver"
+          }
       - name: 触发工作流
         if: steps.extract_version.outputs.hasnewver == 'true'
         uses: benc-uk/workflow-dispatch@v1
@@ -32,9 +32,6 @@ jobs:
       - name: Checkout code
         if: steps.extract_version.outputs.hasnewver != 'true'
         uses: actions/checkout@v3
-        with:
-          lfs: true
-          fetch-depth: 0
       - name: Cache NuGet packages
         if: steps.extract_version.outputs.hasnewver != 'true'
         uses: actions/cache@v3
@@ -53,9 +50,3 @@ jobs:
         with:
           name: LimbusLocalize_BIE_Dev.7z
           path: Release/LimbusLocalize_BIE_Dev.7z
-      - name: Upload BIE OTA
-        if: steps.extract_version.outputs.hasnewver != 'true'
-        uses: actions/upload-artifact@v3
-        with:
-          name: LimbusLocalize_BIE_OTA_Dev.7z
-          path: Release/LimbusLocalize_BIE_OTA_Dev.7z

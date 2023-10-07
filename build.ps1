@@ -54,9 +54,3 @@ foreach ($file2 in $changedFilesList2) {
 		 Copy-Item -Path $file2 $BIE_OTA_LLC_Path/Localize/Readme -Force
 		}
 	}
-if ($version)
-	{
-	 Set-Location "$Path/LimbusLocalize_OTA"
-	 7z a -t7z "../LimbusLocalize_BIE_OTA_$version.7z" "BepInEx/" -mx=9 -ms
-	 Set-Location "../../"
-	}

@@ -26,8 +26,8 @@ namespace LimbusLocalize
         static void CheckModUpdate()
         {
             string release_uri = UpdateURI.Value == URI.GitHub ?
-                "https://api.github.com/repos/LocalizeLimbusCompany/LocalizeLimbusCompany/releases"
-                : "https://json.zxp123.eu.org/Mod_Release.json";
+                "https://api.github.com/repos/LocalizeLimbusCompany/LocalizeLimbusCompany/releases/latest"
+                : "https://json.zxp123.eu.org/LatestMod_Release.json";
             UnityWebRequest www = UnityWebRequest.Get(release_uri);
             www.timeout = 4;
             www.SendWebRequest();
@@ -37,8 +37,8 @@ namespace LimbusLocalize
                 LCB_LLCMod.LogWarning($"Can't access {UpdateURI.Value}!!!" + www.error);
             else
             {
-                JSONArray releases = JSONNode.Parse(www.downloadHandler.text).AsArray;
-                string latestReleaseTag = releases[0]["tag_name"].Value;
+                var latest = JSONNode.Parse(www.downloadHandler.text).AsObject;
+                string latestReleaseTag = latest["tag_name"].Value;
                 if (Version.Parse(LCB_LLCMod.VERSION) < Version.Parse(latestReleaseTag.Remove(0, 1)))
                 {
                     string updatelog = "LimbusLocalize_BIE_" + latestReleaseTag;
@@ -61,7 +61,7 @@ namespace LimbusLocalize
         {
             string release_uri = UpdateURI.Value == URI.GitHub ?
                 "https://api.github.com/repos/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/latest"
-                : "https://json.zxp123.eu.org/tmp_Release.json";
+                : "https://json.zxp123.eu.org/LatestTmp_Release.json";
             UnityWebRequest www = UnityWebRequest.Get(release_uri);
             string FilePath = LCB_LLCMod.ModPath + "/tmpchinesefont";
             var LastWriteTime = File.Exists(FilePath) ? int.Parse(TimeZoneInfo.ConvertTime(new FileInfo(FilePath).LastWriteTime, TimeZoneInfo.FindSystemTimeZoneById("China Standard Time")).ToString("yyMMdd")) : 0;
