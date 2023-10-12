@@ -265,7 +265,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[EndSkill] 使理智最低的4名友方单位恢复8点理智值"
+                  "desc": "[EndSkill] 使理智值最低的4名友方单位恢复8点理智值"
                 }
               ]
             }
@@ -280,7 +280,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[EndSkill] 使理智最低的4名友方单位恢复10点理智值"
+                  "desc": "[EndSkill] 使理智值最低的4名友方单位恢复10点理智值"
                 }
               ]
             }
@@ -295,7 +295,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[EndSkill] 使理智最低的4名友方单位恢复12点理智值"
+                  "desc": "[EndSkill] 使理智值最低的4名友方单位恢复12点理智值"
                 }
               ]
             }
@@ -4147,6 +4147,142 @@
                 },
                 {
                   "desc": "[OnSucceedAttack] 若以本技能击杀目标或使目标陷入混乱，则使自身及自身以外体力最低的1名友方单位恢复其体力上限10%的体力"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2070411,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "空即是色",
+          "abName": "无我入定",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层虚弱 "
+                },
+                {
+                  "desc": "[EndSkill] 使除自身以外理智值最低的4名友方单位恢复12点理智值"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "空即是色",
+          "abName": "无我入定",
+          "desc": "[BeforeAttack] 若自身理智值不低于15点，则使本技能的攻击容量+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层虚弱 "
+                },
+                {
+                  "desc": "[EndSkill] 使除自身以外理智值最低的4名友方单位恢复17点理智值"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "空即是色",
+          "abName": "无我入定",
+          "desc": "[BeforeAttack] 若自身理智值不低于15点，则使本技能的攻击容量+2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层虚弱 "
+                },
+                {
+                  "desc": "[EndSkill] 使除自身以外理智值最低的4名友方单位恢复25点理智值"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2070421,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "空即是色",
+          "abName": "无我入定",
+          "desc": "[CantIdentify]\n随机指定目标",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 随机对除自身以外的1名友方单位施加3层防御等级降低 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合使自身获得2层防御等级提升 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合使自身获得1层伤害强化 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "空即是色",
+          "abName": "无我入定",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 若自身理智值不高于-15点，则使本技能的攻击容量+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 随机对除自身以外的1名友方单位施加3层防御等级降低 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合使自身获得2层防御等级提升 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合使自身获得1层伤害强化 "
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 使自身恢复4点理智值"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "空即是色",
+          "abName": "无我入定",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 若自身理智值不高于-15点，则使本技能的攻击容量+2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 随机对除自身以外的1名友方单位施加3层防御等级降低 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合使自身获得2层防御等级提升 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合使自身获得1层伤害强化 "
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 使自身恢复4点理智值"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 对目标施加1层易损 "
                 }
               ]
             }
