@@ -17,7 +17,7 @@ jobs:
           curl -o CHANGELOG.md https://raw.githubusercontent.com/LocalizeLimbusCompany/LocalizeLimbusCompany/master/CHANGELOG.md
           $version = Get-Content -Path CHANGELOG.md | Select-Object -First 1 | ForEach-Object { $_ -replace '# ', '' }
           $content = $response.Content | ConvertFrom-Json
-          if (!$content.tag_name -eq $version) {
+          if (!($content.tag_name -eq $version)) {
               echo "hasnewver=true" >> $env:GITHUB_OUTPUT
               echo "release_tag=$version" >> $env:GITHUB_OUTPUT
           } else {

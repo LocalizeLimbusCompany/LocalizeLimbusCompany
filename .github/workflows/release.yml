@@ -32,8 +32,7 @@ jobs:
           ./build.ps1 ${{ steps.extract_version.outputs.release_tag }}
           Add-Content -Path CHANGELOG.md -Value "
           # 下载
-          - LimbusLocalize_BIE_${{ steps.extract_version.outputs.release_tag }}.7z 全量包
-          - LimbusLocalize_BIE_OTA_${{ steps.extract_version.outputs.release_tag }}.7z 增量更新"
+          - LimbusLocalize_BIE_${{ steps.extract_version.outputs.release_tag }}.7z 全量包"
       - name: Create Upload Release   
         uses: softprops/action-gh-release@v1
         with:

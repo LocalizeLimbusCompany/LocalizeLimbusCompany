@@ -13,8 +13,7 @@
 简体中文 | [繁體中文](https://github.com/SmallYuanSY/LocalizeLimbusCompany) | [Русский](https://github.com/Crescent-Corporation/LimbusCompanyBusRUS) | [ภาษาไทย](https://github.com/1ookilo/LocalizeLimbusCompanyTH) | [English](./.github/EN_README.md)
 </div>
 
-# 安装[![下载](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/total.svg?label=下载)](../../releases)
-[![Version](https://img.shields.io/github/release/LocalizeLimbusCompany/LocalizeLimbusCompany.svg?label=最新版)![下载](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/latest/total.svg?label=下载)](../../releases/latest)
+# 安装
 ### 0. 安装[.NET 6.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/sdk-6.0.406-windows-x64-installer)
 ### 1. 安装模组框架
    - 从[BepInEx](https://github.com/LocalizeLimbusCompany/BepInEx_For_LLC)下载最新版本的模组框架
