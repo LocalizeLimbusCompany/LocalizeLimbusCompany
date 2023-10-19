@@ -1,6 +1,7 @@
 using BepInEx;
 using BepInEx.Configuration;
 using BepInEx.Unity.IL2CPP;
+using HarmonyLib;
 using System;
 using System.IO;
 using System.Reflection;
@@ -16,7 +17,7 @@ namespace LimbusLocalize
         public static string GamePath;
         public const string GUID = "Com.Bright.LocalizeLimbusCompany";
         public const string NAME = "LimbusLocalizeMod";
-        public const string VERSION = "0.6.7";
+        public const string VERSION = "0.6.8";
         public const string AUTHOR = "Bright";
         public const string LLCLink = "https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany";
         public static Action<string, Action> LogFatalError { get; set; }
@@ -35,7 +36,7 @@ namespace LimbusLocalize
             LLC_UpdateChecker.StartAutoUpdate();
             try
             {
-                HarmonyLib.Harmony harmony = new(NAME);
+                Harmony harmony = new(NAME);
                 if (LLC_Chinese_Setting.IsUseChinese.Value)
                 {
                     LLC_Manager.InitLocalizes(new DirectoryInfo(ModPath + "/Localize/CN"));
