@@ -193,6 +193,238 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1060701,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "潜步追踪",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级流血 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层流血 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "潜步追踪",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层流血 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "潜步追踪",
+          "desc": "若自身的迅捷 层数不低于2层，则使本技能的最终威力+1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层流血 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060702,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "先行一步",
+          "desc": "[WhenUse] 下回合使自身获得1层迅捷 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若自身的速度值高于目标，则根据速度值之差，对目标施加相应层数的流血 （最多2层）"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "先行一步",
+          "desc": "[WhenUse] 下回合使自身获得2层迅捷 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若自身的速度值高于目标，则根据速度值之差，对目标施加相应层数的流血 （最多3层）"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "先行一步",
+          "desc": "若自身的速度值不低于6点，则使本技能的硬币威力+1\n[WhenUse] 下回合使自身获得2层迅捷 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若自身的速度值高于目标，则根据速度值之差，对目标施加相应层数的流血 （最多4层）"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060703,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "丧心病狂",
+          "desc": "若自身的速度值不低于8，则使本技能的硬币威力+1\n根据目标已损失体力，相应增加本技能造成的伤害（每损失体力上限1%的体力，造成的伤害+0.3%）",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 目标每带有1级流血 强度，使自身恢复1点理智值（最多5点）"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级流血 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "丧心病狂",
+          "desc": "若自身的速度值不低于6，则使本技能的硬币威力+1\n根据目标已损失体力，相应增加本技能造成的伤害（每损失体力上限1%的体力，造成的伤害+0.5%）",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 目标每带有1级流血 强度，使自身恢复1点理智值（最多10点）"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060704,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "闪电神经",
+          "desc": "[OnSucceedEvade] 下回合使自身获得1层迅捷 （每回合最多3层）",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "闪电神经",
+          "desc": "若目标的流血 强度不低于7级，则使本技能的硬币威力+2\n[OnSucceedEvade] 下回合使自身获得1层迅捷 （每回合最多3层）",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }
