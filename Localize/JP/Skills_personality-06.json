@@ -193,6 +193,238 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1060701,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "追跡",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 出血 1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 出血 回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "追跡",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 出血 回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "追跡",
+          "desc": "自分のクイック が2以上なら、最終威力 +1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 出血 回数が1増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060702,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "お先",
+          "desc": "[WhenUse] 次のターンにクイック1 を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 出血 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 出血 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分が対象より速度が高い場合、自分と対象の速度差だけ出血 回数が増加(最大2)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "お先",
+          "desc": "[WhenUse] 次のターンにクイック 2を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 出血 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 出血 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分が対象より速度が高い場合、自分と対象の速度差だけ出血 回数が増加(最大3)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "お先",
+          "desc": "自分の速度が6以上なら、コイン威力 +1\n[WhenUse] 次のターンにクイック 2を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 出血 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 出血 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分が対象より速度が高い場合、自分と対象の速度差だけ出血 回数が増加(最大4)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060703,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "狂乱",
+          "desc": "自分の速度が8以上なら、コイン威力+1\n対象の失った体力に比例して、ダメージ量が増加。(対象の失った体力1%につき、ダメージ量が0.3%増加)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 対象の出血 1につき、精神力を1回復(最大5%)"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 出血 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 出血 2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "狂乱",
+          "desc": "自分の速度が6以上なら、コイン威力+1\n対象の失った体力に比例して、ダメージ量が増加。(対象の失った体力1%につき、ダメージ量が0.5%増加)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 対象の出血 1につき、精神力を1回復(最大10%)"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060704,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "素早い",
+          "desc": "[OnSucceedEvade] 次のターンにクイック 1を得る(1ターンにつき最大3回)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "素早い",
+          "desc": "対象の出血 が7以上なら、コイン威力+2\n[OnSucceedEvade] 次のターンにクイック1を得る(1ターンにつき最大3回)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }
