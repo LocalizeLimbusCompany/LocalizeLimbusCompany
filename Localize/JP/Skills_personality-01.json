@@ -184,6 +184,227 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1010601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "次元を裂く",
+          "desc": "[WhenUse] 自分の充電 回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の充電 回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "次元を裂く",
+          "desc": "[WhenUse] 自分の充電 回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の充電 回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 破裂 2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "次元を裂く",
+          "desc": "[WhenUse] 自分の充電 回数が2増加\n充電 回数が10以上なら、コイン威力 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の充電 回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 破裂 2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "エネルギー循環",
+          "desc": "[WhenUse] 自分の充電 回数が5増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに束縛 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 破裂 3を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "エネルギー循環",
+          "desc": "[WhenUse] 自分の充電 回数が6増加\n充電 回数が10以上なら、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに束縛 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 破裂 3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の充電 回数が10以上なら、破裂 3を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "エネルギー循環",
+          "desc": "[WhenUse] 自分の充電 回数が7増加\n充電 回数が10以上なら、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに束縛 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 破裂 3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の充電 回数が10以上なら破裂 3を付与、破裂 回数が2増加。"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "次元の狭間",
+          "desc": "[WhenUse] 充電 回数が15未満なら、充電 回数を10消耗してコイン威力 +1\n[WhenUse] 充電 回数を15消耗し、コイン威力 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 破裂 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 破裂 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] スキル使用時に消耗した充電 回数5につき破裂 2を付与(最大6)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] スキル使用時、充電 回数を15消耗したなら次元の亀裂 2を付与"
+                },
+                {
+                  "desc": "[EnemyKill] 充電力場 3を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "次元の狭間",
+          "desc": "[WhenUse] 充電 回数が15未満なら、充電 回数を10消耗してコイン威力 +1\n[WhenUse] 充電 回数を15消耗し、コイン威力 +2\n[BeforeAttack] 充電回数を15消耗したなら、破裂 回数が3増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 破裂 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 破裂 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] スキル使用時に消耗した充電 回数5につき破裂 3を付与(最大9)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] スキル使用時、充電 回数を15消耗したなら次元の亀裂 2を付与"
+                },
+                {
+                  "desc": "[EnemyKill] 充電力場 5を得る"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "がらんどうの次元",
+          "desc": "充電 回数5につき、基本威力 +1(最大2)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "がらんどうの次元",
+          "desc": "充電 回数5につき、基本威力 +1(最大2)\n[OnSucceedEvade] 次のターンにて、最初にスキルで付与する破裂 +1(1ターンあたりの増加量上限 : 3)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }

@@ -290,6 +290,7 @@ namespace LimbusLocalize
             TextDataManager.LocalizeFileList localizeFileList = JsonUtility.FromJson<TextDataManager.LocalizeFileList>(Resources.Load<TextAsset>("Localize/LocalizeFileList").ToString());
             tm._loginUIList.Init(localizeFileList.LoginUIFilePaths);
             tm._fileDownloadDesc.Init(localizeFileList.FileDownloadDesc);
+            tm._battleHint._dic.Clear();
             tm._battleHint.Init(localizeFileList.BattleHint);
             return false;
         }

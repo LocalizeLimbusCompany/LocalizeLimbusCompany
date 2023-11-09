@@ -24,8 +24,6 @@ LimbusCompany I18N mod
    - Download TMP font file from[LLC_ChineseFontAsset![](https://img.shields.io/github/release/LocalizeLimbusCompany/LLC_ChineseFontAsset.svg?label=Update%20Time)](../../../../LLC_ChineseFontAsset) and unzip it in the above folder.
 ### 3. Install i18N mod
    - Download Full Pack from [Release](../../../releases) and unzip it in the above folder.
-
-   - If you know what are you doing, you can download the OTA and unzip it to replace some old files.
     
    - [Dev version](../../../actions/workflows/dev.yml) is always the newest.
    

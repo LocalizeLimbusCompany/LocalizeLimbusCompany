@@ -39,7 +39,7 @@ namespace LimbusLocalize
             loadingText.font = LCB_Chinese_Font.tmpchinesefonts[0];
             loadingText.fontMaterial = LCB_Chinese_Font.tmpchinesefonts[0].material;
             loadingText.fontSize = 40;
-            int random = Random.Range(0, 101);
+            int random = Random.Range(0, 100);
             if (random < 25)
                 loadingText.text = Raw;
             else if (random < 50)

@@ -184,6 +184,227 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1010601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "차원 긋기",
+          "desc": "[WhenUse] 자신의 충전 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 2 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "차원 긋기",
+          "desc": "[WhenUse] 자신의 충전 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 파열 2 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "차원 긋기",
+          "desc": "[WhenUse] 자신의 충전 횟수 2 증가\n충전 횟수가 10 이상이면, 코인 위력 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 파열 2 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "에너지 순환",
+          "desc": "[WhenUse] 자신의 충전 횟수 5 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 속박 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 파열 3 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "에너지 순환",
+          "desc": "[WhenUse] 자신의 충전 횟수 6 증가\n충전 횟수가 10 이상이면, 코인 위력 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 속박 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 파열 3 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수가 10 이상이면, 파열 3 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "에너지 순환",
+          "desc": "[WhenUse] 자신의 충전 횟수 7 증가\n충전 횟수가 10 이상이면, 코인 위력 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 속박 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 파열 3 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수가 10 이상이면,  파열 3 부여, 파열 횟수 2 증가"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "차원의 틈",
+          "desc": "[WhenUse] 충전 횟수가 15 미만이면, 충전 횟수를 10 소모하여 코인 위력 +1\n[WhenUse] 충전 횟수를 15 소모하여 코인 위력 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 파열 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 파열 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 스킬 사용시 소모한 충전 횟수 5 당 파열 2 부여 (최대 6)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 스킬 사용시 충전 횟수를 15 소모하였으면, 차원 균열 2 부여"
+                },
+                {
+                  "desc": "[EnemyKill] 충전 역장 3 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "차원의 틈",
+          "desc": "[WhenUse] 충전 횟수가 15 미만이면, 충전 횟수를 10 소모하여 코인 위력 +1\n[WhenUse] 충전 횟수를 15 소모하여 코인 위력 +2\n[BeforeAttack] 충전 횟수를 15 소모했다면, 파열 횟수 3 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 파열 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 파열 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 스킬 사용시 소모한 충전 횟수 5 당 파열 3 부여 (최대 9)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 스킬 사용시 충전 횟수를 15 소모하였으면, 차원 균열 2 부여"
+                },
+                {
+                  "desc": "[EnemyKill] 충전 역장 5 얻음"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "텅 빈 차원",
+          "desc": "충전 횟수 5당 기본 위력 +1 (최대 2)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "텅 빈 차원",
+          "desc": "충전 횟수 5당 기본 위력 +1 (최대 2)\n[OnSucceedEvade] 다음 턴에 처음으로 스킬로 부여하는 파열 +1 (턴 당 최대 증가량 : 3)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }

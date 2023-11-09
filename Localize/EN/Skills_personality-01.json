@@ -184,6 +184,227 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1010601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Dimensional Slit",
+          "desc": "[WhenUse] Gain +2 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +2 Charge Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Dimensional Slit",
+          "desc": "[WhenUse] Gain +2 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +2 Charge Count"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Dimensional Slit",
+          "desc": "[WhenUse] Gain +2 Charge Count\nAt 10+ Charge Count, Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +2 Charge Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Energy Cycle",
+          "desc": "[WhenUse] Gain +5 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bind next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Energy Cycle",
+          "desc": "[WhenUse] Gain +6 Charge Count\nAt 10+ Charge Count, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Bind next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                },
+                {
+                  "desc": "[OnSucceedAttack] At 10+ Charge Count, inflict 3 Rupture"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Energy Cycle",
+          "desc": "[WhenUse] Gain +7 Charge Count\nAt 10+ Charge Count, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Bind next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                },
+                {
+                  "desc": "[OnSucceedAttack] At 10+ Charge Count, inflict 3 Rupture and +2 Rupture Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Dimensional Rift",
+          "desc": "[WhenUse] At 15- Charge Count, consume 10 Charge Count to gain +1 Coin Power\n[WhenUse] Consume 15 Charge Count to gain +2 Coin Power",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Rupture for every 5 Charge Count consumed by the Skill (Max 6)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the Skill consumed 15 Charge Count upon use, inflict 2 Dimensional Rift"
+                },
+                {
+                  "desc": "[EnemyKill] Gain 3 Charge Barrier"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Dimensional Rift",
+          "desc": "[WhenUse] At 15- Charge Count, consume 10 Charge Count to gain +1 Coin Power\n[WhenUse] Consume 15 Charge Count to gain +2 Coin Power\n[BeforeAttack] If 15 Charge Count has been consumed, inflict +3 Rupture Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Rupture for every 5 Charge Count consumed by the Skill (Max 9)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the Skill consumed 15 Charge Count upon use, inflict 2 Dimensional Rift"
+                },
+                {
+                  "desc": "[EnemyKill] Gain 5 Charge Barrier"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Hollow Dimension",
+          "desc": "Base Power +1 per 5 Charge Count (Max 2)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Hollow Dimension",
+          "desc": "Base Power +1 per 5 Charge Count (Max 2)\n[OnSucceedEvade] +1 Potency when applying Rupture for the first time with a Skill effect next turn (Max +3 per turn)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }

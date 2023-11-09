@@ -23,8 +23,6 @@
    - 从[中文通用字体![](https://img.shields.io/github/release/LocalizeLimbusCompany/LLC_ChineseFontAsset.svg?label=更新日期)](../../../LLC_ChineseFontAsset)下载字体文件 后解压到上述文件夹中
 ### 3. 安装汉化
    - 从[最新版](../../releases)下载全量包 后解压到上述文件夹中
-
-   - 如果你知道**自己在做什么**，可以下载增量更新覆盖至相应文件
     
    - [最新开发版](../../actions/workflows/dev.yml) 总是最新的
    
