@@ -184,6 +184,227 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1010601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "次元撕裂",
+          "desc": "[WhenUse] 使自身获得2层充能 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得2层充能 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "次元撕裂",
+          "desc": "[WhenUse] 使自身获得2层充能 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得2层充能 "
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级破裂 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "次元撕裂",
+          "desc": "[WhenUse] 使自身获得2层充能 \n若自身的充能 层数不低于10层，则使本技能的硬币威力+2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得2层充能 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级破裂 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "能源循环",
+          "desc": "[WhenUse] 使自身获得5层充能 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层束缚 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级破裂 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "能源循环",
+          "desc": "[WhenUse] 使自身获得6层充能 \n若自身的充能 层数不低于10层，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层束缚 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级破裂 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若自身的充能 层数不低于10层，则使目标增加3级破裂 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "能源循环",
+          "desc": "[WhenUse] 使自身获得7层充能 \n若自身的充能 层数不低于10层，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层束缚 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级破裂 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若自身的充能 层数不低于10层，则使目标增加3级破裂 强度并对其施加2层破裂 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "次元裂隙",
+          "desc": "[WhenUse] 若自身的充能 层数低于15层，则消耗10层充能 并使本技能的硬币威力+1\n[WhenUse] 消耗15层充能 并使本技能的硬币威力+2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使用本技能时每消耗了5层充能 ，使目标增加2级破裂 强度（最多6级）"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若使用本技能时消耗了15层充能 ，则对目标施加2层次元裂痕 "
+                },
+                {
+                  "desc": "[EnemyKill] 使自身获得3层充能力场 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "次元裂隙",
+          "desc": "[WhenUse] 若自身的充能 层数低于15层，则消耗10层充能 并使本技能的硬币威力+1\n[WhenUse] 消耗15层充能 并使本技能的硬币威力+2\n[BeforeAttack] 若消耗了15层充能 ，则对目标施加3层破裂 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使用本技能时每消耗了5层充能 ，使目标增加3级破裂 强度（最多9级）"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若使用本技能时消耗了15层充能 ，则对目标施加2层次元裂痕 "
+                },
+                {
+                  "desc": "[EnemyKill] 使自身获得5层充能力场 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "空洞次元",
+          "desc": "自身每带有5层充能 ，使本技能的基础威力+1（最多+2）",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "空洞次元",
+          "desc": "自身每带有5层充能 ，使本技能的基础威力+1（最多+2）\n[OnSucceedEvade] 下回合首次通过技能使目标增加的破裂 强度额外+1级（每回合最多额外+3级）",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }
