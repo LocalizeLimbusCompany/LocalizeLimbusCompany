@@ -199,6 +199,244 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1120701,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "交渉開始",
+          "desc": "[WhenUse] 呼吸 2を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 自分の呼吸 回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "交渉開始",
+          "desc": "[WhenUse] 呼吸 3を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の呼吸 回数が1増加"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 出血 2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] 出血 2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "交渉開始",
+          "desc": "[WhenUse] 呼吸 3を得る\n対象の<sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">出血</color></link></u>が7以上なら、コイン威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の呼吸 回数が1増加"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 出血 2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] 出血 2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120702,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "一方的ビジネス",
+          "desc": "[WhenUse] 自分の呼吸 回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 呼吸 3を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 3を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 出血 2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "一方的ビジネス",
+          "desc": "[WhenUse] 自分の呼吸 回数が3増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 呼吸 4を得る"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 出血 2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 3を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 出血 2を付与"
+                },
+                {
+                  "desc": "クリティカル発動時、ダメージ量 +30%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "一方的ビジネス",
+          "desc": "対象の出血 7につき、コイン威力 +1(最大2)\n[WhenUse] 自分の呼吸 回数が3増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 呼吸 4を得る"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 出血 2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 3を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 出血 2を付与"
+                },
+                {
+                  "desc": "クリティカル発動時、ダメージ量+50%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120703,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "予定された決裂",
+          "desc": "[WhenUse] 対象の出血 3につき、呼吸1を得る(最大5)\n自分の<sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">呼吸</color></color></link></u>が7以上なら、コイン威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] 出血 回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "弾丸 1を消耗"
+                },
+                {
+                  "desc": "クリティカル発動時、ダメージ量+50%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "予定された決裂",
+          "desc": "[WhenUse] 対象の出血3につき、呼吸1を得る(最大10)\n自分の<sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">呼吸</color></color></link></u>7につき、コイン威力+1(最大3)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] 出血 回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "弾丸 1を消耗"
+                },
+                {
+                  "desc": "クリティカル発動時、ダメージ量+100%"
+                },
+                {
+                  "desc": "[EnemyKill] 次のターンに加算コイン強化 1を得る"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120704,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "一息つくか",
+          "desc": "[OnSucceedEvade] 呼吸 1を得る(1ターンにつき最大3)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "一息つくか",
+          "desc": "[OnSucceedEvade] 呼吸 1を得る(1ターンにつき最大5)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }

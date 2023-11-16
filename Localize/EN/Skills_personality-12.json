@@ -199,6 +199,244 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1120701,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Negotiation Start",
+          "desc": "[WhenUse] Gain 2 Poise",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain +1 Poise Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Negotiation Start",
+          "desc": "[WhenUse] Gain 3 Poise",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 Poise Count"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict 2 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict 2 Bleed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Negotiation Start",
+          "desc": "[WhenUse] Gain 3 Poise\nIf target has 7+ <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">Bleed</color></link></u>, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 Poise Count"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict 2 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict 2 Bleed"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120702,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Unilateral Business",
+          "desc": "[WhenUse] Gain +2 Poise Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain 3 Poise"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Bleed"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict 2 Bleed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Unilateral Business",
+          "desc": "[WhenUse] Gain +3 Poise Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain 4 Poise"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict 2 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Bleed"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict 2 Bleed"
+                },
+                {
+                  "desc": "Deal +30% damage on Critical Hit"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Unilateral Business",
+          "desc": "Coin Power +1 for every 7 Bleed on target (Max 2)\n[WhenUse] Gain +3 Poise Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 4 Poise"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict 2 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Bleed"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict 2 Bleed"
+                },
+                {
+                  "desc": "+50% Damage on Critical Hit"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120703,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Foregone Conclusion",
+          "desc": "[WhenUse] Gain 1 Poise per 3 Bleed on target (Max 5)\nAt 7+ <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</color></color></link></u>, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict +2 Bleed Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 Ammo"
+                },
+                {
+                  "desc": "+50% Damage on Critical Hit"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Foregone Conclusion",
+          "desc": "[WhenUse] Gain 1 Poise for every 3 Bleed on target (Max 10)\nGain Coin Power +1 for every 7 <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">Poise</color></color></link></u>on self (Max +3)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict +2 Bleed Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 Ammo"
+                },
+                {
+                  "desc": "+100% Damage on Critical Hit"
+                },
+                {
+                  "desc": "[EnemyKill] Gain 1 Plus Coin Boost next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120704,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Take a Breather",
+          "desc": "[OnSucceedEvade] Gain 1 Poise (Max 3 per turn)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Take a Breather",
+          "desc": "[OnSucceedEvade] Gain 1 Poise (Max 5 per turn)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }

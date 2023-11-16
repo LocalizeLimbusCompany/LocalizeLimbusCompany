@@ -24,6 +24,17 @@ namespace LimbusLocalize
         {
             InitReadmeList();
             InitReadmeSprites();
+            ReadmeActions = new()
+            {
+                {
+                    "Action_Issues",()=>
+                    {
+                        LCB_LLCMod.CopyLog();
+                        LCB_LLCMod.OpenGamePath();
+                        Application.OpenURL(LCB_LLCMod.LLCLink + "/issues?q=is:issue");
+                    }
+                }
+            };
         }
         public static void UIInitialize()
         {
@@ -56,7 +67,7 @@ namespace LimbusLocalize
         }
         public static void InitReadmeSprites()
         {
-            ReadmeSprites = new Dictionary<string, Sprite>();
+            ReadmeSprites = new();
 
             foreach (FileInfo fileInfo in new DirectoryInfo(LCB_LLCMod.ModPath + "/Localize/Readme").GetFiles().Where(f => f.Extension == ".jpg" || f.Extension == ".png"))
             {
@@ -80,8 +91,8 @@ namespace LimbusLocalize
             }
         }
         public static List<Notice> ReadmeList = new();
-        public static Dictionary<string, Sprite> ReadmeSprites = new();
-        public static System.Collections.Generic.Dictionary<string, Action> ReadmeActions = new();
+        public static Dictionary<string, Sprite> ReadmeSprites;
+        public static System.Collections.Generic.Dictionary<string, Action> ReadmeActions;
 
         public static void Close()
         {
@@ -115,8 +126,8 @@ namespace LimbusLocalize
             {
                 Func<int, bool> func = x =>
                 {
-                    Func<Notice, bool> value1 = x2 => x2.ID == x;
-                    return !severNoticeList.Contains(x) && ReadmeList.FindAll(value1).Count == 0;
+                    Func<Notice, bool> func2 = x2 => x2.ID == x;
+                    return !severNoticeList.Contains(x) && ReadmeList.FindAll(func2).Count == 0;
                 };
                 __instance.idList.RemoveAll(func);
             }
