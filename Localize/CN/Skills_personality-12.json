@@ -199,6 +199,244 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1120701,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "开始谈判",
+          "desc": "[WhenUse] 使自身增加2级呼吸法 强度",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使自身获得1层呼吸法 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "开始谈判",
+          "desc": "[WhenUse] 使自身增加3级呼吸法 强度",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得1层呼吸法 "
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加2级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加2级流血 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "开始谈判",
+          "desc": "[WhenUse] 使自身增加3级呼吸法 强度\n若目标的流血 强度不低于7级，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得1层呼吸法 "
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加2级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加2级流血 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120702,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "单边业务",
+          "desc": "[WhenUse] 使自身获得2层呼吸法 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使自身增加3级呼吸法 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加2级流血 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "单边业务",
+          "desc": "[WhenUse] 使自身获得3层呼吸法 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使自身增加4级呼吸法 强度"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加2级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加2级流血 强度"
+                },
+                {
+                  "desc": "使本硬币暴击时造成的伤害+30%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "单边业务",
+          "desc": "目标每带有7级流血 强度，使本技能的硬币威力+1（最多+2）\n[WhenUse] 使自身获得3层呼吸法 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加4级呼吸法 强度"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加2级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加2级流血 强度"
+                },
+                {
+                  "desc": "使本硬币暴击时造成的伤害+50%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120703,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "决裂定局",
+          "desc": "[WhenUse] 目标每带有3级流血 强度，使自身增加1级呼吸法 强度（最多增加5级）\n若自身的呼吸法 强度不低于7级，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] 对目标施加2层流血 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发弹药 "
+                },
+                {
+                  "desc": "使本硬币暴击时造成的伤害+50%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "决裂定局",
+          "desc": "[WhenUse] 目标每带有3级流血 强度，使自身增加1级呼吸法 强度（最多增加10级）\n自身每带有7级呼吸法 强度，使本技能的硬币威力+1（最多+3）",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] 对目标施加2层流血 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发弹药 "
+                },
+                {
+                  "desc": "使本硬币暴击时造成的伤害+100%"
+                },
+                {
+                  "desc": "[EnemyKill] 下回合使自身获得1层加算硬币强化 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120704,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "喘口气",
+          "desc": "[OnSucceedEvade] 使自身增加1级呼吸法 强度（每回合最多3级）",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "喘口气",
+          "desc": "[OnSucceedEvade] 使自身增加1级呼吸法 强度（每回合最多5级）",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }
