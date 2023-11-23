@@ -27,8 +27,8 @@
     {
       "id": 1005,
       "panicName": "憤怒",
-      "lowMoraleDescription": "ターン開始時、<sprite name=\"AttackDmgUp\"><color=#f8c200><u><link=\"AttackDmgUp\">ダメージ量増加</color></link></u>2, <sprite name=\"Vulnerable\"><color=#e30000><u><link=\"Vulnerable\">脆弱</color></link></u>2を得る",
-      "panicDescription": "ターン開始時、<sprite name=\"AttackDmgUp\"><color=#f8c200><u><link=\"AttackDmgUp\">ダメージ量増加</color></link></u>5, <sprite name=\"Vulnerable\"><color=#e30000><u><link=\"Vulnerable\">脆弱</color></link></u>5を得る"
+      "lowMoraleDescription": "ターン開始時、<sprite name=\"AttackDmgUp\"><color=#f8c200><u><link=\"AttackDmgUp\">ダメージ量増加</color></link></u>1, <sprite name=\"Vulnerable\"><color=#e30000><u><link=\"Vulnerable\">脆弱</color></link></u>2を得る",
+      "panicDescription": "ターン開始時、<sprite name=\"AttackDmgUp\"><color=#f8c200><u><link=\"AttackDmgUp\">ダメージ量増加</color></link></u>2, <sprite name=\"Vulnerable\"><color=#e30000><u><link=\"Vulnerable\">脆弱</color></link></u>5を得る"
     },
     {
       "id": 1006,
@@ -77,6 +77,18 @@
       "panicName": "パニック",
       "lowMoraleDescription": "",
       "panicDescription": "1ターンの間行動しない"
+    },
+    {
+      "id": 1013,
+      "panicName": "不順",
+      "lowMoraleDescription": "<sprite name=\"Vulnerable\"><color=#e30000><u><link=\"Vulnerable\">脆弱</color></link></u>1を得る。マッチ敗北時、対象の精神力-2",
+      "panicDescription": "<sprite name=\"Vulnerable\"><color=#e30000><u><link=\"Vulnerable\">脆弱</color></link></u>2を得る。マッチ敗北時、対象の精神力-5"
+    },
+    {
+      "id": 1014,
+      "panicName": "報復",
+      "lowMoraleDescription": "ターン開始時<sprite name=\"Enhancement\"><color=#f8c200><u><link=\"Enhancement\">攻撃威力増加</color></link></u>1, <sprite name=\"DefenseDown\"><color=#e30000><u><link=\"DefenseDown\">防御レベル減少</color></link></u>3を得て、前のターンに受けた累計ダメージ量に比例して<sprite name=\"AttackDmgUp\"><color=#f8c200><u><link=\"AttackDmgUp\">ダメージ量増加</color></link></u>を得る\n(最大体力値の3%につき<sprite name=\"AttackDmgUp\"><color=#f8c200><u><link=\"AttackDmgUp\">ダメージ量増加</color></link></u>1を得る)",
+      "panicDescription": "ターン開始時<sprite name=\"Enhancement\"><color=#f8c200><u><link=\"Enhancement\">攻撃威力増加</color></link></u>2, <sprite name=\"DefenseDown\"><color=#e30000><u><link=\"DefenseDown\">防御レベル減少</color></link></u>6を得て、前のターンに受けた累計ダメージ量に比例して<sprite name=\"AttackDmgUp\"><color=#f8c200><u><link=\"AttackDmgUp\">ダメージ量増加</color></link></u>を得る\n(最大体力値の3%につき<sprite name=\"AttackDmgUp\"><color=#f8c200><u><link=\"AttackDmgUp\">ダメージ量増加</color></link></u>1を得る)"
     }
   ]
 }

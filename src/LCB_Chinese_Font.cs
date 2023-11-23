@@ -229,9 +229,9 @@ namespace LimbusLocalize
             }
             return false;
         }
-        [HarmonyPatch(typeof(StoryData), nameof(StoryData.GetScenario))]
+        [HarmonyPatch(typeof(StoryDataParser), nameof(StoryDataParser.GetScenario))]
         [HarmonyPrefix]
-        private static bool GetScenario(StoryData __instance, string scenarioID, ref LOCALIZE_LANGUAGE lang, ref Scenario __result)
+        private static bool GetScenario(StoryDataParser __instance, string scenarioID, ref LOCALIZE_LANGUAGE lang, ref Scenario __result)
         {
             TextAsset textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
             if (!textAsset)
