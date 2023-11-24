@@ -49,7 +49,7 @@
     {
       "id": "ElectricShock",
       "name": "感电",
-      "desc": "一回合内受到攻击时仅受到数值等同于本效果层数的固定伤害。"
+      "desc": "一回合内受到攻击时额外受到数值等同于本效果层数的固定伤害。"
     },
     {
       "id": "Burn",
@@ -281,7 +281,7 @@
     {
       "id": "AttackUp",
       "name": "攻击等级提升",
-      "desc": "一回合内基于本效果层数提高攻击等级。"
+      "desc": "一回合内基于本效果层数增加攻击等级。"
     },
     {
       "id": "AttackDown",
@@ -576,7 +576,7 @@
     {
       "id": "Assemble",
       "name": "狂信",
-      "desc": "一回合内，攻击带有尖钉 的目标时，技能的最终威力提升等同于本效果层数的数值（拼点时同样生效）"
+      "desc": "一回合内，攻击带有尖钉 的目标时，技能的最终威力提升等同于本效果层数的数值。（拼点时同样生效）"
     },
     {
       "id": "Nail",
@@ -696,7 +696,7 @@
     {
       "id": "AssemblePersonality",
       "name": "狂信",
-      "desc": "一回合内，攻击带有尖钉 的目标时，技能的最终威力提升等同于本效果层数的数值（拼点时同样生效）"
+      "desc": "一回合内，攻击带有尖钉 的目标时，技能的最终威力提升等同于本效果层数的数值。（拼点时同样生效）"
     },
     {
       "id": "MarkOfHeresy",
@@ -837,8 +837,8 @@
     {
       "id": "VibrationAssimilation",
       "name": "震颤同步",
-      "desc": "拼点目标每带有5级震颤 强度，使其拼点威力-1。",
-      "summary": "拼点目标每带有5级震颤 强度，使其拼点威力-1。"
+      "desc": "拼点目标每带有5级震颤 强度，其拼点威力便-1。",
+      "summary": "拼点目标每带有5级震颤 强度，其拼点威力便-1。"
     },
     {
       "id": "CollapseAmpoule",
@@ -1060,7 +1060,7 @@
     {
       "id": "DistortedDongrangEarnestAchievement",
       "name": "恳切的成就",
-      "desc": "该单位的体力变为1或是被击杀，使攻击者获得强化"
+      "desc": "若该单位的体力变为1或是被击杀，使攻击者获得强化"
     },
     {
       "id": "DistortedDongrangEmptyHonor",
@@ -1248,6 +1248,18 @@
       "id": "Unjust_Enrichment",
       "name": "不义之财",
       "desc": "- 正面命中带有流血 的目标时增加（最多4层）\n- 当被动 子弹很贵 触发时，清空该效果并追加相应伤害"
+    },
+    {
+      "id": "Resentment",
+      "name": "怨恨",
+      "desc": "击中带有<sprite name=\"RetaliationBook\"><color=#e30000><u><link=\"RetaliationBook\">复仇账簿</color></link></u>的目标时，攻击后解除该效果\n回合结束时解除本效果",
+      "undefined": "-"
+    },
+    {
+      "id": "RetaliationBook",
+      "name": "报复对象",
+      "desc": "施加给上回合内对单个友方单位造成技能伤害最多的敌方单位（最多1次）",
+      "undefined": "-"
     }
   ]
 }
