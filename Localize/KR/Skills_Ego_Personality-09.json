@@ -1,6 +1,134 @@
 {
   "dataList": [
     {
+      "id": 2090411,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "들끓는 부식",
+          "abName": "걷는 진주",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 진동 횟수 3 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 속박 2 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "들끓는 부식",
+          "abName": "걷는 진주",
+          "desc": "[BeforeAttack] 메인 공격 대상의 체력이 최대 체력의 50% 이상이면, 공격 가중치 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 진동 3, 진동 횟수 5 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 속박 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 진동 폭발"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "들끓는 부식",
+          "abName": "걷는 진주",
+          "desc": "[BeforeAttack] 메인 공격 대상의 체력이 최대 체력의 50% 이상이면, 공격 가중치 +1, 최대 체력의 75% 이상이면, 추가로 공격 가중치 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 진동 3, 진동 횟수 7 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 속박 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 진동 폭발"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2090421,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "들끓는 부식",
+          "abName": "걷는 진주",
+          "desc": "[CantIdentify]\n본체 체력이 가장 낮은 대상 공격",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 피해량의 30%만큼 자신의 체력 회복"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 진동 폭발"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "들끓는 부식",
+          "abName": "걷는 진주",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] 메인 공격 대상의 체력이 최대 체력의 50% 이상이면, 공격 가중치 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 피해량의 30%만큼 자신의 체력 회복"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 방어 레벨 감소 3 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 진동 폭발"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "들끓는 부식",
+          "abName": "걷는 진주",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] 메인 공격 대상의 체력이 최대 체력의 50% 이상이면, 공격 가중치 +1, 최대 체력의 75% 이상이면, 추가로 공격 가중치 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 피해량의 30%만큼 자신의 체력 회복"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 방어 레벨 감소 5 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 진동 폭발"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

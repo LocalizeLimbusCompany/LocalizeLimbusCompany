@@ -123,6 +123,133 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2100511,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "9章2節",
+          "abName": "皮膚の予言者",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象に火傷 がないなら、火傷 4を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 火傷 4を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "9章2節",
+          "abName": "皮膚の予言者",
+          "desc": "[BeforeAttack] (色欲共鳴数)が4以上なら、攻撃加重値 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象に火傷 がないなら、火傷 4を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 火傷 4を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "9章2節",
+          "abName": "皮膚の予言者",
+          "desc": "[BeforeAttack] (色欲共鳴数)が4以上なら、攻撃加重値 +1\n[BeforeAttack] (最大色欲完全共鳴数)が4以上なら、追加で攻撃加重値 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象に火傷 がないなら、火傷 4を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 火傷 4を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 対象の火傷が10以上なら、次のターンに攻撃威力減少 1, 守備威力減少 1を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2100521,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "9章2節",
+          "abName": "皮膚の予言者",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象に火傷 がないなら、火傷 6を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 火傷 4を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "9章2節",
+          "abName": "皮膚の予言者",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n[BeforeAttack] (色欲共鳴数)が4以上なら、攻撃加重値 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象に火傷 がないなら、火傷 6を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 火傷 4を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 対象の火傷が10以上なら、次のターンに色欲脆弱 1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "9章2節",
+          "abName": "皮膚の予言者",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n[BeforeAttack] (色欲共鳴数)が4以上なら、攻撃加重値 +1\n[BeforeAttack] (最大色欲完全共鳴数)が4以上なら、追加で攻撃加重値 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象に火傷 がないなら、火傷 6を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 火傷 4を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 対象の火傷が10以上なら、次のターンに色欲脆弱 2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

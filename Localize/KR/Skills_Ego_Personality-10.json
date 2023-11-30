@@ -123,6 +123,133 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2100511,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "9장 2절",
+          "abName": "살갗 예언자",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상에게 화상이 없으면 화상 4 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 화상 4 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "9장 2절",
+          "abName": "살갗 예언자",
+          "desc": "[BeforeAttack] (색욕 공명 수)가 4 이상이면, 공격 가중치 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상에게 화상이 없으면 화상 4 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 화상 4 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "9장 2절",
+          "abName": "살갗 예언자",
+          "desc": "[BeforeAttack] (색욕 공명 수)가 4 이상이면, 공격 가중치 +1\n[BeforeAttack] (최대 색욕 완전 공명 수)가 4 이상이면, 추가로 공격 가중치 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상에게 화상이 없으면 화상 4 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 화상 4 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 대상의 화상이 10 이상이면 다음 턴에 공격 위력 감소 1, 수비 위력 감소 1 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2100521,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "9장 2절",
+          "abName": "살갗 예언자",
+          "desc": "[CantIdentify]\n무작위 대상 공격",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상에게 화상이 없으면 화상 6 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 화상 4 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "9장 2절",
+          "abName": "살갗 예언자",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] (색욕 공명 수)가 4 이상이면 공격 가중치 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상에게 화상이 없으면 화상 6 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 화상 4 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 대상의 화상이 10 이상이면 다음 턴에 색욕 취약 1 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "9장 2절",
+          "abName": "살갗 예언자",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] (색욕 공명 수)가 4 이상이면, 공격 가중치 +1\n[BeforeAttack] (최대 색욕 완전 공명 수)가 4 이상이면, 추가로 공격 가중치 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상에게 화상이 없으면 화상 6 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 화상 4 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 대상의 화상이 10 이상이면 다음 턴에 색욕 취약 2 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

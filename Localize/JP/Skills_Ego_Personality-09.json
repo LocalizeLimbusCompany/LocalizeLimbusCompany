@@ -1,5 +1,134 @@
 {
   "dataList": [
-    {}
+    {
+      "id": 2090411,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "沸き立つ腐食",
+          "abName": "歩く真珠",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 振動 回数を3付与"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに束縛 2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "沸き立つ腐食",
+          "abName": "歩く真珠",
+          "desc": "[BeforeAttack] メイン攻撃対象の体力が最大値の50%以上なら、攻撃加重値 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 振動 3, 振動 回数を5付与"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに束縛 2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 振動 爆発"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "沸き立つ腐食",
+          "abName": "歩く真珠",
+          "desc": "[BeforeAttack] メイン攻撃対象の体力が最大値の50%以上なら、攻撃加重値 +1\n最大値の75%以上なら、追加で攻撃加重値 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 振動 3, 振動 回数を7付与"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに束縛 2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 振動 爆発"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2090421,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "沸き立つ腐食",
+          "abName": "歩く真珠",
+          "desc": "[CantIdentify]\n本体の体力が最も低い対象を攻撃",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ダメージ量の30%分、自分の体力を回復"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 振動 爆発"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "沸き立つ腐食",
+          "abName": "歩く真珠",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n[BeforeAttack] メイン攻撃対象の体力が最大値の50%以上なら、攻撃加重値+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ダメージ量の30%分、自分の体力を回復"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 防御レベル減少 3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 振動 爆発"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "沸き立つ腐食",
+          "abName": "歩く真珠",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n[BeforeAttack] メイン攻撃対象の体力が最大値の50%以上なら、攻撃加重値 +1\n最大値の75%以上なら、追加で攻撃加重値 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ダメージ量の30%分、自分の体力を回復"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 防御レベル減少 5を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 振動 爆発"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ]
 }
