@@ -45,7 +45,7 @@ namespace LimbusLocalize
                     Updatelog += updatelog + ".7z ";
                     string download_uri = UpdateURI.Value == URI.GitHub ?
                         $"https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/releases/download/{latestReleaseTag}/{updatelog}.7z"
-                        : $"https://node.zeroasso.top/od/{updatelog}.7z";
+                        : $"https://node.zeroasso.top/d/od/{updatelog}.7z";
                     var dirs = download_uri.Split('/');
                     string filename = LCB_LLCMod.GamePath + "/" + dirs[^1];
                     if (!File.Exists(filename))
@@ -76,7 +76,7 @@ namespace LimbusLocalize
                 Updatelog += updatelog + ".7z ";
                 string download = UpdateURI.Value == URI.GitHub ?
                     $"https://github.com/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/download/{latestReleaseTag}/{updatelog}.7z"
-                    : $"https://node.zeroasso.top/od/{updatelog}.7z";
+                    : $"https://node.zeroasso.top/d/od/{updatelog}.7z";
                 var dirs = download.Split('/');
                 string filename = LCB_LLCMod.GamePath + "/" + dirs[^1];
                 if (!File.Exists(filename))

@@ -405,6 +405,222 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1010701,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "掘り穿つ",
+          "desc": "[WhenUse] 自分の呼吸 回数が2増加",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 出血 2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "掘り穿つ",
+          "desc": "[WhenUse] 自分の呼吸 回数が2増加",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに束縛 1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 出血 2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "掘り穿つ",
+          "desc": "[WhenUse] 自分の呼吸 回数が2増加",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに束縛 1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 出血 2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010702,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "刺して刺して刺す",
+          "desc": "[WhenUse] 自分の呼吸 回数が2増加\n自分の呼吸 が5以上なら、マッチ威力 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 呼吸 2を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "刺して刺して刺す",
+          "desc": "[WhenUse] 自分の呼吸 回数が2増加\n自分の呼吸 が5以上なら、マッチ威力 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 呼吸 2を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 1を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] このコインを再使用(最大1回)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "刺して刺して刺す",
+          "desc": "[WhenUse] 自分の呼吸 回数が2増加\n自分の呼吸 が5以上なら、マッチ威力 +3",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 呼吸 2を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 1を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] このコインを再使用(最大3回)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010703,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "急襲",
+          "desc": "[WhenUse] 呼吸 5を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 自分の呼吸 回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 4を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 出血 回数が4増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "急襲",
+          "desc": "[WhenUse] 呼吸5を得る\n自分の呼吸が7以上なら、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の呼吸 回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 4を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 出血 回数が6増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010704,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "回避",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "回避",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

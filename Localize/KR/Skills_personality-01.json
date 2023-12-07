@@ -405,6 +405,222 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1010701,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "후벼파기",
+          "desc": "[WhenUse] 자신의 호흡 횟수 2 증가",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 출혈 2 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "후벼파기",
+          "desc": "[WhenUse] 자신의 호흡 횟수 2 증가",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 속박 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 출혈 2 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "후벼파기",
+          "desc": "[WhenUse] 자신의 호흡 횟수 2 증가",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 속박 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 출혈 2 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010702,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "쑤시고 쑤시기",
+          "desc": "[WhenUse] 자신의 호흡 횟수 2 증가\n자신의 [Breath]이 5 이상이면, 합 위력 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 호흡 2 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 출혈 1 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "쑤시고 쑤시기",
+          "desc": "[WhenUse] 자신의 호흡 횟수 2 증가\n자신의 [Breath]이 5 이상이면, 합 위력 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 호흡 2 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 출혈 1 부여"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 이 코인 재사용 (최대 1회)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "쑤시고 쑤시기",
+          "desc": "[WhenUse] 자신의 호흡 횟수 2 증가\n자신의 [Breath]이 5 이상이면, 합 위력 +3",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 호흡 2 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 출혈 1 부여"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 이 코인 재사용 (최대 3회)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010703,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "급습",
+          "desc": "[WhenUse] 호흡 5 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 자신의 호흡 횟수 2 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 출혈 4 부여"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 출혈 횟수 4 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "급습",
+          "desc": "[WhenUse] 호흡 5 얻음\n자신의 [Breath]이 7 이상이면, 코인 위력 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 호흡 횟수 2 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 출혈 4 부여"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 출혈 횟수 6 증가"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010704,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "회피",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "회피",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
