@@ -196,6 +196,9 @@ namespace LimbusLocalize
             tm._dungeonStartBuffs.Init(romoteLocalizeFileList.DungeonStartBuffs);
             tm._railwayDungeonBuffText.Init(romoteLocalizeFileList.RailwayDungeonBuff);
             tm._buffAbilityList.Init(romoteLocalizeFileList.buffAbilities);
+            tm._egoGiftCategory.Init(romoteLocalizeFileList.EgoGiftCategory);
+            tm._mirrorDungeonEgoGiftLockedDescList.Init(romoteLocalizeFileList.MirrorDungeonEgoGiftLockedDesc);
+            tm._mirrorDungeonEnemyBuffDescList.Init(romoteLocalizeFileList.MirrorDungeonEnemyBuffDesc);
 
             tm._abnormalityEventCharDlg.AbEventCharDlgRootInit(romoteLocalizeFileList.abnormalityCharDlgFilePath);
 
