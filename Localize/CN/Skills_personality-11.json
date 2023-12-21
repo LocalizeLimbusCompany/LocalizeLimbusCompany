@@ -72,7 +72,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若自身的震颤 层数不低于6层，则引爆目标的震颤 ，并使目标的震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 若自身的震颤 层数不低于6层，则使目标震颤引爆 ，并使目标的震颤 层数减少1层"
                 }
               ]
             }
@@ -100,7 +100,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若自身的震颤 层数不低于6层，则引爆目标的震颤 ，并使目标的震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 若自身的震颤 层数不低于6层，则使目标震颤引爆 ，并使目标的震颤 层数减少1层"
                 }
               ]
             }
@@ -128,7 +128,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若自身的震颤 层数不低于6层，则引爆目标的震颤 ，并使目标的震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 若自身的震颤 层数不低于6层，则使目标震颤引爆 ，并使目标的震颤 层数减少1层"
                 }
               ]
             }
@@ -157,21 +157,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 引爆目标的震颤 ，并使目标的震颤 层数减少1层"
+                  "desc": "[OnSucceedAttackHead] 使目标震颤引爆 ，并使目标的震颤 层数减少1层"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 引爆目标的震颤 ，并使目标的震颤 层数减少1层"
+                  "desc": "[OnSucceedAttackHead] 使目标震颤引爆 ，并使目标的震颤 层数减少1层"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 引爆目标的震颤 ，并使目标的震颤 层数减少1层"
+                  "desc": "[OnSucceedAttackHead] 使目标震颤引爆 ，并使目标的震颤 层数减少1层"
                 }
               ]
             }
@@ -195,21 +195,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 引爆目标的震颤 ，并使目标的震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使目标的震颤 层数减少1层"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 引爆目标的震颤 ，并使目标的震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使目标的震颤 层数减少1层"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 引爆目标的震颤 ，并使目标的震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使目标的震颤 层数减少1层"
                 }
               ]
             }
@@ -232,6 +232,208 @@
           "level": 4,
           "name": "醒酒",
           "desc": "[WhenUse] 丢弃 自身所有行动槽中级别最低的1个技能",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "前进",
+          "desc": "[WhenUse] 下回合使自身获得2层迅捷 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使自身获得1层呼吸法 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使自身获得1层呼吸法 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "前进",
+          "desc": "[WhenUse] 下回合使自身获得2层迅捷 \n[WhenUse] 下回合使本技能对应行动槽的挑衅值 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得1层呼吸法 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得1层呼吸法 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "前进",
+          "desc": "[WhenUse] 下回合使自身获得2层迅捷 \n[WhenUse] 下回合使本技能对应行动槽的挑衅值 +3",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得1层呼吸法 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得1层呼吸法 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "惩罚",
+          "desc": "[WhenUse] 使自身获得2层呼吸法 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加2级呼吸法 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层束缚 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "惩罚",
+          "desc": "若自身的速度值高于目标，则使本技能的硬币威力+1\n[WhenUse] 使自身获得2层呼吸法 \n[WhenUse] 下回合使本技能对应行动槽的挑衅值 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加2级呼吸法 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层束缚 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "惩罚",
+          "desc": "若自身的速度值高于目标，则使本技能的硬币威力+2\n[WhenUse] 使自身获得2层呼吸法 \n[WhenUse] 下回合使本技能对应行动槽的挑衅值 +4",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加2级呼吸法 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层束缚 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "腾跃长刺",
+          "desc": "若自身的呼吸法 强度不低于7级，则使本技能的最终威力+2\n[WinDuel] 根据拼点次数，相应使自身增加呼吸法 强度（最多10级）",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加决斗宣告-奥提斯 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使速度值最低的2名友方单位在下回合获得1层迅捷 "
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使本硬币暴击时造成的伤害+50%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "腾跃长刺",
+          "desc": "若自身的呼吸法 强度不低于7级，则使本技能的最终威力+4\n[WinDuel] 根据拼点次数，相应使自身增加呼吸法 强度（最多10级）",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加决斗宣告-奥提斯 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使速度值最低的2名友方单位在下回合获得2层迅捷 "
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使本硬币暴击时造成的伤害+70%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "撤退",
+          "desc": "若自身的速度值高于目标，则使本技能的硬币威力+1\n[OnSucceedEvade] 使自身增加1级呼吸法 强度（最多5级）",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "撤退",
+          "desc": "若自身的速度值高于目标，则每相差1点，使本技能的硬币威力+1（最多+3）\n[OnSucceedEvade] 使自身增加1级呼吸法 强度（最多10级）",
           "coinlist": [
             {}
           ]
