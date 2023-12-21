@@ -6,7 +6,7 @@
     },
     {
       "id": "ADDITIONAL_BATTLE_WIN_COST_RATE",
-      "description": "[共用]\n\n戦闘勝利時に獲得するコストが{0}%増加"
+      "description": "[共用]\n\n[戦闘勝利時に獲得するコストが{0}%増加。(開始バフ、他のE.G.Oギフトの影響を受けない)"
     },
     {
       "id": "ADDITIONAL_EGO_GIFT_CHANCE",
@@ -25,8 +25,12 @@
       "description": "[開始E.G.Oギフト]\n\nE.G.Oギフト選択数 +{0}"
     },
     {
+      "id": "ACQUIRE_4_TIER_START_EGO_GIFT",
+      "description": "[開始E.G.Oギフト]\n\n開始時点に選択したカテゴリの、ランク4E.G.Oギフトをランダムに追加で獲得。"
+    },
+    {
       "id": "ADDITIONAL_SHOP_HIGH_TIER_EGO_GIFT_CHANCE",
-      "description": "[ショップ]\n\nE.G.Oギフトの出現ランクが上昇し、ランク4以上のE.G.Oギフトが低確率で出現"
+      "description": "[ショップ]\n\nE.G.Oギフトのランクが上昇し、ランク4以上のE.G.Oギフトが低確率で出現"
     },
     {
       "id": "ADDITIONAL_SHOP_EGO_GIFT_SLOT",
@@ -99,6 +103,258 @@
     {
       "id": "RemoveBreakSection",
       "description": "味方人格の最初の混乱区間を無効にする"
+    },
+    {
+      "id": "ADDITIONAL_3_TIER_START_EGO_GIFT_COMBUSTION",
+      "description": "[開始E.G.Oギフト]\n\n火傷カテゴリに出現するE.G.Oギフトのランクが上昇"
+    },
+    {
+      "id": "ADDITIONAL_3_TIER_START_EGO_GIFT_LACERATION",
+      "description": "[開始E.G.Oギフト]\n\n出血カテゴリに出現するE.G.Oギフトのランクが上昇"
+    },
+    {
+      "id": "ADDITIONAL_3_TIER_START_EGO_GIFT_VIBRATION",
+      "description": "[開始E.G.Oギフト]\n\n振動カテゴリに出現するE.G.Oギフトのランクが上昇"
+    },
+    {
+      "id": "ADDITIONAL_3_TIER_START_EGO_GIFT_BURST",
+      "description": "[開始E.G.Oギフト]\n\n破裂カテゴリに出現するE.G.Oギフトのランクが上昇"
+    },
+    {
+      "id": "ADDITIONAL_3_TIER_START_EGO_GIFT_SINKING",
+      "description": "[開始E.G.Oギフト]\n\n沈潜カテゴリに出現するE.G.Oギフトのランクが上昇"
+    },
+    {
+      "id": "ADDITIONAL_3_TIER_START_EGO_GIFT_BREATH",
+      "description": "[開始E.G.Oギフト]\n\n呼吸カテゴリに出現するE.G.Oギフトのランクが上昇"
+    },
+    {
+      "id": "ADDITIONAL_3_TIER_START_EGO_GIFT_CHARGE",
+      "description": "[開始E.G.Oギフト]\n\n充電カテゴリに出現するE.G.Oギフトのランクが上昇"
+    },
+    {
+      "id": "ADDITIONAL_3_TIER_START_EGO_GIFT_RANDOM",
+      "description": "[開始E.G.Oギフト]\n\nランダムカテゴリに出現するE.G.Oギフトのランクが上昇"
+    },
+    {
+      "id": "ADDITIONAL_SHOP_HIGH_TIER_EGO_GIFT_CHANCE_S1",
+      "description": "[ショップ] \n\nE.G.Oギフトの出現ランクが上昇(上昇率は他の繋がったバフと同様)"
+    },
+    {
+      "id": "ADDITIONAL_SHOP_HIGH_TIER_EGO_GIFT_CHANCE_S2",
+      "description": "[ショップ] \n\nE.G.Oギフトの出現ランクが上昇(上昇率は他の繋がったバフと同様)"
+    },
+    {
+      "id": "ADDITIONAL_SHOP_HIGH_TIER_EGO_GIFT_CHANCE_S3",
+      "description": "[ショップ] \n\nE.G.Oギフトの出現ランクが上昇(上昇率は他の繋がったバフと同様)"
+    },
+    {
+      "id": "ADDITIONAL_SHOP_EGO_GIFT_SLOT_NESTING",
+      "description": "[ショップ]\n\nショップに出現するE.G.Oギフト数 +1"
+    },
+    {
+      "id": "ADDITIONAL_START_EGO_GIFT_SLOT_COMBUSTION",
+      "description": "[開始E.G.Oギフト]\n\n火傷カテゴリに出現するE.G.Oギフト数 +1"
+    },
+    {
+      "id": "ADDITIONAL_START_EGO_GIFT_SLOT_LACERATION",
+      "description": "[開始E.G.Oギフト]\n\n出血カテゴリに出現するE.G.Oギフト数 +1"
+    },
+    {
+      "id": "ADDITIONAL_START_EGO_GIFT_SLOT_VIBRATION",
+      "description": "[開始E.G.Oギフト]\n\n振動カテゴリに出現するE.G.Oギフト数 +1"
+    },
+    {
+      "id": "ADDITIONAL_START_EGO_GIFT_SLOT_BURST",
+      "description": "[開始E.G.Oギフト]\n\n破裂カテゴリに出現するE.G.Oギフト数 +1"
+    },
+    {
+      "id": "ADDITIONAL_START_EGO_GIFT_SLOT_SINKING",
+      "description": "[開始E.G.Oギフト]\n\n沈潜カテゴリに出現するE.G.Oギフト数 +1"
+    },
+    {
+      "id": "ADDITIONAL_START_EGO_GIFT_SLOT_BREATH",
+      "description": "[開始E.G.Oギフト]\n\n呼吸カテゴリに出現するE.G.Oギフト数 +1"
+    },
+    {
+      "id": "ADDITIONAL_START_EGO_GIFT_SLOT_CHARGE",
+      "description": "[開始E.G.Oギフト]\n\n充電カテゴリに出現するE.G.Oギフト数 +1"
+    },
+    {
+      "id": "ADDITIONAL_START_EGO_GIFT_SLOT_RANDOM",
+      "description": "[開始E.G.Oギフト]\n\nランダムカテゴリに出現するE.G.Oギフト数 +1"
+    },
+    {
+      "id": "ADDITIONAL_START_COST_ADD_S1",
+      "description": "[共用]\n\n開始コストを50追加で獲得"
+    },
+    {
+      "id": "ADDITIONAL_START_COST_ADD_S2",
+      "description": "[共用]\n\n開始コストを50追加で獲得"
+    },
+    {
+      "id": "ADDITIONAL_START_COST_ADD_S3",
+      "description": "[共用]\n\n開始コストを50追加で獲得"
+    },
+    {
+      "id": "ADDITIONAL_EGO_GIFT_CHANCE_COMBUSTION",
+      "description": "[共用]\n\n火傷E.G.Oギフトを2種類追加"
+    },
+    {
+      "id": "ADDITIONAL_EGO_GIFT_CHANCE_LACERATION",
+      "description": "[共用]\n\n出血E.G.Oギフトを2種類追加"
+    },
+    {
+      "id": "ADDITIONAL_EGO_GIFT_CHANCE_VIBRATION",
+      "description": "[共用]\n\n振動E.G.Oギフトを2種類追加"
+    },
+    {
+      "id": "ADDITIONAL_EGO_GIFT_CHANCE_BURST",
+      "description": "[共用]\n\n破裂E.G.Oギフトを2種類追加"
+    },
+    {
+      "id": "ADDITIONAL_EGO_GIFT_CHANCE_SINKING",
+      "description": "[共用]\n\n沈潜E.G.Oギフトを2種類追加"
+    },
+    {
+      "id": "ADDITIONAL_EGO_GIFT_CHANCE_BREATH",
+      "description": "[共用]\n\n呼吸E.G.Oギフトを2種類追加"
+    },
+    {
+      "id": "ADDITIONAL_EGO_GIFT_CHANCE_CHARGE",
+      "description": "[共用]\n\n充電E.G.Oギフトを2種類追加"
+    },
+    {
+      "id": "ADDITIONAL_BATTLE_WIN_COST_RATE_NORMAL",
+      "description": "[共用]\n\n一般戦闘勝利時に獲得するコストが10%追加で増加。(開始バフ、他のE.G.Oギフトの影響を受けない)"
+    },
+    {
+      "id": "ADDITIONAL_BATTLE_WIN_COST_RATE_ABNORMALITY",
+      "description": "[共用]\n\n集中戦闘勝利時に獲得するコストが10%追加で増加。(開始バフ、他のE.G.Oギフトの影響を受けない)"
+    },
+    {
+      "id": "ADDITIONAL_BATTLE_WIN_COST_RATE_HARD",
+      "description": "[共用]\n\n危険戦闘勝利時に獲得するコストが10%追加で増加。(開始バフ、他のE.G.Oギフトの影響を受けない)"
+    },
+    {
+      "id": "ADDITIONAL_BATTLE_WIN_COST_RATE_BOSS",
+      "description": "[共用]\n\n階層ボス戦闘勝利時に獲得するコストが10%追加で増加。(開始バフ、他のE.G.Oギフトの影響を受けない)"
+    },
+    {
+      "id": "REDUCE_SHOP_REFRESH_EGO_GIFT_COST_RATE_NESTING",
+      "description": "[ショップ]\n\n更新コストが20%減少"
+    },
+    {
+      "id": "FREE_SHOP_REFRESH_EGO_GIFT_COST_RATE",
+      "description": "[ショップ]\n\n20%の確率で更新時にコストが消耗されない"
+    },
+    {
+      "id": "REDUCE_SHOP_UPGRADE_SKILL_COST_RATE",
+      "description": "[ショップ]\n\nスキル交換コストが20%減少"
+    },
+    {
+      "id": "REDUCE_SHOP_UPGRADE_SKILL_COST_RATE_NESTING",
+      "description": "[ショップ]\n\nスキル交換コストが20%減少"
+    },
+    {
+      "id": "FREE_UPGRADE_EGO_GIFT_COST",
+      "description": "[憩いの場]\n\n20%の確率で強化時にコストが消耗されない"
+    },
+    {
+      "id": "REDUCE_UPGRADE_EGO_GIFT_COST_COMBUSTION",
+      "description": "[憩いの場]\n\nキーワード:火傷を持つE.G.Oギフトの強化コストが20%追加で減少"
+    },
+    {
+      "id": "REDUCE_UPGRADE_EGO_GIFT_COST_LACERATION",
+      "description": "[憩いの場]\n\nキーワード:出血持つE.G.Oギフトの強化コストが20%追加で減少"
+    },
+    {
+      "id": "REDUCE_UPGRADE_EGO_GIFT_COST_VIBRATION",
+      "description": "[憩いの場]\n\nキーワード:振動を持つE.G.Oギフトの強化コストが20%追加で減少"
+    },
+    {
+      "id": "REDUCE_UPGRADE_EGO_GIFT_COST_BURST",
+      "description": "[憩いの場]\n\nキーワード:破裂を持つE.G.Oギフトの強化コストが20%追加で減少"
+    },
+    {
+      "id": "REDUCE_UPGRADE_EGO_GIFT_COST_SINKING",
+      "description": "[憩いの場]\n\nキーワード:沈潜を持つE.G.Oギフトの強化コストが20%追加で減少"
+    },
+    {
+      "id": "REDUCE_UPGRADE_EGO_GIFT_COST_BREATH",
+      "description": "[憩いの場]\n\nキーワード:呼吸を持つE.G.Oギフトの強化コストが20%追加で減少"
+    },
+    {
+      "id": "REDUCE_UPGRADE_EGO_GIFT_COST_CHARGE",
+      "description": "[憩いの場]\n\nキーワード:充電を持つE.G.Oギフトの強化コストが20%追加で減少"
+    },
+    {
+      "id": "INCREASE_SHOP_SELL_EGO_GIFT_COST_RATE_NESTING",
+      "description": "[ショップ]\n\nE.G.Oギフト売却時に獲得するコストが20%追加で増加"
+    },
+    {
+      "id": "REDUCE_SHOP_BUY_EGO_GIFT_COST_RATE_COMBUSTION",
+      "description": "[ショップ]\n\nキーワード:火傷を持つE.G.Oギフトの購入コストが15%追加で減少"
+    },
+    {
+      "id": "REDUCE_SHOP_BUY_EGO_GIFT_COST_RATE_LACERATION",
+      "description": "[ショップ]\n\nキーワード:出血を持つE.G.Oギフトの購入コストが15%追加で減少"
+    },
+    {
+      "id": "REDUCE_SHOP_BUY_EGO_GIFT_COST_RATE_VIBRATION",
+      "description": "[ショップ]\n\nキーワード:振動を持つE.G.Oギフトの購入コストが15%追加で減少"
+    },
+    {
+      "id": "REDUCE_SHOP_BUY_EGO_GIFT_COST_RATE_BURST",
+      "description": "[ショップ]\n\nキーワード:破裂を持つE.G.Oギフトの購入コストが15%追加で減少"
+    },
+    {
+      "id": "REDUCE_SHOP_BUY_EGO_GIFT_COST_RATE_SINKING",
+      "description": "[ショップ]\n\nキーワード:沈潜を持つE.G.Oギフトの購入コストが15%追加で減少"
+    },
+    {
+      "id": "REDUCE_SHOP_BUY_EGO_GIFT_COST_RATE_BREATH",
+      "description": "[ショップ]\n\nキーワード:呼吸を持つE.G.Oギフトの購入コストが15%追加で減少"
+    },
+    {
+      "id": "REDUCE_SHOP_BUY_EGO_GIFT_COST_RATE_CHARGE",
+      "description": "[ショップ]\n\nキーワード:充電を持つE.G.Oギフトの購入コストが15%追加で減少"
+    },
+    {
+      "id": "REDUCE_SHOP_BUY_EGO_GIFT_COST_RATE_NONE",
+      "description": "[ショップ]\n\nキーワードのないE.G.Oギフトの購入コストが15%追加で減少"
+    },
+    {
+      "id": "SlashAttackDamageMultiply",
+      "description": "斬撃与ダメージ量が{0}%増加"
+    },
+    {
+      "id": "PenetrateAttackDamageMultiply",
+      "description": "貫通与ダメージ量が{0}%増加"
+    },
+    {
+      "id": "HitAttackDamageMultiply",
+      "description": "打撃与ダメージ量が{0}%増加"
+    },
+    {
+      "id": "SlashResistReducer",
+      "description": "斬撃耐性が{0}減少"
+    },
+    {
+      "id": "PenetrateResistReducer",
+      "description": "貫通耐性が{0}減少"
+    },
+    {
+      "id": "HitResistReducer",
+      "description": "打撃耐性が{0}減少"
+    },
+    {
+      "id": "ADDITIONAL_ALLTYPE_EGOSTOCK",
+      "description": "[戦闘]\n\n全属性のE.G.O資源 +{0}"
+    },
+    {
+      "id": "ADDITIONAL_ALLTYPE_EGOSTOCK_NESTING",
+      "description": "[戦闘]\n\n全属性のE.G.O資源 +{0}"
     }
   ]
 }

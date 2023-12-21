@@ -184,6 +184,227 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1100801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "르미즈",
+          "desc": "[WhenUse] 자신의 [Breath] 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 [Agility] 1 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 [Agility] 1 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "르미즈",
+          "desc": "[WhenUse] 자신의 [Breath] 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [Agility] 1 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [Agility] 1 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "르미즈",
+          "desc": "자신의 속도가 대상보다 2 이상 높으면 코인 위력 +1\n[WhenUse] 자신의 [Breath] 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [Agility] 1 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [Agility] 1 얻음"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "앙가즈망",
+          "desc": "[WinDuel] 자신의 [Breath] 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 자신의 [Breath] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 자신의 [Breath] 횟수 1 증가"
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          "level": 2,
+          "name": "앙가즈망",
+          "desc": "자신의 속도가 대상보다 2 이상 높으면 코인 위력 +1\n[WinDuel] 자신의 [Breath] 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Breath] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Breath] 횟수 1 증가"
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "앙가즈망",
+          "desc": "자신의 속도가 대상보다 높을수록 코인 위력 +1 (속도 차이 2 당 코인 위력 +1. 최대 2)\n[WinDuel] 자신의 [Breath] 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Breath] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Breath] 횟수 1 증가"
+                }
+              ]
+            },
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100803,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "꽁트르 아따끄",
+          "desc": "자신의 속도가 대상보다 2 이상 높으면 코인 위력 +1 \n[WinDuel] 자신의 [Breath] 횟수 10 소모. 소모한 [Breath] 횟수만큼 [Breath]을 얻음.\n[WinDuel] 적 슬롯의 공격 스킬과 [OneOnOneDuel]을 진행했으면, 적중 시 [Vulnerable] 1 부여 (턴 당 최대 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [DuelDeclaration_Sinclair] 부여"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "크리티컬 피해량 +30%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "꽁트르 아따끄",
+          "desc": "자신의 속도가 대상보다 높을수록 코인 위력 +1 (속도 차이 2 당 코인 위력 +1. 최대 3)\n[WinDuel] 자신의 [Breath] 횟수 10 소모. 소모한 [Breath] 횟수만큼 [Breath]을 얻음. 대상이 [DuelDeclaration_Sinclair] 대상인 경우, 대신 (소모한 [Breath] 횟수 X 2)만큼 [Breath]을 얻음\n[WinDuel] 적 슬롯의 공격 스킬과 [OneOnOneDuel]을 진행했으면, 적중 시 [Vulnerable] 1 부여 (턴 당 최대 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [DuelDeclaration_Sinclair] 부여"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "크리티컬 피해량 +50%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1100804,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "데팡시브",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "데팡시브",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

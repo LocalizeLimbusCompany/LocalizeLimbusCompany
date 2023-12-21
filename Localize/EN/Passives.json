@@ -553,12 +553,12 @@
     {
       "id": 1090501,
       "name": "Here’s to Getting Off Early~",
-      "desc": "When bursting Tremor, spend 3 Charge Count to increase the Stagger Threshold raise by +40%.\nAfter bursting Tremor, gain 1 Haste and 1 Blunt DMG Up next turn."
+      "desc": "On Tremor Burst, spend 3 Charge Count to increase the Stagger Threshold raise by +40%.\nAfter triggering Tremor Burst, gain 1 Haste and 1 Blunt DMG Up next turn."
     },
     {
       "id": 1090521,
       "name": "Resonant Spanner",
-      "desc": "When 1 ally with the lowest Speed bursts Tremor, increase the Stagger Threshold raise by +20%."
+      "desc": "When 1 ally with the lowest Speed triggers Tremor Burst, increase the Stagger Threshold raise by +20%."
     },
     {
       "id": 1050501,
@@ -608,7 +608,7 @@
     {
       "id": 1080521,
       "name": "Corrosive Slime",
-      "desc": "When 1 ally with the highest Speed bursts Tremor, they inflict 2 Rupture."
+      "desc": "When 1 ally with the highest Speed triggers Tremor Burst, they inflict 2 Rupture."
     },
     {
       "id": 1060501,
@@ -768,29 +768,29 @@
     {
       "id": 1020621,
       "name": "Seven Association Tea Time",
-      "desc": "1 ally with the fastest speed deals more damage based on the target's <sprite name=\"Burst\"><color=#e30000><u><link=\"Burst\">Rupture</color></link></u> when attacking with a damage type that the target is \"Fatal\"(Resistance>x1.5) to \n+1.5% per 1 Rupture (Max 15%)",
+      "desc": "1 ally with the fastest Speed deals more damage based on the target's <sprite name=\"Burst\"><color=#e30000><u><link=\"Burst\">Rupture</color></link></u> when attacking with a damage type that the target is \"Fatal\"(Resistance>x1.5) to \n+1.5% per 1 Rupture (Max 15%)",
       "summary": "1 ally with the fastest Speed deals more damage based on the target's Rupture when attacking with a damage type the target is Fatal to"
     },
     {
       "id": 1020631,
       "name": "Seven Association Tea Time",
-      "desc": "1 ally with the fastest speed deals more damage based on the target's <sprite name=\"Burst\"><color=#e30000><u><link=\"Burst\">Rupture</color></link></u> when attacking with a damage type that the target is <style=\"highlight\">\"Weak\" or \"Fatal\"(Resistance>x1)</style> to\n(+1.5% per 1 Rupture; Max 15%)\n<style=\"highlight\">If the ally is a Seven Association Fixer, deal further increased damage\n(+0.5% per 1 Rupture; Max 5%)</style>",
+      "desc": "1 ally with the fastest Speed deals more damage based on the target's <sprite name=\"Burst\"><color=#e30000><u><link=\"Burst\">Rupture</color></link></u> when attacking with a damage type that the target is <style=\"highlight\">\"Weak\" or \"Fatal\"(Resistance>x1)</style> to\n(+1.5% per 1 Rupture; Max 15%)\n<style=\"highlight\">If the ally is a Seven Association Fixer, deal further increased damage\n(+0.5% per 1 Rupture; Max 5%)</style>",
       "summary": "1 ally with the fastest Speed deals more damage based on the target's Rupture when attacking with a damage type the target is Weak or Fatal to\nIf the ally is a Seven Association Fixer, deal further increased damage"
     },
     {
       "id": 1010501,
       "name": "In Times Like These...",
-      "desc": "Upon Burst Tremor on an enemy, inflict 1 Defense Level Down per 4 Stagger Threshold raised (Max 5 per 1 enemy every turn)"
+      "desc": "Upon triggering Tremor Burst on an enemy, inflict 1 Defense Level Down per 4 Stagger Threshold raised (Max 5 per 1 enemy every turn)"
     },
     {
       "id": 1010521,
       "name": "Cleaning Up the Mess",
-      "desc": "When 1 ally with the lowest Max HP Bursts Tremor on an enemy, inflict 1 Defense Level Down per 4 Stagger Threshold raised (Max 3 per 1 enemy every turn)"
+      "desc": "When 1 ally with the lowest Max HP triggers Tremor Burst on an enemy, inflict 1 Defense Level Down per 4 Stagger Threshold raised (Max 3 per 1 enemy every turn)"
     },
     {
       "id": 1110501,
       "name": "Drinking Boast",
-      "desc": "Upon Burst Tremor on an enemy, inflict 30% of Raised Stagger Threshold as Sloth damage (Max 20; rounded down)"
+      "desc": "Upon triggering Tremor Burst on an enemy, inflict 30% of Raised Stagger Threshold as Sloth damage (Max 20; rounded down)"
     },
     {
       "id": 1110521,
@@ -950,6 +950,41 @@
       "id": 1010721,
       "name": "The First Mate's Acumen",
       "desc": "On Crit, 1 ally with the most [Breath] inflicts 2 additional Bleed Potency with a Skill (6 times per turn)"
+    },
+    {
+      "id": 1110601,
+      "name": "Redirect",
+      "desc": "On Evade, gain 1 [Agility] next turn (Max 3)"
+    },
+    {
+      "id": 1110611,
+      "name": "Redirect",
+      "desc": "On Evade, gain 1 [Agility] next turn; lower this unit's Stagger Threshold by 5 (Max 3)"
+    },
+    {
+      "id": 1110621,
+      "name": "Mentor's Counsel",
+      "desc": "If the fastest ally's Speed is higher than Speed of all enemies, the fastest ally gains Clash Power +1"
+    },
+    {
+      "id": 1110631,
+      "name": "Mentor's Counsel",
+      "desc": "If the fastest ally's Speed is higher than Speed of all enemies, the fastest ally gains Clash Power +1\nIf the said ally is a Cinq Association Fixer, the fastest ally deals +10% Pierce Damage"
+    },
+    {
+      "id": 1100801,
+      "name": "Slumbering Bloodthirst",
+      "desc": "Turn End: Gain +2 Max Speed next turn for every 5 [Breath] Count (Max 6)"
+    },
+    {
+      "id": 1100811,
+      "name": "Slumbering Bloodthirst",
+      "desc": "Turn End: Gain +2 Max Speed next turn for every 5 [Breath] Count (Max 6)\nCombat Start: If Speed of all allies is higher than Speed of all enemies, gain 1 [PenetrateDamageUp]"
+    },
+    {
+      "id": 1100821,
+      "name": "Too Slow",
+      "desc": "The fastest ally, On Evade, gains 1 [Agility] next turn (Max 5)"
     }
   ]
 }

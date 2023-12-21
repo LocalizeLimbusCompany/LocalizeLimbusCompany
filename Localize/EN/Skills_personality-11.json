@@ -72,7 +72,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] At 6+ Tremor Count, Burst Tremor. Reduce target's Tremor Count by 1"
+                  "desc": "[OnSucceedAttack] At 6+ Tremor Count, trigger Tremor Burst. Reduce target's Tremor Count by 1"
                 }
               ]
             }
@@ -100,7 +100,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] At 6+ Tremor Count, Burst Tremor. Reduce target's Tremor Count by 1"
+                  "desc": "[OnSucceedAttack] At 6+ Tremor Count, trigger Tremor Burst. Reduce target's Tremor Count by 1"
                 }
               ]
             }
@@ -128,7 +128,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] At 6+ Tremor Count, Burst Tremor. Reduce target's Tremor Count by 1"
+                  "desc": "[OnSucceedAttack] At 6+ Tremor Count, trigger Tremor Burst. Reduce target's Tremor Count by 1"
                 }
               ]
             }
@@ -157,21 +157,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Burst Tremor; After bursting Tremor, reduce target's Tremor Count by 1"
+                  "desc": "[OnSucceedAttackHead] Trigger Tremor Burst; after Tremor Burst, reduce target's Tremor Count by 1"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Burst Tremor; After bursting Tremor, reduce target's Tremor Count by 1"
+                  "desc": "[OnSucceedAttackHead] Trigger Tremor Burst; after Tremor Burst, reduce target's Tremor Count by 1"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Burst Tremor; After bursting Tremor, reduce target's Tremor Count by 1"
+                  "desc": "[OnSucceedAttackHead] Trigger Tremor Burst; after Tremor Burst, reduce target's Tremor Count by 1"
                 }
               ]
             }
@@ -195,21 +195,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Burst Tremor; After bursting Tremor, reduce target's Tremor Count by 1"
+                  "desc": "[OnSucceedAttack] Trigger Tremor Burst; After Tremor Burst, reduce target's Tremor Count by 1"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Burst Tremor; After bursting Tremor, reduce target's Tremor Count by 1"
+                  "desc": "[OnSucceedAttack] Trigger Tremor Burst; After Tremor Burst, reduce target's Tremor Count by 1"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Burst Tremor; After bursting Tremor, reduce target's Tremor Count by 1"
+                  "desc": "[OnSucceedAttack] Trigger Tremor Burst; After Tremor Burst, reduce target's Tremor Count by 1"
                 }
               ]
             }
@@ -232,6 +232,208 @@
           "level": 4,
           "name": "Hangover Cure",
           "desc": "[WhenUse] Discard the Skill of lowest rank in all of this unit's Skill Slots",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Marche",
+          "desc": "[WhenUse] Gain 2 [Agility] next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain +1 [Breath] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain +1 [Breath] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Marche",
+          "desc": "[WhenUse] Gain 2 [Agility] next turn\n[WhenUse] This slot gains 1 Aggro next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 [Breath] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 [Breath] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Marche",
+          "desc": "[WhenUse] Gain 2 [Agility] next turn\n[WhenUse] This Skill Slot gains 3 Aggro next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 [Breath] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 [Breath] Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Punition",
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Punition",
+          "desc": "If this unit's Speed is higher than the target's, Coin Power +1\n[WhenUse] Gain +2 [Breath] Count\n[WhenUse] This Skill Slot gains 2 Aggro next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Punition",
+          "desc": "If this unit's Speed is higher than the target's, Coin Power +2\n[WhenUse] Gain +2 [Breath] Count\n[WhenUse] This Skill Slot gains 4 Aggro next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Binding] next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Balestra Fente",
+          "desc": "At 7+ [Breath], Final Power +2\n[WinDuel] Deal more damage based on Clash count (Max 10)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict [DuelDeclaration_Outis]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Apply 1 Haste next turn to 2 allies with the slowest Speed"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] +50% Damage on Critical Hit"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Balestra Fente",
+          "desc": "At 7+ [Breath], Final Power +4\n[WinDuel] Deal more damage based on Clash count (Max 10)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict [DuelDeclaration_Outis]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Apply 2 Haste next turn to 2 allies with the slowest Speed"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] +70% Damage on Critical Hit"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Retraite",
+          "desc": "If this unit's Speed is higher than the target's, Coin Power +1\n[OnSucceedEvade] Gain 1 [Breath] (Max 5)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Retraite",
+          "desc": "If this unit's Speed is higher than the target's, Coin Power +1 for every Speed difference (Coin Power +1 for every 1 Speed difference; Max 3)\n[OnSucceedEvade] Gain 1 [Breath] (Max 10)",
           "coinlist": [
             {}
           ]

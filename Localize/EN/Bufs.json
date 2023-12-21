@@ -277,7 +277,7 @@
     {
       "id": "Vibration",
       "name": "Tremor",
-      "desc": "When hit by attacks that burst Tremor, raise the Stagger Threshold by {0}. Lasts {1} turn(s).",
+      "desc": "When hit by attacks that trigger Tremor Burst, raise the Stagger Threshold by {0}. Lasts {1} turn(s).",
       "summary": "Raise Stagger Threshold by {0}"
     },
     {
@@ -1081,8 +1081,8 @@
     {
       "id": "Resonate",
       "name": "Resonant",
-      "desc": "When bursting Tremor or raising stagger threshold, additionally deal {0} * 3 fixed damage and raise stagger threshold by {0} * 3%",
-      "summary": "Tremor bursts and stagger threshold raisers deal damage and raise more stagger threshold"
+      "desc": "When triggering Tremor Burst or raising Stagger Threshold, deal {0} * 3 fixed damage and raise Stagger Threshold by {0} * 3%",
+      "summary": "When triggering Tremor Burst or raising Stagger Thresholds, deal damage and raise Stagger Threshold further"
     },
     {
       "id": "VibrationAssimilation",
@@ -1661,6 +1661,31 @@
       "name": "Pierce Power Up",
       "desc": "Pierce Skill Final Power +{0} for this turn.",
       "summary": "Pierce Skill Final Power +{0}"
+    },
+    {
+      "id": "DuelDeclaration_DonQuixote",
+      "name": "Declared Duel - Don Quixote",
+      "desc": "- In a Clash between the unit that inflicted Declared Duel and the unit with the status, the declarer has +1 Clash Power. On Hit, the declarer gains 1 Haste next turn. (4 times per turn)\n- Expires when the unit inflicts Declared Duel on a different target. Replaced when another unit inflicts Declared Duel on the same target."
+    },
+    {
+      "id": "DuelDeclaration_Outis",
+      "name": "Declared Duel - Outis",
+      "desc": "- In a Clash between the unit that inflicted Declared Duel and the unit with the status, the declarer has +1 Clash Power. On Hit, the declarer gains 1 Haste next turn. (4 times per turn)\n- Expires when the unit inflicts Declared Duel on a different target. Replaced when another unit inflicts Declared Duel on the same target."
+    },
+    {
+      "id": "DuelDeclaration_Sinclair",
+      "name": "Declared Duel - Sinclair",
+      "desc": "- In a Clash between the unit that inflicted Declared Duel and the unit with the status, the declarer has +1 Clash Power. On Hit, the declarer gains 1 Haste next turn. (4 times per turn)\n- Expires when the unit inflicts Declared Duel on a different target. Replaced when another unit inflicts Declared Duel on the same target."
+    },
+    {
+      "id": "VibrationExplosion",
+      "name": "Tremor Burst",
+      "desc": "Raise target's Stagger Threshold by Tremor Potency on target"
+    },
+    {
+      "id": "OneOnOneDuel",
+      "name": "Single Combat",
+      "desc": "Established when the attacked Slot is targeted by a single unit, and only by that single unit. This condition is established only between the attacking unit and the attacked Slot. (Does not apply to reused Skills)"
     }
   ]
 }

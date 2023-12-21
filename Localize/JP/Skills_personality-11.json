@@ -72,7 +72,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 自分の振動 回数が6以上のとき、振動 爆発。対象の振動 回数が1減少"
+                  "desc": "[OnSucceedAttack] 自分の振動 回数が6以上のとき、振動爆発。対象の振動 回数が1減少"
                 }
               ]
             }
@@ -100,7 +100,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 自分の振動 回数が6以上のとき、振動 爆発。対象の振動 回数が1減少"
+                  "desc": "[OnSucceedAttack] 自分の振動 回数が6以上のとき、振動爆発。対象の振動 回数が1減少"
                 }
               ]
             }
@@ -128,7 +128,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 自分の振動 回数が6以上のとき、振動 爆発。対象の振動 回数が1減少"
+                  "desc": "[OnSucceedAttack] 自分の振動 回数が6以上のとき、振動爆発。対象の振動 回数が1減少"
                 }
               ]
             }
@@ -232,6 +232,208 @@
           "level": 4,
           "name": "二日酔いの解消",
           "desc": "[WhenUse] 自分の全スキルスロットから、ランクの最も低いスキル1つを捨てる",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "マルシュ",
+          "desc": "[WhenUse] 次のターンに[Agility]2を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 自分の[Breath]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 自分の[Breath]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "マルシュ",
+          "desc": "[WhenUse] 次のターンに[Agility]2を得る\n[WhenUse] 次のターンにこのスロットが挑発値1を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "マルシュ",
+          "desc": "[WhenUse] 次のターンに[Agility]2を得る\n[WhenUse] 次のターンにこのスロットが挑発値3を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が1増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ピュニスィオン",
+          "desc": "[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Breath]2を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "ピュニスィオン",
+          "desc": "自分の速度が対象より高ければコイン威力 +1\n[WhenUse] 自分の[Breath]回数が2増加\n[WhenUse] 次のターンにこのスロットが挑発値2を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "ピュニスィオン",
+          "desc": "自分の速度が対象より高ければコイン威力 +2\n[WhenUse] 自分の[Breath]回数が2増加\n[WhenUse] 次のターンにこのスロットが挑発値4を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "バレストラフォント",
+          "desc": "自分の[Breath]が7以上なら、最終威力 +2\n[WinDuel] マッチ回数だけ呼吸を得る(最大10)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [DuelDeclaration_Outis]を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 速度が最も低い味方2名に、次のターンにてクイック 1を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] クリティカルダメージ量 +50%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "バレストラフォント",
+          "desc": "自分の[Breath]が7以上なら、最終威力 +4\n[WinDuel] マッチ回数だけ呼吸を得る(最大10)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [DuelDeclaration_Outis]を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 速度が最も低い味方2名に、次のターンにてクイック 2を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] クリティカルダメージ量 +70%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ルトレット",
+          "desc": "自分の速度が攻撃者よりも高ければ、コイン威力+1\n[OnSucceedEvade] [Breath]1を得る(最大5)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "ルトレット",
+          "desc": "自分の速度が、対象より高いほどコイン威力 +1(速度差1につきコイン威力 +1, 最大3)\n[OnSucceedEvade] [Breath]1を得る(最大10)",
           "coinlist": [
             {}
           ]
