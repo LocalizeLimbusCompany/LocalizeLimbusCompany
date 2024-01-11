@@ -335,6 +335,242 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1030701,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "吾当啮之！",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 对目标施加2层破裂 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "吾当啮之！",
+          "desc": "[WhenUse] 下回合使本技能对应行动槽的挑衅值 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层破裂 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "吾当啮之！",
+          "desc": "[WhenUse] 下回合使本技能对应行动槽的挑衅值 +3",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层破裂 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030702,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "闪烁诱饵",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级破裂 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "闪烁诱饵",
+          "desc": "[WhenUse] 下回合使本技能对应行动槽的挑衅值 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级破裂 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标的破裂 层数不高于2层，则对其施加2层破裂 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "闪烁诱饵",
+          "desc": "[WhenUse] 下回合使本技能对应行动槽的挑衅值 +4\n[WhenUse] 若目标的破裂 强度不低于6级，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级破裂 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级破裂 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标的破裂 层数不高于2层，则对其施加3层破裂 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030703,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "嚼嚼旋风！",
+          "desc": "[WhenUse] 下回合使本技能对应行动槽的挑衅值 +3",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层破裂 "
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身恢复10点体力"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 根据目标带有的破裂 强度，相应增加恢复的体力（每1级破裂 强度额外恢复1点体力，最多20点）"
+                },
+                {
+                  "desc": "若现存体力不高于体力上限的50%，则重复使用本硬币1次"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "嚼嚼旋风！",
+          "desc": "[WhenUse] 下回合使本技能对应行动槽的挑衅值 +5\n[WhenUse] 若目标的破裂 强度不低于6级，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层破裂 "
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身恢复15点体力。本硬币重复使用时额外恢复50%的体力"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 根据目标带有的破裂 强度，相应增加恢复的体力（每1级破裂 强度额外恢复2点体力，最多40点）"
+                },
+                {
+                  "desc": "若现存体力不高于体力上限的50%，则重复使用本硬币1次"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030704,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "磨牙霍霍",
+          "desc": "[EndBattle] 根据自身剩余的护盾，使自身恢复相应的体力（每回合最多1次。最大体力恢复量：体力上限的10%）",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "磨牙霍霍",
+          "desc": "[WhenUse] 若目标的破裂 强度不低于6级，则使本技能的最终威力+3\n[EndBattle] 根据自身剩余的护盾，使自身恢复相应的体力（每回合最多1次。最大体力恢复量：体力上限的10%）",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
