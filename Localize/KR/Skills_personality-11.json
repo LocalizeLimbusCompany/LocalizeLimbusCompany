@@ -439,6 +439,196 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1110701,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "착화",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 [DarkFlame] 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [DarkFlame]만큼 [Combustion] 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "착화",
+          "desc": "대상의 [Combustion] 3 당 코인 위력 +1 (최대 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 [DarkFlame] 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [DarkFlame]만큼 [Combustion] 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "착화",
+          "desc": "대상의 [Combustion] 3 당 코인 위력 +1 (최대 3)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [DarkFlame] 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [DarkFlame]만큼 [Combustion] 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110702,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "마탄 기폭",
+          "desc": "대상의 [Combustion]이 6 이상이면 코인 위력 +1 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [FreischutzShotCount]이 4 미만이면 [FreischutzShotCount]이 1 증가하고, 다음 턴에 [FreischutzShotCount]만큼 [DarkFlame] 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 대상의 [DarkFlame]만큼 [Combustion] 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "마탄 기폭",
+          "desc": "대상의 [Combustion] 6 당 코인 위력 +1 (최대 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [FreischutzShotCount]이 4 미만이면 [FreischutzShotCount]이 1 증가하고, 다음 턴에 [FreischutzShotCount]만큼 [DarkFlame] 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [DarkFlame]만큼 [Combustion] 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "마탄 기폭",
+          "desc": "대상의 [Combustion] 6 당 코인 위력 +1 (최대 3)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [FreischutzShotCount]이 4 미만이면 [FreischutzShotCount]이 1 증가하고, 다음 턴에 [FreischutzShotCount]만큼 [DarkFlame] 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [DarkFlame]만큼 [Combustion] 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110703,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "마탄 사격",
+          "desc": "대상의 [Combustion] 수치 1당 피해량 0.5% 증가 (최대 15%)\n\n[BeforeAttack] [FreischutzShotCount] 1 증가\n- ([FreischutzShotCount] - 1) x 5 만큼 정신력 감소\n- 공격 가중치가 [FreischutzShotCount] 값으로 변경\n- 정신력이 10 이하일 때 50% 확률로 피아식별 없이 공격\n\n[EndSkill] [FreischutzShotCount]이 7이면 0으로 초기화 (마지막 탄환을 소모한 것으로 취급함)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [FreischutzShotCount]만큼 [DarkFlame] 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "마탄 사격",
+          "desc": "대상의 [Combustion] 수치 1당 피해량 1% 증가 (최대 30%)\n\n[BeforeAttack] [FreischutzShotCount] 1 증가\n- ([FreischutzShotCount] - 1) x 5 만큼 정신력 감소\n- 공격 가중치가 [FreischutzShotCount] 값으로 변경\n- 정신력이 10 이하일 때 50% 확률로 피아식별 없이 공격\n\n[EndSkill] [FreischutzShotCount]이 7이면 0으로 초기화 (마지막 탄환을 소모한 것으로 취급함)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [FreischutzShotCount]만큼 [DarkFlame] 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110704,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "마탄의 대가",
+          "desc": "[WhenUse] [FreischutzShotCount] 1 증가 (턴 당 1회)\n[EndSkillAll] [FreischutzShotCount]만큼 정신력 감소",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "마탄의 대가",
+          "desc": "[WhenUse] [FreischutzShotCount] 1 증가 (턴 당 1회)\n[WhenUse] ([FreischutzShotCount] x 2)만큼 최종 위력이 증가\n[EndSkillAll] [FreischutzShotCount]만큼 정신력 감소",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }

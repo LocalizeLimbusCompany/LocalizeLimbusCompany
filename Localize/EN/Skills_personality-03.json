@@ -335,6 +335,242 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1030701,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "I Shall Nibble Thee!",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict +2 [Burst] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "I Shall Nibble Thee!",
+          "desc": "[WhenUse] Gain +1 [Aggro] to this Skill Slot next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "I Shall Nibble Thee!",
+          "desc": "[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030702,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Flashing Lure",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [Burst]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Flashing Lure",
+          "desc": "[WhenUse] Gain +2 [Aggro] to this Skill Slot next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the target has less than 2 [Burst] Count, inflict +2 [Burst] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Flashing Lure",
+          "desc": "[WhenUse] Gain +4 [Aggro] to this Skill Slot next turn\n[WhenUse] If target has 6+ [Burst], Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the target has less than 2 [Burst] Count, inflict +3 [Burst] Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030703,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Whirlwind Om-Nom-Nom!",
+          "desc": "[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +3 [Burst] Count"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Heal 10 HP."
+                },
+                {
+                  "desc": "[OnSucceedAttack] Heal additional HP based on [Burst] on target (1 HP healed per 1 [Burst]. Max 20)"
+                },
+                {
+                  "desc": "At 50%- HP, reuse Coin once"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Whirlwind Om-Nom-Nom!",
+          "desc": "[WhenUse] Gain +5 [Aggro] to this Skill Slot next turn\n[WhenUse] If target has 6+ [Burst], Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +3 [Burst] Count"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Heal 15 HP. Heal by +50% more HP when reusing Coin."
+                },
+                {
+                  "desc": "[OnSucceedAttack] Heal additional HP based on [Burst] on target (2 HP healed per 1 [Burst]. Max 40)"
+                },
+                {
+                  "desc": "At 50%- HP, reuse Coin once"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030704,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Chattering Teeth",
+          "desc": "[EndBattle] Heal HP equal to remaining Shield HP (Once per turn. Max Heal amount: 10% of Max HP)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Chattering Teeth",
+          "desc": "[WhenUse] If target has 6+ [Burst], Final Power +3\n[EndBattle] Heal HP equal to remaining Shield HP (Once per turn. Max Heal amount: 10% of Max HP)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

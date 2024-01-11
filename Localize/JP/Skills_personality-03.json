@@ -335,6 +335,242 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1030701,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "噛み砕いてやろう！",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Burst]回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "噛み砕いてやろう！",
+          "desc": "[WhenUse] 次のターンにこのスロットが[Aggro]1を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "噛み砕いてやろう！",
+          "desc": "[WhenUse] 次のターンにこのスロットが[Aggro]3を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030702,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "発光擬餌",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Burst]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "発光擬餌",
+          "desc": "[WhenUse] 次のターンにこのスロットが[Aggro]2を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Burst]回数が2以下なら、[Burst]回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "発光擬餌",
+          "desc": "[WhenUse] 次のターンにこのスロットが[Aggro]4を得る\n[WhenUse] 対象の[Burst]が6以上なら、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Burst]回数が2以下なら、[Burst]回数が3増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030703,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "ぐるぐるムシャムシャムシャ！",
+          "desc": "[WhenUse] 次のターンにこのスロットが[Aggro]3を得る ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が3増加"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 体力を10回復"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Burst]だけ追加で体力を回復([Burst]1につき体力を1回復。最大20)"
+                },
+                {
+                  "desc": "自分の体力が最大値の50%未満なら、コインを1回再使用"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "ぐるぐるムシャムシャムシャ！",
+          "desc": "[WhenUse] 次のターンにこのスロットが[Aggro]5を得る\n[WhenUse] 対象の[Burst]が6以上なら、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が3増加"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 体力を15回復。コイン再使用時に体力回復量が50%増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Burst]だけ追加で体力を回復([Burst]1につき体力を2回復。最大40)"
+                },
+                {
+                  "desc": "自分の体力が最大値の50%未満なら、コインを1回再使用"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030704,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "カチカチ鳴る歯",
+          "desc": "[EndBattle] 残ったバリアの数値だけ体力を回復(1ターンにつき1回。最大回復量: 体力最大値の10%)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "カチカチ鳴る歯",
+          "desc": "[WhenUse] 対象の[Burst]が6以上なら、最終威力 +3\n[EndBattle] 残ったバリアの数値だけ体力を回復(1ターンにつき1回。最大回復量: 体力最大値の10%)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
