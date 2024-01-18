@@ -199,6 +199,7 @@ namespace LimbusLocalize
             tm._egoGiftCategory.Init(romoteLocalizeFileList.EgoGiftCategory);
             tm._mirrorDungeonEgoGiftLockedDescList.Init(romoteLocalizeFileList.MirrorDungeonEgoGiftLockedDesc);
             tm._mirrorDungeonEnemyBuffDescList.Init(romoteLocalizeFileList.MirrorDungeonEnemyBuffDesc);
+            tm._iapStickerText.Init(romoteLocalizeFileList.IAPSticker);
 
             tm._abnormalityEventCharDlg.AbEventCharDlgRootInit(romoteLocalizeFileList.abnormalityCharDlgFilePath);
 
