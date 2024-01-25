@@ -425,6 +425,176 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1060801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "지식 소모",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 등급이 가장 높은 스킬 1개를 버림",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 침잠 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "지식 소모",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 등급이 가장 높은 스킬 1개를 버림\n[WhenUse] 탐구한 지식 이 3 이상이면, 합 위력 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 침잠 횟수 1 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 탐구한 지식이 3 이상이면, 코인 1회 재사용"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "지식 소모",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 등급이 가장 높은 스킬 1개를 버림\n[WhenUse] (탐구한 지식 - 1)만큼 합 위력이 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 침잠 횟수 1 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] (탐구한 지식 - 1)만큼 코인 재사용"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "열어 젖히기",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 무작위 스킬 2개를 등급이 낮은 순으로 버림",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 침잠 3 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "열어 젖히기",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 무작위 스킬 2개를 등급이 낮은 순으로 버림\n[WhenUse] 탐구한 지식 이 3 이상이면, 코인 위력 +1",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 침잠 3 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "열어 젖히기",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 무작위 스킬 2개를 등급이 낮은 순으로 버림\n[WhenUse] (탐구한 지식 - 1)만큼 코인 위력이 증가",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 침잠 4 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060803,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "순환하는 지식",
+          "desc": "[WhenUse] 탐구한 지식 이 2 이상이면, 탐구한 지식 만큼 코인 위력이 증가\n[WhenUse] 대상의 침잠 1당 피해량 +1.5% (최대 15%)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 침잠 횟수 3 증가"
+                },
+                {
+                  "desc": "[EndSkill] 대상이 흐트러짐 상태가 되거나 사망하면, 정신력 10 회복"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "순환하는 지식",
+          "desc": "[WhenUse] 탐구한 지식 이 2 이상이면, 탐구한 지식 만큼 코인 위력이 증가\n[WhenUse] 대상의 침잠 1당 피해량 +3% (최대 30%)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 침잠 횟수 4 증가"
+                },
+                {
+                  "desc": "[EndSkill] 대상이 흐트러짐 상태가 되거나 사망하면, 정신력 10 회복"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060804,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "인도하는 걸음",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 무작위 스킬 2개를 등급이 낮은 순으로 버림",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "인도하는 걸음",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 무작위 스킬 2개를 등급이 낮은 순으로 버림",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }

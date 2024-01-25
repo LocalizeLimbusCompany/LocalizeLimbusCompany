@@ -56,7 +56,7 @@
         {
           "level": 1,
           "name": "Gamble",
-          "desc": "If this Skill is Discarded, gain +3 Tremor Count\n[WhenUse] Discard the Skill of lowest rank in all of this unit's Skill Slots",
+          "desc": "If this Skill is Discarded, gain +3 Tremor Count\n[WhenUse] Discard 1 Skill of the lowest rank in all of this unit's Skill Slots",
           "coinlist": [
             {
               "coindescs": [
@@ -70,7 +70,7 @@
         {
           "level": 2,
           "name": "Gamble",
-          "desc": "If this Skill is Discarded, gain +4 Tremor Count\n[WhenUse] Discard the Skill of lowest rank in all of this unit's Skill Slots",
+          "desc": "If this Skill is Discarded, gain +4 Tremor Count\n[WhenUse] Discard 1 Skill of the lowest rank in all of this unit's Skill Slots",
           "coinlist": [
             {
               "coindescs": [
@@ -87,7 +87,7 @@
         {
           "level": 4,
           "name": "Gamble",
-          "desc": "If this Skill is Discarded, gain +4 Tremor Count\n[WhenUse] Discard the Skill of lowest rank in all of this unit's Skill Slots",
+          "desc": "If this Skill is Discarded, gain +4 Tremor Count\n[WhenUse] Discard 1 Skill of the lowest rank in all of this unit's Skill Slots",
           "coinlist": [
             {
               "coindescs": [
@@ -109,7 +109,7 @@
         {
           "level": 3,
           "name": "Grinding the Molars",
-          "desc": "[WhenUse] Discard the Skill of lowest rank in all of this unit's Skill Slots\n[WhenUse] Spend 10 Tremor Count to gain Coin Power +1",
+          "desc": "[WhenUse] Discard 1 Skill of the lowest rank in all of this unit's Skill Slots\n[WhenUse] Spend 10 Tremor Count to gain Coin Power +1",
           "coinlist": [
             {
               "coindescs": [
@@ -137,7 +137,7 @@
         {
           "level": 4,
           "name": "Grinding the Molars",
-          "desc": "[WhenUse] Discard the Skill of lowest rank in all of this unit's Skill Slots\n[WhenUse] Spend 10 Tremor Count to gain Coin Power +2",
+          "desc": "[WhenUse] Discard 1 Skill of the lowest rank in all of this unit's Skill Slots\n[WhenUse] Spend 10 Tremor Count to gain Coin Power +2",
           "coinlist": [
             {
               "coindescs": [
@@ -170,7 +170,7 @@
         {
           "level": 1,
           "name": "Guard",
-          "desc": "[WhenUse] Discard the Skill of lowest rank in all of this unit's Skill Slots",
+          "desc": "[WhenUse] Discard 1 Skill of the lowest rank in all of this unit's Skill Slots",
           "coinlist": [
             {}
           ]
@@ -178,7 +178,7 @@
         {
           "level": 4,
           "name": "Guard",
-          "desc": "[WhenUse] Discard the Skill of lowest rank in all of this unit's Skill Slots",
+          "desc": "[WhenUse] Discard 1 Skill of the lowest rank in all of this unit's Skill Slots",
           "coinlist": [
             {}
           ]
@@ -610,6 +610,217 @@
           "level": 4,
           "name": "Evade",
           "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Expend Knowledge",
+          "desc": "Gain (Insight x 2% of Max HP) Shield if this Skill is Discarded\n[WhenUse] Discard 1 Skill of the highest rank in all of this unit's Skill Slots",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Lower user’s Stagger Threshold by Insight"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Lower user’s Stagger Threshold by Insight"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Expend Knowledge",
+          "desc": "Gain (Insight x 3% of Max HP) Shield if this Skill is Discarded\n[WhenUse] Discard 1 Skill of the highest rank in all of this unit's Skill Slots",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Lower user's Stagger Threshold by Insight"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Lower user's Stagger Threshold by Insight"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Expend Knowledge",
+          "desc": "Gain (Insight x 3% of Max HP) Shield if this Skill is Discarded\n[WhenUse] Discard 1 Skill of the highest rank in all of this unit's Skill Slots\n[WhenUse] If target has 5+ Sinking, Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Lower user's Stagger Threshold by Insight"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Lower user's Stagger Threshold by Insight"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Seal Shut",
+          "desc": "Gain (Insight x 4% of Max HP) Shield if this Skill is Discarded\n[WhenUse] Discard 1 Skill of the highest rank in all of this unit's Skill Slots",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict Sinking equal to Insight"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict Sinking equal to Insight"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Seal Shut",
+          "desc": "Gain (Insight x 5% of Max HP) Shield if this Skill is Discarded\n[WhenUse] Discard 1 Skill of the highest rank in all of this unit's Skill Slots\n[WhenUse] Gain +3 Aggro to this Skill Slot next turn",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict Sinking equal to Insight"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict Sinking equal to Insight"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Seal Shut",
+          "desc": "Gain (Insight x 6% of Max HP) Shield if this Skill is Discarded\n[WhenUse] Discard 1 Skill of the highest rank in all of this unit's Skill Slots\n[WhenUse] If target has 5+ Sinking, Coin Power +1\n[WhenUse] Gain +3 Aggro to this Skill Slot next turn",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict Sinking equal to Insight"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict Sinking equal to Insight"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010803,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Grace of Knowledge",
+          "desc": "Gain (Insight x 9% of Max HP) Shield if this Skill is Discarded\n[WhenUse] Gain +8 Aggro to this Skill Slot next turn",
+          "coinlist": [
+            {},
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 Sinking Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Grace of Knowledge",
+          "desc": "Gain (Insight x 12% of Max HP) Shield if this Skill is Discarded\n[WhenUse] Gain +10 Aggro to this Skill Slot next turn\n[WhenUse] At 50%- HP, Coin Power +1",
+          "coinlist": [
+            {},
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +3 Sinking Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1010804,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Fixated Study",
+          "desc": "[WhenUse] Randomly Discard 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots\n[WhenUse] Gain +3 Aggro to this Skill Slot next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Fixated Study",
+          "desc": "[WhenUse] Randomly Discard 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots\n[WhenUse] Gain +5 Aggro to this Skill Slot next turn",
           "coinlist": [
             {
               "coindescs": [

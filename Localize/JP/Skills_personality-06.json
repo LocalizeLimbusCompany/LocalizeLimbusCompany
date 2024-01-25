@@ -425,6 +425,176 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1060801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "知識消耗",
+          "desc": "[WhenUse] 自分の全スキルスロットから、ランクの最も高いスキル1つを捨てる",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 沈潜 回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "知識消耗",
+          "desc": "[WhenUse] 自分の全スキルスロットから、ランクが最も高いスキル1つを捨てる\n[WhenUse] 探求した知識 が3以上なら、マッチ威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 沈潜 回数が1増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 探求した知識 が3以上なら、コインを1回再使用"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "知識消耗",
+          "desc": "[WhenUse] 自分の全スキルスロットから、ランクが最も高いスキル1つを捨てる\n[WhenUse] (探求した知識 -1)だけマッチ威力が増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 沈潜 回数が1増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] (探求した知識 -1)だけ、コインを再使用"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "開け放つ",
+          "desc": "[WhenUse] 自分の全スキルスロットから、ランダムなスキル2つをランクが低い順に捨てる",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 沈潜 3を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "開け放つ",
+          "desc": "[WhenUse] 自分の全スキルスロットから、ランダムなスキル2つをランクが低い順に捨てる\n[WhenUse] 探求した知識が3以上なら、コイン威力 +1",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 沈潜 3を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "開け放つ",
+          "desc": "[WhenUse] 自分の全スキルスロットから、ランダムなスキル2つをランクが低い順に捨てる\n[WhenUse] (探求した知識 -1)だけコイン威力が増加",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 沈潜 4を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060803,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "循環する知識",
+          "desc": "[WhenUse] 探求した知識 が2以上なら、探求した知識 だけコイン威力が増加\n[WhenUse] 対象の沈潜 1につきダメージ量 +1.5% (最大15%)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 沈潜 回数が3増加"
+                },
+                {
+                  "desc": "[EndSkill] 対象が混乱するか死亡した場合、精神力を10回復"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "循環する知識",
+          "desc": "[WhenUse] 探求した知識 が2以上なら、探求した知識 だけコイン威力が増加\n[WhenUse] 対象の沈潜 1につきダメージ量 +3% (最大30%)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 沈潜 回数が4増加"
+                },
+                {
+                  "desc": "[EndSkill] 対象が混乱するか死亡した場合、精神力を10回復"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060804,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "導く歩み",
+          "desc": "[WhenUse] 自分の全スキルスロットから、ランダムなスキル2つをランクが低い順に捨てる",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "導く歩み",
+          "desc": "[WhenUse] 自分の全スキルスロットから、ランダムなスキル2つをランクが低い順に捨てる",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }
