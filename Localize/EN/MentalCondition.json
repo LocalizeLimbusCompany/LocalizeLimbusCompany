@@ -7,8 +7,8 @@
     },
     {
       "id": "OnKillEnemyAsLevelRatioMultiply",
-      "add": "Increase by {0} after defeating an enemy whose level was higher than the unit’s",
-      "min": "Decrease by {0} after defeating an enemy whose level was higher than the unit’s"
+      "add": "Increase by {0} after this unit defeats an enemy whose level was higher than this unit’s",
+      "min": "Decrease by {0} after this unit defeats an enemy whose level was higher than this unit’s"
     },
     {
       "id": "OnKillEnemyByOtherAllyAsLevelRatioMultiply",
@@ -29,6 +29,21 @@
       "id": "OnRoundStartAfterEvent",
       "add": "SP increased by {0} at the start of the turn",
       "min": "SP decreased by {0} at the start of the turn"
+    },
+    {
+      "id": "OnKillEnemyMp",
+      "add": "Increase by {0} after this unit defeats an enemy regardless of their level",
+      "min": "Decrease by {0} after this unit defeats an enemy regardless of their level"
+    },
+    {
+      "id": "OnDieAllyMp",
+      "add": "If an ally is defeated, increase by {0} regardless of the ally's level",
+      "min": "If an ally is defeated, decrease by {0} regardless of the ally's level"
+    },
+    {
+      "id": "OnKillEnemyByOtherAllyExceptSupportiveAction",
+      "add": "Increase by {0} after an ally defeats an enemy whose level was higher than this unit’s",
+      "min": "Decrease by {0} after an ally defeats an enemy whose level was higher than this unit’s. Does not decrease when the enemy was defeated by an Assist Attack."
     }
   ]
 }
