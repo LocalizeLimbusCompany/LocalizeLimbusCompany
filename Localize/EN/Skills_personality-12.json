@@ -323,7 +323,7 @@
                   "desc": "[CriticalOnSucceedAttack] Inflict 2 Bleed"
                 },
                 {
-                  "desc": "Deal +30% damage on Critical Hit"
+                  "desc": "+30% Damage on Critical Hit"
                 }
               ]
             }
@@ -432,6 +432,241 @@
           "level": 4,
           "name": "Take a Breather",
           "desc": "[OnSucceedEvade] Gain 1 Poise (Max 5 per turn)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Lenticular Rend",
+          "desc": "[WinDuel] Inflict 1 [Laceration]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict +1 [Laceration] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Lenticular Rend",
+          "desc": "<style=\"highlight\">[WhenUse] If the target has 7+ [Laceration], Clash Power +1</style>\n[WinDuel] Inflict 1 [Laceration]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Lenticular Rend",
+          "desc": "[WhenUse_Force] <color=#EBCAA2>If the target has 7+ [Laceration], Clash Power +1</color>\n[WinDuel] Inflict 1 [Laceration]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Lenticular Rend",
+          "desc": "[WhenUse] If the target has 7+ [Laceration], Clash Power +<style=\"highlight\">2</style>\n[WinDuel] Inflict 1 [Laceration]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Shadow Cloud",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Offense Level Down"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the target has 10+ [Laceration], inflict 1 Attack Power Down next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Shadow Cloud",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Offense Level Down"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the target has 10+ [Laceration], inflict 1 Attack Power Down next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Shadow Cloud",
+          "desc": "[WhenUse] If the target has 7+ [Laceration], Clash Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Offense Level Down"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the target has 7+ [Laceration], inflict 1 Attack Power Down next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120803,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Shadowcloud Shattercleave",
+          "desc": "[WhenUse] If the target has 7+ [Laceration], Clash Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Offense Level Down"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the target has 7+ [Laceration], inflict 1 Offense Level Down next turn "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Offense Level Down"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the target has 7+ [Laceration], inflict 1 Offense Level Down next turn "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If the target has 10+ [Laceration], inflict 1 Plus Coin Drop next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Shadowcloud Shattercleave",
+          "desc": "[WhenUse] If the target has 7+ [Laceration], Clash Power +1\n[WhenUse] If the target has 10+ [Laceration], Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Offense Level Down"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the target has 7+ [Laceration], inflict 1 Offense Level Down next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Offense Level Down"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the target has 7+ [Laceration], inflict 1 Offense Level Down next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 3 [Laceration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the target has <style=\"highlight\">7</style>+ [Laceration], inflict 1 Plus Coin Drop next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120804,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Guard",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Guard",
+          "desc": "",
           "coinlist": [
             {}
           ]

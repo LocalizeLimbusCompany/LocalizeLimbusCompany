@@ -323,7 +323,7 @@
                   "desc": "[CriticalOnSucceedAttack] 출혈 2 부여"
                 },
                 {
-                  "desc": "크리티컬 발동 시 피해량 +30%"
+                  "desc": "크리티컬 피해량 +30%"
                 }
               ]
             }
@@ -353,7 +353,7 @@
                   "desc": "[CriticalOnSucceedAttack] 출혈 2 부여"
                 },
                 {
-                  "desc": "크리티컬 발동 시 피해량 +50%"
+                  "desc": "크리티컬 피해량 +50%"
                 }
               ]
             }
@@ -382,7 +382,7 @@
                   "desc": "탄환 1 소모"
                 },
                 {
-                  "desc": "크리티컬 시 피해량 +50%"
+                  "desc": "크리티컬 피해량 +50%"
                 }
               ]
             }
@@ -406,7 +406,7 @@
                   "desc": "탄환 1 소모"
                 },
                 {
-                  "desc": "크리티컬 시 피해량 +100%"
+                  "desc": "크리티컬 피해량 +100%"
                 },
                 {
                   "desc": "[EnemyKill] 다음 턴에 더하기 코인 강화 1을 얻음"
@@ -432,6 +432,241 @@
           "level": 4,
           "name": "한 숨 돌릴까",
           "desc": "[OnSucceedEvade] 호흡 1 얻음 (턴 당 최대 5)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "구름베기",
+          "desc": "[WinDuel] [Laceration] 1 부여",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Laceration] 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "구름베기",
+          "desc": "<style=\"highlight\">[WhenUse] 대상의 [Laceration]이 7 이상이면 합 위력 +1</style>\n[WinDuel] [Laceration] 1 부여",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "구름베기",
+          "desc": "[WhenUse_Force] <color=#EBCAA2>대상의 [Laceration]이 7 이상이면 합 위력 +1</color>\n[WinDuel] [Laceration] 1 부여",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "구름베기",
+          "desc": "[WhenUse] 대상의 [Laceration]이 7 이상이면 합 위력 +<style=\"highlight\">2</style>\n[WinDuel] [Laceration] 1 부여",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "먹구름",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Laceration] 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 공격 레벨 감소 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Laceration]이 10 이상이면, 다음 턴에 공격 위력 감소 1 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "먹구름",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Laceration] 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 공격 레벨 감소 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Laceration]이 10 이상이면, 다음 턴에 공격 위력 감소 1 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "먹구름",
+          "desc": "[WhenUse] 대상의 [Laceration]이 7 이상이면 합 위력 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Laceration] 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 공격 레벨 감소 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Laceration]이 7 이상이면, 다음 턴에 공격 위력 감소 1 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120803,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "먹구름 깨어가르기",
+          "desc": "[WhenUse] 대상의 [Laceration]이 7 이상이면 합 위력 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 공격 레벨 감소 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Laceration]이 7 이상이면 다음 턴에 공격 레벨 감소 1 부여 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 공격 레벨 감소 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Laceration]이 7 이상이면 다음 턴에 공격 레벨 감소 1 부여 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Laceration]이 10 이상이면, 다음 턴에 더하기 코인 약화 1 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "먹구름 깨어가르기",
+          "desc": "[WhenUse] 대상의 [Laceration]이 7 이상이면 합 위력 +1\n[WhenUse] 대상의 [Laceration]이 10 이상이면 코인 위력 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 공격 레벨 감소 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Laceration]이 7 이상이면 다음 턴에 공격 레벨 감소 1 부여 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 공격 레벨 감소 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Laceration]이 7 이상이면 다음 턴에 공격 레벨 감소 1 부여 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Laceration] 3 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Laceration]이 <style=\"highlight\">7</style> 이상이면, 다음 턴에 더하기 코인 약화 1 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120804,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "가드",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "가드",
+          "desc": "",
           "coinlist": [
             {}
           ]

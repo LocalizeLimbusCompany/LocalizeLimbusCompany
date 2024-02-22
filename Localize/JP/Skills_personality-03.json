@@ -571,6 +571,245 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1030801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "抜剣",
+          "desc": "[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Breath]1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Breath]1を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "抜剣",
+          "desc": "[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Breath]1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Breath]1を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "抜剣",
+          "desc": "<style=\"highlight\">自分の[Breath]が5以上なら、コイン威力 +1</style>\n[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]1を得る"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "剣軌",
+          "desc": "[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Breath]2を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Breath]が無いか、[Breath]威力を最も少なく保有している味方1名へ[Breath]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "剣軌",
+          "desc": "[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Breath]が無いか、[Breath]威力を最も少なく保有している味方1名へ[Breath]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "剣軌",
+          "desc": "<style=\"highlight\">自分の[Breath]が7以上なら、コイン威力 +1</style>\n[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Breath]が無いか、[Breath]威力を最も少なく保有している味方1名へ[Breath]2を付与\n<style=\"highlight\">対象が剣契組織員なら、呼吸 2を追加で付与</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030803,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "さらば！",
+          "desc": "[WhenUse] [Breath]5を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 最終コインのダメージ量 +10%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 最終コインのダメージ量 +10%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Breath]が無いか、[Breath]回数を最も少なく保有している味方2名の[Breath]回数を2増加"
+                },
+                {
+                  "desc": "[EndSkill] 対象が死亡したなら、次のターンに[SlashDamageUp]1を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "さらば！",
+          "desc": "<style=\"highlight\">自分の[Breath]が10以上なら、コイン威力 +1</style>\n[WhenUse] [Breath]5を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 最終コインのダメージ量 +10%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 最終コインのダメージ量 +10%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "クリティカルダメージ量 +30%"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Breath]が無いか、[Breath]回数を最も少なく保有している味方2名の[Breath]回数を2増加。\n<style=\"highlight\">対象が剣契組織員なら[Breath]回数が2追加で増加</style>"
+                },
+                {
+                  "desc": "[EndSkill] 対象が死亡したなら、<style=\"highlight\">自分とランダムな味方1名へ次のターンにて[SlashDamageUp]1を付与</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030804,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "回避",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "回避",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

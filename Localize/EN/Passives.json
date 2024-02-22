@@ -1064,7 +1064,7 @@
     {
       "id": 1080801,
       "name": "Captain of the Pequod",
-      "desc": "- After Attack: if the enemy is defeated after this unit's attack,\n- gain [HeatedGasHarpoon] next turn.\n1 other ally with the least SP heals 7 SP.\nIf the ally is from The Pequod, heal an additional 5 SP."
+      "desc": "After Attack: if the enemy is defeated after this unit's attack,\n- gain [HeatedGasHarpoon] next turn.\n- 1 other ally with the least SP heals 7 SP.\n- If the ally is from The Pequod, heal an additional 5 SP."
     },
     {
       "id": 1080802,
@@ -1074,7 +1074,7 @@
     {
       "id": 1080811,
       "name": "Captain of the Pequod",
-      "desc": "- After Attack: if the enemy is defeated after this unit's attack,\n<style=\"highlight\">- gain 4 Poise, +2 Poise Count. Then, gain [OverHeatedGasHarpoon] next turn.</style>\n<style=\"highlight\">2 other allies with the least SP heal 7 SP and gain 4 Poise.</style>\nIf the allies are from The Pequod, heal an additional 5 SP. <style=\"highlight\">Then, once per turn, apply 1 Pierce Power Up next turn.</style>"
+      "desc": "- After Attack: if the enemy is defeated after this unit's attack,\n<style=\"highlight\">- gain 4 Poise, +2 Poise Count. Then, gain [OverHeatedGasHarpoon] next turn.</style>\n<style=\"highlight\">- 2 other allies with the least SP heal 7 SP and gain 4 Poise.</style>\n- If the allies are from The Pequod, heal an additional 5 SP. <style=\"highlight\">Then, once per turn, apply 1 Pierce Power Up next turn.</style>"
     },
     {
       "id": 1080821,
@@ -1085,6 +1085,76 @@
       "id": 1080831,
       "name": "Captain's Orders",
       "desc": "After Attack: 1 ally with the highest SP gains 2 Poise and <style=\"highlight\">+2 Poise Count</style> when the target is defeated after that unit's attack (2 times per turn)"
+    },
+    {
+      "id": 1050801,
+      "name": "Swordplay of the Homeland",
+      "desc": "In this Encounter, when this unit takes damage that brings their HP down to 0, nullify that damage; then, this unit's HP cannot drop below 1 for the turn. (Once per Encounter)\n\nWhen this unit gains [Breath] Potency/Count with its own Skill or Coin effects: give 1 [Breath] Potency and +1 [Breath] Count to 2 other Blade Lineage allies with no [Breath] or with the least [Breath]\n- If there are 6 or more Blade Lineage allies participating in this Encounter, give 2 [Breath] Potency and +2 [Breath] Count instead"
+    },
+    {
+      "id": 1050811,
+      "name": "Swordplay of the Homeland",
+      "desc": "In this Encounter, when this unit takes damage that brings their HP down to 0, nullify that damage; then, this unit's HP cannot drop below 1 for the turn. (Once per Encounter)\n\nWhen this unit gains [Breath] Potency/Count with its own Skill or Coin effects: give 1 [Breath] Potency and +1 [Breath] Count to 2 other Blade Lineage allies with no [Breath] or with the least [Breath]\n- If there are 6 or more Blade Lineage allies participating in this Encounter, give 2 [Breath] Potency and +2 [Breath] Count instead\n\nCombat Start: Apply Swordplay of the Homeland buff to all other Blade Lineage allies"
+    },
+    {
+      "id": 1050821,
+      "name": "Swordplay of the Homeland",
+      "desc": "Combat Start: 1 ally with the most [Breath] deals +15% damage on Critical Hit"
+    },
+    {
+      "id": 1020801,
+      "name": "Sanguine Plum Blossoms",
+      "desc": "On Crit: Inflict 1 [RedApricotBlossom]. (3 times max)"
+    },
+    {
+      "id": 1020811,
+      "name": "Sanguine Plum Blossoms",
+      "desc": "On Crit: Inflict 1 [RedApricotBlossom]. If the target has 10 [RedApricotBlossom], inflict 1 Defense Level Down instead (6 times max)"
+    },
+    {
+      "id": 1020821,
+      "name": "Lingering Bladepoint",
+      "desc": "When the ally first deployed in the pre-battle team setup Critically hits with a Slash type Skill, inflict 1 Defense Level Down (3 times max per 1 enemy per turn)"
+    },
+    {
+      "id": 1030801,
+      "name": "Collective Breathing",
+      "desc": "When this unit gains [Breath] Potency with its own Skill or Coin effects: give 1 [Breath] Potency to 1 ally with no [Breath] or with the least [Breath] Potency (3 times max)"
+    },
+    {
+      "id": 1030811,
+      "name": "Collective Breathing",
+      "desc": "When this unit gains [Breath] Potency with its own Skill or Coin effects: give 1 [Breath] Potency to 1 ally with no [Breath] or with the least [Breath] Potency (5 times max)"
+    },
+    {
+      "id": 1030821,
+      "name": "Nightly Stroll",
+      "desc": "1 ally with the least [Breath] gains 1 more [Breath] Potency when gaining [Breath] Potency with its own Skill or Coin effects. (2 times max. Does not apply to allies without [Breath])"
+    },
+    {
+      "id": 1030831,
+      "name": "Nightly Stroll",
+      "desc": "1 ally with the least [Breath] gains 2 more [Breath] Potency when gaining [Breath] Potency with its own Skill or Coin effects. (2 times max. Does not apply to allies without [Breath])"
+    },
+    {
+      "id": 1120801,
+      "name": "Dark Cloud Blade",
+      "desc": "Clash Win: inflict 1 [Laceration] (3 times per turn)"
+    },
+    {
+      "id": 1120821,
+      "name": "Dark Cloud Style",
+      "desc": "When 1 ally with the slowest Speed hits an enemy with 10+ [Laceration], inflict 1 Offense Level Down next turn (3 times per turn)"
+    },
+    {
+      "id": 1120831,
+      "name": "Dark Cloud Style",
+      "desc": "When 1 ally with the slowest Speed hits an enemy with 7+ [Laceration], inflict 1 Offense Level Down next turn (3 times per turn)"
+    },
+    {
+      "id": 1050802,
+      "name": "In Memoriam",
+      "desc": "When 3 or more other Blade Lineage allies are defeated:\n- When gaining Poise Potency/Count with this unit's own Skills and Coin effects: gain 1 more of each\n- When 5 or more other Blade Lineage allies are defeated, gain 2 more of each instead\n- Combat Start: Apply Swordplay of the Homeland buff on self"
     }
   ]
 }

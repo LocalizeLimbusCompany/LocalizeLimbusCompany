@@ -323,7 +323,7 @@
                   "desc": "[CriticalOnSucceedAttack] 出血 2を付与"
                 },
                 {
-                  "desc": "クリティカル発動時、ダメージ量 +30%"
+                  "desc": "クリティカルダメージ量 +30%"
                 }
               ]
             }
@@ -353,7 +353,7 @@
                   "desc": "[CriticalOnSucceedAttack] 出血 2を付与"
                 },
                 {
-                  "desc": "クリティカル発動時、ダメージ量 +50%"
+                  "desc": "クリティカルダメージ量 +50%"
                 }
               ]
             }
@@ -382,7 +382,7 @@
                   "desc": "弾丸 1を消耗"
                 },
                 {
-                  "desc": "クリティカル発動時、ダメージ量 +50%"
+                  "desc": "クリティカルダメージ量 +50%"
                 }
               ]
             }
@@ -406,7 +406,7 @@
                   "desc": "弾丸 1を消耗"
                 },
                 {
-                  "desc": "クリティカル発動時、ダメージ量+100%"
+                  "desc": "クリティカルダメージ量 +100%"
                 },
                 {
                   "desc": "[EnemyKill] 次のターンに加算コイン強化 1を得る"
@@ -432,6 +432,241 @@
           "level": 4,
           "name": "一息つくか",
           "desc": "[OnSucceedEvade] 呼吸 1を得る(1ターンにつき最大5)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "雲斬り",
+          "desc": "[WinDuel] [Laceration]1を付与",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Laceration]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "雲斬り",
+          "desc": "<style=\"highlight\">[WhenUse] 対象の[Laceration]が7以上なら、マッチ威力 +1</style>\n[WinDuel] [Laceration]1を付与",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "雲斬り",
+          "desc": "[WhenUse_Force] <color=#EBCAA2>対象の[Laceration]が7以上なら、マッチ威力 +1</color>\n[WinDuel] [Laceration]1を付与",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "雲斬り",
+          "desc": "[WhenUse] 対象の[Laceration]が7以上なら、マッチ威力 +<style=\"highlight\">2</style>\n[WinDuel] [Laceration]1を付与",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "墨雲",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 攻撃レベル減少 1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Laceration]が10以上なら、次のターンに攻撃威力減少 1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "墨雲",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 攻撃レベル減少 1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Laceration]が10以上なら、次のターンに攻撃威力減少 1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "墨雲",
+          "desc": "[WhenUse] 対象の[Laceration]が7以上なら、マッチ威力 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 攻撃レベル減少 1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Laceration]が7以上なら、次のターンに攻撃威力減少 1を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120803,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "墨雲裂割",
+          "desc": "[WhenUse] 対象の[Laceration]が7以上なら、マッチ威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 攻撃レベル減少 1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Laceration]が7以上なら、次のターンに攻撃レベル減少 1を付与 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 攻撃レベル減少 1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Laceration]が7以上なら、次のターンに攻撃レベル減少 1を付与 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Laceration]が10以上なら、次のターンに加算コイン弱化 1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "墨雲裂割",
+          "desc": "[WhenUse] 対象の[Laceration]が7以上なら、マッチ威力 +1\n[WhenUse] 対象の[Laceration]が10以上なら、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 攻撃レベル減少 1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Laceration]が7以上なら、次のターンに攻撃レベル減少 1を付与 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 攻撃レベル減少 1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Laceration]が7以上なら、次のターンに攻撃レベル減少 1を付与 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Laceration]3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Laceration]が<style=\"highlight\">7</style>以上なら、次のターンに加算コイン弱化 1を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120804,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ガード",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "ガード",
+          "desc": "",
           "coinlist": [
             {}
           ]

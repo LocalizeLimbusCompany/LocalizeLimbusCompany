@@ -27,8 +27,8 @@
     },
     {
       "id": "OnRoundStartAfterEvent",
-      "add": "SP increased by {0} at the start of the turn",
-      "min": "SP decreased by {0} at the start of the turn"
+      "add": "Increased by {0} at the start of the turn",
+      "min": "Decreased by {0} at the start of the turn"
     },
     {
       "id": "OnKillEnemyMp",
@@ -44,6 +44,11 @@
       "id": "OnKillEnemyByOtherAllyExceptSupportiveAction",
       "add": "Increase by {0} after an ally defeats an enemy whose level was higher than this unit’s",
       "min": "Decrease by {0} after an ally defeats an enemy whose level was higher than this unit’s. Does not decrease when the enemy was defeated by an Assist Attack."
+    },
+    {
+      "id": "OnDieBladeLineageAlly",
+      "add": "If a Blade Lineage ally is defeated, gain {0} regardless of the ally's level",
+      "min": "If a Blade Lineage ally is defeated, lose {0} regardless of the ally's level"
     }
   ]
 }
