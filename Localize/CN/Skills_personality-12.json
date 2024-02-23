@@ -21,7 +21,7 @@
         {
           "level": 2,
           "name": "针锋相对",
-          "desc": "[WhenUse] 使自身获得2层防御等级提升 \n[DefeatDuel] 使自身获得(自身的防御等级提升层数 × 3)点护盾。下回合使自身获得1层防御等级提升 。",
+          "desc": "[WhenUse] 使自身获得2层防御等级提升 \n[DefeatDuel] 使自身获得(自身的防御等级提升 层数 × 3)点护盾。下回合使自身获得1层防御等级提升 。",
           "coinlist": [
             {},
             {
@@ -36,7 +36,7 @@
         {
           "level": 4,
           "name": "针锋相对",
-          "desc": "[WhenUse] 使自身获得2层防御等级提升 \n[DefeatDuel]使自身获得(自身的防御等级提升层数 × 5)点护盾。下回合使自身获得2层防御等级提升 。",
+          "desc": "[WhenUse] 使自身获得2层防御等级提升 \n[DefeatDuel]使自身获得(自身的防御等级提升 层数 × 5)点护盾。下回合使自身获得2层防御等级提升 。",
           "coinlist": [
             {},
             {
@@ -148,7 +148,7 @@
         {
           "level": 3,
           "name": "人民卫士",
-          "desc": "[WhenUse] 使全体友方单位获得2层忍耐 与3层防御等级提升 \n若自身的防御等级提升 层数不低于6层，则使本技能硬币威力+1\n若自身的防御等级提升 层数不低于10层，则使本技能造成的伤害+30%",
+          "desc": "[WhenUse] 使全体友方单位获得2层忍耐 与3层防御等级提升 \n若自身的防御等级提升 层数不低于6层，则使本技能的硬币威力+1\n若自身的防御等级提升 层数不低于10层，则使本技能造成的伤害+30%",
           "coinlist": [
             {},
             {},
@@ -432,6 +432,241 @@
           "level": 4,
           "name": "喘口气",
           "desc": "[OnSucceedEvade] 使自身增加1级呼吸法 强度（每回合最多5次）",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "云涡撕裂",
+          "desc": "[WinDuel] 使目标增加1级流血 强度",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层流血 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "云涡撕裂",
+          "desc": "[WhenUse] 若目标的流血 强度不低于7级，则使本技能的拼点威力+1\n[WinDuel] 使目标增加1级流血 强度",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层流血 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "云涡撕裂",
+          "desc": "[WhenUse_Force] 若目标的流血 强度不低于7级，则使本技能的拼点威力+1\n[WinDuel] 使目标增加1级流血 强度",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层流血 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "云涡撕裂",
+          "desc": "[WhenUse] 若目标的流血 强度不低于7级，则使本技能的拼点威力+2\n[WinDuel] 使目标增加1级流血 强度",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层流血 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "墨云",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层攻击等级降低 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标的流血 强度不低于10级，则下回合对其施加1层虚弱 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "墨云",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层攻击等级降低 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标的流血 强度不低于10级，则下回合对其施加1层虚弱 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "墨云",
+          "desc": "[WhenUse] 若目标的流血 强度不低于7级，则使本技能的拼点威力+2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层攻击等级降低 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标的流血 强度不低于7级，则下回合对其施加1层虚弱 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120803,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "墨云崩裂",
+          "desc": "[WhenUse] 若目标的流血 强度不低于7级，则使本技能的拼点威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层攻击等级降低 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标的流血 强度不低于7级，则下回合对其施加1层攻击等级降低 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层攻击等级降低 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标的流血 强度不低于7级，则下回合对其施加1层攻击等级降低 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若目标的流血 强度不低于10级，则下回合对其施加1层加算硬币弱化 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "墨云崩裂",
+          "desc": "[WhenUse] 若目标的流血 强度不低于7级，则使本技能的拼点威力+1\n[WhenUse] 若目标的流血 强度不低于10级，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层攻击等级降低 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标的流血 强度不低于7级，则下回合对其施加1层攻击等级降低 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层攻击等级降低 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标的流血 强度不低于7级，则下回合对其施加1层攻击等级降低 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加3级流血 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标的流血 强度不低于7级，则下回合对其施加1层加算硬币弱化 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1120804,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "防御",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "防御",
+          "desc": "",
           "coinlist": [
             {}
           ]
