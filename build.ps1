@@ -9,9 +9,6 @@ if (Test-Path $Path)
 # ----------- BepinEx -----------
 dotnet build src/LimbusLocalize.sln -c BIE
 # Full
-New-Item -Path "$Path/LimbusLocalize" -Name "BepInEx" -ItemType "directory" -Force
-New-Item -Path "$Path/LimbusLocalize/BepInEx" -Name "plugins" -ItemType "directory" -Force
-New-Item -Path "$Path/LimbusLocalize/BepInEx/plugins" -Name "LLC" -ItemType "directory" -Force
 $BIE_LLC_Path = "$Path/LimbusLocalize/BepInEx/plugins/LLC"
 New-Item -Path "$BIE_LLC_Path" -Name "Localize" -ItemType "directory" -Force
 Copy-Item -Path Localize/CN $BIE_LLC_Path/Localize -Force -Recurse
@@ -27,14 +24,11 @@ if ($version)
 $tag=$(git describe --tags --abbrev=0)
 $changedFiles=$(git diff --name-only HEAD $tag -- Localize/CN/)
 $changedFiles2=$(git diff --name-only HEAD $tag -- Localize/Readme/)
-New-Item -Path "$Path/LimbusLocalize_OTA" -Name "BepInEx" -ItemType "directory" -Force
-New-Item -Path "$Path/LimbusLocalize_OTA/BepInEx" -Name "plugins" -ItemType "directory" -Force
-New-Item -Path "$Path/LimbusLocalize_OTA/BepInEx/plugins" -Name "LLC" -ItemType "directory" -Force
 $BIE_OTA_LLC_Path = "$Path/LimbusLocalize_OTA/BepInEx/plugins/LLC"
-Copy-Item -Path $Path/LimbusLocalize_BIE.dll -Destination $BIE_OTA_LLC_Path -Force
 New-Item -Path "$BIE_OTA_LLC_Path" -Name "Localize" -ItemType "directory" -Force
 New-Item -Path "$BIE_OTA_LLC_Path/Localize" -Name "Readme" -ItemType "directory" -Force
 New-Item -Path "$BIE_OTA_LLC_Path/Localize" -Name "CN" -ItemType "directory" -Force
+Copy-Item -Path $Path/LimbusLocalize_BIE.dll -Destination $BIE_OTA_LLC_Path -Force
 # Copy the changed files to the release directory
 $changedFilesList = $changedFiles -split " "
 foreach ($file in $changedFilesList) {
