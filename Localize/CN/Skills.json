@@ -147,7 +147,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标的理智值不高于0点，则下回合对其施加1层易损 "
+                  "desc": "[OnSucceedAttack] 若目标的理智值低于0点，则下回合对其施加1层易损 "
                 }
               ]
             }
@@ -176,7 +176,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标的理智值不高于0点，则下回合对其施加1层易损 "
+                  "desc": "[OnSucceedAttack] 若目标的理智值低于0点，则下回合对其施加1层易损 "
                 }
               ]
             }
@@ -1486,14 +1486,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "若目标本回合已受到伤害，则使本硬币额外造成10%伤害"
+                  "desc": "若目标本回合已受到伤害，则使本硬币造成的伤害+10%"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "若目标本回合已受到伤害，则使本硬币额外造成10%伤害"
+                  "desc": "若目标本回合已受到伤害，则使本硬币造成的伤害+10%"
                 }
               ]
             }
@@ -1507,14 +1507,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "若目标本回合已受到伤害，则使本硬币额外造成30%伤害"
+                  "desc": "若目标本回合已受到伤害，则使本硬币造成的伤害+30%"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "若目标本回合已受到伤害，则使本硬币额外造成30%伤害"
+                  "desc": "若目标本回合已受到伤害，则使本硬币造成的伤害+30%"
                 }
               ]
             }
@@ -2708,7 +2708,7 @@
         {
           "level": 2,
           "name": "裁云断雾",
-          "desc": "[BeforeAttack] 若目标的流血 层数不高于4层，则使本技能的前两枚硬币额外使用一次",
+          "desc": "[BeforeAttack] 若目标的流血 层数不高于4层，则重复使用本技能的前两枚硬币1次",
           "keywords": [],
           "coinlist": [
             {
@@ -2730,7 +2730,7 @@
         {
           "level": 4,
           "name": "裁云断雾",
-          "desc": "[BeforeAttack] 若目标的流血 层数不高于4层，则使本技能的前两枚硬币额外使用一次",
+          "desc": "[BeforeAttack] 若目标的流血 层数不高于4层，则重复使用本技能的前两枚硬币1次",
           "keywords": [],
           "coinlist": [
             {
@@ -2877,10 +2877,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 若目标的体力不高于25%，则使本硬币在未击杀目标时重复使用1次\n正面命中时，本硬币造成的伤害+50%"
+                  "desc": "[OnSucceedAttackHead] 若目标现存体力不高于25%，则使本硬币在未击杀目标时重复使用1次\n正面命中时，使本硬币造成的伤害+50%"
                 },
                 {
-                  "desc": "[ReUseOnSucceedAttackHead] 本硬币造成的伤害+50%"
+                  "desc": "[ReUseOnSucceedAttackHead] 使本硬币造成的伤害+50%"
                 }
               ]
             }
@@ -2908,10 +2908,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 若目标的体力不高于25%，则使本硬币在未击杀目标时重复使用1次\n正面命中时，本硬币造成的伤害+50%"
+                  "desc": "[OnSucceedAttackHead] 若目标现存体力不高于25%，则使本硬币在未击杀目标时重复使用1次\n正面命中时，使本硬币造成的伤害+50%"
                 },
                 {
-                  "desc": "[ReUseOnSucceedAttackHead] 本硬币造成的伤害+50%"
+                  "desc": "[ReUseOnSucceedAttackHead] 使本硬币造成的伤害+50%"
                 }
               ]
             }
@@ -5034,7 +5034,7 @@
         {
           "level": 4,
           "name": "断汝筋骨",
-          "desc": "若自身的呼吸法 层数不低于10层，则使暴击伤害+150%",
+          "desc": "若自身的呼吸法 层数不低于10层，则使本技能暴击时造成的伤害+150%",
           "coinlist": [
             {
               "coindescs": [
@@ -5999,14 +5999,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 攻击带有破裂 的敌人时，本硬币造成的伤害+10%"
+                  "desc": "[OnSucceedAttack] 若目标带有破裂 ，则使本硬币造成的伤害+10%"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 攻击带有破裂 的敌人时，本硬币造成的伤害+10%"
+                  "desc": "[OnSucceedAttack] 若目标带有破裂 ，则使本硬币造成的伤害+10%"
                 },
                 {
                   "desc": "[OnSucceedAttackHead] 使自身恢复本硬币伤害量30%的体力"
@@ -6389,21 +6389,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 攻击带有破裂 的目标时，追加本硬币伤害量30%的伤害"
+                  "desc": "[OnSucceedAttack] 若目标带有破裂 ，则对其追加本硬币伤害量30%的伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 攻击带有破裂 的目标时，追加本硬币伤害量30%的伤害"
+                  "desc": "[OnSucceedAttack] 若目标带有破裂 ，则对其追加本硬币伤害量30%的伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 攻击带有破裂 的目标时，追加本硬币伤害量30%的伤害"
+                  "desc": "[OnSucceedAttack] 若目标带有破裂 ，则对其追加本硬币伤害量30%的伤害"
                 }
               ]
             },
@@ -6424,21 +6424,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 攻击带有破裂 的目标时，追加本硬币伤害量30%的伤害"
+                  "desc": "[OnSucceedAttack] 若目标带有破裂 ，则对其追加本硬币伤害量30%的伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 攻击带有破裂 的目标时，追加本硬币伤害量30%的伤害"
+                  "desc": "[OnSucceedAttack] 若目标带有破裂 ，则对其追加本硬币伤害量30%的伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 攻击带有破裂 的目标时，追加本硬币伤害量30%的伤害"
+                  "desc": "[OnSucceedAttack] 若目标带有破裂 ，则对其追加本硬币伤害量30%的伤害"
                 }
               ]
             },
@@ -7037,7 +7037,7 @@
         {
           "level": 3,
           "name": "处刑",
-          "desc": "击杀敌方时，使全体友方单位恢复10点理智值并获得1层突刺伤害强化 和1层打击伤害强化 ",
+          "desc": "击杀敌方单位时，使全体友方单位恢复10点理智值并获得1层突刺伤害强化 和1层打击伤害强化 ",
           "coinlist": [
             {
               "coindescs": [
@@ -7065,7 +7065,7 @@
         {
           "level": 4,
           "name": "处刑",
-          "desc": "击杀敌方时，使全体友方单位恢复10点理智值并获得1层突刺伤害强化 和1层打击伤害强化 ",
+          "desc": "击杀敌方单位时，使全体友方单位恢复10点理智值并获得1层突刺伤害强化 和1层打击伤害强化 ",
           "coinlist": [
             {
               "coindescs": [
@@ -7226,21 +7226,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 追加本硬币伤害量10%的伤害"
+                  "desc": "[OnSucceedAttackHead] 对目标追加本硬币伤害量10%的伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 追加本硬币伤害量10%的伤害"
+                  "desc": "[OnSucceedAttackHead] 对目标追加本硬币伤害量10%的伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 追加本硬币伤害量10%的伤害"
+                  "desc": "[OnSucceedAttackHead] 对目标追加本硬币伤害量10%的伤害"
                 }
               ]
             }
@@ -7426,7 +7426,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 追加本硬币伤害量15%的斩击伤害"
+                  "desc": "[OnSucceedAttack] 对目标追加本硬币伤害量15%的斩击伤害"
                 },
                 {
                   "desc": "[OnSucceedAttack] 下回合对目标施加1层弱点分析 "
@@ -7451,7 +7451,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 追加本硬币伤害量15%的斩击伤害"
+                  "desc": "[OnSucceedAttack] 对目标追加本硬币伤害量15%的斩击伤害"
                 },
                 {
                   "desc": "[OnSucceedAttack] 下回合对目标施加1层弱点分析 "
@@ -8648,7 +8648,7 @@
                   "desc": "[OnSucceedAttack] 使目标震颤引爆 \n震颤引爆 时，使目标的震颤 层数减少1层"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标陷入混乱，则追加伤害量25%的伤害"
+                  "desc": "[OnSucceedAttack] 若目标陷入混乱，则对其追加本硬币伤害量25%的伤害"
                 }
               ]
             }
@@ -8882,7 +8882,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标震颤引爆 \n震颤引爆 时，使目标的震颤 层数减少3层。消耗所有充能 层数，并使震颤引爆 时混乱阈值的前移量增加(所消耗充能 层数×5)%（最多+50%）",
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 \n震颤引爆 时，使目标的震颤 层数减少3层。消耗所有充能 层数并使震颤引爆 时混乱阈值的前移量增加(所消耗充能 层数×5)%（最多+50%）",
                   "summary": "[OnSucceedAttack] 使目标震颤引爆 ，并使目标的震颤 层数减少3层。消耗充能 层数，并使混乱阈值的前移量增加"
                 }
               ]
@@ -9536,7 +9536,7 @@
                   "desc": "[OnSucceedAttack] 若目标的沉沦 强度不低于6级，则使目标沉沦泛滥 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若自身的震颤 层数不低于10层，则追加本硬币伤害量30%的伤害"
+                  "desc": "[OnSucceedAttack] 若自身的震颤 层数不低于10层，则对目标追加本硬币伤害量30%的伤害"
                 }
               ]
             }
@@ -9567,7 +9567,7 @@
                   "desc": "[OnSucceedAttack] 若目标的沉沦 强度不低于6级，则使目标沉沦泛滥 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若自身的震颤 层数不低于10层，则追加本硬币伤害量40%的伤害"
+                  "desc": "[OnSucceedAttack] 若自身的震颤 层数不低于10层，则对目标追加本硬币伤害量40%的伤害"
                 }
               ]
             }
@@ -10311,7 +10311,7 @@
         {
           "level": 1,
           "name": "里门顶肘",
-          "desc": "若目标的烧伤 强度及烧伤 层数均不低于6，则使本技能造成的伤害+30%",
+          "desc": "若目标的烧伤 强度与烧伤 层数均不低于6，则使本技能造成的伤害+30%",
           "coinlist": [
             {
               "coindescs": [
@@ -10346,7 +10346,7 @@
         {
           "level": 4,
           "name": "里门顶肘",
-          "desc": "若目标的烧伤 强度及烧伤 层数均不低于6，则使本技能造成的伤害+50%",
+          "desc": "若目标的烧伤 强度与烧伤 层数均不低于6，则使本技能造成的伤害+50%",
           "coinlist": [
             {
               "coindescs": [
