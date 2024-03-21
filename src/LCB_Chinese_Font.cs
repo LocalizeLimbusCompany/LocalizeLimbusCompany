@@ -272,17 +272,17 @@ namespace LimbusLocalize
             __result = scenario;
             return false;
         }
-        [HarmonyPatch(typeof(StoryData), nameof(StoryData.GetTellerName))]
+        [HarmonyPatch(typeof(StoryAssetLoader), nameof(StoryAssetLoader.GetTellerName))]
         [HarmonyPrefix]
-        private static bool GetTellerName(StoryData __instance, string name, LOCALIZE_LANGUAGE lang, ref string __result)
+        private static bool GetTellerName(StoryAssetLoader __instance, string name, LOCALIZE_LANGUAGE lang, ref string __result)
         {
             if (__instance._modelAssetMap.TryGetValueEX(name, out var scenarioAssetData))
                 __result = scenarioAssetData.krname ?? string.Empty;
             return false;
         }
-        [HarmonyPatch(typeof(StoryData), nameof(StoryData.GetTellerTitle))]
+        [HarmonyPatch(typeof(StoryAssetLoader), nameof(StoryAssetLoader.GetTellerTitle))]
         [HarmonyPrefix]
-        private static bool GetTellerTitle(StoryData __instance, string name, LOCALIZE_LANGUAGE lang, ref string __result)
+        private static bool GetTellerTitle(StoryAssetLoader __instance, string name, LOCALIZE_LANGUAGE lang, ref string __result)
         {
             if (__instance._modelAssetMap.TryGetValueEX(name, out var scenarioAssetData))
                 __result = scenarioAssetData.nickName ?? string.Empty;
@@ -302,9 +302,9 @@ namespace LimbusLocalize
         [HarmonyPrefix]
         private static void LoadRemote(ref LOCALIZE_LANGUAGE lang)
            => lang = LOCALIZE_LANGUAGE.EN;
-        [HarmonyPatch(typeof(StoryData), nameof(StoryData.Init))]
+        [HarmonyPatch(typeof(StoryAssetLoader), nameof(StoryAssetLoader.Init))]
         [HarmonyPostfix]
-        private static void StoryDataInit(StoryData __instance)
+        private static void StoryDataInit(StoryAssetLoader __instance)
         {
             foreach (ScenarioAssetData scenarioAssetData in JsonUtility.FromJson<ScenarioAssetDataList>(LLC_Manager.Localizes["NickName"]).assetData)
                 __instance._modelAssetMap[scenarioAssetData.name] = scenarioAssetData;
