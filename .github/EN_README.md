@@ -10,11 +10,10 @@ LimbusCompany I18N mod
 [![Version](https://img.shields.io/github/release/LocalizeLimbusCompany/LocalizeLimbusCompany.svg?label=Version)](../../../releases/latest)
 [![Localize Limbus Chat Group](https://img.shields.io/badge/Join-QQGroup-blue?logo=tencent-qq)](https://jq.qq.com/?_wv=1027&k=5NE6Kvg2)
 
-[简体中文](../../..) | [繁體中文](https://github.com/SmallYuanSY/LocalizeLimbusCompany) | [Русский](https://github.com/Crescent-Corporation/LimbusCompanyBusRUS) | [ภาษาไทย](https://github.com/1ookilo/LocalizeLimbusCompanyTH) | English
+[简体中文](../../..) | [繁體中文](https://github.com/SmallYuanSY/LocalizeLimbusCompany) | [Русский](https://github.com/Crescent-Corporation/LimbusCompanyBusRUS) | [Français](https://github.com/Eden-Office/LimbusCompanyBusFR) | [ภาษาไทย](https://github.com/1ookilo/LocalizeLimbusCompanyTH) | English
 </div>
 
-# Install[![Download](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/total.svg?label=Download)](../../../releases)
-[![Version](https://img.shields.io/github/release/LocalizeLimbusCompany/LocalizeLimbusCompany.svg?label=Version)![Download](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/latest/total.svg?label=Download)](../../../releases/latest)
+# Install
 ### 0. Install [.NET 6.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/sdk-6.0.406-windows-x64-installer)
 ### 1. Install BepInEx
    - Download the [BepInEx](https://github.com/LocalizeLimbusCompany/BepInEx_For_LLC)
