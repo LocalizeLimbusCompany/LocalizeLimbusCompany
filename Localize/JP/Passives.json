@@ -855,13 +855,12 @@
     {
       "id": 1120702,
       "name": "銃弾は高いんだって",
-      "desc": "<style=\"highlight\">- 常時適用 : 弾丸7 保有</style>\n- <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">出血</color></link></u>の付与された対象に表面的中時、<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>を得る。(最大4)\n<style=\"highlight\">- 弾丸 を消耗するコイン的中時、<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>を全て消耗し、ダメージ量の(25 × 消耗した<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>)%分追加ダメージを与える。</style>\n- <sprite name=\"Bullet\"<color=#a16a3b><u><link=\"Bullet\">弾丸</color></link></u>がない場合、代わりにクリティカル的中時に<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>を全て消耗し、(5 × 消耗した<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>)%分追加ダメージを与える"
+      "desc": "<style=\"highlight\">- 常時適用 : 弾丸7 保有</style>\n- <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">出血</color></link></u>の付与された対象に表面的中時、<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>を得る。(最大4)\n<style=\"highlight\">- 弾丸 を消耗するコイン的中時、<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>を全て消耗し、ダメージ量の(25 × 消耗した<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>)%分追加ダメージを与える。</style>\n- <sprite name=\"Bullet\"><color=#a16a3b><u><link=\"Bullet\">弾丸</color></link></u>がない場合、代わりにクリティカル的中時に<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>を全て消耗し、(5 × 消耗した<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>)%分追加ダメージを与える"
     },
     {
       "id": 1120721,
       "name": "風穴",
-      "desc": "<sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">呼吸</color></link></u>を最も多く保有する味方1名が敵討伐時、次のターンに貫通ダメージ量増加 1を得る。(1ターンにつき1回)"
-    },
+      "desc": "<sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">呼吸</color></link></u>を最も多く保有する味方1名が敵討伐時、次のターンに[PenetrateDamageUp]1を得る。(1ターンにつき1回)"    },
     {
       "id": 1040601,
       "name": "ヤ・切",
@@ -1206,13 +1205,61 @@
     {
       "id": 1070811,
       "name": "厳重な立会い",
-      "desc": "対象の[Vibration]威力6につき、ダメージ量 +10% (最大30%)\n自分のスキル効果によって[Vibration_Collapse]変換時、対象へ[VibrationExplosion]発生",
+      "desc": "対象の[Vibration]威力6につき、ダメージ量 +10％(最大30%)\n自分のスキル効果で[Vibration_Collapse]変換時、対象に[VibrationExplosion]が発動",
       "summary": ""
     },
     {
       "id": 1070821,
       "name": "義務履行の確認",
       "desc": "速度が最も高い味方1名の[Vibration]威力、回数を付与するスキルのマッチ威力 +1",
+      "summary": ""
+    },
+    {
+      "id": 1050901,
+      "name": "時間稼ぎ",
+      "desc": "[Burst]を持つ対象のマッチ進行時、マッチ威力 +1",
+      "summary": "[Burst]を持つ対象のマッチ進行時、マッチ威力 +1"
+    },
+    {
+      "id": 1050921,
+      "name": "俺が責任を取る",
+      "desc": "速度が最も高い味方1名が、[Burst]が6以上付与された対象に攻撃的中時に[AttackDown]1を付与(敵1体につき, 1ターンあたり最大3)",
+      "summary": "[Burst]が6以上付与された対象に攻撃的中時、[AttackDown]1を付与"
+    },
+    {
+      "id": 1050931,
+      "name": "俺が責任を取る",
+      "desc": "速度が最も高い味方1名が、[Burst]が3以上付与された対象に攻撃的中時に[AttackDown]1を付与(敵1体につき, 1ターンあたり最大3)",
+      "summary": "[Burst]が3以上付与された対象に攻撃的中時、[AttackDown]1を付与"
+    },
+    {
+      "id": 1110801,
+      "name": "奥様の声が…！",
+      "desc": "- 精神力が-25未満の対象とマッチ進行時にマッチ威力 +1, ダメージ量 +10％\n- [EchoOfMansion]がある対象への与ダメージ量 +15%\n- 全コインが残っている状態でマッチ勝利時に精神力を10回復。精神力が既に最大なら、次のターンに[AttackUp]2を得る(1ターンにつき2回)",
+      "summary": "精神力が-低い対象とマッチ進行時にマッチ威力 +1, ダメージ量 +10％\n対象に[EchoOfMansion]あれば与ダメージ量 +15%\nマッチ勝利時に精神力を回復"
+    },
+    {
+      "id": 1110811,
+      "name": "奥様の声が…！",
+      "desc": "- 精神力が0未満の対象とマッチ進行時にマッチ威力 +1, ダメージ量 +30％\n- [EchoOfMansion]がある対象への与ダメージ量 +30%\n- 全コインが残っている状態でマッチ勝利時に精神力を10回復。精神力が既に最大なら、次のターンに[AttackUp]3を得る(1ターンにつき2回)",
+      "summary": "精神力が-低い対象とマッチ進行時にマッチ威力 +1, ダメージ量 +20％\n対象に[EchoOfMansion]あれば与ダメージ量 +30%\nマッチ勝利時に精神力を回復"
+    },
+    {
+      "id": 1110821,
+      "name": "バトラー教育",
+      "desc": "精神力が最も高い味方1名が、精神力-25値未満の対象とマッチ進行時にマッチ威力 +1",
+      "summary": "精神力-25値未満の対象とマッチ進行時にマッチ威力 +1"
+    },
+    {
+      "id": 1110831,
+      "name": "バトラー教育",
+      "desc": "精神力が最も高い味方1名が、精神力-25値未満の対象とマッチ進行時にマッチ威力 +1",
+      "summary": "精神力-25値未満の対象とマッチ進行時にマッチ威力 +1"
+    },
+    {
+      "id": 1050911,
+      "name": "時間稼ぎ",
+      "desc": "[Burst]を持つ対象とマッチ進行時、マッチ威力 +1\n対象の[Burst]回数が5以上なら、マッチ威力 +2",
       "summary": ""
     }
   ]

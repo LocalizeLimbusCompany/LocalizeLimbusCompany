@@ -302,12 +302,12 @@ namespace LimbusLocalize
         [HarmonyPrefix]
         private static void LoadRemote(ref LOCALIZE_LANGUAGE lang)
            => lang = LOCALIZE_LANGUAGE.EN;
-        [HarmonyPatch(typeof(StoryAssetLoader), nameof(StoryAssetLoader.Init))]
+        [HarmonyPatch(typeof(StoryData), nameof(StoryData.Init))]
         [HarmonyPostfix]
-        private static void StoryDataInit(StoryAssetLoader __instance)
+        private static void StoryDataInit(StoryData __instance)
         {
             foreach (ScenarioAssetData scenarioAssetData in JsonUtility.FromJson<ScenarioAssetDataList>(LLC_Manager.Localizes["NickName"]).assetData)
-                __instance._modelAssetMap[scenarioAssetData.name] = scenarioAssetData;
+                __instance._modelAssetMap._modelAssetMap[scenarioAssetData.name] = scenarioAssetData;
         }
         [HarmonyPatch(typeof(LoginSceneManager), nameof(LoginSceneManager.SetLoginInfo))]
         [HarmonyPostfix]

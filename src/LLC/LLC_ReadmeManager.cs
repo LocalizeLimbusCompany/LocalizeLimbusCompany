@@ -33,6 +33,15 @@ namespace LimbusLocalize
                         LCB_LLCMod.OpenGamePath();
                         Application.OpenURL(LCB_LLCMod.LLCLink + "/issues?q=is:issue");
                     }
+                },
+                {
+                    "Action_AprilFools",()=>
+                    {
+                        List<Element> elements = new();
+                        elements.Add(new Element(ELEMENT_TYPE.ITEM,2,300));
+                        SingletonBehavior<UIController>.Instance.GetPopup(MAINUI_POPUP_TYPE.ELEMENTLIST).Cast<ElementListUIPopup>()
+                        .SetDataOpen("未获得",elements);
+                    }
                 }
             };
         }
