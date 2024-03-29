@@ -629,6 +629,193 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1110801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "敲击",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "敲击",
+          "desc": "[WhenUse] 若目标的沉沦 强度不低于7级，则使本技能的硬币威力+1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "敲击",
+          "desc": "[WhenUse] 若目标的沉沦 强度不低于5级，则使本技能的硬币威力+1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "掸尘",
+          "desc": "[WinDuel] 对目标施加1层沉沦 ",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级沉沦 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "掸尘",
+          "desc": "[WinDuel] 对目标施加2层沉沦 ",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级沉沦 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "掸尘",
+          "desc": "[WhenUse] 若目标的沉沦 强度不低于5级，则使本技能的硬币威力+1\n[WinDuel] 对目标施加2层沉沦 ",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级沉沦 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110803,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "遵夫人之命",
+          "desc": "[WinDuel] 对目标施加3层沉沦 ",
+          "coinlist": [
+            {},
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加3层山庄的回响 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标带有山庄的回响 ，则对目标额外造成相当于其沉沦 强度一半的忧郁伤害（最多20点）"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "遵女主人之命",
+          "desc": "[WhenUse] 若目标的沉沦 强度不低于7级，则使本技能的硬币威力+1\n[WinDuel] 对目标施加3层沉沦 ",
+          "coinlist": [
+            {},
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加3层山庄的回响 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标带有山庄的回响 ，则对目标额外造成相当于其沉沦 强度的忧郁伤害（最多30点）"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110804,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "何等失礼…！",
+          "desc": "[OnSucceedEvade] 使目标增加1级沉沦 强度（每回合最多3级）",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "何等失礼…！",
+          "desc": "[OnSucceedEvade] 使目标增加1级沉沦 强度（每回合最多6级）",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }
