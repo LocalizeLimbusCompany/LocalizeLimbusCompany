@@ -876,7 +876,7 @@
                   "desc": "[OnSucceedAttack] 下回合对目标施加2层麻痹 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若自身的速度值高于目标至少3点，则重复使用本硬币（1次）"
+                  "desc": "[OnSucceedAttack] 若自身的速度值高于目标至少3点，则重复使用本技能（1次）"
                 }
               ]
             }
@@ -1130,7 +1130,7 @@
         {
           "level": 1,
           "name": "不速之客处理法",
-          "desc": "[WhenUse] 若自身的速度值高于目标至少3点，则重复使用本硬币（1次）",
+          "desc": "[WhenUse] 若自身的速度值高于目标至少3点，则重复使用本技能（最多1次）",
           "coinlist": [
             {
               "coindescs": [
@@ -1175,7 +1175,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "赐你以箱",
+          "name": "授予箱子",
           "desc": "[WhenUse] 若自身的速度值高于目标至少3点，则使本技能的拼点威力+2\n[WinDuel] 使自身恢复10点理智值",
           "coinlist": [
             {
@@ -1304,7 +1304,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标的沉沦 强度不低于8级，则重复使用本硬币（1次）"
+                  "desc": "[OnSucceedAttack] 若目标的沉沦 强度不低于8级，则重复使用本硬币（最多1次）"
                 },
                 {
                   "desc": "[OnSucceedAttackHead] 对目标施加4层防御等级降低 与1层易损 "
@@ -1420,7 +1420,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标的沉沦 层数不低于4层，则重复使用本硬币（1次）"
+                  "desc": "[OnSucceedAttack] 若目标的沉沦 层数不低于4层，则重复使用本硬币（最多1次）"
                 },
                 {
                   "desc": "[OnSucceedAttackHead] 下回合对目标施加4层攻击等级降低 与1层麻痹 "
@@ -1542,7 +1542,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加2层山庄的回响 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层[EchoOfMansion]"
                 },
                 {
                   "desc": "[OnSucceedAttack] 使目标增加8级沉沦 强度"
