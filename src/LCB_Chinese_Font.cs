@@ -200,6 +200,7 @@ namespace LimbusLocalize
             tm._mirrorDungeonEgoGiftLockedDescList.Init(romoteLocalizeFileList.MirrorDungeonEgoGiftLockedDesc);
             tm._mirrorDungeonEnemyBuffDescList.Init(romoteLocalizeFileList.MirrorDungeonEnemyBuffDesc);
             tm._iapStickerText.Init(romoteLocalizeFileList.IAPSticker);
+            tm._danteAbilityDataList.Init(romoteLocalizeFileList.DanteAbility);
 
             tm._abnormalityEventCharDlg.AbEventCharDlgRootInit(romoteLocalizeFileList.abnormalityCharDlgFilePath);
 
@@ -302,12 +303,12 @@ namespace LimbusLocalize
         [HarmonyPrefix]
         private static void LoadRemote(ref LOCALIZE_LANGUAGE lang)
            => lang = LOCALIZE_LANGUAGE.EN;
-        [HarmonyPatch(typeof(StoryData), nameof(StoryData.Init))]
+        [HarmonyPatch(typeof(StoryAssetLoader), nameof(StoryAssetLoader.Init))]
         [HarmonyPostfix]
-        private static void StoryDataInit(StoryData __instance)
+        private static void StoryDataInit(StoryAssetLoader __instance)
         {
             foreach (ScenarioAssetData scenarioAssetData in JsonUtility.FromJson<ScenarioAssetDataList>(LLC_Manager.Localizes["NickName"]).assetData)
-                __instance._modelAssetMap._modelAssetMap[scenarioAssetData.name] = scenarioAssetData;
+                __instance._modelAssetMap[scenarioAssetData.name] = scenarioAssetData;
         }
         [HarmonyPatch(typeof(LoginSceneManager), nameof(LoginSceneManager.SetLoginInfo))]
         [HarmonyPostfix]
