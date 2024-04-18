@@ -1365,8 +1365,7 @@
     {
       "id": "Vibration_Collapse",
       "name": "Tremor - Decay",
-      "desc": "Lose 1 Defense Level for every 4 Tremor Potency on self\nWhen Hit by Skills that trigger Tremor Burst, raise the Stagger Threshold by the effect's Potency\nTurn End: reduce the Count by 1\n(Interacts the same way as normal Tremor does to effects that raises or reduces Tremor Potency/Count)",
-      "summary": "Lose 1 Defense Level for every 4 Tremor Potency on self\nRaise Stagger Threshold by {0}"
+      "desc": "Lose 1 Defense Level for every 4 Tremor Potency on self\nWhen Hit by Skills that trigger Tremor Burst, raise the Stagger Threshold by the effect's Potency\nTurn End: reduce the Count by 1\n(Interacts the same way as normal Tremor does to effects that raises or reduces Tremor Potency/Count)"
     },
     {
       "id": "EchoOfMansion",
@@ -1386,20 +1385,26 @@
     {
       "id": "VibrationCrack",
       "name": "Tremor - Fracture",
-      "desc": "- When Staggered, and when the sum of Tremor Potency and Count adds up to 20 or higher, raise Stagger Level by 1\n- Cannot exceed maximum Stagger Level with this effect",
-      "summary": ""
+      "desc": "- When Staggered, and when the sum of Tremor Potency and Count adds up to 20 or higher, raise Stagger Level by 1\n- Cannot exceed maximum Stagger Level with this effect\n\nWhen hit by attacks that trigger Tremor Burst, raise the Stagger Threshold by the effect's Potency\nTurn End: reduce the Count by 1\n(Interacts the same way as normal Tremor does to effects that raises or reduces Tremor Potency/Count)"
     },
     {
       "id": "ForwardToTheKing",
       "name": "Before the King",
-      "desc": "When this unit's attack with 1 Atk Weight hits, inflict 50% of the damage dealt as (Affinity of the Attack Skill used to hit) damage against 2 enemies with the least HP that can be attacked.",
+      "desc": "When this unit's attack with 1 Atk Weight hits, inflict 50% of the resulting Coin value On Hit as (Affinity/Attack Type of the Attack Skill used to hit) damage against 2 other attackable enemies with the least HP.",
       "summary": ""
     },
     {
       "id": "ForwardToTheBoundKing",
       "name": "Before the King in Binds",
-      "desc": "When this unit's attack with 1 Atk Weight hits, inflict 100% of the damage dealt as (Affinity of the Attack Skill used to hit) damage against 2 enemies with the least HP that can be attacked.",
+      "desc": "When this unit's attack with 1 Atk Weight hits, inflict 100% of the resulting Coin value On Hit as (Affinity/Attack Type of the Attack Skill used to hit) damage against 2 other attackable enemies with the least HP",
       "summary": ""
+    },
+    {
+      "id": "MarkOfButler",
+      "name": "B.M.",
+      "desc": "Enhances Edgar Family Chief Butler Ryōshū Skills against targets with this effect.\nTurn End: reduce the Count by 1",
+      "summary": "",
+      "undefined": "-"
     }
   ]
 }

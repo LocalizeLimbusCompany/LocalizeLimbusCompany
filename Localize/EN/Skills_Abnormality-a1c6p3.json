@@ -169,17 +169,11 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Inflict 1 [Vulnerable]"
-                },
-                {
-                  "desc": "[OnSucceedAttack] Inflict 2 [Paralysis] next turn."
                 }
               ]
             },
             {
               "coindescs": [
-                {
-                  "desc": "[OnSucceedAttack] Inflict 1 [Binding] next turn"
-                },
                 {
                   "desc": "[OnSucceedAttack] Gain 1 Attack Power Up next turn"
                 },
@@ -224,12 +218,12 @@
         {
           "level": 1,
           "name": "Bodysack",
-          "desc": "[WhenUse] Base Power +1 for every 4 [Laceration] on target (max 3)\n[WhenUse] Clash Power +1 for every negative effect on target (max 2)\n[DefeatDuel] Gain 10 [DefenseDown]\n[DefeatDuel] Gain 1 Fettered Woe",
+          "desc": "[WhenUse] Base Power +1 for every 5 [Laceration] on target (max 3)\n[WhenUse] Clash Power +1 for every negative effect on target (max 2)\n[DefeatDuel] Gain 20 [DefenseDown]\n[DefeatDuel] Gain 1 Fettered Woe",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 [DefenseDown]"
+                  "desc": "[OnSucceedAttack] Inflict 1 [DefenseDown]"
                 },
                 {
                   "desc": "[OnSucceedAttackHead] If the target has 8+ [Laceration], the last Coin deals +30% more damage"
@@ -239,7 +233,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 [DefenseDown]"
+                  "desc": "[OnSucceedAttack] Inflict 1 [DefenseDown]"
                 },
                 {
                   "desc": "[OnSucceedAttackHead] If the target has 8+ [Laceration], the last Coin deals +30% more damage"
@@ -249,7 +243,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 [DefenseDown]"
+                  "desc": "[OnSucceedAttack] Inflict 1 [DefenseDown]"
                 },
                 {
                   "desc": "[OnSucceedAttackHead] If the target has 8+ [Laceration], the last Coin deals +30% more damage"
@@ -259,10 +253,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Deal 20 SP damage"
-                },
-                {
-                  "desc": "[OnSucceedAttack] If this Skill flips all Heads, inflict 5 [Vulnerable] next turn"
+                  "desc": "[OnSucceedAttack] If this Skill flips all Heads, inflict 2 [Vulnerable] next turn"
                 }
               ]
             }
@@ -276,7 +267,7 @@
         {
           "level": 1,
           "name": "Lunacy of the Frenzied Wolf",
-          "desc": "[WhenUse] Base Power +1 for every 4 [Laceration] on target (max 4)\n[WhenUse] Clash Power +1 for every negative effect on target (max 2)\n[DefeatDuel] If the target has [AaCfPcBg], raise this unit's Stagger Threshold by 100 next turn. If this unit does not have a Stagger threshold, create a new Stagger threshold at 0.",
+          "desc": "[WhenUse] Base Power +1 for every 5 [Laceration] on target (max 4)\n[WhenUse] Clash Power +1 for every negative effect on target (max 2)\n[DefeatDuel] If the target has [AaCfPcBg], raise this unit's Stagger Threshold by 100 next turn. If this unit does not have a Stagger threshold, create a new Stagger threshold at 0.",
           "coinlist": [
             {
               "coindescs": [
@@ -301,9 +292,6 @@
             },
             {
               "coindescs": [
-                {
-                  "desc": "[OnSucceedAttack] Deal 15 SP damage"
-                },
                 {
                   "desc": "[OnSucceedAttack] If every Coin of this Skill hits, reuse this Coin (1 time max)"
                 }
@@ -438,7 +426,7 @@
         {
           "level": 1,
           "name": "Overwhelm Interloper",
-          "desc": "!",
+          "desc": "[WhenUse] If this unit's Speed is faster than the target's, Clash Power +2",
           "coinlist": [
             {
               "coindescs": [
@@ -765,7 +753,7 @@
         {
           "level": 1,
           "name": "Ride for Death, Dullahan",
-          "desc": "[CantDuel]\n[WhenUse] If the target has [AaCfPbBb], deal -50% less damage",
+          "desc": "[CantDuel]\n[WhenUse] If the target has [AaCfPbBb], deal -100% less damage",
           "coinlist": [
             {},
             {
@@ -911,7 +899,7 @@
         {
           "level": 1,
           "name": "You’ll Get Shoved In This Coffin Too",
-          "desc": "[CantDuel]\n[StartBattle] +100% to the amount of Stagger Threshold raised from [VibrationExplosion] and any other Stagger Threshold raising effects\n[WhenUse] Apply 3 [Enhancement] and 3 [AttackDmgUp] to all allies, including this unit",
+          "desc": "[CantDuel]\n[StartBattle] +100% to the amount of Stagger Threshold raised from [VibrationExplosion] and any other Stagger Threshold raising effects\n[WhenUse] Apply 3 [Enhancement] and 3 [AttackDmgUp] to all allies, including this unit next turn",
           "coinlist": [
             {
               "coindescs": [
@@ -1017,7 +1005,7 @@
         {
           "level": 1,
           "name": "Sorrow and Lament In The Erlking's Wake.",
-          "desc": "[CantChangeTarget]",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
@@ -1076,7 +1064,7 @@
         {
           "level": 1,
           "name": "It's All Pointless",
-          "desc": "[StartBattle] Gain [Thorn]",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
@@ -1220,7 +1208,7 @@
         {
           "level": 1,
           "name": "Meaningless Writhing",
-          "desc": "[CantDuel]",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [

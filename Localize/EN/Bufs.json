@@ -1868,25 +1868,32 @@
     {
       "id": "VibrationCrack",
       "name": "Tremor - Fracture",
-      "desc": "- When Staggered, and when the sum of Tremor Potency and Count adds up to 20 or higher, gain another Stagger Threshold\n- Cannot exceed maximum Stagger Threshold level with this effect",
-      "summary": ""
+      "desc": "- When Staggered, and when the sum of Tremor Potency and Count adds up to 20 or higher, raise Stagger Level by 1\n- Cannot exceed maximum Stagger Level with this effect\nWhen hit by attacks that trigger Tremor Burst, raise the Stagger Threshold by {0}. Lasts {1} turns\n(Interacts the same way as normal Tremor does to effects that raises or reduces Tremor Potency/Count)",
+      "summary": "When Staggered, and when the sum of Tremor Potency and Count adds up to 20 or higher, raise Stagger Level by 1\nRaise Stagger Threshold by {0}"
     },
     {
       "id": "ForwardToTheKing",
       "name": "Before the King",
-      "desc": "On Hit, inflict 50% of the damage dealt as (Affinity of the Attack Skill used to hit) damage against 2 enemies with the least HP that can be attacked.",
+      "desc": "On Hit, inflict 50% of the resulting Coin value On Hit as (Affinity/Attack Type of the Attack Skill used to hit) damage against 2 other attackable enemies with the least HP.",
       "summary": ""
     },
     {
       "id": "ForwardToTheBoundKing",
       "name": "Before the King in Binds",
-      "desc": "On Hit, inflict 100% of the damage dealt as (Affinity of the Attack Skill used to hit) damage against 2 enemies with the least HP that can be attacked.",
+      "desc": "On Hit, inflict 100% of the resulting Coin value On Hit as (Affinity/Attack Type of the Attack Skill used to hit) damage against 2 other attackable enemies with the least HP.",
       "summary": ""
     },
     {
       "id": "Switch_Vibration",
       "name": "Amplitude Conversion",
       "desc": "Converts Tremor or already converted Tremor on target to a different type of Tremor.\nPotency and Count values do not change over the conversion."
+    },
+    {
+      "id": "MarkOfButler",
+      "name": "B.M.",
+      "desc": "Enhances Edgar Family Chief Butler Ryōshū Skills against targets with this effect.\nReduced by 1 at Turn End",
+      "summary": "",
+      "undefined": "-"
     }
   ]
 }

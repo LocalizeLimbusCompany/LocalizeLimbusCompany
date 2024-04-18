@@ -169,17 +169,11 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] [Vulnerable]1を付与"
-                },
-                {
-                  "desc": "[OnSucceedAttack] 次のターンに[Paralysis]2を付与."
                 }
               ]
             },
             {
               "coindescs": [
-                {
-                  "desc": "[OnSucceedAttack] 次のターンに[Binding]1を付与"
-                },
                 {
                   "desc": "[OnSucceedAttack] 次のターンに攻撃威力増加 1を得る"
                 },
@@ -224,12 +218,12 @@
         {
           "level": 1,
           "name": "死体袋",
-          "desc": "[WhenUse] 対象の[Laceration]4につき、基本威力 +1(最大3)\n[WhenUse] 対象のマイナス効果数だけ、マッチ威力 +1(最大2)\n[DefeatDuel] [DefenseDown]10を得る\n[DefeatDuel] 解放されない哀しみ 1を得る",
+          "desc": "[WhenUse] 対象の[Laceration]5につき、基本威力 +1(最大3)\n[WhenUse] 対象のマイナス効果数だけ、マッチ威力 +1(最大2)\n[DefeatDuel] [DefenseDown]20を得る\n[DefeatDuel] 解放されない哀しみ 1を得る",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] [DefenseDown]2を付与"
+                  "desc": "[OnSucceedAttack] [DefenseDown]1を付与"
                 },
                 {
                   "desc": "[OnSucceedAttackHead] 対象の[Laceration]が8以上なら、最後のコインダメージ量 +30%"
@@ -239,7 +233,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] [DefenseDown]2を付与"
+                  "desc": "[OnSucceedAttack] [DefenseDown]1を付与"
                 },
                 {
                   "desc": "[OnSucceedAttackHead] 対象の[Laceration]が8以上なら、最後のコインダメージ量 +30%"
@@ -249,7 +243,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] [DefenseDown]2を付与"
+                  "desc": "[OnSucceedAttack] [DefenseDown]1を付与"
                 },
                 {
                   "desc": "[OnSucceedAttackHead] 対象の[Laceration]が8以上なら、最後のコインダメージ量 +30%"
@@ -259,10 +253,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 精神力に20ダメージ"
-                },
-                {
-                  "desc": "[OnSucceedAttack] このスキルの前金が表面なら、次のターンに[Vulnerable]5を付与"
+                  "desc": "[OnSucceedAttack] このスキルの全コインが表面なら、次のターンに[Vulnerable]2を付与"
                 }
               ]
             }
@@ -276,7 +267,7 @@
         {
           "level": 1,
           "name": "狂った狼の狂気",
-          "desc": "[WhenUse] 対象の[Laceration]4につき、基本威力 +1(最大4)\n[WhenUse] 対象のマイナス効果数だけ、マッチ威力 +1(最大2)\n[DefeatDuel] 対象が[AaCfPcBg]を持っているなら、次のターンに100だけ混乱区間を前進。混乱数値がない場合は0に混乱区間を作る。",
+          "desc": "[WhenUse] 対象の[Laceration]5につき、基本威力 +1(最大4)\n[WhenUse] 対象のマイナス効果数だけ、マッチ威力 +1(最大2)\n[DefeatDuel] 対象が[AaCfPcBg]を持っているなら、次のターンに100だけ混乱区間を前進。混乱数値がない場合は0に混乱区間を作る。",
           "coinlist": [
             {
               "coindescs": [
@@ -301,9 +292,6 @@
             },
             {
               "coindescs": [
-                {
-                  "desc": "[OnSucceedAttack] 精神力に15ダメージ"
-                },
                 {
                   "desc": "[OnSucceedAttack] このスキルの全コインが的中したなら、このコインを再使用(最大1回)"
                 }
@@ -525,7 +513,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 次のターンに [Agility]1を得る"
+                  "desc": "[OnSucceedAttack] 次のターンに[Agility]1を得る"
                 },
                 {
                   "desc": "[OnSucceedAttack] 対象のマイナス効果が4以上なら、ダメージ量の30%分斬撃ダメージ"
@@ -765,7 +753,7 @@
         {
           "level": 1,
           "name": "死ぬまで走れ、デュラハンよ",
-          "desc": "[CantDuel]\n[WhenUse] 対象に[AaCfPbBb]があれば、ダメージ量 -50%",
+          "desc": "[CantDuel]\n[WhenUse] 対象に[AaCfPbBb]があれば、ダメージ量 -100%",
           "coinlist": [
             {},
             {
@@ -1017,7 +1005,7 @@
         {
           "level": 1,
           "name": "魔王の通り道に残るは、哀しみと絶叫のみ",
-          "desc": "[CantChangeTarget]",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
@@ -1076,7 +1064,7 @@
         {
           "level": 1,
           "name": "無駄よ",
-          "desc": "[StartBattle] [Thorn]を得る",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
@@ -1220,7 +1208,7 @@
         {
           "level": 1,
           "name": "無意味なあがき",
-          "desc": "[CantDuel]",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
@@ -1292,7 +1280,7 @@
                   "desc": "[OnSucceedAttack] [AttackUp]1を得る"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 次のターンに [Agility]1を得る"
+                  "desc": "[OnSucceedAttackHead] 次のターンに[Agility]1を得る"
                 }
               ]
             }
@@ -1340,7 +1328,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 次のターンに [Agility]1を得る"
+                  "desc": "[OnSucceedAttack] 次のターンに[Agility]1を得る"
                 },
                 {
                   "desc": "[OnSucceedAttack] [Vulnerable]1を付与"

@@ -115,7 +115,7 @@ namespace LimbusLocalize
 
         [HarmonyPatch(typeof(TextMeshProMaterialSetter), nameof(TextMeshProMaterialSetter.WriteMaterialProperty))]
         [HarmonyPrefix]
-        public static bool WriteMaterialProperty(TextMeshProMaterialSetter __instance)
+        private static bool WriteMaterialProperty(TextMeshProMaterialSetter __instance)
         {
             if (!__instance._fontMaterialInstance)
                 return false;

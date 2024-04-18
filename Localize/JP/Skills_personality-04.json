@@ -722,6 +722,249 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1040801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "応接道一式 狩り",
+          "desc": "[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [MarkOfButler]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "応接道一式 狩り",
+          "desc": "<style=\"highlight\">対象の速度が自分より3以上低ければ、マッチ威力 +1</style>\n[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [MarkOfButler]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "応接道一式 狩り",
+          "desc": "<style=\"highlight\">対象の速度が自分より低ければ、対象との速度差2につきマッチ威力 +1(最大3)</style>\n[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [MarkOfButler]2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "応接道第七式 捕捉",
+          "desc": "[StartBattle] 自分の[Breath]回数6を消耗して、このスキルの加重値 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [MarkOfButler]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "応接道第七式 捕捉",
+          "desc": "[StartBattle] 自分の[Breath]回数6を消耗して、このスキルの加重値 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]3を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [MarkOfButler]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "応接道第七式 捕捉",
+          "desc": "<style=\"highlight\">メインターゲットの速度が自分より低ければ、対象の速度差2につきマッチ威力 +1(最大3)</style>\n[StartBattle] 自分の[Breath]回数6を消耗し、このスキルの加重値 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]3を得る"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [MarkOfButler]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [MarkOfButler]2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040803,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "応接道第二式 く・へ",
+          "desc": "対象へ[MarkOfButler]があればマッチ威力 +1\n[WhenUse] 自分の[Breath]回数が7増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]5を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] ダメージ量の20%混乱区間を前進 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象が混乱状態なら、クリティカルダメージ量 +20%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [MarkOfButler]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "応接道第二式 く・へ",
+          "desc": "対象へ[MarkOfButler]があればマッチ威力 +1\n<style=\"highlight\">対象の速度が自分より低ければ、対象との速度差2につきコイン威力 +1(最大2)</style>\n[WhenUse] 自分の[Breath]回数が7増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]5を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] ダメージ量の30%混乱区間を前進 "
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [MarkOfButler]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象が混乱状態なら、クリティカルダメージ量 +40% "
+                },
+                {
+                  "desc": "[OnSucceedAttack] [MarkOfButler]2を付与"
+                },
+                {
+                  "desc": "[EnemyKill] [MarkOfButler]があるランダムな対象へ、スキルを1回再使用\n(再使用時は発動しない。[MarkOfButler]がある対象がいない場合は発動しない)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040804,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "呆れた",
+          "desc": "[OnSucceedEvade] 精神力を3回復(1ターンにつき3回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "呆れた",
+          "desc": "[OnSucceedEvade] 精神力を3回復(1ターンにつき<style=\"highlight\">5</style>回)\n<style=\"highlight\">[OnSucceedEvade] 自分の[Breath]回数が1増加 (1ターンにつき5回)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

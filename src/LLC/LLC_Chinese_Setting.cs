@@ -2,6 +2,7 @@
 using HarmonyLib;
 using LocalSave;
 using MainUI;
+using StorySystem;
 using System;
 using TMPro;
 using UnityEngine;
@@ -77,7 +78,7 @@ namespace LimbusLocalize
         }
         [HarmonyPatch(typeof(DateUtil), nameof(DateUtil.TimeZoneOffset), MethodType.Getter)]
         [HarmonyPrefix]
-        public static bool TimeZoneOffset(ref int __result)
+        private static bool TimeZoneOffset(ref int __result)
         {
             if (IsUseChinese.Value)
             {
@@ -88,11 +89,43 @@ namespace LimbusLocalize
         }
         [HarmonyPatch(typeof(DateUtil), nameof(DateUtil.TimeZoneString), MethodType.Getter)]
         [HarmonyPrefix]
-        public static bool TimeZoneString(ref string __result)
+        private static bool TimeZoneString(ref string __result)
         {
             if (IsUseChinese.Value)
             {
                 __result = "CST";
+                return false;
+            }
+            return true;
+        }
+        [HarmonyPatch(typeof(StoryPlayData), nameof(StoryPlayData.GetDialogAfterClearingAllCathy))]
+        [HarmonyPrefix]
+        private static bool GetDialogAfterClearingAllCathy(Scenario curStory, Dialog dialog, ref string __result)
+        {
+            if (IsUseChinese.Value)
+            {
+                __result = dialog.Content;
+                UserDataManager instance = Singleton<UserDataManager>.Instance;
+                if ("P10704".Equals(curStory.ID) && instance != null && instance._unlockCodeData != null && instance._unlockCodeData.CheckUnlockStatus(106) && dialog.Id == 3)
+                {
+                    __result = __result.Replace("凯茜", "■■■■■");
+                }
+                return false;
+            }
+            return true;
+        }
+        [HarmonyPatch(typeof(Util), nameof(Util.GetDlgAfterClearingAllCathy))]
+        [HarmonyPrefix]
+        private static bool GetDlgAfterClearingAllCathy(string dlgId, string originString, ref string __result)
+        {
+            if (IsUseChinese.Value)
+            {
+                __result = originString;
+                UserDataManager instance = Singleton<UserDataManager>.Instance;
+                if ("battle_defeat_10707_1".Equals(dlgId) && instance != null && instance._unlockCodeData != null && instance._unlockCodeData.CheckUnlockStatus(106))
+                {
+                    __result = __result.Replace("凯茜", "■■■■■");
+                }
                 return false;
             }
             return true;
