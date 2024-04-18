@@ -130,7 +130,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "破碎的心",
+          "name": "被撕碎的心",
           "desc": "[WinDuel] 下回合使自身获得3层防御等级提升 ",
           "coinlist": [
             {
@@ -169,17 +169,11 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] 对目标施加1层易损 "
-                },
-                {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加2层麻痹 "
                 }
               ]
             },
             {
               "coindescs": [
-                {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加1层束缚 "
-                },
                 {
                   "desc": "[OnSucceedAttack] 下回合使自身获得1层强壮 "
                 },
@@ -224,12 +218,12 @@
         {
           "level": 1,
           "name": "裹尸袋",
-          "desc": "[WhenUse] 目标每带有4级流血 强度，使本技能的基础威力+1（最多+3）\n[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+1（最多+2）\n[DefeatDuel] 对自身施加10层防御等级降低 \n[DefeatDuel] 对自身施加1层未能释怀的怅惘 ",
+          "desc": "[WhenUse] 目标每带有5级流血 强度，使本技能的基础威力+1（最多+3）\n[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+1（最多+2）\n[DefeatDuel] 对自身施加20层防御等级降低 \n[DefeatDuel] 对自身施加1层未能释怀的怅惘 ",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层防御等级降低 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层防御等级降低 "
                 },
                 {
                   "desc": "[OnSucceedAttackHead] 若目标的流血 强度不低于8级，则使本技能最后一枚硬币造成的伤害+30%"
@@ -239,7 +233,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层防御等级降低 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层防御等级降低 "
                 },
                 {
                   "desc": "[OnSucceedAttackHead] 若目标的流血 强度不低于8级，则使本技能最后一枚硬币造成的伤害+30%"
@@ -249,7 +243,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层防御等级降低 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层防御等级降低 "
                 },
                 {
                   "desc": "[OnSucceedAttackHead] 若目标的流血 强度不低于8级，则使本技能最后一枚硬币造成的伤害+30%"
@@ -259,10 +253,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标造成20点理智伤害"
-                },
-                {
-                  "desc": "[OnSucceedAttack] 若本技能所有硬币朝向均为正面，则下回合对目标施加5层易损 "
+                  "desc": "[OnSucceedAttack] 若本技能所有硬币朝向均为正面，则下回合对目标施加2层易损 "
                 }
               ]
             }
@@ -276,7 +267,7 @@
         {
           "level": 1,
           "name": "狂乱之狼的狂气",
-          "desc": "[WhenUse] 目标每带有4级流血 强度，使本技能的基础威力+1（最多+4）\n[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+1（最多+2）\n[DefeatDuel] 若目标带有[AaCfPcBg]，则使自身的混乱阈值前移100。若自身未拥有混乱阈值，则在0点处生成1条混乱阈值",
+          "desc": "[WhenUse] 目标每带有5级流血 强度，使本技能的基础威力+1（最多+4）\n[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+1（最多+2）\n[DefeatDuel] 若目标带有[AaCfPcBg]，则下回合使自身的混乱阈值前移100。若自身未拥有混乱阈值，则在0点处生成1条混乱阈值",
           "coinlist": [
             {
               "coindescs": [
@@ -301,9 +292,6 @@
             },
             {
               "coindescs": [
-                {
-                  "desc": "[OnSucceedAttack] 对目标造成15点理智伤害"
-                },
                 {
                   "desc": "[OnSucceedAttack] 若本技能的所有硬币全部命中，则重复使用本硬币（最多1次）"
                 }
@@ -765,7 +753,7 @@
         {
           "level": 1,
           "name": "奔向死亡，杜拉汉",
-          "desc": "[CantDuel]\n[WhenUse] 若目标带有爆发的嫉妒 ，则使本技能造成的伤害-50%",
+          "desc": "[CantDuel]\n[WhenUse] 若目标带有爆发的嫉妒 ，则使本技能造成的伤害-100%",
           "coinlist": [
             {},
             {
@@ -1017,7 +1005,7 @@
         {
           "level": 1,
           "name": "魔王所经之处，唯余悲伤与哀鸣",
-          "desc": "[CantChangeTarget]",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
@@ -1076,7 +1064,7 @@
         {
           "level": 1,
           "name": "徒劳",
-          "desc": "[StartBattle] 使自身获得荆棘 ",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
@@ -1132,7 +1120,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 造成相当于其体力上限15%的伤害"
+                  "desc": "[OnSucceedAttack] 对目标造成其体力上限15%的伤害"
                 },
                 {
                   "desc": "[OnSucceedAttack] 对目标施加撕碎的心 "
@@ -1220,7 +1208,7 @@
         {
           "level": 1,
           "name": "无意义的挣扎",
-          "desc": "[CantDuel]",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
