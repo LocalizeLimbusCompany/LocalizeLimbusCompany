@@ -122,10 +122,12 @@ namespace LimbusLocalize
             {
                 __result = originString;
                 UserDataManager instance = Singleton<UserDataManager>.Instance;
-                if ("battle_defeat_10707_1".Equals(dlgId) && instance != null && instance._unlockCodeData != null && instance._unlockCodeData.CheckUnlockStatus(106))
-                {
+                if (instance == null || instance._unlockCodeData == null || !instance._unlockCodeData.CheckUnlockStatus(106))
+                    return false;
+                if ("battle_defeat_10707_1".Equals(dlgId))
                     __result = __result.Replace("凯茜", "■■■■■");
-                }
+                else if ("battle_dead_10704_1".Equals(dlgId))
+                    __result = __result.Replace("凯瑟琳", "■■■■■");
                 return false;
             }
             return true;
