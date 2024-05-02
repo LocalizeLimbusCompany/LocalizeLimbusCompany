@@ -259,6 +259,130 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2090611,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "血色の欲望",
+          "abName": "赤い靴",
+          "desc": "対象の[Laceration]2につきコイン威力 +1(最大6)\n[StartBattle] このスキルのメインターゲットはこのターンの間、[Laceration]回数が減少しない。\n[EndSkill] 3ターンの間、ターン終了時に精神力が10減少。",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Laceration]威力だけ色欲属性ダメージを与える。\n- 色欲共鳴が4以上なら、1.2倍で計算\n(計算時に反映される[Laceration]威力は99を超えない。)",
+                  "summary": "[OnSucceedAttack] 対象の[Laceration]に比例して、色欲属性ダメージ"
+                },
+                {
+                  "desc": "[EnemyKill] このスキルのダメージ、またはコイン効果で敵の残体力以上のダメージを与えた場合、超過分のダメージを敵全体へ配分して与える。\n(集中戦闘の場合、本体の体力を基準に計算)",
+                  "summary": "[EnemyKill] 敵の残体力以上のダメージを与えた場合、超過分のダメージを敵全体へ配分して与える。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "血色の欲望",
+          "abName": "赤い靴",
+          "desc": "対象の[Laceration]2につきコイン威力 +1(最大<style=\"highlight\">9</style>)\n[StartBattle] このスキルのメインターゲットはこのターンの間、[Laceration]回数が減少しない。\n[EndSkill] 3ターンの間、ターン終了時に精神力が10減少。",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] <style=\"highlight\">(対象の[Laceration]威力 × 1.2)</style>だけ色欲属性ダメージを与える。\n- 色欲共鳴が4以上なら、×<style=\"highlight\">1.5</style>で計算\n- 最大色欲完全共鳴数が4以上なら、×<style=\"highlight\">1.8</style>で計算\n(計算時に反映される[Laceration]威力は99を超えない。)",
+                  "summary": "[OnSucceedAttack] 対象の[Laceration]に比例して、色欲属性ダメージ"
+                },
+                {
+                  "desc": "[EnemyKill] このスキルのダメージ、またはコイン効果で敵の残体力以上のダメージを与えた場合、超過分のダメージを敵全体へ配分して与える。\n(集中戦闘の場合、本体の体力を基準に計算)",
+                  "summary": "[EnemyKill] 敵の残体力以上のダメージを与えた場合、超過分のダメージを敵全体へ配分して与える。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "血色の欲望",
+          "abName": "赤い靴",
+          "desc": "対象の[Laceration]2につきコイン威力 +1(最大<style=\"highlight\">13</style>)\n[StartBattle] このスキルのメインターゲットはこのターンの間、[Laceration]回数が減少しない。\n[EndSkill] 3ターンの間、ターン終了時に精神力が10減少。",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] (対象の[Laceration]威力 × 1.2)だけ色欲属性ダメージを与える。\n- 色欲共鳴が4以上なら、×<style=\"highlight\">1.8</style>で計算\n- 最大色欲完全共鳴数が4以上なら、×<style=\"highlight\">2</style>で計算\n(計算時に反映される[Laceration]威力は99を超えない。)",
+                  "summary": "[OnSucceedAttack] 対象の[Laceration]に比例して、色欲属性ダメージ"
+                },
+                {
+                  "desc": "[EnemyKill] このスキルのダメージ、またはコイン効果で敵の残体力以上のダメージを与えた場合、超過分のダメージを敵全体へ配分して与える。\n(集中戦闘の場合、本体の体力を基準に計算)",
+                  "summary": "[EnemyKill] 敵の残体力以上のダメージを与えた場合、超過分のダメージを敵全体へ配分して与える。"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2090621,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "血色の欲望",
+          "abName": "赤い靴",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n[BeforeAttack] (最も多い共鳴数 - 2)だけ攻撃加重値が増加(最大2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 2 + (色欲共鳴数)だけ[Laceration]を付与\n(共鳴数比例の最大[Laceration]付与量 : 4)",
+                  "summary": "[OnSucceedAttack] 2 + 色欲共鳴数だけ[Laceration]を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "血色の欲望",
+          "abName": "赤い靴",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n[BeforeAttack] (最も多い共鳴数 - 2)だけ攻撃加重値が増加(最大2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] <style=\"highlight\">3</style> + (色欲共鳴数)だけ[Laceration]を付与\n(共鳴数比例の最大[Laceration]付与量 : <style=\"highlight\">5</style>)",
+                  "summary": "[OnSucceedAttack] 3 + 色欲共鳴数だけ[Laceration]を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "血色の欲望",
+          "abName": "赤い靴",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n[BeforeAttack] (最も多い共鳴数 - 2)だけ攻撃加重値が増加(最大2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] <style=\"highlight\">4</style> + (色欲共鳴数)だけ[Laceration]を付与\n(共鳴数比例の最大[Laceration]付与量 : <style=\"highlight\">6</style>)",
+                  "summary": "[OnSucceedAttack] 4 + 色欲共鳴数だけ[Laceration]を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が<style=\"highlight\">3</style>増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -201,6 +201,8 @@ namespace LimbusLocalize
             tm._mirrorDungeonEnemyBuffDescList.Init(romoteLocalizeFileList.MirrorDungeonEnemyBuffDesc);
             tm._iapStickerText.Init(romoteLocalizeFileList.IAPSticker);
             tm._danteAbilityDataList.Init(romoteLocalizeFileList.DanteAbility);
+            tm._mirrorDungeonThemeList.Init(romoteLocalizeFileList.MirrorDungeonTheme);
+            tm._unlockCodeList.Init(romoteLocalizeFileList.UnlockCode);
 
             tm._abnormalityEventCharDlg.AbEventCharDlgRootInit(romoteLocalizeFileList.abnormalityCharDlgFilePath);
 

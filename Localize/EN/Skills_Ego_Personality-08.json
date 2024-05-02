@@ -135,6 +135,175 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2080611,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Wingbeat",
+          "abName": "Fairy Festival",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Heal 15% of Max HP on self"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Lose 1~2 SP"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Reuse this Coin (5 times per Skill)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Heal self by 4~8% of damage dealt"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [ShamrockTakeDamageUp]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1~3 [Laceration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Wingbeat",
+          "abName": "Fairy Festival",
+          "desc": "If this Skill's healing exceeds this unit's max HP, redirect the excess healing to 1 ally with the least HP percentage instead",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Heal <style=\"highlight\">18%</style> of Max HP on self"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Lose 1~2 SP"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Reuse this Coin (5 times per Skill)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Heal self by <style=\"highlight\">6~10</style>% of damage dealt"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [ShamrockTakeDamageUp]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1~3 [Laceration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Wingbeat",
+          "abName": "Fairy Festival",
+          "desc": "If this Skill's healing exceeds this unit's max HP, redirect the excess healing to 1 ally with the least HP percentage instead",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Heal <style=\"highlight\">20</style>% of Max HP on self"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Lose 1~2 SP"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Reuse this Coin (5 times per Skill)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Heal self by <style=\"highlight\">8~12</style>% of damage dealt"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [ShamrockTakeDamageUp]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1~<style=\"highlight\">4</style> [Laceration]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2080621,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Wingbeat",
+          "abName": "Fairy Festival",
+          "desc": "[CantIdentify]\nTargets the unit with the least Core HP\n[BeforeAttack] Deal 5% HP damage to at most 5 random other allies\n- Heal HP on self equal to the damage dealt to allies.\n- If this unit dealt damage to an ally, gain 2 [Enhancement] this turn, and gain 2 [Agility] next turn.\n(Once per turn. The 'dealt damage' includes damage dealt to Shield HP. This effect can kill allies.)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Heal self by 10% of damage dealt"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict 1~4 [Laceration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Wingbeat",
+          "abName": "Fairy Festival",
+          "desc": "[CantIdentify]\nTargets the unit with the least Core HP\n<style=\"highlight\">[BeforeAttack] Gain (# of highest Reson. -2) Atk Weight (max 1)</style>\n[BeforeAttack] Deal 5% HP damage to at most 5 random other allies\n- Heal HP on self equal to the damage dealt to allies.\n- If this unit dealt damage to an ally, gain 2 [Enhancement] this turn, and gain 2 [Agility] next turn.\n(Once per turn. The 'dealt damage' includes damage dealt to Shield HP. This effect can kill allies.)\n<style=\"highlight\">[EndSkill] If this Skill's healing exceeds this unit's max HP, gain (excess heal/max HP) x 10 Offense Level Up next turn. (max 3 per turn)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Heal self by <style=\"highlight\">15</style>% of damage dealt"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict <style=\"highlight\">2~5</style> [Laceration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Wingbeat",
+          "abName": "Fairy Festival",
+          "desc": "[CantIdentify]\nTargets the unit with the least Core HP\n[BeforeAttack] Gain (# of highest Reson. -2) Atk Weight (max <style=\"highlight\">2</style>)\n[BeforeAttack] Deal 5% HP damage to at most 5 random other allies\n- Heal HP on self equal to the damage dealt to allies.\n- If this unit dealt damage to an ally, gain 2 [Enhancement] this turn, and gain 2 [Agility] next turn.\n(Once per turn. The 'dealt damage' includes damage dealt to Shield HP. This effect can kill allies.)\n[EndSkill] If this Skill's healing exceeds this unit's max HP, gain (excess heal/max HP) x 10 Offense Level Up next turn. (max <style=\"highlight\">6</style> per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] Heal self by <style=\"highlight\">20</style>% of damage dealt"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict <style=\"highlight\">3~6</style> [Laceration]"
+                },
+                {
+                  "desc": "[EnemyKill] Gain 1[Enhancement] next turn (max 3)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

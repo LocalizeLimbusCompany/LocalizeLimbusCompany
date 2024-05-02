@@ -135,6 +135,175 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2080611,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "羽ばたき",
+          "abName": "妖精の祭典",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の体力を最大値の15%分回復"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 精神力が1～2減少"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] このコインを再使用(スキルごとに最大5回)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の体力をダメージ量の4～8%分回復"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [ShamrockTakeDamageUp]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1～3を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "羽ばたき",
+          "abName": "妖精の祭典",
+          "desc": "このスキル効果で自分の体力上限を超えて回復した場合、超えた回復量だけ現体力の比率が最も低い味方1名の体力を回復する",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の体力を最大値の<style=\"highlight\">18</style>%分回復"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 精神力が1～2減少"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] このコインを再使用(スキルごとに最大5回)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の体力をダメージ量の<style=\"highlight\">6～10</style>%分回復"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [ShamrockTakeDamageUp]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1～3を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "羽ばたき",
+          "abName": "妖精の祭典",
+          "desc": "このスキル効果で自分の体力上限を超えて回復した場合、超えた回復量だけ現体力の比率が最も低い味方1名の体力を回復する",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の体力を最大値の<style=\"highlight\">20</style>%分回復"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 精神力が1～2減少"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] このコインを再使用(スキルごとに最大5回)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の体力をダメージ量の<style=\"highlight\">8～12</style>%分回復"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [ShamrockTakeDamageUp]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1～<style=\"highlight\">4</style>を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2080621,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "羽ばたき",
+          "abName": "妖精の祭典",
+          "desc": "[CantIdentify]\n本体の体力が最も低い対象を攻撃\n[BeforeAttack] 自分を除いたランダムな味方へ最大5名へ、体力最大値の5%分ダメージ。\n- 味方に与えたダメージの合計だけ、自分の体力を回復。\n- 味方にダメージを与えたなら、このターンに[Enhancement]2, 次のターンに[Agility]2を得る。\n(1ターンにつき1回発動。与ダメージにはバリアを含む。この効果でダメージを受けた味方は死亡し得る。)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 自分の体力をダメージ量の10%分回復"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] [Laceration]1～4を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "羽ばたき",
+          "abName": "妖精の祭典",
+          "desc": "[CantIdentify]\n本体の体力が最も低い対象を攻撃\n<style=\"highlight\">[BeforeAttack] (最も多い共鳴数 -2)だけ攻撃加重値が増加(最大1)</style>\n[BeforeAttack] 自分を除いたランダムな味方へ最大5名へ、体力最大値の5%分ダメージ。\n- 味方に与えたダメージの合計だけ、自分の体力を回復。\n- 味方にダメージを与えたなら、このターンに[Enhancement]2, 次のターンに[Agility]2を得る。\n(1ターンにつき1回発動。与ダメージにはバリアを含む。この効果でダメージを受けた味方は死亡し得る。)\n<style=\"highlight\">[EndSkill] このスキル効果で自分の体力上限を超えて回復した場合、(超えた回復量/自分の体力最大値) × 10だけ次のターンに[AttackUp]を得る。(1ターンの最大増加量: 3)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 自分の体力をダメージ量の<style=\"highlight\">15</style>%分回復"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] [Laceration]<style=\"highlight\">2～5</style>を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "羽ばたき",
+          "abName": "妖精の祭典",
+          "desc": "[CantIdentify]\n本体の体力が最も低い対象を攻撃\n[BeforeAttack] (最も多い共鳴数 -2)だけ攻撃加重値が増加(最大<style=\"highlight\">2</style>)\n[BeforeAttack] 自分を除いたランダムな味方へ最大5名へ、体力最大値の5%分ダメージ。\n- 味方に与えたダメージの合計だけ、自分の体力を回復。\n- 味方にダメージを与えたなら、このターンに[Enhancement]2, 次のターンに[Agility]2を得る。\n(1ターンにつき1回発動。与ダメージにはバリアを含む。この効果でダメージを受けた味方は死亡し得る。)\n[EndSkill] このスキル効果で自分の体力上限を超えて回復した場合、(超えた回復量/自分の体力最大値) × 10だけ次のターンに[AttackUp]を得る。(1ターンの最大増加量: <style=\"highlight\">6</style>)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 自分の体力をダメージ量の<style=\"highlight\">20</style>%分回復"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] [Laceration]<style=\"highlight\">3～6</style>を付与"
+                },
+                {
+                  "desc": "[EnemyKill] 次のターンに[Enhancement]1を得る(最大攻撃威力増加量 : 3)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

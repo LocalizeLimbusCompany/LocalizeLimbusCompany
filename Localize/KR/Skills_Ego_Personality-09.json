@@ -259,6 +259,130 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2090611,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "핏빛욕망",
+          "abName": "빨간 구두",
+          "desc": "대상의 [Laceration] 2당 코인 위력 +1 (최대 6)\n[StartBattle] 이 스킬의 메인 타겟은 이번 턴 동안 [Laceration] 횟수가 감소하지 않음.\n[EndSkill] 3턴 동안 턴 종료 시 정신력 10 감소.",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Laceration] 위력만큼 색욕 속성 피해를 줌.\n- 색욕 공명이 4 이상이면, 1.2배로 계산\n(계산 시 반영되는 [Laceration] 위력은 99를 초과할 수 없음.)",
+                  "summary": "[OnSucceedAttack] 대상의 [Laceration]에 비례하여 색욕 속성 피해"
+                },
+                {
+                  "desc": "[EnemyKill] 이 스킬의 피해 또는 코인 효과로 적의 남은 체력을 초과하여 피해를 준 경우, 초과한 피해량을 고정 피해로 적 전체에 나눠서 가함.\n(집중 전투인 경우, 본체의 체력을 기준으로 계산)",
+                  "summary": "[EnemyKill] 초과 피해를 준 경우, 초과 피해량을 적 전체에 나눠서 가함."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "핏빛욕망",
+          "abName": "빨간 구두",
+          "desc": "대상의 [Laceration] 2당 코인 위력 +1 (최대 <style=\"highlight\">9</style>)\n[StartBattle] 이 스킬의 메인 타겟은 이번 턴 동안 [Laceration] 횟수가 감소하지 않음.\n[EndSkill] 3턴 동안 턴 종료 시 정신력 10 감소.",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] <style=\"highlight\">(대상의 [Laceration] 위력 x 1.2)</style>만큼 색욕 속성 피해를 줌.\n- 색욕 공명이 4 이상이면, x<style=\"highlight\">1.5</style>로 계산.\n<style=\"highlight\">- 최대 색욕 완전 공명 수가 4 이상이면, x1.8로 계산.</style>\n(계산 시 반영되는 [Laceration] 위력은 99를 초과할 수 없음.)",
+                  "summary": "[OnSucceedAttack] 대상의 [Laceration]에 비례하여 색욕 속성 피해"
+                },
+                {
+                  "desc": "[EnemyKill] 이 스킬의 피해 또는 코인 효과로 적의 남은 체력을 초과하여 피해를 준 경우, 초과한 피해량을 고정 피해로 적 전체에 나눠서 가함.\n(집중 전투인 경우, 본체의 체력을 기준으로 계산)",
+                  "summary": "[EnemyKill] 초과 피해를 준 경우, 초과 피해량을 적 전체에 나눠서 가함."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "핏빛욕망",
+          "abName": "빨간 구두",
+          "desc": "대상의 [Laceration] 2당 코인 위력 +1 (최대 <style=\"highlight\">13</style>)\n[StartBattle] 이 스킬의 메인 타겟은 이번 턴 동안 [Laceration] 횟수가 감소하지 않음.\n[EndSkill] 3턴 동안 턴 종료 시 정신력 10 감소.",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] (대상의 [Laceration] 위력 x <style=\"highlight\">1.5</style>)만큼 색욕 속성 피해를 줌.\n- 색욕 공명이 4 이상이면, x<style=\"highlight\">1.8</style>로 계산.\n- 최대 색욕 완전 공명 수가 4 이상이면, x<style=\"highlight\">2</style>로 계산.\n(계산 시 반영되는 [Laceration] 위력은 99를 초과할 수 없음.)",
+                  "summary": "[OnSucceedAttack] 대상의 [Laceration]에 비례하여 색욕 속성 피해"
+                },
+                {
+                  "desc": "[EnemyKill] 이 스킬의 피해 또는 코인 효과로 적의 남은 체력을 초과하여 피해를 준 경우, 초과한 피해량을 고정 피해로 적 전체에 나눠서 가함.\n(집중 전투인 경우, 본체의 체력을 기준으로 계산)",
+                  "summary": "[EnemyKill] 초과 피해를 준 경우, 초과 피해량을 적 전체에 나눠서 가함."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2090621,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "핏빛욕망",
+          "abName": "빨간 구두",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] (가장 높은 공명 수 - 2) 만큼 공격 가중치 증가 (최대 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 2 + (색욕 공명 수)만큼 [Laceration] 부여\n(공명 수 비례 최대 [Laceration] 부여량 : 4)",
+                  "summary": "[OnSucceedAttack] 2 + 색욕 공명 수만큼 [Laceration] 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "핏빛욕망",
+          "abName": "빨간 구두",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] (가장 높은 공명 수 - 2) 만큼 공격 가중치 증가 (최대 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] <style=\"highlight\">3</style> + (색욕 공명 수)만큼 [Laceration] 부여\n(공명 수 비례 최대 [Laceration] 부여량 : <style=\"highlight\">5</style>)",
+                  "summary": "[OnSucceedAttack] 3 + 색욕 공명 수만큼 [Laceration] 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 2 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "핏빛욕망",
+          "abName": "빨간 구두",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] (가장 높은 공명 수 - 2) 만큼 공격 가중치 증가 (최대 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] <style=\"highlight\">4</style> + (색욕 공명 수)만큼 [Laceration] 부여\n(공명 수 비례 최대 [Laceration] 부여량 : <style=\"highlight\">6</style>)",
+                  "summary": "[OnSucceedAttack] 4 + 색욕 공명 수만큼 [Laceration] 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 <style=\"highlight\">3</style> 증가"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

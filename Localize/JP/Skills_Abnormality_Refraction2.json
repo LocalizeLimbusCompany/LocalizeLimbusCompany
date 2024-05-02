@@ -1335,7 +1335,7 @@
         {
           "level": 1,
           "name": "6463",
-          "desc": "蓄積された過去 50につきダメージ量 +10%",
+          "desc": "<sprite name=\"AccumulatedPast\"><color=#a16a3b><u><link=\"AccumulatedPast\">蓄積された過去</color></link></u>50につきダメージ量 +10%",
           "coinlist": [
             {
               "coindescs": [
@@ -1354,12 +1354,12 @@
         {
           "level": 1,
           "name": "6753",
-          "desc": "蓄積された過去 50につきダメージ量 +10%",
+          "desc": "<sprite name=\"AccumulatedPast\"><color=#a16a3b><u><link=\"AccumulatedPast\">蓄積された過去</color></link></u>50につきダメージ量 +10%",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 次のターンに麻痺 3を付与"
+                  "desc": "[OnSucceedAttack] 次のターンに[Paralysis]3を付与"
                 }
               ]
             }
@@ -1373,12 +1373,12 @@
         {
           "level": 1,
           "name": "853",
-          "desc": "<sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">呼吸</color></link></u>が5以上のとき、マッチ威力 +1",
+          "desc": "[Breath]が5以上なら、マッチ威力 +1",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 次のターンに麻痺 3を付与"
+                  "desc": "[OnSucceedAttack] 次のターンに[Paralysis]3を付与"
                 }
               ]
             },
@@ -1388,7 +1388,7 @@
                   "desc": "[OnSucceedAttack] ダメージ量の50%混乱区間を前進"
                 },
                 {
-                  "desc": "[OnSucceedAttack] <sprite name=\"AccumulatedPast\"><color=#a16a3b><u><link=\"AccumulatedPast\">蓄積された過去</color></link></u>1につきダメージ量 +1% (最大50%)"
+                  "desc": "[OnSucceedAttack] <sprite name=\"AccumulatedPast\"><color=#a16a3b><u><link=\"AccumulatedPast\">蓄積された過去</color></link></u>1につきダメージ量 +1%(最大50%)"
                 }
               ]
             }
@@ -1402,22 +1402,22 @@
         {
           "level": 1,
           "name": "5384",
-          "desc": "[WhenUse] 全部位が呼吸 3, 呼吸 回数3を得る",
+          "desc": "[WhenUse] 全部位が[Breath]3, [Breath]回数3を得る",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">呼吸</color></link></u>だけ混乱区間を前進"
+                  "desc": "[OnSucceedAttack] [Breath]だけ混乱区間を前進"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 呼吸3につきダメージ量 +20% (最大100%)"
+                  "desc": "[OnSucceedAttack] [Breath]3につきダメージ量 +20% (最大100%)"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 全部位が呼吸4を得る"
+                  "desc": "[OnSucceedAttack] 全部位が[Breath]4を得る"
                 }
               ]
             }
@@ -1431,15 +1431,15 @@
         {
           "level": 1,
           "name": "6475384",
-          "desc": "<sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">呼吸</color></link></u>が7以上のとき、コイン威力 +1",
+          "desc": "[Breath]が7以上なら、コイン威力 +1",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">呼吸</color></link></u>が5以上なら、ダメージ量の50%だけ混乱区間を前進"
+                  "desc": "[OnSucceedAttack] [Breath]が5以上なら、ダメージ量の50%分混乱区間を前進"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 全部位が呼吸 8, 呼吸 回数4を得る"
+                  "desc": "[OnSucceedAttack] 全部位が[Breath]8, [Breath]回数4を得る"
                 }
               ]
             }
@@ -1453,12 +1453,12 @@
         {
           "level": 1,
           "name": "974569A",
-          "desc": "<sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">呼吸</color></link></u>が10以上のとき、スキル威力 +2",
+          "desc": "[Breath]が10以上なら、スキル威力 +2",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] <sprite name=\"AccumulatedPast\"><color=#a16a3b><u><link=\"AccumulatedPast\">蓄積された過去</color></link></u>1につきダメージ量 +1% (最大200%)"
+                  "desc": "[OnSucceedAttack] <sprite name=\"AccumulatedPast\"><color=#a16a3b><u><link=\"AccumulatedPast\">蓄積された過去</color></link></u>1につきダメージ量 +1%(最大200%)"
                 }
               ]
             }

@@ -628,7 +628,7 @@
     {
       "id": "Choice_901001",
       "name": "Spreading Flame",
-      "desc": "Combat Start: Allies without Wrath Affinity Attack Skill take 5 Wrath damage"
+      "desc": "At the start of the next Encounter, allies without Wrath Affinity take 5 Wrath damage"
     },
     {
       "id": "Choice_901007",
@@ -639,7 +639,7 @@
     {
       "id": "Choice_901009",
       "name": "Photopia",
-      "desc": "Combat Start: Skill Final Power -1.",
+      "desc": "All Ally Units lose 1 Skill Final Power for the next Encounter",
       "summary": "Skill Final Power -1"
     },
     {
@@ -1894,6 +1894,41 @@
       "desc": "Enhances Edgar Family Chief Butler Ryōshū Skills against targets with this effect.\nReduced by 1 at Turn End",
       "summary": "",
       "undefined": "-"
+    },
+    {
+      "id": "LibrarianOfHistoryNormal",
+      "name": "Assistant Librarian of History",
+      "desc": "- Skill Slot +1\n- Heal 15 SP at Turn Start\n- Inflicts double the amount of Potency & Count for Burn, Bleed, Rupture, Sinking, and Tremor. (applies to 'Unique' Status effects as well)",
+      "summary": ""
+    },
+    {
+      "id": "PreparedMeat",
+      "name": "Prepared Meat",
+      "desc": "If conditions are met, Fairy Queen kills this unit at Turn End"
+    },
+    {
+      "id": "Hunger",
+      "name": "Hunger",
+      "desc": "Turn End: gain 1 if this unit failed to defeat an ally with Prepared Meat.\nAt 75%- HP, gain 2. At 50%- HP, gain 3.\nTurn Start: lose 1 if this unit defeated an ally with Prepared Meat.\nAt 0 value, gain (# of allies defeated x 3)Attack Power Down and Defense Power Down.",
+      "summary": ""
+    },
+    {
+      "id": "UnstableFeeling",
+      "name": "Volatile Passion",
+      "desc": "- On Hit, inflict 1 Burn\n- If the main target has Burn, Final Power +1\n- If this unit has a Defense Skill chained at Combat Start, inflict 1 Burn per hit against the attacker for the turn\n- Turn End: lose ({0} x 5) SP. (Max SP loss : 40)",
+      "summary": " "
+    },
+    {
+      "id": "LibrarianOfHistoryHard",
+      "name": "Librarian of History",
+      "desc": "- Skill Slot +1\n- Heal 15 SP at Turn Start\n- Inflicts double the amount of Potency & Count for Burn, Bleed, Rupture, Sinking, and Tremor. (applies to 'Unique' Status effects as well)\n- When an enemy is defeated, 2 allies(including this unit) with the least SP heal 25 SP.\n- On Kill, gain +2 E.G.O resource for the Affinity that defeated the enemy; +1 to all E.G.O resources",
+      "summary": ""
+    },
+    {
+      "id": "PriceOfCare",
+      "name": "Bottomless Hunger",
+      "desc": "Fairy Mass Devoured: {0}",
+      "summary": ""
     }
   ]
 }

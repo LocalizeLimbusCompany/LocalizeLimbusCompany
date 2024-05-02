@@ -253,12 +253,12 @@
     {
       "id": 855501,
       "name": "戻ってくる過去",
-      "desc": "<sprite name=\"AccumulatedPast\"><color=#a16a3b><u><link=\"AccumulatedPast\">蓄積された過去</color></link></u>が50以上なら、本体体力が80%以下のときにターンが終了すると<sprite name=\"AccumulatedPast\"><color=#a16a3b><u><link=\"AccumulatedPast\">蓄積された過去</color></link></u>を昇降して体力を200回復。"
+      "desc": "<sprite name=\"AccumulatedPast\"><color=#a16a3b><u><link=\"AccumulatedPastMirror\">蓄積された過去</color></link></u>が50以上なら、本体体力をが80%以下のときターン終了時に<sprite name=\"AccumulatedPast\"><color=#a16a3b><u><link=\"AccumulatedPastMirror\">蓄積された過去</color></link></u>を50消耗することで本体体力を200回復する。"
     },
     {
       "id": 855502,
       "name": "消失した過去",
-      "desc": "胴体部位破壊時、蓄積された過去を全て消耗。\n胴体部位破壊時、次のターンから今回の戦闘の間、胴体部位が全属性と攻撃タイプに対して耐性(0.5)になる。"
+      "desc": "胴体部位破壊時、<sprite name=\"AccumulatedPast\"><color=#a16a3b><u><link=\"AccumulatedPastMirror\">蓄積された過去</color></link></u>を全て消耗。\n胴体部位破壊時、次のターンから今回の戦闘の間、胴体部位が全属性と攻撃タイプに対して耐性(0.5)になる。"
     },
     {
       "id": 855503,
@@ -288,7 +288,7 @@
     {
       "id": 855508,
       "name": "メトロノーム",
-      "desc": "<sprite name=\"AccumulatedPast\"><color=#a16a3b><u><link=\"AccumulatedPast\">蓄積された過去</color></link></u>が奇数なら<sprite name=\"Vulnerable\"><color=#e30000><u><link=\"Vulnerable\">脆弱</color></link></u>と<sprite name=\"AttackDmgUp\"><color=#f8c200><u><link=\"AttackDmgUp\">ダメージ量増加</color></link></u>を3得る\n偶数なら、<sprite name=\"Protection\"><color=#f8c200><u><link=\"Protection\">保護</color></link></u>と<sprite name=\"AttackDmgDown\"><color=#e30000><u><link=\"AttackDmgDown\">ダメージ量減少</color></link></u>を3得る"
+      "desc": "<sprite name=\"AccumulatedPast\"><color=#a16a3b><u><link=\"AccumulatedPastMirror\">蓄積された過去</color></link></u>が奇数なら[Vulnerable]と[AttackDmgUp]を3得る\n偶数なら[Protection]と[AttackDmgDown]を3得る"
     },
     {
       "id": 855601,
