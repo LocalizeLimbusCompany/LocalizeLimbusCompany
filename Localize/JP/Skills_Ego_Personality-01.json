@@ -1,0 +1,113 @@
+{
+  "dataList": [
+    {
+      "id": 2010611,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "過ぎし日",
+          "abName": "在りし日の肖像",
+          "desc": "[EndSkill] [Sinking]6 + (憂鬱共鳴数)を、ランダムに攻撃対象へ分けて付与",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Sinking]が6以上なら、次のターンに[Binding]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "過ぎし日",
+          "abName": "在りし日の肖像",
+          "desc": "[EndSkill] [Sinking]6 + (憂鬱共鳴数)を、ランダムに攻撃対象へ分けて付与",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Sinking]が6以上なら、次のターンに[Binding]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "過ぎし日",
+          "abName": "在りし日の肖像",
+          "desc": "[EndSkill] [Sinking]6 + (憂鬱共鳴数 × <style=\"highlight\">1.5</style>)を、ランダムに攻撃対象へ分けて付与",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Sinking]が6以上なら、次のターンに[Binding]2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2010621,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "過ぎし日",
+          "abName": "在りし日の肖像",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]2を付与。次のターンに[Binding]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Sinking]が6以上なら、次のターンに[Binding]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "過ぎし日",
+          "abName": "在りし日の肖像",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n[BeforeAttack] 憂鬱共鳴数が3以上なら、攻撃加重値 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]2を付与。次のターンに[Binding]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Sinking]が6以上なら、次のターンに[Binding]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "過ぎし日",
+          "abName": "在りし日の肖像",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n[BeforeAttack] 憂鬱共鳴数が3以上なら、攻撃加重値 +1\n[BeforeAttack] 憂鬱共鳴数が5以上なら、攻撃加重値 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]2を付与。次のターンに[Binding]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Sinking]が6以上なら、次のターンに[Binding]2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

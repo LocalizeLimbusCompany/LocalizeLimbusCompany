@@ -1,0 +1,113 @@
+{
+  "dataList": [
+    {
+      "id": 2010611,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "지난날",
+          "abName": "어느 날의 초상",
+          "desc": "[EndSkill] [Sinking] 6 + (우울 공명 수)을 무작위로 공격 대상에게 나눠서 부여",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Sinking]이 6 이상이면, 다음 턴에 [Binding] 1 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "지난날",
+          "abName": "어느 날의 초상",
+          "desc": "[EndSkill] [Sinking] 6 + (우울 공명 수)을 무작위로 공격 대상에게 나눠서 부여",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Sinking]이 6 이상이면, 다음 턴에 [Binding] 2 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "지난날",
+          "abName": "어느 날의 초상",
+          "desc": "[EndSkill] [Sinking] 6 + (우울 공명 수 <style=\"highlight\">x 1.5</style>)을 무작위로 공격 대상에게 나눠서 부여",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Sinking]이 6 이상이면, 다음 턴에 [Binding] 2 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2010621,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "지난날",
+          "abName": "어느 날의 초상",
+          "desc": "[CantIdentify]\n무작위 대상 공격",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking] 2 부여. 다음 턴에 [Binding] 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Sinking]이 6 이상이면, 다음 턴에 [Binding] 1 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "지난날",
+          "abName": "어느 날의 초상",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] 우울 공명 수가 3 이상이면 공격 가중치 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking] 2 부여. 다음 턴에 [Binding] 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Sinking]이 6 이상이면, 다음 턴에 [Binding] 1 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "지난날",
+          "abName": "어느 날의 초상",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] 우울 공명 수가 3 이상이면 공격 가중치 +1\n[BeforeAttack] 우울 공명 수가 5 이상이면 공격 가중치 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking] 2 부여. 다음 턴에 [Binding] 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Sinking]이 6 이상이면, 다음 턴에 [Binding] 2 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,600 @@
+{
+  "dataList": [
+    {
+      "id": 1060601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Energy Cycle",
+          "desc": "[WhenUse] Gain +2 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 Charge Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 Charge Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Energy Cycle",
+          "desc": "[WhenUse] Gain +3 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 Charge Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 Charge Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Energy Cycle",
+          "desc": "[WhenUse] Gain +4 Charge Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 Charge Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 Charge Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Cleanup Support",
+          "desc": "[WhenUse] Gain +2 Charge Count\nClash Power +1 when Shielded",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] At 10+ Charge Count, gain 2 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">Charge Barrier</color></link></u> next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Cleanup Support",
+          "desc": "[WhenUse] Gain +3 Charge Count\nClash Power +2 when Shielded",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +3 Charge Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] At 10+ Charge Count, gain 2 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">Charge Barrier</color></link></u> next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Cleanup Support",
+          "desc": "[WhenUse] Gain +3 Charge Count\nClash Power +2 when Shielded",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +3 Charge Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] At 5+ Charge Count, gain 1 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">Charge Barrier</color></link></u> for every 5 Charge Count next turn (Max 4)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Deploy Charge Barrier",
+          "desc": "[WhenUse] At 10+ Charge Count, consume all Charge Count to apply (Consumed Charge Count / 2) <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">Charge Barrier</color></link></u> (Rounded Down) to 2 allies with the lowest HP percentage",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">Charge Barrier</color></link></u> next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Deploy Charge Barrier",
+          "desc": "[WhenUse] At 10+ Charge Count, consume all Charge Count to apply (Consumed Charge Count / 2) <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">Charge Barrier</color></link></u> (Rounded Down) to 2 allies with the lowest HP percentage",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 Rupture"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">Charge Barrier</color></link></u> next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Guard",
+          "desc": "[WhenUse] Gain 2 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">Charge Barrier</color></link></u> (3 times per turn)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Guard",
+          "desc": "[WhenUse] Gain <style=\"highlight\">3</style> <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">Charge Barrier</color></link></u> (3 times per turn)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060701,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Track",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bleed"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict +1 Bleed Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Track",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Bleed"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict +1 Bleed Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Track",
+          "desc": "At 2+ Haste, Final Power +1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Bleed"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict +1 Bleed Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060702,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Goin' First",
+          "desc": "[WhenUse] Gain 1 Haste next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If this unit is faster than the target, inflict Bleed Count equal to their Speed difference (Max 2)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Goin' First",
+          "desc": "[WhenUse] Gain 2 Haste next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If this unit is faster than the target, inflict Bleed Count equal to their Speed difference (Max 3)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Goin' First",
+          "desc": "At 6+ Speed, Coin Power +1\n[WhenUse] Gain 2 Haste next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If this unit is faster than the target, inflict Bleed Count equal to their Speed difference (Max 4)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060703,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Rampage",
+          "desc": "At 8+ Speed, Coin Power +1\nDeal more damage based on target's missing HP (+0.3% damage per 1% missing HP)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Heal 1 SP per Bleed on target (Max 5)"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 2 Bleed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Rampage",
+          "desc": "At 6+ Speed, Coin Power +1\nDeal more damage based on target's missing HP (+0.5% damage per 1% missing HP)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Heal 1 SP per Bleed on target (Max 10)"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 Bleed"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060704,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Quickness",
+          "desc": "[OnSucceedEvade] Gain 1 Haste next turn (3 times per turn)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Quickness",
+          "desc": "If target has 7+ Bleed, gain +2 Coin Power\n[OnSucceedEvade] Gain 1 Haste next turn (3 times per turn)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Expend Knowledge",
+          "desc": "[WhenUse] Discard 1 Skill of the highest rank in all of this unit's Skill Slots",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict +1 [Sinking] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Expend Knowledge",
+          "desc": "[WhenUse] Discard 1 Skill of the highest rank in all of this unit's Skill Slots\n[WhenUse] At 3+ [KnowledgeExplored], Clash Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict +1 [Sinking] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] At 3+ [KnowledgeExplored], reuse Coin once"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Expend Knowledge",
+          "desc": "[WhenUse] Discard 1 Skill of the highest rank in all of this unit's Skill Slots\n[WhenUse] Clash Power +([KnowledgeExplored] - 1)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict +1 [Sinking] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Reuse Coin ([KnowledgeExplored] - 1) times"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Unveil",
+          "desc": "[WhenUse] Randomly Discard 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 3 [Sinking]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Unveil",
+          "desc": "[WhenUse] Randomly Discard 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots\n[WhenUse] At 3+ [KnowledgeExplored], Coin Power +1",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [Sinking]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Unveil",
+          "desc": "[WhenUse] Randomly Discard 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots\n[WhenUse] Coin Power +([KnowledgeExplored] - 1)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [Sinking]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060803,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Cyclical Knowledge",
+          "desc": "[WhenUse] At 2+ [KnowledgeExplored], gain Coin Power equal to [KnowledgeExplored]\n[WhenUse] Deal +1.5% more damage per [Sinking] on target (Max 15%)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+                },
+                {
+                  "desc": "[EndSkill] If target is Staggered or defeated, heal 10 SP"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Cyclical Knowledge",
+          "desc": "[WhenUse] At 2+ [KnowledgeExplored], gain Coin Power equal to [KnowledgeExplored]\n[WhenUse] Deal +3% more damage per [Sinking] on target (Max 30%)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +4 [Sinking] Count"
+                },
+                {
+                  "desc": "[EndSkill] If target is Staggered or defeated, heal 10 SP"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060804,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Guiding Steps",
+          "desc": "[WhenUse] Randomly Discard 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Guiding Steps",
+          "desc": "[WhenUse] Randomly Discard 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,600 @@
+{
+  "dataList": [
+    {
+      "id": 1060601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "에너지 순환",
+          "desc": "[WhenUse] 자신의 충전 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "에너지 순환",
+          "desc": "[WhenUse] 자신의 충전 횟수 3 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "에너지 순환",
+          "desc": "[WhenUse] 자신의 충전 횟수 4 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "정리 지원",
+          "desc": "[WhenUse] 자신의 충전 횟수 2 증가\n자신에게 보호막이 있을 때 합 위력 +1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 자신의 충전 횟수가 10 이상이면, 다음 턴에 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">충전 역장</color></link></u> 2를 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "정리 지원",
+          "desc": "[WhenUse] 자신의 충전 횟수 3 증가\n자신에게 보호막이 있을 때 합 위력 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 3 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수가 10 이상이면, 다음 턴에 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">충전 역장</color></link></u> 2를 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "정리 지원",
+          "desc": "[WhenUse] 자신의 충전 횟수 3 증가\n자신에게 보호막이 있을 때 합 위력 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수 3 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 충전 횟수가 5 이상이면, 다음 턴에 충전 횟수 5 당 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">충전 역장</color></link></u> 1을 얻음 (최대 4)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "충전 역장 전개",
+          "desc": "[WhenUse] 자신의 충전 횟수가 10 이상이면, 충전 횟수를 전부 소모하여 자신을 포함하여 현재 체력 비율이 낮은 아군 2명에게 (소모한 충전 횟수/2)만큼 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">충전 역장</color></link></u> 부여 (소수점 버림)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 파열 3 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">충전 역장</color></link></u> 2를 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "충전 역장 전개",
+          "desc": "[WhenUse] 자신의 충전 횟수가 10 이상이면, 충전 횟수를 전부 소모하여 자신을 포함하여 현재 체력 비율이 낮은 아군 2명에게 (소모한 충전 횟수/2)만큼 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">충전 역장</color></link></u> 부여 (소수점 버림)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 파열 5 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">충전 역장</color></link></u> 2를 얻음"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "가드",
+          "desc": "[WhenUse] <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">충전 역장</color></link></u> 2를 얻음 (턴 당 최대 3회)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "가드",
+          "desc": "[WhenUse] <sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">충전 역장</color></link></u> <style=\"highlight\">3</style>을 얻음 (턴 당 최대 3회)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060701,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "추적",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 출혈 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 출혈 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "추적",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 출혈 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 출혈 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "추적",
+          "desc": "자신의 신속 이 2 이상이면, 최종 위력 +1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 출혈 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 출혈 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060702,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "먼저 간다",
+          "desc": "[WhenUse] 다음 턴에 신속 1을 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 출혈 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 출혈 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신이 대상보다 속도가 높은 경우, 자신과 대상의 속도 차이만큼 출혈 횟수 증가 (최대 2)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "먼저 간다",
+          "desc": "[WhenUse] 다음 턴에 신속 2를 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 출혈 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 출혈 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신이 대상보다 속도가 높은 경우, 자신과 대상의 속도 차이만큼 출혈 횟수 증가 (최대 3)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "먼저 간다",
+          "desc": "자신의 속도가 6 이상이면, 코인 위력 +1\n[WhenUse] 다음 턴에 신속 2를 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 출혈 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 출혈 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신이 대상보다 속도가 높은 경우, 자신과 대상의 속도 차이만큼 출혈 횟수 증가 (최대 4)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060703,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "광란",
+          "desc": "자신의 속도가 8 이상이면, 코인 위력 +1\n대상의 잃은 체력에 비례하여 피해량이 증가함. (대상의 잃은 체력 1% 당 피해량 0.3% 증가)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 대상의 출혈 1당 정신력 1 회복 (최대 5)"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 출혈 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 출혈 2 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "광란",
+          "desc": "자신의 속도가 6 이상이면, 코인 위력 +1\n대상의 잃은 체력에 비례하여 피해량이 증가함. (대상의 잃은 체력 1% 당 피해량 0.5% 증가)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 대상의 출혈 1당 정신력 1 회복 (최대 10)"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 출혈 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 출혈 2 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060704,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "재빠름",
+          "desc": "[OnSucceedEvade] 다음 턴에 신속 1을 얻음 (턴 당 최대 3회)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "재빠름",
+          "desc": "대상의 출혈 이 7 이상이면 코인 위력 +2\n[OnSucceedEvade] 다음 턴에 신속 1을 얻음 (턴 당 최대 3회)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "지식 소모",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 등급이 가장 높은 스킬 1개를 버림",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Sinking] 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "지식 소모",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 등급이 가장 높은 스킬 1개를 버림\n[WhenUse] [KnowledgeExplored]이 3 이상이면, 합 위력 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Sinking] 횟수 1 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [KnowledgeExplored]이 3 이상이면, 코인 1회 재사용"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "지식 소모",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 등급이 가장 높은 스킬 1개를 버림\n[WhenUse] ([KnowledgeExplored] - 1)만큼 합 위력이 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Sinking] 횟수 1 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] ([KnowledgeExplored] - 1)만큼 코인 재사용"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "열어 젖히기",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 무작위 스킬 2개를 등급이 낮은 순으로 버림",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Sinking] 3 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "열어 젖히기",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 무작위 스킬 2개를 등급이 낮은 순으로 버림\n[WhenUse] [KnowledgeExplored]이 3 이상이면, 코인 위력 +1",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking] 3 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "열어 젖히기",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 무작위 스킬 2개를 등급이 낮은 순으로 버림\n[WhenUse] ([KnowledgeExplored] - 1)만큼 코인 위력이 증가",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking] 4 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060803,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "순환하는 지식",
+          "desc": "[WhenUse] [KnowledgeExplored]이 2 이상이면, [KnowledgeExplored] 만큼 코인 위력이 증가\n[WhenUse] 대상의 [Sinking] 1당 피해량 +1.5% (최대 15%)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking] 횟수 3 증가"
+                },
+                {
+                  "desc": "[EndSkill] 대상이 흐트러짐 상태가 되거나 사망하면, 정신력 10 회복"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "순환하는 지식",
+          "desc": "[WhenUse] [KnowledgeExplored]이 2 이상이면, [KnowledgeExplored]만큼 코인 위력이 증가\n[WhenUse] 대상의 [Sinking] 1당 피해량 +3% (최대 30%)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking] 횟수 4 증가"
+                },
+                {
+                  "desc": "[EndSkill] 대상이 흐트러짐 상태가 되거나 사망하면, 정신력 10 회복"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060804,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "인도하는 걸음",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 무작위 스킬 2개를 등급이 낮은 순으로 버림",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "인도하는 걸음",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 무작위 스킬 2개를 등급이 낮은 순으로 버림",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    }
+  ]
+}

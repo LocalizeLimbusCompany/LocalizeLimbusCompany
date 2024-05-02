@@ -1,0 +1,64 @@
+{
+  "dataList": [
+    {
+      "id": "OnWinDuelAsParryingCountMultiplyAndPlusPercent",
+      "add": "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is {0}, raised by {1}% per Clash count after 1)</size>",
+      "min": "Decreases after winning a Clash based on the Clash count\n<size=95%>(Base Value is {0}, raised by {1}% per Clash count after 1)</size>"
+    },
+    {
+      "id": "OnKillEnemyAsLevelRatioMultiply",
+      "add": "Increase by {0} after this unit defeats an enemy whose level was higher than this unit’s",
+      "min": "Decrease by {0} after this unit defeats an enemy whose level was higher than this unit’s"
+    },
+    {
+      "id": "OnKillEnemyByOtherAllyAsLevelRatioMultiply",
+      "add": "Increase by {0} after an ally defeats an enemy whose level was higher than the unit’s",
+      "min": "Decrease by {0} after an ally defeats an enemy whose level was higher than the unit’s"
+    },
+    {
+      "id": "OnLoseDuelAsParryingCountMultiplyAndPlusPercent",
+      "add": "Increases after losing a Clash based on the Clash count\n<size=95%>(Base Value is {0}, raised by {1}% per Clash count after 1)</size>",
+      "min": "Decreases after losing a Clash based on the Clash count\n<size=95%>(Base Value is {0}, raised by {1}% per Clash count after 1)</size>"
+    },
+    {
+      "id": "OnDieAllyAsLevelRatio",
+      "add": "If the level of the defeated ally was higher than the unit’s,\nincrease based on the level difference\n<size=95%>(Base Value is {0}, raised by {0} per level)</size>",
+      "min": "If the level of the defeated ally was higher than the unit’s,\ndecrease based on the level difference\n<size=95%>(Base Value is {0}, raised by {0} per level)</size>"
+    },
+    {
+      "id": "OnRoundStartAfterEvent",
+      "add": "Increased by {0} at the start of the turn",
+      "min": "Decreased by {0} at the start of the turn"
+    },
+    {
+      "id": "OnKillEnemyMp",
+      "add": "Increase by {0} after this unit defeats an enemy regardless of their level",
+      "min": "Decrease by {0} after this unit defeats an enemy regardless of their level"
+    },
+    {
+      "id": "OnDieAllyMp",
+      "add": "If an ally is defeated, increase by {0} regardless of the ally's level",
+      "min": "If an ally is defeated, decrease by {0} regardless of the ally's level"
+    },
+    {
+      "id": "OnKillEnemyByOtherAllyExceptSupportiveAction",
+      "add": "Increase by {0} after an ally defeats an enemy whose level was higher than this unit’s",
+      "min": "Decrease by {0} after an ally defeats an enemy whose level was higher than this unit’s. Does not decrease when the enemy was defeated by an Assist Attack."
+    },
+    {
+      "id": "OnDieBladeLineageAlly",
+      "add": "If a Blade Lineage ally is defeated, gain {0} regardless of the ally's level",
+      "min": "If a Blade Lineage ally is defeated, lose {0} regardless of the ally's level"
+    },
+    {
+      "id": "OnWinDuelLessMpTarget",
+      "add": "Increases by {0} after winning a Clash against an enemy with SP lower than this unit's",
+      "min": "Decreases by {0} after winning a Clash against an enemy with SP lower than this unit's"
+    },
+    {
+      "id": "OnLoseDuelLessMpTarget",
+      "add": "Increases by {0} after losing a Clash against an enemy with SP lower than this unit's",
+      "min": "Decreases by {0} after losing a Clash against an enemy with SP lower than this unit's"
+    }
+  ]
+}

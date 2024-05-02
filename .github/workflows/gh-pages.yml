@@ -1,0 +1,30 @@
+name: 公告热更新
+
+on:
+  push:
+    paths:
+      - 'Localize/Readme/Readme.json'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+         repository: 'ZengXiaoPi/LLC_jsontest'
+         path: LLC_jsontest
+         token: ${{ secrets.ROOT }}
+      - name: Create pages
+        run: |
+         curl -o LLC_jsontest/Readme.json https://raw.githubusercontent.com/LocalizeLimbusCompany/LocalizeLimbusCompany/master/Localize/Readme/Readme.json
+         MODTIME=$(stat -c %y LLC_jsontest/Readme.json)
+         FORMATTEDTIME=$(date -d "$MODTIME" --iso-8601=seconds)
+         echo $FORMATTEDTIME > LLC_jsontest/ReadmeLatestUpdateTime.txt
+         cd LLC_jsontest
+         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+         git config --global user.name 'github-actions[bot]'
+         git add .
+         git commit -m "Update LLC Readme"
+         git push https://github-actions[bot]:${{ secrets.ROOT }}@github.com/ZengXiaoPi/LLC_jsontest

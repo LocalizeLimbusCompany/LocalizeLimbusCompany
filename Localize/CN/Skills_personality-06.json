@@ -1,0 +1,600 @@
+{
+  "dataList": [
+    {
+      "id": 1060601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "能源循环",
+          "desc": "[WhenUse] 使自身获得2层充能 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得1层充能 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得1层充能 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "能源循环",
+          "desc": "[WhenUse] 使自身获得3层充能 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得1层充能 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得1层充能 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "能源循环",
+          "desc": "[WhenUse] 使自身获得4层充能 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得1层充能 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得1层充能 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "清扫支援",
+          "desc": "[WhenUse] 使自身获得2层充能 \n若自身带有护盾，则使本技能的拼点威力+1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 若自身的充能 层数不低于10层，则下回合使自身获得2层充能力场 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "清扫支援",
+          "desc": "[WhenUse] 使自身获得3层充能 \n若自身带有护盾，则使本技能的拼点威力+2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得3层充能 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若自身的充能 层数不低于10层，则下回合使自身获得2层充能力场 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "清扫支援",
+          "desc": "[WhenUse] 使自身获得3层充能 \n若自身带有护盾，则使本技能的拼点威力+2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得3层充能 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若自身的充能 层数不低于5层，则自身每带有5层充能 ，下回合使自身获得1层充能力场 (最多获得4层)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "充能力场展开",
+          "desc": "[WhenUse] 若自身的充能 层数不低于10层，则消耗所有充能 层数并使现存体力比例最低的2名友方单位获得 (消耗充能 层数/2)层充能力场 (向下取整)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级破裂 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合使自身获得2层充能力场 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "充能力场展开",
+          "desc": "[WhenUse] 若自身的充能 层数不低于10层，则消耗所有充能 层数并使现存体力比例最低的2名友方单位获得 (消耗充能 层数/2)层充能力场 (向下取整)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级破裂 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合使自身获得2层充能力场 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "防御",
+          "desc": "[WhenUse] 使自身获得2层充能力场 (每回合最多3次)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "防御",
+          "desc": "[WhenUse] 使自身获得3层充能力场 (每回合最多3次)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060701,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "潜步追踪",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级流血 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层流血 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "潜步追踪",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层流血 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "潜步追踪",
+          "desc": "若自身的迅捷 层数不低于2层，则使本技能的最终威力+1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层流血 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060702,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "先行一步",
+          "desc": "[WhenUse] 下回合使自身获得1层迅捷 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若自身的速度值高于目标，则根据速度值之差，对目标施加相应层数的流血 （最多2层）"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "先行一步",
+          "desc": "[WhenUse] 下回合使自身获得2层迅捷 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若自身的速度值高于目标，则根据速度值之差，对目标施加相应层数的流血 （最多3层）"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "先行一步",
+          "desc": "若自身的速度值不低于6点，则使本技能的硬币威力+1\n[WhenUse] 下回合使自身获得2层迅捷 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若自身的速度值高于目标，则根据速度值之差，对目标施加相应层数的流血 （最多4层）"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060703,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "丧心病狂",
+          "desc": "若自身的速度值不低于8，则使本技能的硬币威力+1\n根据目标已失去体力，相应增加本技能造成的伤害（每失去体力上限1%的体力，造成的伤害+0.3%）",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 目标每带有1级流血 强度，使自身恢复1点理智值（最多5点）"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加1级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级流血 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "丧心病狂",
+          "desc": "若自身的速度值不低于6，则使本技能的硬币威力+1\n根据目标已失去体力，相应增加本技能造成的伤害（每失去体力上限1%的体力，造成的伤害+0.5%）",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 目标每带有1级流血 强度，使自身恢复1点理智值（最多10点）"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060704,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "闪电神经",
+          "desc": "[OnSucceedEvade] 下回合使自身获得1层迅捷 （每回合最多3次）",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "闪电神经",
+          "desc": "若目标的流血 强度不低于7级，则使本技能的硬币威力+2\n[OnSucceedEvade] 下回合使自身获得1层迅捷 （每回合最多3次）",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "知识消耗",
+          "desc": "[WhenUse] 丢弃 自身所有行动槽中级别最高的1个技能",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层沉沦 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "知识消耗",
+          "desc": "[WhenUse] 丢弃 自身所有行动槽中级别最高的1个技能\n[WhenUse] 若自身的所解真知 层数不低于3层，则使本技能的拼点威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层沉沦 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若自身的所解真知 层数不低于3层，则重复使用本硬币1次"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "知识消耗",
+          "desc": "[WhenUse] 丢弃 自身所有行动槽中级别最高的1个技能\n[WhenUse] 使本技能的拼点威力+（自身的所解真知 层数-1）",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 对目标施加1层沉沦 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 重复使用本硬币（自身的所解真知 层数-1）次"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "入匙解封",
+          "desc": "[WhenUse] 按技能级别由低到高随机丢弃 自身所有行动槽中的2个技能",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加3级沉沦 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "入匙解封",
+          "desc": "[WhenUse] 按技能级别由低到高随机丢弃 自身所有行动槽中的2个技能\n[WhenUse] 若自身的所解真知 层数不低于3层，则使本技能的硬币威力+1",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级沉沦 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "入匙解封",
+          "desc": "[WhenUse] 按技能级别由低到高随机丢弃 自身所有行动槽中的2个技能\n[WhenUse] 使本技能的硬币威力+（自身的所解真知 层数-1）",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级沉沦 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060803,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "循环的知识",
+          "desc": "[WhenUse] 若自身的所解真知 层数不低于2层，则使本技能的硬币威力+（自身的所解真知 层数）\n[WhenUse] 目标每带有1级沉沦 强度，使本技能造成的伤害+1.5%（最多+15%）",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层沉沦 "
+                },
+                {
+                  "desc": "[EndSkill] 若使目标陷入混乱或击杀目标，则使自身恢复10点理智值"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "循环的知识",
+          "desc": "[WhenUse] 若自身的所解真知 层数不低于2层，则使本技能的硬币威力+（自身的所解真知 层数）\n[WhenUse] 目标每带有1级沉沦 强度，使本技能造成的伤害+3%（最多+30%）",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加4层沉沦 "
+                },
+                {
+                  "desc": "[EndSkill] 若使目标陷入混乱或击杀目标，则使自身恢复10点理智值"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060804,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "引导步伐",
+          "desc": "[WhenUse] 按技能级别由低到高随机丢弃 自身所有行动槽中的2个技能",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "引导步伐",
+          "desc": "[WhenUse] 按技能级别由低到高随机丢弃 自身所有行动槽中的2个技能",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    }
+  ]
+}

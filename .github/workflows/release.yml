@@ -1,0 +1,49 @@
+name: 释放
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: '版本号'
+env:
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Cache NuGet packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('src/*.csproj') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget-
+      - name: Extract version from CHANGELOG.md
+        id: extract_version
+        run: |
+          $version = "${{ github.event.inputs.version }}"
+          if (!$version) {
+            $version = Get-Content -Path CHANGELOG.md | Select-Object -First 1 | ForEach-Object { $_ -replace '# ', '' }
+          }
+          echo "release_tag=$version" >> $env:GITHUB_OUTPUT
+      - name: Run build script
+        run: |
+          ./build.ps1 ${{ steps.extract_version.outputs.release_tag }}
+          Add-Content -Path CHANGELOG.md -Value "
+          # 下载
+          - LimbusLocalize_BIE_${{ steps.extract_version.outputs.release_tag }}.7z 全量包"
+      - name: Create Upload Release   
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            Release/*.7z
+          body_path: CHANGELOG.md
+          tag_name: ${{ steps.extract_version.outputs.release_tag }}
+      - name: 触发工作流
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          token: ${{ secrets.ROOT }}
+          workflow: update_api.yml
+          repo: ZengXiaoPi/LLC_jsontest
+          ref: main

@@ -1,0 +1,970 @@
+{
+  "dataList": [
+    {
+      "id": 1040501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "エ・循",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の充電 回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の充電 回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "エ・循",
+          "desc": "充電 回数が10以上なら、ダメージ量 +10%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の充電 回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の充電 回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "エ・循",
+          "desc": "充電 回数が10以上なら、ダメージ量 +10%\n充電 回数が15以上なら、追加でダメージ量 +10%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の充電 回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の充電 回数が2増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "跳躍",
+          "desc": "[WhenUse] 自分の充電 回数が5増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 充電 回数が10以上なら、斬撃脆弱 1を付与"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の体力が30%未満のとき、ダメージ量が15%増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "跳躍",
+          "desc": "[WhenUse] 自分の充電 回数が6増加\n充電 回数が10以上なら、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 充電 回数が10以上なら、斬撃脆弱 1を付与"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の体力が30%未満のとき、ダメージ量が20%増加"
+                },
+                {
+                  "desc": "[EnemyKill] 次のターンにクイック 1を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "跳躍",
+          "desc": "[WhenUse] 自分の充電 回数が7増加\n充電 回数が10以上なら、コイン威力 +1\n充電 回数が15以上なら、追加でコイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 充電 回数が10以上なら、斬撃脆弱 2を付与"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の体力が30%未満のとき、ダメージ量が30%増加"
+                },
+                {
+                  "desc": "[EnemyKill] 次のターンにクイック 3を得る"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "次・魔・空・切",
+          "desc": "[WhenUse] 充電 回数7以上、15未満なら\n保有している充電 回数を全て消耗し、\n体力最大値の3 × (15 - 消耗した充電 回数)%だけ体力を消費してコイン威力 +3\n[WhenUse] 充電 回数を15消耗し、コイン威力 +3",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 最終コインのダメージ量 +5%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 最終コインのダメージ量 +5%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 最終コインのダメージ量 +5%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[EnemyKill] スキル使用時に充電 回数を15消耗したなら、自分と自分を除くランダムな味方1名へ<sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">充電力場</color></link></u>を5付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "次・魔・空・切",
+          "desc": "[WhenUse] 充電 回数7以上、15未満なら\n保有している充電 回数を全て消耗し、\n体力最大値の3 × (15 - 消耗した充電 回数)%だけ体力を消費してコイン威力 +5\n[WhenUse] 充電 回数を15消耗し、コイン威力 +5",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 最終コインのダメージ量 +10%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 最終コインのダメージ量 +10%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 最終コインのダメージ量 +10%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[EnemyKill] スキル使用時に充電 回数を15消耗したなら、自分と自分を除くランダムな味方1名へ<sprite name=\"ChargeForceField\"><color=#f8c200><u><link=\"ChargeForceField\">充電力場</color></link></u>を7付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "充電回避",
+          "desc": "充電 回数5につき、基本威力 +1(最大2)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "充電回避",
+          "desc": "充電 回数5につき、基本威力 +1(最大3)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "押しのける",
+          "desc": "[WhenUse] 自分の呼吸 回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] 対象の精神力を4減少"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "押しのける",
+          "desc": "[WhenUse] 自分の呼吸 回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] 対象の精神力を6減少"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "押しのける",
+          "desc": "[WhenUse] 対象の呼吸 回数2が増加\n<style=\"highlight\">自分の</style> <sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">呼吸</color></color></link></u><style=\"highlight\">が7以上なら、コイン威力+1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] 対象の精神力を8減少"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "タ・む",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 呼吸 1を得る"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 攻撃レベル減少 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 呼吸 1を得る"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 攻撃レベル減少 1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "タ・む",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 呼吸 2を得る"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 攻撃レベル減少 1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 呼吸 1を得る"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 攻撃レベル減少 1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "タ・む",
+          "desc": "自分の<sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">呼吸</color></link></u>が7以上なら、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 呼吸 2を得る"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 攻撃レベル減少 2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 呼吸 1を得る"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 攻撃レベル減少 1を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "あ・われ",
+          "desc": "[WhenUse] 呼吸 4を得る\n自分の<sprite name=\"Breath\"><color=#f8c200><u><link=\"Breath\">呼吸</color></link></u>が10以上なら、コイン威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            },
+            {
+              "coindescs": [
+                {}
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "弾丸 1を消耗"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 振動 、破裂 の威力と回数が2倍で付与される"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 振動 3を付与、振動 回数を1増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 破裂 3を付与、破裂 回数1増加"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 振動爆発"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "あ・われ",
+          "desc": "[WhenUse] 呼吸 4を得る\n自分の呼吸 7につき、コイン威力+1(最大2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] 自分の呼吸 回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] 自分の呼吸 回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "弾丸 1を消耗"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 振動 、破裂 の威力と回数が2倍で付与される"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 振動 4を付与、振動 回数を2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 破裂 4を付与、破裂 回数2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 振動爆発"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ガード",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "ガード",
+          "desc": "",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040701,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "全面戦争",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Combustion]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Combustion]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "全面戦争",
+          "desc": "対象の[Combustion]が6以上なら、マッチ威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "全面戦争",
+          "desc": "対象の[Combustion]が6以上なら、マッチ威力 +1\n<style=\"highlight\">対象の[Combustion]が10以上なら、コイン威力 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Combustion]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040702,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "炎手撃",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Combustion]が6以上なら、与ダメージ量 +20%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "炎手撃",
+          "desc": "対象の[Combustion]が6以上なら、マッチ威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Combustion]が6以上なら、与ダメージ量 +30%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "炎手撃",
+          "desc": "対象の[Combustion]が6以上なら、マッチ威力 +1\n<style=\"highlight\">対象の[Combustion]が6以上なら、コイン威力 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Combustion]が6以上なら、与ダメージ量 +50%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040703,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "炎絶",
+          "desc": "対象の[Combustion]が6以上なら、マッチ威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Combustion]が10以上なら、与ダメージ量 +20%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "炎絶",
+          "desc": "対象の[Combustion]が6以上なら、マッチ威力 +1\n<style=\"highlight\">対象の[Combustion]が6以上なら、コイン威力 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Combustion]が10以上なら、与ダメージ量 +40%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040704,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ガード",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "ガード",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "応接道一式 狩り",
+          "desc": "[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [MarkOfButler]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "応接道一式 狩り",
+          "desc": "<style=\"highlight\">対象の速度が自分より3以上低ければ、マッチ威力 +1</style>\n[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [MarkOfButler]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "応接道一式 狩り",
+          "desc": "<style=\"highlight\">対象の速度が自分より低ければ、対象との速度差2につきマッチ威力 +1(最大3)</style>\n[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [MarkOfButler]2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "応接道第七式 捕捉",
+          "desc": "[StartBattle] 自分の[Breath]回数6を消耗して、このスキルの加重値 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [MarkOfButler]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "応接道第七式 捕捉",
+          "desc": "[StartBattle] 自分の[Breath]回数6を消耗して、このスキルの加重値 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]3を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [MarkOfButler]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "応接道第七式 捕捉",
+          "desc": "<style=\"highlight\">メインターゲットの速度が自分より低ければ、対象の速度差2につきマッチ威力 +1(最大3)</style>\n[StartBattle] 自分の[Breath]回数6を消耗し、このスキルの加重値 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]3を得る"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [MarkOfButler]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [MarkOfButler]2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040803,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "応接道第二式 く・へ",
+          "desc": "対象へ[MarkOfButler]があればマッチ威力 +1\n[WhenUse] 自分の[Breath]回数が7増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]5を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] ダメージ量の20%混乱区間を前進 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象が混乱状態なら、クリティカルダメージ量 +20%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [MarkOfButler]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "応接道第二式 く・へ",
+          "desc": "対象へ[MarkOfButler]があればマッチ威力 +1\n<style=\"highlight\">対象の速度が自分より低ければ、対象との速度差2につきコイン威力 +1(最大2)</style>\n[WhenUse] 自分の[Breath]回数が7増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]5を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] ダメージ量の30%混乱区間を前進 "
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [MarkOfButler]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象が混乱状態なら、クリティカルダメージ量 +40% "
+                },
+                {
+                  "desc": "[OnSucceedAttack] [MarkOfButler]2を付与"
+                },
+                {
+                  "desc": "[EnemyKill] [MarkOfButler]があるランダムな対象へ、スキルを1回再使用\n(再使用時は発動しない。[MarkOfButler]がある対象がいない場合は発動しない)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1040804,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "呆れた",
+          "desc": "[OnSucceedEvade] 精神力を3回復(1ターンにつき3回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "呆れた",
+          "desc": "[OnSucceedEvade] 精神力を3回復(1ターンにつき<style=\"highlight\">5</style>回)\n<style=\"highlight\">[OnSucceedEvade] 自分の[Breath]回数が1増加 (1ターンにつき5回)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

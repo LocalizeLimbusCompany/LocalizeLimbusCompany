@@ -1,0 +1,106 @@
+{
+  "dataList": [
+    {
+      "id": 1001,
+      "panicName": "自傷",
+      "lowMoraleDescription": "ターン開始時、<sprite name=\"Agility\"><color=#f8c200><u><link=\"Agility\">クイック</color></link></u>2, <sprite name=\"Vulnerable\"><color=#e30000><u><link=\"Vulnerable\">脆弱</color></link></u>2を得る",
+      "panicDescription": "ターン開始時、自分の体力-10"
+    },
+    {
+      "id": 1002,
+      "panicName": "非難",
+      "lowMoraleDescription": "ターン開始時、<sprite name=\"Enhancement\"><color=#f8c200><u><link=\"Enhancement\">攻撃威力増加</color></link></u>2, <sprite name=\"Vulnerable\"><color=#e30000><u><link=\"Vulnerable\">脆弱</color></link></u>2を得る",
+      "panicDescription": "ターン開始時、ランダムな味方の精神力を-20"
+    },
+    {
+      "id": 1003,
+      "panicName": "圧倒",
+      "lowMoraleDescription": "ターン開始時、<sprite name=\"Reduction\"><color=#e30000><u><link=\"Reduction\">攻撃威力減少</color></link></u>2を得る",
+      "panicDescription": "1ターンの間行動しない"
+    },
+    {
+      "id": 1004,
+      "panicName": "萎縮",
+      "lowMoraleDescription": "ターン開始時、<sprite name=\"Reduction\"><color=#e30000><u><link=\"Reduction\">攻撃威力減少</color></link></u>2を得る",
+      "panicDescription": "ターン開始時、<sprite name=\"Reduction\"><color=#e30000><u><link=\"Reduction\">攻撃威力減少</color></link></u>4を得る"
+    },
+    {
+      "id": 1005,
+      "panicName": "悔しさ",
+      "lowMoraleDescription": "ターン開始時、<sprite name=\"AttackDmgUp\"><color=#f8c200><u><link=\"AttackDmgUp\">ダメージ量増加</color></link></u>1, <sprite name=\"Vulnerable\"><color=#e30000><u><link=\"Vulnerable\">脆弱</color></link></u>2を得る",
+      "panicDescription": "ターン開始時、<sprite name=\"AttackDmgUp\"><color=#f8c200><u><link=\"AttackDmgUp\">ダメージ量増加</color></link></u>2, <sprite name=\"Vulnerable\"><color=#e30000><u><link=\"Vulnerable\">脆弱</color></link></u>5を得る"
+    },
+    {
+      "id": 1006,
+      "panicName": "逃走",
+      "lowMoraleDescription": "行動しない。被ダメージ時、該当スキル終了後に死亡",
+      "panicDescription": ""
+    },
+    {
+      "id": 1007,
+      "panicName": "哀しみ",
+      "lowMoraleDescription": "毎ターン<sprite name=\"AttackDmgDown\"><color=#e30000><u><link=\"AttackDmgDown\">ダメージ量減少</color></link></u>2を得る",
+      "panicDescription": "毎ターン<sprite name=\"AttackDmgDown\"><color=#e30000><u><link=\"AttackDmgDown\">ダメージ量減少</color></link></u>5, <sprite name=\"Vulnerable\"><color=#e30000><u><link=\"Vulnerable\">脆弱</color></link></u>2を得る"
+    },
+    {
+      "id": 1008,
+      "panicName": "狂人",
+      "lowMoraleDescription": "この士気低下を最初に獲得した場合、敵味方識別不可状態になる",
+      "panicDescription": "敵味方識別不可状態、マッチ威力+1, <sprite name=\"AttackDmgUp\"><color=#f8c200><u><link=\"AttackDmgUp\">ダメージ量増加</color></link></u>2を得る"
+    },
+    {
+      "id": 1009,
+      "panicName": "自殺",
+      "lowMoraleDescription": "この士気低下を最初に獲得した場合、行動不能状態になる",
+      "panicDescription": "3ターンの間、行動不能状態。3ターン経過後、ターン開始時に死亡。死亡時、全味方の精神力減少条件を満たした際に10追加で減少"
+    },
+    {
+      "id": 1010,
+      "panicName": "徘徊",
+      "lowMoraleDescription": "ターン終了時、味方に2精神力ダメージ",
+      "panicDescription": "3ターンの間、ターン終了時に味方へ精神力5ダメージ。3ターン終了時に逃走。"
+    },
+    {
+      "id": 1011,
+      "panicName": "不安定",
+      "lowMoraleDescription": "ターン開始時、<sprite name=\"Enhancement\"><color=#f8c200><u><link=\"Enhancement\">攻撃威力増加</color></link></u>2, <sprite name=\"Binding\"><color=#e30000><u><link=\"Binding\">束縛</color></link></u>3を得る",
+      "panicDescription": "ターン開始時に混乱"
+    },
+    {
+      "id": 1012,
+      "panicName": "哀しみ",
+      "lowMoraleDescription": "<sprite name=\"Vulnerable\"><color=#e30000><u><link=\"Vulnerable\">脆弱</color></link></u>1を得る。マッチ中に1度でもコイン裏面が出ると該当マッチの間、マッチ威力が-1",
+      "panicDescription": "<sprite name=\"Vulnerable\"><color=#e30000><u><link=\"Vulnerable\">脆弱</color></link></u>3を得る。マッチ中に3度でもコイン裏面が出ると該当マッチの間、マッチ威力が-3"
+    },
+    {
+      "id": 9999,
+      "panicName": "パニック",
+      "lowMoraleDescription": "",
+      "panicDescription": "1ターンの間行動しない"
+    },
+    {
+      "id": 1013,
+      "panicName": "不順",
+      "lowMoraleDescription": "<sprite name=\"Vulnerable\"><color=#e30000><u><link=\"Vulnerable\">脆弱</color></link></u>1を得る。マッチ敗北時、対象の精神力-2",
+      "panicDescription": "<sprite name=\"Vulnerable\"><color=#e30000><u><link=\"Vulnerable\">脆弱</color></link></u>2を得る。マッチ敗北時、対象の精神力-5"
+    },
+    {
+      "id": 1014,
+      "panicName": "報復",
+      "lowMoraleDescription": "ターン開始時<sprite name=\"Enhancement\"><color=#f8c200><u><link=\"Enhancement\">攻撃威力増加</color></link></u>1, <sprite name=\"DefenseDown\"><color=#e30000><u><link=\"DefenseDown\">防御レベル減少</color></link></u>3を得て、前のターンに受けた累計ダメージ量に比例して<sprite name=\"AttackDmgUp\"><color=#f8c200><u><link=\"AttackDmgUp\">ダメージ量増加</color></link></u>を得る\n(最大体力値の3%につき<sprite name=\"AttackDmgUp\"><color=#f8c200><u><link=\"AttackDmgUp\">ダメージ量増加</color></link></u>1を得る)",
+      "panicDescription": "ターン開始時<sprite name=\"Enhancement\"><color=#f8c200><u><link=\"Enhancement\">攻撃威力増加</color></link></u>2, <sprite name=\"DefenseDown\"><color=#e30000><u><link=\"DefenseDown\">防御レベル減少</color></link></u>6を得て、前のターンに受けた累計ダメージ量に比例して<sprite name=\"AttackDmgUp\"><color=#f8c200><u><link=\"AttackDmgUp\">ダメージ量増加</color></link></u>を得る\n(最大体力値の3%につき<sprite name=\"AttackDmgUp\"><color=#f8c200><u><link=\"AttackDmgUp\">ダメージ量増加</color></link></u>1を得る)"
+    },
+    {
+      "id": 1015,
+      "panicName": "白い恐慌",
+      "lowMoraleDescription": "[MentalSystemResultDecrease_Typo] +2",
+      "panicDescription": "毎ターン終了時、次のターンに<sprite name=\"Binding\"><color=#f8c200><u><link=\"Binding\">束縛</color></link></u> 2を得る。\n自分が使用する全てのコインが裏面になる。"
+    },
+    {
+      "id": 1016,
+      "panicName": "怨恨",
+      "lowMoraleDescription": "ターン開始時に[AttackDmgUp]2, [DefenseDown]3を得る",
+      "panicDescription": "ターン開始時に[Enhancement]1, [DefenseDown]5を得る"
+    }
+  ]
+}
