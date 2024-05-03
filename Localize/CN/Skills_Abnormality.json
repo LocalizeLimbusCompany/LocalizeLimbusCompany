@@ -3581,12 +3581,12 @@
         {
           "level": 1,
           "name": "这次不行！",
-          "desc": "优先指定妖精酒",
+          "desc": "优先指定精灵酒",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 攻击妖精酒时，下回合使自身恢复体力上限10%的体力并使自身获得2层强壮 ，2层迅捷 与2层守护 "
+                  "desc": "[OnSucceedAttack] 攻击精灵酒时，下回合使自身恢复体力上限10%的体力并使自身获得2层强壮 ，2层迅捷 与2层守护 "
                 }
               ]
             }
@@ -3599,7 +3599,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "想要这杯妖精酒吗？",
+          "name": "想要这杯精灵酒吗？",
           "desc": "[WhenUse] 下回合使自身获得1层束缚 ",
           "coinlist": [
             {}
@@ -3612,7 +3612,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "妖精酒",
+          "name": "精灵酒",
           "desc": "[WhenUse] 将目标的昂扬 转化为相应层数的醉意 ",
           "coinlist": [
             {}
@@ -4996,6 +4996,235 @@
                 }
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 826301,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "女王之令",
+          "desc": "[StartBattle] 随机对1名未带有[PreparedMeat]的友方单位施加[PreparedMeat]",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 826302,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "翅振",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层流血 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层流血 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 826303,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "捕食",
+          "desc": "若目标的流血 强度不低于5级，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使本体恢复体力上限3%的体力"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 826304,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "饥饿之翼",
+          "desc": "若目标的[Hunger]层数不低于3层，则使本技能的硬币威力+1\n若目标的流血 强度不低于5级，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 826305,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "饥饿狂暴",
+          "desc": "[CantIdentify]\n优先指定带有[PreparedMeat]的目标\n若目标的流血 强度不低于5级，则使本技能的硬币威力+1\n若目标带有[PreparedMeat]，则使本技能的硬币威力+10\n每有1条手臂部位被破坏，使本技能的硬币威力-5\n[TargetKill] 本场战斗中，使所有部位获得2层强壮 （可叠加）",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 重复使用本硬币1次（每个技能最多3次）"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使本体恢复10点体力"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 826306,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "喘息",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 826307,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "偿还照料",
+          "desc": "[StartBattle] 对未带有[PreparedMeat]的全体友方单位施加[PreparedMeat]",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 826401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "啊姆啊姆",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使本体恢复3点体力"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使本体恢复3点体力"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 826402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "贪食",
+          "desc": "若目标的流血 强度不低于5级，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使本体恢复10点体力"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层流血 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 826403,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "小小翅振",
+          "desc": "若目标的流血 强度不低于5级，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 826404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "喘息",
+          "coinlist": [
+            {}
           ]
         }
       ]

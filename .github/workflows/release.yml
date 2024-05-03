@@ -3,9 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: '版本号'
-env:
-  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}        
+        description: '版本号'   
 jobs:
   release:
     runs-on: windows-latest
@@ -43,7 +41,7 @@ jobs:
       - name: 触发工作流
         uses: benc-uk/workflow-dispatch@v1
         with:
-          token: ${{ secrets.ROOT }}
+          token: ${{ secrets.ZENGXIAOPI_ROOT }}
           workflow: update_api.yml
           repo: ZengXiaoPi/LLC_jsontest
           ref: main
