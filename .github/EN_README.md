@@ -10,7 +10,11 @@ LimbusCompany I18N mod
 [![Version](https://img.shields.io/github/release/LocalizeLimbusCompany/LocalizeLimbusCompany.svg?label=Version)](../../../releases/latest)
 [![Localize Limbus Chat Group](https://img.shields.io/badge/Join-QQGroup-blue?logo=tencent-qq)](https://jq.qq.com/?_wv=1027&k=5NE6Kvg2)
 
-[简体中文](../../..) | [繁體中文](https://github.com/SmallYuanSY/LocalizeLimbusCompany) | [Русский](https://github.com/Crescent-Corporation/LimbusCompanyBusRUS) | [Français](https://github.com/Eden-Office/LimbusCompanyBusFR) | [ภาษาไทย](https://github.com/1ookilo/LocalizeLimbusCompanyTH) | English
+[한국어](https://limbuscompany.kr) | ~~Deutsch~~ | [Español](https://github.com/Dreams-Office/LimbusCompanySpanishTranslationTeam) | [日本語](https://limbuscompany.kr) | [Français](https://github.com/Eden-Office/LimbusCompanyBusFR) | [简体中文](../../..)
+
+**English** | ~~American English~~ | [Русский](https://github.com/Crescent-Corporation/LimbusCompanyBusRUS) | ~~Swiss~~ | ~~Ελληνικά~~ | ~~Österreich~~
+
+[繁體中文](https://github.com/SmallYuanSY/LocalizeLimbusCompany) | [ภาษาไทย](https://github.com/1ookilo/LocalizeLimbusCompanyTH) | [Indonesia](https://github.com/ArtefactX1/LocalizeLimbusID)
 </div>
 
 # Install

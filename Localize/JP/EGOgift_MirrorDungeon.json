@@ -85,7 +85,7 @@
     {
       "id": 29003,
       "name": "灰は灰に++",
-      "desc": "戦闘開始時、敵<style=\"upgradeHighlight\">[Combustion]全体(幻想体の場合は全部位)へ</style>[Combustion]威力3を付与。",
+      "desc": "戦闘開始時、敵<style=\"upgradeHighlight\">全体(幻想体の場合は全部位)へ</style>[Combustion]威力3を付与。",
       "simpleDesc": [
         {
           "abilityID": 29003,
@@ -264,7 +264,7 @@
     {
       "id": 29010,
       "name": "ブラッディー・ガジェット++",
-      "desc": "ターン開始時、<style=\"upgradeHighlight\">ランダムな味方2名</style>が[AttackDmgUp]2を得る。\n\n色欲属性の攻撃スキルを保有する味方へ優先的に適用され、この場合は[AttackDmgUp]1を追加で得る。",
+      "desc": "ターン開始時、<style=\"upgradeHighlight\">ランダムな味方2名</style>が[AttackDmgUp]2を得る。\n\n色欲属性の攻撃スキルを保有する味方へ優先的に適用され、この場合は[AttackDmgUp]2を追加で得る。",
       "simpleDesc": [
         {
           "abilityID": 29010,
@@ -1113,7 +1113,7 @@
     {
       "id": 9045,
       "name": "炎の片鱗",
-      "desc": "ターン終了時に[Combustion]状態の敵へ、対象の保有する[Combustion]回数の半分を消耗して([Combustion]威力 × 消耗した[Combustion]回数)だけ追加で憤怒ダメージを与える。炎の片鱗効果で消耗した[Combustion]回数の半分だけ、次のターンの間対象の防御レベルを減少。(最大3)",
+      "desc": "ターン終了時に[Combustion]状態の敵へ、対象の保有する[Combustion]回数の半分を消耗して([Combustion]威力 × 消耗した[Combustion]回数)だけ追加で憤怒ダメージを与える。炎の片鱗効果で消耗した[Combustion]回数の半分だけ、次のターンの間対象の[DefenseDown]。(最大3)",
       "simpleDesc": [
         {
           "abilityID": 9045,
@@ -1128,7 +1128,7 @@
     {
       "id": 19045,
       "name": "炎の片鱗+",
-      "desc": "ターン終了時に[Combustion]状態の敵へ、対象の保有する[Combustion]回数の半分を消耗して<style=\"upgradeHighlight\">([Combustion]威力 × 消耗した[Combustion]回数 × 1.5)だけ</style>追加で憤怒ダメージを与える。炎の片鱗効果で消耗した[Combustion]回数の半分だけ、次のターンの間対象の防御レベルを減少。<style=\"upgradeHighlight\">(最大5)</style>",
+      "desc": "ターン終了時に[Combustion]状態の敵へ、対象の保有する[Combustion]回数の半分を消耗して<style=\"upgradeHighlight\">([Combustion]威力 × 消耗した[Combustion]回数 × 1.5)だけ</style>追加で憤怒ダメージを与える。炎の片鱗効果で消耗した[Combustion]回数の半分だけ、次のターンの間対象の[DefenseDown]。<style=\"upgradeHighlight\">(最大5)</style>",
       "simpleDesc": [
         {
           "abilityID": 19045,
@@ -1143,7 +1143,7 @@
     {
       "id": 29045,
       "name": "炎の片鱗++",
-      "desc": "ターン終了時に[Combustion]状態の敵へ、対象の保有する[Combustion]回数の半分を消耗して<style=\"upgradeHighlight\">([Combustion]威力 × 消耗した[Combustion]回数 × 2)だけ</style>追加で憤怒ダメージを与える。炎の片鱗効果で消耗した[Combustion]回数の半分だけ、次のターンの間対象の防御レベルを減少。<style=\"upgradeHighlight\">(最大8)</style>",
+      "desc": "ターン終了時に[Combustion]状態の敵へ、対象の保有する[Combustion]回数の半分を消耗して<style=\"upgradeHighlight\">([Combustion]威力 × 消耗した[Combustion]回数 × 2)だけ</style>追加で憤怒ダメージを与える。炎の片鱗効果で消耗した[Combustion]回数の半分だけ、次のターンの間対象の[DefenseDown]。<style=\"upgradeHighlight\">(最大8)</style>",
       "simpleDesc": [
         {
           "abilityID": 29045,
@@ -1559,7 +1559,7 @@
     {
       "id": 9057,
       "name": "暗視鏡",
-      "desc": "ターン開始時、[充電]回数が15以上の人格がある場合発動。\n\n戦闘開始時に該当する人格が[充電]回数を3消耗し、1ターン中に攻撃レベルが5増加。",
+      "desc": "ターン開始時、[Charge]回数が15以上の人格がある場合発動。\n\n戦闘開始時に該当する人格が[Charge]回数を3消耗し、1ターン中に攻撃レベルが5増加。",
       "simpleDesc": [
         {
           "abilityID": 9057,
@@ -2350,7 +2350,7 @@
     {
       "id": 9088,
       "name": "鎮魂",
-      "desc": "ステージ開始時、[Combustion]威力または[Combustion]回数、または特殊火傷を付与する攻撃スキルを保有した人格が5名以上の時発動。(E.G.Oスキルを除く)\n\nウェーブの1ターン目が開始時、全ての敵(幻想体の場合は全部位)へ[Combustion]回数3を付与して[Combustion]威力をランダムに付与。(合計15)\n\n[Combustion]威力または[Combustion]回数、特殊火傷を付与するスキルの最終威力 +1, コイン威力 +1, [Combustion]威力付与値 +1, [Combustion]回数付与値 +1",
+      "desc": "ステージ開始時、[Combustion]威力または[Combustion]回数、または特殊出血を付与する攻撃スキルを保有した人格が5名以上の時発動。(E.G.Oスキルを除く)\n\nウェーブの1ターン目が開始時、全ての敵(幻想体の場合は全部位)へ[Combustion]回数3を付与して[Combustion]威力をランダムに付与。(合計15)\n\n[Combustion]威力または[Combustion]回数、特殊出血を付与するスキルの最終威力 +1, コイン威力 +1, [Combustion]威力付与値 +1, [Combustion]回数付与値 +1",
       "simpleDesc": [
         {
           "abilityID": 9088,
@@ -2410,7 +2410,7 @@
     {
       "id": 9090,
       "name": "血の霧",
-      "desc": "ステージ開始時、[Laceration]威力または[Laceration]回数、または特殊火傷を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除外)\n\n味方がスキル効果で付与する[Laceration]威力と[Laceration]回数を2倍で適用。\n\n[Laceration]威力、[Laceration]回数または特殊出血を付与するスキルのコイン威力 +2, ダメージ量 +100%",
+      "desc": "ステージ開始時、[Laceration]威力または[Laceration]回数、または特殊出血を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除外)\n\n味方がスキル効果で付与する[Laceration]威力と[Laceration]回数を2倍で適用。\n\n[Laceration]威力、[Laceration]回数または特殊出血を付与するスキルのコイン威力 +2, ダメージ量 +100%",
       "simpleDesc": [
         {
           "abilityID": 9090,
@@ -2425,7 +2425,7 @@
     {
       "id": 9091,
       "name": "真実の鐘",
-      "desc": "[VibrationExplosion]が適用された敵へ、このターンにて[Vulnerable]1を付与。(攻撃スキルを使用して振動爆発時、スキルごとに最大1回)",
+      "desc": "[VibrationExplosion]が適用された敵へ、このターンにて[Vulnerable]1を付与。(攻撃スキルを使用して[VibrationExplosion]時、スキルごとに最大1回)",
       "simpleDesc": [
         {
           "abilityID": 9091,
@@ -2436,7 +2436,7 @@
     {
       "id": 19091,
       "name": "真実の鐘+",
-      "desc": "[VibrationExplosion]が適用された敵へ、<style=\"upgradeHighlight\">このターンと次のターンにて</style>[Vulnerable]1を付与。(攻撃スキルを使用して振動爆発時、スキルごとに最大1回)",
+      "desc": "[VibrationExplosion]が適用された敵へ、<style=\"upgradeHighlight\">このターンと次のターンにて</style>[Vulnerable]1を付与。(攻撃スキルを使用して[VibrationExplosion]時、スキルごとに最大1回)",
       "simpleDesc": [
         {
           "abilityID": 19091,
@@ -2447,7 +2447,7 @@
     {
       "id": 29091,
       "name": "真実の鐘++",
-      "desc": "[VibrationExplosion]が適用された敵へ、このターンと次のターンにて<style=\"upgradeHighlight\">[Vulnerable]2を付与。</style>(攻撃スキルを使用して振動爆発時、スキルごとに最大1回)",
+      "desc": "[VibrationExplosion]が適用された敵へ、このターンと次のターンにて<style=\"upgradeHighlight\">[Vulnerable]2を付与。</style>(攻撃スキルを使用して[VibrationExplosion]時、スキルごとに最大1回)",
       "simpleDesc": [
         {
           "abilityID": 29091,
@@ -2458,7 +2458,7 @@
     {
       "id": 9092,
       "name": "連成振動",
-      "desc": "ステージ開始時、[Vibration]威力または[Vibration]回数を付与する攻撃スキルを保有した人格が5人以上のとき発動。(E.G.Oスキルを除外)\n\nウェーブの1ターン目が開始時、敵全体(幻想体の場合は全部位)へ[Vibration]5, [Vibration]回数5を付与。\n\n[VibrationExplosion]が適用された敵へ、このターンと次のターンにて[Vibration]威力5, [Vulnerable]2を付与。(攻撃スキルを使用して振動爆発時、スキルごとに最大1回)\n\n今回のターンにて対象へ[VibrationExplosion]を3回付与した場合、次のターン開始時に対象を混乱させ、現体力を基準に66%, 33%の位置へ新たな混乱区間を追加。(戦闘につき1回発動)",
+      "desc": "ステージ開始時、[Vibration]威力または[Vibration]回数を付与する攻撃スキルを保有した人格が5人以上のとき発動。(E.G.Oスキルを除外)\n\nウェーブの1ターン目が開始時、敵全体(幻想体の場合は全部位)へ[Vibration]5, [Vibration]回数5を付与。\n\n[VibrationExplosion]が適用された敵へ、このターンと次のターンにて[Vibration]威力5, [Vulnerable]2を付与。(攻撃スキルを使用して[VibrationExplosion]時、スキルごとに最大1回)\n\n今回のターンにて対象へ[VibrationExplosion]を3回付与した場合、次のターン開始時に対象を混乱させ、現体力を基準に66%, 33%の位置へ新たな混乱区間を追加。(戦闘につき1回発動)",
       "simpleDesc": [
         {
           "abilityID": 9092,
@@ -2714,7 +2714,7 @@
     {
       "id": 9102,
       "name": "偏光",
-      "desc": "味方が対象より精神力が30以上高い場合、[Combustion]威力または[Combustion]回数または特殊火傷を付与するスキルでの与ダメージ量 +7.5%",
+      "desc": "味方が対象より精神力が30以上高い場合、[Combustion]威力または[Combustion]回数または特殊火傷を付与するスキルでの与ダメージ量 +7.5%(精神力が無い敵の場合は0で計算)",
       "simpleDesc": [
         {
           "abilityID": 9102,
@@ -2725,7 +2725,7 @@
     {
       "id": 19102,
       "name": "偏光+",
-      "desc": "味方が対象より精神力が<style=\"upgradeHighlight\">25</style>以上高い場合、[Combustion]威力または[Combustion]回数または特殊火傷を付与するスキルでの与ダメージ量 <style=\"upgradeHighlight\">+12.5%</style>",
+      "desc": "味方が対象より精神力が<style=\"upgradeHighlight\">25</style>以上高い場合、[Combustion]威力または[Combustion]回数または特殊火傷を付与するスキルでの与ダメージ量 <style=\"upgradeHighlight\">+12.5%</style>(精神力が無い敵の場合は0で計算)",
       "simpleDesc": [
         {
           "abilityID": 19102,
@@ -2736,7 +2736,7 @@
     {
       "id": 29102,
       "name": "偏光++",
-      "desc": "味方が対象より精神力が<style=\"upgradeHighlight\">15</style>以上高い場合、[Combustion]威力または[Combustion]回数または特殊火傷を付与するスキルでの与ダメージ量 <style=\"upgradeHighlight\">+20%</style>",
+      "desc": "味方が対象より精神力が<style=\"upgradeHighlight\">15</style>以上高い場合、[Combustion]威力または[Combustion]回数または特殊火傷を付与するスキルでの与ダメージ量 <style=\"upgradeHighlight\">+20%</style>(精神力が無い敵の場合は0で計算)",
       "simpleDesc": [
         {
           "abilityID": 29102,
@@ -3178,7 +3178,7 @@
     {
       "id": 9120,
       "name": "死にたがり",
-      "desc": "[編成1・2番人格専用効果]\n\n[Burst]威力または[Burst]回数を付与する攻撃スキルのマッチ威力 +1, 攻撃レベル +2、ダメージ量 +15%(E.G.Oスキルを除く)\n\n単一のコインスキルの場合は効果が強化され、マッチ威力 +2, 攻撃レベル+2, ダメージ量 +40%。",
+      "desc": "[編成1・2番人格専用効果]\n\n[Burst]威力または[Burst]回数を付与する攻撃スキルのマッチ威力 +1, 攻撃レベル +2、ダメージ量 +15%(E.G.Oスキルを除く)\n\n単一のコインスキルの場合は効果が強化され、マッチ威力 +2, 攻撃レベル+2, ダメージ量 +40%。\n\n",
       "simpleDesc": [
         {
           "abilityID": 9120,
@@ -3253,7 +3253,7 @@
     {
       "id": 9123,
       "name": "ぼろ切れ",
-      "desc": "[Sinking]威力または[Sinking]回数を付与する攻撃スキルを保有する人格がマッチ威力時、精神力5を追加で回復(1ターンにつき1回)し、精神力が最大の場合はダメージ量 +7.5%。\n\n原産コインスキルを使用する場合は効果が変更され、スキル使用時の精神力が-15以上の場合は精神力が-15に減少し、ダメージ量 +(精神力減少した数値)%, 精神力が-15未満の場合はダメージ量 +15%",
+      "desc": "[Sinking]威力または[Sinking]回数を付与する攻撃スキルを保有する人格がマッチ威力時、精神力5を追加で回復(1ターンにつき1回)し、精神力が最大の場合はダメージ量 +7.5%。\n\n減算コインスキルを使用する場合は効果が変更され、スキル使用時の精神力が-15以上の場合は精神力が-15に減少し、ダメージ量 +(精神力減少した数値)%, 精神力が-15未満の場合はダメージ量 +15%",
       "simpleDesc": [
         {
           "abilityID": 9123,
@@ -3268,7 +3268,7 @@
     {
       "id": 19123,
       "name": "ぼろ切れ+",
-      "desc": "[Sinking]威力または[Sinking]回数を付与する攻撃スキルを保有する人格がマッチ威力時、精神力<style=\"upgradeHighlight\">6</style>を追加で回復(1ターンにつき1回)し、精神力が最大の場合はダメージ量 +<style=\"upgradeHighlight\">10</style>%\n\n原産コインスキルを使用する場合は効果が変更され、スキル使用時の精神力が-15以上の場合は精神力が-15に減少し、ダメージ量 +(精神力減少した数値 <style=\"upgradeHighlight\">+5</style>)%, 精神力が-15未満の場合はダメージ量 +<style=\"upgradeHighlight\">20</style>%",
+      "desc": "[Sinking]威力または[Sinking]回数を付与する攻撃スキルを保有する人格がマッチ威力時、精神力<style=\"upgradeHighlight\">6</style>を追加で回復(1ターンにつき1回)し、精神力が最大の場合はダメージ量 +<style=\"upgradeHighlight\">10</style>%\n\n減算コインスキルを使用する場合は効果が変更され、スキル使用時の精神力が-15以上の場合は精神力が-15に減少し、ダメージ量 +(精神力減少した数値 <style=\"upgradeHighlight\">+5</style>)%, 精神力が-15未満の場合はダメージ量 +<style=\"upgradeHighlight\">20</style>%",
       "simpleDesc": [
         {
           "abilityID": 19123,
@@ -3283,7 +3283,7 @@
     {
       "id": 29123,
       "name": "ぼろ切れ++",
-      "desc": "[Sinking]威力または[Sinking]回数を付与する攻撃スキルを保有する人格がマッチ威力時、精神力<style=\"upgradeHighlight\">7</style>を追加で回復(1ターンにつき1回)し、精神力が最大の場合はダメージ量 +<style=\"upgradeHighlight\">12.5</style>%\n\n原産コインスキルを使用する場合は効果が変更され、スキル使用時の精神力が-15以上の場合は精神力が-15に減少し、ダメージ量 +(精神力減少した数値 +<style=\"upgradeHighlight\">10</style>)%, 精神力が-15未満の場合はダメージ量 +<style=\"upgradeHighlight\">25</style>%",
+      "desc": "[Sinking]威力または[Sinking]回数を付与する攻撃スキルを保有する人格がマッチ威力時、精神力<style=\"upgradeHighlight\">7</style>を追加で回復(1ターンにつき1回)し、精神力が最大の場合はダメージ量 +<style=\"upgradeHighlight\">12.5</style>%\n\n減算コインスキルを使用する場合は効果が変更され、スキル使用時の精神力が-15以上の場合は精神力が-15に減少し、ダメージ量 +(精神力減少した数値 +<style=\"upgradeHighlight\">10</style>)%, 精神力が-15未満の場合はダメージ量 +<style=\"upgradeHighlight\">25</style>%",
       "simpleDesc": [
         {
           "abilityID": 29123,
@@ -3372,7 +3372,7 @@
     {
       "id": 19127,
       "name": "デビルズシェア+",
-      "desc": "ターン終了時、[Breath]威力が最も高い味方1名と[Breath]回数が最も多い味方1名へ次のターンに[Agility]1, <style=\"upgradeHighlight\">[AttackUp]1</style>を付与。(同じ人格の場合は重複可能)\n\n色欲属性攻撃スキルを持つ味方の場合は効果が強化され、[Agility]2, <style=\"upgradeHighlight\">[AttackUp]2</style> を付与(E.G.Oスキルを除く)\n",
+      "desc": "ターン終了時、[Breath]威力が最も高い味方1名と[Breath]回数が最も多い味方1名へ次のターンに[Agility]1, <style=\"upgradeHighlight\">[AttackUp]1</style>を付与。(同じ人格の場合は重複可能)\n\n色欲属性攻撃スキルを持つ味方の場合は効果が強化され、[Agility]2, <style=\"upgradeHighlight\">[AttackUp]2</style> を付与(E.G.Oスキルを除く)",
       "simpleDesc": [
         {
           "abilityID": 19127,
@@ -3383,7 +3383,7 @@
     {
       "id": 29127,
       "name": "デビルズシェア++",
-      "desc": "ターン終了時、[Breath]威力が最も高い味方1名と[Breath]回数が最も多い味方1名へ次のターンに[Agility]1, [AttackUp]1, <style=\"upgradeHighlight\">[AttackDmgUp]1</style>を付与。(同じ人格の場合は重複可能)\n\n色欲属性攻撃スキルを持つ味方の場合は効果が強化され、[Agility]2, [AttackUp] 2, [AttackDmgUp]<style=\"upgradeHighlight\">2</style> を付与(E.G.Oスキルを除く)\n",
+      "desc": "ターン終了時、[Breath]威力が最も高い味方1名と[Breath]回数が最も多い味方1名へ次のターンに[Agility]1, [AttackUp]1, <style=\"upgradeHighlight\">[AttackDmgUp]1</style>を付与。(同じ人格の場合は重複可能)\n\n色欲属性攻撃スキルを持つ味方の場合は効果が強化され、[Agility]2, [AttackUp] 2, [AttackDmgUp]<style=\"upgradeHighlight\">2</style> を付与(E.G.Oスキルを除く)",
       "simpleDesc": [
         {
           "abilityID": 29127,
@@ -3449,7 +3449,7 @@
     {
       "id": 29129,
       "name": "古い木彫り人形++",
-      "desc": "[編成1・2・3番人格専用効果]\n\n敵にクリティカルダメージを与えるたび、次のターンに[DefenseDown]1を付与(人格別に1ターンにつき<style=\"upgradeHighlight\">6</style>回まで付与可能)",
+      "desc": "[編成1・2。3番人格専用効果]\n\n敵にクリティカルダメージを与えるたび、次のターンに[DefenseDown]1を付与(人格別に1ターンにつき<style=\"upgradeHighlight\">6</style>回まで付与可能)",
       "simpleDesc": [
         {
           "abilityID": 29129,
@@ -3632,7 +3632,7 @@
     {
       "id": 9136,
       "name": "摩擦の欠片",
-      "desc": "[Charge]回数を獲得・消耗するE.G.O覚醒スキル使用時に発動(侵蝕スキルは適用されない)\n\n消耗する(嫉妬E.G.O資源 + 残りのE.G.O資源の合計 ÷ 3)だけ最終威力が増加\n\n嫉妬属性E.G.O覚醒スキルの場合は効果が強化され、攻撃開始前に[Charge]回数を追加で獲得(ZAYINなら2, ランク上昇につき +1)し、ダメージ量 +(保有している[Charge] × 5)%",
+      "desc": "[Charge]回数を獲得・消耗するE.G.O覚醒スキル使用時に発動(侵蝕スキルは適用されない)\n\n消耗する(嫉妬.G.O資源 + 残りのE.G.O資源の合計 ÷ 3)だけ最終威力が増加\n\n嫉妬属性E.G.O覚醒スキルの場合は効果が強化され、攻撃開始前に[Charge]回数を追加で獲得(ZAYINなら2, ランク上昇につき +1)し、ダメージ量 +(保有している[Charge] × 5)%",
       "simpleDesc": [
         {
           "abilityID": 9136,
@@ -3758,7 +3758,7 @@
     {
       "id": 9140,
       "name": "決意",
-      "desc": "斬撃スキルを2つ以上保有している全味方が今回の戦闘の間、最初のターンにはマッチ威力 +1, 2ターン目からは[Agility]1を得てマッチ威力 +1\n\nシ協会所属の人格は、維持または回復可能な体力最大値の上限が75%に固定される代わり、被ダメージ量と回復量が50%減少（戦闘進入時に発動）",
+      "desc": "斬撃スキルを2つ以上保有している全味方が今回の戦闘の間、最初のターンにはマッチ威力 +1, 2ターン目からは[Agility]1を得てマッチ威力 +1\n\nシ協会所属の人格は、維持または回復可能な体力最大値の上限が75%に固定される代わり、被ダメージ量と回復量が50%減少（戦闘進入時に発動）\n\n",
       "simpleDesc": [
         {
           "abilityID": 9140,
@@ -3773,7 +3773,7 @@
     {
       "id": 19140,
       "name": "決意+",
-      "desc": "斬撃スキルを2つ以上保有している全味方が今回の戦闘の間、最初のターンにはマッチ威力 +1, 2ターン目からは[Agility]<style=\"upgradeHighlight\">2</style>を得てマッチ威力 +1\n\nシ協会所属の人格は、維持または回復可能な体力最大値の上限が<style=\"upgradeHighlight\">50%</style>に固定される代わり、被ダメージ量と回復量が<style=\"upgradeHighlight\">75%</style> 減少（戦闘進入時に発動）",
+      "desc": "斬撃スキルを2つ以上保有している全味方が今回の戦闘の間、最初のターンにはマッチ威力 +1, 2ターン目からは[Agility]<style=\"upgradeHighlight\">2</style>を得てマッチ威力 +1\n\nシ協会所属の人格は、維持または回復可能な体力最大値の上限が<style=\"upgradeHighlight\">50%</style>に固定される代わり、被ダメージ量と回復量が<style=\"upgradeHighlight\">75%</style> 減少（戦闘進入時に発動）\n\n",
       "simpleDesc": [
         {
           "abilityID": 19140,
@@ -3788,7 +3788,7 @@
     {
       "id": 29140,
       "name": "決意++",
-      "desc": "斬撃スキルを2つ以上保有している全味方が今回の戦闘の間、最初のターンにはマッチ威力 +1, 2ターン目からは[Agility]2を得て<style=\"upgradeHighlight\">最終威力 +1</style>\n\nシ協会所属の人格は、維持または回復可能な体力最大値の上限が<style=\"upgradeHighlight\">49%</style>に固定される代わり、被ダメージ量と回復量が75%減少（戦闘進入時に発動）",
+      "desc": "斬撃スキルを2つ以上保有している全味方が今回の戦闘の間、最初のターンにはマッチ威力 +1, 2ターン目からは[Agility]2を得て<style=\"upgradeHighlight\">最終威力 +1</style>\n\nシ協会所属の人格は、維持または回復可能な体力最大値の上限が<style=\"upgradeHighlight\">49%</style>に固定される代わり、被ダメージ量と回復量が75%減少（戦闘進入時に発動）\n\n",
       "simpleDesc": [
         {
           "abilityID": 29140,
@@ -4194,7 +4194,7 @@
     {
       "id": 29150,
       "name": "時間のくびき++",
-      "desc": "ターン開始時、打撃攻撃スキルを保有しているなら[AttackUp]2, <style=\"upgradeHighlight\">[HitDamageUp] 1</style>を得る(E.G.Oスキルを除く)\n\n打撃攻撃スキルを2つ以上保有している場合は効果が強化され、[AttackUp]1, [HitDamageUp]<style=\"upgradeHighlight\">2</style>を得る\n\n減算コインを使用する打撃攻撃スキルを2つ以上保有した場合、効果が更に強化され、[AttackUp]2, [HitDamageUp]<style=\"upgradeHighlight\">3</style>を得る。",
+      "desc": "ターン開始時、打撃攻撃スキルを保有しているなら[AttackUp]2, <style=\"upgradeHighlight\">[HitDamageUp] 1</style>を得る(E.G.Oスキルを除く)\n\n打撃攻撃スキルを2つ以上保有している場合は効果が強化され、[AttackUp]2, [HitDamageUp]<style=\"upgradeHighlight\">2</style>を得る\n\n減算コインを使用する打撃攻撃スキルを2つ以上保有した場合、効果が更に強化され、[AttackUp]2, [HitDamageUp]<style=\"upgradeHighlight\">3</style>を得る。",
       "simpleDesc": [
         {
           "abilityID": 29150,
@@ -4213,7 +4213,7 @@
     {
       "id": 9151,
       "name": "握り締めた像",
-      "desc": "[編成3・4番人格専用効果]\n\n打撃スキルの街終了後にコインが2つ以上残っている場合はダメージ量 +10%, 3個以上残っている場合はダメージ量 +20%, 4個以上残っている場合はダメージ量 +40%",
+      "desc": "[編成3・4番人格専用効果]\n\n打撃スキルのマッチ終了後にコインが2つ以上残っている場合はダメージ量 +10%, 3個以上残っている場合はダメージ量 +20%, 4個以上残っている場合はダメージ量 +40%",
       "simpleDesc": [
         {
           "abilityID": 9151,
@@ -4224,7 +4224,7 @@
     {
       "id": 19151,
       "name": "握り締めた像+",
-      "desc": "[編成3・4・ <style=\"upgradeHighlight\">5</style>番人格専用効果]\n\n打撃スキルの街終了後にコインが2つ以上残っている場合はダメージ量 +10%, 3個以上残っている場合はダメージ量 +20%, 4個以上残っている場合はダメージ量 +40%",
+      "desc": "[編成3・4・ <style=\"upgradeHighlight\">5</style>番人格専用効果]\n\n打撃スキルのマッチ終了後にコインが2つ以上残っている場合はダメージ量 +10%, 3個以上残っている場合はダメージ量 +20%, 4個以上残っている場合はダメージ量 +40%",
       "simpleDesc": [
         {
           "abilityID": 19151,
@@ -4235,7 +4235,7 @@
     {
       "id": 29151,
       "name": "握り締めた像++",
-      "desc": "[編成3・4・5・ <style=\"upgradeHighlight\">6</style>番人格専用効果]\n\n打撃スキルの街終了後にコインが2つ以上残っている場合はダメージ量 +<style=\"upgradeHighlight\">12.5</style>%, 3個以上残っている場合はダメージ量 +<style=\"upgradeHighlight\">25</style>%, 4個以上残っている場合はダメージ量 +<style=\"upgradeHighlight\">50</style>%",
+      "desc": "[編成3・4・5・ <style=\"upgradeHighlight\">6</style>番人格専用効果]\n\n打撃スキルのマッチ終了後にコインが2つ以上残っている場合はダメージ量 +<style=\"upgradeHighlight\">12.5</style>%, 3個以上残っている場合はダメージ量 +<style=\"upgradeHighlight\">25</style>%, 4個以上残っている場合はダメージ量 +<style=\"upgradeHighlight\">50</style>%",
       "simpleDesc": [
         {
           "abilityID": 29151,
@@ -4418,11 +4418,11 @@
     {
       "id": 9416,
       "name": "完全さ",
-      "desc": "味方が[Laceration]威力、[Laceration]回数または特殊出血を与えるスキルで、敵とマッチで勝利した場合、[NailPersonality]2~3を付与。\n\nN社所属の場合、ターン開始時に狂信1を得て[Laceration]状態の敵を攻撃する際のダメージ量 +25%\n\nステージ開始時、N社所属人格が5人以上の時に特殊効果発動。N社所属人格の最終威力 +1、加算コイン威力+ 1, 減算コイン威力 -1, 攻撃スキルの[NailPersonality]付与量 +1。ターン開始時にN社所属人格の精神力が最大の場合、[AttackDmgUp]3を得る。",
+      "desc": "味方が[Laceration]威力、[Laceration]回数または特殊出血を与えるスキルで、敵とマッチで勝利した場合、[NailPersonality]2 ~ 3を付与。\n\nN社所属の場合、ターン開始時に狂信1を得て[Laceration]状態の敵を攻撃する際のダメージ量 +25%\n\nステージ開始時、N社所属人格が5人以上の時に特殊効果発動。N社所属人格の最終威力 +1、加算コイン威力+ 1, 減算コイン威力 -1, 攻撃スキルの[NailPersonality]付与量 +1。ターン開始時にN社所属人格の精神力が最大の場合、[AttackDmgUp]3を得る。",
       "simpleDesc": [
         {
           "abilityID": 9416,
-          "simpleDesc": "マッチ威力時、[NailPersonality]2~3を付与"
+          "simpleDesc": "マッチ威力時、[NailPersonality]2 ~ 3を付与"
         },
         {
           "abilityID": 94161,
@@ -4501,7 +4501,7 @@
       "simpleDesc": [
         {
           "abilityID": 9429,
-          "simpleDesc": "次のターンに[Agility] 2, [AttackUp]2, [AttackDmgUp]2を付与"
+          "simpleDesc": "次のターンに [Agility]2, [AttackUp]2, [AttackDmgUp]2を付与"
         },
         {
           "abilityID": 94291,

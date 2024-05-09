@@ -654,7 +654,7 @@
     },
     {
       "id": "mirror_ego_gift_combine_guide_table_two_same_keywords",
-      "content": "二つのキーワードが同じで、一つだけキーワードが違う場合"
+      "content": "2つのキーワードが同じで1つが違う場合"
     },
     {
       "id": "mirror_ego_gift_combine_guide_table_1_desc_1_0",
@@ -670,7 +670,7 @@
     },
     {
       "id": "mirror_ego_gift_combine_guide_table_1_desc_2_1",
-      "content": "ランク + ランク2 => <color=#f8c200>ランク2</color>"
+      "content": "ランク1 + ランク2 => <color=#f8c200>ランク2</color>"
     },
     {
       "id": "mirror_ego_gift_combine_guide_table_1_desc_3_0",
@@ -810,7 +810,7 @@
     },
     {
       "id": "mirror_ego_gift_combine_guide_table_4_desc_1_1",
-      "content": "材料に使用されるE.G.Oギフト(三つの中で二つのキーワードが同じであるギフト)のキーワード出現確率が50%\n\n材料に使用されるE.G.Oギフト(三つの中でキーワードが違うギフト)のキーワード出現確率が25%\n\n残りのキーワード出現確率の合計が25%"
+      "content": "材料として使用されるE.G.Oギフト(3つのうちキーワードが重複する2つのギフト)キーワードの出現確率が50%\n\n材料として使用されるE.G.Oギフト(3つのうちキーワードが重複しないギフト)キーワードの出現確率が25%\n\n残りのキーワードの出現確率合計が25%"
     },
     {
       "id": "mirror_ego_gift_combine_guide_table_4_desc_1_2",
@@ -903,6 +903,258 @@
     {
       "id": "mirror_dungeon_theme_ego_gift_popup_valid_atk",
       "content": "有効属性"
+    },
+    {
+      "id": "mirror_dungeon_shop_keyword_refresh",
+      "content": "キーワード更新"
+    },
+    {
+      "id": "mirror_dungeon_shop_refresh_by_chip",
+      "content": "星明かり更新"
+    },
+    {
+      "id": "mirror_dungeon_shop_keyword_refresh_popup_title",
+      "content": "ショップ-キーワード更新"
+    },
+    {
+      "id": "mirror_dungeon_shop_keyword_refresh_popup_desc",
+      "content": "選択したキーワードのE.G.Oギフトが出現する確率が大幅に増加します。\nコストを{0}使用して、キーワード更新を行いますか？"
+    },
+    {
+      "id": "ego_gift_combine_ui_plz_select_keyword",
+      "content": "キーワードを選択してください。"
+    },
+    {
+      "id": "ego_gift_select_keyword_ui_title",
+      "content": "合成 - キーワード選択"
+    },
+    {
+      "id": "ego_gift_select_keyword_ui_desc",
+      "content": "任意のキーワードを選択してください。"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_desc_1",
+      "content": "<合成 - キーワード選択>ウィンドウからキーワードを選択した場合の、予想されるE.G.Oギフトのキーワードは以下の通りです。"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_1_col_1_title",
+      "content": "合成材料に使われるE.G.Oギフトの数量"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_1_col_2_title",
+      "content": "設定したキーワード出現率"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_1_desc_1_0",
+      "content": "2つ"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_1_desc_1_1",
+      "content": "60%"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_1_desc_2_0",
+      "content": "3つ"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_1_desc_2_1",
+      "content": "90%"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_diffrent_keyword_notice",
+      "content": "※材料に使用されるE.G.Oギフトのキーワードは結果物のキーワードに別途影響を与えません。"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_desc_2",
+      "content": "2つのE.G.Oギフトを組み合わせる場合、E.G.Oギフトは最大3ランクまで獲得でき、予想されるE.G.Oギフトランクは次の通りです。"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_2_col_1_title",
+      "content": "材料に使ったE.G.Oギフトのランク"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_2_col_2_title",
+      "content": "予想されるE.G.Oギフトランク"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_2_desc_1_0",
+      "content": "ランク1 + ランク1"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_2_desc_2_0",
+      "content": "ランク1 + ランク2"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_2_desc_3_0",
+      "content": "ランク1 + ランク3"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_2_desc_4_0",
+      "content": "ランク2 + ランク2"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_2_desc_5_0",
+      "content": "ランク2 + ランク3"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_2_desc_6_0",
+      "content": "ランク3 + ランク3"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_desc_3",
+      "content": "3つのE.G.Oギフトを組み合わせる場合、E.G.Oギフトは最大4ランクまで獲得でき、予想されるE.G.Oギフトランクは次の通りです。"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_3_col_1_title",
+      "content": "キーワードが違う場合"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_3_col_2_title",
+      "content": "予想されるE.G.Oギフトランク"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_3_desc_1_0",
+      "content": "ランク1 + ランク1 + ランク1"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_3_desc_2_0",
+      "content": "ランク1 + ランク1 + ランク2"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_3_desc_3_0",
+      "content": "ランク1 + ランク1 + ランク3"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_3_desc_4_0",
+      "content": "ランク1 + ランク2 + ランク2"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_3_desc_5_0",
+      "content": "ランク1 + ランク2 + ランク3"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_3_desc_6_0",
+      "content": "ランク1 + ランク3 + ランク3"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_3_desc_7_0",
+      "content": "ランク2 + ランク2 + ランク2"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_3_desc_8_0",
+      "content": "ランク2 + ランク2 + ランク3"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_3_desc_9_0",
+      "content": "ランク2 + ランク3 + ランク3"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_table_3_desc_10_0",
+      "content": "ランク3 + ランク3 + ランク3"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_tier_1",
+      "content": "ランク1"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_tier_2",
+      "content": "ランク2"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_tier_3",
+      "content": "ランク3"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_tier_4",
+      "content": "ランク4"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_desc_4",
+      "content": "ただし、該当ランクの選択キーワードE.G.Oギフトを全て獲得したか現在の階層の選択肢、ボスクリア時に出現するE.G.Oギフトに既に配分されていて獲得できない場合は<u><b>該当ランクギフトの内選択していないキーワードのE.G.Oを獲得</u></b>することがあります。"
+    },
+    {
+      "id": "new_ego_gift_combine_guide_desc_5",
+      "content": "もしキーワードと関係なく該当ランクのE.G.Oギフトを全て獲得したか、前述の内容によって追加で獲得できない場合は<u><b>別ランクのE.G.Oギフトを獲得</u></b>することがあります。"
+    },
+    {
+      "id": "mirror_battle_reward_card_guide_popup_title",
+      "content": "戦闘報酬カード案内"
+    },
+    {
+      "id": "mirror_battle_reward_card_guide_text_1",
+      "content": "戦闘栗味、鏡ダンジョン難易度と進行中の階層によって報酬カードが獲得できます。"
+    },
+    {
+      "id": "mirror_battle_reward_card_guide_text_2",
+      "content": "戦闘報酬カードの出現確率は以下の通りです。"
+    },
+    {
+      "id": "mirror_battle_reward_card_guide_table_1_desc_0_1",
+      "content": "鏡ダンジョン シミュレーション"
+    },
+    {
+      "id": "mirror_battle_reward_card_guide_table_1_desc_0_2",
+      "content": "鏡ダンジョン リトルネッロ"
+    },
+    {
+      "id": "mirror_battle_reward_card_guide_table_1_desc_1_0",
+      "content": "1階層"
+    },
+    {
+      "id": "mirror_battle_reward_card_guide_table_1_desc_1_1",
+      "content": "一般戦闘 : 7.5%\n集中戦闘 : -\n精鋭戦闘 : -\nボス戦闘 : 100%"
+    },
+    {
+      "id": "mirror_battle_reward_card_guide_table_1_desc_1_2",
+      "content": "一般戦闘 : 7.5%\n集中戦闘 : -\n精鋭戦闘 : -\nボス戦闘 : 100%"
+    },
+    {
+      "id": "mirror_battle_reward_card_guide_table_1_desc_2_0",
+      "content": "2階層"
+    },
+    {
+      "id": "mirror_battle_reward_card_guide_table_1_desc_2_1",
+      "content": "一般戦闘 : 10%\n集中戦闘 : 20%\n精鋭戦闘 : 33%\nボス戦闘 : 100%"
+    },
+    {
+      "id": "mirror_battle_reward_card_guide_table_1_desc_2_2",
+      "content": "一般戦闘 : 10%\n集中戦闘 : 20%\n精鋭戦闘 : 33%\nボス戦闘 : 100%"
+    },
+    {
+      "id": "mirror_battle_reward_card_guide_table_1_desc_3_0",
+      "content": "4階層"
+    },
+    {
+      "id": "mirror_battle_reward_card_guide_table_1_desc_3_1",
+      "content": "一般戦闘 : 10%\n集中戦闘 : 20%\n精鋭戦闘 : 33%\nボス戦闘 : 100%"
+    },
+    {
+      "id": "mirror_battle_reward_card_guide_table_1_desc_3_2",
+      "content": "一般戦闘 : 10%\n集中戦闘 : 20%\n精鋭戦闘 : 33%\nボス戦闘 : 100%"
+    },
+    {
+      "id": "mirror_battle_reward_card_guide_table_1_desc_4_0",
+      "content": "4階層"
+    },
+    {
+      "id": "mirror_battle_reward_card_guide_table_1_desc_4_1",
+      "content": "一般戦闘 : 12.5%\n集中戦闘 : 25%\n精鋭戦闘 : 50%\nボス戦闘 : 100%"
+    },
+    {
+      "id": "mirror_battle_reward_card_guide_table_1_desc_4_2",
+      "content": "一般戦闘 : 12.5%\n集中戦闘 : 25%\n精鋭戦闘 : 50%\nボス戦闘 : 100%"
+    },
+    {
+      "id": "mirror_battle_reward_card_guide_table_1_desc_5_0",
+      "content": "5階層"
+    },
+    {
+      "id": "mirror_battle_reward_card_guide_table_1_desc_5_1",
+      "content": "-"
+    },
+    {
+      "id": "mirror_battle_reward_card_guide_table_1_desc_5_2",
+      "content": "一般戦闘 : 12.5%\n集中戦闘 : 25%\n精鋭戦闘 : 50%\nボス戦闘 : -"
     }
   ]
 }
