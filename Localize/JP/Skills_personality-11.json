@@ -816,6 +816,201 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1110901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "点を打つ",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Laceration]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "点を打つ",
+          "desc": "対象の[Laceration]が6以上なら、マッチ威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "点を打つ",
+          "desc": "対象の[Laceration]が6以上なら、マッチ威力 +1\n<style=\"highlight\">対象の[Laceration]が10以上なら、コイン威力 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "血描画",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 20%の確率でコインを1回再使用。対象の保有するマイナス効果1つにつき再使用確率 +20%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "血描画",
+          "desc": "対象の[Laceration]が6以上なら、マッチ威力 +1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 20%の確率でコインを1回再使用。対象の保有するマイナス効果1つにつき再使用確率 +20%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加\n自分のコイン効果でコイン再使用時、増加させる[Laceration]回数 +1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "血描画",
+          "desc": "対象の[Laceration]が6以上なら、マッチ威力 +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 40%の確率でコインを再使用。対象の保有するマイナス効果1つにつき再使用確率 +20%(スキルにつき最大2回祭使用可能)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加\n自分のコイン効果でコイン再使用時、増加させる[Laceration]回数 +1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110903,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "作品精査",
+          "desc": "対象の保有するマイナス効果1つにつきダメージ量 +10%(最大30%)\n[WhenUse] 操作パネルにて自分の両横にいる味方へ次のターンにて[Agility]1を付与",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion], [Laceration], [Vibration], [Burst], [Sinking]のうちランダムに1つを3付与"
+                },
+                {
+                  "desc": "[EndSkill] 対象が混乱するか死亡したなら、自分を除く精神力が最も高い味方1名へ次のターンにて[PenetrateDamageUp]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "作品精査",
+          "desc": "対象の[Laceration]が6以上なら、コイン威力 +1\n対象の保有するマイナス効果1つにつきダメージ量 +12.5%(最大50%)\n[WhenUse] 操作パネルにて自分の両横にいる味方へ次のターンにて[Agility]1を付与",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion], [Laceration], [Vibration], [Burst], [Sinking]のうちランダムに1つを3付与"
+                },
+                {
+                  "desc": "[EndSkill] 対象が混乱するか死亡したなら、自分を除く精神力が最も高い味方1名へ次のターンにて[PenetrateDamageUp]1を付与 <style=\"highlight\">対象が薬指所属組織員なら[PenetrateResultUp]1を追加で付与</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110904,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ガード",
+          "desc": "[WhenUse] 対象の[Laceration]が10以上なら、コイン威力 +3",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "ガード",
+          "desc": "[WhenUse] 対象の[Laceration]が10以上なら、コイン威力 +7",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }

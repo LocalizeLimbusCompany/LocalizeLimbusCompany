@@ -816,6 +816,201 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1110901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Dotting",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Laceration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Dotting",
+          "desc": "If target has 6+ [Laceration], Clash Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Dotting",
+          "desc": "If the target has 6+ [Laceration], Clash Power +1\n<style=\"highlight\">If the target has 10+ [Laceration], Coin Power +1 </style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Sanguine Painting",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 20% chance to Reuse Coin once. +20% more chance to Reuse Coin for every type of negative effect on the target"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Sanguine Painting",
+          "desc": "If the target has 6+ [Laceration], Clash Power +1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 20% chance to Reuse Coin once. +20% more chance to Reuse Coin for every type of negative effect on the target"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Laceration] Count\nWhen Reusing Coin with this unit's Coin effects, inflict +1 more [Laceration] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Sanguine Painting",
+          "desc": "If the target has 6+ [Laceration], Clash Power +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 40% chance to Reuse Coin. +20% more chance to Reuse Coin for every type of negative effect on the target (2 times max per Skill)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Laceration] Count\nWhen Reusing Coin with this unit's Coin effects, inflict +1 more [Laceration] Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110903,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Artwork Inspection",
+          "desc": "Deal +10% more damage for every type of negative effect on the target (max 30%)\n[WhenUse] Apply 1 [Agility] next turn to 2 allies adjacent to this unit on the Dashboard",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [Laceration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Potency for 1 of the following effects: [Combustion], [Laceration], [Vibration], [Burst], or [Sinking]. Effect selected at random."
+                },
+                {
+                  "desc": "[EndSkill] If the target is Staggered or defeated, apply 1 [PenetrateDamageUp] next turn to 1 other ally with the highest SP"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Artwork Inspection",
+          "desc": "If the target has 6+ [Laceration], Coin Power +1\nDeal +12.5% more damage for every type of negative effect on the target (max 50%)\n[WhenUse] Apply 1 [Agility] next turn to 2 allies adjacent to this unit on the Dashboard",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [Laceration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Potency for 1 of the following effects: [Combustion], [Laceration], [Vibration], [Burst], or [Sinking]. Effect selected at random."
+                },
+                {
+                  "desc": "[EndSkill] If the target is Staggered or defeated, apply 1 [PenetrateDamageUp] next turn to 1 other ally with the highest SP. <style=\"highlight\">If the affected ally is a member of the Ring, apply 1 [PenetrateResultUp] as well</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1110904,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Guard",
+          "desc": "[WhenUse] If the target has 10+ [Laceration], Coin Power +3",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Guard",
+          "desc": "[WhenUse] If the target has 10+ [Laceration], Coin Power +7",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }
