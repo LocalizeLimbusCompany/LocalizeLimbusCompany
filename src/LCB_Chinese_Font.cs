@@ -203,6 +203,7 @@ namespace LimbusLocalize
             tm._danteAbilityDataList.Init(romoteLocalizeFileList.DanteAbility);
             tm._mirrorDungeonThemeList.Init(romoteLocalizeFileList.MirrorDungeonTheme);
             tm._unlockCodeList.Init(romoteLocalizeFileList.UnlockCode);
+            tm._battleSpeechBubbleText.Init(romoteLocalizeFileList.BattleSpeechBubble);
 
             tm._abnormalityEventCharDlg.AbEventCharDlgRootInit(romoteLocalizeFileList.abnormalityCharDlgFilePath);
 

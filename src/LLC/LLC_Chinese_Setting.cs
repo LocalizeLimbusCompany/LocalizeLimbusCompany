@@ -98,6 +98,21 @@ namespace LimbusLocalize
             }
             return true;
         }
+        [HarmonyPatch(typeof(BattleUnitView), nameof(BattleUnitView.ViewCancelTextTypo_Lack))]
+        [HarmonyPrefix]
+        private static bool ViewCancelTextTypo_Lack(BattleUnitView __instance, CanceledData data)
+        {
+            if (IsUseChinese.Value)
+            {
+                if (data != null && data.GetLackOfBuffs() != null && data.GetLackOfBuffs().Count > 0)
+                {
+                    string text = Singleton<TextDataManager>.Instance.BufList.GetData(data.GetLackOfBuffs()[0].ToString()).GetName() + " 不足";
+                    __instance.UIManager.bufTypoUI.OpenBufTypo(BUF_TYPE.Negative, text, data.GetLackOfBuffs()[0]);
+                }
+                return false;
+            }
+            return true;
+        }
         [HarmonyPatch(typeof(StoryPlayData), nameof(StoryPlayData.GetDialogAfterClearingAllCathy))]
         [HarmonyPrefix]
         private static bool GetDialogAfterClearingAllCathy(Scenario curStory, Dialog dialog, ref string __result)
