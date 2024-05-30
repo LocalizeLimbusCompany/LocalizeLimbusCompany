@@ -250,6 +250,157 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2100611,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "低いなきごえ",
+          "abName": "泣きヒキガエル",
+          "desc": "[BeforeAttack] 最大共鳴数が4以上なら、攻撃加重値 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[EndSkill] 自分と現体力が最も低い味方1名へ、自分の体力最大値の10%だけバリアを付与して[ShieldManagerCryingToad]2を付与"
+                },
+                {
+                  "desc": "- 最大共鳴数が4以上なら、付与対象数 +1"
+                },
+                {
+                  "desc": "- 対象に既に[ShieldManagerCryingToad]があれば、[ShieldManagerCryingToad]数値を2に変更"
+                },
+                {
+                  "desc": "- 最大憂鬱完全共鳴数が4以上なら、このスキルの[ShieldManagerCryingToad]数値が3で付与、適用される"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "低いなきごえ",
+          "abName": "泣きヒキガエル",
+          "desc": "<style=\"highlight\">[BeforeAttack] (最大共鳴数 - 2)だけ攻撃加重値が増加加重値が増加(最大2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[EndSkill] 自分と現体力が最も低い味方<style=\"highlight\">1 + (最大共鳴数 - 2)</style>名へ、自分の体力最大値の<style=\"highlight\">14%</style>だけバリアを付与して[ShieldManagerCryingToad]2を付与 <style=\"highlight\">(自分を除いた最大付与対象数: 3)</style>"
+                },
+                {
+                  "desc": "- 対象に既に[ShieldManagerCryingToad]があれば、[ShieldManagerCryingToad]数値を2に変更<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "- 最大憂鬱完全共鳴数が4以上なら、このスキルの[ShieldManagerCryingToad]数値が3で付与、適用される<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "低いなきごえ",
+          "abName": "泣きヒキガエル",
+          "desc": "[BeforeAttack] (最大共鳴数 - 2)だけ攻撃加重値が増加加重値が増加(最大2)<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[EndSkill] 自分と現体力が最も低い味方1 + (最大共鳴数 - 2)名へ、自分の体力最大値の<style=\"highlight\">20%</style>だけバリアを付与して[ShieldManagerCryingToad]2を付与 (自分を除いた最大付与対象数: 3)"
+                },
+                {
+                  "desc": "- 対象に既に[ShieldManagerCryingToad]があれば、[ShieldManagerCryingToad]数値を2に変更<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "- 最大憂鬱完全共鳴数が4以上なら、このスキルの[ShieldManagerCryingToad]数値が3で付与、適用される<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2100621,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "低いなきごえ",
+          "abName": "泣きヒキガエル",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n[BeforeAttack] 最大共鳴数が4以上なら、攻撃加重値 +1\n[BeforeAttack] 次のターンにこのスキルスロットの[Aggro]が5増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象へ[Sinking]2を付与"
+                },
+                {
+                  "desc": "[EndSkill] 自分へ自分の体力最大値(15 + 最大共鳴数 × 2.5)%だけバリアを付与し、[ShieldManagerCryingToad]2を付与。(最大25%)"
+                },
+                {
+                  "desc": "- 自分に既に[ShieldManagerCryingToad]があれば、[ShieldManagerCryingToad]数値を2に変更"
+                },
+                {
+                  "desc": "- 最大憂鬱完全共鳴数が4以上なら、このスキルの[ShieldManagerCryingToad]数値が3で付与、適用される"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "低いなきごえ",
+          "abName": "泣きヒキガエル",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n<style=\"highlight\">[BeforeAttack] (最大共鳴数 - 2)だけ攻撃加重値が増加(最大2)</style>\n[BeforeAttack] 次のターンにこのスキルスロットの[Aggro]が<style=\"highlight\">10</style>増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象へ[Sinking]2を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[EndSkill] 自分へ自分の体力最大値(<style=\"highlight\">18</style> + 最大共鳴数 × <style=\"highlight\">3</style>)%だけバリアを付与し、[ShieldManagerCryingToad]2を付与。(最大<style=\"highlight\">30%</style>)"
+                },
+                {
+                  "desc": "- 自分に既に[ShieldManagerCryingToad]があれば、[ShieldManagerCryingToad]数値を2に変更<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "- 最大憂鬱完全共鳴数が4以上なら、このスキルの[ShieldManagerCryingToad]数値が3で付与、適用される<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "低いなきごえ",
+          "abName": "泣きヒキガエル",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n[BeforeAttack] (最大共鳴数 - 2)だけ攻撃加重値が増加(最大2)\n[BeforeAttack] 次のターンにこのスキルスロットの[Aggro]が10増加<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象へ[Sinking]2, <style=\"highlight\">[Sinking]回数を3</style>付与"
+                },
+                {
+                  "desc": "[EndSkill] 自分へ自分の体力最大値(<style=\"highlight\">20</style> + 最大共鳴数 × <style=\"highlight\">5</style>)%だけバリアを付与し、[ShieldManagerCryingToad]2を付与。(最大<style=\"highlight\">40%</style>)"
+                },
+                {
+                  "desc": "- 自分に既に[ShieldManagerCryingToad]があれば、[ShieldManagerCryingToad]数値を2に変更<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "- 最大憂鬱完全共鳴数が4以上なら、このスキルの[ShieldManagerCryingToad]数値が3で付与、適用される<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">- 憂鬱共鳴が4以上なら、自分へ自分の体力最大値10%だけバリアを追加で付与</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

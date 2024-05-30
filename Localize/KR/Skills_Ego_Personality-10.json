@@ -250,6 +250,157 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2100611,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "낮은울음",
+          "abName": "울음 두꺼비",
+          "desc": "[BeforeAttack] 최대 공명 수가 4 이상이면, 공격 가중치 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[EndSkill] 자신과 현재 체력이 가장 적은 아군 1명에게 자신의 최대 체력 10%만큼 보호막을 부여하고, [ShieldManagerCryingToad] 2 부여"
+                },
+                {
+                  "desc": "- 최대 공명 수가 4 이상이면, 부여 대상 수 +1"
+                },
+                {
+                  "desc": "- 대상에게 이미 [ShieldManagerCryingToad]이 있으면, [ShieldManagerCryingToad] 수치를 2로 변경"
+                },
+                {
+                  "desc": "- 최대 우울 완전 공명 수가 4 이상이면, 이 스킬의 [ShieldManagerCryingToad] 수치가 3으로 부여, 적용됨"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "낮은울음",
+          "abName": "울음 두꺼비",
+          "desc": "<style=\"highlight\">[BeforeAttack] (최대 공명 수-2)만큼 공격 가중치 증가 (최대 2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[EndSkill] 자신과 현재 체력이 가장 적은 아군 <style=\"highlight\">1+(최대 공명 수-2)</style>명에게 자신의 최대 체력 <style=\"highlight\">14%</style>만큼 보호막을 부여하고, [ShieldManagerCryingToad] 2 부여 <style=\"highlight\">(자신 제외 최대 부여 대상 수: 3)</style>"
+                },
+                {
+                  "desc": "- 대상에게 이미 [ShieldManagerCryingToad]이 있으면, [ShieldManagerCryingToad] 수치를 2로 변경<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "- 최대 우울 완전 공명 수가 4 이상이면, 이 스킬의 [ShieldManagerCryingToad] 수치가 3으로 부여, 적용됨<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "낮은울음",
+          "abName": "울음 두꺼비",
+          "desc": "[BeforeAttack] (최대 공명 수-2)만큼 공격 가중치 증가 (최대 2)<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[EndSkill] 자신과 현재 체력이 가장 적은 아군 1+(최대 공명 수-2)명에게 자신의 최대 체력 <style=\"highlight\">20%</style>만큼 보호막을 부여하고, [ShieldManagerCryingToad] 2 부여 (자신 제외 최대 부여 대상 수: 3)"
+                },
+                {
+                  "desc": "- 대상에게 이미 [ShieldManagerCryingToad]이 있으면, [ShieldManagerCryingToad] 수치를 2로 변경<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "- 최대 우울 완전 공명 수가 4 이상이면, 이 스킬의 [ShieldManagerCryingToad] 수치가 3으로 부여, 적용됨<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2100621,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "낮은울음",
+          "abName": "울음 두꺼비",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] 최대 공명 수가 4 이상이면, 공격 가중치 +1\n[BeforeAttack] 다음 턴에 이 스킬 슬롯의 [Aggro] 5 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상에게 [Sinking] 2 부여"
+                },
+                {
+                  "desc": "[EndSkill] 자신에게 자신의 최대 체력 (15+최대 공명 수x2.5)% 만큼 보호막을 부여하고, [ShieldManagerCryingToad] 2 부여. (최대 25%)"
+                },
+                {
+                  "desc": "- 자신에게 이미 [ShieldManagerCryingToad]이 있으면, [ShieldManagerCryingToad] 수치를 2로 변경"
+                },
+                {
+                  "desc": "- 최대 우울 완전 공명 수가 4 이상이면, 이 스킬의 [ShieldManagerCryingToad] 수치가 3으로 부여, 적용됨"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "낮은울음",
+          "abName": "울음 두꺼비",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n<style=\"highlight\">[BeforeAttack] (최대 공명 수-2)만큼 공격 가중치 증가 (최대 2)</style>\n[BeforeAttack] 다음 턴에 이 스킬 슬롯의 <style=\"highlight\">[Aggro] 10</style> 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상에게 [Sinking] 2 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[EndSkill] 자신에게 자신의 최대 체력 (<style=\"highlight\">18</style>+최대 공명 수x<style=\"highlight\">3</style>)% 만큼 보호막을 부여하고, [ShieldManagerCryingToad] 2 부여. (최대 <style=\"highlight\">30%</style>)"
+                },
+                {
+                  "desc": "- 자신에게 이미 [ShieldManagerCryingToad]이 있으면, [ShieldManagerCryingToad] 수치를 2로 변경<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "- 최대 우울 완전 공명 수가 4 이상이면, 이 스킬의 [ShieldManagerCryingToad] 수치가 3으로 부여, 적용됨<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "낮은울음",
+          "abName": "울음 두꺼비",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] (최대 공명 수-2)만큼 공격 가중치 증가 (최대 2)\n[BeforeAttack] 다음 턴에 이 스킬 슬롯의 [Aggro] 10 증가<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상에게 [Sinking] 2, <style=\"highlight\">[Sinking] 횟수 3</style> 부여"
+                },
+                {
+                  "desc": "[EndSkill] 자신에게 자신의 최대 체력 (<style=\"highlight\">20</style>+최대 공명 수x<style=\"highlight\">5</style>)% 만큼 보호막을 부여하고, [ShieldManagerCryingToad] 2 부여. (최대 <style=\"highlight\">40%</style>)"
+                },
+                {
+                  "desc": "- 자신에게 이미 [ShieldManagerCryingToad]이 있으면, [ShieldManagerCryingToad] 수치를 2로 변경<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "- 최대 우울 완전 공명 수가 4 이상이면, 이 스킬의 [ShieldManagerCryingToad] 수치가 3으로 부여, 적용됨<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">- 우울 공명이 4 이상이면, 자신에게 자신의 최대 체력 10%만큼 보호막 추가 부여</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

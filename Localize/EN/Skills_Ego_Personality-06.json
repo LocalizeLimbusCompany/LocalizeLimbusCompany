@@ -256,6 +256,142 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2060611,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Cavernous Wailing",
+          "abName": "Blubbering Toad",
+          "desc": "If the target has [Vibration], deal +((the sum of [Vibration] Potency and Count on target)/2)% more damage (max 20%)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [Vibration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Cavernous Wailing",
+          "abName": "Blubbering Toad",
+          "desc": "If the target has [Vibration], deal +((the sum of [Vibration] Potency and Count on target)/2)% more damage (max <style=\"highlight\">25%</style>)\n<style=\"highlight\">- At 4+ highest Reson., deal +(5 + (the sum of [Vibration] Potency and Count on target)/2)% more damage instead (max 35%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [Vibration] and <style=\"highlight\">+2 [Vibration] Count</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationEcho]</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Cavernous Wailing",
+          "abName": "Blubbering Toad",
+          "desc": "If the target has [Vibration], deal +(<style=\"highlight\">5 +</style> (the sum of [Vibration] Potency and Count on target)/2)% more damage (max <style=\"highlight\">30%</style>)\n- At 4+ highest Reson., deal +(<style=\"highlight\">7.5 +</style> (the sum of [Vibration] Potency and Count on target)/<style=\"highlight\">1.5</style>)% more damage instead (max <style=\"highlight\">40%</style>)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [Vibration] and <style=\"highlight\">+3</style> [Vibration] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationEcho]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2060621,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Cavernous Wailing",
+          "abName": "Blubbering Toad",
+          "desc": "[CantIdentify]\nTargets randomly\nIf the target has [Vibration], deal +((the sum of [Vibration] Potency and Count on target)/2)% more damage (max 25%)\n- At 4+ highest Reson., raise the above cap to (max 35%)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [Vibration] and +3 [Vibration] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Cavernous Wailing",
+          "abName": "Blubbering Toad",
+          "desc": "[CantIdentify]\nTargets randomly\nIf the target has [Vibration], deal +((the sum of [Vibration] Potency and Count on target)/2)% more damage (max <style=\"highlight\">30%</style>)\n- At 4+ highest Reson., <style=\"highlight\">deal +(5 + (the sum of [Vibration] Potency and Count on target)/2)% more damage instead (max 40%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [Vibration] and +3 [Vibration] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationEcho]</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Cavernous Wailing",
+          "abName": "Blubbering Toad",
+          "desc": "[CantIdentify]\nTargets randomly\nIf the target has [Vibration], deal +(<style=\"highlight\">5</style> + (the sum of [Vibration] Potency and Count on target)/2)% more damage (max <style=\"highlight\">40%</style>)\n- At 4+ highest Reson., deal +(<style=\"highlight\">7.5</style> + (the sum of [Vibration] Potency and Count on target)/<style=\"highlight\">1.5</style>)% more damage instead (max <style=\"highlight\">50%</style>)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">6</style> [Vibration] and <style=\"highlight\">+6</style> [Vibration] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationEcho]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
