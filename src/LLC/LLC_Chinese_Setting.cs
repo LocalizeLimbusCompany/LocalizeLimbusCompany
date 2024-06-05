@@ -37,7 +37,7 @@ namespace LimbusLocalize
             foreach (Toggle tg in __instance._languageToggles)
             {
                 tg.onValueChanged.RemoveAllListeners();
-                Action<bool> onValueChanged = (bool isOn) =>
+                Action<bool> onValueChanged = (isOn) =>
                 {
                     if (!isOn)
                         return;
