@@ -120,6 +120,229 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2020611,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Everlasting",
+          "abName": "Time Duck",
+          "desc": "If the target's Speed is slower than this unit's, deal +(2.5 x (Speed difference))% more damage (max 25%)\n[BeforeAttack] At 3+ highest Reson., inflict [Vibration] Potency by highest Reson. (max 5)\n[EndSkill] For 3 turns, lose 10 SP at Turn End",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 [Vibration] and +5 [Vibration] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [FusionVibration] into [VibrationContinue]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Reduce target's Max Speed by half next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Everlasting",
+          "abName": "Time Duck",
+          "desc": "If the target's Speed is slower than this unit's, deal +(<style=\"highlight\">3.5</style> x (Speed difference))% more damage (max <style=\"highlight\">35%</style>)\n[BeforeAttack] At 3+ highest Reson., inflict [Vibration] Potency by highest Reson. (max 5)\n<style=\"highlight\">- If the highest Reson. was a Sloth A-Reson., inflict [Vibration] Count by [Vibration] Potency inflicted (max 5)</style>\n[EndSkill] For 3 turns, lose 10 SP at Turn End",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 [Vibration] and +5 [Vibration] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [FusionVibration] into [VibrationContinue]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Reduce target's Max Speed by half next turn<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Everlasting",
+          "abName": "Time Duck",
+          "desc": "If the target's Speed is slower than this unit's, deal +(<style=\"highlight\">3.5</style> x (Speed difference))% more damage (max <style=\"highlight\">50%</style>)\n[BeforeAttack] At 3+ highest Reson., inflict [Vibration] Potency by (<style=\"highlight\">2</style> x (highest Reson.)) (max <style=\"highlight\">10</style>)\n- If the highest Reson. was a Sloth A-Reson., inflict [Vibration] Count by [Vibration] Potency inflicted (max <style=\"highlight\">10</style>)\n[EndSkill] For 3 turns, lose 10 SP at Turn End",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">10</style> [Vibration] and <style=\"highlight\">+10</style> [Vibration] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [FusionVibration] into [VibrationContinue]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Reduce target's Max Speed by half next turn<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2020621,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Everlasting",
+          "abName": "Time Duck",
+          "desc": "[CantIdentify]\nTargets randomly\nIf the main target's Speed is slower than this unit's, deal +(1.5 x (Speed difference))% more damage (max 12%)\n[BeforeAttack] At 3+ highest Reson., inflict 3 [Vibration] Potency",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [Vibration] and +3 [Vibration] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [FusionVibration] into [VibrationContinue]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Reduce target's Max Speed by half next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Everlasting",
+          "abName": "Time Duck",
+          "desc": "[CantIdentify]\nTargets randomly\nIf the main target's Speed is slower than this unit's, deal +(<style=\"highlight\">2</style> x (Speed difference))% more damage (max <style=\"highlight\">16%</style>)\n[BeforeAttack] At 3+ highest Reson., inflict [Vibration] Potency by highest Reson. (max 4)\n<style=\"highlight\">- [BeforeAttack] If the highest Reson. was a Sloth A-Reson., inflict +2 [Vibration] Count</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [Vibration] and +3 [Vibration] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [FusionVibration] into [VibrationContinue]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Reduce target's Max Speed by half next turn<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Everlasting",
+          "abName": "Time Duck",
+          "desc": "[CantIdentify]\nTargets randomly\nIf the main target's Speed is slower than this unit's, deal +(<style=\"highlight\">2.5</style> x (Speed difference))% more damage (max <style=\"highlight\">20%</style>)\n[BeforeAttack] At 3+ highest Reson., inflict [Vibration] Potency by highest Reson. (max <style=\"highlight\">4</style>)\n- [BeforeAttack] If the highest Reson. was a Sloth A-Reson., <style=\"highlight\">inflict [Vibration] Count by [Vibration] Potency inflicted (max 5)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">5</style> [Vibration] and <style=\"highlight\">+5</style> [Vibration] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [FusionVibration] into [VibrationContinue]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Reduce target's Max Speed by half next turn<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

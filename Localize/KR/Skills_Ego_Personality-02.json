@@ -120,6 +120,230 @@
           ]
         }
       ]
+    },
+
+    {
+      "id": 2020611,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "영속",
+          "abName": "시간오리",
+          "desc": "대상의 속도가 자신보다 느릴 때, 피해량 +(대상과의 속도 차이x2.5)% (최대 25%)\n[BeforeAttack] 최대 공명 수가 3 이상일 경우, 최대 공명 수만큼 [Vibration] 위력 부여 (최대 5)\n[EndSkill] 3턴 동안 턴 종료 시 정신력 10 감소",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 5, [Vibration] 횟수 5 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationContinue]으로 [FusionVibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 대상의 속도 최댓값 절반으로 감소"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "영속",
+          "abName": "시간오리",
+          "desc": "대상의 속도가 자신보다 느릴 때, 피해량 +(대상과의 속도 차이x<style=\"highlight\">3.5</style>)% (최대 <style=\"highlight\">35%</style>)\n[BeforeAttack] 최대 공명 수가 3 이상일 경우, 최대 공명 수만큼 [Vibration] 위력 부여 (최대 5)\n<style=\"highlight\">- 최대 공명이 나태 완전 공명일 경우, 부여한 [Vibration] 위력 값만큼 [Vibration] 횟수 부여 (최대 5)</style>\n[EndSkill] 3턴 동안 턴 종료 시 정신력 10 감소",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 5, [Vibration] 횟수 5 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationContinue]으로 [FusionVibration]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 대상의 속도 최댓값 절반으로 감소<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "영속",
+          "abName": "시간오리",
+          "desc": "대상의 속도가 자신보다 느릴 때, 피해량 +(대상과의 속도 차이x<style=\"highlight\">5</style>)% (최대 <style=\"highlight\">50%</style>)\n[BeforeAttack] 최대 공명 수가 3 이상일 경우, (최대 공명 수<style=\"highlight\">x2</style>)만큼 [Vibration] 위력 부여 (최대 <style=\"highlight\">10</style>)\n- 최대 공명이 나태 완전 공명일 경우, 부여한 [Vibration] 위력 값만큼 [Vibration] 횟수 부여 (최대 <style=\"highlight\">10</style>)\n[EndSkill] 3턴 동안 턴 종료 시 정신력 10 감소",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] <style=\"highlight\">10</style>, [Vibration] 횟수 <style=\"highlight\">10</style> 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationContinue]으로 [FusionVibration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 대상의 속도 최댓값 절반으로 감소<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2020621,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "영속",
+          "abName": "시간오리",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n메인 공격 대상의 속도가 자신보다 느릴 때, 피해량 +(대상과의 속도 차이x1.5)% (최대 12%)\n[BeforeAttack] 최대 공명 수가 3 이상일 경우, [Vibration] 위력 3 부여",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 3, [Vibration] 횟수 3 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationContinue]으로 [FusionVibration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 대상의 속도 최댓값 절반으로 감소"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "영속",
+          "abName": "시간오리",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n메인 공격 대상의 속도가 자신보다 느릴 때, 피해량 +(대상과의 속도 차이x<style=\"highlight\">2</style>)% (최대 <style=\"highlight\">16%</style>)\n[BeforeAttack] 최대 공명 수가 3 이상일 경우, 최대 공명 수만큼 [Vibration] 위력 부여 (최대 4)\n<style=\"highlight\">- [BeforeAttack] 최대 공명이 나태 완전 공명일 경우, [Vibration] 횟수 2 부여</style>",
+         "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 3, [Vibration] 횟수 3 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationContinue]으로 [FusionVibration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 대상의 속도 최댓값 절반으로 감소<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "영속",
+          "abName": "시간오리",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n메인 공격 대상의 속도가 자신보다 느릴 때, 피해량 +(대상과의 속도 차이x<style=\"highlight\">2.5</style>)% (최대 <style=\"highlight\">20%</style>)\n[BeforeAttack] 최대 공명 수가 3 이상일 경우, (최대 공명 수)만큼 [Vibration] 위력 부여 (최대 <style=\"highlight\">5</style>)\n- [BeforeAttack] 최대 공명이 나태 완전 공명일 경우, <style=\"highlight\">부여한 [Vibration] 위력 값만큼 [Vibration] 횟수 부여 (최대 5)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] <style=\"highlight\">5</style>, [Vibration] 횟수 <style=\"highlight\">5</style> 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationContinue]으로 [FusionVibration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 대상의 속도 최댓값 절반으로 감소<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

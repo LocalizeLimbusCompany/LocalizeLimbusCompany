@@ -4646,7 +4646,7 @@
     {
       "id": 9708,
       "name": "Trash Crab Brain Wine",
-      "desc": "When an ally attacks an enemy that has [Burst] with a Skill that inflicts [Burst] Potency or Count, deal +([Burst] Count x 1.25)% more damage. (max 50%)\n\nWhen an ally covers from Stagger, heal 20% of max HP. (2 times per Encounter)",
+      "desc": "When an ally attacks an enemy that has [Burst] with a Skill that inflicts [Burst] Potency or Count, deal +([Burst] Count x 1.25)% more damage. (max 50%)\n\nWhen an ally recovers from Stagger, heal 20% of max HP. (2 times per Encounter)",
       "simpleDesc": [
         {
           "abilityID": 9708,
@@ -4899,6 +4899,191 @@
         {
           "abilityID": 291171,
           "simpleDesc": "If conditions are met: deal +20% more damage"
+        }
+      ]
+    },
+    {
+      "id": 9721,
+      "name": "Silver Watch Case",
+      "desc": "When dealing damage to an enemy with Attack Skills(Not counting E.G.O Skills) that inflict [Vibration] Potency, Count, or Unique Tremor, deal +10% more damage.\n\nIf the Skill triggered [VibrationExplosion] on the enemy for the first time this turn, inflict +2 [Vibration] Count next turn (once per turn)",
+      "simpleDesc": [
+        {
+          "abilityID": 9721,
+          "simpleDesc": "Deal +10% more damage"
+        },
+        {
+          "abilityID": 97211,
+          "simpleDesc": "Inflict +2 [Vibration] Count next turn"
+        }
+      ]
+    },
+    {
+      "id": 9722,
+      "name": "Faded Watch Case",
+      "desc": "When Clashing with a faster enemy, Clash Power +1.\n\nWhen dealing damage to a faster enemy, inflict 3 [Vibration] Potency and +2 [Vibration] Count next turn. (once per turn)",
+      "simpleDesc": [
+        {
+          "abilityID": 9722,
+          "simpleDesc": "Clash Power +1"
+        },
+        {
+          "abilityID": 97221,
+          "simpleDesc": "Inflict 3 [Vibration] Potency and +2 [Vibration] Count next turn"
+        }
+      ]
+    },
+    {
+      "id": 9723,
+      "name": "Warning Notice",
+      "desc": "Turn End: Inflict 1 [Binding] to the fastest enemy next turn. (for Abnormalities, a Part)\n\nIf the target has [Vibration] or 'Unique Tremor', inflict 2 [Binding] instead.\n\nWhen an ally attacks targets with [Binding], deal +(5 + (2.5 x [Binding] value)) more damage. (max 15%)",
+      "simpleDesc": [
+        {
+          "abilityID": 9723,
+          "simpleDesc": "Apply 1 [Binding] next turn"
+        },
+        {
+          "abilityID": 97231,
+          "simpleDesc": "Deal +(5 + (2.5 x [Binding] value)) more damage"
+        }
+      ]
+    },
+    {
+      "id": 9724,
+      "name": "Etched Clock Hands",
+      "desc": "First Turn Start of a wave: inflict (9 - current Speed) [Vibration] Potency to 3 enemies with the slowest Speed. (min. 3)\n\nDeal +10% more damage against targets with 12+ [Vibration] or 'Unique Tremor' at Turn Start.",
+      "simpleDesc": [
+        {
+          "abilityID": 9724,
+          "simpleDesc": "Inflict (9 - current Speed) [Vibration] Potency"
+        },
+        {
+          "abilityID": 97241,
+          "simpleDesc": "Deal +10% more damage"
+        }
+      ]
+    },
+    {
+      "id": 9725,
+      "name": "Rusted Clock Hands",
+      "desc": "First Turn Start of a wave: inflict (9 - current Speed) [Vibration] Potency (min. 3) and (9 - current Speed)/2 [Vibration] Count to 1 enemy with the fastest Speed. (rounded up; for Abnormalities, a Part)\n\nTake -10% less damage from targets with 12+ [Vibration] or 'Unique Tremor' at Turn Start.",
+      "simpleDesc": [
+        {
+          "abilityID": 9725,
+          "simpleDesc": "Inflict (9 - current Speed) [Vibration] Potency (min. 3) and (9 - current Speed)/2 [Vibration] Count"
+        },
+        {
+          "abilityID": 97251,
+          "simpleDesc": "Damage Taken -10%."
+        }
+      ]
+    },
+    {
+      "id": 9726,
+      "name": "Chalice of Trickle-down",
+      "desc": "When an ally with Attack Skills(Not E.G.O Skills) that inflict [Vibration] Potency, Count, or 'Unique Tremor' wins a Clash, inflict 2 [Vibration] Potency and +2 [Vibration] Count. (2 times per turn)\n\nYurodivy Identities: inflict 3 [Vibration] Potency and +3 [Vibration] Count instead (3 times per turn)\n\nIf the affected Identity Clashes against targets with higher Offense Levels, Clash Power +2; deal +20% more damage when attacking after winning the Clash.",
+      "simpleDesc": [
+        {
+          "abilityID": 9726,
+          "simpleDesc": "Inflict 2 [Vibration] Potency and +2 [Vibration] Count"
+        },
+        {
+          "abilityID": 97261,
+          "simpleDesc": "Inflict 3 [Vibration] Potency and +3 [Vibration] Count"
+        },
+        {
+          "abilityID": 97262,
+          "simpleDesc": "Clash Power +2, deal +20% more damage"
+        }
+      ]
+    },
+    {
+      "id": 9727,
+      "name": "Prepaid Time Receipt",
+      "desc": "Deal +(5 + (2.5 x Speed difference))% more damage against faster enemies with 2+ Speed difference. (max 15%)\n\nTurn End: If an ally dealt damage with an Attack Skill (Not counting E.G.O Skills) this turn against faster enemies with 2+ Speed difference, inflict 2 [Binding] and 1 [ResultReduction] to the enemy next turn. (once per turn)",
+      "simpleDesc": [
+        {
+          "abilityID": 9727,
+          "simpleDesc": "Deal +(5 + (2.5 x Speed difference))% more damage against"
+        },
+        {
+          "abilityID": 97271,
+          "simpleDesc": "Inflict 2 [Binding] and 1 [ResultReduction] to the enemy next turn"
+        }
+      ]
+    },
+    {
+      "id": 9728,
+      "name": "Pocket Watch : Type L",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency, Count, or 'Unique Tremor' effects. (Not counting E.G.O Skills)\n\nTo allies' Skill 3s that inflict [Vibration] Potency, Count, or 'Unique Tremor': Coin Power +2 and deal +25% more damage.\n\nWhen an ally that inflicts [Vibration] Potency, Count, or 'Unique Tremor' triggers [Switch_Vibration] on an enemy with Attack Skills(Including E.G.O Skills): multiply the [Vibration] Potency and Count by 1.5(only when actually Converting them into different 'Tremor' types) and inflict 5 [DefenseDown] next turn. (once per turn)\n\nFirst Turn Start of a wave: inflict (12 - current Speed) [Vibration] Potency (min. 6) to 3 enemies with the slowest Speed.",
+      "simpleDesc": [
+        {
+          "abilityID": 9728,
+          "simpleDesc": "Skill 3 gains Coin Power +2 and deals +25% more damage"
+        },
+        {
+          "abilityID": 97281,
+          "simpleDesc": "Multiply [Vibration] Potency and Count by 1.5 when triggering Amplitude Conversion"
+        },
+        {
+          "abilityID": 97282,
+          "simpleDesc": "Inflict (12 - current Speed) [Vibration] Potency"
+        }
+      ]
+    },
+    {
+      "id": 9729,
+      "name": "Pocket Watch : Type E",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency, Count, or 'Unique Tremor' effects. (Not counting E.G.O Skills)\n\nTo allies' Skill 3s that inflict [Vibration] Potency, Count, or 'Unique Tremor': Coin Power +2 and deal +25% more damage.\n\nWhen an ally that inflicts [Vibration] Potency, Count, or 'Unique Tremor' deals damage to a slower enemy with 2+ Speed difference between them: deal +([Vibration] Potency on target, max 25)% more damage and inflict 2 [DefenseDown] every time the ally deals damage (max 6)\n\nFirst Turn Start of a wave: inflict (12 - current Speed) [Vibration] Potency (min. 6) and (12 -current Speed)/2 [Vibration] Count to 1 enemy with the fastest Speed. (rounded up; for Abnormalities, a Part)",
+      "simpleDesc": [
+        {
+          "abilityID": 9729,
+          "simpleDesc": "Skill 3 gains Coin Power +2 and deals +25% more damage"
+        },
+        {
+          "abilityID": 97291,
+          "simpleDesc": "Deal +([Vibration] Potency on target)% more damage; inflict 2 [DefenseDown] every time the ally deals damage"
+        },
+        {
+          "abilityID": 97292,
+          "simpleDesc": "Inflict (12 - current Speed) [Vibration] Potency (min. 3) and (9 - current Speed)/2 [Vibration] Count"
+        }
+      ]
+    },
+    {
+      "id": 9730,
+      "name": "Pocket Watch : Type Y",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency, Count, or 'Unique Tremor' effects. (Not counting E.G.O Skills)\n\nTo allies' Skill 3s that inflict [Vibration] Potency, Count, or 'Unique Tremor': Coin Power +2 and deal +25% more damage.\n\nYurodivy Identities: Skill 3 gains Coin Power +2 and deal +(25 + (sum of [Vibration] Potency and Count on target))% more damage. (max 100%)\n\nYurodivy Identities: gain +3 [Vibration] Count at Turn Start.",
+      "simpleDesc": [
+        {
+          "abilityID": 9730,
+          "simpleDesc": "Skill 3 gains Coin Power +2 and deals +25% more damage"
+        },
+        {
+          "abilityID": 97301,
+          "simpleDesc": "Skill 3 gains Coin Power +2 and deal +(25 + (sum of [Vibration] Potency and Count on target))% more damage."
+        },
+        {
+          "abilityID": 97302,
+          "simpleDesc": "Gain +3 [Vibration] Count"
+        }
+      ]
+    },
+    {
+      "id": 9731,
+      "name": "Pocket Watch : Type P",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency, Count, or 'Unique Tremor' effects. (Not counting E.G.O Skills)\n\nTo allies' Skill 3s that inflict [Vibration] Potency, Count, or 'Unique Tremor': Coin Power +2 and deal +25% more damage.\n\nWhen an ally that inflicts [Vibration] Potency, Count, or 'Unique Tremor' Clashes against a faster enemy with 2+ Speed difference: Clash Power +2 and deal +([Vibration] Potency on target)% more damage. (max 50%)\n\nTurn Start: from slowest to fastest, the 3 slowest allies gain 5 [AttackUp], 3 [AttackUp], and 2 [AttackUp] respectively.",
+      "simpleDesc": [
+        {
+          "abilityID": 9731,
+          "simpleDesc": "Skill 3 gains Coin Power +2 and deals +25% more damage"
+        },
+        {
+          "abilityID": 97311,
+          "simpleDesc": "Clash Power +2 and deal +([Vibration] Potency on target)% more damage"
+        },
+        {
+          "abilityID": 97312,
+          "simpleDesc": "Gain [AttackUp]"
         }
       ]
     }

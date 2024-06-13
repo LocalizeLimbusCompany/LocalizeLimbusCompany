@@ -595,6 +595,253 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1060901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "推理開始",
+          "desc": "[WhenUse] 自分の[Vibration]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Vibration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 自分の[Vibration]回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "推理開始",
+          "desc": "[WhenUse] 自分の[Vibration]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Vibration]回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "推理開始",
+          "desc": "[WhenUse] 自分の[Vibration]回数が2増加\n<style=\"highlight\">自分の[Vibration]回数が6以上なら、コイン威力 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Vibration]回数が2増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "変形杖護身術",
+          "desc": "[WhenUse] 自分の[Vibration]回数が3増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Vibration]回数が3増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Vibration]が9以上なら、[VibrationExplosion]。対象の[Vibration]回数が1減少"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "変形杖護身術",
+          "desc": "<style=\"highlight\">[WhenUse] 対象の[Vibration]が8以上なら、マッチ威力 +1</style>\n[WhenUse] 自分の[Vibration]回数が3増加\n<style=\"highlight\">自分の[Vibration]回数が6以上なら、コイン威力 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Vibration]回数が3増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]<style=\"highlight\">3</style> を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Vibration]が<style=\"highlight\">7</style>以上なら、[VibrationExplosion]。対象の[Vibration]回数が1減少"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "変形杖護身術",
+          "desc": "[WhenUse] 対象の[Vibration]が<style=\"highlight\">6</style>以上なら、マッチ威力 +1\n[WhenUse] 自分の[Vibration]回数が3増加\n自分の[Vibration]回数が<style=\"highlight\">5</style>以上なら、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Vibration]回数が3増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Vibration]が<style=\"highlight\">6</style>以上なら、[VibrationExplosion]。対象の[Vibration]回数が1減少"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060903,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "犯人はあなたですね！",
+          "desc": "[WhenUse] 対象の[Vibration]が6以上なら、マッチ威力 +1\n[WhenUse] 自分の[Vibration]回数を10消耗してコイン威力 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] スキル使用時、[Vibration]回数を消耗したなら[VibrationEcho]へ[FusionVibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少\n- スキル使用時に[Vibration]回数を消耗できなかったなら、上記の効果発動後に自分へ[VibrationExplosion]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "犯人はあなたですね！",
+          "desc": "[WhenUse] 対象の[Vibration]<style=\"highlight\">6</style>につき、マッチ威力 +1<style=\"highlight\">(最大2)</style>\n[WhenUse] 自分の<style=\"highlight\">[Vibration]回数が15未満なら、</style>[Vibration]回数を10消耗してコイン威力 +2\n<style=\"highlight\">[WhenUse] 自分の[Vibration]回数を15消耗してコイン威力 +3</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] スキル使用時、[Vibration]回数を消耗したなら[VibrationEcho]へ[FusionVibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] スキル使用時に[Vibration]回数を10以上消耗したなら、[VibrationExplosion]。対象の[Vibration]回数が1減少</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] スキル使用時に[Vibration]回数を10以上消耗したなら、[VibrationExplosion]。対象の[Vibration]回数が1減少\n- 消耗した[Vibration]回数が15未満なら、上記効果発動後に自分にも[VibrationExplosion]</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1060904,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "待ってください！？",
+          "desc": "[WhenUse] 対象の[Vibration]回数の2倍だけバリアを得る(最大7)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "待ってください！？",
+          "desc": "[WhenUse] 対象の[Vibration]回数の2倍だけバリアを得る(最大<style=\"highlight\">13</style>)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }
