@@ -83,13 +83,13 @@ namespace LimbusLocalize
             typeof(ILObject)
         ])]
         [HarmonyPrefix]
-        private static bool Log(Logger __instance, LogType __0, ILObject __1)
+        private static bool Log(Logger __instance, LogType logType, ILObject message)
         {
-            if (__0 == LogType.Warning)
+            if (logType == LogType.Warning)
             {
-                string LogString = Logger.GetString(__1);
+                string LogString = Logger.GetString(message);
                 if (!LogString.StartsWith("<color=#0099bc><b>DOTWEEN"))
-                    __instance.logHandler.LogFormat(__0, null, "{0}", new ILObject[] { LogString });
+                    __instance.logHandler.LogFormat(logType, null, "{0}", LogString);
                 return false;
             }
             return true;
@@ -107,7 +107,7 @@ namespace LimbusLocalize
             {
                 string LogString = Logger.GetString(message);
                 if (!LogString.StartsWith("Material"))
-                    __instance.logHandler.LogFormat(logType, context, "{0}", new ILObject[] { LogString });
+                    __instance.logHandler.LogFormat(logType, context, "{0}", LogString);
                 return false;
             }
             return true;
