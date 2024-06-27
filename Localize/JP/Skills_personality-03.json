@@ -810,6 +810,231 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1030901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "いざ徴収準備をば",
+          "desc": "[WhenUse] 自分の[Vibration]回数が2増加",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "いざ徴収準備をば",
+          "desc": "[WhenUse] 自分の[Vibration]回数が2増加\n<style=\"highlight\">[WhenUse] 対象の[Vibration]が6以上なら、マッチ威力 +1\n[WhenUse] 次のターンにこのスキルスロットの[Aggro]が3増加</style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]<style=\"highlight\">2</style> を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "いざ徴収準備をば",
+          "desc": "[WhenUse] 自分の[Vibration]回数が2増加\n<style=\"highlight\">[WhenUse] 対象の[Vibration]6につき、マッチ威力 +1(最大2)</style>\n[WhenUse] 次のターンにこのスキルスロットの[Aggro]が3増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 次のターンにこのスキルスロットの[Aggro]が4増加</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]<style=\"highlight\">2</style> を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "T社製加速切断機",
+          "desc": "[WhenUse] 自分の[Vibration]回数が3増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Vibration]を最大3消耗\n消耗した[Vibration]だけ自分の[Vibration]回数が増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "T社製加速切断機",
+          "desc": "[WhenUse] 自分の[Vibration]回数が3増加\n<style=\"highlight\">[WhenUse] 対象の[Vibration]が6以上なら、マッチ威力 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Vibration]を最大3消耗\n消耗した[Vibration]だけ自分の[Vibration]回数が増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]<style=\"highlight\">3</style> を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] このスキルのコイン効果で対象の[Vibration]を消耗したなら、[VibrationExplosion]。対象の[Vibration]回数が1減少</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "T社製加速切断機",
+          "desc": "[WhenUse] 自分の[Vibration]回数が3増加\n[WhenUse] 対象の[Vibration]が<style=\"highlight\">6につき、マッチ威力 +1(最大2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Vibration]を最大3消耗\n(消耗した[Vibration]<style=\"highlight\"> × 2</style>)だけ自分の[Vibration]回数増加\n<style=\"highlight\">次のターンに(消耗した[Vibration] - 1)だけ[Binding]付与</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]3を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] このスキルのコイン効果で対象の[Vibration]を消耗したなら、[VibrationExplosion]。対象の[Vibration]回数が1減少<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030903,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "そこ、停まりたまえ！",
+          "desc": "[WhenUse] 対象の[Vibration]が6以上なら、マッチ威力 +1\n[WhenUse] 自分の[Vibration]回数を10消耗してコイン威力 +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]2を付与"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Vibration]が10以上なら、対象の[Vibration]を10消耗して[TimeSuspend]2を付与\n- 自分が[TimeRentalTwoPersonality]状態なら、 対象の[Vibration]を消耗しない"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の速度が自分より低ければ、[VibrationChainPersonality]へ[Switch_Vibration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "そこ、停まりたまえ！",
+          "desc": "[WhenUse] 対象の[Vibration]<style=\"highlight\">6につき、マッチ威力 +1(最大2)</style>\n<style=\"highlight\">[WhenUse] 対象が[Binding]状態なら、マッチ威力 +1</style>\n[WhenUse] 自分の[Vibration]回数を10消耗してコイン威力 +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Vibration]3を付与</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Vibration]が10以上なら、対象の[Vibration]を10消耗して[TimeSuspend]2を付与\n- 自分が[TimeRentalTwoPersonality]状態なら、 対象の[Vibration]を消耗しない<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の速度が自分より低ければ、[VibrationChainPersonality]へ[Switch_Vibration]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030904,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "時間を引き寄せようぞ",
+          "desc": "[StartBattle] [TimeRentalTwoPersonality]状態でなければ、ターン終了時に[TimeRentalTwoPersonality]4を得る(1ターンにつき1回)\n[WhenUse] このターンの間、敵にダメージを受けたときに次のターンにて対象へ[Vibration]2を付与(1ターンにつき2回)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "時間を引き寄せようぞ",
+          "desc": "[StartBattle] [TimeRentalTwoPersonality]状態でなければ、ターン終了時に[TimeRentalTwoPersonality]4を得る(1ターンにつき1回)\n[WhenUse] このターンの間、敵にダメージを受けたときに次のターンにて対象へ[Vibration]<style=\"highlight\">3</style>を付与(1ターンにつき<style=\"highlight\">6</style>回)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }

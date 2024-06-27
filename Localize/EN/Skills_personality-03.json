@@ -810,6 +810,231 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1030901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Let Us Prepare To Collect",
+          "desc": "[WhenUse] Gain +2 [Vibration] Count",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Let Us Prepare To Collect",
+          "desc": "[WhenUse] Gain +2 [Vibration] Count\n<style=\"highlight\">[WhenUse] If the target has 6+ [Vibration], Clash Power +1\n[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn</style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">2</style> [Vibration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Let Us Prepare To Collect",
+          "desc": "[WhenUse] Gain +2 [Vibration] Count\n<style=\"highlight\">[WhenUse] Gain Clash Power +1 for every 6 [Vibration] on target (max 2)</style>\n[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Gain +4 [Aggro] to this Skill Slot next turn</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">2</style> [Vibration]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "T Corp. Accelerated Amputator",
+          "desc": "[WhenUse] Gain +3 [Vibration] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Consume up to 3 [Vibration] on target, and gain the same amount of [Vibration] Count on self"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "T Corp. Accelerated Amputator",
+          "desc": "[WhenUse] Gain +3 [Vibration] Count\n<style=\"highlight\">[WhenUse] If the target has 6+ [Vibration], Clash Power +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Consume up to 3 [Vibration] on target, and gain the same amount of [Vibration] Count on self"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">3</style> [Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] If this Skill's Coin effects consumed [Vibration] on target, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "T Corp. Accelerated Amputator",
+          "desc": "[WhenUse] Gain +3 [Vibration] Count\n[WhenUse] <style=\"highlight\">Clash Power +1 for every 6 [Vibration] on target (max 2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Consume up to 3 [Vibration] on target, and gain <style=\"highlight\">double the amount consumed</style> as [Vibration] Count on self\n<style=\"highlight\">Inflict ([Vibration] consumed - 1) [Binding] next turn</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [Vibration]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If this Skill's Coin effects consumed [Vibration] on target, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030903,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "I Command Thee, Halt!",
+          "desc": "[WhenUse] If the target has 6+ [Vibration], Clash Power +1\n[WhenUse] Consume 10 [Vibration] Count on self to gain Coin Power +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If the target has 10+ [Vibration], consume 10 [Vibration] on target and inflict 2 [TimeSuspend]\n- If this unit is in a [TimeRentalTwoPersonality] state, this effect does not consume the target's [Vibration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the target's Speed is slower than this unit's, trigger [Switch_Vibration] into [VibrationChainPersonality]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "I Command Thee, Halt!",
+          "desc": "[WhenUse] <style=\"highlight\">Clash Power +1 for every 6 [Vibration] on target (max 2)</style>\n<style=\"highlight\">[WhenUse] If the target has [Binding], gain Clash Power +1</style>\n[WhenUse] Consume 10 [Vibration] Count on self to gain Coin Power +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Inflict 3 [Vibration]</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If the target has 10+ [Vibration], consume 10 [Vibration] on target and inflict 2 [TimeSuspend]\n- If this unit is in a [TimeRentalTwoPersonality] state, this effect does not consume the target's [Vibration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the target's Speed is slower than this unit's, trigger [Switch_Vibration] into [VibrationChainPersonality]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030904,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "I Shall Summon the Time",
+          "desc": "[StartBattle] If this unit is not in a [TimeRentalTwoPersonality] state, gain 4 [TimeRentalTwoPersonality] at Turn End (once per turn)\n[WhenUse] For this turn: when hit by an enemy, inflict 2 [Vibration] on target next turn (2 times per turn)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "I Shall Summon the Time",
+          "desc": "[StartBattle] If this unit is not in a [TimeRentalTwoPersonality] state, gain 4 [TimeRentalTwoPersonality] at Turn End (once per turn)\n[WhenUse] For this turn: when hit by an enemy, inflict <style=\"highlight\">3</style> [Vibration] on target next turn (<style=\"highlight\">6 times</style> per turn)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }

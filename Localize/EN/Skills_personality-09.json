@@ -451,6 +451,268 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1090901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Prepare To Collect",
+          "desc": "[WhenUse] Gain +2 [Vibration] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 [Vibration] Count"
+                },
+                {
+                  "desc": "[WinDuelAttack] Inflict +1 [Vibration] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Prepare To Collect",
+          "desc": "[WhenUse] Gain +2 [Vibration] Count\n<style=\"highlight\">[WhenUse] If the target has 6+ [Vibration], Clash Power +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 [Vibration] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[WinDuelAttack] Inflict +1 [Vibration] Count<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Prepare To Collect",
+          "desc": "[WhenUse] Gain +2 [Vibration] Count\n[WhenUse] <style=\"highlight\">Clash Power +1 for every 6 [Vibration] on target (max 2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">2</style> [Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 [Vibration] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[WinDuelAttack] Inflict +1 [Vibration] Count<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1090902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "T Corp. Martial Suppression",
+          "desc": "[WhenUse] Gain +2 [Vibration] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +2 [Vibration] Count"
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          "level": 2,
+          "name": "T Corp. Martial Suppression",
+          "desc": "[WhenUse] Gain +2 [Vibration] Count\n<style=\"highlight\">[WhenUse] If the target has 6+ [Vibration], Clash Power +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +2 [Vibration] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[WinDuelAttack] Inflict +2 [Vibration] Count</style>"
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "T Corp. Martial Suppression",
+          "desc": "<style=\"highlight\">Deal +5% more damage for every [Binding] on target (max 15%)</style>\n[WhenUse] Gain +2 [Vibration] Count\n[WhenUse] <style=\"highlight\">Clash Power +1 for every 6 [Vibration] on target (max 2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +2 [Vibration] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[WinDuelAttack] Inflict +<style=\"highlight\">3</style> [Vibration] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Inflict 1 [Binding] next turn</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] If the target has 6+ [Vibration], inflict 1 [Binding] next turn</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1090903,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Execute Collections",
+          "desc": "[WhenUse] If the target has 8+ [Vibration], Clash Power +1\n[WhenUse] Consume 8 [Vibration] Count on self to gain Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Binding] next turn"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If this unit is in a [TimeRentalTwoPersonality] state, inflict 2 [TimeSuspend]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Execute Collections",
+          "desc": "<style=\"highlight\">Deal +5% more damage for every [Binding] on target (max 20%)</style>\n[WhenUse] If the target has 8+ [Vibration], Clash Power +<style=\"highlight\">2</style>\n[WhenUse] Consume 8 [Vibration] Count on self to gain Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +<style=\"highlight\">3</style> [Vibration] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Binding] next turn<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] If this unit consumed [Vibration] Count with Skill use, inflict 2 [Binding] next turn</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If this unit is in a [TimeRentalTwoPersonality] state, inflict 2 [TimeSuspend]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1090904,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Borrow Time",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[StartBattle] If this unit is not in a [TimeRentalTwoPersonality] state, gain 3 [TimeRentalTwoPersonality] at Turn End (once per turn)\n[WhenUse] For this turn: when hit by an enemy, inflict 2 [Vibration] on target next turn (2 times per turn)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Borrow Time",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[StartBattle] If this unit is not in a [TimeRentalTwoPersonality] state, gain 3 [TimeRentalTwoPersonality] at Turn End (once per turn)\n[WhenUse] For this turn: when hit by an enemy, inflict 2 [Vibration] on target next turn (<style=\"highlight\">6 times</style> per turn)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

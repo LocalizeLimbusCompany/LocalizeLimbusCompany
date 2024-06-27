@@ -810,6 +810,231 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1030901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "징수 준비를 하지",
+          "desc": "[WhenUse] 자신의 [Vibration] 횟수 2 증가",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 1 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "징수 준비를 하지",
+          "desc": "[WhenUse] 자신의 [Vibration] 횟수 2 증가\n<style=\"highlight\">[WhenUse] 대상의 [Vibration]이 6 이상이면, 합 위력 +1\n[WhenUse] 다음 턴에 이 스킬 슬롯의 [Aggro] 3 증가</style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] <style=\"highlight\">2</style> 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "징수 준비를 하지",
+          "desc": "[WhenUse] 자신의 [Vibration] 횟수 2 증가\n<style=\"highlight\">[WhenUse] 대상의 [Vibration] 6 당 합 위력 +1 (최대 2)</style>\n[WhenUse] 다음 턴에 이 스킬 슬롯의 [Aggro] 3 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 다음 턴에 이 스킬 슬롯의 [Aggro] 4 증가</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] <style=\"highlight\">2</style> 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "T사제 가속 절단기",
+          "desc": "[WhenUse] 자신의 [Vibration] 횟수 3 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Vibration]을 최대 3 소모\n소모한 [Vibration]만큼 자신의 [Vibration] 횟수 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 2 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "T사제 가속 절단기",
+          "desc": "[WhenUse] 자신의 [Vibration] 횟수 3 증가\n<style=\"highlight\">[WhenUse] 대상의 [Vibration]이 6 이상이면, 합 위력 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Vibration]을 최대 3 소모\n소모한 [Vibration]만큼 자신의 [Vibration] 횟수 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] <style=\"highlight\">3</style> 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 이 스킬의 코인 효과로 대상의 [Vibration]을 소모했다면, [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "T사제 가속 절단기",
+          "desc": "[WhenUse] 자신의 [Vibration] 횟수 3 증가\n[WhenUse] 대상의 [Vibration] <style=\"highlight\">6 당 합 위력 +1 (최대 2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Vibration]을 최대 3 소모\n(소모한 [Vibration]<style=\"highlight\">x2</style>)만큼 자신의 [Vibration] 횟수 증가\n<style=\"highlight\">다음 턴에 (소모한 [Vibration]-1)만큼 [Binding] 부여</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 3 부여<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 이 스킬의 코인 효과로 대상의 [Vibration]을 소모했다면 [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030903,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "거기 멈추도록!",
+          "desc": "[WhenUse] 대상의 [Vibration]이 6 이상이면, 합 위력 +1\n[WhenUse] 자신의 [Vibration] 횟수를 10 소모하여 코인 위력 +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 2 부여"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Vibration]이 10 이상이면, 대상의 [Vibration]을 10 소모하여 [TimeSuspend] 2 부여\n- 자신이 [TimeRentalTwoPersonality] 상태면, 대상의 [Vibration]을 소모하지 않음"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상의 속도가 자신보다 낮다면, [VibrationChainPersonality]로 [Switch_Vibration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "거기 멈추도록!",
+          "desc": "[WhenUse] 대상의 [Vibration] <style=\"highlight\">6 당 합 위력 +1 (최대 2)</style>\n<style=\"highlight\">[WhenUse] 대상이 [Binding] 상태면, 합 위력 +1</style>\n[WhenUse] 자신의 [Vibration] 횟수를 10 소모하여 코인 위력 +2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Vibration] 3 부여</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Vibration]이 10 이상이면, 대상의 [Vibration]을 10 소모하여 [TimeSuspend] 2 부여\n- 자신이 [TimeRentalTwoPersonality] 상태면, 대상의 [Vibration]을 소모하지 않음<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상의 속도가 자신보다 낮다면, [VibrationChainPersonality]로 [Switch_Vibration]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030904,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "시간을 끌어와보도록 하지",
+          "desc": "[StartBattle] [TimeRentalTwoPersonality] 상태가 아니면, 턴 종료 시 [TimeRentalTwoPersonality] 4 얻음 (턴 당 1회)\n[WhenUse] 이번 턴 동안 적에게 피격 시, 다음 턴에 대상에게 [Vibration] 2 부여 (턴 당 2회)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "시간을 끌어와보도록 하지",
+          "desc": "[StartBattle] [TimeRentalTwoPersonality] 상태가 아니면, 턴 종료 시 [TimeRentalTwoPersonality] 4 얻음 (턴 당 1회)\n[WhenUse] 이번 턴 동안 적에게 피격 시, 다음 턴에 대상에게 [Vibration] <style=\"highlight\">3</style> 부여 (턴 당 <style=\"highlight\">6</style>회)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }
