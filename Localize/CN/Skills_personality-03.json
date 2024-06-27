@@ -810,6 +810,231 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1030901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "该征收了",
+          "desc": "[WhenUse] 对自身施加2层震颤 ",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级震颤 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "该征收了",
+          "desc": "[WhenUse] 对自身施加2层震颤 \n[WhenUse] 若目标的震颤 强度不低于6级，则使本技能的拼点威力+1\n[WhenUse] 下回合使本技能对应行动槽的挑衅值 +3",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级震颤 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "该征收了",
+          "desc": "[WhenUse] 对自身施加2层震颤 \n[WhenUse] 目标每带有6级震颤 强度，使本技能的拼点威力+1(最多+2)\n[WhenUse] 下回合使本技能对应行动槽的挑衅值 +3",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合使本技能对应行动槽的挑衅值 +4"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级震颤 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "T公司产加速切断器",
+          "desc": "[WhenUse] 对自身施加3层震颤 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 消耗目标至多3级震颤 强度并对自身施加(消耗的震颤 强度)层震颤 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级震颤 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "T公司产加速切断器",
+          "desc": "[WhenUse] 对自身施加3层震颤 \n[WhenUse] 若目标的震颤 强度不低于6级，则使本技能的拼点威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 消耗目标至多3级震颤 强度并对自身施加(消耗的震颤 强度)层震颤 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级震颤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若本技能的硬币效果消耗了目标的震颤 强度，则使其震颤引爆 并使其震颤 层数减少1层"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "T公司产加速切断器",
+          "desc": "[WhenUse] 对自身施加3层震颤 \n[WhenUse] 目标每带有6级震颤 强度，使本技能的拼点威力+1(最多+2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 消耗目标至多3级震颤 强度并对自身施加(消耗的震颤 强度×2)层震颤 \n下回合对目标施加(消耗的震颤 强度-1)层束缚 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级震颤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若本技能的硬币效果消耗了目标的震颤 强度，则使其震颤引爆 并使其震颤 层数减少1层"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030903,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "那位，请止步！",
+          "desc": "[WhenUse] 若目标的震颤 强度不低于6级，则使本技能的拼点威力+1\n[WhenUse] 消耗自身的10层震颤 并使本技能的硬币威力+2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级震颤 强度"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若目标的震颤 强度不低于10级，则消耗其10级震颤 强度并对其施加2层[TimeSuspend]\n- 若自身带有[TimeRentalTwoPersonality]，则本效果不消耗目标的震颤 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标的速度值低于自身，则使目标振幅转换 为[VibrationChainPersonality]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "那位，请止步！",
+          "desc": "[WhenUse] 目标每带有6级震颤 强度，使本技能的拼点威力+1(最多+2)\n[WhenUse] 若目标带有束缚 ，则使本技能的拼点威力+1\n[WhenUse] 消耗自身的10层震颤 并使本技能的硬币威力+2",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级震颤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级震颤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若目标的震颤 强度不低于10级，则消耗其10级震颤 强度并对其施加2层[TimeSuspend]\n- 若自身带有[TimeRentalTwoPersonality]，则本效果不消耗目标的震颤 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标的速度值低于自身，则使目标振幅转换 为[VibrationChainPersonality]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1030904,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "抽取时间吧",
+          "desc": "[StartBattle] 若自身未带有[TimeRentalTwoPersonality]，则回合结束时使自身获得4层[TimeRentalTwoPersonality](每回合最多1次)\n[WhenUse] 本回合内自身受到敌方单位攻击时，下回合使目标增加2级震颤 强度(每回合最多2次)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "抽取时间吧",
+          "desc": "[StartBattle] 若自身未带有[TimeRentalTwoPersonality]，则回合结束时使自身获得4层[TimeRentalTwoPersonality](每回合最多1次)\n[WhenUse] 本回合内自身受到敌方单位攻击时，下回合使目标增加3级震颤 强度(每回合最多6次)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }
