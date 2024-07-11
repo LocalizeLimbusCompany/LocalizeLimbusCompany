@@ -704,6 +704,176 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1051001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Studious Dedication",
+          "desc": "Gain ([KnowledgeExplored] x 3% of Max HP) Shield if this Skill is Discarded\n[WhenUse] [Discard] 1 Skill of the highest rank in all of this unit's Skill Slots",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Sinking] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Studious Dedication",
+          "desc": "Gain ([KnowledgeExplored] x <style=\"highlight\">4%</style> of Max HP) Shield if this Skill is Discarded\n[WhenUse] [Discard] 1 Skill of the lowest rank in all of this unit's Skill Slots\n<style=\"highlight\">[WhenUse] At 2+ [KnowledgeExplored], Clash Power +1\n[WinDuel] Gain 2 [KnowledgeTraining] (once per turn)</style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Sinking] Count<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Studious Dedication",
+          "desc": "Gain ([KnowledgeExplored] x <style=\"highlight\">5%</style> of Max HP) Shield if this Skill is Discarded\n[WhenUse] [Discard] 1 Skill of the lowest rank in all of this unit's Skill Slots\n<style=\"highlight\">[WhenUse] Gain ([KnowledgeExplored] - 1) Clash Power (max 2)</style>\n[WinDuel] Gain 2 [KnowledgeTraining] (once per turn)",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Sinking] Count<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1051002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Moment of Erudition",
+          "desc": "[StartBattle] Gain [KnowledgeTraining] equal to [KnowledgeExplored] on self\n[WhenUse] [Discard] 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict [Sinking] equal to [KnowledgeExplored]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Moment of Erudition",
+          "desc": "<style=\"highlight\">Deal +3% more damage for every [KnowledgeExplored] on self (max 9%)</style>\n[StartBattle] Apply [KnowledgeTraining] equal to [KnowledgeExplored] on self <style=\"highlight\"> to a random ally</style> and on self <style=\"highlight\">(prioritizes allies with [Discard] that has the least [KnowledgeTraining])</style>\n[WhenUse] [Discard] 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots\n<style=\"highlight\">[WhenUse] If the target has 6+ [Sinking], Coin Power +1</style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict [Sinking] equal to [KnowledgeExplored]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Moment of Erudition",
+          "desc": "Deal <style=\"highlight\">+5%</style> more damage for every [KnowledgeExplored] on self (max <style=\"highlight\">15%</style>)\n[StartBattle] Apply [KnowledgeTraining] equal to [KnowledgeExplored] on self <style=\"highlight\">to 2 random allies</style> and on self (prioritizes allies with [Discard] that has the least [KnowledgeTraining])\n[WhenUse] [Discard] 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots\n<style=\"highlight\">[WhenUse] Coin Power +1 for every 6 [Sinking] on target (max 2)</style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict [Sinking] equal to <style=\"highlight\">([KnowledgeExplored] x 2)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1051003,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Scorch Knowledge",
+          "desc": "Deal +3% more damage for every [KnowledgeExplored] on self (max 18%)\n[WhenUse] If the target has 6+ [Sinking], Coin Power +1\n[BeforeAttack] Consume all [KnowledgeTraining] on self and gain half of that value as additional [KnowledgeExplored] (rounded down)\n[EndSkill] At 4+ [KnowledgeExplored], reset value to 1 (if this Skill defeats an enemy, reset value to 3 instead)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict [Sinking] Potency/Count equal to [KnowledgeExplored] value against the target (how much of that [Sinking] is Potency or Count is randomly determined)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Scorch Knowledge",
+          "desc": "Deal <style=\"highlight\">+5%</style> more damage for every [KnowledgeExplored] (max <style=\"highlight\">45%</style>)\n<style=\"highlight\">[WhenUse] Coin Power +1 for every 6 [Sinking] on target (max 2)</style>\n[BeforeAttack] Consume all [KnowledgeTraining] on self and gain <style=\"highlight\">the same value</style> as additional [KnowledgeExplored]\n[EndSkill] At 4+ [KnowledgeExplored], reset value to 1 (if this Skill defeats an enemy, reset value to 3 instead)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict [Sinking] Potency/Count equal to [KnowledgeExplored] value against the target (how much of that [Sinking] is Potency or Count is randomly determined)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1051004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Fixated Study",
+          "desc": "[WhenUse] [Discard] 1 Skill of the highest rank in all of this unit's Skill Slots",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Fixated Study",
+          "desc": "[WhenUse] [Discard] 1 Skill of the highest rank in all of this unit's Skill Slots\n<style=\"highlight\">[WhenUse] Gain +6 Aggro to this Skill Slot next turn</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

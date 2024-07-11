@@ -705,6 +705,177 @@
           ]
         }
       ]
+    },
+
+    {
+      "id": 1051001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "학업 정진",
+          "desc": "이 스킬이 버려지면 ([KnowledgeExplored] x 최대 체력의 3%)만큼 보호막을 얻음\n[WhenUse] 자신의 모든 스킬 슬롯에서 등급이 가장 낮은 스킬 1개를 [Discard]",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking] 횟수 2 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "학업 정진",
+          "desc": "이 스킬이 버려지면 ([KnowledgeExplored] x 최대 체력의 <style=\"highlight\">4%</style>)만큼 보호막을 얻음\n[WhenUse] 자신의 모든 스킬 슬롯에서 등급이 가장 낮은 스킬 1개를 [Discard]\n<style=\"highlight\">[WhenUse] [KnowledgeExplored]이 2 이상이면, 합 위력 +1\n[WinDuel] [KnowledgeTraining] 2 얻음 (턴 당 1회)</style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking] 횟수 2 증가<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "학업 정진",
+          "desc": "이 스킬이 버려지면 ([KnowledgeExplored] x 최대 체력의 <style=\"highlight\">5%</style>)만큼 보호막을 얻음\n[WhenUse] 자신의 모든 스킬 슬롯에서 등급이 가장 낮은 스킬 1개를 [Discard]\n<style=\"highlight\">[WhenUse] ([KnowledgeExplored] - 1)만큼 합 위력이 증가 (최대 2)</style>\n[WinDuel] [KnowledgeTraining] 2 얻음 (턴 당 1회)",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking] 횟수 2 증가<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1051002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "배움의 시간",
+          "desc": "[StartBattle] 자신에게 [KnowledgeExplored]만큼 [KnowledgeTraining] 부여\n[WhenUse] 자신의 모든 스킬 슬롯에서 등급이 가장 낮은 스킬 2개를 등급이 낮은 순으로 [Discard]",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [KnowledgeExplored]만큼 [Sinking] 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "배움의 시간",
+          "desc": "<style=\"highlight\">[KnowledgeExplored] 1당 피해량 +3% (최대 9%)</style>\n<style=\"highlight\">[StartBattle] 무작위 아군 하나와</style> 자신에게 [KnowledgeExplored]만큼 [KnowledgeTraining] 부여 <style=\"highlight\">([Discard]을 사용하는 아군 중 [KnowledgeTraining]이 낮은 아군에게 우선 적용)</style>\n[WhenUse] 자신의 모든 스킬 슬롯에서 등급이 가장 낮은 스킬 2개를 등급이 낮은 순으로 [Discard]\n<style=\"highlight\">[WhenUse] 대상의 [Sinking]이 6 이상이면, 코인 위력 +1</style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [KnowledgeExplored]만큼 [Sinking] 부여<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "배움의 시간",
+          "desc": "[KnowledgeExplored] 1당 피해량 <style=\"highlight\">+5%</style> (최대 <style=\"highlight\">15%</style>)\n[StartBattle] 무작위 아군 <style=\"highlight\">둘</style>과 자신에게 [KnowledgeExplored]만큼 [KnowledgeTraining] 부여 ([Discard]을 사용하는 아군 중 [KnowledgeTraining]이 낮은 아군에게 우선 적용)\n[WhenUse] 자신의 모든 스킬 슬롯에서 등급이 가장 낮은 스킬 2개를 등급이 낮은 순으로 [Discard]\n<style=\"highlight\">[WhenUse] 대상의 [Sinking] 6당 코인 위력 +1 (최대 2)</style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] <style=\"highlight\">([KnowledgeExplored] x 2)</style>만큼 [Sinking] 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1051003,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "지식 전소",
+          "desc": "[KnowledgeExplored] 1당 피해량 +3% (최대 18%)\n[WhenUse] 대상의 [Sinking]이 6 이상이면, 코인 위력 +1\n[BeforeAttack] 자신의 [KnowledgeTraining]을 전부 소모하여 그 수치의 절반만큼 [KnowledgeExplored]을 추가로 얻음 (소수점 버림)\n[EndSkill] [KnowledgeExplored]이 4 이상이면, 1로 초기화 (이 스킬로 적 처치 시, 3으로 적용)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking] 위력과 [Sinking] 횟수를 합하여 [KnowledgeExplored]만큼 무작위로 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "지식 전소",
+          "desc": "[KnowledgeExplored] 1당 피해량 <style=\"highlight\">+5%</style> (최대 <style=\"highlight\">45%</style>)\n<style=\"highlight\">[WhenUse] 대상의 [Sinking] 6당, 코인 위력 +1 (최대 2)</style>\n[BeforeAttack] 자신의 [KnowledgeTraining]을 전부 소모하여 그 <style=\"highlight\">수치만큼</style> [KnowledgeExplored]을 추가로 얻음\n[EndSkill] [KnowledgeExplored]이 4 이상이면, 1로 초기화 (이 스킬로 적 처치 시, 3으로 적용)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking] 위력과 [Sinking] 횟수를 합하여 [KnowledgeExplored]만큼 무작위로 부여<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1051004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "탐구 몰입",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 등급이 가장 높은 스킬 1개를 [Discard]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "탐구 몰입",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 등급이 가장 높은 스킬 1개를 [Discard]\n<style=\"highlight\">[WhenUse] 다음 턴에 이 슬롯이 도발치 6을 얻음</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -704,6 +704,176 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1051001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "学業精進",
+          "desc": "このスキルが捨てられると、([KnowledgeExplored] × 体力最大値の3%)バリアを得る。\n[WhenUse] 自分の全スキルスロットから、ランクの最も低いスキル1つを[Discard]",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "学業精進",
+          "desc": "このスキルが捨てられると、([KnowledgeExplored] × 体力最大値の<style=\"highlight\">4%</style>)バリアを得る\n[WhenUse] 自分の全スキルスロットから、ランクが最も低いスキル1つを[Discard]\n<style=\"highlight\">[WhenUse] [KnowledgeExplored]が2以上なら、マッチ威力 +1\n[WinDuel] [KnowledgeTraining]2を得る(1ターンにつき1回)</style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]回数が2増加<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "学業精進",
+          "desc": "このスキルが捨てられると、([KnowledgeExplored] × 体力最大値の<style=\"highlight\">5%</style>)バリアを得る\n[WhenUse] 自分の全スキルスロットから、ランクが最も低いスキル1つを[Discard]\n<style=\"highlight\">[WhenUse] ([KnowledgeExplored] - 1)だけマッチ威力が増加(最大2)</style>\n[WinDuel] [KnowledgeTraining]2を得る(1ターンにつき1回)",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]回数が2増加<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1051002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "学びの時間",
+          "desc": "[StartBattle] 自分へ[KnowledgeExplored]だけ[KnowledgeTraining]を付与\n[WhenUse] 自分の全スキルスロットから、ランクが最も低いスキル2つをランクが低い順に[Discard]",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [KnowledgeExplored]だけ[Sinking]を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "学びの時間",
+          "desc": "<style=\"highlight\">[KnowledgeExplored]1につき、ダメージ量 +3%(最大9%)</style>\n<style=\"highlight\">[StartBattle] ランダムな味方1名と</style>、自分へ[KnowledgeExplored]だけ[KnowledgeTraining]を付与\n<style=\"highlight\">([Discard]を使う味方のうち、[KnowledgeTraining]が低い味方へ優先的に適用)</style>\n[WhenUse] 自分の全スキルスロットから、ランクが最も低いスキル2つをランクが低い順に[Discard]\n<style=\"highlight\">[WhenUse] 対象の[Sinking]が6以上なら、コイン威力 +1</style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [KnowledgeExplored]だけ[Sinking]を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "学びの時間",
+          "desc": "[KnowledgeExplored]1につき、ダメージ量 <style=\"highlight\">+5%</style>(最大<style=\"highlight\">15%</style>)\n[StartBattle] ランダムな味方<style=\"highlight\">2</style>名と、自分へ[KnowledgeExplored]だけ[KnowledgeTraining]を付与([Discard]を使う味方のうち、[KnowledgeTraining]が低い味方へ優先的に適用)\n[WhenUse] 自分の全スキルスロットから、ランクが最も低いスキル2つをランクが低い順に[Discard]\n<style=\"highlight\">[WhenUse] 対象の[Sinking]6につき、コイン威力 +1(最大2)</style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] <style=\"highlight\">([KnowledgeExplored] × 2)</style>だけ[Sinking] を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1051003,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "知識全焼",
+          "desc": "[KnowledgeExplored]1につき、ダメージ量 +3%(最大18%)\n[WhenUse] 対象の[Sinking]が6以上なら、コイン威力 +1\n[BeforeAttack] 自分の[KnowledgeTraining]を全て消耗し、その数値の半分だけ[KnowledgeExplored]を追加で得る(小数点切り捨て)\n[EndSkill] [KnowledgeExplored]が4以上なら、1に初期化(このスキルで敵討伐時、3として適用)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]威力と[Sinking]回数を合計で[KnowledgeExplored]だけランダムに付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "知識全焼",
+          "desc": "[KnowledgeExplored]1につき、ダメージ量 <style=\"highlight\">+5%</style>(最大<style=\"highlight\">45%</style>)\n<style=\"highlight\">[WhenUse] 対象の[Sinking]が6につき、コイン威力 +1(最大2)</style>\n[BeforeAttack] 自分の[KnowledgeTraining]を全て消耗し、その<style=\"highlight\">数値だけ</style>[KnowledgeExplored]を追加で得る(小数点切り捨て)\n[EndSkill] [KnowledgeExplored]が4以上なら、1に初期化(このスキルで敵討伐時、3として適用)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]威力と[Sinking]回数を合計で[KnowledgeExplored]だけランダムに付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1051004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "探求没入",
+          "desc": "[WhenUse] 自分の全スキルスロットから、ランクの最も高いスキル1つを[Discard]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "探求没入",
+          "desc": "[WhenUse] 自分の全スキルスロットから、ランクが最も高いスキル1つを[Discard]\n<style=\"highlight\">[WhenUse] 次のターンにて、このスロットが挑発値6を得る</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
