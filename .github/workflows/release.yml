@@ -45,3 +45,6 @@ jobs:
           workflow: update_api.yml
           repo: ZengXiaoPi/LLC_jsontest
           ref: main
+      - name: Post
+        run: |
+          Invoke-RestMethod -Uri "https://api.zeroasso.top/refresh_mirror" -Method Post -Headers @{"Authorization" = "${{ secrets.REFRESH_MIRROR_HEADER }}"}
