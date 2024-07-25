@@ -106,7 +106,7 @@ namespace LimbusLocalize
             {
                 if (data != null && data.GetLackOfBuffs() != null && data.GetLackOfBuffs().Count > 0)
                 {
-                    string text = Singleton<TextDataManager>.Instance.BufList.GetData(data.GetLackOfBuffs()[0].ToString()).GetName() + " 不足";
+                    string text = TextDataManager.Instance.BufList.GetData(data.GetLackOfBuffs()[0].ToString()).GetName() + " 不足";
                     __instance.UIManager.bufTypoUI.OpenBufTypo(BUF_TYPE.Negative, text, data.GetLackOfBuffs()[0]);
                 }
                 return false;
@@ -120,7 +120,7 @@ namespace LimbusLocalize
             if (IsUseChinese.Value)
             {
                 __result = dialog.Content;
-                UserDataManager instance = Singleton<UserDataManager>.Instance;
+                UserDataManager instance = UserDataManager.Instance;
                 if ("P10704".Equals(curStory.ID) && instance != null && instance._unlockCodeData != null && instance._unlockCodeData.CheckUnlockStatus(106) && dialog.Id == 3)
                 {
                     __result = __result.Replace("凯茜", "■■■■■");
@@ -136,7 +136,7 @@ namespace LimbusLocalize
             if (IsUseChinese.Value)
             {
                 __result = originString;
-                UserDataManager instance = Singleton<UserDataManager>.Instance;
+                UserDataManager instance = UserDataManager.Instance;
                 if (instance == null || instance._unlockCodeData == null || !instance._unlockCodeData.CheckUnlockStatus(106))
                     return false;
                 if ("battle_defeat_10707_1".Equals(dlgId))

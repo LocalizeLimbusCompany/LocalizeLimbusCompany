@@ -143,7 +143,7 @@ namespace LimbusLocalize
         private static void LoadRemote2()
         {
             var tm = TextDataManager.Instance;
-            TextDataManager.RomoteLocalizeFileList romoteLocalizeFileList = JsonUtility.FromJson<TextDataManager.RomoteLocalizeFileList>(SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Localize", "RemoteLocalizeFileList", null, null).Item1.ToString());
+            TextDataManager.RomoteLocalizeFileList romoteLocalizeFileList = JsonUtility.FromJson<TextDataManager.RomoteLocalizeFileList>(AddressableManager.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Localize", "RemoteLocalizeFileList", null, null).Item1.ToString());
             tm._uiList.Init(romoteLocalizeFileList.UIFilePaths);
             tm._characterList.Init(romoteLocalizeFileList.CharacterFilePaths);
             tm._personalityList.Init(romoteLocalizeFileList.PersonalityFilePaths);
@@ -241,12 +241,12 @@ namespace LimbusLocalize
         [HarmonyPrefix]
         private static bool GetScenario(string scenarioID, LOCALIZE_LANGUAGE lang, ref Scenario __result)
         {
-            TextAsset textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
+            TextAsset textAsset = AddressableManager.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
             if (!textAsset)
             {
                 LCB_LLCMod.LogError("Story Unknown Error!Call Story: Dirty Hacker");
                 scenarioID = "SDUMMY";
-                textAsset = SingletonBehavior<AddressableManager>.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
+                textAsset = AddressableManager.Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Story/Effect", scenarioID, null, null).Item1;
             }
             if (!LLC_Manager.Localizes.TryGetValue(scenarioID, out string text))
             {

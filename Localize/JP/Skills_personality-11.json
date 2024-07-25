@@ -1011,6 +1011,247 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1111001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "波動",
+          "desc": "[WhenUse] 自分の[Charge]回数が4以上なら、マッチ威力 +1\n[WhenUse] 自分の[Charge]回数が2増加",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Charge]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "波動",
+          "desc": "[WhenUse] 自分の[Charge]回数が4以上なら、基本威力 +1\n[WhenUse] 自分の[Charge]回数が6以上なら、マッチ威力 +1\n[WhenUse] 自分の[Charge]回数が2増加",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Charge]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "波動",
+          "desc": "[WhenUse] 自分の[Charge]回数が4以上なら、基本威力 +1\n[WhenUse] 自分の[Charge]回数5につき、マッチ威力 +1(最大2)\n[WhenUse] 自分の[Charge]回数が2増加",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Charge]回数が2増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1111002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "充電跳躍",
+          "desc": "[WhenUse] 自分の[Charge]回数を6消耗し、基本威力 +1\n[WhenUse] 自分の[Charge]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Charge]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Charge]回数が1増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "充電跳躍",
+          "desc": "[WhenUse] 自分の[Charge]回数を6消耗し、基本威力 +1\n- [Charge]回数を消耗したなら、自分と[Charge]回数保有量が最も少ない味方2名へ[ChargeForceField]を([Charge] + 1)を付与(最大7, 1ターンにつき最大1回発動)\n[WhenUse] 自分の[Charge]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Charge]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Charge]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] このスキルを使用時に[Charge]回数を消耗したなら、次のターンに[Binding]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "充電跳躍",
+          "desc": "[WhenUse] 自分の[Charge]回数6消耗し、コイン威力 +1\n- [Charge]回数を消耗したなら、自分と[Charge]回数保有量が最も少ない味方2名へ[ChargeForceField]を([Charge] +<style=\"highlight\">2</style>)を付与(最大<style=\"highlight\">8</style>, 1ターンにつき最大<style=\"highlight\">2</style>回発動)\n[WhenUse] 自分の[Charge]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Charge]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Charge]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] このスキルを使用時に[Charge]回数を消耗したなら、次のターンに[Binding]2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1111003,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "次元切断",
+          "desc": "[StartBattle] 自分と[Charge]を保有した味方(最大共鳴数)名に[ChargeLoad]を[Charge]だけ付与\n(最大付与対象数: 自分を除く5名)\n[WhenUse] [Charge]が2以上かつ、[Charge]回数が7以上15未満なら、保有した[Charge]回数を全て消耗してコイン威力 +1\n[WhenUse] [Charge]回数を15消耗してコイン威力 +1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] このスキル使用時、[Charge]回数を15消耗したなら[Burst]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] (5 - [Charge])だけ、自分の[Charge]回数が増加(最低0)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "次元切断",
+          "desc": "[StartBattle] 自分と[Charge]を保有した味方(最大共鳴数)名に[ChargeLoad]を[Charge]だけ付与\n(最大付与対象数: 自分を除く5名)\n[WhenUse] [Charge]が2以上かつ、[Charge]回数が7以上15未満なら、保有した[Charge]回数を全て消耗してコイン威力 +2\n[WhenUse] [Charge]回数を15消耗してコイン威力 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] このスキル使用時、[Charge]回数を15消耗したなら[Burst]3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] (5 - [Charge])だけ、自分の[Charge]回数が増加(最低0)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1111004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "プラズマ展開",
+          "desc": "[WhenUse] 自分の[Charge]回数2につき、基本威力 +1(最大5)\n[WhenUse] 自分の[Charge]回数が2増加(1ターンにつき最大2回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "プラズマ展開",
+          "desc": "[WhenUse] 自分の[Charge]<style=\"highlight\">回数1につき</style>、基本威力 +1(最大<style=\"highlight\">10</style>)\n[WhenUse] 自分の[Charge]回数が2増加(1ターンにつき最大<style=\"highlight\">3</style>回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1013,6 +1013,247 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1111001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "파동",
+          "desc": "[WhenUse] 자신의 [Charge] 횟수가 4 이상이면, 합 위력 +1\n[WhenUse] 자신의 [Charge] 횟수 2 증가",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Charge] 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "파동",
+          "desc": "[WhenUse] 자신의 [Charge] 횟수가 4 이상이면, 기본 위력 +1\n[WhenUse] 자신의 [Charge] 횟수가 6 이상이면, 합 위력 +1\n[WhenUse] 자신의 [Charge] 횟수 2 증가",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Charge] 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "파동",
+          "desc": "[WhenUse] 자신의 [Charge] 횟수가 4 이상이면, 기본 위력 +1\n[WhenUse] 자신의 [Charge] 횟수 5 당, 합 위력 +1 (최대 2)\n[WhenUse] 자신의 [Charge] 횟수 2 증가",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Charge] 횟수 2 증가"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1111002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "충전 도약",
+          "desc": "[WhenUse] 자신의 [Charge] 횟수를 6 소모하여, 기본 위력 +1\n[WhenUse] 자신의 [Charge] 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Charge] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Charge] 횟수 1 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [Binding] 1 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "충전 도약",
+          "desc": "[WhenUse] 자신의 [Charge] 횟수를 6 소모하여, 기본 위력 +1\n- [Charge] 횟수를 소모했다면, 자신과 [Charge] 횟수를 가장 적게 보유한 아군 2명에게 [ChargeForceField]을 ([Charge] + 1) 부여 (최대 7, 턴 당 최대 1회 발동)\n[WhenUse] 자신의 [Charge] 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Charge] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Charge] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [Binding] 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 이 스킬 사용 시 [Charge] 횟수를 소모하였다면, 다음 턴에 [Binding] 2 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "충전 도약",
+          "desc": "[WhenUse] 자신의 [Charge] 횟수를 6 소모하여, 코인 위력 +1\n- [Charge] 횟수를 소모했다면, 자신과 [Charge] 횟수를 가장 적게 보유한 아군 2명에게 [ChargeForceField]을 ([Charge] + <style=\"highlight\">2</style>) 부여 (최대 <style=\"highlight\">8</style>, 턴 당 최대 <style=\"highlight\">2</style>회 발동)\n[WhenUse] 자신의 [Charge] 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Charge] 횟수 2 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Charge] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [Binding] 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 이 스킬 사용 시 [Charge] 횟수를 소모하였다면, 다음 턴에 [Binding] 2 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1111003,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "차원 절단",
+          "desc": "[StartBattle] 자신과 [Charge]을 보유한 아군 (최대 공명 수)명에게 [ChargeLoad]를 [Charge]만큼 부여\n(최대 부여 대상 수: 자신 제외 5명)\n[WhenUse] [Charge]이 2이상이고 [Charge] 횟수가 7 이상, 15 미만이면, 보유한 [Charge] 횟수를 전부 소모하여 코인 위력 + 1\n[WhenUse] [Charge] 횟수를 15 소모하여 코인 위력 +1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 이 스킬 사용 시 [Charge] 횟수를 15 소모하였으면, [Burst] 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] (5 - [Charge])만큼 자신의 [Charge] 횟수 증가 (최소 0)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "차원 절단",
+          "desc": "[StartBattle] 자신과 [Charge]을 보유한 아군 (최대 공명 수)명에게 [ChargeLoad]를 [Charge]만큼 부여\n(최대 부여 대상 수: 자신 제외 5명)\n[WhenUse] [Charge]이 2이상이고 [Charge] 횟수가 7 이상, 15 미만이면, 보유한 [Charge] 횟수를 전부 소모하여 코인 위력 + 2\n[WhenUse] [Charge] 횟수를 15 소모하여 코인 위력 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 이 스킬 사용 시 [Charge] 횟수를 15 소모하였으면, [Burst] 3 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] (5 - [Charge])만큼 자신의 [Charge] 횟수 증가 (최소 0)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1111004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "플라즈마 전개",
+          "desc": "[WhenUse] 자신의 [Charge] 횟수 2당 기본 위력 +1 (최대 5)\n[WhenUse] 자신의 [Charge] 횟수 2 증가 (턴 당 최대 2회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "플라즈마 전개",
+          "desc": "[WhenUse] 자신의 [Charge] <style=\"highlight\">횟수당</style> 기본 위력 +1 (최대 <style=\"highlight\">10</style>)\n[WhenUse] 자신의 [Charge] 횟수 2 증가 (턴 당 최대 <style=\"highlight\">3</style>회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

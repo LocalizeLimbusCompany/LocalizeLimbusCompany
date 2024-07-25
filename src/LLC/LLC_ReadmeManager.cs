@@ -95,7 +95,7 @@ namespace LimbusLocalize
 
         public static void Close()
         {
-            Singleton<UserLocalSaveDataRoot>.Instance.NoticeRedDotSaveModel.Save();
+            UserLocalSaveDataRoot.Instance.NoticeRedDotSaveModel.Save();
             NoticeUIInstance._popupPanel.Close();
             UpdateNoticeRedDot();
         }
@@ -107,7 +107,7 @@ namespace LimbusLocalize
             int count = ReadmeList.Count;
             while (i < count)
             {
-                if (!Singleton<UserLocalSaveDataRoot>.Instance.NoticeRedDotSaveModel.TryCheckId(ReadmeList[i].ID))
+                if (!UserLocalSaveDataRoot.Instance.NoticeRedDotSaveModel.TryCheckId(ReadmeList[i].ID))
                 {
                     return true;
                 }

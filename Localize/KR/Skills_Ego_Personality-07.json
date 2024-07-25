@@ -12,7 +12,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 다음 턴에 화상, [Laceration], 진동, 파열, [Sinking] 중 무작위 1개 효과의 위력을 2 + (최대 탐식 완전 공명의 수)회 부여 (최대 5)"
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 화상, 출혈, 진동, 파열, 침잠 중 무작위 1개 효과의 위력을 2 + (최대 탐식 완전 공명의 수)회 부여 (최대 5)"
                 }
               ]
             }
@@ -27,7 +27,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 다음 턴에 화상, [Laceration], 진동, 파열, [Sinking] 중 무작위 1개 효과의 위력을 2 + (최대 탐식 완전 공명의 수)회 부여 (최대 5)"
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 화상, 출혈, 진동, 파열, 침잠 중 무작위 1개 효과의 위력을 2 + (최대 탐식 완전 공명의 수)회 부여 (최대 5)"
                 },
                 {
                   "desc": "[EnemyKill] 무작위 아군 2명에게 다음 턴에 호흡 횟수 1, 충전 횟수 1, 신속 1, 공격 레벨 증가 1, 방어 레벨 증가 1 중 무작위 1개 효과를 부여"
@@ -45,7 +45,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 다음 턴에 화상, [Laceration], 진동, 파열, [Sinking] 중 무작위 1개 효과의 위력을 2 + (최대 탐식 완전 공명의 수)회 부여 (최대 7)"
+                  "desc": "[OnSucceedAttack] 다음 턴에 화상, 출혈, 진동, 파열, 침잠 중 무작위 1개 효과의 위력을 2 + (최대 탐식 완전 공명의 수)회 부여 (최대 7)"
                 },
                 {
                   "desc": "[EnemyKill] 무작위 아군 2명에게 다음 턴에 호흡 횟수 2, 충전 횟수 2, 신속 2, 공격 레벨 증가 2, 방어 레벨 증가 2 중 무작위 1개 효과를 부여"
@@ -68,7 +68,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 다음 턴에 화상, [Laceration], 진동, 파열, [Sinking] 중 무작위 1개 효과의 위력을 2 + (최대 탐식 완전 공명의 수)회 부여 (최대 7)"
+                  "desc": "[OnSucceedAttack] 다음 턴에 화상, 출혈, 진동, 파열, 침잠 중 무작위 1개 효과의 위력을 2 + (최대 탐식 완전 공명의 수)회 부여 (최대 7)"
                 }
               ]
             }
@@ -83,7 +83,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 다음 턴에 화상, [Laceration], 진동, 파열, [Sinking] 중 무작위 1개 효과의 위력을 2 + (최대 탐식 완전 공명의 수)회 부여 (최대 7)"
+                  "desc": "[OnSucceedAttack] 다음 턴에 화상, 출혈, 진동, 파열, 침잠 중 무작위 1개 효과의 위력을 2 + (최대 탐식 완전 공명의 수)회 부여 (최대 7)"
                 }
               ]
             }
@@ -98,7 +98,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 다음 턴에 화상, [Laceration], 진동, 파열, [Sinking] 중 무작위 1개 효과의 위력을 2 + (최대 탐식 완전 공명의 수)회 부여 (최대 7)"
+                  "desc": "[OnSucceedAttack] 다음 턴에 화상, 출혈, 진동, 파열, 침잠 중 무작위 1개 효과의 위력을 2 + (최대 탐식 완전 공명의 수)회 부여 (최대 7)"
                 }
               ]
             }
@@ -250,6 +250,136 @@
                 },
                 {
                   "desc": "[OnSucceedAttack] [VibrationExplosion]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2070711,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "흉탄",
+          "abName": "흉탄의 사수",
+          "desc": "[BeforeAttack] (최대 공명 수 + 1)만큼 [BoseProjektil]을 얻음 (최대 7)\n- 해당 공명이 완전 공명이면 [BoseProjektil]을 (최대 공명 수 + 2)만큼 얻음\n[BeforeAttack] [BoseProjektil]당 [Breath] 1 얻음 (최대 3)\n[EndSkill] [BoseProjektil] 전부 소모",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[BoseProjektil]당 크리티컬 피해량 +5% (최대 35%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 3 부여"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Sinking] 3 부여"
+                },
+                {
+                  "desc": "[CriticalTargetKill] 자신에게 [Bullet] 효과가 있으면, [Bullet] 1 얻음 (전투 당 2회)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "흉탄",
+          "abName": "흉탄의 사수",
+          "desc": "[BeforeAttack] (최대 공명 수 + 1)만큼 [BoseProjektil]을 얻음 (최대 7)\n- 해당 공명이 완전 공명이면 [BoseProjektil]을 (최대 공명 수 + 2)만큼 얻음\n[BeforeAttack] [BoseProjektil]당 [Breath] 1 얻음 (최대 <style=\"highlight\">4</style>)\n[EndSkill] [BoseProjektil] 전부 소모",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[BoseProjektil]당 크리티컬 피해량 +<style=\"highlight\">10</style>% (최대 <style=\"highlight\">70</style>%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 4 부여"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Sinking] 3 부여"
+                },
+                {
+                  "desc": "[CriticalTargetKill] 자신에게 [Bullet] 효과가 있으면, [Bullet] 1 얻음 (전투 당 2회)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "흉탄",
+          "abName": "흉탄의 사수",
+          "desc": "[BeforeAttack] (최대 공명 수 + 1)만큼 [BoseProjektil]을 얻음 (최대 7)\n- 해당 공명이 완전 공명이면 [BoseProjektil]을 (최대 공명 수 + 2)만큼 얻음\n[BeforeAttack] [BoseProjektil]당 [Breath] 1 얻음 (최대 <style=\"highlight\">7</style>)\n[BeforeAttack] 자신의 [Breath] 횟수 1 증가\n[EndSkill] [BoseProjektil] 전부 소모",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[BoseProjektil]당 크리티컬 피해량 +<style=\"highlight\">15</style>% (최대 <style=\"highlight\">105</style>%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 5 부여"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Sinking] 3 부여"
+                },
+                {
+                  "desc": "[CriticalTargetKill] 자신에게 [Bullet] 효과가 있으면, [Bullet] 1 얻음 (전투 당 3회)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2070721,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "흉탄",
+          "abName": "흉탄의 사수",
+            "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] (최대 공명 수 + 1)만큼 [BoseProjektil]을 얻음 (최대 7)\n- 해당 공명이 완전 공명이면 [BoseProjektil]을 (최대 공명 수 + 2) 만큼 얻음\n[BeforeAttack] [BoseProjektil]당 피해량 +2% (최대 14%)\n[BeforeAttack] [BoseProjektil]당 호흡 1 얻음 (최대 3)\n[BeforeAttack] 자신의 [Breath] 5당 피해량 +3% (최대 15%)\n[BeforeAttack] 자신의 [Breath] 5 소모\n[EndSkill] [BoseProjektil] 전부 소모",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2, [Sinking] 2 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "흉탄",
+          "abName": "흉탄의 사수",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] (최대 공명 수 + 1)만큼 [BoseProjektil]을 얻음 (최대 7)\n- 해당 공명이 완전 공명이면 [BoseProjektil]을 (최대 공명 수 + 2) 만큼 얻음\n<style=\"highlight\">[BeforeAttack] [BoseProjektil]이 3 이상이면, 공격 가중치 1 증가</style>\n[BeforeAttack] [BoseProjektil]당 피해량 +2% (최대 14%)\n[BeforeAttack] [BoseProjektil]당 호흡 1 얻음 (최대 <style=\"highlight\">4</style>)\n[BeforeAttack] 자신의 [Breath] 5당 피해량 +<style=\"highlight\">4</style>% (최대 <style=\"highlight\">20</style>%)\n[BeforeAttack] 자신의 [Breath] 5 소모\n[EndSkill] [BoseProjektil] 전부 소모",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 3, [Sinking] 3 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "흉탄",
+          "abName": "흉탄의 사수",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] (최대 공명 수 + 1)만큼 [BoseProjektil]을 얻음 (최대 7)\n- 해당 공명이 완전 공명이면 [BoseProjektil]을 (최대 공명 수 + 2) 만큼 얻음\n[BeforeAttack] [BoseProjektil] <style=\"highlight\">3당</style> 공격 가중치 1 증가 <style=\"highlight\">(최대 2)</style>\n[BeforeAttack] [BoseProjektil]당 피해량 +<style=\"highlight\">3</style>% (최대 <style=\"highlight\">21</style>%)\n[BeforeAttack] [BoseProjektil]당 호흡 1 얻음 (최대 <style=\"highlight\">7</style>)\n[BeforeAttack] 자신의 [Breath] 5당 피해량 +<style=\"highlight\">5</style>% (최대 <style=\"highlight\">25</style>%)\n[BeforeAttack] 자신의 [Breath] 5 소모\n[EndSkill] [BoseProjektil] 전부 소모",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 3, [Sinking] 3 부여"
                 }
               ]
             }
