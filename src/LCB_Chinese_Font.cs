@@ -260,18 +260,27 @@ namespace LimbusLocalize
             };
             JSONArray jsonarray = JSONNode.Parse(text)[0].AsArray;
             JSONArray jsonarray2 = JSONNode.Parse(text2)[0].AsArray;
+            int s = 0;
             for (int i = 0; i < jsonarray.Count; i++)
             {
-                int num = jsonarray[i][0].AsInt;
-                if (num >= 0)
+                var jSONNode = jsonarray[i];
+                if (jSONNode.Count < 1)
                 {
-                    JSONNode jsonnode;
-                    if (jsonarray2[i][0].AsInt == num)
-                        jsonnode = jsonarray2[i];
-                    else
-                        jsonnode = new JSONObject();
-                    scenario.Scenarios.Add(new Dialog(num, jsonarray[i], jsonnode));
+                    s++;
+                    continue;
                 }
+                int num;
+                if (jSONNode[0].IsNumber && jSONNode[0].AsInt < 0)
+                    continue;
+                num = i - s;
+                JSONNode effectToken = jsonarray2[num];
+                if ("{\"controlCG\": {\"IsNotPlayDialog\":true}}".Equals(effectToken["effectv2"]))
+                {
+                    s--;
+                    scenario.Scenarios.Add(new Dialog(num, new(), effectToken));
+                    effectToken = jsonarray2[num + 1];
+                }
+                scenario.Scenarios.Add(new Dialog(num, jSONNode, effectToken));
             }
             __result = scenario;
             return false;
