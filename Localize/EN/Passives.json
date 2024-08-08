@@ -463,7 +463,7 @@
     {
       "id": 1050421,
       "name": "Highest Honor",
-      "desc": "Apply 1 Attack Power Up and 1 Protection to the ally with the least HP below 50%.\nIf the ally is from N Corp, also apply 1 Fanatic."
+      "desc": "Apply 1 Attack Power Up and 1 Protection to the ally with the least HP below 50%.\nIf the ally is an 'N Corp. Fanatic', also apply 1 Fanatic."
     },
     {
       "id": 1090421,
@@ -473,12 +473,12 @@
     {
       "id": 1020401,
       "name": "Whistles",
-      "desc": "At the start of the combat phase, heal 2 allies with the least SP for 15 SP.\nIf the ally is from N Corp, also apply 1 Fanatic."
+      "desc": "At the start of the combat phase, heal 2 allies with the least SP for 15 SP.\nIf the ally is an 'N Corp. Fanatic', also apply 1 Fanatic."
     },
     {
       "id": 1020421,
       "name": "Whispers",
-      "desc": "At the start of the combat phase, heal 1 ally with the least SP for 15 SP.\nIf the ally is from N Corp, also apply 1 Fanatic."
+      "desc": "At the start of the combat phase, heal 1 ally with the least SP for 15 SP.\nIf the ally is an 'N Corp. Fanatic', also apply 1 Fanatic."
     },
     {
       "id": 1070401,
@@ -1536,6 +1536,45 @@
       "id": 1111021,
       "name": "Refraction",
       "desc": "1 ally who has the most [Charge] Count at Turn Start: deal +10% more damage with Skills that consumed 7+ [Charge] Count (once per turn)"
+    },
+    {
+      "id": 1021001,
+      "name": "Electrocurrent Dismantling",
+      "desc": "Gain 1 [Charge] every time this unit consumes 10 cumulative [Charge] Count in this Encounter\nAt 2+ [Charge], deal +([Charge] x 3)% more damage (max 15%)\n\nOn Kill, this unit and 1 ally with the least [Charge] Count gains [Charge] Count equal to [Charge] (max 3, prioritizes allies that consume or gain [Charge])",
+      "summary": "Gain [Charge] with every 10 [Charge] Count consumption\nAt 2+ [Charge], deal more damage\nOn Kill, this unit and 1 ally gain [Charge] Count"
+    },
+    {
+      "id": 1021011,
+      "name": "Electrocurrent Dismantling",
+      "desc": "Gain 1 [Charge] every time this unit consumes 10 cumulative [Charge] Count in this Encounter\nAt 2+ [Charge], deal +([Charge] x 3)% more damage (max 15%)\n<style=\"highlight\">- If the target is at less than 50% HP, deal +([Charge] x 5)% additionally increased damage (max 25%)</style>\n\nOn Kill, this unit and <style=\"highlight\">2 allies</style> with the least [Charge] Count gains [Charge] Count equal to <style=\"highlight\">([Charge] + 2)</style> (max <style=\"highlight\">5</style>, prioritizes allies that consume or gain [Charge])",
+      "summary": "Gain [Charge] with every 10 [Charge] Count consumption\nAt 2+ [Charge], deal more damage\nOn Kill, this unit and 2 allies gain [Charge] Count"
+    },
+    {
+      "id": 1021021,
+      "name": "Auxiliary Dismantling Current",
+      "desc": "When 1 ally with the least [Charge] Count kills an enemy, the ally gains +2 [Charge] Count (once per turn, prioritizes allies that consume or gain [Charge])"
+    },
+    {
+      "id": 1021031,
+      "name": "Auxiliary Dismantling Current",
+      "desc": "When 1 ally with the least [Charge] Count kills an enemy, the ally gains +3 [Charge] Count (once per turn, prioritizes allies that consume or gain [Charge])"
+    },
+    {
+      "id": 1070901,
+      "name": "Charge Model L37",
+      "desc": "Gain 1 [Charge] every time this unit consumes 10 cumulative [Charge] Count in this Encounter\n\nTurn End: At 2+ [Charge], gain 1 [Agility] next turn",
+      "summary": "Gain [Charge] with every 10 [Charge] Count consumption"
+    },
+    {
+      "id": 1070911,
+      "name": "Charge Model L37",
+      "desc": "Gain 1 [Charge] every time this unit consumes 10 cumulative [Charge] Count in this Encounter\nTurn End: At 2+ [Charge], gain 1 [Agility] next turn\n<style=\"highlight\">Turn End: At 3+ [Charge], gain 1 additional [Agility] and 1 [ParryingResultUp] next turn</style>",
+      "summary": "Gain [Charge] with every 10 [Charge] Count consumption"
+    },
+    {
+      "id": 1070921,
+      "name": "Charging Module Installation",
+      "desc": "#1 Deployed ally: Max [Charge] Count +5\n(When conditions are met, this effect will remain activated until the start of the next turn)"
     }
   ]
 }

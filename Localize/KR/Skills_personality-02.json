@@ -816,6 +816,193 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1021001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "40Y-3 가동",
+          "desc": "[WhenUse] [Charge] 횟수를 5 소모하여 코인 위력 +1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Charge] 횟수 2 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "40Y-3 가동",
+          "desc": "[WhenUse] [Charge] 횟수를 5 소모하여 코인 위력 +1<style=\"highlight\"></style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Charge] 횟수 <style=\"highlight\">3</style> 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "40Y-3 가동",
+          "desc": "[WhenUse] [Charge] 횟수를 5 소모하여 코인 위력 <style=\"highlight\">+2</style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Charge] 횟수 3 증가<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "충전 역류",
+          "desc": "[WhenUse] [Charge] 횟수가 5 이상 10 미만이면, 최대 체력의 2 x (10 - 현재 [Charge] 횟수)%만큼 체력을 소모하여 [Charge] 횟수가 10으로 증가\n[WhenUse] [Charge] 횟수를 10 소모하여 코인 위력 +1",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "이 스킬을 포함한 공명이 3 이상이면, 보유한 [Charge] 횟수를 전부 소모하여 이 스킬로 소모한 [Charge] 횟수당 피해량 +([Charge])% (최대 60%)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "충전 역류",
+          "desc": "[WhenUse] [Charge] 횟수가 5 이상 10 미만이면, 최대 체력의 2 x (10 - 현재 [Charge] 횟수)%만큼 체력을 소모하여 [Charge] 횟수가 10으로 증가\n[WhenUse] [Charge] 횟수를 10 소모하여 코인 위력 +1<style=\"highlight\"></style>",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "이 스킬을 포함한 공명이 3 이상이면, 보유한 [Charge] 횟수를 전부 소모하여 이 스킬로 소모한 [Charge] 횟수당 피해량 +<style=\"highlight\">([Charge] + 3)% (최대 120%)</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "충전 역류",
+          "desc": "[WhenUse] [Charge] 횟수가 5 이상 10 미만이면, 최대 체력의 2 x (10 - 현재 [Charge] 횟수)%만큼 체력을 소모하여 [Charge] 횟수가 10으로 증가\n[WhenUse] [Charge] 횟수를 10 소모하여 코인 위력 <style=\"highlight\">+2</style>",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "이 스킬을 포함한 공명이 3 이상이면, 보유한 [Charge] 횟수를 전부 소모하여 이 스킬로 소모한 [Charge] 횟수당 피해량 +<style=\"highlight\">([Charge] + 4)% (최대 180%)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021003,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "40Y-3 충전",
+          "desc": "[Charge]이 2 이상이면, 코인 위력 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ([Charge] + 4)만큼 자신의 [Charge] 횟수 증가 (최대 7)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ([Charge] + 4)만큼 자신의 [Charge] 횟수 증가 (최대 7)"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[Charge]이 3 이상이면, [Charge]당 피해량 +4% (최대 20%)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "40Y-3 충전",
+          "desc": "<style=\"highlight\">[Charge]당 코인 위력 +1 (최대 4)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ([Charge] + <style=\"highlight\">5</style>)만큼 자신의 [Charge] 횟수 증가 (최대 <style=\"highlight\">8</style>)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ([Charge] + <style=\"highlight\">5</style>)만큼 자신의 [Charge] 횟수 증가 (최대 <style=\"highlight\">8</style>)"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[Charge]이 3 이상이면, [Charge]당 피해량 <style=\"highlight\">+8%</style> (최대 <style=\"highlight\">40%</style>)\n<style=\"highlight\">[OnSucceedAttack] 다음 턴에 질투 취약 1 부여\n- [Charge]이 2 이상이면, 추가로 1 부여</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "충전",
+          "desc": "[WhenUse] 자신의 [Charge] 횟수 2 증가 (턴 당 2회)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "충전",
+          "desc": "[WhenUse] 자신의 [Charge] 횟수 <style=\"highlight\">4</style> 증가 (턴 당 2회)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }

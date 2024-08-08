@@ -815,6 +815,193 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1021001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "40Y-3稼働",
+          "desc": "[WhenUse] [Charge]回数を5消耗し、コイン威力 +1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Charge]回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "40Y-3稼働",
+          "desc": "[WhenUse] [Charge]回数を5消耗し、コイン威力 +1<style=\"highlight\"></style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Charge]回数が<style=\"highlight\">3</style>増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "40Y-3稼働",
+          "desc": "[WhenUse] [Charge]回数を5消耗し、コイン威力 <style=\"highlight\">+2</style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Charge]回数が3増加<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "充電逆流",
+          "desc": "[WhenUse] [Charge]回数が5以上10未満なら、体力最大値の2 × (10 - 現在の[Charge]回数)%だけ体力を消耗して[Charge]回数が10へと増加\n[WhenUse] [Charge]回数を10消耗してコイン威力 +1",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "このスキルが含まれる共鳴が3以上なら保有している[Charge]回数を全て消耗して、このスキルで消耗した[Charge]回数1につきダメージ量 +([Charge])%(最大60%)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "充電逆流",
+          "desc": "[WhenUse] [Charge]回数が5以上10未満なら、体力最大値の2 × (10 - 現在の[Charge]回数)%だけ体力を消耗して[Charge]回数が10へと増加\n[WhenUse] [Charge]回数を10消耗してコイン威力 +1<style=\"highlight\"></style>",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "このスキルが含まれる共鳴が3以上なら保有している[Charge]回数を全て消耗して、このスキルで消耗した[Charge]回数1につきダメージ量 +<style=\"highlight\">([Charge] + 3)%(最大120%)</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "充電逆流",
+          "desc": "[WhenUse] [Charge]回数が5以上10未満なら、体力最大値の2 × (10 - 現在の[Charge]回数)%だけ体力を消耗して[Charge]回数が10へと増加\n[WhenUse] [Charge]回数を10消耗してコイン威力 <style=\"highlight\">+2</style>",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "このスキルが含まれる共鳴が3以上なら保有している[Charge]回数を全て消耗して、このスキルで消耗した[Charge]回数1につきダメージ量 +<style=\"highlight\">([Charge] + 4)%(最大180%)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021003,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "40Y-3充電",
+          "desc": "[Charge]が2以上なら、コイン威力 +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ([Charge] + 4)だけ、自分の[Charge]回数が増加(最大7)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ([Charge] + 4)だけ、自分の[Charge]回数が増加(最大7)"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[Charge]が3以上なら、[Charge]1につきダメージ量 +4%(最大20%)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "40Y-3充電",
+          "desc": "<style=\"highlight\">[Charge]1につきコイン威力 +1(最大4)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ([Charge] + <style=\"highlight\">5</style>)だけ、自分の[Charge]回数が増加(最大<style=\"highlight\">8</style>)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ([Charge] + <style=\"highlight\">5</style>)だけ、自分の[Charge]回数が増加(最大<style=\"highlight\">8</style>)"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[Charge]が3以上なら、[Charge]1につきダメージ量 +<style=\"highlight\">8%</style>(最大<style=\"highlight\">40%</style>)\n<style=\"highlight\">[OnSucceedAttack] 次のターンに嫉妬脆弱 1を付与\n- [Charge]が2以上なら、追加で1付与</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "充電",
+          "desc": "[WhenUse] 自分の[Charge]回数が2増加(1ターンにつき2回)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "充電",
+          "desc": "[WhenUse] 自分の[Charge]回数が<style=\"highlight\">4</style>増加(1ターンにつき2回)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }

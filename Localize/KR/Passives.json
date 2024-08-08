@@ -1541,6 +1541,45 @@
       "id": 1111021,
       "name": "굴절",
       "desc": "턴 시작 시 [Charge] 횟수가 가장 많은 아군 1명의 [Charge] 횟수를 7 이상 소모한 스킬 피해량 +10% (턴 당 1회)"
+    },
+    {
+      "id": 1021001,
+      "name": "전류 해체",
+      "desc": "전투 중 누적으로 자신의 [Charge] 횟수 10을 소모할 때마다, [Charge] 1 얻음\n[Charge]이 2 이상이면, 피해량이 ([Charge] x 3)%만큼 증가 (최대 15%)\n\n적을 처치하면 자신과 [Charge] 횟수가 가장 적은 아군 1명이 [Charge]만큼 [Charge] 횟수 증가 (최대 3, [Charge]을 소모하거나 스스로 획득하는 스킬을 보유한 아군에게 우선으로 적용됨)",
+      "summary": "[Charge] 횟수 10 소모할 때마다 [Charge] 얻음\n[Charge] 2 이상이면, 피해량 증가\n적 처치 시, 자신과 아군 1명 [Charge] 횟수 증가"
+    },
+    {
+      "id": 1021011,
+      "name": "전류 해체",
+      "desc": "전투 중 누적으로 자신의 [Charge] 횟수 10을 소모할 때마다, [Charge] 1 얻음\n[Charge]이 2 이상이면, 피해량이 ([Charge] x 3)%만큼 증가 (최대 15%)\n<style=\"highlight\">- 대상의 체력이 50% 미만이면 ([Charge] x 5)%만큼 추가로 증가 (최대 25%)</style>\n\n적을 처치하면 자신과 [Charge] 횟수가 가장 적은 아군 <style=\"highlight\">2</style>명이 <style=\"highlight\">(2 + [Charge])</style>만큼 [Charge] 횟수 증가 (최대 <style=\"highlight\">5</style>, [Charge]을 소모하거나 스스로 획득하는 스킬을 보유한 아군에게 우선으로 적용됨)",
+      "summary": "[Charge] 횟수 10 소모할 때마다 [Charge] 얻음\n[Charge] 2 이상이면, 피해량이 증가\n적 처치 시, 자신과 아군 2명 [Charge] 횟수 증가"
+    },
+    {
+      "id": 1021021,
+      "name": "해체 보조 전류",
+      "desc": "[Charge] 횟수가 가장 낮은 아군 1명이 적 처치 시 [Charge] 횟수 2 증가 (턴 당 1회, [Charge]을 소모하거나 스스로 획득하는 스킬을 보유한 아군에게 우선으로 적용됨)"
+    },
+    {
+      "id": 1021031,
+      "name": "해체 보조 전류",
+      "desc": "[Charge] 횟수가 가장 낮은 아군 1명이 적 처치 시 [Charge] 횟수 3 증가 (턴 당 1회, [Charge]을 소모하거나 스스로 획득하는 스킬을 보유한 아군에게 우선으로 적용됨)"
+    },
+    {
+      "id": 1070901,
+      "name": "모델 L37 충전",
+      "desc": "전투 중 누적으로 자신의 [Charge] 횟수 10을 소모할 때마다, [Charge] 1 얻음\n\n턴 종료 시 [Charge]이 2 이상이면, 다음 턴에 [Agility] 1 얻음",
+      "summary": "[Charge] 횟수 10 소모할 때마다 [Charge] 얻음"
+    },
+    {
+      "id": 1070911,
+      "name": "모델 L37 충전",
+      "desc": "전투 중 누적으로 자신의 [Charge] 횟수 10을 소모할 때마다, [Charge] 1 얻음\n턴 종료 시 [Charge]이 2 이상이면, 다음 턴에 [Agility] 1 얻음\n<style=\"highlight\">턴 종료 시 [Charge]이 3 이상이면, 다음 턴에 [Agility] 1, [ParryingResultUp] 1 추가로 얻음</style>",
+      "summary": "[Charge] 횟수 10 소모할 때마다 [Charge] 얻음"
+    },
+    {
+      "id": 1070921,
+      "name": "충전 모듈 추가",
+      "desc": "편성 순서가 1번인 아군의 [Charge] 횟수 최대치 +5\n(조건 충족 시, 다음 턴 시작 전까지 효과 적용)"
     }
   ]
 }
