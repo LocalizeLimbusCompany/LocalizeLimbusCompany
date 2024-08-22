@@ -526,7 +526,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "<style=\"highlight\">[OnSucceedAttack] Inflict 1 [TakeHpHealReduce]</style>\n[OnSucceedAttack] Inflict [PhotoElectricity] equal to [Charge] (max <style=\"highlight\">3</style>)"
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Inflict 1 [TakeHpHealReduce]</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict [PhotoElectricity] equal to [Charge] (max <style=\"highlight\">3</style>)"
                 }
               ]
             }
@@ -554,7 +557,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">2</style> [TakeHpHealReduce]\n[OnSucceedAttack] Inflict [PhotoElectricity] equal to [Charge] (max 3)"
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">2</style> [TakeHpHealReduce]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict [PhotoElectricity] equal to [Charge] (max 3)<style=\"highlight\"></style>"
                 }
               ]
             }
@@ -617,7 +623,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict [PhotoElectricity] equal to [Charge] (max 3)\n<style=\"highlight\">[OnSucceedAttack] Inflict 1 [HitTakeDamageUp] for every 2 [Charge] (max 2)</style>"
+                  "desc": "[OnSucceedAttack] Inflict [PhotoElectricity] equal to [Charge] (max 3)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Inflict 1 [HitTakeDamageUp] for every 2 [Charge] (max 2)</style>"
                 }
               ]
             }
@@ -642,6 +651,375 @@
           "desc": "[WhenUse] Gain +3 [Charge] Count (<style=\"highlight\">2 times</style> per turn)",
           "coinlist": [
             {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Beheading",
+          "desc": "[WhenUse] If the target has 8+ [Sinking], Clash Power +1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Beheading",
+          "desc": "[WhenUse] If the target has 6+ [Sinking], Clash Power +1\n<style=\"highlight\">[WhenUse] If the target has 3+ [Sinking] Count, Coin Power +1</style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Beheading",
+          "desc": "[WhenUse] If the target has 6+ [Sinking], Clash Power +1\n[WhenUse] <style=\"highlight\">Coin Power +1 for every 3 [Sinking] Count on the target (max 2)</style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">3</style> [Sinking]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Memorial Procession",
+          "desc": "[WhenUse] If the target has 5+ [Sinking], Coin Power +1\n[EndSkill] If this unit has [NightPathfinding], lose 10 SP",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [WanderingFootsteps] next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Memorial Procession",
+          "desc": "[WhenUse] If the target has 5+ [Sinking], Coin Power +1\n<style=\"highlight\">[WhenUse] At 4+ [Coffin], Atk Weight +1\n[WhenUse] If this unit has [NightPathfinding], Atk Weight +1</style>\n[EndSkill] If this unit has [NightPathfinding], lose 10 SP",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [WanderingFootsteps] next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Memorial Procession",
+          "desc": "[WhenUse] <style=\"highlight\">Coin Power +1 for every 5 Sinking on the target (max 2)</style>\n[WhenUse] <style=\"highlight\">Atk Weight +1 for every 4 [Coffin] on self (max 2)</style>\n[WhenUse] If this unit has [NightPathfinding], Atk Weight +1\n[EndSkill] If this unit has [NightPathfinding], lose 10 SP",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">3</style> [Sinking]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [WanderingFootsteps] next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071003,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Requiem",
+          "desc": "[WinDuel] Heal 10 SP\n[BeforeUse] If this unit has [NightPathfinding], activate 'Lament, Mourn, and Despair' instead\n[WhenUse] Coin Power +1 for every 6 [Sinking] on the target (max 2)\n[WhenUse] Deal +7% more damage for every [Coffin] on self (max 70%)\n[WhenUse] Gain 1 [Coffin]\n[EndSkill] If this Skill attack kills the target, gain 2 [Coffin]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +3 [Sinking] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the target has [WanderingFootsteps], inflict +2 [Sinking] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
+                },
+                {
+                  "desc": "[EnemyKill] Inflict ([Sinking] on killed target/3) Sinking on 2 random enemies (max 3)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Requiem",
+          "desc": "[WinDuel] Heal 10 SP\n[BeforeUse] If this unit has [NightPathfinding], activate 'Lament, Mourn, and Despair' instead\n[WhenUse] Coin Power +1 for <style=\"highlight\">every 3</style> [Sinking] on the target (max <style=\"highlight\">4</style>)\n[WhenUse] Deal +12% more damage for every [Coffin] on self (max 120%)\n[WhenUse] Gain 1 [Coffin]\n[EndSkill] If this Skill attack kills the target, gain 2 [Coffin]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">+4</style> [Sinking] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the target has [WanderingFootsteps], inflict +2 [Sinking] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">3</style> [Sinking]"
+                },
+                {
+                  "desc": "[EnemyKill] Inflict ([Sinking] on killed target/<style=\"highlight\">2</style>) Sinking on 2 random enemies (max <style=\"highlight\">5</style>)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "O Dullahan...!",
+          "desc": "[DuelCounter]\n[StartBattle] If this unit does not have [NightPathfinding], gain 1 [NightPathfinding] next turn (once per turn)\n[EndBattle] If this unit has [NightPathfinding], lose [NightPathfinding]",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "O Dullahan...!",
+          "desc": "[DuelCounter]\n<style=\"highlight\">[BeforeUse] If this unit has [NightPathfinding] and has 15+ SP, use Lament, Mourn, and Despair as Counter (once per turn)</style>\n[StartBattle] If this unit does not have [NightPathfinding], gain 1 [NightPathfinding] next turn (once per turn)\n<style=\"highlight\">[WhenUse] If the target has 6+ [Sinking], Coin Power +1</style>\n[EndBattle] If this unit has [NightPathfinding], lose [NightPathfinding]",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "O Dullahan...!",
+          "desc": "[DuelCounter]\n[BeforeUse] If this unit has [NightPathfinding] and has 15+ SP, use Lament, Mourn, and Despair as Counter (once per turn)\n[StartBattle] If this unit does not have [NightPathfinding], gain 1 [NightPathfinding] next turn (once per turn)\n[WhenUse] <style=\"highlight\">Coin Power +1 for every 3 [Sinking] on the target (max 2)</style>\n<style=\"highlight\">[WinDuel] Gain [AttackUp] next turn equal to (# of Clashes/3) (max 3, once per turn)</style>\n[EndBattle] If this unit has [NightPathfinding], lose [NightPathfinding]",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking] <style=\"highlight\">and +1 [Sinking] Count</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071005,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Lament, Mourn, and Despair",
+          "desc": "[WhenUse] Lose 15 SP\n[WhenUse] Base Power +1 for every 5 [Sinking] on the target (max 2)\n[WhenUse] Deal more damage the further this unit's SP value is from 45 (+0.3% more damage for every missing SP, max 21%)\n[WhenUse] Deal +7% more damage for every Coffin on self (max 70%)\n[WhenUse] Deal +10% more damage for every [NightPathfinding] on self (max 30%)\n[WhenUse] Gain 1 [Coffin]\n[EndSkill] If this Skill attack kills the target, gain 2 [Coffin]\n[EndSkill] At less than 0 SP, heal 10 SP. When at less than 0 SP, heal more SP the further this unit's SP value is from 0 (heal 1 additional SP for every missing SP; max 25)\n[EndBattle] Lose [NightPathfinding]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [Sinking] and +1 [Sinking] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Raise the target's Stagger Threshold by 20% of damage dealt"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict Gloom Affinity damage equal to [Sinking] on target (max 15)"
+                },
+                {
+                  "desc": "[EnemyKill] Inflict ([Sinking] on killed target/3) Sinking on 2 random enemies (max 4)"
+                },
+                {
+                  "desc": "[EnemyKill] Heal 15 SP"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Lament, Mourn, and Despair",
+          "desc": "[WhenUse] Lose 15 SP\n[WhenUse] Base Power +1 for every 5 [Sinking] on the target (max <style=\"highlight\">4</style>)\n[WhenUse] Deal more damage the further this unit's SP value is from 45 (+0.3% more damage for every missing SP, max 21%)\n[WhenUse] Deal +<style=\"highlight\">10</style>% more damage for every Coffin on self (max <style=\"highlight\">100</style>%)\n[WhenUse] Deal +<style=\"highlight\">20</style>% more damage for every [NightPathfinding] on self (max <style=\"highlight\">60</style>%)\n[WhenUse] Gain <style=\"highlight\">2</style> [Coffin]\n[EndSkill] If this Skill attack kills the target, gain <style=\"highlight\">3</style> [Coffin]\n[EndSkill] At less than 0 SP, heal 10 SP. When at less than 0 SP, heal more SP the further this unit's SP value is from 0 (heal <style=\"highlight\">2</style> additional SP for every missing SP; max <style=\"highlight\">50</style>)\n[EndBattle] Lose [NightPathfinding]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">5</style> [Sinking] and +2 [Sinking] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Raise the target's Stagger Threshold by <style=\"highlight\">30</style>% of damage dealt"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict Gloom Affinity damage equal to [Sinking] on target (max <style=\"highlight\">30</style>)"
+                },
+                {
+                  "desc": "[EnemyKill] Inflict ([Sinking] on killed target/<style=\"highlight\">2</style>) Sinking on 2 random enemies (max <style=\"highlight\">8</style>)"
+                },
+                {
+                  "desc": "[EnemyKill] Heal 15 SP"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071006,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Lament, Mourn, and Despair",
+          "desc": "[WhenUse] Lose 15 SP\n[WhenUse] Base Power +1 for every 5 [Sinking] on the target (max 2)\n[WhenUse] Deal more damage the further this unit's SP value is from 45 (+0.3% more damage for every missing SP, max 21%)\n[WhenUse] Deal +7% more damage for every Coffin on self (max 70%)\n[WhenUse] Deal +10% more damage for every [NightPathfinding] on self (max 30%)\n[WhenUse] Gain 1 [Coffin]\n[EndSkill] If this Skill attack kills the target, gain 2 [Coffin]\n[EndSkill] At less than 0 SP, heal 10 SP. When at less than 0 SP, heal more SP the further this unit's SP value is from 0 (heal 1 additional SP for every missing SP; max 25)\n[EndBattle] Lose [NightPathfinding]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [Sinking] and +1 [Sinking] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Raise the target's Stagger Threshold by 20% of damage dealt"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict Gloom Affinity damage equal to [Sinking] on target (max 15)"
+                },
+                {
+                  "desc": "[EnemyKill] Inflict ([Sinking] on killed target/3) Sinking on 2 random enemies (max 4)"
+                },
+                {
+                  "desc": "[EnemyKill] Heal 15 SP"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Lament, Mourn, and Despair",
+          "desc": "[WhenUse] Lose 15 SP\n[WhenUse] Base Power +1 for every 5 [Sinking] on the target (max <style=\"highlight\">4</style>)\n[WhenUse] Deal more damage the further this unit's SP value is from 45 (+0.3% more damage for every missing SP, max 21%)\n[WhenUse] Deal +<style=\"highlight\">10</style>% more damage for every Coffin on self (max <style=\"highlight\">100</style>%)\n[WhenUse] Deal +<style=\"highlight\">20</style>% more damage for every [NightPathfinding] on self (max <style=\"highlight\">60</style>%)\n[WhenUse] Gain <style=\"highlight\">2</style> [Coffin]\n[EndSkill] If this Skill attack kills the target, gain <style=\"highlight\">3</style> [Coffin]\n[EndSkill] At less than 0 SP, heal 10 SP. When at less than 0 SP, heal more SP the further this unit's SP value is from 0 (heal <style=\"highlight\">2</style> additional SP for every missing SP; max <style=\"highlight\">50</style>)\n[EndBattle] Lose [NightPathfinding]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">5</style> [Sinking] and +2 [Sinking] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Raise the target's Stagger Threshold by <style=\"highlight\">30</style>% of damage dealt"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict Gloom Affinity damage equal to [Sinking] on target (max <style=\"highlight\">30</style>)"
+                },
+                {
+                  "desc": "[EnemyKill] Inflict ([Sinking] on killed target/<style=\"highlight\">2</style>) Sinking on 2 random enemies (max <style=\"highlight\">8</style>)"
+                },
+                {
+                  "desc": "[EnemyKill] Heal 15 SP"
+                }
+              ]
+            }
           ]
         }
       ]

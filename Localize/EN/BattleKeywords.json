@@ -1494,6 +1494,56 @@
       "name": "Photoelectricity",
       "desc": "Max Value: 3\nWhen this unit is hit, the Attacker gains Charge Count equal to the value (once per Skill)\n- If the Attacker has 5- Charge Count, they gain +3 additional Charge Count\nTurn End: this effect expires",
       "summary": ""
+    },
+    {
+      "id": "Coffin",
+      "name": "Coffin",
+      "desc": "- Max Value: 10\n- At Turn End:\n  - Gain 2 Damage Up next turn for every 3 Value (max 6)\n  - Raise minimum Speed by 1 next turn for every 4 Value (max 2)\n  - Gain 1 Clash Power Up next turn for every 5 Value (max 2)",
+      "summary": ""
+    },
+    {
+      "id": "WildHunt",
+      "name": "Wild Hunt",
+      "desc": "- In the same turn this unit gained Wild Hunt for the first time, always have 1 remaining HP; \"revive\"(heal 50% HP and reset SP to 0) this unit at Turn End.\n- If this unit is killed by an attack, gain E.G.O resource for the least-owned E.G.O resource\n- If this unit is killed by an attack, inflict 3 Sinking against the last attacker\n- Dies at the end of the same turn this unit was revived in",
+      "summary": ""
+    },
+    {
+      "id": "NightPathfinding",
+      "name": "Dullahan",
+      "desc": "- Max Value: 3\n- Gain 3 Offense Level\n- Lose 3 Defense Level\n- Raise Min & Max Speed values by 1\n- Turn End: Gain 1 Dullahan next turn (At -25 SP or less, however, completely lose Dullahan) \n- Turn End: If this unit has Dullahan, lose (15 - (Coffin/2)) SP. (min 10)",
+      "summary": ""
+    },
+    {
+      "id": "WanderingFootsteps",
+      "name": "Impending Ruin",
+      "desc": "- Units with SP: change their Panic Type to \"\"Ruin\"\".\n(Ruin: When this unit enters Low Morale state, gain 3 Sinking at every Turn End and lose 1 Clash Power. When this unit Panics, gain 5 Sinking and 3 Sinking Count at every Turn End and lose 2 Clash Power)\n- Units without SP: -10% chance to flip Heads\n- Reduced by 1 at Turn End\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value.\n※ Apply the \"\"Units without SP\"\" conditional to certain enemies that have SP but can't change their Panic Types.",
+      "summary": ""
+    },
+    {
+      "id": "WanderingFootsteps_Main",
+      "name": "Impending Ruin",
+      "desc": "- Targets with SP: Change their Panic Type to 'Ruin'\n- Reduced by 1 at Turn End",
+      "summary": ""
+    },
+    {
+      "id": "WanderingFootsteps_Sub",
+      "name": "Impending Ruin",
+      "desc": "-10% chance to flip Heads\n- Reduced by 1 at Turn End",
+      "summary": ""
+    },
+    {
+      "id": "WanderingFootsteps_LowMorale",
+      "name": "Ruin",
+      "desc": "- Low Morale\n- Clash Power -1 on self. Gain 3 Sinking at every Turn End",
+      "summary": "Clash Power -1 on self. Gain 3 Sinking at every Turn End",
+      "undefined": "-"
+    },
+    {
+      "id": "WanderingFootsteps_Panic",
+      "name": "Ruin",
+      "desc": "- Panic\n- Clash Power -2 on self. Gain 5 Sinking and +3 Sinking Count at every Turn End",
+      "summary": "Clash Power -2 on self. Gain 5 Sinking and +3 Sinking Count at every Turn End",
+      "undefined": "-"
     }
   ]
 }

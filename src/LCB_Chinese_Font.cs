@@ -276,6 +276,11 @@ namespace LimbusLocalize
                     s++;
                     continue;
                 }
+                if (jSONNode.Count == 1 && jSONNode[0].IsNumber)
+                {
+                    s++;
+                    continue;
+                }
                 int num;
                 if (jSONNode[0].IsNumber && jSONNode[0].AsInt < 0)
                     continue;

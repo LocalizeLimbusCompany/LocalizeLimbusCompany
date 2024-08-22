@@ -118,18 +118,6 @@ namespace LimbusLocalize
         [HarmonyPrefix]
         private static bool LinkToCrackPosition(GachaEffectEventSystem __instance)
             => __instance._parent.EffectChainCamera;
-        [HarmonyPatch(typeof(PersonalityVoiceJsonDataList), nameof(PersonalityVoiceJsonDataList.GetDataList))]
-        [HarmonyPrefix]
-        private static bool PersonalityVoiceGetDataList(PersonalityVoiceJsonDataList __instance, int personalityId, ref LocalizeTextDataRoot<TextData_PersonalityVoice> __result)
-        {
-            if (!__instance._voiceDictionary.TryGetValueEX(personalityId.ToString(), out LocalizeTextDataRoot<TextData_PersonalityVoice> localizeTextDataRoot))
-            {
-                Debug.LogError("PersonalityVoice no id:" + personalityId.ToString());
-                localizeTextDataRoot = new LocalizeTextDataRoot<TextData_PersonalityVoice>() { dataList = new Il2CppSystem.Collections.Generic.List<TextData_PersonalityVoice>() };
-            }
-            __result = localizeTextDataRoot;
-            return false;
-        }
         #endregion
         [HarmonyPatch(typeof(LoginSceneManager), nameof(LoginSceneManager.SetLoginInfo))]
         [HarmonyPostfix]
