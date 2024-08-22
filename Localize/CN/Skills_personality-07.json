@@ -526,7 +526,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层体力恢复降低 \n[OnSucceedAttack] 对目标施加层数相当于自身充能 强度的光电 (最多3层)"
+                  "desc": "[OnSucceedAttack] 对目标施加1层体力恢复降低 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加层数相当于自身充能 强度的光电 (最多3层)"
                 }
               ]
             }
@@ -554,7 +557,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层体力恢复降低 \n[OnSucceedAttack] 对目标施加层数相当于自身充能 强度的光电 (最多3层)"
+                  "desc": "[OnSucceedAttack] 对目标施加2层体力恢复降低 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加层数相当于自身充能 强度的光电 (最多3层)"
                 }
               ]
             }
@@ -617,7 +623,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加层数相当于自身充能 强度的光电 (最多3层)\n[OnSucceedAttack] 自身每带有2级充能 强度，对目标施加1层打击易损 (最多2层)"
+                  "desc": "[OnSucceedAttack] 对目标施加层数相当于自身充能 强度的光电 (最多3层)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自身每带有2级充能 强度，对目标施加1层打击易损 (最多2层)"
                 }
               ]
             }
@@ -642,6 +651,375 @@
           "desc": "[WhenUse] 使自身获得3层充能 (每回合最多2次)",
           "coinlist": [
             {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "斩首",
+          "desc": "[WhenUse] 若目标的沉沦 强度不低于8级，则使本技能的拼点威力+1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "斩首",
+          "desc": "[WhenUse] 若目标的沉沦 强度不低于6级，则使本技能的拼点威力+1\n[WhenUse] 若目标的沉沦 层数不低于3层，则使本技能的硬币威力+1",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "斩首",
+          "desc": "[WhenUse] 若目标的沉沦 强度不低于6级，则使本技能的拼点威力+1\n[WhenUse] 目标每带有3层沉沦 ，使本技能的硬币威力+1(最多+2)",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级沉沦 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "追悼游行",
+          "desc": "[WhenUse] 若目标的沉沦 强度不低于5级，则使本技能的硬币威力+1\n[EndSkill] 若自身带有杜拉罕 ，则使自身失去10点理智值",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层破灭将至 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "追悼游行",
+          "desc": "[WhenUse] 若目标的沉沦 强度不低于5级，则使本技能的硬币威力+1\n[WhenUse] 若自身的棺 不低于4层，则使本技能的攻击容量+1\n[WhenUse] 若自身带有杜拉罕 ，则使本技能的攻击容量+1\n[EndSkill] 若自身带有杜拉罕 ，则使自身失去10点理智值",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层破灭将至 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "追悼游行",
+          "desc": "[WhenUse] 目标每带有5级沉沦 强度，使本技能的硬币威力+1(最多+2)\n[WhenUse] 自身每带有4层棺 ，使本技能的攻击容量+1(最多+2)\n[WhenUse] 若自身带有杜拉罕 ，则使本技能的攻击容量+1\n[EndSkill] 若自身带有杜拉罕 ，则使自身失去10点理智值",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级沉沦 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层破灭将至 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071003,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "镇魂曲",
+          "desc": "[WinDuel] 使自身恢复10点理智值\n[BeforeUse] 若自身带有杜拉罕 ，则改为使用“悲叹、哀恸、破灭吧”\n[WhenUse] 目标每带有6级沉沦 强度，使本技能的硬币威力+1(最多+2)\n[WhenUse] 自身每带有1层棺 ，使本技能造成的伤害+7%(最多+70%)\n[WhenUse] 使自身获得1层棺 \n[EndSkill] 若本技能攻击击杀了目标，则使自身获得2层棺 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层沉沦 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标带有破灭将至 ，则对其施加2层沉沦 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度"
+                },
+                {
+                  "desc": "[EnemyKill] 随机使2名敌方单位增加(被击杀目标的沉沦 强度/3)级沉沦 强度(最多3级)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "镇魂曲",
+          "desc": "[WinDuel] 使自身恢复10点理智值\n[BeforeUse] 若自身带有杜拉罕 ，则改为使用“悲叹、哀恸、破灭吧”\n[WhenUse] 目标每带有3级沉沦 强度，使本技能的硬币威力+1(最多+4)\n[WhenUse] 自身每带有1层棺 ，使本技能造成的伤害+12%(最多+120%)\n[WhenUse] 使自身获得1层棺 \n[EndSkill] 若本技能攻击击杀了目标，则使自身获得2层棺 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加4层沉沦 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标带有破灭将至 ，则对其施加2层沉沦 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级沉沦 强度"
+                },
+                {
+                  "desc": "[EnemyKill] 随机使2名敌方单位增加(被击杀目标的沉沦 强度/2)级沉沦 强度(最多5级)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "杜拉罕啊…！",
+          "desc": "[DuelCounter]\n[StartBattle] 若自身未带有杜拉罕 ，则下回合使自身获得1层杜拉罕 (每回合最多1层)\n[EndBattle] 若自身带有杜拉罕 ，则解除自身的杜拉罕 ",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "杜拉罕啊…！",
+          "desc": "[DuelCounter]\n[BeforeUse] 若自身带有杜拉罕 且自身的理智值不低于15点，则使用“悲叹、哀恸、破灭吧”进行反击(每回合最多1次)\n[StartBattle] 若自身未带有杜拉罕 ，则下回合使自身获得1层杜拉罕 (每回合最多1层)\n[WhenUse] 若目标的沉沦 强度不低于6级，则使本技能的硬币威力+1\n[EndBattle] 若自身带有杜拉罕 ，则解除自身的杜拉罕 ",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "杜拉罕啊…！",
+          "desc": "[DuelCounter]\n[BeforeUse] 若自身带有杜拉罕 且自身的理智值不低于15点，则使用“悲叹、哀恸、破灭吧”进行反击(每回合最多1次)\n[StartBattle] 若自身未带有杜拉罕 ，则下回合使自身获得1层杜拉罕 (每回合最多1层)\n[WhenUse] 目标每带有3级沉沦 强度，使本技能的硬币威力+1(最多+2)\n[WinDuel] 下回合使自身获得(本技能拼点次数/3)层攻击等级提升 (最多3层，每回合最多1次)\n[EndBattle] 若自身带有杜拉罕 ，则解除自身的杜拉罕 ",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度并对其施加1层沉沦 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071005,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "悲叹、哀恸、破灭吧",
+          "desc": "[WhenUse] 使自身失去15点理智值\n[WhenUse] 目标每带有5级沉沦 强度，使本技能的基础威力+1(最多+2)\n[WhenUse] 自身理智值越低，本技能造成的伤害越高(每失去1点理智值，造成的伤害+0.3%，最多+21%)\n[WhenUse] 自身每带有1层棺 ，使本技能造成的伤害+7%(最多+70%)\n[WhenUse] 自身每带有1层杜拉罕 ，使本技能造成的伤害+10%(最多+30%)\n[WhenUse] 使自身获得1层棺 \n[EndSkill] 若本技能攻击击杀了目标，则使自身获得2层棺 \n[EndSkill] 若自身理智值低于0点，则使自身恢复10点理智值。自身理智值低于0点时，根据相差的理智值，相应使自身额外恢复理智值(每相差1点，额外恢复1点理智值，最多25点)\n[EndBattle] 解除自身的杜拉罕 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级沉沦 强度并对其施加1层沉沦 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的20%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标造成相当于其沉沦 强度的忧郁伤害(最多15点)"
+                },
+                {
+                  "desc": "[EnemyKill] 随机使2名敌方单位增加(被击杀目标的沉沦 强度/3)级沉沦 强度(最多4级)"
+                },
+                {
+                  "desc": "[EnemyKill] 使自身恢复15点理智值"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "悲叹、哀恸、破灭吧",
+          "desc": "[WhenUse] 使自身失去15点理智值\n[WhenUse] 目标每带有5级沉沦 强度，使本技能的基础威力+1(最多+4)\n[WhenUse] 自身理智值越低，本技能造成的伤害越高(每失去1点理智值，造成的伤害+0.3%，最多+21%)\n[WhenUse] 自身每带有1层棺 ，使本技能造成的伤害+10%(最多+100%)\n[WhenUse] 自身每带有1层杜拉罕 ，使本技能造成的伤害+20%(最多+60%)\n[WhenUse] 使自身获得2层棺 \n[EndSkill] 若本技能攻击击杀了目标，则使自身获得3层棺 \n[EndSkill] 若自身理智值低于0点，则使自身恢复10点理智值。自身理智值低于0点时，根据相差的理智值，相应使自身额外恢复理智值(每相差1点，额外恢复2点理智值，最多50点)\n[EndBattle] 解除自身的杜拉罕 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级沉沦 强度并对其施加2层沉沦 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的30%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标造成相当于其沉沦 强度的忧郁伤害(最多30点)"
+                },
+                {
+                  "desc": "[EnemyKill] 随机使2名敌方单位增加(被击杀目标的沉沦 强度/2)级沉沦 强度(最多8级)"
+                },
+                {
+                  "desc": "[EnemyKill] 使自身恢复15点理智值"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071006,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "悲叹、哀恸、破灭吧",
+          "desc": "[WhenUse] 使自身失去15点理智值\n[WhenUse] 目标每带有5级沉沦 强度，使本技能的基础威力+1(最多+2)\n[WhenUse] 自身理智值越低，本技能造成的伤害越高(每失去1点理智值，造成的伤害+0.3%，最多+21%)\n[WhenUse] 自身每带有1层棺 ，使本技能造成的伤害+7%(最多+70%)\n[WhenUse] 自身每带有1层杜拉罕 ，使本技能造成的伤害+10%(最多+30%)\n[WhenUse] 使自身获得1层棺 \n[EndSkill] 若本技能攻击击杀了目标，则使自身获得2层棺 \n[EndSkill] 若自身理智值低于0点，则使自身恢复10点理智值。自身理智值低于0点时，根据相差的理智值，相应使自身额外恢复理智值(每相差1点，额外恢复1点理智值，最多25点)\n[EndBattle] 解除自身的杜拉罕 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级沉沦 强度并对其施加1层沉沦 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的20%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标造成相当于其沉沦 强度的忧郁伤害(最多15点)"
+                },
+                {
+                  "desc": "[EnemyKill] 随机使2名敌方单位增加(被击杀目标的沉沦 强度/3)级沉沦 强度(最多4级)"
+                },
+                {
+                  "desc": "[EnemyKill] 使自身恢复15点理智值"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "悲叹、哀恸、破灭吧",
+          "desc": "[WhenUse] 使自身失去15点理智值\n[WhenUse] 目标每带有5级沉沦 强度，使本技能的基础威力+1(最多+4)\n[WhenUse] 自身理智值越低，本技能造成的伤害越高(每失去1点理智值，造成的伤害+0.3%，最多+21%)\n[WhenUse] 自身每带有1层棺 ，使本技能造成的伤害+10%(最多+100%)\n[WhenUse] 自身每带有1层杜拉罕 ，使本技能造成的伤害+20%(最多+60%)\n[WhenUse] 使自身获得2层棺 \n[EndSkill] 若本技能攻击击杀了目标，则使自身获得3层棺 \n[EndSkill] 若自身理智值低于0点，则使自身恢复10点理智值。自身理智值低于0点时，根据相差的理智值，相应使自身额外恢复理智值(每相差1点，额外恢复2点理智值，最多50点)\n[EndBattle] 解除自身的杜拉罕 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级沉沦 强度并对其施加2层沉沦 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的30%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标造成相当于其沉沦 强度的忧郁伤害(最多30点)"
+                },
+                {
+                  "desc": "[EnemyKill] 随机使2名敌方单位增加(被击杀目标的沉沦 强度/2)级沉沦 强度(最多8级)"
+                },
+                {
+                  "desc": "[EnemyKill] 使自身恢复15点理智值"
+                }
+              ]
+            }
           ]
         }
       ]
