@@ -1348,10 +1348,13 @@
         {
           "level": 1,
           "name": "傷を舐る",
-          "desc": "[WhenUse] 対象が出血を持っている場合、麻痺 1を付与",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象が出血を持っているなら、麻痺 1を付与"
+                },
                 {
                   "desc": "[OnSucceedAttack] 出血 回数が3増加"
                 },
@@ -1370,10 +1373,13 @@
         {
           "level": 1,
           "name": "縛られた傷",
-          "desc": "[WhenUse] 対象が出血を持っている場合、次のターンに束縛 1を付与",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象が出血を持っているなら、次のターンに束縛 1を付与"
+                },
                 {
                   "desc": "[OnSucceedAttack] 出血 3を付与"
                 }
@@ -1397,7 +1403,7 @@
                   "desc": "[OnSucceedAttack] 出血 3を付与"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 対象が出血を持っている場合、体力を20回復"
+                  "desc": "[OnSucceedAttack] 対象が出血を持っているなら、体力を20回復"
                 }
               ]
             },

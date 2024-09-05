@@ -1186,6 +1186,362 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1041001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "どっちも黙れ",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [PenanceFirst]3を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [RedEyeFirst]2を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "どっちも黙れ",
+          "desc": "<style=\"highlight\">[RedEyeFirst]が7以上ならコイン威力 +1\n[PenanceFirst]が7以上ならマッチ威力 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [PenanceFirst]3を得る<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [RedEyeFirst]2を得る<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Laceration]1を付与</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "どっちも黙れ",
+          "desc": "[RedEyeFirst]が7以上ならコイン威力 +1\n[PenanceFirst]が7以上ならマッチ威力 <style=\"highlight\">+2</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [PenanceFirst]3を得る\n<style=\"highlight\">[OnSucceedAttackHead] [PenanceFirst]1を得る</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [RedEyeFirst]2を得る<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1041002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "く・ヅ / しゃ・こ",
+          "desc": "[RedEyeFirst]と[PenanceFirst]の合計が20以上なら、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [PenanceFirst]4を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [RedEyeFirst]3を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          "level": 2,
+          "name": "く・ヅ / しゃ・こ",
+          "desc": "[RedEyeFirst]と[PenanceFirst]の合計が20以上なら、コイン威力 +1\n<style=\"highlight\">対象の[Laceration]が6以上なら、コイン威力 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [PenanceFirst]4を得る<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [RedEyeFirst]3を得る<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 対象の([Laceration] ÷ 3)だけ[RedEyeFirst]を得る(最大2)</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "く・ヅ / しゃ・こ",
+          "desc": "[RedEyeFirst]と[PenanceFirst]の合計が<style=\"highlight\">15</style>以上なら、コイン威力 +1\n対象の[Laceration]が6以上なら、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [PenanceFirst]4を得る<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [RedEyeFirst]3を得る<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の([Laceration] ÷ <style=\"highlight\">2</style>)だけ[RedEyeFirst]を得る(最大<style=\"highlight\">3</style>)"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] [RedEyeFirst]が7以上なら、次のターンに[Agility]1を得る(1ターンにつき2回)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1041003,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "ドタマを割る",
+          "desc": "[BeforeUse] [RedEyeFirst]と[PenanceFirst]がそれぞれ15以上なら、「ガチでドタマを割る」として発動\n対象の速度が自分より3以上低ければ、コイン威力 +1\n[WhenUse] 精神力が最大なら、コイン威力 +1\n- [EndSkill] この効果が発動したなら精神力が15減少",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [RedEyeFirst]7を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [PenanceFirst]7を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分と現体力の比率が最も低い味方1名が、それぞれの体力最大値の([PenanceFirst] ÷ 3)%だけ回復"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分と現在の精神力が最も低い味方1名を([PenanceFirst] - 10)だけ精神力を回復(最低0)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "ドタマを割る",
+          "desc": "[BeforeUse] [RedEyeFirst]と[PenanceFirst]がそれぞれ15以上なら、「ガチでドタマを割る」として発動\n対象の速度が<style=\"highlight\">自分より低ければ</style>、コイン威力 +1\n[WhenUse] 精神力が最大なら、<style=\"highlight\">マッチ威力 +2</style>, コイン威力 +1\n- [EndSkill] この効果が発動したなら精神力が15減少",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [RedEyeFirst]7を得る<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [PenanceFirst]7を得る<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]<style=\"highlight\">3</style>を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] [PenanceFirst]2を得る</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分と現体力の比率が最も低い味方1名が、それぞれの体力最大値の([PenanceFirst] ÷ <style=\"highlight\">2</style>)%だけ回復"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分と現在の精神力が最も低い味方1名を([PenanceFirst] - 10)だけ精神力を回復(最低0)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1041004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "喰って寝る時間だ",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [RedEyeFirst]2を得る(1ターンにつき1回)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [PenanceFirst]2を得る(1ターンにつき1回)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "喰って寝る時間だ",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [RedEyeFirst]2を得る(1ターンにつき1回)\n<style=\"highlight\">- [RedEyeFirst]が7未満なら、[RedEyeFirst]1を追加で得る</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [PenanceFirst]2を得る(1ターンにつき1回)\n<style=\"highlight\">- [PenanceFirst]が7未満なら、[PenanceFirst]1を追加で得る</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1041005,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "ガチでドタマを割る",
+          "desc": "[WhenUse] 保有している[RedEyeFirst]と[PenanceFirst]を全て消耗\n- 消耗した[RedEyeFirst]5につきコイン威力 +1(最大4)\n- 消耗した[PenanceFirst]5につき基本威力 +1(最大4)\n[EndSkill] 精神力が15減少して次のターンに[Emptiness]を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] (消耗した[RedEyeFirst] - 15)だけ[Laceration]を付与(最大5)"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗した[RedEyeFirst]、[PenanceFirst]1につきダメージ量 +2.5%(最大100%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分と現体力の比率が最も低い味方1名が、それぞれの体力最大値の(消耗した[PenanceFirst] ÷ 2)%だけ体力を回復\n- 最大共鳴数2につき、回復対象数が1増加(最大で2名増加)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分と現在の精神力の比率が最も低い味方1名の精神力を、(消耗した[PenanceFirst] - 10)だけ回復\n- 最大共鳴数2につき、回復対象数が1増加(最大で2名増加)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]3, [Reduction]2を付与(1ターンにつき1回)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "ガチでドタマを割る",
+          "desc": "[WhenUse] 保有している[RedEyeFirst]と[PenanceFirst]を全て消耗\n- 消耗した[RedEyeFirst]5につきコイン威力 +1(最大4)\n- 消耗した[PenanceFirst]5につき基本威力 +1(最大4)\n[EndSkill] 精神力が15減少して次のターンに[Emptiness]を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] (消耗した[RedEyeFirst] - 15)だけ[Laceration]を付与(最大5)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗した[RedEyeFirst]、[PenanceFirst]1につきダメージ量 +<style=\"highlight\">4%</style>(最大<style=\"highlight\">160%</style>)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分と現体力の比率が最も低い味方1名が、それぞれの体力最大値の<style=\"highlight\">(消耗した[PenanceFirst])%</style>だけ体力を回復\n- 最大共鳴数2につき、回復対象数が1増加(最大で2名増加)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分と現在の精神力の比率が最も低い味方1名の精神力を、(消耗した[PenanceFirst] - <style=\"highlight\">5</style>)だけ回復\n- 最大共鳴数2につき、回復対象数が1増加(最大で2名増加)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]3, [Reduction]2を付与(1ターンにつき1回)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

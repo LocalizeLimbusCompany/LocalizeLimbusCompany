@@ -1348,10 +1348,13 @@
         {
           "level": 1,
           "name": "Skim Wounds",
-          "desc": "[WhenUse] If target has Bleed, inflict 1 Paralyze",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If target has Bleed, inflict 1 Paralyze"
+                },
                 {
                   "desc": "[OnSucceedAttack] Inflict +3 Bleed Count"
                 },
@@ -1370,10 +1373,13 @@
         {
           "level": 1,
           "name": "Entangled Injury",
-          "desc": "[WhenUse] If target has Bleed, inflict 1 Bind next turn",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If target has Bleed, inflict 1 Bind next turn"
+                },
                 {
                   "desc": "[OnSucceedAttack] Inflict 3 Bleed"
                 }

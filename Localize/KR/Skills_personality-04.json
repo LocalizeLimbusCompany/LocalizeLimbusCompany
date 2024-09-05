@@ -1189,6 +1189,362 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1041001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "둘 다 닥쳐라",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [PenanceFirst] 3 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [RedEyeFirst] 2 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "둘 다 닥쳐라",
+          "desc": "<style=\"highlight\">[RedEyeFirst]이 7 이상이면, 코인 위력 +1\n[PenanceFirst]가 7 이상이면, 합 위력 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [PenanceFirst] 3 얻음<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [RedEyeFirst] 2 얻음<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Laceration] 1 부여</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "둘 다 닥쳐라",
+          "desc": "[RedEyeFirst]이 7 이상이면, 코인 위력 +1\n[PenanceFirst]가 7 이상이면, 합 위력 <style=\"highlight\">+2</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [PenanceFirst] 3 얻음\n<style=\"highlight\">[OnSucceedAttackHead] [PenanceFirst] 1 얻음</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [RedEyeFirst] 2 얻음<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 1 부여<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1041002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "거.대 / 해.바",
+          "desc": "[RedEyeFirst]과 [PenanceFirst]의 합이 20 이상이면, 코인 위력 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [PenanceFirst] 4 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [RedEyeFirst] 3 얻음"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여"
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          "level": 2,
+          "name": "거.대 / 해.바",
+          "desc": "[RedEyeFirst]과 [PenanceFirst]의 합이 20 이상이면, 코인 위력 +1\n<style=\"highlight\">대상의 [Laceration]이 6 이상이면, 코인 위력 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [PenanceFirst] 4 얻음<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [RedEyeFirst] 3 얻음<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 대상의 ([Laceration]/3)만큼 [RedEyeFirst] 얻음 (최대 2)</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "거.대 / 해.바",
+          "desc": "[RedEyeFirst]과 [PenanceFirst]의 합이 <style=\"highlight\">15</style> 이상이면, 코인 위력 +1\n대상의 [Laceration]이 6 이상이면, 코인 위력 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [PenanceFirst] 4 얻음<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [RedEyeFirst] 3 얻음<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 ([Laceration]/<style=\"highlight\">2</style>)만큼 [RedEyeFirst] 얻음 (최대 <style=\"highlight\">3</style>)"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] [RedEyeFirst]이 7 이상이면, 다음 턴에 [Agility] 1 얻음 (턴 당 2회)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1041003,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "대가리 터트리기",
+          "desc": "[BeforeUse] [RedEyeFirst]과 [PenanceFirst]가 각각 15 이상이면, '진심 대가리 터트리기'로 발동됨\n대상의 속도가 자신보다 3 이상 느리면, 코인 위력 +1\n[WhenUse] 정신력이 최대일 경우, 코인 위력 +1\n- [EndSkill] 이 효과가 발동되었다면 정신력 15 감소",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [RedEyeFirst] 7 얻음"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [PenanceFirst] 7 얻음"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신과 현재 체력 비율이 가장 낮은 아군 1명이 각 대상의 최대 체력의 ([PenanceFirst]/3)%만큼 체력 회복"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신과 현재 정신력이 가장 낮은 아군 1명을 ([PenanceFirst]-10)만큼 정신력 회복 (최소 0)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "대가리 터트리기",
+          "desc": "[BeforeUse] [RedEyeFirst]과 [PenanceFirst]가 각각 15 이상이면, '진심 대가리 터트리기'로 발동됨\n대상의 속도가 <style=\"highlight\">자신보다 느리면</style>, 코인 위력 +1\n[WhenUse] 정신력이 최대일 경우, <style=\"highlight\">합 위력 +2</style>, 코인 위력 +1\n- [EndSkill] 이 효과가 발동되었다면 정신력 15 감소",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [RedEyeFirst] 7 얻음<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [PenanceFirst] 7 얻음<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] <style=\"highlight\">3</style> 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] [PenanceFirst] 2 얻음</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신과 현재 체력 비율이 가장 낮은 아군 1명이 각 대상의 최대 체력의 ([PenanceFirst]/<style=\"highlight\">2</style>)%만큼 체력 회복"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신과 현재 정신력이 가장 낮은 아군 1명을 ([PenanceFirst]-10)만큼 정신력 회복 (최소 0)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1041004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "먹고 잘 시간이다",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [RedEyeFirst] 2 얻음 (턴 당 1회)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [PenanceFirst] 2 얻음 (턴 당 1회)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "먹고 잘 시간이다",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [RedEyeFirst] 2 얻음 (턴 당 1회)\n<style=\"highlight\">- [RedEyeFirst]이 7 미만이면, [RedEyeFirst] 1 추가로 얻음</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [PenanceFirst] 2 얻음 (턴 당 1회)\n<style=\"highlight\">- [PenanceFirst]가 7 미만이면, [PenanceFirst] 1 추가로 얻음</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1041005,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "진심 대가리 터트리기",
+          "desc": "[WhenUse] 보유 중인 [RedEyeFirst]과 [PenanceFirst]를 전부 소모\n- 소모한 [RedEyeFirst] 5당 코인 위력 +1 (최대 4)\n- 소모한 [PenanceFirst] 5당 기본 위력 +1 (최대 4)\n[EndSkill] 정신력이 15 감소하고 다음 턴에 [Emptiness] 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] (소모한 [RedEyeFirst]-15)만큼 [Laceration] 부여 (최대 5)"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "소모한 [RedEyeFirst], [PenanceFirst]당 피해량 +2.5% (최대 100%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신과 현재 체력 비율이 가장 낮은 아군 1명이 각 대상의 최대 체력의 (소모한 [PenanceFirst]/2)%만큼 체력 회복\n- 최대 공명수 2당 회복 대상 수 1 증가 (최대 2명 증가)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신과 현재 정신력이 가장 낮은 아군 1명을 (소모한 [PenanceFirst]-10)만큼 정신력 회복\n- 최대 공명수 2당 회복 대상 수 1 증가 (최대 2명 증가)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [Binding] 3, [Reduction] 2 부여 (턴 당 1회)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "진심 대가리 터트리기",
+          "desc": "[WhenUse] 보유 중인 [RedEyeFirst]과 [PenanceFirst]를 전부 소모\n- 소모한 [RedEyeFirst] 5당 코인 위력 +1 (최대 4)\n- 소모한 [PenanceFirst] 5당 기본 위력 +1 (최대 4)\n[EndSkill] 정신력이 15 감소하고 다음 턴에 [Emptiness] 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] (소모한 [RedEyeFirst]-15)만큼 [Laceration] 부여 (최대 5)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "소모한 [RedEyeFirst], [PenanceFirst]당 피해량 <style=\"highlight\">+4%</style> (최대 <style=\"highlight\">160%</style>)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신과 현재 체력 비율이 가장 낮은 아군 1명이 각 대상의 최대 체력의 <style=\"highlight\">(소모한 [PenanceFirst])%</style>만큼 체력 회복\n- 최대 공명수 2당 회복 대상 수 1 증가 (최대 2명 증가)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신과 현재 정신력이 가장 낮은 아군 1명을 (소모한 [PenanceFirst]-<style=\"highlight\">5</style>)만큼 정신력 회복\n- 최대 공명수 2당 회복 대상 수 1 증가 (최대 2명 증가)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [Binding] 3, [Reduction] 2 부여 (턴 당 1회)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -850,12 +850,12 @@
     {
       "id": 1120701,
       "name": "銃弾は高いんだって",
-      "desc": "- <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">出血</color></link></u>が付与された対象に表面的中時、<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>を得る。(最大4)\n- <sprite name=\"Bullet\"><color=#a16a3b><u><link=\"Bullet\">弾丸</color></link></u>がない場合、代わりにクリティカル的中時<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>を全て消耗してダメージ量の(5 × 消耗した<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>)%分追加ダメージを与える。"
+      "desc": "- <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">出血</color></link></u>が付与された対象へ表面的中時、<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益당 수익</color></link></u>を得る。(最大4)\n- [Bullet]がない場合、代わりにクリティカル的中時<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>を全て消耗して、ダメージ量の(5 × 消耗した<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>)%だけ追加ダメージを与える。"
     },
     {
       "id": 1120702,
       "name": "銃弾は高いんだって",
-      "desc": "<style=\"highlight\">- 常時適用 : 弾丸 7つ保有</style>\n- <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">出血</color></link></u>の付与された対象に表面的中時、<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>を得る。(最大4)\n<style=\"highlight\">- 弾丸 を消耗するコイン的中時、<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>を全て消耗し、ダメージ量の(25 × 消耗した<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>)%分追加ダメージを与える。</style>\n- <sprite name=\"Bullet\"><color=#a16a3b><u><link=\"Bullet\">弾丸</color></link></u>がない場合、代わりにクリティカル的中時に<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>を全て消耗し、(5 × 消耗した<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>)%分追加ダメージを与える"
+      "desc": "<style=\"highlight\">- 常時適用: 弾丸を7つ保有</style>\n- <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">出血</color></link></u>が付与された対象に表面的中時、<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>を得る。(最大4)\n<style=\"highlight\">- 弾丸を消耗するコイン的中時、<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>不当収益をすべて消耗し、ダメージの(25 × 消耗した<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>)%だけ追加ダメージを与える。</style>\n- [Bullet]がない場合、代わりにクリティカル的中時<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>を全て消耗して、(5 × 消耗した<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>)%だけ追加ダメージを与える。"
     },
     {
       "id": 1120721,
@@ -880,12 +880,12 @@
     {
       "id": 1040621,
       "name": "ラスト一本",
-      "desc": "<sprite name=\"Bullet\"><color=#a16a3b><u><link=\"Bullet\">弾丸</color></link></u>を最も少なく保有している味方1名がスキルにて最後の<sprite name=\"Bullet\"><color=#a16a3b><u><link=\"Bullet\">弾丸</color></link></u>を消耗すると、攻撃終了時に該当スキルでダメージを与えた対象へ、ダメージ量の50%分追加ダメージを与える。"
+      "desc": "[Bullet]を最も少なく保有する味方1名が、コインで最後の[Bullet]を消耗したならコインの攻撃終了時、それぞれの対象へ該当コインの攻撃で与えたダメージ量の50%だけ追加ダメージを与える。(小数点四捨五入)"
     },
     {
       "id": 1040631,
       "name": "ラスト一本",
-      "desc": "<style=\"highlight\">- <sprite name=\"Bullet\"><color=#a36a3b><u><link=\"Bullet\">弾丸</color></link></u>最も少なく保有している味方1名が<sprite name=\"Bullet\"><color=#a16a3b><u><link=\"Bullet\">弾丸</color></link></u>を消耗するスキルを使用するとき、呼吸 3を付与(1ターンにつき1回。弾丸のない対象には適用されない)</style>\n- <sprite name=\"Bullet\"><color=#a16a3b><u><link=\"Bullet\">弾丸</color></link></u>最も少なく保有している味方1名がスキルにて最後の<sprite name=\"Bullet\"><color=#a16a3b><u><link=\"Bullet\">弾丸</color></link></u>を消耗すると、攻撃終了時に該当スキルでダメージを与えた対象へ、スキルダメージ量の50%分追加ダメージを与える。"
+      "desc": "<style=\"highlight\">- [Bullet]を最も少なく保有する味方1名が[Bullet]を消耗するスキルを使用するとき、呼吸 3を付与。(1ターンにつき1回。弾丸の対象には適用されない)</style>\n[Bullet]を最も少なく保有する味方1名が、コインで最後の[Bullet]消耗したならコインの攻撃終了時、それぞれの対象へ該当コインの攻撃で与えたダメージ量の50%だけ追加ダメージを与える。(小数点四捨五入)"
     },
     {
       "id": 1030601,
@@ -1604,6 +1604,54 @@
       "name": "魔王の呼びかけ",
       "desc": "- 対象の[Sinking]1につき、ダメージ量 +1%(最大15%)\n\n- 戦闘中に味方1名が致死ダメージを受けたとき、[Coffin]2を消耗して[WildHunt]を付与(1ターンにつき<style=\"highlight\">2</style>回)\n\n- 次のターンに[WildHunt]を付与した人格へ[AttackDmgUp]2を付与\n- ワザリングハイツ、エドガー家所属なら次のターンに[Enhancement]1を追加で付与",
       "summary": "対象の[Sinking]に比例してダメージ量が増加"
+    },
+    {
+      "id": 1041001,
+      "name": "蜘蛛ヅラ / しゃれこうべ",
+      "desc": "[RedEyeFirst]を得るコインを使用して敵へ的中時\n- ダメージ量が([RedEyeFirst] ÷ 2)%だけ増加\n- 対象に[Laceration]があるなら、[RedEyeFirst]1を得る(1ターンにつき最大3)\n\n[PenanceFirst]を得るコインを使用して敵へ的中時\n- ダメージ量が([PenanceFirst] ÷ 2)%だけ増加\n- 自分の精神力が20以上なら、[PenanceFirst]1を得る(1ターンにつき最大3)",
+      "summary": "赤眼を得るコインのダメージ量が増加。対象に出血があるなら、赤眼1を得る\n懺悔を得るコインのダメージ量が増加。自分の精神力が20以上なら、懺悔1を得る"
+    },
+    {
+      "id": 1041011,
+      "name": "蜘蛛ヅラ / しゃれこうべ",
+      "desc": "[RedEyeFirst]を得るコインを使用して敵へ的中時\n- ダメージ量が([RedEyeFirst] ÷ 2)%だけ増加\n<style=\"highlight\">- 対象の速度が自分より3以上低ければ、ダメージ量が([RedEyeFirst] ÷ 2)%だけ追加で増加</style>\n- 対象に[Laceration]があるなら、[RedEyeFirst]1を得る(1ターンにつき最大3)\n\n[PenanceFirst]を得るコインを使用して敵へ的中時\n- ダメージ量が([PenanceFirst] ÷ 2)%だけ増加\n<style=\"highlight\">- 対象の精神力が自分より低ければ、ダメージ量が([PenanceFirst] ÷ 2)%だけ追加で増加(精神力が無い対象の場合は0として計算)</style>\n- 自分の精神力が20以上なら、[PenanceFirst]1を得る(1ターンにつき最大3)\n\n<style=\"highlight\">敵に被ダメージ時、[PenanceFirst]1を得る(最大3)</style>",
+      "summary": "赤眼を得るコインのダメージ量が増加。対象に出血があるなら、赤眼1を得る\n懺悔を得るコインのダメージ量が増加。自分の精神力が20以上なら、懺悔1を得る\n敵に被ダメージ時、懺悔1を得る(最大3)"
+    },
+    {
+      "id": 1041002,
+      "name": "E.G.O同化",
+      "desc": "[Charge]回数を獲得するとき、代わりに[RedEyeFirst]または[PenanceFirst]を得る\n- [RedEyeFirst]と[PenanceFirst]は[Charge]威力の影響を受けない",
+      "summary": "充電回数を獲得するとき、代わりに赤眼または懺悔を得る"
+    },
+    {
+      "id": 1041021,
+      "name": "喰って寝ろ",
+      "desc": "戦闘開始時\n- 体力の比率が最も低い味方1名が体力を3回復\n- 精神力が最も低い味方1名が精神力を3回復",
+      "summary": "体力の比率が最も低い味方が体力回復、精神力が最も低い味方の精神力回復"
+    },
+    {
+      "id": 1011001,
+      "name": "撃て。撃たん。",
+      "desc": "[BulletLament]を得れば、次のターンに[Agility]2を得る(1ターンにつき1回)",
+      "summary": "弾丸を得たなら、次のターンにクイックを得る"
+    },
+    {
+      "id": 1011002,
+      "name": "死にゆく蝶を見る。",
+      "desc": "戦闘開始時、[BulletLament]をそれぞれ10ずつ保有。\n\n [BulletLament]を消耗するとき、該当効果の生きた蝶(威力)と死んだ蝶(回数)をランダムに消耗。\n\n[SinkingWhite]を付与するとき、該当コインで消耗した[BulletLament]によって。\n- 生きた蝶を消耗したなら、消耗した値だけ生きた蝶を付与。\n- 死んだ蝶を消耗したなら、消耗した値だけ死んだ蝶を付与。\n\nスキル使用中に[BulletLament]が足りなくなったら、次のコインを全てキャンセルして[ReloadLament]\n\n[ReloadLament]をするか[BulletLament]を得るとき、現在の精神力によって得る蝶が決まる。\n- 精神力が0以上なら30%の確率で生きた蝶、70%の確率で死んだ蝶を得る。\n- 精神力が0未満なら70%の確率で生きた蝶、30%の確率で死んだ蝶を得る。\n- 確率はそれぞれの弾丸ごとに個別適用。",
+      "summary": "スキル使用中に弾丸が足りなくなったら再装填"
+    },
+    {
+      "id": 1011011,
+      "name": "撃て。撃たん。",
+      "desc": "攻撃終了時、自分のスキルによって対象が死亡したなら[ReloadLament]\n[BulletLament]を得たなら、次のターンに[Agility]2を得る(1ターンにつき1回)",
+      "summary": "弾丸を得たなら、次のターンにクイックを得る。対象討伐時、再装填"
+    },
+    {
+      "id": 1011021,
+      "name": "救いの手",
+      "desc": "味方のスキル的中時、対象の[Sinking]を2消耗して[SinkingWhite]1を付与(1ターンにつき3回)",
+      "summary": "対象の沈潜を蝶に変換"
     }
   ]
 }

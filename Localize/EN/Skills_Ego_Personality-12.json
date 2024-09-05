@@ -220,6 +220,184 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2120711,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Solemn Lament",
+          "abName": "Funeral of the Dead Butterflies",
+          "desc": "When this Skill flips Coins, each Coin flips against a random enemy among its targets.\n- The first Coin always targets the main target.\n- All 'On Hit' effects and all damage dealt by each Coin are inflicted only against the random target the Coin selected.\nWhen inflicting [SinkingWhite] with this Skill effects: (Chance to flip Heads)% chance to inflict The Departed. If this unit did not inflict The Departed, inflict The Living instead. (calculates every [SinkingWhite] stack independently)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 random [SinkingWhite]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 random [SinkingWhite]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1~2 random [SinkingWhite]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Lose 2~6 SP"
+                },
+                {
+                  "desc": "[OnSucceedAttack] At 0+ SP, Reuse this Coin (5 times max per Skill)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Solemn Lament",
+          "abName": "Funeral of the Dead Butterflies",
+          "desc": "When this Skill flips Coins, each Coin flips against a random enemy among its targets.\n- The first Coin always targets the main target.\n- All 'On Hit' effects and all damage dealt by each Coin are inflicted only against the random target the Coin selected.\nWhen inflicting [SinkingWhite] with this Skill effects: (Chance to flip Heads)% chance to inflict The Departed. If this unit did not inflict The Departed, inflict The Living instead. (calculates every [SinkingWhite] stack independently)\n<style=\"highlight\">[EndSkill] Heal (# of Coin 3 hits x 2) SP</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 random [SinkingWhite]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 random [SinkingWhite]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1~2 random [SinkingWhite]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Lose 2~6 SP<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] At 0+ SP, Reuse this Coin (5 times max per Skill)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Solemn Lament",
+          "abName": "Funeral of the Dead Butterflies",
+          "desc": "When this Skill flips Coins, each Coin flips against a random enemy among its targets.\n- The first Coin always targets the main target.\n- All 'On Hit' effects and all damage dealt by each Coin are inflicted only against the random target the Coin selected.\nWhen inflicting [SinkingWhite] with this Skill effects: (Chance to flip Heads)% chance to inflict The Departed. If this unit did not inflict The Departed, inflict The Living instead. (calculates every [SinkingWhite] stack independently)\n[EndSkill] Heal <style=\"highlight\">(# of Coin 3 hits x 3)</style> SP",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 random [SinkingWhite]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 random [SinkingWhite]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1~2 random [SinkingWhite]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Lose 2~6 SP<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] At 0+ SP, Reuse this Coin (5 times max per Skill)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120721,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Solemn Lament",
+          "abName": "Funeral of the Dead Butterflies",
+          "desc": "[CantIdentify]\nTargets randomly\nIf the target has less than 0 SP, deal more damage the further their SP value is from 0 (+1% more damage for every missing SP, max 45%)\nAgainst targets without SP: deal +1% more damage for every 2 [Sinking] on the target (max 45%)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [SinkingWhite](The Living)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [SinkingWhite](The Departed)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Solemn Lament",
+          "abName": "Funeral of the Dead Butterflies",
+          "desc": "[CantIdentify]\nTargets randomly\nIf the target has less than 0 SP, deal more damage the further their SP value is from 0 (+1% more damage for every missing SP, max 45%)\nAgainst targets without SP: deal +1% more damage for every 2 [Sinking] on the target (max 45%)\n<style=\"highlight\">[EnemyKill] Heal 5 SP</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [SinkingWhite](The Living)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [SinkingWhite](The Departed)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Inflict +3 [Sinking] Count</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Solemn Lament",
+          "abName": "Funeral of the Dead Butterflies",
+          "desc": "[CantIdentify]\nTargets randomly\nIf the target has less than 0 SP, deal more damage the further their SP value is from 0 (+1% more damage for every missing SP, max 45%)\nAgainst targets without SP: deal +1% more damage for every 2 [Sinking] on the target (max 45%)\n[EnemyKill] Heal 5 SP<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 [SinkingWhite](The Living)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 [SinkingWhite](The Departed)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +3 [Sinking] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] If the target has 50%- HP, inflict Gloom Damage equal to \"All\" [SinkingWhite] values on the target\n- \"All\" = the sum of both The Living and The Departed on the target</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

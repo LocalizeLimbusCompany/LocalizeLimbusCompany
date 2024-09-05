@@ -220,6 +220,184 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2120711,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "厳粛な哀悼",
+          "abName": "死んだ蝶たちの葬儀",
+          "desc": "このスキルのコインをトスするとき、攻撃対象のうち1つをランダムに選択して攻撃。\n- 1枚目のコインは必ずメイン攻撃対象に的中。\n- 全ての的中時効果・該当コインのダメージは上記の効果で選ばれた攻撃対象にのみ適用。\nこのスキルの効果で[SinkingWhite]付与時、表面が出る確率で死んだ蝶を付与。付与されなかった場合、生きた蝶を付与。([SinkingWhite]1につき個別判定)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ランダムに[SinkingWhite]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ランダムに[SinkingWhite]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ランダムに[SinkingWhite]1～2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 精神力が2～6減少"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の精神力が0以上なら、このコインを再使用(スキルごとに最大5回)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "厳粛な哀悼",
+          "abName": "死んだ蝶たちの葬儀",
+          "desc": "このスキルのコインをトスするとき、攻撃対象のうち1つをランダムに選択して攻撃。\n- 1枚目のコインは必ずメイン攻撃対象に的中。\n- 全ての的中時効果・該当コインのダメージは上記の効果で選ばれた攻撃対象にのみ適用。\nこのスキルの効果で[SinkingWhite]付与時、表面が出る確率で死んだ蝶を付与。付与されなかった場合、生きた蝶を付与。([SinkingWhite]1につき個別判定)\n<style=\"highlight\">[EndSkill] (的中したコイン3の数 × 2)だけ精神力が回復</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ランダムに[SinkingWhite]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ランダムに[SinkingWhite]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ランダムに[SinkingWhite]1～2を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 精神力が2～6減少<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の精神力が0以上なら、このコインを再使用(スキルごとに最大5回)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "厳粛な哀悼",
+          "abName": "死んだ蝶たちの葬儀",
+          "desc": "このスキルのコインをトスするとき、攻撃対象のうち1つをランダムに選択して攻撃。\n- 1枚目のコインは必ずメイン攻撃対象に的中。\n- 全ての的中時効果・該当コインのダメージは上記の効果で選ばれた攻撃対象にのみ適用。\nこのスキルの効果で[SinkingWhite]付与時、表面が出る確率で死んだ蝶を付与。付与されなかった場合、生きた蝶を付与。([SinkingWhite]1につき個別判定)\n[EndSkill] <style=\"highlight\">(的中したコイン3の数 × 3)</style>だけ精神力が回復",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ランダムに[SinkingWhite]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ランダムに[SinkingWhite]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ランダムに[SinkingWhite]1～2を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 精神力が2～6減少<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の精神力が0以上なら、このコインを再使用(スキルごとに最大5回)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120721,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "厳粛な哀悼",
+          "abName": "死んだ蝶たちの葬儀",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n対象の精神力が0未満なら、精神力が低くなるほどダメージ量が増加(最大45%)\n精神力が無い対象は[Sinking]2につきダメージ量が1%増加(最大45%)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [SinkingWhite](生きた蝶)4を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [SinkingWhite](死んだ蝶)4を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "厳粛な哀悼",
+          "abName": "死んだ蝶たちの葬儀",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n対象の精神力が0未満なら、精神力が低くなるほどダメージ量が増加(最大45%)\n精神力が無い対象は[Sinking]2につきダメージ量が1%増加(最大45%)\n<style=\"highlight\">[EnemyKill] 精神力を5回復</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [SinkingWhite](生きた蝶)4を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [SinkingWhite](死んだ蝶)4を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Sinking]回数が3増加</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "厳粛な哀悼",
+          "abName": "死んだ蝶たちの葬儀",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n対象の精神力が0未満なら、精神力が低くなるほどダメージ量が増加(最大45%)\n精神力が無い対象は[Sinking]2につきダメージ量が1%増加(最大45%)\n[EnemyKill] 精神力を5回復<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [SinkingWhite](生きた蝶)5を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [SinkingWhite](死んだ蝶)5を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]回数が3増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 対象の体力が50%以下なら、対象の全ての[SinkingWhite]だけ憂鬱ダメージ\n- 生きた蝶と死んだ蝶の合計で計算</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
