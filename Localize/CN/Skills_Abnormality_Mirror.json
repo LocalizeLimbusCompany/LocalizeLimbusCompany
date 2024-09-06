@@ -1348,15 +1348,18 @@
         {
           "level": 1,
           "name": "舔舐伤口",
-          "desc": "[WhenUse] 若目标带有流血 ，则对目标施加1层麻痹 ",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
                 {
+                  "desc": "[OnSucceedAttack] 若目标带有流血 ，则对其施加1层麻痹 "
+                },
+                {
                   "desc": "[OnSucceedAttack] 对目标施加3层流血 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标的流血 层数高于2层，则使目标增加5级流血 强度"
+                  "desc": "[OnSucceedAttack] 若目标的流血 层数不低于2层，则使其增加5级流血 强度"
                 }
               ]
             }
@@ -1370,10 +1373,13 @@
         {
           "level": 1,
           "name": "束缚伤痕",
-          "desc": "[WhenUse]  若目标带有流血 ，则下回合对目标施加1层束缚 ",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若目标带有流血 ，则下回合对目标施加1层束缚 "
+                },
                 {
                   "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
                 }
