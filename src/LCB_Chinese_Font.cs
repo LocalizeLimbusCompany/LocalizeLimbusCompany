@@ -138,13 +138,6 @@ namespace LimbusLocalize
             }
             return false;
         }
-        [HarmonyPatch(typeof(UnitInfoBreakSectionTooltipUI), nameof(UnitInfoBreakSectionTooltipUI.SetDataAndOpen))]
-        [HarmonyPostfix]
-        private static void SetDataAndOpen(UnitInfoBreakSectionTooltipUI __instance)
-        {
-            __instance.tmp_tooltipContent.font = tmpchinesefonts[0];
-            __instance.tmp_tooltipContent.fontSize = 35f;
-        }
         #endregion
         #region 载入汉化
         private static void LoadRemote2()
