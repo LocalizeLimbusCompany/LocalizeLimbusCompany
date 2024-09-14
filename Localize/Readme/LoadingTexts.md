@@ -347,3 +347,4 @@
 - 你掀起破↑裂→<sprite name="Burst">
 - 月亮计划，你这里<sprite name="AaCfPcBn">欠我的用什么还<sprite name="Paralysis"><sprite name="Paralysis"><sprite name="Paralysis">
 - <sprite name="Vibration"><sprite name="VibrationExplosion"><sprite name="Switch_Vibration"><sprite name="FusionVibration"><sprite name="VibrationAssimilation"><sprite name="VibrationCrack"><sprite name="VibrationCollapse"><sprite name="VibrationEcho"><sprite name="VibrationContinue"><sprite name="VibrationNesting"><sprite name="VibrationDistribution"><sprite name="VibrationChain">
+- 和你打的话，用这张人格卡比较好吧...
