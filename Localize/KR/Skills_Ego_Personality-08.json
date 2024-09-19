@@ -304,6 +304,163 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2080711,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "지난 날",
+          "abName": "어느 날의 초상",
+          "desc": "[BeforeAttack] 최대 공명이 4 이상이면, 공격 가중치 +1\n[EndSkill] 현재 체력 비율이 가장 낮은 아군 2명이 최대 체력의 (5 + (메인 공격 대상의 [Sinking]과 [Sinking] 횟수의 합) / 3)%만큼 체력 회복 (최대 15% 회복)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Curse] 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [UninvitedGuestPersonality] 2 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "지난 날",
+          "abName": "어느 날의 초상",
+          "desc": "[BeforeAttack] 최대 공명이 4 이상이면, 공격 가중치 +1\n<style=\"highlight\">- 해당 공명이 우울 공명이면, 공격 가중치 +1</style>\n[EndSkill] 현재 체력 비율이 가장 낮은 아군 2명이 최대 체력의 (<style=\"highlight\">10</style> + (메인 공격 대상의 [Sinking]과 [Sinking] 횟수의 합) / 3)%만큼 체력 회복 (최대 15% 회복)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking] 횟수 2 증가<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Curse] 1 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 우울 공명 4 이상이면, [AzureTakeDamageUp] 1 부여</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [UninvitedGuestPersonality] 2 부여<style=\"highlight\"></style>"
+                }
+              ]
+          }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "지난 날",
+          "abName": "어느 날의 초상",
+          "desc": "[BeforeAttack] 최대 공명이 4 이상이면, 공격 가중치 +1\n- 해당 공명이 우울 공명이면, 공격 가중치 +1\n[EndSkill] 현재 체력 비율이 가장 낮은 아군 2명이 최대 체력의 (10 + (메인 공격 대상의 [Sinking]과 [Sinking] 횟수의 합) / 3)%만큼 체력 회복 (최대 <style=\"highlight\">20</style>% 회복)\n<style=\"highlight\">- 최대 공명이 우울 공명 4 이상이면, 회복량이 최대 체력의 10%만큼 증가</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking] 횟수 <style=\"highlight\">3</style> 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Curse] <style=\"highlight\">2</style> 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 우울 공명 4 이상이면, [AzureTakeDamageUp] 1 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [UninvitedGuestPersonality] 2 부여<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2080721,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "지난 날",
+          "abName": "어느 날의 초상",
+          "desc": "[CantIdentify]\n[Sinking]이 가장 많은 대상 우선 공격\n[BeforeAttack] 최대 체력의 10%만큼 체력 감소 (이 효과로 흐트러짐 상태가 되지 않음)\n[EndSkill] 자신을 제외하고 현재 체력 비율이 가장 낮은 아군 3명이 최대 체력의 (5 + (메인 공격 대상의 [Sinking]과 [Sinking] 횟수의 합) / 3)%만큼 체력 회복 (최대 10% 회복)\n- 최대 공명 수가 4 이상이면 , 회복 대상 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Curse] 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 우울 공명 3 이상이면, [AzureTakeDamageUp] 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [UninvitedGuestPersonality] 2 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "지난 날",
+          "abName": "어느 날의 초상",
+          "desc": "[CantIdentify]\n[Sinking]이 가장 많은 대상 우선 공격\n[BeforeAttack] 최대 체력의 10%만큼 체력 감소 (이 효과로 흐트러짐 상태가 되지 않음)\n[EndSkill] 자신을 제외하고 현재 체력 비율이 가장 낮은 아군 3명이 최대 체력의 (<style=\"highlight\">10</style> + (메인 공격 대상의 [Sinking]과 [Sinking] 횟수의 합) / 3)%만큼 체력 회복 (최대 <style=\"highlight\">15</style>% 회복)\n- 최대 공명 수가 4 이상이면 , 회복 대상 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Curse] 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 우울 공명 3 이상이면, [AzureTakeDamageUp] 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [UninvitedGuestPersonality] 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [EchoOfMansion] 2 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "지난 날",
+          "abName": "어느 날의 초상",
+          "desc": "[CantIdentify]\n[Sinking]이 가장 많은 대상 우선 공격\n[BeforeAttack] 최대 체력의 10%만큼 체력 감소 (이 효과로 흐트러짐 상태가 되지 않음)\n[EndSkill] 자신을 제외하고 현재 체력 비율이 가장 낮은 아군 3명이 최대 체력의 (10 + (메인 공격 대상의 [Sinking]과 [Sinking] 횟수의 합) / 3)%만큼 체력 회복 (최대 15% 회복)\n- 최대 공명 수가 4 이상이면 , 회복 대상 +1\n<style=\"highlight\">- 해당 공명이 우울 공명이면, 회복량이 최대 체력의 5%만큼 증가</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking] 횟수 <style=\"highlight\">3</style> 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Curse] 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 우울 공명 <style=\"highlight\">3 당</style>, [AzureTakeDamageUp] 1 부여 <style=\"highlight\">(최대 2)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [UninvitedGuestPersonality] 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [EchoOfMansion] 2 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

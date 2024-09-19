@@ -304,6 +304,163 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2080711,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "過ぎし日",
+          "abName": "在りし日の肖像",
+          "desc": "[BeforeAttack] 最大共鳴が4以上なら、攻撃加重値 +1\n[EndSkill] 現体力の比率が最も低い味方2名が体力最大値の(5 + (メイン攻撃対象の[Sinking]と[Sinking]回数の合計) ÷ 3)%だけ体力を回復(最大15%回復)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Curse]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [UninvitedGuestPersonality]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "過ぎし日",
+          "abName": "在りし日の肖像",
+          "desc": "[BeforeAttack] 最大共鳴が4以上なら、攻撃加重値 +1\n<style=\"highlight\">- 該当共鳴が憂鬱共鳴なら、攻撃加重値 +1</style>\n[EndSkill] 現体力の比率が最も低い味方2名が体力最大値の(<style=\"highlight\">10</style> + (メイン攻撃対象の[Sinking]と[Sinking]回数の合計) ÷ 3)%だけ体力を回復(最大15%回復)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]回数が2増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Curse]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 憂鬱共鳴4以上なら、[AzureTakeDamageUp]1を付与</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [UninvitedGuestPersonality]2を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "過ぎし日",
+          "abName": "在りし日の肖像",
+          "desc": "[BeforeAttack] 最大共鳴が4以上なら、攻撃加重値 +1\n- 該当共鳴が憂鬱共鳴なら、攻撃加重値 +1\n[EndSkill] 現体力の比率が最も低い味方2名が体力最大値の(10 + (メイン攻撃対象の[Sinking]と[Sinking]回数の合計) ÷ 3)%だけ体力を回復(最大<style=\"highlight\">20</style>%回復)\n<style=\"highlight\">- 最大共鳴が憂鬱共鳴4以上なら、回復量が体力最大値の10%だけ増加</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]回数が<style=\"highlight\">3</style>増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Curse]<style=\"highlight\">2</style> を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 憂鬱共鳴4以上なら、[AzureTakeDamageUp]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [UninvitedGuestPersonality]2を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2080721,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "過ぎし日",
+          "abName": "在りし日の肖像",
+          "desc": "[CantIdentify]\n[Sinking]が最も多い対象を優先して攻撃\n[BeforeAttack] 体力が最大値の10%だけ減少(この効果で混乱状態にならない)\n[EndSkill] 自分を除く現体力の比率が最も低い味方3名が、体力最大値の(5 + (メイン攻撃対象の[Sinking]と[Sinking]回数の合計) ÷ 3)%だけ体力を回復(最大10%)\n- 最大共鳴数が4以上なら、回復対象 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Curse]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 憂鬱共鳴3以上なら、[AzureTakeDamageUp]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [UninvitedGuestPersonality]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "過ぎし日",
+          "abName": "在りし日の肖像",
+          "desc": "[CantIdentify]\n[Sinking]が最も多い対象を優先して攻撃\n[BeforeAttack] 体力が最大値の10%だけ減少(この効果で混乱状態にならない)\n[EndSkill] 自分を除く現体力の比率が最も低い味方3名が、体力最大値の(<style=\"highlight\">10</style> + (メイン攻撃対象の[Sinking]と[Sinking]回数の合計) ÷ 3)%だけ体力を回復(最大<style=\"highlight\">15</style>%)\n- 最大共鳴数が4以上なら、回復対象 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Curse]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 憂鬱共鳴3以上なら、[AzureTakeDamageUp]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [UninvitedGuestPersonality]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[EchoOfMansion]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "過ぎし日",
+          "abName": "在りし日の肖像",
+          "desc": "[CantIdentify]\n[Sinking]が最も多い対象を優先して攻撃\n[BeforeAttack] 体力が最大値の10%だけ減少(この効果で混乱状態にならない)\n[EndSkill] 自分を除く現体力の比率が最も低い味方3名が、体力最大値の(10 + (メイン攻撃対象の[Sinking]と[Sinking]回数の合計) ÷ 3)%だけ体力を回復(最大15%)\n- 最大共鳴数が4以上なら、回復対象 +1\n<style=\"highlight\">- 該当共鳴が憂鬱共鳴なら、回復量が体力最大値の5%だけ増加</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]回数が<style=\"highlight\">3</style>増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Curse]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 憂鬱共鳴<style=\"highlight\">3につき</style>、[AzureTakeDamageUp]1を付与<style=\"highlight\">(最大2)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [UninvitedGuestPersonality]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[EchoOfMansion]2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
