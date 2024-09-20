@@ -304,6 +304,163 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2080711,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "往昔",
+          "abName": "某日的肖像",
+          "desc": "[BeforeAttack] 若最大共鸣数不低于4，则使本技能的攻击容量+1\n[EndSkill] 使现存体力比例最低的2名友方单位恢复其体力上限(5+(主要目标的沉沦 强度与层数之和)/3)%的体力(最多15%)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层沉沦 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层诅咒 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[UninvitedGuestPersonality]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "往昔",
+          "abName": "某日的肖像",
+          "desc": "[BeforeAttack] 若最大共鸣数不低于4，则使本技能的攻击容量+1\n- 若该共鸣为忧郁共鸣，则使本技能的攻击容量+1\n[EndSkill] 使现存体力比例最低的2名友方单位恢复其体力上限(10+(主要目标的沉沦 强度与层数之和)/3)%的体力(最多15%)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层沉沦 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层诅咒 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若忧郁共鸣数不低于4，则对目标施加1层忧郁易损 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[UninvitedGuestPersonality]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "往昔",
+          "abName": "某日的肖像",
+          "desc": "[BeforeAttack] 若最大共鸣数不低于4，则使本技能的攻击容量+1\n- 若该共鸣为忧郁共鸣，则使本技能的攻击容量+1\n[EndSkill] 使现存体力比例最低的2名友方单位恢复其体力上限(10+(主要目标的沉沦 强度与层数之和)/3)%的体力(最多20%)\n- 若最大共鸣为共鸣数不低于4的忧郁共鸣，则使其额外恢复体力上限10%的体力",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层沉沦 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层诅咒 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] ck] 若忧郁共鸣数不低于4，则对目标施加1层忧郁易损 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[UninvitedGuestPersonality]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2080721,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "往昔",
+          "abName": "某日的肖像",
+          "desc": "[CantIdentify]\n优先指定沉沦 最多的目标\n[BeforeAttack] 使自身失去体力上限10%的体力(不会因本效果而陷入混乱)\n[EndSkill] 使除自身以外现存体力比例最低的3名友方单位恢复其体力上限(5+(主要目标的沉沦 强度与层数之和)/3)%的体力(最多10%)\n- 若最大共鸣数不低于4，则额外使1名友方单位恢复体力",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层沉沦 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层诅咒 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若忧郁共鸣数不低于3，则对目标施加1层忧郁易损 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[UninvitedGuestPersonality]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "往昔",
+          "abName": "某日的肖像",
+          "desc": "[CantIdentify]\n优先指定沉沦 最多的目标\n[BeforeAttack] 使自身失去体力上限10%的体力(不会因本效果而陷入混乱)\n[EndSkill] 使除自身以外现存体力比例最低的3名友方单位恢复其体力上限(10+(主要目标的沉沦 强度与层数之和)/3)%的体力(最多15%)\n- 若最大共鸣数不低于4，则额外使1名友方单位恢复体力",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层沉沦 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层诅咒 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若忧郁共鸣数不低于3，则对目标施加1层忧郁易损 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[UninvitedGuestPersonality]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层[EchoOfMansion]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "往昔",
+          "abName": "某日的肖像",
+          "desc": "[CantIdentify]\n优先指定沉沦 最多的目标\n[BeforeAttack] 使自身失去体力上限10%的体力(不会因本效果而陷入混乱)\n[EndSkill] 使除自身以外现存体力比例最低的3名友方单位恢复其体力上限(10+(主要目标的沉沦 强度与层数之和)/3)%的体力(最多15%)\n- 若最大共鸣数不低于4，则额外使1名友方单位恢复体力\n- 若该共鸣为忧郁共鸣，则使其额外恢复体力上限5%的体力",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层沉沦 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层诅咒 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 忧郁共鸣数每有3点，对目标施加1层忧郁易损 (最多2层)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[UninvitedGuestPersonality]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层[EchoOfMansion]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
