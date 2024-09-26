@@ -14,7 +14,7 @@ LimbusCompany I18N mod
 
 **English** | ~~American English~~ | [Русский](https://github.com/Crescent-Corporation/LimbusCompanyBusRUS) | ~~Swiss~~ | ~~Ελληνικά~~ | ~~Österreich~~
 
-[繁體中文](https://github.com/SmallYuanSY/LocalizeLimbusCompany) | [ภาษาไทย](https://github.com/1ookilo/LocalizeLimbusCompanyTH) | [Indonesia](https://github.com/ArtefactX1/LocalizeLimbusID)
+[繁體中文](https://github.com/SmallYuanSY/LocalizeLimbusCompany) | [ภาษาไทย](https://github.com/JoshSnappas/LocalizeLimbusCompanyTH) | [Indonesia](https://github.com/ArtefactX1/LocalizeLimbusID)
 </div>
 
 # Install
