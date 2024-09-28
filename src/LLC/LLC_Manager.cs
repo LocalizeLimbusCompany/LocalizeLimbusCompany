@@ -123,20 +123,15 @@ namespace LimbusLocalize
         [HarmonyPostfix]
         public static void CheckModActions()
         {
-            if (LLC_UpdateChecker.UpdateCall != null)
-                OpenGlobalPopup("Has Update " + LLC_UpdateChecker.Updatelog + "!\nOpen Download Path & Quit Game\n模组存在更新\n点击OK将退出游戏并打开下载目录\n请将" + LLC_UpdateChecker.Updatelog + "压缩包解压至该目录", "Mod Has Update\n模组存在更新", null, "OK", () =>
-                {
-                    LLC_UpdateChecker.UpdateCall.Invoke();
-                    LLC_UpdateChecker.UpdateCall = null;
-                    LLC_UpdateChecker.Updatelog = string.Empty;
-                });
-            else if (FatalErrorAction != null)
-                OpenGlobalPopup(FatalErrorlog, "Mod Has Fatal Error!\n模组存在致命错误", null, "Open LLC URL", () =>
-                {
-                    FatalErrorAction.Invoke();
-                    FatalErrorAction = null;
-                    FatalErrorlog = string.Empty;
-                });
+            if (LLC_UpdateChecker.isUpdate)
+            {
+                LCB_LLCMod.LogInfo("Here is a update.");
+                OpenGlobalPopup($"已更新新版本文本。\n文本版本号：{LLC_UpdateChecker.nowTextVersion}。", "更新完成");
+            }
+            else
+            {
+                LCB_LLCMod.LogInfo("No update.");
+            }
         }
     }
 }

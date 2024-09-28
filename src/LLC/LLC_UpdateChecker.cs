@@ -2,98 +2,45 @@
 using Il2CppSystem.Threading;
 using SimpleJSON;
 using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Net.Http;
-using UnityEngine;
 using UnityEngine.Networking;
 
 namespace LimbusLocalize
 {
     public static class LLC_UpdateChecker
     {
-        public static ConfigEntry<bool> AutoUpdate = LCB_LLCMod.LLC_Settings.Bind("LLC Settings", "AutoUpdate", false, "是否自动检查并下载更新 ( true | false )");
-        public static ConfigEntry<URI> UpdateURI = LCB_LLCMod.LLC_Settings.Bind("LLC Settings", "UpdateURI", URI.GitHub, "自动更新所使用URI ( GitHub:默认 | Mirror_OneDrive:镜像,更新可能有延迟,但下载速度更快 )");
-        public static void StartAutoUpdate()
+        public static ConfigEntry<bool> AutoUpdate = LCB_LLCMod.LLC_Settings.Bind("LLC Settings", "AutoUpdate", false, "是否自动检查并下载文本更新 ( true | false )");
+        public static ConfigEntry<AutoUpdateSource> UpdateURI = LCB_LLCMod.LLC_Settings.Bind("LLC Settings", "UpdateURI", AutoUpdateSource.Mirror_OneDrive, "自动更新所使用镜像源 ( 可选节点：Mirror_OneDrive：零协会OFB网盘（推荐） | Mirror_Mobile：移动网盘 | Mirror_Tianyi：天翼云盘 | Mirror_Unicom：联通云盘 )");
+        public static bool isUpdate = false;
+        public static int nowTextVersion = -10001;
+        public static void UpdateMod()
         {
-            if (AutoUpdate.Value)
+            bool textisUpdated = CheckTextUpdate(out int web_text_version);
+            if (AutoUpdate.Value && !textisUpdated && web_text_version != -10001)
             {
-                LCB_LLCMod.LogWarning($"Check Mod Update From {UpdateURI.Value}");
-                Action ModUpdate = CheckModUpdate;
-                new Thread(ModUpdate).Start();
+                LCB_LLCMod.LogInfo("UpdateURI is " + UpdateURI.Value + ".");
+                DownloadFileAsync(AutoUpdateURL[UpdateURI.Value] + $"hotupdate/LimbusLocalize_hotupdate_{web_text_version}.7z", LCB_LLCMod.ModPath + $"\\LimbusLocalize_hotupdate_{web_text_version}.7z");
+                LCB_LLCMod.LogInfo("Start unarchiving.");
+                Unarchive(LCB_LLCMod.ModPath + $"/LimbusLocalize_hotupdate_{web_text_version}.7z", LCB_LLCMod.GamePath);
+                File.Delete(LCB_LLCMod.ModPath + $"/LimbusLocalize_hotupdate_{web_text_version}.7z");
+                nowTextVersion = web_text_version;
+                LCB_LLCMod.LogInfo("Mod is updated.");
+                isUpdate = true;
             }
-        }
-        static void CheckModUpdate()
-        {
-            string release_uri = UpdateURI.Value == URI.GitHub ?
-                "https://api.github.com/repos/LocalizeLimbusCompany/LocalizeLimbusCompany/releases/latest"
-                : "https://json.zxp123.eu.org/LatestMod_Release.json";
-            UnityWebRequest www = UnityWebRequest.Get(release_uri);
-            www.timeout = 4;
-            www.SendWebRequest();
-            while (!www.isDone)
-                Thread.Sleep(100);
-            if (www.result != UnityWebRequest.Result.Success)
-                LCB_LLCMod.LogWarning($"Can't access {UpdateURI.Value}!!!" + www.error);
             else
             {
-                var latest = JSONNode.Parse(www.downloadHandler.text).AsObject;
-                string latestReleaseTag = latest["tag_name"].Value;
-                if (Version.Parse(LCB_LLCMod.VERSION) < Version.Parse(latestReleaseTag.Remove(0, 1)))
-                {
-                    string updatelog = "LimbusLocalize_BIE_" + latestReleaseTag;
-                    Updatelog += updatelog + ".7z ";
-                    string download_uri = UpdateURI.Value == URI.GitHub ?
-                        $"https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/releases/download/{latestReleaseTag}/{updatelog}.7z"
-                        : $"https://node.zeroasso.top/d/od/{updatelog}.7z";
-                    var dirs = download_uri.Split('/');
-                    string filename = LCB_LLCMod.GamePath + "/" + dirs[^1];
-                    if (!File.Exists(filename))
-                        DownloadFileAsync(download_uri, filename);
-                    UpdateCall = UpdateDel;
-                }
-                LCB_LLCMod.LogWarning("Check Chinese Font Asset Update");
-                Action FontAssetUpdate = CheckChineseFontAssetUpdate;
-                new Thread(FontAssetUpdate).Start();
+                LCB_LLCMod.LogInfo("No need to update.");
             }
         }
-        static void CheckChineseFontAssetUpdate()
-        {
-            string release_uri = UpdateURI.Value == URI.GitHub ?
-                "https://api.github.com/repos/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/latest"
-                : "https://json.zxp123.eu.org/LatestTmp_Release.json";
-            UnityWebRequest www = UnityWebRequest.Get(release_uri);
-            string FilePath = LCB_LLCMod.ModPath + "/tmpchinesefont";
-            var LastWriteTime = File.Exists(FilePath) ? int.Parse(TimeZoneInfo.ConvertTime(new FileInfo(FilePath).LastWriteTime, TimeZoneInfo.FindSystemTimeZoneById("China Standard Time")).ToString("yyMMdd")) : 0;
-            www.SendWebRequest();
-            while (!www.isDone)
-                Thread.Sleep(100);
-            var latest = JSONNode.Parse(www.downloadHandler.text).AsObject;
-            int latestReleaseTag = int.Parse(latest["tag_name"].Value);
-            if (LastWriteTime < latestReleaseTag)
-            {
-                string updatelog = "tmpchinesefont_BIE_" + latestReleaseTag;
-                Updatelog += updatelog + ".7z ";
-                string download = UpdateURI.Value == URI.GitHub ?
-                    $"https://github.com/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/download/{latestReleaseTag}/{updatelog}.7z"
-                    : $"https://node.zeroasso.top/d/od/{updatelog}.7z";
-                var dirs = download.Split('/');
-                string filename = LCB_LLCMod.GamePath + "/" + dirs[^1];
-                if (!File.Exists(filename))
-                    DownloadFileAsync(download, filename);
-                UpdateCall = UpdateDel;
-            }
-        }
-        static void UpdateDel()
-        {
-            LCB_LLCMod.OpenGamePath();
-            Application.Quit();
-        }
-        static void DownloadFileAsync(string uri, string filePath)
+        private static void DownloadFileAsync(string uri, string filePath)
         {
             try
             {
-                LCB_LLCMod.LogWarning("Download " + uri + " To " + filePath);
+                LCB_LLCMod.LogInfo("Download " + uri + " To " + filePath);
                 using HttpClient client = new();
                 using HttpResponseMessage response = client.GetAsync(uri).GetAwaiter().GetResult();
                 using HttpContent content = response.Content;
@@ -106,6 +53,32 @@ namespace LimbusLocalize
                     LCB_LLCMod.LogWarning($"{uri} 404 NotFound,No Resource");
                 else
                     LCB_LLCMod.LogWarning($"{uri} Error!!!" + ex.ToString());
+            }
+        }
+        public static bool CheckTextUpdate(out int web_text_version_out)
+        {
+            UnityWebRequest www = UnityWebRequest.Get("https://hotupdate.zeroasso.top/api/version.json");
+            www.timeout = 5;
+            www.SendWebRequest();
+            while (!www.isDone)
+            {
+                Thread.Sleep(100);
+            }
+            if (www.result == UnityWebRequest.Result.Success)
+            {
+                JSONObject json = JSONNode.Parse(www.downloadHandler.text).AsObject;
+                int web_text_version = json["text_version"].AsInt;
+                var local_json = JSONNode.Parse(File.ReadAllText(LCB_LLCMod.ModPath + "/version.json")).AsObject;
+                int local_text_version = local_json["text_version"].AsInt;
+                web_text_version_out = web_text_version;
+                LCB_LLCMod.LogInfo($"Local Text Version: {local_text_version}, Web Text Version: {web_text_version}");
+                return web_text_version <= local_text_version;
+            }
+            else
+            {
+                LCB_LLCMod.LogWarning($"Check Text Update Failed: {www.error}");
+                web_text_version_out = -10001;
+                return true;
             }
         }
         public static void CheckReadmeUpdate()
@@ -131,12 +104,52 @@ namespace LimbusLocalize
                 LLC_ReadmeManager.InitReadmeList();
             }
         }
-        public static string Updatelog;
-        public static Action UpdateCall;
-        public enum URI
+        public static void Unarchive(string archivePath, string output)
         {
-            GitHub,
-            Mirror_OneDrive
+            try
+            {
+                ProcessStartInfo processStartInfo = new ProcessStartInfo
+                {
+                    FileName = LCB_LLCMod.ModPath + "\\7z.exe",
+                    Arguments = $"x \"{archivePath}\" -o\"{output}\" -y",
+                    UseShellExecute = false,
+                    CreateNoWindow = true
+                };
+
+                using (Process process = new Process { StartInfo = processStartInfo })
+                {
+                    process.Start();
+
+                    process.WaitForExit();
+
+                    if (process.ExitCode == 0)
+                    {
+                        Console.WriteLine("Unarchive Success!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Unarchive Failed!");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LCB_LLCMod.LogError("Unarchive Error: " + ex.ToString());
+            }
         }
+        public enum AutoUpdateSource
+        {
+            Mirror_OneDrive,
+            Mirror_Mobile,
+            Mirror_Tianyi,
+            Mirror_Unicom
+        }
+        public readonly static Dictionary<AutoUpdateSource, string> AutoUpdateURL = new()
+        {
+            { AutoUpdateSource.Mirror_OneDrive, "https://node.zeroasso.top/d/od/" },
+            { AutoUpdateSource.Mirror_Mobile, "https://node.zeroasso.top/d/mobile/" },
+            { AutoUpdateSource.Mirror_Tianyi, "https://node.zeroasso.top/d/tianyi/" },
+            { AutoUpdateSource.Mirror_Unicom, "https://node.zeroasso.top/d/unicom/" }
+        };
     }
 }

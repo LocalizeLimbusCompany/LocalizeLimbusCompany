@@ -23,6 +23,7 @@ namespace LimbusLocalize
         public static Action<string, Action> LogFatalError { get; set; }
         public static Action<string> LogError { get; set; }
         public static Action<string> LogWarning { get; set; }
+        public static Action<string> LogInfo { get; set; }
         public static void OpenLLCURL() => Application.OpenURL(LLCLink);
         public static void OpenGamePath() => Application.OpenURL(GamePath);
         public override void Load()
@@ -30,10 +31,19 @@ namespace LimbusLocalize
             LLC_Settings = Config;
             LogError = (string log) => { Log.LogError(log); Debug.LogError(log); };
             LogWarning = (string log) => { Log.LogWarning(log); Debug.LogWarning(log); };
+            LogInfo = (string log) => { Log.LogInfo(log); Debug.Log(log); };
             LogFatalError = (string log, Action action) => { LLC_Manager.FatalErrorlog += log + "\n"; LogError(log); LLC_Manager.FatalErrorAction = action; LLC_Manager.CheckModActions(); };
             ModPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             GamePath = new DirectoryInfo(Application.dataPath).Parent.FullName;
-            LLC_UpdateChecker.StartAutoUpdate();
+            if (File.Exists(ModPath + "/version.json"))
+            {
+                LogInfo("Exist version.json, start update checker.");
+                LLC_UpdateChecker.UpdateMod();
+            }
+            else
+            {
+                LogInfo("Not Exist version.json, skip update checker.");
+            }
             try
             {
                 Harmony harmony = new(NAME);
@@ -48,13 +58,14 @@ namespace LimbusLocalize
                 harmony.PatchAll(typeof(LLC_Manager));
                 harmony.PatchAll(typeof(LLC_Chinese_Setting));
                 if (!LCB_Chinese_Font.AddChineseFont(ModPath + "/tmpchinesefont"))
-                    LogFatalError("You Not Have Chinese Font, Please Read GitHub Readme To Download\n你没有下载中文字体,请阅读GitHub的Readme下载", OpenLLCURL);
+                    LogFatalError("You Not Have Chinese Font, Please Read GitHub Readme To Download", OpenLLCURL);
             }
             catch (Exception e)
             {
-                LogFatalError("Mod Has Unknown Fatal Error!!!\n模组部分功能出现致命错误,即将打开GitHub,请根据Issues流程反馈", () => { CopyLog(); OpenGamePath(); OpenLLCURL(); });
+                LogFatalError("Mod Has Unknown Fatal Error!!!", () => { CopyLog(); OpenGamePath(); OpenLLCURL(); });
                 LogError(e.ToString());
             }
+            LogInfo("Limbus Localize Mod v" + VERSION + " is loaded.");
         }
         public static void CopyLog()
         {
