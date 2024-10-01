@@ -38,7 +38,15 @@ namespace LimbusLocalize
             if (File.Exists(ModPath + "/version.json"))
             {
                 LogInfo("Exist version.json, start update checker.");
-                LLC_UpdateChecker.UpdateMod();
+                try
+                {
+                    LLC_UpdateChecker.UpdateMod();
+                }
+                catch (Exception e)
+                {
+                    LogWarning("Update checker error: " + e.ToString());
+                    LogInfo("Skip update.");
+                }
             }
             else
             {

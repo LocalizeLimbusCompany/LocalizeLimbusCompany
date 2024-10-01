@@ -123,10 +123,15 @@ namespace LimbusLocalize
         [HarmonyPostfix]
         public static void CheckModActions()
         {
-            if (LLC_UpdateChecker.isUpdate)
+            if (LLC_UpdateChecker.isAppOut)
+            {
+                LCB_LLCMod.LogInfo("App is out.");
+                OpenGlobalPopup("程序更新。\n需要手动进行更新。\n请使用工具箱，或手动进行更新。\n之后方可正常使用自动更新功能。", "程序需要更新");
+            }
+            else if (LLC_UpdateChecker.isUpdate)
             {
                 LCB_LLCMod.LogInfo("Here is a update.");
-                OpenGlobalPopup($"已更新新版本文本。\n文本版本号：{LLC_UpdateChecker.nowTextVersion}。", "更新完成");
+                OpenGlobalPopup($"已更新新版本文本。\n新文本版本号：{LLC_UpdateChecker.nowTextVersion}。\n更新提示：{LLC_UpdateChecker.updateNotice}", "更新完成");
             }
             else
             {

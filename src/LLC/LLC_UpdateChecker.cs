@@ -15,11 +15,24 @@ namespace LimbusLocalize
     {
         public static ConfigEntry<bool> AutoUpdate = LCB_LLCMod.LLC_Settings.Bind("LLC Settings", "AutoUpdate", false, "是否自动检查并下载文本更新 ( true | false )");
         public static ConfigEntry<AutoUpdateSource> UpdateURI = LCB_LLCMod.LLC_Settings.Bind("LLC Settings", "UpdateURI", AutoUpdateSource.Mirror_OneDrive, "自动更新所使用镜像源 ( 可选节点：Mirror_OneDrive：零协会OFB网盘（推荐） | Mirror_Mobile：移动网盘 | Mirror_Tianyi：天翼云盘 | Mirror_Unicom：联通云盘 )");
+        public static ConfigEntry<int> AutoUpdateTimeout = LCB_LLCMod.LLC_Settings.Bind("LLC Settings", "AutoUpdateTimeout", 10, "自动更新检查超时时间（若出现Timeout，可尝试增大）");
         public static bool isUpdate = false;
+        public static bool isAppOut = false;
         public static int nowTextVersion = -10001;
+        public static string updateNotice = "本次文本更新没有提示。";
         public static void UpdateMod()
         {
-            bool textisUpdated = CheckTextUpdate(out int web_text_version);
+            bool textisUpdated = CheckTextUpdate(out int web_text_version, out bool is_app_outupdated, out string update_notice);
+            if (is_app_outupdated)
+            {
+                isAppOut = true;
+                LCB_LLCMod.LogInfo("No need to update.");
+                return;
+            }
+            if (!string.IsNullOrEmpty(update_notice))
+            {
+                updateNotice = update_notice.Replace("\\n", Environment.NewLine); ;
+            }
             if (AutoUpdate.Value && !textisUpdated && web_text_version != -10001)
             {
                 LCB_LLCMod.LogInfo("UpdateURI is " + UpdateURI.Value + ".");
@@ -55,29 +68,55 @@ namespace LimbusLocalize
                     LCB_LLCMod.LogWarning($"{uri} Error!!!" + ex.ToString());
             }
         }
-        public static bool CheckTextUpdate(out int web_text_version_out)
+        public static bool CheckTextUpdate(out int web_text_version_out, out bool is_app_outupdated, out string update_notice)
         {
-            UnityWebRequest www = UnityWebRequest.Get("https://hotupdate.zeroasso.top/api/version.json");
-            www.timeout = 5;
-            www.SendWebRequest();
-            while (!www.isDone)
+            try
             {
-                Thread.Sleep(100);
+                UnityWebRequest www = UnityWebRequest.Get("https://hotupdate.zeroasso.top/api/version.json");
+                www.timeout = AutoUpdateTimeout.Value;
+                www.SendWebRequest();
+                while (!www.isDone)
+                {
+                    Thread.Sleep(100);
+                }
+                if (www.result == UnityWebRequest.Result.Success)
+                {
+                    JSONObject json = JSONNode.Parse(www.downloadHandler.text).AsObject;
+                    var local_json = JSONNode.Parse(File.ReadAllText(LCB_LLCMod.ModPath + "/version.json")).AsObject;
+                    int web_app_version = json["app_version"].AsInt;
+                    int local_app_version = local_json["app_version"].AsInt;
+                    if (web_app_version > local_app_version)
+                    {
+                        LCB_LLCMod.LogInfo("App is outupdated.");
+                        is_app_outupdated = true;
+                    }
+                    else
+                    {
+                        LCB_LLCMod.LogInfo("App is not outupdated.");
+                        is_app_outupdated = false;
+                    }
+                    int web_text_version = json["text_version"].AsInt;
+                    int local_text_version = local_json["text_version"].AsInt;
+                    web_text_version_out = web_text_version;
+                    LCB_LLCMod.LogInfo($"Local Text Version: {local_text_version}, Web Text Version: {web_text_version}");
+                    update_notice = json["notice"].Value;
+                    return web_text_version <= local_text_version;
+                }
+                else
+                {
+                    LCB_LLCMod.LogWarning($"Check Text Update Failed: {www.error}");
+                    web_text_version_out = -10001;
+                    is_app_outupdated = false;
+                    update_notice = null;
+                    return true;
+                }
             }
-            if (www.result == UnityWebRequest.Result.Success)
+            catch(Exception ex)
             {
-                JSONObject json = JSONNode.Parse(www.downloadHandler.text).AsObject;
-                int web_text_version = json["text_version"].AsInt;
-                var local_json = JSONNode.Parse(File.ReadAllText(LCB_LLCMod.ModPath + "/version.json")).AsObject;
-                int local_text_version = local_json["text_version"].AsInt;
-                web_text_version_out = web_text_version;
-                LCB_LLCMod.LogInfo($"Local Text Version: {local_text_version}, Web Text Version: {web_text_version}");
-                return web_text_version <= local_text_version;
-            }
-            else
-            {
-                LCB_LLCMod.LogWarning($"Check Text Update Failed: {www.error}");
+                LCB_LLCMod.LogWarning("Check Text Update Error: " + ex.ToString());
                 web_text_version_out = -10001;
+                is_app_outupdated = false;
+                update_notice = null;
                 return true;
             }
         }
@@ -113,7 +152,8 @@ namespace LimbusLocalize
                     FileName = LCB_LLCMod.ModPath + "\\7z.exe",
                     Arguments = $"x \"{archivePath}\" -o\"{output}\" -y",
                     UseShellExecute = false,
-                    CreateNoWindow = true
+                    CreateNoWindow = true,
+                    RedirectStandardError = true,
                 };
 
                 using (Process process = new Process { StartInfo = processStartInfo })
@@ -129,6 +169,8 @@ namespace LimbusLocalize
                     else
                     {
                         Console.WriteLine("Unarchive Failed!");
+                        string error = process.StandardError.ReadToEnd();
+                        LCB_LLCMod.LogError(error);
                     }
                 }
             }
