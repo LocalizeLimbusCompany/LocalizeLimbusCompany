@@ -690,6 +690,236 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1101001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Suppressing.",
+          "desc": "[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn\n[WhenUse] Gain 1 [DefenseUp]\n[WinDuel] Gain +2 [Vibration] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[WinDuelAttack] Inflict +1 [Vibration] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain 2 [DefenseUp] next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Suppressing.",
+          "desc": "[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn\n[WhenUse] Gain <style=\"highlight\">2</style> [DefenseUp]\n<style=\"highlight\">[WhenUse] If the target has 4+ [Vibration] Count, Clash Power +1</style>\n[WinDuel] Gain +2 [Vibration] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[WinDuelAttack] Inflict +2 [Vibration] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] Gain 2 [DefenseUp] next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Suppressing.",
+          "desc": "[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn\n[WhenUse] Gain 2 [DefenseUp]\n[WhenUse] If the target has 4+ [Vibration] Count, Clash Power +<style=\"highlight\">2</style>\n[WinDuel] Gain +<style=\"highlight\">3</style> [Vibration] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[WinDuelAttack] Inflict +2 [Vibration] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 [DefenseUp] next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Combat Preparation",
+          "desc": "[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn\n[WinDuel] Gain +2 [Vibration] Count",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] On 1 other ally with [DefenseUp], apply (([DefenseUp] on the ally)/3) [AttackUp] next turn (once per turn, max 3)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Combat Preparation",
+          "desc": "[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn\n<style=\"highlight\">[WhenUse] Gain 1 [DefenseUp] for every 2 [Vibration] Count on self (max 3)\n[WhenUse] At 4+ [DefenseUp], Coin Power +1</style>\n[WinDuel] Gain +<style=\"highlight\">3</style> [Vibration] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[WinDuelAttack] On 1 other ally with the lowest HP percentage, apply 2 Defense Level Up next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] On 1 other ally with [DefenseUp], apply (([DefenseUp] on the ally)/<style=\"highlight\">2</style>) [AttackUp] next turn (once per turn, max 3)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Combat Preparation",
+          "desc": "[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn\n[WhenUse] Gain 1 [DefenseUp] for every 2 [Vibration] Count on self (max 3)\n[WhenUse] At 4+ [DefenseUp], Coin Power +1\n[WinDuel] Gain +3 [Vibration] Count<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[WinDuelAttack] On <style=\"highlight\">2 other allies</style> with the lowest HP percentage, apply 2 Defense Level Up next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] On <style=\"highlight\">2 other allies</style> with [DefenseUp], apply (([DefenseUp] on the ally)/2) [AttackUp] next turn (once per turn, max 3)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101003,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Fence",
+          "desc": "[WhenUse] Gain 1 [DefenseUp] for every 2 [Vibration] Count on self (max 2)\n[WhenUse] Coin Power +1 for every 3 [DefenseUp] on self (max 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] On 1 other ally with the lowest HP percentage, apply 3 [DefenseUp] next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Consume up to 8 [Vibration] Count on self, and inflict the same amount of [Vibration] Count on target"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Fence",
+          "desc": "[WhenUse] Gain 1 [DefenseUp] for every 2 [Vibration] Count on self (max <style=\"highlight\">4</style>)\n[WhenUse] Coin Power +1 for every 3 [DefenseUp] on self (max <style=\"highlight\">3</style>)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] On 1 other ally with the lowest HP percentage, apply <style=\"highlight\">4</style> [DefenseUp] next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Consume up to 8 [Vibration] Count on self, and inflict the same amount of [Vibration] Count on target"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Zwei Knight's Greatsword Form - Guard",
+          "desc": "[CanDuelGuard]\n[StartBattle] Gain +5 [Aggro] to this Skill Slot next turn\n[WhenUse] Gain +2 [Vibration] Count (once per turn)\n[WinDuel] Trigger [VibrationExplosion]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Zwei Knight's Greatsword Form - Guard",
+          "desc": "[CanDuelGuard]\n[StartBattle] Gain +5 [Aggro] to this Skill Slot next turn\n[WhenUse] Gain +<style=\"highlight\">3</style> [Vibration] Count (once per turn)\n[WinDuel] Trigger [VibrationExplosion]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

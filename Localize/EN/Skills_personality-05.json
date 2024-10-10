@@ -874,6 +874,275 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1051101,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Allez",
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 [Breath] Count"
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Allez",
+          "desc": "If this unit's Speed is faster than the target's by 3 or more, Coin Power +1\n[WhenUse] If the target has 15+ [Burst] and 3+ [Burst] Count, this Skill does not inflict [Burst] Potency with its effects, but does not consume [Burst] Count On Hit\n[WhenUse] Gain +2 [Breath] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 [Breath] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Allez",
+          "desc": "If this unit's Speed is faster than the target's, gain Coin Power based on Speed difference (Coin Power +1 for every 3 Speed difference; max 2)\n[WhenUse] If the target has 15+ [Burst] and 3+ [Burst] Count, this Skill does not inflict [Burst] Potency with its effects, but does not consume [Burst] Count On Hit\n[WhenUse] Gain +2 [Breath] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 [Breath] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If this unit's Speed is faster than the target's, inflict [Burst] equal to their Speed difference (max 3)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1051102,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Fente",
+          "desc": "[WinDuel] Gain +2 [Breath] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 [Breath] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [Burst]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Fente",
+          "desc": "If this unit's Speed is faster than the target's by 3 or more, Coin Power +1\n[WhenUse] If the target has 15+ [Burst] and 3+ [Burst] Count, this Skill does not inflict [Burst] Potency or Count with its effects, but does not consume [Burst] Count On Hit\n[WinDuel] Gain +2 [Breath] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 [Breath] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] At 7+ Speed, inflict +2 [Burst] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Fente",
+          "desc": "If this unit's Speed is faster than the target's by 3 or more, Coin Power +1\n[WhenUse] If the target has 15+ [Burst] and 3+ [Burst] Count, this Skill does not inflict [Burst] Potency or Count with its effects, but does not consume [Burst] Count On Hit\n[WinDuel] Gain +2 [Breath] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +2 [Breath] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">If this unit does not inflict [Burst], +5% Damage on Critical Hit for every [Burst] Potency and Count it would have inflicted</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [Burst]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] At 7+ Speed, inflict +2 [Burst] Count<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1051103,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Salut",
+          "desc": "If this unit's Speed is faster than the target's by 2 or more, Coin Power +1\n[WhenUse] If the target has 15+ [Burst] and 3+ [Burst] Count, this Skill does not consume [Burst] Count On Hit\n[WinDuel] Gain 5 [Breath]\n- If the target has [ConcentratedAttackMeursault], gain 5 additional [Breath]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[WinDuelAttack] The final Coin deals +10% more damage"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[WinDuelAttack] The final Coin deals +10% more damage"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Deal +10% more damage for every [ConcentratedAttackMeursault] on the Slot"
+                },
+                {
+                  "desc": "+30% Damage on Critical Hit"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Salut",
+          "desc": "<style=\"highlight\">If this unit's Speed is faster than the target's, gain Coin Power based on Speed difference (Coin Power +1 for every 2 Speed difference; max 3)</style>\n[WhenUse] If the target has 15+ [Burst] and 3+ [Burst] Count, this Skill does not consume [Burst] Count On Hit\n[WinDuel] Gain 5 [Breath]\n- If the target has [ConcentratedAttackMeursault], gain 5 additional [Breath]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[WinDuelAttack] The final Coin deals +10% more damage"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[WinDuelAttack] The final Coin deals +10% more damage"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Deal <style=\"highlight\">+20%</style> more damage for every [ConcentratedAttackMeursault] on the Slot"
+                },
+                {
+                  "desc": "+30% Damage on Critical Hit"
+                },
+                {
+                  "desc": "<style=\"highlight\">- Deal +2% Damage on Critical Hit for every [Burst] on the target (max 30%)</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[EndSkill] If this Coin defeated the target or destroyed the Part, Reuse this Skill once against a random target (does not activate on Reuse)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1051104,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Défensive",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Défensive",
+          "desc": "[WhenUse] If this unit's Speed is faster than the target's by 3 or more, Coin Power +2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

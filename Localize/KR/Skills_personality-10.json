@@ -690,6 +690,237 @@
           ]
         }
       ]
+    },
+
+    {
+      "id": 1101001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "제압합니다.",
+          "desc": "[WhenUse] 다음 턴에 이 스킬 슬롯의 [Aggro] 3 증가\n[WhenUse] [DefenseUp] 1 얻음\n[WinDuel] 자신의 [Vibration] 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[WinDuelAttack] [Vibration] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 [DefenseUp] 2를 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "제압합니다.",
+          "desc": "[WhenUse] 다음 턴에 이 스킬 슬롯의 [Aggro] 3 증가\n[WhenUse] [DefenseUp] <style=\"highlight\">2</style> 얻음\n<style=\"highlight\">[WhenUse] 대상의 [Vibration] 횟수가 4 이상이면, 합 위력 +1</style>\n[WinDuel] 자신의 [Vibration] 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[WinDuelAttack] [Vibration] 횟수 2 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 [DefenseUp] 2를 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "제압합니다.",
+          "desc": "[WhenUse] 다음 턴에 이 스킬 슬롯의 [Aggro] 3 증가\n[WhenUse] [DefenseUp] 2 얻음\n[WhenUse] 대상의 [Vibration] 횟수가 4 이상이면, 합 위력 +<style=\"highlight\">2</style>\n[WinDuel] 자신의 [Vibration] 횟수 <style=\"highlight\">3</style> 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[WinDuelAttack] [Vibration] 횟수 2 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [DefenseUp] 2를 얻음"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "전투 준비",
+          "desc": "[WhenUse] 다음 턴에 이 스킬 슬롯의 [Aggro] 3 증가\n[WinDuel] 자신의 [Vibration] 횟수 2 증가",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신을 제외한 [DefenseUp]를 보유한 아군 1명에게 (대상이 보유한 [DefenseUp]/3)만큼 다음 턴에 [AttackUp] 부여 (턴 당 1회. 최대 3 부여)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "전투 준비",
+          "desc": "[WhenUse] 다음 턴에 이 스킬 슬롯의 [Aggro] 3 증가\n<style=\"highlight\">[WhenUse] 자신의 [Vibration] 횟수 2 당 [DefenseUp] 1 얻음 (최대 3)\n[WhenUse] 자신의 [DefenseUp]가 4 이상이면, 코인 위력 +1</style>\n[WinDuel] 자신의 [Vibration] 횟수 <style=\"highlight\">3</style> 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[WinDuelAttack] 자신 제외 현재 체력 비율이 가장 낮은 아군 1명에게 다음 턴에 방어 레벨 증가 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신을 제외한 [DefenseUp]를 보유한 아군 1명에게 (대상이 보유한 [DefenseUp]/<style=\"highlight\">2</style>)만큼 다음 턴에 [AttackUp] 부여 (턴 당 1회. 최대 3 부여)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "전투 준비",
+          "desc": "[WhenUse] 다음 턴에 이 스킬 슬롯의 [Aggro] 3 증가\n[WhenUse] 자신의 [Vibration] 횟수 2 당 [DefenseUp] 1 얻음 (최대 3)\n[WhenUse] 자신의 [DefenseUp] 4 이상이면, 코인 위력 +1\n[WinDuel] 자신의 [Vibration] 횟수 3 증가<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[WinDuelAttack] 자신 제외 현재 체력 비율이 가장 낮은 아군 <style=\"highlight\">2</style>명에게 다음 턴에 방어 레벨 증가 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신을 제외한 [DefenseUp]를 보유한 아군 <style=\"highlight\">2</style>명에게 (대상이 보유한 [DefenseUp]/2)만큼 다음 턴에 [AttackUp] 부여 (턴 당 1회. 최대 3 부여)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101003,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "울타리",
+          "desc": "[WhenUse] 자신의 [Vibration] 횟수 2 당 [DefenseUp] 1 얻음 (최대 2)\n[WhenUse] 자신의 [DefenseUp] 3 당 코인 위력 +1 (최대 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신 제외 현재 체력 비율이 가장 낮은 아군 1명에게 다음 턴에 [DefenseUp] 3 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Vibration] 횟수를 최대 8 소모하여, 소모한 값만큼 대상의 [Vibration] 횟수 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "울타리",
+          "desc": "[WhenUse] 자신의 [Vibration] 횟수 2 당 [DefenseUp] 1 얻음 (최대 <style=\"highlight\">4</style>)\n[WhenUse] 자신의 [DefenseUp] 3 당 코인 위력 +1 (최대 <style=\"highlight\">3</style>)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신 제외 현재 체력 비율이 가장 낮은 아군 1명에게 다음 턴에 [DefenseUp] <style=\"highlight\">4</style> 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Vibration] 횟수를 최대 8 소모하여, 소모한 값만큼 대상의 [Vibration] 횟수 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "츠바이 기사단 대검술 - 가드",
+          "desc": "[CanDuelGuard]\n[StartBattle] 다음 턴에 이 스킬 슬롯의 [Aggro] 5 증가\n[WhenUse] 자신의 [Vibration] 횟수 2 증가 (턴 당 1회)\n[WinDuel] [VibrationExplosion]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "츠바이 기사단 대검술 - 가드",
+          "desc": "[CanDuelGuard]\n[StartBattle] 다음 턴에 이 스킬 슬롯의 [Aggro] 5 증가\n[WhenUse] 자신의 [Vibration] 횟수 <style=\"highlight\">3</style> 증가 (턴 당 1회)\n[WinDuel] [VibrationExplosion]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
