@@ -724,6 +724,11 @@
       "desc": "Become Staggered for 3 turns.\nTurn Start: If Kqe-1j-23 is Staggered, remove this status."
     },
     {
+      "id": "ShamrockResultUp",
+      "name": "Gluttony Power Up",
+      "desc": "Gluttony Skills gain final Power by the effect’s Count for one turn."
+    },
+    {
       "id": "VioletResultUp",
       "name": "Envy Power Up",
       "desc": "Envy skills gain final Power by the effect’s Count for one turn."
@@ -1187,7 +1192,7 @@
     {
       "id": "DuelDeclaration",
       "name": "Declared Duel",
-      "desc": "In a clash between the unit that inflicted Declared Duel and the unit with the status, the declarer has +1 Clash Power, and gains 1 Haste next turn after a successful attack. (4 times per turn) Expires if the declarer inflicts this status on another target. Replaced when another unit declares a duel."
+      "desc": "- In a Clash between the unit that inflicted Declared Duel and the unit with the status, the declarer has +1 Clash Power. On Hit, the declarer gains 1 Haste next turn. (4 times per turn)\n- Expires when the unit inflicts Declared Duel on a different target. Replaced when another unit inflicts Declared Duel on the same target."
     },
     {
       "id": "Aggro",
@@ -1279,7 +1284,7 @@
     {
       "id": "DuelDeclaration_Sinclair",
       "name": "Declared Duel - Sinclair",
-      "desc": "- In a Clash between the unit that inflicted Declared Duel and the unit with the status, the declarer has +1 Clash Power. On Hit, the declarer gains 1 Haste next turn. (4 times per turn)\n- Expires when the unit inflicts Declared Duel on a different target. Replaced when other unit inflicts Declared Duel on the same target."
+      "desc": "- In a Clash between the unit that inflicted Declared Duel and the unit with the status, the declarer has +1 Clash Power. On Hit, the declarer gains 1 Haste next turn. (4 times per turn)\n- Expires when the unit inflicts Declared Duel on a different target. Replaced when another unit inflicts Declared Duel on the same target."
     },
     {
       "id": "VibrationExplosion",
@@ -1583,6 +1588,41 @@
       "name": "Unbreakable Coin",
       "desc": "- This coin does not break upon Clash Lose.\n- If an Attack Skill has this Coin, attack with this Coin after getting hit.\n- Upon Clash Lose, fix the Coin Power of the unbroken Coin to 1",
       "summary": ""
+    },
+    {
+      "id": "BloodScissorPersonalityFirst",
+      "name": "Blood-tinged Scissorblades",
+      "desc": "- Max Value: 10\n- Stage 1 Blood-tinged Scissorblades\n- At 10+ Blood-tinged Scissorblades, converts to Blood-tinged Scissorblades II.\n- At 20+ Blood-tinged Scissorblades, converts to Blood-tinged Scissorblades III.\n- Reverts to previous Stage when the Stack drops below the requirements.\n- Blood-tinged Scissorblades does not drop below 1.\n- At Blood-tinged Scissorblades II, gain 1 Offense Level Up and 1 Defense Level Down based on the Stack\n- At Blood-tinged Scissorblades III, gain 1 Offense Level Up based on the Stack",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "BloodScissorPersonalitySecond",
+      "name": "Blood-tinged Scissorblades II",
+      "desc": "- Max Value: 20\n- Stage 2 Blood-tinged Scissorblades\n- Turn Start: gain 1 Offense Level Up and 1 Defense Level Down for every 5 Stack\n- At 10+ Blood-tinged Scissorblades, converts to Blood-tinged Scissorblades II.\n- At 20+ Blood-tinged Scissorblades, converts to Blood-tinged Scissorblades III.\n- Reverts to previous Stage when the Stack drops below the requirements.\n- Blood-tinged Scissorblades does not drop below 1.\n- At Blood-tinged Scissorblades II, gain 1 Offense Level Up and 1 Defense Level Down based on the Stack\n- At Blood-tinged Scissorblades III, gain 1 Offense Level Up based on the Stack",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "BloodScissorPersonalityThird",
+      "name": "Blood-tinged Scissorblades III",
+      "desc": "- Max Value: 30\n- Stage 3 Blood-tinged Scissorblades\n- Turn Start: gain 2 Offense Level Up and 1 Defense Level Down for every 5 Stack\n- At 10+ Blood-tinged Scissorblades, converts to Blood-tinged Scissorblades II.\n- At 20+ Blood-tinged Scissorblades, converts to Blood-tinged Scissorblades III.\n- Reverts to previous Stage when the Stack drops below the requirements.\n- Blood-tinged Scissorblades does not drop below 1.\n- At Blood-tinged Scissorblades II, gain 1 Offense Level Up and 1 Defense Level Down based on the Stack\n- At Blood-tinged Scissorblades III, gain 1 Offense Level Up based on the Stack",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "LineCuttingPersonality",
+      "name": "Sewing Target",
+      "desc": "- Max Value: 1\n- Take +0.5% more damage for every Bleed on self (max 10%)\n- Turn End: reduced by 1",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "Snare",
+      "name": "Lasso",
+      "desc": "- Max Value: 3\n- Turn End: gain Rupture Potency equal to this unit's current Speed value (max 5), and gain 1 Bind next turn\n- Turn End: reduced by 1",
+      "summary": "",
+      "undefined": "-"
     }
   ]
 }
