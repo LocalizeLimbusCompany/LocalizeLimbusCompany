@@ -401,6 +401,187 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2100711,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "呪いの釘",
+          "abName": "痛がるテディ",
+          "desc": "[EndSkill] 対象に[Curse]があれば、該当効果を即2回発動して[Curse]が2減少",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Curse]2を付与\n- [Curse]と[NailPersonality]を除く対象のマイナス効果3つにつき[Curse]1を追加で付与(最大2)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [NailPersonality]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "呪いの釘",
+          "abName": "痛がるテディ",
+          "desc": "<style=\"highlight\">[BeforeAttack] このスキルを含めて嫉妬共鳴が4以上なら、攻撃加重値 +1</style>\n[EndSkill] 対象へ[Curse]があれば、該当効果を即2回発動して[Curse]が2減少",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Laceration]2を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Curse]2を付与\n- [Curse]と[NailPersonality]を除く対象のマイナス効果3つにつき[Curse]1を追加で付与(最大2)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [NailPersonality]<style=\"highlight\">3</style>を付与"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] 次のターンに[Binding]2を付与(1ターンにつき1回)</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "呪いの釘",
+          "abName": "痛がるテディ",
+          "desc": "<style=\"highlight\">[BeforeAttack] このスキルを含めて共鳴3につき、攻撃加重値 +1(最大2)</style>\n[EndSkill] 対象へ[Curse]があれば、該当効果を即2回発動して[Curse]が2減少",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] [Laceration]2を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Curse]2を付与\n- [Curse]と[NailPersonality]を除く対象のマイナス効果<style=\"highlight\">2</style>つにつき[Curse]1を追加で付与(最大2)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [NailPersonality]3を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 対象の[Curse]が4以上なら、[ParryingResultDown]1を付与(1ターンにつき1回)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに[Binding]2を付与(1ターンにつき1回)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2100721,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "呪いの釘",
+          "abName": "痛がるテディ",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n[EndSkill] 対象に[Curse]があれば、該当効果を即2回発動して[Curse]が2減少",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] [Laceration]を2付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Curse]4を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [NailPersonality]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "呪いの釘",
+          "abName": "痛がるテディ",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n[EndSkill] 対象に[Curse]があれば、該当効果を即2回発動して[Curse]が2減少<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] [Laceration]<style=\"highlight\">3</style>を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Curse]4を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [NailPersonality]<style=\"highlight\">3</style>を付与"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackTail] 次のターンに[Binding]2を付与(1ターンにつき1回)</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "呪いの釘",
+          "abName": "痛がるテディ",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n[EndSkill] 対象に[Curse]があれば、該当効果を即2回発動して[Curse]が2減少<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] [Laceration]3を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Curse]4を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [NailPersonality]3を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] このスキルを含めて嫉妬共鳴が4以上なら、[ParryingResultDown]1を付与(1ターンにつき1回)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 次のターンに[Binding]2を付与(1ターンにつき1回)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackTail] 次のターンに[DefenseDown]2を付与(1ターンにつき1回)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

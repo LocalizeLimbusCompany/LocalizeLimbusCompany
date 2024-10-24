@@ -98,6 +98,23 @@ namespace LimbusLocalize
             }
             return true;
         }
+        [HarmonyPatch(typeof(PriceText), nameof(PriceText.SetPrice))]
+        [HarmonyPrefix]
+        private static bool SetPrice(PriceText __instance, IAPProductStaticData productStaticData)
+        {
+            if (IsUseChinese.Value)
+            {
+                __instance.tmp_unit.text = "CNY";
+                int priceTier = StaticDataManager.Instance._iapProductStaticDataList.GetDataByProductID(productStaticData.productId).priceTier;
+                int usd_cent = StaticDataManager.Instance._iapPriceTierStaticDataList.list.Find((Func<IAPPriceTierStaticData, bool>)((Price) =>
+                {
+                    return Price.PriceTier == priceTier;
+                })).usd_cent;
+                __instance.tmp_price.text = ((usd_cent + 1) * 7 / 100).ToString();
+                return false;
+            }
+            return true;
+        }
         [HarmonyPatch(typeof(BattleUnitView), nameof(BattleUnitView.ViewCancelTextTypo_Lack))]
         [HarmonyPrefix]
         private static bool ViewCancelTextTypo_Lack(BattleUnitView __instance, CanceledData data)
