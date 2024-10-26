@@ -226,6 +226,319 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2050711,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "渴望-蜜卡拉",
+          "abName": "四百朵玫瑰",
+          "desc": "[EndSkill] 3回合内，回合结束时使自身失去10点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[WinDuelAttack] 对目标施加2层[RoseWedge]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[RoseWedge]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[WinDuelAttack] 触发目标的流血 1次(使目标的流血 层数减少1层)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "渴望-蜜卡拉",
+          "abName": "四百朵玫瑰",
+          "desc": "若目标的流血 强度不低于6级，则使本技能的硬币威力+1\n[EndSkill] 3回合内，回合结束时使自身失去10点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若最大共鸣数不低于4，则触发目标的流血 1次(使目标的流血 层数减少1层)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若最大共鸣数不低于4，则触发目标的流血 1次(使目标的流血 层数减少1层)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[WinDuelAttack] 对目标施加2层[RoseWedge]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[RoseWedge]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[WinDuelAttack] 触发目标的流血 (1+(最大共鸣数/2))次(最多3次；根据触发的流血 次数，使目标的流血 层数相应减少)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "渴望-蜜卡拉",
+          "abName": "四百朵玫瑰",
+          "desc": "目标每带有6级流血 强度，使本技能的硬币威力+1(最多+2)\n[EndSkill] 3回合内，回合结束时使自身失去10点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若最大共鸣数不低于4，则触发目标的流血 1次(使目标的流血 层数减少1层)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若最大共鸣数不低于4，则触发目标的流血 1次(使目标的流血 层数减少1层)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[WinDuelAttack] 对目标施加2层[RoseWedge]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[RoseWedge]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[WinDuelAttack] 触发目标的流血 (1+(最大共鸣数/2))次(最多3次；根据触发的流血 次数，使目标的流血 层数相应减少)"
+                },
+                {
+                  "desc": "[EnemyKill] 对敌方单位造成超过其剩余体力的溢出伤害时，对全体敌方单位造成共计相当于溢出伤害量的固定伤害(最少1点)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2050721,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "渴望-蜜卡拉",
+          "abName": "四百朵玫瑰",
+          "desc": "[CantIdentify]\n随机指定目标\n[WhenUse] 消耗自身体力上限10%的体力并对全体敌方与友方单位造成(消耗的体力/2)点伤害\n- 若现存体力低于体力上限的50%，则改为使全体友方单位增加5级流血 强度并触发其流血 1次(使其流血 层数减少1层)。使自身恢复相当于对友方单位造成流血 伤害量的体力",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身与目标增加2级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身与目标增加2级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[WinDuelAttack] 对目标施加2层[RoseWedge]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[RoseWedge]"
+                },
+                {
+                  "desc": "- 若目标未带有[RoseWedge]，则额外使目标增加4级[RoseWedge]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[WinDuelAttack] 触发目标的流血 1次(使目标的流血 层数减少1层)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "渴望-蜜卡拉",
+          "abName": "四百朵玫瑰",
+          "desc": "[CantIdentify]\n随机指定目标\n若自身与目标的流血 强度之和不低于6级，则使本技能的硬币威力+1\n[WhenUse] 消耗自身体力上限10%的体力并对全体敌方与友方单位造成(消耗的体力/2)点伤害\n- 若现存体力低于体力上限的50%，则改为使全体友方单位增加5级流血 强度并触发其流血 1次(使其流血 层数减少1层)。使自身恢复相当于对友方单位造成流血 伤害量的体力",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身与目标增加3级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身与目标增加3级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[WinDuelAttack] 对目标施加2层[RoseWedge]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[RoseWedge]"
+                },
+                {
+                  "desc": "- 若目标未带有[RoseWedge]，则额外使目标增加4级[RoseWedge]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[WinDuelAttack] 触发目标的流血 (1+(最大共鸣数/2))次(最多3次；根据触发的流血 次数，使目标的流血 层数相应减少)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "渴望-蜜卡拉",
+          "abName": "四百朵玫瑰",
+          "desc": "[CantIdentify]\n随机指定目标\n自身与目标的流血 强度之和每有6级，使本技能的硬币威力+1(最多+3)\n[WhenUse] 消耗自身体力上限10%的体力并对全体敌方与友方单位造成(消耗的体力/2)点伤害\n- 若现存体力低于体力上限的50%，则改为使全体友方单位增加5级流血 强度并触发其流血 1次(使其流血 层数减少1层)。使自身恢复相当于对友方单位造成流血 伤害量的体力",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身与目标增加3级流血 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 触发自身与目标的流血 1次(使其流血 层数减少1层)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身与目标增加3级流血 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 触发自身与目标的流血 1次(使其流血 层数减少1层)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[WinDuelAttack] 对目标施加2层[RoseWedge]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[RoseWedge]"
+                },
+                {
+                  "desc": "- 若目标未带有[RoseWedge]，则额外使目标增加4级[RoseWedge]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[WinDuelAttack] 触发目标的流血 (1+(最大共鸣数/2))次(最多3次；根据触发的流血 次数，使目标的流血 层数相应减少)"
+                },
+                {
+                  "desc": "[EnemyKill] 对敌方单位造成超过其剩余体力的溢出伤害时，对全体敌方单位造成共计相当于溢出伤害量的固定伤害(最少1点)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

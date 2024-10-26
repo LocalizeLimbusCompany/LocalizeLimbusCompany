@@ -401,6 +401,187 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2100711,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "诅咒之钉",
+          "abName": "痛苦泰迪",
+          "desc": "[EndSkill] 若目标带有诅咒 ，则立即触发目标的诅咒 2次并使其诅咒 层数减少2层",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层诅咒 \n- 目标每带有3种除诅咒 与尖钉 以外的负面状态，额外对其施加1层诅咒 (最多2层)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层尖钉 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "诅咒之钉",
+          "abName": "痛苦泰迪",
+          "desc": "[BeforeAttack] 若包括本技能在内嫉妒共鸣数不低于4，则使本技能的攻击容量+1\n[EndSkill] 若目标带有诅咒 ，则立即触发目标的诅咒 2次并使其诅咒 层数减少2层",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层诅咒 \n- 目标每带有3种除诅咒 与尖钉 以外的负面状态，额外对其施加1层诅咒 (最多2层)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层尖钉 "
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加2层束缚 (每回合最多1次)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "诅咒之钉",
+          "abName": "痛苦泰迪",
+          "desc": "[BeforeAttack] 包括本技能在内嫉妒共鸣数每有3点，使本技能的攻击容量+1(最多+2)\n[EndSkill] 若目标带有诅咒 ，则立即触发目标的诅咒 2次并使其诅咒 层数减少2层",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层诅咒 \n- 目标每带有2种除诅咒 与尖钉 以外的负面状态，额外对其施加1层诅咒 (最多2层)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层尖钉 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标的诅咒 层数不低于4层，则对其施加1层拼点虚弱 (每回合最多1次)"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加2层束缚 (每回合最多1次)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2100721,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "诅咒之钉",
+          "abName": "痛苦泰迪",
+          "desc": "[CantIdentify]\n随机指定目标\n[EndSkill] 若目标带有诅咒 ，则立即触发目标的诅咒 2次并使其诅咒 层数减少2层",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 使目标增加2级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加4层诅咒 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层尖钉 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "诅咒之钉",
+          "abName": "痛苦泰迪",
+          "desc": "[CantIdentify]\n随机指定目标\n[EndSkill] 若目标带有诅咒 ，则立即触发目标的诅咒 2次并使其诅咒 层数减少2层",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 使目标增加3级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加4层诅咒 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层尖钉 "
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 下回合对目标施加2层束缚 (每回合最多1次)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "诅咒之钉",
+          "abName": "痛苦泰迪",
+          "desc": "[CantIdentify]\n随机指定目标\n[EndSkill] 若目标带有诅咒 ，则立即触发目标的诅咒 2次并使其诅咒 层数减少2层",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackTail] 使目标增加3级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加4层诅咒 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层尖钉 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若包括本技能在内嫉妒共鸣数不低于4，则对目标施加1层拼点虚弱 (每回合最多1次)"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 下回合对目标施加2层束缚 (每回合最多1次)"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 下回合对目标施加2层防御等级降低 (每回合最多1次)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
