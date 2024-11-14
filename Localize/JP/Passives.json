@@ -850,7 +850,7 @@
     {
       "id": 1120701,
       "name": "銃弾は高いんだって",
-      "desc": "- <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">出血</color></link></u>が付与された対象へ表面的中時、<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益 수익</color></link></u>を得る。(最大4)\n- [Bullet]がない場合、代わりにクリティカル的中時<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>を全て消耗して、ダメージ量の(5 × 消耗した<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>)%だけ追加ダメージを与える。"
+      "desc": "- <sprite name=\"Laceration\"><color=#e30000><u><link=\"Laceration\">出血</color></link></u>が付与された対象へ表面的中時、<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>を得る。(最大4)\n- [Bullet]がない場合、代わりにクリティカル的中時<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>を全て消耗して、ダメージ量の(5 × 消耗した<sprite name=\"Unjust_Enrichment\"><color=#f8c200><u><link=\"Unjust_Enrichment\">不当収益</color></link></u>)%だけ追加ダメージを与える。"
     },
     {
       "id": 1120702,
@@ -1790,6 +1790,30 @@
       "id": 1121031,
       "name": "ドンキホーテ流硬血6式鞭",
       "desc": "現体力の比率が最も低い味方が攻撃的中時に体力3回復(1ターンにつき3回)\n- 被ダメージ対象が[Laceration]を持っているなら、追加で3回復",
+      "summary": ""
+    },
+    {
+      "id": 1091101,
+      "name": "硬血の棘",
+      "desc": "自分を除く味方が[Laceration]ダメージを受けるか[BloodDinner]を消耗する度、自分が[BloomingThornsRodionFirst]1を得る(1ターンにつき最大3回)\n自分が基本スキルで与えたダメージ量の20%だけ自分の体力を回復(スキルごとに最大10)",
+      "summary": ""
+    },
+    {
+      "id": 1091102,
+      "name": "血餐",
+      "desc": "このキャラクターが戦闘に登場するか、登場リストに含まれているなら、1ターン目から全キャラクターが受ける[Laceration]ダメージだけ[BloodDinner]が増加する。このキャラクターが戦闘に登場するたび、戦場にまき散らされた伏在する血を更に顕わにする。",
+      "summary": ""
+    },
+    {
+      "id": 1091111,
+      "name": "硬血の棘",
+      "desc": "自分を除く味方が[Laceration]ダメージを受けるか[BloodDinner]を消耗する度、自分が[BloomingThornsRodionFirst]1を得る(1ターンにつき最大3回)\n自分が基本スキルで与えたダメージ量の20%だけ自分の体力を回復(スキルごとに最大10)\n- 自分の体力が最大なら、超過した回復量だけ現体力の比率が最も低い味方1名の体力を回復",
+      "summary": ""
+    },
+    {
+      "id": 1091121,
+      "name": "「血を咲かせて…。」",
+      "desc": "ターン終了時、[Laceration]威力が最も高い味方1名の[Laceration]威力を最大6減少させ、(減少した[Laceration]威力 ÷ 2)だけ[BloomingThornsRodionFirst]を付与(小数点切り捨て)",
       "summary": ""
     }
   ]
