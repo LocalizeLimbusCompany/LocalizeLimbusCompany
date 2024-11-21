@@ -934,11 +934,11 @@
     {
       "id": 9040,
       "name": "明日の運勢",
-      "desc": "E.G.Oギフト選択ウィンドウが出現するとき、選択肢が +1",
+      "desc": "戦闘報酬カードの最初のカードが、出現しうる最も高いランクに変更。",
       "simpleDesc": [
         {
           "abilityID": 9040,
-          "simpleDesc": "E.G.Oギフト選択可能数 +1"
+          "simpleDesc": "戦闘報酬カードの最初のカードが、出現しうる最も高いランクに変更"
         }
       ]
     },
@@ -2214,11 +2214,11 @@
     {
       "id": 9080,
       "name": "生存の道しるべ",
-      "desc": "次の階層に移動する際、全味方の人格が体力を最大値の10%回復し、コストを100獲得。",
+      "desc": "階層ボスクリア時、(80 + 該当する戦闘に参加した人格数 × 5)だけコストを追加で獲得(戦闘クリア時のコスト増加効果は適用されない)",
       "simpleDesc": [
         {
           "abilityID": 9080,
-          "simpleDesc": "体力を最大値の10%回復、コストを100獲得。"
+          "simpleDesc": "コスト獲得"
         }
       ]
     },
@@ -2350,7 +2350,7 @@
     {
       "id": 9088,
       "name": "鎮魂",
-      "desc": "ステージ開始時、[Combustion]威力または[Combustion]回数、または特殊出血を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\nウェーブの1ターン目が開始時、全ての敵(幻想体の場合は全部位)へ[Combustion]回数3を付与して[Combustion]威力をランダムに付与。(合計15)\n\n[Combustion]威力または[Combustion]回数、特殊出血を付与するスキルの最終威力 +1, コイン威力 +1, [Combustion]威力付与値 +1, [Combustion]回数付与値 +1",
+      "desc": "ステージ開始時、[Combustion]威力または[Combustion]回数、または特殊火傷を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\nウェーブの1ターン目が開始時、全ての敵(幻想体の場合は全部位)へ[Combustion]回数3を付与して[Combustion]威力をランダムに付与。(合計15)\n\n[Combustion]威力または[Combustion]回数、特殊火傷を付与するスキルの最終威力 +1, コイン威力 +1, [Combustion]威力付与値 +1, [Combustion]回数付与値 +1",
       "simpleDesc": [
         {
           "abilityID": 9088,
@@ -2359,6 +2359,10 @@
         {
           "abilityID": 90881,
           "simpleDesc": "スキルの最終威力 +1, コイン威力 +1, [Combustion]威力付与値 +1, [Combustion]回数付与値 +1"
+        },
+        {
+          "abilityID": 90882,
+          "simpleDesc": "(残りコイン数 + 1)だけ[Combustion]を付与"
         }
       ]
     },
@@ -2410,15 +2414,23 @@
     {
       "id": 9090,
       "name": "血の霧",
-      "desc": "ステージ開始時、[Laceration]威力または[Laceration]回数、または特殊出血を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除外、出撃人員を基準とする)\n\n味方がスキル効果で付与する[Laceration]威力と[Laceration]回数を2倍で適用。\n\n[Laceration]威力、[Laceration]回数または特殊出血を付与するスキルのコイン威力 +2, ダメージ量 +100%",
+      "desc": "ステージ開始時、[Laceration]威力、[Laceration]回数または特殊出血を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\n味方がスキル効果で付与する[Laceration]威力と[Laceration]回数が2倍で適用。\n\n速度が最も高い味方1名の[Laceration]威力、[Laceration]回数または特殊出血を付与する撃スキルのコイン威力 +2, ダメージ量 +100%. 該当キャラクターが攻撃するか、マッチを実施した敵が死亡したなら、死亡した敵の残った[Laceration]威力を全ての敵へランダムに分けて付与。(集中戦闘の場合、部位で判定)\n\n[Laceration]威力、回数または特殊出血を付与するスキルのコイン威力 +1",
       "simpleDesc": [
         {
           "abilityID": 9090,
-          "simpleDesc": "[Laceration]威力と[Laceration]回数を2倍で適用"
+          "simpleDesc": "[Laceration]威力, [Laceration]回数を2倍で適用"
         },
         {
           "abilityID": 90901,
-          "simpleDesc": "[Laceration]威力を付与するスキルのコイン威力 +2, ダメージ量 +100%"
+          "simpleDesc": "スキルコイン威力 +2, ダメージ量100%増加"
+        },
+        {
+          "abilityID": 90902,
+          "simpleDesc": "[Laceration]威力、回数または特殊出血を付与するスキルのコイン威力 +1"
+        },
+        {
+          "abilityID": 90903,
+          "simpleDesc": "死亡した敵の残った[Laceration]威力を全ての敵へランダムに分けて付与"
         }
       ]
     },
@@ -2458,7 +2470,7 @@
     {
       "id": 9092,
       "name": "連成振動",
-      "desc": "ステージ開始時、[Vibration]威力または[Vibration]回数を付与する攻撃スキルを保有した人格が5人以上のとき発動。(E.G.Oスキルを除外、出撃人員を基準とする)\n\nウェーブの1ターン目が開始時、敵全体(幻想体の場合は全部位)へ[Vibration]5, [Vibration]回数5を付与。\n\n[VibrationExplosion]が適用された敵へ、このターンと次のターンにて[Vibration]威力5, [Vulnerable]2を付与。(攻撃スキルを使用して[VibrationExplosion]時、スキルごとに最大1回)\n\n今回のターンにて対象へ[VibrationExplosion]を3回付与した場合、次のターン開始時に対象を混乱させ、現体力を基準に66%, 33%の位置へ新たな混乱区間を追加。(戦闘につき1回発動)",
+      "desc": "ステージ開始時、[Vibration]威力、[Vibration]回数または特殊振動を付与する攻撃スキルを保有した人格が5人以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\nウェーブの1ターン目が開始時、敵全体(幻想体の場合は全部位)へ[Vibration]威力5, [Vibration]回数5を付与。\n\n[VibrationExplosion]が適用された敵へ、このターンと次のターンにて[Vibration]威力5, [Vulnerable]2を付与。(攻撃スキルを使用して[VibrationExplosion]時、スキルごとに最大1回)\n\n今回のターンにて対象へ[VibrationExplosion]を3回付与した場合は次のターン開始時に対象を混乱させ、現体力を基準に66%, 33%の位置へ新たな混乱区間を追加。(戦闘につき1回発動)\n\n[Switch_Vibration]、[FusionVibration]時に[Vulnerable]1を付与(1ターンにつき最大3回)",
       "simpleDesc": [
         {
           "abilityID": 9092,
@@ -2466,7 +2478,11 @@
         },
         {
           "abilityID": 90921,
-          "simpleDesc": "対象を混乱状態にする。"
+          "simpleDesc": "対象を混乱状態にする"
+        },
+        {
+          "abilityID": 90922,
+          "simpleDesc": "[Vulnerable]1を付与"
         }
       ]
     },
@@ -2506,7 +2522,7 @@
     {
       "id": 9094,
       "name": "恍惚鏡",
-      "desc": "ステージ開始時、[Burst]威力または[Burst]回数を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\nスキルが敵へ的中時、対象に[Burst]威力5を付与。\n\n戦闘中、敵の[Burst]回数が1以下になったとき、[Burst]回数の代わりに[Burst]威力10を消耗。([Burst]威力が10未満になった場合、効果終了)",
+      "desc": "ステージ開始時、[Burst]威力または[Burst]回数を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\nスキルが敵へ的中時、対象に[Burst]威力5を付与。\n\n戦闘中、敵の[Burst]回数が1以下になったとき、[Burst]回数の代わりに[Burst]威力10を消耗。([Burst]威力が10未満になった場合、効果終了)\n\n対象の[Burst]回数が3未満なら、[Burst]回数を付与するときの付与量 +1(戦闘ごとに3回)",
       "simpleDesc": [
         {
           "abilityID": 9094,
@@ -2515,6 +2531,10 @@
         {
           "abilityID": 90941,
           "simpleDesc": "[Burst]回数の代わりに[Burst]威力10を消耗"
+        },
+        {
+          "abilityID": 90942,
+          "simpleDesc": "[Burst]回数付与量 +1"
         }
       ]
     },
@@ -2554,7 +2574,7 @@
     {
       "id": 9096,
       "name": "黒い楽譜",
-      "desc": "ステージ開始時、[Sinking]威力、[Sinking]回数または特殊沈潜を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\nスキルが敵へ的中時、対象へ[Sinking]威力5を付与。\n\nターン開始時、全ての敵(幻想体の場合は全部位)が直前のターンにダメージを受けて消耗した[Sinking]回数の半分だけ[Sinking]回数を再度得る。",
+      "desc": "ステージ開始時、[Sinking]威力、[Sinking]回数または特殊沈潜を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\nスキルが敵へ的中時、対象へ[Sinking]威力5を付与。\n\nターン開始時、全ての敵または部位がそれぞれ直前のターンにダメージを受けて消耗した[Sinking]回数の半分だけ[Sinking]回数を再度得る。\n\n基本スキル的中時、対象の精神力が0未満なら(精神力がない場合、憂鬱耐性が1.2以上のとき)、([Sinking]威力 ÷ 10)だけ憂鬱属性ダメージを与える(最小ダメージ1, 該当効果は1ターンにつき10回発動可能)",
       "simpleDesc": [
         {
           "abilityID": 9096,
@@ -2562,7 +2582,11 @@
         },
         {
           "abilityID": 90961,
-          "simpleDesc": "ダメージを受けて消耗した[Sinking]回数の半分だけ[Sinking]回数を得る"
+          "simpleDesc": "[Sinking]回数を得る"
+        },
+        {
+          "abilityID": 90961,
+          "simpleDesc": "憂鬱属性ダメージを与える"
         }
       ]
     },
@@ -2614,7 +2638,7 @@
     {
       "id": 9098,
       "name": "福袋",
-      "desc": "ステージ開始時、[Breath]威力または[Breath]回数を付与または獲得する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\n戦闘開始段階で[Breath]状態のランダムな味方が、スキルで敵へクリティカルダメージを与えた場合、次のターン開始時に全味方が[Breath]威力7を得て[Breath]回数7が増加。(1ターンに1回発動)\n\n[Breath]威力または[Breath]回数を獲得する人格が使用するスキル3の最終威力 +3, コイン威力 +(12 ÷ コイン数), ダメージ量 +(50 ÷ コイン数)%",
+      "desc": "ステージ開始時、[Breath]威力または[Breath]回数を付与する攻撃スキルを保有した人格が5人以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\n戦闘開始段階で[Breath]状態のランダムな敵がスキルを使用して敵にクリティカルダメージを与えた場合、次のターン開始時に全ての味方が[Breath]威力7を得て[Breath]回数が7増加(1ターンにつき1回発動)\n\nスキルを使用(E.G.Oスキルを除く)して[Breath]威力または[Breath]回数を付与するか獲得する人格が使用するスキル3の最終威力 +3, コイン威力 +(12 ÷ コイン数)、ダメージ量 +(50 ÷ コイン数)%\n\n戦闘開始時、ランダムな味方1名が[Breath]威力を3得る(攻撃スキルを使用して[Breath]威力または[Breath]回数を付与するか獲得する人格を優先して指定)。憂鬱属性攻撃スキルを保有した味方に優先して適用され、この場合は[Breath]威力3を得て[Breath]回数が2増加。",
       "simpleDesc": [
         {
           "abilityID": 9098,
@@ -2623,6 +2647,10 @@
         {
           "abilityID": 90981,
           "simpleDesc": "最終威力 +3, コイン威力 +(12 ÷ コイン数), ダメージ量 +(50 ÷ コイン数)%"
+        },
+        {
+          "abilityID": 90982,
+          "simpleDesc": "[Breath]威力を3得る。憂鬱属性攻撃スキル保有時、[Breath]回数が2追加で増加"
         }
       ]
     },
@@ -2662,19 +2690,23 @@
     {
       "id": 9100,
       "name": "第1種永久機関",
-      "desc": "ステージ開始時、[Charge]回数または特殊充電を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oを除く、出撃人員を基準とする)\n\nウェーブの1ターン目が開始時、全味方が[ChargeForceField]7を得る。\n\nターン開始時、味方が([Charge]回数と特殊充電の合計 ÷ 5 + 1)だけ[AttackDmgUp]を得る(最大9, 繰り上げ処理)\n\n各人格ごとに(このターンの間攻撃スキルにて消耗した累計[Charge]回数と特殊充電の合計 ÷ 4)だけ、次のターン開始時に攻撃レベル増加1を得る。([Charge]回数または特殊充電を合計で40消耗時、効果最大)",
+      "desc": "ステージ開始時、[Charge]回数または特殊充電を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oを除く、出撃人員を基準とする)\n\nウェーブの1ターン目が開始時、全味方が[ChargeForceField]7を得る。\n\nターン終了時、全味方が次のターンに[ChargeForceField]3を得る。\n\nターン開始時、味方が([Charge]回数と特殊充電の合計 ÷ 5 + 1)だけ[AttackDmgUp]を得る(最大5, 繰り上げ処理)\n\n各人格がそれぞれ[Charge]回数を20消耗するたび、[Charge]威力を1得る。(戦闘ごとに人格あたり2回、特殊充電を除く)",
       "simpleDesc": [
         {
           "abilityID": 9100,
-          "simpleDesc": "[ChargeForceField]7, [AttackDmgUp]2を得る"
+          "simpleDesc": "[ChargeForceField]7を得る"
         },
         {
           "abilityID": 91001,
-          "simpleDesc": "[AttackDmgUp]を得る"
+          "simpleDesc": "[ChargeForceField]3を得る"
         },
         {
           "abilityID": 91002,
-          "simpleDesc": "(消耗した[Charge]回数と特殊充電の合計 ÷ 4)だけ攻撃レベル増加1を得る"
+          "simpleDesc": "[AttackDmgUp]を得る"
+        },
+        {
+          "abilityID": 91003,
+          "simpleDesc": "[Charge]威力を1得る"
         }
       ]
     },
@@ -2714,7 +2746,7 @@
     {
       "id": 9102,
       "name": "偏光",
-      "desc": "味方が対象より精神力が30以上高い場合、[Combustion]威力または[Combustion]回数または特殊火傷を付与するスキルでの与ダメージ量 +7.5%(精神力が無い敵の場合は0で計算)",
+      "desc": "味方が対象より精神力が30以上高い場合、[Combustion]威力、[Combustion]回数または特殊火傷を付与するスキルでの与ダメージ量 +7.5%(精神力が無い敵の場合は0で計算)",
       "simpleDesc": [
         {
           "abilityID": 9102,
@@ -2725,7 +2757,7 @@
     {
       "id": 19102,
       "name": "偏光+",
-      "desc": "味方が対象より精神力が<style=\"upgradeHighlight\">25</style>以上高い場合、[Combustion]威力または[Combustion]回数または特殊火傷を付与するスキルでの与ダメージ量 <style=\"upgradeHighlight\">+12.5%</style>(精神力が無い敵の場合は0で計算)",
+      "desc": "味方が対象より精神力が<style=\"upgradeHighlight\">25</style>以上高い場合、[Combustion]威力、[Combustion]回数または特殊火傷を付与するスキルでの与ダメージ量 <style=\"upgradeHighlight\">+12.5%</style>(精神力が無い敵の場合は0で計算)",
       "simpleDesc": [
         {
           "abilityID": 19102,
@@ -2736,7 +2768,7 @@
     {
       "id": 29102,
       "name": "偏光++",
-      "desc": "味方が対象より精神力が<style=\"upgradeHighlight\">15</style>以上高い場合、[Combustion]威力または[Combustion]回数または特殊火傷を付与するスキルでの与ダメージ量 <style=\"upgradeHighlight\">+20%</style>(精神力が無い敵の場合は0で計算)",
+      "desc": "味方が対象より精神力が<style=\"upgradeHighlight\">15</style>以上高い場合、[Combustion]威力、[Combustion]回数または特殊火傷を付与するスキルでの与ダメージ量 <style=\"upgradeHighlight\">+20%</style>(精神力が無い敵の場合は0で計算)",
       "simpleDesc": [
         {
           "abilityID": 29102,
@@ -2780,18 +2812,18 @@
     {
       "id": 9104,
       "name": "灯り花",
-      "desc": "[編成1・2番人格専用効果]\n\n味方が敵を攻撃するとき、対象の残体力が(保有した[Combustion]威力)%以下の場合(幻想体の場合は本体体力で計算)、[Combustion]威力または[Combustion]回数または特殊火傷を付与する攻撃スキルでの与ダメージ量 +50%",
+      "desc": "[編成1・2番人格専用効果]\n\n味方が敵を攻撃するとき、対象の残体力が(保有した[Combustion]威力)%以下の場合(幻想体の場合は本体体力で計算)、[Combustion]威力、[Combustion]回数または特殊火傷を付与する攻撃スキルでの与ダメージ量 +50%",
       "simpleDesc": [
         {
           "abilityID": 9104,
-          "simpleDesc": "条件を満たすと[Combustion]威力または[Combustion]回数または特殊火傷を付与する攻撃スキルでの与ダメージ量 +50%"
+          "simpleDesc": "条件を満たすと[Combustion]威力、[Combustion]回数または特殊火傷を付与する攻撃スキルでの与ダメージ量 +50%"
         }
       ]
     },
     {
       "id": 9105,
       "name": "業火の欠片",
-      "desc": "[Combustion]威力または[Combustion]回数または特殊火傷を与えるE.G.O覚醒スキル使用時に発動(侵蝕スキルは適用されない)\n\n消耗する(怠惰E.G.O資源 + 残りのE.G.O資源の合計 ÷ 3)だけ最終威力が増加\n\n憤怒属性E.G.O覚醒スキルの場合は効果が強化され、攻撃開始前に[Combustion]回数を追加で付与(E.G.Oランクに比例してZAYINなら2, ランク上昇につき+1)し、ダメージ量 +(攻撃加重値 ÷ 攻撃対象数 × 20)%",
+      "desc": "[Combustion]威力、[Combustion]回数または特殊火傷を与えるE.G.O覚醒スキル使用時に発動(侵蝕スキルは適用されない)\n\n消耗する(怠惰E.G.O資源 + 残りのE.G.O資源の合計 ÷ 3)だけ最終威力が増加\n\n憤怒属性E.G.O覚醒スキルの場合は効果が強化され、攻撃開始前に[Combustion]回数を追加で付与(E.G.Oランクに比例してZAYINなら2, ランク上昇につき+1)し、ダメージ量 +(攻撃加重値 ÷ 攻撃対象数 × 20)%",
       "simpleDesc": [
         {
           "abilityID": 9105,
@@ -3092,7 +3124,7 @@
     {
       "id": 9116,
       "name": "惰性の欠片",
-      "desc": "[Vibration]威力または[Vibration]回数または特殊振動を与えるE.G.O覚醒スキル使用時に発動(侵蝕スキルは適用されない)\n\n消耗する(怠惰E.G.O資源 + 残りのE.G.O資源の合計 ÷ 3)だけ最終威力が増加\n\n怠惰属性E.G.O覚醒スキルの場合は効果が強化され、攻撃開始前に[Vibration]回数を追加で付与(E.G.Oランクに比例してZAYINなら2, ランク上昇につき +1)し、ダメージ量 +(対象の保有する[Vibration]威力 × 1.5)%",
+      "desc": "[Vibration]威力、[Vibration]回数または特殊振動を与えるE.G.O覚醒スキル使用時に発動(侵蝕スキルは適用されない)\n\n消耗する(怠惰E.G.O資源 + 残りのE.G.O資源の合計 ÷ 3)だけ最終威力が増加\n\n怠惰属性E.G.O覚醒スキルの場合は効果が強化され、攻撃開始前に[Vibration]回数を追加で付与(E.G.Oランクに比例してZAYINなら2, ランク上昇につき +1)し、ダメージ量 +(対象の保有する[Vibration]威力 × 1.5)%",
       "simpleDesc": [
         {
           "abilityID": 9116,
@@ -3122,11 +3154,11 @@
     {
       "id": 9118,
       "name": "骨の杭",
-      "desc": "[Burst]効果にて、敵が保有するバリアへの与ダメージ量が2倍に増加",
+      "desc": "[Burst]効果が敵が保有するバリアに与えるダメージ量 +100%",
       "simpleDesc": [
         {
           "abilityID": 9118,
-          "simpleDesc": "[Burst]効果にて、敵が保有するバリアへの与ダメージ量が2倍に増加"
+          "simpleDesc": "[Burst]効果が敵が保有するバリアに与えるダメージ量 +100%"
         }
       ]
     },
@@ -4285,564 +4317,6 @@
       ]
     },
     {
-      "id": 9403,
-      "name": "黒檀のブローチ",
-      "desc": "ステージの最初のターン開始時、全ての敵へ[Burst]威力2, [Burst]回数2付与。\n\n3ターンの間、ターン終了時に全ての敵へ次のターンにて[Binding]2を付与",
-      "simpleDesc": [
-        {
-          "abilityID": 9403,
-          "simpleDesc": "全ての敵へ[Burst]威力2, [Burst]回数を2付与"
-        },
-        {
-          "abilityID": 94031,
-          "simpleDesc": "全ての敵へ[Binding]2を付与"
-        }
-      ]
-    },
-    {
-      "id": 9404,
-      "name": "閉じ込められた蛆虫",
-      "desc": "敵に暴食属性攻撃スキルを使用する場合、対象に[Muckworm]2を付与(E.G.Oスキルを除く)\n\n[Laceration]威力, [Laceration]回数, または特殊出血を付与するスキルの場合は、効果が強化され、[Muckworm]3を付与",
-      "simpleDesc": [
-        {
-          "abilityID": 9404,
-          "simpleDesc": "[Muckworm]2を付与"
-        },
-        {
-          "abilityID": 94041,
-          "simpleDesc": "[Muckworm]3を付与"
-        }
-      ]
-    },
-    {
-      "id": 9407,
-      "name": "オーダーメイド",
-      "desc": "[編成3番人格専用効果]\n\nステージ開始時、[Vibration]回数3を獲得\n\nターン開始時、[Protection]1, [AttackDmgUp]1, [ResultEnhancement]1を得る",
-      "simpleDesc": [
-        {
-          "abilityID": 9407,
-          "simpleDesc": "[Vibration]回数3を得る"
-        },
-        {
-          "abilityID": 94071,
-          "simpleDesc": "[Protection]1, [AttackDmgUp]1, [ResultEnhancement]1を得る"
-        }
-      ]
-    },
-    {
-      "id": 9408,
-      "name": "憑かれた靴",
-      "desc": "[編成2番人格専用効果]\n\nステージ開始時、[Sinking]回数3を獲得\n\nターン開始時、[Protection]1, [AttackDmgUp]1, [ResultEnhancement]1を得る",
-      "simpleDesc": [
-        {
-          "abilityID": 9408,
-          "simpleDesc": "[Sinking]回数を3得る"
-        },
-        {
-          "abilityID": 94081,
-          "simpleDesc": "[Protection]1, [AttackDmgUp]1, [ResultEnhancement]1を得る"
-        }
-      ]
-    },
-    {
-      "id": 9409,
-      "name": "凍り付いた阿鼻叫喚",
-      "desc": "ターン開始時、速度が最も低い人格1名へ効果を適用。\n\n該当する味方がマッチで勝利するか敵に被弾すると、敵へ[Sinking]威力3を付与。",
-      "simpleDesc": [
-        {
-          "abilityID": 9409,
-          "simpleDesc": "敵へ[Sinking]威力3を付与"
-        }
-      ]
-    },
-    {
-      "id": 9410,
-      "name": "霜柱の足跡",
-      "desc": "ウェーブの1ターン目が開始時、味方全体が[Sinking]回数3を獲得し、敵全体(幻想体の場合は全部位)に[Sinking]威力4、[Sinking]回数8を付与。\n\n[Sinking]状態の敵のマッチ威力が2減少し、効果を受けた対象が味方人格にマッチ敗北時[Sinking]威力2, 味方人格にダメージを与える場合は[Sinking]威力3を付与",
-      "simpleDesc": [
-        {
-          "abilityID": 9410,
-          "simpleDesc": "敵全体へ[Sinking]威力4, [Sinking]回数8を付与"
-        },
-        {
-          "abilityID": 94101,
-          "simpleDesc": "[Sinking]状態の敵のマッチ威力が2減少"
-        }
-      ]
-    },
-    {
-      "id": 9413,
-      "name": "釘と金鎚の本",
-      "desc": "味方が[Laceration]威力、[Laceration]回数、または特殊出血を与えるスキルで敵とマッチにて勝利すると、[NailPersonality]を1~2付与。\n\nN社の狂信者所属の場合、ターン開始時に狂信1を得る",
-      "simpleDesc": [
-        {
-          "abilityID": 9413,
-          "simpleDesc": "[NailPersonality]を1～2付与"
-        },
-        {
-          "abilityID": 94131,
-          "simpleDesc": "N社の狂信者所属の場合、ターン開始時に狂信1を得る。"
-        }
-      ]
-    },
-    {
-      "id": 9414,
-      "name": "血紅色のたてがみ",
-      "desc": "憤怒または色欲属性攻撃スキルを持つ全人格へ効果を適用。\n\nターン終了時、このターンに攻撃スキルで敵にダメージを受けなかったなら、次のターンに[Agility]2, [Endurance]2を得る。\n\nターン終了時、このターンに攻撃スキルで敵にダメージを受けた場合は、次のターンに[Binding]2を得てマッチ威力+2",
-      "simpleDesc": [
-        {
-          "abilityID": 9414,
-          "simpleDesc": "次のターンに[Agility]2, [Endurance]2を得る"
-        },
-        {
-          "abilityID": 94141,
-          "simpleDesc": "次のターンに[Binding]2を得てマッチ威力 +2"
-        }
-      ]
-    },
-    {
-      "id": 9415,
-      "name": "不潔さ",
-      "desc": "味方が[Laceration]威力、[Laceration]回数または特殊出血を与えるスキルで[Laceration]状態の敵を攻撃する場合、対象への与ダメージ量 +15%\n\n敵の体力が最大値の33%以下なら、効果が強化されて与ダメージ量 +25%",
-      "simpleDesc": [
-        {
-          "abilityID": 9415,
-          "simpleDesc": "与ダメージ量 +15%"
-        },
-        {
-          "abilityID": 94151,
-          "simpleDesc": "与ダメージ量 +25%"
-        }
-      ]
-    },
-    {
-      "id": 9416,
-      "name": "完全さ",
-      "desc": "味方が[Laceration]威力、[Laceration]回数または特殊出血を与えるスキルで、敵とマッチで勝利した場合、[NailPersonality]2～3を付与。\n\nN社の狂信者所属の場合、ターン開始時に狂信1を得て[Laceration]状態の敵を攻撃する際のダメージ量 +25%\n\nステージ開始時、N社の狂信者所属人格が5人以上の時に特殊効果発動。N社の狂信者所属人格の最終威力 +1、加算コイン威力+ 1, 減算コイン威力 -1, 攻撃スキルの[NailPersonality]付与量 +1。ターン開始時にN社の狂信者所属人格の精神力が最大の場合、[AttackDmgUp]2を得る。",
-      "simpleDesc": [
-        {
-          "abilityID": 9416,
-          "simpleDesc": "マッチ威力時、[NailPersonality]2～3を付与"
-        },
-        {
-          "abilityID": 94161,
-          "simpleDesc": "N社の狂信者所属の場合、敵を攻撃するときにダメージ量 +25"
-        },
-        {
-          "abilityID": 94162,
-          "simpleDesc": "N社の狂信者所属人格が5名以上のとき、特殊効果発動"
-        }
-      ]
-    },
-    {
-      "id": 9419,
-      "name": "檀香梅の枝",
-      "desc": "今回の戦闘の間、スキル1、スキル2、スキル3を全部1回ずつ使うたびに次のターンに効果発動。\n\nターン開始時、[Agility]1, [SkillPowerUp]1を得る(最大3回まで重複)",
-      "simpleDesc": [
-        {
-          "abilityID": 9419,
-          "simpleDesc": "ターン開始時、[Agility]1, [SkillPowerUp]1を得る"
-        }
-      ]
-    },
-    {
-      "id": 9420,
-      "name": "万華鏡",
-      "desc": "ターン開始時に自分と同じ所属人格が存在する場合、自分を除く同じ所属人格の数だけ[AttackUp]を得る(最大4)\n\n技術解放連合所属人格のマッチ威力 +1",
-      "simpleDesc": [
-        {
-          "abilityID": 9420,
-          "simpleDesc": "[AttackUp]を得る"
-        },
-        {
-          "abilityID": 94201,
-          "simpleDesc": "マッチ威力 +1"
-        }
-      ]
-    },
-    {
-      "id": 9423,
-      "name": "割れた眼鏡",
-      "desc": "味方が自分より速度の高い敵とマッチを進行するとき、マッチ威力+1。\n\n味方が自分より速度の高い敵とマッチして勝利すると、次のターンに[AttackUp]2を得る(最大4)。",
-      "simpleDesc": [
-        {
-          "abilityID": 9423,
-          "simpleDesc": "マッチ威力 +1"
-        },
-        {
-          "abilityID": 94231,
-          "simpleDesc": "次のターンに[AttackUp]2を得る"
-        }
-      ]
-    },
-    {
-      "id": 9424,
-      "name": "送れなかった手紙",
-      "desc": "[編成1・2番人格専用効果]\n\n[Burst]威力または[Burst]回数を付与する攻撃スキルを使用してマッチ勝利時、対象の敵へ[Burst]威力5, [Burst]回数3を付与(人格別に1ターンにつき1回)\n\n自分より速度の低い敵とマッチを進行するとき、最終威力 +1、ダメージ量 +25%。\n\n[AttackUp]バフを保有する敵とマッチで勝利した場合、次のターンの間、自分は[AttackUp]3を得て、マッチで敗北した敵には[AttackDown]3を付与(増減ともに最大9)",
-      "simpleDesc": [
-        {
-          "abilityID": 9424,
-          "simpleDesc": "マッチ勝利時、対象の敵へ[Burst]威力5, [Burst]回数を3付与"
-        },
-        {
-          "abilityID": 94241,
-          "simpleDesc": "最終威力+1, ダメージ量 +25%"
-        },
-        {
-          "abilityID": 94242,
-          "simpleDesc": "マッチで敗北した敵には[AttackDown]3を付与"
-        }
-      ]
-    },
-    {
-      "id": 9429,
-      "name": "銛の義足",
-      "desc": "ターン終了時、[Breath]威力と[Breath]回数の合計が最も多い味方1人に、次のターンにて[Agility]2, [AttackUp]2, [AttackDmgUp]2を付与。\n\nピークォド号所属の人格の最大速度 +1",
-      "simpleDesc": [
-        {
-          "abilityID": 9429,
-          "simpleDesc": "次のターンに [Agility]2, [AttackUp]2, [AttackDmgUp]2を付与"
-        },
-        {
-          "abilityID": 94291,
-          "simpleDesc": "ピークォド号所属人格の速度最大値 +1"
-        }
-      ]
-    },
-    {
-      "id": 9430,
-      "name": "前を照らすガス灯",
-      "desc": "ウェーブの1ターン目が開始時、全味方が[Breath]5を得て[Breath]回数が5増加。\n\nターン終了時、[Breath]威力と[Breath]回数の合計が最も多い味方1人に、次のターンにて[Agility]2, [AttackUp]3, [AttackDmgUp]3を付与。\n\nピークォド号所属の人格スキル威力 +2, の最大速度 +2",
-      "simpleDesc": [
-        {
-          "abilityID": 9430,
-          "simpleDesc": "全味方が[Breath]5を得て、[Breath]回数が5増加"
-        },
-        {
-          "abilityID": 94301,
-          "simpleDesc": "次のターンに [Agility]2, [AttackUp]3, [AttackDmgUp]3を付与."
-        },
-        {
-          "abilityID": 94302,
-          "simpleDesc": "スキル威力 +2, 速度最大値 +2"
-        }
-      ]
-    },
-    {
-      "id": 9433,
-      "name": "チーフバトラーの秘笈書",
-      "desc": "ウェーブの1ターン目が開始時、速度が最も低い敵1体(幻想体の場合はランダムな部位1つ)を選択し、次のターンから5ターンの間、[Binding]5を付与。\n\nマッチ勝利時、対象より速度が高いなら、対象との速度差だけ精神力を回復し、その数値の半分だけ攻撃レベルが増加(該当スキルにのみ適用される、最大攻撃レベル増加量 : 3)。",
-      "simpleDesc": [
-        {
-          "abilityID": 9433,
-          "simpleDesc": "次のターンから5ターンの間[Binding]を5付与"
-        },
-        {
-          "abilityID": 94331,
-          "simpleDesc": "精神力を回復し、その数値の半分だけ攻撃レベルが増加"
-        }
-      ]
-    },
-    {
-      "id": 9434,
-      "name": "手鏡",
-      "desc": "ウェーブの1ターン目が開始時、速度が最も低い敵2体(幻想体の場合はランダムな部位2つ、敵が単一の場合は効果が重複しない)を選択し、次のターンからターン開始時に[Binding]5, [DefenseDown]3を付与。\n\n敵の混乱が解けるときに、保有する混乱区間がなければ対象の現体力の66%を基準に新しい混乱区間を追加(戦闘につき3回)。味方が[Vibration]威力または[Vibration]回数を付与する攻撃スキル(本人または味方を対象とする場合を含む)で敵を混乱させる場合(E.G.Oスキルは除く)、次のターンに対象が保有する[Vibration]威力の半分だけ他のランダムな敵(幻想体の場合は部位)に[Vibration]威力を配分し、混乱対象の保有する[Vibration]威力が2倍に増加する。",
-      "simpleDesc": [
-        {
-          "abilityID": 9433,
-          "simpleDesc": "ターン開始時に束縛 5, 防御レベル減少 3を付与"
-        },
-        {
-          "abilityID": 94331,
-          "simpleDesc": "現在の体力を基準に、66%の箇所に新たな混乱区間を追加。"
-        },
-        {
-          "abilityID": 94332,
-          "simpleDesc": "混乱した対象は保有した振動威力が1.5倍に増加"
-        }
-      ]
-    },
-    {
-      "id": 9701,
-      "name": "熱い肉汁ドラムスティック",
-      "desc": "スキルで[Combustion]付与時、[Combustion]回数が3増加",
-      "simpleDesc": [
-        {
-          "abilityID": 9701,
-          "simpleDesc": "スキルで[Combustion]付与時、[Combustion]回数が3増加"
-        }
-      ]
-    },
-    {
-      "id": 9702,
-      "name": "喉がパサパサ胸肉",
-      "desc": "スキルで[Burst]付与時、[Burst]回数が3増加",
-      "simpleDesc": [
-        {
-          "abilityID": 9702,
-          "simpleDesc": "スキルで[Burst]付与時、[Burst]回数が3増加"
-        }
-      ]
-    },
-    {
-      "id": 9703,
-      "name": "タンゴチキンのタレ",
-      "desc": "対象より速度が高ければ、マッチ威力が(速度÷3)だけ増加(最大3)",
-      "simpleDesc": [
-        {
-          "abilityID": 9703,
-          "simpleDesc": "マッチ威力が(速度÷3)だけ増加"
-        }
-      ]
-    },
-    {
-      "id": 9704,
-      "name": "汚染された糸と針",
-      "desc": "ターンごとに、初めて敵にダメージを与えたスキルに適用\n\n(ダメージ量 ÷ 3)だけ[Laceration]威力を付与。",
-      "simpleDesc": [
-        {
-          "abilityID": 9704,
-          "simpleDesc": "(ダメージ量 ÷ 3)だけの[Laceration]威力を付与"
-        }
-      ]
-    },
-    {
-      "id": 9705,
-      "name": "鋭い糸と針",
-      "desc": "毎ターン、最初に敵へダメージを与えたスキルの(ダメージ量÷2)だけ追加で固定ダメージを付与",
-      "simpleDesc": [
-        {
-          "abilityID": 9705,
-          "simpleDesc": "(ダメージ量 ÷ 2)だけ追加で固定ダメージを与える"
-        }
-      ]
-    },
-    {
-      "id": 9706,
-      "name": "油汚れのついたスパナ",
-      "desc": "打撃スキルのダメージ量+10%\n\n打撃スキル最後のコインを的中させた場合、敵に[Vibration]威力2を付与。(1ターンにつき1回)",
-      "simpleDesc": [
-        {
-          "abilityID": 9706,
-          "simpleDesc": "打撃スキルのダメージ量 +10%"
-        },
-        {
-          "abilityID": 97061,
-          "simpleDesc": "敵へ[Vibration]威力2を付与"
-        }
-      ]
-    },
-    {
-      "id": 9707,
-      "name": "輝く廃品",
-      "desc": "バリアを持つ味方が敵に被弾時、固定ダメージ3を反射する。（バリアにダメージを受けていないなら反射しない)",
-      "simpleDesc": [
-        {
-          "abilityID": 9707,
-          "simpleDesc": "固定ダメージ3を反射して与える"
-        }
-      ]
-    },
-    {
-      "id": 9708,
-      "name": "クラップ蟹の脳髄漬け酒",
-      "desc": "味方が[Burst]威力または[Burst]回数を付与するスキルで[Burst]状態の敵を攻撃する際、対象の[Burst]回数に比例して与ダメージ量 +(対象の[Burst]回数x1.25、最大50)%。\n\n味方が混乱状態から戻るとき、体力最大値の20%分だけ体力を回復(戦闘につき2回）",
-      "simpleDesc": [
-        {
-          "abilityID": 9708,
-          "simpleDesc": "対象の[Burst]回数に比例して与ダメージ量 +(対象の[Burst]回数x1.25、最大50)%"
-        },
-        {
-          "abilityID": 97081,
-          "simpleDesc": "体力を最大値の20%回復"
-        }
-      ]
-    },
-    {
-      "id": 9709,
-      "name": "ポンポン帽子",
-      "desc": "ターン終了時、味方がダメージを与えた攻撃スキルの数に比例して、次のターンに[Breath]威力1を獲得。\n\n集中戦闘方式の戦闘ステージでは効果が強化され、[Breath]威力3を獲得。",
-      "simpleDesc": [
-        {
-          "abilityID": 9709,
-          "simpleDesc": "[Breath]威力1を獲得"
-        },
-        {
-          "abilityID": 97091,
-          "simpleDesc": "[Breath]威力3を獲得"
-        }
-      ]
-    },
-    {
-      "id": 9710,
-      "name": "巨大なプレゼント袋",
-      "desc": "ターン開始時、体力が最も低い味方に[Breath]2, [Breath]回数2, [Protection]2を付与。",
-      "simpleDesc": [
-        {
-          "abilityID": 9710,
-          "simpleDesc": "[Breath]2, [Breath]回数2, [Protection]2を付与"
-        }
-      ]
-    },
-    {
-      "id": 9711,
-      "name": "哀しい縫製人形",
-      "desc": "味方が本人の精神力に比例して敵に与えるダメージ量 +(精神力絶対値 ÷ 1.5、最小0)%\n\n加算コインスキルを持つ味方が混乱状態から解放されるとき、精神力を全快(侵蝕状態なら発動しない)\n\n全スキルが減算コインスキルの味方の場合、ターン開始時[Paralysis]3を得る。",
-      "simpleDesc": [
-        {
-          "abilityID": 9711,
-          "simpleDesc": "与ダメージ量 +(精神力の絶対値 ÷ 1.5, 最小0)%"
-        },
-        {
-          "abilityID": 97111,
-          "simpleDesc": "混乱状態から抜け出した場合、精神力を全快"
-        },
-        {
-          "abilityID": 97112,
-          "simpleDesc": "ターン開始時に[Paralysis]3を得る"
-        }
-      ]
-    },
-    {
-      "id": 9712,
-      "name": "黒い帳簿",
-      "desc": "ステージの1ターン目開始時、出現した敵の数だけランダムなE.G.O資源を獲得。\n\n戦闘に参加した人格のうち、剣契または黒雲会所属が4名以上いる場合(出撃人員を基準とする)は効果が強化され、ランダムではなく最も保有量の少ないE.G.O資源を得る。",
-      "simpleDesc": [
-        {
-          "abilityID": 9712,
-          "simpleDesc": "ランダムなE.G.O資源獲得"
-        },
-        {
-          "abilityID": 97121,
-          "simpleDesc": "最も少ないE.G.O資源を獲得"
-        }
-      ]
-    },
-    {
-      "id": 9713,
-      "name": "錆びた柄",
-      "desc": "味方がターン開始時、斬撃威力増加 1を得る。\n\n剣契または黒雲会所属の場合、効果が強化されて斬撃威力増加 2を得る。",
-      "simpleDesc": [
-        {
-          "abilityID": 9713,
-          "simpleDesc": "斬撃威力増加 1を得る"
-        },
-        {
-          "abilityID": 97131,
-          "simpleDesc": "斬撃威力増加 2を得る"
-        }
-      ]
-    },
-    {
-      "id": 9714,
-      "name": "砕けた刃",
-      "desc": "この戦闘の間、攻撃スキル効果で敵へ[Laceration]威力または特殊出血を最初に付与する場合、[Laceration]回数を2追加で付与(戦闘につき1回)\n\n黒雲回所属のの場合は効果が強化され、敵へ最初にダメージを与えた場合に[Laceration]威力4, [Laceration]回数4を追加で付与",
-      "simpleDesc": [
-        {
-          "abilityID": 9714,
-          "simpleDesc": "[Laceration]回数を2追加で付与"
-        },
-        {
-          "abilityID": 97141,
-          "simpleDesc": "[Laceration]威力4, [Laceration]回数4を追加で付与"
-        }
-      ]
-    },
-    {
-      "id": 9715,
-      "name": "壊れた刃",
-      "desc": "味方が敵へクリティカルダメージを与えたとき、保有している ([Breath]威力÷3)だけ追加で傲慢ダメージを与える。\n\n剣契所属の場合効果が強化され、保有している([Breath]威力÷2)だけ追加で傲慢ダメージを与える。",
-      "simpleDesc": [
-        {
-          "abilityID": 9715,
-          "simpleDesc": "([Breath]威力÷3)だけ追加傲慢ダメージ"
-        },
-        {
-          "abilityID": 97151,
-          "simpleDesc": "([Breath]威力÷2)だけ追加傲慢ダメージ"
-        }
-      ]
-    },
-    {
-      "id": 9716,
-      "name": "赤い房飾り",
-      "desc": "敵の斬撃耐性が1.5以下の場合、斬撃耐性 +0.3",
-      "simpleDesc": [
-        {
-          "abilityID": 9716,
-          "simpleDesc": "斬撃耐性 +0.3"
-        }
-      ]
-    },
-    {
-      "id": 9717,
-      "name": "壮観",
-      "desc": "ステージ開始時、黒雲会所属人格が3名以上のときに発動。(出撃人員を基準とする)\n\n味方がターン開始時に斬撃威力増加 2を得る、斬撃与ダメージ量 +35%。\n\n黒雲会所属人格がターン開始時に対象へ最初にダメージを与えた場合、[Laceration]威力4、[Laceration]回数4を追加で付与(1ターンにつき1回)",
-      "simpleDesc": [
-        {
-          "abilityID": 9717,
-          "simpleDesc": "斬撃威力増加 2を得る、斬撃与ダメージ量 +35％"
-        },
-        {
-          "abilityID": 97171,
-          "simpleDesc": "[Laceration]威力4, [Laceration]回数4を追加で付与"
-        }
-      ]
-    },
-    {
-      "id": 9718,
-      "name": "不動",
-      "desc": "ステージ開始時、剣契所属人格が3名以上のときに発動。(出撃人員を基準とする)\n\n味方がターン開始時に斬撃威力増加 2を得る、斬撃与ダメージ量 +35%。\n\n剣契所属人格が敵へクリティカルダメージを与えた場合、保有している[Breath]威力だけ追加で傲慢ダメージを与える。",
-      "simpleDesc": [
-        {
-          "abilityID": 9718,
-          "simpleDesc": "斬撃威力増加 2を得る、斬撃与ダメージ量 +35％"
-        },
-        {
-          "abilityID": 97181,
-          "simpleDesc": "[Breath]威力だけ追加傲慢ダメージ"
-        }
-      ]
-    },
-    {
-      "id": 9719,
-      "name": "破れた編み笠",
-      "desc": "ステージ開始時、剣契所属人格が3名以上のときに発動。(出撃人員を基準とする)\n\n味方の斬撃与ダメージ量+50%\n\n剣契所属の場合、[Breath]状態のときにクリティカル発動確率が100%に固定。\n\n剣契所属の場合、効果が強化されてクリティカル与ダメージ量が1.5倍に増化",
-      "simpleDesc": [
-        {
-          "abilityID": 9719,
-          "simpleDesc": "斬撃与ダメージ量 +50%"
-        },
-        {
-          "abilityID": 97191,
-          "simpleDesc": "クリティカル発動確率100％に固定"
-        },
-        {
-          "abilityID": 97192,
-          "simpleDesc": "クリティカルダメージ量が1.5倍に増加"
-        }
-      ]
-    },
-    {
-      "id": 9720,
-      "name": "古びた道袍",
-      "desc": "ステージ開始時、剣契所属人格が3名以上のときに発動。(出撃人員を基準とする)\n\n味方の斬撃与ダメージ量 +50%\n\n剣契所属の場合はスキル1のコイン威力 +1, 該当スキルが単一コインの場合はコイン威力 +3。\n\n[剣契頭目ムルソー専用効果] 「肉斬」スキルのマッチ最終威力 -12, 「骨断」スキルの与ダメージ量 +50%。",
-      "simpleDesc": [
-        {
-          "abilityID": 9720,
-          "simpleDesc": "斬撃与ダメージ量 +50%"
-        },
-        {
-          "abilityID": 97201,
-          "simpleDesc": "スキル1のコイン威力増加"
-        },
-        {
-          "abilityID": 97202,
-          "simpleDesc": "「肉斬」スキルのマッチ最終威力 -12, 「骨断」スキルの与ダメージ量 +50％"
-        }
-      ]
-    },
-    {
       "id": 19086,
       "name": "残響+",
       "desc": "ターン終了時、[Vibration]威力を<style=\"upgradeHighlight\">8</style>以上保有した敵(幻想体の場合は該当部位)へ次のターンに[Binding]2, <style=\"upgradeHighlight\">[DefenseDown]2</style>を付与。対象が[Vibration]威力を <style=\"upgradeHighlight\">15</style>以上保有している場合は効果が強化され、[Binding]2, [Paralysis]1, <style=\"upgradeHighlight\">[DefenseDown] 2</style> を付与。",
@@ -4903,187 +4377,294 @@
       ]
     },
     {
-      "id": 9721,
-      "name": "銀の時計ケース",
-      "desc": "[Vibration]威力または[Vibration]回数または特殊振動を付与する攻撃スキル(E.G.Oスキルを除く)で敵へダメージを与えたとき、与ダメージ量 +10%\n\n該当スキルで敵へこのターンの間、最初に[VibrationExplosion]を適用したなら、次のターンに[Vibration]回数2を付与(1ターンに1回)",
+      "id": 9155,
+      "name": "万年煮えている釜",
+      "desc": "[Combustion]威力、[Combustion]回数または特殊火傷を付与するスキルのマッチ威力 +1",
       "simpleDesc": [
         {
-          "abilityID": 9721,
-          "simpleDesc": "与ダメージ量 +10%"
-        },
-        {
-          "abilityID": 97211,
-          "simpleDesc": "次のターンに[Vibration]回数2を付与"
-        }
-      ]
-    },
-    {
-      "id": 9722,
-      "name": "色褪せた時計ケース",
-      "desc": "自分より速度が高い敵とマッチを進行するとき、マッチ威力 +1\n\n自分より速度が高い敵へダメージを与えるとき、次のターンに対象へ[Vibration]威力3, [Vibration]回数2を付与(1ターンにつき1回)",
-      "simpleDesc": [
-        {
-          "abilityID": 9722,
+          "abilityID": 9155,
           "simpleDesc": "マッチ威力 +1"
-        },
-        {
-          "abilityID": 97221,
-          "simpleDesc": "次のターンに[Vibration]威力3, [Vibration]回数を2付与"
         }
       ]
     },
     {
-      "id": 9723,
-      "name": "警告状",
-      "desc": "ターン終了時、速度が最も高い敵1名に次のターンに[Binding]1を付与(幻想体の場合は部位1つ)\n\n対象が[Vibration]または特殊振動を保有している場合、効果が強化され[Binding]2を付与\n\n味方が[Binding]を保有する対象を攻撃するとき、与ダメージ量 +(5 + [[Binding]数値 × 2.5])%(最大15%)",
+      "id": 9157,
+      "name": "料理の秘伝書",
+      "desc": "ステージ開始時、[Combustion]威力、[Combustion]回数または特殊火傷を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\n[Combustion]威力、[Combustion]回数または特殊火傷を付与するスキルの最終威力 +1\n\n[Combustion]威力、回数、特殊火傷を付与するスキルでマッチ勝利時、(残りコイン数 ÷ 2 + 1)だけ対象の敵へ[Combustion]威力を付与",
       "simpleDesc": [
         {
-          "abilityID": 9723,
-          "simpleDesc": "次のターンに[Binding]1を付与"
+          "abilityID": 9157,
+          "simpleDesc": "スキルの最終威力 +1"
         },
         {
-          "abilityID": 97231,
-          "simpleDesc": "与ダメージ量 +(5 + [[Binding]数値 × 2.5])%"
+          "abilityID": 91571,
+          "simpleDesc": "(残りコイン数 ÷ 2 + 1)だけ[Combustion]威力を付与"
         }
       ]
     },
     {
-      "id": 9724,
-      "name": "エッチングされた時計の針",
-      "desc": "ウェーブの最初のターン開始時、速度が最も低い敵3名に(9 - 現在の速度)だけ[Vibration]威力を付与(最低3)\n\nターン開始時、[Vibration]または特殊振動を12以上保有した敵への与ダメージ量 +10%",
+      "id": 9159,
+      "name": "ミラルカ",
+      "desc": "[Laceration]威力、[Laceration]回数または特殊出血を付与するスキルのマッチ威力 +1",
       "simpleDesc": [
         {
-          "abilityID": 9724,
-          "simpleDesc": "(9 - 現在の速度)だけ[Vibration]威力を付与"
-        },
-        {
-          "abilityID": 97241,
-          "simpleDesc": "与ダメージ量 +10%"
+          "abilityID": 9159,
+          "simpleDesc": "マッチ威力 +1"
         }
       ]
     },
     {
-      "id": 9725,
-      "name": "錆びた時計の針",
-      "desc": "ウェーブの最初のターン開始時、速度が最も高い敵1名に(9 - 現在の速度)だけ[Vibration]威力(最低3)と、その数値の半分だけ[Vibration]回数を付与(繰り上げ処理、幻想体の場合は部位1つ)\n\nターン開始時、[Vibration]または特殊振動を12以上保有した敵からの被ダメージ量 -10%",
+      "id": 9161,
+      "name": "致誠",
+      "desc": "ステージ開始時、[Laceration]威力または[Laceration]回数、または特殊出血を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\n速度が最も高い味方が1名の[Laceration]威力、[Laceration]回数または特殊出血を付与するスキルのコイン威力 +1, ダメージ量 +50%\n\n[Laceration]威力、回数または特殊出血を付与するスキルの最終威力 +1",
       "simpleDesc": [
         {
-          "abilityID": 9725,
-          "simpleDesc": "(9 - 現在の速度)だけ[Vibration]威力と、その数値の半分だけ[Vibration]回数を付与"
+          "abilityID": 9161,
+          "simpleDesc": "コイン威力+1, ダメージ量 +50%"
         },
         {
-          "abilityID": 97251,
-          "simpleDesc": "被ダメージ量 -10%"
+          "abilityID": 91611,
+          "simpleDesc": "[Laceration]威力、回数または特殊出血を付与するスキルの最終威力 +1"
         }
       ]
     },
     {
-      "id": 9726,
-      "name": "落水の杯",
-      "desc": "[Vibration]威力または[Vibration]回数、または特殊振動を付与する攻撃スキル(E.G.Oスキルを除く)を保有する味方が敵とのマッチで勝利時、[Vibration]威力2, [Vibration]回数2を付与(1ターンにつき2回)\n\nユロージヴィ所属の人格の場合は効果が強化され、[Vibration]威力3, [Vibration]回数3を付与(1ターンにつき3回)\n\n該当人格が自分より攻撃レベルが高い敵とマッチ進行時にマッチ威力+2、マッチ勝利時の与ダメージ量 +20%",
+      "id": 9165,
+      "name": "嵌合した歯車",
+      "desc": "ステージ開始時、[Vibration]威力、[Vibration]回数または特殊振動を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\nこのターンに対象へ[VibrationExplosion]を6回付与した場合、対象の現体力基準で0%部分に新たな混乱区間を追加(戦闘につき1回発動)\n\n[Switch_Vibration]、[FusionVibration]時に[Vulnerable]1を付与(1ターンにつき最大1回)",
       "simpleDesc": [
         {
-          "abilityID": 9726,
-          "simpleDesc": "[Vibration]威力2, [Vibration]回数を2付与"
+          "abilityID": 9165,
+          "simpleDesc": "混乱区間を追加"
         },
         {
-          "abilityID": 97261,
-          "simpleDesc": "[Vibration]威力3, [Vibration]回数を3付与"
-        },
-        {
-          "abilityID": 97262,
-          "simpleDesc": "マッチ威力 +2, 与ダメージ量 +20%"
+          "abilityID": 91651,
+          "simpleDesc": "[Vulnerable]1を付与"
         }
       ]
     },
     {
-      "id": 9727,
-      "name": "先払いした時間領収書",
-      "desc": "自分より速度が2以上高い敵への与ダメージ量 +(5 + 速度差 × 2.5)%(最大15%)\n\nターン終了時、このターンの間自分より速度が2以上高い敵に攻撃スキル(E.G.Oスキルを除く)を使って1度でもダメージを与えたのなら、次のターン対象に[Binding]2, [ResultReduction]1を付与(1ターンにつき1回)",
+      "id": 9169,
+      "name": "茨の早縄",
+      "desc": "ステージ開始時、[Burst]威力または[Burst]回数を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\n戦闘中、敵の[Burst]回数が1以下になったとき、[Burst]回数の代わりに[Burst]威力20を消耗。([Burst]威力が20未満になった場合、効果終了)\n\n戦闘中的中時、敵の[Burst]回数が2なら、[Burst]回数を付与するときに付与量 +1(戦闘ごとに2回)",
       "simpleDesc": [
         {
-          "abilityID": 9727,
-          "simpleDesc": "与ダメージ量 +(5 + 速度差 × 2.5)%"
+          "abilityID": 9169,
+          "simpleDesc": "破裂回数の代わりに破裂威力を消耗"
         },
         {
-          "abilityID": 97271,
-          "simpleDesc": "次のターンに[Binding]2, [ResultReduction]1を付与"
+          "abilityID": 91691,
+          "simpleDesc": "破裂回数付与量 +1"
         }
       ]
     },
     {
-      "id": 9728,
-      "name": "懐中時計 : タイプL",
-      "desc": "ステージ開始時、[Vibration]威力または[Vibration]回数または特殊振動を与える攻撃スキルを保有した人格が5人以上のとき発動(E.G.Oスキルを除く、出撃人員を基準とする)\n\n[Vibration]威力または[Vibration]回数または特殊振動を付与する味方が使用するスキル3のコイン威力+2, ダメージ量 +25%\n\n[Vibration]威力または[Vibration]回数または特殊振動を付与する味方が、攻撃スキル(E.G.Oスキルを含む)を使用して敵を[Switch_Vibration]する場合、変換される[Vibration]威力と[Vibration]回数の値が1.5倍で適用(別のタイプに変換される場合にのみ適用)されて次のターンに[DefenseDown]5を付与(1ターンにつき1回)\n\nウェーブの最初のターン開始時、速度が最も低い敵3名に(12 - 現在の速度)だけ、[Vibration]威力を付与(最低6)",
+      "id": 9174,
+      "name": "もつれた骨片",
+      "desc": "ステージ開始時、[Sinking]威力、[Sinking]回数または特殊沈潜を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\nターン開始時、[Sinking]を保有する全ての敵(幻想体の場合は全部位)がそれぞれ(直前のターンにダメージを受けて消耗した[Sinking]回数 ÷ 3)だけ[Sinking]回数を再度得る。\n\n基本スキル的中時、対象の精神力が0未満なら(精神力がない場合、憂鬱耐性が1.5以上のとき)、([Sinking]威力 ÷ 10)だけ憂鬱属性ダメージを与える(最小ダメージ1, 該当効果は1ターンにつき10回発動可能)",
       "simpleDesc": [
         {
-          "abilityID": 9728,
-          "simpleDesc": "スキル3のコイン威力 +2, ダメージ量 +25%"
+          "abilityID": 9174,
+          "simpleDesc": "[Sinking]回数が増加"
         },
         {
-          "abilityID": 97281,
-          "simpleDesc": "変換される[Vibration]威力と[Vibration]回数の値が1.5倍で適用"
-        },
-        {
-          "abilityID": 97282,
-          "simpleDesc": "(12 - 現在の速度)だけ[Vibration]威力を付与"
+          "abilityID": 91741,
+          "simpleDesc": "憂鬱属性ダメージを与える"
         }
       ]
     },
     {
-      "id": 9729,
-      "name": "懐中時計 : タイプE",
-      "desc": "ステージ開始時、[Vibration]威力または[Vibration]回数または特殊振動を与える攻撃スキルを保有した人格が5人以上のとき発動(E.G.Oスキルを除く、出撃人員を基準とする)\n\n[Vibration]威力または[Vibration]回数または特殊振動を付与する味方が使用するスキル3のコイン威力+2, ダメージ量 +25%\n\n[Vibration]威力または[Vibration]回数または特殊振動を付与する味方が、自分より速度が2以上低い敵へダメージを与えるときの与ダメージ量 +(対象が保有する[Vibration]威力、最大25)%、ダメージを与えるたびに[DefenseDown]2を付与(最大6)\n\nウェーブの最初のターン開始時、速度が最も高い敵1名に(12 - 現在の速度)だけ[Vibration]威力(最低6)と、その数値の半分だけ[Vibration]回数を付与(繰り上げ処理、幻想体の場合は部位1つ)",
+      "id": 9177,
+      "name": "在りし日の記憶",
+      "desc": "スキルを使用(E.G.Oスキルを除く)して[Breath]威力または[Breath]回数を獲得する人格が使用するスキル3の最終威力 +2",
       "simpleDesc": [
         {
-          "abilityID": 9729,
-          "simpleDesc": "スキル3のコイン威力 +2, ダメージ量 +25%"
-        },
-        {
-          "abilityID": 97291,
-          "simpleDesc": "与ダメージ量 +(対象が保有する[Vibration]威力)%, ダメージを与えるたびに[DefenseDown]2を付与"
-        },
-        {
-          "abilityID": 97292,
-          "simpleDesc": "(12 - 現在の速度)だけ[Vibration]威力と、その数値の半分だけ[Vibration]回数を付与"
+          "abilityID": 9177,
+          "simpleDesc": "最終威力 +2"
         }
       ]
     },
     {
-      "id": 9730,
-      "name": "懐中時計 : タイプY",
-      "desc": "ステージ開始時、[Vibration]威力または[Vibration]回数または特殊振動を付与する攻撃スキルを保有した人格が5名以上のとき発動(E.G.Oスキルを除く、出撃人員を基準とする)\n\n[Vibration]威力または[Vibration]回数、または特殊振動を付与する味方が使用するスキル3のコイン威力 +2, ダメージ量 +25%\n\nユロージヴィ所属人格の場合は効果が強化され、スキル3のコイン威力 +2, ダメージ量 +(25 + 対象が保有する[Vibration]威力と[Vibration]回数の合計、最大100)%\n\nユロージヴィ所属人格がターン開始時、自分の[Vibration]回数が3増加",
+      "id": 9179,
+      "name": "追憶",
+      "desc": "ステージ開始時、[Breath]威力または[Breath]回数を付与する攻撃スキルを保有した人格が5人以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)スキルを使用(E.G.Oスキルを除く)して[Breath]威力または[Breath]回数を獲得する人格が使用するスキル3のコイン威力 +1\n\n戦闘開始時、ランダムな味方1名が[Breath]威力を3得る(攻撃スキルを使用して[Breath]回数を獲得する人格を優先して指定)。憂鬱属性攻撃スキルを保有した味方に優先して適用され、この場合は[Breath]威力3を得て[Breath]回数が2増加。",
       "simpleDesc": [
         {
-          "abilityID": 9730,
-          "simpleDesc": "スキル3のコイン威力 +2, ダメージ量 +25%"
+          "abilityID": 9179,
+          "simpleDesc": "コイン威力 +1"
         },
         {
-          "abilityID": 97301,
-          "simpleDesc": "スキル3のコイン威力 +2, ダメージ量 +(25 + 対象の[Vibration]威力と[Vibration]回数の合計)%"
-        },
-        {
-          "abilityID": 97302,
-          "simpleDesc": "[Vibration]回数が3増加"
+          "abilityID": 91791,
+          "simpleDesc": "[Breath]威力を3得る。憂鬱属性攻撃スキル保有時、[Breath]回数が2追加で増加"
         }
       ]
     },
     {
-      "id": 9731,
-      "name": "懐中時計 : タイプP",
-      "desc": "ステージ開始時、[Vibration]威力または[Vibration]回数または特殊振動を与える攻撃スキルを保有した人格が5人以上のとき発動(E.G.Oスキルを除く、出撃人員を基準とする)\n\n[Vibration]威力または[Vibration]回数または特殊振動を付与する味方が使用するスキル3のコイン威力+2, ダメージ量 +25%\n\n[Vibration]威力または[Vibration]回数または特殊振動を付与する味方がマッチ進行時、敵の速度が自分より2以上高いならマッチ威力 +2、与ダメージ量 +(対象が保有する[Vibration]威力、最大50)%。\n\nターン開始時、速度が最も低い味方3名が速度が遅い順に[AttackUp]5, [AttackUp]3, [AttackUp]2を得る",
+      "id": 9182,
+      "name": "1Bタイプ八角ボルト",
+      "desc": "ステージ開始時、[Charge]回数または特殊充電を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oを除く、出撃人員を基準とする)\n\nターン開始時、味方が([Charge]回数と特殊充電の合計 ÷ 10)だけ[AttackDmgUp]を得る(最大2, 繰り上げ処理)\n\nターン終了に[ChargeForceField]がなければ、[ChargeForceField]1を得る",
       "simpleDesc": [
         {
-          "abilityID": 9731,
-          "simpleDesc": "スキル3のコイン威力 +2, ダメージ量 +25%"
+          "abilityID": 9182,
+          "simpleDesc": "([Charge]回数 ÷ 10)だけ[AttackDmgUp]を得る"
         },
         {
-          "abilityID": 97311,
-          "simpleDesc": "マッチ威力 +2, 与ダメージ量 + (対象が保有する[Vibration]威力)%"
-        },
+          "abilityID": 91821,
+          "simpleDesc": "[ChargeForceField]1を得る"
+        }
+      ]
+    },
+    {
+      "id": 9185,
+      "name": "リベートトークン",
+      "desc": "ショップにて強化実施時、20%の確率で消耗されたコストが返還される",
+      "simpleDesc": [
         {
-          "abilityID": 97312,
-          "simpleDesc": "[AttackUp]を得る"
+          "abilityID": 9185,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9186,
+      "name": "新商品のパンフレット",
+      "desc": "ショップにて更新実施時、20%の確率で消耗されたコストが返還される",
+      "simpleDesc": [
+        {
+          "abilityID": 9186,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9187,
+      "name": "特別カタログ",
+      "desc": "戦闘報酬カード出現数 +1",
+      "simpleDesc": [
+        {
+          "abilityID": 9187,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9188,
+      "name": "事前予約割引券",
+      "desc": "ショップでの通常更新コストが30%減少",
+      "simpleDesc": [
+        {
+          "abilityID": 19188,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9189,
+      "name": "リニューアルグッズ",
+      "desc": "ショップでのE.G.Oギフト強化コストが30%減少",
+      "simpleDesc": [
+        {
+          "abilityID": 19189,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9190,
+      "name": "体験型プランガイド",
+      "desc": "ショップでのスキル交換コストが30%減少",
+      "simpleDesc": [
+        {
+          "abilityID": 29190,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9191,
+      "name": "プレステージカード",
+      "desc": "ショップでのE.G.Oギフト購入コストが30%減少",
+      "simpleDesc": [
+        {
+          "abilityID": 29191,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9991,
+      "name": "暗い残影",
+      "desc": "ランク1のE.G.Oギフトとして扱われ、ショップでの販売や合成材料に使用できる。",
+      "simpleDesc": [
+        {
+          "abilityID": 9991,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9992,
+      "name": "微かな残影",
+      "desc": "ランク2のE.G.Oギフトとして扱われ、ショップでの販売や合成材料に使用できる。",
+      "simpleDesc": [
+        {
+          "abilityID": 9992,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9993,
+      "name": "輝く残影",
+      "desc": "ランク3のE.G.Oギフトとして扱われ、ショップでの販売や合成材料に使用できる。",
+      "simpleDesc": [
+        {
+          "abilityID": 9993,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9994,
+      "name": "煌びやかな残影",
+      "desc": "ランク4のE.G.Oギフトとして扱われ、ショップでの販売や合成材料に使用できる。",
+      "simpleDesc": [
+        {
+          "abilityID": 9994,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9995,
+      "name": "月の残影",
+      "desc": "ランク5のE.G.Oギフトとして扱われ、ショップでの販売や合成材料に使用できる。",
+      "simpleDesc": [
+        {
+          "abilityID": 9995,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9192,
+      "name": "貼り重ねた絆創膏",
+      "desc": "ターン終了時、出血を保有した味方のうち最も体力が少ない人格が体力を最大値の5%だけ回復。",
+      "simpleDesc": [
+        {
+          "abilityID": 9192,
+          "simpleDesc": "出血を持つ味方の体力が回復"
+        }
+      ]
+    },
+    {
+      "id": 19192,
+      "name": "貼り重ねた絆創膏+",
+      "desc": "ターン終了時、出血を保有した味方のうち最も体力が少ない人格2名が体力を最大値の5%だけ回復。",
+      "simpleDesc": [
+        {
+          "abilityID": 19192,
+          "simpleDesc": "出血を持つ味方2名の体力が回復"
         }
       ]
     }

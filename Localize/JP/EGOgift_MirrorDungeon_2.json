@@ -1,0 +1,336 @@
+{
+  "dataList": [
+    {
+      "id": 9156,
+      "name": "万年火床",
+      "desc": "ターン終了時、[Combustion]回数を3以上保有した敵が[Combustion]をもう1度発動([Combustion]回数が1減少)",
+      "simpleDesc": [
+        {
+          "abilityID": 9156,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9158,
+      "name": "盗んできた炎",
+      "desc": "ステージ開始時、[Combustion]および特殊火傷を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\nスキル3または憤怒・色欲属性E.G.Oスキル的中時に対象の[Combustion]回数が3以上なら、対象の[Combustion]を1回発動する。([Combustion]回数1が減少、スキルごとに1回発動)\n\nターン終了時、[Combustion]回数を3回以上保有した敵が[Combustion]をもう1回発動する([Combustion]回数が1減少)\n\n[Combustion]状態の敵が死亡した場合(幻想体の場合は本体死亡時)、残った[Combustion]威力を数値分、次のターン開始時に[Combustion]威力数値が最も少ない敵のいずれかに付与。\n\nターン開始時に[Combustion]状態の敵へ、このターンの間[AttackDown]4を付与\n\n火傷を保有している敵が死亡した場合、次のターン開始時に[Combustion]付与スキルを保有した味方(死亡した敵の[Combustion]威力 ÷ 15)名が[AttackDmgUp]2を得る。(1ターンにつき1回発動)",
+      "simpleDesc": [
+        {
+          "abilityID": 9158,
+          "simpleDesc": "[Combustion]を1回発動"
+        },
+        {
+          "abilityID": 91581,
+          "simpleDesc": "[Combustion]を1回追加で発動"
+        },
+        {
+          "abilityID": 91582,
+          "simpleDesc": "死亡した敵の残った火傷威力数値の半分だけ[Combustion]威力を付与"
+        },
+        {
+          "abilityID": 91583,
+          "simpleDesc": "[AttackDown]を4付与"
+        },
+        {
+          "abilityID": 91583,
+          "simpleDesc": "[AttackDmgUp]2を得る"
+        }
+      ]
+    },
+    {
+      "id": 9160,
+      "name": "裂けた血袋",
+      "desc": "味方がマッチ勝利時、敵の出血1回発動させる(1ターンにつき3回発動)",
+      "simpleDesc": [
+        {
+          "abilityID": 9160,
+          "simpleDesc": "出血が1回発動"
+        }
+      ]
+    },
+    {
+      "id": 9162,
+      "name": "出血性ショック",
+      "desc": "ステージ開始時、[Lacerationn]および特殊出血を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\n味方がマッチ勝利時、敵の[Laceration]を1回発動させる。(味方1名につき1ターンごとに1回)\n\nマッチ終了後、自分の残りコイン数だけ敵の[Laceration]を発動させる。(味方1名につき1ターンごとに1回)\n\n全ての敵に[Laceration]が付与されているるなら防御レベルが2減少。ターン終了時([Laceration]が発動した回数 × 2)だけ、次のターンに[DefenseDown]を得る(最大20)\n\nスキル効果で[Laceration]威力または特殊出血を与えるたび、対象に[Laceration]威力3, [Laceration]回数1を付与",
+      "simpleDesc": [
+        {
+          "abilityID": 9162,
+          "simpleDesc": "マッチ勝利時、敵の出血を1回発動"
+        },
+        {
+          "abilityID": 91621,
+          "simpleDesc": "マッチ終了後、残りコイン数だけ敵の出血を発動"
+        },
+        {
+          "abilityID": 91622,
+          "simpleDesc": "(出血が発動した回数 × 2)だけ防御レベル減少を得る"
+        },
+        {
+          "abilityID": 91623,
+          "simpleDesc": "出血威力3, 出血回数1を付与"
+        }
+      ]
+    },
+    {
+      "id": 9163,
+      "name": "宝石振動子",
+      "desc": "[Vibration]回数を消耗したスキルでマッチ勝利時、対象に振動がなければ対象の[Vibration]回数を2増加\n\n該当する攻撃スキルを含めて怠惰共鳴3以上なら、代わりに対象の[Vibration]回数を3増加",
+      "simpleDesc": [
+        {
+          "abilityID": 9163,
+          "simpleDesc": "振動回数を消耗するスキルでマッチ勝利時、対象の[Vibration]回数が2増加"
+        },
+        {
+          "abilityID": 91631,
+          "simpleDesc": "振動回数を消耗するスキルを含む怠惰共鳴3以上でマッチ勝利時、対象の[Vibration]回数が3増加"
+        }
+      ]
+    },
+    {
+      "id": 9164,
+      "name": "揺れる酒樽",
+      "desc": "ターン開始時、自分の[Vibration]回数が8以上なら、マッチ威力 +1\n\n自分の[Vibration]回数を消耗するスキルで敵を討伐するか混乱状態にしたなら、(消耗した[Vibration]回数 ÷ 4)だけ自分の[Vibration]回数が増加(スキルごとに1回)",
+      "simpleDesc": [
+        {
+          "abilityID": 9164,
+          "simpleDesc": "自分の振動 回数が8以上なら、マッチ威力 +1"
+        },
+        {
+          "abilityID": 91641,
+          "simpleDesc": "振動回数を消耗するスキルで敵を倒すか混乱させたなら、自分の振動回数が増加"
+        }
+      ]
+    },
+    {
+      "id": 9166,
+      "name": "震源点",
+      "desc": "ステージ開始時、[Vibration]威力または[Vibration]回数を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除外、出撃人員を基準とする)\n(人格が自ら[Vibration]回数を得る場合は該当しない)\n\n自分の[Vibration]回数を消耗したスキルでマッチ勝利時、対象に[Vibration]がないなら対象の[Vibration]回数が3増加\n\nターン開始時のマッチ威力が(自分の[Vibration]回数 ÷ 5)だけ増加。(最大3)\n\n自分の[Vibration]回数を消耗するスキルで敵を討伐するか混乱状態にしたなら、(消耗した[Vibration]回数 ÷ 2)だけ、自分の[Vibration]回数が増加(スキルごとに1回)",
+      "simpleDesc": [
+        {
+          "abilityID": 9166,
+          "simpleDesc": "自分の[Vibration]回数を消耗したスキルでマッチ勝利時、対象に振動がなければ対象の[Vibration]回数を3増加"
+        },
+        {
+          "abilityID": 91661,
+          "simpleDesc": "ターン開始時、マッチ威力が(自分の[Vibration]回数 ÷ 5)だけ増加"
+        },
+        {
+          "abilityID": 91662,
+          "simpleDesc": "振動回数を消耗するスキルで敵を倒すか混乱させたなら、自分の振動回数が増加"
+        }
+      ]
+    },
+    {
+      "id": 9167,
+      "name": "無振八方鐘",
+      "desc": "ステージ開始時、[Vibration]威力または[Vibration]回数を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除外、出撃人員を基準とする)\n(人格が自ら[Vibration]回数を得る場合は該当しない)\n\n[Vibration]威力または[Vibration]回数を付与する、あるいは自分の[Vibration]回数を消耗するスキルでマッチ勝利時、残りコイン数だけ対象に[Vibration]威力を付与。対象に[Vibration]がなければ、対象の[Vibration]回数を3増加。\n\nターン開始時、[ParryingResultUp]を1 + (自分の[Vibration]回数 ÷  5)だけ得る。(最大3)\n\n自分の[Vibration]回数を消耗するスキルで敵を討伐するか混乱状態にしたなら、(消耗した[Vibration]回数 ÷ 2)だけ、自分の[Vibration]回数が増加(スキルごとに1回)\n\n自分の[Vibration]回数を消耗するスキルのダメージ量 +(自分が消耗した[Vibration]回数 + 敵が保有する[Vibration]威力 + 5)%(E.G.Oスキルを除く、最大50%)",
+      "simpleDesc": [
+        {
+          "abilityID": 9167,
+          "simpleDesc": "マッチ勝利時、残りコイン数だけ振動付与。対象に振動がなければ振動回数が増加"
+        },
+        {
+          "abilityID": 91671,
+          "simpleDesc": "ターン開始時、マッチ威力増加を自分の振動回数に比例して得る"
+        },
+        {
+          "abilityID": 91672,
+          "simpleDesc": "振動回数を消耗するスキルで敵を倒すか混乱させたなら、自分の振動回数が増加"
+        },
+        {
+          "abilityID": 91673,
+          "simpleDesc": "自分の振動回数を消耗するスキルのダメージ量増加"
+        }
+      ]
+    },
+    {
+      "id": 9168,
+      "name": "終末の破片",
+      "desc": "対象の[Burst]威力が15未満なら、[Burst]威力付与時に追加で1付与",
+      "simpleDesc": [
+        {
+          "abilityID": 9168,
+          "simpleDesc": "[Burst]威力付与時、追加で1付与"
+        }
+      ]
+    },
+    {
+      "id": 9170,
+      "name": "奇怪な石像",
+      "desc": "ステージ開始時、[Burst]威力または[Burst]回数を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする) \n[Burst]効果が敵の保有するバリアに与えるダメージ量 +100%\n対象の[Burst]威力が15未満の場合、[Burst]威力付与時に追加で2付与\n\nスキル効果によって[Burst]を付与できない場合、コイン威力 +1",
+      "simpleDesc": [
+        {
+          "abilityID": 9170,
+          "simpleDesc": "破裂効果がバリアに与えるダメージ量 +100%"
+        },
+        {
+          "abilityID": 91701,
+          "simpleDesc": "[Burst]威力付与時、追加で2付与"
+        },
+        {
+          "abilityID": 91702,
+          "simpleDesc": "スキル効果によって[Burst]を付与できない場合、コイン威力 +1"
+        }
+      ]
+    },
+    {
+      "id": 9171,
+      "name": "破綻",
+      "desc": "ステージ開始時、[Burst]威力または[Burst]回数を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする) \n\n[Burst]効果が敵の保有するバリアに与えるダメージ量 +150%\n\nターン開始時、[Burst]状態の敵または部位の攻撃レベルと防御レベルが(3 + [Burst]威力 ÷ 2)だけ減少。(最大6)\n\nスキル効果で[Burst]威力を付与するたび、対象に[Burst]威力2, [Burst]回数1を付与。対象の[Burst]威力が15未満なら、[Burst]威力付与時に追加で2付与。\n\nスキル効果により[Burst]を付与できない場合、コイン威力 +(4 ÷ コイン数)",
+      "simpleDesc": [
+        {
+          "abilityID": 9171,
+          "simpleDesc": "[Burst]効果がバリアに与えるダメージ量 +150%"
+        },
+        {
+          "abilityID": 91711,
+          "simpleDesc": "[Burst]が付与された敵の攻撃レベルと防御レベルが減少"
+        },
+        {
+          "abilityID": 91712,
+          "simpleDesc": "スキル効果で[Burst]威力を付与するたび、対象へ[Burst]威力2, [Burst]回数1を付与。"
+        },
+        {
+          "abilityID": 91713,
+          "simpleDesc": "スキル効果により[Burst]を付与できない場合、コイン威力 +(4 ÷ コイン数)"
+        }
+      ]
+    },
+    {
+      "id": 9172,
+      "name": "カンタービレ",
+      "desc": "基本攻撃スキル使用時に敵の[Sinking]威力が5以上なら、対象の([Sinking]威力 ÷ 10)だけ、自分の精神力を回復(最大3)",
+      "simpleDesc": [
+        {
+          "abilityID": 9172,
+          "simpleDesc": "対象の沈潜に比例して精神力が回復"
+        }
+      ]
+    },
+    {
+      "id": 9173,
+      "name": "色褪せた外套",
+      "desc": "ターン終了時に精神力が-45の敵が3名以上いるなら、次のターンに全味方が[AttackUp]2を得る",
+      "simpleDesc": [
+        {
+          "abilityID": 9173,
+          "simpleDesc": "全味方が[AttackUp]2を得る"
+        }
+      ]
+    },
+    {
+      "id": 9175,
+      "name": "サージィグローブ",
+      "desc": "ステージ開始時、[Sinking]威力、[Sinking]回数または特殊沈潜を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする) \n\n基本攻撃スキル使用時に敵の[Sinking]威力が5以上なら、対象の([Sinking]威力 ÷ 10)だけ、自分の精神力を回復(最大5)\n\nターン終了時に精神力が-45の敵の数だけ、次のターンに全味方が[AttackUp]を得る(最大3)",
+      "simpleDesc": [
+        {
+          "abilityID": 9175,
+          "simpleDesc": "対象の沈潜に比例して精神力が回復"
+        },
+        {
+          "abilityID": 91751,
+          "simpleDesc": "精神力が-45の敵の数だけ、全味方が[AttackUp]を得る"
+        }
+      ]
+    },
+    {
+      "id": 9176,
+      "name": "襲う波",
+      "desc": "ステージ開始時、[Sinking]威力、[Sinking]回数または特殊沈潜を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする) \n\n[Sinking]威力、[Sinking]回数または特殊沈潜を付与するスキルを使用して敵へ的中時、体力ダメージを与えたならターン終了時に対象へ[Sinking]威力4, [Sinking]回数3を付与(敵1名に対して1ターンにつき1回発動)\n\n基本攻撃スキル使用時に敵の[Sinking]威力が10以上なら、対象の([Sinking]威力 ÷ 10)だけ自分の精神力を回復し、対象に[DefenseDown]を付与(最大5. 敵1名に対して1ターンにつき1回発動)\n\nターン終了時に精神力が-45の敵の数だけ、次のターンに全味方が[AttackUp]を得る(最大6)\n\n今回の戦闘の間、[Sinking]威力、[Sinking]回数、または特殊沈潜を付与する攻撃スキルを3回使用した味方の[Sinking]威力付与値 +2(3回目に使用するスキルから効果適用)",
+      "simpleDesc": [
+        {
+          "abilityID": 9176,
+          "simpleDesc": "沈潜を付与するスキルで的中時、ターン終了時[Sinking]威力と[Sinking]を追加で付与"
+        },
+        {
+          "abilityID": 91761,
+          "simpleDesc": "対象の沈潜に比例して精神力が回復、[DefenseDown]を付与"
+        },
+        {
+          "abilityID": 91762,
+          "simpleDesc": "精神力が-45の敵の数だけ、全味方が[AttackUp]を得る"
+        },
+        {
+          "abilityID": 91763,
+          "simpleDesc": "沈潜威力付与値 +2"
+        }
+      ]
+    },
+    {
+      "id": 9178,
+      "name": "エンジェルズカット",
+      "desc": "ターン終了時、味方それぞれの呼吸威力が20を超過したなら、呼吸威力を1消耗して呼吸回数が1増加",
+      "simpleDesc": [
+        {
+          "abilityID": 9178,
+          "simpleDesc": "呼吸威力を1消耗、呼吸回数が1増加"
+        }
+      ]
+    },
+    {
+      "id": 9180,
+      "name": "カスク・スピリッツ",
+      "desc": "ステージ開始時、[Burst]威力または[Burst]回数を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする) \n\nスキル3が的中時、20を超過する自分の[Breath]威力を全て消耗して[Breath]回数を3得て、(消耗した[Breath]威力)%だけクリティカルダメージ量増加\n\nターン終了時、[Breath]威力が最も高い味方1名と[Breath]回数が最も高い味方1名に次のターンにて[Agility]2, [AttackUp]1を付与(同じ人格の場合でも重複可能)\n\nスキル効果で[Breath]威力を獲得するたび、該当キャラクターが[Breath]威力2, [Breath]回数2を得る。保有した[Breath]威力と回数の合計が20未満なら、得る値 +1",
+      "simpleDesc": [
+        {
+          "abilityID": 9180,
+          "simpleDesc": "20を超過する[Breath]威力を全て消耗して回数増加、消耗した威力だけクリティカルダメージ量が増加"
+        },
+        {
+          "abilityID": 91801,
+          "simpleDesc": "クイック2, 攻撃レベル増加1を付与"
+        },
+        {
+          "abilityID": 91802,
+          "simpleDesc": "スキル効果で[Breath]威力を獲得するたびに威力、回数を追加で得る"
+        }
+      ]
+    },
+    {
+      "id": 9181,
+      "name": "ミニチュア電信柱",
+      "desc": "自分の[Charge]回数を消耗するスキル攻撃終了時に対象が死亡した場合、(該当スキルで消耗した[Charge]回数 ÷ 4)だけ自分の[Charge]回数が増加",
+      "simpleDesc": [
+        {
+          "abilityID": 9181,
+          "simpleDesc": "消耗した[Charge]回数に比例して自分の[Charge]回数が増加"
+        }
+      ]
+    },
+    {
+      "id": 9183,
+      "name": "インシュレーター",
+      "desc": "ステージ開始時、[Charge]回数または特殊充電を得る攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする) \n\n自分の[Charge]回数を消耗するスキル攻撃終了時に対象が死亡した場合、(該当スキルで消耗した[Charge]回数 ÷ 2)だけ自分の[Charge]回数が増加\n\nターン終了時[Charge]回数が3未満の場合、次のターン開始時に[Charge]回数が3増加。ターン終了時に[Charge]回数が3以上なら、次のターン開始時に[AttackDmgUp]1を得る",
+      "simpleDesc": [
+        {
+          "abilityID": 9183,
+          "simpleDesc": "消耗した[Charge]回数に比例して自分の[Charge]回数が増加"
+        },
+        {
+          "abilityID": 91831,
+          "simpleDesc": "ターン終了時、[Charge]回数によって[Charge]回数または[AttackDmgUp]1を得る"
+        }
+      ]
+    },
+    {
+      "id": 9184,
+      "name": "第5種永久機関",
+      "desc": "ステージ開始時、[Charge]回数または特殊充電を得る攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする) \n\nステージ開始時、全味方の[Charge]回数が5増加。次のターンに[Agility]2を得る\n\n自分の[Charge]回数を消耗するスキル攻撃終了時に対象が死亡した場合、(該当スキルで消耗した[Charge]回数 ÷ 2)だけ自分の[Charge]回数が増加。次のターンに[Agility]、[AttackDmgUp]、[Enhancement]を([Charge]威力 - 1)だけ得る。(最大3, 味方ごとに1ターンにつき1回、特殊充電を除く)\n\n[Charge]威力が2以上なら、自分の[Charge]回数を消耗したスキル3の攻撃終了時、スキル3を1つスキルリストに追加する。(味方ごとに1ターンにつき1回発動、特殊充電を除く)",
+      "simpleDesc": [
+        {
+          "abilityID": 9184,
+          "simpleDesc": "全味方の[Charge]回数が5増加、次のターンに[Agility]2を得る"
+        },
+        {
+          "abilityID": 91841,
+          "simpleDesc": "消耗した[Charge]回数に比例して自分の[Charge]回数が増加。次のターンに[Agility]、[AttackDmgUp]、[Enhancement]を得る"
+        },
+        {
+          "abilityID": 91842,
+          "simpleDesc": "[Charge]回数を消耗したスキル3の攻撃終了時、スキル3を1つスキルリストに追加"
+        }
+      ]
+    }
+  ]
+}

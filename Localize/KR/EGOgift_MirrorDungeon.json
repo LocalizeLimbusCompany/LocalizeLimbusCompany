@@ -937,11 +937,11 @@
     {
       "id": 9040,
       "name": "내일의 운세",
-      "desc": "E.G.O 기프트 선택 창이 등장할 때, 선택할 수 있는 경우의 수 +1.",
+      "desc": "전투 보상 카드의 첫 번째 카드가 등장할 수 있는 가장 높은 등급으로 변경됨.",
       "simpleDesc": [
         {
           "abilityID": 9040,
-          "simpleDesc": "E.G.O 기프트 선택 가능 수 +1"
+          "simpleDesc": "전투 보상 카드의 첫 번째 카드가 등장할 수 있는 가장 높은 등급으로 변경"
         }
       ]
     },
@@ -1060,7 +1060,7 @@
     {
       "id": 29043,
       "name": "사원증++",
-      "desc": "분노 공명을 발동하였거나 [Charge] 횟수 횟수 또는 특수 충전을 획득하거나 부여하는 스킬을 사용할 경우, 다음 턴 시작 시 모든 아군이 <style=\"upgradeHighlight\">[Charge] 횟수 4 증가</style> (턴 당 1회 발동).",
+      "desc": "분노 공명을 발동하였거나 [Charge] 횟수 또는 특수 충전을 획득하거나 부여하는 스킬을 사용할 경우, 다음 턴 시작 시 모든 아군이 <style=\"upgradeHighlight\">[Charge] 횟수 4 증가</style> (턴 당 1회 발동).",
       "simpleDesc": [
         {
           "abilityID": 29043,
@@ -2217,11 +2217,11 @@
     {
       "id": 9080,
       "name": "생존의 이정표",
-      "desc": "다음 층으로 이동할 때, 모든 아군 인격이 최대 체력의 10%만큼 회복하고 코스트 100 획득.",
+      "desc": "층 보스 클리어 시, (80 + 해당 전투에 참여한 인격 수 x 5)만큼 코스트 추가로 획득 (전투 클리어 시 코스트 증가 효과는 적용되지 않음).",
       "simpleDesc": [
         {
           "abilityID": 9080,
-          "simpleDesc": "최대 체력의 10%만큼 회복, 코스트 100 획득"
+          "simpleDesc": "코스트 획득"
         }
       ]
     },
@@ -2353,15 +2353,19 @@
     {
       "id": 9088,
       "name": "진혼",
-      "desc": "스테이지 시작 시, [Combustion] 위력 또는 [Combustion] 횟수 또는 특수 화상을 부여하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n웨이브 첫 번째 턴 시작 시, 모든 적(환상체일 경우, 모든 부위)에게 [Combustion] 횟수 3을 부여하고 [Combustion] 위력 15를 무작위로 나누어 부여.\n\n[Combustion] 위력 또는 [Combustion] 횟수 또는 특수 화상을 부여하는 스킬의 최종 위력 +1, 코인 위력 +1, [Combustion] 위력 부여 값 +1, [Combustion] 횟수 부여 값 +1.",
+      "desc": "스테이지 시작 시, [Combustion] 위력, [Combustion] 횟수 또는 특수 화상을 부여하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n웨이브 첫 번째 턴 시작 시, 모든 적(환상체일 경우, 모든 부위)에게 [Combustion] 횟수 3을 부여하고 [Combustion] 위력 15를 무작위로 나누어 부여.\n\n[Combustion] 위력, [Combustion] 횟수 또는 특수 화상을 부여하는 스킬의 최종 위력 +1, 코인 위력 +1, [Combustion] 위력 부여 값 +1, [Combustion] 횟수 부여 값 +1.\n\n[Combustion] 위력, 횟수, 특수 화상을 부여하는 스킬로 합 승리 시, (남은 코인 수 + 1)만큼 대상 적에게 [Combustion] 위력을 부여",
       "simpleDesc": [
         {
           "abilityID": 9088,
-          "simpleDesc": "[Combustion] 횟수 3 부여, [Combustion] 위력 15를 무작위로 나누어 부여"
+          "simpleDesc": "[Combustion] 횟수 3 부여, [Combustion] 위력 15 무작위로 나누어 부여"
         },
         {
           "abilityID": 90881,
-          "simpleDesc": "스킬의 최종 위력 +1, 코인 위력 +1, [Combustion] 위력 부여 값 +1, [Combustion] 횟수 부여 값 +1"
+          "simpleDesc": "스킬 최종 위력 +1, 코인 위력 +1, [Combustion] 위력 부여 값 +1, [Combustion] 횟수 부여 값 +1"
+        },
+        {
+          "abilityID": 90882,
+          "simpleDesc": "(남은 코인 수 + 1)만큼 [Combustion] 부여"
         }
       ]
     },
@@ -2413,15 +2417,23 @@
     {
       "id": 9090,
       "name": "피안개",
-      "desc": "스테이지 시작 시, [Laceration] 위력 또는 [Laceration] 횟수 또는 특수 출혈을 부여하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n아군이 스킬 효과로 부여하는 [Laceration] 위력과 [Laceration] 횟수가 2배로 적용.\n\n[Laceration] 위력 또는 [Laceration] 횟수 또는 특수 출혈을 부여하는 스킬의 코인 위력+2, 피해량 +100%.",
+      "desc": "스테이지 시작 시, [Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n아군이 스킬 효과로 부여하는 [Laceration] 위력과 [Laceration] 횟수가 2배로 적용.\n\n속도가 가장 빠른 아군 1명의 [Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 스킬의 코인 위력 +2, 피해량 +100%. 해당 캐릭터가 공격하거나, 합을 진행한 적이 사망했으면, 사망한 적의 남은 [Laceration] 위력을 모든 적에게 무작위로 나눠서 부여. (집중 전투인 경우, 부위로 판정)\n\n[Laceration] 위력, 횟수 또는 특수 출혈을 부여하는 스킬의 코인 위력 +1",
       "simpleDesc": [
         {
           "abilityID": 9090,
-          "simpleDesc": "[Laceration] 위력과 [Laceration] 횟수가 2배로 적용"
+          "simpleDesc": "[Laceration] 위력, [Laceration] 횟수 2배로 적용"
         },
         {
           "abilityID": 90901,
-          "simpleDesc": "[Laceration] 위력을 부여하는 스킬의 코인 위력+2, 피해량 100% 증가"
+          "simpleDesc": "스킬 코인 위력+2, 피해량 100% 증가"
+        },
+        {
+          "abilityID": 90902,
+          "simpleDesc": "[Laceration] 위력, 횟수 또는 특수 출혈을 부여하는 스킬의 코인 위력 +1"
+        },
+        {
+          "abilityID": 90903,
+          "simpleDesc": "사망한 적의 남은 [Laceration] 위력을 모든 적에게 무작위로 나눠서 부여"
         }
       ]
     },
@@ -2461,7 +2473,7 @@
     {
       "id": 9092,
       "name": "연성진동",
-      "desc": "스테이지 시작 시, [Vibration] 위력 또는 [Vibration] 횟수를 부여하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n웨이브 첫 턴 시작 시, 적 전체(환상체일 경우, 모든 부위)에게 [Vibration] 5, [Vibration] 횟수 5 부여.\n\n[VibrationExplosion]이 적용된 적에게 이번 턴과 다음 턴에 [Vibration] 위력 5, [Vulnerable] 2 부여 (공격 스킬을 사용하여 진동 폭발 부여 시, 스킬 당 최대 1회).\n\n이번 턴에 대상에게 [VibrationExplosion]을 3회 부여하였을 경우, 다음 턴 시작 시 대상을 흐트러뜨리고 현재 체력 기준 66%, 33%에 새로운 흐트러짐 구간 추가. (전투 당 1회 발동).",
+      "desc": "스테이지 시작 시, [Vibration] 위력, [Vibration] 횟수 또는 특수 진동을 부여하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n웨이브 첫 턴 시작 시, 적 전체(환상체일 경우, 모든 부위)에게 [Vibration] 위력 5, [Vibration] 횟수 5 부여.\n\n[VibrationExplosion]이 적용된 적에게 이번 턴과 다음 턴에 [Vibration] 위력 5, [Vulnerable] 2 부여 (공격 스킬을 사용하여 [VibrationExplosion] 부여 시, 스킬 당 최대 1회).\n\n이번 턴에 대상에게 [VibrationExplosion]을 3회 부여하였을 경우, 다음 턴 시작 시 대상을 흐트러뜨리고 현재 체력 기준 66%, 33%에 새로운 흐트러짐 구간 추가 (전투 당 1회 발동).\n\n[Switch_Vibration], [FusionVibration] 시 [Vulnerable] 1 부여 (턴 당 최대 3회)",
       "simpleDesc": [
         {
           "abilityID": 9092,
@@ -2469,7 +2481,11 @@
         },
         {
           "abilityID": 90921,
-          "simpleDesc": "대상을 흐트러짐 상태로 만듦."
+          "simpleDesc": "대상을 흐트러짐 상태로 만듦"
+        },
+        {
+          "abilityID": 90922,
+          "simpleDesc": "[Vulnerable] 1 부여 "
         }
       ]
     },
@@ -2509,7 +2525,7 @@
     {
       "id": 9094,
       "name": "황홀경",
-      "desc": "스테이지 시작 시, [Burst] 위력 또는 [Burst] 횟수를 부여하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n스킬을 사용하여 적에게 적중 시, 대상에게 [Burst] 위력 5 부여.\n\n전투 중 적의 [Burst] 횟수가 1 아래로 떨어질 때, [Burst] 횟수 대신 [Burst] 위력 10을 소모 ([Burst] 위력이 10 미만이 될 경우, 효과 종료).",
+      "desc": "스테이지 시작 시, [Burst] 위력 또는 [Burst] 횟수를 부여하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n스킬을 사용하여 적에게 적중 시, 대상에게 [Burst] 위력 5 부여.\n\n전투 중 적의 [Burst] 횟수가 1 아래로 떨어질 때, [Burst] 횟수 대신 [Burst] 위력 10을 소모 ([Burst] 위력이 10 미만이 될 경우, 효과 종료).\n\n대상의 [Burst] 횟수가 3 미만이면, [Burst] 횟수를 부여할 때 부여량 +1 (전투 당 3회).",
       "simpleDesc": [
         {
           "abilityID": 9094,
@@ -2518,6 +2534,10 @@
         {
           "abilityID": 90941,
           "simpleDesc": "[Burst] 횟수 대신 [Burst] 위력 10 소모"
+        },
+        {
+          "abilityID": 90942,
+          "simpleDesc": "[Burst] 횟수 부여량 +1"
         }
       ]
     },
@@ -2557,7 +2577,7 @@
     {
       "id": 9096,
       "name": "검은 악보",
-      "desc": "스테이지 시작 시, [Sinking] 위력 [Sinking] 횟수 또는 특수 침잠을 부여하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n스킬을 사용하여 적에게 적중 시, 대상에게 [Sinking] 위력 5 부여.\n\n턴 시작 시, 모든 적(환상체일 경우, 모든 부위)들이 직전 턴에 피격을 받아 소모한 [Sinking] 횟수의 절반만큼 [Sinking] 횟수를 다시 얻음.",
+      "desc": "스테이지 시작 시, [Sinking] 위력, [Sinking] 횟수 또는 특수 침잠을 부여하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n스킬을 사용하여 적에게 적중 시, 대상에게 [Sinking] 위력 5 부여.\n\n턴 시작 시, 모든 적 또는 부위가 각자 직전 턴에 피격을 받아 소모한 [Sinking] 횟수의 절반만큼 [Sinking] 횟수를 다시 얻음.\n\n기본 스킬 적중 대상의 정신력이 0 미만일 경우 (정신력이 없을 경우, 우울 내성이 1.2 이상일 때), ([Sinking] 위력/10)만큼 우울 속성 피해를 입힘 (최소 대미지 1, 해당 효과는 턴 당 10회 발동 가능).",
       "simpleDesc": [
         {
           "abilityID": 9096,
@@ -2565,7 +2585,11 @@
         },
         {
           "abilityID": 90961,
-          "simpleDesc": "피격을 받아 소모한 [Sinking] 횟수 절반만큼 [Sinking] 횟수를 얻음"
+          "simpleDesc": "[Sinking] 횟수 얻음"
+        },
+        {
+          "abilityID": 90961,
+          "simpleDesc": "우울 속성 피해 입힘"
         }
       ]
     },
@@ -2617,7 +2641,7 @@
     {
       "id": 9098,
       "name": "복주머니",
-      "desc": "스테이지 시작 시, [Breath] 위력 또는 [Breath] 횟수를 부여 또는 획득하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n전투 시작 단계에서 [Breath] 상태인 무작위 아군이 스킬을 사용하여 적에게 치명타 피해를 입힐 경우, 다음 턴 시작 시 모든 아군이 [Breath] 위력 7 얻고 [Breath] 횟수 7 증가 (턴 당 1회 발동).\n\n[Breath] 위력 또는 [Breath] 횟수를 획득하는 인격이 사용하는 스킬 3의 최종 위력 +3, 코인 위력 +(12/코인 수), 피해량 +(50/코인 수)%.",
+      "desc": "스테이지 시작 시, [Breath] 위력 또는 [Breath] 횟수를 부여하거나 획득하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n전투 시작 단계에서 [Breath] 상태인 무작위 아군이 스킬을 사용하여 적에게 치명타 피해를 입힐 경우, 다음 턴 시작 시 모든 아군이 [Breath] 위력 7 얻고 [Breath] 횟수 7 증가 (턴 당 1회 발동).\n\n스킬을 사용(E.G.O 스킬 제외)하여 [Breath] 위력 또는 [Breath] 횟수를 부여하거나 획득하는 인격이 사용하는 스킬 3의 최종 위력 +3, 코인 위력 +(12/코인 수), 피해량 +(50/코인 수)%.\n\n전투 시작 시, 무작위 아군 하나가 [Breath] 위력 3 얻음 (공격 스킬을 사용하여 [Breath] 위력 또는 [Breath] 횟수를 부여하거나 획득하는 인격을 우선으로 지정). 우울 속성 공격 스킬을 보유한 아군에게 우선으로 적용되며, 이 경우에는 [Breath] 위력 3 얻고 [Breath] 횟수 2 증가.",
       "simpleDesc": [
         {
           "abilityID": 9098,
@@ -2626,6 +2650,10 @@
         {
           "abilityID": 90981,
           "simpleDesc": "최종 위력 +3, 코인 위력 +(12/코인 수), 피해량 +(50/코인 수)%"
+        },
+        {
+          "abilityID": 90982,
+          "simpleDesc": "[Breath] 위력 3 얻음. 우울 속성 공격 스킬 보유 시, [Breath] 횟수 2 추가로 증가"
         }
       ]
     },
@@ -2665,19 +2693,23 @@
     {
       "id": 9100,
       "name": "제 1종 영구기관",
-      "desc": "스테이지 시작 시, [Charge] 횟수 또는 특수 충전을 획득하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n웨이브 첫 턴 시작 시, 모든 아군이 [ChargeForceField] 7 얻음.\n\n턴 시작 시, 아군이 ([Charge] 횟수와 특수 충전의 합/5+1)만큼 [AttackDmgUp]를 얻음 (최대 9, 올림하여 처리).\n\n각 인격마다 (이번 전투 동안 공격 스킬을 사용하여 누적 소모한 [Charge] 횟수와 특수 충전의 합/4)만큼 다음 턴 시작 시, 공격 레벨 증가 1 얻음([Charge] 횟수 또는 특수 충전을 합하여 40 소모 시, 효과 최대).",
+      "desc": "스테이지 시작 시, [Charge] 횟수 또는 특수 충전을 획득하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n웨이브 첫 턴 시작 시, 모든 아군이 [ChargeForceField] 7 얻음.\n\n턴 종료 시, 모든 아군이 다음 턴에 [ChargeForceField] 3 얻음.\n\n턴 시작 시, 아군이 ([Charge] 횟수와 특수 충전의 합/5+1)만큼 [AttackDmgUp]를 얻음 (최대 5, 올림하여 처리).\n\n각 인격마다 [Charge] 횟수를 20 소모할 때마다 [Charge] 위력 1 얻음. (전투당 인격별로 2회, 특수 충전은 적용되지 않음)",
       "simpleDesc": [
         {
           "abilityID": 9100,
-          "simpleDesc": "[ChargeForceField] 7, [AttackDmgUp] 2 얻음."
+          "simpleDesc": "[ChargeForceField] 7 얻음"
         },
         {
           "abilityID": 91001,
-          "simpleDesc": "[AttackDmgUp]를 얻음"
+          "simpleDesc": "[ChargeForceField] 3 얻음"
         },
         {
           "abilityID": 91002,
-          "simpleDesc": "(소모한 [Charge] 횟수와 특수 충전 합/4)만큼 공격 레벨 증가 1 얻음"
+          "simpleDesc": "[AttackDmgUp] 얻음"
+        },
+        {
+          "abilityID": 91003,
+          "simpleDesc": "[Charge] 위력 1 얻음"
         }
       ]
     },
@@ -3125,11 +3157,11 @@
     {
       "id": 9118,
       "name": "뼈 말뚝",
-      "desc": "[Burst] 효과가 적이 보유한 보호막에 입히는 피해량이 2배로 증가.",
+      "desc": "[Burst] 효과가 적이 보유한 보호막에 입히는 피해량 +100%",
       "simpleDesc": [
         {
           "abilityID": 9118,
-          "simpleDesc": "[Burst] 효과가 적이 보유한 보호막에 입히는 피해량이 2배로 증가."
+          "simpleDesc": "[Burst] 효과가 적이 보유한 보호막에 입히는 피해량 +100%"
         }
       ]
     },
@@ -4287,566 +4319,6 @@
         }
       ]
     },
-
-    {
-      "id": 9403,
-      "name": "흑단 브로치",
-      "desc": "스테이지 첫 턴 시작 시, 모든 적에게 [Burst] 위력 2, [Burst] 횟수 2 부여.\n\n3턴 동안 턴 종료 시, 모든 적에게 다음 턴에 [Binding] 2 부여",
-      "simpleDesc": [
-        {
-          "abilityID": 9403,
-          "simpleDesc": "모든 적에게 [Burst] 위력 2, [Burst] 횟수 2 부여"
-        },
-        {
-          "abilityID": 94031,
-          "simpleDesc": "모든 적에게 [Binding] 2 부여"
-        }
-      ]
-    },
-    {
-      "id": 9404,
-      "name": "갇힌 구더기",
-      "desc": "적에게 탐식 속성 공격 스킬 사용 시, 대상에게 [Muckworm] 2 부여 (E.G.O 스킬 제외).\n\n[Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 스킬일 경우에는 효과가 강화되어 [Muckworm] 3 부여.",
-      "simpleDesc": [
-        {
-          "abilityID": 9404,
-          "simpleDesc": "[Muckworm] 2 부여"
-        },
-        {
-          "abilityID": 94041,
-          "simpleDesc": "[Muckworm] 3 부여"
-        }
-      ]
-    },
-    {
-      "id": 9407,
-      "name": "오더메이드",
-      "desc": "[편성 3번 인격 전용 효과]\n\n스테이지 시작 시, [Vibration] 횟수 3을 획득.\n\n턴 시작 시, [Protection] 1, [AttackDmgUp] 1, [ResultEnhancement] 1 얻음.",
-      "simpleDesc": [
-        {
-          "abilityID": 9407,
-          "simpleDesc": "[Vibration] 횟수 3을 획득"
-        },
-        {
-          "abilityID": 94071,
-          "simpleDesc": "[Protection] 1, [AttackDmgUp] 1, [ResultEnhancement] 1 얻음"
-        }
-      ]
-    },
-    {
-      "id": 9408,
-      "name": "귀신 들린 신발",
-      "desc": "[편성 2번 인격 전용 효과]\n\n스테이지 시작 시, [Sinking] 횟수 3을 획득.\n\n턴 시작 시, [Protection] 1, [AttackDmgUp] 1, [ResultEnhancement] 1 얻음.",
-      "simpleDesc": [
-        {
-          "abilityID": 9408,
-          "simpleDesc": "[Sinking] 횟수 3을 획득"
-        },
-        {
-          "abilityID": 94081,
-          "simpleDesc": "[Protection] 1, [AttackDmgUp] 1, [ResultEnhancement] 1 얻음"
-        }
-      ]
-    },
-    {
-      "id": 9409,
-      "name": "얼어붙은 아우성",
-      "desc": "턴 시작 시 속도가 제일 낮은 인격 하나에게 효과 적용.\n\n해당 아군이 합에서 승리하거나 적에게 피격 시, 적에게 [Sinking] 위력 3 부여.",
-      "simpleDesc": [
-        {
-          "abilityID": 9409,
-          "simpleDesc": "적에게 [Sinking] 위력 3 부여"
-        }
-      ]
-    },
-    {
-      "id": 9410,
-      "name": "서릿발 발자국",
-      "desc": "웨이브 첫 턴 시작 시 아군 전체가 [Sinking] 횟수 3을 획득하고 적 전체(환상체일 경우, 모든 부위)에게 [Sinking] 위력 4, [Sinking] 횟수 8 부여.\n\n[Sinking] 상태인 적의 합 위력이 2만큼 감소하고 효과를 받은 대상이 아군 인격에게 합 패배 시 [Sinking] 위력 2, 아군 인격에게 피해를 입힐 경우 [Sinking] 위력 3 부여.",
-      "simpleDesc": [
-        {
-          "abilityID": 9410,
-          "simpleDesc": "적 전체에게 [Sinking] 위력 4, [Sinking] 횟수 8 부여."
-        },
-        {
-          "abilityID": 94101,
-          "simpleDesc": "[Sinking] 상태인 적의 합 위력이 2만큼 감소"
-        }
-      ]
-    },
-    {
-      "id": 9413,
-      "name": "못과 망치의 책",
-      "desc": "아군이 [Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 스킬로 적과 합하여 승리 시, [NailPersonality] 1 ~ 2 부여.\n\nN사 광신도 소속일 경우, 턴 시작 시 광신 1 얻음.",
-      "simpleDesc": [
-        {
-          "abilityID": 9413,
-          "simpleDesc": "[NailPersonality] 1 ~ 2 부여"
-        },
-        {
-          "abilityID": 94131,
-          "simpleDesc": "N사 광신도 소속일 경우, 턴 시작 시 광신 1 얻음."
-        }
-      ]
-    },
-    {
-      "id": 9414,
-      "name": "핏빛 갈기",
-      "desc": "분노 또는 색욕 속성 공격 스킬을 보유한 모든 인격에게 효과 적용.\n\n턴 종료 시 이번 턴에 공격 스킬로 적에게 피해를 받지 않았다면, 다음 턴에 [Agility] 2, [Endurance] 2 얻음.\n\n턴 종료 시 이번 턴에 공격 스킬로 적에게 피해를 받았다면, 다음 턴에 [Binding] 2 얻고 합 위력 + 2.",
-      "simpleDesc": [
-        {
-          "abilityID": 9414,
-          "simpleDesc": "다음 턴에 [Agility] 2, [Endurance] 2 얻음"
-        },
-        {
-          "abilityID": 94141,
-          "simpleDesc": "다음 턴에 [Binding] 2 얻고 합 위력 + 2"
-        }
-      ]
-    },
-    {
-      "id": 9415,
-      "name": "불결함",
-      "desc": "아군이 [Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 스킬로 [Laceration] 상태인 적을 공격할 경우, 대상에게 입히는 피해량 +15%.\n\n적의 체력이 최대 체력의 33% 이하인 경우, 효과가 강화되어 입히는 피해량 +25%.",
-      "simpleDesc": [
-        {
-          "abilityID": 9415,
-          "simpleDesc": "입히는 피해량 +15%"
-        },
-        {
-          "abilityID": 94151,
-          "simpleDesc": "입히는 피해량 +25%"
-        }
-      ]
-    },
-    {
-      "id": 9416,
-      "name": "완전함",
-        "desc": "아군이 [Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 스킬로 적과 합하여 승리 시, [NailPersonality] 2 ~ 3 부여.\n\nN사 광신도 소속일 경우, 턴 시작 시 광신 1 얻고 [Laceration] 상태인 적을 공격할 때 피해량 +25%\n\n스테이지 시작 시 N사 광신도 소속 인격이 5인 이상일 때 특수 효과 발동 (출격 인원을 기준으로 함). N사 광신도 소속 인격의 최종 위력 +1, 더하기 코인 위력 +1, 빼기 코인 위력 -1, 공격 스킬의 [NailPersonality] 부여량 +1. 턴 시작 시 N사 광신도 소속 인격의 정신력이 최대일 경우, [AttackDmgUp] 3 얻음.",
-      "simpleDesc": [
-        {
-          "abilityID": 9416,
-            "simpleDesc": "합 승리 시, [NailPersonality] 2 ~ 3 부여"
-        },
-        {
-          "abilityID": 94161,
-          "simpleDesc": "N사 광신도 소속일 경우, 적을 공격할 때 피해량 +25%"
-        },
-        {
-          "abilityID": 94162,
-          "simpleDesc": "N사 광신도 소속 인격이 5인 이상일 때 특수 효과 발동"
-        }
-      ]
-    },
-    {
-      "id": 9419,
-      "name": "생강꽃 가지",
-      "desc": "이번 전투 동안 스킬 1, 스킬 2, 스킬 3을 전부 한 번씩 사용할 때마다 다음 턴에 효과 발동.\n\n턴 시작 시, [Agility] 1, [SkillPowerUp] 1 얻음 (최대 3회까지 누적).",
-      "simpleDesc": [
-        {
-          "abilityID": 9419,
-          "simpleDesc": "턴 시작 시, [Agility] 1, [SkillPowerUp] 1 얻음"
-        }
-      ]
-    },
-    {
-      "id": 9420,
-      "name": "만화경",
-      "desc": "턴 시작 시 자신과 동일한 소속 인격이 존재할 경우, 자신을 제외한 동일한 소속 인격 수만큼 [AttackUp]를 얻음 (최대 4).\n\n기술해방연합 소속의 인격의 합 위력 +1.",
-      "simpleDesc": [
-        {
-          "abilityID": 9420,
-          "simpleDesc": "[AttackUp]를 얻음"
-        },
-        {
-          "abilityID": 94201,
-          "simpleDesc": "합 위력 +1"
-        }
-      ]
-    },
-    {
-      "id": 9423,
-      "name": "깨진 안경",
-      "desc": "아군이 자신보다 속도가 높은 적과 합을 진행할 때, 합 위력 +1.\n\n아군이 자신보다 속도가 높은 적과 합을 진행하여 합 승리 시, 다음 턴에 [AttackUp] 2 얻음 (최대 4).",
-      "simpleDesc": [
-        {
-          "abilityID": 9423,
-          "simpleDesc": "합 위력 +1"
-        },
-        {
-          "abilityID": 94231,
-          "simpleDesc": "다음 턴에 [AttackUp] 2 얻음"
-        }
-      ]
-    },
-    {
-      "id": 9424,
-      "name": "부치지 못한 편지",
-      "desc": "[편성 1번, 2번 인격 전용 효과]\n\n[Burst] 위력 또는 [Burst] 횟수를 부여하는 공격 스킬을 사용하여 합 승리 시, 대상 적에게 [Burst] 위력 5, [Burst] 횟수 3 부여 (인격 별로 턴 당 1회).\n\n자신보다 속도가 낮은 적과 합을 진행할 때, 최종 위력 +1, 피해량 +25%.\n\n[AttackUp] 버프를 보유한 적과 합하여 승리 시, 다음 턴 동안 자신은 [AttackUp] 3을 얻고 합에서 패배한 적에게는 [AttackDown] 3 부여 (증가, 감소 최대 9)",
-      "simpleDesc": [
-        {
-          "abilityID": 9424,
-          "simpleDesc": "합 승리 시, 대상 적에게 [Burst] 위력 5, [Burst] 횟수 3 부여"
-        },
-        {
-          "abilityID": 94241,
-          "simpleDesc": "최종 위력 +1, 피해량 +25%."
-        },
-        {
-          "abilityID": 94242,
-          "simpleDesc": "합에서 패배한 적에게는 [AttackDown] 3 부여"
-        }
-      ]
-    },
-    {
-      "id": 9429,
-      "name": "작살 의족",
-      "desc": "턴 종료 시 [Breath] 위력과 [Breath] 횟수의 합이 가장 높은 아군 하나에게 다음 턴에 [Agility] 2, [AttackUp] 2, [AttackDmgUp] 2 부여.\n\n피쿼드호 소속 인격의 최대 속도값 +1.",
-      "simpleDesc": [
-        {
-          "abilityID": 9429,
-          "simpleDesc": "다음 턴에 [Agility] 2, [AttackUp] 2, [AttackDmgUp] 2 부여"
-        },
-        {
-          "abilityID": 94291,
-          "simpleDesc": "피쿼드호 소속 인격의 최대 속도값 +1."
-        }
-      ]
-    },
-    {
-      "id": 9430,
-      "name": "앞을 비추는 가스등",
-      "desc": "웨이브 첫 턴 시작 시, 모든 아군이 [Breath] 5 얻고 [Breath] 횟수 5 증가.\n\n턴 종료 시 [Breath] 위력과 [Breath] 횟수의 합이 가장 높은 아군 하나에게 다음 턴에 [Agility] 2, [AttackUp] 3, [AttackDmgUp] 3 부여.\n\n피쿼드호 소속 인격의 스킬 위력 +2, 최대 속도값 +2.",
-      "simpleDesc": [
-        {
-          "abilityID": 9430,
-          "simpleDesc": "모든 아군이 [Breath] 5 얻고 [Breath] 횟수 5 증가."
-        },
-        {
-          "abilityID": 94301,
-          "simpleDesc": "다음 턴에 [Agility] 2, [AttackUp] 3, [AttackDmgUp] 3 부여."
-        },
-        {
-          "abilityID": 94302,
-          "simpleDesc": "스킬 위력 +2, 최대 속도값 +2."
-        }
-      ]
-    },
-    {
-      "id": 9433,
-      "name": "치프 버틀러의 비급서",
-      "desc": "웨이브 첫 턴 시작 시, 속도가 제일 낮은 적 하나(환상체일 경우, 무작위 부위 하나)를 선택하여 다음 턴부터 5턴 동안 [Binding] 5를 부여.\n\n합 승리 시 대상보다 속도가 높을 경우, 대상과의 속도 차이만큼 정신력을 회복하고 그 수치의 절반만큼 공격 레벨이 증가 (해당 스킬에만 적용되며, 공격 레벨 증가량 최대 3).",
-      "simpleDesc": [
-        {
-          "abilityID": 9433,
-          "simpleDesc": "다음 턴부터 5턴 동안 [Binding] 5를 부여"
-        },
-        {
-          "abilityID": 94331,
-          "simpleDesc": "정신력을 회복하고 그 수치의 절반만큼 공격 레벨이 증가"
-        }
-      ]
-    },
-    {
-      "id": 9434,
-      "name": "손거울",
-      "desc": "웨이브 첫 턴 시작 시, 속도가 제일 낮은 적 둘(환상체일 경우 무작위 부위 둘, 적이 단일 대상일 경우 효과가 중첩되지 않음)를 선택하여 다음 턴부터 턴 시작 시 [Binding] 5, [DefenseDown] 3을 부여.\n\n적이 흐트러짐에서 풀려날 때, 보유한 흐트러짐 구간이 없다면 대상의 현재 체력 기준 66%에 새로운 흐트러짐 구간 추가 (전투 당 3회).아군이 [Vibration] 위력 또는 [Vibration] 횟수를 부여하는 공격 스킬(본인 또는 아군을 대상으로 하는 경우 포함)로 적을 흐트러뜨릴 경우 (E.G.O 스킬 제외), 다음 턴에 대상이 보유한 [Vibration] 위력의 절반만큼 다른 무작위 적들(환상체일 경우, 부위)에게 [Vibration] 위력을 나누어 부여하고 흐트러진 대상은 보유한 [Vibration] 위력이 2배로 증가.",
-      "simpleDesc": [
-        {
-          "abilityID": 9433,
-          "simpleDesc": "턴 시작 시 속박 5, 방어 레벨 감소 3을 부여."
-        },
-        {
-          "abilityID": 94331,
-          "simpleDesc": "현재 체력 기준 66%에 새로운 흐트러짐 구간 추가"
-        },
-        {
-          "abilityID": 94332,
-          "simpleDesc": "흐트러진 대상은 보유한 진동 위력이 1.5배로 증가"
-        }
-      ]
-    },
-
-    {
-      "id": 9701,
-      "name": "뜨거운 육즙 다리살",
-      "desc": "스킬로 [Combustion] 부여 시 [Combustion] 횟수 3 증가",
-      "simpleDesc": [
-        {
-          "abilityID": 9701,
-          "simpleDesc": "스킬로 [Combustion] 부여 시 [Combustion] 횟수 3 증가"
-        }
-      ]
-    },
-    {
-      "id": 9702,
-      "name": "목이 뻑뻑 가슴살",
-      "desc": "스킬로 [Burst] 부여 시 [Burst] 횟수 3 증가",
-      "simpleDesc": [
-        {
-          "abilityID": 9702,
-          "simpleDesc": "스킬로 [Burst] 부여 시 [Burst] 횟수 3 증가"
-        }
-      ]
-    },
-    {
-      "id": 9703,
-      "name": "탱고 닭양념장",
-      "desc": "대상보다 속도가 높다면, 합 위력 (속도/3)만큼 추가 (최대 3).",
-      "simpleDesc": [
-        {
-          "abilityID": 9703,
-          "simpleDesc": "합 위력 (속도/3)만큼 추가"
-        }
-      ]
-    },
-    {
-      "id": 9704,
-      "name": "오염된 실과 바늘",
-      "desc": "매 턴마다 처음으로 적에게 피해를 입힌 스킬에 적용.\n\n(피해량/3)만큼 [Laceration] 위력을 부여.",
-      "simpleDesc": [
-        {
-          "abilityID": 9704,
-          "simpleDesc": "(피해량/3)만큼 [Laceration] 위력을 부여"
-        }
-      ]
-    },
-    {
-      "id": 9705,
-      "name": "날카로운 실과 바늘",
-      "desc": "매 턴마다 처음으로 적에게 피해를 입힌 스킬의 (피해량/2)만큼 추가 고정 피해를 입힘.",
-      "simpleDesc": [
-        {
-          "abilityID": 9705,
-          "simpleDesc": "(피해량/2)만큼 추가 고정 피해를 입힘"
-        }
-      ]
-    },
-    {
-      "id": 9706,
-      "name": "기름때 찌든 스패너",
-      "desc": "타격 스킬의 피해량 +10%\n\n타격 스킬 마지막 코인 적중 시, 적에게 [Vibration] 위력 2 부여. (턴당 1회)",
-      "simpleDesc": [
-        {
-          "abilityID": 9706,
-          "simpleDesc": "타격 스킬의 피해량 +10%"
-        },
-        {
-          "abilityID": 97061,
-          "simpleDesc": "적에게 [Vibration] 위력 2 부여."
-        }
-      ]
-    },
-    {
-      "id": 9707,
-      "name": "반짝이는 폐품",
-      "desc": "보호막을 보유한 아군이 적에게 피격 시, 고정 피해 3을 반사하여 입힘. (보호막 피해를 입지 않은 경우에는 반사하지 않음)",
-      "simpleDesc": [
-        {
-          "abilityID": 9707,
-          "simpleDesc": "고정 피해 3을 반사하여 입힘"
-        }
-      ]
-    },
-    {
-      "id": 9708,
-      "name": "크랲게 뇌수 담금주",
-      "desc": "아군이 [Burst] 위력 또는 [Burst] 횟수를 부여하는 스킬로 [Burst] 상태인 적을 공격할 때, 대상의 [Burst] 횟수에 비례하여 입히는 피해량 +(대상의 [Burst] 횟수x1.25, 최대 50)%.\n\n아군이 흐트러짐 상태에서 풀려날 때 최대 체력의 20%만큼 체력을 회복 (전투당 2회).",
-      "simpleDesc": [
-        {
-          "abilityID": 9708,
-          "simpleDesc": "대상의 [Burst] 횟수에 비례하여 입히는 피해량 +(대상의 [Burst] 횟수x1.25, 최대 50)%"
-        },
-        {
-          "abilityID": 97081,
-          "simpleDesc": "최대 체력의 20%만큼 체력을 회복"
-        }
-      ]
-    },
-    {
-      "id": 9709,
-      "name": "털방울 모자",
-      "desc": "아군이 턴 종료 시 피해를 입힌 공격 스킬 수에 비례하여 다음 턴에 [Breath] 위력 1 획득.\n\n집중 전투 방식의 전투 스테이지에서는 효과가 강화되어 [Breath] 위력 3 획득.",
-      "simpleDesc": [
-        {
-          "abilityID": 9709,
-          "simpleDesc": "[Breath] 위력 1 획득"
-        },
-        {
-          "abilityID": 97091,
-          "simpleDesc": "[Breath] 위력 3 획득"
-        }
-      ]
-    },
-    {
-      "id": 9710,
-      "name": "거대한 선물 보따리",
-      "desc": "턴 시작 시, 체력이 가장 낮은 아군에게 [Breath] 2, [Breath] 횟수 2, [Protection] 2 부여.",
-      "simpleDesc": [
-        {
-          "abilityID": 9710,
-          "simpleDesc": "[Breath] 2, [Breath] 횟수 2, [Protection] 2 부여"
-        }
-      ]
-    },
-    {
-      "id": 9711,
-      "name": "슬픈 봉제인형",
-      "desc": "아군이 본인의 정신력에 비례하여 적에게 입히는 피해량 +(정신력 절댓값/1.5, 최소 0)%\n\n더하기 코인 스킬을 보유한 아군이 흐트러짐 상태에서 풀려날 때 정신력 최대로 회복 (침식 상태일 경우에는 발동하지 않음).\n\n모든 스킬이 빼기 코인 스킬인 아군의 경우에는 턴 시작 시 [Paralysis] 3 얻음.",
-      "simpleDesc": [
-        {
-          "abilityID": 9711,
-          "simpleDesc": "입히는 피해량 +(정신력 절댓값/1.5, 최소 0)%"
-        },
-        {
-          "abilityID": 97111,
-          "simpleDesc": "흐트러짐 상태에서 풀려날 때 정신력 최대로 회복"
-        },
-        {
-          "abilityID": 97112,
-          "simpleDesc": "턴 시작 시 [Paralysis] 3 얻음"
-        }
-      ]
-    },
-    {
-      "id": 9712,
-      "name": "검은 장부",
-      "desc": "스테이지 첫 턴 시작 시, 등장한 적의 수만큼 무작위 E.G.O 자원을 획득.\n\n전투에 참여한 인격 중 검계 또는 흑운회 소속이 4인 이상일 경우 (출격 인원을 기준으로 함) 효과가 강화되어, 무작위가 아닌 제일 적게 보유한 E.G.O 자원을 획득.",
-      "simpleDesc": [
-        {
-          "abilityID": 9712,
-          "simpleDesc": "무작위 E.G.O 자원 획득"
-        },
-        {
-          "abilityID": 97121,
-          "simpleDesc": "제일 적게 보유한 E.G.O 자원 획득"
-        }
-      ]
-    },
-    {
-      "id": 9713,
-      "name": "녹슨 칼자루",
-      "desc": "아군이 턴 시작 시 참격 위력 증가 1 얻음.\n\n검계 또는 흑운회 소속일 경우 효과가 강화되어 참격 위력 증가 2 얻음.",
-      "simpleDesc": [
-        {
-          "abilityID": 9713,
-          "simpleDesc": "참격 위력 증가 1 얻음"
-        },
-        {
-          "abilityID": 97131,
-          "simpleDesc": "참격 위력 증가 2 얻음"
-        }
-      ]
-    },
-    {
-      "id": 9714,
-      "name": "조각난 칼날",
-      "desc": "이번 전투 동안 공격 스킬 효과로 적에게 [Laceration] 위력 또는 특수 출혈을 처음으로 부여할 경우, [Laceration] 횟수 2 추가로 부여 (전투 당 1회).\n\n흑운회 소속일 경우 효과가 강화되어 적에게 처음으로 피해를 주었을 경우, [Laceration] 위력 4, [Laceration] 횟수 4 추가로 부여.",
-      "simpleDesc": [
-        {
-          "abilityID": 9714,
-          "simpleDesc": "[Laceration] 횟수 2 추가로 부여"
-        },
-        {
-          "abilityID": 97141,
-          "simpleDesc": "[Laceration] 위력 4, [Laceration] 횟수 4 추가로 부여"
-        }
-      ]
-    },
-    {
-      "id": 9715,
-      "name": "부서진 칼날",
-      "desc": "아군이 적에게 치명타 피해를 입힐 때, 보유한 ([Breath] 위력/3)만큼 추가 오만 피해를 입힘.\n\n검계 소속일 경우 효과가 강화되어, 보유한 ([Breath] 위력/2)만큼 추가 오만 피해를 입힘.",
-      "simpleDesc": [
-        {
-          "abilityID": 9715,
-          "simpleDesc": "([Breath] 위력/3)만큼 추가 오만 피해"
-        },
-        {
-          "abilityID": 97151,
-          "simpleDesc": "([Breath] 위력/2)만큼 추가 오만 피해"
-        }
-      ]
-    },
-    {
-      "id": 9716,
-      "name": "붉은 색술",
-      "desc": "적의 참격 내성이 1.5 이하인 경우, 참격 내성 +0.3.",
-      "simpleDesc": [
-        {
-          "abilityID": 9716,
-          "simpleDesc": "참격 내성 +0.3"
-        }
-      ]
-    },
-    {
-      "id": 9717,
-      "name": "장관",
-      "desc": "스테이지 시작 시, 흑운회 소속 인격이 3인 이상일 때 발동 (출격 인원을 기준으로 함).\n\n아군이 턴 시작 시 참격 위력 증가 2 얻음, 가하는 참격 피해량 +35%.\n\n흑운회 소속 인격이 턴 시작 시 대상에게 처음으로 피해를 주었을 경우, [Laceration] 위력 4, [Laceration] 횟수 4 추가로 부여 (턴 당 1회).",
-      "simpleDesc": [
-        {
-          "abilityID": 9717,
-          "simpleDesc": "참격 위력 증가 2 얻음, 가하는 참격 피해량 +35%"
-        },
-        {
-          "abilityID": 97171,
-          "simpleDesc": "[Laceration] 위력 4, [Laceration] 횟수 4 추가로 부여"
-        }
-      ]
-    },
-    {
-      "id": 9718,
-      "name": "부동",
-      "desc": "스테이지 시작 시, 검계 소속 인격이 3인 이상일 때 발동 (출격 인원을 기준으로 함).\n\n아군이 턴 시작 시 참격 위력 증가 2 얻음, 가하는 참격 피해량 +35%.\n\n검계 소속 인격이 적에게 치명타 피해를 입힐 때, 보유한 [Breath] 위력만큼 추가 오만 피해를 입힘.",
-      "simpleDesc": [
-        {
-          "abilityID": 9718,
-          "simpleDesc": "참격 위력 증가 2 얻음, 가하는 참격 피해량 +35%"
-        },
-        {
-          "abilityID": 97181,
-          "simpleDesc": "[Breath] 위력만큼 추가 오만 피해"
-        }
-      ]
-    },
-    {
-      "id": 9719,
-      "name": "해진 삿갓",
-      "desc": "스테이지 시작 시, 검계 소속 인격이 3인 이상일 때 발동 (출격 인원을 기준으로 함).\n\n아군이 가하는 참격 피해량 +50%\n\n검계 소속일 경우, [Breath] 상태일 때 치명타 발동 확률이 100%로 고정됨.\n\n검계 소속일 경우 효과가 강화되어 치명타로 가하는 피해량이 1.5배 증가",
-      "simpleDesc": [
-        {
-          "abilityID": 9719,
-          "simpleDesc": "가하는 참격 피해량 +50%"
-        },
-        {
-          "abilityID": 97191,
-          "simpleDesc": "치명타 발동 확률 100%로 고정"
-        },
-        {
-          "abilityID": 97192,
-          "simpleDesc": "치명타로 가하는 피해량이 1.5배 증가"
-        }
-      ]
-    },
-    {
-      "id": 9720,
-      "name": "낡은 도포",
-      "desc": "스테이지 시작 시, 검계 소속 인격이 3인 이상일 때 발동 (출격 인원을 기준으로 함).\n\n아군이 가하는 참격 피해량 +50%\n\n검계 소속일 경우 스킬 1의 코인 위력 +1, 해당 스킬이 단일 코인인 경우에는 코인 위력 +3.\n\n[검계 우두머리 뫼르소 전용 효과] '육참' 스킬 합 최종 위력 -12, '골단' 스킬의 가하는 피해량 +50%.",
-      "simpleDesc": [
-        {
-          "abilityID": 9720,
-          "simpleDesc": "가하는 참격 피해량 +50%"
-        },
-        {
-          "abilityID": 97201,
-          "simpleDesc": "스킬 1 코인 위력 증가"
-        },
-        {
-          "abilityID": 97202,
-          "simpleDesc": "'육참' 스킬 합 최종 위력 -12,'골단' 스킬의 가하는 피해량 +50%"
-        }
-      ]
-    },
     {
       "id": 19086,
       "name": "잔향+",
@@ -4910,191 +4382,300 @@
 
 
     {
-      "id": 9721,
-      "name": "은빛 시계 케이스",
-      "desc": "[Vibration] 위력 또는 [Vibration] 횟수 또는 특수 진동을 부여하는 공격 스킬(E.G.O 스킬 제외)로 적에게 피해를 입힐 때, 가하는 피해량 +10%.\n\n해당 스킬로 적에게 이번 턴 동안 처음으로 [VibrationExplosion]을 적용하였다면, 다음 턴에 [Vibration] 횟수 2 부여 (턴 당 1회).",
+      "id": 9155,
+      "name": "만년 동안 끓는 솥",
+      "desc": "[Combustion] 위력, [Combustion] 횟수 또는 특수 화상을 부여하는 스킬의 합 위력 +1.",
       "simpleDesc": [
         {
-          "abilityID": 9721,
-          "simpleDesc": "가하는 피해량 +10%"
-        },
-        {
-          "abilityID": 97211,
-          "simpleDesc": "다음 턴에 [Vibration] 횟수 2 부여"
-        }
-      ]
-    },
-    {
-      "id": 9722,
-      "name": "빛바랜 시계 케이스",
-      "desc": "자신보다 속도가 높은 적과 합을 진행할 때, 합 위력 +1.\n\n자신보다 속도가 높은 적에게 피해를 가할 때, 다음 턴에 대상에게 [Vibration] 위력 3, [Vibration] 횟수 2 부여 (턴 당 1회).",
-      "simpleDesc": [
-        {
-          "abilityID": 9722,
+          "abilityID": 9155,
           "simpleDesc": "합 위력 +1"
-        },
-        {
-          "abilityID": 97221,
-          "simpleDesc": "다음 턴에 [Vibration] 위력 3, [Vibration] 횟수 2 부여"
         }
       ]
     },
     {
-      "id": 9723,
-      "name": "경고장",
-      "desc": "턴 종료 시, 속도가 제일 빠른 적 1명에게 다음 턴에 [Binding] 1 부여 (환상체일 경우, 부위 하나).\n\n대상이 [Vibration] 또는 특수 진동을 보유한 경우, 효과가 강화되어 [Binding] 2 부여.\n\n아군이 [Binding]을 보유한 대상을 공격할 때, 가하는 피해량 +(5 + [[Binding] 수치x2.5])% (최대 15%).",
+      "id": 9157,
+      "name": "요리 비법 전서",
+      "desc": "스테이지 시작 시, [Combustion] 위력, [Combustion] 횟수 또는 특수 화상을 부여하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n[Combustion] 위력, [Combustion] 횟수 또는 특수 화상을 부여하는 스킬의 최종 위력 +1\n\n[Combustion] 위력, 횟수, 특수 화상을 부여하는 스킬로 합 승리 시, (남은 코인 수/2+1)만큼 대상 적에게 [Combustion] 위력을 부여",
       "simpleDesc": [
         {
-          "abilityID": 9723,
-          "simpleDesc": "다음 턴에 [Binding] 1 부여"
+          "abilityID": 9157,
+          "simpleDesc": "스킬 최종 위력 +1"
         },
         {
-          "abilityID": 97231,
-          "simpleDesc": "가하는 피해량 +(5 + [[Binding] 수치x2.5])%"
+          "abilityID": 91571,
+          "simpleDesc": "(남은 코인 수/2+1)만큼 [Combustion] 위력 부여"
         }
       ]
     },
     {
-      "id": 9724,
-      "name": "에칭 시계침",
-      "desc": "웨이브 첫 턴 시작 시, 속도가 제일 낮은 적 3명에게 (9-현재 속도)만큼 [Vibration] 위력 부여 (최소 3).\n\n턴 시작 시 [Vibration] 또는 특수 진동을 12 이상 보유한 적을 대상으로 가하는 피해량 +10%.",
+      "id": 9159,
+      "name": "밀라르카",
+      "desc": "[Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 스킬의 합 위력 +1.",
       "simpleDesc": [
         {
-          "abilityID": 9724,
-          "simpleDesc": "(9-현재 속도)만큼 [Vibration] 위력 부여"
-        },
-        {
-          "abilityID": 97241,
-          "simpleDesc": "가하는 피해량 +10%."
+          "abilityID": 9159,
+          "simpleDesc": "합 위력 +1"
         }
       ]
     },
     {
-      "id": 9725,
-      "name": "녹슨 시계침",
-      "desc": "웨이브 첫 턴 시작 시, 속도가 제일 높은 적 1명에게 (9-현재 속도)만큼 [Vibration] 위력(최소 3)과 그 수치의 절반만큼 [Vibration] 횟수를 부여(올림하여 처리, 환상체일 경우 부위 하나).\n\n턴 시작 시 [Vibration] 또는 특수 진동을 12 이상 보유한 적에게 받는 피해량 -10%.",
+      "id": 9161,
+      "name": "치성",
+      "desc": "스테이지 시작 시, [Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n속도가 가장 빠른 아군 1명의 [Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 스킬의 코인 위력 +1, 피해량 +50%\n\n[Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 스킬의 최종 위력 +1.",
       "simpleDesc": [
         {
-          "abilityID": 9725,
-          "simpleDesc": "(9-현재 속도)만큼 [Vibration] 위력과 그 수치의 절반만큼 [Vibration] 횟수 부여"
+          "abilityID": 9161,
+          "simpleDesc": "코인 위력 +1, 피해량 +50%"
         },
         {
-          "abilityID": 97251,
-          "simpleDesc": "받는 피해량 -10%."
+          "abilityID": 91611,
+          "simpleDesc": "[Laceration] 위력, 횟수 또는 특수 출혈을 부여하는 스킬의 최종 위력 +1"
         }
       ]
     },
     {
-      "id": 9726,
-      "name": "낙수의 잔",
-      "desc": "[Vibration] 위력 또는 [Vibration] 횟수 또는 특수 진동을 부여하는 공격 스킬(E.G.O 스킬 제외)을 보유한 아군이 적과 합하여 승리 시, [Vibration] 위력 2, [Vibration] 횟수 2 부여 (턴 당 2회).\n\n유로지비 소속 인격일 경우 효과가 강화되어, [Vibration] 위력 3, [Vibration] 횟수 3 부여 (턴 당 3회)\n\n해당 인격이 자신보다 공격 레벨이 높은 적과 합 진행 시 합 위력 +2, 합하여 승리 시 가하는 피해량 +20%.",
+      "id": 9165,
+      "name": "감합된 톱니바퀴",
+      "desc": "스테이지 시작 시, [Vibration] 위력, [Vibration] 횟수 또는 특수 진동을 부여하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n이번 턴에 대상에게 [VibrationExplosion]을 6회 부여하였을 경우, 대상의 현재 체력 기준 0%에 새로운 흐트러짐 구간 추가 (전투 당 1회 발동).\n\n[Switch_Vibration], [FusionVibration] 시 [Vulnerable] 1 부여 (턴 당 최대 1회)",
       "simpleDesc": [
         {
-          "abilityID": 9726,
-          "simpleDesc": "[Vibration] 위력 2, [Vibration] 횟수 2 부여"
+          "abilityID": 9165,
+          "simpleDesc": "흐트러짐 구간 추가"
         },
         {
-          "abilityID": 97261,
-          "simpleDesc": "[Vibration] 위력 3, [Vibration] 횟수 3 부여"
-        },
-        {
-          "abilityID": 97262,
-          "simpleDesc": "합 위력+2, 가하는 피해량 +20%"
+          "abilityID": 91651,
+          "simpleDesc": "[Vulnerable] 1 부여"
         }
       ]
     },
     {
-      "id": 9727,
-      "name": "선불 시간 영수증",
-      "desc": "자신보다 속도가 2 이상 높은 적에게 가하는 피해량 +(5 + 속도 차이x2.5)% (최대 15%).\n\n턴 종료 시 이번 턴 동안 자신보다 속도가 2 이상 높은 적에게 공격 스킬(E.G.O 스킬 제외)을 사용하여 한 번이라도 피해를 입혔다면, 다음 턴에 대상에게 [Binding] 2, [ResultReduction] 1을 부여 (턴 당 1회).",
+      "id": 9169,
+      "name": "가시오랏줄",
+      "desc": "스테이지 시작 시, [Burst] 위력 또는 [Burst] 횟수를 부여하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n전투 중 적의 [Burst] 횟수가 1 아래로 떨어질 때, [Burst] 횟수 대신 [Burst] 위력 20을 소모 ([Burst]이 20 미만이 될 경우, 효과 종료)\n\n전투 중 적중 시 적의 [Burst] 횟수가 1인 경우, [Burst] 횟수를 부여할 때 부여량 +1 (전투 당 2회)",
       "simpleDesc": [
         {
-          "abilityID": 9727,
-          "simpleDesc": "가하는 피해량 +(5 + 속도 차이x2.5)%"
+          "abilityID": 9169,
+          "simpleDesc": "파열 횟수 대신 파열 위력 소모"
         },
         {
-          "abilityID": 97271,
-          "simpleDesc": "다음 턴에 [Binding] 2, [ResultReduction] 1을 부여"
+          "abilityID": 91691,
+          "simpleDesc": "파열 횟수 부여량 +1"
         }
       ]
     },
     {
-      "id": 9728,
-      "name": "회중시계 : 타입 L",
-      "desc": "스테이지 시작 시, [Vibration] 위력 또는 [Vibration] 횟수 또는 특수 진동을 부여하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n[Vibration] 위력 또는 [Vibration] 횟수 또는 특수 진동을 부여하는 아군이 사용하는 스킬 3의 코인 위력 +2, 피해량 +25%.\n\n[Vibration] 위력 또는 [Vibration] 횟수 또는 특수 진동을 부여하는 아군이 공격 스킬(E.G.O 스킬 포함)을 사용하여 적을 [Switch_Vibration]할 경우, 변환되는 [Vibration] 위력과 [Vibration] 횟수 값이 1.5배로 적용(다른 유형으로 변환되는 경우에만 적용)되고 다음 턴에 [DefenseDown] 5를 부여 (턴 당 1회).\n\n웨이브 첫 턴 시작 시, 속도가 제일 낮은 적 3명에게 (12-현재 속도)만큼 [Vibration] 위력 부여 (최소 6).",
+      "id": 9174,
+      "name": "뒤엉킨 뼛조각",
+      "desc": "스테이지 시작 시, [Sinking] 위력, [Sinking] 횟수 또는 특수 침잠을 부여하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n턴 시작 시, [Sinking]을 보유한 적(환상체일 경우, 모든 부위)들이 (직전 턴에 피격을 받아 소모한 [Sinking] 횟수/3)만큼 [Sinking] 횟수를 다시 얻음.\n\n기본 스킬 적중 대상의 정신력이 0 미만일 경우(정신력이 없을 경우 우울 내성이 1.5 이상일 때), ([Sinking] 위력/10)만큼 우울 속성 피해를 입힘 (최소 대미지 1, 해당 효과는 턴 당 10회 발동 가능)",
       "simpleDesc": [
         {
-          "abilityID": 9728,
-          "simpleDesc": "스킬 3의 코인 위력 +2, 피해량 +25%"
+          "abilityID": 9174,
+          "simpleDesc": "[Sinking] 횟수 증가"
         },
         {
-          "abilityID": 97281,
-          "simpleDesc": "변환되는 [Vibration] 위력과 [Vibration] 횟수 값이 1.5배로 적용"
-        },
-        {
-          "abilityID": 97282,
-          "simpleDesc": "(12-현재 속도)만큼 [Vibration] 위력 부여"
+          "abilityID": 91741,
+          "simpleDesc": "우울 속성 피해 입힘"
         }
       ]
     },
     {
-      "id": 9729,
-      "name": "회중시계 : 타입 E",
-      "desc": "스테이지 시작 시, [Vibration] 위력 또는 [Vibration] 횟수 또는 특수 진동을 부여하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n[Vibration] 위력 또는 [Vibration] 횟수 또는 특수 진동을 부여하는 아군이 사용하는 스킬 3의 코인 위력 +2, 피해량 +25%.\n\n[Vibration] 위력 또는 [Vibration] 횟수 또는 특수 진동을 부여하는 아군이 자신보다 속도가 2 이상 느린 적에게 피해를 입힐 때 가하는 피해량 +(대상이 보유한 [Vibration] 위력, 최대 25)%, 피해를 입힐 때마다 [DefenseDown] 2 부여 (최대 6).\n\n웨이브 첫 턴 시작 시, 속도가 제일 높은 적 1명에게 (12-현재 속도)만큼 [Vibration] 위력(최소 6)과 그 수치의 절반만큼 [Vibration] 횟수를 부여(올림하여 처리, 환상체일 경우 부위 하나).",
+      "id": 9177,
+      "name": "어느 날의 기억",
+      "desc": "스킬을 사용(E.G.O 스킬 제외)하여 [Breath] 위력 또는 [Breath] 횟수를 획득하는 인격이 사용하는 스킬 3의 최종 위력 +2",
       "simpleDesc": [
         {
-          "abilityID": 9729,
-          "simpleDesc": "스킬 3의 코인 위력 +2, 피해량 +25%"
-        },
-        {
-          "abilityID": 97291,
-          "simpleDesc": "가하는 피해량 +(대상이 보유한 [Vibration] 위력)%, 피해를 입힐 때마다 [DefenseDown] 2 부여"
-        },
-        {
-          "abilityID": 97292,
-          "simpleDesc": "(12-현재 속도)만큼 [Vibration] 위력과 그 수치의 절반만큼 [Vibration] 횟수 부여"
+          "abilityID": 9177,
+          "simpleDesc": "최종 위력 +2"
         }
       ]
     },
     {
-      "id": 9730,
-      "name": "회중시계 : 타입 Y",
-      "desc": "스테이지 시작 시, [Vibration] 위력 또는 [Vibration] 횟수 또는 특수 진동을 부여하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n[Vibration] 위력 또는 [Vibration] 횟수 또는 특수 진동을 부여하는 아군이 사용하는 스킬 3의 코인 위력 +2, 피해량 +25%.\n\n유로지비 소속 인격일 경우 효과가 강화되어 스킬 3의 코인 위력 +2, 피해량 +(25 + 대상이 보유한 [Vibration] 위력과 [Vibration] 횟수의 합, 최대 100)%.\n\n유로지비 소속 인격이 턴 시작 시, 자신의 [Vibration] 횟수 3 증가.",
+      "id": 9179,
+      "name": "추억",
+      "desc": "스테이지 시작 시, [Breath] 위력 또는 [Breath] 횟수를 부여하거나 획득하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함). 스킬을 사용(E.G.O 스킬 제외)하여 [Breath] 위력 또는 [Breath] 횟수를 획득하는 인격이 사용하는 스킬 3의 코인 위력 +1.\n\n전투 시작 시, 무작위 아군 하나가 [Breath] 위력 3 얻음 (공격 스킬을 사용하여 [Breath] 횟수를 획득하는 인격을 우선으로 지정). 우울 속성 공격 스킬을 보유한 아군에게 우선으로 적용되며, 이 경우에는 [Breath] 위력 3 얻고 [Breath] 횟수 2 증가.",
       "simpleDesc": [
         {
-          "abilityID": 9730,
-          "simpleDesc": "스킬 3의 코인 위력 +2, 피해량 +25%"
+          "abilityID": 9179,
+          "simpleDesc": "코인 위력 +1"
         },
         {
-          "abilityID": 97301,
-          "simpleDesc": "스킬 3의 코인 위력 +2, 피해량 +(25 + 대상이 보유한 [Vibration] 위력과 [Vibration] 횟수의 합)%"
-        },
-        {
-          "abilityID": 97302,
-          "simpleDesc": "[Vibration] 횟수 3 증가"
+          "abilityID": 91791,
+          "simpleDesc": "[Breath] 위력 3 얻음. 우울 속성 공격 스킬 보유 시, [Breath] 횟수 2 추가로 증가"
         }
       ]
     },
     {
-      "id": 9731,
-      "name": "회중시계 : 타입 P",
-      "desc": "스테이지 시작 시, [Vibration] 위력 또는 [Vibration] 횟수 또는 특수 진동을 부여하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n[Vibration] 위력 또는 [Vibration] 횟수 또는 특수 진동을 부여하는 아군이 사용하는 스킬 3의 코인 위력 +2, 피해량 +25%.\n\n[Vibration] 위력 또는 [Vibration] 횟수 또는 특수 진동을 부여하는 아군이 합을 진행할 때, 자신보다 속도가 2 이상 높은 적과 진행할 경우 합 위력 +2, 가하는 피해량 +(대상이 보유한 [Vibration] 위력, 최대 50)%.\n\n 턴 시작 시, 속도가 제일 느린 아군 셋이 속도가 느린 순으로 [AttackUp] 5, [AttackUp] 3, [AttackUp] 2를 얻음.",
+      "id": 9182,
+      "name": "1B 타입 팔각 볼트",
+      "desc": "스테이지 시작 시, [Charge] 횟수 또는 특수 충전을 획득하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n턴 시작 시, 아군이 ([Charge] 횟수와 특수 충전의 합/10)만큼 [AttackDmgUp]를 얻음. (최대 2, 올림하여 처리)\n\n턴 종료 시 [ChargeForceField]이 없으면, [ChargeForceField] 1 얻음.",
       "simpleDesc": [
         {
-          "abilityID": 9731,
-          "simpleDesc": "스킬 3의 코인 위력 +2, 피해량 +25%"
+          "abilityID": 9182,
+          "simpleDesc": "([Charge] 횟수/10)만큼 [AttackDmgUp]를 얻음"
         },
         {
-          "abilityID": 97311,
-          "simpleDesc": "합 위력 +2, 가하는 피해량 +(대상이 보유한 [Vibration] 위력)%"
-        },
+          "abilityID": 91821,
+          "simpleDesc": "[ChargeForceField] 1 얻음"
+        }
+      ]
+    },
+    {
+      "id": 9185,
+      "name": "리베이트 토큰",
+      "desc": "상점에서 강화 진행 시, 20% 확률로 소모한 비용을 돌려받음.",
+      "simpleDesc": [
         {
-          "abilityID": 97312,
-          "simpleDesc": "[AttackUp] 얻음"
+          "abilityID": 9185,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9186,
+      "name": "신상품 팜플렛",
+      "desc": "상점에서 새로고침 진행 시, 20% 확률로 소모한 비용을 돌려받음.",
+      "simpleDesc": [
+        {
+          "abilityID": 9186,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9187,
+      "name": "특별 카탈로그",
+      "desc": "전투 보상 카드 등장 수 +1",
+      "simpleDesc": [
+        {
+          "abilityID": 9187,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9188,
+      "name": "사전 예약 할인권",
+      "desc": "상점에서 일반 새로 고침 비용 30% 감소",
+      "simpleDesc": [
+        {
+          "abilityID": 19188,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9189,
+      "name": "리뉴얼 굿즈",
+      "desc": "상점에서 E.G.O 기프트 강화 비용 30% 감소",
+      "simpleDesc": [
+        {
+          "abilityID": 19189,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9190,
+      "name": "체험형 플랜 가이드",
+      "desc": "상점에서 스킬 교체 비용 30% 감소",
+      "simpleDesc": [
+        {
+          "abilityID": 29190,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9191,
+      "name": "프레스티지 카드",
+      "desc": "상점에서 E.G.O 기프트 구매 비용 30% 감소",
+      "simpleDesc": [
+        {
+          "abilityID": 29191,
+          "simpleDesc": ""
+        }
+      ]
+    },
+
+
+    {
+      "id": 9991,
+      "name": "어두운 잔영",
+      "desc": "1등급 E.G.O 기프트로 취급되며, 상점에서 판매하거나 합성에서 재료로 사용할 수 있다.",
+      "simpleDesc": [
+        {
+          "abilityID": 9991,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9992,
+      "name": "아스라한 잔영",
+      "desc": "2등급 E.G.O 기프트로 취급되며, 상점에서 판매하거나 합성에서 재료로 사용할 수 있다.",
+      "simpleDesc": [
+        {
+          "abilityID": 9992,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9993,
+      "name": "빛나는 잔영",
+      "desc": "3등급 E.G.O 기프트로 취급되며, 상점에서 판매하거나 합성에서 재료로 사용할 수 있다.",
+      "simpleDesc": [
+        {
+          "abilityID": 9993,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9994,
+      "name": "찬란한 잔영",
+      "desc": "4등급 E.G.O 기프트로 취급되며, 상점에서 판매하거나 합성에서 재료로 사용할 수 있다.",
+      "simpleDesc": [
+        {
+          "abilityID": 9994,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9995,
+      "name": "달의 잔영",
+      "desc": "5등급 E.G.O 기프트로 취급되며, 상점에서 판매하거나 합성에서 재료로 사용할 수 있다.",
+      "simpleDesc": [
+        {
+          "abilityID": 9995,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    
+    {
+      "id": 9192,
+      "name": "덧붙인 반창고",
+      "desc": "턴 종료 시, 출혈을 보유한 아군 중 가장 체력이 적은 인격이 자신의 최대 체력의 5%만큼 체력을 회복.",
+      "simpleDesc": [
+        {
+          "abilityID": 9192,
+          "simpleDesc": "출혈 보유 아군 체력 회복"
+        }
+      ]
+    },
+    {
+      "id": 19192,
+      "name": "덧붙인 반창고+",
+      "desc": "턴 종료 시, 출혈을 보유한 아군 중 가장 체력이 적은 인격 2명이 자신의 최대 체력의 5%만큼 체력을 회복.",
+      "simpleDesc": [
+        {
+          "abilityID": 19192,
+          "simpleDesc": "출혈 보유 아군 2명 체력 회복"
         }
       ]
     }
-
 
   ]
 }

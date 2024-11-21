@@ -17,7 +17,15 @@
 [繁體中文](https://github.com/SmallYuanSY/LocalizeLimbusCompany) | [ภาษาไทย](https://github.com/JoshSnappas/LocalizeLimbusCompanyTH) | [Indonesia](https://github.com/ArtefactX1/LocalizeLimbusID)
 </div>
 
+# 免责声明 Disclaimer
+- **本项目完全免费提供。**  
+LocalizeLimbusCompay (hereafter referred to as "the project") is completely free.
+- **本模组已通过电邮联系获得官方认可，且不会导致您违反边狱公司ToS。** 更多信息请参考[本邮件](https://www.zeroasso.top/docs/community/minutes/firstContact/)。  
+The project is acknowledged by Project Moon via e-mail contact. The project would not cause a breach of Limbus Company ToS. For additional information, please refer to [the email](https://www.zeroasso.top/docs/community/minutes/firstContact/).
+- **我们使用了MIT许可证。** 请前往[`LICENSE`](./LICENSE)或[`CN_LICENSE`](./.github/CN_LICENSE)了解相关许可。  
+The project adopts the [MIT license]((./LICENSE)).
 # 安装
+在继续之前，您可以跟从我们[主页上的指引](https://www.zeroasso.top/docs/category/%E5%BC%80%E5%A7%8B%E5%AE%89%E8%A3%85%E6%A8%A1%E7%BB%84)进行安装。与此处的指引相比，主页上的指引更加详细且适合一般玩家。
 ### 0. 安装[.NET 6.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/sdk-6.0.406-windows-x64-installer)
 ### 1. 安装模组框架
    - 从[BepInEx](https://github.com/LocalizeLimbusCompany/BepInEx_For_LLC)下载最新版本的模组框架
@@ -40,10 +48,6 @@
 - [汉化组B站链接](https://space.bilibili.com/1247764479) 都市零协会汉化组
 - [边狱公司中文WIKI](https://limbuscompany.huijiwiki.com)
 - [ParaTranz 合作翻译项目](https://paratranz.cn/projects/6860) 汉化组的最新进展
-# 免责声明
-- **使用本模组完全免费。** 
-- **本模组已获得官方认可。** 月亮计划官方已声明不会对汉化模组封号。相关内容请查看[`特别公告`](https://github.com/orgs/LocalizeLimbusCompany/discussions/70)
-- **我们使用了MIT许可证。** 请前往[`LICENSE`](./LICENSE)或[`CN_LICENSE`](./.github/CN_LICENSE)了解相关许可。
 # 贡献者
 ## 本仓库
 <a href="https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/graphs/contributors">

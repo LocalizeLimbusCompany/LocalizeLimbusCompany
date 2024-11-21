@@ -569,7 +569,7 @@
     {
       "id": 9023,
       "name": "Thunderbranch",
-      "desc": "When inflicting [Burst] Potency with Skill effects, Inflict 1 [Burst] Potency and +1 [Burst] Potency Count on target.",
+      "desc": "When inflicting [Burst] Potency with Skill effects, Inflict 1 [Burst] Potency and +1 [Burst] Count on target.",
       "simpleDesc": [
         {
           "abilityID": 9023,
@@ -934,11 +934,11 @@
     {
       "id": 9040,
       "name": "Tomorrow’s Fortune",
-      "desc": "Increase the number of options by 1 when choosing an E.G.O Gift to get.",
+      "desc": "Upgrade the first Encounter Reward Card to the highest tier it could spawn as.",
       "simpleDesc": [
         {
           "abilityID": 9040,
-          "simpleDesc": "E.G.O Gift Selection +1"
+          "simpleDesc": "Upgrade the first Encounter Reward Card to the highest tier it could spawn as"
         }
       ]
     },
@@ -2214,11 +2214,11 @@
     {
       "id": 9080,
       "name": "Milepost of Survival",
-      "desc": "When moving to the next floor, all Identities heal by 10% of Max HP, and gain 100 Cost.",
+      "desc": "Upon clearing Floor Boss: gain (80 + # of Identities participating in the Encounter x 5) additional Cost (unaffected by effects that raise Cost after clearing an Encounter)",
       "simpleDesc": [
         {
           "abilityID": 9080,
-          "simpleDesc": "Heal by 10% of Max HP; Gain 100 Cost"
+          "simpleDesc": "Gain Cost"
         }
       ]
     },
@@ -2350,7 +2350,7 @@
     {
       "id": 9088,
       "name": "Soothe the Dead",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Combustion] Potency, Count, or 'Unique Burn' effects. (Not counting E.G.O Skills, only counts Identities on the field at Encounter Start)\n\n\nFirst Turn Start of a wave: inflict 3 [Combustion] Count to all enemies (or all Abnormality parts); randomly inflict a total of 15 [Combustion] Potency between all enemies (or all Abnormality parts).\n\nTo Skills that inflict [Combustion] Potency, Count, or 'Unique Burn': Final Power +1, Coin Power +1, inflicted [Combustion] Potency +1, inflicted [Combustion] Count +1.",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Combustion] Potency, Count, or 'Unique Burn' effects. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nFirst Turn Start of a wave: inflict 3 [Combustion] Count to all enemies (or all Abnormality parts); randomly inflict a total of 15 [Combustion] Potency between all enemies (or all Abnormality parts).\n\nTo Skills that inflict [Combustion] Potency, Count, or 'Unique Burn': Final Power +1, Coin Power +1, inflicted [Combustion] Potency +1, inflicted [Combustion] Count +1.\n\nWhen winning a Clash with a Skill that inflicts [Combustion] Potency, Count, or 'Unique Burn', inflict (# of remaining Coins + 1) [Combustion] Potency to the target enemy.",
       "simpleDesc": [
         {
           "abilityID": 9088,
@@ -2358,7 +2358,11 @@
         },
         {
           "abilityID": 90881,
-          "simpleDesc": "Final Power +1, Coin Power +1, inflicted [Combustion] Potency +1, inflicted [Combustion] Count +1."
+          "simpleDesc": "Skill Final Power +1, Coin Power +1, inflicted [Combustion] Potency +1, inflicted [Combustion] Count +1."
+        },
+        {
+          "abilityID": 90882,
+          "simpleDesc": "Inflict (# of remaining Coins + 1) [Combustion] Potency"
         }
       ]
     },
@@ -2410,7 +2414,7 @@
     {
       "id": 9090,
       "name": "Bloody Mist",
-      "desc": "Encounter Start: This Gift Activates when 5 or more Identities have Attack Skills that apply [Laceration] Potency, Count, or 'Unique Bleed' effects. (Not counting E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nAllies inflict double the amount of [Laceration] Potency and [Laceration] Count.\n\nSkills that inflict [Laceration] Potency, Count, or 'Unique Bleed': Coin Power +2, damage dealt +100%",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Laceration] Potency, Count, or 'Unique Bleed' effects. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nAllies inflict double the amount of [Laceration] Potency and Count with Skill effects.\n\n1 ally with the fastest Speed) Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed': Coin Power +2, damage dealt +100%. If the enemy attacked by or Clashed with the said ally dies, inflict the remaining [Laceration] Potency on the enemy randomly between all enemies. (for Focused Encounters, Parts)\n\nCoin Power +1 to all Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed'",
       "simpleDesc": [
         {
           "abilityID": 9090,
@@ -2418,7 +2422,15 @@
         },
         {
           "abilityID": 90901,
-          "simpleDesc": "Skills that inflict [Laceration] Potency: Coin Power +2, damage dealt +100%"
+          "simpleDesc": "Skill Coin Power +2 and deal +100% more damage"
+        },
+        {
+          "abilityID": 90902,
+          "simpleDesc": "Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed' gain Coin Power +1."
+        },
+        {
+          "abilityID": 90903,
+          "simpleDesc": "Inflict [Laceration] Potency on the defeated enemy randomly between all enemies"
         }
       ]
     },
@@ -2458,7 +2470,7 @@
     {
       "id": 9092,
       "name": "Coupled Oscillation",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency or Count. (Not counting E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nFirst Turn Start of a wave: Inflict 5 [Vibration] and +5 [Vibration] Count to all enemies. (or all Abnormality parts)\n\nApply 5 [Vibration] Potency and 2 [Vulnerable] this turn and next turn to enemies affected by [VibrationExplosion]. (activates once per Attack Skill that triggers [VibrationExplosion])\n\nAfter triggering 3 [VibrationExplosion] to a target, Stagger the target at the next Turn Start and add a new Stagger Threshold at 66% and 33% marks of the target's current HP. (once per Encounter)",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency, Count, or 'Unique Tremor'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nFirst Turn Start of a wave: Inflict 5 [Vibration] and +5 [Vibration] Count to all enemies. (or all Abnormality parts)\n\nApply 5 [Vibration] Potency and 2 [Vulnerable] this turn and next turn to enemies affected by [VibrationExplosion]. (activates once per Attack Skill that triggers [VibrationExplosion])\n\nAfter triggering 3 [VibrationExplosion] to a target this turn, Stagger the target at the next Turn Start and add a new Stagger Threshold at 66% and 33% marks of the target's current HP. (once per Encounter)\n\nWhen triggering [Switch_Vibration] or [FusionVibration], inflict 1 [Vulnerable] (3 times per turn)",
       "simpleDesc": [
         {
           "abilityID": 9092,
@@ -2467,6 +2479,10 @@
         {
           "abilityID": 90921,
           "simpleDesc": "Staggers target"
+        },
+        {
+          "abilityID": 90922,
+          "simpleDesc": "Inflict 1 [Vulnerable]"
         }
       ]
     },
@@ -2506,7 +2522,7 @@
     {
       "id": 9094,
       "name": "Enrapturing Trance",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Burst] Potency or Count. (Not counting E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nWhen hitting an enemy with a Skill, inflict 5 [Burst] Potency.\n\nWhen [Burst] Count on an enemy drops below 1, consume 10 [Burst] Potency instead of [Burst] Count. (This effect ends when [Burst] Potency drops below 10)",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Burst] Potency or Count. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nWhen hitting an enemy with a Skill, inflict 5 [Burst] Potency.\n\nWhen [Burst] Count on an enemy drops below 1, consume 10 [Burst] Potency instead of [Burst] Count. (This effect ends when [Burst] Potency drops below 10)\n\nIf the target has less than 3 [Burst] Count, inflict +1 more Count when inflicting [Burst] Count. (3 times per Encounter)",
       "simpleDesc": [
         {
           "abilityID": 9094,
@@ -2515,6 +2531,10 @@
         {
           "abilityID": 90941,
           "simpleDesc": "Consume 10 [Burst] Potency instead of [Burst] Count"
+        },
+        {
+          "abilityID": 90942,
+          "simpleDesc": "Inflicted [Burst] Count +1"
         }
       ]
     },
@@ -2554,7 +2574,7 @@
     {
       "id": 9096,
       "name": "Black Sheet Music",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (Not counting E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nWhen hitting an enemy with a Skill, inflict 5 [Sinking] Potency.\n\nTurn Start: All enemies (or all Abnormality parts) regain [Sinking] Count equal to ([Sinking] Count consumed from getting hit last turn)/2",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nOn Hit against an enemy with a Skill: inflict 5 [Sinking] Potency.\n\nTurn Start: enemies or Parts with [Sinking] regain ([Sinking] Count each enemy lost On Hit last turn / 2) [Sinking] Count.\n\nIf the Base Attack Skill hits against a target with less than 0 SP(for enemies without SP, if they have 1.2+ Gloom Resist.), inflict ([Sinking] Potency / 10) Gloom Affinity damage (min 1, this effect can activate up to 10 times per turn)",
       "simpleDesc": [
         {
           "abilityID": 9096,
@@ -2562,7 +2582,11 @@
         },
         {
           "abilityID": 90961,
-          "simpleDesc": "Regain [Sinking] Count equal to ([Sinking] consumed from getting hit last turn)/2"
+          "simpleDesc": "Inflict [Sinking] Count"
+        },
+        {
+          "abilityID": 90961,
+          "simpleDesc": "Inflict Gloom Affinity damage"
         }
       ]
     },
@@ -2614,7 +2638,7 @@
     {
       "id": 9098,
       "name": "Lucky Pouch",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply or gain [Breath] Potency or Count. (Not counting E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nCombat Start: If a random ally with [Breath] Critical Hits on an enemy with a Skill, all allies gain 7 [Breath] Potency and +7 [Breath] Count at the next Turn Start. (Once per turn)\n\nSkill 3 of Identities with Skills that gain [Breath] Potency or Count: Final Power +3, Coin Power +(12/# of Coins), damage dealt +(50/# of Coins)%.",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply or gain [Breath] Potency or Count. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nCombat Start: If a random ally with [Breath] Critical Hits on an enemy with a Skill, all allies gain 7 [Breath] Potency and +7 [Breath] Count at the next Turn Start. (Once per turn)\n\nSkill 3 of Identities with Skills that apply or gain [Breath] Potency or Count(not counting E.G.O Skills): Final Power +3, Coin Power +(12/# of Coins), damage dealt +(50/# of Coins)%.\n\nCombat Start: a random ally gains 3 [Breath] Potency. (prioritizes Identities that apply or gain [Breath] Potency or Count with their Attack Skills) Prioritizes allies with Gloom Affinity Attack Skills; they gain 3 [Breath] Potency and +2 [Breath] Count.",
       "simpleDesc": [
         {
           "abilityID": 9098,
@@ -2623,6 +2647,10 @@
         {
           "abilityID": 90981,
           "simpleDesc": "Skill 3: Final Power +3, Coin Power +(12/# of Coins), damage dealt +(50/# of Coins)%"
+        },
+        {
+          "abilityID": 90982,
+          "simpleDesc": "Gain 3 [Breath] Potency. Allies with Gloom Affinity Attack Skills gain an additional +2 [Breath] Count"
         }
       ]
     },
@@ -2662,19 +2690,23 @@
     {
       "id": 9100,
       "name": "T-1 Perpetual Motion Machine",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that gain [Charge] Count or 'Unique Charge'. (Not counting E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nFirst Turn Start of a wave: all allies gain 7 [ChargeForceField].\n\nTurn Start: all allies gain (([Charge] Count + 'Unique Charge')/5 +1) [AttackDmgUp]. (max 9, rounded up)\n\nNext Turn Start: Each Identity gains ((sum of total [Charge] Count + 'Unique Charge' consumed by Skill use in this Encounter)/4) Offense Level Up (Maxes out when a sum of 40 [Charge] Count + 'Unique Charge' are consumed)",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that gain [Charge] Count or 'Unique Charge'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nFirst Turn Start of a wave: all allies gain 7 [ChargeForceField].\n\nTurn End: all allies gain 3 [ChargeForceField] next turn.\n\nTurn Start: all allies gain (([Charge] Count + 'Unique Charge' / 5) + 1) [AttackDmgUp]. (max 5, rounded up)\n\nEvery time an Identity consumes 20 [Charge] Count, it gains 1 [Charge] Potency. (2 times per Encounter for each Identity; does not count 'Unique Charge')",
       "simpleDesc": [
         {
           "abilityID": 9100,
-          "simpleDesc": "Gain 7 [ChargeForceField] and 2 [AttackDmgUp]"
+          "simpleDesc": "Gain 7 [ChargeForceField]"
         },
         {
           "abilityID": 91001,
-          "simpleDesc": "Gain [AttackDmgUp]"
+          "simpleDesc": "Gain 3 [ChargeForceField]"
         },
         {
           "abilityID": 91002,
-          "simpleDesc": "Gain ((Total [Charge] Count consumed + 'Unique Charge')/4) Offense Level"
+          "simpleDesc": "Gain [AttackDmgUp]"
+        },
+        {
+          "abilityID": 91003,
+          "simpleDesc": "Gain 1 [Charge] Potency"
         }
       ]
     },
@@ -3058,7 +3090,7 @@
     {
       "id": 9114,
       "name": "Mirror Tactile Synaesthesia",
-      "desc": "When an ally Staggers an enemy with an Attack Skill(Except E.G.O Skills) that applies(including on self) [Vibration] Potency or Count, randomly apply 1/3 of the [Vibration] Potency on target between other enemies(or a random Abnormality Part) next turn.\n\nIf there are no other enemies to apply the above effect to, multiply [Vibration] Potency on target by 1.5 next turn.",
+      "desc": "When an ally Staggers an enemy with an Attack Skill(except E.G.O Skills) that applies(including on self) [Vibration] Potency or Count, randomly apply 1/3 of the [Vibration] Potency on target between other enemies(or a random Abnormality Part) next turn.\n\nIf there are no other enemies to apply the above effect to, multiply [Vibration] Potency on target by 1.5 next turn.",
       "simpleDesc": [
         {
           "abilityID": 9114,
@@ -3073,7 +3105,7 @@
     {
       "id": 9115,
       "name": "Clockwork Spring",
-      "desc": "[Effects apply only to #1, #2 Deployed Identities]\n\nSkills that apply(including on self) [Vibration] Potency or Count gain Clash Power +1\n\nWhen dealing damage to an enemy that has [Vibration] with Attack Skills(Except E.G.O Skills) that inflict [Vibration] Potency or Count, deal +([Vibration] Potency on target + 5)% more damage.\n\nFor Pride Skills: deal +(sum of [Vibration] Potency and Count on target +5)% more damage",
+      "desc": "[Effects apply only to #1, #2 Deployed Identities]\n\nSkills that apply(including on self) [Vibration] Potency or Count gain Clash Power +1\n\nWhen dealing damage to an enemy that has [Vibration] with Attack Skills(except E.G.O Skills) that inflict [Vibration] Potency or Count, deal +([Vibration] Potency on target + 5)% more damage.\n\nFor Pride Skills: deal +(sum of [Vibration] Potency and Count on target +5)% more damage",
       "simpleDesc": [
         {
           "abilityID": 9115,
@@ -3122,11 +3154,11 @@
     {
       "id": 9118,
       "name": "Bone Stake",
-      "desc": "[Burst] effect deals double damage against enemy Shield.",
+      "desc": "[Burst] effects deal +100% more damage against enemy Shields",
       "simpleDesc": [
         {
           "abilityID": 9118,
-          "simpleDesc": "[Burst] effect deals double damage against enemy Shield."
+          "simpleDesc": "[Burst] effects deal +100% more damage against enemy Shields"
         }
       ]
     },
@@ -3178,7 +3210,7 @@
     {
       "id": 9120,
       "name": "Deathseeker",
-      "desc": "[Effects apply only to #1, #2 Deployed Identities]\n\nAttack Skills(Except E.G.O Skills) that inflict [Burst] Potency or Count gain Clash Power +1, 'Offense Level' +2, and deal +15% more damage.\n\n\nSingle-Coin Skills gain Clash Power +2, 'Offense Level' +2, and deal +40% more damage instead.",
+      "desc": "[Effects apply only to #1, #2 Deployed Identities]\n\nAttack Skills(except E.G.O Skills) that inflict [Burst] Potency or Count gain Clash Power +1, 'Offense Level' +2, and deal +15% more damage.\n\n\nSingle-Coin Skills gain Clash Power +2, 'Offense Level' +2, and deal +40% more damage instead.",
       "simpleDesc": [
         {
           "abilityID": 9120,
@@ -3208,7 +3240,7 @@
     {
       "id": 9122,
       "name": "Eldtree Snare",
-      "desc": "Attack Skills(Except E.G.O Skills) that inflict [Sinking] Potency, Count, or 'Unique Sinking' deal +5% more damage.\n\nFor Skills with 2- Coins, gain Clash Power +1 and deal +10% more damage instead.",
+      "desc": "Attack Skills(except E.G.O Skills) that inflict [Sinking] Potency, Count, or 'Unique Sinking' deal +5% more damage.\n\nFor Skills with 2- Coins, gain Clash Power +1 and deal +10% more damage instead.",
       "simpleDesc": [
         {
           "abilityID": 9122,
@@ -3223,7 +3255,7 @@
     {
       "id": 19122,
       "name": "Eldtree Snare+",
-      "desc": "Attack Skills(Except E.G.O Skills) that inflict [Sinking] Potency, Count, or 'Unique Sinking' deal +<style=\"upgradeHighlight\">7.5</style>% more damage.\n\nFor Skills with 2- Coins, gain Clash Power +1 and deal +<style=\"upgradeHighlight\">12.5</style>% more damage instead.",
+      "desc": "Attack Skills(except E.G.O Skills) that inflict [Sinking] Potency, Count, or 'Unique Sinking' deal +<style=\"upgradeHighlight\">7.5</style>% more damage.\n\nFor Skills with 2- Coins, gain Clash Power +1 and deal +<style=\"upgradeHighlight\">12.5</style>% more damage instead.",
       "simpleDesc": [
         {
           "abilityID": 19122,
@@ -3238,7 +3270,7 @@
     {
       "id": 29122,
       "name": "Eldtree Snare++",
-      "desc": "Attack Skills(Except E.G.O Skills) that inflict [Sinking] Potency, Count, or 'Unique Sinking' deal +<style=\"upgradeHighlight\">10</style>% more damage.\n\nFor Skills with 2- Coins, gain Clash Power +1 and deal +<style=\"upgradeHighlight\">15</style>% more damage instead.",
+      "desc": "Attack Skills(except E.G.O Skills) that inflict [Sinking] Potency, Count, or 'Unique Sinking' deal +<style=\"upgradeHighlight\">10</style>% more damage.\n\nFor Skills with 2- Coins, gain Clash Power +1 and deal +<style=\"upgradeHighlight\">15</style>% more damage instead.",
       "simpleDesc": [
         {
           "abilityID": 29122,
@@ -3253,7 +3285,7 @@
     {
       "id": 9123,
       "name": "Rags",
-      "desc": "Allies with Attack Skills that inflict [Sinking] Potency, Count, or 'Unique Sinking' heal 5 additional SP(once per turn) upon Clash Win; if at max SP, deal +7.5% more damage.\n\nWhen the said allies use a minus Coin Skill(not E.G.O Skills): at -15 or higher SP, reduce SP to -15 and deal +(amount of lost SP)% more damage; if already at less than -15 SP, deal +15% more damage.",
+      "desc": "Allies with Attack Skills that inflict [Sinking] Potency, Count, or 'Unique Sinking' heal 5 additional SP(once per turn) upon Clash Win; if at max SP, deal +7.5% more damage.\n\nWhen the said allies use a minus Coin Skill(except E.G.O Skills): at -15 or higher SP, reduce SP to -15 and deal +(amount of lost SP)% more damage; if already at less than -15 SP, deal +15% more damage.",
       "simpleDesc": [
         {
           "abilityID": 9123,
@@ -3268,7 +3300,7 @@
     {
       "id": 19123,
       "name": "Rags+",
-      "desc": "Allies with Attack Skills that inflict [Sinking] Potency, Count, or 'Unique Sinking' heal <style=\"upgradeHighlight\">6</style> additional SP(once per turn) upon Clash Win; if at max SP, deal +<style=\"upgradeHighlight\">10</style>% more damage.\n\nWhen the said allies use a minus Coin Skill(not E.G.O Skills): at -15 or higher SP, reduce SP to -15 and deal +(amount of lost SP <style=\"upgradeHighlight\">+ 5</style>)% more damage; if already at less than -15 SP, deal +<style=\"upgradeHighlight\">20</style>% more damage.",
+      "desc": "Allies with Attack Skills that inflict [Sinking] Potency, Count, or 'Unique Sinking' heal <style=\"upgradeHighlight\">6</style> additional SP(once per turn) upon Clash Win; if at max SP, deal +<style=\"upgradeHighlight\">10</style>% more damage.\n\nWhen the said allies use a minus Coin Skill(except E.G.O Skills): at -15 or higher SP, reduce SP to -15 and deal +(amount of lost SP <style=\"upgradeHighlight\">+ 5</style>)% more damage; if already at less than -15 SP, deal +<style=\"upgradeHighlight\">20</style>% more damage.",
       "simpleDesc": [
         {
           "abilityID": 19123,
@@ -3283,7 +3315,7 @@
     {
       "id": 29123,
       "name": "Rags++",
-      "desc": "Allies with Attack Skills that inflict [Sinking] Potency, Count, or 'Unique Sinking' heal <style=\"upgradeHighlight\">7</style> additional SP(once per turn) upon Clash Win; if at max SP, deal +<style=\"upgradeHighlight\">12.5</style>% more damage.\n\nWhen the said allies use a minus Coin Skill(not E.G.O Skills): at -15 or higher SP, reduce SP to -15 and deal +(SP lost <style=\"upgradeHighlight\">+ 10</style>)% more damage; if already at less than -15 SP, deal +<style=\"upgradeHighlight\">25</style>% more damage.",
+      "desc": "Allies with Attack Skills that inflict [Sinking] Potency, Count, or 'Unique Sinking' heal <style=\"upgradeHighlight\">7</style> additional SP(once per turn) upon Clash Win; if at max SP, deal +<style=\"upgradeHighlight\">12.5</style>% more damage.\n\nWhen the said allies use a minus Coin Skill(except E.G.O Skills): at -15 or higher SP, reduce SP to -15 and deal +(SP lost <style=\"upgradeHighlight\">+ 10</style>)% more damage; if already at less than -15 SP, deal +<style=\"upgradeHighlight\">25</style>% more damage.",
       "simpleDesc": [
         {
           "abilityID": 29123,
@@ -3361,7 +3393,7 @@
     {
       "id": 9127,
       "name": "Devil's Share",
-      "desc": "Turn End: apply 1 [Agility] next turn to 1 ally with the highest [Breath] Potency and 1 ally with the highest [Breath] Count. (both effects can apply on the same Identity)\n\nIf the ally has Lust Affinity Attack Skills, apply 2 [Agility] instead. (not counting E.G.O Skills)",
+      "desc": "Turn End: apply 1 [Agility] next turn to 1 ally with the highest [Breath] Potency and 1 ally with the highest [Breath] Count. (both effects can apply on the same Identity)\n\nIf the ally has Lust Affinity Attack Skills, apply 2 [Agility] instead. (except E.G.O Skills)",
       "simpleDesc": [
         {
           "abilityID": 9127,
@@ -3372,7 +3404,7 @@
     {
       "id": 19127,
       "name": "Devil's Share+",
-      "desc": "Turn End: apply 1 [Agility] <style=\"upgradeHighlight\">and 1 [AttackUp]</style> next turn to 1 ally with the highest [Breath] Potency and 1 ally with the highest [Breath] Count. (both effects can apply on the same Identity)\n\nIf the ally has Lust Affinity Attack Skills, apply 2 [Agility] <style=\"upgradeHighlight\">and 2 [AttackUp]</style> instead. (not counting E.G.O Skills)",
+      "desc": "Turn End: apply 1 [Agility] <style=\"upgradeHighlight\">and 1 [AttackUp]</style> next turn to 1 ally with the highest [Breath] Potency and 1 ally with the highest [Breath] Count. (both effects can apply on the same Identity)\n\nIf the ally has Lust Affinity Attack Skills, apply 2 [Agility] <style=\"upgradeHighlight\">and 2 [AttackUp]</style> instead. (except E.G.O Skills)",
       "simpleDesc": [
         {
           "abilityID": 19127,
@@ -3383,7 +3415,7 @@
     {
       "id": 29127,
       "name": "Devil's Share++",
-      "desc": "Turn End: apply 1 [Agility], 1 [AttackUp], <style=\"upgradeHighlight\">and 1 [AttackDmgUp]</style> next turn to 1 ally with the highest [Breath] Potency and 1 ally with the highest [Breath] Count. (both effects can apply on the same Identity)\n\nIf the ally has Lust Affinity Attack Skills, apply 2 [Agility], 2 [AttackUp], <style=\"upgradeHighlight\">and 2 [AttackDmgUp]</style> instead. (not counting E.G.O Skills)",
+      "desc": "Turn End: apply 1 [Agility], 1 [AttackUp], <style=\"upgradeHighlight\">and 1 [AttackDmgUp]</style> next turn to 1 ally with the highest [Breath] Potency and 1 ally with the highest [Breath] Count. (both effects can apply on the same Identity)\n\nIf the ally has Lust Affinity Attack Skills, apply 2 [Agility], 2 [AttackUp], <style=\"upgradeHighlight\">and 2 [AttackDmgUp]</style> instead. (except E.G.O Skills)",
       "simpleDesc": [
         {
           "abilityID": 29127,
@@ -3713,7 +3745,7 @@
     {
       "id": 9139,
       "name": "Tailor's Scissors",
-      "desc": "[Effects apply only to #6 Deployed Identity]\n\nSlash Skills(Except E.G.O Skills) with 2- Coins gain Clash Power +1 and deal +10% more damage.\n\nSingle-Coin Skills gain Clash Power +1 and deal +20% more damage instead.",
+      "desc": "[Effects apply only to #6 Deployed Identity]\n\nSlash Skills(except E.G.O Skills) with 2- Coins gain Clash Power +1 and deal +10% more damage.\n\nSingle-Coin Skills gain Clash Power +1 and deal +20% more damage instead.",
       "simpleDesc": [
         {
           "abilityID": 9139,
@@ -3728,7 +3760,7 @@
     {
       "id": 19139,
       "name": "Tailor's Scissors+",
-      "desc": "[Effects apply only to <style=\"upgradeHighlight\">#4</style>, #6 Deployed Identities]\n\nSlash Skills(Except E.G.O Skills) with 2- Coins gain Clash Power +1 <style=\"upgradeHighlight\">and deal +15% more damage</style>.\n\nSingle-Coin Skills gain Clash Power +1 and deal <style=\"upgradeHighlight\">+25%</style> more damage instead.",
+      "desc": "[Effects apply only to <style=\"upgradeHighlight\">#4</style>, #6 Deployed Identities]\n\nSlash Skills(except E.G.O Skills) with 2- Coins gain Clash Power +1 <style=\"upgradeHighlight\">and deal +15% more damage</style>.\n\nSingle-Coin Skills gain Clash Power +1 and deal <style=\"upgradeHighlight\">+25%</style> more damage instead.",
       "simpleDesc": [
         {
           "abilityID": 19139,
@@ -3743,7 +3775,7 @@
     {
       "id": 29139,
       "name": "Tailor's Scissors++",
-      "desc": "[Effects apply only to #4, #6 Deployed Identities]\n\nSlash Skills(Except E.G.O Skills) with 2- Coins gain Clash Power +1 <style=\"upgradeHighlight\">and deal +20% more damage</style>.\n\nSingle-Coin Skills gain Clash Power +1 and deal <style=\"upgradeHighlight\">+30%</style> more damage instead.",
+      "desc": "[Effects apply only to #4, #6 Deployed Identities]\n\nSlash Skills(except E.G.O Skills) with 2- Coins gain Clash Power +1 <style=\"upgradeHighlight\">and deal +20% more damage</style>.\n\nSingle-Coin Skills gain Clash Power +1 and deal <style=\"upgradeHighlight\">+30%</style> more damage instead.",
       "simpleDesc": [
         {
           "abilityID": 29139,
@@ -3848,7 +3880,7 @@
     {
       "id": 9142,
       "name": "Sundered Memory",
-      "desc": "[Effects apply only to #3 Deployed Identity]\n\nSlash Attack Skills(Except E.G.O Skills) gain Clash Power +1 and Final Power +1.\n\nFor Slash Attack Skills with 2- Coins, gain Final Power +3 and deal +20% more damage instead.\n\nTurn End: If at less than 50% HP, gain 4 [SlashDamageUp] next turn.",
+      "desc": "[Effects apply only to #3 Deployed Identity]\n\nSlash Attack Skills(except E.G.O Skills) gain Clash Power +1 and Final Power +1.\n\nFor Slash Attack Skills with 2- Coins, gain Final Power +3 and deal +20% more damage instead.\n\nTurn End: If at less than 50% HP, gain 4 [SlashDamageUp] next turn.",
       "simpleDesc": [
         {
           "abilityID": 9142,
@@ -4047,7 +4079,7 @@
     {
       "id": 9147,
       "name": "Punctured Memory",
-      "desc": "[Effects apply only to #3 Deployed Identity]\n\nPierce Attack Skills(Except E.G.O Skills) gain Clash Power +2 and deal +15% more damage.\n\nWhen winning a Clash with a Pierce Attack Skill, deal +(2.5(# of Clashes + # of remaining Coins))% more damage. (max 35%)\n\nTurn End: if this unit dealt 15+ HP damage by winning a Clash with a Pierce Attack Skill this turn, gain 4 [PenetrateDamageUp] next turn.",
+      "desc": "[Effects apply only to #3 Deployed Identity]\n\nPierce Attack Skills(except E.G.O Skills) gain Clash Power +2 and deal +15% more damage.\n\nWhen winning a Clash with a Pierce Attack Skill, deal +(2.5(# of Clashes + # of remaining Coins))% more damage. (max 35%)\n\nTurn End: if this unit dealt 15+ HP damage by winning a Clash with a Pierce Attack Skill this turn, gain 4 [PenetrateDamageUp] next turn.",
       "simpleDesc": [
         {
           "abilityID": 9147,
@@ -4156,7 +4188,7 @@
     {
       "id": 9150,
       "name": "Temporal Bridle",
-      "desc": "Turn Start: units with a Blunt Attack Skill(Except E.G.O Skills) gain 1 [AttackUp].\n\nUnits with 2+ Blunt Attack Skills gain 1 [AttackUp] and 1 [HitDamageUp] instead.\n\nUnits with 2+ Blunt Attack Skills that use Minus Coins gain 2 [AttackUp] and 2 [HitDamageUp] instead.",
+      "desc": "Turn Start: units with a Blunt Attack Skill(except E.G.O Skills) gain 1 [AttackUp].\n\nUnits with 2+ Blunt Attack Skills gain 1 [AttackUp] and 1 [HitDamageUp] instead.\n\nUnits with 2+ Blunt Attack Skills that use Minus Coins gain 2 [AttackUp] and 2 [HitDamageUp] instead.",
       "simpleDesc": [
         {
           "abilityID": 9150,
@@ -4175,7 +4207,7 @@
     {
       "id": 19150,
       "name": "Temporal Bridle+",
-      "desc": "Turn Start: Units with Blunt Attack Skills(Except E.G.O Skills) gain <style=\"upgradeHighlight\">2</style> [AttackUp] at Turn Start.\n\nUnits with 2+ Blunt Attack Skills gain <style=\"upgradeHighlight\">2</style> [AttackUp] and 1 [HitDamageUp] instead.\n\nUnits with 2+ Blunt Attack Skills that use Minus Coins gain <style=\"upgradeHighlight\">3</style> [AttackUp] and 2 [HitDamageUp] instead.",
+      "desc": "Turn Start: Units with Blunt Attack Skills(except E.G.O Skills) gain <style=\"upgradeHighlight\">2</style> [AttackUp] at Turn Start.\n\nUnits with 2+ Blunt Attack Skills gain <style=\"upgradeHighlight\">2</style> [AttackUp] and 1 [HitDamageUp] instead.\n\nUnits with 2+ Blunt Attack Skills that use Minus Coins gain <style=\"upgradeHighlight\">3</style> [AttackUp] and 2 [HitDamageUp] instead.",
       "simpleDesc": [
         {
           "abilityID": 19150,
@@ -4194,7 +4226,7 @@
     {
       "id": 29150,
       "name": "Temporal Bridle++",
-      "desc": "Turn Start: Units with Blunt Attack Skills(Except E.G.O Skills) gain 2 [AttackUp] and <style=\"upgradeHighlight\">1 [HitDamageUp]</style> at Turn Start.\n\nUnits with 2+ Blunt Attack Skills gain 2 [AttackUp] and <style=\"upgradeHighlight\">2</style> [HitDamageUp] instead.\n\nUnits with 2+ Blunt Attack Skills that use Minus Coins gain 3 [AttackUp] and <style=\"upgradeHighlight\">3</style> [HitDamageUp] instead.",
+      "desc": "Turn Start: Units with Blunt Attack Skills(except E.G.O Skills) gain 2 [AttackUp] and <style=\"upgradeHighlight\">1 [HitDamageUp]</style> at Turn Start.\n\nUnits with 2+ Blunt Attack Skills gain 2 [AttackUp] and <style=\"upgradeHighlight\">2</style> [HitDamageUp] instead.\n\nUnits with 2+ Blunt Attack Skills that use Minus Coins gain 3 [AttackUp] and <style=\"upgradeHighlight\">3</style> [HitDamageUp] instead.",
       "simpleDesc": [
         {
           "abilityID": 29150,
@@ -4246,7 +4278,7 @@
     {
       "id": 9152,
       "name": "Crushed memory",
-      "desc": "[Effects apply only to #3 Deployed Identity]\n\nBlunt Attack Skills gain Clash Power +(# of Coins/3): Plus Coins gain additional Coin Power +1, Minus Coins gain additional Coin Power -1. (E.G.O Skills don't count; rounded up)\n\nIf, in this Encounter, this unit lost even a single Clash using a Blunt Attack Skill, upgrade the above effect to the following: Blunt Attack Skills gain Clash Power +(# of Coins/2): Plus Coins gain additional Coin Power +2, Minus Coins gain additional Coin power -2.\n\nTurn End: If this unit used a Blunt Attack Skill with 3+ Coins this turn, gain 4 [HitDamageUp] next turn.",
+      "desc": "[Effects apply only to #3 Deployed Identity]\n\nBlunt Attack Skills gain Clash Power +(# of Coins/3): Plus Coins gain additional Coin Power +1, Minus Coins gain additional Coin Power -1. (except E.G.O Skills; rounded up)\n\nIf, in this Encounter, this unit lost even a single Clash using a Blunt Attack Skill, upgrade the above effect to the following: Blunt Attack Skills gain Clash Power +(# of Coins/2): Plus Coins gain additional Coin Power +2, Minus Coins gain additional Coin power -2.\n\nTurn End: If this unit used a Blunt Attack Skill with 3+ Coins this turn, gain 4 [HitDamageUp] next turn.",
       "simpleDesc": [
         {
           "abilityID": 9152,
@@ -4285,564 +4317,6 @@
       ]
     },
     {
-      "id": 9403,
-      "name": "Ebony Brooch",
-      "desc": "First Turn Start of an Encounter: Inflict 2 [Burst] Potency and Count to all enemies.\n\nInflict 2 [Binding] next turn at Turn End to all enemies for 3 turns.",
-      "simpleDesc": [
-        {
-          "abilityID": 9403,
-          "simpleDesc": "Inflict 2 [Burst] Potency and +2 [Burst] Count on all enemies"
-        },
-        {
-          "abilityID": 94031,
-          "simpleDesc": "Inflict 2 [Binding] on all enemies"
-        }
-      ]
-    },
-    {
-      "id": 9404,
-      "name": "Contained Maggots",
-      "desc": "When using a Gluttony Affinity Skill(Except E.G.O Skills) against an enemy, inflict 2 [Muckworm] on target.\n\nIf the said Skill applies [Laceration] Potency, Count, or 'Unique Bleed', inflict 3 [Muckworm] instead.",
-      "simpleDesc": [
-        {
-          "abilityID": 9404,
-          "simpleDesc": "Inflict 2 [Muckworm]"
-        },
-        {
-          "abilityID": 94041,
-          "simpleDesc": "Inflict 3 [Muckworm]"
-        }
-      ]
-    },
-    {
-      "id": 9407,
-      "name": "Made-to-Order",
-      "desc": "[Effects apply only to #3 Deployed Identity]\n\nEncounter Start: gain +3 [Vibration] Count.\n\nTurn Start: gain 1 [Protection], 1 [AttackDmgUp], and 1 [ResultEnhancement].",
-      "simpleDesc": [
-        {
-          "abilityID": 9407,
-          "simpleDesc": "Gain +3 [Vibration] Count"
-        },
-        {
-          "abilityID": 94071,
-          "simpleDesc": "Gain 1 [Protection], 1 [AttackDmgUp], and 1 [ResultEnhancement]"
-        }
-      ]
-    },
-    {
-      "id": 9408,
-      "name": "Haunted Shoes",
-      "desc": "[Effects apply only to #2 Deployed Identity]\n\nEncounter Start: gain +3 [Sinking] Count.\n\nTurn Start: gain 1 [Protection], 1 [AttackDmgUp], and 1 [ResultEnhancement].",
-      "simpleDesc": [
-        {
-          "abilityID": 9408,
-          "simpleDesc": "Gain +3 [Sinking] Count"
-        },
-        {
-          "abilityID": 94081,
-          "simpleDesc": "Gain 1 [Protection], 1 [AttackDmgUp], and 1 [ResultEnhancement]"
-        }
-      ]
-    },
-    {
-      "id": 9409,
-      "name": "Frozen Cries",
-      "desc": "Applies only to 1 Identity with the slowest Speed at Turn Start.\n\nIf the said ally wins a Clash or is hit by an enemy, inflict 3 [Sinking] against the enemy.",
-      "simpleDesc": [
-        {
-          "abilityID": 9409,
-          "simpleDesc": "Inflict 3 [Sinking] against the enemy"
-        }
-      ]
-    },
-    {
-      "id": 9410,
-      "name": "Hoarfrost Footprint",
-      "desc": "First Turn Start of a wave: all allies gain +3 [Sinking] Count, and inflict all enemies(or all Abnormality parts) 4 [Sinking] Potency and +8 [Sinking] Count.\n\nEnemies with [Sinking] lose 2 Clash Power; when an allied Identity wins a Clash against an affected enemy, inflict 2 [Sinking] Potency; when an allied Identity is hit by an affected enemy, inflict 3 [Sinking] Potency.",
-      "simpleDesc": [
-        {
-          "abilityID": 9410,
-          "simpleDesc": "Inflict 4 [Sinking] Potency and +8 [Sinking] Count against all enemies."
-        },
-        {
-          "abilityID": 94101,
-          "simpleDesc": "Enemies with [Sinking] lose 2 Clash Power"
-        }
-      ]
-    },
-    {
-      "id": 9413,
-      "name": "Nagel und Hammer Scriptures",
-      "desc": "When an ally wins a Clash using a Skill that inflicts [Laceration] Potency, Count, or 'Unique Bleed', inflict 1~2 [NailPersonality].\n\nIf the said ally is an 'N Corp. Fanatic', gain 1 Fanatic at Turn Start.",
-      "simpleDesc": [
-        {
-          "abilityID": 9413,
-          "simpleDesc": "Inflict 1~2 [NailPersonality]"
-        },
-        {
-          "abilityID": 94131,
-          "simpleDesc": "If the unit is an 'N Corp. Fanatic', gain 1 Fanatic at Turn Start."
-        }
-      ]
-    },
-    {
-      "id": 9414,
-      "name": "Blood-red Mane",
-      "desc": "Effects apply to all Identities with Wrath or Lust Affinity Attack Skills.\n\nTurn End: if this unit did not take any damage from enemy Attack Skills this turn, gain 2 [Agility] and 2 [Endurance].\n\nTurn End: if this unit did take damage from enemy Attack Skills this turn, gain 2 [Binding] and Clash Power +2 next turn.",
-      "simpleDesc": [
-        {
-          "abilityID": 9414,
-          "simpleDesc": "Gain 2 [Agility] and 2 [Endurance] next turn"
-        },
-        {
-          "abilityID": 94141,
-          "simpleDesc": "Gain 2 [Binding] and Clash Power +2 next turn"
-        }
-      ]
-    },
-    {
-      "id": 9415,
-      "name": "Squalidity",
-      "desc": "When an ally attacks an enemy that has [Laceration] with a Skill that inflicts [Laceration] Potency, Count or 'Unique Bleed', deal +15% more damage against the target.\n\nIf the target has 33%- HP, inflict +25% more damage against the target instead.",
-      "simpleDesc": [
-        {
-          "abilityID": 9415,
-          "simpleDesc": "Deal +15% more damage"
-        },
-        {
-          "abilityID": 94151,
-          "simpleDesc": "Deal +25% more damage"
-        }
-      ]
-    },
-    {
-      "id": 9416,
-      "name": "Wholeness",
-      "desc": "If the ally wins a Clash using a Skill that inflicts [Laceration] Potency, Count, or 'Unique Bleed', inflict 2~3 [NailPersonality].\n\nIf the ally is an 'N Corp. Fanatic'., gain 1 Fanatic at Turn Start, and deal +25% more damage against targets with [Laceration].\n\nActivate a special effect when there are 5+ 'N Corp. Fanatic' Identities(only counts Identities on the field at Encounter Start):\n- 'N Corp. Fanatic' Identities gain Final Power +1, Plus Coin Power +1, Minus Coin Power -1, and Attack Skills inflict +1 more [NailPersonality]. If an 'N Corp. Fanatic' Identity is at max SP at Turn Start, gain 3 [AttackDmgUp].",
-      "simpleDesc": [
-        {
-          "abilityID": 9416,
-          "simpleDesc": "Clash Win: inflict 2~3 [NailPersonality]"
-        },
-        {
-          "abilityID": 94161,
-          "simpleDesc": "'N Corp. Fanatic' Identities deal +25% more damage when attacking an enemy"
-        },
-        {
-          "abilityID": 94162,
-          "simpleDesc": "Activate a special effect when there are 5+ 'N Corp. Fanatic' Identities"
-        }
-      ]
-    },
-    {
-      "id": 9419,
-      "name": "Spicebush Branch",
-      "desc": "For this Encounter, the following effect activates every time Skill 1, Skill 2, and Skill 3 are all used at least once.\n\nTurn Start: gain 1 [Agility] and 1 [SkillPowerUp]. (can stack up to 3 times)",
-      "simpleDesc": [
-        {
-          "abilityID": 9419,
-          "simpleDesc": "Turn Start: gain 1 [Agility] and 1 [SkillPowerUp]."
-        }
-      ]
-    },
-    {
-      "id": 9420,
-      "name": "Kaleidoscope",
-      "desc": "Turn Start: units accompanied by other Identities from the same faction as themselves gain [AttackUp] equal to the number of other Identities from the same faction. (max 4)\n\nIdentities from Technology Liberation Alliance gain Clash Power +1.",
-      "simpleDesc": [
-        {
-          "abilityID": 9420,
-          "simpleDesc": "Gain [AttackUp]"
-        },
-        {
-          "abilityID": 94201,
-          "simpleDesc": "Clash Power +1"
-        }
-      ]
-    },
-    {
-      "id": 9423,
-      "name": "Broken Glasses",
-      "desc": "When an ally Clashes against an enemy with a faster Speed, gain Clash Power +1.\n\nWhen an ally wins a Clash against an enemy with a faster Speed, gain 2 [AttackUp] next turn (max 4.)",
-      "simpleDesc": [
-        {
-          "abilityID": 9423,
-          "simpleDesc": "Clash Power +1"
-        },
-        {
-          "abilityID": 94231,
-          "simpleDesc": "Gain 2 [AttackUp] next turn"
-        }
-      ]
-    },
-    {
-      "id": 9424,
-      "name": "Unmailed Letter",
-      "desc": "[Effects apply only to #1, #2 Deployed Identities]\n\nWhen winning a Clash with an Attack Skill that inflicts [Burst] Potency or Count, inflict 5 [Burst] Potency and +3 [Burst] Count against the target. (once per turn per Identity)\n\nWhen Clashing against an enemy with a slower Speed, gain Final Power +1 and deal +25% more damage.\n\nWhen winning a Clash against an enemy with [AttackUp] buff, gain 3 [AttackUp] for the next turn, and inflict 3 [AttackDown] on the enemy that lost the Clash (absolute value 9)",
-      "simpleDesc": [
-        {
-          "abilityID": 9424,
-          "simpleDesc": "Clash Win: inflict 5 [Burst] Power and +3 [Burst] Count against the target"
-        },
-        {
-          "abilityID": 94241,
-          "simpleDesc": "Final Power +1, deal +25% more damage"
-        },
-        {
-          "abilityID": 94242,
-          "simpleDesc": "Inflict 3 [AttackDown] against the enemy that lost the Clash"
-        }
-      ]
-    },
-    {
-      "id": 9429,
-      "name": "Harpoon Prosthetic Leg",
-      "desc": "Turn End: apply 2 [Agility], 2 [AttackUp] and 2 [AttackDmgUp] next turn to the ally with the highest sum of [Breath] Potency and Count.\n\nThe Pequod Identities gain Max Speed +1.",
-      "simpleDesc": [
-        {
-          "abilityID": 9429,
-          "simpleDesc": "Apply 2 [Agility], 2 [AttackUp], and 2 [AttackDmgUp] next turn"
-        },
-        {
-          "abilityID": 94291,
-          "simpleDesc": "The Pequod Identities gain Max Speed +1."
-        }
-      ]
-    },
-    {
-      "id": 9430,
-      "name": "Guiding Gas Lamp",
-      "desc": "First Turn Start of a wave: all allies gain 5 [Breath] and +5 [Breath] Count.\n\nTurn End: 1 ally with the highest sum of [Breath] Potency and Count gains 2 [Agility], 3 [AttackUp], and 3 [AttackDmgUp] next turn.\n\nThe Pequod Identities gain Skill Power +2 and Max Speed +2.",
-      "simpleDesc": [
-        {
-          "abilityID": 9430,
-          "simpleDesc": "All allies gain 5 [Breath] and +5 [Breath] Count."
-        },
-        {
-          "abilityID": 94301,
-          "simpleDesc": "Apply 2 [Agility], 3 [AttackUp], and 3 [AttackDmgUp] next turn."
-        },
-        {
-          "abilityID": 94302,
-          "simpleDesc": "Skill Power +2, Max Speed +2."
-        }
-      ]
-    },
-    {
-      "id": 9433,
-      "name": "Chief Butler's Secret Arts",
-      "desc": "First Turn Start of a wave: select 1 enemy with the slowest Speed(or a random Abnormality part), and inflict 5 [Binding] for 5 turns starting next turn.\n\nClash Win: If this unit's Speed is faster than the target's, heal SP equal to the Speed difference, and gain 'Offense Level' equal to the half of that Speed difference. (only applies to the Skill used to win the Skill. Max 'Offense Level' gain: 3)",
-      "simpleDesc": [
-        {
-          "abilityID": 9433,
-          "simpleDesc": "Inflict 5 [Binding] for 5 turns starting next turn"
-        },
-        {
-          "abilityID": 94331,
-          "simpleDesc": "Heal SP, and gain Offense Level equal to the amount of SP healed"
-        }
-      ]
-    },
-    {
-      "id": 9434,
-      "name": "Handheld Mirror",
-      "desc": "First Turn Start of a wave: select 2 enemies with the slowest Speed(or 2 random Abnormality parts. The effect does not stack if the enemy is singular) and inflict 5 [Binding] and 3 [DefenseDown] at Turn Start starting next turn.\n\nWhen the enemy recovers from Stagger, and if they don't have any remaining Stagger Thresholds, create a new Stagger Threshold at 66% mark of the target's current HP (3 times per Encounter). If an ally Staggers an enemy with an Attack Skill(Except E.G.O Skills) that applies [Vibration] Potency or [Vibration] Count(including on self or on ally), randomly inflict [Vibration] Potency equal to half of the [Vibration] Potency on target between other enemies(or other Abnormality parts), and double the [Vibration] Potency on the Staggered target.",
-      "simpleDesc": [
-        {
-          "abilityID": 9433,
-          "simpleDesc": "Turn Start: Gain 5 Bind and 3 Defense Level Down."
-        },
-        {
-          "abilityID": 94331,
-          "simpleDesc": "Create a new Stagger Threshold at 66% mark of the target's current HP"
-        },
-        {
-          "abilityID": 94332,
-          "simpleDesc": "[Vibration] Potency on the Staggered target increases by x1.5"
-        }
-      ]
-    },
-    {
-      "id": 9701,
-      "name": "Hot ‘n Juicy Drumstick",
-      "desc": "When inflicting [Combustion] with a Skill, inflict +3 [Combustion] Count",
-      "simpleDesc": [
-        {
-          "abilityID": 9701,
-          "simpleDesc": "When inflicting [Combustion] with a Skill, inflict +3 [Combustion] Count"
-        }
-      ]
-    },
-    {
-      "id": 9702,
-      "name": "Dry-to-the-Bone Breast",
-      "desc": "When inflicting [Burst] with a Skill, inflict +3 [Burst] Count",
-      "simpleDesc": [
-        {
-          "abilityID": 9702,
-          "simpleDesc": "When inflicting [Burst] with a Skill, inflict +3 [Burst] Count"
-        }
-      ]
-    },
-    {
-      "id": 9703,
-      "name": "Tango Marinade",
-      "desc": "If the unit's Speed is faster than the target's, gain +(Speed/3) Clash Power. (max 3)",
-      "simpleDesc": [
-        {
-          "abilityID": 9703,
-          "simpleDesc": "Gain +(Speed/3) Clash Power."
-        }
-      ]
-    },
-    {
-      "id": 9704,
-      "name": "Contaminated Needle & Thread",
-      "desc": "The following effect applies to the first Skill to deal damage to an enemy.\n\nInflict (damage dealt/3) [Laceration] Potency.",
-      "simpleDesc": [
-        {
-          "abilityID": 9704,
-          "simpleDesc": "Inflict (damage dealt/3) [Laceration] Potency"
-        }
-      ]
-    },
-    {
-      "id": 9705,
-      "name": "Sharp Needle & Thread",
-      "desc": "Each turn, the first skill to deal damage to an enemy deals bonus fixed damage by half of the damage dealt.",
-      "simpleDesc": [
-        {
-          "abilityID": 9705,
-          "simpleDesc": "Deal (damage dealt/2) bonus fixed damage"
-        }
-      ]
-    },
-    {
-      "id": 9706,
-      "name": "Oil-gunked Spanner",
-      "desc": "Blunt Skills deal +10% more damage\n\nFinal Coin of Blunt Skills inflict 2 [Vibration] Potency On Hit. (once per turn)",
-      "simpleDesc": [
-        {
-          "abilityID": 9706,
-          "simpleDesc": "Blunt Skills deal +10% more damage"
-        },
-        {
-          "abilityID": 97061,
-          "simpleDesc": "Inflict 2 [Vibration] Potency against the enemy."
-        }
-      ]
-    },
-    {
-      "id": 9707,
-      "name": "Twinkling Scrap",
-      "desc": "When an ally with Shield is hit by an enemy, reflect 3 fixed damage. (does not reflect damage when the ally did not take any Shield damage)",
-      "simpleDesc": [
-        {
-          "abilityID": 9707,
-          "simpleDesc": "Reflect 3 fixed damage"
-        }
-      ]
-    },
-    {
-      "id": 9708,
-      "name": "Trash Crab Brain Wine",
-      "desc": "When an ally attacks an enemy that has [Burst] with a Skill that inflicts [Burst] Potency or Count, deal +([Burst] Count x 1.25)% more damage. (max 50%)\n\nWhen an ally recovers from Stagger, heal 20% of max HP. (2 times per Encounter)",
-      "simpleDesc": [
-        {
-          "abilityID": 9708,
-          "simpleDesc": "Deal +([Burst] Count x 1.25)% more damage (max 50%)"
-        },
-        {
-          "abilityID": 97081,
-          "simpleDesc": "Heal 20% of Max HP"
-        }
-      ]
-    },
-    {
-      "id": 9709,
-      "name": "Pom-pom Hat",
-      "desc": "Turn End: gain 1 [Breath] Potency next turn for every Attack Skill that dealt damage before Turn End.\n\nIn Focused Encounters: gain 3 [Breath] Potency for every Attack Skill that dealt damage before Turn End instead.",
-      "simpleDesc": [
-        {
-          "abilityID": 9709,
-          "simpleDesc": "Gain 1 [Breath] Potency"
-        },
-        {
-          "abilityID": 97091,
-          "simpleDesc": "Gain 3 [Breath] Potency"
-        }
-      ]
-    },
-    {
-      "id": 9710,
-      "name": "Huge Gift Sack",
-      "desc": "Turn Start: apply 2 [Breath], 2 [Breath] Count, and 2 [Protection] to the ally with the least HP.",
-      "simpleDesc": [
-        {
-          "abilityID": 9710,
-          "simpleDesc": "Apply 2 [Breath], 2 [Breath] Count, and 2 [Protection]"
-        }
-      ]
-    },
-    {
-      "id": 9711,
-      "name": "Sad Plushie",
-      "desc": "Deal +(absolute value of SP/1.5)% more damage. (min 0%)\n\nWhen an ally with Plus Coin Skills recovers from Stagger, fully heal SP. (does not activate when Corroded)\n\nFor an ally with all Minus Coin Skills: gain 3 [Paralysis] at Turn Start.",
-      "simpleDesc": [
-        {
-          "abilityID": 9711,
-          "simpleDesc": "Deal +(absolute value of SP/1.5)% more damage. (min 0%)"
-        },
-        {
-          "abilityID": 97111,
-          "simpleDesc": "When recovering from Stagger, fully heal SP"
-        },
-        {
-          "abilityID": 97112,
-          "simpleDesc": "Gain 3 [Paralysis] at Turn Start"
-        }
-      ]
-    },
-    {
-      "id": 9712,
-      "name": "Black Ledger",
-      "desc": "First Turn Start of an Encounter: gain random E.G.O resources equal to the number of enemies.\n\nIf there are 4 or more Blade Lineage or Kurokumo Clan Identities participating in this Encounter(only counts Identities on the field at Encounter Start), gain E.G.O resources for the least-owned E.G.O Affinity instead.",
-      "simpleDesc": [
-        {
-          "abilityID": 9712,
-          "simpleDesc": "Gain random E.G.O resources"
-        },
-        {
-          "abilityID": 97121,
-          "simpleDesc": "Gain the least-owned E.G.O resources"
-        }
-      ]
-    },
-    {
-      "id": 9713,
-      "name": "Rusted Hilt",
-      "desc": "Turn Start: all allies gain 1 Slash Power Up.\n\nBlade Lineage or Kurokumo Clan Identities gain 2 Slash Power Up instead.",
-      "simpleDesc": [
-        {
-          "abilityID": 9713,
-          "simpleDesc": "Gain 1 Slash Power Up"
-        },
-        {
-          "abilityID": 97131,
-          "simpleDesc": "Gain 2 Slash Power Up"
-        }
-      ]
-    },
-    {
-      "id": 9714,
-      "name": "Fractured Blade",
-      "desc": "During this Encounter: when inflicting [Laceration] Potency or 'Unique Bleed' for the first time against an enemy with an Attack Skill effect, inflict an additional +2 [Laceration] Count. (Once per Encounter)\n\nKurokumo Clan Identities, when inflicting damage against an enemy for the first time, inflict an additional 4 [Laceration] Potency and +4 [Laceration] Count instead.",
-      "simpleDesc": [
-        {
-          "abilityID": 9714,
-          "simpleDesc": "Inflict additional 2 [Laceration] Count"
-        },
-        {
-          "abilityID": 97141,
-          "simpleDesc": "Inflict additional 4 [Laceration] Potency and +4 [Laceration] Count"
-        }
-      ]
-    },
-    {
-      "id": 9715,
-      "name": "Broken Blade",
-      "desc": "When an ally Critically Hits an enemy, deal an additional ([Breath] Potency/3) Pride damage.\n\nBlade Lineage Identities, when they Critically Hit an enemy, deal an additional ([Breath] Potency/2) Pride damage instead.",
-      "simpleDesc": [
-        {
-          "abilityID": 9715,
-          "simpleDesc": "Deal an additional ([Breath] Potency/3) Pride damage."
-        },
-        {
-          "abilityID": 97151,
-          "simpleDesc": "Deal an additional ([Breath] Potency/2) Pride damage."
-        }
-      ]
-    },
-    {
-      "id": 9716,
-      "name": "Red Tassel",
-      "desc": "If the target has 1.5 or lower Slash Resistance, Slash Resistance +0.3.",
-      "simpleDesc": [
-        {
-          "abilityID": 9716,
-          "simpleDesc": "Slash Resistance +0.3"
-        }
-      ]
-    },
-    {
-      "id": 9717,
-      "name": "Sublimity",
-      "desc": "Encounter Start: activates when there are 3 or more Kurokumo Clan Identities(only counts Identities on the field at Encounter Start).\n\nTurn Start: all allies gain 2 Slash Power Up, and deal +35% more Slash damage.\n\nTurn Start: when a Kurokumo Clan Identity deals damage for the first time, inflict an additional 4 [Laceration] Potency and +4 [Laceration] Count. (Once per turn)",
-      "simpleDesc": [
-        {
-          "abilityID": 9717,
-          "simpleDesc": "Gain 2 Slash Power Up and deal +35% more Slash Damage"
-        },
-        {
-          "abilityID": 97171,
-          "simpleDesc": "Inflict additional 4 [Laceration] Potency and +4 [Laceration] Count"
-        }
-      ]
-    },
-    {
-      "id": 9718,
-      "name": "Unbending",
-      "desc": "Encounter Start: activates when there are 3 or more Blade Lineage Identities(only counts Identities on the field at Encounter Start).\n\nTurn Start: all allies gain 2 Slash Power Up, and deal +35% more Slash damage.\n\nTurn Start: when a Blade Lineage Identity hits critically, deal additional Pride damage equal to [Breath] Potency on self.",
-      "simpleDesc": [
-        {
-          "abilityID": 9718,
-          "simpleDesc": "Gain 2 Slash Power Up and deal +35% more Slash Damage"
-        },
-        {
-          "abilityID": 97181,
-          "simpleDesc": "Deal additional Pride damage equal to [Breath] Potency on self"
-        }
-      ]
-    },
-    {
-      "id": 9719,
-      "name": "Ragged Bamboo Hat",
-      "desc": "Encounter Start: activates when there are 3 or more Blade Lineage Identities(only counts Identities on the field at Encounter Start).\n\nAll allies deal +50% more Slash damage\n\nBlade Lineage Identities: if the ally has [Breath], Critical rate is fixed to 100%.\n\nBlade Lineage Identities: inflict x1.5 more damage on Crit",
-      "simpleDesc": [
-        {
-          "abilityID": 9719,
-          "simpleDesc": "Deal +50% Slash Damage"
-        },
-        {
-          "abilityID": 97191,
-          "simpleDesc": "Fix Critical rate to 100%"
-        },
-        {
-          "abilityID": 97192,
-          "simpleDesc": "Deal 1.5 times more damage on Crit"
-        }
-      ]
-    },
-    {
-      "id": 9720,
-      "name": "Old Dopo Robe",
-      "desc": "Encounter Start: activates when there are 3 or more Blade Lineage Identities(only counts Identities on the field at Encounter Start).\n\nAll allies deal +50% more Slash damage.\n\nBlade Lineage Identities: Skill 1 gains Coin Power +1. Single-Coin Skill 1 gains Coin Power +3.\n\n[Blade Lineage Mentor Meursault Only] 'Yield My Flesh' Skill Final Clash Power -12; 'To Claim Their Bones' Skill deals +50% more damage.",
-      "simpleDesc": [
-        {
-          "abilityID": 9720,
-          "simpleDesc": "Deal +50% Slash Damage"
-        },
-        {
-          "abilityID": 97201,
-          "simpleDesc": "Skill 1 Coin Power Up"
-        },
-        {
-          "abilityID": 97202,
-          "simpleDesc": "'Yield My Flesh' Skill Final Clash Power -12; 'To Claim Your Bones' deals +50% more damage"
-        }
-      ]
-    },
-    {
       "id": 19086,
       "name": "Reverberation+",
       "desc": "Turn End: Inflict 2 [Binding] and <style=\"upgradeHighlight\">2 [DefenseDown]</style> to enemies (for Abnormalities, their Parts) with <style=\"upgradeHighlight\">8</style>+ [Vibration] Potency.\n\nIf the target has <style=\"upgradeHighlight\">15</style>+ [Vibration] Potency, apply 2 [Binding], 1 [Paralysis], <style=\"upgradeHighlight\">and 2 [DefenseDown]</style> instead.",
@@ -4860,7 +4334,7 @@
     {
       "id": 29086,
       "name": "Reverberation++",
-      "desc": "Turn End: Inflict 3 [Binding] and <style=\"upgradeHighlight\">3</style> [DefenseDown] to enemies (for Abnormalities, their Parts) with <style=\"upgradeHighlight\">5</style>+ [Vibration] Potency.\n\nIf the target has <style=\"upgradeHighlight\">10</style>+ [Vibration] Potency, apply 2 [Binding], 1 [Paralysis], and <style=\"upgradeHighlight\">4</style> [DefenseDown] instead.",
+      "desc": "Turn End: Inflict 2 [Binding] and <style=\"upgradeHighlight\">3</style> [DefenseDown] to enemies (for Abnormalities, their Parts) with <style=\"upgradeHighlight\">5</style>+ [Vibration] Potency.\n\nIf the target has <style=\"upgradeHighlight\">10</style>+ [Vibration] Potency, apply 2 [Binding], 1 [Paralysis], and <style=\"upgradeHighlight\">4</style> [DefenseDown] instead.",
       "simpleDesc": [
         {
           "abilityID": 29086,
@@ -4903,187 +4377,294 @@
       ]
     },
     {
-      "id": 9721,
-      "name": "Silver Watch Case",
-      "desc": "When dealing damage to an enemy with Attack Skills(Not counting E.G.O Skills) that inflict [Vibration] Potency, Count, or Unique Tremor, deal +10% more damage.\n\nIf the Skill triggered [VibrationExplosion] on the enemy for the first time this turn, inflict +2 [Vibration] Count next turn (once per turn)",
+      "id": 9155,
+      "name": "Decamillennial Stewpot",
+      "desc": "Skills that inflict [Combustion] Potency, Count, or 'Unique Burn' gain Clash Power +1.",
       "simpleDesc": [
         {
-          "abilityID": 9721,
-          "simpleDesc": "Deal +10% more damage"
-        },
-        {
-          "abilityID": 97211,
-          "simpleDesc": "Inflict +2 [Vibration] Count next turn"
-        }
-      ]
-    },
-    {
-      "id": 9722,
-      "name": "Faded Watch Case",
-      "desc": "When Clashing with a faster enemy, Clash Power +1.\n\nWhen dealing damage to a faster enemy, inflict 3 [Vibration] Potency and +2 [Vibration] Count next turn. (once per turn)",
-      "simpleDesc": [
-        {
-          "abilityID": 9722,
+          "abilityID": 9155,
           "simpleDesc": "Clash Power +1"
-        },
-        {
-          "abilityID": 97221,
-          "simpleDesc": "Inflict 3 [Vibration] Potency and +2 [Vibration] Count next turn"
         }
       ]
     },
     {
-      "id": 9723,
-      "name": "Warning Notice",
-      "desc": "Turn End: Inflict 1 [Binding] to the fastest enemy next turn. (for Abnormalities, a Part)\n\nIf the target has [Vibration] or 'Unique Tremor', inflict 2 [Binding] instead.\n\nWhen an ally attacks targets with [Binding], deal +(5 + (2.5 x [Binding] value)) more damage. (max 15%)",
+      "id": 9157,
+      "name": "Secret Cookbook",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Combustion] Potency, Count, or 'Unique Burn' effects. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nSkills that inflict [Combustion] Potency, Count, or 'Unique Burn': Final Power +1\n\nOn Clash Win with Skills that inflict [Combustion] Potency, Count, or 'Unique Burn': inflict ((# of remaining Coins / 2) +1) [Combustion] Potency on the target",
       "simpleDesc": [
         {
-          "abilityID": 9723,
-          "simpleDesc": "Apply 1 [Binding] next turn"
+          "abilityID": 9157,
+          "simpleDesc": "Skill Final Power +1"
         },
         {
-          "abilityID": 97231,
-          "simpleDesc": "Deal +(5 + (2.5 x [Binding] value)) more damage"
+          "abilityID": 91571,
+          "simpleDesc": "Inflict ((# of remaining Coins / 2) +1) [Combustion] Potency"
         }
       ]
     },
     {
-      "id": 9724,
-      "name": "Etched Clock Hands",
-      "desc": "First Turn Start of a wave: inflict (9 - current Speed) [Vibration] Potency to 3 enemies with the slowest Speed. (min. 3)\n\nDeal +10% more damage against targets with 12+ [Vibration] or 'Unique Tremor' at Turn Start.",
+      "id": 9159,
+      "name": "Millarca",
+      "desc": "Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed' gain Clash Power +1.",
       "simpleDesc": [
         {
-          "abilityID": 9724,
-          "simpleDesc": "Inflict (9 - current Speed) [Vibration] Potency"
-        },
-        {
-          "abilityID": 97241,
-          "simpleDesc": "Deal +10% more damage"
+          "abilityID": 9159,
+          "simpleDesc": "Clash Power +1"
         }
       ]
     },
     {
-      "id": 9725,
-      "name": "Rusted Clock Hands",
-      "desc": "First Turn Start of a wave: inflict (9 - current Speed) [Vibration] Potency (min. 3) and (9 - current Speed)/2 [Vibration] Count to 1 enemy with the fastest Speed. (rounded up; for Abnormalities, a Part)\n\nTake -10% less damage from targets with 12+ [Vibration] or 'Unique Tremor' at Turn Start.",
+      "id": 9161,
+      "name": "Devotion",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Laceration] Potency, Count, or 'Unique Bleed' effects. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\n1 ally with the fastest Speed) Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed': Coin Power +1, damage dealt +50%\n\nFinal Power +1 to all Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed'.",
       "simpleDesc": [
         {
-          "abilityID": 9725,
-          "simpleDesc": "Inflict (9 - current Speed) [Vibration] Potency (min. 3) and (9 - current Speed)/2 [Vibration] Count"
+          "abilityID": 9161,
+          "simpleDesc": "Coin Power +1, deal +50% more damage"
         },
         {
-          "abilityID": 97251,
-          "simpleDesc": "Damage Taken -10%."
+          "abilityID": 91611,
+          "simpleDesc": "Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed' gain Final Power +1."
         }
       ]
     },
     {
-      "id": 9726,
-      "name": "Chalice of Trickle-down",
-      "desc": "When an ally with Attack Skills(Not E.G.O Skills) that inflict [Vibration] Potency, Count, or 'Unique Tremor' wins a Clash, inflict 2 [Vibration] Potency and +2 [Vibration] Count. (2 times per turn)\n\nYurodivy Identities: inflict 3 [Vibration] Potency and +3 [Vibration] Count instead (3 times per turn)\n\nIf the affected Identity Clashes against targets with higher Offense Levels, Clash Power +2; deal +20% more damage when attacking after winning the Clash.",
+      "id": 9165,
+      "name": "Interlocked Cogs",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency, Count, or 'Unique Tremor'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nWhen [VibrationExplosion] triggers on a target for the 6th time this turn, add an additional Stagger Threshold at 0% mark of their current HP (once per Encounter)\n\nInflict 1 [Vulnerable] when triggering [Switch_Vibration] or [FusionVibration] (once per turn)",
       "simpleDesc": [
         {
-          "abilityID": 9726,
-          "simpleDesc": "Inflict 2 [Vibration] Potency and +2 [Vibration] Count"
+          "abilityID": 9165,
+          "simpleDesc": "Add a new Stagger Threshold"
         },
         {
-          "abilityID": 97261,
-          "simpleDesc": "Inflict 3 [Vibration] Potency and +3 [Vibration] Count"
-        },
-        {
-          "abilityID": 97262,
-          "simpleDesc": "Clash Power +2, deal +20% more damage"
+          "abilityID": 91651,
+          "simpleDesc": "Inflict 1 [Vulnerable]"
         }
       ]
     },
     {
-      "id": 9727,
-      "name": "Prepaid Time Receipt",
-      "desc": "Deal +(5 + (2.5 x Speed difference))% more damage against faster enemies with 2+ Speed difference. (max 15%)\n\nTurn End: If an ally dealt damage with an Attack Skill (Not counting E.G.O Skills) this turn against faster enemies with 2+ Speed difference, inflict 2 [Binding] and 1 [ResultReduction] to the enemy next turn. (once per turn)",
+      "id": 9169,
+      "name": "Thorny Rope Cuffs",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Burst] Potency or Count. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nWhen an enemy's [Burst] Count drops below 1 in combat, consume 20 [Burst] Potency instead of [Burst] Count (at less than 20 [Burst] Potency, however, the effect ends)\n\nOn Hit, when the target has 2 [Burst] Count in combat, inflict +1 more [Burst] Count (2 times per Encounter)",
       "simpleDesc": [
         {
-          "abilityID": 9727,
-          "simpleDesc": "Deal +(5 + (2.5 x Speed difference))% more damage against"
+          "abilityID": 9169,
+          "simpleDesc": "Consume Rupture Potency in place of Count"
         },
         {
-          "abilityID": 97271,
-          "simpleDesc": "Inflict 2 [Binding] and 1 [ResultReduction] to the enemy next turn"
+          "abilityID": 91691,
+          "simpleDesc": "Inflict +1 more Rupture Count"
         }
       ]
     },
     {
-      "id": 9728,
-      "name": "Pocket Watch : Type L",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency, Count, or 'Unique Tremor' effects. (Not counting E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nTo allies' Skill 3s that inflict [Vibration] Potency, Count, or 'Unique Tremor': Coin Power +2 and deal +25% more damage.\n\nWhen an ally that inflicts [Vibration] Potency, Count, or 'Unique Tremor' triggers [Switch_Vibration] on an enemy with Attack Skills(Including E.G.O Skills): multiply the [Vibration] Potency and Count by 1.5(only when actually Converting them into different 'Tremor' types) and inflict 5 [DefenseDown] next turn. (once per turn)\n\nFirst Turn Start of a wave: inflict (12 - current Speed) [Vibration] Potency (min. 6) to 3 enemies with the slowest Speed.",
+      "id": 9174,
+      "name": "Tangled Bones",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nTurn Start: enemies with [Sinking](for Abnormalities, all Parts) regain ([Sinking] Count lost on hit last turn / 3) [Sinking] Count.\n\nIf the Base Attack Skill hits against a target with less than 0 SP(for enemies without SP, if they have 1.5+ Gloom Resist.), inflict ([Sinking] Potency / 10) Gloom Affinity damage (min 1, 10 times per turn for this effect)",
       "simpleDesc": [
         {
-          "abilityID": 9728,
-          "simpleDesc": "Skill 3 gains Coin Power +2 and deals +25% more damage"
+          "abilityID": 9174,
+          "simpleDesc": "Inflict [Sinking] Count"
         },
         {
-          "abilityID": 97281,
-          "simpleDesc": "Multiply [Vibration] Potency and Count by 1.5 when triggering Amplitude Conversion"
-        },
-        {
-          "abilityID": 97282,
-          "simpleDesc": "Inflict (12 - current Speed) [Vibration] Potency"
+          "abilityID": 91741,
+          "simpleDesc": "Inflict Gloom Affinity damage"
         }
       ]
     },
     {
-      "id": 9729,
-      "name": "Pocket Watch : Type E",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency, Count, or 'Unique Tremor' effects. (Not counting E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nTo allies' Skill 3s that inflict [Vibration] Potency, Count, or 'Unique Tremor': Coin Power +2 and deal +25% more damage.\n\nWhen an ally that inflicts [Vibration] Potency, Count, or 'Unique Tremor' deals damage to a slower enemy with 2+ Speed difference between them: deal +([Vibration] Potency on target, max 25)% more damage and inflict 2 [DefenseDown] every time the ally deals damage (max 6)\n\nFirst Turn Start of a wave: inflict (12 - current Speed) [Vibration] Potency (min. 6) and (12 -current Speed)/2 [Vibration] Count to 1 enemy with the fastest Speed. (rounded up; for Abnormalities, a Part)",
+      "id": 9177,
+      "name": "Recollection of a Certain Day",
+      "desc": "Skill 3 for Identities that can gain [Breath] Potency or Count through Skills(except E.G.O Skills): Final Power +2",
       "simpleDesc": [
         {
-          "abilityID": 9729,
-          "simpleDesc": "Skill 3 gains Coin Power +2 and deals +25% more damage"
-        },
-        {
-          "abilityID": 97291,
-          "simpleDesc": "Deal +([Vibration] Potency on target)% more damage; inflict 2 [DefenseDown] every time the ally deals damage"
-        },
-        {
-          "abilityID": 97292,
-          "simpleDesc": "Inflict (12 - current Speed) [Vibration] Potency (min. 3) and (9 - current Speed)/2 [Vibration] Count"
+          "abilityID": 9177,
+          "simpleDesc": "Final Power +2"
         }
       ]
     },
     {
-      "id": 9730,
-      "name": "Pocket Watch : Type Y",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency, Count, or 'Unique Tremor' effects. (Not counting E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nTo allies' Skill 3s that inflict [Vibration] Potency, Count, or 'Unique Tremor': Coin Power +2 and deal +25% more damage.\n\nYurodivy Identities: Skill 3 gains Coin Power +2 and deal +(25 + (sum of [Vibration] Potency and Count on target))% more damage instead. (max 100%)\n\nYurodivy Identities: gain +3 [Vibration] Count at Turn Start.",
+      "id": 9179,
+      "name": "Reminiscence",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply or gain [Breath] Potency or Count. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\nSkill 3 of Identities with Skills(except E.G.O Skills) that gain [Breath] Potency or Count: Coin Power +1\n\nCombat Start: a random ally gains 3 [Breath] Potency. (prioritizes Identities that gain [Breath] Potency or Count with their Attack Skills) Prioritizes allies with Gloom Affinity Attack Skills; they gain 3 [Breath] Potency and +2 [Breath] Count instead.",
       "simpleDesc": [
         {
-          "abilityID": 9730,
-          "simpleDesc": "Skill 3 gains Coin Power +2 and deals +25% more damage"
+          "abilityID": 9179,
+          "simpleDesc": "Coin Power +1"
         },
         {
-          "abilityID": 97301,
-          "simpleDesc": "Skill 3 gains Coin Power +2 and deal +(25 + (sum of [Vibration] Potency and Count on target))% more damage."
-        },
-        {
-          "abilityID": 97302,
-          "simpleDesc": "Gain +3 [Vibration] Count"
+          "abilityID": 91791,
+          "simpleDesc": "Gain 3 [Breath] Potency. Allies with Gloom Affinity Attack Skills gain an additional +2 [Breath] Count"
         }
       ]
     },
     {
-      "id": 9731,
-      "name": "Pocket Watch : Type P",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency, Count, or 'Unique Tremor' effects. (Not counting E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nTo allies' Skill 3s that inflict [Vibration] Potency, Count, or 'Unique Tremor': Coin Power +2 and deal +25% more damage.\n\nWhen an ally that inflicts [Vibration] Potency, Count, or 'Unique Tremor' Clashes against a faster enemy with 2+ Speed difference: Clash Power +2 and deal +([Vibration] Potency on target)% more damage. (max 50%)\n\nTurn Start: from slowest to fastest, the 3 slowest allies gain 5 [AttackUp], 3 [AttackUp], and 2 [AttackUp] respectively.",
+      "id": 9182,
+      "name": "T-1B Octagonal Bolt",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that gain [Charge] Count or 'Unique Charge'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nTurn Start: all allies gain (([Charge] Count + 'Unique Charge') / 10) [AttackDmgUp]. (max 2, rounded up)\n\nTurn End: allies without [ChargeForceField] gain 1 [ChargeForceField].",
       "simpleDesc": [
         {
-          "abilityID": 9731,
-          "simpleDesc": "Skill 3 gains Coin Power +2 and deals +25% more damage"
+          "abilityID": 9182,
+          "simpleDesc": "Gain ([Charge] Count / 10) [AttackDmgUp]"
         },
         {
-          "abilityID": 97311,
-          "simpleDesc": "Clash Power +2 and deal +([Vibration] Potency on target)% more damage"
-        },
+          "abilityID": 91821,
+          "simpleDesc": "Gain 1 [ChargeForceField]"
+        }
+      ]
+    },
+    {
+      "id": 9185,
+      "name": "Rebate Token",
+      "desc": "20% chance to get the Cost refunded when Enhancing in a Shop.",
+      "simpleDesc": [
         {
-          "abilityID": 97312,
-          "simpleDesc": "Gain [AttackUp]"
+          "abilityID": 9185,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9186,
+      "name": "New Release Pamphlet",
+      "desc": "20% chance to get the Cost refunded when Refreshing in a Shop.",
+      "simpleDesc": [
+        {
+          "abilityID": 9186,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9187,
+      "name": "Special Catalogue",
+      "desc": "Number of Encounter Reward Card Choices +1",
+      "simpleDesc": [
+        {
+          "abilityID": 9187,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9188,
+      "name": "Pre-order Discount",
+      "desc": "Shop Regular Refresh Cost -30%",
+      "simpleDesc": [
+        {
+          "abilityID": 19188,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9189,
+      "name": "Renewed Merch",
+      "desc": "Shop E.G.O Gift Enhance Cost -30%",
+      "simpleDesc": [
+        {
+          "abilityID": 19189,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9190,
+      "name": "Trial Plan Guide",
+      "desc": "Shop Skill Replacement Cost -30%",
+      "simpleDesc": [
+        {
+          "abilityID": 29190,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9191,
+      "name": "Prestige Card",
+      "desc": "Shop E.G.O Gift Purchase Cost -30%",
+      "simpleDesc": [
+        {
+          "abilityID": 29191,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9991,
+      "name": "Dark Vestige",
+      "desc": "Counts as a Tier 1 E.G.O Gift. Can be sold at a Shop or be used as an ingredient for Fusion.",
+      "simpleDesc": [
+        {
+          "abilityID": 9991,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9992,
+      "name": "Faint Vestige",
+      "desc": "Counts as a Tier 2 E.G.O Gift. Can be sold at a Shop or be used as ingredients for Fusion.",
+      "simpleDesc": [
+        {
+          "abilityID": 9992,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9993,
+      "name": "Twinkling Vestige",
+      "desc": "Counts as a Tier 3 E.G.O Gift. Can be sold at a Shop or be used as ingredients for Fusion.",
+      "simpleDesc": [
+        {
+          "abilityID": 9993,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9994,
+      "name": "Brilliant Vestige",
+      "desc": "Counts as a Tier 4 E.G.O Gift. Can be sold at a Shop or be used as ingredients for Fusion.",
+      "simpleDesc": [
+        {
+          "abilityID": 9994,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9995,
+      "name": "Lunar Vestige",
+      "desc": "Counts as a Tier 5 E.G.O Gift. Can be sold at a Shop or be used as ingredients for Fusion.",
+      "simpleDesc": [
+        {
+          "abilityID": 9995,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9192,
+      "name": "Layered Bandages",
+      "desc": "Turn End: among allies with Bleed, the Identity with the least HP heals 5% of their max HP.",
+      "simpleDesc": [
+        {
+          "abilityID": 9192,
+          "simpleDesc": "Heal 1 ally with Bleed"
+        }
+      ]
+    },
+    {
+      "id": 19192,
+      "name": "Layered Bandages+",
+      "desc": "Turn End: among allies with Bleed, two Identities with the least HP heal 5% of their max HP.",
+      "simpleDesc": [
+        {
+          "abilityID": 19192,
+          "simpleDesc": "Heal 2 allies with Bleed"
         }
       ]
     }

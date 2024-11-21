@@ -17,6 +17,11 @@ LimbusCompany I18N mod
 [繁體中文](https://github.com/SmallYuanSY/LocalizeLimbusCompany) | [ภาษาไทย](https://github.com/JoshSnappas/LocalizeLimbusCompanyTH) | [Indonesia](https://github.com/ArtefactX1/LocalizeLimbusID)
 </div>
 
+# Disclaimer
+- **LocalizeLimbusCompay (hereafter referred to as "the project") is completely free.**
+- **The project is acknowledged by Project Moon via e-mail contact. The project would not cause a breach of Limbus Company ToS.**  
+For additional information, please refer to [the email](https://www.zeroasso.top/docs/community/minutes/firstContact/).
+- **The project adopts the [MIT license]((./LICENSE)).**
 # Install
 ### 0. Install [.NET 6.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/sdk-6.0.406-windows-x64-installer)
 ### 1. Install BepInEx
@@ -39,10 +44,6 @@ LimbusCompany I18N mod
 - [Chinese Localize Group's Bilibili account](https://space.bilibili.com/1247764479) Localize Limbus Company
 - [Limbus Company Chinese wiki](https://limbuscompany.huijiwiki.com)
 - [ParaTranz Translation Project](https://paratranz.cn/projects/6860) The latest progress of Localize Limbus Company
-# Disclaimer
-- **Using this mod is free.** 
-- **This mod is allowed by Project Moon.** This mod is whitelisted by Project Moon Offical。You can read [`this post`](https://github.com/orgs/LocalizeLimbusCompany/discussions/70) to learn more.
-- **We use MIT License.** Please go to [`LICENSE`](../LICENSE) or [`CN_LICENSE`](./CN_LICENSE) to learn more.
 # Contributors
 ## This Repo
 <a href="https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/graphs/contributors">
