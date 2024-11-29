@@ -386,6 +386,193 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2070811,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "失衡惯性",
+          "abName": "发条装置时间不倒翁",
+          "desc": "[BeforeAttack] 对自身施加(最大共鸣数)层震颤 (最多6层，每回合最多20层)\n- 若该共鸣为怠惰共鸣，则使自身的震颤 振幅转换 为震颤-上弦 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层震颤 "
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级震颤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 对目标施加2层震颤 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层\n- 使目标震颤引爆 时，本回合对其施加1层怠惰易损 \n- 若最大共鸣为共鸣数不低于4的怠惰完全共鸣，则下回合额外对其施加1层怠惰易损 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "失衡惯性",
+          "abName": "发条装置时间不倒翁",
+          "desc": "[BeforeAttack] 对自身施加(2+最大共鸣数)层震颤 (最多8层，每回合最多20层)\n- 若该共鸣为怠惰共鸣，则使自身的震颤 振幅转换 为震颤-上弦 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层震颤 "
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加4级震颤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 对目标施加2层震颤 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层\n- 使目标震颤引爆 时，本回合对其施加1层怠惰易损 \n- 若最大共鸣为怠惰完全共鸣，则下回合额外对其施加1层怠惰易损 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "失衡惯性",
+          "abName": "发条装置时间不倒翁",
+          "desc": "[BeforeAttack] 对自身施加(4+最大共鸣数)层震颤 (最多8层，每回合最多20层)\n- 若该共鸣为怠惰共鸣，则使自身的震颤 振幅转换 为震颤-上弦 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层震颤 "
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加5级震颤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 对目标施加3层震颤 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层\n- 使目标震颤引爆 时，本回合对其施加1层怠惰易损 \n- 若最大共鸣为共鸣数不低于3的怠惰共鸣，则下回合额外对其施加1层怠惰易损 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2070821,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "失衡惯性",
+          "abName": "发条装置时间不倒翁",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 对自身施加(2+最大共鸣数)层震颤 (最多8层，每回合最多20层)\n- 若该共鸣为怠惰共鸣，则使自身的震颤 振幅转换 为震颤-上弦 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层震颤 "
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加4级震颤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 对目标施加2层震颤 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层\n- 使目标震颤引爆 时，本回合对其施加2层怠惰易损 \n- 若最大共鸣为共鸣数不低于4的怠惰完全共鸣，则下回合额外对其施加2层怠惰易损 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "失衡惯性",
+          "abName": "发条装置时间不倒翁",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 对自身施加(4+最大共鸣数)层震颤 (最多8层，每回合最多20层)\n- 若该共鸣为怠惰共鸣，则使自身的震颤 振幅转换 为震颤-上弦 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层震颤 "
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加5级震颤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 对目标施加3层震颤 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层\n- 使目标震颤引爆 时，本回合对其施加2层怠惰易损 \n- 若最大共鸣为怠惰完全共鸣，则下回合额外对其施加2层怠惰易损 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "失衡惯性",
+          "abName": "发条装置时间不倒翁",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 对自身施加(2+最大共鸣数)层震颤 (最多10层，每回合最多20层)\n- 若该共鸣为怠惰共鸣，则使自身的震颤 振幅转换 为震颤-上弦 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层震颤 "
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加6级震颤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 对目标施加4层震颤 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层\n- 使目标震颤引爆 时，本回合对其施加2层怠惰易损 \n- 若最大共鸣为共鸣数不低于3的怠惰共鸣，则下回合额外对其施加2层怠惰易损 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
