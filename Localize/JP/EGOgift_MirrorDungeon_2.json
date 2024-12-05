@@ -14,7 +14,7 @@
     {
       "id": 9158,
       "name": "盗んできた炎",
-      "desc": "ステージ開始時、[Combustion]および特殊火傷を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\nスキル3または憤怒・色欲属性E.G.Oスキル的中時に対象の[Combustion]回数が3以上なら、対象の[Combustion]を1回発動する。([Combustion]回数1が減少、スキルごとに1回発動)\n\nターン終了時、[Combustion]回数を3回以上保有した敵が[Combustion]をもう1回発動する([Combustion]回数が1減少)\n\n[Combustion]状態の敵が死亡した場合(幻想体の場合は本体死亡時)、残った[Combustion]威力を数値分、次のターン開始時に[Combustion]威力数値が最も少ない敵のいずれかに付与。\n\nターン開始時に[Combustion]状態の敵へ、このターンの間[AttackDown]4を付与\n\n火傷を保有している敵が死亡した場合、次のターン開始時に[Combustion]付与スキルを保有した味方(死亡した敵の[Combustion]威力 ÷ 15)名が[AttackDmgUp]2を得る。(1ターンにつき1回発動)",
+      "desc": "ステージ開始時、[Combustion]および特殊火傷を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\nスキル(E.G.Oスキルを含む)的中時に対象の[Combustion]回数が3以上なら、対象の[Combustion]を1回発動する。([Combustion]回数1が減少、スキルごとに1回発動)\n\nターン終了時、[Combustion]回数を3回以上保有した敵が[Combustion]をもう1回発動する([Combustion]回数が1減少)\n\n[Combustion]状態の敵が死亡した場合(幻想体の場合は本体死亡時)、残った[Combustion]威力を数値分、次のターン開始時に[Combustion]威力数値が最も少ない敵のいずれかに付与。\n\nターン開始時に[Combustion]状態の敵へ、このターンの間[AttackDown]4を付与\n\n[Combustion]を保有している敵が死亡した場合、次のターン開始時に[Combustion]付与スキルを保有した味方(死亡した敵の[Combustion]威力 ÷ 15)名が[AttackDmgUp]2を得る。(1ターンにつき1回発動)",
       "simpleDesc": [
         {
           "abilityID": 9158,
@@ -41,7 +41,7 @@
     {
       "id": 9160,
       "name": "裂けた血袋",
-      "desc": "味方がマッチ勝利時、敵の出血1回発動させる(1ターンにつき3回発動)",
+      "desc": "味方がマッチ勝利時、敵の[Laceration]1回発動させる(1ターンにつき3回発動)",
       "simpleDesc": [
         {
           "abilityID": 9160,
@@ -52,7 +52,7 @@
     {
       "id": 9162,
       "name": "出血性ショック",
-      "desc": "ステージ開始時、[Lacerationn]および特殊出血を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\n味方がマッチ勝利時、敵の[Laceration]を1回発動させる。(味方1名につき1ターンごとに1回)\n\nマッチ終了後、自分の残りコイン数だけ敵の[Laceration]を発動させる。(味方1名につき1ターンごとに1回)\n\n全ての敵に[Laceration]が付与されているるなら防御レベルが2減少。ターン終了時([Laceration]が発動した回数 × 2)だけ、次のターンに[DefenseDown]を得る(最大20)\n\nスキル効果で[Laceration]威力または特殊出血を与えるたび、対象に[Laceration]威力3, [Laceration]回数1を付与",
+      "desc": "ステージ開始時、[Laceration]および特殊出血を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\n味方がマッチ勝利時、敵の[Laceration]を1回発動させる。(味方1名につき1ターンごとに1回)\n\n敵が[Laceration]ダメージで混乱し得る。敵がマッチ進行中に[Laceration]ダメージで混乱したなら、敵の残りコイン数だけ[Laceration]を発動させる。\n\n全ての敵に[Laceration]が付与されているるなら防御レベルが2減少。ターン終了時([Laceration]が発動した回数 × 2)だけ、次のターンに[DefenseDown]を得る(最大20)\n\nスキル効果で[Laceration]威力または特殊出血を与えるたび、対象に[Laceration]威力3, [Laceration]回数1を付与",
       "simpleDesc": [
         {
           "abilityID": 9162,
@@ -124,7 +124,7 @@
     {
       "id": 9167,
       "name": "無振八方鐘",
-      "desc": "ステージ開始時、[Vibration]威力または[Vibration]回数を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除外、出撃人員を基準とする)\n(人格が自ら[Vibration]回数を得る場合は該当しない)\n\n[Vibration]威力または[Vibration]回数を付与する、あるいは自分の[Vibration]回数を消耗するスキルでマッチ勝利時、残りコイン数だけ対象に[Vibration]威力を付与。対象に[Vibration]がなければ、対象の[Vibration]回数を3増加。\n\nターン開始時、[ParryingResultUp]を1 + (自分の[Vibration]回数 ÷  5)だけ得る。(最大3)\n\n自分の[Vibration]回数を消耗するスキルで敵を討伐するか混乱状態にしたなら、(消耗した[Vibration]回数 ÷ 2)だけ、自分の[Vibration]回数が増加(スキルごとに1回)\n\n自分の[Vibration]回数を消耗するスキルのダメージ量 +(自分が消耗した[Vibration]回数 + 敵が保有する[Vibration]威力 + 5)%(E.G.Oスキルを除く、最大50%)",
+      "desc": "ステージ開始時、[Vibration]威力、[Vibration]回数または特殊振動を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除外、出撃人員を基準とする)\n(人格が自ら[Vibration]回数を得る場合は発動しない)\n\n[Vibration]威力または[Vibration]回数を付与する、あるいは自分の[Vibration]回数を消耗するスキルでマッチ勝利時、残りコイン数だけ対象に[Vibration]威力を付与。対象に[Vibration]がなければ、対象の[Vibration]回数を3増加。\n\nターン開始時、[ParryingResultUp]を1 + (自分の[Vibration]回数 ÷  5)だけ得る。(最大3)\n\n自分の[Vibration]回数を消耗するスキルで敵を討伐するか混乱状態にしたなら、(消耗した[Vibration]回数 ÷ 2)だけ、自分の[Vibration]回数が増加(スキルごとに1回)\n\n自分の[Vibration]回数を消耗するスキルのダメージ量 +(自分が消耗した[Vibration]回数 + 敵が保有する[Vibration]威力 + 5)%(E.G.Oスキルを除く、最大50%)",
       "simpleDesc": [
         {
           "abilityID": 9167,
@@ -260,7 +260,7 @@
     {
       "id": 9178,
       "name": "エンジェルズカット",
-      "desc": "ターン終了時、味方それぞれの呼吸威力が20を超過したなら、呼吸威力を1消耗して呼吸回数が1増加",
+      "desc": "ターン終了時、味方それぞれの[Breath]威力が20を超過したなら、[Breath]威力を1消耗して[Breath]回数が1増加",
       "simpleDesc": [
         {
           "abilityID": 9178,
@@ -271,11 +271,11 @@
     {
       "id": 9180,
       "name": "カスク・スピリッツ",
-      "desc": "ステージ開始時、[Burst]威力または[Burst]回数を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする) \n\nスキル3が的中時、20を超過する自分の[Breath]威力を全て消耗して[Breath]回数を3得て、(消耗した[Breath]威力)%だけクリティカルダメージ量増加\n\nターン終了時、[Breath]威力が最も高い味方1名と[Breath]回数が最も高い味方1名に次のターンにて[Agility]2, [AttackUp]1を付与(同じ人格の場合でも重複可能)\n\nスキル効果で[Breath]威力を獲得するたび、該当キャラクターが[Breath]威力2, [Breath]回数2を得る。保有した[Breath]威力と回数の合計が20未満なら、得る値 +1",
+      "desc": "ステージ開始時、[Breath]威力または[Breath]回数を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする) \n\nターン終了時、各味方の[Breath]威力が20を超過しているなら、各々が[Breath]威力を1消耗して[Breath]回数が1増加\n\nターン終了時、[Breath]威力が最も高い味方1名と[Breath]回数が最も高い味方1名に次のターンにて[Agility]2, [AttackUp]1を付与(同じ人格の場合でも重複可能)\n\nスキル効果で[Breath]威力を獲得するたび、該当キャラクターが[Breath]威力2, [Breath]回数2を得る。保有した[Breath]威力と回数の合計が20未満なら、代わりに[Breath]威力3, [Breath]回数3を得る。\n\nターン終了時に[Breath]威力が40を超過したなら、[Breath]威力を15消耗して自分の全スキルスロットからランクが最も低いスキル1つを[Discard]。(キャラクターごとに1ターンにつき1回)",
       "simpleDesc": [
         {
           "abilityID": 9180,
-          "simpleDesc": "20を超過する[Breath]威力を全て消耗して回数増加、消耗した威力だけクリティカルダメージ量が増加"
+          "simpleDesc": "呼吸回数を得る"
         },
         {
           "abilityID": 91801,
@@ -283,14 +283,18 @@
         },
         {
           "abilityID": 91802,
-          "simpleDesc": "スキル効果で[Breath]威力を獲得するたびに威力、回数を追加で得る"
+          "simpleDesc": "スキル効果で呼吸威力を獲得するたびに威力、回数を追加で得る"
+        },
+        {
+          "abilityID": 91803,
+          "simpleDesc": "自分のスキルスロットで最もランクが低いスキルを捨てる"
         }
       ]
     },
     {
       "id": 9181,
       "name": "ミニチュア電信柱",
-      "desc": "自分の[Charge]回数を消耗するスキル攻撃終了時に対象が死亡した場合、(該当スキルで消耗した[Charge]回数 ÷ 4)だけ自分の[Charge]回数が増加",
+      "desc": "自分の[Charge]回数を7以上消耗するスキル攻撃終了時に対象が死亡した場合、(該当スキルで消耗した[Charge]回数 ÷ 4)だけ自分の[Charge]回数が増加",
       "simpleDesc": [
         {
           "abilityID": 9181,
@@ -301,7 +305,7 @@
     {
       "id": 9183,
       "name": "インシュレーター",
-      "desc": "ステージ開始時、[Charge]回数または特殊充電を得る攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする) \n\n自分の[Charge]回数を消耗するスキル攻撃終了時に対象が死亡した場合、(該当スキルで消耗した[Charge]回数 ÷ 2)だけ自分の[Charge]回数が増加\n\nターン終了時[Charge]回数が3未満の場合、次のターン開始時に[Charge]回数が3増加。ターン終了時に[Charge]回数が3以上なら、次のターン開始時に[AttackDmgUp]1を得る",
+      "desc": "ステージ開始時、[Charge]回数または特殊充電を得る攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする) \n\n自分の[Charge]回数を消耗するスキル攻撃終了時に対象が死亡した場合、(該当スキルで消耗した[Charge]回数 ÷ 3)だけ自分の[Charge]回数が増加\n\nターン開始時に[Charge]回数が3未満の場合、[Charge]回数が3増加。ターン開始時に[Charge]回数が3以上なら、[AttackDmgUp]1を得る",
       "simpleDesc": [
         {
           "abilityID": 9183,
@@ -309,22 +313,22 @@
         },
         {
           "abilityID": 91831,
-          "simpleDesc": "ターン終了時、[Charge]回数によって[Charge]回数または[AttackDmgUp]1を得る"
+          "simpleDesc": "[Charge]回数によって[Charge]回数または[AttackDmgUp]1を得る"
         }
       ]
     },
     {
       "id": 9184,
       "name": "第5種永久機関",
-      "desc": "ステージ開始時、[Charge]回数または特殊充電を得る攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする) \n\nステージ開始時、全味方の[Charge]回数が5増加。次のターンに[Agility]2を得る\n\n自分の[Charge]回数を消耗するスキル攻撃終了時に対象が死亡した場合、(該当スキルで消耗した[Charge]回数 ÷ 2)だけ自分の[Charge]回数が増加。次のターンに[Agility]、[AttackDmgUp]、[Enhancement]を([Charge]威力 - 1)だけ得る。(最大3, 味方ごとに1ターンにつき1回、特殊充電を除く)\n\n[Charge]威力が2以上なら、自分の[Charge]回数を消耗したスキル3の攻撃終了時、スキル3を1つスキルリストに追加する。(味方ごとに1ターンにつき1回発動、特殊充電を除く)",
+      "desc": "ステージ開始時、[Charge]回数または特殊充電を得る攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする) \n\nターン開始時、[Charge]回数が3未満なら[Charge]回数が5増加。ターン開始時の[Charge]回数が5以上なら、速度の最小値・最大値 +2, [Enhancement]1, [AttackDmgUp]2を得る。\n\n自分の[Charge]回数を消耗するスキル攻撃終了時に対象が死亡した場合、(該当スキルで消耗した[Charge]回数 ÷ 3)だけ自分の[Charge]回数が増加。次のターンに[PlusCoinValueUp]を1得る。(キャラクターごとに1ターンにつき1回)\n\n自分の[Charge]回数を消耗したスキル3の攻撃終了時、対象が死亡するか[Charge]が3以上なら、スキル3を1つ次のターンに使用するスキルリストに追加する。(味方ごとに1ターンにつき1回発動、特殊充電を除く)",
       "simpleDesc": [
         {
           "abilityID": 9184,
-          "simpleDesc": "全味方の[Charge]回数が5増加、次のターンに[Agility]2を得る"
+          "simpleDesc": "[Charge]回数によって[Charge]回数または[AttackDmgUp]1を得る"
         },
         {
           "abilityID": 91841,
-          "simpleDesc": "消耗した[Charge]回数に比例して自分の[Charge]回数が増加。次のターンに[Agility]、[AttackDmgUp]、[Enhancement]を得る"
+          "simpleDesc": "消耗した[Charge]回数に比例して自分の[Charge]回数が増加。次のターンに[PlusCoinValueUp]を得る"
         },
         {
           "abilityID": 91842,
