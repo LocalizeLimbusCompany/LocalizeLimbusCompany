@@ -19,11 +19,11 @@
 
 # 免责声明 Disclaimer
 - **本项目完全免费提供。**  
-LocalizeLimbusCompay (hereafter referred to as "the project") is completely free.
-- **本模组已通过电邮联系获得官方认可，且不会导致您违反边狱公司ToS。** 更多信息请参考[本邮件](https://www.zeroasso.top/docs/community/minutes/firstContact/)。  
-The project is acknowledged by Project Moon via e-mail contact. The project would not cause a breach of Limbus Company ToS. For additional information, please refer to [the email](https://www.zeroasso.top/docs/community/minutes/firstContact/).
+- **本模组已通过电邮联系获得官方认可。** 更多信息请参考[本邮件](https://www.zeroasso.top/docs/community/minutes/firstContact/)。  
 - **我们使用了MIT许可证。** 请前往[`LICENSE`](./LICENSE)或[`CN_LICENSE`](./.github/CN_LICENSE)了解相关许可。  
-The project adopts the [MIT license]((./LICENSE)).
+
+   Please visit [EN_README](./.github/EN_README.md) for the English version of this disclaimer and this readme.
+
 # 安装
 在继续之前，您可以跟从我们[主页上的指引](https://www.zeroasso.top/docs/category/%E5%BC%80%E5%A7%8B%E5%AE%89%E8%A3%85%E6%A8%A1%E7%BB%84)进行安装。与此处的指引相比，主页上的指引更加详细且适合一般玩家。
 ### 0. 安装[.NET 6.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/sdk-6.0.406-windows-x64-installer)

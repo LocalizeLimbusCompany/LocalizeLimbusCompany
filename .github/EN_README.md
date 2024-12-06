@@ -19,8 +19,8 @@ LimbusCompany I18N mod
 
 # Disclaimer
 - **LocalizeLimbusCompay (hereafter referred to as "the project") is completely free.**
-- **The project is acknowledged by Project Moon via e-mail contact. The project would not cause a breach of Limbus Company ToS.**  
-For additional information, please refer to [the email](https://www.zeroasso.top/docs/community/minutes/firstContact/).
+- **The project is acknowledged by Project Moon via e-mail contact.**  
+For additional information, please refer to the email in our [archive](https://www.zeroasso.top/docs/community/minutes/firstContact/) or [discussion 252](https://github.com/orgs/LocalizeLimbusCompany/discussions/252).
 - **The project adopts the [MIT license]((./LICENSE)).**
 # Install
 ### 0. Install [.NET 6.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/sdk-6.0.406-windows-x64-installer)
