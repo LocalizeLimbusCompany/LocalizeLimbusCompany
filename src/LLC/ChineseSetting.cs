@@ -22,6 +22,9 @@ public static class ChineseSetting
     public static ConfigEntry<bool> ShowDialog = LLCMod.LLCSettings.Bind("LLC Settings", "ShowDialog", false,
         "将罪人在战斗内的语音文本翻译以头顶气泡的形式呈现 ( true | false )");
 
+    public static ConfigEntry<bool> ReplaceFetalBattle = LLCMod.LLCSettings.Bind("LLC Settings", "ReplaceFetalBattle", false,
+        "替换命定之战文本 ( true | false )");
+
     private static bool _isusechinese;
     private static Toggle _chineseSetting;
     private static BattleUnitView _unitView;
@@ -205,6 +208,8 @@ public static class ChineseSetting
     private static void BossBattleStartInit(ActBossBattleStartUI __instance)
     {
         if (!IsUseChinese.Value)
+            return;
+        if (!ReplaceFetalBattle.Value)
             return;
         var textGroup = __instance.transform.GetChild(2).GetChild(1);
         var tmp = textGroup.GetChild(1).GetComponentInChildren<TextMeshProUGUI>();
