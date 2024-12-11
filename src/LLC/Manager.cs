@@ -8,6 +8,7 @@ using TMPro;
 using UnityEngine;
 using ILObject = Il2CppSystem.Object;
 using UObject = UnityEngine.Object;
+using ULogger = UnityEngine.Logger;
 
 namespace LimbusLocalize.LLC;
 
@@ -123,23 +124,23 @@ public class Manager(IntPtr ptr) : MonoBehaviour(ptr)
 
     #region 屏蔽没有意义的Warning
 
-    [HarmonyPatch(typeof(Logger), nameof(Logger.Log), typeof(LogType), typeof(ILObject))]
+    [HarmonyPatch(typeof(ULogger), nameof(ULogger.Log), typeof(LogType), typeof(ILObject))]
     [HarmonyPrefix]
-    private static bool Log(Logger __instance, LogType logType, ILObject message)
+    private static bool Log(ULogger __instance, LogType logType, ILObject message)
     {
         if (logType != LogType.Warning) return true;
-        var logString = Logger.GetString(message);
+        var logString = ULogger.GetString(message);
         if (!logString.StartsWith("<color=#0099bc><b>DOTWEEN"))
             __instance.logHandler.LogFormat(logType, null, "{0}", logString);
         return false;
     }
 
-    [HarmonyPatch(typeof(Logger), nameof(Logger.Log), typeof(LogType), typeof(ILObject), typeof(UObject))]
+    [HarmonyPatch(typeof(ULogger), nameof(ULogger.Log), typeof(LogType), typeof(ILObject), typeof(UObject))]
     [HarmonyPrefix]
-    private static bool Log(Logger __instance, LogType logType, ILObject message, UObject context)
+    private static bool Log(ULogger __instance, LogType logType, ILObject message, UObject context)
     {
         if (logType != LogType.Warning) return true;
-        var logString = Logger.GetString(message);
+        var logString = ULogger.GetString(message);
         if (!logString.StartsWith("Material"))
             __instance.logHandler.LogFormat(logType, context, "{0}", logString);
         return false;

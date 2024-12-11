@@ -160,8 +160,8 @@ public static class ChineseFont
 
     private static void LoadRemote2()
     {
-        var tm = TextDataManager.Instance;
-        var romoteLocalizeFileList = JsonUtility.FromJson<TextDataManager.RomoteLocalizeFileList>(AddressableManager
+        var tm = Singleton<TextDataSet>.Instance;
+        var romoteLocalizeFileList = JsonUtility.FromJson<TextDataSet.RomoteLocalizeFileList>(AddressableManager
             .Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Localize", "RemoteLocalizeFileList").Item1
             .ToString());
         tm._uiList.Init(romoteLocalizeFileList.UIFilePaths);
@@ -351,9 +351,9 @@ public static class ChineseFont
 
     private static void LoadLocal()
     {
-        var tm = TextDataManager.Instance;
+        var tm = Singleton<TextDataSet>.Instance;
         var localizeFileList =
-            JsonUtility.FromJson<TextDataManager.LocalizeFileList>(Resources
+            JsonUtility.FromJson<TextDataSet.LocalizeFileList>(Resources
                 .Load<TextAsset>("Localize/LocalizeFileList").ToString());
         tm._loginUIList.Init(localizeFileList.LoginUIFilePaths);
         tm._fileDownloadDesc.Init(localizeFileList.FileDownloadDesc);
@@ -361,7 +361,7 @@ public static class ChineseFont
         tm._battleHint.Init(localizeFileList.BattleHint);
     }
 
-    [HarmonyPatch(typeof(TextDataManager), nameof(TextDataManager.LoadRemote))]
+    [HarmonyPatch(typeof(TextDataSet), nameof(TextDataSet.LoadRemote))]
     [HarmonyPrefix]
     private static void LoadRemote(ref LOCALIZE_LANGUAGE lang)
     {

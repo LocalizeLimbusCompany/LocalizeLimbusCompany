@@ -736,7 +736,7 @@
                   "desc": "[CriticalOnSucceedAttack] [Breath]が無いか、[Breath]回数を最も少なく保有している味方2名の[Breath]回数を2増加"
                 },
                 {
-                  "desc": "[EndSkill] 対象が死亡したなら、次のターンに[SlashDamageUp]1を得る"
+                  "desc": "[EndSkill] 対象が死亡した場合、次のターンに[SlashDamageUp]1を得る"
                 }
               ]
             }
@@ -770,7 +770,7 @@
                   "desc": "[CriticalOnSucceedAttack] [Breath]が無いか、[Breath]回数を最も少なく保有している味方2名の[Breath]回数を2増加。\n<style=\"highlight\">対象が剣契組織員なら[Breath]回数が2追加で増加</style>"
                 },
                 {
-                  "desc": "[EndSkill] 対象が死亡したなら、<style=\"highlight\">自分とランダムな味方1名へ次のターンにて[SlashDamageUp]1を付与</style>"
+                  "desc": "[EndSkill] 対象が死亡した場合、<style=\"highlight\">自分とランダムな味方1名へ次のターンにて[SlashDamageUp]1を付与</style>"
                 }
               ]
             }
@@ -1032,6 +1032,544 @@
           "desc": "[StartBattle] [TimeRentalTwoPersonality]状態でなければ、ターン終了時に[TimeRentalTwoPersonality]4を得る(1ターンにつき1回)\n[WhenUse] このターンの間、敵にダメージを受けたときに次のターンにて対象へ[Vibration]<style=\"highlight\">3</style>を付与(1ターンにつき<style=\"highlight\">6</style>回)",
           "coinlist": [
             {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1031001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "耐えるのは終わりだ",
+          "desc": "このスキルが的中時、与ダメージ量の30%だけ体力が回復(最大10回復)\n[WhenUse] [BloodDinner]を最大50消耗し、消耗した[BloodDinner]5につき[BloodArmorPersonalityFirst]1を得る\n- [BloodDinner]を消耗できなければ、[Laceration]5を得る",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "耐えるのは終わりだ",
+          "desc": "このスキルが的中時、与ダメージ量の30%だけ体力が回復(最大10回復)\n[WhenUse] [BloodDinner]を最大50消耗し、消耗した[BloodDinner]5につき[BloodArmorPersonalityFirst]1を得る\n- [BloodDinner]を消耗できなければ、[Laceration]5を得る \n<style=\"highlight\">[WhenUse] 対象の[Laceration]が6以上なら、コイン威力 +1</style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "耐えるのは終わりだ",
+          "desc": "このスキルが的中時、与ダメージ量の30%だけ体力が回復(最大10回復)\n[WhenUse] [BloodDinner]を最大50消耗し、消耗した[BloodDinner]5につき[BloodArmorPersonalityFirst]1を得る\n- [BloodDinner]を消耗できなければ、[Laceration]5を得る \n[WhenUse] 対象の[Laceration]<style=\"highlight\">6につき</style>、コイン威力 +1<style=\"highlight\">(最大2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1031002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "思うがままに繰り広げよ",
+          "desc": "このスキルが的中時、与ダメージ量の30%だけ体力が回復(最大10回復)\n[WhenUse] [BloodDinner]を最大50消耗し、消耗した[BloodDinner]10につき[BloodArmorPersonalityFirst]1を得る\n- [BloodDinner]を消耗できなければ、[Laceration]5を得る \n[BeforeAttack] [BloodArmorPersonalityFirst]が10以上なら、攻撃加重値 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "対象の[Laceration]1につき、ダメージ量 +2.5%(最大25%)"
+                },
+                {
+                  "desc": "自分の[BloodDinner_Accumulation]100につきダメージ量 +5%(最大25%)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "思うがままに繰り広げよ",
+          "desc": "このスキルが的中時、与ダメージ量の30%だけ体力が回復(最大10回復)\n[WhenUse] [BloodDinner]を最大50消耗し、消耗した[BloodDinner]10につき[BloodArmorPersonalityFirst]1を得る\n- [BloodDinner]を消耗できなければ、[Laceration]5を得る \n<style=\"highlight\">[WhenUse] 対象の[Laceration]が6以上なら、コイン威力 +1</style>\n[BeforeAttack] [BloodArmorPersonalityFirst]<style=\"highlight\">10につき</style>、攻撃加重値が1増加<style=\"highlight\">(最大2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "対象の[Laceration]1につき、ダメージ量 +2.5%(最大25%)"
+                },
+                {
+                  "desc": "自分の[BloodDinner_Accumulation]100につき、ダメージ量 +<style=\"highlight\">10</style>%(最大<style=\"highlight\">50</style>%)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "思うがままに繰り広げよ",
+          "desc": "このスキルが的中時、与ダメージ量の30%だけ体力が回復(最大10回復)\n[WhenUse] [BloodDinner]を最大50消耗し、消耗した[BloodDinner]10につき[BloodArmorPersonalityFirst]1を得る\n- [BloodDinner]を消耗できなければ、[Laceration]5を得る \n[WhenUse] 対象の[Laceration]<style=\"highlight\">6につき</style>、コイン威力 +1<style=\"highlight\">(最大2)</style>\n[BeforeAttack] [BloodArmorPersonalityFirst]10につき、攻撃加重値が1増加(最大2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "対象の[Laceration]1につき、ダメージ量 +2.5%(最大25%)"
+                },
+                {
+                  "desc": "自分の[BloodDinner_Accumulation]100につき、ダメージ量 +<style=\"highlight\">15</style>%(最大<style=\"highlight\">75</style>%)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1031003,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "貫かせていただきましょう",
+          "desc": "このスキルが的中時、与ダメージ量の50%だけ体力を回復(最大10回復)\n[WhenUse] 自分の[BloodArmorPersonalityFirst]10につき、マッチ威力 +1(最大2)\n[WhenUse] 対象の[Laceration]が10以上なら、コイン威力 +1\n[WhenUse] [BloodDinner]を最大50消耗し、消耗した[BloodDinner]10につき[BloodArmorPersonalityFirst]1を得る\n- [BloodDinner]を消耗できなければ、[Laceration]を10得る\n[WhenUse] 対象の[Laceration]1につきダメージ量 +5%(最大50%)\n[WhenUse] 自分の[BloodDinner_Accumulation]100につきダメージ量 +10%(最大50%)\n[EndSkill] 対象が死亡した場合、[BloodDinner]が30増加。[BloodArmorPersonalityFirst]10を得る(1ターンにつき1回)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "貫かせていただきましょう",
+          "desc": "このスキルが的中時、与ダメージ量の50%だけ体力を回復(最大10回復)\n[WhenUse] 自分の[BloodArmorPersonalityFirst]10につき、マッチ威力 +1(最大2)\n[WhenUse] 対象の[Laceration]<style=\"highlight\">5につき</style>、コイン威力 +1<style=\"highlight\">(最大2)</style>\n[WhenUse] [BloodDinner]を最大50消耗し、消耗した[BloodDinner]10につき[BloodArmorPersonalityFirst]1を得る\n- [BloodDinner]を消耗できなければ、[Laceration]を10得る\n[WhenUse] 対象の[Laceration]1につきダメージ量 +5%(最大50%)\n[WhenUse] 自分の[BloodDinner_Accumulation]100につきダメージ量 +<style=\"highlight\">20</style>%(最大<style=\"highlight\">100</style>%)\n[EndSkill] 対象が死亡した場合、[BloodDinner]が<style=\"highlight\">60</style>増加。[BloodArmorPersonalityFirst]10を得る(1ターンにつき1回)",
+          "coinlist": [
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1031004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "笑い声は静まりゆくであろう",
+          "desc": "[DuelCounter]\n[StartBattle] [BloodDinner]を最大50消耗して[BloodDinner]10につき[BloodArmorPersonalityFirst]1を得る。\n- [BloodDinner]を消耗できなければ、[Laceration]10を得る\n[StartBattle] [BloodDinner_Common_Accumulation]50につき体力が最も低い味方1名へ[SwirlingBloodPersonality]を1付与(最大10, 1ターンにつき1回)",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "笑い声は静まりゆくであろう",
+          "desc": "[DuelCounter]\n[StartBattle] [BloodDinner]を最大50消耗して[BloodDinner]10につき[BloodArmorPersonalityFirst]1を得る。\n- [BloodDinner]を消耗できなければ、[Laceration]10を得る\n[StartBattle] [BloodDinner_Common_Accumulation]50につき体力が最も低い味方1名へ[SwirlingBloodPersonality]を1付与(最大<style=\"highlight\">15</style>, 1ターンにつき1回)",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1031005,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "亜流サンチョ硬血9式 - 鞭",
+          "desc": "このスキルが的中時、与ダメージ量の50%だけ体力が回復(最大20回復)\n[WhenUse] [Laceration]20を得る\n[WhenUse] [BloodArmorPersonalityFirst]10につき、的中時に付与する[Laceration] +1(最大2) 攻撃終了時に[BloodArmorPersonalityFirst]を10消耗",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "亜流サンチョ硬血9式 - 鞭",
+          "desc": "このスキルが的中時、与ダメージ量の50%だけ体力が回復(最大20回復)\n<style=\"highlight\">[WhenUse] 対象の[Laceration]が6以上なら、コイン威力 +1</style>\n[WhenUse] [Laceration]20を得る\n[WhenUse] [BloodArmorPersonalityFirst]10につき、的中時に付与する[Laceration] +1(最大2) 攻撃終了時に[BloodArmorPersonalityFirst]を10消耗",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "亜流サンチョ硬血9式 - 鞭",
+          "desc": "このスキルが的中時、与ダメージ量の50%だけ体力が回復(最大20回復)\n[WhenUse] 対象の[Laceration]<style=\"highlight\">6につき</style>、コイン威力 +1<style=\"highlight\">(最大2)</style>\n[WhenUse] [Laceration]20を得る\n[WhenUse] [BloodArmorPersonalityFirst]10につき、的中時に付与する[Laceration] +1(最大2) 攻撃終了時に[BloodArmorPersonalityFirst]を10消耗",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 対象の[Laceration]を1回発動させる。対象の[Laceration]回数が1減少</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1031006,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "亜流サンチョ硬血8式 - 割けるがよい",
+          "desc": "このスキルが的中時、与ダメージ量の30%だけ体力が回復(最大10回復)\n[WhenUse] 対象の[Laceration]が6以上なら、コイン威力 +1\n[BeforeAttack] [BloodArmorPersonalityFirst]が10以上なら、攻撃加重値 +1\n[EndSkill] 攻撃加重値が増加したなら、[BloodArmorPersonalityFirst]を10消耗",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "対象の[Laceration]1につき、ダメージ量 +2.5%(最大25%)"
+                },
+                {
+                  "desc": "[BloodDinner_Common_Accumulation]100につき、ダメージ量 +5%(最大25%)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "亜流サンチョ硬血8式 - 割けるがよい",
+          "desc": "このスキルが的中時、与ダメージ量の30%だけ体力が回復(最大10回復)\n[WhenUse] 対象の[Laceration]<style=\"highlight\">6につき</style>、コイン威力 +1<style=\"highlight\">(最大2)</style>\n[BeforeAttack] [BloodArmorPersonalityFirst]<style=\"highlight\">10につき</style>、攻撃加重値が増加<style=\"highlight\">(最大2)</style>\n[EndSkill] 増加した加重値1につき、[BloodArmorPersonalityFirst]を10消耗",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "対象の[Laceration]1につき、ダメージ量 +2.5%(最大25%)"
+                },
+                {
+                  "desc": "[BloodDinner_Common_Accumulation]100につき、ダメージ量 +<style=\"highlight\">10</style>%(最大<style=\"highlight\">50</style>%)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "亜流サンチョ硬血8式 - 割けるがよい",
+          "desc": "このスキルが的中時、与ダメージ量の30%だけ体力が回復(最大10回復)\n[WhenUse] 対象の[Laceration]6につき、コイン威力 +1(最大2)\n[BeforeAttack] [BloodArmorPersonalityFirst]10につき、攻撃加重値が増加(最大2)\n[EndSkill] 増加した加重値1につき、[BloodArmorPersonalityFirst]を10消耗<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "対象の[Laceration]1につき、ダメージ量 +2.5%(最大25%)"
+                },
+                {
+                  "desc": "[BloodDinner_Common_Accumulation]100につき、ダメージ量 +<style=\"highlight\">15</style>%(最大<style=\"highlight\">75</style>%)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1031007,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "サンチョ流硬血奥義 - ラ・サングレ",
+          "desc": "このスキルが的中時、与ダメージ量50%だけ体力を回復(最大20回復)\n[WhenUse] 自分の[BloodArmorPersonalityFirst]10につき、基本威力 +1(最大2)\n[WhenUse] 対象の[Laceration]が10以上なら、コイン威力 +1\n[WhenUse] 対象の[Laceration]1につき、ダメージ量 +5%(最大50%)\n[WhenUse] [BloodDinner_Common_Accumulation]100につきダメージ量 +20% (最大100%)\n[EndSkill] [BloodArmorPersonalityFirst]10につき、[BloodArmorPersonalityFirst]を10消耗\n[EndSkill] 対象が死亡したなら、[BloodDinner]が50増加。このスキルで消耗した[BloodArmorPersonalityFirst]を半分取り戻す(1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]4を付与、[Laceration]回数が4増加"
+                },
+                {
+                  "desc": "[EndSkill] 対象が死亡したなら全ての敵へ[Laceration]5を付与、[Laceration]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "サンチョ流硬血奥義 - ラ・サングレ",
+          "desc": "このスキルが的中時、与ダメージ量50%だけ体力を回復(最大20回復)\n[WhenUse] 自分の[BloodArmorPersonalityFirst]10につき、基本威力 +1(最大<style=\"highlight\">3</style>)\n[WhenUse] 対象の[Laceration]<style=\"highlight\">5につき</style>、コイン威力 +1<style=\"highlight\">(最大2)</style>\n[WhenUse] 対象の[Laceration]1につき、ダメージ量 +5%(最大50%)\n[WhenUse] [BloodDinner_Common_Accumulation]100につきダメージ量 +20% (最大100%)\n[EndSkill] [BloodArmorPersonalityFirst]10につき、[BloodArmorPersonalityFirst]を10消耗\n[EndSkill] 対象が死亡したなら、[BloodDinner]が<style=\"highlight\">100</style>増加。このスキルで消耗した[BloodArmorPersonalityFirst]を半分取り戻す(1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]<style=\"highlight\">8</style>を付与、[Laceration]回数が4増加"
+                },
+                {
+                  "desc": "[EndSkill] 対象が死亡したなら全ての敵へ[Laceration]5を付与、[Laceration]回数が1増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1031008,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "亜流サンチョ硬血15式 - フィナーレの準備",
+          "desc": "[DuelCounter]\n[StartBattle] 体力が最も低い味方(3 + 最も高い共鳴数 ÷ 2)名へ[BloodDinner_Common_Accumulation]40につき[SwirlingBloodPersonality]を(1 +　[BloodArmorPersonalityFirst] ÷ 15)だけ付与し、保有している[BloodArmorPersonalityFirst]が半減。(味方1名につき最大1回付与、小数点切り捨て)",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が3増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "亜流サンチョ硬血15式 - フィナーレの準備",
+          "desc": "[DuelCounter]\n[StartBattle] 体力が最も低い味方(3 + 最も高い共鳴数 ÷ 2)名へ[BloodDinner_Common_Accumulation]40につき[SwirlingBloodPersonality]を(1 +　[BloodArmorPersonalityFirst] ÷ 10)だけ付与し、保有している[BloodArmorPersonalityFirst]が半減。(味方1名につき最大1回付与、小数点切り捨て)",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が3増加"
+                }
+              ]
+            }
           ]
         }
       ]

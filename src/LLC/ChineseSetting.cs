@@ -219,6 +219,7 @@ public static class ChineseSetting
 
     [HarmonyPatch(typeof(VoiceGenerator), nameof(VoiceGenerator.CreateVoiceInstance))]
     [HarmonyPostfix]
+    [HarmonyDebug]
     private static void CreateVoiceInstance(string path, bool isSpecial)
     {
         if (!ShowDialog.Value || !_unitView || !path.StartsWith(VoiceGenerator.VOICE_EVENT_PATH + "battle_"))
