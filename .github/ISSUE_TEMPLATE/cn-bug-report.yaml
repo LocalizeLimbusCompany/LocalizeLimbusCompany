@@ -6,14 +6,17 @@ body:
     id: checks
     attributes:
       label: 在提问之前...
+      description: 您在此处发布新 Issue 会导致全体开发者的电子邮箱收到一封提醒邮件，请通过确认以下条目以节省所有人的时间。
       options:
+      - label: 我反馈的问题在零协会 BiliBili 动态没有相应近期公告
+        required: true
+      - label: 我反馈的问题不属于已关闭/已解决的其它 Issue
+        required: true
+      - label: 我使用的模组版本为最新版
+        required: true
       - label: 我理解 Issue 是用于反馈和解决问题的，而非吐槽评论区，将尽可能提供更多信息帮助问题解决
         required: true
       - label: 我填写了简短且清晰明确的标题，以便开发者在翻阅 issue 列表时能快速确定大致问题。而不是“一个建议”、“卡住了”等
-        required: true
-      - label: 我已查看最新测试版本的更新内容，并未提及该 bug 已被修复的情况
-        required: true
-      - label: 我使用的汉化补丁版本已为最新版
         required: true
   - type: textarea
     id: describe
