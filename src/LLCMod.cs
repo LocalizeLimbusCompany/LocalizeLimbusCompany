@@ -16,7 +16,7 @@ namespace LimbusLocalize;
 [BepInPlugin(Guid, Name, Version)]
 public class LLCMod : BasePlugin
 {
-    public const string Guid = "Com.Bright.LocalizeLimbusCompany";
+    public const string Guid = $"Com.{Author}.{Name}";
     public const string Name = "LimbusLocalizeMod";
     public const string Version = "0.6.61";
     public const string Author = "Bright";
@@ -158,7 +158,7 @@ public class LLCMod : BasePlugin
         {
             Action action = Application.Quit;
             Manager.OpenGlobalPopup(description, null,
-                null, TextDataManager.Instance.LoginUIList.GetData("loginui_ok"), action, action);
+                null, "OK", action, action);
             return false;
         }
     }

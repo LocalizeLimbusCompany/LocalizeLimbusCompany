@@ -38,6 +38,7 @@ public static class ReadmeManager
                 }
             }
         };
+        AprilFools.Init();
     }
 
     public static void UIInitialize()

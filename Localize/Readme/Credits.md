@@ -1,0 +1,23 @@
+- LocalizeLimbusCompany/L公司
+  - Nephthys137/奈芙：CED&Moder/代表&模组作者
+  - ZengXiaoPi/曾小皮：Coder/代码作者
+- ZeroAsso/零协会
+  - N071/北岚：Manager/会长
+  - Ny_Su/茕明：Proofreader/校对
+  - Downova/落星：Victim of PM English Translator/EN哥受害者
+  - 5E：Transkiller/技能译者
+  - Pencilblue/铅笔蓝：KR translator/韩译
+  - Songautumn/宋清秋：A cow cat/一只奶牛猫
+  - Anmmon Plumeria/安默：Miqo'te blackmage
+  - CHEmini/小车：Stupid AI
+  - Mully/墨式Ink：Succubus
+  - Imagine.F./想象力：Refracted Cyber Phantom Cooer/折射的赛博幽灵咕者
+- Broadcasting/广播局
+  - Yukkri Mantou/馒头：Emergency food reserve
+  - JimD/小迪：A little star
+  - kurisan：Chiganfande
+  - Hodron：Patron Librarian of Literature/文学层指定司书
+- Others/其他
+  - shixie2860/士燮：wiki sysop&transkiller/维基管理员&技能翻译 (似了)
+  - West 9 o'clock/西九时：Just GAIGAI/只是盖盖
+  - Nap/nap：nap

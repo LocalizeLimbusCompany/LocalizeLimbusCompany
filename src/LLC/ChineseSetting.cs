@@ -151,7 +151,7 @@ public static class ChineseSetting
             return true;
         if (data?._lackOfBuffs?.Count > 0)
             __instance.UIManager.bufTypoUI.OpenBufTypo(BUF_TYPE.Negative,
-                TextDataManager.Instance.BufList.GetData(data._lackOfBuffs[0].ToString()).GetName() + " 不足",
+                Singleton<TextDataSet>.Instance.BufList.GetData(data._lackOfBuffs[0].ToString()).GetName() + " 不足",
                 data._lackOfBuffs[0]);
         return false;
     }
@@ -225,7 +225,7 @@ public static class ChineseSetting
         if (!ShowDialog.Value || !_unitView || !path.StartsWith(VoiceGenerator.VOICE_EVENT_PATH + "battle_"))
             return;
         path = path[VoiceGenerator.VOICE_EVENT_PATH.Length..];
-        if (!TextDataManager.Instance.personalityVoiceText._voiceDictionary.TryGetValue(path.Split('_')[^2],
+        if (!Singleton<TextDataSet>.Instance.personalityVoiceText._voiceDictionary.TryGetValue(path.Split('_')[^2],
                 out var dataList)) return;
         foreach (var data in dataList.dataList)
             if (path.Equals(data.id))
