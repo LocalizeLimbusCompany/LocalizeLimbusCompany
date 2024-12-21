@@ -2,11 +2,10 @@
 using System.IO;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
 using BepInEx.Configuration;
-using Il2CppSystem.Threading;
 using SimpleJSON;
 using UnityEngine;
-using UnityEngine.Networking;
 
 namespace LimbusLocalize.LLC;
 
@@ -26,80 +25,76 @@ public static class UpdateChecker
 
     public static string Updatelog;
     public static Action UpdateCall;
+    private static readonly HttpClient Client = new();
 
     public static void StartAutoUpdate()
     {
         if (!AutoUpdate.Value) return;
         LLCMod.LogWarning($"Check Mod Update From {UpdateUri.Value}");
-        var modUpdate = CheckModUpdate;
-        new Thread(modUpdate).Start();
+        ModUpdateAsync().GetAwaiter().GetResult();
     }
 
-    private static void CheckModUpdate()
+    public static async Task ModUpdateAsync()
     {
-        var releaseUri = UpdateUri.Value == Uri.GitHub
-            ? "https://api.github.com/repos/LocalizeLimbusCompany/LocalizeLimbusCompany/releases/latest"
-            : "https://json.zxp123.eu.org/LatestMod_Release.json";
-        var www = UnityWebRequest.Get(releaseUri);
-        www.timeout = 4;
-        www.SendWebRequest();
-        while (!www.isDone)
-            Thread.Sleep(100);
-        if (www.result != UnityWebRequest.Result.Success)
+        try
         {
-            LLCMod.LogWarning($"Can't access {UpdateUri.Value}!!!" + www.error);
-        }
-        else
-        {
-            var latest = JSONNode.Parse(www.downloadHandler.text).AsObject;
-            var latestReleaseTag = latest["tag_name"].Value;
-            if (Version.Parse(LLCMod.Version) < Version.Parse(latestReleaseTag.Remove(0, 1)))
+            var releaseUri = UpdateUri.Value == Uri.GitHub
+                ? "https://api.github.com/repos/LocalizeLimbusCompany/LocalizeLimbusCompany/releases/latest"
+                : "https://json.zxp123.eu.org/LatestMod_Release.json";
+            Client.Timeout = TimeSpan.FromSeconds(10);
+            var response = await Client.GetStringAsync(releaseUri);
+            var latest = JSONNode.Parse(response).AsObject;
+            var tag = latest["tag_name"].Value;
+            if (Version.Parse(LLCMod.Version) < Version.Parse(tag.Remove(0, 1)))
             {
-                var updatelog = "LimbusLocalize_BIE_" + latestReleaseTag;
-                Updatelog += updatelog + ".7z ";
+                var updatelog = $"LimbusLocalize_BIE_{tag}.7z";
+                Updatelog += updatelog + "\n";
                 var downloadUri = UpdateUri.Value == Uri.GitHub
-                    ? $"https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/releases/download/{latestReleaseTag}/{updatelog}.7z"
-                    : $"https://node.zeroasso.top/d/od/{updatelog}.7z";
-                var dirs = downloadUri.Split('/');
-                var filename = LLCMod.GamePath + "/" + dirs[^1];
-                if (!File.Exists(filename))
-                    DownloadFileAsync(downloadUri, filename);
+                    ? $"https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/releases/download/{tag}/{updatelog}"
+                    : $"https://node.zeroasso.top/d/od/{updatelog}";
+                var filename = Path.Combine(LLCMod.GamePath, downloadUri.Split('/')[^1]);
+                if (!File.Exists(filename)) await DownloadFileAsync(downloadUri, filename);
                 UpdateCall = UpdateDel;
             }
 
             LLCMod.LogWarning("Check Chinese Font Asset Update");
-            var fontAssetUpdate = CheckChineseFontAssetUpdate;
-            new Thread(fontAssetUpdate).Start();
+            await ChineseFontUpdateAsync();
+        }
+        catch (Exception ex)
+        {
+            LLCMod.LogWarning($"Mod update failed::\n{ex}");
         }
     }
 
-    private static void CheckChineseFontAssetUpdate()
+    public static async Task ChineseFontUpdateAsync()
     {
-        var releaseUri = UpdateUri.Value == Uri.GitHub
-            ? "https://api.github.com/repos/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/latest"
-            : "https://json.zxp123.eu.org/LatestTmp_Release.json";
-        var www = UnityWebRequest.Get(releaseUri);
-        var filePath = LLCMod.ModPath + "/tmpchinesefont";
-        var lastWriteTime = File.Exists(filePath)
-            ? int.Parse(TimeZoneInfo.ConvertTime(new FileInfo(filePath).LastWriteTime,
-                TimeZoneInfo.FindSystemTimeZoneById("China Standard Time")).ToString("yyMMdd"))
-            : 0;
-        www.SendWebRequest();
-        while (!www.isDone)
-            Thread.Sleep(100);
-        var latest = JSONNode.Parse(www.downloadHandler.text).AsObject;
-        var latestReleaseTag = int.Parse(latest["tag_name"].Value);
-        if (lastWriteTime >= latestReleaseTag) return;
-        var updatelog = "tmpchinesefont_BIE_" + latestReleaseTag;
-        Updatelog += updatelog + ".7z ";
-        var download = UpdateUri.Value == Uri.GitHub
-            ? $"https://github.com/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/download/{latestReleaseTag}/{updatelog}.7z"
-            : $"https://node.zeroasso.top/d/od/{updatelog}.7z";
-        var dirs = download.Split('/');
-        var filename = LLCMod.GamePath + "/" + dirs[^1];
-        if (!File.Exists(filename))
-            DownloadFileAsync(download, filename);
-        UpdateCall = UpdateDel;
+        try
+        {
+            var releaseUri = UpdateUri.Value == Uri.GitHub
+                ? "https://api.github.com/repos/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/latest"
+                : "https://json.zxp123.eu.org/LatestTmp_Release.json";
+            var response = await Client.GetStringAsync(releaseUri);
+            var latest = JSONNode.Parse(response).AsObject;
+            var latestReleaseTag = int.Parse(latest["tag_name"].Value);
+            var filePath = Path.Combine(LLCMod.ModPath, "tmpchinesefont");
+            var lastWriteTime = File.Exists(filePath)
+                ? int.Parse(TimeZoneInfo.ConvertTime(new FileInfo(filePath).LastWriteTime,
+                    TimeZoneInfo.FindSystemTimeZoneById("China Standard Time")).ToString("yyMMdd"))
+                : 0;
+            if (lastWriteTime >= latestReleaseTag) return;
+            var updatelog = $"tmpchinesefont_BIE_{latestReleaseTag}.7z";
+            Updatelog += updatelog + "\n";
+            var downloadUri = UpdateUri.Value == Uri.GitHub
+                ? $"https://github.com/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/download/{latestReleaseTag}/{updatelog}"
+                : $"https://node.zeroasso.top/d/od/{updatelog}";
+            var filename = Path.Combine(LLCMod.GamePath, downloadUri.Split('/')[^1]);
+            if (!File.Exists(filename)) await DownloadFileAsync(downloadUri, filename);
+            UpdateCall = UpdateDel;
+        }
+        catch (Exception ex)
+        {
+            LLCMod.LogWarning($"Font asset update failed:\n{ex}");
+        }
     }
 
     private static void UpdateDel()
@@ -108,40 +103,43 @@ public static class UpdateChecker
         Application.Quit();
     }
 
-    private static void DownloadFileAsync(string uri, string filePath)
+    public static async Task DownloadFileAsync(string uri, string filePath)
     {
         try
         {
-            LLCMod.LogWarning("Download " + uri + " To " + filePath);
-            using HttpClient client = new();
-            using var response = client.GetAsync(uri).GetAwaiter().GetResult();
+            LLCMod.LogWarning($"Download {uri} To {filePath}");
+            using var response = await Client.GetAsync(uri, HttpCompletionOption.ResponseHeadersRead);
+            response.EnsureSuccessStatusCode();
             using var content = response.Content;
-            using FileStream fileStream = new(filePath, FileMode.Create);
-            content.CopyToAsync(fileStream).GetAwaiter().GetResult();
+            await using FileStream fileStream = new(filePath, FileMode.Create, FileAccess.Write, FileShare.None);
+            await content.CopyToAsync(fileStream);
         }
         catch (Exception ex)
         {
             if (ex is HttpRequestException { StatusCode: HttpStatusCode.NotFound })
                 LLCMod.LogWarning($"{uri} 404 NotFound,No Resource");
             else
-                LLCMod.LogWarning($"{uri} Error!!!" + ex);
+                LLCMod.LogWarning($"{uri} Error!!!:\n" + ex);
         }
     }
 
-    public static void CheckReadmeUpdate()
+    public static async Task ReadmeUpdateAsync()
     {
-        var www = UnityWebRequest.Get("https://json.zxp123.eu.org/ReadmeLatestUpdateTime.txt");
-        www.timeout = 1;
-        www.SendWebRequest();
-        var filePath = LLCMod.ModPath + "/Localize/Readme/Readme.json";
-        var lastWriteTime = new FileInfo(filePath).LastWriteTime;
-        while (!www.isDone) Thread.Sleep(100);
-        if (www.result != UnityWebRequest.Result.Success ||
-            lastWriteTime >= DateTime.Parse(www.downloadHandler.text)) return;
-        var www2 = UnityWebRequest.Get("https://json.zxp123.eu.org/Readme.json");
-        www2.SendWebRequest();
-        while (!www2.isDone) Thread.Sleep(100);
-        File.WriteAllText(filePath, www2.downloadHandler.text);
-        ReadmeManager.InitReadmeList();
+        try
+        {
+            var lastUpdateTimeText =
+                await Client.GetStringAsync("https://json.zxp123.eu.org/ReadmeLatestUpdateTime.txt");
+            var filePath = LLCMod.ModPath + "/Localize/Readme/Readme.json";
+            var lastWriteTime = new FileInfo(filePath).LastWriteTime;
+            if (lastWriteTime >= DateTime.Parse(lastUpdateTimeText))
+                return;
+            await File.WriteAllTextAsync(filePath,
+                await Client.GetStringAsync("https://json.zxp123.eu.org/Readme.json"));
+            ReadmeManager.InitReadmeList();
+        }
+        catch (Exception ex)
+        {
+            LLCMod.LogWarning($"Readme update failed:\n{ex}");
+        }
     }
 }
