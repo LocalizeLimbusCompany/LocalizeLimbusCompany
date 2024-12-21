@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using HarmonyLib;
+﻿using HarmonyLib;
 using Il2CppInterop.Runtime.Injection;
 using MainUI.Gacha;
+using System;
+using System.Collections.Generic;
+using System.IO;
 using TMPro;
 using UnityEngine;
 using ILObject = Il2CppSystem.Object;
-using UObject = UnityEngine.Object;
 using ULogger = UnityEngine.Logger;
+using UObject = UnityEngine.Object;
 
 namespace LimbusLocalize.LLC;
 
@@ -103,23 +103,29 @@ public class Manager(IntPtr ptr) : MonoBehaviour(ptr)
     [HarmonyPostfix]
     public static void CheckModActions()
     {
-        if (UpdateChecker.UpdateCall != null)
-            OpenGlobalPopup(
-                "Has Update " + UpdateChecker.Updatelog +
-                "!\nOpen Download Path & Quit Game\n模组存在更新\n点击OK将退出游戏并打开下载目录\n请将" + UpdateChecker.Updatelog +
-                "压缩包解压至该目录", "Mod Has Update\n模组存在更新", null, "OK", () =>
-                {
-                    UpdateChecker.UpdateCall.Invoke();
-                    UpdateChecker.UpdateCall = null;
-                    UpdateChecker.Updatelog = string.Empty;
-                });
-        else if (FatalErrorAction != null)
-            OpenGlobalPopup(FatalErrorlog, "Mod Has Fatal Error!\n模组存在致命错误", null, "Open LLC URL", () =>
-            {
-                FatalErrorAction.Invoke();
-                FatalErrorAction = null;
-                FatalErrorlog = string.Empty;
-            });
+        if (!UpdateChecker.needPopup)
+        {
+            return;
+        }
+        // 首先判断程序版本是否落后
+        if (UpdateChecker.isAppOutdated)
+        {
+            OpenGlobalPopup("您的模组程序版本已落后！\n请使用工具箱或手动更新模组文件到最新版本。", "模组程序已落后", "关闭游戏", "忽略",null, Application.Quit);
+            return;
+        }
+        string UpdateMessage = "您的模组已更新至最新版本！\n更新内容：";
+        if (!string.IsNullOrEmpty(UpdateChecker.ModUpdateVersion) && !string.IsNullOrEmpty(UpdateChecker.ModOldVersion))
+        {
+            UpdateMessage += $"\n文本更新：v{UpdateChecker.ModOldVersion} => v{UpdateChecker.ModUpdateVersion}";
+        }
+        if (!string.IsNullOrEmpty(UpdateChecker.TMPUpdateVersion) && !string.IsNullOrEmpty(UpdateChecker.TMPOldVersion))
+        {
+            UpdateMessage += $"\n字体更新：v{UpdateChecker.TMPOldVersion} => v{UpdateChecker.TMPUpdateVersion}";
+        }
+        if (!string.IsNullOrEmpty(UpdateChecker.HotUpdateMessage)){
+            UpdateMessage += "\n更新提示：\n" + UpdateChecker.HotUpdateMessage;
+        }
+        OpenGlobalPopup(UpdateMessage, "模组更新完成");
     }
 
     #region 屏蔽没有意义的Warning

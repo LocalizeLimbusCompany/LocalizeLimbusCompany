@@ -7,6 +7,7 @@ using BepInEx;
 using BepInEx.Configuration;
 using BepInEx.Unity.IL2CPP;
 using HarmonyLib;
+using Il2CppSystem.Runtime.Remoting.Messaging;
 using LimbusLocalize.LLC;
 using Microsoft.Win32;
 using UnityEngine;
@@ -28,6 +29,7 @@ public class LLCMod : BasePlugin
     public static Action<string, Action> LogFatalError { get; set; }
     public static Action<string> LogError { get; set; }
     public static Action<string> LogWarning { get; set; }
+    public static Action<string> LogInfo { get; set; }
 
     public static void OpenLLCUrl()
     {
@@ -52,6 +54,11 @@ public class LLCMod : BasePlugin
             Log.LogWarning(log);
             Debug.LogWarning(log);
         };
+        LogInfo = log =>
+        {
+            Log.LogInfo(log);
+            Debug.Log(log);
+        };
         LogFatalError = (log, action) =>
         {
             Manager.FatalErrorlog += log + "\n";
@@ -61,7 +68,15 @@ public class LLCMod : BasePlugin
         };
         ModPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
         GamePath = new DirectoryInfo(Application.dataPath).Parent!.FullName;
-        UpdateChecker.StartAutoUpdate();
+        try
+        {
+            UpdateChecker.StartAutoUpdate();
+        }
+        catch (Exception e)
+        {
+            LogWarning("When Updating, Error Occured: ");
+            LogWarning(e.ToString());
+        }
         try
         {
             if (ChineseSetting.IsUseChinese.Value)
