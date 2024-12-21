@@ -103,16 +103,25 @@ public class Manager(IntPtr ptr) : MonoBehaviour(ptr)
     [HarmonyPostfix]
     public static void CheckModActions()
     {
-        if (UpdateChecker.UpdateCall != null)
-            OpenGlobalPopup(
-                "Has Update " + UpdateChecker.Updatelog +
-                "!\nOpen Download Path & Quit Game\n模组存在更新\n点击OK将退出游戏并打开下载目录\n请将" + UpdateChecker.Updatelog +
-                "压缩包解压至该目录", "Mod Has Update\n模组存在更新", null, "OK", () =>
-                {
-                    UpdateChecker.UpdateCall.Invoke();
-                    UpdateChecker.UpdateCall = null;
-                    UpdateChecker.Updatelog = string.Empty;
-                });
+        if (UpdateChecker.NeedPopup)
+        {
+            if (UpdateChecker.IsAppOutdated)
+            {
+                OpenGlobalPopup("您的模组程序版本已落后！\n请使用工具箱或手动更新模组文件到最新版本。", "模组程序已落后", "关闭游戏", "忽略", null, Application.Quit);
+                return;
+            }
+
+            var updateMessage = "您的模组已更新至最新版本！\n更新内容：";
+            if (!string.IsNullOrEmpty(UpdateChecker.ModUpdateVersion) &&
+                !string.IsNullOrEmpty(UpdateChecker.ModOldVersion))
+                updateMessage += $"\n文本更新：v{UpdateChecker.ModOldVersion} => v{UpdateChecker.ModUpdateVersion}";
+            if (!string.IsNullOrEmpty(UpdateChecker.TMPUpdateVersion) &&
+                !string.IsNullOrEmpty(UpdateChecker.TMPOldVersion))
+                updateMessage += $"\n字体更新：v{UpdateChecker.TMPOldVersion} => v{UpdateChecker.TMPUpdateVersion}";
+            if (!string.IsNullOrEmpty(UpdateChecker.HotUpdateMessage))
+                updateMessage += "\n更新提示：\n" + UpdateChecker.HotUpdateMessage;
+            OpenGlobalPopup(updateMessage, "模组更新完成");
+        }
         else if (FatalErrorAction != null)
             OpenGlobalPopup(FatalErrorlog, "Mod Has Fatal Error!\n模组存在致命错误", null, "Open LLC URL", () =>
             {
