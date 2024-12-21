@@ -17,14 +17,14 @@
 
     <!-- ~~~~~ CONFIGURATIONS ~~~~~ -->
     <ItemGroup>
-        <None Remove="Directory.Build.props"/>
-        <None Remove="nuget.config"/>
+        <None Remove="Directory.Build.props" />
+        <None Remove="nuget.config" />
     </ItemGroup>
 
     <!-- ~~~~~ NUGET ~~~~~ -->
     <ItemGroup>
-        <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile"/>
-        <PackageReference Include="Il2CppInterop.Runtime" Version="1.0.0"/>
+        <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile" />
+        <PackageReference Include="Il2CppInterop.Runtime" Version="1.0.0" />
     </ItemGroup>
 
     <!-- ~~~~~ ASSEMBLY REFERENCES ~~~~~ -->
@@ -91,8 +91,16 @@
             <HintPath>..\lib\UnityEngine.UnityWebRequestModule.dll</HintPath>
         </Reference>
     </ItemGroup>
+    <ItemGroup>
+      <None Update="7z.exe">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="version.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
     <Target Name="CopyFile" AfterTargets="build">
-        <Message Text="Copying files..." Importance="high"/>
-        <Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="$(OutputPath)BepInEx\plugins\LLC" Condition="'$(Configuration)' == 'BIE'"/>
+        <Message Text="Copying files..." Importance="high" />
+        <Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="$(OutputPath)BepInEx\plugins\LLC" Condition="'$(Configuration)' == 'BIE'" />
     </Target>
 </Project>
