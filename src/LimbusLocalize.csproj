@@ -8,10 +8,11 @@
         <TargetFramework>net6</TargetFramework>
         <Platforms>x64</Platforms>
         <Configurations>BIE</Configurations>
-        <OutputPath>..\Release\</OutputPath>
+        <OutputPath>..\Release\BepInEx\plugins\LLC</OutputPath>
         <NoWarn>CA2211;CA1822;IDE0060;IDE0130</NoWarn>
         <DebugType>none</DebugType>
         <Optimize>True</Optimize>
+        <GenerateDependencyFile>false</GenerateDependencyFile>
         <AssemblyName>$(MSBuildProjectName)_$(Configuration)</AssemblyName>
     </PropertyGroup>
 
@@ -19,6 +20,15 @@
     <ItemGroup>
         <None Remove="Directory.Build.props"/>
         <None Remove="nuget.config"/>
+        <None Update="7z.exe">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="version.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="7z.dll">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
     </ItemGroup>
 
     <!-- ~~~~~ NUGET ~~~~~ -->
@@ -28,8 +38,7 @@
     </ItemGroup>
 
     <!-- ~~~~~ ASSEMBLY REFERENCES ~~~~~ -->
-    <!-- BepinEx -->
-    <ItemGroup Condition="'$(Configuration)'=='BIE'">
+    <ItemGroup>
         <Reference Include="Assembly-CSharp">
             <HintPath>..\lib\Assembly-CSharp.dll</HintPath>
         </Reference>
@@ -91,8 +100,4 @@
             <HintPath>..\lib\UnityEngine.UnityWebRequestModule.dll</HintPath>
         </Reference>
     </ItemGroup>
-    <Target Name="CopyFile" AfterTargets="build">
-        <Message Text="Copying files..." Importance="high"/>
-        <Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="$(OutputPath)BepInEx\plugins\LLC" Condition="'$(Configuration)' == 'BIE'"/>
-    </Target>
 </Project>

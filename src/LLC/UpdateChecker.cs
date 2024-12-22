@@ -1,97 +1,170 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Net.Http;
 using BepInEx.Configuration;
 using Il2CppSystem.Threading;
 using SimpleJSON;
-using UnityEngine;
 
 namespace LimbusLocalize.LLC;
 
 public static class UpdateChecker
 {
-    public enum Uri
+    public enum NodeType
     {
+        Auto,
         GitHub,
-        MirrorOneDrive
+        OneDrive,
+        Tianyi
     }
 
     public static ConfigEntry<bool> AutoUpdate =
         LLCMod.LLCSettings.Bind("LLC Settings", "AutoUpdate", true, "是否自动检查并下载更新 ( true | false )");
 
-    public static ConfigEntry<Uri> UpdateUri = LLCMod.LLCSettings.Bind("LLC Settings", "UpdateURI", Uri.MirrorOneDrive,
-        "自动更新所使用URI ( GitHub:默认 | MirrorOneDrive:镜像,更新可能有延迟,但下载速度更快 )");
+    public static ConfigEntry<NodeType> UpdateUri = LLCMod.LLCSettings.Bind("LLC Settings", "UpdateURI",
+        NodeType.Auto,
+        "自动更新所使用URI ( Auto：自动,优先使用GitHub | GitHub：GitHub | OneDrive：Onedrive For Business | Tianyi：天翼网盘 )");
 
-    public static string Updatelog;
-    public static Action UpdateCall;
+    public static readonly Dictionary<NodeType, string> UrlDictionary = new()
+    {
+        { NodeType.OneDrive, "https://node.zeroasso.top/d/od/" },
+        { NodeType.Tianyi, "https://node.zeroasso.top/d/tianyi/" }
+    };
+
     private static readonly HttpClient Client = new();
+
+    public static NodeType UpdateUriTemp;
+
+    public static bool NeedPopup;
+
+    public static string TMPOldVersion = string.Empty;
+
+    public static string TMPUpdateVersion = string.Empty;
+
+    public static string ResourceOldVersion = string.Empty;
+
+    public static string ResourceUpdateVersion = string.Empty;
+
+    public static string UpdateMessage = string.Empty;
+
+    public static bool IsAppOutdated;
 
     public static void StartAutoUpdate()
     {
         if (!AutoUpdate.Value) return;
-        LLCMod.LogWarning($"Check Mod Update From {UpdateUri.Value}");
+        if (!File.Exists(LLCMod.ModPath + "/version.json") ||
+            !File.Exists(LLCMod.ModPath + "/7z.exe"))
+        {
+            LLCMod.LogWarning("Can't Find HotUpdate Need File. Skip Mod Update.");
+            return;
+        }
+
+        UpdateUriTemp = UpdateUri.Value == NodeType.Auto
+            ? NotChinaIP() ? NodeType.OneDrive : NodeType.GitHub
+            : UpdateUri.Value;
+        LLCMod.LogWarning($"Check Mod Update From {UpdateUriTemp}");
         var modUpdate = ModUpdate;
         new Thread(modUpdate).Start();
     }
 
-    public static void ModUpdate()
+    private static void ModUpdate()
     {
         try
         {
-            var releaseUri = UpdateUri.Value == Uri.GitHub
-                ? "https://api.github.com/repos/LocalizeLimbusCompany/LocalizeLimbusCompany/releases/latest"
-                : "https://json.zxp123.eu.org/LatestMod_Release.json";
+            var versionPath = LLCMod.ModPath + "/version.json";
+            var localJson = JSONNode.Parse(File.ReadAllText(versionPath)).AsObject;
             Client.Timeout = TimeSpan.FromSeconds(10);
             Client.DefaultRequestHeaders.Add("User-Agent", "User-Agent");
-            var response = Client.GetStringAsync(releaseUri).GetAwaiter().GetResult();
-            var latest = JSONNode.Parse(response).AsObject;
-            var tag = latest["tag_name"].Value;
-            if (Version.Parse(LLCMod.Version) < Version.Parse(tag.Remove(0, 1)))
+            var response = Client.GetStringAsync("https://api.kr.zeroasso.top/version.json").GetAwaiter().GetResult();
+            var serverJson = JSONNode.Parse(response).AsObject;
+            var tag = serverJson["version"].Value;
+            if (Version.Parse(localJson["version"].Value) < Version.Parse(tag))
             {
                 var updatelog = $"LimbusLocalize_BIE_{tag}.7z";
-                Updatelog += updatelog + " ";
-                var downloadUri = UpdateUri.Value == Uri.GitHub
+                var downloadUri = UpdateUriTemp == NodeType.GitHub
                     ? $"https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/releases/download/{tag}/{updatelog}"
-                    : $"https://node.zeroasso.top/d/od/{updatelog}";
+                    : $"{UrlDictionary[UpdateUriTemp]}{updatelog}";
                 var filename = Path.Combine(LLCMod.GamePath, updatelog);
                 if (!File.Exists(filename)) DownloadFile(downloadUri, filename);
-                UpdateCall = UpdateDel;
+                NeedPopup = true;
+                IsAppOutdated = true;
+                UpdateMessage = updatelog;
+                LLCMod.LogWarning("New mod version found. Download full mod.");
+                return;
             }
 
+            var latestTextVersion = int.Parse(serverJson["resource_version"].Value);
+            var localTextVersion = int.Parse(localJson["resource_version"].Value);
+            if (latestTextVersion > localTextVersion)
+            {
+                var updatelog = $"LimbusLocalize_Resource_{latestTextVersion}.7z";
+                var downloadUri = UpdateUriTemp == NodeType.GitHub
+                    ? $"https://github.com/LocalizeLimbusCompany/LLC_Release/releases/download/{latestTextVersion}/{updatelog}"
+                    : $"{UrlDictionary[UpdateUriTemp]}Resource/{updatelog}";
+                var filename = Path.Combine(LLCMod.GamePath, updatelog);
+                if (!File.Exists(filename))
+                    DownloadFile(downloadUri, filename);
+                UnarchiveFile(filename, LLCMod.GamePath);
+                ChineseFont.LoadLocal();
+                NeedPopup = true;
+                ResourceOldVersion = localTextVersion.ToString();
+                ResourceUpdateVersion = latestTextVersion.ToString();
+                UpdateMessage = serverJson["notice"].Value.Replace("\\n", "\n");
+                LLCMod.LogWarning("Mod Update Success.");
+            }
+
+            File.WriteAllText(versionPath, response);
             LLCMod.LogWarning("Check Chinese Font Asset Update");
             ChineseFontUpdate();
         }
         catch (Exception ex)
         {
-            LLCMod.LogWarning($"Mod update failed:\n{ex}");
+            LLCMod.LogWarning($"Mod update failed::\n{ex}");
         }
     }
 
-    public static void ChineseFontUpdate()
+    private static void ChineseFontUpdate()
     {
         try
         {
-            var releaseUri = UpdateUri.Value == Uri.GitHub
+            var releaseUri = UpdateUriTemp == NodeType.GitHub
                 ? "https://api.github.com/repos/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/latest"
                 : "https://json.zxp123.eu.org/LatestTmp_Release.json";
             var response = Client.GetStringAsync(releaseUri).GetAwaiter().GetResult();
             var latest = JSONNode.Parse(response).AsObject;
             var latestReleaseTag = int.Parse(latest["tag_name"].Value);
-            var filePath = Path.Combine(LLCMod.ModPath, "tmpchinesefont");
-            var lastWriteTime = File.Exists(filePath)
-                ? int.Parse(TimeZoneInfo.ConvertTime(new FileInfo(filePath).LastWriteTime,
+            var fontPath = LLCMod.ModPath + "/tmpchinesefont";
+            var lastWriteTime = File.Exists(fontPath)
+                ? int.Parse(TimeZoneInfo.ConvertTime(new FileInfo(fontPath).LastWriteTime,
                     TimeZoneInfo.FindSystemTimeZoneById("China Standard Time")).ToString("yyMMdd"))
                 : 0;
             if (lastWriteTime >= latestReleaseTag) return;
-            var updatelog = $"tmpchinesefont_BIE_{latestReleaseTag}.7z";
-            Updatelog += updatelog + " ";
-            var downloadUri = UpdateUri.Value == Uri.GitHub
-                ? $"https://github.com/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/download/{latestReleaseTag}/{updatelog}"
-                : $"https://node.zeroasso.top/d/od/{updatelog}";
+            string updatelog;
+            string downloadUri;
+            if (UpdateUriTemp == NodeType.GitHub)
+            {
+                updatelog = $"tmpchinesefont_BIE_{latestReleaseTag}.7z";
+                downloadUri =
+                    $"https://github.com/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/download/{latestReleaseTag}/{updatelog}";
+            }
+            else
+            {
+                updatelog = "tmpchinesefont_BIE.7z";
+                downloadUri = $"{UrlDictionary[UpdateUriTemp]}{updatelog}";
+            }
+
             var filename = Path.Combine(LLCMod.GamePath, updatelog);
-            if (!File.Exists(filename)) DownloadFile(downloadUri, filename);
-            UpdateCall = UpdateDel;
+            if (!File.Exists(filename))
+                DownloadFile(downloadUri, filename);
+            UnarchiveFile(filename, LLCMod.GamePath);
+            ChineseFont.Tmpchinesefonts.Clear();
+            ChineseFont.AddChineseFont(fontPath);
+            NeedPopup = true;
+            TMPUpdateVersion = latestReleaseTag.ToString();
+            TMPOldVersion = lastWriteTime.ToString();
+            LLCMod.LogWarning("Chinese Font Asset Update Success.");
         }
         catch (Exception ex)
         {
@@ -119,7 +192,7 @@ public static class UpdateChecker
         }
     }
 
-    public static void DownloadFile(string uri, string filePath)
+    private static void DownloadFile(string uri, string filePath)
     {
         try
         {
@@ -137,9 +210,53 @@ public static class UpdateChecker
         }
     }
 
-    private static void UpdateDel()
+    private static void UnarchiveFile(string sourceFile, string destinationPath)
     {
-        LLCMod.OpenGamePath();
-        Application.Quit();
+        try
+        {
+            LLCMod.LogWarning($"Unarchiving {sourceFile} To {destinationPath}");
+            var processStartInfo = new ProcessStartInfo
+            {
+                FileName = LLCMod.ModPath + "/7z.exe",
+                Arguments = $"""x "{sourceFile}" -o"{destinationPath}" -y""",
+                UseShellExecute = false,
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+                CreateNoWindow = true
+            };
+            using var process = Process.Start(processStartInfo);
+            if (process == null) return;
+            process.OutputDataReceived += (_, e) =>
+            {
+                if (!string.IsNullOrEmpty(e.Data)) LLCMod.LogWarning("Output: " + e.Data);
+            };
+            process.ErrorDataReceived += (_, e) =>
+            {
+                if (!string.IsNullOrEmpty(e.Data)) LLCMod.LogError("Error: " + e.Data);
+            };
+            process.BeginOutputReadLine();
+            process.BeginErrorReadLine();
+            process.WaitForExit();
+            File.Delete(sourceFile);
+        }
+        catch (Exception ex)
+        {
+            LLCMod.LogWarning($"Unarchive file failed:\n{ex}");
+        }
+    }
+
+    private static bool NotChinaIP()
+    {
+        try
+        {
+            var response = Client.GetStringAsync("http://ip-api.com/json").GetAwaiter().GetResult();
+            var json = JSONNode.Parse(response).AsObject;
+            return !"China".Equals(json["country"].Value);
+        }
+        catch (Exception ex)
+        {
+            LLCMod.LogWarning($"NotChinaIP failed:\n{ex}");
+            return false;
+        }
     }
 }

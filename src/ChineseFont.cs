@@ -158,7 +158,19 @@ public static class ChineseFont
 
     #region 载入汉化
 
-    private static void LoadRemote2()
+    public static void LoadLocal()
+    {
+        var tm = Singleton<TextDataSet>.Instance;
+        var localizeFileList =
+            JsonUtility.FromJson<TextDataSet.LocalizeFileList>(Resources
+                .Load<TextAsset>("Localize/LocalizeFileList").ToString());
+        tm._loginUIList.Init(localizeFileList.LoginUIFilePaths);
+        tm._fileDownloadDesc.Init(localizeFileList.FileDownloadDesc);
+        tm._battleHint._dic.Clear();
+        tm._battleHint.Init(localizeFileList.BattleHint);
+    }
+
+    public static void LoadRemote2()
     {
         var tm = Singleton<TextDataSet>.Instance;
         var romoteLocalizeFileList = JsonUtility.FromJson<TextDataSet.RomoteLocalizeFileList>(AddressableManager
@@ -347,18 +359,6 @@ public static class ChineseFont
         if (__instance._modelAssetMap.TryGetValueEx(name, out var scenarioAssetData))
             __result = scenarioAssetData.nickName ?? string.Empty;
         return false;
-    }
-
-    private static void LoadLocal()
-    {
-        var tm = Singleton<TextDataSet>.Instance;
-        var localizeFileList =
-            JsonUtility.FromJson<TextDataSet.LocalizeFileList>(Resources
-                .Load<TextAsset>("Localize/LocalizeFileList").ToString());
-        tm._loginUIList.Init(localizeFileList.LoginUIFilePaths);
-        tm._fileDownloadDesc.Init(localizeFileList.FileDownloadDesc);
-        tm._battleHint._dic.Clear();
-        tm._battleHint.Init(localizeFileList.BattleHint);
     }
 
     [HarmonyPatch(typeof(TextDataSet), nameof(TextDataSet.LoadRemote))]
