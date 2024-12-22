@@ -114,9 +114,9 @@ public class Manager(IntPtr ptr) : MonoBehaviour(ptr)
             return;
         }
         string UpdateMessage = "您的模组已更新至最新版本！\n更新内容：";
-        if (!string.IsNullOrEmpty(UpdateChecker.ModUpdateVersion) && !string.IsNullOrEmpty(UpdateChecker.ModOldVersion))
+        if (!string.IsNullOrEmpty(UpdateChecker.ResourceOldVersion) && !string.IsNullOrEmpty(UpdateChecker.ResourceUpdateVersion))
         {
-            UpdateMessage += $"\n文本更新：v{UpdateChecker.ModOldVersion} => v{UpdateChecker.ModUpdateVersion}";
+            UpdateMessage += $"\n资源更新：v{UpdateChecker.ResourceOldVersion} => v{UpdateChecker.ResourceUpdateVersion}";
         }
         if (!string.IsNullOrEmpty(UpdateChecker.TMPUpdateVersion) && !string.IsNullOrEmpty(UpdateChecker.TMPOldVersion))
         {

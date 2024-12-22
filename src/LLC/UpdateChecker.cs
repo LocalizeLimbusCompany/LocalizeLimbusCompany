@@ -1,6 +1,5 @@
 ﻿using BepInEx.Configuration;
 using Il2CppSystem.Threading;
-using JetBrains.Annotations;
 using SimpleJSON;
 using System;
 using System.Collections.Generic;
@@ -8,7 +7,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Net.Http;
-using UnityEngine;
+using System.Threading.Tasks;
 using UnityEngine.Networking;
 
 namespace LimbusLocalize.LLC;
@@ -18,11 +17,16 @@ public static class UpdateChecker
     // 存储节点类型
     public enum NodeType
     {
+        Auto,
+        Github,
+        Cloudflare,
         OneDrive,
         Tianyi
     }
     // 存储节点类型所对应的EndPoint
     // 服务器目前在以下节点托管了热更新文件
+    // Github: https://github.com/ZengXiaoPi/LLC-CF-source （特殊逻辑）
+    // Cloudflare: https://cf-cdn.zeroasso.top （特殊逻辑）
     // OneDrive For Business: https://node.zeroasso.top/od/
     // 天翼网盘: https://node.zeroasso.top/tianyi/
     public static readonly Dictionary<NodeType, string> UrlDictionary = new()
@@ -35,7 +39,9 @@ public static class UpdateChecker
         LLCMod.LLCSettings.Bind("LLC Settings", "AutoUpdate", false, "是否自动检查并下载更新 ( true | false )");
 
     public static ConfigEntry<NodeType> UpdateUri = LLCMod.LLCSettings.Bind("LLC Settings", "UpdateURI", NodeType.OneDrive,
-        "自动更新所使用URI ( OneDrive：Onedrive For Business | Tianyi：天翼网盘 )");
+        "自动更新所使用URI ( Auto: 自动 | Github: Github直连，不建议国内网络使用 | Cloudflare: Cloudflare CDN | OneDrive：Onedrive For Business | Tianyi：天翼网盘 )");
+
+    public static NodeType UpdateUriTemp;
 
     // 是否需要弹出更新提示
     public static bool needPopup = false;
@@ -43,10 +49,10 @@ public static class UpdateChecker
     public static string TMPOldVersion = string.Empty;
     // 字体文件最新版本号，用于PopUp提示
     public static string TMPUpdateVersion = string.Empty;
-    // 模组文件旧版本号，用于PopUp提示
-    public static string ModOldVersion = string.Empty;
-    // 模组最新版本号，用于PopUp提示
-    public static string ModUpdateVersion = string.Empty;
+    // 资源文件旧版本号，用于PopUp提示
+    public static string ResourceOldVersion = string.Empty;
+    // 资源最新版本号，用于PopUp提示
+    public static string ResourceUpdateVersion = string.Empty;
     // 更新提示，用于PopUp提示
     public static string HotUpdateMessage = string.Empty;
     // 是否有新版本的程序文件
@@ -58,7 +64,25 @@ public static class UpdateChecker
     public static void StartAutoUpdate()
     {
         if (!AutoUpdate.Value) return;
-        LLCMod.LogInfo($"Check Mod Update From {UpdateUri.Value}");
+        if (UpdateUri.Value == NodeType.Auto)
+        {
+            bool isChinese = isChinaIP().GetAwaiter().GetResult();
+            if (isChinese)
+            {
+                UpdateUriTemp = NodeType.OneDrive;
+                LLCMod.LogInfo("Is China IP. Turn Uri to OFB.");
+            }
+            else
+            {
+                UpdateUriTemp = NodeType.Github;
+                LLCMod.LogInfo("Isnot China IP. Turn Uri to Github.");
+            }
+        }
+        else
+        {
+            UpdateUriTemp = UpdateUri.Value;
+        }
+        LLCMod.LogInfo($"Check Mod Update From {UpdateUriTemp}");
         // 此处必须进行同步操作，否则会进行后续操作，然后就寄了
         CheckModUpdate();
     }
@@ -82,17 +106,27 @@ public static class UpdateChecker
 
         // 读取本地的version.json文件
         JSONObject localJson = JSONNode.Parse(File.ReadAllText(LLCMod.ModPath + "/version.json")).AsObject;
-        // 用Dictionary获取当前配置的EndPoint
-        string updateEndpoint = UrlDictionary[UpdateUri.Value];
+
+        string versionUrl = "https://api.kr.zeroasso.top/version.json";
+        if (UpdateUriTemp == NodeType.Github)
+        {
+            versionUrl = "https://raw.githubusercontent.com/ZengXiaoPi/LLC-CF-source/refs/heads/main/api/version.json";
+        }
+        else if (UpdateUriTemp == NodeType.Cloudflare)
+        {
+            // 用Dictionary获取当前配置的EndPoint
+            versionUrl = "https://cf-cdn.zeroasso.top/api/version.json";
+        }
+
         // 获取托管在服务器上的版本文件
-        UnityWebRequest www = UnityWebRequest.Get("https://hotupdate.zeroasso.top/api/version.json");
-        www.timeout = 4;
+        UnityWebRequest www = UnityWebRequest.Get(versionUrl);
+        www.timeout = 10;
         www.SendWebRequest();
         while (!www.isDone)
             Thread.Sleep(100);
         if (www.result != UnityWebRequest.Result.Success)
         {
-            LLCMod.LogWarning($"Can't access {UpdateUri.Value}!!!" + www.error);
+            LLCMod.LogWarning($"Can't access {UpdateUriTemp}!!!" + www.error);
         }
         else
         {
@@ -100,9 +134,9 @@ public static class UpdateChecker
 
             // 比较本地版本号和服务器上的程序版本号，如果服务器上的程序版本号较新，则不进行自动更新，弹出提示要求用户手动更新
             // 程序版本号代表dll的更新
-            int latestAPPVersion = int.Parse(response["app_version"].Value);
-            int localAPPVersion = int.Parse(localJson["app_version"].Value);
-            if (localAPPVersion < latestAPPVersion)
+            string latestAPPVersion = response["version"].Value;
+            string localAPPVersion = localJson["version"].Value;
+            if (new Version(localAPPVersion) < new Version(latestAPPVersion))
             {
                 needPopup = true;
                 isAppOutdated = true;
@@ -112,29 +146,43 @@ public static class UpdateChecker
 
             // 复写本地的version.json文件，以更新本地的版本信息
             File.WriteAllText(LLCMod.ModPath + "/version.json", www.downloadHandler.text);
-            // 程序版本若已经为最新，则比较文本版本号，如果服务器上的文本版本较新，则下载并解压更新文本资源
-            int latestTextVersion = int.Parse(response["text_version"].Value);
-            int localTextVersion = int.Parse(localJson["text_version"].Value);
+            // 程序版本若已经为最新，则比较资源版本号，如果服务器上的资源版本较新，则下载并解压更新文本资源
+            int latestTextVersion = int.Parse(response["resource_version"].Value);
+            int localTextVersion = int.Parse(localJson["resource_version"].Value);
 
             if (latestTextVersion > localTextVersion)
             {
                 // 需要弹出提示
                 needPopup = true;
                 // 存储模组版本
-                ModOldVersion = localTextVersion.ToString();
-                ModUpdateVersion = latestTextVersion.ToString();
+                ResourceOldVersion = localTextVersion.ToString();
+                ResourceUpdateVersion = latestTextVersion.ToString();
                 // 存储模组更新日志
                 HotUpdateMessage = response["notice"].Value.Replace("\\n", "\n");
 
                 // 在服务器上的资源文件格式为：LimbusLocalize_hotupdate_版本号.7z
                 // 例如LimbusLocalize_hotupdate_10.7z
-                string updatelog = "LimbusLocalize_hotupdate_" + latestTextVersion;
+                string updatelog = "LimbusLocalize_Resource_" + latestTextVersion;
 
                 // 拼接Endpoint和文件名并下载
-                // 拼接完应该是例如：https://node.zeroasso.top/d/od/hotupdate/LimbusLocalize_hotupdate_10.7z
-                var downloadUri = $"{updateEndpoint}hotupdate/{updatelog}.7z";
-                var dirs = downloadUri.Split('/');
-                var filename = LLCMod.GamePath + "/" + dirs[^1];
+                string downloadUri = string.Empty;
+                if (UpdateUriTemp == NodeType.Github)
+                {
+                    downloadUri = $"https://raw.githubusercontent.com/ZengXiaoPi/LLC-CF-source/refs/heads/main/files/resource/{updatelog}.7z";
+                }
+                else if (UpdateUriTemp == NodeType.Cloudflare)
+                {
+                    downloadUri = $"https://cf-cdn.zeroasso.top/files/resource/{updatelog}.7z";
+                }
+                else
+                {
+                    string updateEndpoint = UrlDictionary[UpdateUriTemp];
+                    // 拼接完应该是例如：https://node.zeroasso.top/d/od/Resource/LimbusLocalize_Resource_2024112201.7z
+                    downloadUri = $"{updateEndpoint}Resource/{updatelog}.7z";
+                }
+
+                string[] dirs = downloadUri.Split('/');
+                string filename = LLCMod.GamePath + "/" + dirs[^1];
                 if (!File.Exists(filename))
                     DownloadFileAsync(downloadUri, filename);
 
@@ -152,7 +200,15 @@ public static class UpdateChecker
     /// </summary>
     private static void CheckChineseFontAssetUpdate()
     {
-        var releaseUri = "https://api.kr.zeroasso.top/LatestTmp_Release.json";
+        string releaseUri = "https://api.kr.zeroasso.top/LatestTmp_Release.json";
+        if (UpdateUriTemp == NodeType.Github)
+        {
+            releaseUri = "https://raw.githubusercontent.com/ZengXiaoPi/LLC-CF-source/refs/heads/main/api/LatestTmp_Release.json";
+        }
+        else if (UpdateUriTemp == NodeType.Cloudflare)
+        {
+            releaseUri = "https://cf-cdn.zeroasso.top/api/LatestTmp_Release.json";
+        }
         var www = UnityWebRequest.Get(releaseUri);
         var filePath = LLCMod.ModPath + "/tmpchinesefont";
         var lastWriteTime = File.Exists(filePath)
@@ -172,13 +228,25 @@ public static class UpdateChecker
         TMPUpdateVersion = latestReleaseTag.ToString();
         TMPOldVersion = lastWriteTime.ToString();
 
-        var updatelog = "tmpchinesefont_BIE";
-        string updateEndpoint = UrlDictionary[UpdateUri.Value];
-        var download = $"{updateEndpoint}{updatelog}.7z";
-        var dirs = download.Split('/');
+        string downloadUri = string.Empty;
+        if (UpdateUriTemp == NodeType.Github)
+        {
+            downloadUri = $"https://raw.githubusercontent.com/ZengXiaoPi/LLC-CF-source/refs/heads/main/files/tmpchinesefont_BIE.7z";
+        }
+        else if (UpdateUriTemp == NodeType.Cloudflare)
+        {
+            downloadUri = $"https://cf-cdn.zeroasso.top/files/resource/tmpchinesefont_BIE.7z";
+        }
+        else
+        {
+            string updateEndpoint = UrlDictionary[UpdateUriTemp];
+            // 拼接完应该是例如：https://node.zeroasso.top/d/od/Resource/LimbusLocalize_Resource_2024112201.7z
+            downloadUri = $"{updateEndpoint}tmpchinesefont_BIE.7z";
+        }
+        var dirs = downloadUri.Split('/');
         var filename = LLCMod.GamePath + "/" + dirs[^1];
         if (!File.Exists(filename))
-            DownloadFileAsync(download, filename);
+            DownloadFileAsync(downloadUri, filename);
 
         // 在此处改为直接解压
         UnarchiveFile(filename, LLCMod.GamePath);
@@ -256,5 +324,15 @@ public static class UpdateChecker
         while (!www2.isDone) Thread.Sleep(100);
         File.WriteAllText(filePath, www2.downloadHandler.text);
         ReadmeManager.InitReadmeList();
+    }
+    public static async Task<bool> isChinaIP()
+    {
+        using (HttpClient client = new HttpClient())
+        {
+            string url = $"http://ip-api.com/json";
+            var response = await client.GetStringAsync(url);
+            var json = JSONNode.Parse(response).AsObject;
+            return json["country"] == "China";
+        }
     }
 }
