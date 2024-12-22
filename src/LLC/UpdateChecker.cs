@@ -36,11 +36,12 @@ public static class UpdateChecker
     };
 
     public static ConfigEntry<bool> AutoUpdate =
-        LLCMod.LLCSettings.Bind("LLC Settings", "AutoUpdate", false, "是否自动检查并下载更新 ( true | false )");
+        LLCMod.LLCSettings.Bind("LLC Settings", "AutoUpdate", true, "是否自动检查并下载更新 ( true | false )");
 
     public static ConfigEntry<NodeType> UpdateUri = LLCMod.LLCSettings.Bind("LLC Settings", "UpdateURI", NodeType.OneDrive,
         "自动更新所使用URI ( Auto: 自动 | Github: Github直连，不建议国内网络使用 | Cloudflare: Cloudflare CDN | OneDrive：Onedrive For Business | Tianyi：天翼网盘 )");
 
+    public static ConfigEntry<int> UpdateTimeout = LLCMod.LLCSettings.Bind("LLC Settings", "UpdateTimeout", 10, "更新超时时间，如果出现Timeout，可以适当调大 ( 10 | Int)");
     public static NodeType UpdateUriTemp;
 
     // 是否需要弹出更新提示
@@ -120,7 +121,7 @@ public static class UpdateChecker
 
         // 获取托管在服务器上的版本文件
         UnityWebRequest www = UnityWebRequest.Get(versionUrl);
-        www.timeout = 10;
+        www.timeout = UpdateTimeout.Value;
         www.SendWebRequest();
         while (!www.isDone)
             Thread.Sleep(100);
@@ -210,6 +211,7 @@ public static class UpdateChecker
             releaseUri = "https://cf-cdn.zeroasso.top/api/LatestTmp_Release.json";
         }
         var www = UnityWebRequest.Get(releaseUri);
+        www.timeout = UpdateTimeout.Value;
         var filePath = LLCMod.ModPath + "/tmpchinesefont";
         var lastWriteTime = File.Exists(filePath)
             ? int.Parse(TimeZoneInfo.ConvertTime(new FileInfo(filePath).LastWriteTime,
@@ -312,7 +314,7 @@ public static class UpdateChecker
     public static void CheckReadmeUpdate()
     {
         var www = UnityWebRequest.Get("https://json.zxp123.eu.org/ReadmeLatestUpdateTime.txt");
-        www.timeout = 1;
+        www.timeout = UpdateTimeout.Value;
         www.SendWebRequest();
         var filePath = LLCMod.ModPath + "/Localize/Readme/Readme.json";
         var lastWriteTime = new FileInfo(filePath).LastWriteTime;
