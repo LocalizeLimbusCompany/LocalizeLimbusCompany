@@ -38,7 +38,7 @@ public static class UpdateChecker
     public static ConfigEntry<bool> AutoUpdate =
         LLCMod.LLCSettings.Bind("LLC Settings", "AutoUpdate", true, "是否自动检查并下载更新 ( true | false )");
 
-    public static ConfigEntry<NodeType> UpdateUri = LLCMod.LLCSettings.Bind("LLC Settings", "UpdateURI", NodeType.OneDrive,
+    public static ConfigEntry<NodeType> UpdateUri = LLCMod.LLCSettings.Bind("LLC Settings", "UpdateURI", NodeType.Auto,
         "自动更新所使用URI ( Auto: 自动 | Github: Github直连，不建议国内网络使用 | Cloudflare: Cloudflare CDN | OneDrive：Onedrive For Business | Tianyi：天翼网盘 )");
 
     public static ConfigEntry<int> UpdateTimeout = LLCMod.LLCSettings.Bind("LLC Settings", "UpdateTimeout", 10, "更新超时时间，如果出现Timeout，可以适当调大 ( 10 | Int)");
