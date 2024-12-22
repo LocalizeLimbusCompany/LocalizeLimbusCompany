@@ -19,6 +19,12 @@
     <ItemGroup>
         <None Remove="Directory.Build.props"/>
         <None Remove="nuget.config"/>
+        <None Update="7z.exe">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="version.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
     </ItemGroup>
 
     <!-- ~~~~~ NUGET ~~~~~ -->
