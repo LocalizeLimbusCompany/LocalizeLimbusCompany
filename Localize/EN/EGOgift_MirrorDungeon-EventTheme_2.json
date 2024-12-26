@@ -230,6 +230,131 @@
           "simpleDesc": "Heal SP, gain Clash Power Up, and E.G.O resources when substituting in"
         }
       ]
+    },
+    {
+      "id": 9759,
+      "name": "Snuffed Lantern",
+      "desc": "[Effects apply only to #7 Deployed Identity]\n\nGain +1 more [Vibration] Count from Skill or Coin effects\n\n- If the target is in Staggered, Low Morale, or Panic states, gain +2 more instead",
+      "simpleDesc": [
+        {
+          "abilityID": 9759,
+          "simpleDesc": "Gain more [Vibration] Count with Skill or Coin effects"
+        }
+      ]
+    },
+    {
+      "id": 9760,
+      "name": "Snuffed Candlestick",
+      "desc": "[Effects apply only to #1 Deployed Identity]\n\nIf there are enemies in Staggered, Low Morale, or Panic states at Turn Start, inflict 1 [AttackDown] or 1 [DefenseDown] against all enemies. (3 times per turn)\n\nOn Hit against enemies in Staggered, Low Morale, or Panic states: inflict 1 [AttackDown] or 1 [DefenseDown] (3 times per turn)",
+      "simpleDesc": [
+        {
+          "abilityID": 9760,
+          "simpleDesc": "Inflict 1 [AttackDown] or 1 [DefenseDown]"
+        },
+        {
+          "abilityID": 97601,
+          "simpleDesc": "Inflict 1 [AttackDown] or 1 [DefenseDown]"
+        }
+      ]
+    },
+    {
+      "id": 9761,
+      "name": "Shadow Monster",
+      "desc": "[Effects apply only to #1, #2, #7, and #8 Deployed Identities]\n\nGain +1 more [Vibration] Count from Skill & Coin effects\n  - If the target is in Staggered, Low Morale, or Panic states, gain +2 more instead\n\nIf there are enemies in Staggered, Low Morale, or Panic states at Turn Start, inflict 2 [AttackDown] or 2 [DefenseDown] against all enemies. (3 times per turn)\n\nOn Hit against enemies in Staggered, Low Morale, or Panic states: inflict 1 [AttackDown] or 1 [DefenseDown] (3 times per turn between all Identities)",
+      "simpleDesc": [
+        {
+          "abilityID": 9761,
+          "simpleDesc": "Gain more [Vibration] Count with Skill or Coin effects"
+        },
+        {
+          "abilityID": 97611,
+          "simpleDesc": "Inflict 1 [AttackDown] or 1 [DefenseDown]"
+        },
+        {
+          "abilityID": 97612,
+          "simpleDesc": "Inflict 1 [AttackDown] or 1 [DefenseDown]"
+        }
+      ]
+    },
+    {
+      "id": 9762,
+      "name": "Packaging Box",
+      "desc": "On Hit from ally Skills) randomly select one of the following effects: [Combustion], [Laceration], [Vibration], [Burst], and [Sinking], then inflict 1 Potency of the selected effect (3 times per turn)\n\nOn Kill from allies) randomly select one of the following effects: [Breath] Count, [Charge] Count, [Agility], [AttackUp], and [DefenseUp], then inflict 1 of the selected effect to a random ally (3 times per turn)",
+      "simpleDesc": [
+        {
+          "abilityID": 9762,
+          "simpleDesc": "Inflict a random debuff"
+        },
+        {
+          "abilityID": 97621,
+          "simpleDesc": "Gain a random buff"
+        }
+      ]
+    },
+    {
+      "id": 9763,
+      "name": "Packaging Ribbon",
+      "desc": "Turn Start: randomly select 1 out of 'Wrath ~ Envy DMG Up' effects and apply 1 Stack to all allies\n\nTurn Start: randomly select 1 out of 'Wrath ~ Envy Fragility' effects and inflict 1 Stack to all enemies",
+      "simpleDesc": [
+        {
+          "abilityID": 9763,
+          "simpleDesc": "Gain a random Affinity DMG Up effect"
+        },
+        {
+          "abilityID": 97631,
+          "simpleDesc": "Inflict 'Fragility' against a random Affinity"
+        }
+      ]
+    },
+    {
+      "id": 9764,
+      "name": "Gift",
+      "desc": "When an ally hits with a Skill, randomly select 2 of the following effects: [Combustion], [Laceration], [Vibration], [Burst], and [Sinking], then inflict 1 Potency of the selected effect (3 times per turn)\n\nWhen an ally hits with a Skill, randomly select one of the following effects: [Breath] Count, [Charge] Count, [Agility], [AttackUp], and [DefenseUp], then inflict 1 of the selected effect to 2 random allies (3 times per turn)\n\nTurn Start: randomly select 2 out of Wrath ~ Envy DMG Up effects and apply 1 Stack to all allies\n\nTurn Start: randomly select 2 out of Wrath ~ Envy Fragility effects and inflict 1 Stack to all enemies",
+      "simpleDesc": [
+        {
+          "abilityID": 9764,
+          "simpleDesc": "Inflict a random debuff"
+        },
+        {
+          "abilityID": 97641,
+          "simpleDesc": "Gain a random buff"
+        },
+        {
+          "abilityID": 97642,
+          "simpleDesc": "Gain a random Affinity DMG Up effect"
+        }
+      ]
+    },
+    {
+      "id": 9765,
+      "name": "Jolly Plushie",
+      "desc": "Gain 2 [Breath] Potency next turn based on the number of allied Attack Skills that dealt damage by Turn End\n- In Focused Encounters, gain 4 [Breath] Potency instead.\n\nTurn Start: apply 2 [Breath], +2 [Breath] Count, and 2 [Protection] on the ally with the least HP.\n\nDeal +(absolute value of SP)% more damage. (min 0%)\n\nWhen an ally with Plus Coin Skills recovers from Stagger, fully heal SP. (does not activate when Corroded)\n\nFor an ally with all Minus Coin Skills: gain 5 [Paralysis] at Turn Start.",
+      "simpleDesc": [
+        {
+          "abilityID": 9765,
+          "simpleDesc": "Gain Poise Potency"
+        },
+        {
+          "abilityID": 97651,
+          "simpleDesc": "Apply a random buff"
+        },
+        {
+          "abilityID": 97652,
+          "simpleDesc": "Apply [Breath] and [Protection]"
+        },
+        {
+          "abilityID": 97653,
+          "simpleDesc": "Deal more damage"
+        },
+        {
+          "abilityID": 97654,
+          "simpleDesc": "Fully heal SP"
+        },
+        {
+          "abilityID": 97655,
+          "simpleDesc": "Gain [Paralysis]"
+        }
+      ]
     }
   ]
 }

@@ -398,6 +398,196 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2120811,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Christmas Nightmare",
+          "abName": "Cozy Bed",
+          "desc": "[EndSkill] At max HP, heal 10 SP at Turn End and gain 1 [Enhancement] next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 [Vibration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [Sinking]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the target is in Staggered, Low Morale, or Panic states, inflict 1 [Reduction] next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Christmas Nightmare",
+          "abName": "Cozy Bed",
+          "desc": "<style=\"highlight\">If the target has less than 0 SP, deal +1% more damage for every SP value below 0 (max 45%)</style>\n[EndSkill] At max HP, heal 10 SP at Turn End and gain 1 [Enhancement] next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 [Vibration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Heal (2 + highest Reson.)% of the missing HP on self (max 30% per Skill)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [Sinking]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the target is in Staggered, Low Morale, or Panic states, inflict 1 [Reduction] next turn<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Christmas Nightmare",
+          "abName": "Cozy Bed",
+          "desc": "If the target has less than 0 SP, deal +1% more damage for every SP value below 0 (max 45%)\n[EndSkill] At max HP, heal <style=\"highlight\">15</style> SP at Turn End and gain 1 [Enhancement] next turn<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 [Vibration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Heal (<style=\"highlight\">3</style> + highest Reson.)% of the missing HP on self (max 30% per Skill)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [Sinking]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the target is in Staggered, Low Morale, or Panic states, inflict 1 [Reduction] <style=\"highlight\">and Fragility[TabExplain] against the Affinity of the highest Reson.</style> next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120821,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Christmas Nightmare",
+          "abName": "Cozy Bed",
+          "desc": "[CantIdentify]\nTargets randomly\n[BeforeAttack] Heal 10 HP on self\n[EndSkill] At max HP, heal 10 SP at Turn End and gain 1 [Enhancement] next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 [Vibration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [Sinking]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the target is in Staggered, Low Morale, or Panic states, inflict 1 [Reduction] next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Christmas Nightmare",
+          "abName": "Cozy Bed",
+          "desc": "[CantIdentify]\nTargets randomly\n<style=\"highlight\">If the target has less than 0 SP, deal +1% more damage for every SP value below 0 (max 45%)</style>\n[BeforeAttack] Heal 10 HP on self\n[EndSkill] At max HP, heal <style=\"highlight\">15</style> SP at Turn End and gain 1 [Enhancement] next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 [Vibration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Heal (2 + highest Reson.)% of the missing HP (max 30% per Skill)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [Sinking]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the target is in Staggered, Low Morale, or Panic states, inflict 1 [Reduction] next turn<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Christmas Nightmare",
+          "abName": "Cozy Bed",
+          "desc": "[CantIdentify]\nTargets randomly\nIf the target has less than 0 SP, deal +1% more damage for every SP value below 0 (max 45%)\n[BeforeAttack] Heal 10 HP on self\n[EndSkill] At max HP, heal <style=\"highlight\">20</style> SP at Turn End and gain 1 [Enhancement] next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 [Vibration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Heal (<style=\"highlight\">3</style> + highest Reson.)% of the missing HP on self (max 30% per Skill)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [Sinking]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If the target is in Staggered, Low Morale, or Panic states, inflict 1 [Reduction] <style=\"highlight\">and 2 Fragility[TabExplain] against the Affinity of the highest Reson.</style> next turn"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

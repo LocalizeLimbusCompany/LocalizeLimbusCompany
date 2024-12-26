@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Linq;
 using HarmonyLib;
@@ -127,7 +127,9 @@ public static class ReadmeManager
         var count = ReadmeList.Count;
         while (i < count)
         {
-            if (!UserLocalSaveDataRoot.Instance.NoticeRedDotSaveModel.TryCheckId(ReadmeList[i].ID)) return true;
+            var readme = ReadmeList[i];
+            if (!readme.StartDate.isFuture && !readme.EndDate.isPast &&
+                !UserLocalSaveDataRoot.Instance.NoticeRedDotSaveModel.TryCheckId(readme.ID)) return true;
             i++;
         }
 
@@ -140,26 +142,22 @@ public static class ReadmeManager
     [HarmonyPrefix]
     private static bool InitNoticeList(UserLocalNoticeRedDotModel __instance, List<int> severNoticeList)
     {
-        UpdateChecker.CheckReadmeUpdate();
-        for (var i = 0; i < __instance.GetDataList().Count; i++)
-        {
-            __instance.idList.RemoveAll((Func<int, bool>)Func);
-            continue;
-
-            bool Func(int x)
-            {
-                return !severNoticeList.Contains(x) && ReadmeList.FindAll((Func<Notice, bool>)Func2).Count == 0;
-
-                bool Func2(Notice x2)
-                {
-                    return x2.ID == x;
-                }
-            }
-        }
-
+        UpdateChecker.ReadmeUpdate();
+        if (__instance.idList.RemoveAll((Func<int, bool>)Func) > 0)
+            __instance.isChanged = true;
         __instance.Save();
         UpdateNoticeRedDot();
         return false;
+
+        bool Func(int id)
+        {
+            return !severNoticeList.Contains(id) && ReadmeList.FindAll((Func<Notice, bool>)Func2).Count == 0;
+
+            bool Func2(Notice notice)
+            {
+                return notice.ID == id;
+            }
+        }
     }
 
     [HarmonyPatch(typeof(NoticeUIPopup), nameof(NoticeUIPopup.Initialize))]

@@ -230,6 +230,131 @@
           "simpleDesc": "待機解除時に精神力回復、マッチ威力増加、E.G.O資源獲得"
         }
       ]
+    },
+    {
+      "id": 9759,
+      "name": "火の消えたランタン",
+      "desc": "[編成7番人格専用効果]\n\nスキル・コイン効果で得る[Vibration]回数の値 +1\n\n- 攻撃対象が混乱、士気低下、パニック状態なら代わりに +2",
+      "simpleDesc": [
+        {
+          "abilityID": 9759,
+          "simpleDesc": "スキル・コイン効果で得る[Vibration]回数が増加"
+        }
+      ]
+    },
+    {
+      "id": 9760,
+      "name": "火の消えた燭台",
+      "desc": "[編成1番人格専用効果]\n\nターン開始時に混乱、士気低下、パニック状態の敵がいるなら、全ての敵へ[AttackDown]1または[DefenseDown]1を付与。(1ターンにつき最大3回)\n\n混乱、士気低下、パニック状態の敵に攻撃的中時、[AttackDown]1または[DefenseDown]1を付与(1ターンにつき最大3回)",
+      "simpleDesc": [
+        {
+          "abilityID": 9760,
+          "simpleDesc": "[AttackDown]または[DefenseDown]1を付与"
+        },
+        {
+          "abilityID": 97601,
+          "simpleDesc": "[AttackDown]または[DefenseDown]1を付与"
+        }
+      ]
+    },
+    {
+      "id": 9761,
+      "name": "影の怪物",
+      "desc": "[編成1・2・7・8番人格専用効果]\n\nスキル・コイン効果で得る[Vibration]回数の値 +1\n- 攻撃対象が混乱、士気低下、パニック状態なら代わりに +2\n\nターン開始時に混乱、士気低下、パニック状態の敵がいるなら、全ての敵へ[AttackDown]2または[DefenseDown]2を付与。(1ターンにつき最大3回)\n\n混乱、士気低下、パニック状態の敵に攻撃的中時、[AttackDown]1または[DefenseDown]1を付与(1ターンにつき最大3回。他の人格と回数を共有)",
+      "simpleDesc": [
+        {
+          "abilityID": 9761,
+          "simpleDesc": "スキル・コイン効果で得る[Vibration]回数が増加"
+        },
+        {
+          "abilityID": 97611,
+          "simpleDesc": "[AttackDown]または[DefenseDown]1を付与"
+        },
+        {
+          "abilityID": 97612,
+          "simpleDesc": "[AttackDown]または[DefenseDown]1を付与"
+        }
+      ]
+    },
+    {
+      "id": 9762,
+      "name": "ラッピングボックス",
+      "desc": "味方のスキルが的中するたびに、[Combustion]・[Laceration]・[Vibration]・[Burst]・[Sinking]のうちランダムな1つの効果威力を1付与(1ターンにつき3回)\n\n味方が敵討伐時、ランダムな味方に次のターンにて[Breath]回数、[Charge]回数、[Agility]、[AttackUp]、[DefenseUp]のうちランダムに1つの効果を1付与(1ターンにつき3回)",
+      "simpleDesc": [
+        {
+          "abilityID": 9762,
+          "simpleDesc": "ランダムにデバフ付与"
+        },
+        {
+          "abilityID": 97621,
+          "simpleDesc": "ランダムにバフを得る"
+        }
+      ]
+    },
+    {
+      "id": 9763,
+      "name": "ラッピングリボン",
+      "desc": "ターン開始時、全味方が憤怒～嫉妬ダメージ量増加のうちランダムに1つの効果を得る\n\nターン開始時、全ての敵へ憤怒～嫉妬脆弱のうちランダムな効果を1付与",
+      "simpleDesc": [
+        {
+          "abilityID": 9763,
+          "simpleDesc": "ランダムな属性ダメージ量増加を得る"
+        },
+        {
+          "abilityID": 97631,
+          "simpleDesc": "ランダムな属性脆弱を付与"
+        }
+      ]
+    },
+    {
+      "id": 9764,
+      "name": "プレゼント",
+      "desc": "味方のスキルが的中するたびに、[Combustion]・[Laceration]・[Vibration]・[Burst]・[Sinking]のうちランダムな2つの効果威力を1付与(1ターンにつき3回)\n\n味方のスキルが的中するたびに、ランダムな味方に次のターンにて[Breath]回数、[Charge]回数、[Agility]、[AttackUp]、[DefenseUp]のうちランダムに1つの効果を1付与(1ターンにつき3回)\n\nターン開始時、全味方が憤怒～嫉妬ダメージ量増加のうちランダムな効果2つをそれぞれ1得る\n\nターン開始時、全ての敵へ憤怒～嫉妬脆弱のうちランダムな効果2つをそれぞれ1付与",
+      "simpleDesc": [
+        {
+          "abilityID": 9764,
+          "simpleDesc": "ランダムにデバフ付与"
+        },
+        {
+          "abilityID": 97641,
+          "simpleDesc": "ランダムにバフを得る"
+        },
+        {
+          "abilityID": 97642,
+          "simpleDesc": "ランダムな属性ダメージ量増加を得る"
+        }
+      ]
+    },
+    {
+      "id": 9765,
+      "name": "楽しい縫製人形",
+      "desc": "味方がターン終了時にダメージを当てた攻撃スキル数に比例して、次のターンにて[Breath]威力2を得る。\n- 集中戦闘方式のステージでは効果が強化されて[Breath]威力4を得る。\n\nターン開始時、体力が最も低い味方へ[Breath]2, [Breath]回数2, [Protection]2を付与。\n\n敵への与ダメージ量 +(味方自身の精神力絶対値。最低0)%\n\n加算コインを保有する味方が混乱状態から回復したとき、精神力を全快(侵蝕状態の場合は発動しない)\n\n全スキルが減算コインの場合はターン開始時に[Paralysis]5を得る",
+      "simpleDesc": [
+        {
+          "abilityID": 9765,
+          "simpleDesc": "呼吸 威力を得る"
+        },
+        {
+          "abilityID": 97651,
+          "simpleDesc": "ランダムにバフ付与"
+        },
+        {
+          "abilityID": 97652,
+          "simpleDesc": "[Breath]、[Protection]を付与"
+        },
+        {
+          "abilityID": 97653,
+          "simpleDesc": "ダメージ量増加"
+        },
+        {
+          "abilityID": 97654,
+          "simpleDesc": "精神力を全快"
+        },
+        {
+          "abilityID": 97655,
+          "simpleDesc": "[Paralysis]を得る"
+        }
+      ]
     }
   ]
 }

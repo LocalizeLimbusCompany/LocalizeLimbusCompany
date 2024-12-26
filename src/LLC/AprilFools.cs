@@ -43,7 +43,7 @@ public static class AprilFools
     {
         private const int SubChapterID = 107;
         private static CreditsData _copy;
-        private static readonly Harmony Harmony = new(LLCMod.Name+ nameof(Credits));
+        private static readonly Harmony Harmony = new(LLCMod.Name + nameof(Credits));
 
         public static void ShowCredit()
         {
