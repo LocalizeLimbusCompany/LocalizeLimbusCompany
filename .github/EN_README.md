@@ -40,7 +40,7 @@ For additional information, please refer to the email in our [archive](https://w
    - [The Auto Installer](../../../../LLC_MOD_Installer)
 # Other Things
 - [QQ Group](https://jq.qq.com/?_wv=1027&k=5NE6Kvg2) LLCG 686792849
-- [LLC_MOD_Installer](../../../../LLC_MOD_Installer) The Installer ~~for fool~~
+- [LLC_MOD_Installer](../../../../LLC_MOD_Installer) The Installer
 - [Chinese Localize Group's Bilibili account](https://space.bilibili.com/1247764479) Localize Limbus Company
 - [Limbus Company Chinese wiki](https://limbuscompany.huijiwiki.com)
 - [ParaTranz Translation Project](https://paratranz.cn/projects/6860) The latest progress of Localize Limbus Company
