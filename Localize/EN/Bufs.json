@@ -1695,7 +1695,7 @@
     {
       "id": "FreischutzShotCount",
       "name": "Magic Bullet",
-      "desc": "- Max Value: 7\n- Value changes depending on certain Skill effects.\n- Skill 3 Base Power +{0}\n- Skill 3 Coin Power +{1}"
+      "desc": "- Max Value: 7\n- Value changes depending on certain Skill effects.\n- [Lobotomy E.G.O::Magic Bullet Outis Only]\n· Skill 3 Base Power +{0}\n· Skill 3 Coin Power +{1}"
     },
     {
       "id": "DarkFlame",
@@ -2280,6 +2280,81 @@
       "name": "Responsibility",
       "desc": "- Max Value: 1\n- Clash Power +1\n- Deal +20% more damage\n- Take +20% more damage",
       "summary": ""
+    },
+    {
+      "id": "FreishutzOutisEgoBullet_1st",
+      "name": "The First Magic Bullet",
+      "desc": "- Deals +20% more damage\n- Raise the target's Stagger Threshold by damage dealt (max 30)"
+    },
+    {
+      "id": "FreishutzOutisEgoBullet_2nd",
+      "name": "The Second Magic Bullet",
+      "desc": "- Deal +10% more damage\n- Deal damage to targets other than the main target (max targets: 4); the main target takes 0 damage\n- On Hit, inflict 3 Paralyze"
+    },
+    {
+      "id": "FreishutzOutisEgoBullet_3rd",
+      "name": "The Third Magic Bullet",
+      "desc": "- Deal +20% more damage\n- Before Attack: gain +2 Atk Weight\n- On Hit, inflict 2 Attack Power Down and 10 Burn"
+    },
+    {
+      "id": "FreishutzOutisEgoBullet_4th",
+      "name": "The Fourth Magic Bullet",
+      "desc": "- Deal +30% more damage\n- Before Attack: gain +3 Atk Weight\n- On Hit, raise the target's Stagger Threshold by damage dealt (max 20); then, inflict 3 Fragility next turn"
+    },
+    {
+      "id": "FreishutzOutisEgoBullet_5th",
+      "name": "The Fifth Magic Bullet",
+      "desc": "- Deal +30% more damage\n- Before Attack: gain +4 Atk Weight\n- On Hit, inflict 10 Burn; then, inflict 4 Offense Level down and 4 Defense Level Down next turn"
+    },
+    {
+      "id": "FreishutzOutisEgoBullet_6th",
+      "name": "The Sixth Magic Bullet",
+      "desc": "- Before Attack: gain +6 Atk Weight\n- On Hit, raise the target's Stagger Threshold by damage dealt (max 30)\n- Reuse the Coin for every 7 Burn on the main target (2 times max)\n- Plus Coin Skill Base Power -16\n- Minus Coin Skill Base Power -22\n - Plus Coin Power -8\n - Minus Coin Power -12"
+    },
+    {
+      "id": "FreishutzOutisEgoBullet_7th",
+      "name": "The Seventh Magic Bullet",
+      "desc": "- Deal +200% more damage\n- Deal +2.5% more damage for every 1% missing HP on the target (max 200%)\n- Before Attack: for this attack, if the Pierce Damage Res. on the target or on self are less than 2.0, change them to Fatal(x2.0)\n- After Attack: kills this unit"
+    },
+    {
+      "id": "FreishutzOutisEgoBulletCnt",
+      "name": "Marksman's Bullet",
+      "desc": "Uses a different Ammo depending on Marksman's Bullet"
+    },
+    {
+      "id": "CoveringFire",
+      "name": "Target Spotted",
+      "desc": "If unit A applies this effect to unit B: Unit B follows up with an Unopposed Attack with its Skill 2 against the same enemy Unit A attacked with its Skill. Activates at Unit A's Attack End.\n- The Skill used due to this effect does not affect Unit B's upcoming Skills list."
+    },
+    {
+      "id": "FullReload",
+      "name": "Reload",
+      "desc": "Lose all currently owned Ammo, and reload it back to full"
+    },
+    {
+      "id": "Bullet_LogicAtelier",
+      "name": "Ammo - Atelier Logic",
+      "desc": "Unique Ammo\nAtelier Logic Workshop Special Ammo\n- This Ammo's count cannot be gained or lost due to external effects"
+    },
+    {
+      "id": "Retreat_FullStop",
+      "name": "Overwatch Assignment",
+      "desc": "- Turn End: recover from Stagger and Retreat from the Encounter (unless it's a forced Stagger; does not count as death)\n· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)"
+    },
+    {
+      "id": "LogicAtelierAM",
+      "name": "Concentration[Sniper]",
+      "desc": "- Max Stack: 4\n- Turn End: gain 1 Stack"
+    },
+    {
+      "id": "MeleeCover",
+      "name": "Melee Support",
+      "desc": "- If unit A applies this effect to unit B: Unit B follows up with an Unopposed Attack with the 'Melee Support' Skill against the same enemy that attacked Unit A. Activates at Unit A's Skill End.\n- The Skill used due to the 'Melee Support' effect does not affect Unit B's upcoming Skills list."
+    },
+    {
+      "id": "RequestedTarget",
+      "name": "Requested Target",
+      "desc": "+0.2 Resistance to Attack Types with 1.5 or less Resistance. If the target with this effect is defeated, gain 1 E.G.O resource for all Affinities, and the unit that defeated the target heals 10 SP"
     }
   ]
 }

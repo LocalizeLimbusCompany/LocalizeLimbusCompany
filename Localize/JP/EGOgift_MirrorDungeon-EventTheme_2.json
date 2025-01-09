@@ -294,7 +294,7 @@
     {
       "id": 9763,
       "name": "ラッピングリボン",
-      "desc": "ターン開始時、全味方が憤怒～嫉妬ダメージ量増加のうちランダムに1つの効果を得る\n\nターン開始時、全ての敵へ憤怒～嫉妬脆弱のうちランダムな効果を1付与",
+      "desc": "ターン開始時、全味方が「憤怒～嫉妬ダメージ量増加」のうちランダムに1つの効果を得る\n\nターン開始時、全ての敵へ「憤怒～嫉妬脆弱」のうちランダムな効果を1付与",
       "simpleDesc": [
         {
           "abilityID": 9763,
@@ -309,7 +309,7 @@
     {
       "id": 9764,
       "name": "プレゼント",
-      "desc": "味方のスキルが的中するたびに、[Combustion]・[Laceration]・[Vibration]・[Burst]・[Sinking]のうちランダムな2つの効果威力を1付与(1ターンにつき3回)\n\n味方のスキルが的中するたびに、ランダムな味方に次のターンにて[Breath]回数、[Charge]回数、[Agility]、[AttackUp]、[DefenseUp]のうちランダムに1つの効果を1付与(1ターンにつき3回)\n\nターン開始時、全味方が憤怒～嫉妬ダメージ量増加のうちランダムな効果2つをそれぞれ1得る\n\nターン開始時、全ての敵へ憤怒～嫉妬脆弱のうちランダムな効果2つをそれぞれ1付与",
+      "desc": "味方のスキルが的中するたびに、[Combustion]・[Laceration]・[Vibration]・[Burst]・[Sinking]のうちランダムな2つの効果威力を1付与(1ターンにつき3回)\n\n味方のスキルが的中するたびに、ランダムな味方に次のターンにて[Breath]回数、[Charge]回数、[Agility]、[AttackUp]、[DefenseUp]のうちランダムに1つの効果を1付与(1ターンにつき3回)\n\nターン開始時、全味方が「憤怒～嫉妬ダメージ量増加」のうちランダムな効果2つをそれぞれ1得る\n\nターン開始時、全ての敵へ「憤怒～嫉妬脆弱」のうちランダムな効果2つをそれぞれ1付与",
       "simpleDesc": [
         {
           "abilityID": 9764,
@@ -353,6 +353,96 @@
         {
           "abilityID": 97655,
           "simpleDesc": "[Paralysis]を得る"
+        }
+      ]
+    },
+    {
+      "id": 9766,
+      "name": "黙示的契約更新",
+      "desc": "生存している[RequestedTarget]がいない場合、味方が最初に攻撃する敵へ[RequestedTarget]効果を付与する(1ターンにつき1回)",
+      "simpleDesc": [
+        {
+          "abilityID": 9766,
+          "simpleDesc": "[RequestedTarget]を付与"
+        }
+      ]
+    },
+    {
+      "id": 9767,
+      "name": "黒炎のパイプ",
+      "desc": "[編成1番人格専用効果]\n\n毎ターン[Enhancement]2, [Vulnerable]1を得る\n\nメイン攻撃対象の防御レベルが減少した状態なら、攻撃前に[Breath]5を得る\n\n傲慢貫通スキルのダメージ量 +(50 ÷ コイン数)% (E.G.Oを含む)",
+      "simpleDesc": [
+        {
+          "abilityID": 9767,
+          "simpleDesc": "[Enhancement], [Vulnerable]を得る"
+        },
+        {
+          "abilityID": 97671,
+          "simpleDesc": "[Breath]を得る"
+        },
+        {
+          "abilityID": 97672,
+          "simpleDesc": "貫通スキルのダメージ量が増加"
+        }
+      ]
+    },
+    {
+      "id": 9768,
+      "name": "平等",
+      "desc": "敵の貫通耐性が1.5以下の場合、貫通耐性 +0.3",
+      "simpleDesc": [
+        {
+          "abilityID": 9768,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9769,
+      "name": "迅速な指揮",
+      "desc": "ターン終了時、このターンに退却した味方がいるなら、次のターン開始時に速度が最も高い味方1名が[Enhancement]2, [AttackDmgUp]1を得る\n\n戦闘開始時、このターンに待機解除した味方がいるなら、待機解除された味方が[Enhancement]2, [Endurance]2を得る\n\n",
+      "simpleDesc": [
+        {
+          "abilityID": 9769,
+          "simpleDesc": "[Enhancement]、[AttackDmgUp]を得る"
+        },
+        {
+          "abilityID": 97691,
+          "simpleDesc": "[Enhancement]、[Endurance]を得る"
+        }
+      ]
+    },
+    {
+      "id": 9770,
+      "name": "歯車の破片",
+      "desc": "ターン開始時、自分に[Breath]があるなら[DefenseUp]2, [Endurance]1を得る\n\n[Breath]があるなら最初に的中するコインのダメージ量 +10%\n\n該当コインがクリティカル的中時、クリティカルダメージ量 +20%",
+      "simpleDesc": [
+        {
+          "abilityID": 9770,
+          "simpleDesc": "[DefenseUp]、[Endurance]を得る"
+        },
+        {
+          "abilityID": 97701,
+          "simpleDesc": "最初に的中するコインのダメージ量が増加"
+        }
+      ]
+    },
+    {
+      "id": 9771,
+      "name": "近接戦術教本",
+      "desc": "[Bullet]を消耗できるスキルにて消耗しない場合、このターンと次のターンに[Enhancement]を1得る(1ターンにつき1回)\n\n[Bullet]を得ると、このターンと次のターンにて使用するスキル3のダメージ量 +50%\n\n[Bullet]を消耗スキル使用時、[Breath]3, [Breath]回数を1得る",
+      "simpleDesc": [
+        {
+          "abilityID": 9771,
+          "simpleDesc": "[Enhancement]を得る"
+        },
+        {
+          "abilityID": 97711,
+          "simpleDesc": "スキル3のダメージ量が増加"
+        },
+        {
+          "abilityID": 97712,
+          "simpleDesc": "[Breath]威力、回数を得る"
         }
       ]
     }

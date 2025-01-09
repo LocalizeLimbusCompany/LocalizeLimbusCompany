@@ -1023,6 +1023,323 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1071101,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "応射",
+          "desc": "[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet]を1消耗"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet]を1消耗"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet]を1消耗"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "応射",
+          "desc": "[WhenUse] 自分の[Breath]回数が2増加\n<style=\"highlight\">[WhenUse] 次のターンに[Agility]1を得る(1ターンにつき1回)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet]を1消耗<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 自分の[Breath]回数が1増加</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet]を1消耗<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet]を1消耗<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "応射",
+          "desc": "[WhenUse] 自分の[Breath]回数が2増加\n[WhenUse] 次のターンに[Agility]<style=\"highlight\">2</style>を得る(1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet]を1消耗<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が1増加<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet]を1消耗<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet]を1消耗<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071102,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ヘッドショット",
+          "desc": "[WhenUse] [Breath]3を得る。[Breath]回数が1増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [PenetrateTakeDamageUp]1を付与(1ターンにつき2回)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "ヘッドショット",
+          "desc": "<style=\"highlight\">対象の速度が自分より低ければ、対象との速度差1につきダメージ量 +10%(最大30%)</style>\n[WhenUse] [Breath]3を得る。[Breath]回数が1増加\n<style=\"highlight\">[WhenUse] 次のターンに[Agility]2を得る(1ターンにつき1回)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet]を1消耗<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">クリティカルダメージ量 +30%</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [PenetrateTakeDamageUp]1を付与(1ターンにつき2回)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttack] 次のターンに[PenetrateTakeDamageUp]1を付与(1ターンにつき1回)</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "ヘッドショット",
+          "desc": "対象の速度が自分より低ければ、対象との速度差1につきダメージ量 +10%<style=\"highlight\">(最大50%)</style>\n[WhenUse] [Breath]3を得る。[Breath]回数が<style=\"highlight\">2</style>増加\n[WhenUse] 次のターンに[Agility]2を得る(1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet]を1消耗<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "クリティカルダメージ量 <style=\"highlight\">+50%</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [PenetrateTakeDamageUp]1を付与(1ターンにつき2回)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 次のターンに[PenetrateTakeDamageUp]1を付与(1ターンにつき1回)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071103,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "一点狙い",
+          "desc": "[BeforeUse] 自分が[Bullet_LogicAtelier]を持っているなら、「ロジックアトリエ製 高速粉砕弾」として発動\n対象の速度が自分より低ければ、対象との速度差1につきダメージ量 +10%(最大50%)\n[WhenUse] [Breath]5を得る\n[WhenUse] [LogicAtelierAM]を全て消耗し、(消耗した数値 × 2)だけ[Breath]威力を得てダメージ量 +(消耗した数値 × 12.5)%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet]を1消耗"
+                },
+                {
+                  "desc": "クリティカルダメージ量 +50%"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 自分の[Breath]威力が30を超過したなら、30を超える[Breath]威力を最大10まで消耗してダメージ量 +(消耗した[Breath]威力 × 10)%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "一点狙い",
+          "desc": "[BeforeUse] 自分が[Bullet_LogicAtelier]を持っているなら、「ロジックアトリエ製 高速粉砕弾」として発動\n対象の速度が自分より低ければ、対象との速度差1につきダメージ量 +10%(最大50%)\n[WhenUse] [Breath]5を得る\n[WhenUse] [LogicAtelierAM]を全て消耗し、(消耗した数値 × 2)だけ[Breath]威力を得てダメージ量 +(消耗した数値 × 12.5)%\n<style=\"highlight\">[EndSkill] 自分の[Breath]回数が2増加</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet]を1消耗<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "クリティカルダメージ量 <style=\"highlight\">+80%</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">クリティカルダメージ量 +(対象の貫通耐性 × 50)%</style>"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 自分の[Breath]威力が30を超過したなら、30を超える[Breath]威力を最大10まで消耗してダメージ量 +(消耗した[Breath]威力 × 10)%<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071104,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "戦闘呼吸",
+          "desc": "ターン開始時に弾丸が0なら「掩蔽」に変更\n[WhenUse] 終止符事務所代表ホンル人格が戦闘に出場しているなら、対象に[MeleeCover]を要請(1ターンにつき1回)\n[EndBattle] 次のターンに[LogicAtelierAM]を1得る(1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": []
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "戦闘呼吸",
+          "desc": "ターン開始時に弾丸が0なら「掩蔽」に変更\n[WhenUse] 終止符事務所代表ホンル人格が戦闘に出場しているなら、対象に[MeleeCover]を要請(1ターンにつき1回)\n<style=\"highlight\">[OnSucceedEvade] [Breath]3を得る(1ターンにつき3回)</style>\n[EndBattle] 次のターンに[LogicAtelierAM]を1得る(1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071105,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "ロジックアトリエ製 高速粉砕弾",
+          "desc": "対象の速度が自分より低ければ、対象との速度差1につきダメージ量 +10%(最大50%)\n[WhenUse] [Breath]5を得る\n[WhenUse] [LogicAtelierAM]を全て消耗し、(消耗した数値 × 2)だけ[Breath]威力を得てダメージ量 +(消耗した数値 × 25)%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet_LogicAtelier]を1消耗"
+                },
+                {
+                  "desc": "クリティカルダメージ量 +100%"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 自分の[Breath]威力が30を超過したなら、30を超える[Breath]威力を最大10まで消耗してダメージ量 +(消耗した[Breath]威力 × 10)%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "ロジックアトリエ製 高速粉砕弾",
+          "desc": "対象の速度が自分より低ければ、対象との速度差1につきダメージ量 +10%(最大50%)\n[WhenUse] [Breath]5を得る\n[WhenUse] [LogicAtelierAM]を全て消耗し、(消耗した数値 × 2)だけ[Breath]威力を得てダメージ量 +(消耗した数値 × 25)%\n<style=\"highlight\">[EndSkill] 自分の[Breath]回数が5増加</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet_LogicAtelier]を1消耗<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "クリティカルダメージ量 <style=\"highlight\">+130%</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">クリティカルダメージ量 +(対象の貫通耐性 × 50)%</style>"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 自分の[Breath]威力が30を超過したなら、30を超える[Breath]威力を最大10まで消耗してダメージ量 +(消耗した[Breath]威力 × 10)%<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071106,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "掩蔽",
+          "desc": "[CanDuelGuard]\n[WhenUse] 終止符事務所代表ホンル人格が戦闘に出場しているなら、対象に[MeleeCover]を要請(1ターンにつき1回)\n[EndBattle] 次のターンに[LogicAtelierAM]を1得る(1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "掩蔽",
+          "desc": "[CanDuelGuard]\n[WhenUse] 終止符事務所代表ホンル人格が戦闘に出場しているなら、対象に[MeleeCover]を要請(1ターンにつき1回)\n<style=\"highlight\">[WinDuel] 対象へ[PenetrateResistDown]1を付与(1ターンにつき1回)</style>\n[EndBattle] 次のターンに[LogicAtelierAM]を1得る(1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

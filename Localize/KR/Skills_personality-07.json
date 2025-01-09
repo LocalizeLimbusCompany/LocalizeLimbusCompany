@@ -1027,6 +1027,330 @@
           ]
         }
       ]
+    },
+
+
+
+    {
+      "id": 1071101,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "응사",
+          "desc": "[WhenUse] 자신의 [Breath] 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet] 1 소모"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet] 1 소모"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet] 1 소모"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "응사",
+          "desc": "[WhenUse] 자신의 [Breath] 횟수 2 증가\n<style=\"highlight\">[WhenUse] 다음 턴에 [Agility] 1 얻음 (턴 당 1회)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet] 1 소모<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 자신의 [Breath] 횟수 1 증가</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet] 1 소모<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet] 1 소모<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "응사",
+          "desc": "[WhenUse] 자신의 [Breath] 횟수 2 증가\n[WhenUse] 다음 턴에 [Agility] <style=\"highlight\">2</style> 얻음 (턴 당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet] 1 소모<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Breath] 횟수 1 증가<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet] 1 소모<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet] 1 소모<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071102,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "헤드샷",
+          "desc": "[WhenUse] [Breath] 3 얻음. 자신의 [Breath] 횟수 1 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet] 1 소모"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [PenetrateTakeDamageUp] 1 부여 (턴 당 2회)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "헤드샷",
+          "desc": "<style=\"highlight\">대상의 속도가 자신보다 느리면, 대상과의 속도 차이 1 당 피해량 +10% (최대 30%)</style>\n[WhenUse] [Breath] 3 얻음. 자신의 [Breath] 횟수 1 증가\n<style=\"highlight\">[WhenUse] 다음 턴에 [Agility] 2 얻음 (턴 당 1회)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet] 1 소모<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">크리티컬 피해량 +30%</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [PenetrateTakeDamageUp] 1 부여 (턴 당 2회)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttack] 다음 턴에 [PenetrateTakeDamageUp] 1 부여 (턴 당 1회)</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "헤드샷",
+          "desc": "대상의 속도가 자신보다 느리면, 대상과의 속도 차이 1 당 피해량 +10% <style=\"highlight\">(최대 50%)</style>\n[WhenUse] [Breath] 3 얻음. 자신의 [Breath] 횟수 <style=\"highlight\">2</style> 증가\n[WhenUse] 다음 턴에 [Agility] 2 얻음 (턴 당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet] 1 소모<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "크리티컬 피해량 <style=\"highlight\">+50%</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [PenetrateTakeDamageUp] 1 부여 (턴 당 2회)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 다음 턴에 [PenetrateTakeDamageUp] 1 부여 (턴 당 1회)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071103,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "한 점만 노린다",
+          "desc": "[BeforeUse] 자신에게 [Bullet_LogicAtelier]가 있으면, '로직 아틀리에제 고속분쇄탄'으로 발동\n대상의 속도가 자신보다 느리면, 대상과의 속도 차이 1 당 피해량 +10% (최대 50%)\n[WhenUse] [Breath] 5 얻음\n[WhenUse] [LogicAtelierAM]을 전부 소모하여 (소모한 수치 x 2)만큼 호흡 위력을 얻고, 피해량 +(소모한 수치 x 12.5)%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet] 1 소모"
+                },
+                {
+                  "desc": "크리티컬 피해량 +50%"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 자신의 [Breath] 위력이 30을 초과하면, 30을 초과하는 [Breath] 위력을 최대 10까지 소모하여 피해량 +(소모한 [Breath] 위력 x 10)%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "한 점만 노린다",
+          "desc": "[BeforeUse] 자신에게 [Bullet_LogicAtelier]가 있으면, '로직 아틀리에제 고속분쇄탄'으로 발동\n대상의 속도가 자신보다 느리면, 대상과의 속도 차이 1 당 피해량 +10% (최대 50%)\n[WhenUse] [Breath] 5 얻음\n[WhenUse] [LogicAtelierAM]을 전부 소모하여 (소모한 수치 x 2)만큼 호흡 위력을 얻고, 피해량 +(소모한 수치 x 12.5)%\n<style=\"highlight\">[EndSkill] 자신의 [Breath] 횟수 2 증가</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet] 1 소모<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "크리티컬 피해량 <style=\"highlight\">+80%</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">크리티컬 피해량 +(대상의 관통 내성 x 50)%</style>"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 자신의 [Breath] 위력이 30을 초과하면, 30을 초과하는 [Breath] 위력을 최대 10까지 소모하여 피해량 +(소모한 [Breath] 위력 x 10)%<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071104,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "전투 호흡",
+          "desc": "턴 시작시 탄환이 0이면 '엄폐'로 변경됨\n[WhenUse] 마침표 사무소 대표 홍루 인격이 전투에 등장해 있으면, 대상에게 [MeleeCover] 요청 (턴 당 1회)\n[EndBattle] 다음 턴에 [LogicAtelierAM] 1 얻음 (턴 당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "전투 호흡",
+          "desc": "턴 시작시 탄환이 0이면 '엄폐'로 변경됨\n[WhenUse] 마침표 사무소 대표 홍루 인격이 전투에 등장해 있으면, 대상에게 [MeleeCover] 요청 (턴 당 1회)\n<style=\"highlight\">[OnSucceedEvade] [Breath] 3 얻음 (턴 당 최대 3회)</style>\n[EndBattle] 다음 턴에 [LogicAtelierAM] 1 얻음 (턴 당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071105,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "로직 아틀리에제 고속분쇄탄",
+          "desc": "대상의 속도가 자신보다 느리면, 대상과의 속도 차이 1당 피해량 +10% (최대 50%)\n[WhenUse] [Breath] 5 얻음\n[WhenUse] [LogicAtelierAM]을 전부 소모하여, (소모한 수치 x 2)만큼 [Breath] 위력을 얻고, 피해량 +(소모한 수치 x 25)%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet_LogicAtelier] 1 소모"
+                },
+                {
+                  "desc": "크리티컬 피해량 +100%"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 자신의 [Breath] 위력이 30을 초과하면, 30을 초과하는 [Breath] 위력을 최대 10까지 소모하여 피해량 +(소모한 [Breath] 위력 x 10)%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "로직 아틀리에제 고속분쇄탄",
+          "desc": "대상의 속도가 자신보다 느리면, 대상과의 속도 차이 1당 피해량 +10% (최대 50%)\n[WhenUse] [Breath] 5 얻음\n[WhenUse] [LogicAtelierAM]을 전부 소모하여, (소모한 수치 x 2)만큼 [Breath] 위력을 얻고, 피해량 +(소모한 수치 x 25)%\n<style=\"highlight\">[EndSkill] 자신의 [Breath] 횟수 5 증가</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[Bullet_LogicAtelier] 1 소모<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "크리티컬 피해량 <style=\"highlight\">+130%</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">크리티컬 피해량 +(대상의 관통 내성 x 50)%</style>"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 자신의 [Breath] 위력이 30을 초과하면, 30을 초과하는 [Breath] 위력을 최대 10까지 소모하여 피해량 +(소모한 [Breath] 위력 x 10)%<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071106,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "엄폐",
+          "desc": "[CanDuelGuard]\n[WhenUse] 마침표 사무소 대표 홍루 인격이 전투에 등장해 있으면, 대상에게 [MeleeCover] 요청 (턴 당 1회)\n[EndBattle] 다음 턴에 [LogicAtelierAM] 1 얻음 (턴 당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "엄폐",
+          "desc": "[CanDuelGuard]\n[WhenUse] 마침표 사무소 대표 홍루 인격이 전투에 등장해 있으면, 대상에게 [MeleeCover] 요청 (턴 당 1회)\n<style=\"highlight\">[WinDuel] 대상에게 [PenetrateResistDown] 1 부여 (턴 당 1회)</style>\n[EndBattle] 다음 턴에 [LogicAtelierAM] 1 얻음 (턴 당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

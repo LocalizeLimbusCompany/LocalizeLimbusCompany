@@ -8,7 +8,7 @@
 
 [![下载](https://img.shields.io/github/downloads/LocalizeLimbusCompany/LocalizeLimbusCompany/total.svg?label=下载)](../../releases)
 [![Version](https://img.shields.io/github/release/LocalizeLimbusCompany/LocalizeLimbusCompany.svg?label=最新版)](../../releases/latest)
-[![Localize Limbus Chat Group](https://img.shields.io/badge/加入-QQ群-blue?logo=tencent-qq)](https://jq.qq.com/?_wv=1027&k=5NE6Kvg2)
+[![Localize Limbus Chat Group](https://img.shields.io/badge/加入-QQ频道-blue?logo=tencent-qq)](https://pd.qq.com/s/gqpsr265g)
 
 [한국어](https://limbuscompany.kr) | ~~Deutsch~~ | [Español](https://github.com/Dreams-Office/LimbusCompanySpanishTranslationTeam) | [日本語](https://limbuscompany.kr) | [Français](https://github.com/Eden-Office/LimbusCompanyBusFR) | **简体中文**
 
