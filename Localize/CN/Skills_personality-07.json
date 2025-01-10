@@ -1023,6 +1023,323 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1071101,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "火力反击",
+          "desc": "[WhenUse] 使自身获得2层呼吸法 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发弹药 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发弹药 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发弹药 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "火力反击",
+          "desc": "[WhenUse] 使自身获得2层呼吸法 \n[WhenUse] 下回合使自身获得1层迅捷 (每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发弹药 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得1层呼吸法 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发弹药 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发弹药 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "火力反击",
+          "desc": "[WhenUse] 使自身获得2层呼吸法 \n[WhenUse] 下回合使自身获得2层迅捷 (每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发弹药 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得1层呼吸法 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发弹药 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发弹药 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071102,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "一枪爆头",
+          "desc": "[WhenUse] 使自身增加3级呼吸法 强度并获得1层呼吸法 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发弹药 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层突刺易损 (每回合最多2次)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "一枪爆头",
+          "desc": "若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%(最多+30%)\n[WhenUse] 使自身增加3级呼吸法 强度并获得1层呼吸法 \n[WhenUse] 下回合使自身获得2层迅捷 (每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发弹药 "
+                },
+                {
+                  "desc": "使本硬币暴击时造成的伤害+30%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层突刺易损 (每回合最多2次)"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 下回合对目标施加1层突刺易损 (每回合最多1次)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "一枪爆头",
+          "desc": "若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%(最多+50%)\n[WhenUse] 使自身增加3级呼吸法 强度并获得2层呼吸法 \n[WhenUse] 下回合使自身获得2层迅捷 (每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发弹药 "
+                },
+                {
+                  "desc": "使本硬币暴击时造成的伤害+50%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层突刺易损 (每回合最多2次)"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 下回合对目标施加1层突刺易损 (每回合最多1次)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071103,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "瞄准眉心",
+          "desc": "[BeforeUse] 若自身带有[Bullet_LogicAtelier]，则改为使用“逻辑工作室制 高速粉碎弹”\n若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%(最多+50%)\n[WhenUse] 使自身增加5级呼吸法 强度\n[WhenUse] 消耗所有[LogicAtelierAM]，使自身增加(消耗的[LogicAtelierAM]层数×2)级呼吸法 强度并使本技能造成的伤害+(消耗的[LogicAtelierAM]层数×12.5)%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发弹药 "
+                },
+                {
+                  "desc": "使本硬币暴击时造成的伤害+50%"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 若自身的呼吸法 强度不低于30级，则消耗至多10级超出30级的呼吸法 强度并使本硬币造成的伤害+(消耗的呼吸法 强度×10)%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "瞄准眉心",
+          "desc": "[BeforeUse] 若自身带有[Bullet_LogicAtelier]，则改为使用“逻辑工作室制 高速粉碎弹”\n若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%(最多+50%)\n[WhenUse] 使自身增加5级呼吸法 强度\n[WhenUse] 消耗所有[LogicAtelierAM]，使自身增加(消耗的[LogicAtelierAM]层数×2)级呼吸法 强度并使本技能造成的伤害+(消耗的[LogicAtelierAM]层数×12.5)%\n[EndSkill] 使自身获得2层呼吸法 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发弹药 "
+                },
+                {
+                  "desc": "使本硬币暴击时造成的伤害+80%"
+                },
+                {
+                  "desc": "使本硬币暴击时造成的伤害+(目标的突刺抗性×50)%"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 若自身的呼吸法 强度不低于30级，则消耗至多10级超出30级的呼吸法 强度并使本硬币造成的伤害+(消耗的呼吸法 强度×10)%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071104,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "战斗呼吸",
+          "desc": "回合开始时，若自身的弹药 数为0，则改为使用“掩护”\n[WhenUse] 若句点事务所 代表 鸿璐在场，则向其申请[MeleeCover](每回合最多1次)\n[EndBattle] 下回合使自身获得1层[LogicAtelierAM](每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": []
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "战斗呼吸",
+          "desc": "回合开始时，若自身的弹药 数为0，则改为使用“掩护”\n[WhenUse] 若句点事务所 代表 鸿璐在场，则向其申请[MeleeCover](每回合最多1次)\n[OnSucceedEvade] 使自身增加3级呼吸法 强度(每回合最多3次)\n[EndBattle] 下回合使自身获得1层[LogicAtelierAM](每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071105,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "逻辑工作室制 高速粉碎弹",
+          "desc": "若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%(最多+50%)\n[WhenUse] 使自身增加5级呼吸法 强度\n[WhenUse] 消耗所有[LogicAtelierAM]，使自身增加(消耗的[LogicAtelierAM]层数×2)级呼吸法 强度并使本技能造成的伤害+(消耗的[LogicAtelierAM]层数×25)%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发[Bullet_LogicAtelier]"
+                },
+                {
+                  "desc": "使本硬币暴击时造成的伤害+100%"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 若自身的呼吸法 强度不低于30级，则消耗至多10级超出30级的呼吸法 强度并使本硬币造成的伤害+(消耗的呼吸法 强度×10)%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "逻辑工作室制 高速粉碎弹",
+          "desc": "若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%(最多+50%)\n[WhenUse] 使自身增加5级呼吸法 强度\n[WhenUse] 消耗所有[LogicAtelierAM]，使自身增加(消耗的[LogicAtelierAM]层数×2)级呼吸法 强度并使本技能造成的伤害+(消耗的[LogicAtelierAM]层数×25)%\n[EndSkill] 使自身获得5层呼吸法 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发[Bullet_LogicAtelier]"
+                },
+                {
+                  "desc": "使本硬币暴击时造成的伤害+130%"
+                },
+                {
+                  "desc": "使本硬币暴击时造成的伤害+(目标的突刺抗性×50)%"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 若自身的呼吸法 强度不低于30级，则消耗至多10级超出30级的呼吸法 强度并使本硬币造成的伤害+(消耗的呼吸法 强度×10)%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071106,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "掩护",
+          "desc": "[CanDuelGuard]\n[WhenUse] 若句点事务所 代表 鸿璐在场，则向其申请[MeleeCover](每回合最多1次)\n[EndBattle] 下回合使自身获得1层[LogicAtelierAM](每回合最多1次) ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "掩护",
+          "desc": "[CanDuelGuard]\n[WhenUse] 若句点事务所 代表 鸿璐在场，则向其申请[MeleeCover](每回合最多1次)\n[WinDuel] 对目标施加1层突刺抗性弱化 (每回合最多1次)\n[EndBattle] 下回合使自身获得1层[LogicAtelierAM](每回合最多1次) ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
