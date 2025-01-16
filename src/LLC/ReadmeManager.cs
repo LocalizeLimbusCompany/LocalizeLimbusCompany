@@ -6,7 +6,6 @@ using Il2CppSystem.Collections.Generic;
 using LocalSave;
 using MainUI;
 using MainUI.NoticeUI;
-using Server;
 using SimpleJSON;
 using TMPro;
 using UnityEngine;
@@ -106,7 +105,7 @@ public static class ReadmeManager
         ReadmeList.Clear();
         foreach (var notices in JSONNode.Parse(File.ReadAllText(LLCMod.ModPath + "/Localize/Readme/Readme.json"))[0]
                      .AsArray.m_List)
-            ReadmeList.Add(new Notice(JsonUtility.FromJson<NoticeFormat>(notices.ToString()), LOCALIZE_LANGUAGE.KR));
+            ReadmeList.Add(new Notice(JsonUtility.FromJson<KGPGBMLAEJC>(notices.ToString()), LOCALIZE_LANGUAGE.KR));
     }
 
     public static void Close()
