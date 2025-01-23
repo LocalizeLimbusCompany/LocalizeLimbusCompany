@@ -1005,6 +1005,348 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1021101,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "着火",
+          "desc": "[WhenUse] 自分の[Combustion]が10以上なら、ダメージ量 +10%\n[WhenUse] [Combustion]7を得る、自分の[Combustion]回数が1増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]2を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]2を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "着火",
+          "desc": "[WhenUse] 自分の[Combustion]が10以上なら、ダメージ量 +10%\n[WhenUse] [Combustion]7を得る、自分の[Combustion]回数が1増加\n[WhenUse] (自分の[Combustion] + 対象の[Combustion])が10以上なら、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]2を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 自分の[Combustion]が10以上なら、[Combustion]を1追加で付与</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]2を得る<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "着火",
+          "desc": "[WhenUse] 自分の[Combustion]が10以上なら、ダメージ量 +10%\n[WhenUse] [Combustion]7を得る、自分の[Combustion]回数が1増加\n[WhenUse] (自分の[Combustion] + 対象の[Combustion])10につき、コイン威力 +1(最大2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]2を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Combustion]が10以上なら、[Combustion]を<style=\"highlight\">3</style>追加で付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]2を得る<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021102,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "E.G.O紅炎殺 展開",
+          "desc": "[WhenUse] 自分の[Combustion]が10以上なら、ダメージ量 +10%\n[WhenUse] 自分の[Combustion]回数が4増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [Combustion]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "E.G.O紅炎殺 展開",
+          "desc": "[WhenUse] 自分の[Combustion]10につき、ダメージ量 +10%(最大20%)\n[WhenUse] 自分の[Combustion]回数が4増加\n[WhenUse] (自分の[Combustion] + 対象の[Combustion])が4以上なら、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [Combustion]3を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "E.G.O紅炎殺 展開",
+          "desc": "[WhenUse] 自分の[Combustion]10につき、ダメージ量 +10%(最大20%)\n[WhenUse] 自分の[Combustion]回数が4増加\n[WhenUse] (自分の[Combustion] + 対象の[Combustion])4につき、コイン威力 +1(最大2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [Combustion]3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Combustion]が15以上なら、[Combustion]回数が2増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021103,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "火に思い焦がれて",
+          "desc": "[StartBattle] [Combustion]7を得る、自分の[Combustion]回数が1増加\n[BeforeUse] 自分の[Combustion]が30以上なら、「紅炎殺 最大感応【劣化侵蝕】」として発動\n[WhenUse] 自分の[Combustion]5につき、ダメージ量 +7.5%(最大30%)\n[WhenUse] (自分の[Combustion] + 対象の[Combustion])が10以上なら、基本威力 +1\n[WhenUse] 自分が体力を30%以上失っているなら、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]3を付与"
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "火に思い焦がれて",
+          "desc": "[StartBattle] [Combustion]7を得る、自分の[Combustion]回数が1増加\n[BeforeUse] 自分の[Combustion]が30以上なら、「紅炎殺 最大感応【劣化侵蝕】」として発動\n[WhenUse] 自分の[Combustion]5につき、ダメージ量 +12.5%(最大50%)\n[WhenUse] (自分の[Combustion] + 対象の[Combustion])10につき、基本威力 +1(最大2)\n[WhenUse] 自分の失った体力30%につき、コイン威力 +1(最大2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]3を付与"
+                }
+              ]
+            },
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021104,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "紅炎殺の感応度を上げて共鳴します。",
+          "desc": "[WhenUse] 自分の[Combustion]が5減少(1ターンにつき1回)\n[OnSucceedEvade] 自分[Combustion]が5減少(1ターンにつき1回)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "紅炎殺の感応度を上げて共鳴します。",
+          "desc": "[WhenUse] 自分の[Combustion]が10以上なら、コイン威力 +3\n[WhenUse] 自分の[Combustion]が5減少(1ターンにつき1回)\n[OnSucceedEvade] 自分[Combustion]が5減少(1ターンにつき1回)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021105,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "紅炎殺 最大感応【劣化侵蝕】",
+          "desc": "このスキルで攻撃終了時、死亡する。\n- このスキルを使用している間に体力が1になった場合、以降1以下にならない。\n[WhenUse] 自分の[Combustion]5につき、ダメージ量 +7.5%(最大30%)\n[WhenUse] (自分の[Combustion] + 対象の[Combustion])が10以上なら、基本威力 +1\n[WhenUse] 自分の失った体力30%につき、コイン威力 +1(最大2)\n[BeforeAttack] 自分の失った体力20%につき、攻撃加重値 +1(最大2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の失った体力20%につき、ダメージ量 +10%(最大30%)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "紅炎殺 最大感応【劣化侵蝕】",
+          "desc": "このスキルで攻撃終了時、死亡する。\n- このスキルを使用している間に体力が1になった場合、以降1以下にならない。\n[WhenUse] 自分の[Combustion]5につき、ダメージ量 +12.5%(最大50%)\n[WhenUse] (自分の[Combustion] + 対象の[Combustion])10につき、基本威力 +1(最大2)\n[WhenUse] 自分の失った体力30%につき、コイン威力 +1(最大3)\n[BeforeAttack] 自分の失った体力20%につき、攻撃加重値 +1(最大4)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]4を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]4を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の失った体力20%につき、ダメージ量 +10%(最大30%)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
