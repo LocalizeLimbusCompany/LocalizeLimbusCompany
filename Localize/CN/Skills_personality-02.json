@@ -1005,6 +1005,348 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1021101,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "点火",
+          "desc": "[WhenUse] 若自身的烧伤 强度不低于10级，则使本技能造成的伤害+10%\n[WhenUse] 使自身增加7级烧伤 强度并对自身施加1层烧伤 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加2级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加2级烧伤 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "点火",
+          "desc": "[WhenUse] 若自身的烧伤 强度不低于10级，则使本技能造成的伤害+10%\n[WhenUse] 使自身增加7级烧伤 强度并对自身施加1层烧伤 \n[WhenUse] 若自身的烧伤 强度与目标的烧伤 强度之和不低于10点，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加2级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若自身的烧伤 强度不低于10级，则使目标额外增加1级烧伤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加2级烧伤 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "点火",
+          "desc": "[WhenUse] 若自身的烧伤 强度不低于10级，则使本技能造成的伤害+10%\n[WhenUse] 使自身增加7级烧伤 强度并对自身施加1层烧伤 \n[WhenUse] 自身的烧伤 强度与目标的烧伤 强度之和每有10点，使本技能的硬币威力+1(最多+2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加2级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若自身的烧伤 强度不低于10级，则使目标额外增加3级烧伤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加2级烧伤 强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021102,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "E.G.O红艳煞 展开",
+          "desc": "[WhenUse] 若自身的烧伤 强度不低于10级，则使本技能造成的伤害+10%\n[WhenUse] 对自身施加4层烧伤 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 使目标增加2级烧伤 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "E.G.O红艳煞 展开",
+          "desc": "[WhenUse] 自身每带有10级烧伤 强度，使本技能造成的伤害+10%(最多+20%)\n[WhenUse] 对自身施加4层烧伤 \n[WhenUse] 若自身的烧伤 强度与目标的烧伤 强度之和不低于4点，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 使目标增加3级烧伤 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "E.G.O红艳煞 展开",
+          "desc": "[WhenUse] 自身每带有10级烧伤 强度，使本技能造成的伤害+10%(最多+20%)\n[WhenUse] 对自身施加4层烧伤 \n[WhenUse] 自身的烧伤 强度与目标的烧伤 强度之和每有4点，使本技能的硬币威力+1(最多+2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 使目标增加3级烧伤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标的烧伤 强度不低于15级，则对其施加2层烧伤 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021103,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "渴火",
+          "desc": "[StartBattle] 使自身增加7级烧伤 强度并对自身施加1层烧伤 \n[BeforeUse] 若自身的烧伤 强度不低于30级，则改为使用“红艳煞 最大感应【劣化侵蚀】”\n[WhenUse] 自身每带有5级烧伤 强度，使本技能造成的伤害+7.5%(最多+30%)\n[WhenUse] 若自身的烧伤 强度与目标的烧伤 强度之和不低于10点，则使本技能的基础威力+1\n[WhenUse] 若自身的已失去体力不低于30%，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级烧伤 强度"
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "渴火",
+          "desc": "[StartBattle] 使自身增加7级烧伤 强度并对自身施加1层烧伤 \n[BeforeUse] 若自身的烧伤 强度不低于30级，则改为使用“红艳煞 最大感应【劣化侵蚀】”\n[WhenUse] 自身每带有5级烧伤 强度，使本技能造成的伤害+12.5%(最多+50%)\n[WhenUse] 自身的烧伤 强度与目标的烧伤 强度之和每有10点，使本技能的基础威力+1(最多+2)\n[WhenUse] 自身每失去30%体力，使本技能的硬币威力+1(最多+2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级烧伤 强度"
+                }
+              ]
+            },
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021104,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "提升红艳煞感应度进行共鸣。",
+          "desc": "[WhenUse] 使自身的烧伤 强度减少5级(每回合最多1次)\n[OnSucceedEvade] 使自身的烧伤 强度减少5级(每回合最多1次)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "提升红艳煞感应度进行共鸣。",
+          "desc": "[WhenUse] 若自身的烧伤 强度不低于10级，则使本技能的硬币威力+3\n[WhenUse] 使自身的烧伤 强度减少5级(每回合最多1次)\n[OnSucceedEvade] 使自身的烧伤 强度减少5级(每回合最多1次)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021105,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "红艳煞 最大感应【劣化侵蚀】",
+          "desc": "使用本技能后，自身阵亡\n- 使用本技能期间，若自身的体力降至1点以下，则体力维持为1点\n[WhenUse] 自身每带有5级烧伤 强度，使本技能造成的伤害+7.5%(最多+30%)\n[WhenUse] 若自身的烧伤 强度与目标的烧伤 强度之和不低于10点，则使本技能的基础威力+1\n[WhenUse] 自身每失去30%体力，使本技能的硬币威力+1(最多+2)\n[BeforeAttack] 自身每失去20%体力，使本技能的攻击容量+1(最多+2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自身每失去20%体力，使本硬币造成的伤害+10%(最多+30%)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "红艳煞 最大感应【劣化侵蚀】",
+          "desc": "使用本技能后，自身阵亡\n- 使用本技能期间，若自身的体力降至1点以下，则体力维持为1点\n[WhenUse] 自身每带有5级烧伤 强度，使本技能造成的伤害+12.5%(最多+50%)\n[WhenUse] 自身的烧伤 强度与目标的烧伤 强度之和每有10点，使本技能的基础威力+1(最多+2)\n[WhenUse] 自身每失去30%体力，使本技能的硬币威力+1(最多+3)\n[BeforeAttack] 自身每失去20%体力，使本技能的攻击容量+1(最多+4)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级烧伤 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自身每失去20%体力，使本硬币造成的伤害+10%(最多+30%)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

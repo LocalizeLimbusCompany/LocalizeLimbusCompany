@@ -94,9 +94,20 @@ public static class ChineseFont
         var rawFontAsset = fontInformation.fontAsset;
         var useCn = GetChineseFont(rawFontAsset.name, out var cnFontAsset);
 
-        var fontAsset = useCn ? cnFontAsset : rawFontAsset;
-        var fontMaterial =
-            useCn ? cnFontAsset.material : fontInformation.fontMaterial ?? rawFontAsset.material;
+        TMP_FontAsset fontAsset;
+        Material fontMaterial;
+        if (useCn)
+        {
+            fontAsset = cnFontAsset;
+            fontMaterial = cnFontAsset.material;
+            if (__instance._text.overflowMode == TextOverflowModes.Ellipsis)
+                __instance._text.overflowMode = TextOverflowModes.Overflow;
+        }
+        else
+        {
+            fontAsset = rawFontAsset;
+            fontMaterial = fontInformation.fontMaterial ?? rawFontAsset.material;
+        }
 
         __instance._text.font = fontAsset;
         __instance._text.fontMaterial = fontMaterial;
@@ -224,6 +235,7 @@ public static class ChineseFont
         tm._mirrorDungeonThemeList.Init(romoteLocalizeFileList.MirrorDungeonTheme);
         tm._unlockCodeList.Init(romoteLocalizeFileList.UnlockCode);
         tm._battleSpeechBubbleText.Init(romoteLocalizeFileList.BattleSpeechBubble);
+        tm._gachaNotice.Init(romoteLocalizeFileList.GachaNotice);
 
         tm._abnormalityEventCharDlg.AbEventCharDlgRootInit(romoteLocalizeFileList.abnormalityCharDlgFilePath);
 

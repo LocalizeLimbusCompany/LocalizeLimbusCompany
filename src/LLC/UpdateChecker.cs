@@ -18,7 +18,7 @@ public static class UpdateChecker
     }
 
     public static ConfigEntry<bool> AutoUpdate =
-        LLCMod.LLCSettings.Bind("LLC Settings", "AutoUpdate", true, "是否自动检查并下载更新 ( true | false )");
+        LLCMod.LLCSettings.Bind("LLC Settings", "AutoUpdate", false, "是否自动检查并下载更新 ( true | false )");
 
     public static ConfigEntry<Uri> UpdateUri = LLCMod.LLCSettings.Bind("LLC Settings", "UpdateURI", Uri.MirrorOneDrive,
         "自动更新所使用URI ( GitHub:默认 | MirrorOneDrive:镜像,更新可能有延迟,但下载速度更快 )");

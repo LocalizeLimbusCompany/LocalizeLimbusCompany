@@ -106,7 +106,7 @@ public class Manager(IntPtr ptr) : MonoBehaviour(ptr)
         if (UpdateChecker.UpdateCall != null)
             OpenGlobalPopup(
                 "Has Update " + UpdateChecker.Updatelog +
-                "!\nOpen Download Path & Quit Game\n模组存在更新\n点击OK将退出游戏并打开下载目录\n请将" + UpdateChecker.Updatelog +
+                "!\nOpen Download Path & Quit Game\n模组存在更新\n点击OK将打开目录，点击弹窗外可继续游戏\n请将" + UpdateChecker.Updatelog +
                 "压缩包解压至该目录", "Mod Has Update\n模组存在更新", null, "OK", () =>
                 {
                     UpdateChecker.UpdateCall.Invoke();
