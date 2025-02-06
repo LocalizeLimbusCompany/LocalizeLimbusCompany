@@ -1509,7 +1509,7 @@
     {
       "id": "WildHunt",
       "name": "Wild Hunt",
-      "desc": "- In the same turn this unit gained Wild Hunt for the first time, always have 1 remaining HP; \"revive\"(heal 50% HP and reset SP to 0) this unit at Turn End.\n- If this unit is killed by an attack, gain E.G.O resource for the least-owned E.G.O resource\n- If this unit is killed by an attack, inflict 3 Sinking against the last attacker\n- Dies at the end of the same turn this unit was revived in",
+      "desc": "- In the same turn this unit gained Wild Hunt for the first time, always have 1 remaining HP; \"revive\"(heal 50% HP and reset SP to 0) this unit at Turn End.\n- On death, gain 1 E.G.O resource for the least-owned E.G.O resource\n- If this unit is killed by an attack, inflict 3 Sinking against the last attacker\n- Dies at the end of the same turn this unit was revived in",
       "summary": ""
     },
     {
@@ -1831,6 +1831,31 @@
       "id": "Hohenheim_Panic",
       "name": "Anguish",
       "desc": "Turn Start: gain 2 Fragile and 3 SP Heal Efficiency Down"
+    },
+    {
+      "id": "BlackCloud",
+      "name": "Dark Cloud",
+      "desc": "Max Stack: 1\nConverts all of this unit's Base Attack Skill Coins used this turn to [Unbreakable Coins], prevents damage from Staggering this unit until Skill End, and inflict +1 more of Bleed effects\nOn Clash Lose: gain Final Power +3\nTurn End: this effect expires"
+    },
+    {
+      "id": "BlackCloudBlade",
+      "name": "Dark Cloud Blade",
+      "desc": "Max Stack: 1\nGain 1 Slash Power\nInflict 1 Bleed On Hit with Slash Skills"
+    },
+    {
+      "id": "EngageToBattle",
+      "name": "Battle Ready",
+      "desc": "Max Value: 1\nBleed Potency and Count inflicted with this unit's Skill or Coin effects: +1\nGain 1 Slash Power Up and 3 Slash DMG Up for the duration of this Encounter"
+    },
+    {
+      "id": "CloudWall",
+      "name": "Cumulus Wall",
+      "desc": "Max Stack: 1\nDefense Skill Final Power +1\nThis effect expires at Turn End or after attack of the following: 'Rules of the Backstreets'"
+    },
+    {
+      "id": "ScarletResultUp",
+      "name": "Lust Power Up",
+      "desc": "Lust Skills gain Final Power by the effect’s Count for one turn."
     }
   ]
 }

@@ -7,7 +7,8 @@
       "desc": "\"It's us Kurokumo Clan's turf from here on out.\"\n\n\"Is it that hard for you to understand that you gotta pay the toll to use our road? Huh?\"\n\nPeople dressed in Kurokumo Clan garb stand in the way of unarmed civilians, threatening them.\n\n\"... I suppose that excuse was enough for them to tread on our territory as well.\"\n\nAeng-du does not hide her indignation. She is gritting her teeth.\n\nWhat should we do about them?",
       "options": [
         {
-          "message": "Save the civilians."
+          "message": "Save the civilians.",
+          "messageDesc": "Gain a Keywordless E.G.O Gift depending on the result of the following choice"
         },
         {
           "message": "Turn a blind eye.",
@@ -31,7 +32,7 @@
         },
         {
           "message": "Say that you're with the Blade Lineage.",
-          "messageDesc": "Pass to gain an E.G.O Gift."
+          "messageDesc": "Pride Advantage check. Pass to gain a Keywordless E.G.O Gift."
         }
       ]
     },
@@ -43,7 +44,7 @@
       "options": [
         {
           "message": "Right. Slashing is the way to go when wielding a blade.",
-          "messageDesc": "Pass to gain an E.G.O Gift."
+          "messageDesc": "Lust & Pride Advantage check. Pass to gain a Slash E.G.O Gift."
         },
         {
           "message": "Not true. Slash, Pierce, and Blunt all have their uses.",
@@ -61,11 +62,11 @@
       "options": [
         {
           "message": "Assume a stance like I'm about to draw the sword.",
-          "messageDesc": "Pass to gain an E.G.O Gift."
+          "messageDesc": "Lust & Gloom Advantage check. Pass to gain a Bleed E.G.O Gift."
         },
         {
           "message": "Unsheathe the sword and hold it on my side.",
-          "messageDesc": "Pass to gain an E.G.O Gift."
+          "messageDesc": "Pride & Wrath Advantage check. Pass to gain a Poise E.G.O Gift."
         },
         {
           "message": "Leave the sword, let's leave.",
@@ -83,7 +84,7 @@
       "options": [
         {
           "message": "It's the City. That's just what happens to small fries getting mixed up in large-scale conflicts.",
-          "messageDesc": "Pass to gain an E.G.O Gift."
+          "messageDesc": "Gloom & Pride Advantage check. Pass to gain a Slash E.G.O Gift."
         },
         {
           "message": "I have no thoughts regarding the matter. A pity, though.",
@@ -101,11 +102,47 @@
       "options": [
         {
           "message": "What is 'right' and what is 'wrong'... is it really that important to tell which is which? Say that what really matters is something else.",
-          "messageDesc": "Pass to gain an E.G.O Gift."
+          "messageDesc": "Lust & Pride Advantage check. Pass to gain a Poise E.G.O Gift."
         },
         {
           "message": "Still, it must be said that what is right, is right.",
-          "messageDesc": "Pass to gain an E.G.O Gift."
+          "messageDesc": "Gloom & Pride Advantage check. Pass to gain a Slash E.G.O Gift."
+        }
+      ]
+    },
+    {
+      "id": 971049,
+      "name": "Worn Hilt Choice",
+      "subDesc": "",
+      "desc": "\"Is this a tavern?\"\n\nWe walk into what seems to be a bar of sorts, its guests rowdily drinking and chatting about in groups.\n\nWe find a seat to relax, but another group that was sitting nearby approaches us.\n\n\"What's going on here? I haven't seen your faces around here before...\"\n\n\"This is a good day, boys—let this one slide. Don't stir up unnecessary trouble.\"\n\n\"Yes, dame! Of course, dame!\"\n\nThat's when we realize that they're all carrying swords with them.\n\nSwords engraved with elaborate cloud patterns.\n\n\"Did you hear about that new Syndicate that sprang up today?\"\n\n\"Ah, the... the group that primarily uses spears, right...?\"\n\n\"Dumbasses. Swords are the most superior form of weaponry there is, the apex of arms. And they use <i>spears</i> instead?\n\n\"Let's all be completely honest here, guys. Sure, we're a Thumb subsidiary, but there's just something badass about a sword, huh? Way cooler than fists or guns.\"\n\n\"Good thing we have these fine people here to give us a most fair assessment on the superiority of swords.\n\nWe feel their gaze simultaneously turning to look at us.",
+      "options": [
+        {
+          "message": "Are swords really all that, though?",
+          "result": [
+            "\"Let's put 'em six feet under. Let's go.\"\n\n\"Tsk, it's not like we seriously think that swords are actually the best weapons in the world.\"\n\n\"Look around ya, see anyone without a sword? Learn to read the room.\"\n\n\"Looks like you pissed off my boys. Would it have hurt to pretend to go along with them?\"\n\n\"I think I'll head out now. Remember what I said earlier—don't start trouble and leave them alone.\"\n\n\"Yes, dame!\"\n\nAs soon as the person who appeared to be their leader left the room, things became a lot more tense all of a sudden...\n\nWe quietly and carefully excused ourselves and left the place."
+          ]
+        },
+        {
+          "message": "Swords are indeed the king of all weapons. Hail!",
+          "messageDesc": "Lust & Pride Advantage check. Pass to gain a Keywordless E.G.O Gift."
+        }
+      ]
+    },
+    {
+      "id": 971050,
+      "name": "Bamboo Hat & Dopo Robe Choice",
+      "subDesc": "",
+      "desc": "Walking along the stone brick wall, we hear a pair of voices conversing.\n\n\"I understand that you've been having some trouble as of late.\"\n\n\"We would not have had any troubles with the tributes if those Blade Lineage bastards had not suddenly appeared in our turf, sir...\"\n\nThe outfit of one of the pair stands out.\n\nI can hear some of the Sinners recognizing it as the uniform of the Thumb.\n\n\"First, exact the appropriate punishment for breaking into your turf...\"\n\n\"Of course, sir.\"\n\n\"But don't forget to show the right respect for those who deserve it. Am I understood?\"\n\n\"Wait. Who's there? Is it the Blade Lineage...? Hm, doesn't seem like it.\"\n\nNoticing our presence, the pair turns around to face us.\n\n\"Hm. Why don't we ask for their opinion as well, now that they're here?\"\n\n\"You there. What are your thoughts on the Kurokumo Clan's current status?\"\n\n\"Better choose your words carefully.\"",
+      "options": [
+        {
+          "message": "Unfortunately, war with the Blade Lineage seems to be the only option.",
+          "messageDesc": "Lust & Pride Advantage check. Pass to gain a Keywordless E.G.O Gift."
+        },
+        {
+          "message": "Wrong place at the wrong time, man.",
+          "result": [
+            "\"A regular occurrence in the City.\"\n\n\"Why don't we just let 'em go, sir? Doesn't seem like they have anything interesting to contribute.\"\n\n\"You heard him. Scram, before we change our minds.\""
+          ]
         }
       ]
     }

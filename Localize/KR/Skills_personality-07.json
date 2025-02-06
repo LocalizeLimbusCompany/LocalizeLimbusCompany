@@ -1351,6 +1351,335 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1071201,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "구름베기",
+          "desc": "[WhenUse] 다음 턴에 [Endurance] 1 얻음 (턴 당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [AttackDown] 1 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "구름베기",
+          "desc": "<style=\"highlight\">대상의 [Laceration]이 6 이상이면, 코인 위력 +1</style>\n[WhenUse] 다음 턴에 [Endurance] 1 얻음 (턴 당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 1 부여<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 1 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [AttackDown] 1 부여<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "구름베기",
+          "desc": "<style=\"highlight\">대상의 [Laceration] 6 당, 코인 위력 +1 (최대 2)</style>\n[WhenUse] 다음 턴에 [Endurance] <style=\"highlight\">2</style> 얻음 (턴 당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 1 부여<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 1 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [AttackDown] 1 부여<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071202,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "폭풍구름",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Reduction] 1 부여 (턴 당 1회)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "폭풍구름",
+          "desc": "<style=\"highlight\">대상의 [Laceration]이 6 이상이면, 코인 위력 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] [SlashTakeDamageUp] 1 부여</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 2 증가<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Reduction] 1 부여 (턴 당 1회)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "폭풍구름",
+          "desc": "<style=\"highlight\">대상의 [Laceration] 6 당, 코인 위력 +1 (최대 2)\n[WhenUse] 다음 턴에 [Endurance] 1 얻음 (턴 당 1회)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] [SlashTakeDamageUp] 1 부여<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 2 증가<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Reduction] 1 부여 (턴 당 <style=\"highlight\">2</style>회)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071203,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "천둥베기",
+          "desc": "대상의 [Laceration]이 6 이상이면, 코인 위력 +1\n[StartBattle] 다음 턴에 [CloudWall] 1 얻음\n[WhenUse] 다음 턴에 [Endurance] 1 얻음 (턴 당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 마지막 코인의 피해량 +10%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [SlashTakeDamageUp] 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 마지막 코인의 피해량 +10%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "대상이 보유한 부정적인 효과 1개당 피해량 +10% (최대 30%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 6 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "천둥베기",
+          "desc": "<style=\"highlight\">대상의 [Laceration] 6 당, 코인 위력 +1 (최대 2)</style>\n[StartBattle] 다음 턴에 [CloudWall] 1 얻음\n[WhenUse] 다음 턴에 [Endurance] 1 얻음 (턴 당 1회)\n<style=\"highlight\">[WinDuel] 다음 턴에 [BlackCloudBlade] 1 얻음 (턴 당 1회)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 마지막 코인의 피해량 +10%<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [SlashTakeDamageUp] 1 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 마지막 코인의 피해량 +10%<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "대상이 보유한 부정적인 효과 1개당 피해량 +10% <style=\"highlight\">(최대 100%)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 6 부여<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071204,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "뒷골목의 규칙",
+          "desc": "[DuelCounter]\n흑운회 부조장 이스마엘 인격이 전투에 등장해 있으면, 아래 효과가 적용됨\n- 이 스킬의 모든 코인이 [SuperCoin]으로 변경됨\n- 합 패배시 이 스킬의 최종 위력 +3\n[WhenUse] 자신이 [CloudWall]을 보유하고 있으면, 이 스킬 코인의 재사용 효과를 조건 없이 모두 발동",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신에게 [BlackCloudBlade]가 있으면 코인 1회 재사용 (스킬당 1회)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신에게 [EngageToBattle]이 있으면 코인 1회 재사용 (스킬당 1회)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "뒷골목의 규칙",
+          "desc": "[DuelCounter]\n흑운회 부조장 이스마엘 인격이 전투에 등장해 있으면, 아래 효과가 적용됨\n- 이 스킬의 모든 코인이 [SuperCoin]으로 변경됨\n- 합 패배시 이 스킬의 최종 위력 <style=\"highlight\">+4\n대상이 보유한 부정적인 효과 1개당 피해량 +10% (최대 100%)</style>\n[WhenUse] 자신이 [CloudWall]을 보유하고 있으면, 이 스킬 코인의 재사용 효과를 조건 없이 모두 발동",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신에게 [BlackCloudBlade]가 있으면 코인 1회 재사용 (스킬당 1회)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신에게 [EngageToBattle]이 있으면 코인 1회 재사용 (스킬당 1회)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071205,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "뒷골목의 규칙",
+          "desc": "[WhenUse] 자신이 [CloudWall]을 보유하고 있으면, 이 스킬 코인의 재사용 효과를 조건 없이 모두 발동",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신에게 [BlackCloudBlade]가 있으면 코인 1회 재사용 (스킬당 1회)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신에게 [EngageToBattle]이 있으면 코인 1회 재사용 (스킬당 1회)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "뒷골목의 규칙",
+          "desc": "대상의 [Laceration]이 6 이상이면, 코인 위력 +1\n대상이 보유한 부정적인 효과 1개당 피해량 +10% (최대 100%)\n[WhenUse] 자신이 [CloudWall]을 보유하고 있으면, 이 스킬 코인의 재사용 효과를 조건 없이 모두 발동",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신에게 [BlackCloudBlade]가 있으면 코인 1회 재사용 (스킬당 1회)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신에게 [EngageToBattle]이 있으면 코인 1회 재사용 (스킬당 1회)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

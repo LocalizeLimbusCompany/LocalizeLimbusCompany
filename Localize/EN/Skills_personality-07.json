@@ -1340,6 +1340,335 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1071201,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Lenticular Rend",
+          "desc": "[WhenUse] Gain 1 [Endurance] next turn (once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [AttackDown]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Lenticular Rend",
+          "desc": "<style=\"highlight\">If the target has 6+ [Laceration], Coin Power +1</style>\n[WhenUse] Gain 1 [Endurance] next turn (once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [AttackDown]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Lenticular Rend",
+          "desc": "<style=\"highlight\">Coin Power +1 for every 6 [Laceration] on the target (max 2)</style>\n[WhenUse] Gain <style=\"highlight\">2</style> [Endurance] next turn (once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [AttackDown]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071202,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Stormcloud",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Laceration] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Reduction] (once per turn)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Stormcloud",
+          "desc": "<style=\"highlight\">If target has 6+ [Laceration], Coin Power +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Laceration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] Inflict 1 [SlashTakeDamageUp]</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Laceration] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Reduction] (once per turn)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Stormcloud",
+          "desc": "<style=\"highlight\">Coin Power +1 for every 6 [Laceration] on the target (max 2)\n[WhenUse] Gain 1 [Endurance] next turn (once per turn)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Laceration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [SlashTakeDamageUp]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Laceration] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Reduction] (<style=\"highlight\">2 times</style> per turn)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071203,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Thundercleave",
+          "desc": "If the target has 6+ [Laceration], Coin Power +1\n[StartBattle] Gain 1 [CloudWall] next turn\n[WhenUse] Gain 1 [Endurance] next turn (once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Laceration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] The final Coin deals +10% more damage"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [SlashTakeDamageUp]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] The final Coin deals +10% more damage"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Deal +10% more damage for every type of negative effect on target (max 30%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 6 [Laceration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Thundercleave",
+          "desc": "<style=\"highlight\">Coin Power +1 for every 6 [Laceration] on the target (max 2)</style>\n[StartBattle] Gain 1 [CloudWall] next turn\n[WhenUse] Gain 1 [Endurance] next turn (once per turn)\n<style=\"highlight\">[WinDuel] Gain 1 [BlackCloudBlade] next turn (once per turn)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Laceration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] The final Coin deals +10% more damage<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [SlashTakeDamageUp]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] The final Coin deals +10% more damage<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Deal +10% more damage for every type of negative effect on target <style=\"highlight\">(max 100%)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 6 [Laceration]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071204,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Rules of the Backstreets",
+          "desc": "[DuelCounter]\nIf Kurokumo Clan Captain Ishmael is on the field, activate the following:\n- Convert all Coins in this Skill into [SuperCoin]s\n- Final Power +3 to this Skill upon Clash Lose\n[WhenUse] If this unit has [CloudWall], unconditionally activate all Reuse effects on this Skill's Coins",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Laceration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If this unit has [BlackCloudBlade], Reuse Coin once (once per Skill)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If this unit has [EngageToBattle], Reuse Coin once (once per Skill)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Rules of the Backstreets",
+          "desc": "[DuelCounter]\nIf Kurokumo Clan Captain Ishmael is on the field, activate the following:\n- Convert all Coins in this Skill into [SuperCoin]s\n- Final Power +4 to this Skill upon Clash Lose\n<style=\"highlight\">Deal +10% more damage for every type of negative effect on the target (max 100%)</style>\n[WhenUse] If this unit has [CloudWall], unconditionally activate all Reuse effects on this Skill's Coins",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Laceration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If this unit has [BlackCloudBlade], Reuse Coin once (once per Skill)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If this unit has [EngageToBattle], Reuse Coin once (once per Skill)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071205,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Rules of the Backstreets",
+          "desc": "[WhenUse] If this unit has [CloudWall], unconditionally activate all Reuse effects on this Skill's Coins",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Laceration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If this unit has [BlackCloudBlade], Reuse Coin once (once per Skill)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If this unit has [EngageToBattle], Reuse Coin once (once per Skill)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Rules of the Backstreets",
+          "desc": "If the target has 6+ [Laceration], Coin Power +1\nDeal +10% more damage for every type of negative effect on the target (max 100%)\n[WhenUse] If this unit has [CloudWall], unconditionally activate all Reuse effects on this Skill's Coins",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Laceration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If this unit has [BlackCloudBlade], Reuse Coin once (once per Skill)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If this unit has [EngageToBattle], Reuse Coin once (once per Skill)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

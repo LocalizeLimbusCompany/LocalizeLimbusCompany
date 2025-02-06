@@ -110,11 +110,11 @@ public static class ReadmeManager
 
     public static Notice HandleDynamicType(string jsonPayload)
     {
-        var noticetype = SynchronousDataManager.Instance.NoticeSynchronousDataList.noticeFormats.GetType()
+        var noticetype = typeof(NoticeSynchronousDataList).GetProperty("noticeFormats")!.PropertyType
             .GetGenericArguments()[0];
 
-        var deserializedObject = typeof(JsonUtility).GetMethod("FromJson", [typeof(string)])
-            ?.MakeGenericMethod(noticetype).Invoke(null, [jsonPayload]);
+        var deserializedObject = typeof(JsonUtility).GetMethod("FromJson", [typeof(string)])!
+            .MakeGenericMethod(noticetype).Invoke(null, [jsonPayload]);
 
         return Activator.CreateInstance(typeof(Notice), deserializedObject, LOCALIZE_LANGUAGE.KR) as Notice;
     }

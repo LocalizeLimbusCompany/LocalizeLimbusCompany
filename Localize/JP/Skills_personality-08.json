@@ -994,6 +994,263 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1081101,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "後始末",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [AttackDown]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "後始末",
+          "desc": "<style=\"highlight\">対象の[Laceration]が6以上ならコイン威力 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [AttackDown]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "後始末",
+          "desc": "<style=\"highlight\">対象の[Laceration]6につき、コイン威力 +1(最大2)\n対象が保有するマイナス効果1つにつき、ダメージ量 +10%(最大30%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [AttackDown]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081102,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "鋭い刃",
+          "desc": "[StartBattle] 自分を除いて速度が最も高い味方の黒雲会所属人格2名へ[AttackDmgUp]1を付与(1ターンにつき1回)\n- 自分を含めて黒雲会が6名以上なら、代わりに5名へ[AttackDmgUp]2を付与",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "鋭い刃",
+          "desc": "<style=\"highlight\">対象の[Laceration]が6以上なら、コイン威力 +1</style>\n[StartBattle] 自分を除いて速度が最も高い味方の黒雲会所属人格2名へ[AttackDmgUp]<style=\"highlight\">2</style>を付与(1ターンにつき1回)\n- 自分を含めて黒雲会が6名以上なら、代わりに5名へ[AttackDmgUp]<style=\"highlight\">3</style>を付与",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] [SlashTakeDamageUp]1を付与(1ターンにつき1回)</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 次のターンに[SlashResultUp]1を得る(1ターンにつき1回)</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "鋭い刃",
+          "desc": "<style=\"highlight\">対象の[Laceration]6につき、コイン威力 +1(最大2)\n対象が保有するマイナス効果1つにつき、ダメージ量 +10%(最大50%)</style>\n[StartBattle] 自分を除いて速度が最も高い味方の黒雲会所属人格2名へ[AttackDmgUp]2を付与(1ターンにつき1回)\n- 自分を含めて黒雲会が6名以上なら、代わりに5名へ[AttackDmgUp]4を付与",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] [SlashTakeDamageUp]1を付与(1ターンにつき1回)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">- 自分を含む黒雲会が6名以上なら、代わりに[Vulnerable]2を付与</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[SlashResultUp]1を得る(1ターンにつき<style=\"highlight\">2</style>回)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081103,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "墨塗り",
+          "desc": "対象の[Laceration]が6以上ならコイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Laceration]を3回発動。対象の[Laceration]回数が3減少"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "墨塗り",
+          "desc": "<style=\"highlight\">対象の[Laceration]6につき、コイン威力 +1(最大2)\n[EnemyKill] 次のターンに[SlashResultUp]2を得る(1ターンにつき1回)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">対象の保有するマイナス効果1つにつき与ダメージ量 +10%(最大100%)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Laceration]を3回発動。対象の[Laceration]回数が3減少<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081104,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "飛び散る剣撃",
+          "desc": "[StartBattle] [Protection]1を得る(1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "飛び散る剣撃",
+          "desc": "[StartBattle] [Protection]1を得る(1ターンにつき1回)\n<style=\"highlight\">[StartBattle] 自分を含めて速度が最も高い味方の黒雲会所属人格(2 + 最大共鳴数)名へ[Endurance]2を付与(1ターンにつき1回)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

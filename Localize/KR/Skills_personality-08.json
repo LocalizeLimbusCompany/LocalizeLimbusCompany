@@ -995,6 +995,263 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1081101,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "뒷처리",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [AttackDown] 1 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "뒷처리",
+          "desc": "<style=\"highlight\">대상의 [Laceration]이 6 이상이면, 코인 위력 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 1 부여<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [AttackDown] 1 부여<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "뒷처리",
+          "desc": "<style=\"highlight\">대상의 [Laceration] 6 당, 코인 위력 +1 (최대 2)\n대상이 보유한 부정적인 효과 1개당 피해량 +10% (최대 30%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 1 부여<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [AttackDown] 1 부여<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081102,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "날카로운 칼날",
+          "desc": "[StartBattle] 자신을 제외하고 속도가 가장 빠른 아군 흑운회 소속 인격 2명에게 [AttackDmgUp] 1 부여 (턴 당 1회)\n- 자신 포함 흑운회 소속이 6명 이상이면 대신 5명에게 [AttackDmgUp] 2 부여",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 2 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "날카로운 칼날",
+          "desc": "<style=\"highlight\">대상의 [Laceration]이 6 이상이면, 코인 위력 +1</style>\n[StartBattle] 자신을 제외하고 속도가 가장 빠른 아군 흑운회 소속 인격 2명에게 [AttackDmgUp] <style=\"highlight\">2</style> 부여 (턴 당 1회)\n- 자신 포함 흑운회 소속이 6명 이상이면 대신 5명에게 [AttackDmgUp] <style=\"highlight\">3</style> 부여",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] [SlashTakeDamageUp] 1 부여 (턴 당 1회)</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 2 증가<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 다음 턴에 [SlashResultUp] 1 얻음 (턴 당 1회)</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "날카로운 칼날",
+          "desc": "<style=\"highlight\">대상의 [Laceration] 6 당, 코인 위력 +1 (최대 2)\n대상이 보유한 부정적인 효과 1개당 피해량 +10% (최대 50%)</style>\n[StartBattle] 자신을 제외하고 속도가 가장 빠른 아군 흑운회 소속 인격 2명에게 [AttackDmgUp] 2 부여 (턴 당 1회)\n- 자신 포함 흑운회 소속이 6명 이상이면 대신 5명에게 [AttackDmgUp] 4 부여",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] [SlashTakeDamageUp] 1 부여 (턴 당 1회)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">- 자신 포함 흑운회 소속이 6명 이상이면, 대신 [Vulnerable] 2 부여</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 2 증가<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [SlashResultUp] 1 얻음 (턴 당 <style=\"highlight\">2</style>회)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081103,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "먹칠",
+          "desc": "대상의 [Laceration]이 6 이상이면, 코인 위력 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 2 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 3 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Laceration] 3회 발동. 대상의 출혈 횟수 3 감소"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "먹칠",
+          "desc": "<style=\"highlight\">대상의 [Laceration] 6 당, 코인 위력 +1 (최대 2)\n[EnemyKill] 다음 턴에 [SlashResultUp] 2 얻음 (턴 당 1회)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 2 증가<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 3 부여<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">대상이 보유한 부정적인 효과 1개당 피해량 +10% (최대 100%)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Laceration] 3회 발동. 대상의 출혈 횟수 3 감소<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081104,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "흩어지는 검격",
+          "desc": "[StartBattle] [Protection] 1 얻음 (턴 당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "흩어지는 검격",
+          "desc": "[StartBattle] [Protection] 1 얻음 (턴 당 1회)\n<style=\"highlight\">[StartBattle] 자신을 포함하여 속도가 가장 빠른 아군 흑운회 소속 인격 (2 + 최대 공명 수)명에게 [Endurance] 2 부여 (턴 당 1회)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
