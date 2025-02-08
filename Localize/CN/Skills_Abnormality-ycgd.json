@@ -348,7 +348,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若护盾未被全部消耗，则对目标造成([Grudge]层数/攻击容量)点固定伤害"
+                  "desc": "[OnSucceedAttack] 若护盾未被全部消耗，则对目标造成(自身的[Grudge]层数/本技能的攻击容量)点固定伤害"
                 }
               ]
             }
@@ -425,7 +425,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若护盾未被全部消耗，则造成([Grudge]层数/攻击容量)点固定伤害"
+                  "desc": "[OnSucceedAttack] 若护盾未被全部消耗，则对目标造成(自身的[Grudge]层数/本技能的攻击容量)点固定伤害"
                 }
               ]
             }
@@ -458,14 +458,14 @@
         {
           "level": 1,
           "name": "断汝筋骨",
-          "desc": "[CantChangeTarget]\n优先指定体力最低的目标\n[EnemyKill] 使自身的[Grudge]层数翻倍\n[EnemyKill] 使自身恢复([Grudge]层数)点体力",
+          "desc": "[CantChangeTarget]\n优先指定体力最低的目标\n[EnemyKill] 使自身的[Grudge]层数变为2倍\n[EnemyKill] 使自身恢复(自身的[Grudge]层数)点体力",
           "coinlist": [
             {},
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标造成([Grudge]层数)点固定伤害"
+                  "desc": "[OnSucceedAttack] 对目标造成(自身的[Grudge]层数)点固定伤害"
                 }
               ]
             }
