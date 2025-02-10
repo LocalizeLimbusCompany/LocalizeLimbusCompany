@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <PlatformTarget>x64</PlatformTarget>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <LangVersion>latest</LangVersion>
+        <TargetFramework>net6</TargetFramework>
+        <Platforms>x64</Platforms>
+        <Configurations>BIE</Configurations>
+        <OutputPath>..\Release\BepInEx\patchers\LLC</OutputPath>
+        <NoWarn>CA2211;CA1822;IDE0060;IDE0130</NoWarn>
+        <DebugType>none</DebugType>
+        <Optimize>True</Optimize>
+        <GenerateDependencyFile>false</GenerateDependencyFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile"/>
+        <PackageReference Include="Il2CppInterop.Runtime" Version="1.0.0"/>
+        <None Update="7z.exe">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="7z.dll">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <Reference Include="Assembly-CSharp">
+            <HintPath>..\lib\Assembly-CSharp.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="BepInEx.Core">
+            <HintPath>..\lib\BepInEx.Core.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="BepInEx.Preloader.Core">
+            <HintPath>..\lib\BepInEx.Preloader.Core.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="Il2Cppmscorlib">
+            <HintPath>..\lib\Il2Cppmscorlib.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine">
+            <HintPath>..\lib\UnityEngine.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+            <HintPath>..\lib\UnityEngine.CoreModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+
+</Project>

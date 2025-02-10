@@ -1,0 +1,88 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <PlatformTarget>x64</PlatformTarget>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <LangVersion>latest</LangVersion>
+        <TargetFramework>net6</TargetFramework>
+        <Platforms>x64</Platforms>
+        <Configurations>BIE</Configurations>
+        <OutputPath>..\Release\BepInEx\plugins\LLC</OutputPath>
+        <NoWarn>CA2211;CA1822;IDE0060;IDE0130</NoWarn>
+        <DebugType>none</DebugType>
+        <Optimize>True</Optimize>
+        <GenerateDependencyFile>false</GenerateDependencyFile>
+        <AssemblyName>$(MSBuildProjectName)_$(Configuration)</AssemblyName>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Remove="Directory.Build.props"/>
+        <None Remove="nuget.config"/>
+        <None Update="version.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile"/>
+        <PackageReference Include="Il2CppInterop.Runtime" Version="1.0.0"/>
+        <Reference Include="Assembly-CSharp">
+            <HintPath>..\lib\Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="ProjectMoon.DelegateCollection">
+            <HintPath>..\lib\ProjectMoon.DelegateCollection.dll</HintPath>
+        </Reference>
+        <Reference Include="BepInEx">
+            <HintPath>..\lib\BepInEx.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="BepInEx.IL2CPP">
+            <HintPath>..\lib\BepInEx.Unity.IL2CPP.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2CppSystem">
+            <HintPath>..\lib\Il2CppSystem.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2Cppmscorlib">
+            <HintPath>..\lib\Il2Cppmscorlib.dll</HintPath>
+        </Reference>
+        <Reference Include="Il2CppSystem.Core">
+            <HintPath>..\lib\Il2CppSystem.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="Unity.TextMeshPro">
+            <HintPath>..\lib\Unity.TextMeshPro.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine">
+            <HintPath>..\lib\UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AssetBundleModule">
+            <HintPath>..\lib\UnityEngine.AssetBundleModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AudioModule">
+            <HintPath>..\lib\UnityEngine.AudioModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+            <HintPath>..\lib\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ImageConversionModule">
+            <HintPath>..\lib\UnityEngine.ImageConversionModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.JSONSerializeModule">
+            <HintPath>..\lib\UnityEngine.JSONSerializeModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.PhysicsModule">
+            <HintPath>..\lib\UnityEngine.PhysicsModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TextRenderingModule">
+            <HintPath>..\lib\UnityEngine.TextRenderingModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UI">
+            <HintPath>..\lib\UnityEngine.UI.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UIModule">
+            <HintPath>..\lib\UnityEngine.UIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.IMGUIModule">
+            <HintPath>..\lib\UnityEngine.IMGUIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestModule">
+            <HintPath>..\lib\UnityEngine.UnityWebRequestModule.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+</Project>
