@@ -195,7 +195,7 @@ with open("Localize\Readme\Readme.json", "r+", encoding="utf-8") as f:
 with open("Localize\Readme\Readme.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 os.system("""git push origin main""")
-output_file = "build_" + time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime()) + ".ps1"
-os.system(f"""powershell .\\build.ps1 > {output_file}""")
+output_file = "build_" + time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime()) + ".7z"
+os.system(f"""powershell .\\build.ps1 {output_file}""")
 with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
     print(f'output_file={output_file}', file=fh)
