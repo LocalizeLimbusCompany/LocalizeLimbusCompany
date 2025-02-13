@@ -176,7 +176,7 @@ with open(filePath2,"r+",encoding='utf-8') as file:
     text = ''
     for n in texts:
         text += n
-    text = text.replace("7z a","..\Patcher\7z.exe a")
+    text = text.replace("7z a","..\\Patcher\\7z.exe a")
 with open(filePath2,"w",encoding='utf-8') as file:
     file.write(text)
 # -*- coding: UTF-8 -*-
