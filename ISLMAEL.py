@@ -156,6 +156,7 @@ os.system("git clone https://github.com/LocalizeLimbusCompany/LLC_Release ./Loca
 os.system('copy Boss* .\Localize\Readme') 
 os.system("""git add ./Localize""")
 os.system("""git add .""")
+os.system("""git rm -r --cached .github/workflows""")
 os.system(""" git commit -m "更新 Localize 子模块到最新版本" """)
 
 
@@ -194,11 +195,5 @@ with open("Localize\Readme\Readme.json", "r+", encoding="utf-8") as f:
     data["noticeList"].append(j)
 with open("Localize\Readme\Readme.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
-os.system("""git rm -r --cached .github/workflows""")
-os.system("""git commit -m "Remove workflows from tracking" """)
 os.system("""git pull origin main""")
 os.system("""git push origin main -f""")
-output_file = "build_" + time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime()) + ".7z"
-os.system(f"""powershell .\\build.ps1 {output_file}""")
-with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
-    print(f'output_file={output_file}', file=fh)
