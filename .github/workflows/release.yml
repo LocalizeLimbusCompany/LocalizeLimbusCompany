@@ -1,0 +1,76 @@
+name: Sync and Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: '无版本号'
+  schedule:
+    - cron: '0 0 * * *'  # 每天 UTC 时间 00:00 触发
+
+jobs:
+  release:
+    runs-on: windows-latest
+
+    steps:
+      # 检出代码
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 缓存 NuGet 包
+      - name: Cache NuGet packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('src/*.csproj') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget-
+
+      # 设置 Git 用户身份
+      - name: Set Git user identity
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+
+      # 设置 Python 环境
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      # 运行 Python 脚本修改文件
+      - name: Run Python script to build
+        id: build
+        run: |
+          python ISLMAEL.py
+  
+      - name: Generate timestamp-based filename and tag
+        id: timestamp
+        run: |
+          $TIMESTAMP = Get-Date -Format "yyyyMMdd_HHmmss"
+          $FILENAME = "LimbusLocalize_BIE_$TIMESTAMP.7z"
+          $TAG_NAME = "release_$TIMESTAMP"
+          echo "filename=$FILENAME" >> $env:GITHUB_OUTPUT
+          echo "tag_name=$TAG_NAME" >> $env:GITHUB_OUTPUT
+
+      # 运行编译脚本
+      - name: Run build script
+        run: |
+          ./build.ps1 ${{ steps.timestamp.outputs.filename }}
+
+      # 更新 CHANGELOG.md
+      - name: Update CHANGELOG.md
+        run: |
+          Add-Content -Path CHANGELOG.md -Value "
+          # 下载
+          - ${{ steps.timestamp.outputs.filename }} 全量包"
+
+      # 创建 GitHub Release
+      - name: Create Upload Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            Release/${{ steps.timestamp.outputs.filename }}
+          body_path: CHANGELOG.md
+          tag_name: ${{ steps.timestamp.outputs.tag_name }}  # 使用时间戳作为标签名称

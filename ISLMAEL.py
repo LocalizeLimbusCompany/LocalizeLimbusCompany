@@ -156,7 +156,6 @@ os.system("git clone https://github.com/LocalizeLimbusCompany/LLC_Release ./Loca
 os.system('copy Boss* .\Localize\Readme') 
 os.system("""git add ./Localize""")
 os.system("""git add .""")
-os.system("""git rm -r --cached .github/workflows""")
 os.system(""" git commit -m "更新 Localize 子模块到最新版本" """)
 
 
