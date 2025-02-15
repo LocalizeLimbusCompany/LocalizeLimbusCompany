@@ -49,9 +49,8 @@ jobs:
         id: timestamp
         run: |
           $TIMESTAMP = Get-Date -Format "yyyyMMdd_HHmmss"
-          $FILENAME = "LimbusLocalize_BIE_$TIMESTAMP.7z"
           $TAG_NAME = "release_$TIMESTAMP"
-          echo "filename=$FILENAME" >> $env:GITHUB_OUTPUT
+          echo "filename=$TIMESTAMP" >> $env:GITHUB_OUTPUT
           echo "tag_name=$TAG_NAME" >> $env:GITHUB_OUTPUT
 
       # 运行编译脚本
@@ -71,6 +70,6 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            Release/${{ steps.timestamp.outputs.filename }}
+            Release/LimbusLocalize_BIE_${{ steps.timestamp.outputs.filename }}.7z
           body_path: CHANGELOG.md
           tag_name: ${{ steps.timestamp.outputs.tag_name }}  # 使用时间戳作为标签名称

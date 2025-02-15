@@ -57,7 +57,81 @@ newtext = """private static void BossBattleStartInit(ActBossBattleStartUI __inst
             LLCMod.LogWarning((Time.deltaTime+ Time.timeSinceLevelLoad + DateTime.Today.Day + DateTime.Now.Minute).ToString());
             return list.Count == 0 ? default : list[UnityEngine.Random.Range(0, list.Count)];
             }
-        }"""
+        }
+        [HarmonyPatch(typeof(FMODUnity.RuntimeManager),
+    nameof(FMODUnity.RuntimeManager.PlayOneShot),
+    new[] { typeof(FMOD.GUID), typeof(Vector3) })]
+    [HarmonyPrefix]
+    static bool PlayOneShotPrefix(FMOD.GUID guid, Vector3 position)
+    {
+            LLCMod.LogInfo($"PlayOneShotPrefix guid");
+
+        // RuntimeManager.PlayOneShot
+        if (guid.IsNull) return true; // 继续执行原方法
+
+        // 获取事件路径
+        string eventPath;
+        FMOD.Studio.EventDescription eventDescription;
+        RuntimeManager.StudioSystem.getEventByID(guid, out eventDescription);
+        eventDescription.getPath(out eventPath);
+
+        // 检测目标路径
+        if (eventPath == "event:/BGM/TitleBgm")
+        {
+            // 替换为本地 MP3 文件
+            PlayLocalMP3(position);
+            return false; // 阻止原方法执行
+        }
+        LLCMod.LogInfo($"[FMOD] 播放: {eventPath}");
+        return true; // 继续执行原方法
+
+    }
+    static void PlayLocalMP3( Vector3 position)
+    {
+        string filePath = Path.Combine(LLCMod.ModPath,"/Localize/TitleBgm.mp3");
+
+        try
+        {
+            FMOD.Sound sound;
+            FMOD.Channel channel;
+
+            // 创建声音并播放
+            FMODUnity.RuntimeManager.CoreSystem.createSound(filePath, FMOD.MODE.LOOP_NORMAL, out sound);
+            FMODUnity.RuntimeManager.CoreSystem.playSound(sound, default, false, out channel);
+
+            // 设置 3D 位置（如果需要）
+            FMOD.VECTOR pos = new FMOD.VECTOR
+            {
+                x = position.x,
+                y = position.y,
+                z = position.z
+            };
+            FMOD.VECTOR vel = new FMOD.VECTOR { x = 0, y = 0, z = 0 }; // 速度设置为 0
+            channel.set3DAttributes(ref pos, ref vel);
+
+
+            LLCMod.LogInfo($"[FMOD] 已替换为本地文件: {filePath}");
+        }
+        catch (Exception e)
+        {
+            LLCMod.LogError($"播放本地文件失败: {e.Message}");
+        }
+    }
+    [HarmonyPatch(typeof(FMODUnity.RuntimeManager), nameof(FMODUnity.RuntimeManager.CreateInstance), new[] { typeof(string) })]
+    [HarmonyPrefix]
+    static bool CreateInstancePrefix(string path, ref FMOD.Studio.EventInstance __result)
+    {
+        if (path == "event:/BGM/TitleBgm")
+        {
+            PlayLocalMP3(Vector3.zero);
+            __result = default; // 返回空实例
+            return false; // 阻止原方法执行
+        }
+
+        // 其他事件正常记录
+        LLCMod.LogInfo($"[FMOD] CreateInstance: {path}");
+        return true;
+    }"""
 oldusingtext = """using System;
 using BattleUI.Dialog;
 using BattleUI.Typo;
@@ -88,6 +162,7 @@ using Object = UnityEngine.Object;
 using System.IO;
 using System.Collections.Generic;
 using Il2CppSystem.Collections.Generic;
+using HarmonyLib;
 """
 oldInittext= """if (!_chineseSetting)
         {
@@ -139,6 +214,22 @@ newInittext="""if (!_chineseSetting)
                 GlobalGameManager.Instance.StartTutorialManager.ProgressTutorial();
             });
         }"""
+csprojnew = """        <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile"/>
+        <PackageReference Include="Il2CppInterop.Runtime" Version="1.0.0"/>
+        <Reference Include="Assembly-CSharp">
+            <HintPath>..\lib\Assembly-CSharp.dll</HintPath>
+        </Reference>"""
+csprojnew = """        <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile" />
+        <PackageReference Include="Il2CppInterop.Runtime" Version="1.0.0" />
+        <Reference Include="Assembly-CSharp">
+            <HintPath>..\lib\Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="FMODUnity">
+          <HintPath>..\lib\FMODUnity.dll</HintPath>
+        </Reference>
+        <Reference Include="FMODUnityResonance">
+          <HintPath>..\lib\FMODUnityResonance.dll</HintPath>
+        </Reference>"""
 texts = []
 text = ''
 filePath = "./Plugin/LLC/ChineseSetting.cs"
@@ -158,8 +249,13 @@ os.system("""git add ./Localize""")
 os.system("""git add .""")
 os.system(""" git commit -m "更新 Localize 子模块到最新版本" """)
 
+os.system("""copy .\\TitleBgm.mp3 .\\Localize\\TitleBgm.mp3""")
 
-with open(filePath,"r+",encoding='utf-8') as file:
+buildfilePath = "./build.ps1"
+mainfilePath = "./Plugin/LLC/ChineseSetting.cs"
+csfilePath = "./Plugin/LimbusLocalize.csproj"
+
+with open(mainfilePath,"r+",encoding='utf-8') as file:
     texts = file.readlines()
     text = ''
     for n in texts:
@@ -167,16 +263,28 @@ with open(filePath,"r+",encoding='utf-8') as file:
     text = text.replace(oldtext,newtext)
     text = text.replace(oldusingtext,newusingtext)
     text = text.replace(oldInittext,newInittext)
-with open(filePath,"w",encoding='utf-8') as file:
+with open(mainfilePath,"w",encoding='utf-8') as file:
     file.write(text)
 
-with open(filePath2,"r+",encoding='utf-8') as file:
+with open(csfilePath,"r+",encoding='utf-8') as file:
+    texts = file.readlines()
+    text = ''
+    for n in texts:
+        text += n
+    text = text.replace(oldtext,newtext)
+    text = text.replace(oldusingtext,newusingtext)
+    text = text.replace(oldInittext,newInittext)
+with open(csfilePath,"w",encoding='utf-8') as file:
+    file.write(text)
+
+
+with open(buildfilePath,"r+",encoding='utf-8') as file:
     texts = file.readlines()
     text = ''
     for n in texts:
         text += n
     text = text.replace("7z a","..\\Patcher\\7z.exe a")
-with open(filePath2,"w",encoding='utf-8') as file:
+with open(buildfilePath,"w",encoding='utf-8') as file:
     file.write(text)
 # -*- coding: UTF-8 -*-
 import json
