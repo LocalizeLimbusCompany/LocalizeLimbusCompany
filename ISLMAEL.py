@@ -378,6 +378,15 @@ filePath2 = "./build.ps1"
 os.system("git remote add upstream https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany.git")
 os.system("git fetch upstream")
 os.system("git checkout main")
+os.system("git checkout --ours .github/workflows/release.yml")
+os.system("git checkout --ours ISLMAEL.py")
+
+os.system("git add .github/workflows/release.yml")
+os.system("git add Plugin/ChineseFont.cs") 
+os.system("git add Plugin/LLC/ChineseSetting.cs")
+os.system("git add Plugin/LimbusLocalize.csproj")
+os.system("git add build.ps1")
+
 os.system("git merge upstream/main --allow-unrelated-histories")
 os.system("git checkout upstream/main .")
 os.system("git add .")
