@@ -203,7 +203,7 @@ new[] { typeof(FMOD.GUID), typeof(Vector3) })]
                 lyricText.alignment = TextAlignmentOptions.Center;
                 if (lyrics == null)
                 {
-                    ChineseSetting.json = File.ReadAllText(Path.Combine(LLCMod.ModPath, "Localize/lyrics.json"), System.Text.Encoding.UTF8);         
+                    json = File.ReadAllText(Path.Combine(LLCMod.ModPath, "Localize/lyrics.json"), System.Text.Encoding.UTF8);         
                     lyrics = System.Text.Json.JsonSerializer.Deserialize<List<LyricLine>>(json);
                 }
                 StartSinging();
@@ -298,6 +298,7 @@ namespace LimbusLocalize.LLC;
 public static class ChineseSetting
 {
     static FMOD.Channel channel = new FMOD.Channel();
+    public static string  json = "";
 """
 oldInittext= R"""if (!_chineseSetting)
         {
