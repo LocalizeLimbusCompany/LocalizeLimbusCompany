@@ -97,26 +97,7 @@ public static class ChineseFont
         if (!fontInformation?.fontAsset || !__instance._text)
             return false;
         var rawFontAsset = fontInformation.fontAsset;
-        var useCn = GetChineseFont(rawFontAsset.name, out var cnFontAsset);
-        // TMP_FontAsset fontAsset;
-        // Material fontMaterial;
-        // if (useCn)
-        // {
-            
-        //     if (__instance._text.overflowMode == TextOverflowModes.Ellipsis)
-        //     {
-        //         __instance._text.overflowMode = TextOverflowModes.Overflow;
-        //     }
-
-
-        // }
-        // else
-        // {
-        //     fontAsset = rawFontAsset;
-        //     fontMaterial = fontInformation.fontMaterial ?? rawFontAsset.material;
-        // }
-        // LLCMod.LogInfo(__instance._matSetter.ToString());
-        // LLCMod.LogInfo(__instance._matSetter.defaultMat.name);
+        GetChineseFont(rawFontAsset.name, out var cnFontAsset);
         __instance._text.font = cnFontAsset;
         __instance._text.fontMaterial = cnFontAsset.material;
         if (__instance._matSetter)
