@@ -255,6 +255,8 @@ new[] { typeof(FMOD.GUID), typeof(Vector3) })]
     public static void StopSinging()
     {
         inLoginScene = false;
+        channel.stop();
+        lyricText.text = "";
     }"""
 oldusingtext = """using System;
 using BattleUI.Dialog;
