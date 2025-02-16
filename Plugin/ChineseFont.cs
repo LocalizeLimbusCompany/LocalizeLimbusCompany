@@ -89,10 +89,22 @@ public static class ChineseFont
 
     [HarmonyPatch(typeof(TextMeshProLanguageSetter), nameof(TextMeshProLanguageSetter.UpdateTMP))]
     [HarmonyPrefix]
-    private static void UpdateTMP(TextMeshProLanguageSetter __instance)
+    private static bool UpdateTMP(TextMeshProLanguageSetter __instance)
     {
-        if (__instance._text.overflowMode == TextOverflowModes.Ellipsis)
-            __instance._text.overflowMode = TextOverflowModes.Overflow;
+        FontInformation fontInformation = __instance._fontInformation.Count > 0 ? __instance._fontInformation[0] : null;
+        if (!fontInformation?.fontAsset || !__instance._text)
+            return false;
+        var rawFontAsset = fontInformation.fontAsset;
+        GetChineseFont(rawFontAsset.name, out var cnFontAsset);
+        __instance._text.font = cnFontAsset;
+        __instance._text.fontMaterial = cnFontAsset.material;
+        if (__instance._matSetter)
+        {
+            __instance._matSetter.defaultMat = cnFontAsset.material;
+            __instance._matSetter.ResetMaterial();
+        }
+
+        return false;
     }
 
     [HarmonyPatch(typeof(TextMeshProLanguageSetter), nameof(TextMeshProLanguageSetter.Awake))]
