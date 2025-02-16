@@ -349,21 +349,21 @@ newInittext=R"""if (!_chineseSetting)
                 GlobalGameManager.Instance.StartTutorialManager.ProgressTutorial();
             });
         }"""
-csprojnew = R"""        <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile"/>
+csprojnew = """        <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile"/>
         <PackageReference Include="Il2CppInterop.Runtime" Version="1.0.0"/>
         <Reference Include="Assembly-CSharp">
-            <HintPath>..\lib\Assembly-CSharp.dll</HintPath>
+            <HintPath>..\\lib\Assembly-CSharp.dll</HintPath>
         </Reference>"""
-csprojnew = R"""        <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile" />
+csprojnew = """        <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile" />
         <PackageReference Include="Il2CppInterop.Runtime" Version="1.0.0" />
         <Reference Include="Assembly-CSharp">
-            <HintPath>..\lib\Assembly-CSharp.dll</HintPath>
+            <HintPath>..\\lib\\Assembly-CSharp.dll</HintPath>
         </Reference>
         <Reference Include="FMODUnity">
-          <HintPath>..\lib\FMODUnity.dll</HintPath>
+          <HintPath>..\\lib\\FMODUnity.dll</HintPath>
         </Reference>
         <Reference Include="FMODUnityResonance">
-          <HintPath>..\lib\FMODUnityResonance.dll</HintPath>
+          <HintPath>.\\lib\\FMODUnityResonance.dll</HintPath>
         </Reference>"""
 texts = []
 text = ''
@@ -386,6 +386,10 @@ os.system(""" git commit -m "更新 Localize 子模块到最新版本" """)
 
 os.system("""copy .\\TitleBgm.mp3 .\\Localize\\TitleBgm.mp3""")
 os.system("""copy .\\lyrics.json .\\Localize\\lyrics.json""")
+
+os.system("""copy .\\FMODUnity.dll .\\lib""")
+os.system("""copy .\\FMODUnityResonance.dll .\\lib""")
+
 
 buildfilePath = "./build.ps1"
 mainfilePath = "./Plugin/LLC/ChineseSetting.cs"
