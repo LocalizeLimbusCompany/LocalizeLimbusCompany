@@ -5,7 +5,7 @@ import sys
 import time
 
 
-oldtext = """    [HarmonyPatch(typeof(ActBossBattleStartUI), nameof(ActBossBattleStartUI.Init))]
+oldtext = """   [HarmonyPatch(typeof(ActBossBattleStartUI), nameof(ActBossBattleStartUI.Init))]
     [HarmonyPostfix]
     private static void BossBattleStartInit(ActBossBattleStartUI __instance)
     {
@@ -454,6 +454,7 @@ if ($version)
 Copy-Item -Path Localize/Readme $BIE_LLC_Path/Localize -Force -Recurse
 Copy-Item -Path .\\TitleBgm.mp3 $BIE_LLC_Path/Localize -Force -Recurse
 Copy-Item -Path .\\lyrics.json $BIE_LLC_Path/Localize -Force -Recurse
+Remove-Item .\Release\BepInEx -Recurse -Include *.*
 if ($version)
 	{
 	 Set-Location "$Path"
