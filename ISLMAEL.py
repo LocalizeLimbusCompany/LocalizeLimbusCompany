@@ -349,7 +349,7 @@ newInittext=R"""if (!_chineseSetting)
                 GlobalGameManager.Instance.StartTutorialManager.ProgressTutorial();
             });
         }"""
-csprojnew = """        <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile"/>
+csprojold = """        <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile"/>
         <PackageReference Include="Il2CppInterop.Runtime" Version="1.0.0"/>
         <Reference Include="Assembly-CSharp">
             <HintPath>..\\lib\Assembly-CSharp.dll</HintPath>
@@ -411,9 +411,7 @@ with open(csfilePath,"r+",encoding='utf-8') as file:
     text = ''
     for n in texts:
         text += n
-    text = text.replace(oldtext,newtext)
-    text = text.replace(oldusingtext,newusingtext)
-    text = text.replace(oldInittext,newInittext)
+    text = text.replace(csprojold,csprojnew)
 with open(csfilePath,"w",encoding='utf-8') as file:
     file.write(text)
 
