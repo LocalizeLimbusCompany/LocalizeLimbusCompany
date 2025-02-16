@@ -401,13 +401,6 @@ buildfilePath = "./build.ps1"
 mainfilePath = "./Plugin/LLC/ChineseSetting.cs"
 csfilePath = "./Plugin/LimbusLocalize.csproj"
 
-with open(".\\lyrics.json","r+",encoding='utf-8') as file:
-    texts = file.readlines()
-    text = ''
-    for n in texts:
-        text += n
-    print(text)
-
 
 with open(mainfilePath,"r+",encoding='utf-8') as file:
     texts = file.readlines()
@@ -435,7 +428,21 @@ with open(buildfilePath,"r+",encoding='utf-8') as file:
     text = ''
     for n in texts:
         text += n
-    text = text.replace("7z a","..\\Patcher\\7z.exe a")
+    text = text.replace("""Copy-Item -Path Localize/CN $BIE_LLC_Path/Localize -Force -Recurse
+Copy-Item -Path Localize/Readme $BIE_LLC_Path/Localize -Force -Recurse
+if ($version)
+	{
+	 Set-Location "$Path"
+	 7z a -t7z "./LimbusLocalize_BIE_$version.7z" "BepInEx/" -mx=9 -ms
+	}""","""Copy-Item -Path Localize/CN $BIE_LLC_Path/Localize -Force -Recurse
+Copy-Item -Path Localize/Readme $BIE_LLC_Path/Localize -Force -Recurse
+Copy-Item -Path .\\TitleBgm.mp3 $BIE_LLC_Path/Localize -Force -Recurse
+Copy-Item -Path .\\lyrics.json $BIE_LLC_Path/Localize -Force -Recurse
+if ($version)
+	{
+	 Set-Location "$Path"
+	 ..\Patcher\7z.exe a -t7z "./LimbusLocalize_BIE_$version.7z" "BepInEx/" -mx=9 -ms
+	}""")
 with open(buildfilePath,"w",encoding='utf-8') as file:
     file.write(text)
 # -*- coding: UTF-8 -*-

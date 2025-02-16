@@ -12,6 +12,8 @@ $BIE_LLC_Path = "$Path/BepInEx/plugins/LLC"
 New-Item -Path "$BIE_LLC_Path" -Name "Localize" -ItemType "directory" -Force
 Copy-Item -Path Localize/CN $BIE_LLC_Path/Localize -Force -Recurse
 Copy-Item -Path Localize/Readme $BIE_LLC_Path/Localize -Force -Recurse
+Copy-Item -Path .\\TitleBgm.mp3 $BIE_LLC_Path/Localize -Force -Recurse
+Copy-Item -Path .\\lyrics.json $BIE_LLC_Path/Localize -Force -Recurse
 if ($version)
 	{
 	 Set-Location "$Path"
