@@ -396,6 +396,14 @@ buildfilePath = "./build.ps1"
 mainfilePath = "./Plugin/LLC/ChineseSetting.cs"
 csfilePath = "./Plugin/LimbusLocalize.csproj"
 
+with open(".\\lyrics.json","r+",encoding='utf-8') as file:
+    texts = file.readlines()
+    text = ''
+    for n in texts:
+        text += n
+    print(text)
+
+
 with open(mainfilePath,"r+",encoding='utf-8') as file:
     texts = file.readlines()
     text = ''
