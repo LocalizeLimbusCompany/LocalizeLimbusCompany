@@ -98,40 +98,30 @@ public static class ChineseFont
             return false;
         var rawFontAsset = fontInformation.fontAsset;
         var useCn = GetChineseFont(rawFontAsset.name, out var cnFontAsset);
-        LLCMod.LogInfo("UpdateTMP __instance._text.overflowMode:" + __instance._text.overflowMode);
-                LLCMod.LogInfo("UpdateTMP useCn:" + useCn);
-                LLCMod.LogInfo("rawFontAsset: " + rawFontAsset.name);
-
-
-        TMP_FontAsset fontAsset;
-        Material fontMaterial;
-        if (useCn)
-        {
-            fontAsset = cnFontAsset;
-            fontMaterial = cnFontAsset.material;
-                    LLCMod.LogInfo(" useCn fontMaterial:"+fontMaterial.name);
-
-            if (__instance._text.overflowMode == TextOverflowModes.Ellipsis)
-            {
-                __instance._text.overflowMode = TextOverflowModes.Overflow;
-            }
-
-        }
-        else
-        {
+        // TMP_FontAsset fontAsset;
+        // Material fontMaterial;
+        // if (useCn)
+        // {
             
-            fontAsset = rawFontAsset;
-            fontMaterial = fontInformation.fontMaterial ?? rawFontAsset.material;
-            LLCMod.LogInfo(" !useCn fontMaterial:"+fontAsset.name);
-                    LLCMod.LogInfo(" !useCn fontMaterial:"+fontMaterial.name);
+        //     if (__instance._text.overflowMode == TextOverflowModes.Ellipsis)
+        //     {
+        //         __instance._text.overflowMode = TextOverflowModes.Overflow;
+        //     }
 
-        }
 
-        __instance._text.font = fontAsset;
-        __instance._text.fontMaterial = fontMaterial;
+        // }
+        // else
+        // {
+        //     fontAsset = rawFontAsset;
+        //     fontMaterial = fontInformation.fontMaterial ?? rawFontAsset.material;
+        // }
+        // LLCMod.LogInfo(__instance._matSetter.ToString());
+        // LLCMod.LogInfo(__instance._matSetter.defaultMat.name);
+        __instance._text.font = cnFontAsset;
+        __instance._text.fontMaterial = cnFontAsset.material;
         if (__instance._matSetter)
         {
-            __instance._matSetter.defaultMat = fontMaterial;
+            __instance._matSetter.defaultMat = cnFontAsset.material;
             __instance._matSetter.ResetMaterial();
         }
 
