@@ -210,7 +210,7 @@ new[] { typeof(FMOD.GUID), typeof(Vector3) })]
                 }
                 StartSinging();
             }
-            elseif (scene.name != "LogoScene")
+            else if (scene.name != "LogoScene")
             {
                 StopSinging();
             }
