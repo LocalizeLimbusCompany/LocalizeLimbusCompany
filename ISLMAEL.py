@@ -357,7 +357,7 @@ newInittext=R"""if (!_chineseSetting)
 csprojold = """        <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile"/>
         <PackageReference Include="Il2CppInterop.Runtime" Version="1.0.0"/>
         <Reference Include="Assembly-CSharp">
-            <HintPath>..\\lib\Assembly-CSharp.dll</HintPath>
+            <HintPath>..\\lib\\Assembly-CSharp.dll</HintPath>
         </Reference>"""
 csprojnew = """        <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile" />
         <PackageReference Include="Il2CppInterop.Runtime" Version="1.0.0" />
@@ -394,7 +394,7 @@ os.system("git commit -m 'Sync with upstream repository'")
 import shutil
 shutil.rmtree("./Localize")
 os.system("git clone https://github.com/LocalizeLimbusCompany/LLC_Release ./Localize")
-os.system('copy Boss* .\Localize\Readme') 
+os.system('copy Boss* .\\Localize\\Readme') 
 os.system("""git add ./Localize""")
 os.system("""git add .""")
 os.system(""" git commit -m "更新 Localize 子模块到最新版本" """)
