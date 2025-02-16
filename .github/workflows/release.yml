@@ -1,49 +1,73 @@
-name: 释放
+name: Sync and Build
+
 on:
   workflow_dispatch:
     inputs:
       version:
-        description: '版本号'   
+        description: '无版本号'
+
 jobs:
   release:
     runs-on: windows-latest
+
     steps:
+      # 检出代码
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-           repository: 'LocalizeLimbusCompany/LLC_Release'
-           path: Localize
-           token: ${{ secrets.ROOT }}
+
+      # 缓存 NuGet 包
       - name: Cache NuGet packages
         uses: actions/cache@v4
         with:
           path: ~/.nuget/packages
-          key: ${{ runner.os }}-nuget-
+          key: ${{ runner.os }}-nuget-${{ hashFiles('src/*.csproj') }}
           restore-keys: |
             ${{ runner.os }}-nuget-
-      - name: Extract version from CHANGELOG.md
-        id: extract_version
+
+      # 设置 Git 用户身份
+      - name: Set Git user identity
         run: |
-          $version = "${{ github.event.inputs.version }}"
-          if (!$version) {
-            $version = Get-Content -Path CHANGELOG.md | Select-Object -First 1 | ForEach-Object { $_ -replace '# ', '' }
-          }
-          echo "release_tag=$version" >> $env:GITHUB_OUTPUT
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+
+      # 设置 Python 环境
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      # 运行 Python 脚本修改文件
+      - name: Run Python script to build
+        id: build
+        run: |
+          python ISLMAEL.py
+  
+      - name: Generate timestamp-based filename and tag
+        id: timestamp
+        run: |
+          $TIMESTAMP = Get-Date -Format "yyyyMMdd_HHmmss"
+          $TAG_NAME = "release_$TIMESTAMP"
+          echo "filename=$TIMESTAMP" >> $env:GITHUB_OUTPUT
+          echo "tag_name=$TAG_NAME" >> $env:GITHUB_OUTPUT
+
+      # 运行编译脚本
       - name: Run build script
         run: |
-          ./build.ps1 ${{ steps.extract_version.outputs.release_tag }}
+          ./build.ps1 ${{ steps.timestamp.outputs.filename }}
+
+      # 更新 CHANGELOG.md
+      - name: Update CHANGELOG.md
+        run: |
           Add-Content -Path CHANGELOG.md -Value "
           # 下载
-          - LimbusLocalize_BIE_${{ steps.extract_version.outputs.release_tag }}.7z 全量包"
-      - name: Create Upload Release   
+          - ${{ steps.timestamp.outputs.filename }} 全量包"
+
+      # 创建 GitHub Release
+      - name: Create Upload Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            Release/*.7z
+            Release/LimbusLocalize_BIE_${{ steps.timestamp.outputs.filename }}.7z
           body_path: CHANGELOG.md
-          tag_name: ${{ steps.extract_version.outputs.release_tag }}
-      - name: Post
-        run: |
-          Invoke-RestMethod -Uri "https://api.zeroasso.top/v2/mirror/refresh_mirror" -Method Post -Headers @{"X-Admin-Secret" = "${{ secrets.API_PWD }}"}
+          tag_name: ${{ steps.timestamp.outputs.tag_name }}  # 使用时间戳作为标签名称
