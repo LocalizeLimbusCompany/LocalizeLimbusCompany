@@ -1,5 +1,7 @@
 # -*- coding: UTF-8 -*-
+import io
 import os
+import sys
 import time
 
 
@@ -391,6 +393,9 @@ os.system("""copy .\\lyrics.json .\\Localize\\lyrics.json""")
 os.system("""copy .\\FMODUnity.dll .\\lib""")
 os.system("""copy .\\FMODUnityResonance.dll .\\lib""")
 
+os.system("""chcp 65001""")
+
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 buildfilePath = "./build.ps1"
 mainfilePath = "./Plugin/LLC/ChineseSetting.cs"
