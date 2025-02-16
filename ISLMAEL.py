@@ -5,7 +5,9 @@ import sys
 import time
 
 
-oldtext = """private static void BossBattleStartInit(ActBossBattleStartUI __instance)
+oldtext = """    [HarmonyPatch(typeof(ActBossBattleStartUI), nameof(ActBossBattleStartUI.Init))]
+    [HarmonyPostfix]
+    private static void BossBattleStartInit(ActBossBattleStartUI __instance)
     {
         if (!IsUseChinese.Value)
             return;
@@ -19,7 +21,9 @@ oldtext = """private static void BossBattleStartInit(ActBossBattleStartUI __inst
         tmp.font = ChineseFont.Tmpchinesefonts[0];
         tmp.text = "凡跨入此门之人，当放弃一切希望";
     }"""
-newtext = R"""private static void BossBattleStartInit(ActBossBattleStartUI __instance)
+newtext = R"""    [HarmonyPatch(typeof(ActBossBattleStartUI), nameof(ActBossBattleStartUI.Init))]
+    [HarmonyPostfix]
+    private static void BossBattleStartInit(ActBossBattleStartUI __instance)
     {
         if (!IsUseChinese.Value)
             return;
