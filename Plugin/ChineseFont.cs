@@ -30,7 +30,6 @@ public static class ChineseFont
 
     public static bool AddChineseFont(string path)
     {
-        LLCMod.LogInfo("AddChineseFont: " + path);
         if (!File.Exists(path)) return false;
 
         var assetBundle = AssetBundle.LoadFromFile(path);
@@ -41,7 +40,6 @@ public static class ChineseFont
 
         foreach (var asset in allAssets)
         {
-
             var fontAsset = asset.TryCast<TMP_FontAsset>();
             if (!fontAsset) continue;
 
@@ -114,7 +112,6 @@ public static class ChineseFont
 
     public static void LoadLocal()
     {
-        LLCMod.LogInfo("LoadLocal");
         var tm = Singleton<TextDataSet>.Instance;
         var localizeFileList =
             JsonUtility.FromJson<TextDataSet.LocalizeFileList>(Resources
@@ -127,8 +124,6 @@ public static class ChineseFont
 
     public static void LoadRemote2()
     {
-        LLCMod.LogInfo("LoadRemote2");
-
         var tm = Singleton<TextDataSet>.Instance;
         var romoteLocalizeFileList = JsonUtility.FromJson<TextDataSet.RomoteLocalizeFileList>(AddressableManager
             .Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Localize", "RemoteLocalizeFileList").Item1
