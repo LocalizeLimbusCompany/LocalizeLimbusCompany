@@ -17,7 +17,7 @@ oldtext = """private static void BossBattleStartInit(ActBossBattleStartUI __inst
         tmp.font = ChineseFont.Tmpchinesefonts[0];
         tmp.text = "凡跨入此门之人，当放弃一切希望";
     }"""
-newtext = """private static void BossBattleStartInit(ActBossBattleStartUI __instance)
+newtext = R"""private static void BossBattleStartInit(ActBossBattleStartUI __instance)
     {
         if (!IsUseChinese.Value)
             return;
@@ -27,44 +27,69 @@ newtext = """private static void BossBattleStartInit(ActBossBattleStartUI __inst
         _loadingTextsTitles = [.. File.ReadAllLines(LLCMod.ModPath + "/Localize/Readme/BossBattleStartInitTextsTitles.md")];
         var textGroup = __instance.transform.GetChild(2).GetChild(1);
         var tmp = textGroup.GetChild(1).GetComponentInChildren<TextMeshProUGUI>();
-        if (_loadingTexts.Count == 0|| _loadingTextsTitles.Count == 0){
+        if (_loadingTexts.Count == 0 || _loadingTextsTitles.Count == 0)
+        {
             LLCMod.LogWarning("nothing in BossBattleStartInitTextsTitles.md or BossBattleStartInitTextsTitles.md,using default.");
             return;
         }
         if (!tmp.text.Equals("Proelium Fatale"))
             return;
         {
-            int i = UnityEngine.Random.RandomRangeInt(0,_loadingTexts.Count);
+            int i = UnityEngine.Random.RandomRangeInt(0, _loadingTexts.Count);
             tmp.font = ChineseFont.Tmpchinesefonts[0];
-            if(i>_loadingTextsTitles.Count-1){
-                tmp.text = "<b>"+SelectOne(_loadingTextsTitles)+"</b>";
-            } else{
-                tmp.text = "<b>"+SelectOne(_loadingTextsTitles,i)+"</b>";
+            if (i > _loadingTextsTitles.Count - 1)
+            {
+                tmp.text = "<b>" + SelectOne(_loadingTextsTitles) + "</b>";
+            }
+            else
+            {
+                tmp.text = "<b>" + SelectOne(_loadingTextsTitles, i) + "</b>";
             }
             tmp = textGroup.GetChild(2).GetComponentInChildren<TextMeshProUGUI>();
             tmp.font = ChineseFont.Tmpchinesefonts[0];
-            if(i>_loadingTexts.Count-1){
-                tmp.text = "<b>"+SelectOne(_loadingTexts)+"</b>";
-            } else{
-                tmp.text = "<b>"+SelectOne(_loadingTexts,i)+"</b>";
+            if (i > _loadingTexts.Count - 1)
+            {
+                tmp.text = "<b>" + SelectOne(_loadingTexts) + "</b>";
+            }
+            else
+            {
+                tmp.text = "<b>" + SelectOne(_loadingTexts, i) + "</b>";
             }
         }
     }
-    public static T SelectOne<T>(System.Collections.Generic.List<T> list,int i = -1){
-        if (i != -1) return list[i]; else {
-            UnityEngine.Random.seed = (int)(Time.deltaTime+ Time.timeSinceLevelLoad + DateTime.Today.Day + DateTime.Now.Minute);
-            UnityEngine.Random.InitState((int)(Time.deltaTime+ Time.timeSinceLevelLoad + DateTime.Today.Day + DateTime.Now.Minute));
-            LLCMod.LogWarning((Time.deltaTime+ Time.timeSinceLevelLoad + DateTime.Today.Day + DateTime.Now.Minute).ToString());
+    public static T SelectOne<T>(System.Collections.Generic.List<T> list, int i = -1)
+    {
+        if (i != -1) return list[i];
+        else
+        {
+            UnityEngine.Random.seed = (int)(Time.deltaTime + Time.timeSinceLevelLoad + DateTime.Today.Day + DateTime.Now.Minute);
+            UnityEngine.Random.InitState((int)(Time.deltaTime + Time.timeSinceLevelLoad + DateTime.Today.Day + DateTime.Now.Minute));
+            LLCMod.LogWarning((Time.deltaTime + Time.timeSinceLevelLoad + DateTime.Today.Day + DateTime.Now.Minute).ToString());
             return list.Count == 0 ? default : list[UnityEngine.Random.Range(0, list.Count)];
-            }
         }
-        [HarmonyPatch(typeof(FMODUnity.RuntimeManager),
-    nameof(FMODUnity.RuntimeManager.PlayOneShot),
-    new[] { typeof(FMOD.GUID), typeof(Vector3) })]
+    }
+    public class LyricLine
+    {
+        [JsonPropertyName("from")]
+        public double from { get; set; }
+
+        [JsonPropertyName("to")]
+        public double to { get; set; }
+
+        [JsonPropertyName("content")]
+        public string content { get; set; }
+    }//anti replace 
+
+    private static TextMeshProUGUI lyricText;
+    private static List<LyricLine>  lyrics;
+    private static bool inLoginScene = false;
+    [HarmonyPatch(typeof(FMODUnity.RuntimeManager),
+nameof(FMODUnity.RuntimeManager.PlayOneShot),
+new[] { typeof(FMOD.GUID), typeof(Vector3) })]
     [HarmonyPrefix]
     static bool PlayOneShotPrefix(FMOD.GUID guid, Vector3 position)
     {
-            LLCMod.LogInfo($"PlayOneShotPrefix guid");
+        LLCMod.LogInfo($"PlayOneShotPrefix guid");
 
         // RuntimeManager.PlayOneShot
         if (guid.IsNull) return true; // 继续执行原方法
@@ -72,7 +97,7 @@ newtext = """private static void BossBattleStartInit(ActBossBattleStartUI __inst
         // 获取事件路径
         string eventPath;
         FMOD.Studio.EventDescription eventDescription;
-        RuntimeManager.StudioSystem.getEventByID(guid, out eventDescription);
+        FMODUnity.RuntimeManager.StudioSystem.getEventByID(guid, out eventDescription);
         eventDescription.getPath(out eventPath);
 
         // 检测目标路径
@@ -86,19 +111,23 @@ newtext = """private static void BossBattleStartInit(ActBossBattleStartUI __inst
         return true; // 继续执行原方法
 
     }
-    static void PlayLocalMP3( Vector3 position)
+    static void PlayLocalMP3(Vector3 position)
     {
-        string filePath = Path.Combine(LLCMod.ModPath,"/Localize/TitleBgm.mp3");
+        string filePath = Path.Combine(LLCMod.ModPath, "Localize/TitleBgm.mp3");
 
         try
         {
             FMOD.Sound sound;
-            FMOD.Channel channel;
+            // FMOD.Channel channel;
 
             // 创建声音并播放
-            FMODUnity.RuntimeManager.CoreSystem.createSound(filePath, FMOD.MODE.LOOP_NORMAL, out sound);
+            FMOD.RESULT rs = FMODUnity.RuntimeManager.CoreSystem.createSound(filePath, FMOD.MODE.LOOP_NORMAL, out sound);
+            if (rs != FMOD.RESULT.OK)
+            {
+                LLCMod.LogError($"创建声音失败: {rs}");
+                return;
+            }
             FMODUnity.RuntimeManager.CoreSystem.playSound(sound, default, false, out channel);
-
             // 设置 3D 位置（如果需要）
             FMOD.VECTOR pos = new FMOD.VECTOR
             {
@@ -110,7 +139,7 @@ newtext = """private static void BossBattleStartInit(ActBossBattleStartUI __inst
             channel.set3DAttributes(ref pos, ref vel);
 
 
-            LLCMod.LogInfo($"[FMOD] 已替换为本地文件: {filePath}");
+            LLCMod.LogInfo($"[FMOD] enjoy it {filePath} !");
         }
         catch (Exception e)
         {
@@ -131,6 +160,99 @@ newtext = """private static void BossBattleStartInit(ActBossBattleStartUI __inst
         // 其他事件正常记录
         LLCMod.LogInfo($"[FMOD] CreateInstance: {path}");
         return true;
+    }
+    [HarmonyPatch(typeof(SceneManager), "Internal_SceneLoaded")]
+    [HarmonyPostfix]
+    public static void Postfix(Scene scene, LoadSceneMode mode)
+    {
+        try
+        {
+            if (scene.name == "LoginScene")
+            {
+                Canvas canvas = GameObject.FindObjectOfType<Canvas>();
+                if (canvas == null)
+                {
+                    GameObject canvasObject = new GameObject("Canvas");
+                    canvas = canvasObject.AddComponent<Canvas>();
+                    canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+                    canvasObject.AddComponent<CanvasScaler>();
+                    canvasObject.AddComponent<GraphicRaycaster>();
+                }
+
+                // 创建一个新的TextMeshProUGUI对象
+                GameObject textObject = new GameObject("LyricText");
+                lyricText = textObject.AddComponent<TextMeshProUGUI>();
+
+                // 设置父对象为Canvas
+                textObject.transform.SetParent(canvas.transform, false);
+
+                // 设置锚点和轴心点以确保文字始终居中
+                lyricText.rectTransform.anchorMin = new Vector2(0.5f, 0.9f);
+                lyricText.rectTransform.anchorMax = new Vector2(0.5f, 0.95f);
+                lyricText.rectTransform.pivot = new Vector2(0.5f, 0);
+                lyricText.rectTransform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+                // 设置文本的位置
+                lyricText.rectTransform.anchoredPosition = new Vector2(0, 10);
+                lyricText.rectTransform.sizeDelta = new Vector2(10000, 65.5f);  // 这里高度可以根据需要调整
+
+                lyricText.font = ChineseFont.Tmpchinesefonts[0];
+                lyricText.fontStyle = FontStyles.Italic;
+                lyricText.fontSize = 40f;
+
+                // 设置文本对齐方式
+                lyricText.alignment = TextAlignmentOptions.Center;
+                if (lyrics == null)
+                {
+                    ChineseSetting.json = File.ReadAllText(Path.Combine(LLCMod.ModPath, "Localize/lyrics.json"), System.Text.Encoding.UTF8);         
+                    lyrics = System.Text.Json.JsonSerializer.Deserialize<List<LyricLine>>(json);
+                }
+                StartSinging();
+            }
+            else
+            {
+                StopSinging();
+            }
+        }
+        catch (Exception ex)
+        {
+            LLCMod.LogError($"Error in BGMPostfix: {ex}");
+        }
+    }
+    public static void StartSinging()
+    {
+        string json = File.ReadAllText(LLCMod.ModPath + "\\Localize\\lyrics.json");
+        if (!inLoginScene)
+        {
+            inLoginScene = true;
+            new Thread((ThreadStart)UpdateLyrics).Start();
+        }
+    }
+    private static void UpdateLyrics()
+    {
+        while (inLoginScene)
+        {
+            uint timeMs;
+            channel.getPosition(out timeMs, FMOD.TIMEUNIT.MS);
+            double currentTime = (double)timeMs / 1000.0; // 转换为秒
+            if (lyrics == null) return;
+
+            foreach (var lyric in lyrics)
+            {
+                if (currentTime >= (double)lyric.from && currentTime < (double)lyric.to)
+                {
+                    // 使用RichText来支持颜色
+                    lyricText.text = $"{lyric.content}";
+                    break;
+                } else {
+                    lyricText.text = "";
+                }
+            }
+            Thread.Sleep(50); // 控制刷新率
+        }
+    }
+    public static void StopSinging()
+    {
+        inLoginScene = false;
     }"""
 oldusingtext = """using System;
 using BattleUI.Dialog;
@@ -144,7 +266,12 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Voice;
-using Object = UnityEngine.Object;"""
+using Object = UnityEngine.Object;
+
+namespace LimbusLocalize.LLC;
+
+public static class ChineseSetting
+{"""
 newusingtext = """using System;
 using BattleUI.Dialog;
 using BattleUI.Typo;
@@ -160,11 +287,19 @@ using Voice;
 using Object = UnityEngine.Object;
 //new add
 using System.IO;
+using UnityEngine.SceneManagement;
+using Il2CppSystem.Threading;
 using System.Collections.Generic;
-using Il2CppSystem.Collections.Generic;
-using HarmonyLib;
+using System.Text.Json.Serialization;
+//anti replace 
+
+namespace LimbusLocalize.LLC;
+
+public static class ChineseSetting
+{
+    static FMOD.Channel channel = new FMOD.Channel();
 """
-oldInittext= """if (!_chineseSetting)
+oldInittext= R"""if (!_chineseSetting)
         {
             Toggle original = __instance._languageToggles[0];
             var parent = original.transform.parent;
@@ -180,7 +315,7 @@ oldInittext= """if (!_chineseSetting)
                 __instance._languageToggles.RemoveAt(__instance._languageToggles.Count - 1);
             __instance._languageToggles.Add(languageToggle);
         }"""
-newInittext="""if (!_chineseSetting)
+newInittext=R"""if (!_chineseSetting)
         {
             Toggle original = __instance._languageToggles[0];
             var parent = original.transform.parent;
@@ -214,12 +349,12 @@ newInittext="""if (!_chineseSetting)
                 GlobalGameManager.Instance.StartTutorialManager.ProgressTutorial();
             });
         }"""
-csprojnew = """        <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile"/>
+csprojnew = R"""        <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile"/>
         <PackageReference Include="Il2CppInterop.Runtime" Version="1.0.0"/>
         <Reference Include="Assembly-CSharp">
             <HintPath>..\lib\Assembly-CSharp.dll</HintPath>
         </Reference>"""
-csprojnew = """        <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile" />
+csprojnew = R"""        <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile" />
         <PackageReference Include="Il2CppInterop.Runtime" Version="1.0.0" />
         <Reference Include="Assembly-CSharp">
             <HintPath>..\lib\Assembly-CSharp.dll</HintPath>
@@ -250,6 +385,7 @@ os.system("""git add .""")
 os.system(""" git commit -m "更新 Localize 子模块到最新版本" """)
 
 os.system("""copy .\\TitleBgm.mp3 .\\Localize\\TitleBgm.mp3""")
+os.system("""copy .\\lyrics.json .\\Localize\\lyrics.json""")
 
 buildfilePath = "./build.ps1"
 mainfilePath = "./Plugin/LLC/ChineseSetting.cs"
@@ -297,10 +433,10 @@ j = {
       "sprNameList": [],
       "title_KR": "伞神我们敬佩你啊!",
       "content_KR": "{\"list\":[{\"formatKey\":\"SubTitle\",\"formatValue\":\"伞神我们敬佩你啊\"},{\"formatKey\":\"HyperLink\",\"formatValue\":\"<link=Action_AprilFools_Ten-Heathcliff>点我</link>\"}]}"}
-with open("Localize\Readme\Readme.json", "r+", encoding="utf-8") as f:
+with open("Localize\\Readme\\Readme.json", "r+", encoding="utf-8") as f:
     data = json.load(f)
     data["noticeList"].append(j)
-with open("Localize\Readme\Readme.json", "w", encoding="utf-8") as f:
+with open("Localize\\Readme\\Readme.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
-os.system("""git pull origin main""")
-os.system("""git push origin main -f""")
+# os.system("""git pull origin main""")
+# os.system("""git push origin main -f""")
