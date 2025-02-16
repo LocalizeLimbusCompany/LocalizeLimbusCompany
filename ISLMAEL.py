@@ -441,7 +441,7 @@ Copy-Item -Path .\\lyrics.json $BIE_LLC_Path/Localize -Force -Recurse
 if ($version)
 	{
 	 Set-Location "$Path"
-	 ..\Patcher\7z.exe a -t7z "./LimbusLocalize_BIE_$version.7z" "BepInEx/" -mx=9 -ms
+	 ..\\Patcher\\7z.exe a -t7z "./LimbusLocalize_BIE_$version.7z" "BepInEx/" -mx=9 -ms
 	}""")
 with open(buildfilePath,"w",encoding='utf-8') as file:
     file.write(text)
