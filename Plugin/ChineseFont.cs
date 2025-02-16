@@ -30,20 +30,33 @@ public static class ChineseFont
 
     public static bool AddChineseFont(string path)
     {
+        LLCMod.LogInfo("AddChineseFont: " + path);
         if (!File.Exists(path)) return false;
-        var allAssets = AssetBundle.LoadFromFile(path).LoadAllAssets();
+
+        var assetBundle = AssetBundle.LoadFromFile(path);
+        if (assetBundle == null) return false;
+
+        bool fontFound = false;
+        var allAssets = assetBundle.LoadAllAssets();
+
         foreach (var asset in allAssets)
         {
-            var tryCastFontAsset = asset.TryCast<TMP_FontAsset>();
-            if (!tryCastFontAsset) continue;
-            Object.DontDestroyOnLoad(tryCastFontAsset);
-            tryCastFontAsset.hideFlags |= HideFlags.HideAndDontSave;
-            Tmpchinesefonts.Add(tryCastFontAsset);
-            Tmpchinesefontnames.Add(tryCastFontAsset.name);
-            return true;
+
+            var fontAsset = asset.TryCast<TMP_FontAsset>();
+            if (!fontAsset) continue;
+
+            Object.DontDestroyOnLoad(fontAsset);
+            fontAsset.hideFlags |= HideFlags.HideAndDontSave;
+
+            if (!Tmpchinesefonts.Contains(fontAsset))
+            {
+                Tmpchinesefonts.Add(fontAsset);
+                Tmpchinesefontnames.Add(fontAsset.name);
+                fontFound = true;
+            }
         }
 
-        return false;
+        return fontFound;
     }
 
     public static bool GetChineseFont(string fontname, out TMP_FontAsset fontAsset)
@@ -76,14 +89,6 @@ public static class ChineseFont
         return true;
     }
 
-    [HarmonyPatch(typeof(TMP_Text), nameof(TMP_Text.fontMaterial), MethodType.Setter)]
-    [HarmonyPrefix]
-    private static void Set_fontMaterial(TMP_Text __instance, ref Material value)
-    {
-        if (IsChineseFont(__instance.m_fontAsset))
-            value = __instance.m_fontAsset.material;
-    }
-
     [HarmonyPatch(typeof(TextMeshProLanguageSetter), nameof(TextMeshProLanguageSetter.UpdateTMP))]
     [HarmonyPrefix]
     private static bool UpdateTMP(TextMeshProLanguageSetter __instance)
@@ -93,6 +98,10 @@ public static class ChineseFont
             return false;
         var rawFontAsset = fontInformation.fontAsset;
         var useCn = GetChineseFont(rawFontAsset.name, out var cnFontAsset);
+        LLCMod.LogInfo("UpdateTMP __instance._text.overflowMode:" + __instance._text.overflowMode);
+                LLCMod.LogInfo("UpdateTMP useCn:" + useCn);
+                LLCMod.LogInfo("rawFontAsset: " + rawFontAsset.name);
+
 
         TMP_FontAsset fontAsset;
         Material fontMaterial;
@@ -100,13 +109,22 @@ public static class ChineseFont
         {
             fontAsset = cnFontAsset;
             fontMaterial = cnFontAsset.material;
+                    LLCMod.LogInfo(" useCn fontMaterial:"+fontMaterial.name);
+
             if (__instance._text.overflowMode == TextOverflowModes.Ellipsis)
+            {
                 __instance._text.overflowMode = TextOverflowModes.Overflow;
+            }
+
         }
         else
         {
+            
             fontAsset = rawFontAsset;
             fontMaterial = fontInformation.fontMaterial ?? rawFontAsset.material;
+            LLCMod.LogInfo(" !useCn fontMaterial:"+fontAsset.name);
+                    LLCMod.LogInfo(" !useCn fontMaterial:"+fontMaterial.name);
+
         }
 
         __instance._text.font = fontAsset;
@@ -131,46 +149,13 @@ public static class ChineseFont
             __instance._matSetter = textMeshProMaterialSetter;
     }
 
-    [HarmonyPatch(typeof(BattleSkillViewUIInfo), nameof(BattleSkillViewUIInfo.Init))]
-    [HarmonyPrefix]
-    private static void BattleSkillViewUIInfoInit(BattleSkillViewUIInfo __instance)
-    {
-        __instance._materialSetter_abText.underlayColor = Color.clear;
-        __instance._materialSetter_skillText.underlayColor = Color.clear;
-    }
-
-    [HarmonyPatch(typeof(TextMeshProMaterialSetter), nameof(TextMeshProMaterialSetter.WriteMaterialProperty))]
-    [HarmonyPrefix]
-    private static bool WriteMaterialProperty(TextMeshProMaterialSetter __instance)
-    {
-        if (!__instance._fontMaterialInstance)
-            return false;
-        if (!GetChineseFont(__instance._text.font.name, out _) && !IsChineseFont(__instance._text.font))
-            return true;
-
-        var underlayColor = __instance.underlayColor;
-        if (!__instance.underlayOn ||
-            !__instance._fontMaterialInstance.HasProperty(ShaderUtilities.ID_UnderlayColor)) return false;
-        if (__instance.underlayHDRFactor > 0f)
-        {
-            var num = Mathf.Pow(2f, __instance.underlayHDRFactor);
-            underlayColor.r *= num;
-            underlayColor.g *= num;
-            underlayColor.b *= num;
-        }
-
-        underlayColor = __instance.underlayHdrColorOn ? __instance.underlayHdrColor : underlayColor;
-        if (underlayColor.r > 0f || underlayColor.g > 0f || underlayColor.b > 0f)
-            __instance._text.color = underlayColor;
-        return false;
-    }
-
     #endregion
 
     #region 载入汉化
 
     public static void LoadLocal()
     {
+        LLCMod.LogInfo("LoadLocal");
         var tm = Singleton<TextDataSet>.Instance;
         var localizeFileList =
             JsonUtility.FromJson<TextDataSet.LocalizeFileList>(Resources
@@ -183,6 +168,8 @@ public static class ChineseFont
 
     public static void LoadRemote2()
     {
+        LLCMod.LogInfo("LoadRemote2");
+
         var tm = Singleton<TextDataSet>.Instance;
         var romoteLocalizeFileList = JsonUtility.FromJson<TextDataSet.RomoteLocalizeFileList>(AddressableManager
             .Instance.LoadAssetSync<TextAsset>("Assets/Resources_moved/Localize", "RemoteLocalizeFileList").Item1
