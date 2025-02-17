@@ -10,6 +10,7 @@ using TMPro;
 using UnityEngine;
 using UtilityUI;
 using Object = UnityEngine.Object;
+using System.Text.RegularExpressions;
 
 namespace LimbusLocalize;
 
@@ -109,6 +110,17 @@ public static class ChineseFont
     #endregion
 
     #region 载入汉化
+
+    private static string EscapeFontQuotes(string jsonText)
+    {
+        string pattern = @"<(/?font=[^>]*)>";
+        return Regex.Replace(jsonText, pattern, match =>
+        {
+            string tagContent = match.Groups[1].Value;
+            tagContent = tagContent.Replace("\"", "\\\"");
+            return $"<{tagContent}>";
+        });
+    }
 
     public static void LoadLocal()
     {
@@ -344,6 +356,7 @@ public static class ChineseFont
         foreach (var text in jsonFilePathList)
         {
             if (!Manager.Localizes.TryGetValue(text, out var text2)) continue;
+            text2 = EscapeFontQuotes(text2);
             var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<T>>(text2);
             foreach (var t in localizeTextData.DataList) jsonDataList._dic[t.ID] = t;
         }
@@ -355,6 +368,7 @@ public static class ChineseFont
         foreach (var text in jsonFilePathList)
         {
             if (!Manager.Localizes.TryGetValue(text, out var text2)) continue;
+            text2 = EscapeFontQuotes(text2);
             var localizeTextData = JsonUtility.FromJson<LocalizeTextDataRoot<TextData_AbnormalityEventCharDlg>>(text2);
             foreach (var t in localizeTextData.DataList)
             {
