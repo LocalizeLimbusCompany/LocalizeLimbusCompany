@@ -113,7 +113,6 @@ new[] { typeof(FMOD.GUID), typeof(Vector3) })]
             PlayLocalMP3(position);
             return false; // 阻止原方法执行
         }
-        LLCMod.LogInfo($"[FMOD] 播放: {eventPath}");
         return true; // 继续执行原方法
 
     }
@@ -162,9 +161,6 @@ new[] { typeof(FMOD.GUID), typeof(Vector3) })]
             __result = default; // 返回空实例
             return false; // 阻止原方法执行
         }
-
-        // 其他事件正常记录
-        LLCMod.LogInfo($"[FMOD] CreateInstance: {path}");
         return true;
     }
     [HarmonyPatch(typeof(SceneManager), "Internal_SceneLoaded")]
