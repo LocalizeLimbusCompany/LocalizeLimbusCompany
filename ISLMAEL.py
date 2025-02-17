@@ -253,7 +253,7 @@ new[] { typeof(FMOD.GUID), typeof(Vector3) })]
                     lyricText.text = "";
                 }
             }
-            Thread.Sleep(50); // 控制刷新率
+            Thread.Sleep(25); // 控制刷新率
         }
     }
     public static void StopSinging()
