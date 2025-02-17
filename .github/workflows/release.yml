@@ -70,4 +70,5 @@ jobs:
           files: |
             Release/LimbusLocalize_BIE_${{ steps.timestamp.outputs.filename }}.7z
           body_path: CHANGELOG.md
-          tag_name: ${{ steps.timestamp.outputs.tag_name }}  # 使用时间戳作为标签名称
+          tag_name: "autobuild"
+          

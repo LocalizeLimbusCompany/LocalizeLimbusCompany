@@ -9,6 +9,7 @@ using BepInEx.Preloader.Core.Patching;
 using UnityEngine;
 
 namespace LimbusLocalize_Updater;
+using System.Text.Json.Serialization;
 
 [PatcherPluginInfo(Guid, Name, VERSION)]
 public class UpdaterPatcher : BasePatcher
@@ -116,10 +117,11 @@ public class UpdaterPatcher : BasePatcher
         {
             var versionPath = ModPath + "/version.json";
             var localJson = JsonNode.Parse(File.ReadAllText(versionPath)).AsObject;
-            var response = Client.GetStringAsync("https://api.zeroasso.top/v2/resource/get_version").GetAwaiter()
+            var response = Client.GetStringAsync("https://api.github.com/repos/killjsj/LLCMod-mod-something-/releases/latest").GetAwaiter()
                 .GetResult();
+            
             var serverJson = JsonNode.Parse(response).AsObject;
-            var tag = serverJson["version"].Value;
+            var tag = serverJson["name"].Value;
             var appOldVersion = localJson["version"].Value;
             var latestTextVersion = int.Parse(serverJson["resource_version"].Value);
             var localTextVersion = int.Parse(localJson["resource_version"].Value);
@@ -127,9 +129,7 @@ public class UpdaterPatcher : BasePatcher
             {
                 LogInfo("New mod version found. Download full mod.");
                 var updatelog = $"LimbusLocalize_BIE_v{tag}.7z";
-                var downloadUri = UpdateUri == NodeType.GitHub
-                    ? $"https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/releases/download/v{tag}/{updatelog}"
-                    : string.Format(UrlDictionary[UpdateUri], updatelog);
+                var downloadUri = $"https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/releases/download/v{tag}/{updatelog}";
                 var filename = Path.Combine(GamePath, updatelog);
                 if (!File.Exists(filename)) DownloadFile(downloadUri, filename);
                 UnarchiveFile(filename, GamePath);
