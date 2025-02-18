@@ -8,7 +8,7 @@ namespace LimbusLocalize.LLC;
 
 public static class LoadingManager
 {
-    private const string Raw = "<bounce f=0.5><font=\"BebasKai SDF\">NOW LOADING...</font></bounce>";
+    private const string Raw = "<bounce f=0.5>加载中...</bounce>";
     private static List<string> _loadingTexts = [];
     private static string _touhou;
 
@@ -26,7 +26,7 @@ public static class LoadingManager
         for (var i = 0; i < _loadingTexts.Count; i++)
         {
             var loadingText = _loadingTexts[i];
-            _loadingTexts[i] = "<bounce f=0.5>" + "<size=40>" + loadingText.Remove(0, 2) + "</size>" + "</bounce>";
+            _loadingTexts[i] = "<bounce f=0.5>" + loadingText.Remove(0, 2) + "</bounce>";
         }
 
         _touhou = _loadingTexts[0];
@@ -46,6 +46,8 @@ public static class LoadingManager
             return;
         var loadingText = __instance._loadingText;
         loadingText.font = ChineseFont.Tmpchinesefonts[0];
+        loadingText.fontMaterial = ChineseFont.Tmpchinesefonts[0].material;
+        loadingText.fontSize = 40;
         var random = Random.Range(0, 100);
         loadingText.text = random switch
         {
