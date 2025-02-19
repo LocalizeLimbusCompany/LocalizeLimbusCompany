@@ -9,7 +9,9 @@ using BepInEx.Preloader.Core.Patching;
 using UnityEngine;
 
 namespace LimbusLocalize_Updater;
-using System.Text.Json.Serialization;
+using System;
+using System.Dynamic;
+using System.Text.Json;
 
 [PatcherPluginInfo(Guid, Name, VERSION)]
 public class UpdaterPatcher : BasePatcher
@@ -119,8 +121,16 @@ public class UpdaterPatcher : BasePatcher
             var localJson = JsonNode.Parse(File.ReadAllText(versionPath)).AsObject;
             var response = Client.GetStringAsync("https://api.github.com/repos/killjsj/LLCMod-mod-something-/releases/latest").GetAwaiter()
                 .GetResult();
-            
-            var serverJson = JsonNode.Parse(response).AsObject;
+
+            var jsonDoc = JsonDocument.Parse(response);
+            var root = jsonDoc.RootElement;
+
+            var release = new ExpandoObject();
+            release.Url = root.GetProperty("url").GetString();
+            release.TagName = root.GetProperty("tag_name").GetString();
+            release.Author = new ExpandoObject();
+            release.Author.Login = root.GetProperty("author").GetProperty("login").GetString();
+
             var tag = serverJson["name"].Value;
             var appOldVersion = localJson["version"].Value;
             var latestTextVersion = int.Parse(serverJson["resource_version"].Value);
