@@ -8,7 +8,7 @@ namespace LimbusLocalize.LLC;
 
 public static class LoadingManager
 {
-    private const string Raw = "<bounce f=0.5>NOW LOADING...</bounce>";
+    private const string Raw = "<bounce f=0.5>加载中...</bounce>";
     private static List<string> _loadingTexts = [];
     private static string _touhou;
 
