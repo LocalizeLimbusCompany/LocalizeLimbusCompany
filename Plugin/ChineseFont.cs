@@ -79,6 +79,14 @@ public static class ChineseFont
     [HarmonyPrefix]
     private static bool Set_font(TMP_Text __instance, ref TMP_FontAsset value)
     {
+        if (value.name == "BebasKai SDF")
+        {
+            if (!value.fallbackFontAssetTable.Contains(Tmpchinesefonts[0]))
+            {
+                value.fallbackFontAssetTable.Add(Tmpchinesefonts[0]);
+                value.SetDirty();
+            }
+        }
         if (IsChineseFont(__instance.m_fontAsset))
             return false;
         var fontname = __instance.m_fontAsset.name;

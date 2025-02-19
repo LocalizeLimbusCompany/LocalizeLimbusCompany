@@ -470,6 +470,31 @@ new[] { typeof(FMOD.GUID), typeof(Vector3) })]
         lyricText.text = "";
     }
 
+    [HarmonyPatch(typeof(StageChapterAreaSlot), nameof(StageChapterAreaSlot.Init))]
+    [HarmonyPostfix]
+    private static void AreaSlotInit(StageChapterAreaSlot __instance)
+    {
+        if (!IsUseChinese.Value)
+            return;
+        var tmp = __instance.tmpro_area;
+        if (!tmp.text.StartsWith("DISTRICT "))
+            return;
+        string number = tmp.text.Replace("DISTRICT ", "");
+        tmp.text = number + "<size=25>区";
+    }
+
+    [HarmonyPatch(typeof(FormationPersonalityUI_Label), nameof(FormationPersonalityUI_Label.Reload))]
+    [HarmonyPostfix]
+    private static void PersonalityUILabel(FormationPersonalityUI_Label __instance)
+    {
+        if (!IsUseChinese.Value)
+            return;
+        var tmp = __instance.tmp_text;
+        if (!tmp.text.Equals("CHANGED"))
+            return;
+        tmp.text = "<size=45>已更改";
+    }
+
     [HarmonyPatch(typeof(VoiceGenerator), nameof(VoiceGenerator.CreateVoiceInstance))]
     [HarmonyPostfix]
     [HarmonyDebug]
