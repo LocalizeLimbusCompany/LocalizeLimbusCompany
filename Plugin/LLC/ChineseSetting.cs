@@ -21,10 +21,54 @@ using System.Text.Json.Serialization;
 
 namespace LimbusLocalize.LLC;
 
+public class DwkUnityMainThreadDispatcher : MonoBehaviour
+{
+    private static DwkUnityMainThreadDispatcher instance;
+    private readonly Queue<System.Action> actions = new Queue<System.Action>();
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public static DwkUnityMainThreadDispatcher Instance()
+    {
+        if (!instance)
+        {
+            throw new System.Exception("UnityMainThreadDispatcher could not find the UnityMainThreadDispatcher object. Please ensure you have added the MainThreadExecutor Prefab to your scene.");
+        }
+        return instance;
+    }
+
+    public void Enqueue(System.Action action)
+    {
+        lock (actions)
+        {
+            actions.Enqueue(action);
+        }
+    }
+
+    public void Update()
+    {
+        while (actions.Count > 0)
+        {
+            actions.Dequeue().Invoke();
+        }
+    }
+}
+
 public static class ChineseSetting
 {
     static FMOD.Channel channel = new FMOD.Channel();
-    public static string  json = "";
+    public static string json = "";
 
     public static ConfigEntry<bool> IsUseChinese =
         LLCMod.LLCSettings.Bind("LLC Settings", "IsUseChinese", true, "是否使用汉化 ( true | false )");
@@ -228,7 +272,7 @@ public static class ChineseSetting
         __instance.tmp_tooltipContent.fontSize = 35f;
     }
 
-     [HarmonyPatch(typeof(ActBossBattleStartUI), nameof(ActBossBattleStartUI.Init))]
+    [HarmonyPatch(typeof(ActBossBattleStartUI), nameof(ActBossBattleStartUI.Init))]
     [HarmonyPostfix]
     private static void BossBattleStartInit(ActBossBattleStartUI __instance)
     {
@@ -294,8 +338,9 @@ public static class ChineseSetting
     }//anti replace 
 
     private static TextMeshProUGUI lyricText;
-    private static List<LyricLine>  lyrics;
+    private static List<LyricLine> lyrics;
     private static bool inLoginScene = false;
+    private static DwkUnityMainThreadDispatcher dwk;
     [HarmonyPatch(typeof(FMODUnity.RuntimeManager),
 nameof(FMODUnity.RuntimeManager.PlayOneShot),
 new[] { typeof(FMOD.GUID), typeof(Vector3) })]
@@ -394,8 +439,8 @@ new[] { typeof(FMOD.GUID), typeof(Vector3) })]
 
                 // 创建一个新的TextMeshProUGUI对象
                 GameObject textObject = new GameObject("LyricText");
+                dwk = textObject.AddComponent<DwkUnityMainThreadDispatcher>();
                 lyricText = textObject.AddComponent<TextMeshProUGUI>();
-
                 // 设置父对象为Canvas
                 textObject.transform.SetParent(canvas.transform, false);
 
@@ -416,7 +461,7 @@ new[] { typeof(FMOD.GUID), typeof(Vector3) })]
                 lyricText.alignment = TextAlignmentOptions.Center;
                 if (lyrics == null)
                 {
-                    json = File.ReadAllText(Path.Combine(LLCMod.ModPath, "Localize/lyrics.json"), System.Text.Encoding.UTF8);         
+                    json = File.ReadAllText(Path.Combine(LLCMod.ModPath, "Localize/lyrics.json"), System.Text.Encoding.UTF8);
                     lyrics = System.Text.Json.JsonSerializer.Deserialize<List<LyricLine>>(json);
                 }
                 StartSinging();
@@ -440,33 +485,12 @@ new[] { typeof(FMOD.GUID), typeof(Vector3) })]
             new Thread((ThreadStart)UpdateLyrics).Start();
         }
     }
-    private static void UpdateLyrics()
-    {
-        while (inLoginScene)
-        {
-            uint timeMs;
-            channel.getPosition(out timeMs, FMOD.TIMEUNIT.MS);
-            double currentTime = (double)timeMs / 1000.0; // 转换为秒
-            if (lyrics == null) return;
-
-            foreach (var lyric in lyrics)
-            {
-                if (currentTime >= (double)lyric.from && currentTime < (double)lyric.to)
-                {
-                    // 使用RichText来支持颜色
-                    lyricText.text = $"{lyric.content}";
-                    break;
-                } else {
-                    lyricText.text = "";
-                }
-            }
-            Thread.Sleep(25); // 控制刷新率
-        }
-    }
+dwk = textObject.AddComponent<DwkUnityMainThreadDispatcher>();
     public static void StopSinging()
     {
         inLoginScene = false;
         channel.stop();
+        GameObject.Destroy(dwk);
         lyricText.text = "";
     }
 

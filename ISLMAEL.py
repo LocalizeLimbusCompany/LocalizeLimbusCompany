@@ -88,6 +88,7 @@ newtext = R"""    [HarmonyPatch(typeof(ActBossBattleStartUI), nameof(ActBossBatt
 
     private static TextMeshProUGUI lyricText;
     private static List<LyricLine>  lyrics;
+    private static DwkUnityMainThreadDispatcher dwk;
     private static bool inLoginScene = false;
     [HarmonyPatch(typeof(FMODUnity.RuntimeManager),
 nameof(FMODUnity.RuntimeManager.PlayOneShot),
@@ -183,6 +184,7 @@ new[] { typeof(FMOD.GUID), typeof(Vector3) })]
 
                 // 创建一个新的TextMeshProUGUI对象
                 GameObject textObject = new GameObject("LyricText");
+                dwk = textObject.AddComponent<DwkUnityMainThreadDispatcher>();
                 lyricText = textObject.AddComponent<TextMeshProUGUI>();
 
                 // 设置父对象为Canvas
@@ -229,7 +231,7 @@ new[] { typeof(FMOD.GUID), typeof(Vector3) })]
             new Thread((ThreadStart)UpdateLyrics).Start();
         }
     }
-    private static void UpdateLyrics()
+        private static void UpdateLyrics()
     {
         while (inLoginScene)
         {
@@ -242,11 +244,21 @@ new[] { typeof(FMOD.GUID), typeof(Vector3) })]
             {
                 if (currentTime >= (double)lyric.from && currentTime < (double)lyric.to)
                 {
+                    dwk.Enqueue(() =>
+                   {
+                       lyricText.text = $"{lyric.content}";
+
+                   });
                     // 使用RichText来支持颜色
-                    lyricText.text = $"{lyric.content}";
                     break;
-                } else {
-                    lyricText.text = "";
+                }
+                else
+                {
+                    dwk.Enqueue(() =>
+                    {
+                        lyricText.text = "";
+
+                    });
                 }
             }
             Thread.Sleep(25); // 控制刷新率
@@ -298,7 +310,49 @@ using System.Text.Json.Serialization;
 //anti replace 
 
 namespace LimbusLocalize.LLC;
+public class DwkUnityMainThreadDispatcher : MonoBehaviour
+{
+    private static DwkUnityMainThreadDispatcher instance;
+    private readonly Queue<System.Action> actions = new Queue<System.Action>();
 
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public static DwkUnityMainThreadDispatcher Instance()
+    {
+        if (!instance)
+        {
+            throw new System.Exception("UnityMainThreadDispatcher could not find the UnityMainThreadDispatcher object. Please ensure you have added the MainThreadExecutor Prefab to your scene.");
+        }
+        return instance;
+    }
+
+    public void Enqueue(System.Action action)
+    {
+        lock (actions)
+        {
+            actions.Enqueue(action);
+        }
+    }
+
+    public void Update()
+    {
+        while (actions.Count > 0)
+        {
+            actions.Dequeue().Invoke();
+        }
+    }
+}
 public static class ChineseSetting
 {
     static FMOD.Channel channel = new FMOD.Channel();
