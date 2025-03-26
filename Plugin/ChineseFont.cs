@@ -64,41 +64,12 @@ public static class ChineseFont
 	[HarmonyPrefix]
 	private static bool Set_font(TMP_Text __instance, ref TMP_FontAsset value)
 	{
-		if (!value || !IsChineseFont(value))
-			value = Tmpchinesefonts[0];
+		if (!value.name.StartsWith("BebasKai"))
+		{
+            if (!value || !IsChineseFont(value))
+				value = Tmpchinesefonts[0];
+        }
 		return true;
-	}
-
-	[HarmonyPatch(typeof(TextMeshProLanguageSetter), nameof(TextMeshProLanguageSetter.UpdateTMP),
-		typeof(LOCALIZE_LANGUAGE))]
-	[HarmonyPostfix]
-	private static void UpdateTMP(TextMeshProLanguageSetter __instance)
-	{
-		__instance._text.font = Tmpchinesefonts[0];
-		if (__instance._text.overflowMode == TextOverflowModes.Ellipsis)
-			__instance._text.overflowMode = TextOverflowModes.Overflow;
-	}
-
-	[HarmonyPatch(typeof(TextMeshProLanguageSetter), nameof(TextMeshProLanguageSetter.Awake))]
-	[HarmonyPrefix]
-	private static void Awake(TextMeshProLanguageSetter __instance)
-	{
-		if (!__instance._text && __instance.TryGetComponent<TextMeshProUGUI>(out var textMeshProUGUI))
-			__instance._text = textMeshProUGUI;
-		if (!__instance._matSetter &&
-		    __instance.TryGetComponent<TextMeshProMaterialSetter>(out var textMeshProMaterialSetter))
-			__instance._matSetter = textMeshProMaterialSetter;
-	}
-
-	[HarmonyPatch(typeof(TextMeshProMaterialSetter), nameof(TextMeshProMaterialSetter.WriteMaterialProperty))]
-	[HarmonyPrefix]
-	private static bool WriteMaterialProperty(TextMeshProMaterialSetter __instance)
-	{
-		if (!__instance._fontMaterialInstance) return false;
-		if (!IsChineseFont(__instance._text.font)) return true;
-		if (__instance.underlayOffsetX != 0f)
-			__instance.underlayOn = true;
-		return false;
 	}
 
 	#endregion

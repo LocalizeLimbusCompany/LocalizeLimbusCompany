@@ -3,6 +3,7 @@ using BattleUI.Typo;
 using HarmonyLib;
 using MainUI;
 using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace LimbusLocalize.LLC;
@@ -32,6 +33,19 @@ public static class UIImproved
 		if (!tmp.font.fallbackFontAssetTable.Contains(ChineseFont.Tmpchinesefonts[1]))
 			tmp.font.fallbackFontAssetTable.Add(ChineseFont.Tmpchinesefonts[1]);
 	}
+
+    [HarmonyPatch(typeof(ActTypoUnlockDanteAbilityUI), nameof(ActTypoUnlockDanteAbilityUI.Open))]
+    [HarmonyPostfix]
+    private static void UnlockDanteAbilityUIInit(ActTypoUnlockDanteAbilityUI __instance)
+    {
+        var textGroup = __instance.transform.GetChild(0).GetChild(1).GetChild(6);
+        var tmp = textGroup.GetComponentInChildren<TextMeshProUGUI>();
+		var mask = textGroup.GetComponentInChildren<Mask>();
+		tmp.font = ChineseFont.Tmpchinesefonts[1];
+		mask.enabled = false;
+		textGroup.GetChild(1).GetComponentInChildren<Image>().enabled = false;
+        textGroup.GetChild(2).GetComponentInChildren<Image>().enabled = false;
+    }
 
 	[HarmonyPatch(typeof(StageChapterAreaSlot), "Init")]
 	[HarmonyPostfix]
