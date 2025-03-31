@@ -14,7 +14,7 @@ LimbusCompany I18N mod
 
 **English** | ~~American English~~ | [Русский](https://github.com/Crescent-Corporation/LimbusCompanyBusRUS) | ~~Swiss~~ | ~~Ελληνικά~~ | ~~Österreich~~
 
-[繁體中文](https://github.com/SmallYuanSY/LocalizeLimbusCompany) | [ภาษาไทย](https://github.com/JoshSnappas/LocalizeLimbusCompanyTH) | [Indonesia](https://github.com/ArtefactX1/LocalizeLimbusID)
+[繁體中文](https://github.com/SmallYuanSY/LocalizeLimbusCompany) | [ภาษาไทย](https://github.com/stlinx/LocalizeLimbusTH) | [Indonesia](https://github.com/ArtefactX1/LocalizeLimbusID)
 </div>
 
 # Disclaimer
@@ -33,21 +33,14 @@ For additional information, please refer to the email in our [archive](https://w
 ### 3. Install i18N mod
    - Download Full Pack from [Release](../../../releases) and unzip it in the above folder.
     
-   - [Dev version](../../../actions/workflows/dev.yml) is always the newest.
+   - [Dev version](../../../../LLC_Release) is always the newest.
    
    - The mod will be updated within 2~3 days after the game is updated.
 ## Who am I? Where am I? What should I do?
    - [The Auto Installer](../../../../LLC_MOD_Installer)
 # Other Things
-- [QQ Group](https://jq.qq.com/?_wv=1027&k=5NE6Kvg2) LLCG 686792849
+- [QQ Discord](https://pd.qq.com/s/fpzhrgdwo) LLC
 - [LLC_MOD_Installer](../../../../LLC_MOD_Installer) The Installer
 - [Chinese Localize Group's Bilibili account](https://space.bilibili.com/1247764479) Localize Limbus Company
 - [Limbus Company Chinese wiki](https://limbuscompany.huijiwiki.com)
 - [ParaTranz Translation Project](https://paratranz.cn/projects/6860) The latest progress of Localize Limbus Company
-# Contributors
-## This Repo
-<a href="https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=LocalizeLimbusCompany/LocalizeLimbusCompany" />
-</a>
-
-## [ParaTranz Project](https://paratranz.cn/projects/6860/leaderboard)

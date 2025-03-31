@@ -8,7 +8,6 @@ using SimpleJSON;
 using StorySystem;
 using TMPro;
 using UnityEngine;
-using UtilityUI;
 using Object = UnityEngine.Object;
 
 namespace LimbusLocalize;
@@ -64,11 +63,8 @@ public static class ChineseFont
 	[HarmonyPrefix]
 	private static bool Set_font(TMP_Text __instance, ref TMP_FontAsset value)
 	{
-		if (!value.name.StartsWith("BebasKai"))
-		{
-            if (!value || !IsChineseFont(value))
-				value = Tmpchinesefonts[0];
-        }
+		if (!value || !IsChineseFont(value))
+			value = Tmpchinesefonts[0];
 		return true;
 	}
 

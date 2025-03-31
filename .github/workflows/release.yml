@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: '版本号'   
+        description: '版本号 e.g. v1.0.0'   
 jobs:
   release:
     runs-on: windows-latest
@@ -23,27 +23,15 @@ jobs:
           key: ${{ runner.os }}-nuget-
           restore-keys: |
             ${{ runner.os }}-nuget-
-      - name: Extract version from CHANGELOG.md
-        id: extract_version
-        run: |
-          $version = "${{ github.event.inputs.version }}"
-          if (!$version) {
-            $version = Get-Content -Path CHANGELOG.md | Select-Object -First 1 | ForEach-Object { $_ -replace '# ', '' }
-          }
-          echo "release_tag=$version" >> $env:GITHUB_OUTPUT
       - name: Run build script
         run: |
-          ./build.ps1 ${{ steps.extract_version.outputs.release_tag }}
-          Add-Content -Path CHANGELOG.md -Value "
-          # 下载
-          - LimbusLocalize_BIE_${{ steps.extract_version.outputs.release_tag }}.7z 全量包"
+          ./build.ps1 ${{ github.event.inputs.version }}
       - name: Create Upload Release   
         uses: softprops/action-gh-release@v2
         with:
           files: |
             Release/*.7z
-          body_path: CHANGELOG.md
-          tag_name: ${{ steps.extract_version.outputs.release_tag }}
+          tag_name: ${{ github.event.inputs.version }}
       - name: Post
         run: |
           Invoke-RestMethod -Uri "https://api.zeroasso.top/v2/mirror/refresh_mirror" -Method Post -Headers @{"X-Admin-Secret" = "${{ secrets.API_PWD }}"}

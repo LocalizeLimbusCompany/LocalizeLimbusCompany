@@ -14,7 +14,7 @@
 
 [English](./.github/EN_README.md) | ~~American English~~ | [Русский](https://github.com/Crescent-Corporation/LimbusCompanyBusRUS) | ~~Swiss~~ | ~~Ελληνικά~~ | ~~Österreich~~
 
-[繁體中文](https://github.com/SmallYuanSY/LocalizeLimbusCompany) | [ภาษาไทย](https://github.com/JoshSnappas/LocalizeLimbusCompanyTH) | [Indonesia](https://github.com/ArtefactX1/LocalizeLimbusID)
+[繁體中文](https://github.com/SmallYuanSY/LocalizeLimbusCompany) | [ภาษาไทย](https://github.com/stlinx/LocalizeLimbusTH) | [Indonesia](https://github.com/ArtefactX1/LocalizeLimbusID)
 </div>
 
 # 免责声明 Disclaimer
@@ -36,22 +36,15 @@
 ### 3. 安装汉化
    - 从[最新版](../../releases)下载全量包 后解压到上述文件夹中
     
-   - [最新开发版](../../actions/workflows/dev.yml) 总是最新的
+   - [最新开发版](../../../LLC_Release) 总是最新的
    
    - 通常情况下模组将在游戏更新后2~3天内更新
 ## 我是谁?我在哪?我要干什么?
    - [适用于看不懂上面的安装&更新程序](../../../LLC_MOD_Installer)
 # 相关
-- [QQ群](https://jq.qq.com/?_wv=1027&k=5NE6Kvg2) LLCG 686792849
+- [QQ频道](https://pd.qq.com/s/fpzhrgdwo) LLC
 - [LLC 官网](https://www.zeroasso.top) 关于风格、翻译以及如何安装的详细信息
 - [LLC_MOD_Installer](../../../LLC_MOD_Installer) 模组自动安装工具箱
 - [汉化组B站链接](https://space.bilibili.com/1247764479) 都市零协会汉化组
 - [边狱公司中文WIKI](https://limbuscompany.huijiwiki.com)
 - [ParaTranz 协作翻译项目](https://paratranz.cn/projects/6860) 汉化组的最新进展
-# 贡献者
-## 本仓库
-<a href="https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=LocalizeLimbusCompany/LocalizeLimbusCompany" />
-</a>
-
-## [译文ParaTranz项目](https://paratranz.cn/projects/6860/leaderboard)

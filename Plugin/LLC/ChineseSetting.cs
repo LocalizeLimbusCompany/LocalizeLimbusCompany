@@ -1,5 +1,4 @@
 ﻿using System;
-using BattleUI.Dialog;
 using BepInEx.Configuration;
 using HarmonyLib;
 using LocalSave;
@@ -8,7 +7,6 @@ using StorySystem;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using Voice;
 using Object = UnityEngine.Object;
 
 namespace LimbusLocalize.LLC;
@@ -18,12 +16,8 @@ public static class ChineseSetting
 	public static ConfigEntry<bool> IsUseChinese =
 		LLCMod.LLCSettings.Bind("LLC Settings", "IsUseChinese", true, "是否使用汉化 ( true | false )");
 
-	public static ConfigEntry<bool> ShowDialog = LLCMod.LLCSettings.Bind("LLC Settings", "ShowDialog", false,
-		"将罪人在战斗内的语音文本翻译以头顶气泡的形式呈现 ( true | false )");
-
 	private static bool _isusechinese;
 	private static Toggle _chineseSetting;
-	private static BattleUnitView _unitView;
 
 	[HarmonyPatch(typeof(SettingsPanelGame), nameof(SettingsPanelGame.InitLanguage))]
 	[HarmonyPrefix]
@@ -196,31 +190,5 @@ public static class ChineseSetting
 			return;
 		__instance.tmp_tooltipContent.font = ChineseFont.Tmpchinesefonts[1];
 		__instance.tmp_tooltipContent.fontSize = 40f;
-	}
-
-	[HarmonyPatch(typeof(VoiceGenerator), nameof(VoiceGenerator.CreateVoiceInstance))]
-	[HarmonyPostfix]
-	[HarmonyDebug]
-	private static void CreateVoiceInstance(string path, bool isSpecial)
-	{
-		if (!ShowDialog.Value || !_unitView || !path.StartsWith(VoiceGenerator.VOICE_EVENT_PATH + "battle_"))
-			return;
-		path = path[VoiceGenerator.VOICE_EVENT_PATH.Length..];
-		if (!Singleton<TextDataSet>.Instance.personalityVoiceText._voiceDictionary.TryGetValue(path.Split('_')[^2],
-			    out var dataList)) return;
-		foreach (var data in dataList.dataList)
-			if (path.Equals(data.id))
-			{
-				_unitView._uiManager.ShowDialog(new BattleDialogLine(data.dlg, null));
-				break;
-			}
-	}
-
-	[HarmonyPatch(typeof(BattleUnitView), nameof(BattleUnitView.SetPlayVoice))]
-	[HarmonyPrefix]
-	private static void BattleUnitView_Func(BattleUnitView __instance, BattleCharacterVoiceType key, bool isSpecial,
-		BattleSkillViewer skillViewer)
-	{
-		_unitView = __instance;
 	}
 }

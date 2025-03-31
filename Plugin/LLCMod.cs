@@ -23,13 +23,15 @@ public class LLCMod : BasePlugin
 
 	public const string Guid = $"Com.{Author}.{Name}";
 	public const string Name = "LocalizeLimbusCompany";
-	public const string Version = "0.7.2";
+	public const string Version = "0.7.3";
 	public const string Author = "Bright";
 	public const string LLCLink = "https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany";
 	public static ConfigFile LLCSettings;
 	public static string ModPath;
 	public static string GamePath;
 	public static Harmony Harmony = new(Name);
+
+	public static ConfigEntry<bool> UIImprove;
 	public static Action<string, Action> LogFatalError { get; set; }
 	public static Action<string> LogError { get; set; }
 	public static Action<string> LogWarning { get; set; }
@@ -60,6 +62,7 @@ public class LLCMod : BasePlugin
 		};
 		ModPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 		GamePath = new DirectoryInfo(Application.dataPath).Parent!.FullName;
+		UIImprove = LLCSettings.Bind("LLC Settings", "UIImprove", true, "UI改进,若出现黑屏问题或不想使用“命定之战”之类的功能可以关闭 ( true | false )");
 		InitUpdateConfig();
 		try
 		{
@@ -69,7 +72,7 @@ public class LLCMod : BasePlugin
 				Harmony.PatchAll(typeof(ChineseFont));
 				Harmony.PatchAll(typeof(ReadmeManager));
 				Harmony.PatchAll(typeof(LoadingManager));
-				Harmony.PatchAll(typeof(UIImproved));
+				if (UIImprove.Value) Harmony.PatchAll(typeof(UIImproved));
 			}
 
 			Harmony.PatchAll(typeof(Manager));
