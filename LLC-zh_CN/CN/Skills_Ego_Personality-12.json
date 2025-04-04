@@ -1,0 +1,593 @@
+{
+  "dataList": [
+    {
+      "id": 2120511,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "荆棘花园",
+          "abName": "玫瑰告示牌",
+          "desc": "[BeforeAttack] 若最大共鸣数不低于3，则使本技能的攻击容量+1\n[WhenUse] 使(1+最大共鸣数)名友方单位获得1层该罪孽属性的伤害强化 与1层该罪孽属性的威力提升 \n- 若该共鸣数不低于4，则使其额外获得1层该罪孽属性的伤害强化 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[EndSkill] 使现存体力比例最低的1名友方单位恢复其体力上限15%的体力\n- 额外使(最大共鸣数-2)名友方单位恢复体力 (最多3名)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "荆棘花园",
+          "abName": "玫瑰告示牌",
+          "desc": "[BeforeAttack] 使本技能的攻击容量+(最大共鸣数-2)(最多+2)\n[WhenUse] 使(2+最大共鸣数)名友方单位获得1层该罪孽属性的伤害强化 与1层该罪孽属性的威力提升 \n- 若该共鸣数不低于4，则使其额外获得1层该罪孽属性的伤害强化 \n- 若该共鸣数不低于5，则使其额外获得1层该罪孽属性的威力提升 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[EndSkill] 使现存体力比例最低的2名友方单位恢复其体力上限18%的体力\n- 额外使(最大共鸣数-2)名友方单位恢复体力 (最多3名)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "荆棘花园",
+          "abName": "玫瑰告示牌",
+          "desc": "[BeforeAttack] 使本技能的攻击容量+(最大共鸣数-2)(最多+3)\n[WhenUse] 使(4+最大共鸣数)名友方单位获得1层该罪孽属性的伤害强化 与1层该罪孽属性的威力提升 \n- 若该共鸣数不低于4，则使其额外获得1层该罪孽属性的伤害强化 \n- 若该共鸣数不低于5，则使其额外获得1层该罪孽属性的威力提升 \n- 若该完全共鸣数不低于6，则下回合使其再次获得以上状态",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[EndSkill] 使现存体力比例最低的4名友方单位恢复其体力上限22%的体力\n- 额外使(最大共鸣数-2)名友方单位恢复体力 (最多3名)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120521,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "荆棘花园",
+          "abName": "玫瑰告示牌",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 若最大共鸣数不低于3，则使本技能的攻击容量+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层伤害弱化 ，下回合对其施加2层束缚 。"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层该罪孽属性的易损 与1层该罪孽属性的威力降低 \n- 若该共鸣数不低于4，则对其额外施加1层该罪孽属性的易损 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "荆棘花园",
+          "abName": "玫瑰告示牌",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大共鸣数-2)(最多+2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层伤害弱化 ，下回合对其施加2层束缚 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层该罪孽属性的易损 与1层该罪孽属性的威力降低 \n- 若该共鸣数不低于4，则对其额外施加1层该罪孽属性的易损 \n- 若该共鸣数不低于5，则对其额外施加1层该罪孽属性的威力降低 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "荆棘花园",
+          "abName": "玫瑰告示牌",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大共鸣数-2)(最多+3)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层伤害弱化 ，下回合对其施加2层束缚 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层该罪孽属性的易损 与1层该罪孽属性的威力降低 \n- 若该共鸣数不低于4，则对其额外施加1层该罪孽属性的易损 \n- 若该共鸣数不低于5，则对其额外施加1层该罪孽属性的威力降低 \n- 若该完全共鸣数不低于6，则下回合对其再次施加以上状态"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120611,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "往昔",
+          "abName": "某日的肖像",
+          "desc": "[EndSkill] 使自身与除自身以外理智值最低的2名友方单位恢复10点理智值\n- 若目标受到攻击后存活，则消耗其5层沉沦 并额外恢复相当于其沉沦 强度点理智值(最大恢复量：20点)\n- 若击杀目标，则随机使2名敌方单位增加3级沉沦 强度(若是集中遭遇战，则改为随机部位)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "往昔",
+          "abName": "某日的肖像",
+          "desc": "[EndSkill] 使自身与除自身以外理智值最低的2名友方单位恢复12点理智值\n- 若目标受到攻击后存活，则消耗其5层沉沦 并额外恢复相当于其沉沦 强度点理智值(最大恢复量：20点)\n- 若击杀目标，则随机使2名敌方单位增加3级沉沦 强度并对其施加1层诅咒 (若是集中遭遇战，则改为随机部位)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "往昔",
+          "abName": "某日的肖像",
+          "desc": "[EndSkill] 使自身与除自身以外理智值最低的2名友方单位恢复15点理智值\n- 若目标受到攻击后存活，则消耗其3层沉沦 并额外恢复相当于其沉沦 强度点理智值(最大恢复量：20点)\n- 若击杀目标，则随机使3名敌方单位增加3级沉沦 强度并对其施加1层诅咒 (若是集中遭遇战，则改为随机部位)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120621,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "往昔",
+          "abName": "某日的肖像",
+          "desc": "[CantIdentify]\n随机指定目标",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层忧郁易损 。若忧郁共鸣数不低于3，则对其额外施加1层忧郁易损 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层沉沦 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层诅咒 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "往昔",
+          "abName": "某日的肖像",
+          "desc": "[CantIdentify]\n随机指定目标",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层忧郁易损 。每有3点忧郁共鸣数，对其额外施加1层忧郁易损 (最多2层)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层沉沦 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层诅咒 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "往昔",
+          "abName": "某日的肖像",
+          "desc": "[CantIdentify]\n随机指定目标\n若目标带有诅咒 ，则使本技能造成的伤害+50%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层忧郁易损 。每有2点忧郁共鸣数，对其额外施加1层忧郁易损 (最多2层)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层沉沦 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层诅咒 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120711,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "庄严哀悼",
+          "abName": "亡蝶葬仪",
+          "desc": "本技能掷出硬币时，随机对其目标之一的1名敌方单位进行攻击\n- 第一枚硬币必定指定主要目标\n- 每枚硬币的所有“命中时”效果与所有造成的伤害仅对以上效果中选择的敌方单位生效\n通过本技能效果施加[SinkingWhite]时，有(硬币朝向正面的概率)施加亡蝶层数。若自身未施加亡蝶层数，则改为增加生蝶强度(每点[SinkingWhite]分别判定)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 随机对目标施加1点[SinkingWhite]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 随机对目标施加1点[SinkingWhite]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 随机对目标施加1~2点[SinkingWhite]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使自身失去2~6点理智值"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若自身的理智值不低于0点，则重复使用本硬币(每个技能最多5次)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "庄严哀悼",
+          "abName": "亡蝶葬仪",
+          "desc": "本技能掷出硬币时，随机对其目标之一的1名敌方单位进行攻击\n- 第一枚硬币必定指定主要目标\n- 每枚硬币的所有“命中时”效果与所有造成的伤害仅对以上效果中选择的敌方单位生效\n通过本技能效果施加[SinkingWhite]时，有(硬币朝向正面的概率)施加亡蝶层数。若自身未施加亡蝶层数，则改为增加生蝶强度(每点[SinkingWhite]分别判定)\n[EndSkill] 使自身恢复(第3枚硬币命中次数×2)点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 随机对目标施加1点[SinkingWhite]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 随机对目标施加1点[SinkingWhite]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 随机对目标施加1~2点[SinkingWhite]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使自身失去2~6点理智值"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若自身的理智值不低于0点，则重复使用本硬币(每个技能最多5次)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "庄严哀悼",
+          "abName": "亡蝶葬仪",
+          "desc": "本技能掷出硬币时，随机对其目标之一的1名敌方单位进行攻击\n- 第一枚硬币必定指定主要目标\n- 每枚硬币的所有“命中时”效果与所有造成的伤害仅对以上效果中选择的敌方单位生效\n通过本技能效果施加[SinkingWhite]时，有(硬币朝向正面的概率)施加亡蝶层数。若自身未施加亡蝶层数，则改为增加生蝶强度(每点[SinkingWhite]分别判定)\n[EndSkill] 使自身恢复(第3枚硬币命中次数×3)点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 随机对目标施加1点[SinkingWhite]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 随机对目标施加1点[SinkingWhite]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 随机对目标施加1~2点[SinkingWhite]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使自身失去2~6点理智值"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若自身的理智值不低于0点，则重复使用本硬币(每个技能最多5次)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120721,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "庄严哀悼",
+          "abName": "亡蝶葬仪",
+          "desc": "[CantIdentify]\n随机指定目标\n若目标的理智值低于0点，则每低1点，使本技能造成的伤害+1%(最多+45%)\n若目标没有理智值，则其每带有2级沉沦 强度，使本技能造成的伤害+1%(最多+45%)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级[SinkingWhite]强度(生蝶)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加4层[SinkingWhite](亡蝶)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "庄严哀悼",
+          "abName": "亡蝶葬仪",
+          "desc": "[CantIdentify]\n随机指定目标\n若目标的理智值低于0点，则每低1点，使本技能造成的伤害+1%(最多+45%)\n若目标没有理智值，则其每带有2级沉沦 强度，使本技能造成的伤害+1%(最多+45%)\n[EnemyKill] 使自身恢复5点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级[SinkingWhite]强度(生蝶)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加4层[SinkingWhite](亡蝶)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层沉沦 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "庄严哀悼",
+          "abName": "亡蝶葬仪",
+          "desc": "[CantIdentify]\n随机指定目标\n若目标的理智值低于0点，则每低1点，使本技能造成的伤害+1%(最多+45%)\n若目标没有理智值，则其每带有2级沉沦 强度，使本技能造成的伤害+1%(最多+45%)\n[EnemyKill] 使自身恢复5点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[SinkingWhite]强度(生蝶)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加5层[SinkingWhite](亡蝶)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层沉沦 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标现存体力不高于50%，则对目标造成相当于其所有[SinkingWhite]点数的忧郁伤害\n- 以生蝶与亡蝶之和计算"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120811,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "圣诞梦魇",
+          "abName": "舒适卧床",
+          "desc": "[EndSkill] 若自身体力为最大值，则在回合结束时使自身恢复10点理智值并在下回合使自身获得1层强壮 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级震颤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级沉沦 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标陷入混乱、士气低落或陷入恐慌，则在下回合对其施加1层虚弱 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "圣诞梦魇",
+          "abName": "舒适卧床",
+          "desc": "若目标的理智值低于0点，则每相差1点，使本技能造成的伤害+1%(最多+45%)\n[EndSkill] 若自身体力为最大值，则在回合结束时使自身恢复10点理智值并在下回合使自身获得1层强壮 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级震颤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身恢复自身已失去体力(2+最大共鸣数)%的体力(每个技能最多30%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级沉沦 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标陷入混乱、士气低落或陷入恐慌，则在下回合对其施加1层虚弱 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "圣诞梦魇",
+          "abName": "舒适卧床",
+          "desc": "若目标的理智值低于0点，则每相差1点，使本技能造成的伤害+1%(最多+45%)\n[EndSkill] 若自身体力为最大值，则在回合结束时使自身恢复15点理智值并在下回合使自身获得1层强壮 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级震颤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身恢复自身已失去体力(3+最大共鸣数)%的体力(每个技能最多30%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级沉沦 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标陷入混乱、士气低落或陷入恐慌，则在下回合对其施加1层虚弱 与1层最大共鸣数罪孽属性的易损。"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120821,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "圣诞梦魇",
+          "abName": "舒适卧床",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使自身恢复10点体力\n[EndSkill] 若自身体力为最大值，则在回合结束时使自身恢复10点理智值并在下回合使自身获得1层强壮 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级震颤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级沉沦 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标陷入混乱、士气低落或陷入恐慌，则在下回合对其施加1层虚弱 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "圣诞梦魇",
+          "abName": "舒适卧床",
+          "desc": "[CantIdentify]\n随机指定目标\n若目标的理智值低于0点，则每相差1点，使本技能造成的伤害+1%(最多+45%)\n[BeforeAttack] 使自身恢复10点体力\n[EndSkill] 若自身体力为最大值，则在回合结束时使自身恢复15点理智值并在下回合使自身获得1层强壮 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级震颤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身恢复自身已失去体力(2+最大共鸣数)%的体力(每个技能最多30%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级沉沦 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标陷入混乱、士气低落或陷入恐慌，则在下回合对其施加1层虚弱 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "圣诞梦魇",
+          "abName": "舒适卧床",
+          "desc": "[CantIdentify]\n随机指定目标\n若目标的理智值低于0点，则每相差1点，使本技能造成的伤害+1%(最多+45%)\n[BeforeAttack] 使自身恢复10点体力\n[EndSkill] 若自身体力为最大值，则在回合结束时使自身恢复20点理智值并在下回合使自身获得1层强壮 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级震颤 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身恢复自身已失去体力(3+最大共鸣数)%的体力(每个技能最多30%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级沉沦 强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标陷入混乱、士气低落或陷入恐慌，则在下回合对其施加1层虚弱 与2层最大共鸣数罪孽属性的易损。"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
