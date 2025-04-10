@@ -47,7 +47,7 @@
         {
           "level": 1,
           "name": "Draining Roots",
-          "desc": "[CantDuel]\nAmong targets with [MRcAfBa], attack the unit with the slowest Speed;\nDeal ([MRcAfBa] x 10)% more damage",
+          "desc": "[CantDuel]\nAmong targets with [MRcAfBa], attack the unit with the slowest Speed;\nDeal +([MRcAfBa] x 10)% damage",
           "coinlist": [
             {
               "coindescs": [
@@ -144,7 +144,7 @@
         {
           "level": 1,
           "name": "Encroaching Gossypium",
-          "desc": "[CantDuel]\nPrioritizes the unit with the lowest Speed\nDamage dealt by this Attack Skill is fixed to 0.\n[StartBattle] Enter [MRcAfBb] state next turn.",
+          "desc": "[CantDuel]\nPrioritizes the unit with the slowest Speed\nDamage dealt by this Attack Skill is fixed to 0.\n[StartBattle] Enter [MRcAfBb] state next turn.",
           "coinlist": [
             {},
             {
@@ -164,7 +164,7 @@
         {
           "level": 1,
           "name": "Scattering Red-stained Gossypium",
-          "desc": "Prioritizes the target with the most [Laceration]\n[WhenUse] If the main target is the target with the most [Laceration], Base Power +10\nIf the target has 10+ [Laceration], deal +50% more damage",
+          "desc": "Prioritizes the target with the most [Laceration]\n[WhenUse] If the main target is the target with the most [Laceration], Base Power +10\nIf target has 10+ [Laceration], deal +50% damage",
           "coinlist": [
             {
               "coindescs": [
@@ -239,7 +239,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] If the target has 3+ [MRcAiBb], inflict +2 [Combustion] Count, 10 [Combustion], and 2 [MRcAiBc]."
+                  "desc": "[OnSucceedAttack] If target has 3+ [MRcAiBb], inflict +2 [Combustion] Count, 10 [Combustion], and 2 [MRcAiBc]."
                 }
               ]
             },
@@ -271,7 +271,7 @@
                   "desc": "[OnSucceedAttack] Inflict [Combustion] Count equal to the number of Wrath Affinity Skills that the Ardor Blossom Moth will use this turn"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Against the enemy with the lowest Speed, inflict [Combustion] Count equal to the number of Wrath Affinity Skills that the Ardor Blossom Moth will use this turn"
+                  "desc": "[OnSucceedAttackHead] Against the enemy with the slowest Speed, inflict [Combustion] Count equal to the number of Wrath Affinity Skills that the Ardor Blossom Moth will use this turn"
                 }
               ]
             },
@@ -281,7 +281,7 @@
                   "desc": "[OnSucceedAttack] Inflict [Combustion] equal to the number of Wrath Affinity Skills that the Ardor Blossom Moth will use this turn"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Against the enemy with the lowest Speed, inflict [Combustion] equal to the number of Wrath Affinity Skills that the Ardor Blossom Moth will use this turn"
+                  "desc": "[OnSucceedAttackHead] Against the enemy with the slowest Speed, inflict [Combustion] equal to the number of Wrath Affinity Skills that the Ardor Blossom Moth will use this turn"
                 }
               ]
             }
@@ -303,7 +303,7 @@
                   "desc": "[OnSucceedAttack] Inflict [Combustion] equal to the number of Wrath Affinity Skills that the Ardor Blossom Moth will use this turn"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Against the enemy with the lowest Speed, Inflict [Combustion] and [Combustion] Count equal to the number of Wrath Affinity Skills that the Ardor Blossom Moth will use this turn"
+                  "desc": "[OnSucceedAttackHead] Against the enemy with the slowest Speed, Inflict [Combustion] and [Combustion] Count equal to the number of Wrath Affinity Skills that the Ardor Blossom Moth will use this turn"
                 }
               ]
             },
@@ -313,7 +313,7 @@
                   "desc": "[OnSucceedAttack] Inflict [Combustion] equal to the number of Wrath Affinity Skills that the Ardor Blossom Moth will use this turn"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Against the enemy with the lowest Speed, Inflict [Combustion] and [Combustion] Count equal to the number of Wrath Affinity Skills that the Ardor Blossom Moth will use this turn"
+                  "desc": "[OnSucceedAttackHead] Against the enemy with the slowest Speed, Inflict [Combustion] and [Combustion] Count equal to the number of Wrath Affinity Skills that the Ardor Blossom Moth will use this turn"
                 }
               ]
             },

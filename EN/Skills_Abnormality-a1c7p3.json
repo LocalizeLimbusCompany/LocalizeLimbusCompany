@@ -131,7 +131,7 @@
         {
           "level": 1,
           "name": "How Bountiful...",
-          "desc": "[WhenUse] If the target has 6+ [Laceration], Coin Power +1\n[WhenUse] Consume up to 30 [BloodDinner]: gain Coin Power +1 for every 10 [BloodDinner] consumed (effect expires after the first Coin attack)\n[DefeatDuel] Gain 1 [Vulnerable] next turn",
+          "desc": "[WhenUse] If target has 6+ [Laceration], Coin Power +1\n[WhenUse] Consume up to 30 [BloodDinner]: gain Coin Power +1 for every 10 [BloodDinner] consumed (effect expires after the first Coin attack)\n[DefeatDuel] Gain 1 [Vulnerable] next turn",
           "coinlist": [
             {
               "coindescs": [
@@ -192,7 +192,7 @@
         {
           "level": 1,
           "name": "Blood...",
-          "desc": "[WhenUse] If the target has 6+ [Laceration], deal +20% more damage",
+          "desc": "[WhenUse] If target has 6+ [Laceration], deal +20% damage",
           "coinlist": [
             {
               "coindescs": [
@@ -218,7 +218,7 @@
         {
           "level": 1,
           "name": "Expression of Love",
-          "desc": "Prioritizes targets with the least number of negative effects\n[WhenUse] If the target does not have any negative effects, use 'Rough Expression of Love' next turn\n\n[WhenUse] If the target has more negative effects than [FaintMemory] on self, use 'A Sad Embrace' next turn",
+          "desc": "Prioritizes targets with the least number of negative effects\n[WhenUse] If the target does not have any negative effects, use 'Rough Expression of Love' next turn\n\n[WhenUse] If target has more negative effects than [FaintMemory] on self, use 'A Sad Embrace' next turn",
           "coinlist": [
             {
               "coindescs": [
@@ -299,10 +299,10 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] If the target has [AffectionTeddy], consume [AffectionTeddy] and inflict [Curse] and [NailPersonality] equal to the value of [AffectionTeddy] consumed (consumes up to 4)"
+                  "desc": "[OnSucceedAttack] If target has [AffectionTeddy], consume [AffectionTeddy] and inflict [Curse] and [NailPersonality] equal to the value of [AffectionTeddy] consumed (consumes up to 4)"
                 },
                 {
-                  "desc": "[OnSucceedAttack] If the target has 4+ [Curse], consume 4 [Curse] on the target and inflict 1 [CursePackage]"
+                  "desc": "[OnSucceedAttack] If target has 4+ [Curse], consume 4 [Curse] on the target and inflict 1 [CursePackage]"
                 }
               ]
             }
@@ -324,7 +324,7 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "If the target does not have any negative effects, deal +100% more damage"
+                  "desc": "If the target does not have any negative effects, deal +100% damage"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 3 [Curse]"
@@ -417,7 +417,7 @@
         {
           "level": 1,
           "name": "Impaled Desire",
-          "desc": "[WhenUse] If the target has 4+ [Laceration], Coin Power +1",
+          "desc": "[WhenUse] If target has 4+ [Laceration], Coin Power +1",
           "coinlist": [
             {
               "coindescs": [
@@ -443,7 +443,7 @@
         {
           "level": 1,
           "name": "Repressed Desire",
-          "desc": "[WhenUse] If the target has 4+ [Laceration], Base Power +2",
+          "desc": "[WhenUse] If target has 4+ [Laceration], Base Power +2",
           "coinlist": [
             {
               "coindescs": [
@@ -559,7 +559,7 @@
                   "desc": "[OnSucceedAttack] Gain 4 [Breath] and +3 [Breath] Count"
                 },
                 {
-                  "desc": "[CriticalOnSucceedAttack] Deal +100% more damage"
+                  "desc": "[CriticalOnSucceedAttack] Deal +100% damage"
                 }
               ]
             }
@@ -649,7 +649,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Deal +10% more damage for every [Laceration] on the target (max 100%)"
+                  "desc": "[OnSucceedAttack] Deal +10% damage for every [Laceration] on the target (max 100%)"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 3 [Laceration] and +2 [Laceration] Count"
@@ -666,7 +666,7 @@
         {
           "level": 1,
           "name": "Ecstasy of Blood",
-          "desc": "Can Clash with this Skill regardless of Speed\n[StartBattle] If there are enemies with [Laceration], activate [Laceration] on all enemies. All enemies lose 2 [Laceration] Count\n[WhenUse] If this effect did not activate at Combat Start, gain 30 [Laceration].\n[WinDuel] Consume up to 40 [BloodDinner]: for every 10 [BloodDinner] consumed, gain 1 [BloodArmor] and deal +25% more damage (max 100%)\n- If this unit failed to consume [BloodDinner], gain 5 [Laceration], and activate [Laceration] immediately. Lose 2 [Laceration] Count\n[EndSkill] Ends this turn",
+          "desc": "Can Clash with this Skill regardless of Speed\n[StartBattle] If there are enemies with [Laceration], activate [Laceration] on all enemies. All enemies lose 2 [Laceration] Count\n[WhenUse] If this effect did not activate at Combat Start, gain 30 [Laceration].\n[WinDuel] Consume up to 40 [BloodDinner]: for every 10 [BloodDinner] consumed, gain 1 [BloodArmor] and deal +25% damage (max 100%)\n- If this unit failed to consume [BloodDinner], gain 5 [Laceration], and activate [Laceration] immediately. Lose 2 [Laceration] Count\n[EndSkill] Ends this turn",
           "coinlist": [
             {
               "coindescs": [
@@ -705,7 +705,7 @@
         {
           "level": 1,
           "name": "Don Quixote Hardblood Arts 4 - Sundering",
-          "desc": "[WhenUse] If the target has 6+ [Laceration], Coin Power +1\n[WinDuel] With this Skill, deal +20% more damage with every Stage of [BloodArmor] (max 60%)\n[DefeatDuel] Consume 4 [BloodArmor] to gain 20 Shield HP",
+          "desc": "[WhenUse] If target has 6+ [Laceration], Coin Power +1\n[WinDuel] With this Skill, deal +20% damage with every Stage of [BloodArmor] (max 60%)\n[DefeatDuel] Consume 4 [BloodArmor] to gain 20 Shield HP",
           "coinlist": [
             {
               "coindescs": [
@@ -731,7 +731,7 @@
         {
           "level": 1,
           "name": "Don Quixote Hardblood Arts 11 - Impaling",
-          "desc": "[WhenUse] Base Power +1 for every 3 [Laceration] on the target (max 3)\n[WinDuel] With this Skill, deal +20% more damage with every Stage of [BloodArmor] (max 60%)\n[DefeatDuel] Consume 4 [BloodArmor] to gain 20 Shield HP",
+          "desc": "[WhenUse] Base Power +1 for every 3 [Laceration] on the target (max 3)\n[WinDuel] With this Skill, deal +20% damage with every Stage of [BloodArmor] (max 60%)\n[DefeatDuel] Consume 4 [BloodArmor] to gain 20 Shield HP",
           "coinlist": [
             {
               "coindescs": [
@@ -764,7 +764,7 @@
         {
           "level": 1,
           "name": "Don Quixote Hardblood Arts 2 - Hardblood",
-          "desc": "Can Clash with this Skill regardless of Speed\n[StartBattle] Consume 200 [BloodDinner], gain 500 Shield HP, 5 [BloodArmor], and 1 [SwirlingBlood]\n- If this unit doesn't have enough [BloodDinner], gain 50 [Laceration], and activate [Laceration] immediately. Lose 2 [Laceration] Count. Gain 500 Shield HP and 1 [SwirlingBlood] (this damage does not reduce this unit's HP to 1)\n[WinDuel] Gain 200 Shield HP\n[DefeatDuel] Gain 3 [Vulnerable] as long as the Shield gained due to this Skill is active\n[DefeatDuel] Deal -50% less damage, and the damage from this Skill does not Stagger the target\n[EndSkill] Ends this turn",
+          "desc": "Can Clash with this Skill regardless of Speed\n[StartBattle] Consume 200 [BloodDinner], gain 500 Shield HP, 5 [BloodArmor], and 1 [SwirlingBlood]\n- If this unit doesn't have enough [BloodDinner], gain 50 [Laceration], and activate [Laceration] immediately. Lose 2 [Laceration] Count. Gain 500 Shield HP and 1 [SwirlingBlood] (this damage does not reduce this unit's HP to 1)\n[WinDuel] Gain 200 Shield HP\n[DefeatDuel] Gain 3 [Vulnerable] as long as the Shield gained due to this Skill is active\n[DefeatDuel] Deal -50% damage, and the damage from this Skill does not Stagger the target\n[EndSkill] Ends this turn",
           "coinlist": [
             {
               "coindescs": [
@@ -899,10 +899,10 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Deal +10% more damage for every [Laceration] on the target (max 200%)"
+                  "desc": "[OnSucceedAttack] Deal +10% damage for every [Laceration] on the target (max 200%)"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Deal +10% more damage for every [BloodDinner] (max 100%)"
+                  "desc": "[OnSucceedAttack] Deal +10% damage for every [BloodDinner] (max 100%)"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 3 [Laceration] and +2 [Laceration] Count"
@@ -1018,7 +1018,7 @@
         {
           "level": 1,
           "name": "Spiked Whip",
-          "desc": "[WhenUse] If the target has 6+ [Burst], Clash Power +1",
+          "desc": "[WhenUse] If target has 6+ [Burst], Clash Power +1",
           "coinlist": [
             {
               "coindescs": [
@@ -1037,19 +1037,19 @@
         {
           "level": 1,
           "name": "Whip Crack",
-          "desc": "[WhenUse] If the target has 6+ [Burst], Coin Power +1\n[WinDuel] Inflict +2 [Burst] Count",
+          "desc": "[WhenUse] If target has 6+ [Burst], Coin Power +1\n[WinDuel] Inflict +2 [Burst] Count",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] If the target has less than 5 [Burst] Count, inflict +2 [Burst] Count\n- At 5+ [Burst] Count, inflict 2 [Burst] instead"
+                  "desc": "[OnSucceedAttack] If target has less than 5 [Burst] Count, inflict +2 [Burst] Count\n- At 5+ [Burst] Count, inflict 2 [Burst] instead"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] If the target has less than 5 [Burst] Count, inflict +2 [Burst] Count\n- At 5+ [Burst] Count, inflict 2 [Burst] instead"
+                  "desc": "[OnSucceedAttack] If target has less than 5 [Burst] Count, inflict +2 [Burst] Count\n- At 5+ [Burst] Count, inflict 2 [Burst] instead"
                 }
               ]
             }
@@ -1063,12 +1063,12 @@
         {
           "level": 1,
           "name": "Strangling Crown of Thorns",
-          "desc": "Prioritizes targets with the lowest SP\n[WhenUse] If the target has 0- SP, Clash Power +3\n[WhenUse] Coin Power +1 for every 4 [Burst] on the target (max 3)",
+          "desc": "Prioritizes targets with the lowest SP\n[WhenUse] If target has 0- SP, Clash Power +3\n[WhenUse] Coin Power +1 for every 4 [Burst] on the target (max 3)",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Deal 10 SP damage\n- If the target has 0- SP, deal 20 SP damage instead"
+                  "desc": "[OnSucceedAttack] Deal 10 SP damage\n- If target has 0- SP, deal 20 SP damage instead"
                 }
               ]
             }
@@ -1082,26 +1082,26 @@
         {
           "level": 1,
           "name": "Withdraw Whip",
-          "desc": "Prioritizes targets with [ThornNoose]\nIf the target does not have [ThornNoose], deal -50% less damage",
+          "desc": "Prioritizes targets with [ThornNoose]\nIf the target does not have [ThornNoose], deal -50% damage",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack]If the target has [ThornNoose], inflict 2 [Burst]\n- If the target has 10+ [Burst], inflict +2 [Burst] Count instead"
+                  "desc": "[OnSucceedAttack] If the target has [ThornNoose], inflict 2 [Burst]\n- If the target has 10+ [Burst], inflict +2 [Burst] Count instead"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack]If the target has [ThornNoose], inflict 2 [Burst]\n- If the target has 10+ [Burst], inflict +2 [Burst] Count instead"
+                  "desc": "[OnSucceedAttack] If the target has [ThornNoose], inflict 2 [Burst]\n- If the target has 10+ [Burst], inflict +2 [Burst] Count instead"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack]If the target has [ThornNoose], inflict 2 [Burst]\n- If the target has 10+ [Burst], inflict +2 [Burst] Count instead"
+                  "desc": "[OnSucceedAttack] If the target has [ThornNoose], inflict 2 [Burst]\n- If the target has 10+ [Burst], inflict +2 [Burst] Count instead"
                 }
               ]
             },
@@ -1111,7 +1111,7 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] If target has [ThornNoose], deal +50% more damage"
+                  "desc": "[OnSucceedAttack] If target has [ThornNoose], deal +50% damage"
                 }
               ]
             }
@@ -1139,7 +1139,7 @@
                   "desc": "[OnSucceedAttack] Inflict 4 [Burst] and +2 [Burst] Count"
                 },
                 {
-                  "desc": "[OnSucceedAttack] If target is Staggered or has [ThornNoose], deal +30% more damage"
+                  "desc": "[OnSucceedAttack] If target is Staggered or has [ThornNoose], deal +30% damage"
                 },
                 {
                   "desc": "[EnemyKill] Inflict ([Burst] Count on the target x 2) [Burst] against all enemies (max 10)"
@@ -1216,7 +1216,7 @@
         {
           "level": 1,
           "name": "Gracefully...",
-          "desc": "[WhenUse] If the target has 6+ [Laceration], Coin Power +1",
+          "desc": "[WhenUse] If target has 6+ [Laceration], Coin Power +1",
           "coinlist": [
             {
               "coindescs": [
@@ -1242,7 +1242,7 @@
         {
           "level": 1,
           "name": "The Infinite Parade",
-          "desc": "[CantDuel]\nIf the target used a Defense Skill, deal -100% less damage\n[WhenUse] Generate 1 Gondola next turn",
+          "desc": "[CantDuel]\nIf the target used a Defense Skill, deal -100% damage\n[WhenUse] Generate 1 Gondola next turn",
           "coinlist": [
             {
               "coindescs": [
@@ -1259,7 +1259,7 @@
         {
           "level": 1,
           "name": "The Eternal Festival",
-          "desc": "[CantDuel]\nIf the target used a Defense Skill, deal -100% less damage\n[WhenUse] Generate 4 Gondola next turn",
+          "desc": "[CantDuel]\nIf the target used a Defense Skill, deal -100% damage\n[WhenUse] Generate 4 Gondola next turn",
           "coinlist": [
             {
               "coindescs": [
@@ -1559,7 +1559,7 @@
         {
           "level": 1,
           "name": "Don Quixote Hardblood Arts 4 - Sundering",
-          "desc": "Cannot be Staggered until he uses this Skill.\n[WhenUse] Consume up to 100 [BloodDinner]: gain 1 [RegainedStrength] and heal 15 SP for every 10 [BloodDinner] consumed\n[WhenUse] Clash Power +1 for every [BloodDinner_Accumulation] by this unit (max 15)\n[DefeatDuel] Deal -50% less damage, and the damage from this Skill does not Stagger the target.\n[EndSkill] For this turn and next turn, gain [AttackDown] and [DefenseDown] equal to the Clash Power gained with this Skill. (max 15)",
+          "desc": "Cannot be Staggered until he uses this Skill.\n[WhenUse] Consume up to 100 [BloodDinner]: gain 1 [RegainedStrength] and heal 15 SP for every 10 [BloodDinner] consumed\n[WhenUse] Clash Power +1 for every [BloodDinner_Accumulation] by this unit (max 15)\n[DefeatDuel] Deal -50% damage, and the damage from this Skill does not Stagger the target.\n[EndSkill] For this turn and next turn, gain [AttackDown] and [DefenseDown] equal to the Clash Power gained with this Skill. (max 15)",
           "coinlist": [
             {
               "coindescs": [
@@ -1853,7 +1853,7 @@
         {
           "level": 1,
           "name": "Knnh",
-          "desc": "[WinDuel] Deal more damage based on number of Clashes (+10% more damage for every Clash, max 50%)\n[WinDuel] Gain 2 [Agility] next turn\n[DefeatDuel] Gain 2 [Binding] next turn",
+          "desc": "[WinDuel] Deal more damage based on number of Clashes (+10% damage for every Clash, max 50%)\n[WinDuel] Gain 2 [Agility] next turn\n[DefeatDuel] Gain 2 [Binding] next turn",
           "coinlist": [
             {
               "coindescs": [
