@@ -1,0 +1,11 @@
+name: 其他议题（使用中文）
+description: 提出问题，而不是 bug 反馈或需求建议
+labels: ['问题']
+body:
+  - type: textarea
+    id: describe
+    attributes:
+      label: 说说你遇到的问题？
+      description: 您在此处发布新 Issue 会导致全体开发者的电子邮箱收到一封提醒邮件，请确认您的反馈是有意义的，以节省所有人的时间。
+    validations:
+      required: false

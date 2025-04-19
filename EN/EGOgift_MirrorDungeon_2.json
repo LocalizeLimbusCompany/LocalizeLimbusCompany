@@ -1,0 +1,340 @@
+{
+  "dataList": [
+    {
+      "id": 9156,
+      "name": "Decamillennial Hearthflame",
+      "desc": "Turn End: enemies with 3+ [Combustion] Count activates [Combustion] one more time (reduce [Combustion] Count by 1)",
+      "simpleDesc": [
+        {
+          "abilityID": 9156,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9158,
+      "name": "Purloined Flame",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Combustion] or 'Unique Burn'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nOn Hit with a Skill(including E.G.O Skills): if the target has 3+ [Combustion] Count, activate [Combustion] once on the target. (target loses 1 [Combustion] Count; activates once per Skill)\n\nTurn End: targets with 3+ [Combustion] Count activates [Combustion] one more time (target loses 1 [Combustion] Count)\n\nIf a target with [Combustion] is defeated(for Abnormalities, when the Core is defeated), inflict its remaining [Combustion] Potency to one of the enemies with the least [Combustion] Potency at the next Turn Start.\n\nTurn Start: for this turn, inflict 4 [AttackDown] to enemies with [Combustion]\n\nIf a target with [Combustion] is defeated, at the next Turn Start, (defeated enemy's [Combustion] Potency / 15) allies with Skills that inflict [Combustion] gain 2 [AttackDmgUp]. (once per turn)",
+      "simpleDesc": [
+        {
+          "abilityID": 9158,
+          "simpleDesc": "Activate [Combustion] once"
+        },
+        {
+          "abilityID": 91581,
+          "simpleDesc": "Activate [Combustion] 1 more time"
+        },
+        {
+          "abilityID": 91582,
+          "simpleDesc": "Inflict ([Combustion] Potency on defeated enemy)/2 [Combustion] Potency"
+        },
+        {
+          "abilityID": 91583,
+          "simpleDesc": "Inflict 4 [AttackDown]"
+        },
+        {
+          "abilityID": 91583,
+          "simpleDesc": "Gain 2 [AttackDmgUp]"
+        }
+      ]
+    },
+    {
+      "id": 9160,
+      "name": "Ruptured Blood Sac",
+      "desc": "On ally Clash Win: activate the enemy's [Laceration] once (3 times per turn)",
+      "simpleDesc": [
+        {
+          "abilityID": 9160,
+          "simpleDesc": "Activate Bleed once"
+        }
+      ]
+    },
+    {
+      "id": 9162,
+      "name": "Hemorrhagic Shock",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Laceration] or 'Unique Bleed' effects. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nOn ally Clash Win: activate the enemy's [Laceration] once. (once per turn for each ally)\n\nEnemies become Staggerable by [Laceration] Damage; if an enemy gets Staggered due to [Laceration] damage mid-Clash, activate [Laceration] (# of remaining enemy Coins) times\n\nIf all enemies have [Laceration], they lose 2 Defense Levels. At Turn End, inflict (# of [Laceration] activations x 2) [DefenseDown] (max 20)\n\nWhen inflicting [Laceration] Potency or 'Unique Bleed' with Skill effects, inflict 3 [Laceration] Potency and +1 [Laceration] Count on the target",
+      "simpleDesc": [
+        {
+          "abilityID": 9162,
+          "simpleDesc": "On Clash Win, activate Bleed on the target once"
+        },
+        {
+          "abilityID": 91621,
+          "simpleDesc": "After Clashing, activate the enemy's [Laceration] (# of remaining Coins on self) times"
+        },
+        {
+          "abilityID": 91622,
+          "simpleDesc": "Inflict (# of [Laceration] activations x 2) [DefenseDown] (max 20)"
+        },
+        {
+          "abilityID": 91623,
+          "simpleDesc": "Inflict 3 Bleed Potency and +1 Bleed Count"
+        }
+      ]
+    },
+    {
+      "id": 9163,
+      "name": "Gemstone Oscillator",
+      "desc": "When winning a Clash with a Skill that consumed [Vibration] Count: if the target does not have [Vibration], inflict +2 [Vibration] Count\n\nAt 3+ Sloth Reson. including this Skill, inflict +3 [Vibration] Count instead",
+      "simpleDesc": [
+        {
+          "abilityID": 9163,
+          "simpleDesc": "When winning a Clash with a Skill that consumed [Vibration] Count, inflict +2 [Vibration] Count"
+        },
+        {
+          "abilityID": 91631,
+          "simpleDesc": "When winning a Clash with a Skill that consumed [Vibration] Count and is a part of a 3+ Sloth Reson.: inflict +3 [Vibration] Count"
+        }
+      ]
+    },
+    {
+      "id": 9164,
+      "name": "Wobbling Keg",
+      "desc": "Turn Start: at 8+ [Vibration] Count, Clash Power +1\n\nWhen defeating or Staggering an enemy with a Skill that consumes [Vibration] Count on self: gain +([Vibration] Count consumed / 4) [Vibration] Count (once per Skill)",
+      "simpleDesc": [
+        {
+          "abilityID": 9164,
+          "simpleDesc": "At 8+ Tremor Count, Clash Power +1"
+        },
+        {
+          "abilityID": 91641,
+          "simpleDesc": "When winning a Clash with a Skill that consumes [Vibration] Count: gain [Vibration] Count"
+        }
+      ]
+    },
+    {
+      "id": 9166,
+      "name": "Epicenter",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency or Count. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n(If an Identity only has Attack Skills that gain [Vibration] Count on self, this E.G.O Gift does not activate for them)\n\nWhen winning a Clash with a Skill that consumed [Vibration] Count on self: if the target does not have [Vibration], inflict +3 [Vibration] Count\n\nTurn Start: gain Clash Power +([Vibration] Count on self / 5) (max 3)\n\nWhen using a Skill that consumes [Vibration] Count on self: if the target is defeated or Staggered, gain +([Vibration] Count consumed / 2) [Vibration] Count (once per Skill)",
+      "simpleDesc": [
+        {
+          "abilityID": 9166,
+          "simpleDesc": "When winning a Clash with a Skill that consumed [Vibration] Count on self: if the target does not have [Vibration], inflict +3 [Vibration] Count"
+        },
+        {
+          "abilityID": 91661,
+          "simpleDesc": "Turn Start: gain ([Vibration] Count on self / 5) Clash Power"
+        },
+        {
+          "abilityID": 91662,
+          "simpleDesc": "When winning a Clash with a Skill that consumes [Vibration] Count: gain [Vibration] Count"
+        }
+      ]
+    },
+    {
+      "id": 9167,
+      "name": "Omnivibro-octovecti-bell",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency, Count, or 'Unique Tremor'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n(If an Identity only has Attack Skills that gain [Vibration] Count on self, this E.G.O Gift does not activate for them)\n\nWhen winning a Clash with a Skill that inflicts [Vibration] Potency or Count, or consumes [Vibration] Count on self: inflict (# of remaining Coins) [Vibration] Potency against the target; if the target does not have [Vibration], inflict +3 [Vibration] Count\n\nTurn Start: gain (1 + ([Vibration] Count on self / 5)) [ParryingResultUp]. (max 3)\n\nWhen using a Skill that consumes [Vibration] Count on self: when defeating or Staggering a target, gain ([Vibration] Count consumed / 2) [Vibration] Count (once per Skill)\n\nSkills that consume [Vibration] Count on self deal +([Vibration] consumed on self + [Vibration] Potency on the enemy + 5)% damage (except E.G.O Skills; max 50%)",
+      "simpleDesc": [
+        {
+          "abilityID": 9167,
+          "simpleDesc": "On Clash Win, inflict Tremor equal to the # of remaining Coins. If the target does not have [Vibration], inflict Tremor Count"
+        },
+        {
+          "abilityID": 91671,
+          "simpleDesc": "Turm Start: gain Clash Power Up based on Tremor Count on self"
+        },
+        {
+          "abilityID": 91672,
+          "simpleDesc": "When winning a Clash with a Skill that consumes [Vibration] Count: gain [Vibration] Count"
+        },
+        {
+          "abilityID": 91673,
+          "simpleDesc": "Skills that consume [Tremor] Count deal more damage"
+        }
+      ]
+    },
+    {
+      "id": 9168,
+      "name": "Shard of Apocalypse",
+      "desc": "If the target has less than 15 [Burst] Potency, inflict 1 additional Potency when inflicting [Burst] Potency",
+      "simpleDesc": [
+        {
+          "abilityID": 9168,
+          "simpleDesc": "Inflict 1 additional [Burst] Potency"
+        }
+      ]
+    },
+    {
+      "id": 9170,
+      "name": "Eerie Effigy",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Burst] Potency or Count. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n[Burst] effects deal +100% damage against enemy Shields\nIf the target has less than 15 [Burst] Potency, inflict 2 more Potency when inflicting [Burst] Potency\n\nIf [Burst] cannot be applied due to Skill effects, gain Coin Power +1 instead",
+      "simpleDesc": [
+        {
+          "abilityID": 9170,
+          "simpleDesc": "Rupture effects deal +100% damage against Shields"
+        },
+        {
+          "abilityID": 91701,
+          "simpleDesc": "Inflict 2 additional [Burst] Potency"
+        },
+        {
+          "abilityID": 91702,
+          "simpleDesc": "If [Burst] cannot be applied due to Skill effects, gain Coin Power +1 instead"
+        }
+      ]
+    },
+    {
+      "id": 9171,
+      "name": "Ruin",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Burst] Potency or Count. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\n[Burst] effects deal +150% damage against enemy Shield\n\nTurn Start: enemies or Parts with [Burst] lose (3 + ([Burst] Potency / 2)) Offense Level and Defense Level. (max 6)\n\nWhen inflicting [Burst] Potency with Skill effects, inflict 2 [Burst] Potency and +1 [Burst] Count against the target. If the target has less than 15 [Burst] Potency, inflict 2 additional [Burst] Potency.\n\nIf [Burst] cannot be applied due to Skill effects, gain Coin Power +(4 / # of Coins) instead",
+      "simpleDesc": [
+        {
+          "abilityID": 9171,
+          "simpleDesc": "[Burst] effects deal +150% damage against Shields"
+        },
+        {
+          "abilityID": 91711,
+          "simpleDesc": "Enemies with [Burst] lose Offense and Defense Levels"
+        },
+        {
+          "abilityID": 91712,
+          "simpleDesc": "When inflicting [Burst] Potency with Skill effects, Inflict 2 [Burst] Potency and +1 [Burst] Count on target"
+        },
+        {
+          "abilityID": 91713,
+          "simpleDesc": "If [Burst] cannot be applied due to Skill effects, gain Coin Power +(4 / # of Coins) instead"
+        }
+      ]
+    },
+    {
+      "id": 9172,
+      "name": "Cantabile",
+      "desc": "When using base Attack Skills, if the target has 5+ [Sinking] Potency, heal ([Sinking] Potency on the target / 10) SP on self (max 3)",
+      "simpleDesc": [
+        {
+          "abilityID": 9172,
+          "simpleDesc": "Heal SP based on Sinking on the target"
+        }
+      ]
+    },
+    {
+      "id": 9173,
+      "name": "Faded Overcoat",
+      "desc": "Turn End: if there are 3+ enemies with -45 SP, all allies gain 2 [AttackUp] next turn",
+      "simpleDesc": [
+        {
+          "abilityID": 9173,
+          "simpleDesc": "All allies gain 2 [AttackUp]"
+        }
+      ]
+    },
+    {
+      "id": 9175,
+      "name": "Surging Globe",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nWhen using a base Attack Skill, if the enemy has 5+ [Sinking] Potency, heal ([Sinking] Potency on the target / 10) SP on self (max 5)\n\nTurn End: next turn, all allies gain [AttackUp] equal to the number of enemies with -45 SP (max 3)",
+      "simpleDesc": [
+        {
+          "abilityID": 9175,
+          "simpleDesc": "Heal SP based on Sinking on the target"
+        },
+        {
+          "abilityID": 91751,
+          "simpleDesc": "All allies gain [AttackUp] equal to the number of enemies with -45 SP (max 3)"
+        }
+      ]
+    },
+    {
+      "id": 9176,
+      "name": "Impending Wave",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nWhen hitting and dealing HP damage to an enemy with a Skill that inflicts [Sinking] Potency, Count, or 'Unique Sinking', inflict 4 [Sinking] Potency and +3 [Sinking] Count at Turn End (once per turn for each enemy)\nCombat Start: when activating Gloom or Lust A-Reson., inflict 3 [Sinking] and +3 [Sinking] on all enemies (for Abnormalities, a random Part)\n\nAfter using a base Attack Skill, if the target has 10+ [Sinking] Potency, heal ([Sinking] Potency on the target / 10) SP on self (max 5) and inflict the same amount as [DefenseDown] against the target (max 5; once per turn for each enemy)\n\nTurn End: all allies gain [AttackUp] equal to the number of enemies with -45 SP or without SP next turn (max 6)\n\nWhen activating the [Sinking] effect(including 'Unique Sinking') on the target with an On Hit effect from a Base Attack Skill that inflicts or gains [Sinking] Potency, [Sinking] Count, or 'Unique Sinking', heal 5 SP at Turn End (2 times per turn per Identity)\nIf the unit was at 45 SP at Turn Start, the effect changes to the following: when hitting and activating the [Sinking] effect(including 'Unique Sinking') on the target with a base Attack Skill, inflict +3 [Sinking] Count against the targeted enemy (2 times per turn per Identity)",
+      "simpleDesc": [
+        {
+          "abilityID": 9176,
+          "simpleDesc": "Inflict Sinking Potency and Count"
+        },
+        {
+          "abilityID": 91761,
+          "simpleDesc": "Inflict Defense Level Down"
+        },
+        {
+          "abilityID": 91762,
+          "simpleDesc": "Gain Offense Level Up"
+        },
+        {
+          "abilityID": 91763,
+          "simpleDesc": "Inflict Sinking Count"
+        }
+      ]
+    },
+    {
+      "id": 9178,
+      "name": "Angel's Cut",
+      "desc": "Turn End: when an ally has more than 20 Poise Potency, the said unit consumes 1 Poise Potency to gain +1 Poise Count",
+      "simpleDesc": [
+        {
+          "abilityID": 9178,
+          "simpleDesc": "Consume 1 Poise Potency to gain 1 Poise Count"
+        }
+      ]
+    },
+    {
+      "id": 9180,
+      "name": "Cask Spirits",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply or gain [Breath] Potency or Count. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nTurn End: If an ally has more than 20 [Breath] Potency on self, the ally consumes 1 [Breath] Potency to gain 1 [Breath] Count\n\nTurn End: 1 ally with the highest [Breath] Potency and 1 ally with the highest [Breath] Count] gain 2 [Agility] and 1 [AttackUp] (can activate on the same Identity)\n\nWhen gaining [Breath] Potency from Skill effects, gain additional 2 [Breath] Potency and +2 [Breath] Count. If the sum of [Breath] Potency and Count on self is less than 20, gain 3 [Breath] Potency and +3 [Breath] Count instead.\n\nCombat End: at more than 40 [Breath] Potency, consume 15 [Breath] Potency to [Discard] 1 Skill of the lowest rank in all of that unit's Skill Slots (once per turn for each character)",
+      "simpleDesc": [
+        {
+          "abilityID": 9180,
+          "simpleDesc": "Gain Poise Count"
+        },
+        {
+          "abilityID": 91801,
+          "simpleDesc": "Apply 2 Haste and 1 Offense Level Up"
+        },
+        {
+          "abilityID": 91802,
+          "simpleDesc": "When gaining [Breath] Potency with Skill effects, gain additional Potency and Count"
+        },
+        {
+          "abilityID": 91803,
+          "simpleDesc": "Discard a Skill of the lowest rank in this unit's Skill Slot"
+        }
+      ]
+    },
+    {
+      "id": 9181,
+      "name": "Miniature Telepole",
+      "desc": "After Attack with a Skill Attack that consumed 7+ [Charge] Count on self: if the target is defeated, gain ([Charge] Count consumed by the Skill / 4) [Charge] Count",
+      "simpleDesc": [
+        {
+          "abilityID": 9181,
+          "simpleDesc": "Gain [Charge] Count based on [Charge] Count consumed"
+        }
+      ]
+    },
+    {
+      "id": 9183,
+      "name": "Insulator",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that gain [Charge] Count or 'Unique Charge'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nAfter Attack With a Skill Attack that consumes [Charge] Count on self: if the target is defeated, gain ([Charge] Count consumed by the Skill / 3) [Charge] Count\n\nTurn Start: at less than 3 [Charge] Count, gain +3 [Charge] Count\nTurn Start: at 3+ [Charge] Count, gain 1 [AttackDmgUp]",
+      "simpleDesc": [
+        {
+          "abilityID": 9183,
+          "simpleDesc": "Gain [Charge] Count based on [Charge] Count consumed"
+        },
+        {
+          "abilityID": 91831,
+          "simpleDesc": "Gain 1 [AttackDmgUp] or [Charge] Count based on [Charge] Count"
+        }
+      ]
+    },
+    {
+      "id": 9184,
+      "name": "T-5 Perpetual Motion Machine",
+      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that gain [Charge] Count or 'Unique Charge'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nTurn Start: at less than 3 [Charge] Count, gain +3 [Charge] Count.\nTurn Start: at 5+ [Charge] Count, gain +2 min/max Speed, 1 [Enhancement], and 2 [AttackDmgUp].\n\nAfter Attack with a Skill that consumed [Charge] Count on self: if the target is defeated, gain +([Charge] Count consumed by the Skill / 3) [Charge] Count; next turn, gain 1 [PlusCoinValueUp]\n\nAfter Attack with a Skill 3 that consumed [Charge] Count on self: if the target is defeated, or if the ally who used the Skill is at 3+ [Charge], they add 1 Skill 3 to the list of Skills for the next upcoming turn. (once per turn for each ally; 'Unique Charge' does not interact with this effect)",
+      "simpleDesc": [
+        {
+          "abilityID": 9184,
+          "simpleDesc": "Gain 1 [AttackDmgUp] or [Charge] Count based on [Charge] Count"
+        },
+        {
+          "abilityID": 91841,
+          "simpleDesc": "Gain [Charge] Count based on [Charge] Count consumed. Next turn, gain [PlusCoinValueUp]"
+        },
+        {
+          "abilityID": 91842,
+          "simpleDesc": "After Attack with a Skill 3 that consumed [Charge] Count, add 1 Skill 3 to the Skill list"
+        }
+      ]
+    }
+  ]
+}
