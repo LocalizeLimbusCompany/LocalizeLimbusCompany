@@ -32,7 +32,7 @@
 
 如果您觉得本项目对您有帮助，请麻烦点击一下右上角的**STAR**，我们将感激不尽！
 
-## 💾 开始使用 _Get Started_
+## 💾 开始使用 _Getting Start_
 - 推荐使用[工具箱](https://github.com/LocalizeLimbusCompany/LLC_MOD_Toolbox)进行**自动安装**。
   - ✔ 国内优化
   - ✔ 一键式安装
