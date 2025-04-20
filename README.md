@@ -27,12 +27,12 @@
 
 </div>
 
-## 📺功能 _Feature_
+## 📺功能 _Features_
 通过月亮计划提供的**官方翻译接口**，推出的适用于**中国母语用户**的准确且优雅的**100%本地化**语言包。  
 
 如果您觉得本项目对您有帮助，请麻烦点击一下右上角的**STAR**，我们将感激不尽！
 
-## 💾 开始使用 _Getting Start_
+## 💾 开始使用 _Getting Started_
 - 推荐使用[工具箱](https://github.com/LocalizeLimbusCompany/LLC_MOD_Toolbox)进行**自动安装**。
   - ✔ 国内优化
   - ✔ 一键式安装
@@ -42,7 +42,7 @@
   - ❌ 较为繁琐
   - ❌ 如果在Github下载文件，需要进行网络优化操作
 
-## 📌截图 _ScreenShot_
+## 📌截图 _ScreenShots_
 <details>
 <summary>玻璃窗</summary>
 
@@ -74,7 +74,7 @@
 
 </details>
 
-## ✉其他信息 _Other Infomation_
+## ✉其他信息 _Miscellaneous_
 ### 🆓完全免费 _Completely free_
 - 本项目完全免费提供。
 - 本项目不会推出任何**增值业务**。
