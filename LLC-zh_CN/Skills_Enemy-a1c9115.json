@@ -1,0 +1,62 @@
+{
+  "dataList": [
+    {
+      "id": 9101905,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "斩破长空",
+          "desc": "[StartBattle] 若目标的流血 强度不低于5级，则使本技能的攻击容量+1\n[StartBattle] 若本回合自身使用的攻击技能不低于4个，则使本技能的最终威力+5\n[WinDuel] 使全体友方单位恢复15点理智值\n若目标的流血 强度不低于7级，则使本技能造成的伤害+30%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加3级流血 强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "若目标的流血 强度不低于7级，则使本硬币造成的伤害+50%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加10层流血 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9101906,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "后巷规矩",
+          "desc": "[WhenUse] 除自身以外每有1名友方单位存活，使本技能额外增加1枚硬币(最多3枚)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度并对其施加2层流血 "
+                },
+                {
+                  "desc": "[EnemyKill] 使全体友方单位恢复20点理智值"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
