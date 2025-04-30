@@ -1744,6 +1744,271 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1061201,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Energy Strike",
+          "desc": "At 2+ [Charge], Coin Power +1\n[WhenUse] Gain +2 [Charge] Count",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Energy Strike",
+          "desc": "<style=\"highlight\">Deal +2% damage for every [Charge] (max 10%)</style>\nAt 2+ [Charge], Coin Power +1\n[WhenUse] Gain +2 [Charge] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Gain +([Charge] + 1) [Charge] Count (max 3)</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Energy Strike",
+          "desc": "Deal <style=\"highlight\">+3%</style> damage for every [Charge] (max <style=\"highlight\">15%</style>)\nAt 2+ [Charge], Coin Power +1\n<style=\"highlight\">At 5+ [Charge] Count, Coin Power +1</style>\n[WhenUse] Gain +2 [Charge] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +([Charge] + 1) [Charge] Count (max <style=\"highlight\">4</style>)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061202,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Mind Whip",
+          "desc": "[WhenUse] At 5~9 [Charge] Count:\n- Gain 15 [Sinking] and raise this unit's [Charge] Count to 10\n- This Skill gains the following attributes: [CantIdentify], [WideAreaRampage], and Atk Weight +1\n[WhenUse] Consume 10 [Charge] Count to gain Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Sinking] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Mind Whip",
+          "desc": "<style=\"highlight\">Deal +2% damage for every [Charge] (max 10%)</style>\n[WhenUse] At 5~9 [Charge] Count:\n- Gain 15 [Sinking] and raise this unit's [Charge] Count to 10\n- This Skill gains the following attributes: [CantIdentify], [WideAreaRampage], and Atk Weight +1\n[WhenUse] Consume 10 [Charge] Count to gain Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Raise Stagger Threshold by 5% of damage dealt</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Raise Stagger Threshold by 5% of damage dealt</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Raise Stagger Threshold by 5% of damage dealt</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Sinking] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Raise Stagger Threshold by 10% of damage dealt</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Mind Whip",
+          "desc": "Deal <style=\"highlight\">+4%</style> damage for every [Charge] (max <style=\"highlight\">20%</style>)\n[WhenUse] At 5~9 [Charge] Count:\n- Gain <style=\"highlight\">10</style> [Sinking] and raise this unit's [Charge] Count to 10\n- This Skill gains the following attributes: [CantIdentify], [WideAreaRampage], and Atk Weight +1\n<style=\"highlight\">- [BeforeUse] At 5+ [Charge], this Skill does not gain the [CantIdentify] effect</style>\n[WhenUse] Consume 10 [Charge] Count to gain Coin Power <style=\"highlight\">+2</style>\n<style=\"highlight\">[BeforeAttack] At 8+ remaining [Charge] Count, consume 8 [Charge] Count to deal +40% damage</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Raise Stagger Threshold by 5% of damage dealt<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Raise Stagger Threshold by 5% of damage dealt<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Raise Stagger Threshold by 5% of damage dealt<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Sinking] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Raise Stagger Threshold by 10% of damage dealt<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061203,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Concentration",
+          "desc": "Coin Power +1 for every [Charge] (max 5)\nAt 10+ [Charge] Count, Final Power +2\n[WhenUse] Gain +5 [Charge] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "Deal +(this Skill's Power x 5)% damage (max 100%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain +([Charge] + 1) [Charge] Count (max 6)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [Sinking] and +2 [Sinking] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Concentration",
+          "desc": "<style=\"highlight\">Base Power +1</style> and Coin Power +1 for every [Charge] <style=\"highlight\">(max 5 each)</style>\nAt 10+ [Charge] Count, Final Power <style=\"highlight\">+4</style>\n[WhenUse] Gain <style=\"highlight\">+7</style> [Charge] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "Deal +(this Skill's Power x 5)% damage (max <style=\"highlight\">150%</style>)"
+                },
+                {
+                  "desc": "<style=\"highlight\">At 3+ [Charge], deal +20% damage for every [Charge] (max 100%)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain +([Charge] + <style=\"highlight\">3</style>) [Charge] Count (max <style=\"highlight\">8</style>)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [Sinking] and <style=\"highlight\">+4</style> [Sinking] Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061204,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Energy Condensation",
+          "desc": "[WhenUse] At 10+ [Charge] Count, Coin Power +2\n[WhenUse] Gain +3 [Charge] Count (once per turn)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Energy Condensation",
+          "desc": "[WhenUse] At 10+ [Charge] Count, Coin Power <style=\"highlight\">+4</style>\n[WhenUse] Gain +3 [Charge] Count (<style=\"highlight\">2 times</style> per turn)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }

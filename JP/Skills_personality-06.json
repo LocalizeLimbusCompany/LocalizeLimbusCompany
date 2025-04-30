@@ -1744,6 +1744,271 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1061201,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "エネルギー強打",
+          "desc": "[Charge]が2以上なら、コイン威力 +1\n[WhenUse] 自分の[Charge]回数が2増加",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "エネルギー強打",
+          "desc": "<style=\"highlight\">[Charge]1につきダメージ量 +2% (最大10%)</style>\n[Charge]が2以上なら、コイン威力 +1\n[WhenUse] 自分の[Charge]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] ([Charge] + 1)だけ、自分の[Charge]回数が増加(最大3)</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "エネルギー強打",
+          "desc": "[Charge]1につきダメージ量 <style=\"highlight\">+3%</style> (最大<style=\"highlight\">15%</style>)\n[Charge]が2以上なら、コイン威力 +1\n<style=\"highlight\">[Charge]回数が5以上なら、コイン威力 +1</style>\n[WhenUse] 自分の[Charge]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ([Charge] + 1)だけ、自分の[Charge]回数が増加(最大<style=\"highlight\">4</style>)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061202,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "精神の鞭",
+          "desc": "[WhenUse] [Charge]回数が5以上10未満なら、\n- [Sinking]15を得る、[Charge]回数が10に増加\n- このスキルが[CantIdentify]、[WideAreaRampage]状態になって攻撃加重値 +1\n[WhenUse] [Charge]回数を10消耗してコイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "精神の鞭",
+          "desc": "<style=\"highlight\">[Charge]1につきダメージ量 +2% (最大10%)</style>\n[WhenUse] [Charge]回数が5以上10未満なら、\n- [Sinking]15を得る、[Charge]回数が10に増加\n- このスキルが[CantIdentify]、[WideAreaRampage]状態になって攻撃加重値 +1\n[WhenUse] [Charge]回数を10消耗してコイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] ダメージ量の5%分、混乱区間を前進</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] ダメージ量の5%分、混乱区間を前進</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] ダメージ量の5%分、混乱区間を前進</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]回数が2増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] ダメージ量の10%分、混乱区間を前進</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "精神の鞭",
+          "desc": "[Charge]1につきダメージ量 <style=\"highlight\">+4%</style> (最大<style=\"highlight\">20%</style>)\n[WhenUse] [Charge]回数が5以上10未満なら、\n- [Sinking]<style=\"highlight\">10</style>を得る、[Charge]回数が10に増加\n- このスキルが[CantIdentify]、[WideAreaRampage]状態になって攻撃加重値 +1\n<style=\"highlight\">- [BeforeUse] [Charge]が5以上なら、[CantIdentify]効果が適用されない</style>\n[WhenUse] [Charge]回数を10消耗してコイン威力 <style=\"highlight\">+2</style>\n<style=\"highlight\">[BeforeAttack] 残り[Charge]回数が8以上なら、[Charge]回数を8消耗してダメージ量 +40%</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] ダメージ量の5%分、混乱区間を前進<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] ダメージ量の5%分、混乱区間を前進<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] ダメージ量の5%分、混乱区間を前進<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]回数が2増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] ダメージ量の10%分、混乱区間を前進<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061203,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "集中",
+          "desc": "[Charge]1につきコイン威力 +1 (最大5)\n[Charge]回数が10以上なら、最終威力 +2\n[WhenUse] 自分の[Charge]回数が5増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "ダメージ量 +(このスキルの威力 × 5)% (最大100%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] ([Charge] + 1)だけ、自分の[Charge]回数が増加(最大6)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]4を付与、[Sinking]回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "集中",
+          "desc": "[Charge]1につき<style=\"highlight\">基本威力 +1</style>、コイン威力 +1 <style=\"highlight\">(それぞれ最大5)</style>\n[Charge]回数が10以上なら、最終威力<style=\"highlight\">+4</style>\n[WhenUse] 自分の[Charge]回数が<style=\"highlight\">7</style>増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "ダメージ量 +(このスキルの威力 × 5)% (最大<style=\"highlight\">150%</style>)"
+                },
+                {
+                  "desc": "<style=\"highlight\">[Charge]が3以上なら、[Charge]1につきダメージ量 +20%(最大100%)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] ([Charge] + <style=\"highlight\">3</style>)だけ、自分の[Charge]回数が増加(最大<style=\"highlight\">8</style>)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]4を付与、[Sinking]回数が<style=\"highlight\">4</style>増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061204,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "エネルギー凝集",
+          "desc": "[WhenUse] 自分の[Charge]回数が10以上なら、コイン威力 +2\n[WhenUse] 自分の[Charge]回数が3増加(1ターンにつき1回)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "エネルギー凝集",
+          "desc": "[WhenUse] 自分の[Charge]回数が10以上なら、コイン威力<style=\"highlight\"> +4</style>\n[WhenUse] 自分の[Charge]回数が3増加(1ターンにつき<style=\"highlight\">2</style>回)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }
