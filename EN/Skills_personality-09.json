@@ -1320,6 +1320,272 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1091201,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Serpent Glint",
+          "desc": "[WhenUse] Gain +1 [Breath] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Serpent Glint",
+          "desc": "<style=\"highlight\">[WhenUse] If the sum of [Breath] Potency on self and target's [Burst] Potency is 10 or higher, Coin Power +1</style>\n[WhenUse] Gain +<style=\"highlight\">2</style> [Breath] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttack] If this unit has [SnakeStance], inflict 1 [Burst]</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Serpent Glint",
+          "desc": "<style=\"highlight\">[WhenUse] Coin Power +1 for every 10 (sum of this unit's [Breath] Potency and target's [Burst] Potency) (max 2)</style>\n[WhenUse] Gain +2 [Breath] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] If this unit has [SnakeStance], inflict <style=\"highlight\">2</style> [Burst]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1091202,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Snake Fang",
+          "desc": "[WinDuel] Inflict +2 [Burst] Count\n[WinDuel] Gain +1 [Breath] Count",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict [BurstPoison]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Snake Fang",
+          "desc": "<style=\"highlight\">[WhenUse] If the sum of [Breath] Potency on self and target's [Burst] Potency is 10 or higher, Coin Power +1</style>\n[WinDuel] Inflict +2 [Burst] Count\n[WinDuel] Gain +<style=\"highlight\">2</style> [Breath] Count",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Burst] Count<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] At 30+ [Breath], consume 10 [Breath] on self to Reuse Coin once (1 time max)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict [BurstPoison]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Snake Fang",
+          "desc": "<style=\"highlight\">[WhenUse] Coin Power +1 for every 10 (sum of this unit's [Breath] Potency and target's [Burst] Potency) (max 2)</style>\n[WinDuel] Inflict +2 [Burst] Count\n[WinDuel] Gain +2 [Breath] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Inflict 1 [Burst]</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Burst] Count<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] At 30+ [Breath], consume 10 [Breath] on self to Reuse Coin once (1 time max)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict [BurstPoison]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttack] Gain 1 [SnakeStance]</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1091203,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Serpent's Mortal Flurry",
+          "desc": "[WideAreaRampage]\n[WhenUse] If the sum of [Breath] Potency on self and the main target's [Burst] Potency is 10 or higher, Coin Power +1\n[WhenUse] Gain Clash Power equal to [SnakeStance] on self\n[WhenUse] Gain 3 [SnakeStance]\n[WinDuel] Inflict +1 [Burst] Count against all targets",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +2 [Breath] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Reduce [BurstPoison] on target by 1"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Reuse this Coin once (2 times per Skill)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Serpent's Mortal Flurry",
+          "desc": "[WideAreaRampage]\n<style=\"highlight\">[WhenUse] Coin Power +1 for every 10 (sum of this unit's [Breath] Potency and the main target's [Burst] Potency) (max 2)</style>\n[WhenUse] Gain Clash Power equal to [SnakeStance] on self\n[WhenUse] Gain 3 [SnakeStance]\n[WinDuel] Inflict +1 [Burst] Count on all targets",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +2 [Breath] Count<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Burst] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Reduce [BurstPoison] on target by 1<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Reuse this Coin once (2 times per Skill)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1091204,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Reversal Kick",
+          "desc": "[CanDuelGuard] \n[StartBattle] Gain 3 [SnakeStance] next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Reversal Kick",
+          "desc": "[CanDuelGuard]\n[StartBattle] Gain 3 [SnakeStance] next turn\n<style=\"highlight\">[WhenUse] At 10+ [Breath] Count, Coin Power +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -26,7 +26,7 @@
     },
     {
       "id": "GetConfirmedEgogiftOnWinBattle",
-      "content": "<color=#ebcaa2>次の戦闘に勝利時、{reward}を獲得！</color>"
+      "content": "<color=#ebcaa2>次の戦闘に勝利時、E.G.Oギフト{reward}を獲得！</color>"
     },
     {
       "id": "StartBattle",
@@ -90,7 +90,15 @@
     },
     {
       "id": "GetConfirmedEgogift",
-      "content": "<color=#ebcaa2>{reward}を獲得！</color>"
+      "content": "<color=#ebcaa2>E.G.Oギフト{reward}獲得！</color>"
+    },
+    {
+      "id": "GetConfirmedStackableEgogift",
+      "content": "<color=#ebcaa2>E.G.Oギフト{reward}を{stack}個獲得！</color>"
+    },
+    {
+      "id": "LoseConfirmedStackableEgogift",
+      "content": "<color=#ebcaa2>E.G.Oギフト{reward}を{stack}個ロスト！</color>"
     },
     {
       "id": "GetBuff_OnStageStart",
@@ -106,11 +114,11 @@
     },
     {
       "id": "DestroyEgogift",
-      "content": "<color=#ebcaa2>{reward}</color> <color=#e30000>消滅！</color>"
+      "content": "<color=#ebcaa2>E.G.Oギフト{reward}</color> <color=#e30000>消滅！</color>"
     },
     {
       "id": "Choice_90103301",
-      "content": "<color=#ebcaa2>この戦闘の間、</color><color=#f8c200>速度+1</color>"
+      "content": "<color=#ebcaa2>この戦闘の間</color> <color=#f8c200>速度 +1</color>"
     },
     {
       "id": "Choice_901001",
@@ -130,11 +138,11 @@
     },
     {
       "id": "Choice_901019",
-      "content": "<color=#ebcaa2>戦闘開始時、</color><color=#e30000>速度-2</color>"
+      "content": "<color=#ebcaa2>戦闘開始時、</color><color=#e30000>速度 -2</color>"
     },
     {
       "id": "Choice_90103402",
-      "content": "<color=#ebcaa2>この戦闘の間、</color><color=#f8c200>速度+2</color>"
+      "content": "<color=#ebcaa2>この戦闘の間</color> <color=#f8c200>速度 +2</color>"
     },
     {
       "id": "Choice_1030301",
@@ -142,7 +150,7 @@
     },
     {
       "id": "Choice_1030501",
-      "content": "<color=#ff0000>戦闘発生！</color>\n<color=#ebcaa2>全ての敵に</color><color=#e30000>攻撃威力減少5が</color><color=#ebcaa2>付与！</color>"
+      "content": "<color=#ff0000>戦闘発生！</color>\n<color=#ebcaa2>全ての敵へ</color> <color=#e30000>攻撃威力減少5</color> <color=#ebcaa2>付与！</color>"
     },
     {
       "id": "Choice_1031001",
@@ -154,7 +162,7 @@
     },
     {
       "id": "Choice_90100502",
-      "content": "<color=#ebcaa2>判定に失敗した囚人</color> <color=#e30000>15</color><color=#ebcaa2>ダメージ</color>、<color=#fe4b48>12精神力</color><color=#ebcaa2>ダメージ！</color>"
+      "content": "<color=#ebcaa2>判定に失敗した囚人</color> <color=#e30000>15</color><color=#ebcaa2>ダメージ</color>, <color=#fe4b48>12精神力</color><color=#ebcaa2>ダメージ！</color>"
     },
     {
       "id": "Choice_90101001",
@@ -342,7 +350,7 @@
     },
     {
       "id": "Choice_90200502",
-      "content": "<color=#ebcaa2>判定に失敗した囚人</color> <color=#e30000>15</color><color=#ebcaa2>ダメージ</color>、<color=#fe4b48>12精神力</color><color=#ebcaa2>ダメージ！</color>"
+      "content": "<color=#ebcaa2>判定に失敗した囚人</color> <color=#e30000>15</color><color=#ebcaa2>ダメージ</color>, <color=#fe4b48>12精神力</color><color=#ebcaa2>ダメージ！</color>"
     },
     {
       "id": "Choice_LoseBattle",
@@ -430,7 +438,7 @@
     },
     {
       "id": "GetImmediateConfirmedEgogifts",
-      "content": "<color=#ebcaa2>{reward}獲得！</color>"
+      "content": "<color=#ebcaa2>E.G.Oギフト{reward}獲得！</color>"
     },
     {
       "id": "Choice_EGO901101",
@@ -443,6 +451,10 @@
     {
       "id": "Choice_EGO971054",
       "content": "戦闘勝利時、E.G.Oギフト「たぷたぷの燃料タンク」を獲得"
+    },
+    {
+      "id": "LoseMpOnlyUntilMin",
+      "content": "<color=#ebcaa2>{conditions}{targets}</color> <color=#fe4b48>精神力が最低値まで</color><color=#ebcaa2>減少</color>"
     }
   ]
 }
