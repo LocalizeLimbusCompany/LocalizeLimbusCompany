@@ -74,7 +74,7 @@
         {
           "level": 1,
           "name": "清扫支援",
-          "desc": "[WhenUse] 使自身获得2层充能 \n若自身带有护盾，则使本技能的拼点威力+1",
+          "desc": "[WhenUse] 자신의 충전 횟수 2 증가\n자신에게 보호막이 있을 때 합 위력 +1",
           "coinlist": [
             {},
             {
@@ -89,7 +89,7 @@
         {
           "level": 2,
           "name": "清扫支援",
-          "desc": "[WhenUse] 使自身获得3层充能 \n若自身带有护盾，则使本技能的拼点威力+2",
+          "desc": "[WhenUse] 자신의 충전 횟수 3 증가\n자신에게 보호막이 있을 때 합 위력 +2",
           "coinlist": [
             {
               "coindescs": [
@@ -110,7 +110,7 @@
         {
           "level": 4,
           "name": "清扫支援",
-          "desc": "[WhenUse] 使自身获得3层充能 \n若自身带有护盾，则使本技能的拼点威力+2",
+          "desc": "[WhenUse] 자신의 충전 횟수 3 증가\n자신에게 보호막이 있을 때 합 위력 +2",
           "coinlist": [
             {
               "coindescs": [
@@ -187,7 +187,7 @@
         {
           "level": 4,
           "name": "防御",
-          "desc": "[WhenUse] 使自身获得3层充能力场 (每回合最多3次)",
+          "desc": "[WhenUse] 使自身获得<style=\"highlight\">3</style>层充能力场 (每回合最多3次)",
           "coinlist": [
             {}
           ]
@@ -315,7 +315,7 @@
         {
           "level": 4,
           "name": "先行一步",
-          "desc": "若自身的速度值不低于6，则使本技能的硬币威力+1\n[WhenUse] 下回合使自身获得2层迅捷 ",
+          "desc": "자신의 속도가 6 이상이면, 코인 위력 +1\n[WhenUse] 다음 턴에 신속 2를 얻음",
           "coinlist": [
             {
               "coindescs": [
@@ -348,7 +348,7 @@
         {
           "level": 3,
           "name": "丧心病狂",
-          "desc": "若自身的速度值不低于8，则使本技能的硬币威力+1\n根据目标已失去体力，相应增加本技能造成的伤害(每失去体力上限1%的体力，造成的伤害+0.3%)",
+          "desc": "자신의 속도가 8 이상이면, 코인 위력 +1\n대상의 잃은 체력에 비례하여 피해량이 증가함. (대상의 잃은 체력 1% 당 피해량 0.3% 증가)",
           "coinlist": [
             {
               "coindescs": [
@@ -377,7 +377,7 @@
         {
           "level": 4,
           "name": "丧心病狂",
-          "desc": "若自身的速度值不低于6，则使本技能的硬币威力+1\n根据目标已失去体力，相应增加本技能造成的伤害(每失去体力上限1%的体力，造成的伤害+0.5%)",
+          "desc": "자신의 속도가 6 이상이면, 코인 위력 +1\n대상의 잃은 체력에 비례하여 피해량이 증가함. (대상의 잃은 체력 1% 당 피해량 0.5% 증가)",
           "coinlist": [
             {
               "coindescs": [
@@ -419,7 +419,7 @@
         {
           "level": 4,
           "name": "闪电神经",
-          "desc": "若目标的流血 强度不低于7级，则使本技能的硬币威力+2\n[OnSucceedEvade] 下回合使自身获得1层迅捷 (每回合最多3次)",
+          "desc": "대상의 출혈 이 7 이상이면 코인 위력 +2\n[OnSucceedEvade] 다음 턴에 신속 1을 얻음 (턴 당 최대 3회)",
           "coinlist": [
             {}
           ]
@@ -446,7 +446,7 @@
         {
           "level": 2,
           "name": "知识消耗",
-          "desc": "[WhenUse] 丢弃 自身所有行动槽中级别最高的1个技能\n[WhenUse] 若自身的所解真知 层数不低于3层，则使本技能的拼点威力+1",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 등급이 가장 높은 스킬 1개를 버림\n[WhenUse] [KnowledgeExplored]이 3 이상이면, 합 위력 +1",
           "coinlist": [
             {
               "coindescs": [
@@ -463,7 +463,7 @@
         {
           "level": 4,
           "name": "知识消耗",
-          "desc": "[WhenUse] 丢弃 自身所有行动槽中级别最高的1个技能\n[WhenUse] 使本技能的拼点威力+(自身的所解真知 层数-1)",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 등급이 가장 높은 스킬 1개를 버림\n[WhenUse] ([KnowledgeExplored] - 1)만큼 합 위력이 증가",
           "coinlist": [
             {
               "coindescs": [
@@ -501,7 +501,7 @@
         {
           "level": 2,
           "name": "入匙解封",
-          "desc": "[WhenUse] 按技能级别由低到高随机丢弃 自身所有行动槽中的2个技能\n[WhenUse] 若自身的所解真知 层数不低于3层，则使本技能的硬币威力+1",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 무작위 스킬 2개를 등급이 낮은 순으로 버림\n[WhenUse] [KnowledgeExplored]이 3 이상이면, 코인 위력 +1",
           "coinlist": [
             {},
             {},
@@ -517,7 +517,7 @@
         {
           "level": 4,
           "name": "入匙解封",
-          "desc": "[WhenUse] 按技能级别由低到高随机丢弃 自身所有行动槽中的2个技能\n[WhenUse] 使本技能的硬币威力+(自身的所解真知 层数-1)",
+          "desc": "[WhenUse] 자신의 모든 스킬 슬롯에서 무작위 스킬 2개를 등급이 낮은 순으로 버림\n[WhenUse] ([KnowledgeExplored] - 1)만큼 코인 위력이 증가",
           "coinlist": [
             {},
             {},
@@ -538,7 +538,7 @@
         {
           "level": 3,
           "name": "循环的知识",
-          "desc": "[WhenUse] 若自身的所解真知 层数不低于2层，则使本技能的硬币威力+(自身的所解真知 层数)\n[WhenUse] 目标每带有1级沉沦 强度，使本技能造成的伤害+1.5%(最多+15%)",
+          "desc": "[WhenUse] [KnowledgeExplored]이 2 이상이면, [KnowledgeExplored] 만큼 코인 위력이 증가\n[WhenUse] 대상의 [Sinking] 1당 피해량 +1.5% (최대 15%)",
           "coinlist": [
             {},
             {},
@@ -557,7 +557,7 @@
         {
           "level": 4,
           "name": "循环的知识",
-          "desc": "[WhenUse] 若自身的所解真知 层数不低于2层，则使本技能的硬币威力+(自身的所解真知 层数)\n[WhenUse] 目标每带有1级沉沦 强度，使本技能造成的伤害+3%(最多+30%)",
+          "desc": "[WhenUse] [KnowledgeExplored]이 2 이상이면, [KnowledgeExplored]만큼 코인 위력이 증가\n[WhenUse] 대상의 [Sinking] 1당 피해량 +3% (최대 30%)",
           "coinlist": [
             {},
             {},
@@ -644,7 +644,7 @@
         {
           "level": 4,
           "name": "推理开始",
-          "desc": "[WhenUse] 对自身施加2层震颤 \n若自身的震颤 层数不低于6层，则使本技能的硬币威力+1",
+          "desc": "[WhenUse] 자신의 [Vibration] 횟수 2 증가\n<style=\"highlight\">자신의 [Vibration] 횟수가 6 이상이면, 코인 위력 +1</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -698,7 +698,7 @@
         {
           "level": 2,
           "name": "变形拐杖防身术",
-          "desc": "[WhenUse] 若目标的震颤 强度不低于8级，则使本技能的拼点威力+1\n[WhenUse] 对自身施加3层震颤 \n若自身的震颤 层数不低于6层，则使本技能的硬币威力+1",
+          "desc": "<style=\"highlight\">[WhenUse] 대상의 [Vibration]이 8 이상이면, 합 위력 +1</style>\n[WhenUse] 자신의 [Vibration] 횟수 3 증가\n<style=\"highlight\">자신의 [Vibration] 횟수가 6 이상이면, 코인 위력 +1</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -710,14 +710,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加3级震颤 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">3</style>级震颤 强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标的震颤 强度不低于7级，则使其震颤引爆 ，并使其震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 若目标的震颤 强度不低于<style=\"highlight\">7</style>级，则使其震颤引爆 ，并使其震颤 层数减少1层"
                 }
               ]
             }
@@ -726,7 +726,7 @@
         {
           "level": 4,
           "name": "变形拐杖防身术",
-          "desc": "[WhenUse] 若目标的震颤 强度不低于6级，则使本技能的拼点威力+1\n[WhenUse] 对自身施加3层震颤 \n若自身的震颤 层数不低于5层，则使本技能的硬币威力+1",
+          "desc": "[WhenUse] 대상의 [Vibration]이 <style=\"highlight\">6</style> 이상이면, 합 위력 +1\n[WhenUse] 자신의 [Vibration] 횟수 3 증가\n자신의 [Vibration] 횟수가 <style=\"highlight\">5</style> 이상이면, 코인 위력 +1",
           "coinlist": [
             {
               "coindescs": [
@@ -738,14 +738,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加3级震颤 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加3级震颤 强度<style=\"highlight\"></style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标的震颤 强度不低于6级，则使其震颤引爆 ，并使其震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 若目标的震颤 强度不低于<style=\"highlight\">6</style>级，则使其震颤引爆 ，并使其震颤 层数减少1层"
                 }
               ]
             }
@@ -759,7 +759,7 @@
         {
           "level": 3,
           "name": "犯人就是你！",
-          "desc": "[WhenUse] 若目标的震颤 强度不低于6级，则使本技能的拼点威力+1\n[WhenUse] 消耗自身的10层震颤 并使本技能的硬币威力+2",
+          "desc": "[WhenUse] 대상의 [Vibration]이 6 이상이면 합 위력 +1\n[WhenUse] 자신의 [Vibration] 횟수를 10 소모하여 코인 위력 +2",
           "coinlist": [
             {
               "coindescs": [
@@ -779,7 +779,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层\n- 若自身使用技能时未消耗震颤 层数，则以上效果生效后使自身震颤引爆 "
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소\n- 스킬 사용시 [Vibration] 횟수를 소모하지 못했다면, 위 효과 발동 후 자신에게 [VibrationExplosion]"
                 }
               ]
             }
@@ -788,7 +788,7 @@
         {
           "level": 4,
           "name": "犯人就是你！",
-          "desc": "[WhenUse] 目标每带有6级震颤 强度，使本技能的拼点威力+1(最多+2)\n[WhenUse] 若自身的震颤 层数低于15层，则消耗10层震颤 并使本技能的硬币威力+2\n[WhenUse] 消耗自身的15层震颤 并使本技能的硬币威力+3",
+          "desc": "[WhenUse] 대상의 [Vibration] <style=\"highlight\">6당</style> 합 위력 +1 <style=\"highlight\">(최대 2)</style>\n[WhenUse] 자신의 <style=\"highlight\">[Vibration] 횟수가 15 미만이면,</style> [Vibration] 횟수 10 소모하여 코인 위력 +2\n<style=\"highlight\">[WhenUse] 자신의 [Vibration] 횟수를 15 소모하여 코인 위력 +3</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -807,14 +807,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若本技能使用时消耗了不低于10层震颤 ，则使目标震颤引爆 ，并使其震颤 层数减少1层"
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 若本技能使用时消耗了不低于10层震颤 ，则使目标震颤引爆 ，并使其震颤 层数减少1层</style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若本技能使用时消耗了不低于10层震颤 ，则使目标震颤引爆 ，并使其震颤 层数减少1层\n- 若自身消耗的震颤 层数低于15层，则以上效果生效后使自身震颤引爆 "
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 스킬 사용시 [Vibration] 횟수를 10 이상 소모했다면, [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소\n- 소모한 [Vibration] 횟수가 15 미만이면, 위 효과 발동 후 자신에게도 [VibrationExplosion]</style>"
                 }
               ]
             }
@@ -836,7 +836,7 @@
         {
           "level": 4,
           "name": "等一下？！",
-          "desc": "[WhenUse] 使自身获得(2×目标的震颤 层数)点护盾体力(最多13点)",
+          "desc": "[WhenUse] 使自身获得(2×目标的震颤 层数)点护盾体力(最多<style=\"highlight\">13</style>点)",
           "coinlist": [
             {}
           ]
@@ -944,7 +944,7 @@
         {
           "level": 2,
           "name": "碎骨机",
-          "desc": "[WhenUse] 若目标的破裂 强度不低于15级且破裂 层数不低于3层，则本技能不会增加破裂 强度或施加破裂 层数，而改为使本技能的硬币威力+1\n[WinDuel] 对目标施加1层破裂 ",
+          "desc": "[WhenUse] 대상의 [Burst]이 15, [Burst] 횟수가 3 이상이면, 이 스킬에서 [Burst]과 [Burst] 횟수를 부여하지 않는 대신 코인 위력 +1\n[WinDuel] [Burst] 횟수 1 증가",
           "coinlist": [
             {
               "coindescs": [
@@ -968,7 +968,7 @@
         {
           "level": 4,
           "name": "碎骨机",
-          "desc": "若目标的破裂 强度不低于6级，则使本技能的硬币威力+1\n[WhenUse] 若目标的破裂 强度不低于15级且破裂 层数不低于3层，则本技能不会增加破裂 强度或施加破裂 层数，而改为使本技能的硬币威力+1\n- 若目标属于<血魔>或<血袋>，则使本技能的硬币威力额外+1\n[WinDuel] 对目标施加1层破裂 ",
+          "desc": "대상의 [Burst]이 6 이상일 때, 코인 위력 +1\n[WhenUse] 대상의 [Burst]이 15, [Burst] 횟수가 3 이상이면, 이 스킬에서 [Burst]과 [Burst] 횟수를 부여하지 않는 대신 코인 위력 +1\n- 대상이 <혈귀>, <피주머니>면, 추가로 코인 위력 +1\n[WinDuel] [Burst] 횟수 1 증가",
           "coinlist": [
             {
               "coindescs": [
@@ -1000,7 +1000,7 @@
         {
           "level": 3,
           "name": "清爽结束狩猎",
-          "desc": "[WhenUse] 若目标的破裂 强度不低于15级且破裂 层数不低于3层，则本技能不会增加破裂 强度或施加破裂 层数，而改为使本技能的硬币威力+1\n[WinDuel] 对目标施加1层破裂 ",
+          "desc": "[WhenUse] 대상의 [Burst]이 15, [Burst] 횟수가 3 이상이면, 이 스킬에서 [Burst]과 [Burst] 횟수를 부여하지 않는 대신 코인 위력 +1\n[WinDuel] [Burst] 횟수 1 증가",
           "coinlist": [
             {
               "coindescs": [
@@ -1022,7 +1022,7 @@
         {
           "level": 4,
           "name": "清爽结束狩猎",
-          "desc": "若目标的破裂 强度不低于6级，则使本技能的硬币威力+1\n[WhenUse] 若目标的破裂 强度不低于15级且破裂 层数不低于3层，则本技能不会增加破裂 强度或施加破裂 层数，而改为使本技能的硬币威力+1\n- 若目标属于<血魔>或<血袋>，则使本技能的硬币威力额外+1\n[WinDuel] 对目标施加2层破裂 ",
+          "desc": "대상의 [Burst]이 6 이상일 때, 코인 위력 +1\n[WhenUse] 대상의 [Burst]이 15, [Burst] 횟수가 3 이상이면, 이 스킬에서 [Burst]과 [Burst] 횟수를 부여하지 않는 대신 코인 위력 +1\n- 대상이 <혈귀>, <피주머니>면, 추가로 코인 위력 +1\n[WinDuel] [Burst] 횟수 2 증가",
           "coinlist": [
             {
               "coindescs": [
@@ -1122,32 +1122,32 @@
         {
           "level": 2,
           "name": "火力压制",
-          "desc": "[WhenUse] 使自身获得2层呼吸法 ",
+          "desc": "[WhenUse] 使自身获得2层呼吸法 <style=\"highlight\"></style>",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 "
+                  "desc": "消耗1发弹药 <style=\"highlight\"></style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 "
+                  "desc": "消耗1发弹药 <style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加2级呼吸法 强度"
+                  "desc": "[OnSucceedAttack] 使自身增加<style=\"highlight\">2</style>级呼吸法 强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 "
+                  "desc": "消耗1发弹药 <style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加2级呼吸法 强度"
+                  "desc": "[OnSucceedAttack] 使自身增加<style=\"highlight\">2</style>级呼吸法 强度"
                 }
               ]
             }
@@ -1156,32 +1156,32 @@
         {
           "level": 4,
           "name": "火力压制",
-          "desc": "[WhenUse] 使自身获得3层呼吸法 ",
+          "desc": "[WhenUse] 使自身获得<style=\"highlight\">3</style>层呼吸法 ",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 "
+                  "desc": "消耗1发弹药 <style=\"highlight\"></style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 "
+                  "desc": "消耗1发弹药 <style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加2级呼吸法 强度"
+                  "desc": "[OnSucceedAttack] 使自身增加2级呼吸法 强度<style=\"highlight\"></style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 "
+                  "desc": "消耗1发弹药 <style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加2级呼吸法 强度"
+                  "desc": "[OnSucceedAttack] 使自身增加2级呼吸法 强度<style=\"highlight\"></style>"
                 }
               ]
             }
@@ -1195,7 +1195,7 @@
         {
           "level": 1,
           "name": "标记目标",
-          "desc": "本技能每将消耗1发弹药 ，使本技能的基础威力+1\n[WhenUse] 若句点事务所 收尾人 希斯克利夫在场，则以(最大共鸣数×20)%的概率激活[CoveringFire]\n[WhenUse] 使自身获得1层呼吸法 ",
+          "desc": "이 스킬에서 소모할 [Bullet] 1 당 기본 위력 +1\n[WhenUse] 마침표 사무소 해결사 히스클리프 인격이 전투에 등장해 있으면, 가장 높은 공명 당 20% 확률로 [CoveringFire] 발동\n[WhenUse] 자신의 [Breath] 횟수 1 증가",
           "coinlist": [
             {
               "coindescs": [
@@ -1226,32 +1226,32 @@
         {
           "level": 2,
           "name": "标记目标",
-          "desc": "本技能每将消耗1发弹药 ，使本技能的基础威力+1\n[WhenUse] 若句点事务所 收尾人 希斯克利夫在场，则以(最大共鸣数×20)%的概率激活[CoveringFire]\n[WhenUse] 使自身获得2层呼吸法 ",
+          "desc": "이 스킬에서 소모할 [Bullet] 1 당 기본 위력 +1\n[WhenUse] 마침표 사무소 해결사 히스클리프 인격이 전투에 등장해 있으면, 가장 높은 공명 당 20% 확률로 [CoveringFire] 발동\n[WhenUse] 자신의 [Breath] 횟수 <style=\"highlight\">2</style> 증가",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加2级呼吸法 强度"
+                  "desc": "[OnSucceedAttack] 使自身增加2级呼吸法 强度<style=\"highlight\"></style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "消耗至多3发弹药 "
+                  "desc": "消耗至多3发弹药 <style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "使本硬币造成的伤害+(消耗的弹药 数×10)%"
+                  "desc": "使本硬币造成的伤害+(消耗的弹药 数×10)%<style=\"highlight\"></style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加1层束缚 "
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 下回合对目标施加1层束缚 </style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加1层虚弱 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层虚弱 <style=\"highlight\"></style>"
                 }
               ]
             }
@@ -1260,38 +1260,38 @@
         {
           "level": 4,
           "name": "标记目标",
-          "desc": "本技能每将消耗1发弹药 ，使本技能的基础威力+1\n[WhenUse] 若句点事务所 收尾人 希斯克利夫在场，则以(最大共鸣数×25)%的概率激活[CoveringFire]\n[WhenUse] 使自身获得3层呼吸法 ",
+          "desc": "이 스킬에서 소모할 [Bullet] 1 당 기본 위력 +1\n[WhenUse] 마침표 사무소 해결사 히스클리프 인격이 전투에 등장해 있으면, 가장 높은 공명 당 25% 확률로 [CoveringFire] 발동\n[WhenUse] 자신의 [Breath] 횟수 <style=\"highlight\">3</style> 증가",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加2级呼吸法 强度"
+                  "desc": "[OnSucceedAttack] 使自身增加2级呼吸法 强度<style=\"highlight\"></style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "消耗至多3发弹药 "
+                  "desc": "消耗至多3发弹药 <style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "使本硬币造成的伤害+(消耗的弹药 数×10)%"
+                  "desc": "使本硬币造成的伤害+(消耗的弹药 数×10)%<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "使本硬币暴击时造成的伤害+(消耗的弹药 数×10)%"
+                  "desc": "<style=\"highlight\">使本硬币暴击时造成的伤害+(消耗的弹药 数×10)%</style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "使本硬币暴击时造成的伤害+20%"
+                  "desc": "<style=\"highlight\">使本硬币暴击时造成的伤害+20%</style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加1层束缚 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层束缚 <style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加1层虚弱 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层虚弱 <style=\"highlight\"></style>"
                 }
               ]
             }
@@ -1305,7 +1305,7 @@
         {
           "level": 3,
           "name": "命之句点",
-          "desc": "本技能每将消耗1发弹药 ，使本技能的基础威力+1\n[WhenUse] 若句点事务所 收尾人 希斯克利夫在场，则激活[CoveringFire]\n[WhenUse] 使自身增加5级呼吸法 强度",
+          "desc": "이 스킬에서 소모할 [Bullet] 1 당 기본 위력 +1\n[WhenUse] 마침표 사무소 해결사 히스클리프 인격이 전투에 등장해 있으면, [CoveringFire] 발동\n[WhenUse] [Breath] 5 얻음",
           "coinlist": [
             {
               "coindescs": [
@@ -1351,44 +1351,44 @@
         {
           "level": 4,
           "name": "命之句点",
-          "desc": "本技能每将消耗1发弹药 ，使本技能的基础威力+1\n[WhenUse] 若句点事务所 收尾人 希斯克利夫在场，则激活[CoveringFire]\n[WhenUse] 使自身增加5级呼吸法 强度\n[WinDuel] 使自身获得2层呼吸法 ",
+          "desc": "이 스킬에서 소모할 [Bullet] 1 당 기본 위력 +1\n[WhenUse] 마침표 사무소 해결사 히스클리프 인격이 전투에 등장해 있으면, [CoveringFire] 발동\n[WhenUse] [Breath] 5 얻음\n<style=\"highlight\">[WinDuel] 자신의 [Breath] 횟수 2 증가</style>",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 "
+                  "desc": "消耗1发弹药 <style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "使本硬币造成的伤害+(消耗的弹药 数×15)%"
+                  "desc": "使本硬币造成的伤害+(消耗的弹药 数×<style=\"highlight\">15</style>)%"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的15%"
+                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的<style=\"highlight\">15</style>%"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "消耗至多2发弹药 "
+                  "desc": "消耗至多2发弹药 <style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "使本硬币造成的伤害+(消耗的弹药 数×15)%"
+                  "desc": "使本硬币造成的伤害+(消耗的弹药 数×<style=\"highlight\">15</style>)%"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的15%"
+                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的<style=\"highlight\">15</style>%"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "若目标陷入混乱，则使本硬币暴击时造成的伤害+30%"
+                  "desc": "若目标陷入混乱，则使本硬币暴击时造成的伤害+30%<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加2层束缚 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加<style=\"highlight\">2</style>层束缚 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层突刺易损 "
+                  "desc": "[OnSucceedAttack] 对目标施加<style=\"highlight\">2</style>层突刺易损 "
                 }
               ]
             }
@@ -1402,7 +1402,7 @@
         {
           "level": 1,
           "name": "战斗呼吸",
-          "desc": "回合开始时，若自身的弹药 数为0，则改为使用“影之彼端”\n[OnSucceedEvade] 使自身增加1级呼吸法 强度(每回合最多3次)",
+          "desc": "턴 시작 시 [Bullet]이 0이면, '그림자의 건너편'으로 변경됨\n[OnSucceedEvade] [Breath] 1 얻음 (턴 당 3회)",
           "coinlist": [
             {
               "coindescs": [
@@ -1416,7 +1416,7 @@
         {
           "level": 4,
           "name": "战斗呼吸",
-          "desc": "回合开始时，若自身的弹药 数为0，则改为使用“影之彼端”\n[OnSucceedEvade] 使自身增加1级呼吸法 强度(每回合最多5次)",
+          "desc": "턴 시작 시 [Bullet]이 0이면, '그림자의 건너편'으로 변경됨\n[OnSucceedEvade] [Breath] 1 얻음 (턴 당 <style=\"highlight\">5</style>회)",
           "coinlist": [
             {
               "coindescs": [
@@ -1435,7 +1435,7 @@
         {
           "level": 2,
           "name": "联合：标记目标",
-          "desc": "本技能每将消耗1发弹药 ，使本技能的基础威力+1\n[WhenUse] 使自身获得2层呼吸法 \n[DefeatDuel] 使本技能的最终威力+5",
+          "desc": "이 스킬에서 소모할 [Bullet] 1 당 기본 위력 +1\n[WhenUse] 자신의 [Breath] 횟수 2 증가\n[DefeatDuel] 최종 위력 +5",
           "coinlist": [
             {
               "coindescs": [
@@ -1479,48 +1479,48 @@
         {
           "level": 4,
           "name": "联合：标记目标",
-          "desc": "本技能每将消耗1发弹药 ，使本技能的基础威力+1\n[WhenUse] 使自身获得3层呼吸法 \n[DefeatDuel] 使本技能的最终威力+5",
+          "desc": "이 스킬에서 소모할 [Bullet] 1 당 기본 위력 +1\n[WhenUse] 자신의 [Breath] 횟수 <style=\"highlight\">3</style> 증가\n[DefeatDuel] 최종 위력 +5",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加2级呼吸法 强度"
+                  "desc": "[OnSucceedAttack] 使自身增加2级呼吸法 强度<style=\"highlight\"></style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "消耗至多3发弹药 "
+                  "desc": "消耗至多3发弹药 <style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "使本硬币造成的伤害+(消耗的弹药 数×10)%"
+                  "desc": "使本硬币造成的伤害+(消耗的弹药 数×10)%<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "使本硬币暴击时造成的伤害+(消耗的弹药 数×10)%"
+                  "desc": "<style=\"highlight\">使本硬币暴击时造成的伤害+(消耗的弹药 数×10)%</style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "使本硬币暴击时造成的伤害+20%"
+                  "desc": "<style=\"highlight\">使本硬币暴击时造成的伤害+20%</style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加1层束缚 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层束缚 <style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加1层虚弱 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层虚弱 <style=\"highlight\"></style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[SuperCoin]"
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "使本硬币暴击时造成的伤害+30%"
+                  "desc": "使本硬币暴击时造成的伤害+30%<style=\"highlight\"></style>"
                 }
               ]
             }
@@ -1534,7 +1534,7 @@
         {
           "level": 3,
           "name": "联合：命之句点",
-          "desc": "本技能每将消耗1发弹药 ，使本技能的基础威力+1\n[WhenUse] 使自身增加5级呼吸法 强度\n[DefeatDuel] 使本技能的最终威力+5",
+          "desc": "이 스킬에서 소모할 [Bullet] 1 당 기본 위력 +1\n[WhenUse] [Breath] 5 얻음\n[DefeatDuel] 최종 위력 +5",
           "coinlist": [
             {
               "coindescs": [
@@ -1593,57 +1593,57 @@
         {
           "level": 4,
           "name": "联合：命之句点",
-          "desc": "本技能每将消耗1发弹药 ，使本技能的基础威力+1\n[WhenUse] 使自身增加5级呼吸法 强度\n[WinDuel] 使自身获得2层呼吸法 \n[DefeatDuel] 使本技能的最终威力+5",
+          "desc": "이 스킬에서 소모할 [Bullet] 1 당 기본 위력 +1\n[WhenUse] [Breath] 5 얻음\n<style=\"highlight\">[WinDuel] 자신의 [Breath] 횟수 2 증가</style>\n[DefeatDuel] 최종 위력 +5",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 "
+                  "desc": "消耗1发弹药 <style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "使本硬币造成的伤害+(消耗的弹药 数×15)%"
+                  "desc": "使本硬币造成的伤害+(消耗的弹药 数×<style=\"highlight\">15</style>)%"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的15%"
+                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的<style=\"highlight\">15</style>%"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "消耗至多2发弹药 "
+                  "desc": "消耗至多2发弹药 <style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "使本硬币造成的伤害+(消耗的弹药 数×15)%"
+                  "desc": "使本硬币造成的伤害+(消耗的弹药 数×<style=\"highlight\">15</style>)%"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的15%"
+                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的<style=\"highlight\">15</style>%"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "若目标陷入混乱，则使本硬币暴击时造成的伤害+30%"
+                  "desc": "若目标陷入混乱，则使本硬币暴击时造成的伤害+30%<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加2层束缚 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加<style=\"highlight\">2</style>层束缚 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层突刺易损 "
+                  "desc": "[OnSucceedAttack] 对目标施加<style=\"highlight\">2</style>层突刺易损 "
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[SuperCoin]"
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "使本硬币暴击时造成的伤害+50%"
+                  "desc": "<style=\"highlight\">使本硬币暴击时造成的伤害+50%</style>"
                 },
                 {
-                  "desc": "使本硬币造成的伤害+(目标的突刺抗性×50)%"
+                  "desc": "使本硬币造成的伤害+(目标的突刺抗性×50)%<style=\"highlight\"></style>"
                 }
               ]
             }
@@ -1657,7 +1657,7 @@
         {
           "level": 1,
           "name": "影之彼端",
-          "desc": "[DuelCounter]\n[WhenUse] 使自身获得2层呼吸法 \n[EndBattle] 使自身[FullReload](每场战斗最多1次)",
+          "desc": "[DuelCounter]\n[WhenUse] 자신의 [Breath] 횟수 2 증가\n[EndBattle] [FullReload] (전투 당 1회)",
           "coinlist": [
             {
               "coindescs": [
@@ -1678,19 +1678,19 @@
         {
           "level": 4,
           "name": "影之彼端",
-          "desc": "[DuelCounter]\n使本技能暴击时造成的伤害+20%\n[WhenUse] 使自身获得2层呼吸法 \n[EndBattle] 使自身[FullReload](每场战斗最多1次)",
+          "desc": "[DuelCounter]\n<style=\"highlight\">크리티컬 피해량 +20%</style>\n[WhenUse] 자신의 [Breath] 횟수 2 증가\n[EndBattle] [FullReload] (전투 당 1회)",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加1级呼吸法 强度"
+                  "desc": "[OnSucceedAttack] 使自身增加1级呼吸法 强度<style=\"highlight\"></style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加1级呼吸法 强度"
+                  "desc": "[OnSucceedAttack] 使自身增加1级呼吸法 强度<style=\"highlight\"></style>"
                 }
               ]
             }
@@ -1725,19 +1725,19 @@
         {
           "level": 4,
           "name": "近战支援",
-          "desc": "使本技能暴击时造成的伤害+20%\n[WhenUse] 使自身获得2层呼吸法 ",
+          "desc": "<style=\"highlight\">크리티컬 피해량 +20%</style>\n[WhenUse] 자신의 [Breath] 횟수 2 증가",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加1级呼吸法 强度"
+                  "desc": "[OnSucceedAttack] 使自身增加1级呼吸法 强度<style=\"highlight\"></style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加1级呼吸法 强度"
+                  "desc": "[OnSucceedAttack] 使自身增加1级呼吸法 强度<style=\"highlight\"></style>"
                 }
               ]
             }
@@ -1751,7 +1751,7 @@
         {
           "level": 1,
           "name": "能量轰击",
-          "desc": "若自身的充能 强度不低于2级，则使本技能的硬币威力+1\n[WhenUse] 使自身获得2层充能 ",
+          "desc": "[Charge]이 2 이상이면, 코인 위력 +1\n[WhenUse] 자신의 [Charge] 횟수 2 증가",
           "coinlist": [
             {},
             {
@@ -1766,19 +1766,19 @@
         {
           "level": 2,
           "name": "能量轰击",
-          "desc": "自身每带有1级充能 强度，使本技能造成的伤害+2%(最多+10%)\n若自身的充能 强度不低于2级，则使本技能的硬币威力+1\n[WhenUse] 使自身获得2层充能 ",
+          "desc": "<style=\"highlight\">[Charge]당 피해량 +2% (최대 10%)</style>\n[Charge]이 2 이상이면, 코인 위력 +1\n[WhenUse] 자신의 [Charge] 횟수 2 증가",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身获得(自身的充能 强度+1)层充能 (最多3层)"
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 使自身获得(自身的充能 强度+1)层充能 (最多3层)</style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加1级沉沦 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加1级沉沦 强度<style=\"highlight\"></style>"
                 }
               ]
             }
@@ -1787,19 +1787,19 @@
         {
           "level": 4,
           "name": "能量轰击",
-          "desc": "自身每带有1级充能 强度，使本技能造成的伤害+3%(最多+15%)\n若自身的充能 强度不低于2级，则使本技能的硬币威力+1\n若自身的充能 层数不低于5层，则使本技能的硬币威力+1\n[WhenUse] 使自身获得2层充能 ",
+          "desc": "[Charge]당 피해량 <style=\"highlight\">+3%</style> (최대 <style=\"highlight\">15%</style>)\n[Charge]이 2 이상이면, 코인 위력 +1\n<style=\"highlight\">[Charge] 횟수가 5 이상이면, 코인 위력 +1</style>\n[WhenUse] 자신의 [Charge] 횟수 2 증가",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身获得(自身的充能 强度+1)层充能 (最多4层)"
+                  "desc": "[OnSucceedAttack] 使自身获得(自身的充能 强度+1)层充能 (最多<style=\"highlight\">4</style>层)"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加1级沉沦 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加1级沉沦 强度<style=\"highlight\"></style>"
                 }
               ]
             }
@@ -1813,7 +1813,7 @@
         {
           "level": 1,
           "name": "精神鞭挞",
-          "desc": "[WhenUse] 若自身的充能 层数在5~9层之间，\n- 使自身增加15级沉沦 强度并使自身获得至10层充能 \n- 使本技能获得[CantIdentify]与[WideAreaRampage]状态并使本技能的攻击容量+1\n[WhenUse] 消耗10层充能 并使本技能的硬币威力+1",
+          "desc": "[WhenUse] [Charge] 횟수가 5 이상 10 미만이면,\n- [Sinking] 15 얻음, [Charge] 횟수 10으로 증가\n- 이 스킬이 [CantIdentify], [WideAreaRampage] 상태가 되고 공격 가중치 +1\n[WhenUse] [Charge] 횟수를 10 소모하여 코인 위력 +1",
           "coinlist": [
             {
               "coindescs": [
@@ -1848,45 +1848,45 @@
         {
           "level": 2,
           "name": "精神鞭挞",
-          "desc": "自身每带有1级充能 强度，使本技能造成的伤害+2%(最多+10%)\n[WhenUse] 若自身的充能 层数在5~9层之间，\n- 使自身增加15级沉沦 强度并使自身获得至10层充能 \n- 使本技能获得[CantIdentify]与[WideAreaRampage]状态并使本技能的攻击容量+1\n[WhenUse] 消耗10层充能 并使本技能的硬币威力+1",
+          "desc": "<style=\"highlight\">[Charge]당 피해량 +2% (최대 10%)</style>\n[WhenUse] [Charge] 횟수가 5 이상 10 미만이면,\n- [Sinking] 15 얻음, [Charge] 횟수 10으로 증가\n- 이 스킬이 [CantIdentify], [WideAreaRampage] 상태가 되고 공격 가중치 +1\n[WhenUse] [Charge] 횟수를 10 소모하여 코인 위력 +1",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加1级沉沦 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加1级沉沦 强度<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的5%"
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的5%</style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加1级沉沦 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加1级沉沦 强度<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的5%"
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的5%</style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加1级沉沦 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加1级沉沦 强度<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的5%"
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的5%</style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层沉沦 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层沉沦 <style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的10%"
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的10%</style>"
                 }
               ]
             }
@@ -1895,45 +1895,45 @@
         {
           "level": 4,
           "name": "精神鞭挞",
-          "desc": "自身每带有1级充能 强度，使本技能造成的伤害+4%(最多+20%)\n[WhenUse] 若自身的充能 层数在5~9层之间，\n- 使自身增加10级沉沦 强度并使自身获得至10层充能 \n- 使本技能获得[CantIdentify]与[WideAreaRampage]状态并使本技能的攻击容量+1\n- [BeforeUse] 若自身的充能 强度不低于5级，则本技能不会获得[CantIdentify]状态\n[WhenUse] 消耗10层充能 并使本技能的硬币威力+2\n[BeforeAttack] 若自身剩余充能 层数不低于8层，则消耗8层充能并使本技能造成的伤害+40%",
+          "desc": "[Charge]당 피해량 <style=\"highlight\">+4%</style> (최대 <style=\"highlight\">20%</style>)\n[WhenUse] [Charge] 횟수가 5 이상 10 미만이면,\n- [Sinking] <style=\"highlight\">10</style> 얻음, [Charge] 횟수 10으로 증가\n- 이 스킬이 [CantIdentify], [WideAreaRampage] 상태가 되고 공격 가중치 +1\n<style=\"highlight\">- [BeforeUse] [Charge]이 5 이상이면, [CantIdentify] 효과가 적용되지 않음</style>\n[WhenUse] [Charge] 횟수를 10 소모하여 코인 위력 <style=\"highlight\">+2</style>\n<style=\"highlight\">[BeforeAttack] 남은 [Charge] 횟수가 8 이상이면, [Charge] 횟수를 8 소모하여 피해량 +40%</style>",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加1级沉沦 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加1级沉沦 强度<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的5%"
+                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的5%<style=\"highlight\"></style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加1级沉沦 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加1级沉沦 强度<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的5%"
+                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的5%<style=\"highlight\"></style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加1级沉沦 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加1级沉沦 强度<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的5%"
+                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的5%<style=\"highlight\"></style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层沉沦 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层沉沦 <style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的10%"
+                  "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的10%<style=\"highlight\"></style>"
                 }
               ]
             }
@@ -1947,7 +1947,7 @@
         {
           "level": 3,
           "name": "心神凝聚",
-          "desc": "自身每带有1级充能 强度，使本技能的硬币威力+1(最多+5)\n若自身的充能 层数不低于10层，则使本技能的最终威力+2\n[WhenUse] 使自身获得5层充能 ",
+          "desc": "[Charge]당 코인 위력 +1 (최대 5)\n[Charge] 횟수가 10 이상이면, 최종 위력 +2\n[WhenUse] 자신의 [Charge] 횟수 5 증가",
           "coinlist": [
             {
               "coindescs": [
@@ -1967,21 +1967,21 @@
         {
           "level": 4,
           "name": "心神凝聚",
-          "desc": "自身每带有1级充能 强度，使本技能的基础威力+1，硬币威力+1(分别最多+5)\n若自身的充能 层数不低于10层，则使本技能的最终威力+4\n[WhenUse] 使自身获得7层充能 ",
+          "desc": "[Charge]당 <style=\"highlight\">기본 위력 +1</style>, 코인 위력 +1 <style=\"highlight\">(각각 최대 5)</style>\n[Charge] 횟수가 10 이상이면, 최종 위력 <style=\"highlight\">+4</style>\n[WhenUse] 자신의 [Charge] 횟수 <style=\"highlight\">7</style> 증가",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "使本硬币造成的伤害+(本技能的威力×5)%(最多+150%)"
+                  "desc": "使本硬币造成的伤害+(本技能的威力×5)%(最多+<style=\"highlight\">150%</style>)"
                 },
                 {
-                  "desc": "若自身的充能 强度不低于3级，则每带有1级充能 强度，使本硬币造成的伤害+20%(最多+100%)"
+                  "desc": "<style=\"highlight\">若自身的充能 强度不低于3级，则每带有1级充能 强度，使本硬币造成的伤害+20%(最多+100%)</style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使自身获得(自身的充能 强度+3)层充能 (最多8层)"
+                  "desc": "[OnSucceedAttack] 使自身获得(自身的充能 强度+<style=\"highlight\">3</style>)层充能 (最多<style=\"highlight\">8</style>层)"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加4级沉沦 强度并对其施加4层沉沦 "
+                  "desc": "[OnSucceedAttack] 使目标增加4级沉沦 强度并对其施加<style=\"highlight\">4</style>层沉沦 "
                 }
               ]
             }
@@ -1995,7 +1995,7 @@
         {
           "level": 1,
           "name": "能量凝聚",
-          "desc": "[WhenUse] 若自身的充能 层数不低于10层，则使本技能的硬币威力+2\n[WhenUse] 使自身获得3层充能 (每回合最多1次)",
+          "desc": "[WhenUse] 자신의 [Charge] 횟수가 10 이상이면, 코인 위력 +2\n[WhenUse] 자신의 [Charge] 횟수 3 증가 (턴당 1회)",
           "coinlist": [
             {}
           ]
@@ -2003,7 +2003,7 @@
         {
           "level": 4,
           "name": "能量凝聚",
-          "desc": "[WhenUse] 若自身的充能 层数不低于10层，则使本技能的硬币威力+4\n[WhenUse] 使自身获得3层充能 (每回合最多2次)",
+          "desc": "[WhenUse] 자신의 [Charge] 횟수가 10 이상이면, 코인 위력 <style=\"highlight\">+4</style>\n[WhenUse] 자신의 [Charge] 횟수 3 증가 (턴당 <style=\"highlight\">2</style>회)",
           "coinlist": [
             {}
           ]

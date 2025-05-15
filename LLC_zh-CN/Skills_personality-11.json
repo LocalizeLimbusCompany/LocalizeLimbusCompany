@@ -596,7 +596,7 @@
         {
           "level": 4,
           "name": "魔弹射击",
-          "desc": "目标每带有1级烧伤 强度，使本技能造成的伤害+1%(最多+30%)\n\n[BeforeAttack] 使自身获得1层魔弹 \n- 使自身失去(自身的魔弹 层数-1)×5点理智值\n- 使本技能的攻击容量变为与自身的魔弹 层数相同\n- 若自身的理智值不高于10点，则本技能有50%的概率进行无差别攻击\n\n[EndSkill] 若自身的魔弹 层数为7层，则将其重置为0层(视作消耗了最后的弹药 )",
+          "desc": "<style=\"highlight\">目标每带有1级烧伤 强度，使本技能造成的伤害+1%(最多+30%)</style>\n\n[BeforeAttack] 使自身获得1层魔弹 \n- 使自身失去(自身的魔弹 层数-1)×5点理智值\n- 使本技能的攻击容量变为与自身的魔弹 层数相同\n- 若自身的理智值不高于10点，则本技能有50%的概率进行无差别攻击\n\n[EndSkill] 若自身的魔弹 层数为7层，则将其重置为0层(视作消耗了最后的弹药 )",
           "coinlist": [
             {
               "coindescs": [
@@ -865,7 +865,7 @@
         {
           "level": 4,
           "name": "点画",
-          "desc": "若目标的流血 强度不低于6级，则使本技能的拼点威力+1\n若目标的流血 强度不低于10级，则使本技能的硬币威力+1",
+          "desc": "若目标的流血 强度不低于6级，则使本技能的拼点威力+1\n<style=\"highlight\">若目标的流血 强度不低于10级，则使本技能的硬币威力+1</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -983,7 +983,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加3级某1种随机效果的强度，该效果可能为烧伤 、流血 、震颤 、破裂 或沉沦 "
                 },
                 {
-                  "desc": "[EndSkill] 若目标陷入混乱或击杀目标，则使除自身以外理智值最高的1名友方单位在下回合获得1层突刺伤害强化 。若该友方单位属于环指成员，则额外使其获得1层突刺威力提升 "
+                  "desc": "[EndSkill] 若目标陷入混乱或击杀目标，则使除自身以外理智值最高的1名友方单位在下回合获得1层突刺伤害强化 。<style=\"highlight\">若该友方单位属于环指成员，则额外使其获得1层突刺威力提升 </style>"
                 }
               ]
             }
@@ -1119,7 +1119,7 @@
         {
           "level": 4,
           "name": "充能腾跃",
-          "desc": "[WhenUse] 消耗自身的6层充能 并使本技能的硬币威力+1\n- 若自身消耗了充能 层数，则使自身与除自身以外充能 层数最低的2名友方单位获得(自身的充能 强度+2)层充能力场 (最多8层，每回合最多2次)\n[WhenUse] 使自身获得2层充能 ",
+          "desc": "[WhenUse] 消耗自身的6层充能 并使本技能的硬币威力+1\n- 若自身消耗了充能 层数，则使自身与除自身以外充能 层数最低的2名友方单位获得(自身的充能 强度+<style=\"highlight\">2</style>)层充能力场 (最多<style=\"highlight\">8</style>层，每回合最多<style=\"highlight\">2</style>次)\n[WhenUse] 使自身获得2层充能 ",
           "coinlist": [
             {
               "coindescs": [
@@ -1240,7 +1240,7 @@
         {
           "level": 4,
           "name": "等离子场展开",
-          "desc": "[WhenUse] 自身每带有1层充能 ，使本技能的基础威力+1(最多+10)\n[WhenUse] 使自身获得2层充能 (每回合最多3次)",
+          "desc": "[WhenUse] 自身<style=\"highlight\">每带有1层</style>充能 ，使本技能的基础威力+1(最多+<style=\"highlight\">10</style>)\n[WhenUse] 使自身获得2层充能 (每回合最多<style=\"highlight\">3</style>次)",
           "coinlist": [
             {
               "coindescs": [
@@ -1280,7 +1280,7 @@
         {
           "level": 2,
           "name": "缝纫",
-          "desc": "本技能命中时，使自身恢复造成体力伤害量10%的体力(最多10点)\n[WhenUse] 消耗至多40层血宴 ，每消耗8层血宴 ，使自身获得1层[BloodScissorPersonalityFirst]\n- 若未消耗血宴 ，则对自身施加2层流血 \n[WhenUse] 若目标的流血 强度不低于6级，则使本技能的硬币威力+1",
+          "desc": "本技能命中时，使自身恢复造成体力伤害量10%的体力(最多10点)\n[WhenUse] 消耗至多40层血宴 ，每消耗8层血宴 ，使自身获得1层[BloodScissorPersonalityFirst]\n- 若未消耗血宴 ，则对自身施加2层流血 \n<style=\"highlight\">[WhenUse] 若目标的流血 强度不低于6级，则使本技能的硬币威力+1</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -1288,7 +1288,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标带有[LineCuttingPersonality]，则对其施加1层流血 "
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 若目标带有[LineCuttingPersonality]，则对其施加1层流血 </style>"
                 }
               ]
             },
@@ -1298,7 +1298,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标带有[LineCuttingPersonality]，则对其施加1层流血 "
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 若目标带有[LineCuttingPersonality]，则对其施加1层流血 </style>"
                 }
               ]
             }
@@ -1307,7 +1307,7 @@
         {
           "level": 4,
           "name": "缝纫",
-          "desc": "本技能命中时，使自身恢复造成体力伤害量10%的体力(最多10点)\n[WhenUse] 消耗至多40层血宴 ，每消耗8层血宴 ，使自身获得1层[BloodScissorPersonalityFirst]\n- 若未消耗血宴 ，则对自身施加2层流血 \n[WhenUse] 目标每带有6级流血 强度，使本技能的硬币威力+1(最多+2)",
+          "desc": "本技能命中时，使自身恢复造成体力伤害量10%的体力(最多10点)\n[WhenUse] 消耗至多40层血宴 ，每消耗8层血宴 ，使自身获得1层[BloodScissorPersonalityFirst]\n- 若未消耗血宴 ，则对自身施加2层流血 \n[WhenUse] 目标<style=\"highlight\">每带有6级</style>流血 强度，使本技能的硬币威力+1<style=\"highlight\">(最多+2)</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -1315,7 +1315,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标带有[LineCuttingPersonality]，则对其施加1层流血 "
+                  "desc": "[OnSucceedAttack] 若目标带有[LineCuttingPersonality]，则对其施加1层流血 <style=\"highlight\"></style>"
                 }
               ]
             },
@@ -1325,7 +1325,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标带有[LineCuttingPersonality]，则对其施加1层流血 "
+                  "desc": "[OnSucceedAttack] 若目标带有[LineCuttingPersonality]，则对其施加1层流血 <style=\"highlight\"></style>"
                 }
               ]
             }
@@ -1373,7 +1373,7 @@
         {
           "level": 2,
           "name": "剪断",
-          "desc": "本技能命中时，使自身恢复造成体力伤害量20%的体力(最多20点)\n[WhenUse] 消耗至多60层血宴 ，每消耗6层血宴 ，使自身获得1层[BloodScissorPersonalityFirst]\n- 若未消耗血宴 ，则使自身增加5级流血 强度\n[WhenUse] 若目标的流血 强度不低于6级，则使本技能的硬币威力+1",
+          "desc": "本技能命中时，使自身恢复造成体力伤害量20%的体力(最多20点)\n[WhenUse] 消耗至多60层血宴 ，每消耗6层血宴 ，使自身获得1层[BloodScissorPersonalityFirst]\n- 若未消耗血宴 ，则使自身增加5级流血 强度\n<style=\"highlight\">[WhenUse] 若目标的流血 强度不低于6级，则使本技能的硬币威力+1</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -1407,7 +1407,7 @@
         {
           "level": 4,
           "name": "剪断",
-          "desc": "本技能命中时，使自身恢复造成体力伤害量20%的体力(最多20点)\n[WhenUse] 消耗至多60层血宴 ，每消耗6层血宴 ，使自身获得1层[BloodScissorPersonalityFirst]\n- 若未消耗血宴 ，则使自身增加5级流血 强度\n[WhenUse] 若目标的流血 强度不低于6级，则使本技能的硬币威力+1",
+          "desc": "本技能命中时，使自身恢复造成体力伤害量20%的体力(最多20点)\n[WhenUse] 消耗至多60层血宴 ，每消耗6层血宴 ，使自身获得1层[BloodScissorPersonalityFirst]\n- 若未消耗血宴 ，则使自身增加5级流血 强度\n[WhenUse] 若目标的流血 强度不低于6级，则使本技能的硬币威力+1<style=\"highlight\"></style>",
           "coinlist": [
             {
               "coindescs": [
@@ -1481,33 +1481,33 @@
         {
           "level": 4,
           "name": "给你做条新裙子！",
-          "desc": "本技能命中时，使自身恢复造成体力伤害量30%的体力(最多20点)\n[BeforeAttack] 若自身的[BloodScissorPersonalityFirst]层数不低于10层，则使本技能的攻击容量+1\n- 若自身的[BloodScissorPersonalityFirst]层数不低于20层，则改为使本技能的攻击容量+2\n[WhenUse] 若目标的流血 强度不低于5级，则使本技能的硬币威力+1\n[WhenUse] 目标每带有6级流血 强度，使本技能的拼点威力+1(最多+2)\n[EndSkill] 本技能的攻击容量每增加1点，使自身消耗10层[BloodScissorPersonalityFirst]\n[EndSkill] 若击杀目标，则获得20层血宴 。使自身重新获得本技能消耗量一半的[BloodScissorPersonalityFirst](每回合最多1次)\n- 若目标带有[LineCuttingPersonality]，则额外获得20层血宴 ，并使自身获得5层[BloodScissorPersonalityFirst](每回合最多1次)",
+          "desc": "本技能命中时，使自身恢复造成体力伤害量30%的体力(最多20点)\n[BeforeAttack] 若自身的[BloodScissorPersonalityFirst]层数不低于10层，则使本技能的攻击容量+1\n<style=\"highlight\">- 若自身的[BloodScissorPersonalityFirst]层数不低于20层，则改为使本技能的攻击容量+2</style>\n[WhenUse] 若目标的流血 强度不低于5级，则使本技能的硬币威力+1\n[WhenUse] 目标每带有6级流血 强度，使本技能的拼点威力+1(最多+2)\n[EndSkill] 本技能的攻击容量每增加1点，使自身消耗<style=\"highlight\">10</style>层[BloodScissorPersonalityFirst]\n[EndSkill] 若击杀目标，则获得<style=\"highlight\">20</style>层血宴 。使自身重新获得本技能消耗量一半的[BloodScissorPersonalityFirst](每回合最多1次)\n<style=\"highlight\">- 若目标带有[LineCuttingPersonality]，则额外获得20层血宴 ，并使自身获得5层[BloodScissorPersonalityFirst](每回合最多1次)</style>",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">2</style>级流血 强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">2</style>级流血 强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">2</style>级流血 强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若自身的[BloodScissorPersonalityFirst]层数不低于10层，则使本硬币造成的伤害+(自身的[BloodScissorPersonalityFirst]层数×3)%(最多+57%)\n- 若自身的[BloodScissorPersonalityFirst]层数不低于20层，则改为使本硬币造成的伤害+(自身的[BloodScissorPersonalityFirst]层数×4)%(最多+120%)"
+                  "desc": "[OnSucceedAttack] 若自身的[BloodScissorPersonalityFirst]层数不低于10层，则使本硬币造成的伤害+(自身的[BloodScissorPersonalityFirst]层数×<style=\"highlight\">3</style>)%(最多+<style=\"highlight\">57</style>%)\n- 若自身的[BloodScissorPersonalityFirst]层数不低于20层，则改为使本硬币造成的伤害+(自身的[BloodScissorPersonalityFirst]层数×<style=\"highlight\">4</style>)%(最多+<style=\"highlight\">120</style>%)"
                 }
               ]
             }
@@ -1535,7 +1535,7 @@
         {
           "level": 4,
           "name": "真是无礼！",
-          "desc": "[WhenUse] 若自身的[BloodScissorPersonalityFirst]层数不低于10层，则使本技能的基础威力+1\n- 若自身的[BloodScissorPersonalityFirst]层数不低于20层，则改为使本技能的基础威力+2\n[WhenUse] 自身每带有5级流血 强度，使本技能的硬币威力+1(最多+3)",
+          "desc": "[WhenUse] 若自身的[BloodScissorPersonalityFirst]层数不低于10层，则使本技能的基础威力+1<style=\"highlight\">\n- 若自身的[BloodScissorPersonalityFirst]层数不低于20层，则改为使本技能的基础威力+2</style>\n[WhenUse] 自身<style=\"highlight\">每带有5级</style>流血 强度，使本技能的硬币威力+1<style=\"highlight\">(最多+3)</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -1575,7 +1575,7 @@
         {
           "level": 2,
           "name": "瞬步",
-          "desc": "[WhenUse] 若目标的破裂 强度不低于4级，则使本技能的硬币威力+1",
+          "desc": "[WhenUse] 若目标的破裂 强度不低于<style=\"highlight\">4</style>级，则使本技能的硬币威力+1",
           "coinlist": [
             {
               "coindescs": [
@@ -1590,7 +1590,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加1级破裂 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若自身的速度值不低于12，则重复使用本硬币1次(每个技能最多1次)"
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 若自身的速度值不低于12，则重复使用本硬币1次(每个技能最多1次)</style>"
                 }
               ]
             }
@@ -1599,7 +1599,7 @@
         {
           "level": 4,
           "name": "瞬步",
-          "desc": "若自身的速度值高于目标至少3点，则使本技能的硬币威力+1\n[WhenUse] 若目标的破裂 强度不低于4级，则使本技能的硬币威力+1",
+          "desc": "<style=\"highlight\">若自身的速度值高于目标至少3点，则使本技能的硬币威力+1</style>\n[WhenUse] 若目标的破裂 强度不低于4级，则使本技能的硬币威力+1",
           "coinlist": [
             {
               "coindescs": [
@@ -1614,7 +1614,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加1级破裂 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若自身的速度值不低于10，则重复使用本硬币1次(每个技能最多1次)"
+                  "desc": "[OnSucceedAttack] 若自身的速度值不低于<style=\"highlight\">10</style>，则重复使用本硬币1次(每个技能最多1次)"
                 }
               ]
             }
@@ -1646,19 +1646,19 @@
         {
           "level": 2,
           "name": "刺杀",
-          "desc": "[WhenUse] 若目标的破裂 强度不低于4级，则使本技能的硬币威力+1\n[OnDirectAttack] 对目标施加1层破裂 ",
+          "desc": "[WhenUse] 若目标的破裂 强度不低于<style=\"highlight\">4</style>级，则使本技能的硬币威力+1\n<style=\"highlight\">[OnDirectAttack] 对目标施加1层破裂 </style>",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层破裂 "
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 对目标施加1层破裂 </style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "若自身的速度值不低于10，则使本硬币造成的伤害+20%"
+                  "desc": "若自身的速度值不低于10，则使本硬币造成的伤害+<style=\"highlight\">20</style>%"
                 },
                 {
                   "desc": "[OnSucceedAttack] 对目标施加1层破裂 "
@@ -1670,22 +1670,22 @@
         {
           "level": 4,
           "name": "刺杀",
-          "desc": "若自身的速度值高于目标至少3点，则使本技能的硬币威力+1\n[WhenUse] 若目标的破裂 强度不低于4级，则使本技能的硬币威力+1\n[OnDirectAttack] 对目标施加1层破裂 ",
+          "desc": "<style=\"highlight\">若自身的速度值高于目标至少3点，则使本技能的硬币威力+1</style>\n[WhenUse] 若目标的破裂 强度不低于4级，则使本技能的硬币威力+1\n[OnDirectAttack] 对目标施加1层破裂 ",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层破裂 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层破裂 <style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 下回合使自身获得1层迅捷 (每回合最多2次)"
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 下回合使自身获得1层迅捷 (每回合最多2次)</style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "若自身的速度值不低于10，则使本硬币造成的伤害+30%"
+                  "desc": "若自身的速度值不低于10，则使本硬币造成的伤害+<style=\"highlight\">30</style>%"
                 },
                 {
                   "desc": "[OnSucceedAttack] 对目标施加1层破裂 "
@@ -1736,7 +1736,7 @@
         {
           "level": 4,
           "name": "刻咒杀剑",
-          "desc": "若自身的速度值高于目标，则使本技能造成的伤害+(速度值之差×目标的破裂 强度)%(最多+50%)\n若自身的速度值高于目标，则每高于目标2点，使本技能的硬币威力+1(最多+2)\n[WhenUse] 若目标的破裂 强度不低于15级，则使本技能的硬币威力+1\n[WhenUse] 使自身获得3层[LegStrength]\n[OnDirectAttack] 对目标施加2层破裂 ",
+          "desc": "若自身的速度值高于目标，则使本技能造成的伤害+(速度值之差×目标的破裂 强度)%(最多+50%)\n<style=\"highlight\">若自身的速度值高于目标，则每高于目标2点，使本技能的硬币威力+1(最多+2)\n[WhenUse] 若目标的破裂 强度不低于15级，则使本技能的硬币威力+1</style>\n[WhenUse] 使自身获得3层[LegStrength]\n[OnDirectAttack] 对目标施加2层破裂 ",
           "coinlist": [
             {
               "coindescs": [
@@ -1764,7 +1764,7 @@
                   "desc": "[OnSucceedAttack] 若自身的速度值不低于10，则重复使用本硬币1次(每个技能最多1次)"
                 },
                 {
-                  "desc": "[ReUseOnSucceedAttack] 对目标施加[BurstAgility]"
+                  "desc": "<style=\"highlight\">[ReUseOnSucceedAttack] 对目标施加[BurstAgility]</style>"
                 }
               ]
             }
@@ -1792,7 +1792,7 @@
         {
           "level": 4,
           "name": "部分黑兽化",
-          "desc": "[DuelCounter]\n[WhenUse] 使自身获得3层[LegStrength]\n[WhenUse] 若自身的速度值高于目标，则每高于目标2点，使本技能的基础威力+1(最多+2)",
+          "desc": "[DuelCounter]\n[WhenUse] 使自身获得3层[LegStrength]\n<style=\"highlight\">[WhenUse] 若自身的速度值高于目标，则每高于目标2点，使本技能的基础威力+1(最多+2)</style>",
           "coinlist": [
             {
               "coindescs": [
