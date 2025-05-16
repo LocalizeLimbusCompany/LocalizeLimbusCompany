@@ -72,7 +72,7 @@
           "level": 1,
           "name": "沸腾腐蚀",
           "abName": "陆行珍珠",
-          "desc": "[CantIdentify]\n무작위 대상 공격",
+          "desc": "[CantIdentify]\n随机指定目标",
           "coinlist": [
             {
               "coindescs": [
@@ -90,7 +90,7 @@
           "level": 3,
           "name": "沸腾腐蚀",
           "abName": "陆行珍珠",
-          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] 메인 공격 대상의 체력이 최대 체력의 50% 이상이면, 공격 가중치 +1",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 若主要目标现存体力不低于50%，则使本技能的攻击容量+1",
           "coinlist": [
             {
               "coindescs": [
@@ -111,7 +111,7 @@
           "level": 4,
           "name": "沸腾腐蚀",
           "abName": "陆行珍珠",
-          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] 메인 공격 대상의 체력이 최대 체력의 50% 이상이면, 공격 가중치 +1, 최대 체력의 75% 이상이면, 추가로 공격 가중치 +1",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 若主要目标现存体力不低于50%，则使本技能的攻击容量+1；若主要目标现存体力不低于75%，则使本技能的攻击容量额外+1",
           "coinlist": [
             {
               "coindescs": [
@@ -202,7 +202,7 @@
           "level": 1,
           "name": "执行",
           "abName": "天之执行官的辅佐",
-          "desc": "[CantIdentify]\n무작위 대상 공격",
+          "desc": "[CantIdentify]\n随机指定目标",
           "coinlist": [
             {
               "coindescs": [
@@ -220,7 +220,7 @@
           "level": 3,
           "name": "执行",
           "abName": "天之执行官的辅佐",
-          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] 자신의 체력이 50% 미만이면, 공격 가중치 +1",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 若现存体力不高于50%，则使本技能的攻击容量+1",
           "coinlist": [
             {
               "coindescs": [
@@ -241,7 +241,7 @@
           "level": 4,
           "name": "执行",
           "abName": "天之执行官的辅佐",
-          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] 자신의 체력이 50% 미만이면, 공격 가중치 +2",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 若现存体力不高于50%，则使本技能的攻击容量+2",
           "coinlist": [
             {
               "coindescs": [
@@ -267,16 +267,16 @@
           "level": 1,
           "name": "血欲",
           "abName": "红舞鞋",
-          "desc": "대상의 [Laceration] 2당 코인 위력 +1 (최대 6)\n[StartBattle] 이 스킬의 메인 타겟은 이번 턴 동안 [Laceration] 횟수가 감소하지 않음.\n[EndSkill] 3턴 동안 턴 종료 시 정신력 10 감소.",
+          "desc": "目标每带有2级流血 强度，使本技能的硬币威力+1(最多+6)\n[StartBattle] 本回合使本技能主要目标的流血 层数不会减少。\n[EndSkill] 3回合内，回合结束时使自身失去10点理智值。",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 대상의 [Laceration] 위력만큼 색욕 속성 피해를 줌.\n- 색욕 공명이 4 이상이면, 1.2배로 계산\n(계산 시 반영되는 [Laceration] 위력은 99를 초과할 수 없음.)",
+                  "desc": "[OnSucceedAttack] 对目标造成相当于其流血 强度点色欲伤害\n- 若色欲共鸣数不低于4，则改为造成相当于(目标的流血 强度×1.2)点色欲伤害\n(本技能至多计入99级流血 强度)",
                   "summary": "[OnSucceedAttack] 根据目标的流血 强度，相应对其造成色欲伤害"
                 },
                 {
-                  "desc": "[EnemyKill] 이 스킬의 피해 또는 코인 효과로 적의 남은 체력을 초과하여 피해를 준 경우, 초과한 피해량을 고정 피해로 적 전체에 나눠서 가함.\n(집중 전투인 경우, 본체의 체력을 기준으로 계산)",
+                  "desc": "[EnemyKill] 若本技能或其硬币效果对目标造成超过其剩余体力的伤害，则对全体敌方单位造成共计相当于溢出伤害量的固定伤害\n(若是集中遭遇战，则以本体体力计算)",
                   "summary": "[EnemyKill] 对全体敌方单位造成共计相当于溢出伤害量的伤害。"
                 }
               ]
@@ -287,16 +287,16 @@
           "level": 3,
           "name": "血欲",
           "abName": "红舞鞋",
-          "desc": "대상의 [Laceration] 2당 코인 위력 +1 (최대 <style=\"highlight\">9</style>)\n[StartBattle] 이 스킬의 메인 타겟은 이번 턴 동안 [Laceration] 횟수가 감소하지 않음.\n[EndSkill] 3턴 동안 턴 종료 시 정신력 10 감소.",
+          "desc": "目标每带有2级流血 强度，使本技能的硬币威力+1(最多+<style=\"highlight\">9</style>)\n[StartBattle] 本回合使本技能主要目标的流血 层数不会减少。\n[EndSkill] 3回合内，回合结束时使自身失去10点理智值。",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] <style=\"highlight\">(대상의 [Laceration] 위력 x 1.2)</style>만큼 색욕 속성 피해를 줌.\n- 색욕 공명이 4 이상이면, x<style=\"highlight\">1.5</style>로 계산.\n<style=\"highlight\">- 최대 색욕 완전 공명 수가 4 이상이면, x1.8로 계산.</style>\n(계산 시 반영되는 [Laceration] 위력은 99를 초과할 수 없음.)",
+                  "desc": "[OnSucceedAttack] 对目标造成相当于<style=\"highlight\">(其流血 强度×1.2)</style>点色欲伤害\n- 若色欲共鸣数不低于4，则改为造成相当于(目标的流血 强度×<style=\"highlight\">1.5</style>)点色欲伤害\n<style=\"highlight\">- 若色欲完全共鸣数不低于4，则改为造成相当于(目标的流血 强度×1.8)点色欲伤害</style>\n(本技能至多计入99级流血 强度)",
                   "summary": "[OnSucceedAttack] 根据目标的流血 强度，相应对其造成色欲伤害"
                 },
                 {
-                  "desc": "[EnemyKill] 이 스킬의 피해 또는 코인 효과로 적의 남은 체력을 초과하여 피해를 준 경우, 초과한 피해량을 고정 피해로 적 전체에 나눠서 가함.\n(집중 전투인 경우, 본체의 체력을 기준으로 계산)",
+                  "desc": "[EnemyKill] 若本技能或其硬币效果对目标造成超过其剩余体力的伤害，则对全体敌方单位造成共计相当于溢出伤害量的固定伤害\n(若是集中遭遇战，则以本体体力计算)",
                   "summary": "[EnemyKill] 对全体敌方单位造成共计相当于溢出伤害量的伤害。"
                 }
               ]
@@ -307,16 +307,16 @@
           "level": 4,
           "name": "血欲",
           "abName": "红舞鞋",
-          "desc": "대상의 [Laceration] 2당 코인 위력 +1 (최대 <style=\"highlight\">13</style>)\n[StartBattle] 이 스킬의 메인 타겟은 이번 턴 동안 [Laceration] 횟수가 감소하지 않음.\n[EndSkill] 3턴 동안 턴 종료 시 정신력 10 감소.",
+          "desc": "目标每带有2级流血 强度，使本技能的硬币威力+1(最多+<style=\"highlight\">13</style>)\n[StartBattle] 本回合使本技能主要目标的流血 层数不会减少。\n[EndSkill] 3回合内，回合结束时使自身失去10点理智值。",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] (대상의 [Laceration] 위력 x <style=\"highlight\">1.5</style>)만큼 색욕 속성 피해를 줌.\n- 색욕 공명이 4 이상이면, x<style=\"highlight\">1.8</style>로 계산.\n- 최대 색욕 완전 공명 수가 4 이상이면, x<style=\"highlight\">2</style>로 계산.\n(계산 시 반영되는 [Laceration] 위력은 99를 초과할 수 없음.)",
+                  "desc": "[OnSucceedAttack] 对目标造成相当于(其流血 强度×<style=\"highlight\">1.5</style>)点色欲伤害\n- 若色欲共鸣数不低于4，则改为造成相当于(目标的流血 强度×<style=\"highlight\">1.8</style>)点色欲伤害\n- 若色欲完全共鸣数不低于4，则改为造成相当于(目标的流血 强度×<style=\"highlight\">2</style>)点色欲伤害\n(本技能至多计入99级流血 强度)",
                   "summary": "[OnSucceedAttack] 根据目标的流血 强度，相应对其造成色欲伤害"
                 },
                 {
-                  "desc": "[EnemyKill] 이 스킬의 피해 또는 코인 효과로 적의 남은 체력을 초과하여 피해를 준 경우, 초과한 피해량을 고정 피해로 적 전체에 나눠서 가함.\n(집중 전투인 경우, 본체의 체력을 기준으로 계산)",
+                  "desc": "[EnemyKill] 若本技能或其硬币效果对目标造成超过其剩余体力的伤害，则对全体敌方单位造成共计相当于溢出伤害量的固定伤害\n(若是集中遭遇战，则以本体体力计算)",
                   "summary": "[EnemyKill] 对全体敌方单位造成共计相当于溢出伤害量的伤害。"
                 }
               ]
@@ -332,12 +332,12 @@
           "level": 1,
           "name": "血欲",
           "abName": "红舞鞋",
-          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] (가장 높은 공명 수 - 2) 만큼 공격 가중치 증가 (최대 2)",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大共鸣数-2)(最多+2)",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 2 + (색욕 공명 수)만큼 [Laceration] 부여\n(공명 수 비례 최대 [Laceration] 부여량 : 4)",
+                  "desc": "[OnSucceedAttack] 使目标增加(2+色欲共鸣数)级流血 强度\n(最高计入色欲共鸣数：4)",
                   "summary": "[OnSucceedAttack] 使目标增加(2+色欲共鸣数)级流血 强度"
                 }
               ]
@@ -348,12 +348,12 @@
           "level": 3,
           "name": "血欲",
           "abName": "红舞鞋",
-          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] (가장 높은 공명 수 - 2) 만큼 공격 가중치 증가 (최대 2)",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大共鸣数-2)(最多+2)",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] <style=\"highlight\">3</style> + (색욕 공명 수)만큼 [Laceration] 부여\n(공명 수 비례 최대 [Laceration] 부여량 : <style=\"highlight\">5</style>)",
+                  "desc": "[OnSucceedAttack] 使目标增加(<style=\"highlight\">3</style>+色欲共鸣数)级流血 强度\n(最高计入色欲共鸣数：<style=\"highlight\">5</style>)",
                   "summary": "[OnSucceedAttack] 使目标增加(3+色欲共鸣数)级流血 强度"
                 },
                 {
@@ -367,12 +367,12 @@
           "level": 4,
           "name": "血欲",
           "abName": "红舞鞋",
-          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] (가장 높은 공명 수 - 2) 만큼 공격 가중치 증가 (최대 2)",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大共鸣数-2)(最多+2)",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] <style=\"highlight\">4</style> + (색욕 공명 수)만큼 [Laceration] 부여\n(공명 수 비례 최대 [Laceration] 부여량 : <style=\"highlight\">6</style>)",
+                  "desc": "[OnSucceedAttack] 使目标增加(<style=\"highlight\">4</style>+色欲共鸣数)级流血 强度\n(最高计入色欲共鸣数：<style=\"highlight\">6</style>)",
                   "summary": "[OnSucceedAttack] 使目标增加(4+色欲共鸣数)级流血 强度"
                 },
                 {
@@ -416,7 +416,7 @@
           "level": 3,
           "name": "诅咒之钉",
           "abName": "痛苦泰迪",
-          "desc": "[EndSkill] 자신과 현재 체력 비율이 가장 낮은 아군 2명의 체력을 자신의 최대 체력의 12.5%만큼 회복\n<style=\"highlight\">- 회복받는 대상이 보유한 부정적인 효과 종류 2개당 최대 체력의 2.5%만큼 회복량이 증가 (최대 7.5%)</style>",
+          "desc": "[EndSkill] 使自身与现存体力比例最低的2名友方单位恢复自身体力上限12.5%的体力\n<style=\"highlight\">- 受到恢复的单位每带有2种负面状态，使其额外恢复2.5%的体力(最多7.5%)</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -441,7 +441,7 @@
           "level": 4,
           "name": "诅咒之钉",
           "abName": "痛苦泰迪",
-          "desc": "[EndSkill] 자신과 현재 체력 비율이 가장 낮은 아군 2명의 체력을 자신의 최대 체력의 <style=\"highlight\">15%</style>만큼 회복\n- 회복받는 대상이 보유한 부정적인 효과 종류 <style=\"highlight\">1</style>개당 최대 체력의 2.5%만큼 회복량이 증가 (최대 <style=\"highlight\">10%</style>)\n<style=\"highlight\">- 이 스킬을 포함하여 질투 공명이 4 이상이면, 회복 대상 수 +1</style>",
+          "desc": "[EndSkill] 使自身与现存体力比例最低的2名友方单位恢复自身体力上限<style=\"highlight\">15%</style>的体力\n- 受到恢复的单位每带有<style=\"highlight\">1</style>种负面状态，使其额外恢复2.5%的体力(最多<style=\"highlight\">10%</style>)\n<style=\"highlight\">- 若包括本技能在内嫉妒共鸣数不低于4，则额外使1名友方单位恢复体力</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -471,7 +471,7 @@
           "level": 1,
           "name": "诅咒之钉",
           "abName": "痛苦泰迪",
-          "desc": "[CantIdentify]\n무작위 대상 공격\n[EndSkill] 자신을 제외하고 현재 체력 비율이 가장 낮은 아군 3명의 체력을 자신의 최대 체력의 15%만큼 회복",
+          "desc": "[CantIdentify]\n随机指定目标\n[EndSkill] 使除自身以外现存体力比例最低的3名友方单位恢复自身体力上限15%的体力",
           "coinlist": [
             {
               "coindescs": [
@@ -499,7 +499,7 @@
           "level": 3,
           "name": "诅咒之钉",
           "abName": "痛苦泰迪",
-          "desc": "[CantIdentify]\n무작위 대상 공격\n[EndSkill] 자신을 제외하고 현재 체력 비율이 가장 낮은 아군 3명의 체력을 자신의 최대 체력의 15%만큼 회복\n<style=\"highlight\">- 회복받는 대상이 보유한 부정적인 효과 종류 2개당 다음 턴까지 [AttackUp] 1 부여 (최대 2)</style>",
+          "desc": "[CantIdentify]\n随机指定目标\n[EndSkill] 使除自身以外现存体力比例最低的3名友方单位恢复自身体力上限15%的体力\n<style=\"highlight\">- 受到恢复的单位每带有2种负面状态，下回合使其获得1层攻击等级提升 (最多2层)</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -527,7 +527,7 @@
           "level": 4,
           "name": "诅咒之钉",
           "abName": "痛苦泰迪",
-          "desc": "[CantIdentify]\n무작위 대상 공격\n[EndSkill] 자신을 제외하고 현재 체력 비율이 가장 낮은 아군 3명의 체력을 자신의 최대 체력의 <style=\"highlight\">20%</style>만큼 회복\n- 회복받는 대상이 보유한 부정적인 효과 종류 <style=\"highlight\">1</style>개당 다음 턴까지 [AttackUp] 1 부여 (최대 <style=\"highlight\">3</style>)\n<style=\"highlight\">- 이 스킬을 포함하여 질투 공명이 4 이상이면, 회복 대상 수 +1</style>",
+          "desc": "[CantIdentify]\n随机指定目标\n[EndSkill] 使除自身以外现存体力比例最低的3名友方单位恢复自身体力上限<style=\"highlight\">20%</style>的体力\n- 受到恢复的单位每带有1种负面状态，下回合使其获得<style=\"highlight\">1</style>层攻击等级提升 (最多<style=\"highlight\">3</style>层)\n<style=\"highlight\">- 若包括本技能在内嫉妒共鸣数不低于4，则额外使1名友方单位恢复体力</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -560,7 +560,7 @@
           "level": 1,
           "name": "指定审判",
           "abName": "灼热公爵",
-          "desc": "[EndSkill] 현재 체력 비율이 가장 낮은 아군 (1 + 최대 공명 수)명의 체력을 최대 체력의 15%만큼 회복 (최대 3명)\n[EndSkill] 3턴 동안 턴 종료 시 정신력 10 감소",
+          "desc": "[EndSkill] 使现存体力比例最低的(1+最大共鸣数)名友方单位恢复其体力上限15%的体力(最多3名)\n[EndSkill] 3回合内，回合结束时使自身失去10点理智值",
           "coinlist": [
             {
               "coindescs": [
@@ -579,7 +579,7 @@
           "level": 3,
           "name": "指定审判",
           "abName": "灼热公爵",
-          "desc": "<style=\"highlight\">[BeforeAttack] (최대 공명 수 / 2)만큼 공격 가중치 증가 (최대 3, 소수점 버림)</style>\n[EndSkill] 현재 체력 비율이 가장 낮은 아군 (1 + 최대 공명 수)명의 체력을 최대 체력의 <style=\"highlight\">18</style>%만큼 회복 (최대 3명)\n[EndSkill] 3턴 동안 턴 종료 시 정신력 10 감소",
+          "desc": "<style=\"highlight\">[BeforeAttack] 使本技能的攻击容量+(最大共鸣数/2)(最多+3，向下取整)</style>\n[EndSkill] 使现存体力比例最低的(1+最大共鸣数)名友方单位恢复其体力上限<style=\"highlight\">18</style>%的体力(最多3名)\n[EndSkill] 3回合内，回合结束时使自身失去10点理智值",
           "coinlist": [
             {
               "coindescs": [
@@ -598,7 +598,7 @@
           "level": 4,
           "name": "指定审判",
           "abName": "灼热公爵",
-          "desc": "[BeforeAttack] (최대 공명 수 / 2)만큼 공격 가중치 증가 (최대 3, 소수점 버림)\n[EndSkill] 현재 체력 비율이 가장 낮은 아군 (1 + 최대 공명 수)명의 체력을 최대 체력의 <style=\"highlight\">20</style>%만큼 회복 (최대 3명)\n[EndSkill] 3턴 동안 턴 종료 시 정신력 10 감소",
+          "desc": "[BeforeAttack] 使本技能的攻击容量+(最大共鸣数/2)(最多+3，向下取整)\n[EndSkill] 使现存体力比例最低的(1+最大共鸣数)名友方单位恢复其体力上限<style=\"highlight\">20</style>%的体力(最多3名)\n[EndSkill] 3回合内，回合结束时使自身失去10点理智值",
           "coinlist": [
             {
               "coindescs": [
@@ -622,7 +622,7 @@
           "level": 1,
           "name": "指定审判",
           "abName": "灼热公爵",
-          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] (최대 공명 수 / 2)만큼 공격 가중치 증가 (최대 3, 소수점 버림)",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大共鸣数/2)(最多+3，向下取整)",
           "coinlist": [
             {
               "coindescs": [
@@ -656,7 +656,7 @@
           "level": 3,
           "name": "指定审判",
           "abName": "灼热公爵",
-          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] (최대 공명 수 / 2)만큼 공격 가중치 증가 (최대 3, 소수점 버림)",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大共鸣数/2)(最多+3，向下取整)",
           "coinlist": [
             {
               "coindescs": [
@@ -690,7 +690,7 @@
           "level": 4,
           "name": "指定审判",
           "abName": "灼热公爵",
-          "desc": "[CantIdentify]\n무작위 대상 공격\n[BeforeAttack] (최대 공명 수 / 2)만큼 공격 가중치 증가 (최대 3, 소수점 버림)",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大共鸣数/2)(最多+3，向下取整)",
           "coinlist": [
             {
               "coindescs": [
