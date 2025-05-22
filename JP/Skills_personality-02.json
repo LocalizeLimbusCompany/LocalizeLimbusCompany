@@ -1347,6 +1347,407 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1021201,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "瞬歩",
+          "desc": "[WhenUse] 対象の[Burst]が6以上なら、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "瞬歩",
+          "desc": "[WhenUse] 対象の[Burst]が<style=\"highlight\">4</style>以上なら、コイン威力 +1\n<style=\"highlight\">[WinDuel] [Burst]回数が1増加</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が1増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 自分の速度が10以上なら、コインを1回再使用(スキルごとに1回)</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "瞬歩",
+          "desc": "<style=\"highlight\">自分の速度が対象より3以上高ければコイン威力 +1</style>\n[WhenUse] 対象の[Burst]が4以上なら、コイン威力 +1\n[WinDuel] [Burst]回数が1増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が1増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の速度が10以上なら、コインを1回再使用(スキルごとに1回)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021202,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "道を切り拓きます、主君。",
+          "desc": "[WhenUse] 対象の[Burst]が4以上なら、コイン威力 +1\n[WinDuel] [Burst]回数が1増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "対象に[BurstAgility]または[BurstZilu]があれば、ダメージ量 +30%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "道を切り拓きます、主君。",
+          "desc": "[WhenUse] 対象の[Burst]が4以上なら、コイン威力 +1\n<style=\"highlight\">[WhenUse] 次のターンに[Agility]2を得る(1ターンにつき1回)</style>\n[WinDuel] [Burst]回数が1増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が1増加<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "対象に[BurstAgility]または[BurstZilu]があれば、ダメージ量 +30%<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "道を切り拓きます、主君。",
+          "desc": "<style=\"highlight\">自分の速度が対象より高いなら、(対象との速度差 × 自分の[EnhanceZilu])%だけダメージ量が増加(最大50%)</style>\n<style=\"highlight\">自分の速度が対象より3以上高ければコイン威力 +1\n[WhenUse] 対象の[Burst]が4以上なら、コイン威力 +1</style>\n[WhenUse] 次のターンに[Agility]を2得る(1ターンにつき1回)\n[WinDuel] [Burst]回数が1増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が1増加<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Burst]1を付与</style>"
+                },
+                {
+                  "desc": "対象に[BurstAgility]または[BurstZilu]があれば、ダメージ量<style=\"highlight\"> +50%</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021203,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "目でも耳でも追えぬように。",
+          "desc": "自分の速度が対象より高ければ、(対象との速度差 × 対象の[Burst]威力)%だけダメージ量が増加(最大50%)\n自分の速度が対象より2以上高ければ、コイン威力 +1\n[StartBattle] [SupportProtect]を1得る(1ターンにつき1回)\n[BeforeUse] [EnhanceZilu]が10以上なら、「黒獣 卯 奥義 - 雲解顕現」として発動\n[WhenUse] [LegStrength]3を得る\n[WinDuel] [Burst]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が1増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [BurstAgility]を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "自分の速度が10以上なら、ダメージ量 +30%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の速度が10以上なら、コインを1回再使用(スキルごとに1回)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "目でも耳でも追えぬように。",
+          "desc": "自分の速度が対象より高ければ、(対象との速度差 × 対象の[Burst]威力)%だけダメージ量が増加(最大50%)\n<style=\"highlight\">自分の速度が対象より高いほど、コイン威力 +1(速度差2につきコイン威力 +1, 最大2)</style>\n[StartBattle] [SupportProtect]を1得る(1ターンにつき1回)\n[BeforeUse] [EnhanceZilu]が10以上なら、「黒獣 卯 奥義 - 雲解顕現」として発動\n<style=\"highlight\">[WhenUse] 対象の[Burst]が15以上なら、コイン威力 +1</style>\n[WhenUse] [LegStrength]3を得る\n[WinDuel] [Burst]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が1増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [BurstAgility]を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "自分の速度が10以上なら、ダメージ量 +30%<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]3を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の速度が10以上なら、コインを1回再使用(スキルごとに1回)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[ReUseOnSucceedAttack] [BurstAgility]を付与</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021204,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "尊命。",
+          "desc": "[DuelCounter]\n[StartBattle] [SupportProtect]1を得る (1ターンにつき1回)\n[WhenUse] 自分が今回のターンにて失った累計体力10%につき、このスキルの攻撃レベル +1 (最大6. 発動時点の体力最大値を基準とする)\n[WhenUse] [LegStrength]3を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "尊命。",
+          "desc": "[DuelCounter]\n[StartBattle] [SupportProtect]1を得る (1ターンにつき1回)\n[WhenUse] 自分が今回のターンにて失った累計体力10%につき、このスキルの攻撃レベル +1 (最大6. 発動時点の体力最大値を基準とする)\n[WhenUse] [LegStrength]3を得る\n<style=\"highlight\"> [WhenUse] 自分の速度が対象よりも2以上高いほど、基本威力 +1 (速度差2につき基本威力 +1, 最大2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021205,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "黒獣 卯 奥義 - 雲解顕現",
+          "desc": "自分の速度が対象より高ければ、(対象との速度差 × 対象の[Burst]威力)%だけダメージ量が増加(最大50%)\n自分の速度が対象より2以上高ければコイン威力 +1\n[WhenUse] 対象の[Burst]が15以上なら、コイン威力 +1\n[WhenUse] 自分の速度が10以上なら[Breath]を20得て、自分の[Breath]回数が4未満なら、[Breath]回数を最大4まで得る\n[WhenUse] [LegStrength]を3得る\n[WinDuel] [Burst]回数が2増加\n[EndSkill] [EnhanceZilu]を10消耗",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が1増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [BurstZilu]を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [BurstAgility]を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "自分の速度が10以上なら、ダメージ量 +30%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の速度が10以上なら、コインを1回再使用(スキルごとに1回)"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] [BurstZilu]を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "黒獣 卯 奥義 - 雲解顕現",
+          "desc": "自分の速度が対象より高ければ、(対象との速度差 × 対象の[Burst]威力)%だけダメージ量が増加(最大50%)\n<style=\"highlight\">自分の速度が対象より高いほど、コイン威力 +1 (速度差2につきコイン威力 +1, 最大2)</style>\n<style=\"highlight\">[WhenUse] 対象の[Burst]10につき、コイン威力 +1 (最大2)</style>\n[WhenUse] 自分の速度が10以上なら[Breath]を20得て、自分の[Breath]回数が4未満なら、[Breath]回数を最大4まで得る\n[WhenUse] [LegStrength]を3得る\n[WinDuel] [Burst]回数が2増加\n[EndSkill] [EnhanceZilu]を10消耗",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が1増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [BurstZilu]を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [BurstAgility]を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "自分の速度が10以上なら、ダメージ量 +30%<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]3を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の速度が10以上なら、コインを1回再使用(スキルごとに1回)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] [BurstZilu]を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[ReUseOnSucceedAttack] [BurstAgility]を付与</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021206,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "超速護衛",
+          "desc": "[CanDuelGuard]\n[SupportProtect]専用スキル\n[BeforeUse] [EnhanceZilu]が10以上なら、「黒獣 卯 奥義 - 雲解顕現」として発動\n[WhenUse] 自分がこのターンにて失った累計体力10%につき、このスキルの防御レベル +1(最大6. 発動時点の体力最大値を基準とする)\n[WhenUse] このスキルが終了するまでダメージによって混乱状態にならない\n[WhenUse] [Protection]2を得る(1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "超速護衛",
+          "desc": "[CanDuelGuard]\n[SupportProtect]専用スキル\n[BeforeUse] [EnhanceZilu]が10以上なら、「黒獣 卯 奥義 - 雲解顕現」として発動\n[WhenUse] 自分がこのターンにて失った累計体力10%につき、このスキルの防御レベル +1(最大6. 発動時点の体力最大値を基準とする)\n[WhenUse] このスキルが終了するまでダメージによって混乱状態にならない\n[WhenUse] [Protection]2を得る(1ターンにつき1回)<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
