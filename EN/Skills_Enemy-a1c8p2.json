@@ -659,15 +659,15 @@
         {
           "level": 1,
           "name": "Spirit Talisman School - Deathrite Doll",
-          "desc": "[StartBattle] At -25 SP or less, convert this Skill's Coins to [SuperCoin]s\n[DefeatDuel] Reduce this Skill's Base Power by 75% (rounded down)\n[WhenUse] Final Power +1 for every 4 [Burst] on target (max 3)",
+          "desc": "[WhenUse] Final Power +1 for every 4 [Burst] on target (max 2)",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 [Burst] and +3 [Burst] Count"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Burst] and +2 [Burst] Count"
                 },
                 {
-                  "desc": "[UnBrokenCoinOnSucceedAttack] Reduce [OminousTalisman] on target by 5"
+                  "desc": "[OnSucceedAttack] Reduce [OminousTalisman] on target by 5"
                 }
               ]
             }
@@ -745,12 +745,12 @@
         {
           "level": 1,
           "name": "Spirit Talisman School - Execution",
-          "desc": "[StartBattle] At -25 SP or less, convert this Skill's final Coin to [SuperCoin]\n[DefeatDuel] Reduce this Skill's Base Power by 75% (rounded down)\n[WhenUse] Final Power +1 for every 4 [Burst] on target (max 4)",
+          "desc": "[StartBattle] At -30 SP or less, convert this Skill's final Coin to [SuperCoin]\n[DefeatDuel] Reduce this Skill's Base Power by 75% (rounded down)\n[WhenUse] Final Power +1 for every 4 [Burst] on target (max 3)",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 [Burst]"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Burst]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 10 [OminousTalisman]"
@@ -760,10 +760,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +3 [Burst] Count"
+                  "desc": "[OnSucceedAttack] Inflict +2 [Burst] Count"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 10 [OminousTalisman]"
+                  "desc": "[OnSucceedAttackTail] Inflict 10 [OminousTalisman]"
                 }
               ]
             },
@@ -784,7 +784,7 @@
         {
           "level": 1,
           "name": "Spirit Talisman School - Vile Burst",
-          "desc": "[StartBattle] Atk Weight +1, Final Power +1 for every 10 SP below 0 (max 3 each)\n[DefeatDuel] Reduce this Skill's Base Power by 75% (rounded down); also, this Skill's damage or effect cannot stagger the target(s)\n[EndSkill] Reset SP to 0",
+          "desc": "[StartBattle] Final Power +1 for every 10 SP below 0 (max 3)\n[DefeatDuel] Reduce this Skill's Base Power by 75% (rounded down); also, this Skill's damage or effect cannot stagger the target(s)\n[EndSkill] Reset SP to 0",
           "coinlist": [
             {
               "coindescs": [
@@ -795,7 +795,7 @@
                   "desc": "[OnSucceedAttack] Inflict 3 [Burst] and +3 [Burst] Count"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 10 [OminousTalisman]"
+                  "desc": "[UnBrokenCoinOnSucceedAttack] Inflict 10 [OminousTalisman]"
                 }
               ]
             },

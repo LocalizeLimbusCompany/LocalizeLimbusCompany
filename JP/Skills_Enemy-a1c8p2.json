@@ -659,15 +659,15 @@
         {
           "level": 1,
           "name": "符霊術 - 呪殺人形",
-          "desc": "[StartBattle] 精神力が-25以下なら、このスキルのコインが[SuperCoin]に変更\n[DefeatDuel] このスキルの基本威力が75%だけ減少 (小数点切り捨て)\n[WhenUse] 対象の[Burst]4につき、最終威力 +1 (最大3)",
+          "desc": "[WhenUse] 対象の[Burst]4につき、最終威力 +1 (最大2)",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] [Burst]3付与、[Burst]回数が3増加"
+                  "desc": "[OnSucceedAttack] [Burst]2付与、[Burst]回数が2増加"
                 },
                 {
-                  "desc": "[UnBrokenCoinOnSucceedAttack] 対象の[OminousTalisman]5を消耗"
+                  "desc": "[OnSucceedAttack] 対象の[OminousTalisman]5を消耗"
                 }
               ]
             }
@@ -745,12 +745,12 @@
         {
           "level": 1,
           "name": "符霊術 - 執行",
-          "desc": "[StartBattle] 精神力が-25以下なら、このスキルの最終コインが[SuperCoin]に変更\n[DefeatDuel] このスキルの基本威力が75%だけ減少 (小数点切り捨て)\n[WhenUse] 対象の[Burst]4につき、最終威力 +1 (最大4)",
+          "desc": "[StartBattle] 精神力が-30以下なら、このスキルの最終コインが[SuperCoin]に変更\n[DefeatDuel] このスキルの基本威力が75%だけ減少 (小数点切り捨て)\n[WhenUse] 対象の[Burst]4につき、最終威力 +1 (最大3)",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] [Burst]3を付与"
+                  "desc": "[OnSucceedAttack] [Burst]2を付与"
                 },
                 {
                   "desc": "[OnSucceedAttack] [OminousTalisman]10を付与"
@@ -760,10 +760,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] [Burst]回数が3増加"
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
                 },
                 {
-                  "desc": "[OnSucceedAttack] [OminousTalisman]10を付与"
+                  "desc": "[OnSucceedAttackTail] [OminousTalisman]10を付与"
                 }
               ]
             },
@@ -784,7 +784,7 @@
         {
           "level": 1,
           "name": "符霊術 - 邪気爆発",
-          "desc": "[StartBattle] 精神力-10につき加重値 +1, 最終威力 +1 (それぞれ最大3)\n[DefeatDuel] このスキルの基本威力が75%だけ減少(消臭点切り捨て)して、ダメージ・効果で対象が混乱しない\n[EndSkill] 精神力が0に初期化",
+          "desc": "[StartBattle] 精神力-10につき最終威力 +1 (最大3)\n[DefeatDuel] このスキルの基本威力が75%だけ減少(消臭点切り捨て)して、ダメージ・効果で対象が混乱しない\n[EndSkill] 精神力が0に初期化",
           "coinlist": [
             {
               "coindescs": [
@@ -795,7 +795,7 @@
                   "desc": "[OnSucceedAttack] [Burst]3付与、[Burst]回数が3増加"
                 },
                 {
-                  "desc": "[OnSucceedAttack] [OminousTalisman]10を付与"
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [OminousTalisman]10を付与"
                 }
               ]
             },
