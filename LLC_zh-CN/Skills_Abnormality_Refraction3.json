@@ -73,7 +73,7 @@
         {
           "level": 1,
           "name": "覆盖棉花",
-          "desc": "指定流血 强度最高的单位\n[WhenUse] 若主要目标为流血 强度最高的目标，则使本技能的基础威力+5，施加的状态变为2倍",
+          "desc": "指定[Laceration]强度最高的单位\n[WhenUse] 若主要目标为[Laceration]强度最高的目标，则使本技能的基础威力+5，施加的状态变为2倍",
           "coinlist": [
             {
               "coindescs": [
@@ -99,7 +99,7 @@
         {
           "level": 1,
           "name": "散落的棉花",
-          "desc": "指定带有棉花 且体力最低的单位\n[WhenUse] 若主要目标为流血 强度最高的单位，则使本技能的基础威力+5\n[EndBattle] 下回合解除[MRcAfBb]状态",
+          "desc": "指定带有[MRcAfBa]且体力最低的单位\n[WhenUse] 若主要目标为[Laceration]强度最高的单位，则使本技能的基础威力+5\n[EndBattle] 下回合解除[MRcAfBb]状态",
           "coinlist": [
             {
               "coindescs": [
@@ -164,7 +164,7 @@
         {
           "level": 1,
           "name": "散落的红染棉花",
-          "desc": "优先指定流血 强度最高的单位\n[WhenUse] 若主要目标为流血 强度最高的单位，则使本技能的基础威力+10\n若目标的流血 强度不低于10级，则使本技能造成的伤害+50%",
+          "desc": "优先指定[Laceration]强度最高的单位\n[WhenUse] 若主要目标为[Laceration]强度最高的单位，则使本技能的基础威力+10\n若目标的[Laceration]强度不低于10级，则使本技能造成的伤害+50%",
           "coinlist": [
             {
               "coindescs": [
@@ -234,7 +234,7 @@
         {
           "level": 1,
           "name": "点燃",
-          "desc": "[WinDuel] 根据目标带有的烧伤 强度，使其增加相应的烧伤 强度\n[WhenUse] 对目标施加2层烧伤 ",
+          "desc": "[WinDuel] 根据目标带有的[Combustion]强度，使其增加相应的[Combustion]强度\n[WhenUse] 对目标施加2层[Combustion]",
           "coinlist": [
             {
               "coindescs": [
@@ -295,7 +295,7 @@
         {
           "level": 1,
           "name": "红艳煞",
-          "desc": "使本技能的拼点威力+(红焰蛾本回合使用的暴怒技能数×2)\n[WhenUse] 使全体敌方单位增加(红焰蛾本回合使用的暴怒技能数×2)级烧伤 强度",
+          "desc": "使本技能的拼点威力+(红焰蛾本回合使用的暴怒技能数×2)\n[WhenUse] 使全体敌方单位增加(红焰蛾本回合使用的暴怒技能数×2)级[Combustion]强度",
           "coinlist": [
             {
               "coindescs": [
@@ -337,7 +337,7 @@
         {
           "level": 1,
           "name": "闪避",
-          "desc": "[WhenUseEvade] 使目标增加4级烧伤 强度\n[OnSucceedEvade] 下回合使自身获得1层[MRcAiBa]",
+          "desc": "[WhenUseEvade] 使目标增加4级[Combustion]强度\n[OnSucceedEvade] 下回合使自身获得1层[MRcAiBa]",
           "coinlist": [
             {
               "coindescs": [
