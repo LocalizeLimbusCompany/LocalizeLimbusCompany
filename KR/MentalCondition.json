@@ -6,6 +6,11 @@
       "min": "합 승리 시 합 횟수에 비례하여 감소\n<size=95%>(감소량: 기본 값 {0}, 2합부터 1합당 {1}%씩 증가)</size>"
     },
     {
+      "id": "OnWinDuelAsParryingCountMultiplyAndPlusPercentWithMax",
+      "add": "합 승리 시 합 횟수에 비례하여 증가\n<size=95%>(증가량: 기본 값 {0}, 2합부터 1합당 {1}%씩 증가, 최대 {2}%)</size>",
+      "min": "합 승리 시 합 횟수에 비례하여 감소\n<size=95%>(감소량: 기본 값 {0}, 2합부터 1합당 {1}%씩 증가, 최대 {2}%)</size>"
+    },
+    {
       "id": "OnKillEnemyAsLevelRatioMultiply",
       "add": "적 처치 시 처치한 적의 레벨이 자신의 레벨 이상인 경우 {0} 증가",
       "min": "적 처치 시 처치한 적의 레벨이 자신의 레벨 이상인 경우 {0} 감소"
@@ -69,6 +74,11 @@
       "id": "OnWinDuelAnyTarget",
       "add": "합 승리 시 {0} 증가",
       "min": "합 승리 시 {0} 감소"
+    },
+    {
+      "id": "OnLoseDuelAnyTarget",
+      "add": "합 패배 시 {0} 증가",
+      "min": "합 패배 시 {0} 감소"
     }
   ]
 }

@@ -1437,8 +1437,8 @@
     {
       "id": "Talisman",
       "name": "Talisman",
-      "desc": "On hit, inflict {0} Rupture; When hit, gain {0} Rupture\nTurn End: At 6+ Count, remove all Talisman and take fixed damage by its Count",
-      "summary": "Inflict Rupture with attacks and gain Rupture when hit"
+      "desc": "Max Stack: 6\nOn Hit, consume 1 Rupture Count on target to inflict (Stack / 2) Rupture (inflicts at least 1 Rupture if Rupture Count was consumed; rounded down)\nWhen hit, gain (Stack / 2) Rupture and lose 1 Stack (gain at least 1 Rupture; rounded down)\nTurn End: at 6+ Stack, remove all Talisman on self and take fixed damage by Stack",
+      "summary": "On Hit, consume Rupture Count on target to inflict Rupture; when hit, gain Rupture and lose 1 Stack"
     },
     {
       "id": "S2Mirror2ndFloor_Hard",
@@ -2536,6 +2536,41 @@
       "id": "CentipedePoison",
       "name": "Centipede Venom",
       "desc": "- Max Stack: 20\n- Turn End: gain (Stack / 4) Defense Level Down next turn (rounded down)\n- Turn End: take Gluttony damage equal to Stack, and halve the Stack (rounded down)\nUpon death, transfers to this unit's ally(for Focused Encounters, a different Part) with none or the least Centipede Venom Stacks.",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "DragonLance",
+      "name": "Flower-burying Wedge [埋花櫼]",
+      "desc": "Base Stack: 0\nMax Stack: 3\n- All Coins on this unit's leftmost Base Attack Skill on the Dashboard become Unbreakable Coins\n- Turn Start: gain 2 Offense Level Up and 2 Defense Level Down\n- Turn Start: at 3+ Stack, gain 1 Tarnished Blood (once per Encounter)\n- Turn End: gain 1 Stack\n※ Cannot raise the effect's Stack by any other means than the ones above\n- Expires upon death or Retreat\n\n- When this unit takes damage that brings their HP down to 0: instead of letting this unit's HP drop below 1, or becoming Staggered or Defeated, use the 'Tears of the Tarnished Blood - The End' Skill at the very end of that turn. Remove the Flower-burying Wedge when the Skill ends.\nWhen this unit takes damage that brings their HP down to 1 at Turn End, use 'Tears of the Tarnished Blood - The End' Skill based on this unit's Speed next turn",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "CondensedBlood",
+      "name": "Tarnished Blood",
+      "desc": "Max Stack: 5\n- Turn End: take 20% HP damage per Stack (cannot be Staggered by this effect)\n- Gain 1 Stack at Turn End\n- Expires upon death or Retreat",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "YesdragonSelf",
+      "name": "Flower-burying Pin [埋花針]",
+      "desc": "Max Stack: 20\n- Gain 1 Stack at Turn End or when hit\n- Gain 1 Offense Level per 5 Stack\n- If the unit with this effect dies, inflict Gluttony damage equal to Stack and inflict 5 Rupture\n- Expires upon death or Retreat",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "YesdragonNodie",
+      "name": "Denial [不許]",
+      "desc": "When this unit takes damage that brings their HP down to 0: this unit's HP does not drop below 1; recover from Stagger due to damage.\nIf the above effect activated, dies at Turn End.\nExpires upon death, Retreat, or Turn End",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "YesdragonBurst",
+      "name": "Razor Thorn",
+      "desc": "",
       "summary": "",
       "undefined": "-"
     }

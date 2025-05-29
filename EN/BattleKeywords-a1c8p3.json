@@ -1,0 +1,322 @@
+{
+  "dataList": [
+    {
+      "id": "Bothersome",
+      "name": "Severing Slash [切斬]",
+      "desc": "- The target's Slash Resistance counts as 'Weak'(1.5). (does not activate against targets with 1.5 or higher Slash Resistance)\n- Expires at Turn End",
+      "summary": ""
+    },
+    {
+      "id": "VibrationIgnition",
+      "name": "Tremor - Scorch",
+      "desc": "- On Tremor Burst, take Wrath Damage equal to (sum of Tremor Potency and Burn Potency / 2), and lose 1 Burn Count\n- When hit by Skills that trigger Tremor Burst, raise this unit's Stagger Threshold equal by the effect's Potency\n- Turn End: reduce the Count by 1\n(Interacts the same way as normal Tremor does to effects that raise or reduce Tremor Potency/Count)",
+      "summary": ""
+    },
+    {
+      "id": "BulletPropellant",
+      "name": "Tigermark Round",
+      "desc": "- Unique Ammo\n- Spent by certain Skills\n- Max Stack: 6",
+      "summary": ""
+    },
+    {
+      "id": "BulletPropellantSpecial",
+      "name": "Savage Tigermark Round",
+      "desc": "- Unique Ammo\n- Spent by certain Skills (actives the same way as Tigermark Round does)\n- The Potency and the Count of this effect are \"Loaded Ammo\" and \"Remaining Ammo\", respectively\n· Max Potency (Loaded Ammo): 6\n- Coins that spent this Ammo deal +30% damage, and inflict double the normal amount of Burn Potency and Count\n- When all Loaded Ammo and Remaining Ammo are spent, converts back to Tigermark Round",
+      "summary": ""
+    },
+    {
+      "id": "Prey",
+      "name": "Prey",
+      "desc": "- In a Clash with an enemy, Clash Power -5\n- Combat Start:\n· If this unit equipped an Attack Skill, deal -50% damage against Lei Heng with Attack Skills\n· If this unit equipped a Defense Skill, take -75% damage from Lei Heng\n- If this unit wins a Clash against Lei Heng while under this effect, gain 3 of the least-owned E.G.O Resources\n- Expires at Turn End; this unit heals 10 SP",
+      "summary": ""
+    },
+    {
+      "id": "Complacency",
+      "name": "Overheat",
+      "desc": "- Max Stack: 5\n- Turn Start: gain Clash Power Down and Fragile equal to the Stack\n- Expires at Turn End",
+      "summary": ""
+    },
+    {
+      "id": "BattleSense",
+      "name": "Inner Strength [底力]",
+      "desc": "- Max Stack: 25\n- Consumed by certain Skills; at Turn End, heal SP equal to the Stack consumed by the end of the turn\n- Gain 1 Stack with every Clash (max 5 per Skill). On Clash Lose, lose the Stacks gained from the said Clash\n- Gain 2 Stack when hitting with an Unopposed Attack (max 10 per Skill)\n- Turn End: next turn, gain Haste based on the total Stack consumed this turn (1 Haste per 25 Stack; max 2)\n- Gains a different buff when using a specific pattern",
+      "summary": ""
+    },
+    {
+      "id": "RestoredBattleSense",
+      "name": "Extreme Strength [極力]",
+      "desc": "- Max Stack: 50\n- Counts as \"Inner Strength\". Consumed by certain Skills; at Turn End, heal SP equal to the Stack consumed by the end of the turn.\n- Gain 2 Stack with every Clash (max 10 per Skill). On Clash Lose, lose the Stacks gained from the said Clash\n- Gain 3 Stack when hitting with an Unopposed Attack (max 15 per Skill)\n- Turn End: next turn, gain Haste based on the total Stack consumed this turn (1 Haste per 25 Stack, max 5)",
+      "summary": ""
+    },
+    {
+      "id": "Irritation",
+      "name": "Unrelenting Spirit [剛氣]",
+      "desc": "- Turn Start: gain 1 Damage Up and 1 Power Up for every 20% missing HP on self (max 3 each)\n- Inflict +2 more Tremor Potency with this unit's Skills\n- If this unit's Speed is faster than the target's by 3 or more, deal +(Speed difference x 5)% damage (max 20%)\n- Convert the final Coin of 'Triple Strike - Burst' to an Unbreakable Coin\n- This buff changes into Unrelenting Spirit - Shin when using a specific pattern",
+      "summary": ""
+    },
+    {
+      "id": "HugeIrritation",
+      "name": "Unrelenting Spirit - Shin [剛氣-心]",
+      "desc": "- Turn Start: gain 1 Damage Up and 1 Power Up for every 15% missing HP on self (max 5 each)\n- Inflict +3 more Tremor Potency and +1 more Tremor Count with this unit's Skills\n- If this unit's Speed is faster than the target's by 3 or more, deal +(Speed difference x 5)% damage (max 40%)\n- Convert the final Coins of 'Double Slash - Blast' and 'Triple Strike - Burst' to Unbreakable Coins",
+      "summary": ""
+    },
+    {
+      "id": "ReloadKeepAmmo",
+      "name": "Reload - Tactical",
+      "desc": "- Restore this unit's Ammo to its maximum capacity (does not discard any remaining Ammo)",
+      "summary": ""
+    },
+    {
+      "id": "BeastEyes_LowMorale",
+      "name": "Beastly Instinct - Low Morale",
+      "desc": "- Deals +(HP percentage difference / 2)% damage to targets with higher HP percentages that this unit's (max 10%)\n- Turn Start: gain 1 Final Power Up, 1 Damage Up, and 1 Fragile",
+      "summary": ""
+    },
+    {
+      "id": "BeastEyes_Panic",
+      "name": "Beastly Instinct - Panic",
+      "desc": "- Deals +(HP percentage difference)% damage to targets with higher HP percentages that this unit's (max 25%)\n- Turn Start: gain 1 Coin Power Up, 2 Damage Up, and 2 Fragile\n- Next Turn Start: heal SP equal to this unit's missing HP percentage (max 25)",
+      "summary": ""
+    },
+    {
+      "id": "DisengageCombat",
+      "name": "Escape Battle",
+      "desc": "- Turn End: recover from Stagger and escape from the Encounter (unless it's a forced Stagger; does not count as death)",
+      "summary": ""
+    },
+    {
+      "id": "Chesed_Mercy",
+      "name": "Chesed's Mercy",
+      "desc": "- Averages the Offense Level and Defense Level of all units\n- After the Chesed effect activates, allied Identities gain 3 Offense Levels and 6 Defense Levels\n- First-time Unleashing Effect: \"Chesed's Mercy\" lasts for the duration of this Encounter",
+      "summary": ""
+    },
+    {
+      "id": "Ryoshu_Attackup",
+      "name": "Mutilated Memory",
+      "desc": "[Ryōshū Exclusive Effect]\n- Deal +(Current Turn Count x 2.5)% damage against Lei Heng in this Encounter (max 30%)",
+      "summary": ""
+    },
+    {
+      "id": "Honglu_EGOResourceup",
+      "name": "My Heart, My Own Thoughts...",
+      "desc": "[Hong Lu Exclusive Effect]\n- For this Encounter: after using a Skill Attack, gain 2 additional E.G.O resources of the Skill's Affinity (once per turn)",
+      "summary": ""
+    },
+    {
+      "id": "BudgetBulletPropellant",
+      "name": "Propellant Ammo",
+      "desc": "- Unique Ammo\n- Spent by certain Skills\n- Max Stack: 4",
+      "summary": ""
+    },
+    {
+      "id": "NEgoFleshSpatula_LowMorale",
+      "name": "Flesh Scoop",
+      "desc": "- Low Morale\nTurn Start: Gain 5 Bleed and 1 Attack Power Up",
+      "summary": ""
+    },
+    {
+      "id": "NEgoFleshSpatula_Panic",
+      "name": "Flesh Scoop",
+      "desc": "- Low Morale\nTurn Start: Gain 10 Bleed and 2 Attack Power Up",
+      "summary": ""
+    },
+    {
+      "id": "LeRegole_LowMorale",
+      "name": "Le Regole",
+      "desc": "- Low Morale\n- If this unit inflicted 2+ Tremor last turn, gain 1 Sloth DMG Up\n- If this unit inflicted 2+ Burn last turn, gain 1 Wrath DMG Up\n- If this unit failed to inflict anything, gain 2 Defense Level Down",
+      "summary": ""
+    },
+    {
+      "id": "LeRegole_Panic",
+      "name": "Le Regole",
+      "desc": "- Low Morale\n- If this unit inflicted 2+ Tremor last turn, gain 2 Sloth DMG Up\n- If this unit inflicted 2+ Burn last turn, gain 2 Wrath DMG Up\n- If this unit failed to inflict anything, gain 3 Defense Level Down",
+      "summary": ""
+    },
+    {
+      "id": "GazeReplica",
+      "name": "Gaze",
+      "desc": "- Max Stack: 7\n- Take and deal +10% damage from and against Jia Huan\n- At 7 Stack, converts to Contempt",
+      "summary": ""
+    },
+    {
+      "id": "ContemptReplica",
+      "name": "Contempt",
+      "desc": "- Max Stack: 1\n- Take and deal -50% damage from and against Jia Huan\n- Targets with Contempt cannot gain Gaze\n- Expires at Turn End",
+      "summary": ""
+    },
+    {
+      "id": "GraspReplica",
+      "name": "Grasp",
+      "desc": "- Max Stack: 4\n- Turn End: gain 10 Bind next turn\n- Turn End: lose 1 Stack",
+      "summary": ""
+    },
+    {
+      "id": "EgoErodeReplica",
+      "name": "E.G.O Corrosion - N Corp.",
+      "desc": "- Max Stack: 10\n- The following effects activate at every Turn Start:\n· Lose SP by the effect's Stack\n· Gain 1 Attack Power Up for every 3 Stack\n- At Max Stack, take 5% HP damage at Turn End",
+      "summary": ""
+    },
+    {
+      "id": "BoseProjektilReplica",
+      "name": "Torn Memory",
+      "desc": "Max Stack: 7",
+      "summary": ""
+    },
+    {
+      "id": "EgoErodeContempt_LowMorale",
+      "name": "Soft Goldcasted Heart",
+      "desc": "- Low Morale\n- Turn Start: Gain 1 Attack Power Up and 1 Fragile",
+      "summary": ""
+    },
+    {
+      "id": "EgoErodeContempt_Panic",
+      "name": "Soft Goldcasted Heart",
+      "desc": "- Panic\n- Turn Start: Gain 2 Attack Power Up and 2 Fragile",
+      "summary": ""
+    },
+    {
+      "id": "EgoErodeMemory_LowMorale",
+      "name": "Heart Toward the New Era",
+      "desc": "- Low Morale\n- On Hit, consume 2 SP on self to inflict 2 Sinking",
+      "summary": ""
+    },
+    {
+      "id": "EgoErodeMemory_Panic",
+      "name": "Heart Toward the New Era",
+      "desc": "- Low Morale\n- On Hit, inflict 3 Sinking and gain 1 Sinking",
+      "summary": ""
+    },
+    {
+      "id": "PileObedient",
+      "name": "Heaping Obedience",
+      "desc": "- Turn End: at 3 Stack, convert this effect to Hollow Obedience next turn",
+      "summary": ""
+    },
+    {
+      "id": "Obedient",
+      "name": "Hollow Obedience",
+      "desc": "- Clash Power -2 in Clashes against Jia Mu\n- Expires when this unit's SP reaches 45, or when the Stack drops to 0\n- Turn End: lose 1 Stack",
+      "summary": ""
+    },
+    {
+      "id": "ExpensiveJade",
+      "name": "Precious Jade's Cradle",
+      "desc": "- Enter an 'Immobilized' state where this unit's buffs, HP, and SP cannot be changed. Forms a Precious Jade connected to this unit",
+      "summary": ""
+    },
+    {
+      "id": "FamilyTreasure",
+      "name": "Explosive Amusement",
+      "desc": "- On Turn End:\n· Base Stack: 1\n· The unit connected to this unit heals 25% HP and loses 20 SP\n· Gain 1 Stack\n· At 3 Stack, use a self-detonation Skill. If this unit is killed by self-detonation, inflict the caged character with 3 Hollow Obedience next turn",
+      "summary": ""
+    },
+    {
+      "id": "OutpouringAnger",
+      "name": "Rampage",
+      "desc": "- If the 'You do not know the fathoms of the eye's powers, its special nature' Skill's main target is Hong Lu, ignore all Skill effects and convert all Coins on that Skill to Unbreakable Coins",
+      "summary": ""
+    },
+    {
+      "id": "Honglu_Xi",
+      "name": "Happiness",
+      "desc": "- Hong Lu's Clash Power +1\n- When there are 1 or more surviving allies in this Encounter: upon taking fatal damage, Hong Lu does not die and heals 50% HP instead\n- Nullfies the effect that turns this unit into a Precious Jade once. When clashing against Skills that turns this unit into a Precious Jade, Clash Power +5; if this unit wins that Clash, this unit does not become a Precious Jade, recovers from Stagger, reduces Jia Mu's SP by 10, and inflicts 2 Fragile against Jia Mu\nOn Clash Win against Jia Mu, gain 1 random E.G.O Resource each from 3 of the E.G.O Affinities with the least amount of resources",
+      "summary": ""
+    },
+    {
+      "id": "Honglu_Le",
+      "name": "Happiness, Joy",
+      "desc": "- Hong Lu's Final Power +1\n- On Clash Win, heal 5 SP for 1 ally with the least SP (including this unit)\n- When there are 1 or more surviving allies in this Encounter: upon taking fatal damage, Hong Lu does not die and heals 50% HP instead\nOn Clash Win against Jia Mu, gain 1 random E.G.O Resource each from 3 of the E.G.O Affinities with the least amount of resources",
+      "summary": ""
+    },
+    {
+      "id": "Honglu_Ai",
+      "name": "Happiness, Joy, Sorrow",
+      "desc": "- Hong Lu's Final Power +3\n- On Clash Win, heal 5 SP for 1 ally with the least SP (including this unit)\n- When an ally is killed, the remaining allies at Turn End gain 1 Attack Power Up next turn (once per turn)\n- When there are 1 or more surviving allies in this Encounter: upon taking fatal damage, Hong Lu does not die and heals 50% HP instead\nOn Clash Win against Jia Mu, gain 1 random E.G.O Resource each from 3 of the E.G.O Affinities with the least amount of resources",
+      "summary": ""
+    },
+    {
+      "id": "Honglu_Nu",
+      "name": "Happiness, Joy, Sorrow, Wrath",
+      "desc": "- Hong Lu's Final Power +5\n- Allies heal 5 SP at every Turn Start (including this unit)\n- When an ally is killed, the remaining allies at Turn End gain 1 Attack Power Up next turn (once per turn)\n- When there are 1 or more surviving allies in this Encounter: upon taking fatal damage, Hong Lu does not die and heals 50% HP instead\n- Increases damage dealt by 30% of the total HP percentage this unit has cumulatively lost during this Encounter (max 100%)\nOn Clash Win against Jia Mu, gain 1 random E.G.O Resource each from 3 of the E.G.O Affinities with the least amount of resources",
+      "summary": ""
+    },
+    {
+      "id": "SupremeEternalLife",
+      "name": "Sublime Immortality",
+      "desc": "- Turn Start: Jia Mu's Core and every Part gain 5% of each of their max HP as Shield",
+      "summary": ""
+    },
+    {
+      "id": "ImperfectEternalLife",
+      "name": "Imperfect Immortality",
+      "desc": "- Absorbed when struck by certain Skills of Jia Mu\n- If this effect was inflicted against Jia Mu, gain 1 Fragile per Stack; at 5 Stack, become Staggered",
+      "summary": ""
+    },
+    {
+      "id": "GoldenBoughSync",
+      "name": "Malattunement",
+      "desc": "- Base Offense Level +2, Base Defense Level +2",
+      "summary": ""
+    },
+    {
+      "id": "GoldenBoughSyncDistorted",
+      "name": "Supernatural, Strength, Chaos, and Spirits",
+      "desc": "- Base Offense Level +4, Base Defense Level +4",
+      "summary": ""
+    },
+    {
+      "id": "LastingHongwonWill_LowMorale",
+      "name": "Inherited Will of Hongyuan",
+      "desc": "- Low Morale\n- Gain 2 Attack Power Up and 1 Bind\n- When the Body Part loses a Clash against Hong Lu: the Body Part gains 1 Damage Up and 1 Fragile next turn (once per turn)",
+      "summary": ""
+    },
+    {
+      "id": "LastingHongwonWill_Panic",
+      "name": "Inherited Will of Hongyuan",
+      "desc": "- Panic\n- Gain 2 Attack Power Up and 2 Bind\n- When the Body Part loses a Clash against Hong Lu: the Body Part gains 2 Damage Up and 2 Fragile next turn (once per turn)",
+      "summary": ""
+    },
+    {
+      "id": "LongLastingHongwonWill_LowMorale",
+      "name": "Infinitely Bequeathing Will of Hongyuan",
+      "desc": "- Low Morale\n- Gain 2 Attack Power Up and 1 Fragile\n- Units generated by this unit gain 3 Defense Level Down\n- Deal +20% damage. If the Palanquin Part's HP drops to 0, deal -10% damage instead",
+      "summary": ""
+    },
+    {
+      "id": "LongLastingHongwonWill_Panic",
+      "name": "Infinitely Bequeathing Will of Hongyuan",
+      "desc": "- Panic\n- Gain 2 Attack Power Up and 2 Fragile\n- Units generated by this unit gain 6 Defense Level Down\n- Deal +30% damage. If the Palanquin Part's HP drops to 0, deal -15% damage instead",
+      "summary": ""
+    },
+    {
+      "id": "YisangParryGubo",
+      "name": "Responsibility",
+      "desc": "In Clashes against Gubo, Clash Power +2",
+      "summary": ""
+    },
+    {
+      "id": "HongluParryGahwan",
+      "name": "The Will to Confront",
+      "desc": "In Clashes against Jia Huan, Clash Power +2",
+      "summary": ""
+    },
+    {
+      "id": "GahwanEgoContempt",
+      "name": "Volatile E.G.O Attunement - Contempt",
+      "desc": "- E.G.O Gear extracted by N Corp. While the user meets the aptitude requirements, the lack of experience may cause issues.\n- Max Stack: 5\n- Offense Level, Defense Level -7\n- On Clash Win, gain 1 Stack\n- Lose 1 Offense Level and gain 1 Defense Level for every Stack\n- At Max Stack: next turn, gain 2 Protection and reset the Stack to 0",
+      "summary": ""
+    },
+    {
+      "id": "GuboEgoShooter",
+      "name": "Volatile E.G.O Attunement - Fell Bullet",
+      "desc": "- E.G.O Gear extracted by N Corp. While the user meets the aptitude requirements, the lack of experience may cause issues.\n- Max Stack: 5\n- Offense Level, Defense Level -2\n- On Clash Lose, gain 1 Stack\n- Gain 1 Offense Level and lose 1 Defense Level for every Stack\n- At Max Stack: next turn, gain 2 Damage Up and reset the Stack to 0",
+      "summary": ""
+    },
+    {
+      "id": "FellBulletMarkReplica",
+      "name": "Stigmatized",
+      "desc": "- Tageted by Gubo\n- Expires at Turn End",
+      "summary": ""
+    }
+  ]
+}

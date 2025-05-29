@@ -6,6 +6,11 @@
       "min": "Decreases after winning a Clash based on the Clash count\n<size=95%>(Base Value is {0}, raised by {1}% per Clash count after 1)</size>"
     },
     {
+      "id": "OnWinDuelAsParryingCountMultiplyAndPlusPercentWithMax",
+      "add": "Increases after winning a Clash based on the Clash count\n<size=95%>(Base Value is {0}, raised by {1}% per Clash count after 1; max {2}%)</size>",
+      "min": "Decreases after winning a Clash based on the Clash count\n<size=95%>(Base Value is {0}, raised by {1}% per Clash count after 1; max {2}%)</size>"
+    },
+    {
       "id": "OnKillEnemyAsLevelRatioMultiply",
       "add": "Increase by {0} after this unit defeats an enemy whose level was higher than or equal to this unit’s",
       "min": "Decrease by {0} after this unit defeats an enemy whose level was higher than or equal to this unit’s"
@@ -42,7 +47,7 @@
     },
     {
       "id": "OnKillEnemyByOtherAllyExceptSupportiveAction",
-      "add": "Increase by {0} after an ally defeats an enemy whose level was higher than or equal to this unit’s",
+      "add": "Increase by {0} after an ally defeats an enemy whose level was higher than or equal to the unit’s",
       "min": "Decrease by {0} after an ally defeats an enemy whose level was higher than or equal to this unit’s. Does not decrease when the enemy was defeated by an Assist Attack."
     },
     {
@@ -68,6 +73,11 @@
     {
       "id": "OnWinDuelAnyTarget",
       "add": "Increased by {0} on Clash Win",
+      "min": "Decreased by {0} on Clash Lose"
+    },
+    {
+      "id": "OnLoseDuelAnyTarget",
+      "add": "Increased by {0} on Clash Lose",
       "min": "Decreased by {0} on Clash Lose"
     }
   ]

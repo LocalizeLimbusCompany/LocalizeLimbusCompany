@@ -881,7 +881,7 @@
         {
           "level": 1,
           "name": "Answer Me, Jia Baoyu",
-          "desc": "[CantChangeTarget]\nPrioritizes Hong Lu\n[WinDuel] Inflict 4 [Burst] Count\n[DefeatDuel] Inflict 1 [Teaching]",
+          "desc": "[CantChangeTarget]\nPrioritizes Hong Lu\n[WinDuel] Inflict +4 [Burst] Count\n[DefeatDuel] If the target is Hong Lu, inflict 1 [Teaching]",
           "coinlist": [
             {
               "coindescs": [
@@ -1665,7 +1665,7 @@
                   "desc": "[OnSucceedAttack] Inflict 3 [Burst]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 10 [OminousTalisman] if this unit consumed [Charge] Count\n- If this unit consumed 10+ [Charge] Count, inflict ([Charge] Count consumed - 10) [Burst] Count"
+                  "desc": "[OnSucceedAttack] If this unit consumed [Charge] Count, inflict 10 [OminousTalisman]\n- If this unit consumed 10+ [Charge] Count, inflict ([Charge] Count consumed - 10) [Burst] Count"
                 }
               ]
             },
