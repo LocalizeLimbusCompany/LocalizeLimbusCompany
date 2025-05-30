@@ -142,7 +142,7 @@
         {
           "level": 1,
           "name": "爆砕斬",
-          "desc": "[Prey]を保有した対処を優先して指定\n速度と関係なく、このスキルとマッチができる\n対象の[Combustion]と[Vibration]の合計6につき、コインのダメージ量 +1 (最大3)",
+          "desc": "[Prey]を保有した対処を優先して指定\n速度と関係なく、このスキルとマッチができる\n対象の[Combustion]と[Vibration]の合計6につき、コインのダメージ量 +1 (最大3)\n[DefeatDuel] 自分の精神力が10減少",
           "coinlist": [
             {
               "coindescs": [
@@ -211,7 +211,7 @@
         {
           "level": 1,
           "name": "快刀亂麻",
-          "desc": "[Prey]を保有する対象を優先して指定\n速度と関係なくこのスキルとマッチができ、このスキルを使用するまで混乱状態にならない\n[WhenUse] [BattleSense]を全て消耗。消耗した数値が\n- 10以上なら、10につき攻撃加重値 +1 (最大2)\n- 25の場合、メインターゲットの[Combustion]と[Vibration]の合計4につき、最終威力 +1 (最大5)\n[DefeatDuel] ダメージ量が80%だけ減少し、このスキルのダメージによって対象が混乱せず、[Combustion]威力と回数、[Vibration]威力と回数付与量が半減 (他の効果で増加する数値を除く)\n[EndSkill] [FullReload] (1ターンにつき1回)\n- [BulletPropellantSpecial]を保有しているなら、代わりに[ReloadKeepAmmo] (1ターンにつき1回)\n[EndSkill] このターンが終了",
+          "desc": "[Prey]を保有する対象を優先して指定\n速度と関係なくこのスキルとマッチができ、このスキルを使用するまで混乱状態にならない\n[WhenUse] [BattleSense]を全て消耗。消耗した数値が\n- 10以上なら、10につき攻撃加重値 +1 (最大2)\n- 25の場合、メインターゲットの[Combustion]と[Vibration]の合計4につき、最終威力 +1 (最大5)\n[DefeatDuel] [ResultReduction]4を得る\n[DefeatDuel] [Paralysis]1を得る\n[DefeatDuel] ダメージ量が80%だけ減少し、このスキルのダメージによって対象が混乱せず、[Combustion]威力と回数、[Vibration]威力と回数付与量が半減 (他の効果で増加する数値を除く)\n[EndSkill] [FullReload] (1ターンにつき1回)\n- [BulletPropellantSpecial]を保有しているなら、代わりに[ReloadKeepAmmo] (1ターンにつき1回)\n[EndSkill] このターンが終了",
           "coinlist": [
             {
               "coindescs": [
@@ -242,7 +242,7 @@
         {
           "level": 1,
           "name": "超絶猛虎殺撃乱斬",
-          "desc": "[Prey]を保有する対象を優先して指定\n速度と関係なくこのスキルとマッチができ、このスキルを使用するまで混乱状態にならない\n[WhenUse] [BattleSense]を全て消耗。消耗した数値が\n- 10以上なら、10につき攻撃加重値 +1 (最大4)\n- 25以上なら、メインターゲットの[Combustion]と[Vibration]の合計4につき、最終威力 +1 (最大6)\n- 50の場合、コイン威力 +1, ダメージ量 +50%\n[DefeatDuel] ダメージ量が80%だけ減少し、このスキルのダメージによって対象が混乱せず、[Combustion]威力と回数、[Vibration]威力と回数付与量が半減 (他の効果で増加する数値を除く)\n[EndSkill] [FullReload] (1ターンにつき1回)\n- [BulletPropellantSpecial]を保有しているなら、代わりに[ReloadKeepAmmo] (1ターンにつき1回)\n[EndSkill] このターンが終了",
+          "desc": "[Prey]を保有する対象を優先して指定\n速度と関係なくこのスキルとマッチができ、このスキルを使用するまで混乱状態にならない\n[WhenUse] [BattleSense]を全て消耗。消耗した数値が\n- 10以上なら、10につき攻撃加重値 +1 (最大4)\n- 25以上なら、メインターゲットの[Combustion]と[Vibration]の合計4につき、最終威力 +1 (最大6)\n- 50の場合、コイン威力 +1, ダメージ量 +50%\n[DefeatDuel] [ResultReduction]2を得る\n[DefeatDuel] [Paralysis]6を得る\n[DefeatDuel] ダメージ量が80%だけ減少し、このスキルのダメージによって対象が混乱せず、[Combustion]威力と回数、[Vibration]威力と回数付与量が半減 (他の効果で増加する数値を除く)\n[EndSkill] [FullReload] (1ターンにつき1回)\n- [BulletPropellantSpecial]を保有しているなら、代わりに[ReloadKeepAmmo] (1ターンにつき1回)\n[EndSkill] このターンが終了",
           "coinlist": [
             {
               "coindescs": [
@@ -332,7 +332,7 @@
         {
           "level": 1,
           "name": "天退星刀 装填",
-          "desc": "[DuelCounter]\n[WhenUse] 精神力を10回復\n- 精神力が0未満なら、精神力を5追加で回復\n[DefeatDuel] [BulletPropellant]が1減少\n[EndSkill] [FullReload] (1ターンにつき1回)\n- [BulletPropellantSpecial]を保有しているなら、代わりに[ReloadKeepAmmo] (1ターンにつき1回)",
+          "desc": "[DuelCounter]\n[DefeatDuel] [BulletPropellant]が1減少\n[EndSkill] [FullReload] (1ターンにつき1回)\n- [BulletPropellantSpecial]を保有しているなら、代わりに[ReloadKeepAmmo] (1ターンにつき1回)",
           "coinlist": [
             {
               "coindescs": [

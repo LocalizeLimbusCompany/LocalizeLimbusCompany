@@ -6,6 +6,11 @@
       "min": "拼点胜利后根据拼点次数按比例减少\n<size=95%>（减少量的基础值为{0}，首次拼点之后每次拼点增加{1}%）</size>"
     },
     {
+      "id": "OnWinDuelAsParryingCountMultiplyAndPlusPercentWithMax",
+      "add": "拼点胜利后根据拼点次数按比例增加\n<size=95%>（增加量的基础值为{0}，首次拼点之后每次拼点增加{1}%，最多{2}%）</size>",
+      "min": "拼点胜利后根据拼点次数按比例减少\n<size=95%>（减少量的基础值为{0}，首次拼点之后每次拼点增加{1}%，最多{2}%）</size>"
+    },
+    {
       "id": "OnKillEnemyAsLevelRatioMultiply",
       "add": "击杀敌方单位时，若击杀的敌方单位等级不低于自身，则增加{0}",
       "min": "击杀敌方单位时，若击杀的敌方单位等级不低于自身，则减少{0}"
@@ -69,6 +74,11 @@
       "id": "OnWinDuelAnyTarget",
       "add": "拼点胜利时，增加{0}",
       "min": "拼点胜利时，减少{0}"
+    },
+    {
+      "id": "OnLoseDuelAnyTarget",
+      "add": "拼点失败时，增加{0}",
+      "min": "拼点失败时，减少{0}"
     }
   ]
 }
