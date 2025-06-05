@@ -2542,7 +2542,7 @@
     {
       "id": "DragonLance",
       "name": "Flower-burying Wedge [埋花櫼]",
-      "desc": "Base Stack: 0\nMax Stack: 3\n- All Coins on this unit's leftmost Base Attack Skill on the Dashboard become Unbreakable Coins\n- Turn Start: gain 2 Offense Level Up and 2 Defense Level Down\n- Turn Start: at 3+ Stack, gain 1 Tarnished Blood (once per Encounter)\n- Turn End: gain 1 Stack\n※ Cannot raise the effect's Stack by any other means than the ones above\n- Expires upon death or Retreat\n\n- When this unit takes damage that brings their HP down to 0: instead of letting this unit's HP drop below 1, or becoming Staggered or Defeated, use the 'Tears of the Tarnished Blood - The End' Skill at the very end of that turn. Remove the Flower-burying Wedge when the Skill ends.\nWhen this unit takes damage that brings their HP down to 1 at Turn End, use 'Tears of the Tarnished Blood - The End' Skill based on this unit's Speed next turn",
+      "desc": "Base Stack: 0\nMax Stack: 3\n- All Coins on this unit's leftmost Base Attack Skill on the Dashboard become Unbreakable Coins\n- Turn Start: gain 2 Offense Level Up and 2 Defense Level Down\n- Turn Start: at 3+ Stack, gain 1 Tarnished Blood (once per Encounter)\n- Turn End: gain 1 Stack\n※ Cannot raise the effect's Stack by any other means than the ones above\n- Expires upon defeat or Retreat\n\n- When this unit takes damage that brings their HP down to 0: instead of letting this unit's HP drop below 1, or becoming Staggered or Defeated, use the 'Tears of the Tarnished Blood - The End' Skill at the very end of that turn. Remove the Flower-burying Wedge when the Skill ends.\nWhen this unit takes damage that brings their HP down to 1 at Turn End, use 'Tears of the Tarnished Blood - The End' Skill based on this unit's Speed next turn",
       "summary": "",
       "undefined": "-"
     },
@@ -2571,6 +2571,34 @@
       "id": "YesdragonBurst",
       "name": "Razor Thorn",
       "desc": "",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "WaitingXichun",
+      "name": "Ready [待]",
+      "desc": "- Max Stack: 3\n- Number of turns this unit spent in Retreat or as a Backup unit",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "StartXichun",
+      "name": "Launcher [始]",
+      "desc": "- Max Stack: 6\n- Number of turns this unit spent active in the Encounter\n- Expires upon Retreat\n- Gain 1 Stack at Turn End",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "CheerUpXichun",
+      "name": "Assist [援]",
+      "desc": "- Max Stack: 1\n- If target has 5+ types of negative effects, Clash Power +1, deal +10% damage",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "RetreatForCommon",
+      "name": "Battlefield Retreat",
+      "desc": "- Turn End: recover from Stagger and Retreat from the Encounter (unless it's a forced Stagger; does not count as death)\n· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
       "summary": "",
       "undefined": "-"
     }

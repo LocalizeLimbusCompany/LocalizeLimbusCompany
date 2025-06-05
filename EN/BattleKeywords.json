@@ -1567,7 +1567,7 @@
     {
       "id": "Retreat",
       "name": "Strategic R&R Mode",
-      "desc": "- Turn End: recover from Stagger and Retreat from the Encounter (unless it's a forced Stagger; does not count as death)\n· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
+      "desc": "- Turn End: recover from Stagger and Retreat from the Encounter (unless it's a forced Stagger; does not count as death)\n· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
       "summary": "",
       "undefined": "-"
     },
@@ -1788,7 +1788,7 @@
     {
       "id": "Retreat_FullStop",
       "name": "Overwatch Assignment",
-      "desc": "- Turn End: recover from Stagger and Retreat from the Encounter (unless it's a forced Stagger; does not count as death)\n· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)"
+      "desc": "- Turn End: recover from Stagger and Retreat from the Encounter (unless it's a forced Stagger; does not count as death)\n· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)"
     },
     {
       "id": "LogicAtelierAM",
@@ -2025,6 +2025,34 @@
       "id": "YesdragonBurst",
       "name": "Razor Thorn",
       "desc": "",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "WaitingXichun",
+      "name": "Ready [待]",
+      "desc": "- Max Stack: 3\n- Number of turns this unit spent in Retreat or as a Backup unit",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "StartXichun",
+      "name": "Launcher [始]",
+      "desc": "- Max Stack: 6\n- Number of turns this unit spent active in the Encounter\n- Expires upon Retreat\n- Gain 1 Stack at Turn End",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "CheerUpXichun",
+      "name": "Assist [援]",
+      "desc": "- Max Stack: 1\n- If target has 5+ types of negative effects, Clash Power +1, deal +10% damage",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "RetreatForCommon",
+      "name": "Battlefield Retreat",
+      "desc": "- Turn End: recover from Stagger and Retreat from the Encounter (unless it's a forced Stagger; does not count as death)\n· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
       "summary": "",
       "undefined": "-"
     }

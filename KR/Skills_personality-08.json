@@ -1252,6 +1252,375 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1081201,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "적격",
+          "desc": "[WhenUse] 대상의 부정적인 효과가 5개 이상이면, 합 위력 +1\n[WinDuel] [Breath] 1 얻음, 자신의 [Breath] 횟수 1 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 2 부여"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 다음 턴에 [AttackUp] 1 얻음 (턴 당 1회)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "적격",
+          "desc": "[WhenUse] 대상의 부정적인 효과가 5개 이상이면, 합 위력 +1\n<style=\"highlight\">[WhenUse] 대상의 [Burst] 3 이상이면, 코인 위력 +1</style>\n[WinDuel] [Breath] 2 얻음, 자신의 [Breath] 횟수 1 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 2 부여"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 다음 턴에 [AttackUp] 1 얻음 (턴 당 1회)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "적격",
+          "desc": "[WhenUse] 대상의 부정적인 효과가 5개 이상이면, 합 위력 +1\n[WhenUse] 대상의 [Burst] <style=\"highlight\">3당</style>, 코인 위력 +1 <style=\"highlight\">(최대 2)</style>\n[WinDuel] [Breath] <style=\"highlight\">3</style> 얻음, 자신의 [Breath] 횟수 <style=\"highlight\">2</style> 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 2 부여"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 다음 턴에 [AttackUp] 1 얻음 (턴 당 <style=\"highlight\">2</style>회)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081202,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "적봉",
+          "desc": "[WhenUse] 대상의 부정적인 효과가 5개 이상이면, 코인 위력 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Burst]만큼 [Breath] 얻음 (최대 5)"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 대상의 [Burst] 횟수만큼 [Breath] 횟수 증가 (최대 3)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "크리티컬 피해량 +(20 + 자신의 [Breath] + 대상의 [Burst])% (최대 50%)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "적봉",
+          "desc": "[WhenUse] 대상의 부정적인 효과가 5개 이상이면, 코인 위력 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 1 증가"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 다음 턴에 [DefenseDown] 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 1 증가"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 다음 턴에 [DefenseDown] 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Burst]만큼 [Breath] 얻음 (최대 5)"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 대상의 [Burst] 횟수만큼 [Breath] 횟수 증가 (최대 3)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "크리티컬 피해량 +(20 + 자신의 [Breath] + 대상의 [Burst])% (최대 50%)"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] 다음 턴에 [AttackUp] 3 얻음 (턴 당 1회)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "적봉",
+          "desc": "[WhenUse] 대상의 부정적인 효과가 5개 이상이면, 코인 위력 +1\n<style=\"highlight\">[WhenUse] 대상의 [Burst]이 4 이상이면, 코인 위력 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 1 증가"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 다음 턴에 [DefenseDown] <style=\"highlight\">2</style> 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 1 증가"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 다음 턴에 [DefenseDown] <style=\"highlight\">2</style> 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Burst]만큼 [Breath] 얻음 (최대 5)"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 대상의 [Burst] 횟수만큼 [Breath] 횟수 증가 (최대 3)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "크리티컬 피해량 +(20 + 자신의 [Breath] + 대상의 [Burst])% (최대 50%)"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] 다음 턴에 [AttackUp] 3 얻음 (턴 당 1회)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081203,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "적춘",
+          "desc": "[BeforeAttack] 메인 타겟의 부정적인 효과가 6개 이상이면 공격 가중치 +1\n[WhenUse] 메인 타겟의 부정적인 효과 3개당, 코인 위력+2 (최대 4)\n[WhenUse] 메인 타겟의 ([Burst] + [Burst] 횟수)의 합 7당, 코인 위력 +1 (최대 3)\n[WinDuel] [Breath] 4 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "피해량 +(20 + 자신의 [Breath] + 메인 타겟의 [Burst])% (최대 40%)"
+                },
+                {
+                  "desc": "크리티컬 피해량 +(45 + 자신의 [Breath] + 메인 타겟의 [Burst])% (최대 65%)"
+                },
+                {
+                  "desc": "자신의 [StartXichun]당 크리티컬 피해량 +5% (최대 30%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 5 부여"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Breath] 2 얻음. [Breath] 횟수 1 증가"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] [Breath] 횟수 2 증가 (턴 당 3회)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "적춘",
+          "desc": "[BeforeAttack] 메인 타겟의 부정적인 효과가 5개 이상이면, 공격 가중치 +1\n<style=\"highlight\">[BeforeAttack] 자신의 [StartXichun]가 3 이상이면, 공격 가중치 +1</style>\n[WhenUse] 메인 타겟의 부정적인 효과 3개당, 코인 위력+2 (최대 <style=\"highlight\">6</style>)\n[WhenUse] 메인 타겟의 ([Burst] + [Burst] 횟수)의 합 7당, 코인 위력 +1 (최대 <style=\"highlight\">5</style>)\n[WinDuel] [Breath] 4 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "피해량 +(<style=\"highlight\">50</style> + 자신의 [Breath] + 메인 타겟의 [Burst])% (최대 <style=\"highlight\">75</style>%)"
+                },
+                {
+                  "desc": "크리티컬 피해량 +(<style=\"highlight\">80</style> + 자신의 [Breath] + 메인 타겟의 [Burst])% (최대 <style=\"highlight\">105</style>%)"
+                },
+                {
+                  "desc": "자신의 [StartXichun]당 크리티컬 피해량 +5% (최대 30%)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 5 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttack] [Burst] 횟수 1 증가</style>"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Breath] 2 얻음. [Breath] 횟수 1 증가<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] [Breath] 횟수 2 증가 (턴 당 3회)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081204,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "수회",
+          "desc": "[StartBattle] 자신의 [StartXichun]가 3 이상이면, 턴 종료 시 [RetreatForCommon]함.\n- 퇴각 시 대기 순서 1번이 됨 (대기 인원의 대기 해제보다 우선적으로 복귀함)\n[OnSucceedEvade] [Breath] 2 얻음. (턴 당 최대 2회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "수회",
+          "desc": "[StartBattle] 자신의 [StartXichun]가 3 이상이면, 턴 종료 시 [RetreatForCommon]함.\n- 퇴각 시 대기 순서 1번이 됨 (대기 인원의 대기 해제보다 우선적으로 복귀함)\n<style=\"highlight\">[WhenUse] [Breath] 횟수 1 증가 (턴 당 최대 2회)</style>\n[OnSucceedEvade] [Breath] 2 얻음. (턴 당 최대 2회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081205,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "적격 - 시[始]",
+          "desc": "[CantDuel]\n[BeforeAttack] 자신의 [WaitingXichun]를 전부 소모하여, (자신의 [WaitingXichun] X 2)만큼 가중치 증가 (최대 5)\n[WhenUse] [Breath] 5 얻음, 자신의 [Breath] 횟수 2 증가",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 1 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "적격 - 시[始]",
+          "desc": "[CantDuel]\n[BeforeAttack] 자신의 [WaitingXichun]를 전부 소모하여, (자신의 [WaitingXichun] X 2)만큼 가중치 증가 (최대 5)\n[WhenUse] [Breath] 5 얻음, 자신의 [Breath] 횟수 2 증가\n<style=\"highlight\">[WhenUse] 자신의 [WaitingXichun]가 3 이상이면, 코인 위력 +1</style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 1 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "적격 - 시[始]",
+          "desc": "[CantDuel]\n[BeforeAttack] 자신의 [WaitingXichun]를 전부 소모하여, (자신의 [WaitingXichun] X 2)만큼 가중치 증가 (최대 5)\n[WhenUse] [Breath] 5 얻음, 자신의 [Breath] 횟수 2 증가\n[WhenUse] 자신의 [WaitingXichun]가 3 이상이면, 코인 위력 +<style=\"highlight\">2</style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 1 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

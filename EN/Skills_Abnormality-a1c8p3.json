@@ -569,7 +569,7 @@
         {
           "level": 1,
           "name": "Spiral Warp Field",
-          "desc": "[DuelGuard]\n[StartBattle] Jia Huan and Gubo gain 30 Shield\n[WinDuel] Jia Huan and Gubo gain 30 Shield",
+          "desc": "[CanDuelGuard]\n[StartBattle] Jia Huan and Gubo gain 30 Shield\n[WinDuel] Jia Huan and Gubo gain 30 Shield",
           "coinlist": [
             {
               "coindescs": [
@@ -986,7 +986,7 @@
         {
           "level": 1,
           "name": "Completed Heixian Bolus - You [酉] - Defense",
-          "desc": "[WhenUse] If target has 5+ (sum of [Laceration] + [Burst]), Coin Power +2\n[WhenUse] Heal 8 SP\n[WhenUse] Gain 3 [Breath] and +2 [Breath] Count",
+          "desc": "[CanDuelGuard]\n[WhenUse] If target has 5+ (sum of [Laceration] + [Burst]), Coin Power +2\n[WhenUse] Heal 8 SP\n[WhenUse] Gain 3 [Breath] and +2 [Breath] Count",
           "coinlist": [
             {
               "coindescs": [
@@ -1156,9 +1156,15 @@
         {
           "level": 1,
           "name": "Nothing But a Meaningless Struggle...!",
-          "desc": "[WhenUse] Coin Power +1 for every 5 (sum of [Laceration] and [Burst] on target) (max 3)\n[WinDuel] Inflict +1 [Burst] Count, inflict 2 [DefenseDown]",
+          "desc": "[CanDuelGuard]\n[WinDuel] Jia Mu heals 15 SP. At 0 SP, heal 30 SP instead.",
           "coinlist": [
-            {}
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -1339,7 +1345,7 @@
         {
           "level": 1,
           "name": "An Offering of Extreme Extracted Immortality [極仙榨滴供養]",
-          "desc": "[CantIdentify]\nThis Skill cannot deal damage to allies\n[WhenUse] Coin Power +2 and deal +20% damage for every 1 ally with [SupremeEternalLife]\n[WhenUse] If there aren't any allies with [SupremeEternalLife], apply 200 Shield to all targets\n[EndSkill] Ends turn",
+          "desc": "[CantIdentify]\nThis Skill cannot deal damage to allies\nCan Clash with this Skill regardless of Speed; cannot be Staggered before using this Skill\n[WhenUse] Coin Power +2 and deal +20% damage for every 1 ally with [SupremeEternalLife]\n[WhenUse] If there aren't any allies with [SupremeEternalLife], apply 200 Shield to all targets\n[EndSkill] Ends turn",
           "coinlist": [
             {
               "coindescs": [
@@ -1548,9 +1554,11 @@
         {
           "level": 1,
           "name": "Nothing But a Meaningless Struggle...!",
-          "desc": "[WhenUse] Coin Power +1 for every 5 (sum of [Laceration] and [Burst] on target) (max 3)\n[WinDuel] Inflict +1 [Burst] Count, inflict 2 [DefenseDown]",
+          "desc": "[CanDuelGuard]\n[WhenUse] Coin Power +1 for every 5 (sum of [Laceration] and [Burst] on target) (max 3)\n[WinDuel] Inflict +1 [Burst] Count, inflict 2 [DefenseDown]",
           "coinlist": [
-            {}
+            {
+              "desc": "[SuperCoin]"
+            }
           ]
         }
       ]

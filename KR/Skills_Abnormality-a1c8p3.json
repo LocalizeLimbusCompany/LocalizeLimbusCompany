@@ -569,7 +569,7 @@
         {
           "level": 1,
           "name": "나선형 왜곡장",
-          "desc": "[DuelGuard]\n[StartBattle] 가환과 구보가 보호막 30 얻음\n[WinDuel] 가환과 구보가 보호막 30 얻음",
+          "desc": "[CanDuelGuard]\n[StartBattle] 가환과 구보가 보호막 30 얻음\n[WinDuel] 가환과 구보가 보호막 30 얻음",
           "coinlist": [
             {
               "coindescs": [
@@ -987,7 +987,7 @@
         {
           "level": 1,
           "name": "전흑선환 - 유[酉] - 수비",
-          "desc": "[WhenUse] 대상의 [Laceration]과 [Burst]의 합이 5 이상이면, 코인 위력 +2\n[WhenUse] 정신력 8 회복\n[WhenUse] [Breath] 3 얻고, [Breath] 횟수 2 증가",
+          "desc": "[CanDuelGuard]\n[WhenUse] 대상의 [Laceration]과 [Burst]의 합이 5 이상이면, 코인 위력 +2\n[WhenUse] 정신력 8 회복\n[WhenUse] [Breath] 3 얻고, [Breath] 횟수 2 증가",
           "coinlist": [
             {
               "coindescs": [
@@ -1134,7 +1134,7 @@
                 }
               ]
             },
-                        {
+             {
               "coindescs": [
                 {
                   "desc": "[SuperCoin]"
@@ -1157,9 +1157,15 @@
         {
           "level": 1,
           "name": "부질 없는 짓을...!",
-          "desc": "[WhenUse] 대상의 [Laceration]과 [Burst]의 합 5당, 코인 위력 +1 (최대 3)\n[WinDuel] [Burst] 횟수 1 증가, [DefenseDown] 2 부여",
+          "desc": "[CanDuelGuard]\n[WinDuel] 가모의 정신력 15 회복. 가모의 정신력이 0 미만이면, 대신 30 회복",
           "coinlist": [
-            {}
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -1340,7 +1346,7 @@
         {
           "level": 1,
           "name": "극선착적공양[極仙榨滴供養]",
-          "desc": "[CantIdentify]\n이 스킬은 아군에게 피해를 주지 않음\n[WhenUse] [SupremeEternalLife]를 보유한 아군 1명당 코인 위력 +2, 피해량 +20%\n[WhenUse] [SupremeEternalLife]를 가진 아군이 없는 경우 대신 모든 대상에게 보호막 200 부여\n[EndSkill] 턴 종료",
+          "desc": "[CantIdentify]\n이 스킬은 아군에게 피해를 주지 않음\n속도에 상관없이 이 스킬과 합을 할 수 있으며, 이 스킬을 사용하기 전까지 흐트러짐 상태가 되지 않음\n[WhenUse] [SupremeEternalLife]를 보유한 아군 1명당 코인 위력 +2, 피해량 +20%\n[WhenUse] [SupremeEternalLife]를 가진 아군이 없는 경우 대신 모든 대상에게 보호막 200 부여\n[EndSkill] 턴 종료",
           "coinlist": [
             {
               "coindescs": [
@@ -1549,9 +1555,11 @@
         {
           "level": 1,
           "name": "부질 없는 짓을...!",
-          "desc": "[WhenUse] 대상의 [Laceration]과 [Burst]의 합 5당, 코인 위력 +1 (최대 3)\n[WinDuel] [Burst] 횟수 1 증가, [DefenseDown] 2 부여",
+          "desc": "[CanDuelGuard]\n[WhenUse] 대상의 [Laceration]과 [Burst]의 합 5당, 코인 위력 +1 (최대 3)\n[WinDuel] [Burst] 횟수 1 증가, [DefenseDown] 2 부여",
           "coinlist": [
-            {}
+                {
+                  "desc": "[SuperCoin]"
+                }
           ]
         }
       ]
