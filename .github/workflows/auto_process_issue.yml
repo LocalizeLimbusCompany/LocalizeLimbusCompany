@@ -1,0 +1,132 @@
+# From MAA
+# https://github.com/MaaAssistantArknights/MaaAssistantArknights/blob/dev/.github/workflows/issue-checkbox-checker.yml
+# Use AGPL-3.0
+# This copy has been modified.
+name: Auto Close not reading issues or Fold checkboxes
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  check-then-close-or-fold:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+    - name: Check checkbox status
+      id: unread-checkbox-check
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const texts = [
+          '我已在未仔细阅读这些内容的情况下勾选所有选项，并相信这不会影响问题的处理',
+          'I have checked all the options without carefully reading the content and believe this will not affect issue resolution.'];
+          return texts.some(text => new RegExp(`- \\[x\\]\\s*${text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`).test(context.payload.issue.body));
+
+    - name: Comment and close issue
+      if: steps.unread-checkbox-check.outputs.result == 'true'
+      uses: actions/github-script@v6
+      with:
+        script: |
+          // 发送提示信息
+          await github.rest.issues.createComment({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.issue.number,
+            body: `由于你勾选了Trap Checkbox，请重新查看你的Checkbox，并确保你明白是否应该勾选该选项。`
+          });
+
+          // 关闭 issue
+          await github.rest.issues.update({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.issue.number,
+            state: 'closed',
+            state_reason: 'not_planned'
+          });
+          
+          // 锁定 issue
+          await github.rest.issues.lock({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.issue.number,
+            lock_reason: 'spam'
+          });
+
+    - name: Fold checkboxes
+      if: steps.unread-checkbox-check.outputs.result == 'false'
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const originalBody = context.payload.issue.body;
+          const checkboxSectionRegex_cn_bug = /([\s\S]*?)(### 问题描述\n\n)/;
+          const checkboxSectionRegex_cn_feat = /([\s\S]*?)(### 说说你遇到的问题？\n\n)/;
+          const checkboxSectionRegex_en_bug = /([\s\S]*?)(### Description\n\n)/;
+          const checkboxSectionRegex_en_feat = /([\s\S]*?)(### The problems you have encountered?\n\n)/;
+
+          const foldedBody_cn_bug = originalBody.replace(
+            checkboxSectionRegex_cn_bug,
+            `<details><summary>Checkboxes</summary>\n\n$1\n\n</details>\n\n$2`
+          );
+          const foldedBody_cn_feat = foldedBody_cn_bug.replace(
+            checkboxSectionRegex_cn_feat,
+            `<details><summary>Checkboxes</summary>\n\n$1\n\n</details>\n\n$2`
+          );
+          const foldedBody_en_bug = foldedBody_cn_feat.replace(
+            checkboxSectionRegex_en_bug,
+            `<details><summary>Checkboxes</summary>\n\n$1\n\n</details>\n\n$2`
+          );
+          const foldedBody = foldedBody_en_bug.replace(
+            checkboxSectionRegex_en_feat,
+            `<details><summary>Checkboxes</summary>\n\n$1\n\n</details>\n\n$2`
+          );
+
+          await github.rest.issues.update({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.issue.number,
+            body: foldedBody
+          });
+          await github.rest.issues.lock({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.issue.number,
+            lock_reason: 'spam'
+          });
+
+    - name: Fold checkboxes
+      if: steps.unread-checkbox-check.outputs.result == 'false'
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const originalBody = context.payload.issue.body;
+          const checkboxSectionRegex_cn_bug = /([\s\S]*?)(### 问题描述\n\n)/;
+          const checkboxSectionRegex_cn_feat = /([\s\S]*?)(### 说说你遇到的问题？\n\n)/;
+          const checkboxSectionRegex_en_bug = /([\s\S]*?)(### Description\n\n)/;
+          const checkboxSectionRegex_en_feat = /([\s\S]*?)(### The problems you have encountered?\n\n)/;
+
+          const foldedBody_cn_bug = originalBody.replace(
+            checkboxSectionRegex_cn_bug,
+            `<details><summary>Checkboxes</summary>\n\n$1\n\n</details>\n\n$2`
+          );
+          const foldedBody_cn_feat = foldedBody_cn_bug.replace(
+            checkboxSectionRegex_cn_feat,
+            `<details><summary>Checkboxes</summary>\n\n$1\n\n</details>\n\n$2`
+          );
+          const foldedBody_en_bug = foldedBody_cn_feat.replace(
+            checkboxSectionRegex_en_bug,
+            `<details><summary>Checkboxes</summary>\n\n$1\n\n</details>\n\n$2`
+          );
+          const foldedBody = foldedBody_en_bug.replace(
+            checkboxSectionRegex_en_feat,
+            `<details><summary>Checkboxes</summary>\n\n$1\n\n</details>\n\n$2`
+          );
+
+          await github.rest.issues.update({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.issue.number,
+            body: foldedBody
+          });
