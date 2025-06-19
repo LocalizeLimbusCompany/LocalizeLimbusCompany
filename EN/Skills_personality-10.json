@@ -1445,6 +1445,314 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1101301,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Adherence to Propriety.",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Adherence to Propriety.",
+          "desc": "<style=\"highlight\">[WhenUse] Coin Power +1 for every 6 (sum of [Combustion] and [Vibration] on target) (max 2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Adherence to Propriety.",
+          "desc": "[WhenUse] Coin Power +1 for every 6 (sum of [Combustion] and [Vibration] on target) (max 2)\n<style=\"highlight\">[WhenUse] If target has 'Unique Tremor' as [Vibration], Clash Power +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101302,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Respect the Thumb.",
+          "desc": "[WhenUse] If target has 6+ (sum of [Combustion] and [Vibration]), Coin Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If target has 6+ [Vibration], trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Respect the Thumb.",
+          "desc": "<style=\"highlight\">[WhenUse] Coin Power +1 for every 6 (sum of [Combustion] and [Vibration] on target) (max 2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">2</style> [Vibration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] If target has 10+ [VibrationIgnition], inflict +1 [Combustion] Count</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has 6+ [Vibration], trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Respect the Thumb.",
+          "desc": "[WhenUse] Coin Power +1 for every 6 (sum of [Combustion] and [Vibration] on target) (max 2)\n<style=\"highlight\">[WhenUse] Deal +10% damage for every 4 (sum of [Combustion] and [Vibration] on target) (max 30%)\n[WhenUse] If target has 10+ 'Unique Tremor', Base Power +2</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] If target has 10+ [VibrationIgnition], inflict <style=\"highlight\">+2</style> [Combustion] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If target has 6+ [Vibration], trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101303,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Thruster Compression",
+          "desc": "[WhenUse] Coin Power +1 for every 8 (sum of [Combustion] and [Vibration] on target) (max 2)\n[WhenUse] At 3+ [FireBulletPropellant], Base Power +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 [FireBulletPropellant]"
+                },
+                {
+                  "desc": "If this unit spent [FireBulletPropellant] due to this Coin's effect, deal +20% damage"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 [FireBulletPropellant]"
+                },
+                {
+                  "desc": "If this unit spent [FireBulletPropellant] due to this Coin's effect, deal +20% damage"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 [FireBulletPropellant]"
+                },
+                {
+                  "desc": "If this unit spent [FireBulletPropellant] due to this Coin's effect, deal +20% damage"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If this unit spent [FireBulletPropellant], trigger [VibrationExplosion]; then, reduce the target's [Vibration] Count by 1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Thruster Compression",
+          "desc": "[WhenUse] Coin Power +1 for every 8 (sum of [Combustion] and [Vibration] on target) (max 2)\n[WhenUse] At 3+ [FireBulletPropellant], <style=\"highlight\">Base Power +3, deal +30% damage, and convert the Coins to [SuperCoin]s</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 [FireBulletPropellant]"
+                },
+                {
+                  "desc": "If this unit spent [FireBulletPropellant] due to this Coin's effect, deal <style=\"highlight\">+25%</style> damage"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">+3</style> [Combustion] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 [FireBulletPropellant]"
+                },
+                {
+                  "desc": "If this unit spent [FireBulletPropellant] due to this Coin's effect, deal <style=\"highlight\">+25%</style> damage"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 [FireBulletPropellant]"
+                },
+                {
+                  "desc": "If this unit spent [FireBulletPropellant] due to this Coin's effect, deal <style=\"highlight\">+25%</style> damage"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If this unit spent [FireBulletPropellant], trigger [VibrationExplosion]; then, reduce the target's [Vibration] Count by 1"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] If this Skill spent 3 [FireBulletPropellant], trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101304,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Ferrous Guard",
+          "desc": "Inflict 1 [Vibration] against the Attacker when hit as long as this unit has remaining Shield (3 times per turn)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Ferrous Guard",
+          "desc": "Inflict <style=\"highlight\">2</style> [Vibration] against the Attacker when hit as long as this unit has remaining Shield (<style=\"highlight\">4</style> times per turn)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }

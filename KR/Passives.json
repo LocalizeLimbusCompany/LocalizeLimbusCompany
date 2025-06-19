@@ -2162,6 +2162,60 @@
       "name": "여환[餘桓]",
       "desc": "전투 중 자신이 사망했으면, 자신 다음 턴에 대기해제 되는 인격(대기 편성 순서상 가장 빠른 인격)에게 전투 시작 시 [CheerUpXichun] 부여\n\n연속 전투에서 자신이 퇴각 혹은 대기 상태일 때, 아래의 효과 발동\n전투 시작 시 체력이 최대 체력의 50% 이하이고, 수비 스킬을 사용한 인격 중 편성 순서가 가장 빠른 인격이 턴 종료 시 피해로 인한 흐트러짐을 해제하고  [RetreatForCommon]함 (전투당 2회 발동)",      
       "summary": "전투 시작 시 체력이 50%이하이고 수비 스킬을 사용한 인격을 턴 종료 시, 퇴각 시킴"
+    },
+    {
+      "id": 1101301,
+      "name": "탄환 상납",
+      "desc": "[Bullet]을 쓰는 인격 중 편성 순서가 가장 빠른 아군 1명의 공격이 종료 되었을 때, 해당 인격의 현재 보유 [Bullet]이 절반 미만이면 (소수점 올림), 해당 인격이 소모한 [Bullet] 수 만큼 자신의 [FireBulletPropellant]을 소모하고, [FireBulletPropellant]을 소모한 만큼 해당 인격이 사용하는 [Bullet]을 보급함. (최대 소모 값: 3개) (전투당 1회)\n\n- [Bullet]을 보급 받는 인격이 자신보다 계급이 높은 엄지 소속 인격이면, 해당 인격이 사용하는 [Bullet]을 1개 더 보급함\n- 위력, 횟수가 분리된 [Bullet]은 위력, 횟수를 무작위로 보급함\n- 만약 위력 또는 횟수가 최댓값인 경우, 최댓값이 아닌 쪽의 [Bullet]으로 보급함",      
+      "summary": ""
+    },
+    {
+      "id": 1101311,
+      "name": "탄환 상납",
+      "desc": "[Bullet]을 쓰는 인격 중 편성 순서가 가장 빠른 아군 1명의 공격이 종료 되었을 때, 해당 인격의 현재 보유 [Bullet]이 절반 미만이면 (소수점 올림), 해당 인격이 소모한 [Bullet] 수 만큼 자신의 [FireBulletPropellant]을 소모하고, [FireBulletPropellant]을 소모한 만큼 해당 인격이 사용하는 [Bullet]을 보급함. <style=\"highlight\">(최대 소모 값: 5개)</style> (전투당 1회)\n\n- [Bullet]을 보급 받는 인격이 자신보다 계급이 높은 엄지 소속 인격이면, 해당 인격이 사용하는 [Bullet]을 1개 더 보급함\n- 위력, 횟수가 분리된 [Bullet]은 위력, 횟수를 무작위로 보급함\n- 만약 위력 또는 횟수가 최댓값인 경우, 최댓값이 아닌 쪽의 [Bullet]으로 보급함",      
+      "summary": ""
+    },
+    {
+      "id": 1101312,
+      "name": "총검술",
+      "desc": "상시 적용: [FireBulletPropellant] 15개 보유\n\n스킬이나 패시브로 [FireBulletPropellant]을 소모했다면, 다음 턴에 소모한 만큼 [AttackDmgUp]를 얻음 (최대 3)\n\n[FireBulletPropellant]을 소모하는 코인을 굴릴 때, [FireBulletPropellant]이 없는 경우에도 공격이 취소되지 않는 대신 해당 코인의 적중 시 [Combustion] 부여, [Combustion] 횟수 증가 효과가 발동하지 않음",      
+      "summary": ""
+    },
+    {
+      "id": 1101321,
+      "name": "재장전",
+      "desc": "[Bullet]을 쓰는 인격 중 편성 순서가 가장 빠른 아군 1명의 공격이 종료 되었을 때, 해당 인격의 현재 보유 [Bullet]이 절반 미만이면, [Bullet]을 최대치의 절반만큼 다시 얻음 (소수점 올림, 전투당 1회, 최대 [Bullet] 획득 값 : 5)\n\n- 위력, 횟수가 분리된 [Bullet]은 위력, 횟수를 무작위로 얻음\n- 만약 위력 또는 횟수가 최댓값인 경우, 최댓값이 아닌 쪽의 [Bullet]으로 얻음\n- [Bullet]을 사용하는 인격이 없으면, 이 효과는 발동하지 않음",      
+      "summary": ""
+    },
+    {
+      "id": 1051202,
+      "name": "삽시호 [揷翅虎]",
+      "desc": "상시 적용 : [BulletPropellantAlly] 12개 보유\n\n[BulletPropellantAlly], [BulletPropellantSpecialAlly]을 소모하는 코인을 굴릴 때, 해당 특수 탄환이 없는 경우에도 공격을 취소하지 않는 대신 해당 코인의 적중 시 [Combustion] 부여, [Combustion] 횟수 증가 효과가 발동하지 않음\n\n이번 전투에서 처음으로 수비 스킬을 장착하였거나 [BulletPropellantAlly]을 전부 사용, 또는 흐트러졌다면, 해당 턴 종료 시 [BulletPropellantSpecialAlly] 8발을 장전하고 [IrritationAlly] 1 얻음 (전투당 1회)\n- 흐트러짐 상태에서 효과 발동 시, 흐트러짐 상태 해제 (강제 흐트러짐 제외)\n- [BulletPropellantAlly]이 남아있으면 전부 소멸\n- 자신이 소모한 [BulletPropellantAlly]과 [BulletPropellantSpecialAlly]의 합이 8 이상이면, [IrritationAlly]가 [HugeIrritationAlly]으로 변경\n\n[BulletPropellantSpecialAlly]의 마지막 탄환을 소모하는 기본 공격 스킬을 사용할 경우,\n- 공격 시작 전 공격 가중치 +2\n- 다음 턴에 [BeastEyesAlly] 1 얻음",      
+      "summary": ""
+    },
+    {
+      "id": 1051201,
+      "name": "천퇴성도 [天退星刀]",
+      "desc": "[BulletPropellantAlly] 보유 시,\n- 1 이상이면 '쾌도난마'의 모든 코인이 [SuperCoin]으로 변경\n- [BulletPropellantAlly]을 소모하는 스킬 코인 위력 +1 (소모 가능한 만큼만 적용)\n\n[BulletPropellantSpecialAlly] 보유 시,\n- 1 이상이면 기본 공격 스킬의 모든 코인이 [SuperCoin]으로 변경\n- 0 이면 기본 공격 스킬의 특수 탄환을 소모할 수 있는 코인이 [SuperCoin]으로 변경\n- [BulletPropellantSpecialAlly]을 소모하는 스킬 코인 위력 +2 (소모 가능한 만큼만 적용)",      
+      "summary": ""
+    },
+    {
+      "id": 1051211,
+      "name": "천퇴성도 [天退星刀]",
+      "desc": "[BulletPropellantAlly] 보유 시,\n- 1 이상이면 '쾌도난마'의 모든 코인이 [SuperCoin]으로 변경\n- [BulletPropellantAlly]을 소모하는 스킬 코인 위력 +1, <style=\"highlight\">피해량 +10%</style> (소모 가능한 만큼만 적용)\n\n[BulletPropellantSpecialAlly] 보유 시,\n- 1 이상이면 기본 공격 스킬의 모든 코인이 [SuperCoin]으로 변경\n- 0 이면 기본 공격 스킬의 특수 탄환을 소모할 수 있는 코인이 [SuperCoin]으로 변경\n- [BulletPropellantSpecialAlly]을 소모하는 스킬 코인 위력 +2, <style=\"highlight\">피해량 +30%, 해당 코인으로 적중 시 부여하는 [Combustion] 위력과 [Combustion] 횟수 부여값 +2</style> (소모 가능한 만큼만 적용)",      
+      "summary": ""
+    },
+    {
+      "id": 1051221,
+      "name": "맹호의 도약",
+      "desc": "속도가 가장 빠른 아군 1명이 [Bullet]을 소모하는 스킬 사용 시 대상보다 속도가 3 이상 높다면, 가하는 피해량 +(대상과의 속도 차이 x 2)% (최대 10%)\n([Bullet]이 없으면 적용되지 않음. 단, [Bullet] 버프는 보유하였으나 수치가 0인 경우에는 효과가 적용됨)",      
+      "summary": ""
+    },
+    {
+      "id": 1051231,
+      "name": "맹호의 도약",
+      "desc": "속도가 가장 빠른 아군 1명이 [Bullet]을 소모하는 스킬 사용 시 대상보다 속도가 3 이상 높다면, 가하는 피해량 +(대상과의 속도 차이 x <style=\"highlight\">3</style>)% (최대 <style=\"highlight\">15%</style>)\n([Bullet]이 없으면 적용되지 않음. 단, [Bullet] 버프는 보유하였으나 수치가 0인 경우에는 효과가 적용됨)",      
+      "summary": ""
     }
   ]
 }

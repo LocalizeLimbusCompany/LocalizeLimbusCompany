@@ -2157,6 +2157,60 @@
       "name": "餘桓",
       "desc": "戦闘中に自分が死亡したなら、次のターンに待機解除される人格(待機順が最も早い人格)へ戦闘開始時に[CheerUpXichun]を付与\n\n連続戦闘にて自分が退却または待機状態のとき、下記の効果が発動\n戦闘開始時に体力が最大値の50%以下かつ、守備スキルを使用した人格のうち編成順が最も早い人格がターン終了時にダメージによる混乱を解除して[RetreatForCommon]する (戦闘につき2回発動)",
       "summary": "戦闘開始時、体力が50%以下かつ守備スキルを使用した人格をターン終了時に退却させる"
+    },
+    {
+      "id": 1101301,
+      "name": "弾丸上納",
+      "desc": "[Bullet]を使う人格のうち、編成順が最も早い味方1名の攻撃が終了したとき、該当人格が現在保有している[Bullet]が半分未満なら(小数点繰り上げ)、該当人格が消耗した[Bullet]の数だけ自分の[FireBulletPropellant]を消耗し、[FireBulletPropellant]を消耗しただけ該当人格が使用する[Bullet]を補給する。(最大消耗値: 3個) (戦闘につき1回)\n\n- [Bullet]を補充される人格が自分より階級が高い親指所属人格なら、該当人格が使用する[Bullet]を1つ追加で支給する\n- 威力・回数が分離した[Bullet]は威力・回数をランダムに補給する\n- 威力または回数が最大値なら、最大値ではない方の[Bullet]として補給する",
+      "summary": ""
+    },
+    {
+      "id": 1101311,
+      "name": "弾丸上納",
+      "desc": "[Bullet]を使う人格のうち、編成順が最も早い味方1名の攻撃が終了したとき、該当人格が現在保有している[Bullet]が半分未満なら(小数点繰り上げ)、該当人格が消耗した[Bullet]の数だけ自分の[FireBulletPropellant]を消耗し、[FireBulletPropellant]を消耗しただけ該当人格が使用する[Bullet]を補給する。<style=\"highlight\">(最大消耗値: 5個)</style> (戦闘につき1回)\n\n- [Bullet]を補充される人格が自分より階級が高い親指所属人格なら、該当人格が使用する[Bullet]を1つ追加で支給する\n- 威力・回数が分離した[Bullet]は威力・回数をランダムに補給する\n- 威力または回数が最大値なら、最大値ではない方の[Bullet]として補給する",
+      "summary": ""
+    },
+    {
+      "id": 1101312,
+      "name": "銃剣術",
+      "desc": "常時適用: [FireBulletPropellant]を15個保有\n\nスキルやパッシブで[FireBulletPropellant]を消耗したなら、次のターンにて消耗した数だけ[AttackDmgUp]を得る (最大3)\n\n[FireBulletPropellant]を消耗するコインをトスするとき、[FireBulletPropellant]がない場合も攻撃がキャンセルされない代わりに該当コインの的中時[Combustion]付与、[Combustion]回数増加効果が発動しない",
+      "summary": ""
+    },
+    {
+      "id": 1101321,
+      "name": "再装填",
+      "desc": "[Bullet]を使う人格のうち編成順が最も早い味方1名の攻撃が終了したとき、該当人格が現在保有している[Bullet]が半分未満なら、[Bullet]を最大値の半分だけ再び得る(小数点繰り上げ、戦闘につき1回、最大[Bullet]獲得値 : 5)\n\n- 威力・回数が分離した[Bullet]は威力・回数をランダムに得る\n- 威力または回数が最大値なら、最大値ではない方の[Bullet]として得る\n- [Bullet]を使用する人格がいなければ、この効果は発動しない",
+      "summary": ""
+    },
+    {
+      "id": 1051202,
+      "name": "揷翅虎",
+      "desc": "常時適用 : [BulletPropellantAlly]を12個保有\n\n[BulletPropellantAlly]、[BulletPropellantSpecialAlly]を消耗するコインをトスするとき、該当する特殊弾丸がない場合も攻撃がキャンセルされない代わりに該当コインの的中時[Combustion]付与、[Combustion]回数増加効果が発動しない\n\nこの戦闘にて初めて守備スキルを装着するか[BulletPropellantAlly]を全て使用、または混乱したなら、該当ターン終了時に[BulletPropellantSpecialAlly]8発を装填して[IrritationAlly]1を得る(戦闘につき1回)\n- 混乱状態で効果発動時、混乱状態を解除 (強制混乱を除外)\n- [BulletPropellantAlly]が残っているなら全て消滅\n- 自分が消耗した[BulletPropellantAlly]と[BulletPropellantSpecialAlly]の合計が8以上なら、[IrritationAlly]が[HugeIrritationAlly]へ変更\n\n[BulletPropellantSpecialAlly]の最後の弾丸を消耗する基本攻撃スキルを使用する場合、\n- 攻撃開始前に攻撃加重値 +2\n- 次のターンに[BeastEyesAlly]1を得る",
+      "summary": ""
+    },
+    {
+      "id": 1051201,
+      "name": "天退星刀",
+      "desc": "[BulletPropellantAlly]保有時、\n- 1以上なら「快刀亂麻」の全コインが[SuperCoin]に変更\n- [BulletPropellantAlly]を消耗するスキルコインの威力 +1 (消耗可能な数だけ適用)\n\n[BulletPropellantSpecialAlly]保有時、\n- 1以上なら、基本攻撃スキルの全コインが[SuperCoin]に変更\n- 0なら基本攻撃スキルの特殊弾丸を消耗できるコインが[SuperCoin]に変更\n- [BulletPropellantSpecialAlly]を消耗するスキルのコイン威力 +2 (消耗可能な数だけ適用)",
+      "summary": ""
+    },
+    {
+      "id": 1051211,
+      "name": "天退星刀",
+      "desc": "[BulletPropellantAlly]保有時、\n- 1以上なら「快刀亂麻」の全コインが[SuperCoin]に変更\n- [BulletPropellantAlly]を消耗するスキルコインの威力 +1, <style=\"highlight\">ダメージ量 +10%</style> (消耗可能な数だけ適用)\n\n[BulletPropellantSpecialAlly]保有時、\n- 1以上なら、基本攻撃スキルの全コインが[SuperCoin]に変更\n- 0なら基本攻撃スキルの特殊弾丸を消耗できるコインが[SuperCoin]に変更\n- [BulletPropellantSpecialAlly]を消耗するスキルのコイン威力 +2, <style=\"highlight\">ダメージ量 +30%, 該当コインが的中時に付与する[Combustion]威力と[Combustion]回数の付与値 +2</style> (消耗可能な数だけ適用)",
+      "summary": ""
+    },
+    {
+      "id": 1051221,
+      "name": "猛虎の跳躍",
+      "desc": "速度が最も高い味方1名が[Bullet]を消耗するスキルを使用時、対象より速度が3以上高ければ、与ダメージ量 +(対象との速度差 × 2)% (最大10%)\n([Bullet]がなければ適用されない。ただし、[Bullet]バフは保有しているが数値が0の場合は効果が適用される)",
+      "summary": ""
+    },
+    {
+      "id": 1051231,
+      "name": "猛虎の跳躍",
+      "desc": "速度が最も高い味方1名が[Bullet]を消耗するスキルを使用時、対象より速度が3以上高ければ、与ダメージ量 +(対象との速度差 × <style=\"highlight\">3</style>)% (最大<style=\"highlight\">15%</style>)\n([Bullet]がなければ適用されない。ただし、[Bullet]バフは保有しているが数値が0の場合は効果が適用される)",
+      "summary": ""
     }
   ]
 }

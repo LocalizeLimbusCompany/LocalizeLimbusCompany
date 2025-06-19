@@ -2157,6 +2157,60 @@
       "name": "Lingering Resolve [餘桓]",
       "desc": "If this unit is defeated in an Encounter, apply [CheerUpXichun] to the subsequently Substituting Identity (the fastest Backup Unit in the Deployment Order) next turn\n\nIn Chain Battles, if this unit is a Backup unit or has Retreated, activate the following:\n- Combat Start: Among the Identities who 1) are at 50% HP or lower, and 2) used a Defense Skill, choose the Identity with the fastest Deployment order. At Turn End, that Identity recovers from Stagger caused by damage and performs a [RetreatForCommon] (2 times per Encounter)",
       "summary": "Turn End: Retreat the Identity that, at Combat Start, has 50% or less HP and has used a Defense Skill this turn"
+    },
+    {
+      "id": 1101301,
+      "name": "Ammunition Tribute",
+      "desc": "When the 1 ally Identity with the fastest Deployment order among those using [Bullet] finishes their attack, if their current [Bullet] count is fewer than half (rounded up), spend [FireBulletPropellant] on self equal to the total [Bullet] count the affected unit spent and supply them with the same amount of [Bullet] as [FireBulletPropellant] this unit just spent. (can spend up to 3 ammunition) (once per Encounter)\n\n- If the [Bullet] receiving Identity is a Thumb Identity of a higher rank, supply 1 additional [Bullet] they use\n- If the [Bullet] receiving Identity has separate values for Potency and Count, they will be supplied at random.\n- If either Potency or Count is maxed out, supply whichever is not maxed.",
+      "summary": ""
+    },
+    {
+      "id": 1101311,
+      "name": "Ammunition Tribute",
+      "desc": "When the 1 ally Identity with the fastest Deployment order among those using [Bullet] finishes their attack, if their current [Bullet] count is fewer than half (rounded up), spend [FireBulletPropellant] on self equal to the total [Bullet] count the affected unit spent and supply them with the same amount of [Bullet] as [FireBulletPropellant] this unit just spent. <style=\"highlight\">(can spend up to 5 ammunition)</style> (once per Encounter)\n\n- If the [Bullet] receiving Identity is a Thumb Identity of a higher rank, supply 1 additional [Bullet] they use\n- If the [Bullet] receiving Identity has separate values for Potency and Count, they will be supplied at random.\n- If either Potency or Count is maxed out, supply whichever is not maxed.",
+      "summary": ""
+    },
+    {
+      "id": 1101312,
+      "name": "Bayonets",
+      "desc": "Always Active: begin Encounters with 15 [FireBulletPropellant]\n\nIf this unit spent [FireBulletPropellant] with Skills or Passives, gain [AttackDmgUp] equal to the amount spent next turn (max 3)\n\nWhen flipping a Coin that spends [FireBulletPropellant]: while not having [FireBulletPropellant] does not cancel this unit's attacks, the Coin's On Hit \"inflict [Combustion]\" and \"inflict [Combustion] Count\" effects do not activate",
+      "summary": ""
+    },
+    {
+      "id": 1101321,
+      "name": "Reloader",
+      "desc": "When the 1 ally Identity with the fastest Deployment order among those using [Bullet] finishes their attack, if their current [Bullet] count is fewer than half (rounded up), regain half of the maximum [Bullet] capacity (rounded up; once per Encounter; max [Bullet] regained: 5)\n\n- If the [Bullet] receiving Identity has separate values for Potency and Count, they will gain them at random\n- If either Potency or Count of [Bullet] is maxed out, gain whichever is not maxed\n- This effect does not activate if there are no Identities that use [Bullet]",
+      "summary": ""
+    },
+    {
+      "id": 1051202,
+      "name": "Chachihu [揷翅虎]",
+      "desc": "Always Active: begin Encounters with 12 [BulletPropellantAlly]\n\nWhen flipping a Coin that consumes [BulletPropellantAlly] or [BulletPropellantSpecialAlly]: while not having those 'Unique Ammo' does not cancel this unit's attacks, the Coin's On Hit \"inflict [Combustion]\" and \"inflict [Combustion] Count\" effects do not activate\n\nIf this unit equipped Defense Skills for the first time in this Encounter, or if this unit spent all of his [BulletPropellantAlly], or if this unit is Staggered: at the end of that turn, reload 8 [BulletPropellantSpecialAlly] and gain 1 [IrritationAlly] (once per Encounter)\n- If this effect activates while this unit is Staggered, recover from Stagger (unless it's a forced Stagger)\n- Remove all [BulletPropellantAlly] if this unit has any leftover [BulletPropellantAlly]\n- At 8+ (sum of [BulletPropellantAlly] and [BulletPropellantSpecialAlly] spent), convert [IrritationAlly] to [HugeIrritationAlly]\n\nWhen this unit uses a Base Attack Skill that spends the final Round of [BulletPropellantSpecialAlly]...\n- Gain Atk Weight +2 before attacking\n- Gain 1 [BeastEyesAlly] next turn",
+      "summary": ""
+    },
+    {
+      "id": 1051201,
+      "name": "Tiantui Star's Blade [天退星刀]",
+      "desc": "When this unit has [BulletPropellantAlly]:\n- At 1+ [BulletPropellantAlly], convert all Coins of 'Tanglecleaver' into [SuperCoin]s\n- Skill Coins that spend [BulletPropellantAlly] gain +1 Power (activates only as long as the Coin has Rounds left to spend)\n\nWhen this unit has [BulletPropellantSpecialAlly]:\n- At 1+ [BulletPropellantSpecialAlly], convert all Coins of this unit's Base Attack Skills to [SuperCoin]s\n- At 0 [BulletPropellantSpecialAlly], convert all Coins of this unit's Base Attack Skills that spend 'Unique Ammo' to [SuperCoin]s\n- Skill Coins that spend [BulletPropellantSpecialAlly] gain +2 Power (activates only as long as the Coin has Rounds left to spend)",
+      "summary": ""
+    },
+    {
+      "id": 1051211,
+      "name": "Tiantui Star's Blade [天退星刀]",
+      "desc": "When this unit has [BulletPropellantAlly]:\n- At 1+ [BulletPropellantAlly], convert all Coins of 'Tanglecleaver' into [SuperCoin]s\n- Skill Coins that spend [BulletPropellantAlly] gain +1 Power <style=\"highlight\">and deal +10% damage</style> (activates only as long as the Coin has Rounds left to spend)\n\nWhen this unit has [BulletPropellantSpecialAlly]:\n- At 1+ [BulletPropellantSpecialAlly], convert all Coins of this unit's Base Attack Skills to [SuperCoin]s\n- At 0 [BulletPropellantSpecialAlly], convert all Coins of this unit's Base Attack Skills that spend 'Unique Ammo' to [SuperCoin]s\n- Skill Coins that spend [BulletPropellantAlly] gain +2 Power, <style=\"highlight\">deal +30% damage, and inflict +2 more [Combustion] Potency and [Combustion] Count On Hit with those Coins</style> (activates only as long as the Coin has Rounds left to spend)",
+      "summary": ""
+    },
+    {
+      "id": 1051221,
+      "name": "Savage Tiger's Lunge",
+      "desc": "When 1 ally with the fastest Speed uses a Skill that spends [Bullet], if their Speed is faster than the target's by 3 or more, deal +(Speed difference × 2)% more damage (max 10%).\n(This effect does not activate if the affected unit lacks the [Bullet] buff entirely. However, it will activate if they have the [Bullet] buff, even if they have 0 rounds left)",
+      "summary": ""
+    },
+    {
+      "id": 1051231,
+      "name": "Savage Tiger's Lunge",
+      "desc": "When 1 ally with the fastest Speed uses a Skill that spends [Bullet], if their Speed is faster than the target's by 3 or more, deal +(Speed difference × <style=\"highlight\">3</style>)% more damage (max <style=\"highlight\">15%</style>).\n(This effect does not activate if the affected unit lacks the [Bullet] buff entirely. However, it will activate if they have the [Bullet] buff, even if they have 0 rounds left)",
+      "summary": ""
     }
   ]
 }
