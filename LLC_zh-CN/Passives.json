@@ -915,7 +915,7 @@
     {
       "id": 1050721,
       "name": "一家人",
-      "desc": "回合结束时，若有与理智值最低的1名友方单位属于同一阵营的其他友方单位存活，则使理智值最低的1名友方单位恢复10点理智值"
+      "desc": "若有与理智值最低的1名友方单位属于同一阵营的其他友方单位存活，则在回合结束时使该理智值最低的友方单位恢复10点理智值"
     },
     {
       "id": 1070701,
@@ -2157,6 +2157,60 @@
       "name": "余桓",
       "desc": "本场战斗中若自身阵亡，则下回合的战斗开始时使解除待命的友方单位(待命人员编队顺序最靠前的单位)获得[CheerUpXichun]\n\n连续遭遇战中，若自身处于待命或撤退状态，则触发以下效果\n战斗开始时，使现存体力不高于体力上限的50%且使用了守备技能的友方单位中最先编入的友方单位在回合结束时解除因受到伤害而陷入的混乱，并使其进行[RetreatForCommon](每场战斗最多2次)",
       "summary": "战斗开始时，使现存体力不高于体力上限的50%且使用了守备技能的友方单位在回合结束时撤退"
+    },
+    {
+      "id": 1101301,
+      "name": "子弹奉纳",
+      "desc": "使用[Bullet]的友方单位中最先编入的友方单位攻击后，若其现存[Bullet]数低于一半(向上取整)，则消耗自身相当于该友方单位消耗的[Bullet]数的[FireBulletPropellant]，并使该友方单位获得相当于自身消耗的[FireBulletPropellant]数的[Bullet](最大消耗量：3发)(每场战斗最多1次)\n\n- 若获得[Bullet]的友方单位为阶级高于自身的拇指人格，则使其额外获得1发[Bullet]\n- 强度与层数分别计算的[Bullet]随机增加强度与获得层数\n- 若强度或层数为最大值，则获得未达到最大值的[Bullet]",
+      "summary": ""
+    },
+    {
+      "id": 1101311,
+      "name": "子弹奉纳",
+      "desc": "使用[Bullet]的友方单位中最先编入的友方单位攻击后，若其现存[Bullet]数低于一半(向上取整)，则消耗自身相当于该友方单位消耗的[Bullet]数的[FireBulletPropellant]，并使该友方单位获得相当于自身消耗的[FireBulletPropellant]数的[Bullet]<style=\"highlight\">(最大消耗量：5发)</style>(每场战斗最多1次)\n\n- 若获得[Bullet]的友方单位为阶级高于自身的拇指人格，则使其额外获得1发[Bullet]\n- 强度与层数分别计算的[Bullet]随机增加强度与获得层数\n- 若强度或层数为最大值，则获得未达到最大值的[Bullet]",
+      "summary": ""
+    },
+    {
+      "id": 1101312,
+      "name": "铳剑术",
+      "desc": "常驻效果：战斗开始时，带有15发[FireBulletPropellant]\n\n通过技能或被动效果消耗[FireBulletPropellant]时，下回合获得层数相当于消耗量的[AttackDmgUp](最多3层)\n\n掷出消耗[FireBulletPropellant]的硬币时，即使自身未带有[FireBulletPropellant]，攻击也不会取消，但该硬币的命中时增加[Combustion]强度与施加[Combustion]层数效果不会生效",
+      "summary": ""
+    },
+    {
+      "id": 1101321,
+      "name": "再次装填",
+      "desc": "使用[Bullet]的友方单位中最先编入的友方单位攻击后，若其现存[Bullet]数低于一半，则使其再次获得其[Bullet]最大值一半的[Bullet](向上取整，每场战斗最多1次，最大[Bullet]获得量：5)\n\n- 强度与层数分别计算的[Bullet]随机增加强度与获得层数\n- 若强度或层数为最大值，则获得未达到最大值的[Bullet] \n- 若没有使用[Bullet]的友方单位，则该效果不会触发",
+      "summary": ""
+    },
+    {
+      "id": 1051202,
+      "name": "插翅虎",
+      "desc": "常驻效果：关卡开始时，带有12发[BulletPropellantAlly]\n\n掷出消耗[BulletPropellantAlly]或[BulletPropellantSpecialAlly]的硬币时，即使自身未带有该特殊弹药 ，攻击也不会取消，但该硬币的命中时增加[Combustion]强度与施加[Combustion]层数效果不会生效\n\n若本场战斗中自身首次装备了守备技能，或消耗了自身所有[BulletPropellantAlly]，或自身陷入混乱，则在回合结束时，使自身再次装填8发[BulletPropellantSpecialAlly]并获得1层[IrritationAlly](每场战斗最多1次)\n- 若该效果因陷入混乱而触发，则解除自身的混乱(不包括强制混乱)\n- 若自身带有剩余的[BulletPropellantAlly]，则解除所有[BulletPropellantAlly]\n- 若自身消耗的[BulletPropellantAlly]与[BulletPropellantSpecialAlly]之和不低于8发，则使自身的[IrritationAlly]转化为[HugeIrritationAlly]\n\n自身使用基础攻击技能消耗了最后的[BulletPropellantSpecialAlly]时\n- 攻击前，使该技能的攻击容量增加\n- 下回合使自身获得[BeastEyesAlly]",
+      "summary": ""
+    },
+    {
+      "id": 1051201,
+      "name": "天退星刀",
+      "desc": "自身带有[BulletPropellantAlly]时：\n- 若自身的[BulletPropellantAlly]数不低于1，则使“快刀乱麻”中的所有硬币转化为[SuperCoin]\n- 使技能中消耗[BulletPropellantAlly]的硬币的威力+1(仅在该硬币有剩余的弹药可消耗时生效)\n\n自身带有[BulletPropellantSpecialAlly]时：\n- 若自身的[BulletPropellantSpecialAlly]数不低于1，则使自身基础攻击技能中的所有硬币转化为[SuperCoin]\n- 若自身的[BulletPropellantSpecialAlly]数为0，则使自身基础攻击技能中消耗特殊弹药的硬币转化为[SuperCoin]\n- 使技能中消耗[BulletPropellantSpecialAlly]的硬币的威力+2(仅在该硬币有剩余的弹药可消耗时生效)",
+      "summary": ""
+    },
+    {
+      "id": 1051211,
+      "name": "天退星刀",
+      "desc": "自身带有[BulletPropellantAlly]时：\n- 若自身的[BulletPropellantAlly]数不低于1，则使“快刀乱麻”中的所有硬币转化为[SuperCoin]\n- 使技能中消耗[BulletPropellantAlly]的硬币的威力+1，<style=\"highlight\">造成的伤害+10%</style>(仅在该硬币有剩余的弹药可消耗时生效)\n\n自身带有[BulletPropellantSpecialAlly]时：\n- 若自身的[BulletPropellantSpecialAlly]数不低于1，则使自身基础攻击技能中的所有硬币转化为[SuperCoin]\n- 若自身的[BulletPropellantSpecialAlly]数为0，则使自身基础攻击技能中消耗特殊弹药的硬币转化为[SuperCoin]\n- 使技能中消耗[BulletPropellantSpecialAlly]的硬币的威力+2，<style=\"highlight\">造成的伤害+30%，并令其在命中时增加的[Combustion]强度与施加的[Combustion]层数额外+2</style>(仅在该硬币有剩余的弹药可消耗时生效)",
+      "summary": ""
+    },
+    {
+      "id": 1051221,
+      "name": "猛虎暴跃",
+      "desc": "速度值最高的1名友方单位使用消耗[Bullet]的技能时，若其速度值高于目标至少3点，则使该友方单位造成的伤害+(与目标的速度差×2)%(最多+10%)\n(该效果不会对完全不带有[Bullet]效果的单位生效，但会对带有[Bullet]效果但[Bullet]数为0的单位生效)",
+      "summary": ""
+    },
+    {
+      "id": 1051231,
+      "name": "猛虎暴跃",
+      "desc": "速度值最高的1名友方单位使用消耗[Bullet]的技能时，若其速度值高于目标至少3点，则使该友方单位造成的伤害+(与目标的速度差×<style=\"highlight\">3</style>)%(最多+<style=\"highlight\">15%</style>)\n(该效果不会对完全不带有[Bullet]效果的单位生效，但会对带有[Bullet]效果但[Bullet]数为0的单位生效)",
+      "summary": ""
     }
   ]
 }
