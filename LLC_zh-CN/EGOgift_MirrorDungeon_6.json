@@ -1,0 +1,170 @@
+{
+  "dataList": [
+    {
+      "id": 9799,
+      "name": "某种哲学",
+      "desc": "若饰品合成概率不低于90%，则使其变为100%",
+      "simpleDesc": [
+        {
+          "abilityID": 9799,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9800,
+      "name": "富",
+      "desc": "所有饰品的购买与强化费用固定为1。\n\n每拥有500点经费，使全体友方单位获得1层[AttackUp](最多20层)",
+      "simpleDesc": [
+        {
+          "abilityID": 9800,
+          "simpleDesc": ""
+        },
+        {
+          "abilityID": 980001,
+          "simpleDesc": "获得攻击等级提升 "
+        }
+      ]
+    },
+    {
+      "id": 9801,
+      "name": "强韧丸",
+      "desc": "回合开始时，使体力上限最高的1名友方单位获得(本场战斗其受到来自敌方单位技能攻击的伤害次数)层[DefenseUp](最多6层)。",
+      "simpleDesc": [
+        {
+          "abilityID": 9801,
+          "simpleDesc": "获得防御等级提升 "
+        }
+      ]
+    },
+    {
+      "id": 9802,
+      "name": "电击斧",
+      "desc": "消耗[Charge]层数的技能攻击命中时，使目标增加1级[Burst]强度(每个技能最多3次)\n\n根据编入的拥有施加[Burst]或获得[Charge]的攻击技能的友方单位数，相应强化本饰品效果(不包括E.G.O技能，包括待命人员)。\n\n- 不低于6名\n对敌方单位造成[Burst]伤害时，使自身获得1层[Charge](每个技能最多3次)\n\n- 不低于8名\n消耗[Charge]层数的技能攻击命中时，对目标施加1层[Burst](每个技能最多3次)",
+      "simpleDesc": [
+        {
+          "abilityID": 9802,
+          "simpleDesc": "增加1级破裂 强度"
+        },
+        {
+          "abilityID": 980201,
+          "simpleDesc": ""
+        },
+        {
+          "abilityID": 980202,
+          "simpleDesc": "获得1层充能 "
+        },
+        {
+          "abilityID": 980203,
+          "simpleDesc": "施加1层破裂"
+        }
+      ]
+    },
+    {
+      "id": 9803,
+      "name": "镜中花",
+      "desc": "每回合开始时，使全体敌方单位增加3级[Burst]强度并对其施加1层[Burst](若是集中遭遇战，则改为所有部位)\n\n根据编入的拥有施加[Burst]或获得[Breath]的攻击技能的友方单位数，相应强化本饰品效果(不包括E.G.O技能，包括待命人员)。\n\n- 不低于6名\n技能命中并触发[Burst]伤害时，使自身获得1层[Breath](每个技能最多3次)\n\n- 不低于10名\n技能命中并暴击时，对目标施加1层[Burst](每个技能最多3次)",
+      "simpleDesc": [
+        {
+          "abilityID": 9803,
+          "simpleDesc": "增加3级破裂 强度并施加1层破裂 "
+        },
+        {
+          "abilityID": 980301,
+          "simpleDesc": ""
+        },
+        {
+          "abilityID": 980302,
+          "simpleDesc": "获得1层呼吸法 "
+        },
+        {
+          "abilityID": 980303,
+          "simpleDesc": "施加1层破裂"
+        }
+      ]
+    },
+    {
+      "id": 9804,
+      "name": "水中月",
+      "desc": "攻击命中带有的[Burst]强度不低于5级的敌方单位时，使自身增加1级[Breath]强度并使自身获得1层[Breath](每个技能最多3次)。\n\n根据编入的拥有施加[Burst]或获得[Breath]的攻击技能的友方单位数，相应强化本饰品效果(不包括E.G.O技能，包括待命人员)。\n\n技能攻击命中时，若目标的[Burst]强度不低于20级，则使该技能暴击时造成的伤害+10%(每有1名编入且符合以上条件的友方单位，使该技能暴击时造成的伤害额外+3%)\n\n- 不低于12名\n技能命中并暴击时，随机解除自身1种可解除的负面状态(每回合每名友方单位最多1次)",
+      "simpleDesc": [
+        {
+          "abilityID": 9804,
+          "simpleDesc": "增加呼吸法 强度并获得呼吸法 层数"
+        },
+        {
+          "abilityID": 980401,
+          "simpleDesc": ""
+        },
+        {
+          "abilityID": 980402,
+          "simpleDesc": "暴击时造成的伤害增加"
+        },
+        {
+          "abilityID": 980403,
+          "simpleDesc": "随机解除1种负面状态"
+        }
+      ]
+    },
+    {
+      "id": 9795,
+      "name": "落坠的一滴",
+      "desc": "若拥有消耗[BloodDinner]的技能的友方单位不低于3名，则触发该效果。(不包括E.G.O技能与待命人员)\n\n消耗[BloodDinner]的技能使用前，若目标的[Laceration]强度不低于30级，则使其[Laceration]强度减少至15级，并获得层数相当于减少的[Laceration]强度的[BloodDinner]。(每回合全体敌方单位共计最多1次，群体技能仅对主要目标生效)\n\n该效果每获得10层[BloodDinner]，下回合使拥有消耗[BloodDinner]的技能的友方单位获得1层威力提升 与1层伤害强化 (最多4层)",
+      "simpleDesc": [
+        {
+          "abilityID": 9795,
+          "simpleDesc": "流血 强度减少，获得血宴 "
+        },
+        {
+          "abilityID": 979501,
+          "simpleDesc": "获得威力提升 与伤害强化 "
+        }
+      ]
+    },
+    {
+      "id": 9796,
+      "name": "悲闷的吐息",
+      "desc": "若第5顺位友方单位的[Breath]强度与[Breath]层数之和不低于50级，则其技能拼点胜利或单方面攻击时，该技能中的所有硬币必定朝向正面(若是减算硬币，则改为反面)，并使该技能暴击时造成的伤害+80%(每场战斗最多1次，不包括E.G.O技能)\n\n若编入的拥有增加[Breath]强度或获得[Breath]层数的攻击技能的友方单位不低于5名，则使第5顺位友方单位暴击时造成的伤害+60%(每额外编入1名符合以上条件的友方单位，使暴击时造成的伤害额外+20%，包括待命人员)",
+      "simpleDesc": [
+        {
+          "abilityID": 9796,
+          "simpleDesc": "暴击时造成的伤害增加"
+        },
+        {
+          "abilityID": 979601,
+          "simpleDesc": "暴击时造成的伤害增加"
+        }
+      ]
+    },
+    {
+      "id": 9797,
+      "name": "将毁的火炮",
+      "desc": "战斗开始时，每回合使自身获得2层[AttackDmgUp]并对自身施加2层[Vulnerable]\n从第2回合起，每回合额外获得1层[AttackDmgUp]并额外施加1层[Vulnerable](最多额外8层)",
+      "simpleDesc": [
+        {
+          "abilityID": 9797,
+          "simpleDesc": "获得伤害强化 并施加易损 "
+        },
+        {
+          "abilityID": 979701,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9798,
+      "name": "贪欲之棘",
+      "desc": "每3回合，对全体带有[Laceration]的敌方单位(或部位)施加2层[RoseThorn]。\n若全体敌方单位(或所有部位)均带有[Laceration]，则对其施加4层[RoseThorn]。",
+      "simpleDesc": [
+        {
+          "abilityID": 9798,
+          "simpleDesc": "施加贪食棘"
+        },
+        {
+          "abilityID": 979801,
+          "simpleDesc": "施加贪食棘"
+        }
+      ]
+    }
+  ]
+}
