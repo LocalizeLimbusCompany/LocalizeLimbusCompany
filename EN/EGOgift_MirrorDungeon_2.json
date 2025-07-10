@@ -14,7 +14,7 @@
     {
       "id": 9158,
       "name": "Purloined Flame",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Combustion] or 'Unique Burn'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nOn Hit with a Skill(including E.G.O Skills): if the target has 3+ [Combustion] Count, activate [Combustion] once on the target. (target loses 1 [Combustion] Count; activates once per Skill)\n\nTurn End: targets with 3+ [Combustion] Count activates [Combustion] one more time (target loses 1 [Combustion] Count)\n\nIf a target with [Combustion] is defeated(for Abnormalities, when the Core is defeated), inflict its remaining [Combustion] Potency to one of the enemies with the least [Combustion] Potency at the next Turn Start.\n\nTurn Start: for this turn, inflict 4 [AttackDown] to enemies with [Combustion]\n\nIf a target with [Combustion] is defeated, at the next Turn Start, (defeated enemy's [Combustion] Potency / 15) allies with Skills that inflict [Combustion] gain 2 [AttackDmgUp]. (once per turn)",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Combustion] or 'Unique Burn'. (except E.G.O Skills, only counts Identities on the field)\n\nOn Hit with a Skill(including E.G.O Skills): if the target has 3+ [Combustion] Count, activate [Combustion] once on the target. (target loses 1 [Combustion] Count; activates once per Skill)\n\nTurn End: targets with 3+ [Combustion] Count activates [Combustion] one more time (target loses 1 [Combustion] Count)\n\nIf a target with [Combustion] is defeated(for Abnormalities, when the Core is defeated), inflict its remaining [Combustion] Potency to one of the enemies with the least [Combustion] Potency at the next Turn Start.\n\nTurn Start: for this turn, inflict 4 [AttackDown] to enemies with [Combustion]\n\nIf a target with [Combustion] is defeated, at the next Turn Start, (defeated enemy's [Combustion] Potency / 15) allies with Skills that inflict [Combustion] gain 2 [AttackDmgUp]. (once per turn)",
       "simpleDesc": [
         {
           "abilityID": 9158,
@@ -52,7 +52,7 @@
     {
       "id": 9162,
       "name": "Hemorrhagic Shock",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Laceration] or 'Unique Bleed' effects. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nOn ally Clash Win: activate the enemy's [Laceration] once. (once per turn for each ally)\n\nEnemies become Staggerable by [Laceration] Damage; if an enemy gets Staggered due to [Laceration] damage mid-Clash, activate [Laceration] (# of remaining enemy Coins) times\n\nIf all enemies have [Laceration], they lose 2 Defense Levels. At Turn End, inflict (# of [Laceration] activations x 2) [DefenseDown] (max 20)\n\nWhen inflicting [Laceration] Potency or 'Unique Bleed' with Skill effects, inflict 3 [Laceration] Potency and +1 [Laceration] Count on the target",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Laceration] or 'Unique Bleed' effects. (except E.G.O Skills, only counts Identities on the field)\n\nOn ally Clash Win: activate the enemy's [Laceration] once. (once per turn for each ally)\n\nEnemies become Staggerable by [Laceration] Damage; if an enemy gets Staggered due to [Laceration] damage mid-Clash, activate [Laceration] (# of remaining enemy Coins) times\n\nIf all enemies have [Laceration], they lose 2 Defense Levels. At Turn End, inflict (# of [Laceration] activations x 2) [DefenseDown] next turn (max 20)\n\nWhen inflicting [Laceration] Potency or 'Unique Bleed' with Skill effects, inflict 3 [Laceration] Potency and +1 [Laceration] Count on the target",
       "simpleDesc": [
         {
           "abilityID": 9162,
@@ -105,7 +105,7 @@
     {
       "id": 9166,
       "name": "Epicenter",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency or Count. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n(If an Identity only has Attack Skills that gain [Vibration] Count on self, this E.G.O Gift does not activate for them)\n\nWhen winning a Clash with a Skill that consumed [Vibration] Count on self: if the target does not have [Vibration], inflict +3 [Vibration] Count\n\nTurn Start: gain Clash Power +([Vibration] Count on self / 5) (max 3)\n\nWhen using a Skill that consumes [Vibration] Count on self: if the target is defeated or Staggered, gain +([Vibration] Count consumed / 2) [Vibration] Count (once per Skill)",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency or Count. (except E.G.O Skills, only counts Identities on the field)\n(If an Identity only has Attack Skills that gain [Vibration] Count on self, this E.G.O Gift does not activate for them)\n\nWhen winning a Clash with a Skill that consumed [Vibration] Count on self: if the target does not have [Vibration], inflict +3 [Vibration] Count\n\nTurn Start: gain Clash Power +([Vibration] Count on self / 5) (max 3)\n\nWhen using a Skill that consumes [Vibration] Count on self: if the target is defeated or Staggered, gain +([Vibration] Count consumed / 2) [Vibration] Count (once per Skill)",
       "simpleDesc": [
         {
           "abilityID": 9166,
@@ -124,7 +124,7 @@
     {
       "id": 9167,
       "name": "Omnivibro-octovecti-bell",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency, Count, or 'Unique Tremor'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n(If an Identity only has Attack Skills that gain [Vibration] Count on self, this E.G.O Gift does not activate for them)\n\nWhen winning a Clash with a Skill that inflicts [Vibration] Potency or Count, or consumes [Vibration] Count on self: inflict (# of remaining Coins) [Vibration] Potency against the target; if the target does not have [Vibration], inflict +3 [Vibration] Count\n\nTurn Start: gain (1 + ([Vibration] Count on self / 5)) [ParryingResultUp]. (max 3)\n\nWhen using a Skill that consumes [Vibration] Count on self: when defeating or Staggering a target, gain ([Vibration] Count consumed / 2) [Vibration] Count (once per Skill)\n\nSkills that consume [Vibration] Count on self deal +([Vibration] consumed on self + [Vibration] Potency on the enemy + 5)% damage (except E.G.O Skills; max 50%)",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency, Count, or 'Unique Tremor'. (except E.G.O Skills, only counts Identities on the field)\n(If an Identity only has Attack Skills that gain [Vibration] Count on self, this E.G.O Gift does not activate for them)\n\nWhen winning a Clash with a Skill that inflicts [Vibration] Potency or Count, or consumes [Vibration] Count on self: inflict (# of remaining Coins) [Vibration] Potency against the target; if the target does not have [Vibration], inflict +3 [Vibration] Count\n\nTurn Start: gain (1 + ([Vibration] Count on self / 5)) [ParryingResultUp]. (max 3)\n\nWhen using a Skill that consumes [Vibration] Count on self: when defeating or Staggering a target, gain ([Vibration] Count consumed / 2) [Vibration] Count (once per Skill)\n\nSkills that consume [Vibration] Count on self deal +([Vibration] consumed on self + [Vibration] Potency on the enemy + 5)% damage (except E.G.O Skills; max 50%)",
       "simpleDesc": [
         {
           "abilityID": 9167,
@@ -158,7 +158,7 @@
     {
       "id": 9170,
       "name": "Eerie Effigy",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Burst] Potency or Count. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n[Burst] effects deal +100% damage against enemy Shields\nIf the target has less than 15 [Burst] Potency, inflict 2 more Potency when inflicting [Burst] Potency\n\nIf [Burst] cannot be applied due to Skill effects, gain Coin Power +1 instead",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Burst] Potency or Count. (except E.G.O Skills, only counts Identities on the field)\n[Burst] effects deal +100% damage against enemy Shields\nIf the target has less than 15 [Burst] Potency, inflict 2 more Potency when inflicting [Burst] Potency\n\nIf [Burst] cannot be applied due to Skill effects, gain Coin Power +1 instead",
       "simpleDesc": [
         {
           "abilityID": 9170,
@@ -177,7 +177,7 @@
     {
       "id": 9171,
       "name": "Ruin",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Burst] Potency or Count. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\n[Burst] effects deal +150% damage against enemy Shield\n\nTurn Start: enemies or Parts with [Burst] lose (3 + ([Burst] Potency / 2)) Offense Level and Defense Level. (max 6)\n\nWhen inflicting [Burst] Potency with Skill effects, inflict 2 [Burst] Potency and +1 [Burst] Count against the target. If the target has less than 15 [Burst] Potency, inflict 2 additional [Burst] Potency.\n\nIf [Burst] cannot be applied due to Skill effects, gain Coin Power +(4 / # of Coins) instead",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Burst] Potency or Count. (except E.G.O Skills, only counts Identities on the field)\n\n[Burst] effects deal +150% damage against enemy Shield\n\nTurn Start: enemies or Parts with [Burst] lose (3 + ([Burst] Potency / 2)) Offense Level and Defense Level. (max 6)\n\nWhen inflicting [Burst] Potency with Skill effects, inflict 2 [Burst] Potency and +1 [Burst] Count against the target. If the target has less than 15 [Burst] Potency, inflict 2 additional [Burst] Potency.\n\nCoin Power +1 for Plus Coin Skills that inflict [Burst] Potency, Count, or 'Unique Rupture'\nBase Power +(4 / # of Coins) (min. 1; rounded down) for Minus Coin Skills that inflict [Burst] Potency, Count, or 'Unique Rupture'",
       "simpleDesc": [
         {
           "abilityID": 9171,
@@ -193,7 +193,7 @@
         },
         {
           "abilityID": 91713,
-          "simpleDesc": "If [Burst] cannot be applied due to Skill effects, gain Coin Power +(4 / # of Coins) instead"
+          "simpleDesc": "Gain Coin Power"
         }
       ]
     },
@@ -222,7 +222,7 @@
     {
       "id": 9175,
       "name": "Surging Globe",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nWhen using a base Attack Skill, if the enemy has 5+ [Sinking] Potency, heal ([Sinking] Potency on the target / 10) SP on self (max 5)\n\nTurn End: next turn, all allies gain [AttackUp] equal to the number of enemies with -45 SP (max 3)",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills, only counts Identities on the field)\n\nWhen using a base Attack Skill, if the enemy has 5+ [Sinking] Potency, heal ([Sinking] Potency on the target / 10) SP on self (max 5)\n\nTurn End: next turn, all allies gain [AttackUp] equal to the number of enemies with -45 SP (max 3)",
       "simpleDesc": [
         {
           "abilityID": 9175,
@@ -237,11 +237,11 @@
     {
       "id": 9176,
       "name": "Impending Wave",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nWhen hitting and dealing HP damage to an enemy with a Skill that inflicts [Sinking] Potency, Count, or 'Unique Sinking', inflict 4 [Sinking] Potency and +3 [Sinking] Count at Turn End (once per turn for each enemy)\nCombat Start: when activating Gloom or Lust A-Reson., inflict 3 [Sinking] and +3 [Sinking] on all enemies (for Abnormalities, a random Part)\n\nAfter using a base Attack Skill, if the target has 10+ [Sinking] Potency, heal ([Sinking] Potency on the target / 10) SP on self (max 5) and inflict the same amount as [DefenseDown] against the target (max 5; once per turn for each enemy)\n\nTurn End: all allies gain [AttackUp] equal to the number of enemies with -45 SP or without SP next turn (max 6)\n\nWhen activating the [Sinking] effect(including 'Unique Sinking') on the target with an On Hit effect from a Base Attack Skill that inflicts or gains [Sinking] Potency, [Sinking] Count, or 'Unique Sinking', heal 5 SP at Turn End (2 times per turn per Identity)\nIf the unit was at 45 SP at Turn Start, the effect changes to the following: when hitting and activating the [Sinking] effect(including 'Unique Sinking') on the target with a base Attack Skill, inflict +3 [Sinking] Count against the targeted enemy (2 times per turn per Identity)",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills, only counts Identities on the field)\n\nTurn Start: inflict 1 [WaveSinking] against a random enemy\n\nWhen an enemy with [WaveSinking] is killed, at the next Turn Start, transfer the [WaveSinking] Stack from the said enemy to an enemy with the highest, but not maxed, [WaveSinking] Stack\n\nWhen hitting and dealing HP damage to an enemy with a Skill that inflicts [Sinking] Potency, Count, or 'Unique Sinking', inflict 4 [Sinking] Potency and +3 [Sinking] Count at Turn End (once per turn for each enemy)\nCombat Start: when activating Gloom or Lust A-Reson., inflict 3 [Sinking] and +3 [Sinking] on all enemies (for Abnormalities, a random Part)\n\nAfter using a base Attack Skill, if the target has 10+ [Sinking] Potency, heal ([Sinking] Potency on the target / 10) SP on self (max 5) and inflict the same amount as [DefenseDown] against the target (max 5; once per turn for each enemy)\n\nTurn End: all allies gain [AttackUp] equal to the number of enemies with -45 SP or without SP next turn (max 6)\n\nCoin Power +1 for Plus Coin Skills that inflict [Sinking] Potency, Count, or 'Unique Sinking'\nBase Power +(4 / # of Coins) (min. 1; rounded down) for Minus Coin Skills that inflict [Sinking] Potency, Count, or 'Unique Sinking'\n\nWhen activating the [Sinking] effect(including 'Unique Sinking') on the target with an On Hit effect from a Base Attack Skill that inflicts or gains [Sinking] Potency, [Sinking] Count, or 'Unique Sinking', heal 5 SP at Turn End (2 times per turn per Identity)\nIf the unit was at 45 SP at Turn Start, the effect changes to the following: when hitting and activating the [Sinking] effect(including 'Unique Sinking') on the target with a base Attack Skill, inflict +3 [Sinking] Count against the targeted enemy (2 times per turn per Identity)",
       "simpleDesc": [
         {
           "abilityID": 9176,
-          "simpleDesc": "Inflict Sinking Potency and Count"
+          "simpleDesc": "Inflict Sinking"
         },
         {
           "abilityID": 91761,
@@ -249,11 +249,31 @@
         },
         {
           "abilityID": 91762,
-          "simpleDesc": "Gain Offense Level Up"
+          "simpleDesc": "Apply Offense Level Up"
         },
         {
           "abilityID": 91763,
-          "simpleDesc": "Inflict Sinking Count"
+          "simpleDesc": "Heal SP"
+        },
+        {
+          "abilityID": 91764,
+          "simpleDesc": "Inflict Sinking"
+        },
+        {
+          "abilityID": 91765,
+          "simpleDesc": "Gain Coin Power"
+        },
+        {
+          "abilityID": 91766,
+          "simpleDesc": "Gain Base Power"
+        },
+        {
+          "abilityID": 91767,
+          "simpleDesc": "Inflict Reflux"
+        },
+        {
+          "abilityID": 91768,
+          "simpleDesc": "Inflict Reflux"
         }
       ]
     },
@@ -271,7 +291,7 @@
     {
       "id": 9180,
       "name": "Cask Spirits",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply or gain [Breath] Potency or Count. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nTurn End: If an ally has more than 20 [Breath] Potency on self, the ally consumes 1 [Breath] Potency to gain 1 [Breath] Count\n\nTurn End: 1 ally with the highest [Breath] Potency and 1 ally with the highest [Breath] Count] gain 2 [Agility] and 1 [AttackUp] (can activate on the same Identity)\n\nWhen gaining [Breath] Potency from Skill effects, gain additional 2 [Breath] Potency and +2 [Breath] Count. If the sum of [Breath] Potency and Count on self is less than 20, gain 3 [Breath] Potency and +3 [Breath] Count instead.\n\nCombat End: at more than 40 [Breath] Potency, consume 15 [Breath] Potency to [Discard] 1 Skill of the lowest rank in all of that unit's Skill Slots (once per turn for each character)",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply or gain [Breath] Potency or Count. (except E.G.O Skills, only counts Identities on the field)\n\nTurn End: If an ally has more than 20 [Breath] Potency on self, the ally consumes 1 [Breath] Potency to gain 1 [Breath] Count\n\nTurn End: 1 ally with the highest [Breath] Potency and 1 ally with the highest [Breath] Count gain 2 [Agility] and 1 [AttackUp] next turn (can activate on the same Identity)\n\nWhen gaining [Breath] Potency from Skill effects, gain additional 2 [Breath] Potency and +2 [Breath] Count. If the sum of [Breath] Potency and Count on self is less than 20, gain 3 [Breath] Potency and +3 [Breath] Count instead.\n\nCombat End: at more than 40 [Breath] Potency, consume 15 [Breath] Potency to [Discard] 1 Skill of the lowest rank in all of that unit's Skill Slots (once per turn for each character)",
       "simpleDesc": [
         {
           "abilityID": 9180,
@@ -305,7 +325,7 @@
     {
       "id": 9183,
       "name": "Insulator",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that gain [Charge] Count or 'Unique Charge'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nAfter Attack With a Skill Attack that consumes [Charge] Count on self: if the target is defeated, gain ([Charge] Count consumed by the Skill / 3) [Charge] Count\n\nTurn Start: at less than 3 [Charge] Count, gain +3 [Charge] Count\nTurn Start: at 3+ [Charge] Count, gain 1 [AttackDmgUp]",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that gain [Charge] Count or 'Unique Charge'. (except E.G.O Skills, only counts Identities on the field)\n\nAfter Attack With a Skill Attack that consumes [Charge] Count on self: if the target is defeated, gain ([Charge] Count consumed by the Skill / 3) [Charge] Count\n\nTurn Start: at less than 3 [Charge] Count, gain +3 [Charge] Count\nTurn Start: at 3+ [Charge] Count, gain 1 [AttackDmgUp]",
       "simpleDesc": [
         {
           "abilityID": 9183,
@@ -320,7 +340,7 @@
     {
       "id": 9184,
       "name": "T-5 Perpetual Motion Machine",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that gain [Charge] Count or 'Unique Charge'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nTurn Start: at less than 3 [Charge] Count, gain +3 [Charge] Count.\nTurn Start: at 5+ [Charge] Count, gain +2 min/max Speed, 1 [Enhancement], and 2 [AttackDmgUp].\n\nAfter Attack with a Skill that consumed [Charge] Count on self: if the target is defeated, gain +([Charge] Count consumed by the Skill / 3) [Charge] Count; next turn, gain 1 [PlusCoinValueUp]\n\nAfter Attack with a Skill 3 that consumed [Charge] Count on self: if the target is defeated, or if the ally who used the Skill is at 3+ [Charge], they add 1 Skill 3 to the list of Skills for the next upcoming turn. (once per turn for each ally; 'Unique Charge' does not interact with this effect)",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that gain [Charge] Count or 'Unique Charge'. (except E.G.O Skills, only counts Identities on the field)\n\nTurn Start: at less than 3 [Charge] Count, gain +5 [Charge] Count.\nTurn Start: at 5+ [Charge] Count, gain +2 min/max Speed, 1 [Enhancement], and 2 [AttackDmgUp].\n\nAll allies on the field gain [ShareCharge] at Turn Start.\n\nAfter Attack with a Skill 3 that consumes or gains [Charge] Count on self: if the target is defeated, or if the ally who used the Skill is at 3+ [Charge], they add 1 Skill 3 to the list of Skills for the next upcoming turn. (once per turn for each ally)",
       "simpleDesc": [
         {
           "abilityID": 9184,

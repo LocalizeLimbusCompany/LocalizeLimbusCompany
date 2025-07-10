@@ -945,7 +945,7 @@
     {
       "id": 9041,
       "name": "Red Order",
-      "desc": "Whenever an ally inflicts [Sinking] Potency, Count, or 'Unique Sinking' on enemies with Skill Effects, the ally gains 1 'Offense Level' next turn. (Max 3)\n\nAllies with Wrath Affinity Attack Skills, upon inflicting [Sinking] Potency or Count on enemies with Skill Effects, gain 2 'Offense Level' next turn instead. (Max 4)",
+      "desc": "Whenever an ally inflicts [Sinking] Potency, Count, or 'Unique Sinking' on enemies with Skill Effects, the ally gains 1 'Offense Level' next turn. (Max 3)\n\nAllies with Gloom or Wrath Affinity Attack Skills, upon inflicting [Sinking] Potency or Count on enemies with Skill Effects, gain 2 'Offense Level' next turn instead. (Max 4)",
       "simpleDesc": [
         {
           "abilityID": 9041,
@@ -960,7 +960,7 @@
     {
       "id": 19041,
       "name": "Red Order+",
-      "desc": "Whenever an ally inflicts [Sinking] Potency, Count, or 'Unique Sinking' on enemies with Skill Effects, the ally gains 1 'Offense Level' next turn. <style=\"upgradeHighlight\">(Max 4)</style>\n\nAllies with Wrath Affinity Attack Skills, upon inflicting [Sinking] Potency or Count on enemies with Skill Effects, gain 2 'Offense Level' next turn instead. <style=\"upgradeHighlight\">(Max 5)</style>",
+      "desc": "Whenever an ally inflicts [Sinking] Potency, Count, or 'Unique Sinking' on enemies with Skill Effects, the ally gains 1 'Offense Level' next turn. <style=\"upgradeHighlight\">(Max 4)</style>\n\nAllies with Gloom or Wrath Affinity Attack Skills, upon inflicting [Sinking] Potency or Count on enemies with Skill Effects, gain 2 'Offense Level' next turn instead. <style=\"upgradeHighlight\">(Max 5)</style>",
       "simpleDesc": [
         {
           "abilityID": 19041,
@@ -975,7 +975,7 @@
     {
       "id": 29041,
       "name": "Red Order++",
-      "desc": "Whenever an ally inflicts [Sinking] Potency, Count, or 'Unique Sinking' on enemies with Skill Effects, the ally <style=\"upgradeHighlight\">gains 2 'Offense Level' next turn</style>. (Max 4)\n\nAllies with Wrath Affinity Attack Skills, upon inflicting [Sinking] Potency or Count on enemies with Skill Effects, <style=\"upgradeHighlight\">gain 3 'Offense Level' next turn instead. (Max 6)</style>",
+      "desc": "Whenever an ally inflicts [Sinking] Potency, Count, or 'Unique Sinking' on enemies with Skill Effects, the ally <style=\"upgradeHighlight\">gains 2 'Offense Level' next turn</style>. (Max 4)\n\nAllies with Gloom or Wrath Affinity Attack Skills, upon inflicting [Sinking] Potency or Count on enemies with Skill Effects, <style=\"upgradeHighlight\">gain 3 'Offense Level' next turn instead. (Max 6)</style>",
       "simpleDesc": [
         {
           "abilityID": 29041,
@@ -1113,45 +1113,45 @@
     {
       "id": 9045,
       "name": "Glimpse of Flames",
-      "desc": "Turn End: consume half of [Combustion] Count on enemies with [Combustion] to deal ([Combustion] Potency x consumed [Combustion] Count) bonus Wrath damage. Targets lose ([Combustion] Count consumed by Glimpse of Flames)/2 Defense Levels for the next turn. (Max 3)",
+      "desc": "Turn End: consume half of [Combustion] Count on enemies with [Combustion] to deal ([Combustion] Potency x consumed [Combustion] Count) bonus Wrath damage. (can consume up to 5 [Combustion] Count)\n\nTargets lose ([Combustion] Count consumed by Glimpse of Flames) Defense Levels for the next turn. (max 3)",
       "simpleDesc": [
         {
           "abilityID": 9045,
-          "simpleDesc": "Deal ([Combustion] Potency x [Combustion] Count) Wrath damage"
+          "simpleDesc": "Deal [Combustion] based Wrath damage"
         },
         {
           "abilityID": 90451,
-          "simpleDesc": "Deal ([Combustion] Potency x [Combustion] Count x 2) Wrath damage. Targets lose ([Combustion] Count consumed by Glimpse of Flames)/2 Defense Levels next turn"
+          "simpleDesc": "Reduces Defense Level"
         }
       ]
     },
     {
       "id": 19045,
       "name": "Glimpse of Flames+",
-      "desc": "Turn End: consume half of [Combustion] Count on enemies with [Combustion] to deal <style=\"upgradeHighlight\">([Combustion] Potency x consumed [Combustion] Count x 1.5)</style> bonus Wrath damage. Targets lose ([Combustion] Count consumed by Glimpse of Flames)/2 Defense Levels for the next turn. <style=\"upgradeHighlight\">(Max 5)</style>",
+      "desc": "Turn End: consume half of [Combustion] Count on enemies with [Combustion] to deal ([Combustion] Potency x consumed [Combustion] Count) bonus Wrath damage. <style=\"upgradeHighlight\">(can consume up to 7 [Combustion] Count)</style>\n\nTargets lose ([Combustion] Count consumed by Glimpse of Flames) Defense Levels for the next turn. <style=\"upgradeHighlight\">(max 5)</style>",
       "simpleDesc": [
         {
           "abilityID": 19045,
-          "simpleDesc": "Deal ([Combustion] Potency x [Combustion] Count x 1.5) Wrath damage"
+          "simpleDesc": "Deal [Combustion] based Wrath damage"
         },
         {
           "abilityID": 190451,
-          "simpleDesc": "Deal ([Combustion] Potency x [Combustion] Count x 1.5) Wrath damage. Targets lose ([Combustion] Count consumed by Glimpse of Flames)/2 Defense Levels next turn"
+          "simpleDesc": "Reduces Defense Level"
         }
       ]
     },
     {
       "id": 29045,
       "name": "Glimpse of Flames++",
-      "desc": "Turn End: consume half of [Combustion] Count on enemies with [Combustion] to deal <style=\"upgradeHighlight\">([Combustion] Potency x consumed [Combustion] Count x 2)</style> bonus Wrath damage. Targets lose ([Combustion] Count consumed by Glimpse of Flames)/2 Defense Levels for the next turn. <style=\"upgradeHighlight\">(Max 8)</style>",
+      "desc": "Turn End: consume half of [Combustion] Count on enemies with [Combustion] to deal ([Combustion] Potency x consumed [Combustion] Count) bonus Wrath damage. <style=\"upgradeHighlight\">(can consume up to 10 [Combustion] Count)</style>\n\nTargets lose ([Combustion] Count consumed by Glimpse of Flames) Defense Levels for the next turn. <style=\"upgradeHighlight\">(max 8)</style>",
       "simpleDesc": [
         {
           "abilityID": 29045,
-          "simpleDesc": "Deal ([Combustion] Potency x [Combustion] Count x 2) Wrath damage"
+          "simpleDesc": "Deal [Combustion] based Wrath damage"
         },
         {
           "abilityID": 290451,
-          "simpleDesc": "Deal ([Combustion] Potency x [Combustion] Count x 2) Wrath damage. Targets lose ([Combustion] Count consumed by Glimpse of Flames)/2 Defense Levels next turn"
+          "simpleDesc": "Reduces Defense Level"
         }
       ]
     },
@@ -1263,7 +1263,7 @@
     {
       "id": 9049,
       "name": "Thorny Path",
-      "desc": "When hitting and dealing HP damage to an enemy with a Skill that inflicts [Sinking] Potency or 'Unique Sinking', inflict 3 [Sinking] Potency and +2 [Sinking] Count at Turn End. (Once per enemy per turn)\n\nWhen activating Lust Absolute Resonance, inflict 2 [Sinking] Potency and +3 [Sinking] Count to all enemies(for Abnormalities, a random Part) at Combat Start.",
+      "desc": "When hitting and dealing HP damage to an enemy with a Skill that inflicts [Sinking] Potency or 'Unique Sinking', inflict 3 [Sinking] Potency and +2 [Sinking] Count at Turn End. (Once per enemy per turn)\n\nWhen activating Gloom or Lust Absolute Resonance, inflict 2 [Sinking] Potency and +3 [Sinking] Count to all enemies(for Abnormalities, a random Part) at Combat Start.",
       "simpleDesc": [
         {
           "abilityID": 9049,
@@ -1278,7 +1278,7 @@
     {
       "id": 19049,
       "name": "Thorny Path+",
-      "desc": "When hitting and dealing HP damage to an enemy with a Skill that inflicts [Sinking] Potency or 'Unique Sinking', inflict 3 [Sinking] Potency and +2 [Sinking] Count at Turn End. (Once per enemy per turn)\n\nWhen <style=\"upgradeHighlight\">activating Lust Resonance</style>, inflict 2 [Sinking] Potency and +3 [Sinking] Count to all enemies(for Abnormalities, a random Part) at Combat Start.",
+      "desc": "When hitting and dealing HP damage to an enemy with a Skill that inflicts [Sinking] Potency or 'Unique Sinking', inflict 3 [Sinking] Potency and +2 [Sinking] Count at Turn End. (Once per enemy per turn)\n\nWhen <style=\"upgradeHighlight\">activating Gloom or Lust Resonance</style>, inflict 2 [Sinking] Potency and +3 [Sinking] Count to all enemies(for Abnormalities, a random Part) at Combat Start.",
       "simpleDesc": [
         {
           "abilityID": 19049,
@@ -1293,7 +1293,7 @@
     {
       "id": 29049,
       "name": "Thorny Path++",
-      "desc": "When hitting and dealing HP damage to an enemy with a Skill that inflicts [Sinking] Potency or 'Unique Sinking', inflict <style=\"upgradeHighlight\">4 [Sinking] Potency and +3 [Sinking] Count</style> at Turn End. (Once per enemy per turn)\n\nWhen activating Lust Resonance, inflict 3 [Sinking] Potency and +3 [Sinking] Count to all enemies(for Abnormalities, a random Part) at Combat Start.",
+      "desc": "When hitting and dealing HP damage to an enemy with a Skill that inflicts [Sinking] Potency or 'Unique Sinking', inflict <style=\"upgradeHighlight\">4 [Sinking] Potency and +3 [Sinking] Count</style> at Turn End. (Once per enemy per turn)\n\nWhen activating Gloom or Lust Resonance, inflict 3 [Sinking] Potency and +3 [Sinking] Count to all enemies(for Abnormalities, a random Part) at Combat Start.",
       "simpleDesc": [
         {
           "abilityID": 29049,
@@ -1600,7 +1600,7 @@
     {
       "id": 9060,
       "name": "Thrill",
-      "desc": "Turn Start: inflict 3 [Burst] Potency and +3 [Burst] Count on all enemies. (or all Abnormality Parts)\n\nTurn End: Inflict ([Burst] Potency x [Burst] Count) Gluttony damage to all enemies with 3+ [Burst] Count (for Abnormalities, each Part is considered individually) then reduce [Burst] Count by 2.",
+      "desc": "Turn Start: inflict 3 [Burst] Potency and +3 [Burst] Count on all enemies. (or all Abnormality Parts)\n\nTurn End: Inflict ([Burst] Potency x [Burst] Count) Gluttony damage to all enemies. (for Abnormalities, all Parts) (counts up to 5 Rupture Count)",
       "simpleDesc": [
         {
           "abilityID": 9060,
@@ -1615,7 +1615,7 @@
     {
       "id": 19060,
       "name": "Thrill+",
-      "desc": "Turn Start: inflict <style=\"upgradeHighlight\">4 [Burst] Potency</style> and +3 [Burst] Count on all enemies. (or all Abnormality Parts)\n\nTurn End: Inflict ([Burst] Potency x [Burst] Count) Gluttony damage to all enemies with 3+ [Burst] Count (for Abnormalities, each Part is considered individually) then <style=\"upgradeHighlight\">reduce [Burst] Count by 1</style>.",
+      "desc": "Turn Start: inflict <style=\"upgradeHighlight\">4 [Burst] Potency</style> and +3 [Burst] Count on all enemies. (or all Abnormality Parts)\n\nTurn End: Inflict ([Burst] Potency x [Burst] Count) Gluttony damage to all enemies. (for Abnormalities, all Parts) <style=\"upgradeHighlight\">(counts up to 7 Rupture Count)</style>",
       "simpleDesc": [
         {
           "abilityID": 19060,
@@ -1630,7 +1630,7 @@
     {
       "id": 29060,
       "name": "Thrill++",
-      "desc": "Turn Start: inflict <style=\"upgradeHighlight\">6 [Burst] Potency</style> and +3 [Burst] Count on all enemies. (or all Abnormality Parts)\n\nTurn End: Inflict ([Burst] Potency x [Burst] Count) Gluttony damage to all enemies with 3+ [Burst] Count (for Abnormalities, each Part is considered individually).",
+      "desc": "Turn Start: inflict <style=\"upgradeHighlight\">6 [Burst] Potency</style> and +3 [Burst] Count on all enemies. (or all Abnormality Parts)\n\nTurn End: Inflict ([Burst] Potency x [Burst] Count) Gluttony damage to all enemies. (for Abnormalities, all Parts) <style=\"upgradeHighlight\">(counts up to 10 Rupture Count)</style>",
       "simpleDesc": [
         {
           "abilityID": 29060,
@@ -2113,7 +2113,7 @@
     {
       "id": 9075,
       "name": "Charge-type Gloves",
-      "desc": "Max [Charge] Count +10.\n\nEncounter Start: All allies gain +5 [Charge] Count.\n\nTurn Start: All allies gain +2 [Charge] Count.",
+      "desc": "Max [Charge] Count +10.\n\nEncounter Start: All allies gain +5 [Charge] Count.\n\nTurn Start: All allies gain +2 [Charge] Count.\n\n[#1 Deployed Identity Exclusive Effect] Encounter Start: gain 1 [ChoSuperCharge]",
       "simpleDesc": [
         {
           "abilityID": 9075,
@@ -2132,7 +2132,7 @@
     {
       "id": 19075,
       "name": "Charge-type Gloves+",
-      "desc": "Max [Charge] Count +10.\n\nEncounter Start: All allies gain <style=\"upgradeHighlight\">+6 [Charge] Count.</style>\n\nTurn Start: All allies gain +<style=\"upgradeHighlight\">3</style> [Charge] Count.",
+      "desc": "Max [Charge] Count +10.\n\nEncounter Start: All allies gain <style=\"upgradeHighlight\">+6 [Charge] Count.</style>\n\nTurn Start: All allies gain +<style=\"upgradeHighlight\">3</style> [Charge] Count.\n\n[#1 Deployed Identity Exclusive Effect] Encounter Start: gain <style=\"upgradeHighlight\">10</style> [ChoSuperCharge]",
       "simpleDesc": [
         {
           "abilityID": 19075,
@@ -2151,7 +2151,7 @@
     {
       "id": 29075,
       "name": "Charge-type Gloves++",
-      "desc": "Max [Charge] Count +10.\n\nEncounter Start: All allies gain <style=\"upgradeHighlight\">+8 [Charge] Count.</style>\n\nTurn Start: All allies gain +<style=\"upgradeHighlight\">4</style> [Charge] Count.",
+      "desc": "Max [Charge] Count +10.\n\nEncounter Start: All allies gain <style=\"upgradeHighlight\">+8 [Charge] Count.</style>\n\nTurn Start: All allies gain +<style=\"upgradeHighlight\">4</style> [Charge] Count.\n\n[#1 Deployed Identity Exclusive Effect] Encounter Start: gain <style=\"upgradeHighlight\">20</style> [ChoSuperCharge]",
       "simpleDesc": [
         {
           "abilityID": 29075,
@@ -2350,7 +2350,7 @@
     {
       "id": 9088,
       "name": "Soothe the Dead",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Combustion] Potency, Count, or 'Unique Burn' effects. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nFirst Turn Start of a wave: inflict 3 [Combustion] Count to all enemies (or all Abnormality parts); randomly inflict a total of 15 [Combustion] Potency between all enemies (or all Abnormality parts).\n\nTo Skills that inflict [Combustion] Potency, Count, or 'Unique Burn': Final Power +1, Coin Power +1, inflicted [Combustion] Potency +1, inflicted [Combustion] Count +1.\n\nWhen winning a Clash with a Skill that inflicts [Combustion] Potency, Count, or 'Unique Burn', inflict (# of remaining Coins + 1) [Combustion] Potency to the target enemy.",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Combustion] Potency, Count, or 'Unique Burn' effects. (except E.G.O Skills, only counts Identities on the field)\n\nFirst Turn Start of a wave: inflict 3 [Combustion] Count to all enemies (or all Abnormality parts); randomly inflict a total of 15 [Combustion] Potency between all enemies (or all Abnormality parts).\n\nTo Skills that inflict [Combustion] Potency, Count, or 'Unique Burn': Final Power +1, Coin Power +1, inflicted [Combustion] Potency +1, inflicted [Combustion] Count +1.\n\nWhen winning a Clash with a Skill that inflicts [Combustion] Potency, Count, or 'Unique Burn', inflict (# of remaining Coins + 1) [Combustion] Potency to the target enemy.",
       "simpleDesc": [
         {
           "abilityID": 9088,
@@ -2414,7 +2414,7 @@
     {
       "id": 9090,
       "name": "Bloody Mist",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Laceration] Potency, Count, or 'Unique Bleed' effects. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nAllies inflict double the amount of [Laceration] Potency and Count with Skill effects against enemies.\n\nThe ally highest in the Deployment order) Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed': Coin Power +2, damage dealt +100%. If the enemy attacked by or Clashed with the said ally dies, inflict the remaining [Laceration] Potency on the enemy randomly between all enemies. (for Focused Encounters, Parts)\n\nCoin Power +1 to all Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed'",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Laceration] Potency, Count, or 'Unique Bleed' effects. (except E.G.O Skills, only counts Identities on the field)\n\nAllies inflict double the amount of [Laceration] Potency and Count with Skill effects against enemies.\n\nThe ally highest in the Deployment order) Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed': Coin Power +2, damage dealt +100%. If the enemy attacked by or Clashed with the said ally dies, inflict the remaining [Laceration] Potency on the enemy randomly between all enemies. (for Focused Encounters, Parts)\n\nCoin Power +1 to all Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed'",
       "simpleDesc": [
         {
           "abilityID": 9090,
@@ -2470,7 +2470,7 @@
     {
       "id": 9092,
       "name": "Coupled Oscillation",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency, Count, or 'Unique Tremor'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nFirst Turn Start of a wave: Inflict 5 [Vibration] and +5 [Vibration] Count to all enemies. (or all Abnormality parts)\n\nApply 5 [Vibration] Potency and 2 [Vulnerable] this turn and next turn to enemies affected by [VibrationExplosion]. (activates once per Attack Skill that triggers [VibrationExplosion])\n\nAfter triggering 3 [VibrationExplosion] to a target this turn, Stagger the target at the next Turn Start and add a new Stagger Threshold at 66% and 33% marks of the target's current HP. (once per Encounter)\n\nWhen triggering [Switch_Vibration] or [FusionVibration], inflict 1 [Vulnerable] (3 times per turn)",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency, Count, or 'Unique Tremor'. (except E.G.O Skills, only counts Identities on the field)\n\nFirst Turn Start of a wave: Inflict 5 [Vibration] and +5 [Vibration] Count to all enemies. (or all Abnormality parts)\n\nApply 5 [Vibration] Potency and 2 [Vulnerable] this turn and next turn to enemies affected by [VibrationExplosion]. (activates once per Attack Skill that triggers [VibrationExplosion])\n\nAfter triggering 3 [VibrationExplosion] to a target this turn, Stagger the target at the next Turn Start and add a new Stagger Threshold at 66% and 33% marks of the target's current HP. (once per Encounter)\n\nWhen triggering [Switch_Vibration] or [FusionVibration], inflict 1 [Vulnerable] (3 times per turn)",
       "simpleDesc": [
         {
           "abilityID": 9092,
@@ -2522,7 +2522,7 @@
     {
       "id": 9094,
       "name": "Enrapturing Trance",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Burst] Potency or Count. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nWhen hitting an enemy with a Skill, inflict 5 [Burst] Potency.\n\nWhen [Burst] Count on an enemy drops below 1, consume 10 [Burst] Potency instead of [Burst] Count. (This effect ends when [Burst] Potency drops below 10)\n\nIf the target has less than 3 [Burst] Count, inflict +1 more Count when inflicting [Burst] Count. (3 times per Encounter)",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Burst] Potency or Count. (except E.G.O Skills, only counts Identities on the field)\n\nWhen hitting an enemy with a Skill, inflict 5 [Burst] Potency.\n\nWhen [Burst] Count on an enemy drops below 1, consume 10 [Burst] Potency instead of [Burst] Count. (This effect ends when [Burst] Potency drops below 10)\n\nIf the target has less than 3 [Burst] Count, inflict +1 more Count when inflicting [Burst] Count. (3 times per Encounter)",
       "simpleDesc": [
         {
           "abilityID": 9094,
@@ -2574,7 +2574,7 @@
     {
       "id": 9096,
       "name": "Black Sheet Music",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nOn Hit against an enemy with a Skill: inflict 5 [Sinking] Potency.\n\nTurn Start: enemies or Parts with [Sinking] regain ([Sinking] Count each enemy lost On Hit last turn / 2) [Sinking] Count.\n\nIf the Base Attack Skill hits against a target with less than 0 SP(for enemies without SP, if they have 1.2+ Gloom Resist.), inflict ([Sinking] Potency / 10) Gloom Affinity damage (min 1, this effect can activate up to 10 times per turn)",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills, only counts Identities on the field)\n\nOn Hit against an enemy with a Skill: inflict 5 [Sinking] Potency.\n\nTurn Start: enemies or Parts with [Sinking] regain ([Sinking] Count each enemy lost On Hit last turn / 2) [Sinking] Count.\n\nOn Hit with a Base Attack Skill: deal ([Sinking] Potency on target / 10) Gloom damage (min 1 damage)\n\nOn Hit with an Attack Skill: if the target's SP is below 0, Skill deals more damage the further the target's SP is from 0 (+1% damage per SP)\n- If the target is Panicked, deal +50% damage instead\n- If the target does not have SP, deal +1% damage for every 2 [Sinking] Potency on target. If target has 90+ [Sinking] Potency, deal +50% damage instead",
       "simpleDesc": [
         {
           "abilityID": 9096,
@@ -2585,8 +2585,12 @@
           "simpleDesc": "Inflict [Sinking] Count"
         },
         {
-          "abilityID": 90961,
+          "abilityID": 90962,
           "simpleDesc": "Inflict Gloom Affinity damage"
+        },
+        {
+          "abilityID": 90963,
+          "simpleDesc": "Skills deal more damage"
         }
       ]
     },
@@ -2638,7 +2642,7 @@
     {
       "id": 9098,
       "name": "Lucky Pouch",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply or gain [Breath] Potency or Count. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nCombat Start: If a random ally with [Breath] Critical Hits on an enemy with a Skill, all allies gain 7 [Breath] Potency and +7 [Breath] Count at the next Turn Start. (Once per turn)\n\nSkill 3 of Identities with Skills that apply or gain [Breath] Potency or Count(not counting E.G.O Skills): Final Power +3, Coin Power +(12/# of Coins), damage dealt +(50/# of Coins)%.\n\nCombat Start: a random ally gains 3 [Breath] Potency. (prioritizes Identities that apply or gain [Breath] Potency or Count with their Attack Skills) Prioritizes allies with Gloom Affinity Attack Skills; they gain 3 [Breath] Potency and +2 [Breath] Count.",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply or gain [Breath] Potency or Count. (except E.G.O Skills, only counts Identities on the field)\n\nCombat Start: If a random ally with [Breath] Critical Hits on an enemy with a Skill, all allies gain 7 [Breath] Potency and +7 [Breath] Count at the next Turn Start. (Once per turn)\n\nSkill 3 of Identities with Skills that apply or gain [Breath] Potency or Count(not counting E.G.O Skills): Final Power +3, Coin Power +(12/# of Coins), damage dealt +(50/# of Coins)%.\n\nCombat Start: a random ally gains 3 [Breath] Potency. (prioritizes Identities that apply or gain [Breath] Potency or Count with their Attack Skills) Prioritizes allies with Gloom Affinity Attack Skills; they gain 3 [Breath] Potency and +2 [Breath] Count.",
       "simpleDesc": [
         {
           "abilityID": 9098,
@@ -2690,7 +2694,7 @@
     {
       "id": 9100,
       "name": "T-1 Perpetual Motion Machine",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that gain [Charge] Count or 'Unique Charge'. (Not counting E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nFirst Turn Start of a wave: all allies gain 7 [ChargeForceField].\n\nTurn Start: all allies gain (([Charge] Count + 'Unique Charge')/5 +1) Damage Up. (max 9, rounded up)\n\nEach Identity gains (total [Charge] Count consumed by using Attack Skills during this Encounter / 4) Offense Level Up at Turn Start. (maxes out after consuming 40 [Charge] Count)\n\nEach Identity gains 1 [Charge] every time they consume 20 [Charge] Count. (2 times per Identity per Encounter; Unique Charge does not interact with this effect)\n\nAfter Attack of a Skill that consumed [Charge] Count on self: inflict ([Charge] - 1) [DefenseDown] (5 times per enemy per turn; can inflict up to 3 [DefenseDown] at a time)",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that gain [Charge] Count or 'Unique Charge'. (except E.G.O Skills, only counts Identities on the field)\n\nFirst Turn Start of a wave: all allies gain 7 [ChargeForceField].\n\nTurn Start: all allies gain (([Charge] Count + 'Unique Charge')/5 +1) [AttackDmgUp]. (max 9, rounded up)\n\nEach Identity gains (total [Charge] Count consumed by using Attack Skills during this Encounter / 4) Offense Level Up at Turn Start. (maxes out after consuming 40 [Charge] Count)\n\nEach Identity gains 1 [Charge] every time they consume 10 [Charge] Count. (5 times per Identity per Encounter; Unique Charge does not interact with this effect)\n\nTurn Start: all allies gain 1 [Enhancement] for every 2 [Charge] Potency on their respective selves (max 3)",
       "simpleDesc": [
         {
           "abilityID": 9100,
@@ -4378,7 +4382,7 @@
     {
       "id": 9157,
       "name": "Secret Cookbook",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Combustion] Potency, Count, or 'Unique Burn' effects. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nSkills that inflict [Combustion] Potency, Count, or 'Unique Burn': Final Power +1\n\nOn Clash Win with Skills that inflict [Combustion] Potency, Count, or 'Unique Burn': inflict ((# of remaining Coins / 2) +1) [Combustion] Potency on the target",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Combustion] Potency, Count, or 'Unique Burn' effects. (except E.G.O Skills, only counts Identities on the field)\n\nSkills that inflict [Combustion] Potency, Count, or 'Unique Burn': Final Power +1\n\nOn Clash Win with Skills that inflict [Combustion] Potency, Count, or 'Unique Burn': inflict ((# of remaining Coins / 2) +1) [Combustion] Potency on the target",
       "simpleDesc": [
         {
           "abilityID": 9157,
@@ -4404,7 +4408,7 @@
     {
       "id": 9161,
       "name": "Devotion",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Laceration] Potency, Count, or 'Unique Bleed' effects. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\n1 ally with the fastest Speed) Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed': Coin Power +1, damage dealt +50%\n\nFinal Power +1 to all Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed'.",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Laceration] Potency, Count, or 'Unique Bleed' effects. (except E.G.O Skills, only counts Identities on the field)\n\n1 ally with the fastest Speed) Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed': Coin Power +1, damage dealt +50%\n\nFinal Power +1 to all Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed'.",
       "simpleDesc": [
         {
           "abilityID": 9161,
@@ -4419,7 +4423,7 @@
     {
       "id": 9165,
       "name": "Interlocked Cogs",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency, Count, or 'Unique Tremor'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nWhen [VibrationExplosion] triggers on a target for the 6th time this turn, add an additional Stagger Threshold at 0% mark of their current HP (once per Encounter)\n\nInflict 1 [Vulnerable] when triggering [Switch_Vibration] or [FusionVibration] (once per turn)",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency, Count, or 'Unique Tremor'. (except E.G.O Skills, only counts Identities on the field)\n\nWhen [VibrationExplosion] triggers on a target for the 6th time this turn, add an additional Stagger Threshold at 0% mark of their current HP (once per Encounter)\n\nInflict 1 [Vulnerable] when triggering [Switch_Vibration] or [FusionVibration] (once per turn)",
       "simpleDesc": [
         {
           "abilityID": 9165,
@@ -4434,7 +4438,7 @@
     {
       "id": 9169,
       "name": "Thorny Rope Cuffs",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Burst] Potency or Count. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nWhen an enemy's [Burst] Count drops below 1 in combat, consume 20 [Burst] Potency instead of [Burst] Count (at less than 20 [Burst] Potency, however, the effect ends)\n\nOn Hit, when the target has 1 [Burst] Count in combat, inflict +1 more [Burst] Count (2 times per Encounter)",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Burst] Potency or Count. (except E.G.O Skills, only counts Identities on the field)\n\nWhen an enemy's [Burst] Count drops below 1 in combat, consume 20 [Burst] Potency instead of [Burst] Count (at less than 20 [Burst] Potency, however, the effect ends)\n\nOn Hit, when the target has 1 [Burst] Count in combat, inflict +1 more [Burst] Count (2 times per Encounter)",
       "simpleDesc": [
         {
           "abilityID": 9169,
@@ -4449,7 +4453,7 @@
     {
       "id": 9174,
       "name": "Tangled Bones",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nTurn Start: enemies with [Sinking](for Abnormalities, all Parts) regain ([Sinking] Count lost on hit last turn / 3) [Sinking] Count.\n\nIf the Base Attack Skill hits against a target with less than 0 SP(for enemies without SP, if they have 1.5+ Gloom Resist.), inflict ([Sinking] Potency / 10) Gloom Affinity damage (min 1, 10 times per turn for this effect)",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills, only counts Identities on the field)\n\nTurn Start: enemies with [Sinking](for Abnormalities, all Parts) regain ([Sinking] Count lost on hit last turn / 3) [Sinking] Count.\n\nIf the Base Attack Skill hits against a target with less than 0 SP(for enemies without SP, if they have 1.5+ Gloom Resist.), inflict ([Sinking] Potency / 10) Gloom Affinity damage (min 1, 10 times per turn for this effect)",
       "simpleDesc": [
         {
           "abilityID": 9174,
@@ -4475,7 +4479,7 @@
     {
       "id": 9179,
       "name": "Reminiscence",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that apply or gain [Breath] Potency or Count. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\nSkill 3 of Identities with Skills(except E.G.O Skills) that gain [Breath] Potency or Count: Coin Power +1\n\nCombat Start: a random ally gains 3 [Breath] Potency. (prioritizes Identities that gain [Breath] Potency or Count with their Attack Skills) Prioritizes allies with Gloom Affinity Attack Skills; they gain 3 [Breath] Potency and +2 [Breath] Count instead.",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply or gain [Breath] Potency or Count. (except E.G.O Skills, only counts Identities on the field)\nSkill 3 of Identities with Skills(except E.G.O Skills) that gain [Breath] Potency or Count: Coin Power +1\n\nCombat Start: a random ally gains 3 [Breath] Potency. (prioritizes Identities that gain [Breath] Potency or Count with their Attack Skills) Prioritizes allies with Gloom Affinity Attack Skills; they gain 3 [Breath] Potency and +2 [Breath] Count instead.",
       "simpleDesc": [
         {
           "abilityID": 9179,
@@ -4490,7 +4494,7 @@
     {
       "id": 9182,
       "name": "T-1B Octagonal Bolt",
-      "desc": "Encounter Start: This Gift activates when 5 or more Identities have Attack Skills that gain [Charge] Count or 'Unique Charge'. (except E.G.O Skills, only counts Identities on the field at Encounter Start)\n\nTurn Start: all allies gain (([Charge] Count + 'Unique Charge') / 10) [AttackDmgUp]. (max 2, rounded up)\n\nTurn End: allies without [ChargeForceField] gain 1 [ChargeForceField].\n\nEach Identity gains 1 [Charge] Potency every time they consume 20 [Charge] Count. (2 times per Identity per Encounter; Unique Charge does not interact with this effect)",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that gain [Charge] Count or 'Unique Charge'. (except E.G.O Skills, only counts Identities on the field)\n\nTurn Start: all allies gain (([Charge] Count + 'Unique Charge') / 10) [AttackDmgUp]. (max 2, rounded up)\n\nTurn End: allies without [ChargeForceField] gain 1 [ChargeForceField].\n\nEach Identity gains 1 [Charge] Potency every time they consume 20 [Charge] Count. (2 times per Identity per Encounter; Unique Charge does not interact with this effect)",
       "simpleDesc": [
         {
           "abilityID": 9182,
