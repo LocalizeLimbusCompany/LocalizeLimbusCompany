@@ -2155,19 +2155,19 @@
     {
       "id": 1081221,
       "name": "Lingering Resolve [餘桓]",
-      "desc": "If this unit is defeated in an Encounter, apply [CheerUpXichun] to the subsequently Substituting Identity (the fastest Backup Unit in the Deployment Order) next turn\n\nIn Chain Battles, if this unit is a Backup unit or has Retreated, activate the following:\n- Combat Start: Among the Identities who 1) are at 50% HP or lower, and 2) used a Defense Skill, choose the Identity with the fastest Deployment order. At Turn End, that Identity recovers from Stagger caused by damage and performs a [RetreatForCommon] (2 times per Encounter)",
+      "desc": "If this unit is defeated in an Encounter, apply [CheerUpXichun] to the subsequently Substituting Identity (the fastest Backup Unit in the Deployment Order) next turn\n\nIn Chain Battles, if this unit is a Backup unit or has Retreated, activate the following:\n- Combat Start: Among the Identities who 1) are at 50% HP or lower, and 2) used a Defense Skill, choose the Identity with the earliest Deployment order. At Turn End, that Identity recovers from Stagger caused by damage and performs a [RetreatForCommon] (2 times per Encounter)",
       "summary": "Turn End: Retreat the Identity that, at Combat Start, has 50% or less HP and has used a Defense Skill this turn"
     },
     {
       "id": 1101301,
       "name": "Ammunition Tribute",
-      "desc": "When the 1 ally Identity with the fastest Deployment order among those using [Bullet] finishes their attack, if their current [Bullet] count is fewer than half (rounded up), spend [FireBulletPropellant] on self equal to the total [Bullet] count the affected unit spent and supply them with the same amount of [Bullet] as [FireBulletPropellant] this unit just spent. (can spend up to 3 ammunition) (once per Encounter)\n\n- If the [Bullet] receiving Identity is a Thumb Identity of a higher rank, supply 1 additional [Bullet] they use\n- If the [Bullet] receiving Identity has separate values for Potency and Count, they will be supplied at random.\n- If either Potency or Count is maxed out, supply whichever is not maxed.",
+      "desc": "When the 1 ally Identity with the earliest Deployment order among those using [Bullet] finishes their attack, if their current [Bullet] count is fewer than half (rounded up), spend [FireBulletPropellant] on self equal to the total [Bullet] count the affected unit spent and supply them with the same amount of [Bullet] as [FireBulletPropellant] this unit just spent. (can spend up to 3 ammunition) (once per Encounter)\n\n- If the [Bullet] receiving Identity is a Thumb Identity of a higher rank, supply 1 additional [Bullet] they use\n- If the [Bullet] receiving Identity has separate values for Potency and Count, they will be supplied at random.\n- If either Potency or Count is maxed out, supply whichever is not maxed.",
       "summary": ""
     },
     {
       "id": 1101311,
       "name": "Ammunition Tribute",
-      "desc": "When the 1 ally Identity with the fastest Deployment order among those using [Bullet] finishes their attack, if their current [Bullet] count is fewer than half (rounded up), spend [FireBulletPropellant] on self equal to the total [Bullet] count the affected unit spent and supply them with the same amount of [Bullet] as [FireBulletPropellant] this unit just spent. <style=\"highlight\">(can spend up to 5 ammunition)</style> (once per Encounter)\n\n- If the [Bullet] receiving Identity is a Thumb Identity of a higher rank, supply 1 additional [Bullet] they use\n- If the [Bullet] receiving Identity has separate values for Potency and Count, they will be supplied at random.\n- If either Potency or Count is maxed out, supply whichever is not maxed.",
+      "desc": "When the 1 ally Identity with the earliest Deployment order among those using [Bullet] finishes their attack, if their current [Bullet] count is fewer than half (rounded up), spend [FireBulletPropellant] on self equal to the total [Bullet] count the affected unit spent and supply them with the same amount of [Bullet] as [FireBulletPropellant] this unit just spent. <style=\"highlight\">(can spend up to 5 ammunition)</style> (once per Encounter)\n\n- If the [Bullet] receiving Identity is a Thumb Identity of a higher rank, supply 1 additional [Bullet] they use\n- If the [Bullet] receiving Identity has separate values for Potency and Count, they will be supplied at random.\n- If either Potency or Count is maxed out, supply whichever is not maxed.",
       "summary": ""
     },
     {
@@ -2179,7 +2179,7 @@
     {
       "id": 1101321,
       "name": "Reloader",
-      "desc": "When the 1 ally Identity with the fastest Deployment order among those using [Bullet] finishes their attack, if their current [Bullet] count is fewer than half (rounded up), regain half of the maximum [Bullet] capacity (rounded up; once per Encounter; max [Bullet] regained: 5)\n\n- If the [Bullet] receiving Identity has separate values for Potency and Count, they will gain them at random\n- If either Potency or Count of [Bullet] is maxed out, gain whichever is not maxed\n- This effect does not activate if there are no Identities that use [Bullet]",
+      "desc": "When the 1 ally Identity with the earliest Deployment order among those using [Bullet] finishes their attack, if their current [Bullet] count is fewer than half (rounded up), regain half of the maximum [Bullet] capacity (rounded up; once per Encounter; max [Bullet] regained: 5)\n\n- If the [Bullet] receiving Identity has separate values for Potency and Count, they will gain them at random\n- If either Potency or Count of [Bullet] is maxed out, gain whichever is not maxed\n- This effect does not activate if there are no Identities that use [Bullet]",
       "summary": ""
     },
     {
@@ -2226,6 +2226,72 @@
       "id": 1011321,
       "name": "Designate Target",
       "desc": "When the ally with the slowest Speed attacked an ally: After Attack, gain 1 [AttackDmgUp] next turn (2 times per turn)\n- If the attacked ally is killed by this attack, gain 1 [AttackDmgUp] for the whole Encounter instead (max 2 per Stage per Identity)\n- Can gain only up to 2 [AttackDmgUp] from the above effect."
+    },
+    {
+      "id": 1031202,
+      "name": "In the Name of Love and Hate - !ALERT: E.G.O GEAR SYNC THRESHOLD EXCEEDED!",
+      "desc": "Gain 1 [ThePowerOfLoveAndHate] every time this unit consumes 10 cumulative [ThePowerOfLoveAndHate] Count in this Encounter\n\nEncounter Start: if this unit does not have [HystericGauge], gain [HystericGauge]\n\nEncounter Start: if this unit does not have [ThePowerOfLoveAndHate], gain [ThePowerOfLoveAndHate]\n\nTurn Start:\n- At 0 or higher SP, gain [MagicalGirlAppear] and lose [NoVillain]\n- At less than 0 SP, gain [NoVillain] and lose [MagicalGirlAppear]\n\nThis unit's SP cannot drop below -40 due to the SP loss effects from this unit's Base Attack Skills",
+      "summary": ""
+    },
+    {
+      "id": 1031201,
+      "name": "Magical Girl of Love / Queen of Hatred",
+      "desc": "Deal +2% damage for every [ThePowerOfLoveAndHate] (max 10%)",
+      "summary": ""
+    },
+    {
+      "id": 1031211,
+      "name": "Magical Girl of Love / Queen of Hatred",
+      "desc": "Deal +2% damage for every [ThePowerOfLoveAndHate] (max 10%)\nCombat Start: gain 1 [ArcanaQueenOfHate]",
+      "summary": ""
+    },
+    {
+      "id": 1031221,
+      "name": "Magical Power Charging Support",
+      "desc": "If, among allies that gain [Charge] Count with their Base Attack Skills, 1 ally with the least [Charge] Count uses a Base Attack Skill that gains [Charge] Count, they gain +2 [Charge] Count (2 times per turn)\n- At 0 or higher SP: heal ([Charge] on target x 2) HP (max 10; heals up to 20 per turn)\n- At less than 0 SP: heal ([Charge] on target) SP (max 5; heals up to 10 per turn)",
+      "summary": ""
+    },
+    {
+      "id": 1091302,
+      "name": "The Sword Sharpened with Tears - !ALERT: E.G.O GEAR SYNC THRESHOLD EXCEEDED!",
+      "desc": "Turn Start: at 0 or higher SP, gain [BlessingAlly]\n- Uses Plus Coin Skills as Base Skills\n\nTurn Start: at less than 0 SP, gain [DespairAlly]\n- Uses Minus Coin Skills as Base Skills\n\nWhen gaining [Charge] Count, gain [BlackTearsAlly] instead\n- [BlackTearsAlly] is unaffected by [Charge] Potency",
+      "summary": ""
+    },
+    {
+      "id": 1091303,
+      "name": "Whispers of the Betrayed Knight",
+      "desc": "This unit's SP does not drop below -40 from the following effects:\n- SP loss effects on this unit's Base Skills\n- SP loss effects from allied units' Support Passives\n- SP loss effects from [SwordCutwithTear]\n- SP loss effects from ally death in this unit's 'Base factors decreasing Sanity'\n\nIn an Encounter, when this unit takes damage that brings its SP to -45, maintain this unit's SP at -44 for that turn (once per Encounter)\n(※ This applies only to SP damages; it does not apply to SP changes or SP consuming abilities like using E.G.O Skills)",
+      "summary": ""
+    },
+    {
+      "id": 1091304,
+      "name": "Break, Tear, and Pierce",
+      "desc": "If this unit has [PenetratingSword]: before hitting an enemy with a Base Attack Skill, consume 1 [PenetratingSword] to inflict 1 [Sinking]\n- If this unit has 2+ [PenetratingSword] before this turn's final Base Attack Skill's final Coin hits, consume all of it instead to inflict it as [Sinking]\n\nIf this unit has 3 [SwordCutwithTear]: before hitting an enemy with the final Coin of a Base Attack Skill, consume all [SwordCutwithTear] to inflict 3 [Sinking] and +3 [Sinking] Count, and deal +50% damage with that Coin\n- If this effect activated, reset to 0 SP if this unit has less than 0 SP at Turn End. (when in Panic or 'E.G.O Corrosion', recover) Then, heal 30 SP",
+      "summary": ""
+    },
+    {
+      "id": 1091301,
+      "name": "Magical Girl of Justice / Knight of Despair",
+      "desc": "When in [BlessingAlly] state...\n- Take -(SP / 2)% HP damage from attacks (max 20%)\n\nWhen in [DespairAlly] state...\n- Deal +(-SP/2)% damage with Base Skills (max 20%)",
+      "summary": ""
+    },
+    {
+      "id": 1091311,
+      "name": "Magical Girl of Justice / Knight of Despair",
+      "desc": "When in [BlessingAlly] state...\n- Take -(SP / 2)% HP damage from attacks (max 20%)\n<style=\"highlight\">- Combat Start: at 3+ [ProtectiveSword], gain 1 [Protection]\n- Combat Start: at 5 [ProtectiveSword], gain 2 [Protection] and 1 [ParryingResultUp] instead</style>\n\nWhen in [DespairAlly] state...\n- Deal +(-SP/2)% damage with Base Skills (max 20%)\n<style=\"highlight\">- Combat Start: at 3+ [PenetratingSword] gain 1 [AttackDmgUp]\n- Combat Start: at 5 [PenetratingSword], gain 2 [AttackDmgUp] and 1 [ResultEnhancement] instead</style>",
+      "summary": ""
+    },
+    {
+      "id": 1091321,
+      "name": "For All Those Who Despair...",
+      "desc": "Combat Start: applies to the ally with the earliest Deployment order\n\nAt -15 or less SP, +1 Final Power to Minus Coin Skills",
+      "summary": ""
+    },
+    {
+      "id": 1091331,
+      "name": "For All Those Who Despair...",
+      "desc": "Combat Start: applies to the ally with the earliest Deployment order\n\nAt -15 or less SP, +1 Final Power to Minus Coin Skills\n<style=\"highlight\">At -30 or less SP, +15% damage and +1 Final Power to Minus Coin Skills instead</style>",
+      "summary": ""
     }
   ]
 }

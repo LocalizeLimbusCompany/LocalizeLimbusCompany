@@ -1,0 +1,183 @@
+{
+  "dataList": [
+    {
+      "id": 40000301,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "사랑으로!",
+          "desc": "[WhenUse] 대상의 [Burst]과 [Sinking]의 합 5 당 기본 위력 +1 (최대 2)\n[WhenUse] 자신의 [PowerOfLoveAndJustice] 횟수 10 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 1 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40000302,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "정의의 이름으로!",
+          "desc": "[WhenUse] 대상의 [Burst]과 [Sinking]의 합 7 당 코인 위력 +1 (최대 2)\n[WhenUse] 자신의 [PowerOfLoveAndJustice] 횟수 10 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Burst]과 [Sinking]의 합이 10 이상이면, 다음 턴에 [Binding] 1 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40000303,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "아르카나 비트",
+          "desc": "절망의 기사를 메인 타겟으로 지정함\n[ColdBlackTear]이 가장 많은 아군을 서브 타겟으로 지정함\n- 없을 시, 체력이 가장 적은 아군을 서브 타겟으로 지정함\n아군에게는 데미지를 0으로 부여하고, [Sinking] 및 [ColdBlackTear] 효과를 발동하지 않음\n\n[WinDuel] 서브 타겟인 아군의 [ColdBlackTear] 1 제거",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상이 적군인 경우, [Burst] 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상이 아군인 경우, 체력 5 회복"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상이 적군인 경우, [Burst] 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상이 아군인 경우, 체력 5 회복"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상이 적군인 경우, [Burst] 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상이 아군인 경우, 체력 5 회복"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40000304,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "그 기술을 사용하는 수 밖에!",
+          "desc": "[StartBattle] [ChasingArcana]를 1 얻음\n[StartBattle] 보호막 50 얻음\n[StartBattle] 다음 턴에 [Aggro]를 20 획득함",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40000305,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "영창 - 아르카나 슬레이브",
+          "desc": "[StartBattle] 보호막 50 얻음\n[StartBattle] 다음 턴에 [Aggro]를 20 획득함\n[EndBattle] 남은 보호막 수치가 없다면, 퇴각함",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40000306,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "아르카나 슬레이브",
+          "desc": "[CantDuel]\n잊혀진 기사의 검에게 피해를 주지 않음\n[WornOutKnight]가 있는 적 적중시 턴 종료\n[EndBattle] [UsedTooMuchPower] 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 체력을 현재 체력의 (100 - ([CollapsedPride] 수치 x 33))% 로 만듦"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40000307,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "아르카나 슬레이브",
+          "desc": "[CantDuel]\n코인 효과로만 피해를 줌\n마음을 부수는 검, 마음을 찢는 검, 마음을 꿰뚫는 검에게 피해를 주지 않음\n[WornOutKnight]가 있는 체력 600 이하의 적 적중시 턴 종료\n[EndBattle] [UsedTooMuchPower] 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ([CollapsedPride] 수치 x 200)만큼 고정 피해를 줌"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40000308,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "그 기술을 사용하는 수 밖에!",
+          "desc": "[StartBattle] [ChasingArcanahard]를 1 얻음\n[StartBattle] 보호막 50 얻음\n[StartBattle] 다음 턴에 [Aggro]를 20 획득함",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

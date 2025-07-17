@@ -1124,7 +1124,7 @@
         },
         {
           "abilityID": 90451,
-          "simpleDesc": "방어 레벨이 감소함"
+          "simpleDesc": "[DefenseDown]"
         }
       ]
     },
@@ -1139,7 +1139,7 @@
         },
         {
           "abilityID": 190451,
-          "simpleDesc": "방어 레벨이 감소함"
+          "simpleDesc": "[DefenseDown]"
         }
       ]
     },
@@ -1154,7 +1154,7 @@
         },
         {
           "abilityID": 290451,
-          "simpleDesc": "방어 레벨이 감소함"
+          "simpleDesc": "[DefenseDown]"
         }
       ]
     },
@@ -1562,7 +1562,7 @@
     {
       "id": 9057,
       "name": "야간투시경",
-      "desc": "턴 시작 시, [Charge] 횟수가 15 이상인 인격이 있을 경우 발동.\n\n전투 시작 시, 해당 인격이 [Charge] 횟수를 3 소모하고 이번 턴 동안 공격 레벨이 5 증가.",
+      "desc": "턴 시작 시, [Charge] 횟수가 15 이상인 인격이 있을 경우 발동. (특수 충전을 포함)\n\n전투 시작 시, 해당 인격이 [Charge] 횟수를 3 소모하고 이번 턴 동안 공격 레벨이 5 증가.",
       "simpleDesc": [
         {
           "abilityID": 9057,
@@ -2697,7 +2697,7 @@
     {
       "id": 9100,
       "name": "제 1종 영구기관",
-      "desc": "턴 시작 시, [Charge] 횟수 또는 특수 충전을 획득하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n웨이브 첫 턴 시작 시, 모든 아군이 [ChargeForceField] 7 얻음.\n\n턴 시작 시, 아군이 ([Charge] 횟수와 특수 충전의 합/5+1)만큼 [AttackDmgUp]를 얻음. (최대 9. 올림하여 처리).\n\n각 인격마다 (이번 전투 동안 공격 스킬을 사용하여 누적 소모한 [Charge] 횟수/4)만큼 턴 시작 시, 공격 레벨 증가 얻음. ([Charge] 횟수 40 소모 시, 효과 최대)\n\n각 인격마다 [Charge] 횟수를 10 소모할 때마다 [Charge] 1 얻음. (전투당 인격별로 5회, 특수 충전은 적용되지 않음)\n\n턴 시작시, 모든 아군이 자신의 [Charge] 위력 2 당 [Enhancement] 1 얻음 (최대 3)",
+      "desc": "턴 시작 시, [Charge] 횟수 또는 특수 충전을 획득하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n웨이브 첫 턴 시작 시, 모든 아군이 [ChargeForceField] 7 얻음.\n\n턴 시작 시, 아군이 ([Charge] 횟수/5+1)만큼 [AttackDmgUp]를 얻음. (최대 9. 올림하여 처리. 특수 충전을 포함)\n\n각 인격마다 (이번 전투 동안 공격 스킬을 사용하여 누적 소모한 [Charge] 횟수/4)만큼 턴 시작 시, 공격 레벨 증가 얻음. ([Charge] 횟수 40 소모 시, 효과 최대)\n\n각 인격마다 [Charge] 횟수를 10 소모할 때마다 [Charge] 1 얻음. (전투당 인격별로 5회, 위력 고정인 특수 충전을 제외)\n\n턴 시작시, 모든 아군이 자신의 [Charge] 위력 2 당 [Enhancement] 1 얻음 (최대 3)",
       "simpleDesc": [
         {
           "abilityID": 9100,
@@ -3533,7 +3533,7 @@
     {
       "id": 9132,
       "name": "무정전 전원장치",
-      "desc": "턴 종료 시 [Charge] 횟수가 3 미만인 경우에는 다음 턴 시작 시 [Charge] 횟수 3 증가.\n\n턴 종료 시 [Charge] 횟수가 3 이상인 경우에는 다음 턴 시작 시 [AttackDmgUp] 1 얻음.",
+      "desc": "턴 종료 시 [Charge] 횟수가 3 미만인 경우에는 다음 턴 시작 시 [Charge] 횟수 3 증가. (특수 충전을 포함)\n\n턴 종료 시 [Charge] 횟수가 3 이상인 경우에는 다음 턴 시작 시 [AttackDmgUp] 1 얻음. (특수 충전을 포함)",
       "simpleDesc": [
         {
           "abilityID": 9132,
@@ -3548,7 +3548,7 @@
     {
       "id": 19132,
       "name": "무정전 전원장치+",
-      "desc": "턴 종료 시 [Charge] 횟수가 <style=\"upgradeHighlight\">4</style> 미만인 경우에는 다음 턴 시작 시 [Charge] 횟수 3 증가.\n\n턴 종료 시 [Charge] 횟수가 <style=\"upgradeHighlight\">4</style> 이상인 경우에는 다음 턴 시작 시 [AttackDmgUp] 1 얻음.",
+      "desc": "턴 종료 시 [Charge] 횟수가 <style=\"upgradeHighlight\">4</style> 미만인 경우에는 다음 턴 시작 시 [Charge] 횟수 3 증가. (특수 충전을 포함)\n\n턴 종료 시 [Charge] 횟수가 <style=\"upgradeHighlight\">4</style> 이상인 경우에는 다음 턴 시작 시 [AttackDmgUp] 1 얻음. (특수 충전을 포함)",
       "simpleDesc": [
         {
           "abilityID": 19132,
@@ -3563,7 +3563,7 @@
     {
       "id": 29132,
       "name": "무정전 전원장치++",
-      "desc": "턴 종료 시 [Charge] 횟수가 <style=\"upgradeHighlight\">5</style> 미만인 경우에는 다음 턴 시작 시 [Charge] 횟수 <style=\"upgradeHighlight\">4</style> 증가.\n\n턴 종료 시 [Charge] 횟수가 <style=\"upgradeHighlight\">5</style> 이상인 경우에는 다음 턴 시작 시 [AttackDmgUp] <style=\"upgradeHighlight\">2</style> 얻음.",
+      "desc": "턴 종료 시 [Charge] 횟수가 <style=\"upgradeHighlight\">5</style> 미만인 경우에는 다음 턴 시작 시 [Charge] 횟수 <style=\"upgradeHighlight\">4</style> 증가. (특수 충전을 포함)\n\n턴 종료 시 [Charge] 횟수가 <style=\"upgradeHighlight\">5</style> 이상인 경우에는 다음 턴 시작 시 [AttackDmgUp] <style=\"upgradeHighlight\">2</style> 얻음. (특수 충전을 포함)",
       "simpleDesc": [
         {
           "abilityID": 29132,
@@ -3656,7 +3656,7 @@
     {
       "id": 9135,
       "name": "모조발전기",
-      "desc": "[편성 1번, 2번 인격 전용 효과]\n\n턴 시작 시 [Charge] 횟수와 특수 충전의 합이 10 이상인 경우 발동.\n\n[Charge] 횟수 또는 특수 충전을 획득하거나 소모하는 스킬 3의 코인 위력 +1.\n\n해당 스킬의 기본 위력이 5 미만일 경우 피해량 +25%, 기본 위력이 5 이상일 경우 코인 위력 추가로 +1.",
+      "desc": "[편성 1번, 2번 인격 전용 효과]\n\n턴 시작 시 [Charge] 횟수와 특수 충전의 합이 10 이상인 경우 발동. \n\n[Charge] 횟수 또는 특수 충전을 획득하거나 소모하는 스킬 3의 코인 위력 +1.\n\n해당 스킬의 기본 위력이 5 미만일 경우 피해량 +25%, 기본 위력이 5 이상일 경우 코인 위력 추가로 +1.",
       "simpleDesc": [
         {
           "abilityID": 9135,
@@ -4499,7 +4499,7 @@
     {
       "id": 9182,
       "name": "1B 타입 팔각 볼트",
-      "desc": "턴 시작 시, [Charge] 횟수 또는 특수 충전을 획득하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n턴 시작 시, 아군이 ([Charge] 횟수와 특수 충전의 합/10)만큼 [AttackDmgUp]를 얻음. (최대 2, 올림하여 처리)\n\n턴 종료 시 [ChargeForceField]이 없으면, [ChargeForceField] 1 얻음.\n\n각 인격마다 [Charge] 횟수를 20 소모할 때 [Charge] 위력 1 얻음. (전투당 인격별로 2회, 특수 충전은 적용되지 않음)",
+      "desc": "턴 시작 시, [Charge] 횟수 또는 특수 충전을 획득하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n\n턴 시작 시, 아군이 ([Charge] 횟수/10)만큼 [AttackDmgUp]를 얻음 (최대 2, 올림하여 처리. 특수 충전을 포함)\n\n턴 종료 시 [ChargeForceField]이 없으면, [ChargeForceField] 1 얻음.\n\n각 인격마다 [Charge] 횟수를 20 소모할 때 [Charge] 위력 1 얻음. (전투당 인격별로 2회, 특수 충전은 적용되지 않음)",
       "simpleDesc": [
         {
           "abilityID": 9182,

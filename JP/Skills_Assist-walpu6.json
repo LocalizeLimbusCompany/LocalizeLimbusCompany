@@ -1,0 +1,183 @@
+{
+  "dataList": [
+    {
+      "id": 40000301,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "愛で！",
+          "desc": "[WhenUse] 対象の[Burst]と[Sinking]の合計5につき、基本威力 +1(最大2)\n[WhenUse] 自分の[PowerOfLoveAndJustice]回数が10増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40000302,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "正義の名の下に！",
+          "desc": "[WhenUse] 対象の[Burst]と[Sinking]の合計7につき、コイン威力 +1(最大2)\n[WhenUse] 自分の[PowerOfLoveAndJustice]回数が10増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Burst]と[Sinking]の合計が10以上なら、次のターンに[Binding]1を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40000303,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "アルカナ・ビート",
+          "desc": "絶望の騎士をメインターゲットに指定する\n[ColdBlackTear]が最も多い味方をサブターゲットに指定する\n- いないとき、体力が最も少ない味方をサブターゲットに指定する\n味方に与えるダメージは0になり、[Sinking]および[ColdBlackTear]効果が発動しない\n\n[WinDuel] サブターゲットになった味方の[ColdBlackTear]1を除去する",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象が敵なら、[Burst]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象が味方なら、体力を5回復"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象が敵なら、[Burst]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象が味方なら、体力を5回復"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象が敵なら、[Burst]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象が味方なら、体力を5回復"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40000304,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "あの技を使うしか！",
+          "desc": "[StartBattle] [ChasingArcana]を1得る\n[StartBattle] バリアを50得る\n[StartBattle] 次のターンに[Aggro]を20得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40000305,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "詠唱 - アルカナ・スレイブ",
+          "desc": "[StartBattle] バリアを50得る\n[StartBattle] 次のターンに[Aggro]を20得る\n[EndBattle] バリアが0になったなら、退却する",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40000306,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "アルカナ・スレイブ",
+          "desc": "[CantDuel]\n忘れられた騎士の剣へダメージを与えない\n[WornOutKnight]を持つ敵へ的中時にターン終了\n[EndBattle] [UsedTooMuchPower]を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対処の体力を現体力の(100 - ([CollapsedPride]の数値 × 33))%にする"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40000307,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "アルカナ・スレイブ",
+          "desc": "[CantDuel]\nコイン効果でのみダメージを与える\n心を壊す剣、心を引き裂く剣、心を貫く剣へダメージを与えない\n[WornOutKnight]を持つ体力600以下の敵へ的中時にターン終了\n[EndBattle] [UsedTooMuchPower]を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] ([CollapsedPride]の数値 × 200)だけ固定ダメージを与える"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40000308,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "あの技を使うしか！",
+          "desc": "[StartBattle] [ChasingArcanahard]を1得る\n[StartBattle] バリアを50得る\n[StartBattle] 次のターンに[Aggro]を20得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

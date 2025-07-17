@@ -1121,7 +1121,7 @@
         },
         {
           "abilityID": 90451,
-          "simpleDesc": "Reduces Defense Level"
+          "simpleDesc": "[DefenseDown]"
         }
       ]
     },
@@ -1136,7 +1136,7 @@
         },
         {
           "abilityID": 190451,
-          "simpleDesc": "Reduces Defense Level"
+          "simpleDesc": "[DefenseDown]"
         }
       ]
     },
@@ -1151,7 +1151,7 @@
         },
         {
           "abilityID": 290451,
-          "simpleDesc": "Reduces Defense Level"
+          "simpleDesc": "[DefenseDown]"
         }
       ]
     },
@@ -1559,7 +1559,7 @@
     {
       "id": 9057,
       "name": "Nightvision Goggles",
-      "desc": "This Gift activates when an ally has 15+ [Charge] Count at Turn Start.\n\nCombat Start: the ally with 15+ [Charge] Count loses 3 [Charge] Count and gains 5 'Offense Level' for the turn.",
+      "desc": "This Gift activates when an ally has 15+ [Charge] Count at Turn Start. (including 'Unique Charge')\n\nCombat Start: the ally with 15+ [Charge] Count loses 3 [Charge] Count and gains 5 'Offense Level' for the turn.",
       "simpleDesc": [
         {
           "abilityID": 9057,
@@ -2350,7 +2350,7 @@
     {
       "id": 9088,
       "name": "Soothe the Dead",
-      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Combustion] Potency, Count, or 'Unique Burn' effects. (except E.G.O Skills, only counts Identities on the field)\n\nFirst Turn Start of a wave: inflict 3 [Combustion] Count to all enemies (or all Abnormality parts); randomly inflict a total of 15 [Combustion] Potency between all enemies (or all Abnormality parts).\n\nTo Skills that inflict [Combustion] Potency, Count, or 'Unique Burn': Final Power +1, Coin Power +1, inflicted [Combustion] Potency +1, inflicted [Combustion] Count +1.\n\nWhen winning a Clash with a Skill that inflicts [Combustion] Potency, Count, or 'Unique Burn', inflict (# of remaining Coins + 1) [Combustion] Potency to the target enemy.",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Combustion] Potency, Count, or 'Unique Burn'. (except E.G.O Skills, only counts Identities on the field)\n\nFirst Turn Start of a wave: inflict 3 [Combustion] Count to all enemies (or all Abnormality parts); randomly inflict a total of 15 [Combustion] Potency between all enemies (or all Abnormality parts).\n\nTo Skills that inflict [Combustion] Potency, Count, or 'Unique Burn': Final Power +1, Coin Power +1, inflicted [Combustion] Potency +1, inflicted [Combustion] Count +1.\n\nWhen winning a Clash with a Skill that inflicts [Combustion] Potency, Count, or 'Unique Burn', inflict (# of remaining Coins + 1) [Combustion] Potency to the target enemy.",
       "simpleDesc": [
         {
           "abilityID": 9088,
@@ -2414,7 +2414,7 @@
     {
       "id": 9090,
       "name": "Bloody Mist",
-      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Laceration] Potency, Count, or 'Unique Bleed' effects. (except E.G.O Skills, only counts Identities on the field)\n\nAllies inflict double the amount of [Laceration] Potency and Count with Skill effects against enemies.\n\nThe ally highest in the Deployment order) Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed': Coin Power +2, damage dealt +100%. If the enemy attacked by or Clashed with the said ally dies, inflict the remaining [Laceration] Potency on the enemy randomly between all enemies. (for Focused Encounters, Parts)\n\nCoin Power +1 to all Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed'",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Laceration] Potency, Count, or 'Unique Bleed'. (except E.G.O Skills, only counts Identities on the field)\n\nAllies inflict double the amount of [Laceration] Potency and Count with Skill effects against enemies.\n\nThe ally highest in the Deployment order) Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed': Coin Power +2, damage dealt +100%. If the enemy attacked by or Clashed with the said ally dies, inflict the remaining [Laceration] Potency on the enemy randomly between all enemies. (for Focused Encounters, Parts)\n\nCoin Power +1 to all Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed'",
       "simpleDesc": [
         {
           "abilityID": 9090,
@@ -2694,7 +2694,7 @@
     {
       "id": 9100,
       "name": "T-1 Perpetual Motion Machine",
-      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that gain [Charge] Count or 'Unique Charge'. (except E.G.O Skills, only counts Identities on the field)\n\nFirst Turn Start of a wave: all allies gain 7 [ChargeForceField].\n\nTurn Start: all allies gain (([Charge] Count + 'Unique Charge')/5 +1) [AttackDmgUp]. (max 9, rounded up)\n\nEach Identity gains (total [Charge] Count consumed by using Attack Skills during this Encounter / 4) Offense Level Up at Turn Start. (maxes out after consuming 40 [Charge] Count)\n\nEach Identity gains 1 [Charge] every time they consume 10 [Charge] Count. (5 times per Identity per Encounter; Unique Charge does not interact with this effect)\n\nTurn Start: all allies gain 1 [Enhancement] for every 2 [Charge] Potency on their respective selves (max 3)",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that gain [Charge] Count or 'Unique Charge'. (except E.G.O Skills, only counts Identities on the field)\n\nFirst Turn Start of a wave: all allies gain 7 [ChargeForceField].\n\nTurn Start: all allies gain (([Charge] Count)/5 +1) [AttackDmgUp]. (max 9, rounded up; including 'Unique Charge')\n\nEach Identity gains (total [Charge] Count consumed by using Attack Skills during this Encounter / 4) Offense Level Up at Turn Start. (maxes out after consuming 40 [Charge] Count)\n\nEach Identity gains 1 [Charge] every time they consume 10 [Charge] Count. (5 times per Identity per Encounter; does not interact with Unique Charge with fixed Potency)\n\nTurn Start: all allies gain 1 [Enhancement] for every 2 [Charge] Potency on their respective selves (max 3)",
       "simpleDesc": [
         {
           "abilityID": 9100,
@@ -3530,7 +3530,7 @@
     {
       "id": 9132,
       "name": "UPS System",
-      "desc": "Turn End: If at less than 3 [Charge] Count, gain +3 [Charge] Count next Turn Start.\n\nTurn End: If at 3+ [Charge] Count, gain 1 [AttackDmgUp] next Turn Start.",
+      "desc": "Turn End: If at less than 3 [Charge] Count, gain +3 [Charge] Count next Turn Start. (including 'Unique Charge')\n\nTurn End: If at 3+ [Charge] Count, gain 1 [AttackDmgUp] next Turn Start. (including 'Unique Charge')",
       "simpleDesc": [
         {
           "abilityID": 9132,
@@ -3545,7 +3545,7 @@
     {
       "id": 19132,
       "name": "UPS System+",
-      "desc": "Turn End: If at less than <style=\"upgradeHighlight\">4</style> [Charge] Count, gain +3 [Charge] Count next Turn Start.\n\nTurn End: If at <style=\"upgradeHighlight\">4+</style> [Charge] Count, gain 1 [AttackDmgUp] next Turn Start.",
+      "desc": "Turn End: If at less than <style=\"upgradeHighlight\">4</style> [Charge] Count, gain +3 [Charge] Count next Turn Start. (including 'Unique Charge')\n\nTurn End: If at <style=\"upgradeHighlight\">4+</style> [Charge] Count, gain 1 [AttackDmgUp] next Turn Start. (including 'Unique Charge')",
       "simpleDesc": [
         {
           "abilityID": 19132,
@@ -3560,7 +3560,7 @@
     {
       "id": 29132,
       "name": "UPS System++",
-      "desc": "Turn End: If at less than <style=\"upgradeHighlight\">5</style> [Charge] Count, gain <style=\"upgradeHighlight\">+4</style> [Charge] Count next Turn Start.\n\nTurn End: If at <style=\"upgradeHighlight\">5+</style> [Charge] Count, gain <style=\"upgradeHighlight\">2</style> [AttackDmgUp] next Turn Start.",
+      "desc": "Turn End: If at less than <style=\"upgradeHighlight\">5</style> [Charge] Count, gain <style=\"upgradeHighlight\">+4</style> [Charge] Count next Turn Start. (including 'Unique Charge')\n\nTurn End: If at <style=\"upgradeHighlight\">5+</style> [Charge] Count, gain <style=\"upgradeHighlight\">2</style> [AttackDmgUp] next Turn Start. (including 'Unique Charge')",
       "simpleDesc": [
         {
           "abilityID": 29132,
@@ -4382,7 +4382,7 @@
     {
       "id": 9157,
       "name": "Secret Cookbook",
-      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Combustion] Potency, Count, or 'Unique Burn' effects. (except E.G.O Skills, only counts Identities on the field)\n\nSkills that inflict [Combustion] Potency, Count, or 'Unique Burn': Final Power +1\n\nOn Clash Win with Skills that inflict [Combustion] Potency, Count, or 'Unique Burn': inflict ((# of remaining Coins / 2) +1) [Combustion] Potency on the target",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Combustion] Potency, Count, or 'Unique Burn'. (except E.G.O Skills, only counts Identities on the field)\n\nSkills that inflict [Combustion] Potency, Count, or 'Unique Burn': Final Power +1\n\nOn Clash Win with Skills that inflict [Combustion] Potency, Count, or 'Unique Burn': inflict ((# of remaining Coins / 2) +1) [Combustion] Potency on the target",
       "simpleDesc": [
         {
           "abilityID": 9157,
@@ -4408,7 +4408,7 @@
     {
       "id": 9161,
       "name": "Devotion",
-      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Laceration] Potency, Count, or 'Unique Bleed' effects. (except E.G.O Skills, only counts Identities on the field)\n\n1 ally with the fastest Speed) Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed': Coin Power +1, damage dealt +50%\n\nFinal Power +1 to all Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed'.",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Laceration] Potency, Count, or 'Unique Bleed'. (except E.G.O Skills, only counts Identities on the field)\n\n1 ally with the fastest Speed) Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed': Coin Power +1, damage dealt +50%\n\nFinal Power +1 to all Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed'.",
       "simpleDesc": [
         {
           "abilityID": 9161,
@@ -4494,7 +4494,7 @@
     {
       "id": 9182,
       "name": "T-1B Octagonal Bolt",
-      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that gain [Charge] Count or 'Unique Charge'. (except E.G.O Skills, only counts Identities on the field)\n\nTurn Start: all allies gain (([Charge] Count + 'Unique Charge') / 10) [AttackDmgUp]. (max 2, rounded up)\n\nTurn End: allies without [ChargeForceField] gain 1 [ChargeForceField].\n\nEach Identity gains 1 [Charge] Potency every time they consume 20 [Charge] Count. (2 times per Identity per Encounter; Unique Charge does not interact with this effect)",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that gain [Charge] Count or 'Unique Charge'. (except E.G.O Skills, only counts Identities on the field)\n\nTurn Start: all allies gain ([Charge] Count/ 10) [AttackDmgUp]. (max 2, rounded up; including 'Unique Charge')\n\nTurn End: allies without [ChargeForceField] gain 1 [ChargeForceField].\n\nEach Identity gains 1 [Charge] Potency every time they consume 20 [Charge] Count. (2 times per Identity per Encounter; Unique Charge does not interact with this effect)",
       "simpleDesc": [
         {
           "abilityID": 9182,

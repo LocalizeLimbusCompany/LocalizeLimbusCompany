@@ -1117,11 +1117,11 @@
       "simpleDesc": [
         {
           "abilityID": 9045,
-          "simpleDesc": "[Combustion]に比例した憤怒ダメージを与える"
+          "simpleDesc": "[Combustion]に比例した憤怒ダメージ"
         },
         {
           "abilityID": 90451,
-          "simpleDesc": "防御レベル が減少"
+          "simpleDesc": "[DefenseDown]"
         }
       ]
     },
@@ -1132,11 +1132,11 @@
       "simpleDesc": [
         {
           "abilityID": 19045,
-          "simpleDesc": "[Combustion]に比例した憤怒ダメージを与える"
+          "simpleDesc": "[Combustion]に比例した憤怒ダメージ"
         },
         {
           "abilityID": 190451,
-          "simpleDesc": "防御レベル が減少"
+          "simpleDesc": "[DefenseDown]"
         }
       ]
     },
@@ -1147,11 +1147,11 @@
       "simpleDesc": [
         {
           "abilityID": 29045,
-          "simpleDesc": "[Combustion]に比例した憤怒ダメージを与える"
+          "simpleDesc": "[Combustion]に比例した憤怒ダメージ"
         },
         {
           "abilityID": 290451,
-          "simpleDesc": "防御レベル が減少"
+          "simpleDesc": "[DefenseDown]"
         }
       ]
     },
@@ -1559,7 +1559,7 @@
     {
       "id": 9057,
       "name": "暗視鏡",
-      "desc": "ターン開始時、[Charge]回数が15以上の人格がある場合発動。\n\n戦闘開始時に該当する人格が[Charge]回数を3消耗し、1ターン中に攻撃レベルが5増加。",
+      "desc": "ターン開始時、[Charge]回数が15以上の人格がある場合発動。(特殊充電を含む)\n\n戦闘開始時に該当する人格が[Charge]回数を3消耗し、このターンの間攻撃レベルが5増加。",
       "simpleDesc": [
         {
           "abilityID": 9057,
@@ -2694,7 +2694,7 @@
     {
       "id": 9100,
       "name": "第1種永久機関",
-      "desc": "ターン開始時、[Charge]回数または特殊充電を獲得する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\nウェーブの最初のターン開始時、全味方が[ChargeForceField]を7得る。\n\nターン開始時、味方が([Charge]回数と特殊充電の合計 ÷ 5 + 1)だけ[AttackDmgUp]を得る。(最大9, 繰り上げ処理)\n\n人格各々が(今回の戦闘の間攻撃スキルを使用して累計で消耗した[Charge]回数 ÷ 4)だけターン開始時、攻撃レベル増加を得る。([Charge]回数を40消耗時に効果が最大)\n\n人格各々が[Charge]回数を10消耗するたびに[Charge]1を得る。(戦闘ごとに人格別に5回、特殊充電には適用されない)\n\nターン開始時、全味方が自分の[Charge]威力2につき[Enhancement]1を得る (最大3)",
+      "desc": "ターン開始時、[Charge]回数または特殊充電を獲得する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n\nウェーブの最初のターン開始時、全味方が[ChargeForceField]を7得る。\n\nターン開始時、味方が([Charge]回数 ÷ 5 + 1)だけ[AttackDmgUp]を得る。(最大9, 繰り上げ処理。特殊充電を含む)\n\n人格各々が(今回の戦闘の間攻撃スキルを使用して累計で消耗した[Charge]回数 ÷ 4)だけターン開始時、攻撃レベル増加を得る。([Charge]回数を40消耗時に効果が最大)\n\n人格各々が[Charge]回数を10消耗するたびに[Charge]1を得る。(戦闘ごとに人格別に5回、特殊充電には適用されない)\n\nターン開始時、全味方が自分の[Charge]威力2につき[Enhancement]1を得る (最大3)",
       "simpleDesc": [
         {
           "abilityID": 9100,
@@ -3408,7 +3408,7 @@
     {
       "id": 19127,
       "name": "デビルズシェア+",
-      "desc": "ターン終了時、[Breath]威力が最も高い味方1名と[Breath]回数が最も多い味方1名へ次のターンに[Agility]1, <style=\"upgradeHighlight\">[AttackUp]1</style>を付与。(同じ人格の場合は重複可能)\n\n色欲属性攻撃スキルを持つ味方の場合は効果が強化され、[Agility]2, <style=\"upgradeHighlight\">[AttackUp]2</style> を付与(E.G.Oスキルを除く)",
+      "desc": "ターン終了時、[Breath]威力が最も高い味方1名と[Breath]回数が最も多い味方1名へ次のターンに[Agility]1, <style=\"upgradeHighlight\">[AttackUp]1</style>を付与。(同じ人格の場合は重複可能)\n\n色欲属性攻撃スキルを持つ味方の場合は効果が強化され、[Agility]2, <style=\"upgradeHighlight\">[AttackUp]2</style>を付与(E.G.Oスキルを除く)",
       "simpleDesc": [
         {
           "abilityID": 19127,
@@ -3419,7 +3419,7 @@
     {
       "id": 29127,
       "name": "デビルズシェア++",
-      "desc": "ターン終了時、[Breath]威力が最も高い味方1名と[Breath]回数が最も多い味方1名へ次のターンに[Agility]1, [AttackUp]1, <style=\"upgradeHighlight\">[AttackDmgUp]1</style>を付与。(同じ人格の場合は重複可能)\n\n色欲属性攻撃スキルを持つ味方の場合は効果が強化され、[Agility]2, [AttackUp] 2, [AttackDmgUp]<style=\"upgradeHighlight\">2</style> を付与(E.G.Oスキルを除く)",
+      "desc": "ターン終了時、[Breath]威力が最も高い味方1名と[Breath]回数が最も多い味方1名へ次のターンに[Agility]1, [AttackUp]1, <style=\"upgradeHighlight\">[AttackDmgUp]1</style>を付与。(同じ人格の場合は重複可能)\n\n色欲属性攻撃スキルを持つ味方の場合は効果が強化され、[Agility]2, [AttackUp] 2, [AttackDmgUp]<style=\"upgradeHighlight\">2</style>を付与(E.G.Oスキルを除く)",
       "simpleDesc": [
         {
           "abilityID": 29127,
@@ -3530,7 +3530,7 @@
     {
       "id": 9132,
       "name": "無停電電源装置",
-      "desc": "ターン終了時に[Charge]回数が3未満の場合は、次のターン開始時に[Charge]回数が3増加\n\nターン終了時に[Charge]回数が3以上の場合は、次のターン開始時に[AttackDmgUp]1を得る",
+      "desc": "ターン終了時に[Charge]回数が3未満の場合は、次のターン開始時に[Charge]回数が3増加 (特殊充電を含む)\n\nターン終了時に[Charge]回数が3以上の場合は、次のターン開始時に[AttackDmgUp]1を得る (特殊充電を含む)",
       "simpleDesc": [
         {
           "abilityID": 9132,
@@ -3545,7 +3545,7 @@
     {
       "id": 19132,
       "name": "無停電電源装置+",
-      "desc": "ターン終了時に[Charge]回数が<style=\"upgradeHighlight\">4</style> 未満の場合は、次のターン開始時に[Charge]回数が3増加\n\nターン終了時に[Charge]回数が<style=\"upgradeHighlight\">4</style> 以上の場合は、次のターン開始時に[AttackDmgUp]1を得る",
+      "desc": "ターン終了時に[Charge]回数が<style=\"upgradeHighlight\">4</style> 未満の場合は、次のターン開始時に[Charge]回数が3増加 (特殊充電を含む)\n\nターン終了時に[Charge]回数が<style=\"upgradeHighlight\">4</style> 以上の場合は、次のターン開始時に[AttackDmgUp]1を得る (特殊充電を含む)",
       "simpleDesc": [
         {
           "abilityID": 19132,
@@ -3560,7 +3560,7 @@
     {
       "id": 29132,
       "name": "無停電電源装置++",
-      "desc": "ターン終了時に[Charge]回数が<style=\"upgradeHighlight\">5</style> 未満の場合は、次のターン開始時に[Charge]回数が<style=\"upgradeHighlight\">4</style>増加\n\nターン終了時に[Charge]回数が<style=\"upgradeHighlight\">4</style> 以上の場合は、次のターン開始時に[AttackDmgUp]<style=\"upgradeHighlight\">2</style>を得る",
+      "desc": "ターン終了時に[Charge]回数が<style=\"upgradeHighlight\">5</style> 未満の場合は、次のターン開始時に[Charge]回数が<style=\"upgradeHighlight\">4</style>増加 (特殊充電を含む)\n\nターン終了時に[Charge]回数が<style=\"upgradeHighlight\">5</style> 以上の場合は、次のターン開始時に[AttackDmgUp]2を得る (特殊充電を含む)",
       "simpleDesc": [
         {
           "abilityID": 29132,
@@ -4311,7 +4311,7 @@
     {
       "id": 19086,
       "name": "残響+",
-      "desc": "ターン終了時、[Vibration]威力を<style=\"upgradeHighlight\">8</style>以上保有した敵(幻想体の場合は該当部位)へ次のターンに[Binding]2, <style=\"upgradeHighlight\">[DefenseDown]2</style>を付与。対象が[Vibration]威力を <style=\"upgradeHighlight\">15</style>以上保有している場合は効果が強化され、[Binding]2, [Paralysis]1, <style=\"upgradeHighlight\">[DefenseDown] 2</style> を付与。",
+      "desc": "ターン終了時、[Vibration]威力を<style=\"upgradeHighlight\">8</style>以上保有した敵(幻想体の場合は該当部位)へ次のターンに[Binding]2, <style=\"upgradeHighlight\">[DefenseDown]2</style>を付与。対象が[Vibration]威力を <style=\"upgradeHighlight\">15</style>以上保有している場合は効果が強化され、[Binding]2, [Paralysis]1, <style=\"upgradeHighlight\">[DefenseDown] 2</style>を付与。",
       "simpleDesc": [
         {
           "abilityID": 19086,
@@ -4326,7 +4326,7 @@
     {
       "id": 29086,
       "name": "残響++",
-      "desc": "ターン終了時、[Vibration]威力を<style=\"upgradeHighlight\">5</style>以上保有した敵(幻想体の場合は該当部位)へ次のターンに[Binding]2, [DefenseDown]<style=\"upgradeHighlight\">3</style>を付与。対象が[Vibration]威力を <style=\"upgradeHighlight\">10</style>以上保有している場合は効果が強化され、[Binding]2, [Paralysis]1, [DefenseDown]<style=\"upgradeHighlight\">4</style> を付与。",
+      "desc": "ターン終了時、[Vibration]威力を<style=\"upgradeHighlight\">5</style>以上保有した敵(幻想体の場合は該当部位)へ次のターンに[Binding]2, [DefenseDown]<style=\"upgradeHighlight\">3</style>を付与。対象が[Vibration]威力を <style=\"upgradeHighlight\">10</style>以上保有している場合は効果が強化され、[Binding]2, [Paralysis]1, [DefenseDown]<style=\"upgradeHighlight\">4</style>を付与。",
       "simpleDesc": [
         {
           "abilityID": 29086,
@@ -4494,7 +4494,7 @@
     {
       "id": 9182,
       "name": "1Bタイプ八角ボルト",
-      "desc": "ターン開始時、[Charge]回数または特殊充電を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oを除く、出撃人員を基準とする)\n\nターン開始時、味方が([Charge]回数と特殊充電の合計 ÷ 10)だけ[AttackDmgUp]を得る(最大2, 繰り上げ処理)\n\nターン終了に[ChargeForceField]がなければ、[ChargeForceField]1を得る\n\n各人格が[Charge]回数を20消耗するとき、各々が[Charge]威力1を得る。(戦闘ごとに人格別に2回、特殊充電には適用されない)",
+      "desc": "ターン開始時、[Charge]回数または特殊充電を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oを除く、出撃人員を基準とする)\n\nターン開始時、味方が([Charge]回数 ÷ 10)だけ[AttackDmgUp]を得る(最大2, 繰り上げ処理。特殊充電を含む)\n\nターン終了に[ChargeForceField]がなければ、[ChargeForceField]1を得る\n\n各人格が[Charge]回数を20消耗するとき、各々が[Charge]威力1を得る。(戦闘ごとに人格別に2回、特殊充電には適用されない)",
       "simpleDesc": [
         {
           "abilityID": 9182,
@@ -4666,7 +4666,7 @@
     },
     {
       "id": 9193,
-      "name": "磨り減った砥石",
+      "name": "摩り切れた砥石",
       "desc": "[編成3番人格専用効果]\n\n斬撃スキルの攻撃レベル +(保有している斬撃基本攻撃スキル数) (同じスキルは1つとして計算, 最大3)\n\n斬撃耐性が弱点(耐性1.0を越える、混乱を除く)の敵を攻撃時、斬撃ダメージ量 +(5 + 対象の斬撃耐性 × 10)% (最大25%)",
       "simpleDesc": [
         {

@@ -1520,7 +1520,7 @@
     {
       "id": 1051001,
       "name": "自律学習指示",
-      "desc": "自分を除く味方のスキルを捨てる度、対象と自分へ[KnowledgeTraining]1を付与(スキルごとに1回、1ターンにつき3回)\nターン終了時、自分以外がスキルを捨てた味方の数だけ次のターンに[PenetrateDamageUp] 、[HitDamageUp] を得る(最大3)"
+      "desc": "自分を除く味方のスキルを捨てる度、対象と自分へ[KnowledgeTraining]1を付与(スキルごとに1回、1ターンにつき3回)\nターン終了時、自分以外がスキルを捨てた味方の数だけ次のターンに[PenetrateDamageUp] 、[HitDamageUp]を得る(最大3)"
     },
     {
       "id": 1051021,
@@ -1848,7 +1848,7 @@
     {
       "id": 1031002,
       "name": "亜流サンチョ硬血式",
-      "desc": "ターン開始時、[BloodArmorPersonalityFirst]15以上かつ以下の人格が戦闘に参加しているか死亡したなら、自分の最左方のスキルが強化される。\nラ・マンチャランド[TabExplain]神父グレゴール: スキル1 強化\nラ・マンチャランド[TabExplain]理髪師ウーティス: スキル2 強化\n自分: スキル3 強化\nラ・マンチャランド[TabExplain]の姫ロージャ: 守備スキル 強化\n\n自分を除いた味方が[Laceration]ダメージを受けるか[BloodDinner]を消耗するとき、[BloodArmorPersonalityFirst]2を得る(1ターンにつき3回)"
+      "desc": "ターン開始時、[BloodArmorPersonalityFirst]15以上かつ以下の人格が戦闘に参加しているか死亡したなら、自分の最左端のスキルが強化される。\nラ・マンチャランド[TabExplain]神父グレゴール: スキル1 強化\nラ・マンチャランド[TabExplain]理髪師ウーティス: スキル2 強化\n自分: スキル3 強化\nラ・マンチャランド[TabExplain]の姫ロージャ: 守備スキル[TabExplain]強化\n\n自分を除いた味方が[Laceration]ダメージを受けるか[BloodDinner]を消耗するとき、[BloodArmorPersonalityFirst]2を得る(1ターンにつき3回)"
     },
     {
       "id": 1031003,
@@ -2226,6 +2226,72 @@
       "id": 1011321,
       "name": "対象指定",
       "desc": "速度が最も低い味方が、味方を攻撃したなら攻撃終了時に次のターンにて[AttackDmgUp]を1得る(1ターンにつき最大2)\n- このとき味方が死亡したなら、上記の効果の代わりに今回の戦闘の間[AttackDmgUp]を1得る(ステージおよび人格ごとに最大2)\n- 上記の効果群で獲得できる[AttackDmgUp]は最大2まで"
+    },
+    {
+      "id": 1031202,
+      "name": "愛と憎悪の名の下に - !E.G.O装備同期化率超過注意!",
+      "desc": "戦闘中、累計で自分の[ThePowerOfLoveAndHate]の回数を10消耗するたびに、[ThePowerOfLoveAndHate]1を得る\n\nステージ開始時に[HystericGauge]がなければ、[HystericGauge]効果を得る\n\nステージ開始時に[ThePowerOfLoveAndHate]がなければ、[ThePowerOfLoveAndHate]効果を得る\n\nターン開始時、\n- 精神力が0以上なら、[MagicalGirlAppear]を得て[NoVillain]を除去\n- 精神力が0未満なら、[NoVillain]を得て[MagicalGirlAppear]を除去\n\n自分の基本攻撃スキルの精神力消耗効果によって、精神力が -40未満にならない",
+      "summary": ""
+    },
+    {
+      "id": 1031201,
+      "name": "愛の魔法少女 / 憎しみの女王",
+      "desc": "[ThePowerOfLoveAndHate]1につき、ダメージ量 +2%(最大10%)",
+      "summary": ""
+    },
+    {
+      "id": 1031211,
+      "name": "愛の魔法少女 / 憎しみの女王",
+      "desc": "[ThePowerOfLoveAndHate]1につき、ダメージ量 +2%(最大10%)\n戦闘開始時、[ArcanaQueenOfHate]1を得る",
+      "summary": ""
+    },
+    {
+      "id": 1031221,
+      "name": "マジカルパワーチャージングサポート",
+      "desc": "基本攻撃スキルで[Charge]回数を獲得する味方のうち、[Charge]回数が最も少ない1名が[Charge]回数を獲得する基本攻撃スキル使用時、[Charge]回数 +2 (1ターンにつき2回発動)\n- 精神力が0以上なら、体力を(対象の[Charge] × 2)だけ回復 (最大10, 1ターンにつき最大20回復)\n- 精神力が0未満なら、精神力を対象の[Charge]だけ回復 (最大5, 1ターンにつき最大10回復)",
+      "summary": ""
+    },
+    {
+      "id": 1091302,
+      "name": "涙で研ぎ澄まされた剣 - !E.G.O装備同期化率超過注意!",
+      "desc": "ターン開始時、精神力が0以上なら[BlessingAlly]を得る\n- 基本スキルが加算コインを使用するスキルになる\n\nターン開始時、精神力が0未満なら[DespairAlly]を得る\n- 基本スキルが減算コインを使用するスキルになる\n\n[Charge]回数を獲得するとき、代わりに[BlackTearsAlly]を得る\n- [BlackTearsAlly]は[Charge]威力の影響を受けない",
+      "summary": ""
+    },
+    {
+      "id": 1091303,
+      "name": "裏切られた騎士の囁き",
+      "desc": "以下の効果によって精神力が -40未満にならない\n- 自分が使用する基本スキルの精神力減少効果\n- 味方のサポートパッシブによる精神力減少効果\n- [SwordCutwithTear]の精神力減少効果\n- 自分の精神力減少効果のうち、味方死亡で精神力が減少する場合\n\nこの戦闘にて精神力が -45になるダメージを受けるとき、このターンの間精神力が -44に保たれる (戦闘ごとに1回)\n(※精神力ダメージにのみ適用され、精神力変更効果やE.G.Oスキルのように精神力を消耗する場合は適用されない)",
+      "summary": ""
+    },
+    {
+      "id": 1091304,
+      "name": "壊し、引き裂き、貫く",
+      "desc": "[PenetratingSword]を保有しているなら、基本攻撃スキルを使用して敵へ的中前に[PenetratingSword]1を消耗して[Sinking]1を付与\n- このターンにて、最後に使用する基本攻撃スキルの最終コイン的中前に残った[PenetratingSword]が2以上なら、代わりに全て消耗してその数値だけ[Sinking]を付与\n\n[SwordCutwithTear]を3保有しているなら、基本攻撃スキルを使用して敵へ最終コイン的中前に[SwordCutwithTear]を全て消耗して[Sinking]3, [Sinking]回数3を付与し、該当コインのダメージ量 +50%\n- この効果が発動したなら、該当ターン終了時に精神力が0未満なら精神力が0に初期化。(パニックまたはE.G.O侵蝕状態の場合は解除) その後に精神力を30回復",
+      "summary": ""
+    },
+    {
+      "id": 1091301,
+      "name": "正義の魔法少女 / 絶望の騎士",
+      "desc": "[BlessingAlly]状態の時、\n- 攻撃での体力被ダメージ量が(精神力 ÷ 2)%だけ減少 (最大20%)\n\n[DespairAlly]状態の時、\n- 基本スキルでの与ダメージ量(-精神力 ÷ 2)%だけ増加 (最大20%)",
+      "summary": ""
+    },
+    {
+      "id": 1091311,
+      "name": "正義の魔法少女 / 絶望の騎士",
+      "desc": "[BlessingAlly]状態の時、\n- 攻撃での体力被ダメージ量が(精神力 ÷ 2)%だけ減少 (最大20%)\n<style=\"highlight\">- 戦闘開始時に[ProtectiveSword]が3以上なら、[Protection]を1得る\n- 戦闘開始時に[ProtectiveSword]が5の場合は代わりに、[Protection]2, [ParryingResultUp]1を得る</style>\n\n[DespairAlly]状態の時、\n- 基本スキルでの与ダメージ量(-精神力 ÷ 2)%だけ増加 (最大20%)\n<style=\"highlight\">- 戦闘開始時に[PenetratingSword]が3以上なら、[AttackDmgUp]を1得る\n- 戦闘開始時に[PenetratingSword]が5の場合は代わりに、[AttackDmgUp]2, [ResultEnhancement]1を得る</style>",
+      "summary": ""
+    },
+    {
+      "id": 1091321,
+      "name": "絶望する全ての者の為…。",
+      "desc": "戦闘開始時、編成順が最も早い味方に効果適用\n\n精神力が -15以下なら、減算コインスキルの最終威力 +1",
+      "summary": ""
+    },
+    {
+      "id": 1091331,
+      "name": "絶望する全ての者の為…。",
+      "desc": "戦闘開始時、編成順が最も早い味方に効果適用\n\n精神力が -15以下なら、減算コインスキルの最終威力 +1\n<style=\"highlight\">精神力が -30以下なら、代わりに減算コインスキルの最終威力 +1, ダメージ量 +15%</style>",
+      "summary": ""
     }
   ]
 }

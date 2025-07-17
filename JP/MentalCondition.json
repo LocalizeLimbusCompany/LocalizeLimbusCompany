@@ -79,6 +79,31 @@
       "id": "OnLoseDuelAnyTarget",
       "add": "マッチ敗北時、{0}増加",
       "min": "マッチ敗北時、{0}減少"
+    },
+    {
+      "id": "OnWinDuelAsParryingCountMultiplyAndPlusPercentWithEmphasis",
+      "add": "マッチ勝利時、マッチ回数に比例して増加\n<size=95%>(増加量: 基本値{0}, 2マッチ目から1マッチにつき<color=red>{1}%</color>ずつ増加)</size>",
+      "min": "マッチ勝利時、マッチ回数に比例して増加\n<size=95%>(減少量: 基本値{0}, 2マッチ目から1マッチにつき<color=red>{1}%</color>ずつ減少)</size>"
+    },
+    {
+      "id": "OnLoseDuelAsParryingCountMultiplyAndPlusPercentWithEmphasis",
+      "add": "マッチ敗北時、マッチ回数に比例して増加\n<size=95%>(増加量: 基本値{0}, 2マッチ目から1マッチにつき<color=red>{1}%</color>ずつ増加)</size>",
+      "min": "マッチ敗北時、マッチ回数に比例して増加\n<size=95%>(減少量: 基本値{0}, 2マッチ目から1マッチにつき<color=red>{1}%</color>ずつ減少)</size>"
+    },
+    {
+      "id": "OnTakeAttackDamagePerWithMax",
+      "add": "<color=red>敵に被ダメージ時増加\n<size=95%>(増加量: 基本値{0}, 1ターンにつき最大{1}増加)</size></color>",
+      "min": "<color=red>敵に被ダメージ時減少\n<size=95%>(減少量: 基本値{0}, 1ターンにつき最大{1}減少)</size></color>"
+    },
+    {
+      "id": "OnWinDuelAsParryingCountMultiplyAndPlusPercentIfMpNotLessThan",
+      "add": "精神力が{2}以上ならマッチ勝利時、マッチ回数に比例して増加\n<size=95%>(増加量: 基本値{0}, 2マッチ目から1マッチにつき{1}%ずつ増加)</size>",
+      "min": "精神力が{2}以上ならマッチ勝利時、マッチ回数に比例して減少\n<size=95%>(減少量: 基本値{0}, 2マッチ目から1マッチにつき{1}%ずつ増加)</size>"
+    },
+    {
+      "id": "OnWinDuelAsParryingCountMultiplyAndPlusPercentIfMpNotLessThanWithEmphasis",
+      "add": "<color=red>精神力が{2}以上なら</color>マッチ勝利時、マッチ回数に比例して増加\n<size=95%>(増加量: 基本値{0}, 2マッチ目から1マッチにつき<color=red>{1}%</color>ずつ増加)</size>",
+      "min": "<color=red>精神力が{2}以上なら</color>マッチ勝利時、マッチ回数に比例して減少\n<size=95%>(減少量: 基本値{0}, 2マッチ目から1マッチにつき<color=red>{1}%</color>ずつ増加)</size>"
     }
   ]
 }
