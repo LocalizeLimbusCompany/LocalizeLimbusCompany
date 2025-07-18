@@ -759,7 +759,7 @@
         {
           "level": 1,
           "name": "时来运转",
-          "desc": "[StartBattle] 使自身本回合第2个行动槽的技能中所有硬币的朝向都必定是正面",
+          "desc": "[StartBattle] 使自身第2个行动槽的技能的所有硬币必定朝向正面",
           "coinlist": [
             {}
           ]
@@ -812,7 +812,7 @@
         {
           "level": 1,
           "name": "时来运转",
-          "desc": "[StartBattle] 使自身本回合第2个行动槽的技能中所有硬币的朝向都必定是正面",
+          "desc": "[StartBattle] 使自身第2个行动槽的技能的所有硬币必定朝向正面",
           "coinlist": [
             {}
           ]
@@ -857,7 +857,7 @@
         {
           "level": 1,
           "name": "时来运转",
-          "desc": "[StartBattle] 使自身本回合第2个行动槽的技能中所有硬币的朝向都必定是正面",
+          "desc": "[StartBattle] 使自身第2个行动槽的技能的所有硬币必定朝向正面",
           "coinlist": [
             {}
           ]
@@ -902,7 +902,7 @@
         {
           "level": 1,
           "name": "入骨尖刀",
-          "desc": "[BeforeAttack] 若目标现存体力不高于50%，则重复使用本技能的前两枚硬币1次",
+          "desc": "[BeforeAttack] 若目标现存体力低于50%，则重复使用本技能的第1、2枚硬币1次",
           "coinlist": [
             {
               "coindescs": [
@@ -933,21 +933,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 对目标额外造成3点伤害"
+                  "desc": "[OnSucceedAttackHead] 对目标造成3点伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 对目标额外造成3点伤害"
+                  "desc": "[OnSucceedAttackHead] 对目标造成3点伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 对目标额外造成3点伤害"
+                  "desc": "[OnSucceedAttackHead] 对目标造成3点伤害"
                 }
               ]
             }
@@ -974,7 +974,7 @@
         {
           "level": 1,
           "name": "吉星高照",
-          "desc": "[StartBattle] 使自身本回合的所有硬币的朝向都变为正面",
+          "desc": "[StartBattle] 本回合使自身的所有硬币必定朝向正面",
           "coinlist": [
             {}
           ]
@@ -1247,7 +1247,7 @@
         {
           "level": 1,
           "name": "笑里藏刀",
-          "desc": "若目标的理智值不高于0点，则使本技能威力+1",
+          "desc": "若目标的理智值低于0点，则使本技能威力+1",
           "coinlist": [
             {}
           ]
@@ -1331,7 +1331,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加3层虚弱 和3层麻痹 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加3层虚弱 与3层麻痹 "
                 }
               ]
             }
@@ -1385,7 +1385,7 @@
         {
           "level": 1,
           "name": "皮纳塔派对~！",
-          "desc": "[WhenUse] 若目标的理智值不高于0点，则根据其理智值按比例增加自身的暴击率",
+          "desc": "[WhenUse] 若目标的理智值低于0点，则根据其理智值相应增加自身的暴击率",
           "coinlist": [
             {
               "coindescs": [
@@ -1778,7 +1778,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加1层麻痹 和1层破绽 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层麻痹 与1层破绽 "
                 }
               ]
             }
@@ -1944,7 +1944,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加3层束缚 和2层麻痹 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加3层束缚 与2层麻痹 "
                 }
               ]
             }
@@ -1990,7 +1990,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标的N公司的尖钉 层数不低于5层，则在下回合对其施加10层束缚 "
+                  "desc": "[OnSucceedAttack] 若目标的N公司的尖钉 层数不低于5层，则下回合对其施加10层束缚 "
                 }
               ]
             }
@@ -2074,7 +2074,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 下回合对目标施加3层束缚 和2层虚弱 "
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加3层束缚 与2层虚弱 "
                 }
               ]
             }
@@ -2140,7 +2140,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标的N公司的尖钉 层数不低于5层，则在下回合对其施加10层虚弱 和10层麻痹 "
+                  "desc": "[OnSucceedAttack] 若目标的N公司的尖钉 层数不低于5层，则下回合对其施加10层虚弱 与10层麻痹 "
                 }
               ]
             }
@@ -2265,7 +2265,7 @@
         {
           "level": 1,
           "name": "尖钉洗礼",
-          "desc": "若现存体力不高于50%，则使本技能施加的N公司的尖钉 层数额外+1层",
+          "desc": "若现存体力低于50%，则令本技能施加的N公司的尖钉 层数额外+1层",
           "coinlist": [
             {
               "coindescs": [
@@ -3024,7 +3024,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "会受伤的。",
+          "name": "正在致伤。",
           "desc": "",
           "coinlist": [
             {
@@ -3047,7 +3047,7 @@
         {
           "level": 1,
           "name": "发现 发现 损伤",
-          "desc": "优先指定带有破裂 的单位",
+          "desc": "优先指定带有破裂 的目标",
           "coinlist": [
             {
               "coindescs": [
@@ -3087,8 +3087,8 @@
       "levelList": [
         {
           "level": 1,
-          "name": "崩溃瓦解。",
-          "desc": "优先指定带有震颤 的单位",
+          "name": "正在摧毁。",
+          "desc": "优先指定带有震颤 的目标",
           "coinlist": [
             {
               "coindescs": [
@@ -3110,7 +3110,7 @@
         {
           "level": 1,
           "name": "注意 注意 正在摇晃",
-          "desc": "优先指定带有震颤 的单位",
+          "desc": "优先指定带有震颤 的目标",
           "coinlist": [
             {
               "coindescs": [
@@ -3134,7 +3134,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 伤害量-50%\n使目标陷入混乱"
+                  "desc": "[OnSucceedAttack] 使本硬币造成的伤害-50%\n使目标陷入混乱"
                 }
               ]
             }
@@ -3207,7 +3207,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标的震颤 层数翻倍"
+                  "desc": "[OnSucceedAttack] 根据目标带有的震颤 层数，对其施加相应层数的震颤 "
                 }
               ]
             }
@@ -3284,7 +3284,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 根据目标带有的震颤 强度，相应增加震颤 强度"
+                  "desc": "[OnSucceedAttack] 根据目标带有的震颤 强度，使其增加相应的震颤 强度"
                 }
               ]
             }
@@ -3415,14 +3415,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 前两枚硬币为正面时，根据目标带有的震颤 强度，增加相应的震颤 强度"
+                  "desc": "[OnSucceedAttack] 若本技能的第1、2枚硬币均朝向正面，则根据目标带有的震颤 强度，使其增加相应的震颤 强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 前两枚硬币为正面时，根据技能硬币的正面数，增加相应的破裂 强度"
+                  "desc": "[OnSucceedAttack] 若本技能的第1、2枚硬币均朝向正面，根据本技能朝向正面的硬币数，使目标增加相应的破裂 强度"
                 }
               ]
             }

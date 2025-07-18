@@ -1041,7 +1041,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标的破裂 强度不低于15级，或目标现存体力不高于30%，则重复使用本硬币(每个技能最多1次)"
+                  "desc": "[OnSucceedAttack] 若目标的[Burst]强度不低于15级，或目标现存体力低于30%，则重复使用本硬币(每个技能最多1次)"
                 }
               ]
             }
@@ -1069,7 +1069,7 @@
         {
           "level": 4,
           "name": "紧急止血",
-          "desc": "[StartBattle] 使自身的流血 强度减少2级(每回合最多3次，若流血 强度降至0级或以下，则解除流血 )",
+          "desc": "[StartBattle] 使自身的[Laceration]强度减少2级(每回合最多3次，若自身的[Laceration]强度不高于0级，则解除自身的[Laceration])",
           "coinlist": [
             {
               "coindescs": [
@@ -1402,7 +1402,7 @@
         {
           "level": 1,
           "name": "战斗呼吸",
-          "desc": "回合开始时，若自身的弹药 数为0，则改为使用“影之彼端”\n[OnSucceedEvade] 使自身增加1级呼吸法 强度(每回合最多3次)",
+          "desc": "回合开始时，若自身的[Bullet]数为0发，则改为使用“影之彼端”\n[OnSucceedEvade] 使自身增加1级[Breath]强度(每回合最多3次)",
           "coinlist": [
             {
               "coindescs": [
@@ -1416,7 +1416,7 @@
         {
           "level": 4,
           "name": "战斗呼吸",
-          "desc": "回合开始时，若自身的弹药 数为0，则改为使用“影之彼端”\n[OnSucceedEvade] 使自身增加1级呼吸法 强度(每回合最多<style=\"highlight\">5</style>次)",
+          "desc": "回合开始时，若自身的[Bullet]数为0发，则改为使用“影之彼端”\n[OnSucceedEvade] 使自身增加1级[Breath]强度(每回合最多<style=\"highlight\">5</style>次)",
           "coinlist": [
             {
               "coindescs": [

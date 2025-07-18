@@ -333,7 +333,7 @@
         {
           "level": 2,
           "name": "惩罚",
-          "desc": "若自身的速度值高于目标，则使本技能的硬币威力+1\n[WhenUse] 使自身获得2层呼吸法 \n[WhenUse] 下回合使本技能对应行动槽的挑衅值 +2",
+          "desc": "若自身的速度值高于目标，则使本技能的硬币威力+1\n[WhenUse] 使自身获得2层[Breath]\n[WhenUse] 下回合使本技能对应行动槽的挑衅值 +2",
           "coinlist": [
             {
               "coindescs": [
@@ -354,7 +354,7 @@
         {
           "level": 4,
           "name": "惩罚",
-          "desc": "若自身的速度值高于目标，则使本技能的硬币威力+2\n[WhenUse] 使自身获得2层呼吸法 \n[WhenUse] 下回合使本技能对应行动槽的挑衅值 +4",
+          "desc": "若自身的速度值高于目标，则使本技能的硬币威力+2\n[WhenUse] 使自身获得2层[Breath]\n[WhenUse] 下回合使本技能对应行动槽的挑衅值 +4",
           "coinlist": [
             {
               "coindescs": [
@@ -425,7 +425,7 @@
         {
           "level": 1,
           "name": "撤退",
-          "desc": "若自身的速度值高于攻击者，则使本技能的硬币威力+1\n[OnSucceedEvade] 使自身增加1级呼吸法 强度(最多5级)",
+          "desc": "若自身的速度值高于攻击者，则使本技能的硬币威力+1\n[OnSucceedEvade] 使自身增加1级[Breath]强度(最多5级)",
           "coinlist": [
             {}
           ]
@@ -582,7 +582,7 @@
         {
           "level": 3,
           "name": "魔弹射击",
-          "desc": "目标每带有1级烧伤 强度，使本技能造成的伤害+0.5%(最多+15%)\n\n[BeforeAttack] 使自身获得1层魔弹 \n- 使自身失去(自身的魔弹 层数-1)×5点理智值\n- 使本技能的攻击容量变为与自身的魔弹 层数相同\n- 若自身的理智值不高于10点，则本技能有50%的概率进行无差别攻击\n\n[EndSkill] 若自身的魔弹 层数为7层，则将其重置为0层(视作消耗了最后的弹药 )",
+          "desc": "目标每带有1级[Combustion]强度，使本技能造成的伤害+0.5%(最多+15%)\n\n[BeforeAttack] 使自身获得1层[FreischutzShotCount]\n- 使自身失去(自身的[FreischutzShotCount]层数-1)×5点理智值\n- 使本技能的攻击容量变为与自身的[FreischutzShotCount]层数相同\n- 若自身的理智值不高于10点，则本技能有50%的概率进行无差别攻击\n\n[EndSkill] 若自身的[FreischutzShotCount]层数为7层，则将其重置为0层(视作消耗了最后的弹药 )",
           "coinlist": [
             {
               "coindescs": [
@@ -596,7 +596,7 @@
         {
           "level": 4,
           "name": "魔弹射击",
-          "desc": "<style=\"highlight\">目标每带有1级烧伤 强度，使本技能造成的伤害+1%(最多+30%)</style>\n\n[BeforeAttack] 使自身获得1层魔弹 \n- 使自身失去(自身的魔弹 层数-1)×5点理智值\n- 使本技能的攻击容量变为与自身的魔弹 层数相同\n- 若自身的理智值不高于10点，则本技能有50%的概率进行无差别攻击\n\n[EndSkill] 若自身的魔弹 层数为7层，则将其重置为0层(视作消耗了最后的弹药 )",
+          "desc": "<style=\"highlight\">目标每带有1级[Combustion]强度，使本技能造成的伤害+1%(最多+30%)</style>\n\n[BeforeAttack] 使自身获得1层[FreischutzShotCount]\n- 使自身失去(自身的[FreischutzShotCount]层数-1)×5点理智值\n- 使本技能的攻击容量变为与自身的[FreischutzShotCount]层数相同\n- 若自身的理智值不高于10点，则本技能有50%的概率进行无差别攻击\n\n[EndSkill] 若自身的[FreischutzShotCount]层数为7层，则将其重置为0层(视作消耗了最后的弹药 )",
           "coinlist": [
             {
               "coindescs": [
@@ -1599,7 +1599,7 @@
         {
           "level": 4,
           "name": "瞬步",
-          "desc": "<style=\"highlight\">若自身的速度值高于目标至少3点，则使本技能的硬币威力+1</style>\n[WhenUse] 若目标的破裂 强度不低于4级，则使本技能的硬币威力+1",
+          "desc": "<style=\"highlight\">若自身的速度值高于目标至少3点，则使本技能的硬币威力+1</style>\n[WhenUse] 若目标的[Burst]强度不低于4级，则使本技能的硬币威力+1",
           "coinlist": [
             {
               "coindescs": [
@@ -1670,7 +1670,7 @@
         {
           "level": 4,
           "name": "刺杀",
-          "desc": "<style=\"highlight\">若自身的速度值高于目标至少3点，则使本技能的硬币威力+1</style>\n[WhenUse] 若目标的破裂 强度不低于4级，则使本技能的硬币威力+1\n[OnDirectAttack] 对目标施加1层破裂 ",
+          "desc": "<style=\"highlight\">若自身的速度值高于目标至少3点，则使本技能的硬币威力+1</style>\n[WhenUse] 若目标的[Burst]强度不低于4级，则使本技能的硬币威力+1\n[OnDirectAttack] 对目标施加1层[Burst]",
           "coinlist": [
             {
               "coindescs": [
@@ -1702,7 +1702,7 @@
         {
           "level": 3,
           "name": "刻咒杀剑",
-          "desc": "若自身的速度值高于目标，则使本技能造成的伤害+(速度值之差×目标的破裂 强度)%(最多+50%)\n若自身的速度值高于目标至少2点，则使本技能的硬币威力+1\n[WhenUse] 使自身获得3层[LegStrength]\n[OnDirectAttack] 对目标施加2层破裂 ",
+          "desc": "若自身的速度值高于目标，则使本技能造成的伤害+(速度值之差×目标的[Burst]强度)%(最多+50%)\n若自身的速度值高于目标至少2点，则使本技能的硬币威力+1\n[WhenUse] 使自身获得3层[LegStrength]\n[OnDirectAttack] 对目标施加2层[Burst]",
           "coinlist": [
             {
               "coindescs": [
@@ -1736,7 +1736,7 @@
         {
           "level": 4,
           "name": "刻咒杀剑",
-          "desc": "若自身的速度值高于目标，则使本技能造成的伤害+(速度值之差×目标的破裂 强度)%(最多+50%)\n<style=\"highlight\">若自身的速度值高于目标，则每高于目标2点，使本技能的硬币威力+1(最多+2)\n[WhenUse] 若目标的破裂 强度不低于15级，则使本技能的硬币威力+1</style>\n[WhenUse] 使自身获得3层[LegStrength]\n[OnDirectAttack] 对目标施加2层破裂 ",
+          "desc": "若自身的速度值高于目标，则使本技能造成的伤害+(速度值之差×目标的[Burst]强度)%(最多+50%)\n<style=\"highlight\">若自身的速度值高于目标，则每相差2点，使本技能的硬币威力+1(最多+2)\n[WhenUse] 若目标的[Burst]强度不低于15级，则使本技能的硬币威力+1</style>\n[WhenUse] 使自身获得3层[LegStrength]\n[OnDirectAttack] 对目标施加2层[Burst]",
           "coinlist": [
             {
               "coindescs": [
@@ -1792,7 +1792,7 @@
         {
           "level": 4,
           "name": "部分黑兽化",
-          "desc": "[DuelCounter]\n[WhenUse] 使自身获得3层[LegStrength]\n<style=\"highlight\">[WhenUse] 若自身的速度值高于目标，则每高于目标2点，使本技能的基础威力+1(最多+2)</style>",
+          "desc": "[DuelCounter]\n[WhenUse] 使自身获得3层[LegStrength]\n<style=\"highlight\">[WhenUse] 若自身的速度值高于目标，则每相差2点，使本技能的基础威力+1(最多+2)</style>",
           "coinlist": [
             {
               "coindescs": [

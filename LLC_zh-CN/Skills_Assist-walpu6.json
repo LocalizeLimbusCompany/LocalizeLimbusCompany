@@ -1,0 +1,183 @@
+{
+  "dataList": [
+    {
+      "id": 40000301,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "要用爱！",
+          "desc": "[WhenUse] 目标的[Burst]强度与[Sinking]强度之和每有5级，使本技能的基础威力+1(最多+2)\n[WhenUse] 使自身获得10层[PowerOfLoveAndJustice]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Burst]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Burst]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40000302,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "以正义之名！",
+          "desc": "[WhenUse] 目标的[Burst]强度与[Sinking]强度之和每有7级，使本技能的硬币威力+1(最多+2)\n[WhenUse] 使自身获得10层[PowerOfLoveAndJustice]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标的[Burst]强度与[Sinking]强度之和不低于10级，则下回合对其施加1层[Binding]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40000303,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "阿卡纳律动",
+          "desc": "主要目标指定绝望骑士\n次要目标指定[ColdBlackTear]层数最高的友方单位\n- 没有带有[ColdBlackTear]的友方单位时，次要目标指定体力最低的友方单位\n对友方单位造成的伤害变为0点，且不会触发其[Sinking]或[ColdBlackTear]效果\n\n[WinDuel] 解除1层作为次要目标的友方单位的[ColdBlackTear]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若指定敌方单位，则使目标增加1级[Burst]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若指定友方单位，则使其恢复5点体力"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若指定敌方单位，则使目标增加1级[Burst]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若指定友方单位，则使其恢复5点体力"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若指定敌方单位，则使目标增加1级[Burst]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若指定友方单位，则使其恢复5点体力"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40000304,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "只能用那招了！",
+          "desc": "[StartBattle] 使自身获得1层[ChasingArcana]\n[StartBattle] 使自身获得50点护盾\n[StartBattle] 下回合使自身的[Aggro]+20",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40000305,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "咏唱-阿卡纳光破斩",
+          "desc": "[StartBattle] 使自身获得50点护盾\n[StartBattle] 下回合使自身的[Aggro]+20\n[EndBattle] 若护盾点数为0，则撤退",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40000306,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "阿卡纳光破斩",
+          "desc": "[CantDuel]\n不会对遗忘骑士之剑造成伤害\n命中带有[WornOutKnight]的敌方单位时，结束回合\n[EndBattle] 对自身施加[UsedTooMuchPower]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标的体力降至其现存体力的(100 - (其[CollapsedPride]层数×33))%"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40000307,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "阿卡纳光破斩",
+          "desc": "[CantDuel]\n仅通过硬币效果造成伤害\n不会对毁心之剑、裂心之剑、穿心之剑造成伤害\n命中带有[WornOutKnight]且体力不高于600点的敌方单位时，回合结束\n[EndBattle] 对自身施加[UsedTooMuchPower]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 造成(目标的[CollapsedPride]层数×200)点固定伤害"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40000308,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "只能用那招了！",
+          "desc": "[StartBattle] 使自身获得1层[ChasingArcanahard]\n[StartBattle] 使自身获得50点护盾\n[StartBattle] 下回合使自身的[Aggro]+20",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

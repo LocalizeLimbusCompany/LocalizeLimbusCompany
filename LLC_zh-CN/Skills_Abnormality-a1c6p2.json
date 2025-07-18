@@ -182,7 +182,7 @@
         {
           "level": 1,
           "name": "贪婪的用餐时间",
-          "desc": "[WhenUse] 若目标的破裂 强度不低于5级，则对其施加2层防御等级降低 \n自身每带有1层体力恢复提升 ，使本技能的基础威力+1(最多+3)",
+          "desc": "[WhenUse] 若目标的[Burst]强度不低于5级，则对其施加2层[DefenseDown]\n自身每带有1层[TakeHpHealIncrease]，使本技能的基础威力+1(最多+3)",
           "coinlist": [
             {
               "coindescs": [
@@ -322,7 +322,7 @@
         {
           "level": 1,
           "name": "泄愤暴打",
-          "desc": "若目标的破裂 强度不低于5级，则使本技能的拼点威力+1\n若目标的流血 强度不低于5级，则使本技能的拼点威力+1\n[WinDuel] 对目标施加3层破裂 ",
+          "desc": "若目标的[Burst]强度不低于5级，则使本技能的拼点威力+1\n若目标的[Laceration]强度不低于5级，则使本技能的拼点威力+1\n[WinDuel] 对目标施加3层[Burst]",
           "coinlist": [
             {
               "coindescs": [
@@ -398,7 +398,7 @@
         {
           "level": 1,
           "name": "你会更加痛苦！",
-          "desc": "[CantChangeTarget]\n[WinDuel] 对目标施加3层破裂 ",
+          "desc": "[CantChangeTarget]\n[WinDuel] 对目标施加3层[Burst]",
           "coinlist": [
             {
               "coindescs": [
@@ -527,7 +527,7 @@
         {
           "level": 1,
           "name": "这是我的家！",
-          "desc": "优先指定体力最低的目标\n[WhenUse] 若目标现存体力不高于70%，则使本技能的拼点威力+2",
+          "desc": "优先指定体力最低的目标\n[WhenUse] 若目标现存体力低于70%，则使本技能的拼点威力+2",
           "coinlist": [
             {
               "coindescs": [
@@ -573,7 +573,7 @@
         {
           "level": 1,
           "name": "我会抓住你…",
-          "desc": "优先指定希斯克利夫\n[WhenUse] 若目标为速度值最低的敌方单位，则使本技能的基础威力+3\n[WhenUse] 下回合对目标施加[AaCfPbBe]、2层易损 、3层麻痹 与5层束缚 ",
+          "desc": "优先指定希斯克利夫\n[WhenUse] 若目标为速度值最低的敌方单位，则使本技能的基础威力+3\n[WhenUse] 下回合对目标施加[AaCfPbBe]、2层[Vulnerable]、3层[Paralysis]与5层[Binding]",
           "coinlist": [
             {
               "coindescs": [

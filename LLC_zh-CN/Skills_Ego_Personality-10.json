@@ -25,7 +25,7 @@
           "level": 3,
           "name": "提灯",
           "abName": "精灵提灯",
-          "desc": "[BeforeAttack] 若现存体力不高于50%，则使本技能的攻击容量+1",
+          "desc": "[BeforeAttack] 若现存体力低于50%，则使本技能的攻击容量+1",
           "coinlist": [
             {
               "coindescs": [
@@ -43,7 +43,7 @@
           "level": 4,
           "name": "提灯",
           "abName": "精灵提灯",
-          "desc": "[BeforeAttack] 若现存体力不高于50%，则使本技能的攻击容量+2",
+          "desc": "[BeforeAttack] 若现存体力低于50%，则使本技能的攻击容量+2",
           "coinlist": [
             {
               "coindescs": [
@@ -84,7 +84,7 @@
           "level": 3,
           "name": "提灯",
           "abName": "精灵提灯",
-          "desc": "[CantIdentify]\n指定体力最高的单位\n[BeforeAttack] 若现存体力不高于50%，则使本技能的攻击容量+1",
+          "desc": "[CantIdentify]\n指定体力最高的单位\n[BeforeAttack] 若现存体力低于50%，则使本技能的攻击容量+1",
           "coinlist": [
             {
               "coindescs": [
@@ -105,7 +105,7 @@
           "level": 4,
           "name": "提灯",
           "abName": "精灵提灯",
-          "desc": "[CantIdentify]\n指定体力最高的单位\n[BeforeAttack] 若现存体力不高于50%，则使本技能的攻击容量+2",
+          "desc": "[CantIdentify]\n指定体力最高的单位\n[BeforeAttack] 若现存体力低于50%，则使本技能的攻击容量+2",
           "coinlist": [
             {
               "coindescs": [
@@ -605,7 +605,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加2级[Burst]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若现存体力不高于30%，或自身的[YesdragonSelf]层数不低于20层，则重复使用本硬币(每个技能最多1次)"
+                  "desc": "[OnSucceedAttack] 若现存体力低于自身体力上限的30%，或自身的[YesdragonSelf]层数为20层，则重复使用本硬币(每个技能最多1次)"
                 },
                 {
                   "desc": "[ReUseOnSucceedAttack] 消耗自身所有体力并使本硬币造成的伤害+20%(每回合最多1次)"
@@ -633,7 +633,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加3级<style=\"highlight\">[Burst]</style>强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若现存体力不高于30%，或自身的[YesdragonSelf]层数不低于20层，则重复使用本硬币(每个技能最多1次)<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 若现存体力低于自身体力上限的30%，或自身的[YesdragonSelf]层数为20层，则重复使用本硬币(每个技能最多1次)<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "[ReUseOnSucceedAttack] 消耗自身所有体力并使本硬币造成的伤害+20%(每回合最多1次)<style=\"highlight\"></style>"
@@ -664,7 +664,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加3级[Burst]强度<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若现存体力不高于30%，或自身的[YesdragonSelf]层数不低于20层，则重复使用本硬币(每个技能最多1次)<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 若现存体力低于自身体力上限的30%，或自身的[YesdragonSelf]层数为20层，则重复使用本硬币(每个技能最多1次)<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "[ReUseOnSucceedAttack] 消耗自身所有体力并使本硬币造成的伤害+20%(每回合最多1次)<style=\"highlight\"></style>"
@@ -697,7 +697,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若现存体力不高于30%，或自身的[YesdragonSelf]层数不低于20层，则重复使用本硬币(每个技能最多1次)"
+                  "desc": "[OnSucceedAttack] 若现存体力低于自身体力上限的30%，或自身的[YesdragonSelf]层数为20层，则重复使用本硬币(每个技能最多1次)"
                 },
                 {
                   "desc": "[ReUseOnSucceedAttack] 消耗自身所有体力并使本硬币造成的伤害+20%(每回合最多1次)"
@@ -725,7 +725,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若现存体力不高于30%，或自身的[YesdragonSelf]层数不低于20层，则重复使用本硬币(每个技能最多1次)<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 若现存体力低于自身体力上限的30%，或自身的[YesdragonSelf]层数为20层，则重复使用本硬币(每个技能最多1次)<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "[ReUseOnSucceedAttack] 消耗自身所有体力并使本硬币造成的伤害+20%(每回合最多1次)<style=\"highlight\"></style>"
@@ -756,7 +756,7 @@
                   "desc": "<style=\"highlight\">自身每失去2%的体力，使本硬币造成的伤害+1%(最多+40%)</style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若现存体力不高于30%，或自身的[YesdragonSelf]层数不低于20层，则重复使用本硬币(每个技能最多1次)<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 若现存体力低于自身体力上限的30%，或自身的[YesdragonSelf]层数为20层，则重复使用本硬币(每个技能最多1次)<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "[ReUseOnSucceedAttack] 消耗自身所有体力并使本硬币造成的伤害+20%(每回合最多1次)<style=\"highlight\"></style>"

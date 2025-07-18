@@ -117,7 +117,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若现存体力不高于50%，则使目标增加1级流血 强度"
+                  "desc": "[OnSucceedAttack] 若现存体力低于50%，则使目标增加1级流血 强度"
                 }
               ]
             },
@@ -127,7 +127,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若现存体力不高于50%，则使目标增加1级流血 强度"
+                  "desc": "[OnSucceedAttack] 若现存体力低于50%，则使目标增加1级流血 强度"
                 }
               ]
             },
@@ -152,10 +152,10 @@
                   "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若现存体力不高于75%，则使目标增加1级流血 强度"
+                  "desc": "[OnSucceedAttack] 若现存体力低于75%，则使目标增加1级流血 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若现存体力不高于50%，则使目标增加1级流血 强度"
+                  "desc": "[OnSucceedAttack] 若现存体力低于50%，则使目标增加1级流血 强度"
                 }
               ]
             },
@@ -165,10 +165,10 @@
                   "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若现存体力不高于75%，则使目标增加1级流血 强度"
+                  "desc": "[OnSucceedAttack] 若现存体力低于75%，则使目标增加1级流血 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若现存体力不高于50%，则使目标增加1级流血 强度"
+                  "desc": "[OnSucceedAttack] 若现存体力低于50%，则使目标增加1级流血 强度"
                 }
               ]
             },
@@ -497,7 +497,7 @@
         {
           "level": 1,
           "name": "光电标记",
-          "desc": "[WhenUse] 若自身的充能 层数在5~9层之间，则消耗体力上限2×(10-现存充能 层数)%的体力并使自身获得至10层充能 \n[WhenUse] 消耗10层充能 并使本技能的硬币威力+1",
+          "desc": "[WhenUse] 若自身的[Charge]层数在5~9层之间，则消耗体力上限2×(10-现存[Charge]层数)%的体力并使自身获得至10层[Charge]\n[WhenUse] 消耗10层[Charge]并使本技能的硬币威力+1",
           "coinlist": [
             {},
             {},
@@ -513,7 +513,7 @@
         {
           "level": 2,
           "name": "光电标记",
-          "desc": "[WhenUse] 若自身的充能 层数在5~9层之间，则消耗体力上限2×(10-现存充能 层数)%的体力并使自身获得至10层充能 \n[WhenUse] 消耗10层充能 并使本技能的硬币威力+1<style=\"highlight\"></style>",
+          "desc": "[WhenUse] 若自身的[Charge]层数在5~9层之间，则消耗体力上限2×(10-现存[Charge]层数)%的体力并使自身获得至10层[Charge]\n[WhenUse] 消耗10层[Charge]并使本技能的硬币威力+1<style=\"highlight\"></style>",
           "coinlist": [
             {},
             {
@@ -538,7 +538,7 @@
         {
           "level": 4,
           "name": "光电标记",
-          "desc": "[WhenUse] 若自身的充能 层数在5~9层之间，则消耗体力上限2×(10-现存充能 层数)%的体力并使自身获得至10层充能 \n[WhenUse] 消耗10层充能 并使本技能的硬币威力<style=\"highlight\">+2</style>",
+          "desc": "[WhenUse] 若自身的[Charge]层数在5~9层之间，则消耗体力上限2×(10-现存[Charge]层数)%的体力并使自身获得至10层[Charge]\n[WhenUse] 消耗10层[Charge]并使本技能的硬币威力<style=\"highlight\">+2</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -676,7 +676,7 @@
         {
           "level": 2,
           "name": "斩首",
-          "desc": "[WhenUse] 若目标的沉沦 强度不低于6级，则使本技能的拼点威力+1\n<style=\"highlight\">[WhenUse] 若目标的沉沦 层数不低于3层，则使本技能的硬币威力+1</style>",
+          "desc": "[WhenUse] 若目标的[Sinking]强度不低于6级，则使本技能的拼点威力+1\n<style=\"highlight\">[WhenUse] 若目标的[Sinking]层数不低于3层，则使本技能的硬币威力+1</style>",
           "coinlist": [
             {},
             {
@@ -691,7 +691,7 @@
         {
           "level": 4,
           "name": "斩首",
-          "desc": "[WhenUse] 若目标的沉沦 强度不低于6级，则使本技能的拼点威力+1\n[WhenUse] 目标<style=\"highlight\">每带有3层</style>沉沦 ，使本技能的硬币威力+1<style=\"highlight\">(最多+2)</style>",
+          "desc": "[WhenUse] 若目标的[Sinking]强度不低于6级，则使本技能的拼点威力+1\n[WhenUse] 目标<style=\"highlight\">每带有3层</style>[Sinking]，使本技能的硬币威力+1<style=\"highlight\">(最多+2)</style>",
           "coinlist": [
             {},
             {
@@ -711,7 +711,7 @@
         {
           "level": 1,
           "name": "追悼游行",
-          "desc": "[WhenUse] 若目标的沉沦 强度不低于5级，则使本技能的硬币威力+1\n[EndSkill] 若自身带有杜拉罕 ，则使自身失去10点理智值",
+          "desc": "[WhenUse] 若目标的[Sinking]强度不低于5级，则使本技能的硬币威力+1\n[EndSkill] 若自身带有[NightPathfinding]，则使自身失去10点理智值",
           "coinlist": [
             {},
             {
@@ -736,7 +736,7 @@
         {
           "level": 2,
           "name": "追悼游行",
-          "desc": "[WhenUse] 若目标的沉沦 强度不低于5级，则使本技能的硬币威力+1\n<style=\"highlight\">[WhenUse] 若自身的棺 不低于4层，则使本技能的攻击容量+1\n[WhenUse] 若自身带有杜拉罕 ，则使本技能的攻击容量+1</style>\n[EndSkill] 若自身带有杜拉罕 ，则使自身失去10点理智值",
+          "desc": "[WhenUse] 若目标的[Sinking]强度不低于5级，则使本技能的硬币威力+1\n<style=\"highlight\">[WhenUse] 若自身的[Coffin]层数不低于4层，则使本技能的攻击容量+1\n[WhenUse] 若自身带有[NightPathfinding]，则使本技能的攻击容量+1</style>\n[EndSkill] 若自身带有[NightPathfinding]，则使自身失去10点理智值",
           "coinlist": [
             {},
             {
@@ -761,7 +761,7 @@
         {
           "level": 4,
           "name": "追悼游行",
-          "desc": "[WhenUse] 目标<style=\"highlight\">每带有5级</style>沉沦 强度，使本技能的硬币威力+1<style=\"highlight\">(最多+2)</style>\n[WhenUse] 自身<style=\"highlight\">每带有4层</style>棺 ，使本技能的攻击容量+1<style=\"highlight\">(最多+2)</style>\n[WhenUse] 若自身带有杜拉罕 ，则使本技能的攻击容量+1\n[EndSkill] 若自身带有杜拉罕 ，则使自身失去10点理智值",
+          "desc": "[WhenUse] 目标<style=\"highlight\">每带有5级</style>[Sinking]强度，使本技能的硬币威力+1<style=\"highlight\">(最多+2)</style>\n[WhenUse] 自身<style=\"highlight\">每带有4层</style>[Coffin]，使本技能的攻击容量+1<style=\"highlight\">(最多+2)</style>\n[WhenUse] 若自身带有[NightPathfinding]，则使本技能的攻击容量+1\n[EndSkill] 若自身带有[NightPathfinding]，则使自身失去10点理智值",
           "coinlist": [
             {},
             {
@@ -850,7 +850,7 @@
         {
           "level": 1,
           "name": "杜拉罕啊…！",
-          "desc": "[DuelCounter]\n[StartBattle] 若自身未带有杜拉罕 ，则下回合使自身获得1层杜拉罕 (每回合最多1层)\n[EndBattle] 若自身带有杜拉罕 ，则解除自身的杜拉罕 ",
+          "desc": "[DuelCounter]\n[StartBattle] 若自身未带有[NightPathfinding]，则下回合使自身获得1层[NightPathfinding](每回合最多1层)\n[EndBattle] 若自身带有[NightPathfinding]，则解除自身的[NightPathfinding]",
           "coinlist": [
             {},
             {
@@ -865,7 +865,7 @@
         {
           "level": 3,
           "name": "杜拉罕啊…！",
-          "desc": "[DuelCounter]\n<style=\"highlight\">[BeforeUse] 若自身带有杜拉罕 且自身的理智值不低于15点，则使用“悲叹、哀恸、破灭吧”进行反击(每回合最多1次)</style>\n[StartBattle] 若自身未带有杜拉罕 ，则下回合使自身获得1层杜拉罕 (每回合最多1层)\n<style=\"highlight\">[WhenUse] 若目标的沉沦 强度不低于6级，则使本技能的硬币威力+1</style>\n[EndBattle] 若自身带有杜拉罕 ，则解除自身的杜拉罕 ",
+          "desc": "[DuelCounter]\n<style=\"highlight\">[BeforeUse] 若自身带有[NightPathfinding]且自身的理智值不低于15点，则使用“悲叹、哀恸、破灭吧”进行反击(每回合最多1次)</style>\n[StartBattle] 若自身未带有[NightPathfinding]，则下回合使自身获得1层[NightPathfinding](每回合最多1层)\n<style=\"highlight\">[WhenUse] 若目标的[Sinking]强度不低于6级，则使本技能的硬币威力+1</style>\n[EndBattle] 若自身带有[NightPathfinding]，则解除自身的[NightPathfinding]",
           "coinlist": [
             {},
             {
@@ -880,7 +880,7 @@
         {
           "level": 4,
           "name": "杜拉罕啊…！",
-          "desc": "[DuelCounter]\n[BeforeUse] 若自身带有杜拉罕 且自身的理智值不低于15点，则使用“悲叹、哀恸、破灭吧”进行反击(每回合最多1次)\n[StartBattle] 若自身未带有杜拉罕 ，则下回合使自身获得1层杜拉罕 (每回合最多1层)\n[WhenUse] 目标<style=\"highlight\">每带有3级</style>沉沦 强度，使本技能的硬币威力+1<style=\"highlight\">(最多+2)</style>\n<style=\"highlight\">[WinDuel] 下回合使自身获得(本技能拼点次数/3)层攻击等级提升 (最多3层，每回合最多1次)</style>\n[EndBattle] 若自身带有杜拉罕 ，则解除自身的杜拉罕 ",
+          "desc": "[DuelCounter]\n[BeforeUse] 若自身带有[NightPathfinding]且自身的理智值不低于15点，则使用“悲叹、哀恸、破灭吧”进行反击(每回合最多1次)\n[StartBattle] 若自身未带有[NightPathfinding]，则下回合使自身获得1层[NightPathfinding](每回合最多1层)\n[WhenUse] 目标<style=\"highlight\">每带有3级</style>[Sinking]强度，使本技能的硬币威力+1<style=\"highlight\">(最多+2)</style>\n<style=\"highlight\">[WinDuel] 下回合使自身获得(本技能拼点次数/3)层[AttackUp](最多3层，每回合最多1次)</style>\n[EndBattle] 若自身带有[NightPathfinding]，则解除自身的[NightPathfinding]",
           "coinlist": [
             {},
             {
@@ -900,7 +900,7 @@
         {
           "level": 3,
           "name": "悲叹、哀恸、破灭吧",
-          "desc": "[WhenUse] 使自身失去15点理智值\n[WhenUse] 目标每带有5级沉沦 强度，使本技能的基础威力+1(最多+2)\n[WhenUse] 自身理智值越低，本技能造成的伤害越高(每失去1点理智值，造成的伤害+0.3%，最多+21%)\n[WhenUse] 自身每带有1层棺 ，使本技能造成的伤害+7%(最多+70%)\n[WhenUse] 自身每带有1层杜拉罕 ，使本技能造成的伤害+10%(最多+30%)\n[WhenUse] 使自身获得1层棺 \n[EndSkill] 若本技能攻击击杀了目标，则使自身获得2层棺 \n[EndSkill] 若自身理智值低于0点，则使自身恢复10点理智值。自身理智值低于0点时，根据相差的理智值，相应使自身额外恢复理智值(每相差1点，额外恢复1点理智值，最多25点)\n[EndBattle] 解除自身的杜拉罕 ",
+          "desc": "[WhenUse] 使自身失去15点理智值\n[WhenUse] 目标每带有5级[Sinking]强度，使本技能的基础威力+1(最多+2)\n[WhenUse] 自身理智值越低，本技能造成的伤害越高(每失去1点理智值，造成的伤害+0.3%，最多+21%)\n[WhenUse] 自身每带有1层[Coffin]，使本技能造成的伤害+7%(最多+70%)\n[WhenUse] 自身每带有1层[NightPathfinding]，使本技能造成的伤害+10%(最多+30%)\n[WhenUse] 使自身获得1层[Coffin]\n[EndSkill] 若本技能攻击击杀了目标，则使自身获得2层[Coffin]\n[EndSkill] 若自身理智值低于0点，则使自身恢复10点理智值。自身理智值低于0点时，根据相差的理智值，相应使自身额外恢复理智值(每相差1点，额外恢复1点理智值，最多25点)\n[EndBattle] 解除自身的[NightPathfinding]",
           "coinlist": [
             {
               "coindescs": [
@@ -930,7 +930,7 @@
         {
           "level": 4,
           "name": "悲叹、哀恸、破灭吧",
-          "desc": "[WhenUse] 使自身失去15点理智值\n[WhenUse] 目标每带有5级沉沦 强度，使本技能的基础威力+1(最多+<style=\"highlight\">4</style>)\n[WhenUse] 自身理智值越低，本技能造成的伤害越高(每失去1点理智值，造成的伤害+0.3%，最多+21%)\n[WhenUse] 自身每带有1层棺 ，使本技能造成的伤害+<style=\"highlight\">10</style>%(最多+<style=\"highlight\">100</style>%)\n[WhenUse] 自身每带有1层杜拉罕 ，使本技能造成的伤害+<style=\"highlight\">20</style>%(最多+<style=\"highlight\">60</style>%)\n[WhenUse] 使自身获得<style=\"highlight\">2</style>层棺 \n[EndSkill] 若本技能攻击击杀了目标，则使自身获得<style=\"highlight\">3</style>层棺 \n[EndSkill] 若自身理智值低于0点，则使自身恢复10点理智值。自身理智值低于0点时，根据相差的理智值，相应使自身额外恢复理智值(每相差1点，额外恢复<style=\"highlight\">2</style>点理智值，最多<style=\"highlight\">50</style>点)\n[EndBattle] 解除自身的杜拉罕 ",
+          "desc": "[WhenUse] 使自身失去15点理智值\n[WhenUse] 目标每带有5级[Sinking]强度，使本技能的基础威力+1(最多+<style=\"highlight\">4</style>)\n[WhenUse] 自身理智值越低，本技能造成的伤害越高(每失去1点理智值，造成的伤害+0.3%，最多+21%)\n[WhenUse] 自身每带有1层[Coffin]，使本技能造成的伤害+<style=\"highlight\">10</style>%(最多+<style=\"highlight\">100</style>%)\n[WhenUse] 自身每带有1层[NightPathfinding]，使本技能造成的伤害+<style=\"highlight\">20</style>%(最多+<style=\"highlight\">60</style>%)\n[WhenUse] 使自身获得<style=\"highlight\">2</style>层[Coffin]\n[EndSkill] 若本技能攻击击杀了目标，则使自身获得<style=\"highlight\">3</style>层[Coffin]\n[EndSkill] 若自身理智值低于0点，则使自身恢复10点理智值。自身理智值低于0点时，根据相差的理智值，相应使自身额外恢复理智值(每相差1点，额外恢复<style=\"highlight\">2</style>点理智值，最多<style=\"highlight\">50</style>点)\n[EndBattle] 解除自身的[NightPathfinding]",
           "coinlist": [
             {
               "coindescs": [
@@ -965,7 +965,7 @@
         {
           "level": 3,
           "name": "悲叹、哀恸、破灭吧",
-          "desc": "[WhenUse] 使自身失去15点理智值\n[WhenUse] 目标每带有5级沉沦 强度，使本技能的基础威力+1(最多+2)\n[WhenUse] 自身理智值越低，本技能造成的伤害越高(每失去1点理智值，造成的伤害+0.3%，最多+21%)\n[WhenUse] 自身每带有1层棺 ，使本技能造成的伤害+7%(最多+70%)\n[WhenUse] 自身每带有1层杜拉罕 ，使本技能造成的伤害+10%(最多+30%)\n[WhenUse] 使自身获得1层棺 \n[EndSkill] 若本技能攻击击杀了目标，则使自身获得2层棺 \n[EndSkill] 若自身理智值低于0点，则使自身恢复10点理智值。自身理智值低于0点时，根据相差的理智值，相应使自身额外恢复理智值(每相差1点，额外恢复1点理智值，最多25点)\n[EndBattle] 解除自身的杜拉罕 ",
+          "desc": "[WhenUse] 使自身失去15点理智值\n[WhenUse] 目标每带有5级[Sinking]强度，使本技能的基础威力+1(最多+2)\n[WhenUse] 自身理智值越低，本技能造成的伤害越高(每失去1点理智值，造成的伤害+0.3%，最多+21%)\n[WhenUse] 自身每带有1层[Coffin]，使本技能造成的伤害+7%(最多+70%)\n[WhenUse] 自身每带有1层[NightPathfinding]，使本技能造成的伤害+10%(最多+30%)\n[WhenUse] 使自身获得1层[Coffin]\n[EndSkill] 若本技能攻击击杀了目标，则使自身获得2层[Coffin]\n[EndSkill] 若自身理智值低于0点，则使自身恢复10点理智值。自身理智值低于0点时，根据相差的理智值，相应使自身额外恢复理智值(每相差1点，额外恢复1点理智值，最多25点)\n[EndBattle] 解除自身的[NightPathfinding]",
           "coinlist": [
             {
               "coindescs": [
@@ -995,7 +995,7 @@
         {
           "level": 4,
           "name": "悲叹、哀恸、破灭吧",
-          "desc": "[WhenUse] 使自身失去15点理智值\n[WhenUse] 目标每带有5级沉沦 强度，使本技能的基础威力+1(最多+<style=\"highlight\">4</style>)\n[WhenUse] 自身理智值越低，本技能造成的伤害越高(每失去1点理智值，造成的伤害+0.3%，最多+21%)\n[WhenUse] 自身每带有1层棺 ，使本技能造成的伤害+<style=\"highlight\">10</style>%(最多+<style=\"highlight\">100</style>%)\n[WhenUse] 自身每带有1层杜拉罕 ，使本技能造成的伤害+<style=\"highlight\">20</style>%(最多+<style=\"highlight\">60</style>%)\n[WhenUse] 使自身获得<style=\"highlight\">2</style>层棺 \n[EndSkill] 若本技能攻击击杀了目标，则使自身获得<style=\"highlight\">3</style>层棺 \n[EndSkill] 若自身理智值低于0点，则使自身恢复10点理智值。自身理智值低于0点时，根据相差的理智值，相应使自身额外恢复理智值(每相差1点，额外恢复<style=\"highlight\">2</style>点理智值，最多<style=\"highlight\">50</style>点)\n[EndBattle] 解除自身的杜拉罕 ",
+          "desc": "[WhenUse] 使自身失去15点理智值\n[WhenUse] 目标每带有5级[Sinking]强度，使本技能的基础威力+1(最多+<style=\"highlight\">4</style>)\n[WhenUse] 自身理智值越低，本技能造成的伤害越高(每失去1点理智值，造成的伤害+0.3%，最多+21%)\n[WhenUse] 自身每带有1层[Coffin]，使本技能造成的伤害+<style=\"highlight\">10</style>%(最多+<style=\"highlight\">100</style>%)\n[WhenUse] 自身每带有1层[NightPathfinding]，使本技能造成的伤害+<style=\"highlight\">20</style>%(最多+<style=\"highlight\">60</style>%)\n[WhenUse] 使自身获得<style=\"highlight\">2</style>层[Coffin]\n[EndSkill] 若本技能攻击击杀了目标，则使自身获得<style=\"highlight\">3</style>层[Coffin]\n[EndSkill] 若自身理智值低于0点，则使自身恢复10点理智值。自身理智值低于0点时，根据相差的理智值，相应使自身额外恢复理智值(每相差1点，额外恢复<style=\"highlight\">2</style>点理智值，最多<style=\"highlight\">50</style>点)\n[EndBattle] 解除自身的[NightPathfinding]",
           "coinlist": [
             {
               "coindescs": [
@@ -1058,7 +1058,7 @@
         {
           "level": 2,
           "name": "火力反击",
-          "desc": "[WhenUse] 使自身获得2层呼吸法 \n<style=\"highlight\">[WhenUse] 下回合使自身获得1层迅捷 (每回合最多1次)</style>",
+          "desc": "[WhenUse] 使自身获得2层[Breath]\n<style=\"highlight\">[WhenUse] 下回合使自身获得1层[Agility](每回合最多1次)</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -1089,7 +1089,7 @@
         {
           "level": 4,
           "name": "火力反击",
-          "desc": "[WhenUse] 使自身获得2层呼吸法 \n[WhenUse] 下回合使自身获得<style=\"highlight\">2</style>层迅捷 (每回合最多1次)",
+          "desc": "[WhenUse] 使自身获得2层[Breath]\n[WhenUse] 下回合使自身获得<style=\"highlight\">2</style>层[Agility](每回合最多1次)",
           "coinlist": [
             {
               "coindescs": [
@@ -1142,7 +1142,7 @@
         {
           "level": 2,
           "name": "一枪爆头",
-          "desc": "<style=\"highlight\">若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%(最多+30%)</style>\n[WhenUse] 使自身增加3级呼吸法 强度并获得1层呼吸法 \n<style=\"highlight\">[WhenUse] 下回合使自身获得2层迅捷 (每回合最多1次)</style>",
+          "desc": "<style=\"highlight\">若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%(最多+30%)</style>\n[WhenUse] 使自身增加3级[Breath]强度并获得1层[Breath]\n<style=\"highlight\">[WhenUse] 下回合使自身获得2层[Agility](每回合最多1次)</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -1165,7 +1165,7 @@
         {
           "level": 4,
           "name": "一枪爆头",
-          "desc": "若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%<style=\"highlight\">(最多+50%)</style>\n[WhenUse] 使自身增加3级呼吸法 强度并获得<style=\"highlight\">2</style>层呼吸法 \n[WhenUse] 下回合使自身获得2层迅捷 (每回合最多1次)",
+          "desc": "若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%<style=\"highlight\">(最多+50%)</style>\n[WhenUse] 使自身增加3级[Breath]强度并获得<style=\"highlight\">2</style>层[Breath]\n[WhenUse] 下回合使自身获得2层[Agility](每回合最多1次)",
           "coinlist": [
             {
               "coindescs": [
@@ -1193,7 +1193,7 @@
         {
           "level": 3,
           "name": "瞄准眉心",
-          "desc": "[BeforeUse] 若自身带有[Bullet_LogicAtelier]，则改为使用“逻辑工作室制 高速粉碎弹”\n若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%(最多+50%)\n[WhenUse] 使自身增加5级呼吸法 强度\n[WhenUse] 消耗所有[LogicAtelierAM]，使自身增加(消耗的[LogicAtelierAM]层数×2)级呼吸法 强度并使本技能造成的伤害+(消耗的[LogicAtelierAM]层数×12.5)%",
+          "desc": "[BeforeUse] 若自身带有[Bullet_LogicAtelier]，则改为使用“逻辑工作室制 高速粉碎弹”\n若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%(最多+50%)\n[WhenUse] 使自身增加5级[Breath]强度\n[WhenUse] 消耗所有[LogicAtelierAM]，使自身增加(消耗的[LogicAtelierAM]层数×2)级[Breath]强度并使本技能造成的伤害+(消耗的[LogicAtelierAM]层数×12.5)%",
           "coinlist": [
             {
               "coindescs": [
@@ -1213,7 +1213,7 @@
         {
           "level": 4,
           "name": "瞄准眉心",
-          "desc": "[BeforeUse] 若自身带有[Bullet_LogicAtelier]，则改为使用“逻辑工作室制 高速粉碎弹”\n若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%(最多+50%)\n[WhenUse] 使自身增加5级呼吸法 强度\n[WhenUse] 消耗所有[LogicAtelierAM]，使自身增加(消耗的[LogicAtelierAM]层数×2)级呼吸法 强度并使本技能造成的伤害+(消耗的[LogicAtelierAM]层数×12.5)%\n<style=\"highlight\">[EndSkill] 使自身获得2层呼吸法 </style>",
+          "desc": "[BeforeUse] 若自身带有[Bullet_LogicAtelier]，则改为使用“逻辑工作室制 高速粉碎弹”\n若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%(最多+50%)\n[WhenUse] 使自身增加5级[Breath]强度\n[WhenUse] 消耗所有[LogicAtelierAM]，使自身增加(消耗的[LogicAtelierAM]层数×2)级[Breath]强度并使本技能造成的伤害+(消耗的[LogicAtelierAM]层数×12.5)%\n<style=\"highlight\">[EndSkill] 使自身获得2层[Breath]</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -1241,7 +1241,7 @@
         {
           "level": 1,
           "name": "战斗呼吸",
-          "desc": "回合开始时，若自身的弹药 数为0，则改为使用“掩护”\n[WhenUse] 若句点事务所 代表 鸿璐在场，则向其申请[MeleeCover](每回合最多1次)\n[EndBattle] 下回合使自身获得1层[LogicAtelierAM](每回合最多1次)",
+          "desc": "回合开始时，若自身的弹药 数为0发，则改为使用“掩护”\n[WhenUse] 若句点事务所 代表 鸿璐在场，则向其申请[MeleeCover](每回合最多1次)\n[EndBattle] 下回合使自身获得1层[LogicAtelierAM](每回合最多1次)",
           "coinlist": [
             {
               "coindescs": []
@@ -1251,7 +1251,7 @@
         {
           "level": 4,
           "name": "战斗呼吸",
-          "desc": "回合开始时，若自身的弹药 数为0，则改为使用“掩护”\n[WhenUse] 若句点事务所 代表 鸿璐在场，则向其申请[MeleeCover](每回合最多1次)\n<style=\"highlight\">[OnSucceedEvade] 使自身增加3级呼吸法 强度(每回合最多3次)</style>\n[EndBattle] 下回合使自身获得1层[LogicAtelierAM](每回合最多1次)",
+          "desc": "回合开始时，若自身的弹药 数为0发，则改为使用“掩护”\n[WhenUse] 若句点事务所 代表 鸿璐在场，则向其申请[MeleeCover](每回合最多1次)\n<style=\"highlight\">[OnSucceedEvade] 使自身增加3级[Breath]强度(每回合最多3次)</style>\n[EndBattle] 下回合使自身获得1层[LogicAtelierAM](每回合最多1次)",
           "coinlist": [
             {
               "coindescs": []
@@ -1266,7 +1266,7 @@
         {
           "level": 3,
           "name": "逻辑工作室制 高速粉碎弹",
-          "desc": "若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%(最多+50%)\n[WhenUse] 使自身增加5级呼吸法 强度\n[WhenUse] 消耗所有[LogicAtelierAM]，使自身增加(消耗的[LogicAtelierAM]层数×2)级呼吸法 强度并使本技能造成的伤害+(消耗的[LogicAtelierAM]层数×25)%",
+          "desc": "若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%(最多+50%)\n[WhenUse] 使自身增加5级[Breath]强度\n[WhenUse] 消耗所有[LogicAtelierAM]，使自身增加(消耗的[LogicAtelierAM]层数×2)级[Breath]强度并使本技能造成的伤害+(消耗的[LogicAtelierAM]层数×25)%",
           "coinlist": [
             {
               "coindescs": [
@@ -1286,7 +1286,7 @@
         {
           "level": 4,
           "name": "逻辑工作室制 高速粉碎弹",
-          "desc": "若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%(最多+50%)\n[WhenUse] 使自身增加5级呼吸法 强度\n[WhenUse] 消耗所有[LogicAtelierAM]，使自身增加(消耗的[LogicAtelierAM]层数×2)级呼吸法 强度并使本技能造成的伤害+(消耗的[LogicAtelierAM]层数×25)%\n<style=\"highlight\">[EndSkill] 使自身获得5层呼吸法 </style>",
+          "desc": "若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%(最多+50%)\n[WhenUse] 使自身增加5级[Breath]强度\n[WhenUse] 消耗所有[LogicAtelierAM]，使自身增加(消耗的[LogicAtelierAM]层数×2)级[Breath]强度并使本技能造成的伤害+(消耗的[LogicAtelierAM]层数×25)%\n<style=\"highlight\">[EndSkill] 使自身获得5层[Breath]</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -1328,7 +1328,7 @@
         {
           "level": 4,
           "name": "掩护",
-          "desc": "[CanDuelGuard]\n[WhenUse] 若句点事务所 代表 鸿璐在场，则向其申请[MeleeCover](每回合最多1次)\n<style=\"highlight\">[WinDuel] 对目标施加1层突刺抗性弱化 (每回合最多1次)</style>\n[EndBattle] 下回合使自身获得1层[LogicAtelierAM](每回合最多1次) ",
+          "desc": "[CanDuelGuard]\n[WhenUse] 若句点事务所 代表 鸿璐在场，则向其申请[MeleeCover](每回合最多1次)\n<style=\"highlight\">[WinDuel] 对目标施加1层[PenetrateResistDown](每回合最多1次)</style>\n[EndBattle] 下回合使自身获得1层[LogicAtelierAM](每回合最多1次) ",
           "coinlist": [
             {
               "coindescs": [
@@ -1371,7 +1371,7 @@
         {
           "level": 2,
           "name": "云涡撕裂",
-          "desc": "<style=\"highlight\">若目标的流血 强度不低于6级，则使本技能的硬币威力+1</style>\n[WhenUse] 下回合使自身获得1层忍耐 (每回合最多1次)",
+          "desc": "<style=\"highlight\">若目标的[Laceration]强度不低于6级，则使本技能的硬币威力+1</style>\n[WhenUse] 下回合使自身获得1层[Endurance](每回合最多1次)",
           "coinlist": [
             {
               "coindescs": [
@@ -1395,7 +1395,7 @@
         {
           "level": 4,
           "name": "云涡撕裂",
-          "desc": "<style=\"highlight\">目标每带有6级流血 强度，使本技能的硬币威力+1(最多+2)</style>\n[WhenUse] 下回合使自身获得<style=\"highlight\">2</style>层忍耐 (每回合最多1次)",
+          "desc": "<style=\"highlight\">目标每带有6级[Laceration]强度，使本技能的硬币威力+1(最多+2)</style>\n[WhenUse] 下回合使自身获得<style=\"highlight\">2</style>层[Endurance](每回合最多1次)",
           "coinlist": [
             {
               "coindescs": [
@@ -1475,7 +1475,7 @@
         {
           "level": 4,
           "name": "风起云涌",
-          "desc": "<style=\"highlight\">目标每带有6级流血 强度，使本技能的硬币威力+1(最多+2)\n[WhenUse] 下回合使自身获得1层忍耐 (每回合最多1次)</style>",
+          "desc": "<style=\"highlight\">目标每带有6级[Laceration]强度，使本技能的硬币威力+1(最多+2)\n[WhenUse] 下回合使自身获得1层[Endurance](每回合最多1次)</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -1507,7 +1507,7 @@
         {
           "level": 3,
           "name": "雷鸣斩",
-          "desc": "若目标的流血 强度不低于6级，则使本技能的硬币威力+1\n[StartBattle] 下回合使自身获得1层[CloudWall]\n[WhenUse] 下回合使自身获得1层忍耐 (每回合最多1次)",
+          "desc": "若目标的[Laceration]强度不低于6级，则使本技能的硬币威力+1\n[StartBattle] 下回合使自身获得1层[CloudWall]\n[WhenUse] 下回合使自身获得1层[Endurance](每回合最多1次)",
           "coinlist": [
             {
               "coindescs": [
@@ -1544,7 +1544,7 @@
         {
           "level": 4,
           "name": "雷鸣斩",
-          "desc": "<style=\"highlight\">目标每带有6级流血 强度，使本技能的硬币威力+1(最多+2)</style>\n[StartBattle] 下回合使自身获得1层[CloudWall]\n[WhenUse] 下回合使自身获得1层忍耐 (每回合最多1次)\n<style=\"highlight\">[WinDuel] 下回合使自身获得1层[BlackCloudBlade](每回合最多1次)</style>",
+          "desc": "<style=\"highlight\">目标每带有6级[Laceration]强度，使本技能的硬币威力+1(最多+2)</style>\n[StartBattle] 下回合使自身获得1层[CloudWall]\n[WhenUse] 下回合使自身获得1层[Endurance](每回合最多1次)\n<style=\"highlight\">[WinDuel] 下回合使自身获得1层[BlackCloudBlade](每回合最多1次)</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -1586,7 +1586,7 @@
         {
           "level": 1,
           "name": "后巷规矩",
-          "desc": "[DuelCounter]\n若黑云会 副会长 以实玛利在场，则触发以下效果\n- 使本技能中的所有硬币转化为[SuperCoin]\n- 拼点失败时，使本技能的最终威力+3\n[WhenUse] 若自身带有[CloudWall]，则使本技能所有重复使用效果无条件生效",
+          "desc": "[DuelCounter]\n若黑云会 副会长 以实玛利在场，则触发以下效果\n- 使本技能的所有硬币转化为[SuperCoin]\n- 拼点失败时，使本技能的最终威力+3\n[WhenUse] 若自身带有[CloudWall]，则使本技能所有重复使用效果无条件生效",
           "coinlist": [
             {
               "coindescs": [
@@ -1606,7 +1606,7 @@
         {
           "level": 4,
           "name": "后巷规矩",
-          "desc": "[DuelCounter]\n若黑云会 副会长 以实玛利在场，则触发以下效果\n- 使本技能中的所有硬币转化为[SuperCoin]\n- 拼点失败时，使本技能的最终威力<style=\"highlight\">+4\n目标每带有1种负面状态，使本技能造成的伤害+10%(最多+100%)</style>\n[WhenUse] 若自身带有[CloudWall]，则使本技能所有重复使用效果无条件生效",
+          "desc": "[DuelCounter]\n若黑云会 副会长 以实玛利在场，则触发以下效果\n- 使本技能的所有硬币转化为[SuperCoin]\n- 拼点失败时，使本技能的最终威力<style=\"highlight\">+4\n目标每带有1种负面状态，使本技能造成的伤害+10%(最多+100%)</style>\n[WhenUse] 若自身带有[CloudWall]，则使本技能所有重复使用效果无条件生效",
           "coinlist": [
             {
               "coindescs": [
@@ -1651,7 +1651,7 @@
         {
           "level": 4,
           "name": "后巷规矩",
-          "desc": "若目标的流血 强度不低于6级，则使本技能的硬币威力+1\n目标每带有1种负面状态，使本技能造成的伤害+10%(最多+100%)\n[WhenUse] 若自身带有[CloudWall]，则使本技能所有重复使用效果无条件生效",
+          "desc": "若目标的[Laceration]强度不低于6级，则使本技能的硬币威力+1\n目标每带有1种负面状态，使本技能造成的伤害+10%(最多+100%)\n[WhenUse] 若自身带有[CloudWall]，则使本技能所有重复使用效果无条件生效",
           "coinlist": [
             {
               "coindescs": [

@@ -87,7 +87,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标现存体力不高于30%，则使本硬币造成的伤害+15%"
+                  "desc": "[OnSucceedAttack] 若目标现存体力低于30%，则使本硬币造成的伤害+15%"
                 }
               ]
             }
@@ -109,7 +109,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标现存体力不高于30%，则使本硬币造成的伤害+20%"
+                  "desc": "[OnSucceedAttack] 若目标现存体力低于30%，则使本硬币造成的伤害+20%"
                 },
                 {
                   "desc": "[EnemyKill] 下回合使自身获得1层迅捷 "
@@ -134,7 +134,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标现存体力不高于30%，则使本硬币造成的伤害+30%"
+                  "desc": "[OnSucceedAttack] 若目标现存体力低于30%，则使本硬币造成的伤害+30%"
                 },
                 {
                   "desc": "[EnemyKill] 下回合使自身获得3层迅捷 "
@@ -1362,7 +1362,7 @@
         {
           "level": 3,
           "name": "碎颅",
-          "desc": "[BeforeUse] 若自身的赤瞳 与忏悔 层数均不低于15层，则改为使用“动真格地碎颅”\n若自身的速度值高于目标3点及以上，则使本技能的硬币威力+1\n[WhenUse] 若自身的理智值为最大值，则使本技能的硬币威力+1\n- [EndSkill] 若该效果触发，则使自身失去15点理智值",
+          "desc": "[BeforeUse] 若自身的赤瞳 与忏悔 层数均不低于15层，则改为使用“动真格地碎颅”\n若自身的速度值高于目标至少3点，则使本技能的硬币威力+1\n[WhenUse] 若自身的理智值为最大值，则使本技能的硬币威力+1\n- [EndSkill] 若该效果触发，则使自身失去15点理智值",
           "coinlist": [
             {
               "coindescs": [
@@ -1594,7 +1594,7 @@
         {
           "level": 4,
           "name": "瞬步",
-          "desc": "<style=\"highlight\">若自身的速度值高于目标至少3点，则使本技能的硬币威力+1</style>\n[WhenUse] 若目标的破裂 强度不低于4级，则使本技能的硬币威力+1\n[WinDuel] 对目标施加1层破裂 ",
+          "desc": "<style=\"highlight\">若自身的速度值高于目标至少3点，则使本技能的硬币威力+1</style>\n[WhenUse] 若目标的[Burst]强度不低于4级，则使本技能的硬币威力+1\n[WinDuel] 对目标施加1层[Burst]",
           "coinlist": [
             {
               "coindescs": [
@@ -1623,7 +1623,7 @@
         {
           "level": 1,
           "name": "如镌刻所示",
-          "desc": "若自身的速度值高于目标，则使本技能造成的伤害+(速度值之差×目标的破裂 强度)%(最多+50%)\n[WhenUse] 若目标的破裂 强度不低于6级，则使本技能的硬币威力+1",
+          "desc": "若自身的速度值高于目标，则使本技能造成的伤害+(速度值之差×目标的[Burst]强度)%(最多+50%)\n[WhenUse] 若目标的[Burst]强度不低于6级，则使本技能的硬币威力+1",
           "coinlist": [
             {
               "coindescs": [
@@ -1644,7 +1644,7 @@
         {
           "level": 2,
           "name": "如镌刻所示",
-          "desc": "若自身的速度值高于目标，则使本技能造成的伤害+(速度值之差×目标的破裂 强度)%(最多+50%)\n[WhenUse] 若目标的破裂 强度不低于<style=\"highlight\">4</style>级，则使本技能的硬币威力+1\n<style=\"highlight\">[WhenUse] 下回合使自身获得2层迅捷 (每回合最多1次)\n[WinDuel] 对目标施加1层破裂 </style>",
+          "desc": "若自身的速度值高于目标，则使本技能造成的伤害+(速度值之差×目标的[Burst]强度)%(最多+50%)\n[WhenUse] 若目标的[Burst]强度不低于<style=\"highlight\">4</style>级，则使本技能的硬币威力+1\n<style=\"highlight\">[WhenUse] 下回合使自身获得2层[Agility](每回合最多1次)\n[WinDuel] 对目标施加1层[Burst]</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -1668,7 +1668,7 @@
         {
           "level": 4,
           "name": "如镌刻所示",
-          "desc": "若自身的速度值高于目标，则使本技能造成的伤害+(速度值之差×目标的破裂 强度)%(最多+50%)\n<style=\"highlight\">若自身的速度值高于目标至少3点，则使本技能的硬币威力+1</style>\n[WhenUse] 若目标的破裂 强度不低于4级，则使本技能的硬币威力+1\n[WhenUse] 下回合使自身获得2层迅捷 (每回合最多1次)\n[WinDuel] 对目标施加1层破裂 ",
+          "desc": "若自身的速度值高于目标，则使本技能造成的伤害+(速度值之差×目标的[Burst]强度)%(最多+50%)\n<style=\"highlight\">若自身的速度值高于目标至少3点，则使本技能的硬币威力+1</style>\n[WhenUse] 若目标的[Burst]强度不低于4级，则使本技能的硬币威力+1\n[WhenUse] 下回合使自身获得2层[Agility](每回合最多1次)\n[WinDuel] 对目标施加1层[Burst]",
           "coinlist": [
             {
               "coindescs": [
@@ -1700,7 +1700,7 @@
         {
           "level": 3,
           "name": "以镌刻诅咒之剑刺穿吧",
-          "desc": "若自身的速度值高于目标，则使本技能造成的伤害+(速度值之差×目标的破裂 强度)%(最多+50%)\n若自身的速度值高于目标至少2点，则使本技能的硬币威力+1\n[WhenUse] 使自身获得3层[LegStrength]\n[WinDuel] 对目标施加2层破裂 ",
+          "desc": "若自身的速度值高于目标，则使本技能造成的伤害+(速度值之差×目标的[Burst]强度)%(最多+50%)\n若自身的速度值高于目标至少2点，则使本技能的硬币威力+1\n[WhenUse] 使自身获得3层[LegStrength]\n[WinDuel] 对目标施加2层[Burst]",
           "coinlist": [
             {
               "coindescs": [
@@ -1737,7 +1737,7 @@
         {
           "level": 4,
           "name": "以镌刻诅咒之剑刺穿吧",
-          "desc": "若自身的速度值高于目标，则使本技能造成的伤害+(速度值之差×目标的破裂 强度)%(最多+50%)\n若自身的速度值高于目标，<style=\"highlight\">则每高于目标2点，使本技能的硬币威力+1(最多+2)\n[WhenUse] 若目标的破裂 强度不低于15级，则使本技能的硬币威力+1</style>\n[WhenUse] 使自身获得3层[LegStrength]\n[WinDuel] 对目标施加2层破裂 ",
+          "desc": "若自身的速度值高于目标，则使本技能造成的伤害+(速度值之差×目标的[Burst]强度)%(最多+50%)\n若自身的速度值高于目标，<style=\"highlight\">则每相差2点，使本技能的硬币威力+1(最多+2)\n[WhenUse] 若目标的[Burst]强度不低于15级，则使本技能的硬币威力+1</style>\n[WhenUse] 使自身获得3层[LegStrength]\n[WinDuel] 对目标施加2层[Burst]",
           "coinlist": [
             {
               "coindescs": [
@@ -1796,7 +1796,7 @@
         {
           "level": 4,
           "name": "脚力。解放。呵",
-          "desc": "[DuelCounter]\n[WhenUse] 使自身获得3层[LegStrength]\n<style=\"highlight\">[WhenUse] 若自身的速度值高于目标，则每高于目标2点，使本技能的基础威力+1(最多+2)</style>",
+          "desc": "[DuelCounter]\n[WhenUse] 使自身获得3层[LegStrength]\n<style=\"highlight\">[WhenUse] 若自身的速度值高于目标，则每相差2点，使本技能的基础威力+1(最多+2)</style>",
           "coinlist": [
             {
               "coindescs": [
