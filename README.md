@@ -41,6 +41,8 @@
   - ✔ 当零协会服务器不可用时，仍能进行安装
   - ❌ 较为繁琐
   - ❌ 如果在Github下载文件，需要进行网络优化操作
+- 如果您既无法使用工具箱，也无法访问文档站，则可参阅[GitHub上的手动安装教程](.github/readme/manual-install.md)。
+  - 访问[文档站](https://www.zeroasso.top)永远是解决问题的首选项。我们非常建议您**尽量访问文档站**，而不是直接参阅GitHub上的教程。
 
 ## 📌截图 _ScreenShots_
 <details>
