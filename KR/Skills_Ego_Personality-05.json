@@ -539,6 +539,256 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2050811,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "분쇄될 과거",
+          "abName": "증기 운반 기계",
+          "desc": "[EndSkill] 3턴 동안 턴 종료 시 정신력 10 감소\n[EndSkill] 홀수 턴에 (나태 공명 수)가 홀수거나, 짝수 턴에 (나태 공명 수)가 짝수면 정신력 10 회복",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] (나태 공명 수/ 2) 만큼 [Vibration] 횟수 증가 (최대 3)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 메인 타겟이면, 대상의 현재 [Vibration]으로 [FusionVibration]"
+                }
+
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 4 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] 메인 타겟의 [Vibration] 1당, 이 코인의 피해량 +1% (최대 50%)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] 메인 타겟의 ([Vibration] 위력 + [Vibration] 횟수) 1당, 이 코인의 피해량 +1% (최대 100%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 이 코인의 효과로 인한 피해량 증가량이 100% 이상이면, [VibrationExplosion] 2회. [Vibration] 횟수 2 감소"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "분쇄될 과거",
+          "abName": "증기 운반 기계",
+          "desc": "<style=\"highlight\">[BeforeAttack] 메인 타겟의 ([Vibration] 위력 + [Vibration] 횟수)가 30 이상이면, 가중치 +1</style>\n[EndSkill] 3턴 동안 턴 종료 시 정신력 10 감소\n[EndSkill] 홀수 턴에 (나태 공명 수)가 홀수거나, 짝수 턴에 (나태 공명 수)가 짝수면 정신력 10 회복",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 횟수 2 증가<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] (나태 공명 수/ 2) 만큼 [Vibration] 횟수 증가 (최대 3)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 메인 타겟이면, 대상의 현재 [Vibration]으로 [FusionVibration]<style=\"highlight\"></style>"
+                }
+
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 4 부여<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] 메인 타겟의 [Vibration] 1당, 이 코인의 피해량 +1% (최대 50%)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] 메인 타겟의 ([Vibration] 위력 + [Vibration] 횟수) 1당, 이 코인의 피해량 +1% (최대 100%)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 이 코인의 효과로 인한 피해량 증가량이 100% 이상이면, [VibrationExplosion] 2회. [Vibration] 횟수 2 감소<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "분쇄될 과거",
+          "abName": "증기 운반 기계",
+          "desc": "[BeforeAttack] 메인 타겟의 ([Vibration] 위력 + [Vibration] 횟수)가 30 이상이면, 가중치 +1\n<style=\"highlight\">- 100 이상이면, 대신 가중치 +3</style>\n<style=\"highlight\">[BeforeAttack] 최대 공명 수 2 당, 공격하는 모든 대상에게 진동 1 부여 (최대 3)</style>\n[EndSkill] 3턴 동안 턴 종료 시 정신력 10 감소\n<style=\"highlight\">[EndSkill] 자신의 최대 체력의 ([AccumulatedPastSinner] x 2)% 만큼 체력 회복</style>\n[EndSkill] 홀수 턴에 (나태 공명 수)가 홀수거나, 짝수 턴에 (나태 공명 수)가 짝수면 정신력 10 회복",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 횟수 2 증가<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] (나태 공명 수/ 2) 만큼 [Vibration] 횟수 증가 (최대 3)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 메인 타겟이면, 대상의 현재 [Vibration]으로 [FusionVibration]<style=\"highlight\"></style>"
+                }
+
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 4 부여<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] 메인 타겟의 [Vibration] 1당, 이 코인의 피해량 +1% (최대 50%)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] 메인 타겟의 ([Vibration] 위력 + [Vibration] 횟수) 1당, 이 코인의 피해량 +1% (최대 100%)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 이 코인의 효과로 인한 피해량 증가량이 50% 이상이면, [VibrationExplosion] 1회.</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 이 코인의 효과로 인한 피해량 증가량이 100% 이상이면, [VibrationExplosion] 2회. [Vibration] 횟수 2 감소<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2050821,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "분쇄될 과거",
+          "abName": "증기 운반 기계",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n최대 공명 수 당, 피해량 +10% (최대 100%)\n- 최대 공명이 나태 공명이었으면, 대신 피해량 +20% (최대 100%)\n[BeforeAttack] 홀수 턴에 (나태 공명 수)가 짝수거나, 짝수 턴에 (나태 공명 수)가 홀수면 피해량 +12%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] 메인 타겟의 ([Vibration] 위력 + [Vibration] 횟수) 1당, 이 코인의 피해량 +1% (최대 100%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 5, [Vibration] 횟수 2 부여 "
+                },
+                {
+                  "desc": "[OnSucceedAttack] (나태 공명 수) 만큼 [Vibration] 횟수 증가 (최대 6)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 메인 타겟이면, 대상의 현재 [Vibration]으로 [FusionVibration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion] 2회. [Vibration] 횟수 2 감소"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 이 코인의 효과로 인한 피해량 증가량이 100% 이상이면, [VibrationExplosion] 2회. [Vibration] 횟수 2 감소"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "분쇄될 과거",
+          "abName": "증기 운반 기계",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n최대 공명 수 당, 피해량 +10% (최대 100%)\n- 최대 공명이 나태 공명이었으면, 대신 피해량 +20% (최대 100%)\n<style=\"highlight\">[BeforeAttack] 메인 타겟의 ([Vibration] 위력 + [Vibration] 횟수)가 30 이상이면, 가중치 +2</style>\n[BeforeAttack] 홀수 턴에 (나태 공명 수)가 짝수거나, 짝수 턴에 (나태 공명 수)가 홀수면 피해량 +12%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] 메인 타겟의 ([Vibration] 위력 + [Vibration] 횟수) 1당, 이 코인의 피해량 +1% (최대 100%)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 5, [Vibration] 횟수 2 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] (나태 공명 수) 만큼 [Vibration] 횟수 증가 (최대 6)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 메인 타겟이면, 대상의 현재 [Vibration]으로 [FusionVibration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion] 2회. [Vibration] 횟수 2 감소<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 이 코인의 효과로 인한 피해량 증가량이 100% 이상이면, [VibrationExplosion] 2회. [Vibration] 횟수 2 감소<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "분쇄될 과거",
+          "abName": "증기 운반 기계",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n최대 공명 수 당, 피해량 +10% (최대 100%)\n- 최대 공명이 나태 공명이었으면, 대신 피해량 +20% (최대 100%)\n[BeforeAttack] 메인 타겟의 ([Vibration] 위력 + [Vibration] 횟수)가 30 이상이면, 가중치 +2\n[BeforeAttack] 홀수 턴에 (나태 공명 수)가 짝수거나, 짝수 턴에 (나태 공명 수)가 홀수면 피해량 +12%\n<style=\"highlight\">[EndSkill] 자신의 최대 체력의 ([AccumulatedPastSinner] x 3)% 만큼 체력 회복</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] 메인 타겟의 ([Vibration] 위력 + [Vibration] 횟수) 1당, 이 코인의 피해량 <style=\"highlight\">+2%</style> (최대 100%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 5, [Vibration] 횟수 2 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] (나태 공명 수) 만큼 [Vibration] 횟수 증가 (최대 6)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 메인 타겟이면, 대상의 현재 [Vibration]으로 [FusionVibration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion] 2회. [Vibration] 횟수 2 감소<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 이 코인의 효과로 인한 피해량 증가량이 100% 이상이면, [VibrationExplosion] 2회. [Vibration] 횟수 2 감소<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

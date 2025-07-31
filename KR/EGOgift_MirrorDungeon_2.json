@@ -124,7 +124,7 @@
     {
       "id": 9167,
       "name": "무진팔방종",
-      "desc": "턴 시작 시, [Vibration] 위력, [Vibration] 횟수 또는 특수 진동을 부여하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n(인격이 스스로 [Vibration] 횟수를 얻는 경우에는 발동 x)\n\n [Vibration] 위력 또는 [Vibration] 횟수를 부여하거나 자신의 [Vibration] 횟수를 소모하는 스킬로 합 승리 시 남은 코인만큼 대상에게 [Vibration] 위력 부여. 대상에게 [Vibration]이 없으면, 대상의 [Vibration] 횟수 3 증가.\n\n턴 시작 시 [ParryingResultUp]를 1 + (자신의 [Vibration] 횟수/5)만큼 얻음. (최대 3)\n\n자신의 [Vibration] 횟수를 소모하는 스킬을 사용했을 때, 적 처치 혹은 흐트러짐 상태로 만들경우 (소모한 [Vibration] 횟수 / 2)만큼 자신의 [Vibration] 횟수 증가 (스킬당 1회)\n\n자신의 [Vibration] 횟수를 소모하는 스킬의 피해량 +(자신이 소모한 [Vibration] 횟수 + 적이 보유한 [Vibration] 위력 + 5)% (E.G.O 스킬 제외, 최대 50%).",
+      "desc": "턴 시작 시, [Vibration] 위력, [Vibration] 횟수 또는 특수 진동을 부여하는 공격 스킬을 보유한 인격이 5인 이상일 때 발동 (E.G.O 스킬 제외, 출격 인원을 기준으로 함).\n(인격이 스스로 [Vibration] 횟수를 얻는 경우에는 발동 x)\n\n[Vibration] 위력 또는 [Vibration] 횟수를 부여하거나 자신의 [Vibration] 횟수를 소모하는 스킬로 합 승리 시 남은 코인만큼 대상에게 [Vibration] 위력 부여. 자신의 진동 횟수 증가 (스킬당 자신의 진동 횟수 최대 3 증가). 대상에게 [Vibration]이 없으면, 대상의 [Vibration] 횟수 3 증가.\n\n턴 시작 시 [ParryingResultUp]를 1 + (자신의 [Vibration] 횟수/5)만큼 얻음. (최대 3)\n\n자신의 [Vibration] 횟수를 소모하는 스킬을 사용했을 때, 적 처치 혹은 흐트러짐 상태로 만들경우 (소모한 [Vibration] 횟수 / 2)만큼 자신의 [Vibration] 횟수 증가 (스킬당 1회)\n\n스킬의 피해량 +(자신이 소모한 [Vibration] 횟수 + 적이 보유한 [Vibration] 위력 + 5)% (E.G.O 스킬 제외, 최대 50%)\n대상에게 [VibrationNesting]이 있을 때, 그 대상에게 중첩되지 않은 유형의 [Vibration]으로 [Switch_Vibration], [FusionVibration]을 사용하면, 턴 종료 시 대상이 보유한 [VibrationNesting]을 다음 턴까지 연장함",
       "simpleDesc": [
         {
           "abilityID": 9167,
@@ -141,6 +141,10 @@
         {
           "abilityID": 91673,
           "simpleDesc": "자신의 진동 횟수를 소모하는 스킬의 피해량 증가"
+        },
+        {
+          "abilityID": 91674,
+          "simpleDesc": "턴 종료 시 대상이 보유한 진동 - 얽힘을 다음 턴까지 연장함"
         }
       ]
     },

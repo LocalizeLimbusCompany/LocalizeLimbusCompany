@@ -124,7 +124,7 @@
     {
       "id": 9167,
       "name": "無振八方鐘",
-      "desc": "ターン開始時、[Vibration]威力、[Vibration]回数または特殊振動を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n(人格が自ら[Vibration]回数を得る場合は発動しない)\n\n[Vibration]威力または[Vibration]回数を付与する、あるいは自分の[Vibration]回数を消耗するスキルでマッチ勝利時、残りコイン数だけ対象に[Vibration]威力を付与。対象に[Vibration]がなければ、対象の[Vibration]回数を3増加。\n\nターン開始時、[ParryingResultUp]を1 + (自分の[Vibration]回数 ÷ 5)だけ得る。(最大3)\n\n自分の[Vibration]回数を消耗するスキルで敵を討伐するか混乱状態にしたなら、(消耗した[Vibration]回数 ÷ 2)だけ、自分の[Vibration]回数が増加(スキルごとに1回)\n\n自分の[Vibration]回数を消耗するスキルのダメージ量 +(自分が消耗した[Vibration]回数 + 敵が保有する[Vibration]威力 + 5)%(E.G.Oスキルを除く、最大50%)",
+      "desc": "ターン開始時、[Vibration]威力、[Vibration]回数または特殊振動を付与する攻撃スキルを保有した人格が5名以上のとき発動。(E.G.Oスキルを除く、出撃人員を基準とする)\n(人格が自ら[Vibration]回数を得る場合は発動しない)\n\n[Vibration]威力または[Vibration]回数を付与する、あるいは自分の[Vibration]回数を消耗するスキルでマッチ勝利時、残りコイン数だけ対象に[Vibration]威力を付与。自分の振動回数が増加。(スキルごとに自分の振動回数が最大3回増加) 対象に[Vibration]がなければ、対象の[Vibration]回数を3増加。\n\nターン開始時、[ParryingResultUp]を1 + (自分の[Vibration]回数 ÷ 5)だけ得る。(最大3)\n\n自分の[Vibration]回数を消耗するスキルで敵を討伐するか混乱状態にしたなら、(消耗した[Vibration]回数 ÷ 2)だけ、自分の[Vibration]回数が増加(スキルごとに1回)\n\nスキルのダメージ量 +(自分が消耗した[Vibration]回数 + 敵が保有する[Vibration]威力 + 5)%(E.G.Oスキルを除く、最大50%)\n対象に[VibrationNesting]があるとき、その対象に重複しないタイプの[Vibration]へ[Switch_Vibration]。[FusionVibration]を使えば、ターン終了時に対象が保有する[VibrationNesting]が次のターンまで延長する",
       "simpleDesc": [
         {
           "abilityID": 9167,
@@ -141,6 +141,10 @@
         {
           "abilityID": 91673,
           "simpleDesc": "自分の振動回数を消耗するスキルのダメージ量増加"
+        },
+        {
+          "abilityID": 91674,
+          "simpleDesc": "ターン終了時、対象の保有する振動-重畳を次のターンまで延長する"
         }
       ]
     },

@@ -124,7 +124,7 @@
     {
       "id": 9167,
       "name": "Omnivibro-octovecti-bell",
-      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency, Count, or 'Unique Tremor'. (except E.G.O Skills, only counts Identities on the field)\n(If an Identity only has Attack Skills that gain [Vibration] Count on self, this E.G.O Gift does not activate for them)\n\nWhen winning a Clash with a Skill that inflicts [Vibration] Potency or Count, or consumes [Vibration] Count on self: inflict (# of remaining Coins) [Vibration] Potency against the target; if the target does not have [Vibration], inflict +3 [Vibration] Count\n\nTurn Start: gain (1 + ([Vibration] Count on self / 5)) [ParryingResultUp]. (max 3)\n\nWhen using a Skill that consumes [Vibration] Count on self: when defeating or Staggering a target, gain ([Vibration] Count consumed / 2) [Vibration] Count (once per Skill)\n\nSkills that consume [Vibration] Count on self deal +([Vibration] consumed on self + [Vibration] Potency on the enemy + 5)% damage (except E.G.O Skills; max 50%)",
+      "desc": "Turn Start: This Gift activates when 5 or more Identities have Attack Skills that apply [Vibration] Potency, Count, or 'Unique Tremor'. (except E.G.O Skills, only counts Identities on the field)\n(If an Identity only has Attack Skills that gain [Vibration] Count on self, this E.G.O Gift does not activate for them)\n\nWhen winning a Clash with a Skill that inflicts [Vibration] Potency or Count, or consumes [Vibration] Count on self: inflict (# of remaining Coins) [Vibration] Potency against the target and gain (# of remaining Coins) Tremor Count (max +3 Tremor Count gained per Skill). If the target does not have [Vibration], inflict +3 [Vibration] Count\n\nTurn Start: gain (1 + ([Vibration] Count on self / 5)) [ParryingResultUp]. (max 3)\n\nWhen using a Skill that consumes [Vibration] Count on self: when defeating or Staggering a target, gain ([Vibration] Count consumed / 2) [Vibration] Count (once per Skill)\n\nSkills deal +([Vibration] consumed on self + [Vibration] Potency on the enemy + 5)% damage (except E.G.O Skills; max 50%)\nWhen the target has [VibrationNesting], when triggering either [Switch_Vibration] or [FusionVibration] against the enemy with a type of [Vibration] they don't have in their [VibrationNesting], extend the [VibrationNesting] on target at Turn End to the next turn",
       "simpleDesc": [
         {
           "abilityID": 9167,
@@ -141,6 +141,10 @@
         {
           "abilityID": 91673,
           "simpleDesc": "Skills that consume [Tremor] Count deal more damage"
+        },
+        {
+          "abilityID": 91674,
+          "simpleDesc": "Extends the Tremor - Superposition on target at Turn End until next turn"
         }
       ]
     },

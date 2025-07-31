@@ -2249,37 +2249,37 @@
       "id": 1031221,
       "name": "Magical Power Charging Support",
       "desc": "If, among allies that gain [Charge] Count with their Base Attack Skills, 1 ally with the least [Charge] Count uses a Base Attack Skill that gains [Charge] Count, they gain +2 [Charge] Count (2 times per turn)\n- At 0 or higher SP: heal ([Charge] on target x 2) HP (max 10; heals up to 20 per turn)\n- At less than 0 SP: heal ([Charge] on target) SP (max 5; heals up to 10 per turn)",
-      "summary": ""
+      "summary": "Gain [Charge] Count\n- Depending on this unit's SP, Heal HP or SP based on [Charge]"
     },
     {
       "id": 1091302,
       "name": "The Sword Sharpened with Tears - !ALERT: E.G.O GEAR SYNC THRESHOLD EXCEEDED!",
       "desc": "Turn Start: at 0 or higher SP, gain [BlessingAlly]\n- Uses Plus Coin Skills as Base Skills\n\nTurn Start: at less than 0 SP, gain [DespairAlly]\n- Uses Minus Coin Skills as Base Skills\n\nWhen gaining [Charge] Count, gain [BlackTearsAlly] instead\n- [BlackTearsAlly] is unaffected by [Charge] Potency",
-      "summary": ""
+      "summary": "Depending on this unit's SP, gain either [BlessingAlly] or [DespairAlly]"
     },
     {
       "id": 1091303,
       "name": "Whispers of the Betrayed Knight",
       "desc": "This unit's SP does not drop below -40 from the following effects:\n- SP loss effects on this unit's Base Skills\n- SP loss effects from allied units' Support Passives\n- SP loss effects from [SwordCutwithTear]\n- SP loss effects from ally death in this unit's 'Base factors decreasing Sanity'\n\nIn an Encounter, when this unit takes damage that brings its SP to -45, maintain this unit's SP at -44 for that turn (once per Encounter)\n(※ This applies only to SP damages; it does not apply to SP changes or SP consuming abilities like using E.G.O Skills)",
-      "summary": ""
+      "summary": "Certain effects cannot reduce this unit's SP below -40 \nSP does not drop below -44 (once per Encounter, does not work when this unit consumes its own SP)"
     },
     {
       "id": 1091304,
       "name": "Break, Tear, and Pierce",
       "desc": "If this unit has [PenetratingSword]: before hitting an enemy with a Base Attack Skill, consume 1 [PenetratingSword] to inflict 1 [Sinking]\n- If this unit has 2+ [PenetratingSword] before this turn's final Base Attack Skill's final Coin hits, consume all of it instead to inflict it as [Sinking]\n\nIf this unit has 3 [SwordCutwithTear]: before hitting an enemy with the final Coin of a Base Attack Skill, consume all [SwordCutwithTear] to inflict 3 [Sinking] and +3 [Sinking] Count, and deal +50% damage with that Coin\n- If this effect activated, reset to 0 SP if this unit has less than 0 SP at Turn End. (when in Panic or 'E.G.O Corrosion', recover) Then, heal 30 SP",
-      "summary": ""
+      "summary": "Consume [PenetratingSword] to inflict [Sinking]\n- At 3 [PenetratingSword], deal more damage; at less than 0 SP, heal SP next turn"
     },
     {
       "id": 1091301,
       "name": "Magical Girl of Justice / Knight of Despair",
       "desc": "When in [BlessingAlly] state...\n- Take -(SP / 2)% HP damage from attacks (max 20%)\n\nWhen in [DespairAlly] state...\n- Deal +(-SP/2)% damage with Base Skills (max 20%)",
-      "summary": ""
+      "summary": "When in [BlessingAlly] state, take less damage\nWhen in [DespairAlly] state, deal more damage"
     },
     {
       "id": 1091311,
       "name": "Magical Girl of Justice / Knight of Despair",
       "desc": "When in [BlessingAlly] state...\n- Take -(SP / 2)% HP damage from attacks (max 20%)\n<style=\"highlight\">- Combat Start: at 3+ [ProtectiveSword], gain 1 [Protection]\n- Combat Start: at 5 [ProtectiveSword], gain 2 [Protection] and 1 [ParryingResultUp] instead</style>\n\nWhen in [DespairAlly] state...\n- Deal +(-SP/2)% damage with Base Skills (max 20%)\n<style=\"highlight\">- Combat Start: at 3+ [PenetratingSword] gain 1 [AttackDmgUp]\n- Combat Start: at 5 [PenetratingSword], gain 2 [AttackDmgUp] and 1 [ResultEnhancement] instead</style>",
-      "summary": ""
+      "summary": "When in [BlessingAlly] state, take less damage; gain [Protection] and [ParryingResultUp] based on this unit's [ProtectiveSword] Stack\nWhen in [DespairAlly] state, deal more damage; gain [AttackDmgUp] and [ResultEnhancement] based on this unit's [PenetratingSword] Stack"
     },
     {
       "id": 1091321,
@@ -2292,6 +2292,17 @@
       "name": "For All Those Who Despair...",
       "desc": "Combat Start: applies to the ally with the earliest Deployment order\n\nAt -15 or less SP, +1 Final Power to Minus Coin Skills\n<style=\"highlight\">At -30 or less SP, +15% damage and +1 Final Power to Minus Coin Skills instead</style>",
       "summary": ""
+    },
+    {
+      "id": 1111301,
+      "name": "Golden Time - Microcavity",
+      "desc": "Turn End: If this unit's HP is between 10% ~ 20%, instantly heal 80% of this unit's max HP, and recover from Stagger. (once per Encounter)\n\nIf this unit has [TimeRentalTwoPersonality], its Skills gain Final Power +1",
+      "summary": "In [TimeRentalTwoPersonality] state, Skills gain Final Power +1"
+    },
+    {
+      "id": 1111321,
+      "name": "Expeditious Execution of Official Duties",
+      "desc": "1 ally with the fastest Speed deals +10% damage when attacking a Staggered target."
     }
   ]
 }
