@@ -1804,6 +1804,296 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1111301,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "征收准备",
+          "desc": "[WhenUse] 对自身施加1层[Vibration]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Vibration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "征收准备",
+          "desc": "[WhenUse] 对自身施加<style=\"highlight\">2</style>层[Vibration]\n<style=\"highlight\">[WhenUse] 若目标的[Vibration]强度不低于6级，则使本技能的硬币威力+1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Vibration]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Vibration]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "征收准备",
+          "desc": "[WhenUse] 对自身施加<style=\"highlight\">3</style>层[Vibration]\n[WhenUse] 若目标的[Vibration]强度不低于6级，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Vibration]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Vibration]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1111302,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "T公司制共振模块",
+          "desc": "[WhenUse] 对自身施加2层[Vibration]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若目标的[Vibration]层数不低于3层，则使目标[VibrationExplosion]1次并使其[Vibration]层数减少1层"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "T公司制共振模块",
+          "desc": "[WhenUse] 对自身施加<style=\"highlight\">3</style>层[Vibration]\n<style=\"highlight\">[WhenUse] 若目标的[Vibration]强度不低于6级，则使本技能的硬币威力+1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Vibration]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Vibration]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 若目标的[Vibration]强度不低于10级，则消耗目标的4级[Vibration]强度并对目标与自身施加2层[Vibration]</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 若目标未处于[Switch_Vibration]或[FusionVibration]状态，则消耗自身的3层[Vibration]并使目标[Switch_Vibration]为[VibrationChainPersonality]</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标的[Vibration]层数不低于3层，则使目标[VibrationExplosion]1次并使其[Vibration]层数减少1层<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "T公司制共振模块",
+          "desc": "[WhenUse] 对自身施加<style=\"highlight\">4</style>层[Vibration]\n[WhenUse] 若目标的[Vibration]强度不低于6级，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Vibration]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Vibration]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标的[Vibration]强度不低于10级，则消耗目标的4级[Vibration]强度并对目标与自身施加2层[Vibration]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">若目标处于[Switch_Vibration]或[FusionVibration]状态，则使本硬币造成的伤害+60%</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标未处于[Switch_Vibration]或[FusionVibration]状态，则消耗自身的3层[Vibration]并使目标[Switch_Vibration]为[VibrationChainPersonality]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标的[Vibration]层数不低于3层，则使目标[VibrationExplosion]1次并使其[Vibration]层数减少1层<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1111303,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "T3型征收铁锤最大化展开",
+          "desc": "若目标带有[TimeSuspend]，则使本技能造成的伤害+30%\n[WhenUse] 若目标的[Vibration]强度不低于6级，则使本技能的硬币威力+1\n[EndSkill] 解除自身的[TimeRentalTwoPersonality]\n[EndSkill] 使自身获得[OutisNoHat](每场战斗最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Vibration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 消耗目标至多3级[Vibration]强度\n- 对自身施加(消耗的[Vibration]强度×2)层[Vibration]\n- 下回合对目标施加(消耗的[Vibration]强度-1)层[Binding]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若目标的[Vibration]层数不低于3层，则使目标[VibrationExplosion]并使其[Vibration]层数减少1层"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] 消耗自身所有[Vibration]层数\n- 每消耗5层[Vibration]，使本硬币威力+1(最多+5)\n- 每消耗1层[Vibration]，使本硬币造成的伤害+1%(最多+50%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若自身带有[TimeRentalTwoPersonality]，则使目标[VibrationExplosion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若自身带有[TimeRentalTwoPersonality]，则对目标施加2层[TimeSuspend]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "T3型征收铁锤最大化展开",
+          "desc": "<style=\"highlight\">若目标处于[Switch_Vibration]或[FusionVibration]状态，则使本技能造成的伤害+30%</style>\n若目标带有[TimeSuspend]，则使本技能造成的伤害+30%\n<style=\"highlight\">[WhenUse] 目标每带有6级[Vibration]强度，使本技能的硬币威力+1(最多+2)</style>\n<style=\"highlight\">[WhenUse] 若目标带有[Binding]，则使本技能的拼点威力+1</style>\n[EndSkill] 解除自身的[TimeRentalTwoPersonality]\n[EndSkill] 使自身获得[OutisNoHat](每场战斗最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Vibration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 消耗目标至多3级[Vibration]强度<style=\"highlight\"></style>\n- 对自身施加(消耗的[Vibration]强度×2)层[Vibration]<style=\"highlight\"></style>\n- 下回合对目标施加(消耗的[Vibration]强度-1)层[Binding]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若目标的[Vibration]层数不低于3层，则使目标[VibrationExplosion]并使其[Vibration]层数减少1层<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] 消耗自身所有[Vibration]层数<style=\"highlight\"></style>\n- 每消耗<style=\"highlight\">4</style>层[Vibration]，使本硬币威力+1(最多+5)\n<style=\"highlight\">- 每消耗1层[Vibration]，使本硬币造成的伤害+2%(最多+100%)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若自身带有[TimeRentalTwoPersonality]，则使目标[VibrationExplosion]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若自身带有[TimeRentalTwoPersonality]，则对目标施加2层[TimeSuspend]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1111304,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "时间租赁-共振",
+          "desc": "[CanDuelGuard]\n[StartBattle] 若自身未带有[TimeRentalTwoPersonality]，则回合结束时使自身获得4层[TimeRentalTwoPersonality](每回合最多1次)\n[WinDuel] 对目标与自身施加2层[Vibration]\n[DefeatDuel] 对自身施加4层[Vibration]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "时间租赁-共振",
+          "desc": "[CanDuelGuard]\n[StartBattle] 若自身未带有[TimeRentalTwoPersonality]，则回合结束时使自身获得4层[TimeRentalTwoPersonality](每回合最多1次)\n[WinDuel] 对目标与自身施加2层[Vibration]\n[DefeatDuel] 对自身施加4层[Vibration]<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

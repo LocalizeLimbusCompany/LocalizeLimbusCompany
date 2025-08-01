@@ -32,7 +32,7 @@
         {
           "level": 1,
           "name": "杀死时间的惩罚",
-          "desc": "若自身带有[TimeAcceleration]，则使本技能的拼点威力+2\n[WhenUse] 若自身的[LimitedTime]层数不低于500层，则对目标施加1层[Laceration]\n[WhenUse] 若自身的[LimitedTime]层数不低于300层，则消耗25层[LimitedTime]并使本技能增加的[Laceration]强度与施加的[Laceration]层数额外+1",
+          "desc": "若自身带有[TimeAcceleration]，则使本技能的拼点威力+2\n[WhenUse] 若自身的[LimitedTime]层数不低于500层，则对目标施加1层[Laceration]\n[WhenUse] 若自身的[LimitedTime]层数不低于300层，则消耗25层[LimitedTime]并令本技能增加的[Laceration]强度与施加的[Laceration]层数额外+1",
           "coinlist": [
             {
               "coindescs": [
@@ -195,7 +195,7 @@
         {
           "level": 1,
           "name": "杀死时间的惩罚",
-          "desc": "若自身带有[TimeAcceleration]，则使本技能的拼点威力+2\n[WhenUse] 若所有部位的[OwnTime]层数总计不低于500层，则对目标施加1层[Laceration]\n[WhenUse] 若[OwnTime]层数总计不低于300层，则消耗25层[OwnTime]并使本技能增加的[Laceration]强度与施加的[Laceration]层数额外+1",
+          "desc": "若自身带有[TimeAcceleration]，则使本技能的拼点威力+2\n[WhenUse] 若所有部位的[OwnTime]层数之和不低于500层，则对目标施加1层[Laceration]\n[WhenUse] 若所有部位的[OwnTime]层数之和不低于300层，则消耗25层[OwnTime]并令本技能增加的[Laceration]强度与施加的[Laceration]层数额外+1",
           "coinlist": [
             {
               "coindescs": [
@@ -313,7 +313,7 @@
         {
           "level": 1,
           "name": "闪避",
-          "desc": "[WhenUse] 所有部位总计每带有100层[OwnTime]，使本技能的基础威力+1",
+          "desc": "[WhenUse] 所有部位总计每带有100层[OwnTime]，使本技能的基础威力+1(最多+3)",
           "coinlist": [
             {
               "coindescs": [
@@ -332,7 +332,7 @@
         {
           "level": 1,
           "name": "时间杀人时间",
-          "desc": "[CantDuel]\n使自身的速度值固定为12点。\n本回合内无法陷入混乱。\n[WhenUse] 消耗400层[OwnTime]。",
+          "desc": "[CantDuel]\n使自身的速度值固定为24点。\n本回合内无法陷入混乱。\n[WhenUse] 获得全员最后剩余的400层[OwnTime]后将其消耗。",
           "coinlist": [
             {
               "coindescs": [

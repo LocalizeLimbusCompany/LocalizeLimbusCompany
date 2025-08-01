@@ -124,7 +124,7 @@
     {
       "id": 9167,
       "name": "无振八方钟",
-      "desc": "回合开始时，若拥有增加[Vibration]强度，施加[Vibration]层数或施加特殊震颤的攻击技能的友方单位不低于5名，则触发该效果(不包括E.G.O技能，以参战人员为基准)。\n(仅拥有对自身施加[Vibration]层数的攻击技能的友方单位不适用)\n\n增加[Vibration]强度，施加[Vibration]层数或消耗自身的[Vibration]层数的技能拼点胜利时，使目标增加(剩余硬币数)级[Vibration]强度，若目标未带有[Vibration]，则对其施加3层[Vibration]。\n\n回合开始时，使自身获得(1+(自身的[Vibration]层数/5))层[ParryingResultUp]。(最多3层)\n\n若消耗自身的[Vibration]层数的技能击杀目标或使目标陷入混乱，则对自身施加(消耗的[Vibration]层数/2)层[Vibration](每个技能最多1次)\n\n消耗自身的[Vibration]层数的技能造成的伤害+(自身消耗的[Vibration]层数+目标的[Vibration]强度+5)%(不包括E.G.O技能，最多+50%)。",
+      "desc": "回合开始时，若拥有增加[Vibration]强度，施加[Vibration]层数或施加特殊震颤的攻击技能的友方单位不低于5名，则触发该效果(不包括E.G.O技能，以参战人员为基准)。\n(仅拥有对自身施加[Vibration]层数的攻击技能的友方单位不适用)\n\n增加[Vibration]强度，施加[Vibration]层数或消耗自身的[Vibration]层数的技能拼点胜利时，使目标增加(剩余硬币数)级[Vibration]强度并对自身施加(剩余硬币数)层[Vibration](每个技能最多3层)，若目标未带有[Vibration]，则对其施加3层[Vibration]。\n\n回合开始时，使自身获得(1+(自身的[Vibration]层数/5))层[ParryingResultUp]。(最多3层)\n\n若消耗自身的[Vibration]层数的技能击杀目标或使目标陷入混乱，则对自身施加(消耗的[Vibration]层数/2)层[Vibration](每个技能最多1次)\n\n技能造成的伤害+(自身消耗的[Vibration]层数+目标的[Vibration]强度+5)%(不包括E.G.O技能，最多+50%)。\n若目标带有[VibrationNesting]，则使其[Switch_Vibration]为未叠加的[Vibration]或以未叠加的[Vibration][FusionVibration]时，回合结束时使其[VibrationNesting]延长至下回合",
       "simpleDesc": [
         {
           "abilityID": 9167,
@@ -141,6 +141,10 @@
         {
           "abilityID": 91673,
           "simpleDesc": "消耗震颤 层数的技能造成的伤害增加"
+        },
+        {
+          "abilityID": 91674,
+          "simpleDesc": "回合结束时，使目标的震颤-叠加延长至下回合"
         }
       ]
     },

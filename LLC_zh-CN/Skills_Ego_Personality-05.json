@@ -33,7 +33,7 @@
                   "desc": "[OnSucceedAttack] 对目标施加2层震颤 ，对目标额外施加(暴怒完全共鸣数/3)层震颤 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标震颤引爆 \n震颤引爆 时，若目标未拥有混乱阈值，\n则对目标造成最终混乱阈值前移量(6 + 2×(暴怒完全共鸣数))% 的暴怒伤害"
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 \n震颤引爆 时，若目标未拥有混乱阈值，\n则对目标造成最终混乱阈值前移量(6+2×(暴怒完全共鸣数))%的暴怒伤害"
                 }
               ]
             }
@@ -51,7 +51,7 @@
                   "desc": "[OnSucceedAttack] 对目标施加3层震颤 ，对目标额外施加(暴怒完全共鸣数/3)层震颤 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标震颤引爆 \n震颤引爆 时，若目标未拥有混乱阈值，\n则对目标造成最终混乱阈值前移量(12 + 3×(暴怒完全共鸣数))% 的暴怒伤害。"
+                  "desc": "[OnSucceedAttack] 使目标震颤引爆 \n震颤引爆 时，若目标未拥有混乱阈值，\n则对目标造成最终混乱阈值前移量(12+3×(暴怒完全共鸣数))%的暴怒伤害。"
                 }
               ]
             }
@@ -125,7 +125,7 @@
           "level": 1,
           "name": "电子哀鸣",
           "abName": "梦中的电子羊",
-          "desc": "[BeforeAttack] 使自身获得8层充能 \n[EndSkill] 使除自身以外充能 层数最低的1名友方单位获得8层充能 \n- 额外使(最大嫉妒共鸣数-2)名友方单位获得以上效果(最多3名)",
+          "desc": "[BeforeAttack] 使自身获得8层[Charge]\n[EndSkill] 使除自身以外[Charge]层数最低的1名友方单位获得8层[Charge]\n- 额外使(最大嫉妒共鸣数-2)名友方单位获得以上效果(最多3名)",
           "coinlist": [
             {
               "coindescs": [
@@ -140,7 +140,7 @@
           "level": 3,
           "name": "电子哀鸣",
           "abName": "梦中的电子羊",
-          "desc": "[BeforeAttack] 使自身获得8层充能 \n[EndSkill] 使除自身以外充能 层数最低的1名友方单位获得8层充能 \n- 额外使(最大嫉妒共鸣数-2)名友方单位获得以上效果(最多4名)\n- 若最大嫉妒共鸣数不低于4，则使自身与该友方单位获得1层嫉妒伤害强化 ",
+          "desc": "[BeforeAttack] 使自身获得8层[Charge]\n[EndSkill] 使除自身以外[Charge]层数最低的1名友方单位获得8层[Charge]\n- 额外使(最大嫉妒共鸣数-2)名友方单位获得以上效果(最多4名)\n- 若最大嫉妒共鸣数不低于4，则使自身与该友方单位获得1层[VioletDamageUp]",
           "coinlist": [
             {
               "coindescs": [
@@ -155,7 +155,7 @@
           "level": 4,
           "name": "电子哀鸣",
           "abName": "梦中的电子羊",
-          "desc": "[BeforeAttack] 使自身获得12层充能 \n[EndSkill] 使除自身以外充能 层数最低的1名友方单位获得8层充能 \n- 额外使(最大嫉妒共鸣数-2)名友方单位获得以上效果(最多<style=\"highlight\">5</style>名)\n- 若最大嫉妒共鸣数不低于4，则使自身与该友方单位获得1层嫉妒伤害强化 \n<style=\"highlight\">- 若最大嫉妒共鸣数不低于6，则使自身与该友方单位获得1层嫉妒伤害强化 </style>",
+          "desc": "[BeforeAttack] 使自身获得12层[Charge]\n[EndSkill] 使除自身以外[Charge]层数最低的1名友方单位获得8层[Charge]\n- 额外使(最大嫉妒共鸣数-2)名友方单位获得以上效果(最多<style=\"highlight\">5</style>名)\n- 若最大嫉妒共鸣数不低于4，则使自身与该友方单位获得1层[VioletDamageUp]\n<style=\"highlight\">- 若最大嫉妒共鸣数不低于6，则使自身与该友方单位获得1层[VioletDamageUp]</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -175,7 +175,7 @@
           "level": 1,
           "name": "电子哀鸣",
           "abName": "梦中的电子羊",
-          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大嫉妒共鸣数-2)(最多+2)\n[BeforeAttack] 若自身的充能 层数不低于10层，则消耗至多20层充能 ，每消耗1层充能 ，使本技能造成的伤害+2%(最多+40%)",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大嫉妒共鸣数-2)(最多+2)\n[BeforeAttack] 若自身的[Charge]层数不低于10层，则消耗至多20层[Charge]，每消耗1层[Charge]，使本技能造成的伤害+2%(最多+40%)",
           "coinlist": [
             {
               "coindescs": [
@@ -193,7 +193,7 @@
           "level": 3,
           "name": "电子哀鸣",
           "abName": "梦中的电子羊",
-          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大嫉妒共鸣数-2)(最多+<style=\"highlight\">3</style>)\n[BeforeAttack] 若自身的充能 层数不低于10层，则消耗至多20层充能 ，每消耗1层充能 ，使本技能造成的伤害+<style=\"highlight\">2.5</style>%(最多+<style=\"highlight\">50</style>%)",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大嫉妒共鸣数-2)(最多+<style=\"highlight\">3</style>)\n[BeforeAttack] 若自身的[Charge]层数不低于10层，则消耗至多20层[Charge]，每消耗1层[Charge]，使本技能造成的伤害+<style=\"highlight\">2.5</style>%(最多+<style=\"highlight\">50</style>%)",
           "coinlist": [
             {
               "coindescs": [
@@ -211,7 +211,7 @@
           "level": 4,
           "name": "电子哀鸣",
           "abName": "梦中的电子羊",
-          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大嫉妒共鸣数-2)(最多+3)\n<style=\"highlight\">[BeforeAttack] 若自身的充能 层数不低于10层，则使本技能命中时施加的状态施加2次</style>\n[BeforeAttack] 若自身的充能 层数不低于10层，则消耗至多20层充能 ，每消耗1层充能 ，使本技能造成的伤害+<style=\"highlight\">3</style>%(最多+<style=\"highlight\">60</style>%)",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大嫉妒共鸣数-2)(最多+3)\n<style=\"highlight\">[BeforeAttack] 若自身的[Charge]层数不低于10层，则使本技能命中时施加的状态施加2次</style>\n[BeforeAttack] 若自身的[Charge]层数不低于10层，则消耗至多20层[Charge]，每消耗1层[Charge]，使本技能造成的伤害+<style=\"highlight\">3</style>%(最多+<style=\"highlight\">60</style>%)",
           "coinlist": [
             {
               "coindescs": [
@@ -279,7 +279,7 @@
           "level": 3,
           "name": "渴望-蜜卡拉",
           "abName": "四百朵玫瑰",
-          "desc": "<style=\"highlight\">若目标的流血 强度不低于6级，则使本技能的硬币威力+1</style>\n[EndSkill] 3回合内，回合结束时使自身失去10点理智值",
+          "desc": "<style=\"highlight\">若目标的[Laceration]强度不低于6级，则使本技能的硬币威力+1</style>\n[EndSkill] 3回合内，回合结束时使自身失去10点理智值",
           "coinlist": [
             {
               "coindescs": [
@@ -330,7 +330,7 @@
           "level": 4,
           "name": "渴望-蜜卡拉",
           "abName": "四百朵玫瑰",
-          "desc": "目标<style=\"highlight\">每带有6级流血 强度，使本技能的硬币威力+1(最多+2)</style>\n[EndSkill] 3回合内，回合结束时使自身失去10点理智值",
+          "desc": "目标<style=\"highlight\">每带有6级[Laceration]强度，使本技能的硬币威力+1(最多+2)</style>\n[EndSkill] 3回合内，回合结束时使自身失去10点理智值",
           "coinlist": [
             {
               "coindescs": [
@@ -389,7 +389,7 @@
           "level": 1,
           "name": "渴望-蜜卡拉",
           "abName": "四百朵玫瑰",
-          "desc": "[CantIdentify]\n随机指定目标\n[WhenUse] 消耗自身体力上限10%的体力并对全体敌方与友方单位造成(消耗的体力/2)点伤害\n- 若现存体力低于体力上限的50%，则改为使全体友方单位增加5级流血 强度并触发其流血 1次(使其流血 层数减少1层)。使自身恢复相当于对友方单位造成流血 伤害量的体力",
+          "desc": "[CantIdentify]\n随机指定目标\n[WhenUse] 消耗自身体力上限10%的体力并对全体敌方与友方单位造成(消耗的体力/2)点伤害\n- 若现存体力低于体力上限的50%，则改为使全体友方单位增加5级[Laceration]强度并触发其[Laceration]1次(使其[Laceration]层数减少1层)。使自身恢复相当于对友方单位造成[Laceration]伤害量的体力",
           "coinlist": [
             {
               "coindescs": [
@@ -437,7 +437,7 @@
           "level": 3,
           "name": "渴望-蜜卡拉",
           "abName": "四百朵玫瑰",
-          "desc": "[CantIdentify]\n随机指定目标\n<style=\"highlight\">若自身与目标的流血 强度之和不低于6级，则使本技能的硬币威力+1</style>\n[WhenUse] 消耗自身体力上限10%的体力并对全体敌方与友方单位造成(消耗的体力/2)点伤害\n- 若现存体力低于体力上限的50%，则改为使全体友方单位增加5级流血 强度并触发其流血 1次(使其流血 层数减少1层)。使自身恢复相当于对友方单位造成流血 伤害量的体力",
+          "desc": "[CantIdentify]\n随机指定目标\n<style=\"highlight\">若自身与目标的[Laceration]强度之和不低于6级，则使本技能的硬币威力+1</style>\n[WhenUse] 消耗自身体力上限10%的体力并对全体敌方与友方单位造成(消耗的体力/2)点伤害\n- 若现存体力低于体力上限的50%，则改为使全体友方单位增加5级[Laceration]强度并触发其[Laceration]1次(使其[Laceration]层数减少1层)。使自身恢复相当于对友方单位造成[Laceration]伤害量的体力",
           "coinlist": [
             {
               "coindescs": [
@@ -485,7 +485,7 @@
           "level": 4,
           "name": "渴望-蜜卡拉",
           "abName": "四百朵玫瑰",
-          "desc": "[CantIdentify]\n随机指定目标\n自身与目标的流血 强度之和每有6级，使本技能的硬币威力+1<style=\"highlight\">(最多+3)</style>\n[WhenUse] 消耗自身体力上限10%的体力并对全体敌方与友方单位造成(消耗的体力/2)点伤害\n- 若现存体力低于体力上限的50%，则改为使全体友方单位增加5级流血 强度并触发其流血 1次(使其流血 层数减少1层)。使自身恢复相当于对友方单位造成流血 伤害量的体力",
+          "desc": "[CantIdentify]\n随机指定目标\n自身与目标的[Laceration]强度之和每有6级，使本技能的硬币威力+1<style=\"highlight\">(最多+3)</style>\n[WhenUse] 消耗自身体力上限10%的体力并对全体敌方与友方单位造成(消耗的体力/2)点伤害\n- 若现存体力低于体力上限的50%，则改为使全体友方单位增加5级[Laceration]强度并触发其[Laceration]1次(使其[Laceration]层数减少1层)。使自身恢复相当于对友方单位造成[Laceration]伤害量的体力",
           "coinlist": [
             {
               "coindescs": [
@@ -533,6 +533,253 @@
                 },
                 {
                   "desc": "<style=\"highlight\">[EnemyKill] 对敌方单位造成超过其剩余体力的溢出伤害时，对全体敌方单位造成共计相当于溢出伤害量的固定伤害(最少1点)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2050811,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "将被粉碎的过去",
+          "abName": "蒸汽运输机",
+          "desc": "[EndSkill] 3回合内，回合结束时使自身失去10点理智值\n[EndSkill] 若在奇数回合(怠惰共鸣数)为奇数，或在偶数回合(怠惰共鸣数)为偶数，则使自身恢复10点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Vibration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加(怠惰共鸣数/2)层[Vibration](最多3层)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标为主要目标，则以目标现有的[Vibration][FusionVibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] 主要目标每带有1级[Vibration]强度，使本硬币造成的伤害+1%(最多+50%)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] 主要目标的[Vibration]强度与[Vibration]层数之和每有1点，使本硬币造成的伤害+1%(最多+100%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若本硬币的效果增加的伤害不低于100%，则使目标[VibrationExplosion]2次，并使其[Vibration]层数减少2层"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "将被粉碎的过去",
+          "abName": "蒸汽运输机",
+          "desc": "<style=\"highlight\">[BeforeAttack] 若主要目标的[Vibration]强度与[Vibration]层数之和不低于30点，则使本技能的攻击容量+1</style>\n[EndSkill] 3回合内，回合结束时使自身失去10点理智值\n[EndSkill] 若在奇数回合(怠惰共鸣数)为奇数，或在偶数回合(怠惰共鸣数)为偶数，则使自身恢复10点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Vibration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加(怠惰共鸣数/2)层[Vibration](最多+3)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标为主要目标，则以目标现有的[Vibration][FusionVibration]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Vibration]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] 主要目标每带有1级[Vibration]强度，使本硬币造成的伤害+1%(最多+50%)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] 主要目标的[Vibration]强度与[Vibration]层数之和每有1点，使本硬币造成的伤害+1%(最多+100%)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若本硬币的效果增加的伤害不低于100%，则使目标[VibrationExplosion]2次，并使其[Vibration]层数减少2层<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "将被粉碎的过去",
+          "abName": "蒸汽运输机",
+          "desc": "[BeforeAttack] 若主要目标的[Vibration]强度与[Vibration]层数之和不低于30点，则使本技能的攻击容量+1\n<style=\"highlight\">- 若不低于100点，则改为使本技能的攻击容量+3</style>\n<style=\"highlight\">[BeforeAttack] 每有2点最大共鸣数，使攻击的全体目标增加1级[Vibration]强度(最多3级)</style>\n[EndSkill] 3回合内，回合结束时使自身失去10点理智值\n<style=\"highlight\">[EndSkill] 使自身恢复体力上限(自身的[AccumulatedPastSinner]层数×2)%的体力</style>\n[EndSkill] 若在奇数回合(怠惰共鸣数)为奇数，或在偶数回合(怠惰共鸣数)为偶数，则使自身恢复10点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Vibration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加(怠惰共鸣数/2)层[Vibration](最多+3)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标为主要目标，则以目标现有的[Vibration][FusionVibration]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Vibration]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] 主要目标每带有1级[Vibration]强度，使本硬币造成的伤害+1%(最多+50%)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] 主要目标的[Vibration]强度与[Vibration]层数之和每有1点，使本硬币造成的伤害+1%(最多+100%)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 若本硬币的效果增加的伤害不低于50%，则使目标[VibrationExplosion]1次</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若本硬币的效果增加的伤害不低于100%，则使目标[VibrationExplosion]2次，并使其[Vibration]层数减少2层<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2050821,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "将被粉碎的过去",
+          "abName": "蒸汽运输机",
+          "desc": "[CantIdentify]\n随机指定目标\n每有1点最大共鸣数，使本技能造成的伤害+10%(最多+100%)\n- 若最大共鸣为怠惰共鸣，则改为使本技能造成的伤害+20%(最多+100%)\n[BeforeAttack] 若在奇数回合(怠惰共鸣数)为偶数，或在偶数回合(怠惰共鸣数)为奇数，则使本技能造成的伤害+12%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] 主要目标的[Vibration]强度与[Vibration]层数之和每有1点，使本硬币造成的伤害+1%(最多+100%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Vibration]强度并对其施加2层[Vibration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加(怠惰共鸣数)层[Vibration](最多6层)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标为主要目标，则以目标现有的[Vibration][FusionVibration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]2次，并使其[Vibration]层数减少2层"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若本硬币的效果增加的伤害不低于100%，则使目标[VibrationExplosion]2次，并使其[Vibration]层数减少2层"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "将被粉碎的过去",
+          "abName": "蒸汽运输机",
+          "desc": "[CantIdentify]\n随机指定目标\n每有1点最大共鸣数，使本技能造成的伤害+10%(最多+100%)\n- 若最大共鸣为怠惰共鸣，则改为使本技能造成的伤害+20%(最多+100%)\n<style=\"highlight\">[BeforeAttack] 若主要目标的[Vibration]强度与[Vibration]层数之和不低于30点，则使本技能的攻击容量+2</style>\n[BeforeAttack] 若在奇数回合(怠惰共鸣数)为偶数，或在偶数回合(怠惰共鸣数)为奇数，则使本技能造成的伤害+12%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] 主要目标的[Vibration]强度与[Vibration]层数之和每有1点，使本硬币造成的伤害+1%(最多+100%)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Vibration]强度并对其施加2层[Vibration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加(怠惰共鸣数)层[Vibration](最多6层)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标为主要目标，则以目标现有的[Vibration][FusionVibration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]2次，并使其[Vibration]层数减少2层<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若本硬币的效果增加的伤害不低于100%，则使目标[VibrationExplosion]2次，并使其[Vibration]层数减少2层<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "将被粉碎的过去",
+          "abName": "蒸汽运输机",
+          "desc": "[CantIdentify]\n随机指定目标\n每有1点最大共鸣数，使本技能造成的伤害+10%(最多+100%)\n- 若最大共鸣为怠惰共鸣，则改为使本技能造成的伤害+20%(最多+100%)\n[BeforeAttack] 若主要目标的[Vibration]强度与[Vibration]层数之和不低于30点，则使本技能的攻击容量+2\n[BeforeAttack] 若在奇数回合(怠惰共鸣数)为偶数，或在偶数回合(怠惰共鸣数)为奇数，则使本技能造成的伤害+12%\n<style=\"highlight\">[EndSkill] 使自身恢复体力上限(自身的[AccumulatedPastSinner]层数×3)%的体力</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] 主要目标的[Vibration]强度与[Vibration]层数之和每有1点，使本硬币造成的伤害<style=\"highlight\">+2%</style>(最多+100%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Vibration]强度并对其施加2层[Vibration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加(怠惰共鸣数)层[Vibration](最多6层)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标为主要目标，则以目标现有的[Vibration][FusionVibration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]2次，并使其[Vibration]层数减少2层<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若本硬币的效果增加的伤害不低于100%，则使目标[VibrationExplosion]2次，并使其[Vibration]层数减少2层<style=\"highlight\"></style>"
                 }
               ]
             }

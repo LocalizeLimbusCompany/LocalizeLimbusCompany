@@ -290,7 +290,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若自身的震颤 层数不低于10层，则使目标震颤引爆 并使其震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 若自身的[Vibration]层数不低于10层，则使目标[VibrationExplosion]并使目标的[Vibration]层数减少1层"
                 },
                 {
                   "desc": "[OnSucceedAttack] 若目标的震颤 强度不低于15级，则使其震颤引爆 并使其震颤 层数减少1层"
@@ -395,7 +395,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加10级震颤 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标追加自身带有的震颤 层数10%的怠惰伤害"
+                  "desc": "[OnSucceedAttack] 自身每带有1层[Vibration]，对目标追加10%的怠惰伤害"
                 }
               ]
             },
@@ -405,20 +405,20 @@
                   "desc": "[OnSucceedAttack] 对目标施加4层震颤 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标追加自身带有的震颤 层数10%的怠惰伤害"
+                  "desc": "[OnSucceedAttack] 自身每带有1层[Vibration]，对目标追加10%的怠惰伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 消耗自身的3层震颤 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 消耗自身的3层[Vibration]使目标[VibrationExplosion]，并使目标的[Vibration]层数减少1层"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 消耗自身的3层震颤 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 消耗自身的3层[Vibration]使目标[VibrationExplosion]，并使目标的[Vibration]层数减少1层"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 消耗自身的3层震颤 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 消耗自身的3层[Vibration]使目标[VibrationExplosion]，并使目标的[Vibration]层数减少1层"
                 }
               ]
             }
@@ -495,7 +495,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "强制征收执行。",
+          "name": "强制征收执行中。",
           "desc": "[WhenUse] 自身每带有5层[Vibration]，则使本技能的拼点威力+1(最多+2)\n[WhenUse] 若自身的[Vibration]层数不低于5层，则自身每带有1层[Vibration]，使本技能造成的伤害+10%(最多+100%)\n[EndSkill] 消耗自身所有[Vibration]层数",
           "coinlist": [
             {
@@ -651,7 +651,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "强制征收执行。",
+          "name": "强制征收执行中。",
           "desc": "[WhenUse] 对自身施加3层[Vibration]\n[WhenUse] 自身每带有4层[Vibration]，使本技能的基础威力+1(最多+3)\n[WinDuel] 消耗自身的5层[Vibration]并使自身获得3层[TimeRentalTwo]",
           "coinlist": [
             {
@@ -790,7 +790,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "强制征收执行。",
+          "name": "强制征收执行中。",
           "desc": "[WhenUse] 对自身施加3层震颤 \n[WhenUse] 自身每带有4层震颤 ，使本技能的基础威力+1(最多+3)\n[WinDuel] 消耗自身的5层震颤 并使自身获得3层[TimeRentalTwo]",
           "coinlist": [
             {
