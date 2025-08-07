@@ -2249,37 +2249,37 @@
       "id": 1031221,
       "name": "魔力充能支援",
       "desc": "拥有获得[Charge]层数的基础攻击技能的友方单位中[Charge]层数最低的1名友方单位使用获得[Charge]层数的基础攻击技能时，使其获得2层[Charge]\n- 若其理智值不低于0点，则使其恢复(其[Charge]强度×2)点体力(最多10点，每回合最多20点)\n- 若其理智值低于0点，则使其恢复(其[Charge]强度)点理智值(最多5点，每回合最多10点)",
-      "summary": ""
+      "summary": "获得[Charge]层数\n- 基于自身的理智值，根据自身的[Charge]强度相应恢复体力或理智值"
     },
     {
       "id": 1091302,
       "name": "泪锋之剑 - !E.G.O装备同步率过高警告!",
       "desc": "回合开始时，若自身的理智值不低于0点，则使自身获得[BlessingAlly]\n- 使用加算硬币技能作为基础技能\n\n回合开始时，若自身的理智值低于0点，则使自身获得[DespairAlly]\n- 使用减算硬币技能作为基础技能\n\n获得[Charge]层数时，改为获得[BlackTearsAlly]\n- [BlackTearsAlly]不受[Charge]强度影响",
-      "summary": ""
+      "summary": "基于自身的理智值获得[BlessingAlly]或[DespairAlly]"
     },
     {
       "id": 1091303,
       "name": "受叛骑士之私语",
       "desc": "自身的理智值不会因以下效果而低于-40点\n- 自身使用的基础技能的失去理智值效果\n- 友方单位的支援被动的失去理智值效果\n- [SwordCutwithTear]的失去理智值效果\n- 自身基础理智值减少条件中友方单位阵亡时失去理智值\n\n本场战斗中，受到使自身的理智值降至-45点的理智伤害时，该回合期间使自身的理智值维持为-44点(每场战斗最多1次)\n(※ 仅适用于理智伤害，不对改变理智值或使用E.G.O技能等消耗理智值的效果生效)",
-      "summary": ""
+      "summary": "不会因特定效果使自身的理智值低于-40点\n理智值不会低于-44点(每场战斗最多1次，不会在自身消耗自身的理智值时触发)"
     },
     {
       "id": 1091304,
       "name": "摧毁、撕裂、刺穿",
       "desc": "若自身带有[PenetratingSword]，则自身的基础攻击技能命中前，消耗1层[PenetratingSword]并使目标增加1级[Sinking]强度\n- 本回合自身使用的最后一个技能的最后一枚硬币命中前，若自身的[PenetratingSword]层数不低于2层，则消耗所有[PenetratingSword]并使目标增加相当于消耗量的[Sinking]强度\n\n若自身的[SwordCutwithTear]层数为3层，则自身的基础攻击技能的最后一枚硬币命中前，消耗所有[SwordCutwithTear]，使目标增加3级[Sinking]强度并对其施加3层[Sinking]，使该硬币造成的伤害+50%\n- 触发该效果时，若回合结束时自身的理智值低于0点，则使自身的理智值恢复为0点(解除自身的恐慌或E.G.O侵蚀)，随后使自身恢复30点理智值",
-      "summary": ""
+      "summary": "消耗[PenetratingSword]并施加[Sinking]\n- [PenetratingSword]层数为3层时，造成的伤害额外增加，理智值低于0点时，下回合使自身恢复理智值"
     },
     {
       "id": 1091301,
       "name": "正义之魔法少女/绝望骑士",
       "desc": "处于[BlessingAlly]状态时\n- 受到来自攻击的体力伤害-(自身的理智值/2)%(最多-20%)\n\n处于[DespairAlly]状态时\n- 基础技能造成的伤害+(-自身的理智值/2)%(最多+20%)",
-      "summary": ""
+      "summary": "处于[BlessingAlly]状态时，受到的伤害减少\n处于[DespairAlly]状态时，造成的伤害增加"
     },
     {
       "id": 1091311,
       "name": "正义之魔法少女/绝望骑士",
       "desc": "处于[BlessingAlly]状态时\n- 受到来自攻击的体力伤害-(自身的理智值/2)%(最多-20%)\n<style=\"highlight\">- 若战斗开始时自身的[ProtectiveSword]层数不低于3层，则使自身获得1层[Protection]\n- 若战斗开始时自身的[ProtectiveSword]为5层，则改为使自身获得2层[Protection]与1层[ParryingResultUp]</style>\n\n处于[DespairAlly]状态时\n- 基础技能造成的伤害+(-自身的理智值/2)%(最多+20%)\n<style=\"highlight\">- 若战斗开始时自身的[PenetratingSword]层数不低于3层，则使自身获得1层[AttackDmgUp]\n- 若战斗开始时自身的[PenetratingSword]层数为5层，则改为使自身获得2层[AttackDmgUp]与1层[ResultEnhancement]</style>",
-      "summary": ""
+      "summary": "处于[BlessingAlly]状态时，受到的伤害减少；根据自身的[ProtectiveSword]层数使自身获得[Protection]与[ParryingResultUp]\n处于[DespairAlly]状态时，造成的伤害增加；根据自身的[PenetratingSword]层数使自身获得[AttackDmgUp]与[ResultEnhancement]"
     },
     {
       "id": 1091321,
