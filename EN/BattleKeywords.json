@@ -2139,6 +2139,103 @@
       "desc": "Max Stack: 1\n+3% damage on Critical Hit for every Torn Memory (max 18%)\nOn Hit, inflict 1 Bleed (3 per turn)\nOn Kill, gain 3 Poise and +2 Poise Count (2 times per turn)\nExpires at Turn End",
       "summary": "Deal more Crit damage, inflict more Bleed",
       "undefined": "-"
+    },
+    {
+      "id": "HeishouDeathCount",
+      "name": "Life from Death [死中求活]",
+      "desc": "- Max Stack: 5\n- Turn Start: activate the following\n· Gain 1 Offense Level Up for every 1 Stack (max 5)\n· Gain 1 Damage Up for every 2 Stack (max 2)\n· Gain 1 Attack Power Up at 3+ Stack",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "HeishouCombo",
+      "name": "Exalted Command",
+      "desc": "- If unit A applies this effect to unit B: Unit B follows up with an Unopposed Attack with its Base Skill 3 against the same enemy unit A attacked with its Skill. Activates at unit A's Attack End. (Does not activate as Empowered Skills)\n- The Skill used as an Assist Attack does not affect Unit B's upcoming Skills list.\n- Does not activate if affected ally's Skill 3 is not unlocked.",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "HeishouComboCount",
+      "name": "Unrelenting Storm",
+      "desc": "- Number of times this unit activated combo with The Lord of Hongyuan Hong Lu Identity\n- Max Stack: 2\n- Turn Start: gain 1 Offense Level Up and 1 Defense Level Up for every Stack",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "HeishouAttack",
+      "name": "Your Will Guides My Blade.",
+      "desc": "- If unit A applies this effect to unit B: Unit B follows up with an Unopposed Attack with its Skill 1 against the same enemy unit A attacked with its Skill. Activates at unit A's Skill Attack End.\n- The Skill used as an Assist Attack does not affect Unit B's upcoming Skills list.",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "HeishouSupportProtect",
+      "name": "Lordsguard",
+      "desc": "- Unique Assist Defense\n- Max Stack: 1\n- When The Lord of Hongyuan Hong Lu is about to take an Unopposed Attack from an enemy, consume 1 Stack to redirect the enemy's targeting to self; then, copy and use The Lord of Hongyuan Hong Lu's 'Lordsguard' Skill\n- When there are multiple allies with Assist Defense Stacks, the ally with the highest Stack has the highest activation priority\n- This effect counts as Assist Defense, and is counted toward calculating Assist Defense Stacks\n- Expires at Turn End",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "HeishouSynergy",
+      "name": "Leash-holder of All Heishou",
+      "desc": "- Max Stack: 11\n- Gain the following effects based on Stack:\n· For every 1 Stack, gain 1 Max Speed (max 5) and deal +1% damage with Skills\n· For every 2 Stack, gain 1 Min Speed (max 2) and 1 Defense Level Up (max 5)\n· For every 3 Stack, gain 1 Offense Level (max 3)\n· At 5+ Stack, gain 1 Damage Up and apply 1 Offense Level Up to all Heishou Pack Identities",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "HeishouComboCountHonglu",
+      "name": "Heishou Bolus Contamination [黑獣丸染]",
+      "desc": "- Max Stack: 11\n- Empowers The Lord of Hongyuan Hong Lu based on which Heishou he activated combo with\n- The Heishou Bolus Contamination effects can stack with each other\n\n· Heishou - Mao Adept Faust: take -5% damage from Skills\n· Heishou - Mao Ryōshū: if this unit's Speed is faster than the target's, deal +5% damage\n· Heishou - Mao Outis: inflict +1 Rupture Count On Hit with Unopposed Attacks (once per turn)\n· Heishou - Si Rodion: Inflict 1 Rupture On Critical Hit (3 times per turn)\n· Heishou - Si Gregor: Gain +1 Poise Count when dealing Rupture damage (once per turn)",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "DarkHongluQiuAndHonglu",
+      "name": "One Who Walks The Way of the Hegemon",
+      "desc": "- Hong Lu's Skills gain +1 Final Power\n- On Clash Win, 1 ally(including this unit) with the least SP heals 5 SP\n- When an ally dies, next turn, this unit gains 2 Attack Power Up and remaining allies gain 1 Attack Power Up (once per turn)",
+      "summary": ""
+    },
+    {
+      "id": "DarkHongluTeaching",
+      "name": "Uncompromising Imposition",
+      "desc": "Max Stack: 3\n- Turn End: heal 5 SP\n- When HP drops to 0 during the Encounter, heal up to max HP (activates as many times as this unit has Stacks)\n- When healed by this effect, gain 1 Final Power Up next turn",
+      "summary": ""
+    },
+    {
+      "id": "DarkHongluParryGahwan",
+      "name": "You're Ridiculous, Big Brother.",
+      "desc": "In Clashes against Jia Huan, Clash Power +2",
+      "summary": ""
+    },
+    {
+      "id": "DarkHonglu_EGOResourceup",
+      "name": "No Matter How Many Must Bleed...",
+      "desc": "[Hong Lu Exclusive Effect]\n- For this Encounter: after using a Skill Attack, gain 2 additional E.G.O resources of the Skill's Affinity (once per turn)\n- When this unit takes damage, it gains 2 Slash DMG Up next turn (once per turn)",
+      "summary": ""
+    },
+    {
+      "id": "DarkHonglu_Xi",
+      "name": "Happiness",
+      "desc": "- Hong Lu's Clash Power +1\n- When there are 1 or more surviving allies in this Encounter: upon taking fatal damage, Hong Lu does not die and heals 50% HP instead\n- Nullfies the effect that turns this unit into a Precious Jade once. When clashing against Skills that turns this unit into a Precious Jade, Clash Power +5; if this unit wins that Clash, this unit does not become a Precious Jade, recovers from Stagger, reduces Jia Mu's SP by 10, and inflicts 2 Fragile against Jia Mu\nOn Clash Win against Jia Mu, gain 1 random E.G.O Resource each from 3 of the E.G.O Affinities with the least amount of resources",
+      "summary": ""
+    },
+    {
+      "id": "DarkHonglu_Le",
+      "name": "Happiness, Joy",
+      "desc": "- Hong Lu's Final Power +1\n- On Clash Win, heal 5 SP for 1 ally with the least SP (including this unit)\n- When there are 1 or more surviving allies in this Encounter: upon taking fatal damage, Hong Lu does not die and heals 50% HP instead\nOn Clash Win against Jia Mu, gain 1 random E.G.O Resource each from 3 of the E.G.O Affinities with the least amount of resources",
+      "summary": ""
+    },
+    {
+      "id": "DarkHonglu_Ai",
+      "name": "Happiness, Joy, Sorrow",
+      "desc": "- Hong Lu's Final Power +3\n- On Clash Win, heal 5 SP for 1 ally with the least SP (including this unit)\n- When an ally is killed, the remaining allies at Turn End gain 1 Attack Power Up next turn (once per turn)\n- When there are 1 or more surviving allies in this Encounter: upon taking fatal damage, Hong Lu does not die and heals 50% HP instead\nOn Clash Win against Jia Mu, gain 1 random E.G.O Resource each from 3 of the E.G.O Affinities with the least amount of resources",
+      "summary": ""
+    },
+    {
+      "id": "DarkHonglu_Nu",
+      "name": "Happiness, Joy, Sorrow, Wrath",
+      "desc": "- Hong Lu's Final Power +5\n- Allies heal 5 SP at every Turn Start (including this unit)\n- When an ally is killed, the remaining allies at Turn End gain 1 Attack Power Up next turn (once per turn)\n- When there are 1 or more surviving allies in this Encounter: upon taking fatal damage, Hong Lu does not die and heals 50% HP instead\n- Increases damage dealt by 30% of the total HP percentage this unit has cumulatively lost during this Encounter (max 100%)\nOn Clash Win against Jia Mu, gain 1 random E.G.O Resource each from 3 of the E.G.O Affinities with the least amount of resources",
+      "summary": ""
     }
   ]
 }

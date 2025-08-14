@@ -2011,6 +2011,443 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1061301,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "길을 열고 싶군",
+          "desc": "[StartBattle] 본인을 제외한 아군 1 + (최대 공명 수 / 3)명에게 [Endurance] 1 부여. (턴 당 1회, 최대 3. [SupportProtect]를 보유한 대상에게 우선 부여. 특수 원호 방어[TabExplain] 포함)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Breath] 횟수 2 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 2 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "길을 열고 싶군",
+          "desc": "[StartBattle] 본인을 제외한 아군 1 + (최대 공명 수 / 3)명에게 [Endurance] 1 부여. (턴 당 1회, 최대 3. [SupportProtect]를 보유한 대상에게 우선 부여. 특수 원호 방어[TabExplain] 포함)\n<style=\"highlight\">[WhenUse] 대상의 [Burst]과 자신의 [Breath] 합이 6 이상이면, 코인 위력 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Breath] 횟수 2 증가<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 2 증가<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "길을 열고 싶군",
+          "desc": "[StartBattle] 본인을 제외한 아군 1 + (최대 공명 수 / 3)명에게 [Endurance] 1 부여. (턴 당 1회, 최대 3. [SupportProtect]를 보유한 대상에게 우선 부여. 특수 원호 방어[TabExplain] 포함)\n[WhenUse] 대상의 [Burst]과 자신의 [Breath] 합이 6 이상이면, 코인 위력 +1\n<style=\"highlight\">[WhenUse] 대상의 부정적인 효과가 3개 이상이면, 합 위력 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Breath] 횟수 <style=\"highlight\">3</style> 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 2 증가<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061302,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "오혈절지경성[汚血絕志竟成]",
+          "desc": "[WhenUse] [Breath] 2 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Breath] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 1 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "오혈절지경성[汚血絕志竟成]",
+          "desc": "<style=\"highlight\">[WhenUse] 대상의 [Burst]과 자신의 [Breath] 합이 6 이상이면, 코인 위력 +1</style>\n[WhenUse] [Breath] <style=\"highlight\">3</style> 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 1 증가<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Breath] 횟수 1 증가<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Burst] 1 부여</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">피해량 +50%</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst] <style=\"highlight\">2</style> 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "오혈절지경성[汚血絕志竟成]",
+          "desc": "<style=\"highlight\">[StartBattle] 자신을 제외한 이번 턴에 탐식 스킬을 장착한 아군에게 [ShamrockDamageUp] 1 부여 (턴 당 1회)</style>\n<style=\"highlight\">[WhenUse] 대상의 [Burst]과 자신의 [Breath] 합 6 당, 코인 위력 +1 (최대 2)</style>\n[WhenUse] [Breath] 3 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 1 증가<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Breath] 횟수 2 증가<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 1 부여<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "피해량 +50%<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">크리티컬 피해량 +50%</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 2 부여<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061303,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "흑수들이여 답하라",
+          "desc": "이 스킬은 수비 스킬을 발동시키지 않음\n\n[WhenUse] [Breath] 3 얻음, [Breath] 횟수 1 증가\n\n[EndSkill] 현재 행동 가능한 [HeishouComboCount]이 가장 낮은 아군 흑수에게 [HeishouComboCount] 1 부여하고, [HeishouCombo] 명령. (턴 당 1회)\n- [HeishouCombo]이 종료되면, '군주의 길을 열겠다' 사용\n- [HeishouCombo]이 발동하지 않았거나, [HeishouCombo] 종료 전 연계 중인 인격이 흐트러졌거나 사망한 경우, 대신 '혈혈단신, 사생취원' 사용",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상이 보유한 부정적인 효과 2종류 당 [AttackDown] 1 부여 (최대 3)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상이 보유한 주살 1종류 당 [DefenseDown] 1 부여 (최대 3)"
+                }                
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "흑수들이여 답하라",
+          "desc": "이 스킬은 수비 스킬을 발동시키지 않음\n\n<style=\"highlight\">[WhenUse] 대상의 [Burst]과 자신의 [Breath] 합 4 당, 코인 위력 +1 (최대 3)</style>\n[WhenUse] [Breath] <style=\"highlight\">5</style> 얻음, [Breath] 횟수 <style=\"highlight\">3</style> 증가\n\n[EndSkill] 현재 행동 가능한 [HeishouComboCount]이 가장 낮은 아군 흑수에게 [HeishouComboCount] 1 부여하고, [HeishouCombo] 명령. (턴 당 1회)\n- [HeishouCombo]이 종료되면, '군주의 길을 열겠다' 사용\n- [HeishouCombo]이 발동하지 않았거나, [HeishouCombo] 종료 전 연계 중인 인격이 흐트러졌거나 사망한 경우, 대신 '혈혈단신, 사생취원' 사용",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상이 보유한 부정적인 효과 2종류 당 [AttackDown] 1 부여 (최대 3)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상이 보유한 주살 1종류 당 [DefenseDown] 1 부여 (최대 3)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061304,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "흑수이조[黑獣利爪]",
+          "desc": "[DuelCounter]\n[StartBattle] 아군 흑수 인격 (최대 공명 수)명에게 [SlashResultUp] 1 부여 (턴 당 1회)\n\n[StartBattle] 대기 인원이 있으면 현재 체력 비율이 가장 낮은 아군 흑수 1명을 지정.\n- 이 스킬 사용 시 지정한 대상에게 [HeishouAttack] 부여, 턴 종료시 [RetreatForCommon]을 명령하고, 퇴각 시 최대 체력의 10%를 회복시킴 (턴 당 1회)\n- 이 효과로 퇴각한 흑수 인격은, 복귀할 인격 중 흑수가 아닌 인격보다 복귀 순서가 빠르게 배치됨\n[StartBattle] 대기 인원이 없으면, 현재 체력 비율이 가장 낮은 아군 흑수 1명에게 [Enhancement] 2 부여 (턴 당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "흑수이조[黑獣利爪]",
+          "desc": "[DuelCounter]\n[StartBattle] 아군 흑수 인격 (최대 공명 수)명에게 [SlashResultUp] 1 부여 (턴 당 1회)\n\n[StartBattle] 대기 인원이 있으면 현재 체력 비율이 가장 낮은 아군 흑수 1명을 지정.\n- 이 스킬 사용 시 지정한 대상에게 [HeishouAttack] 부여, 턴 종료시 [RetreatForCommon]을 명령하고, 퇴각 시 최대 체력의 10%를 회복시킴 (턴 당 1회)\n- 이 효과로 퇴각한 흑수 인격은, 복귀할 인격 중 흑수가 아닌 인격보다 복귀 순서가 빠르게 배치됨\n[StartBattle] 대기 인원이 없으면, 현재 체력 비율이 가장 낮은 아군 흑수 1명에게 [Enhancement] 2 부여 (턴 당 1회)<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061305,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "군주의 길을 열겠다",
+          "desc": "[WhenUse] 흑수 필두 인격과 연계했으면, 기본 위력 +1, 코인 위력 +1\n\n[WhenUse] 대상의 [Burst]과 자신의 호흡 합이 6 이상이면, 코인 위력 +1\n[WhenUse] [HeishouComboCountHonglu] 1 당 피해량 +5%\n[EndSkill] [HeishouCombo]을 발동한 흑수 인격에 따라 [HeishouComboCountHonglu] 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 2 부여"
+                },
+                {
+                  "desc": "[EnemyKill] 아군 흑수 인격 중 정신력이 가장 낮은 대상 2명의 정신력 10을 회복하고, 다음 턴에 [Enhancement] 1 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "군주의 길을 열겠다",
+          "desc": "[WhenUse] 흑수 필두 인격과 연계했으면, 기본 위력 +1, 코인 위력 +1\n\n<style=\"highlight\">대상과 자신의 잃은 체력 합 1% 당 피해량 +1% (최대 50%)</style>\n<style=\"highlight\">[WhenUse] 대상의 [Burst]과 자신의 호흡 합 6 당, 코인 위력 +1 (최대 3)</style>\n<style=\"highlight\">[WhenUse] 대상의 부정적인 효과 2개 당 피해량 +10% (최대 30%)</style>\n[WhenUse] [HeishouComboCountHonglu] 1 당 피해량 <style=\"highlight\">+10%</style>\n[EndSkill] [HeishouCombo]을 발동한 흑수 인격에 따라 [HeishouComboCountHonglu] 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 1 증가<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">크리티컬 피해량 +50%</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 2 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 다음 턴에 [SlashResistDown] 1 부여 (턴 당 1회)</style>"
+                },
+                {
+                  "desc": "[EnemyKill] 아군 흑수 인격 중 정신력이 가장 낮은 대상 2명의 정신력 10을 회복하고, 다음 턴에 [Enhancement] 1 부여<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061306,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "혈혈단신, 사생취원[孑孑單身, 捨生取园]",
+          "desc": "자신의 [HeishouDeathCount] 당 피해량 +10%\n대상과 자신의 잃은 체력 합 1% 당 피해량 +1% (최대 50%)\n[WhenUse] [HeishouDeathCount]이 3 이상이면, 이 스킬 가중치 +1\n[WhenUse] 대상의 [Burst]과 자신의 호흡 합이 6 이상이면, 코인 위력 +1\n[WhenUse] [HeishouComboCountHonglu] 1 당 피해량 +5%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "대상이 보유한 부정적인 효과 1개 당 피해량 +10% (최대 50%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [SlashResistDown] 1 부여 (턴 당 1회)"
+                },
+                {
+                  "desc": "[EnemyKill] 다음 턴에 [Enhancement] 1 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "혈혈단신, 사생취원[孑孑單身, 捨生取园]",
+          "desc": "자신의 [HeishouDeathCount] 당 피해량 +10%\n대상과 자신의 잃은 체력 합 1% 당 피해량 +1% (최대 50%)\n[WhenUse] [HeishouDeathCount]이 3 이상이면, 이 스킬 가중치 +1\n<style=\"highlight\">[WhenUse] 대상의 [Burst]과 자신의 호흡 합 6 당, 코인 위력 +1 (최대 3)</style>\n<style=\"highlight\">[WhenUse] 대상의 부정적인 효과 2개 당 피해량 +10% (최대 30%)</style>\n[WhenUse] [HeishouComboCountHonglu] 1 당 피해량 <style=\"highlight\">+10%</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 1 부여<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 1 부여<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "대상이 보유한 부정적인 효과 1개 당 피해량 +10% (최대 50%)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 1 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [SlashResistDown] 1 부여 (턴 당 1회)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[EnemyKill] 다음 턴에 [Enhancement] <style=\"highlight\">2</style> 얻음"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061307,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "호위",
+          "desc": "[CanDuelGuard]\n이 스킬은 해당 스킬을 사용하는 캐릭터의 원호 방어로만 취급되며,\n[SupportProtect] 효과 발동을 체크하는 다른 캐릭터의 효과를 발동시키지 않음.\n[WhenUse] 대상의 부정적인 효과가 3개 이상이면, 합 위력 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
