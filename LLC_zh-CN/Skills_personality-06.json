@@ -2009,6 +2009,443 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1061301,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "我愿开辟前路",
+          "desc": "[StartBattle] 使除自身以外的1+(最大共鸣数/3)名友方单位获得1层[Endurance](每回合最多1次，最多3名。优先使带有[SupportProtect]的友方单位获得，包括特殊援护防御[TabExplain])",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得2层[Breath]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "我愿开辟前路",
+          "desc": "[StartBattle] 使除自身以外的1+(最大共鸣数/3)名友方单位获得1层[Endurance](每回合最多1次，最多3名。优先使带有[SupportProtect]的友方单位获得，包括特殊援护防御[TabExplain])\n<style=\"highlight\">[WhenUse] 若目标的[Burst]强度与自身的[Breath]强度之和不低于6级，则使本技能的硬币威力+1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得2层[Breath]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "我愿开辟前路",
+          "desc": "[StartBattle] 使除自身以外的1+(最大共鸣数/3)名友方单位获得1层[Endurance](每回合最多1次，最多3名。优先使带有[SupportProtect]的友方单位获得，包括特殊援护防御[TabExplain])\n[WhenUse] 若目标的[Burst]强度与自身的[Breath]强度之和不低于6级，则使本技能的硬币威力+1\n<style=\"highlight\">[WhenUse] 若目标带有的负面状态不少于3种，则使本技能的拼点威力+1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得<style=\"highlight\">3</style>层[Breath]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061302,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "污血绝志竟成",
+          "desc": "[WhenUse] 使自身增加2级[Breath]强度",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得1层[Breath]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Burst]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "污血绝志竟成",
+          "desc": "<style=\"highlight\">[WhenUse] 若目标的[Burst]强度与自身的[Breath]强度之和不低于6级，则使本技能的硬币威力+1</style>\n[WhenUse] 使自身增加<style=\"highlight\">3</style>级[Breath]强度",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Burst]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得1层[Breath]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 使目标增加1级[Burst]强度</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">使本硬币造成的伤害+50%</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">2</style>级[Burst]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "污血绝志竟成",
+          "desc": "<style=\"highlight\">[StartBattle] 使除自身以外本回合装备了暴食技能的全体友方单位获得1层[ShamrockDamageUp](每回合最多1次)</style>\n<style=\"highlight\">[WhenUse] 目标的[Burst]强度与自身的[Breath]强度之和每有6级，使本技能的硬币威力+1(最多+2)</style>\n[WhenUse] 使自身增加3级[Breath]强度",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Burst]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得2层[Breath]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Burst]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "使本硬币造成的伤害+50%<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">使本硬币暴击时造成的伤害+50%</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Burst]强度<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061303,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "全体黑兽，回应于我",
+          "desc": "本技能不会触发守备技能\n\n[WhenUse] 使自身增加3级[Breath]强度并使自身获得1层[Breath]\n\n[EndSkill] 使可以行动的属于黑兽的友方单位中[HeishouComboCount]层数最低的1名单位获得1层[HeishouComboCount]，并让其[HeishouCombo](每回合最多1次)\n- [HeishouCombo]结束后，使用“开辟君主之道吧”\n- 若[HeishouCombo]未触发，或连携的友方单位在[HeishouCombo]结束前陷入混乱或阵亡，则改为使用“孑然一身，舍生取园”",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 目标每带有2种负面状态，对其施加1层[AttackDown](最多3层)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 目标每带有1种咒杀，对其施加1层[DefenseDown](最多3层)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "全体黑兽，回应于我",
+          "desc": "本技能不会触发守备技能\n\n<style=\"highlight\">[WhenUse] 目标的[Burst]强度与自身的[Breath]强度之和每有4级，使本技能的硬币威力+1(最多+3)</style>\n[WhenUse] 使自身增加<style=\"highlight\">5</style>级[Breath]强度并使自身获得<style=\"highlight\">3</style>层[Breath]\n\n[EndSkill] 使可以行动的属于黑兽的友方单位中[HeishouComboCount]层数最低的1名单位获得1层[HeishouComboCount]，并让其[HeishouCombo](每回合最多1次)\n- [HeishouCombo]结束后，使用“开辟君主之道吧”\n- 若[HeishouCombo]未触发，或连携的友方单位在[HeishouCombo]结束前陷入混乱或阵亡，则改为使用“孑然一身，舍生取园”",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 目标每带有2种负面状态，对其施加1层[AttackDown](最多3层)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 目标每带有1种咒杀，对其施加1层[DefenseDown](最多3层)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061304,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "黑兽利爪",
+          "desc": "[DuelCounter]\n[StartBattle] 使(最大共鸣数)名属于黑兽的友方单位获得1层[SlashResultUp](每回合最多1次)\n\n[StartBattle] 若有待命人员，则选择现存体力比例最低的1名属于黑兽的友方单位\n- 使用本技能时，使选择的友方单位获得[HeishouAttack]，回合结束时使其进行[RetreatForCommon]，并使其在撤退时恢复其体力上限10%的体力(每回合最多1次)\n- 属于黑兽的友方单位因该效果而撤退时，其会移动到比不属于黑兽的友方单位更靠前的位置\n[StartBattle] 若没有待命人员，则使现存体力比例最低的1名属于黑兽的友方单位获得2层[Enhancement](每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "黑兽利爪",
+          "desc": "[DuelCounter]\n[StartBattle] 使(最大共鸣数)名属于黑兽的友方单位获得1层[SlashResultUp](每回合最多1次)\n\n[StartBattle] 若有待命人员，则选择现存体力比例最低的1名属于黑兽的友方单位\n- 使用本技能时，使选择的友方单位获得[HeishouAttack]，回合结束时使其进行[RetreatForCommon]，并使其在撤退时恢复其体力上限10%的体力(每回合最多1次)\n- 属于黑兽的友方单位因该效果而撤退时，其会移动到比不属于黑兽的友方单位更靠前的位置\n[StartBattle] 若没有待命人员，则使现存体力比例最低的1名属于黑兽的友方单位获得2层[Enhancement](每回合最多1次)<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061305,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "开辟君主之道吧",
+          "desc": "[WhenUse] 若自身与属于黑兽 魁首的友方单位触发连携，则使本技能的基础威力+1，硬币威力+1\n\n[WhenUse] 若目标的[Burst]强度与自身的[Breath]强度之和不低于6级，则使本技能的硬币威力+1\n[WhenUse] 自身每带有1层[HeishouComboCountHonglu]，使本技能造成的伤害+5%\n[EndSkill] 根据触发[HeishouCombo]的属于黑兽的友方单位，使自身获得[HeishouComboCountHonglu]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Burst]强度"
+                },
+                {
+                  "desc": "[EnemyKill] 使属于黑兽的友方单位中理智值最低的2名单位恢复10点理智值，下回合使其获得1层[Enhancement]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "开辟君主之道吧",
+          "desc": "[WhenUse] 若自身与属于黑兽 魁首的友方单位触发连携，则使本技能的基础威力+1，硬币威力+1\n\n<style=\"highlight\">目标与自身已失去体力比例之和每有1%，使本技能造成的伤害+1%(最多+50%)</style>\n<style=\"highlight\">[WhenUse] 目标的[Burst]强度与自身的[Breath]强度之和每有6级，使本技能的硬币威力+1(最多+3)</style>\n<style=\"highlight\">[WhenUse] 目标每带有2种负面状态，使本技能造成的伤害+10%(最多+30%)</style>\n[WhenUse] 自身每带有1层[HeishouComboCountHonglu]，使本技能造成的伤害+<style=\"highlight\">10%</style>\n[EndSkill] 根据触发[HeishouCombo]的属于黑兽的友方单位，使自身获得[HeishouComboCountHonglu]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Burst]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">使本硬币暴击时造成的伤害+50%</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Burst]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 下回合对目标施加1层[SlashResistDown](每回合最多1次)</style>"
+                },
+                {
+                  "desc": "[EnemyKill] 使属于黑兽的友方单位中理智值最低的2名单位恢复10点理智值，下回合使其获得1层[Enhancement]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061306,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "孑然一身，舍生取园",
+          "desc": "自身每带有1层[HeishouDeathCount]，使本技能造成的伤害+10%\n目标与自身已失去体力比例之和每有1%，使本技能造成的伤害+1%(最多+50%)\n[WhenUse] 若自身的[HeishouDeathCount]层数不低于3层，则使本技能的攻击容量+1\n[WhenUse] 若目标的[Burst]强度与自身的[Breath]强度之和不低于6级，则使本技能的硬币威力+1\n[WhenUse] 自身每带有1层[HeishouComboCountHonglu]，使本技能造成的伤害+5%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Burst]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Burst]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "目标每带有1种负面状态，使本硬币造成的伤害+10%(最多+50%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Burst]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层[SlashResistDown](每回合最多1次)"
+                },
+                {
+                  "desc": "[EnemyKill] 下回合使自身获得1层[Enhancement]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "孑然一身，舍生取园",
+          "desc": "自身每带有1层[HeishouDeathCount]，使本技能造成的伤害+10%\n目标与自身已失去体力比例之和每有1%，使本技能造成的伤害+1%(最多+50%)\n[WhenUse] 若自身的[HeishouDeathCount]层数不低于3层，则使本技能的攻击容量+1\n<style=\"highlight\">[WhenUse] 目标的[Burst]强度与自身的[Breath]强度之和每有6级，使本技能的硬币威力+1(最多+3)</style>\n<style=\"highlight\">[WhenUse] 目标每带有2种负面状态，使本技能造成的伤害+10%(最多+30%)</style>\n[WhenUse] 自身每带有1层[HeishouComboCountHonglu]，使本技能造成的伤害+<style=\"highlight\">10%</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Burst]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Burst]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "目标每带有1种负面状态，使本硬币造成的伤害+10%(最多+50%)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Burst]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层[SlashResistDown](每回合最多1次)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[EnemyKill] 下回合使自身获得<style=\"highlight\">2</style>层[Enhancement]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061307,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "护卫",
+          "desc": "[CanDuelGuard]\n本技能仅视作使用本技能的单位的援护防御，不会触发其他单位检测[SupportProtect]触发时生效的效果\n[WhenUse] 若目标带有的负面状态不少于3种，则使本技能的拼点威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -51,7 +51,7 @@
         {
           "level": 1,
           "name": "你是何人？",
-          "desc": "优先指定带有[UninvitedGuest]的目标\n若目标带有[UninvitedGuest]，则使本技能增加的沉沦 强度与施加的沉沦 层数额外+1",
+          "desc": "优先指定带有[UninvitedGuest]的目标\n若目标带有[UninvitedGuest]，则使本技能增加的[Sinking]强度与施加的[Sinking]层数额外+1",
           "coinlist": [
             {
               "coindescs": [
@@ -94,7 +94,7 @@
         {
           "level": 1,
           "name": "你是不速之客？",
-          "desc": "优先指定带有[UninvitedGuest]的目标\n若目标带有[UninvitedGuest]，则使本技能增加的沉沦 强度与施加的沉沦 层数额外+1",
+          "desc": "优先指定带有[UninvitedGuest]的目标\n若目标带有[UninvitedGuest]，则使本技能增加的[Sinking]强度与施加的[Sinking]层数额外+1",
           "coinlist": [
             {
               "coindescs": [
@@ -324,7 +324,7 @@
         {
           "level": 1,
           "name": "电子哀鸣",
-          "desc": "[WhenUse] 自身每带有4层充能 ，使本技能的攻击容量+1(最多+5)\n[WhenUse] 自身每带有5层充能 ，使本技能的拼点威力+3(最多+4)\n[WhenUse] 自身每带有6层充能 ，使自身获得1层嫉妒伤害强化 (最多3层)\n[EndBattle] 消耗自身所有充能 层数并解除[ConnectedPlug]",
+          "desc": "[WhenUse] 自身每带有4层[Charge]，使本技能的攻击容量+1(最多+5)\n[WhenUse] 自身每带有5层[Charge]，使本技能的拼点威力+3(最多+4)\n[WhenUse] 自身每带有6层[Charge]，使自身获得1层[VioletDamageUp](最多3层)\n[EndBattle] 消耗自身所有[Charge]层数并解除[ConnectedPlug]",
           "coinlist": [
             {
               "coindescs": [
@@ -357,7 +357,7 @@
         {
           "level": 1,
           "name": "电子哀鸣",
-          "desc": "[CantDuel]\n[WhenUse] 使自身获得10层守护 \n[WhenUse] 自身每带有4层充能 ，使本技能的攻击容量+1(最多+5)\n[WhenUse] 自身每带有5层充能 ，使本技能的拼点威力+3(最多+4)\n[WhenUse] 自身每带有6层充能 ，使自身获得1层嫉妒伤害强化 (最多3层)",
+          "desc": "[CantDuel]\n[WhenUse] 使自身获得10层[Protection]\n[WhenUse] 自身每带有4层[Charge]，使本技能的攻击容量+1(最多+5)\n[WhenUse] 自身每带有5层[Charge]，使本技能的拼点威力+3(最多+4)\n[WhenUse] 自身每带有6层[Charge]，使自身获得1层[VioletDamageUp](最多3层)",
           "coinlist": [
             {
               "coindescs": [
@@ -376,7 +376,7 @@
         {
           "level": 1,
           "name": "拒绝接地",
-          "desc": "优先指定带有[AntiSheepGround]的人格\n自身每带有1层[ConnectedPlug]，使本技能的拼点威力+1\n[StartBattle] 使自身获得2×(3-自身的[ConnectedPlug]层数)层守护 \n[WhenUse] 使自身获得1层充能 \n[DefeatDuel] 若目标带有[AntiSheepGround]，则对自身施加1层[ConnectedPlug]",
+          "desc": "优先指定带有[AntiSheepGround]的人格\n自身每带有1层[ConnectedPlug]，使本技能的拼点威力+1\n[StartBattle] 使自身获得2×(3-自身的[ConnectedPlug]层数)层[Protection]\n[WhenUse] 使自身获得1层[Charge]\n[DefeatDuel] 若目标带有[AntiSheepGround]，则对自身施加1层[ConnectedPlug]",
           "coinlist": [
             {
               "coindescs": [
@@ -421,7 +421,7 @@
         {
           "level": 1,
           "name": "缠绕的断念",
-          "desc": "若目标的沉沦 强度不低于6级，则使本技能的硬币威力+1\n[WinDuel] 对目标施加3层沉沦 ",
+          "desc": "若目标的[Sinking]强度不低于6级，则使本技能的硬币威力+1\n[WinDuel] 对目标施加3层[Sinking]",
           "coinlist": [
             {
               "coindescs": [
