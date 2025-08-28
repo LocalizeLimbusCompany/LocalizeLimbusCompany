@@ -6,7 +6,7 @@
         {
           "level": 1,
           "name": "Crimson Strike",
-          "desc": "[WhenUse] If target has 5+ negative effects, Clash Power +1\n[WhenUse] Base Power +1 for every 3 [Burst] on target (max 2)",
+          "desc": "[WhenUse] If target has 5+ types of negative effects, Clash Power +1\n[WhenUse] Base Power +1 for every 3 [Burst] on target (max 2)",
           "coinlist": [
             {
               "coindescs": [
@@ -29,6 +29,126 @@
               ]
             }
           ]
+        },
+        {
+          "level": 2,
+          "name": "Crimson Strike Second Form - Rupture (破)",
+          "desc": "[WhenUse] If target has 5+ types of negative effects, Clash Power +1\n[WhenUse] Base Power +1 for every 3 [Burst] on target (max 2)\n[WhenUse] Coin Power +1 for every 6 [Burst] on target (max 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Gain 1 [AttackUp] next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Gain 1 [AttackUp] next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Crimson Strike Third Form - Might (强)",
+          "desc": "[WhenUse] If target has 5+ types of negative effects, Clash Power +2\n[WhenUse] Base Power +1 for every 3 [Burst] on target (max 2)\n[WhenUse] Coin Power +1 for every 6 [Burst] on target (max 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Burst] and +2 [Burst] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Gain 1 [AttackUp] next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Burst] and +2 [Burst] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Gain 1 [AttackUp] next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Crimson Strike Fourth Form - Binding (束)",
+          "desc": "[WhenUse] If target has 5+ types of negative effects, Clash Power +2\n[WhenUse] Base Power +1 for every 3 [Burst] on target (max 2)\n[WhenUse] Coin Power +1 for every 6 [Burst] on target (max 2)\n[WhenUse] Gain 3 [Agility] next turn (once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Burst] and +2 [Burst] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Gain 1 [AttackUp] next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Burst] and +2 [Burst] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Gain 1 [AttackUp] next turn"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [Binding] next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Crimson Strike Fifth Form - March (進)",
+          "desc": "[WhenUse] If target has 5+ types of negative effects, Clash Power +2\n[WhenUse] Base Power +1 for every 3 [Burst] on target (max 2)\n[WhenUse] Coin Power +1 for every 6 [Burst] on target (max 2)\n[WhenUse] Gain 3 [Agility] next turn (once per turn)\n[WhenUse] Gain 3 [Breath] aind +2 [Breath] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Burst] and +2 [Burst] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Gain 1 [AttackUp] next turn"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict 2 [Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Burst] and +2 [Burst] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Gain 1 [AttackUp] next turn"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [Binding]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Reuse this Coin (2 times max)"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -38,7 +158,7 @@
         {
           "level": 1,
           "name": "Crimson Phoenix",
-          "desc": "[WhenUse] If target has 5+ negative effects, Coin Power +1\n[WhenUse] Coin Power +1 for every 6 [Burst] on target (max 2)",
+          "desc": "[WhenUse] If target has 5+ types of negative effects, Coin Power +1\n[WhenUse] Coin Power +1 for every 6 [Burst] on target (max 2)",
           "coinlist": [
             {
               "coindescs": [
@@ -63,23 +183,265 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain [Breath] equal to [Burst] on target (max 5)"
+                  "desc": "[OnSucceedAttack] Gain +1 [Breath] Count. Gain [Breath] equal to [Burst] on target (max 5)"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Gain [Breath] Count equal to [Burst] Count on target (max 2)"
+                  "desc": "[OnSucceedAttackHead] Gain 3 [Breath] next turn. Gain [Breath] Count equal to [Burst] Count on target next turn (max 2)"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[CriticalOnSucceedAttack] Deal +50% damage"
+                  "desc": "Deal +50% Damage on Critical Hit"
                 },
                 {
                   "desc": "[CriticalEnemyTargetKillFail] Inflict +2 [Burst] Count"
                 },
                 {
                   "desc": "[CriticalEnemyTargetKill] Gain 3 [AttackUp] next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Crimson Phoenix Second Form - Rupture (破)",
+          "desc": "[WhenUse] If target has 4+ types of negative effects, Coin Power +1\n[WhenUse] Coin Power +1 for every 6 [Burst] on target (max 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [DefenseDown]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain 3 [AttackUp] next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 [Breath] Count. Gain [Breath] equal to [Burst] on target (max 5)"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] Gain 3 [Breath] next turn. Gain [Breath] Count equal to [Burst] Count on target next turn (max 2)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Deal +50% Damage on Critical Hit"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKillFail] Inflict +2 [Burst] Count"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] Gain 3 [AttackUp] next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Crimson Phoenix Third Form - Blaze (炎)",
+          "desc": "[WhenUse] If target has 4+ types of negative effects, Coin Power +1\n[WhenUse] Coin Power +1 for every 6 [Burst] on target (max 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [DefenseDown]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain 3 [AttackUp] next turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain [Breath] equal to ([Burst] + [Combustion]) on target (max 10)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain [Breath] Count equal to ([Burst] Count + [Combustion] Count) on target (max 5)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Deal +50% Damage on Critical Hit"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKillFail] Inflict +2 [Burst] Count"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] Gain 3 [AttackUp] next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Crimson Phoenix Fourth Form - Qi (氣)",
+          "desc": "[WhenUse] If target has 4+ types of negative effects, Coin Power +1\n[WhenUse] Coin Power +1 for every 3 [Burst] on target (max 2)\n[WhenUse] Gain 3 [Breath] and +2 [Breath] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [DefenseDown]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict 3 [Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain 3 [AttackUp] next turn"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict 3 [Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain [Breath] equal to ([Burst] + [Combustion]) on target (max 10)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain [Breath] Count equal to ([Burst] Count + [Combustion] Count) on target (max 5)"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict 2 [Vulnerable]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Deal +50% Damage on Critical Hit"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKillFail] Inflict +2 [Burst] Count"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] Gain 3 [AttackUp] next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Crimson Phoenix Fifth Form - Wings (翼)",
+          "desc": "[WhenUse] If target has 4+ types of negative effects, Coin Power +1\n[WhenUse] Coin Power +1 for every 3 [Burst] on target (max 2)\n[WhenUse] Gain 3 [Breath] and +2 [Breath] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [DefenseDown]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict 3 [Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain 3 [AttackUp] next turn"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict 3 [Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain [Breath] equal to ([Burst] + [Combustion]) on target (max 10)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain [Breath] Count equal to ([Burst] Count + [Combustion] Count) on target (max 5)"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict 2 [Vulnerable]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Deal +50% Damage on Critical Hit"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKillFail] Inflict +2 [Burst] Count"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] Gain 3 [AttackUp] next turn"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKillFail] Use Crimson Cleave against the target"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] Use Crimson Cleave against a random enemy"
                 }
               ]
             }
@@ -93,7 +455,7 @@
         {
           "level": 1,
           "name": "Crimson Spring",
-          "desc": "[StartBattle] Gain +1 Atk Weight for every 4 negative effect on target (max 2)\n[WhenUse] If target has 5+ negative effects, Base Power +5\n[WhenUse] If the sum of the target's [Burst] and [Burst] Count is at 15+, Coin Power +5\n[WinDuel] Inflict +2 [Burst] Count",
+          "desc": "[BeforeAttack] Gain +1 Atk Weight for every 4 types of negative effects on target (max 2)\n[WhenUse] If target has 5+ types of negative effects, Base Power +5\n[WhenUse] If target has 15+ ([Burst] + [Burst] Count), Coin Power +5\n[WinDuel] Inflict +2 [Burst] Count",
           "coinlist": [
             {
               "coindescs": [
@@ -101,13 +463,157 @@
                   "desc": "[OnSucceedAttack] Inflict 7 Bleed"
                 },
                 {
-                  "desc": "[CriticalOnSucceedAttack] Deal +200% damage"
+                  "desc": "Deal +200% Damage on Critical Hit"
                 },
                 {
                   "desc": "[CriticalOnSucceedAttack] Inflict +3 Bleed Count"
                 },
                 {
                   "desc": "[CriticalOnSucceedAttack] Gain 2 [Breath] and +1 [Breath] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Crimson Spring Second Form - Passion (熱)",
+          "desc": "[BeforeAttack] Gain +1 Atk Weight for every 3 types of negative effects on target (max 2)\n[WhenUse] If target has 5+ types of negative effects, Base Power +5\n[WhenUse] Coin Power +1 for every 3 ([Burst] + [Burst] Count on target) (max 5)\n[WinDuel] Inflict +2 [Burst] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 7 Bleed"
+                },
+                {
+                  "desc": "Deal +200% Damage on Critical Hit"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict +3 Bleed Count"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Gain 2 [Breath] and +1 [Breath] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Crimson Spring Third Form - Decapitation (斬)",
+          "desc": "[BeforeAttack] Gain +1 Atk Weight for every 3 types of negative effects on target (max 2)\n[WhenUse] If target has 5+ types of negative effects, Base Power +5\n[WhenUse] Coin Power +1 for every 3 ([Burst] + [Burst] Count on target) (max 5)\n[WinDuel] Inflict +2 [Burst] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Bleed"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict +2 Bleed Count"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Gain 2 [Breath] and +1 [Breath] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 7 Bleed"
+                },
+                {
+                  "desc": "Deal +200% Damage on Critical Hit"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict +3 Bleed Count"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Gain 2 [Breath] and +1 [Breath] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Crimson Spring Fourth Form - Flow (巡)",
+          "desc": "[BeforeAttack] Gain +1 Atk Weight for every 3 types of negative effects on target (max 2)\n[WhenUse] If target has 5+ types of negative effects, Base Power +5\n[WhenUse] Coin Power +1 for every 3 ([Burst] + [Burst] Count on target) (max 5)\n[WinDuel] Inflict +2 [Burst] Count\n[WhenUse] Gain 5 [Breath] and +2 [Breath] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Bleed"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict +2 Bleed Count"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Gain 2 [Breath] and +1 [Breath] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 7 Bleed"
+                },
+                {
+                  "desc": "Deal +200% Damage on Critical Hit"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict +3 Bleed Count"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Gain 2 [Breath] and +1 [Breath] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Crimson Spring Fifth Form - 花 (Blossom)",
+          "desc": "[BeforeAttack] Gain +1 Atk Weight for every 3 types of negative effects on target (max 2)\n[WhenUse] If target has 5+ types of negative effects, Base Power +5\n[WhenUse] Coin Power +1 for every 3 ([Burst] + [Burst] Count on target) (max 5)\n[WinDuel] Inflict +2 [Burst] Count\n[WhenUse] Gain 5 [Breath] and +2 [Breath] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 Bleed"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict +2 Bleed Count"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Gain 2 [Breath] and +1 [Breath] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 7 Bleed"
+                },
+                {
+                  "desc": "Deal +200% Damage on Critical Hit"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Inflict +3 Bleed Count"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] Gain 2 [Breath] and +1 [Breath] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Deal +10% damage for every type of negative effect on target (max 50%)"
+                },
+                {
+                  "desc": "Deal +50% Damage on Critical Hit"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain 3 [Agility] next turn (once per turn)"
                 }
               ]
             }
@@ -121,7 +627,22 @@
         {
           "level": 1,
           "name": "Adept Evasion",
-          "desc": "[OnSucceedEvade] Gain 1 [Breath] next turn. (3 times per turn)"
+          "desc": "[OnSucceedEvade] Gain 1 [Breath] next turn. (3 times per Skill)"
+        },
+        {
+          "level": 2,
+          "name": "Adept Evasion",
+          "desc": "[OnSucceedEvade] Gain 3 [Breath] next turn. (2 times per Skill)"
+        },
+        {
+          "level": 3,
+          "name": "Adept Evasion",
+          "desc": "[WhenUse] Base Power +2 for every 2 types of negative effect on target (max 10)\n[OnSucceedEvade] Gain 3 [Breath] next turn. (2 times per Skill)"
+        },
+        {
+          "level": 4,
+          "name": "Adept Evasion - Redirected Counter",
+          "desc": "[WhenUse] Base Power +2 for every 2 types of negative effect on target (max 10)\n[OnSucceedEvade] Gain 3 [Breath] next turn. (2 times per Skill)\n[OnSucceedEvade] Use Crimson Cleave (once per turn)"
         }
       ]
     }

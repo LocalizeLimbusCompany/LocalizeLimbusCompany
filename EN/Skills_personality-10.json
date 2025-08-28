@@ -1753,6 +1753,345 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1101401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Oh, Let the Smell of Burning Blood...",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Combustion] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Oh, Let the Smell of Burning Blood...",
+          "desc": "<style=\"highlight\">[WhenUse] If target has 6+ ([Combustion] + [Burst]), Coin Power +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Combustion] Count<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Oh, Let the Smell of Burning Blood...",
+          "desc": "[WhenUse] If target has 6+ ([Combustion] + [Burst]), Coin Power +1<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] Inflict 1 [Combustion]</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Combustion] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] Inflict +1 [Burst] Count</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "... Fuel My Rampage.",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] If this unit has [ChickenStance], or if this unit has less than 50% HP, Reuse this Coin (once per Skill)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "... Fuel My Rampage.",
+          "desc": "<style=\"highlight\">[WhenUse] If target has 6+ ([Combustion] + [Burst]), Coin Power +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] If this unit has [ChickenStance], or if this unit has less than 50% HP, Reuse this Coin (once per Skill)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "... Fuel My Rampage.",
+          "desc": "[WhenUse] If target has 6+ ([Combustion] + [Burst]), Coin Power +1<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] Inflict +1 [Burst] Count</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] Inflict +1 [Burst] Count</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] If this unit has [ChickenStance], or if this unit has less than 50% HP, Reuse this Coin (once per Skill)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] Deal (10% of this Coin's final damage) bonus Wrath damage</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Bloodflame Massacre [血炎亂舞]",
+          "desc": "[WideAreaRampage]\n[StartBattle] If this unit has [ChickenStance], or if this unit has less than 50% HP, convert all Coins to [SuperCoin]\n[WhenUse] Gain 1 [ChickenStance]\n[WhenUse] If target has 6+ ([Combustion] + [Burst]), Coin Power +1\n[DefeatDuel] Apply 2 [Combustion] to target and self",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Combustion] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Burst]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Bloodflame Massacre [血炎亂舞]",
+          "desc": "[WideAreaRampage]\n<style=\"highlight\">Deal +1% damage for every 2% (missing HP percentage on target + missing HP percentage on self) (max 50%)</style>\n[StartBattle] If this unit has [ChickenStance], or if this unit has less than 50% HP, convert all Coins to [SuperCoin]\n[WhenUse] Gain 1 [ChickenStance]\n<style=\"highlight\">[WhenUse] Coin Power +1 for every 6 ([Combustion] + [Burst]) on target (max 2)</style>\n<style=\"highlight\">[WhenUse] Clash Power +1 for every 20% missing HP on self (max 2)</style>\n[DefeatDuel] Apply 2 [Combustion] to target and self",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Combustion] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Burst] Count<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] Deal (10% of this Coin's final damage) bonus Gluttony damage</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Combustion]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Burst]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] Deal (20% of this Coin's final damage) bonus Gluttony damage against all targets</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Rooster's Deathstrike [鷄窮則殺]",
+          "desc": "[DuelCounter]\n[WhenUse] Gain 3 [ChickenStance] next turn\n[WhenUse] If this unit has [ChickenStance], Coin Power +1\n[DefeatDuel] Apply 2 [Combustion] to target and self",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Rooster's Deathstrike [鷄窮則殺]",
+          "desc": "[DuelCounter]\n[WhenUse] Gain 3 [ChickenStance] next turn\n<style=\"highlight\">[WhenUse] If target has 10+ ([Combustion] + [Burst]), Base Power +1</style>\n[WhenUse] If this unit has [ChickenStance], Coin Power +1\n<style=\"highlight\">[WhenUse] This Skill deals +1% damage for every 3% HP this unit cumulatively lost in this Encounter (max 30%)</style>\n[DefeatDuel] Apply 2 [Combustion] to target and self",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Burst] Count<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

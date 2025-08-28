@@ -6,7 +6,7 @@
         {
           "level": 1,
           "name": "赤擊",
-          "desc": "[WhenUse] 対象のマイナス効果が5つ以上なら、マッチ威力 +1\n[WhenUse] 対象の[Burst]3につき、基本威力 +1(最大2)",
+          "desc": "[WhenUse] 対象のマイナス効果が5種以上なら、マッチ威力 +1\n[WhenUse] 対象の[Burst]3につき、基本威力 +1(最大2)",
           "coinlist": [
             {
               "coindescs": [
@@ -14,7 +14,7 @@
                   "desc": "[OnSucceedAttack] [Burst]回数が2増加"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 次のターンに [AttackUp]1を得る"
+                  "desc": "[OnSucceedAttackHead] 次のターンに[AttackUp]1を得る"
                 }
               ]
             },
@@ -24,7 +24,127 @@
                   "desc": "[OnSucceedAttack] [Burst]回数が2増加"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 次のターンに [AttackUp]1を得る"
+                  "desc": "[OnSucceedAttackHead] 次のターンに[AttackUp]1を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "赤撃弐型 - 破",
+          "desc": "[WhenUse] 対象のマイナス効果が5種以上なら、マッチ威力 +1\n[WhenUse] 対象の[Burst]3につき、基本威力 +1(最大2)\n[WhenUse] 対象の[Burst]6につき、コイン威力 +1(最大2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに[AttackUp]1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに[AttackUp]1を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "赤撃参型 - 強",
+          "desc": "[WhenUse] 対象のマイナス効果が5種以上なら、マッチ威力 +2\n[WhenUse] 対象の[Burst]3につき、基本威力 +1(最大2)\n[WhenUse] 対象の[Burst]6につき、コイン威力 +1(最大2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2付与、[Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに[AttackUp]1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2付与、[Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに[AttackUp]1を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "赤撃肆型 - 束",
+          "desc": "[WhenUse] 対象のマイナス効果が5種以上なら、マッチ威力 +2\n[WhenUse] 対象の[Burst]3につき、基本威力 +1(最大2)\n[WhenUse] 対象の[Burst]6につき、コイン威力 +1(最大2)\n[WhenUse] 次のターンに[Agility]3を得る (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2付与、[Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに[AttackUp]1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2付与、[Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに[AttackUp]1を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]3を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "赤撃伍型 - 進",
+          "desc": "[WhenUse] 対象のマイナス効果が5種以上なら、マッチ威力 +2\n[WhenUse] 対象の[Burst]3につき、基本威力 +1(最大2)\n[WhenUse] 対象の[Burst]6につき、コイン威力 +1(最大2)\n[WhenUse] 次のターンに[Agility]3を得る (1ターンにつき1回)\n[WhenUse] [Breath]3を得る、[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2付与、[Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに[AttackUp]1を得る"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Burst]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2付与、[Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに[AttackUp]1を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Binding]3を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] このコインを再使用(最大2回)"
                 }
               ]
             }
@@ -38,7 +158,7 @@
         {
           "level": 1,
           "name": "赤鳳",
-          "desc": "[WhenUse] 対象のマイナス効果が5つ以上なら、コイン威力 +1\n[WhenUse] 対象の[Burst]6につき、コイン威力 +1(最大2)",
+          "desc": "[WhenUse] 対象のマイナス効果が5種以上なら、コイン威力 +1\n[WhenUse] 対象の[Burst]6につき、コイン威力 +1(最大2)",
           "coinlist": [
             {
               "coindescs": [
@@ -63,23 +183,265 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 対象の[Burst]だけ[Breath]を得る(最大5)"
+                  "desc": "[OnSucceedAttack] 自分の呼吸 回数が1増加。対象の[Burst]だけ[Breath]を得る (最大5)"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 対象の[Burst]回数だけ[Breath]回数増加(最大2)"
+                  "desc": "[OnSucceedAttackHead] 次のターンに呼吸 威力3を得る。対象の[Burst]だけ、次のターンに[Breath]回数が増加 (最大2)"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[CriticalOnSucceedAttack] ダメージ量 +50%"
+                  "desc": "クリティカルダメージ量 +50%"
                 },
                 {
                   "desc": "[CriticalEnemyTargetKillFail] [Burst]回数が2増加"
                 },
                 {
                   "desc": "[CriticalEnemyTargetKill] 次のターンに[AttackUp]3を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "赤封弐型 - 破",
+          "desc": "[WhenUse] 対象のマイナス効果が4種以上なら、コイン威力 +1\n[WhenUse] 対象の[Burst]6につき、コイン威力 +1(最大2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [DefenseDown]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[AttackUp]3を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の呼吸 回数が1増加。対象の[Burst]だけ[Breath]を得る (最大5)"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 次のターンに呼吸 威力3を得る。対象の[Burst]だけ、次のターンに[Breath]回数が増加 (最大2)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "クリティカルダメージ量 +50%"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKillFail] [Burst]回数が2増加"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] 次のターンに[AttackUp]3を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "赤封参型 - 炎",
+          "desc": "[WhenUse] 対象のマイナス効果が4種以上なら、コイン威力 +1\n[WhenUse] 対象の[Burst]6につき、コイン威力 +1(最大2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [DefenseDown]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[AttackUp]3を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Burst]と[Combustion]の合計だけ、[Breath]を得る (最大10)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Burst]回数と[Combustion]回数の合計だけ、[Breath]回数が増加 (最大5)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "クリティカルダメージ量 +50%"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKillFail] [Burst]回数が2増加"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] 次のターンに[AttackUp]3を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "赤封肆型 - 気",
+          "desc": "[WhenUse] 対象のマイナス効果が4種以上なら、コイン威力 +1\n[WhenUse] 対象の[Burst]3につき、コイン威力 +1(最大2)\n[WhenUse] [Breath]3を得る、自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [DefenseDown]3を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Combustion]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[AttackUp]3を得る"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Combustion]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Burst]と[Combustion]の合計だけ、[Breath]を得る (最大10)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Burst]回数と[Combustion]回数の合計だけ、[Breath]回数が増加 (最大5)"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Vulnerable]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "クリティカルダメージ量 +50%"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKillFail] [Burst]回数が2増加"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] 次のターンに[AttackUp]3を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "赤封伍型 - 翼",
+          "desc": "[WhenUse] 対象のマイナス効果が4種以上なら、コイン威力 +1\n[WhenUse] 対象の[Burst]3につき、コイン威力 +1(最大2)\n[WhenUse] [Breath]3を得る、自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [DefenseDown]3を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Combustion]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[AttackUp]3を得る"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Combustion]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Burst]と[Combustion]の合計だけ、[Breath]を得る (最大10)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Burst]回数と[Combustion]回数の合計だけ、[Breath]回数が増加 (最大5)"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Vulnerable]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "クリティカルダメージ量 +50%"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKillFail] [Burst]回数が2増加"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] 次のターンに[AttackUp]3を得る"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKillFail] 対象へ赤斬を使用"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] ランダムな対象へ赤斬を使用"
                 }
               ]
             }
@@ -93,7 +455,7 @@
         {
           "level": 1,
           "name": "赤春",
-          "desc": "[BeforeAttack] 対象のマイナス効果4につき攻撃加重値 +1(最大2)\n[WhenUse] 対象のマイナス効果が5以上なら基本威力 +5\n[WhenUse] 対象の([Burst] + [Burst]回数)の合計が15以上なら、コイン威力 +5\n[WinDuel] [Burst]回数が2増加",
+          "desc": "[BeforeAttack] 対象のマイナス効果4種につき攻撃加重値 +1(最大2)\n[WhenUse] 対象のマイナス効果が5種以上なら基本威力 +5\n[WhenUse] 対象の([Burst] + [Burst]回数)の合計が15以上なら、コイン威力 +5\n[WinDuel] [Burst]回数が2増加",
           "coinlist": [
             {
               "coindescs": [
@@ -101,13 +463,157 @@
                   "desc": "[OnSucceedAttack] 出血 7を付与"
                 },
                 {
-                  "desc": "[CriticalOnSucceedAttack] ダメージ量 +200%"
+                  "desc": "クリティカルダメージ量 +200%"
                 },
                 {
                   "desc": "[CriticalOnSucceedAttack] 出血 回数が3増加"
                 },
                 {
                   "desc": "[CriticalOnSucceedAttack] [Breath]2を得る、[Breath]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "赤春弐型 - 熱",
+          "desc": "[BeforeAttack] 対象のマイナス効果3種につき攻撃加重値 +1 (最大2)\n[WhenUse] 対象のマイナス効果が5種以上なら基本威力 +5\n[WhenUse] 対象の([Burst] + [Burst]回数)の合計が3につき、コイン威力 +1 (最大5)\n[WinDuel] [Burst]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 7を付与"
+                },
+                {
+                  "desc": "クリティカルダメージ量 +200%"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 出血 回数が3増加"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Breath]2を得る、[Breath]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "赤春参型 - 斬",
+          "desc": "[BeforeAttack] 対象のマイナス効果3種につき攻撃加重値 +1 (最大2)\n[WhenUse] 対象のマイナス効果が5種以上なら基本威力 +5\n[WhenUse] 対象の([Burst] + [Burst]回数)の合計が3につき、コイン威力 +1 (最大5)\n[WinDuel] [Burst]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 3を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 出血 回数が2増加"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Breath]2を得る、[Breath]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 7を付与"
+                },
+                {
+                  "desc": "クリティカルダメージ量 +200%"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 出血 回数が3増加"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Breath]2を得る、[Breath]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "赤春肆型 - 巡",
+          "desc": "[BeforeAttack] 対象のマイナス効果3種につき攻撃加重値 +1 (最大2)\n[WhenUse] 対象のマイナス効果が5種以上なら基本威力 +5\n[WhenUse] 対象の([Burst] + [Burst]回数)の合計が3につき、コイン威力 +1 (最大5)\n[WinDuel] [Burst]回数が2増加\n[WhenUse] [Breath]5を得る、[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 3を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 出血 回数が2増加"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Breath]2を得る、[Breath]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 7を付与"
+                },
+                {
+                  "desc": "クリティカルダメージ量 +200%"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 出血 回数が3増加"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Breath]2を得る、[Breath]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "赤春伍型 - 花",
+          "desc": "[BeforeAttack] 対象のマイナス効果3種につき攻撃加重値 +1 (最大2)\n[WhenUse] 対象のマイナス効果が5種以上なら基本威力 +5\n[WhenUse] 対象の([Burst] + [Burst]回数)の合計が3につき、コイン威力 +1 (最大5)\n[WinDuel] [Burst]回数が2増加\n[WhenUse] [Breath]5を得る、[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 3を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 出血 回数が2増加"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Breath]2を得る、[Breath]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 出血 7を付与"
+                },
+                {
+                  "desc": "クリティカルダメージ量 +200%"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 出血 回数が3増加"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Breath]2を得る、[Breath]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象のマイナス効果1種につきダメージ量 +10% (最大50%)"
+                },
+                {
+                  "desc": "クリティカルダメージ量 +50%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Agility]3を得る (1ターンにつき1回)"
                 }
               ]
             }
@@ -121,7 +627,22 @@
         {
           "level": 1,
           "name": "秀回",
-          "desc": "[OnSucceedEvade] 次のターンに[Breath]1を得る(1ターンにつき最大3回)"
+          "desc": "[OnSucceedEvade] 次のターンに[Breath]1を得る (スキルごとに最大3回)"
+        },
+        {
+          "level": 2,
+          "name": "秀回",
+          "desc": "[OnSucceedEvade] 次のターンに[Breath]3を得る (スキルごとに最大2回)"
+        },
+        {
+          "level": 3,
+          "name": "秀回",
+          "desc": "[WhenUse] 対象のマイナス効果2種につき、コイン威力 +2 (最大10)\n[OnSucceedEvade] 次のターンに[Breath]3を得る (スキルごとに最大2回)"
+        },
+        {
+          "level": 4,
+          "name": "秀回流還",
+          "desc": "[WhenUse] 対象のマイナス効果2種につき、コイン威力 +2 (最大10)\n[OnSucceedEvade] 次のターンに[Breath]3を得る (スキルごとに最大2回)\n[OnSucceedEvade] 赤斬を使用 (1ターンにつき1回)"
         }
       ]
     }

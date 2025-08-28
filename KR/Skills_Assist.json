@@ -29,6 +29,126 @@
               ]
             }
           ]
+        },
+        {
+          "level": 2,
+          "name": "적격 2형 - 파(破)",
+          "desc": "[WhenUse] 대상의 부정적인 효과가 5개 이상이면, 합 위력 +1\n[WhenUse] 대상의 [Burst] 3당, 기본 위력 +1 (최대 2)\n[WhenUse] 대상의 [Burst] 6당, 코인 위력 +1 (최대 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 [AttackUp] 1 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 [AttackUp] 1 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "적격 3형 - 강(强)",
+          "desc": "[WhenUse] 대상의 부정적인 효과가 5개 이상이면, 합 위력 +2\n[WhenUse] 대상의 [Burst] 3당, 기본 위력 +1 (최대 2)\n[WhenUse] 대상의 [Burst] 6당, 코인 위력 +1 (최대 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 2 부여,[Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 [AttackUp] 1 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 2 부여,[Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 [AttackUp] 1 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "적격 4형 - 속(束)",
+          "desc": "[WhenUse] 대상의 부정적인 효과가 5개 이상이면, 합 위력 +2\n[WhenUse] 대상의 [Burst] 3당, 기본 위력 +1 (최대 2)\n[WhenUse] 대상의 [Burst] 6당, 코인 위력 +1 (최대 2)\n[WhenUse] 다음 턴에 [Agility] 3 얻음 (턴 당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 2 부여,[Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 [AttackUp] 1 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 2 부여,[Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 [AttackUp] 1 얻음"
+                },
+                                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [Binding] 3 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "적격 5형 - 진(進)",
+          "desc": "[WhenUse] 대상의 부정적인 효과가 5개 이상이면, 합 위력 +2\n[WhenUse] 대상의 [Burst] 3당, 기본 위력 +1 (최대 2)\n[WhenUse] 대상의 [Burst] 6당, 코인 위력 +1 (최대 2)\n[WhenUse] 다음 턴에 [Agility] 3 얻음 (턴 당 1회)\n[WhenUse] [Breath] 3 얻음,[Breath] 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 2 부여,[Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 [AttackUp] 1 얻음"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Burst] 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 2 부여,[Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 [AttackUp] 1 얻음"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Binding] 3 부여"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 이 코인 재사용 (최대 2회)"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -63,23 +183,265 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 대상의 [Burst]만큼 [Breath] 얻음 (최대 5)"
+                  "desc": "[OnSucceedAttack] 자신의 호흡 횟수 1 증가. 대상의 [Burst]만큼 [Breath] 얻음 (최대 5)"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 대상의 [Burst] 횟수만큼 [Breath] 횟수 증가 (최대 2)"
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 호흡 위력 3 얻음. 대상의 [Burst] 횟수만큼 다음 턴에 [Breath] 횟수 증가 (최대 2)"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[CriticalOnSucceedAttack] 피해량 +50%"
+                  "desc": "크리티컬 피해량 +50%"
                 },
                 {
                   "desc": "[CriticalEnemyTargetKillFail] [Burst] 횟수 2 증가"
                 },
                 {
                   "desc": "[CriticalEnemyTargetKill] 다음 턴에 [AttackUp] 3 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "적봉 제2형 - 파(破)",
+          "desc": "[WhenUse] 대상의 부정적인 효과가 4개 이상이면, 코인 위력 +1\n[WhenUse] 대상의 [Burst] 6당, 코인 위력 +1 (최대 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [DefenseDown] 3 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [AttackUp] 3 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 자신의 호흡 횟수 1 증가. 대상의 [Burst]만큼 [Breath] 얻음 (최대 5)"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 다음 턴에 호흡 위력 3 얻음. 대상의 [Burst] 횟수만큼 다음 턴에 [Breath] 횟수 증가 (최대 2)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "크리티컬 피해량 +50%"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKillFail] [Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] 다음 턴에 [AttackUp] 3 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "적봉 제3형 - 염(炎)",
+          "desc": "[WhenUse] 대상의 부정적인 효과가 4개 이상이면, 코인 위력 +1\n[WhenUse] 대상의 [Burst] 6당, 코인 위력 +1 (최대 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [DefenseDown] 3 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [AttackUp] 3 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Burst]과 [Combustion]의 합 만큼 [Breath] 얻음 (최대 10)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Burst] 횟수와 [Combustion] 횟수의 합 만큼 [Breath] 횟수 증가 (최대 5)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "크리티컬 피해량 +50%"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKillFail] [Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] 다음 턴에 [AttackUp] 3 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "적봉 제4형 - 기(氣)",
+          "desc": "[WhenUse] 대상의 부정적인 효과가 4개 이상이면, 코인 위력 +1\n[WhenUse] 대상의 [Burst] 3당, 코인 위력 +1 (최대 2)\n[WhenUse] [Breath] 3 얻음,[Breath] 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [DefenseDown] 3 부여"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Combustion] 3 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [AttackUp] 3 얻음"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Combustion] 3 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Burst]과 [Combustion]의 합 만큼 [Breath] 얻음 (최대 10)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Burst] 횟수와 [Combustion] 횟수의 합 만큼 [Breath] 횟수 증가 (최대 5)"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Vulnerable] 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "크리티컬 피해량 +50%"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKillFail] [Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] 다음 턴에 [AttackUp] 3 얻음"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "적봉 제5형 - 익(翼)",
+          "desc": "[WhenUse] 대상의 부정적인 효과가 4개 이상이면, 코인 위력 +1\n[WhenUse] 대상의 [Burst] 3당, 코인 위력 +1 (최대 2)\n[WhenUse] [Breath] 3 얻음,[Breath] 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [DefenseDown] 3 부여"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Combustion] 3 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [AttackUp] 3 얻음"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Combustion] 3 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Burst]과 [Combustion]의 합 만큼 [Breath] 얻음 (최대 10)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상의 [Burst] 횟수와 [Combustion] 횟수의 합 만큼 [Breath] 횟수 증가 (최대 5)"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Vulnerable] 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "크리티컬 피해량 +50%"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKillFail] [Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] 다음 턴에 [AttackUp] 3 얻음"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKillFail] 대상에게 적참 사용"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] 무작위 대상에게 적참 사용"
                 }
               ]
             }
@@ -101,13 +463,157 @@
                   "desc": "[OnSucceedAttack] 출혈 7 부여"
                 },
                 {
-                  "desc": "[CriticalOnSucceedAttack] 피해량 +200%"
+                  "desc": "크리티컬 피해량 +200%"
                 },
                 {
                   "desc": "[CriticalOnSucceedAttack] 출혈 횟수 3 증가"
                 },
                 {
                   "desc": "[CriticalOnSucceedAttack] [Breath] 2 얻음. [Breath] 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "적춘 제2형 - 열(熱)",
+          "desc": "[BeforeAttack] 대상의 부정적인 효과 3개당 공격 가중치 +1 (최대 2)\n[WhenUse] 대상의 부정적인 효과가 5개 이상이면, 기본 위력 +5\n[WhenUse] 대상의 ([Burst] + [Burst] 횟수)의 합 3당, 코인 위력 +1(최대 5)\n[WinDuel] [Burst] 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 출혈 7 부여"
+                },
+                {
+                  "desc": "크리티컬 피해량 +200%"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 출혈 횟수 3 증가"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Breath] 2 얻음. [Breath] 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "적춘 제3형 - 참(斬)",
+          "desc": "[BeforeAttack] 대상의 부정적인 효과 3개당 공격 가중치 +1 (최대 2)\n[WhenUse] 대상의 부정적인 효과가 5개 이상이면, 기본 위력 +5\n[WhenUse] 대상의 ([Burst] + [Burst] 횟수)의 합 3당, 코인 위력 +1(최대 5)\n[WinDuel] [Burst] 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 출혈 3 부여"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 출혈 횟수 2 증가"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Breath] 2 얻음. [Breath] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 출혈 7 부여"
+                },
+                {
+                  "desc": "크리티컬 피해량 +200%"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 출혈 횟수 3 증가"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Breath] 2 얻음. [Breath] 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "적춘 제4형 - 순(巡)",
+          "desc": "[BeforeAttack] 대상의 부정적인 효과 3개당 공격 가중치 +1 (최대 2)\n[WhenUse] 대상의 부정적인 효과가 5개 이상이면, 기본 위력 +5\n[WhenUse] 대상의 ([Burst] + [Burst] 횟수)의 합 3당, 코인 위력 +1(최대 5)\n[WinDuel] [Burst] 횟수 2 증가\n[WhenUse] [Breath] 5 얻음,[Breath] 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 출혈 3 부여"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 출혈 횟수 2 증가"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Breath] 2 얻음. [Breath] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 출혈 7 부여"
+                },
+                {
+                  "desc": "크리티컬 피해량 +200%"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 출혈 횟수 3 증가"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Breath] 2 얻음. [Breath] 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "적춘 제5형 - 花(화)",
+          "desc": "[BeforeAttack] 대상의 부정적인 효과 3개당 공격 가중치 +1 (최대 2)\n[WhenUse] 대상의 부정적인 효과가 5개 이상이면, 기본 위력 +5\n[WhenUse] 대상의 ([Burst] + [Burst] 횟수)의 합 3당, 코인 위력 +1(최대 5)\n[WinDuel] [Burst] 횟수 2 증가\n[WhenUse] [Breath] 5 얻음,[Breath] 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 출혈 3 부여"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 출혈 횟수 2 증가"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Breath] 2 얻음. [Breath] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 출혈 7 부여"
+                },
+                {
+                  "desc": "크리티컬 피해량 +200%"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 출혈 횟수 3 증가"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Breath] 2 얻음. [Breath] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 부정적인 효과 1개당 피해량 +10% (최대 50%)"
+                },
+                {
+                  "desc": "크리티컬 피해량 +50%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [Agility] 3 얻음 (턴 당 1회)"
                 }
               ]
             }
@@ -121,7 +627,22 @@
         {
           "level": 1,
           "name": "수회",
-          "desc": "[OnSucceedEvade] 다음 턴에 [Breath] 1 얻음. (턴 당 최대 3번)"
+          "desc": "[OnSucceedEvade] 다음 턴에 [Breath] 1 얻음. (스킬 당 최대 3회)"
+        },
+        {
+          "level": 2,
+          "name": "수회",
+          "desc": "[OnSucceedEvade] 다음 턴에 [Breath] 3 얻음. (스킬 당 최대 2회)"
+        },
+        {
+          "level": 3,
+          "name": "수회",
+          "desc": "[WhenUse] 대상의 부정적인 효과 2개 당 기본 위력 +2 (최대 10)\n[OnSucceedEvade] 다음 턴에 [Breath] 3 얻음. (스킬 당 최대 2회)"
+        },
+        {
+          "level": 4,
+          "name": "수회유환",
+          "desc": "[WhenUse] 대상의 부정적인 효과 2개 당 기본 위력 +2 (최대 10)\n[OnSucceedEvade] 다음 턴에 [Breath] 3 얻음. (스킬 당 최대 2회)\n[OnSucceedEvade] 적참을 사용 (턴 당 1회)."
         }
       ]
     }

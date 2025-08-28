@@ -2262,6 +2262,398 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1011401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "베어 무너뜨리리",
+          "desc": "[WhenUse] 대상의 [Burst]과 [Vibration]의 합이 5 이상이면, 코인 위력 + 1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 1 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "베어 무너뜨리리",
+          "desc": "<style=\"highlight\">자신의 속도가 대상보다 높으면, 코인 위력 +1</style>\n[WhenUse] 대상의 [Burst]과 [Vibration]의 합이 5 이상이면, 코인 위력 + 1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Burst] 횟수 1 증가</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 1 부여<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "베어 무너뜨리리",
+          "desc": "자신의 속도가 대상보다 높으면, 코인 위력 +1\n[WhenUse] 대상의 [Burst]과 [Vibration]의 합이 5 이상이면, 코인 위력 + 1\n<style=\"highlight\">[WinDuel] 다음 턴에 [Binding] 1 부여 (턴 당 2회)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 1 증가<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] <style=\"highlight\">2</style> 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "월도격 [月刀擊]",
+          "desc": "[WhenUse] 대상의 [Burst]과 [Vibration]의 합 5당, 코인 위력 + 1 (최대 2)\n[WhenUse] 다음 턴에 [Agility]을 1 얻음 (턴 당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "월도격 [月刀擊]",
+          "desc": "<style=\"highlight\">자신의 속도가 대상보다 높으면, 코인 위력 +1</style>\n[WhenUse] 대상의 [Burst]과 [Vibration]의 합 5당, 코인 위력 + 1 (최대 2)\n[WhenUse] 다음 턴에 [Agility]을 <style=\"highlight\">2</style> 얻음 (턴 당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] <style=\"highlight\">3</style> 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소."
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 대상에게 주살이 있으면, [ConcussionYisang] 1 부여</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "월도격 [月刀擊]",
+          "desc": "자신의 속도가 대상보다 높으면,\n- 코인 위력 +1\n<style=\"highlight\">- 대상보다 2 이상 높으면, (자신의 [BreakthroughHorse] x 20)%만큼 피해량이 증가 (최대 100%)</style>\n\n[WhenUse] 대상의 [Burst]과 [Vibration]의 합 5당, 코인 위력 + 1 (최대 2)\n[WhenUse] 다음 턴에 [Agility]을 2 얻음 (턴 당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 3 부여<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소."
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상에게 주살이 없으면, [ConcussionYisang] 1 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 대상에게 주살이 있으면, [Burst] 3 부여</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "선봉주파",
+          "desc": "자신의 속도가 대상보다 높으면,\n- 최종 위력 +1\n- (자신의 [BreakthroughHorse] x 10)%만큼 피해량이 증가 (최대 40%)\n\n자신의 (보호막 수치 x 2)% 만큼 피해량이 증가 (최대 50%)\n\n[BeforeUse] 자신의 [BreakthroughHorse]가 5면, 전부 소모하여 ‘흑풍마각월참’으로 발동됨\n[WhenUse] [LegStrengthHorseYisang] 3 얻음\n[WhenUse] 대상의 [Burst]과 [Vibration]의 합 5당, 코인 위력 + 1 (최대 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [Binding] 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소."
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [LegStrengthHorseYisang]가 2 이상이면, [ConcussionYisang] 1 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "선봉주파",
+          "desc": "자신의 속도가 대상보다 높으면,\n- 최종 위력 +1\n- (자신의 [BreakthroughHorse] x <style=\"highlight\">20</style>)%만큼 피해량이 증가 (최대 <style=\"highlight\">80</style>%)\n\n자신의 (보호막 수치 x 2)% 만큼 피해량이 증가 (최대 50%)\n\n[BeforeUse] 자신의 [BreakthroughHorse]가 5면, 전부 소모하여 ‘흑풍마각월참’으로 발동됨\n[WhenUse] [LegStrengthHorseYisang] 3 얻음\n[WhenUse] 대상의 [Burst]과 [Vibration]의 합 5당, 코인 위력 + 1 (최대 2)\n<style=\"highlight\">[WhenUse] 자신의 [BreakthroughHorse]가 3 이상이면, 모든 코인이 [SuperCoin]으로 변경됨</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [Binding] 1 부여"
+                },
+                {
+                  "desc": "<style=\"highlight\">- 자신의 [BreakthroughHorse]가 3 이상이면, [Binding] 1 추가 부여</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 횟수 1 증가<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소."
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [LegStrengthHorseYisang]가 2 이상이면, [ConcussionYisang] <style=\"highlight\">2</style> 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "돌진 전, 가다듬겠소.",
+          "desc": "[CanDuelGuard]\n[StartBattle] 다음 턴에 [LegStrengthHorseYisang] 3 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "돌진 전, 가다듬겠소.",
+          "desc": "[CanDuelGuard]\n[StartBattle] 다음 턴에 [LegStrengthHorseYisang] 3 얻음\n<style=\"highlight\">[EndBattle] 자신에게 부여된 해제 가능한 부정적인 효과 중 무작위 1개 제거 (턴 당 1회)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011405,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "흑풍마각월참 [黑風馬脚月斬]",
+          "desc": "자신의 속도가 대상보다 높으면, 최종 위력 +1\n[WhenUse] 다음 턴에 자신을 제외한 모든 아군에게 [BattlefieldHorse] 1 부여 (턴 당 1회)\n[WhenUse] [LegStrengthHorseYisang] 3 얻음\n[WhenUse] 대상의 [Burst]과 [Vibration]의 합 5당, 코인 위력 + 1 (최대 2)\n[WinDuel] 자신의 속도가 대상보다 높으면, 피해량 +50%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 3 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 4 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 횟수 2 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [ConcussionYisang] 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소."
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "흑풍마각월참 [黑風馬脚月斬]",
+          "desc": "자신의 속도가 대상보다 높으면, 최종 위력 +1\n[WhenUse] 다음 턴에 자신을 제외한 모든 아군에게 [BattlefieldHorse] 1 부여 (턴 당 1회)\n[WhenUse] [LegStrengthHorseYisang] 3 얻음\n[WhenUse] 대상의 [Burst]과 [Vibration]의 합 5당, 코인 위력 + 1 (최대 2)\n[WinDuel] 자신의 속도가 대상보다 높으면, 피해량 +50%\n<style=\"highlight\">[WinDuel] 메인 타겟에게 [ConcussionYisang] 1 부여</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 3 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 4 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 횟수 2 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [ConcussionYisang] 1 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소."
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

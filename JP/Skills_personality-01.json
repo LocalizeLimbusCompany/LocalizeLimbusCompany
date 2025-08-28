@@ -915,7 +915,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 20%の確率でコインを1回再使用。対象の保有するマイナス効果1つにつき再使用確率 +20%"
+                  "desc": "[OnSucceedAttack] 20%の確率でコインを1回再使用。対象の保有するマイナス効果1種につき再使用確率 +20%"
                 },
                 {
                   "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
@@ -935,7 +935,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 20%の確率でコインを1回再使用。対象の保有するマイナス効果1つにつき再使用確率 +20%"
+                  "desc": "[OnSucceedAttack] 20%の確率でコインを1回再使用。対象の保有するマイナス効果1種につき再使用確率 +20%"
                 },
                 {
                   "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
@@ -2255,6 +2255,398 @@
                 },
                 {
                   "desc": "[OnSucceedAttack] 自分の[Breath]回数が2増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "斬り伏せん",
+          "desc": "[WhenUse] 対象の[Burst]と[Vibration]の合計が5以上なら、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "斬り伏せん",
+          "desc": "<style=\"highlight\">自分の速度が対象より高ければ、コイン威力 +1</style>\n[WhenUse] 対象の[Burst]と[Vibration]の合計が5以上なら、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Burst]回数が1増加</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "斬り伏せん",
+          "desc": "自分の速度が対象より高ければ、コイン威力 +1\n[WhenUse] 対象の[Burst]と[Vibration]の合計が5以上なら、コイン威力 +1\n<style=\"highlight\">[WinDuel] 次のターンに[Binding]1を付与 (1ターンにつき2回)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が1増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]<style=\"highlight\">2</style>を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "月刀撃",
+          "desc": "[WhenUse] 対象の[Burst]と[Vibration]の合計5につき、コイン威力 +1 (最大2)\n[WhenUse] 次のターンに[Agility]1を得る (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "月刀撃",
+          "desc": "<style=\"highlight\">自分の速度が対象より高ければ、コイン威力 +1</style>\n[WhenUse] 対象の[Burst]と[Vibration]の合計5につき、コイン威力 +1 (最大2)\n[WhenUse] 次のターンに[Agility]<style=\"highlight\">2</style>を得る (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]<style=\"highlight\">3</style>を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 対象に呪殺があれば、[ConcussionYisang]1を付与</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "月刀撃",
+          "desc": "自分の速度が対象より高ければ、\n- コイン威力 +1\n<style=\"highlight\">- 対象より2以上高ければ、(自分の[BreakthroughHorse] × 20)%だけダメージ量が増加 (最大100%)</style>\n\n[WhenUse] 対象の[Burst]と[Vibration]の合計5につき、コイン威力 +1 (最大2)\n[WhenUse] 次のターンに[Agility]2を得る (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]3を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象に呪殺がなければ、[ConcussionYisang]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 対象に呪殺があれば、[Burst]3を付与</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "先鋒走破",
+          "desc": "自分の速度が対象より高ければ、\n- 最終威力 +1\n- (自分の[BreakthroughHorse] × 10)%だけダメージ量が増加 (最大40%)\n\n自分の(バリア数値 × 2)%だけダメージ量が増加 (最大50%)\n[BeforeUse] 自分の[BreakthroughHorse]が5なら、全て消耗して「黒風馬脚月斬(暴風)」として発動\n[WhenUse] [LegStrengthHorseYisang]3を得る\n[WhenUse] 対象の[Burst]と[Vibration]の合計5につき、コイン威力 +1 (最大2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の[LegStrengthHorseYisang]が2以上なら、対象へ[ConcussionYisang]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "先鋒走破",
+          "desc": "自分の速度が対象より高ければ、\n- 最終威力 +1\n- (自分の[BreakthroughHorse] × <style=\"highlight\">20</style>)%だけダメージ量が増加 (最大<style=\"highlight\">80</style>%)\n\n自分の(バリア数値 × 2)%だけダメージ量が増加 (最大50%)\n[BeforeUse] 自分の[BreakthroughHorse]が5なら、全て消耗して「黒風馬脚月斬」として発動\n[WhenUse] [LegStrengthHorseYisang]3を得る\n[WhenUse] 対象の[Burst]と[Vibration]の合計5につき、コイン威力 +1 (最大2)\n<style=\"highlight\">[WhenUse] 自分の[BreakthroughHorse]が3以上なら、全コインが[SuperCoin]に変更される</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]1を付与"
+                },
+                {
+                  "desc": "<style=\"highlight\">- 自分の[BreakthroughHorse]が3以上なら、[Binding]1を追加で付与</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]回数が1増加<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の[LegStrengthHorseYisang]が2以上なら、対象へ[ConcussionYisang]<style=\"highlight\">2</style>を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "突撃前、整えん。",
+          "desc": "[CanDuelGuard] \n[StartBattle]次のターンに[LegStrengthHorseYisang]3を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "突撃前、整えん。",
+          "desc": "[CanDuelGuard] \n[StartBattle]次のターンに[LegStrengthHorseYisang]3を得る\n<style=\"highlight\">[EndBattle] 自分に付与された解除可能なマイナス効果のうち、ランダムな1つを除去 (1ターンにつき1回)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011405,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "黒風馬脚月斬",
+          "desc": "自分の速度が対象より高ければ、最終威力 +1\n[WhenUse] 次のターン、自分を除く全味方へ[BattlefieldHorse]1を付与 (1ターンにつき1回)\n[WhenUse] [LegStrengthHorseYisang]3を得る\n[WhenUse] 対象の[Burst]と[Vibration]の合計5につき、コイン威力 +1 (最大2)\n[WinDuel] 自分の速度が対象より高ければ、ダメージ量 +50%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]4を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [ConcussionYisang]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "黒風馬脚月斬",
+          "desc": "自分の速度が対象より高ければ、最終威力 +1\n[WhenUse] 次のターンに、自分を除く全味方へ[BattlefieldHorse]1を付与 (1ターンにつき1回)\n[WhenUse] [LegStrengthHorseYisang]3を得る\n[WhenUse] 対象の[Burst]と[Vibration]の合計5につき、コイン威力 +1 (最大2)\n[WinDuel] 自分の速度が対象より高ければ、ダメージ量 +50%\n<style=\"highlight\">[WinDuel] メインターゲットへ[ConcussionYisang]1を付与</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]4を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [ConcussionYisang]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少"
                 }
               ]
             }
