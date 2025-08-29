@@ -6,25 +6,145 @@
         {
           "level": 1,
           "name": "赤击",
-          "desc": "[WhenUse] 若目标带有的负面状态不少于5种，则使本技能的拼点威力+1\n[WhenUse] 目标每带有3级破裂 强度，使本技能的基础威力+1(最多+2)",
+          "desc": "[WhenUse] 若目标带有的负面状态不少于5种，则使本技能的拼点威力+1\n[WhenUse] 目标每带有3级[Burst]强度，使本技能的基础威力+1(最多+2)",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层破裂 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 下回合使自身获得1层攻击等级提升 "
+                  "desc": "[OnSucceedAttackHead] 下回合使自身获得1层[AttackUp]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层破裂 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 下回合使自身获得1层攻击等级提升 "
+                  "desc": "[OnSucceedAttackHead] 下回合使自身获得1层[AttackUp]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "赤击二型-破",
+          "desc": "[WhenUse] 若目标带有的负面状态不少于5种，则使本技能的拼点威力+1\n[WhenUse] 目标每带有3级[Burst]强度，使本技能的基础威力+1(最多+2)\n[WhenUse] 目标每带有6级[Burst]强度，使本技能的硬币威力+1(最多+2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合使自身获得1层[AttackUp]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合使自身获得1层[AttackUp]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "赤击三型-强",
+          "desc": "[WhenUse] 若目标带有的负面状态不少于5种，则使本技能的拼点威力+2\n[WhenUse] 目标每带有3级[Burst]强度，使本技能的基础威力+1(最多+2)\n[WhenUse] 目标每带有6级[Burst]强度，使本技能的硬币威力+1(最多+2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Burst]强度并对其施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合使自身获得1层[AttackUp]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Burst]强度并对其施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合使自身获得1层[AttackUp]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "赤击四型-束",
+          "desc": "[WhenUse] 若目标带有的负面状态不少于5种，则使本技能的拼点威力+2\n[WhenUse] 目标每带有3级[Burst]强度，使本技能的基础威力+1(最多+2)\n[WhenUse] 目标每带有6级[Burst]强度，使本技能的硬币威力+1(最多+2)\n[WhenUse] 下回合使自身获得3层[Agility](每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Burst]强度并对其施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合使自身获得1层[AttackUp]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Burst]强度并对其施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合使自身获得1层[AttackUp]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加3层[Binding]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "赤击五型-进",
+          "desc": "[WhenUse] 若目标带有的负面状态不少于5种，则使本技能的拼点威力+2\n[WhenUse] 目标每带有3级[Burst]强度，使本技能的基础威力+1(最多+2)\n[WhenUse] 目标每带有6级[Burst]强度，使本技能的硬币威力+1(最多+2)\n[WhenUse] 下回合使自身获得3层[Agility](每回合最多1次)\n[WhenUse] 使自身增加3级[Breath]强度并使自身获得2层[Breath]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Burst]强度并对其施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合使自身获得1层[AttackUp]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加2级[Burst]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Burst]强度并对其施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合使自身获得1层[AttackUp]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Binding]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 重复使用本硬币(最多2次)"
                 }
               ]
             }
@@ -38,48 +158,290 @@
         {
           "level": 1,
           "name": "赤凤",
-          "desc": "[WhenUse] 若目标带有的负面状态不少于5种，则使本技能的硬币威力+1\n[WhenUse] 目标每带有6级破裂 强度，使本技能的硬币威力+1(最多+2)",
+          "desc": "[WhenUse] 若目标带有的负面状态不少于5种，则使本技能的硬币威力+1\n[WhenUse] 目标每带有6级[Burst]强度，使本技能的硬币威力+1(最多+2)",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层破裂 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Burst]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加3层防御等级降低 "
+                  "desc": "[OnSucceedAttack] 对目标施加3层[DefenseDown]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层破裂 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Burst]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 下回合使自身获得3层攻击等级提升 "
+                  "desc": "[OnSucceedAttack] 下回合使自身获得3层[AttackUp]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 根据目标的破裂 强度，使自身增加相应的呼吸法 强度(最多5级)"
+                  "desc": "[OnSucceedAttack] 使自身获得1层[Breath]。使自身增加相当于目标[Burst]强度的[Breath]强度(最多5级)"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 根据目标的破裂 层数，使自身获得相应层数的呼吸法 (最多2层)"
+                  "desc": "[OnSucceedAttackHead] 下回合使自身增加3级[Breath]强度。使自身获得层数相当于目标[Burst]层数的[Breath](最多2层)"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[CriticalOnSucceedAttack] 使本硬币造成的伤害+50%"
+                  "desc": "使本硬币暴击时造成的伤害+50%"
                 },
                 {
-                  "desc": "[CriticalEnemyTargetKillFail] 对目标施加2层破裂 "
+                  "desc": "[CriticalEnemyTargetKillFail] 对目标施加2层[Burst]"
                 },
                 {
-                  "desc": "[CriticalEnemyTargetKill] 下回合使自身获得3层攻击等级提升 "
+                  "desc": "[CriticalEnemyTargetKill] 下回合使自身获得3层[AttackUp]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "赤凤二型-破",
+          "desc": "[WhenUse] 若目标带有的负面状态不少于4种，则使本技能的硬币威力+1\n[WhenUse] 目标每带有6级[Burst]强度，使本技能的硬币威力+1(最多+2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[DefenseDown]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合使自身获得3层[AttackUp]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得1层[Breath]。使自身增加相当于目标[Burst]强度的[Breath]强度(最多5级)"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 下回合使自身增加3级[Breath]强度。使自身获得层数相当于目标[Burst]层数的[Breath](最多2层)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "使本硬币暴击时造成的伤害+50%"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKillFail] 对目标施加2层[Burst]"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] 下回合使自身获得3层[AttackUp]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "赤凤三型-炎",
+          "desc": "[WhenUse] 若目标带有的负面状态不少于4种，则使本技能的硬币威力+1\n[WhenUse] 目标每带有6级[Burst]强度，使本技能的硬币威力+1(最多+2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[DefenseDown]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合使自身获得3层[AttackUp]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加相当于目标[Burst]强度与[Combustion]强度之和的[Breath]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得层数相当于目标[Burst]强度与[Combustion]强度之和的[Breath](最多5层)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "使本硬币暴击时造成的伤害+50%"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKillFail] 对目标施加2层[Burst]"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] 下回合使自身获得3层[AttackUp]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "赤凤四型-气",
+          "desc": "[WhenUse] 若目标带有的负面状态不少于4种，则使本技能的硬币威力+1\n[WhenUse] 目标每带有3级[Burst]强度，使本技能的硬币威力+1(最多+2)\n[WhenUse] 使自身增加3级[Breath]强度并使自身获得2层[Breath]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[DefenseDown]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加3级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合使自身获得3层[AttackUp]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加3级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加相当于目标[Burst]强度与[Combustion]强度之和的[Breath]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得层数相当于目标[Burst]强度与[Combustion]强度之和的[Breath](最多5层)"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 对目标施加2层[Vulnerable]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "使本硬币暴击时造成的伤害+50%"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKillFail] 对目标施加2层[Burst]"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] 下回合使自身获得3层[AttackUp]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "赤凤五型-翼",
+          "desc": "[WhenUse] 若目标带有的负面状态不少于4种，则使本技能的硬币威力+1\n[WhenUse] 目标每带有3级[Burst]强度，使本技能的硬币威力+1(最多+2)\n[WhenUse] 使自身增加3级[Breath]强度并使自身获得2层[Breath]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[DefenseDown]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加3级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合使自身获得3层[AttackUp]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加3级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加相当于目标[Burst]强度与[Combustion]强度之和的[Breath]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得层数相当于目标[Burst]强度与[Combustion]强度之和的[Breath](最多5层)"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 对目标施加2层[Vulnerable]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "使本硬币暴击时造成的伤害+50%"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKillFail] 使自身获得2层[Burst]"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] 下回合使自身获得3层[AttackUp]"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKillFail] 对目标使用赤斩"
+                },
+                {
+                  "desc": "[CriticalEnemyTargetKill] 随机对1名目标使用赤斩"
                 }
               ]
             }
@@ -93,7 +455,7 @@
         {
           "level": 1,
           "name": "赤春",
-          "desc": "[BeforeAttack] 目标每带有4种负面状态，使本技能的攻击容量+1(最多+2)\n[WhenUse] 若目标带有的负面状态不少于5种，则使本技能的基础威力+5\n[WhenUse] 若目标的破裂 强度与破裂 层数之和不低于15点，则使本技能的硬币威力+5\n[WinDuel] 对目标施加2层破裂 ",
+          "desc": "[BeforeAttack] 目标每带有4种负面状态，使本技能的攻击容量+1(最多+2)\n[WhenUse] 若目标带有的负面状态不少于5种，则使本技能的基础威力+5\n[WhenUse] 若目标的[Burst]强度与[Burst]层数之和不低于15点，则使本技能的硬币威力+5\n[WinDuel] 对目标施加2层[Burst]",
           "coinlist": [
             {
               "coindescs": [
@@ -101,13 +463,157 @@
                   "desc": "[OnSucceedAttack] 使目标增加7级流血 强度"
                 },
                 {
-                  "desc": "[CriticalOnSucceedAttack] 使本硬币造成的伤害+200%"
+                  "desc": "使本硬币暴击时造成的伤害+200%"
                 },
                 {
                   "desc": "[CriticalOnSucceedAttack] 对目标施加3层流血 "
                 },
                 {
-                  "desc": "[CriticalOnSucceedAttack] 使自身增加2级呼吸法 强度并使自身获得1层呼吸法 "
+                  "desc": "[CriticalOnSucceedAttack] 使自身增加2级[Breath]强度并使自身获得1层[Breath]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "赤春二型-热",
+          "desc": "[BeforeAttack] 目标每带有3种负面状态，使本技能的攻击容量+1(最多+2)\n[WhenUse] 若目标带有的负面状态不少于5种，则使本技能的基础威力+5\n[WhenUse] 目标的[Burst]强度与[Burst]层数之和每有3点，使本技能的硬币威力+1(最多+5)\n[WinDuel] 对目标施加2层[Burst]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加7级流血 强度"
+                },
+                {
+                  "desc": "使本硬币暴击时造成的伤害+200%"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 对目标施加3层流血 "
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使自身增加2级[Breath]强度并使自身获得1层[Breath]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "赤春三型-斩",
+          "desc": "[BeforeAttack] 目标每带有3种负面状态，使本技能的攻击容量+1(最多+2)\n[WhenUse] 若目标带有的负面状态不少于5种，则使本技能的基础威力+5\n[WhenUse] 目标的[Burst]强度与[Burst]层数之和每有3点，使本技能的硬币威力+1(最多+5)\n[WinDuel] 对目标施加2层[Burst]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 对目标施加2层流血 "
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使自身增加2级[Breath]强度并使自身获得1层[Breath]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加7级流血 强度"
+                },
+                {
+                  "desc": "使本硬币暴击时造成的伤害+200%"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 对目标施加3层流血 "
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使自身增加2级[Breath]强度并使自身获得1层[Breath]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "赤春四型-巡",
+          "desc": "[BeforeAttack] 目标每带有3种负面状态，使本技能的攻击容量+1(最多+2)\n[WhenUse] 若目标带有的负面状态不少于5种，则使本技能的基础威力+5\n[WhenUse] 目标的[Burst]强度与[Burst]层数之和每有3点，使本技能的硬币威力+1(最多+5)\n[WinDuel] 对目标施加2层[Burst]\n[WhenUse] 使自身增加5级[Breath]强度并使自身获得2层[Breath]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 对目标施加2层流血 "
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使自身增加2级[Breath]强度并使自身获得1层[Breath]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加7级流血 强度"
+                },
+                {
+                  "desc": "使本硬币暴击时造成的伤害+200%"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 对目标施加3层流血 "
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使自身增加2级[Breath]强度并使自身获得1层[Breath]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "赤春五型-花",
+          "desc": "[BeforeAttack] 目标每带有3种负面状态，使本技能的攻击容量+1(最多+2)\n[WhenUse] 若目标带有的负面状态不少于5种，则使本技能的基础威力+5\n[WhenUse] 目标的[Burst]强度与[Burst]层数之和每有3点，使本技能的硬币威力+1(最多+5)\n[WinDuel] 对目标施加2层[Burst]\n[WhenUse] 使自身增加5级[Breath]强度并使自身获得2层[Breath]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 对目标施加2层流血 "
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使自身增加2级[Breath]强度并使自身获得1层[Breath]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加7级流血 强度"
+                },
+                {
+                  "desc": "使本硬币暴击时造成的伤害+200%"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 对目标施加3层流血 "
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使自身增加2级[Breath]强度并使自身获得1层[Breath]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 目标每带有1种负面状态，使本硬币造成的伤害+10%(最多+50%)"
+                },
+                {
+                  "desc": "使本硬币暴击时造成的伤害+50%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合使自身获得3层[Agility](每回合最多1次)"
                 }
               ]
             }
@@ -120,8 +626,23 @@
       "levelList": [
         {
           "level": 1,
-          "name": "秀避",
-          "desc": "[OnSucceedEvade] 下回合使自身增加1级呼吸法 强度(每回合最多3次)"
+          "name": "秀回",
+          "desc": "[OnSucceedEvade] 下回合使自身增加1级[Breath]强度(每个技能最多3次)"
+        },
+        {
+          "level": 2,
+          "name": "秀回",
+          "desc": "[OnSucceedEvade] 下回合使自身增加3级[Breath]强度(每回合最多2次)"
+        },
+        {
+          "level": 3,
+          "name": "秀回",
+          "desc": "[WhenUse] 目标每带有2种负面状态，使本技能的基础威力+2(最多+10)\n[OnSucceedEvade] 下回合使自身增加3级[Breath]强度(每回合最多2次)"
+        },
+        {
+          "level": 4,
+          "name": "秀回流还",
+          "desc": "[WhenUse] 目标每带有2种负面状态，使本技能的基础威力+2(最多+10)\n[OnSucceedEvade] 下回合使自身增加3级[Breath]强度(每回合最多2次)\n[OnSucceedEvade] 使用赤斩(每回合最多1次)"
         }
       ]
     }

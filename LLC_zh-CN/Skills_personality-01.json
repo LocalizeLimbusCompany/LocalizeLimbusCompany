@@ -2261,6 +2261,398 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1011401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "伏于斩下",
+          "desc": "[WhenUse] 若目标的[Burst]强度与[Vibration]强度之和不低于5级，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Burst]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "伏于斩下",
+          "desc": "<style=\"highlight\">若自身的速度值高于目标，则使本技能的硬币威力+1</style>\n[WhenUse] 若目标的[Burst]强度与[Vibration]强度之和不低于5级，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Burst]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 对目标施加1层[Burst]</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "伏于斩下",
+          "desc": "若自身的速度值高于目标，则使本技能的硬币威力+1\n[WhenUse] 若目标的[Burst]强度与[Vibration]强度之和不低于5级，则使本技能的硬币威力+1\n<style=\"highlight\">[WinDuel] 下回合对目标施加1层[Binding](每回合最多2次)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Burst]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Burst]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">2</style>级[Vibration]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "月刀击",
+          "desc": "[WhenUse] 目标的[Burst]与[Vibration]强度之和每有5级，使本技能的硬币威力+1(最多+2)\n[WhenUse] 下回合使自身获得1层[Agility](每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "月刀击",
+          "desc": "<style=\"highlight\">若自身的速度值高于目标，则使本技能的硬币威力+1</style>\n[WhenUse] 目标的[Burst]强度与[Vibration]强度之和每有5级，使本技能的硬币威力+1(最多+2)\n[WhenUse] 下回合使自身获得<style=\"highlight\">2</style>层[Agility](每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">3</style>级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 若目标带有咒杀，则对其施加1层[ConcussionYisang]</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "月刀击",
+          "desc": "若自身的速度值高于目标，\n- 则使本技能的硬币威力+1\n<style=\"highlight\">- 若自身的速度值高于目标至少2点，则使本技能造成的伤害+(自身的[BreakthroughHorse]层数×20)%(最多+100%)</style>\n\n[WhenUse] 目标的[Burst]强度与[Vibration]强度之和每有5级，使本技能的硬币威力+1(最多+2)\n[WhenUse] 下回合使自身获得2层[Agility](每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Vibration]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若目标未带有咒杀，则对其施加1层[ConcussionYisang]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 若目标带有咒杀，则使其增加3级[Burst]强度</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "破阵先锋",
+          "desc": "若自身的速度值高于目标，则\n- 使本技能的最终威力+1\n- 使本技能造成的伤害+(自身的[BreakthroughHorse]层数×10)%(最多+40%)\n\n使本技能造成的伤害+(自身的护盾×2)%(最多+50%)\n\n[BeforeUse] 若自身的[BreakthroughHorse]层数为5层，则消耗所有[BreakthroughHorse]并改为使用“黑风马蹄月斩”\n[WhenUse] 使自身获得3层[LegStrengthHorseYisang]\n[WhenUse] 目标的[Burst]强度与[Vibration]强度之和每有5级，使本技能的硬币威力+1(最多+2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Burst]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层[Binding]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若自身的[LegStrengthHorseYisang]层数不低于2层，则对目标施加1层[ConcussionYisang]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "破阵先锋",
+          "desc": "若自身的速度值高于目标，则\n- 使本技能的最终威力+1\n- 使本技能造成的伤害+(自身的[BreakthroughHorse]层数×<style=\"highlight\">20</style>)%(最多+<style=\"highlight\">80</style>%)\n\n使本技能造成的伤害+(自身的护盾×2)%(最多+50%)\n\n[BeforeUse] 若自身的[BreakthroughHorse]层数为5层，则消耗所有[BreakthroughHorse]并改为使用“黑风马蹄月斩”\n[WhenUse] 使自身获得3层[LegStrengthHorseYisang]\n[WhenUse] 目标的[Burst]强度与[Vibration]强度之和每有5级，使本技能的硬币威力+1(最多+2)\n<style=\"highlight\">[WhenUse] 若自身的[BreakthroughHorse]层数不低于3层，则使本技能的所有硬币转化为[SuperCoin]</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Burst]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层[Binding]"
+                },
+                {
+                  "desc": "<style=\"highlight\">- 若自身的[BreakthroughHorse]层数不低于3层，则对目标额外施加1层[Binding]</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Vibration]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若自身的[LegStrengthHorseYisang]层数不低于2层，则对目标施加<style=\"highlight\">2</style>层[ConcussionYisang]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "突击前，须准备周全。",
+          "desc": "[CanDuelGuard]\n[StartBattle] 下回合使自身获得3层[LegStrengthHorseYisang]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "突击前，须准备周全。",
+          "desc": "[CanDuelGuard]\n[StartBattle] 下回合使自身获得3层[LegStrengthHorseYisang]\n<style=\"highlight\">[EndBattle] 随机解除自身带有的1种可解除的负面状态(每回合最多1次)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011405,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "黑风马蹄月斩",
+          "desc": "若自身的速度值高于目标，则使本技能的最终威力+1\n[WhenUse] 下回合使除自身以外的全体友方单位获得1层[BattlefieldHorse](每回合最多1次)\n[WhenUse] 使自身获得3层[LegStrengthHorseYisang]\n[WhenUse] 目标的[Burst]强度与[Vibration]强度之和每有5级，使本技能的硬币威力+1(最多+2)\n[WinDuel] 若自身的速度值高于目标，则使本技能的造成的伤害+50%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Burst]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[ConcussionYisang]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "黑风马蹄月斩",
+          "desc": "若自身的速度值高于目标，则使本技能的最终威力+1\n[WhenUse] 下回合使除自身以外的全体友方单位获得1层[BattlefieldHorse](每回合最多1次)\n[WhenUse] 使自身获得3层[LegStrengthHorseYisang]\n[WhenUse] 目标的[Burst]强度与[Vibration]强度之和每有5级，使本技能的硬币威力+1(最多+2)\n[WinDuel] 若自身的速度值高于目标，则使本技能的造成的伤害+50%\n<style=\"highlight\">[WinDuel] 对主要目标施加1层[ConcussionYisang]</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Burst]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[ConcussionYisang]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

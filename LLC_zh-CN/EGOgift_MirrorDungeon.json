@@ -361,7 +361,7 @@
     {
       "id": 9015,
       "name": "膏血",
-      "desc": "技能对陷入混乱的敌方单位造成的伤害+10%。\n\n若该技能为增加震颤 强度，施加震颤 层数，触发振幅转换 ，触发震颤引爆 或触发振幅纠缠 的技能，或该技能为怠惰技能，则改为造成的伤害+20%",
+      "desc": "技能对陷入混乱的敌方单位造成的伤害+10%。\n\n若该技能为增加震颤 强度，施加震颤 层数，造成振幅转换 ，造成震颤引爆 或造成振幅纠缠 的技能，或该技能为怠惰技能，则改为造成的伤害+20%",
       "simpleDesc": [
         {
           "abilityID": 9015,
@@ -376,7 +376,7 @@
     {
       "id": 19015,
       "name": "膏血+",
-      "desc": "技能对陷入混乱的敌方单位<style=\"upgradeHighlight\">造成的伤害+12.5%。</style>\n\n若该技能为增加震颤 强度，施加震颤 层数，触发振幅转换 ，触发震颤引爆 或触发振幅纠缠 的技能，或该技能为怠惰技能，则改为<style=\"upgradeHighlight\">造成的伤害+25%</style>",
+      "desc": "技能对陷入混乱的敌方单位<style=\"upgradeHighlight\">造成的伤害+12.5%。</style>\n\n若该技能为增加震颤 强度，施加震颤 层数，造成振幅转换 ，造成震颤引爆 或造成振幅纠缠 的技能，或该技能为怠惰技能，则改为<style=\"upgradeHighlight\">造成的伤害+25%</style>",
       "simpleDesc": [
         {
           "abilityID": 19015,
@@ -391,7 +391,7 @@
     {
       "id": 29015,
       "name": "膏血++",
-      "desc": "技能对陷入混乱的敌方单位<style=\"upgradeHighlight\">造成的伤害+15%。</style>\n\n若该技能为增加震颤 强度，施加震颤 层数，触发振幅转换 ，触发震颤引爆 或触发振幅纠缠 的技能，或该技能为怠惰技能，则改为<style=\"upgradeHighlight\">造成的伤害+30%</style>",
+      "desc": "技能对陷入混乱的敌方单位<style=\"upgradeHighlight\">造成的伤害+15%。</style>\n\n若该技能为增加震颤 强度，施加震颤 层数，造成振幅转换 ，造成震颤引爆 或造成振幅纠缠 的技能，或该技能为怠惰技能，则改为<style=\"upgradeHighlight\">造成的伤害+30%</style>",
       "simpleDesc": [
         {
           "abilityID": 29015,
@@ -1859,7 +1859,7 @@
     {
       "id": 9067,
       "name": "特别合约",
-      "desc": "战斗中通过技能伤害使敌方单位陷入混乱时，对目标追加其体力上限33%(若是异想体，则为相应的部位)的固定伤害，并在下回合对其施加2层易损 (每场战斗最多1次)。",
+      "desc": "战斗中通过技能伤害使敌方单位陷入混乱时，对目标造成其体力上限33%(若是异想体，则为相应的部位)的固定伤害，并在下回合对其施加2层[Vulnerable](每场战斗最多1次)。",
       "simpleDesc": [
         {
           "abilityID": 9067,
@@ -2470,7 +2470,7 @@
     {
       "id": 9092,
       "name": "震颤耦合",
-      "desc": "回合开始时，若拥有增加[Vibration]强度或施加[Vibration]层数的攻击技能的友方单位不低于5名，则触发该效果。(不包括E.G.O技能，以参战人员为基准)\n\n波次的首个回合开始时，使全体敌方单位(若是异想体，则改为所有部位)增加5级[Vibration]强度并对其施加5层[Vibration]。\n\n使敌方单位[VibrationExplosion]时，本回合与下回合使其增加5级[Vibration]强度并对其施加2层[Vulnerable]。(每个[VibrationExplosion]的攻击技能最多触发1次)\n\n若本回合使1名敌方单位[VibrationExplosion]3次，则下回合开始时使其陷入混乱并在现存体力66%与33%处生成1条混乱阈值。(每场战斗最多1次)\n\n触发[Switch_Vibration]或[FusionVibration]时，施加1层[Vulnerable](每回合最多3次)",
+      "desc": "回合开始时，若拥有增加[Vibration]强度或施加[Vibration]层数的攻击技能的友方单位不低于5名，则触发该效果。(不包括E.G.O技能，以参战人员为基准)\n\n波次的首个回合开始时，使全体敌方单位(若是异想体，则改为所有部位)增加5级[Vibration]强度并对其施加5层[Vibration]。\n\n使敌方单位[VibrationExplosion]时，本回合与下回合使其增加5级[Vibration]强度并对其施加2层[Vulnerable]。(每个[VibrationExplosion]的攻击技能最多触发1次)\n\n若本回合使1名敌方单位[VibrationExplosion]3次，则下回合开始时使其陷入混乱并在现存体力66%与33%处生成1条混乱阈值。(每场战斗最多1次)\n\n造成[Switch_Vibration]或[FusionVibration]时，施加1层[Vulnerable](每回合最多3次)",
       "simpleDesc": [
         {
           "abilityID": 9092,
@@ -3034,7 +3034,7 @@
       "simpleDesc": [
         {
           "abilityID": 29110,
-          "simpleDesc": "拼点胜利时：使目标增加(剩余硬币数)级震颤 强度并对其施加(剩余硬币数)层震颤 "
+          "simpleDesc": "拼点胜利时：使目标增加(剩余硬币数)级[Vibration]强度并对其施加(剩余硬币数/2)层[Vibration]"
         }
       ]
     },
@@ -3181,7 +3181,7 @@
         },
         {
           "abilityID": 91191,
-          "simpleDesc": "使目标增加2级破裂 强度并对其施加2层破裂 "
+          "simpleDesc": "使目标增加3级[Burst]强度并对其施加2层[Burst]"
         }
       ]
     },
@@ -4423,7 +4423,7 @@
     {
       "id": 9165,
       "name": "啮合的齿轮",
-      "desc": "回合开始时，若拥有增加[Vibration]强度或施加[Vibration]层数的攻击技能的友方单位不低于5名，则触发该效果。(不包括E.G.O技能，以参战人员为基准)\n\n若本回合使目标[VibrationExplosion]6次，则在其现存体力0%处生成1条混乱阈值。(每场战斗最多1次)\n\n触发[Switch_Vibration]或[FusionVibration]时，施加1层[Vulnerable](每回合最多1次)",
+      "desc": "回合开始时，若拥有增加[Vibration]强度或施加[Vibration]层数的攻击技能的友方单位不低于5名，则触发该效果。(不包括E.G.O技能，以参战人员为基准)\n\n若本回合使目标[VibrationExplosion]6次，则在其现存体力0%处生成1条混乱阈值。(每场战斗最多1次)\n\n造成[Switch_Vibration]或[FusionVibration]时，施加1层[Vulnerable](每回合最多1次)",
       "simpleDesc": [
         {
           "abilityID": 9165,
@@ -4513,7 +4513,7 @@
     {
       "id": 9185,
       "name": "返利礼券",
-      "desc": "在商店进行强化时，有20%概率返还消耗的经费。",
+      "desc": "在商店进行强化时，以20%的概率返还消耗的经费。",
       "simpleDesc": [
         {
           "abilityID": 9185,
@@ -4524,7 +4524,7 @@
     {
       "id": 9186,
       "name": "新品小册",
-      "desc": "在商店进行刷新时，有20%概率返还消耗的经费。",
+      "desc": "在商店进行刷新时，以20%的概率返还消耗的经费。",
       "simpleDesc": [
         {
           "abilityID": 9186,
