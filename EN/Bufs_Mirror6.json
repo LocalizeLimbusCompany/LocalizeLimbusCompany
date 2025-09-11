@@ -35,7 +35,7 @@
     {
       "id": "MD6106",
       "name": "Final Power Up VII",
-      "desc": "Clash Power +1, Final Power +2 Offense Level +2, Defense Level +2, Max HP +37.5%, Damage Dealt +10%, Boss Max HP +30%"
+      "desc": "Clash Power +1, Final Power +2, Offense Level +2, Defense Level +2, Max HP +37.5%, Damage Dealt +10%, Boss Max HP +30%"
     },
     {
       "id": "MD6107",
@@ -205,7 +205,7 @@
     {
       "id": "MD6Limit105",
       "name": "Ego Interference I",
-      "desc": "Doubles the amount of E.G.O Resources consumed when using E.G.O Skills"
+      "desc": "Doubles the amount of E.G.O Resources consumed when using E.G.O Skills\n(Does not interact with E.G.O Gift effects)"
     },
     {
       "id": "MD6Limit111",
@@ -255,7 +255,7 @@
     {
       "id": "MD6Limit125",
       "name": "Ego Interference II",
-      "desc": "Triples the amount of E.G.O Resources consumed when using E.G.O Skills"
+      "desc": "Triples the amount of E.G.O Resources consumed when using E.G.O Skills\n(Does not interact with E.G.O Gift effects)"
     },
     {
       "id": "MD6Limit131",
@@ -306,6 +306,94 @@
       "id": "MD6Limit145",
       "name": "SP Fatigue II",
       "desc": "In battles, allies cannot heal higher than 30 SP"
+    },
+    {
+      "id": "DerivativeHugeIrritation",
+      "name": "Unrelenting Spirit - Shin [剛氣-心]",
+      "desc": "- Turn Start: gain 1 Damage Up and 1 Power Up for every 15% missing HP on self (max 5 each)\n- Inflict +3 more Tremor Potency and +1 more Tremor Count with this unit's Skills\n- If this unit's Speed is faster than the target's by 3 or more, deal +(Speed difference x 5)% damage (max 40%)\n- Convert the final Coins of 'Double Slash - Blast' and 'Triple Slash - Burst' to Unbreakable Coins",
+      "summary": ""
+    },
+    {
+      "id": "GiveMeCandy",
+      "iconId": "CandyForCharon",
+      "name": "Candy",
+      "desc": "Max Stack: 99\n- Are your hoarding candy all for yourself?",
+      "summary": ""
+    },
+    {
+      "id": "HungryCharon",
+      "name": "Hunger-Rage",
+      "desc": "Max Stack: 3\nI'm starving. I want candy now",
+      "summary": ""
+    },
+    {
+      "id": "FullCharon",
+      "name": "Indulged",
+      "desc": "Turn Start: for every 2 Stack, gain 1 Clash Power Down (max 5)",
+      "summary": ""
+    },
+    {
+      "id": "GiveMeCandy_LowMorale",
+      "name": "Candy",
+      "desc": "- Low Morale\n- When Clashing against Identities with Candy, Clash Power +3; when clashing against other Identities, Clash Power -1",
+      "summary": "Conditional Clash Power fluctuation",
+      "undefined": "-"
+    },
+    {
+      "id": "GiveMeCandy_Panic",
+      "name": "Candy",
+      "desc": "- Panic\n- When Clashing against Identities with Candy, Clash Power +5; when clashing against other Identities, Clash Power -2",
+      "summary": "Conditional Clash Power fluctuation",
+      "undefined": "-"
+    },
+    {
+      "id": "UnfinishedDreamMirror",
+      "name": "IN WHICH IS RECOUNTED THE LIBERATION FROM BLOOD THICKER THAN WATER",
+      "desc": "- At every Turn End: gain 1 Haste and 3 Offense Level Up next turn\n- Gain 2 additional Offense Level Up after every 3 cumulative turns (max 6)\n- On Clash Win, heal 3 SP\n- On Kill, gain 1 Clash Power Up next turn (once per turn)",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "UnfinishedDreamSanchoMirror",
+      "name": "In which is recounted the thralldom to blood thicker than water.",
+      "desc": "- Gain 2 additional Hardblood every time this unit gains Hardblood. (5 times per turn)\n- At every Turn End: gain 2 Haste and 3 Offense Level Up next turn\n- Gain 2 additional Offense Level Up after every 3 cumulative turns (max 6)\n- On Clash Win, heal 3 SP\n- On Kill, gain 1 Clash Power Up next turn (once per turn)",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "FragmentOfHopeFamilyMirror",
+      "name": "O compatriots of my dear child",
+      "desc": "Clash Power +1 per Stack (max 4)\nDeal +5% damage",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "FragmentOfHopeTwoFamilyMirror",
+      "name": "Dream her dream together in my stead",
+      "desc": "Clash Power +2 for every value (max 8)\n- Apply Shield to self and all allies at Combat Start\n- On Hit, deal 1 fixed damage",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "VerEmergencyCandy",
+      "name": "Backup Candy",
+      "desc": "Turn End: at less than 60% HP...\nHeal 30% HP, heal 15 SP, lose 1 Backup Candy, and 1 Hunger\nAt 0 Stack, apply 1 Incandescent Indulgence, then expires",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "VerHunger",
+      "name": "Hunger",
+      "desc": "Max Stack: 3\nTurn End: gain 2 Offense Level Up and 1 Damage Up next turn for every Stack\nAt max Stack(3), lose 5% HP at Turn End",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "VerShiningFullness",
+      "name": "Incandescent Indulgence",
+      "desc": "Gain 30% base HP for this Encounter\nTurn Start: fully heal HP and SP (once per Encounter)",
+      "summary": "",
+      "undefined": "-"
     }
   ]
 }

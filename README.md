@@ -23,7 +23,7 @@
 
 **简体中文** | [Русский](https://github.com/Crescent-Corporation/LimbusCompanyBusRUS)
 
-[繁體中文](https://github.com/SmallYuanSY/LocalizeLimbusCompany) | [ภาษาไทย](https://github.com/stlinx/LocalizeLimbusTH) | [Español](https://github.com/Dreams-Office/LimbusCompanySpanishTranslationTeam) | [Français](https://github.com/Eden-Office/LimbusCompanyBusFR)
+[繁體中文](https://github.com/LimbusTraditionalMandarin/storyline) | [ภาษาไทย](https://github.com/stlinx/LocalizeLimbusTH) | [Español](https://github.com/Dreams-Office/LimbusCompanySpanishTranslationTeam) | [Français](https://github.com/Eden-Office/LimbusCompanyBusFR)
 
 </div>
 

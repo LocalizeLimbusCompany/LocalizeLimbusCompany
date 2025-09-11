@@ -1,6 +1,431 @@
 {
   "dataList": [
     {
+      "id": 123901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "終わらぬ祝祭",
+          "desc": "[CantDuel]\n対象が守備スキルを使用したならダメージを受けない\n[WhenUse] 次のターンにゴンドラを1つ生成",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 123902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "永久なる祝祭",
+          "desc": "[CantDuel]\n対象が守備スキルを使用したならダメージを受けない\n[WhenUse] 次のターンにゴンドラを4つ生成",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            },
+            {
+              "coindescs": [
+                {}
+              ]
+            },
+            {
+              "coindescs": [
+                {}
+              ]
+            },
+            {
+              "coindescs": [
+                {}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "燃えるような渇き",
+          "desc": "自分が消耗した[BloodDinner]100につき、最終威力 +1 (最大5)\n[WhenUse] 対象の[Laceration]5につき、基本威力 +1(最大3)\n[WhenUse] [BloodDinner]を最大30消耗し、消耗した[BloodDinner]10につき[RegainedStrength]1を得る\n[DefeatDuel] 精神力が3減少",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与、[Laceration]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "貫かれよ",
+          "desc": "[WhenUse] [BloodDinner]を最大40消耗し、消耗した[BloodDinner]10につき[RegainedStrength]を1得て精神力を3回復\n\n[DefeatDuel] 精神力が3減少",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の体力最大値20%分の色欲属性ダメージを与える"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の体力最大値20%分の色欲属性ダメージを与える"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124003,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ドンキホーテ流硬血2式 - 杭",
+          "desc": "[Laceration]が最も多く付与された対象を攻撃\n自分が消耗した[BloodDinner]100につき、最終威力 +1 (最大5)\n[WhenUse] 対象の[Laceration]5につきコイン威力 +1(最大2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与、[Laceration]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] (対象の[Laceration]威力 × 回数)だけ色欲属性ダメージを与える"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "硬血式楔",
+          "desc": "自分が消耗した[BloodDinner]100につき、最終威力 +1 (最大5)\n[StartBattle] 自分の[RegainedStrength]3につき、加重値 +1(最大2)\n[EndSkill] [RegainedStrength]を3消耗\n[DefeatDuel] 最終ダメージ量 -80％",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与、[Laceration]回数が3増加"
+                },
+                {
+                  "desc": "[WinDuelAttack] [Burst]3を付与"
+                },
+                {
+                  "desc": "[DefeatDuelAttack] [RegainedStrength]1を消耗"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                },
+                {
+                  "desc": "[WinDuelAttack] [Burst]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124005,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "血の欲望",
+          "desc": "[WhenUse] [BloodDinner]を最大40消耗し、消耗した[BloodDinner]10につき[RegainedStrength]1を得て精神力を5回復\n[WhenUse] [RegainedStrength]5につき、付与する[Laceration]回数が1増加 (最大2)\n[DefeatDuel] 最終ダメージ量 -80％",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]4を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124006,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "血餐の時間",
+          "desc": "[CantIdentify]\n[WhenUse] [BloodDinner]を最大300消耗し、消耗した[BloodDinner]10につき[RegainedStrength]1を得て精神力を3回復\n[WhenUse] [BloodDinner]を消耗したなら、精神力を30回復\n[DefeatDuel] 最終ダメージ量 -80％",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124007,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ドンキホーテ流硬血4式 - 抉り抜き",
+          "desc": "このスキルを使用するまで混乱状態にならない。\n[WhenUse] [BloodDinner]を最大100消耗し、消耗した[BloodDinner]10につき[RegainedStrength]1を得て精神力を15回復\n[WhenUse] 自分の[BloodDinner_Accumulation]の数値30につき、マッチ威力 +1(最大15)\n[DefeatDuel] ダメージ量が半減し、このスキルのダメージで対象が混乱しない\n[EndSkill] 増加したマッチ威力だけ、このターンと次のターンに[AttackDown], [DefenseDown]を得る。(最大15)\n[DefeatDuel] 最終ダメージ量 -80％",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]8を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [RegainedStrength]2を消耗"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124008,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ドンキホーテ流硬血14式マント",
+          "desc": "自分が消耗した[BloodDinner]100につき、基本スキル +1 (最大10)\n[DuelGuard]\n[WinDuel] 対象へ[Laceration]4, [Burst]4を付与\n[DefeatDuel] [RegainedStrength]2を消耗",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124009,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "脆い、脆いな",
+          "desc": "[DuelCounter]\n[RegainedStrength]5につき基本威力 +1\n対象の[Laceration]5につきコイン威力 +1(最大2)\n[DefeatDuel] 精神力が3減少",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与、[Laceration]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与、[Laceration]回数が2増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124010,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ブラッディー・メアリ－・ゴー・ラウンド",
+          "desc": "[CantDuel]\n[WhenUse] 敵にダメージを与えず、次のターンに凝結した夢を生成する\n[WhenUse] [RegainedStrength]5につき、付与する[Laceration]回数が1増加 (最大2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124011,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "貫かれよ",
+          "desc": "[DefeatDuel] 精神力が3減少\n[DefeatDuel] 最終ダメージ量 -50%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 混乱状態になり、次のターンに[Penetration]状態になる"
+                },
+                {
+                  "desc": "[EndCoin] 対象の[Laceration]威力が25減少。該当数値だけ[Laceration]を得て、[BloodDinner]が増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124012,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ドンキホーテ流硬血奥義 - 球",
+          "desc": "このスキルを使用するまで混乱状態にならない。\n[BloodDinner_Common_Accumulation]だけダメージ量が増加(最大300%)\n[WhenUse] 精神力が30回復\n[WhenUse] [RegainedStrength]10につき、マッチ威力 +1\n[EndSkill] [RegainedStrength]を全て消耗。このターンと次のターンに[Vulnerable]5を得る。次のターンに[Binding]2を得る。\n[DefeatDuel] 最終ダメージ量 -80％",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": 117501,
       "levelList": [
         {
@@ -506,6 +931,611 @@
                 },
                 {
                   "desc": "[OnSucceedAttack] 精神力を8回復"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124105,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "爆砕斬",
+          "desc": "[Prey]を保有した対処を優先して指定\n速度と関係なく、このスキルとマッチができる\n対象の[Combustion]と[Vibration]の合計6につき、コインのダメージ量 +1 (最大3)\n[DefeatDuel] 最終ダメージ量 -50%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[BulletPropellant]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]3を付与"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [Vibration]4を付与、[Vibration]回数が4増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[BulletPropellant]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が3増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]回数が3増加"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [VibrationIgnition]へ[Switch_Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[BulletPropellant]を1消耗"
+                },
+                {
+                  "desc": "このコイン効果で[BulletPropellant]を消耗したなら、ダメージ量 +50%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]を3付与、[Combustion]回数が3増加"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 2回[VibrationExplosion]。対象の[Vibration]回数が2減少"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124106,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "快刀亂麻",
+          "desc": "[Prey]を保有する対象を優先して指定\n速度と関係なくこのスキルとマッチができ、このスキルを使用するまで混乱状態にならない\n[WhenUse] [BattleSense]を全て消耗。消耗した数値が\n- 10以上なら、10につき攻撃加重値 +1 (最大2)\n- 25の場合、メインターゲットの[Combustion]と[Vibration]の合計4につき、最終威力 +1 (最大5)\n[DefeatDuel] ダメージ量が80%だけ減少し、このスキルのダメージによって対象が混乱せず、[Combustion]威力と回数、[Vibration]威力と回数付与量が半減 (他の効果で増加する数値を除く)\n[EndSkill] [FullReload] (1ターンにつき1回)\n- [BulletPropellantSpecial]を保有しているなら、代わりに[ReloadKeepAmmo] (1ターンにつき1回)\n[DefeatDuel] 最終ダメージ量 -50％\n[EndSkill] このターンが終了",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[BulletPropellant]を全て消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 消耗した[BulletPropellant]だけ[Combustion]を付与、[Combustion]回数が増加、[Vibration]を付与、[Vibration]回数が増加"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [VibrationIgnition]へ[Switch_Vibration]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 3回[VibrationExplosion]。対象の[Vibration]回数が3減少"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124107,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "超絶猛虎殺撃乱斬",
+          "desc": "[Prey]を保有する対象を優先して指定\n速度と関係なくこのスキルとマッチができ、このスキルを使用するまで混乱状態にならない\n[WhenUse] [BattleSense]を全て消耗。消耗した数値が\n- 10以上なら、10につき攻撃加重値 +1 (最大4)\n- 25以上なら、メインターゲットの[Combustion]と[Vibration]の合計4につき、最終威力 +1 (最大6)\n- 50の場合、コイン威力 +1, ダメージ量 +50%\n[DefeatDuel] ダメージ量が80%だけ減少し、このスキルのダメージによって対象が混乱せず、[Combustion]威力と回数、[Vibration]威力と回数付与量が半減 (他の効果で増加する数値を除く)\n[EndSkill] [FullReload] (1ターンにつき1回)\n- [BulletPropellantSpecial]を保有しているなら、代わりに[ReloadKeepAmmo] (1ターンにつき1回)\n[DefeatDuel] 最終ダメージ量 -50％\n[EndSkill] このターンが終了",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[BulletPropellant]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]6を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[BulletPropellant]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が6増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[BulletPropellant]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]6を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[BulletPropellant]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]回数が6増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[BulletPropellant]を1消耗"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [VibrationIgnition]へ[Switch_Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[BulletPropellant]を1消耗"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 5回[VibrationExplosion]。対象の[Vibration]回数が5減少"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124108,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "天退星刀 装填",
+          "desc": "[WhenUse] 精神力を10回復\n- 精神力が0未満なら、精神力を5追加で回復\n[DuelCounter]\n[DefeatDuel] [BulletPropellant]が1減少\n[EndSkill] [FullReload] (1ターンにつき1回)\n- [BulletPropellantSpecial]を保有しているなら、代わりに[ReloadKeepAmmo] (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[BulletPropellant]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が3増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124301,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "キャンディーちょうだい。",
+          "desc": "[GiveMeCandy]を持つ対象を優先して攻撃\n[WhenUse] 対象の[GiveMeCandy]1につきコイン威力 +1(最大5)\n[DefeatDuel] 最終ダメージ量 -50%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[WinDuelAttack] 対象に[GiveMeCandy]があるなら、対象は次のターンに混乱状態になる。"
+                },
+                {
+                  "desc": "[DefeatDuel] 対象の[GiveMeCandy]だけまんぷく を得る"
+                },
+                {
+                  "desc": "[EndSkill] マッチを進行した対象の[GiveMeCandy]を全て除去"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124302,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ない。キャンディー。",
+          "desc": "[BeforeAttack] [GiveMeCandy]を持つ人格の数だけ、攻撃加重値が増加 (最大3)\n[WhenUse] [GiveMeCandy]を持つ人格数だけダメージ量 +10% (最大50%)\n[WhenUse] メインターゲットの保有する[GiveMeCandy]1につき、コイン威力 +1 (最大5)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124303,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "あんたたち…。",
+          "desc": "[WhenUse] 対象の[GiveMeCandy]1につき、コイン威力 +1(最大5)\n[DefeatDuel] 最終ダメージ量 -50%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124304,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ぶるんぶるん",
+          "desc": "[CantDuel] \n[WhenUse] [GiveMeCandy]を持つ人格の数だけダメージ量 +20% (最大100%)",
+          "coindescs": [
+            {
+              "desc": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124305,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "分けて。たべて。",
+          "desc": "[WhenUse] ランダムな敵2名([GiveMeCandy]がない敵を優先)へ[GiveMeCandy]を1付与",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124306,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "…コミが、おこった。",
+          "desc": "[BeforeAttack] [GiveMeCandy]を持つ人格の数だけ、攻撃加重値が増加\n[WhenUse] [GiveMeCandy]を持つ人格の数だけダメージ量 +10% (最大50%)\n[WhenUse] [GiveMeCandy]を持つ人格の数だけマッチ威力増加 (最大5)\n[DefeatDuel] 最終ダメージ量 -80%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124307,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "なぐった。コミを。",
+          "desc": "[DuelCounter] \n[WhenUse] 次のターンに全部位がマッチ威力増加2を得る\n[WhenUse] 次のターンに全部位がクイック2を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124201,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "殴る",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 打撃追加ダメージ3"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 打撃追加ダメージ3"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 麻痺 3を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124202,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "足蹴",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 打撃追加ダメージ5"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 打撃追加ダメージ5"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに麻痺 3を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124203,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "お返し",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の精神力を5減少"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124204,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "後ろに注意！",
+          "desc": "対象の精神力0未満の場合、コイン威力+3",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の精神力を10回復"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに束縛 2, 攻撃威力減少 2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の精神力を20減少"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124205,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "全員集合",
+          "desc": "[StartBattle] 次のターンに味方2名を召喚",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124206,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "試験は終わりだ",
+          "desc": "[WhenUse] 次のターンに[HitDamageUp]3を得る\n[WhenUse] メインターゲットの[MiddleFingerBook]の数値が3以上なら、このスキルの全コインが[SuperCoin]に変更される\n[WhenUse] メインターゲットが保有する[MiddleFingerBook]が5以上なら、加重値 +1\n[DefeatDuel] 最終ダメージ量 -80%",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]1を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124207,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "苦痛を刻む",
+          "desc": "[MiddleFingerBook]の数値が最も高い対象を優先して指定\n[WhenUse] 対象の[MiddleFingerBook]の数値が3以上なら、このスキルの全コインが[SuperCoin]に変更される\n[DefeatDuel] 最終ダメージ量 -50％",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] このターンと次のターンに[Vulnerable]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] このターンと次のターンに[Vulnerable]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] (対象の[MiddleFingerBook]の数値 × 3)だけ打撃追加ダメージ"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の全ての[MiddleFingerBook]を除去"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124208,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "お遊びはここまで",
+          "desc": "[StartBattle] 全ての味方の精神力を10回復\n[EndBattle] パニック状態の味方がいるなら、次のターン開始時にパニック状態を解除して精神力を0に初期化\n[EndBattle] 次のターンに自分を含む全味方へ[HitResultUp]1を付与",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124209,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "全員、処刑だ！！！",
+          "desc": "速度と関係なく、このスキルとマッチができる\nメインターゲットの[MiddleFingerBook]の数値が5以上なら、最終威力 +5\n[DefeatDuel] 最終ダメージ量 -80％\n[EndSkill] 攻撃された全対象の[MiddleFingerBook]を除去",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] (対象の[MiddleFingerBook]の数値 × 10)だけ打撃追加ダメージ"
                 }
               ]
             }

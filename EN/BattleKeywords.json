@@ -2266,6 +2266,27 @@
       "name": "Commanding Cry",
       "desc": "- Gain 1 Clash Power and 2 Defense Level\n- Expires at Turn End",
       "summary": ""
+    },
+    {
+      "id": "VibrationBleeding",
+      "name": "Tremor - Hemorrhage",
+      "desc": "- On Tremor Burst, take Lust Damage equal to (sum of Tremor Potency and Bleed Potency / 2), and lose 1 Bleed Count\n- When hit by Skills that trigger Tremor Burst, raise this unit's Stagger Threshold by the effect's Potency\n- Turn End: reduce the Count by 1\n(Interacts the same way as normal Tremor does to effects that raise or reduce Tremor Potency/Count)",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "GazeRyoshu",
+      "name": "Gaze",
+      "desc": "- Max Stack: 7\n- Take and deal +10% damage from and against Ryōshū for every 1 Stack of Gaze\n- On death, transfers to this unit's ally(for Focused Encounters, a different Part) either without or with the least Contempt or Gaze (this effect does not activate if this unit was killed during the Skill attack 'Cascading Gaze of Awe Underneath Contempt')\n- Turn End: at 7 Stacks, convert this effect into Contempt next turn",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "ContemptRyoshu",
+      "name": "Contempt",
+      "desc": "- Max Stack: 1\n- Take and deal -50% damage from and against Ryōshū\n- Targets with Contempt cannot gain Gaze\n- On death, transfers to this unit's ally(for Focused Encounters, a different Part) either without or with the least Contempt or Gaze (this effect does not activate if this unit was killed during the Skill attack 'Cascading Gaze of Awe Underneath Contempt')\n- Turn End: expires; then, this unit gains 7 Gaze next turn",
+      "summary": "",
+      "undefined": "-"
     }
   ]
 }

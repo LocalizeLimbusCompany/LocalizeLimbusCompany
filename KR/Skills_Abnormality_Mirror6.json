@@ -1,6 +1,431 @@
 {
   "dataList": [
     {
+      "id": 123901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "끝나지 않는 축제",
+          "desc": "[CantDuel]\n대상이 수비 스킬을 사용했으면 피해를 받지 않음\n[WhenUse] 다음 턴에 곤돌라 1개를 생성",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 123902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "영원한 축제",
+          "desc": "[CantDuel]\n대상이 수비 스킬을 사용했으면 피해를 받지 않음\n[WhenUse] 다음 턴에 곤돌라 4개를 생성",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            },
+            {
+              "coindescs": [
+                {}
+              ]
+            },
+            {
+              "coindescs": [
+                {}
+              ]
+            },
+            {
+              "coindescs": [
+                {}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "타는 갈증",
+          "desc": "자신이 소모한 [BloodDinner] 100당 최종 위력 +1 (최대 5)\n[WhenUse] 대상의 [Laceration] 5당 기본 위력 +1 (최대 3)\n[WhenUse] [BloodDinner]을 최대 30 소모하여 소모한 [BloodDinner] 10당 [RegainedStrength] 1 얻음\n[DefeatDuel] 정신력 3 감소",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 3 부여, [Laceration] 횟수 2 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 3 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "꿰뚫려라",
+          "desc": "[WhenUse] [BloodDinner]을 최대 40 소모하여 소모한 [BloodDinner] 10당 [RegainedStrength] 1 얻고 정신력 3 회복\n\n[DefeatDuel] 정신력 3 감소",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 최대 체력의 20%만큼 색욕 피해를 줌"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상의 최대 체력의 20%만큼 색욕 피해를 줌"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124003,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "돈키호테류 경혈 2식 - 말뚝",
+          "desc": "[Laceration]이 가장 많이 부여된 대상 공격\n자신이 소모한 [BloodDinner] 100당 최종 위력 +1 (최대 5)\n[WhenUse] 대상의 [Laceration] 5당 코인 위력 +1 (최대 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여, [Laceration] 횟수 2 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst] 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] (대상의 [Laceration] 위력 X 횟수)만큼 색욕 피해를 줌"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "경혈식 쐐기",
+          "desc": "자신이 소모한 [BloodDinner] 100당 최종 위력 +1 (최대 5)\n[StartBattle] 자신의 [RegainedStrength] 3당 가중치 +1 (최대 2)\n[EndSkill] [RegainedStrength] 3 소모\n[DefeatDuel] 최종 피해량 -80%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 3 부여, [Laceration] 횟수 3 증가"
+                },
+                {
+                  "desc": "[WinDuelAttack] [Burst] 3 부여"
+                },
+                {
+                  "desc": "[DefeatDuelAttack] [RegainedStrength] 1 소모"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 2 증가"
+                },
+                {
+                  "desc": "[WinDuelAttack] [Burst] 3 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 3 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124005,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "피의 욕망",
+          "desc": "[WhenUse] [BloodDinner]을 최대 40 소모하여 소모한 [BloodDinner] 10당 [RegainedStrength] 1 얻고 정신력 5 회복\n[WhenUse] [RegainedStrength] 5당 부여하는 [Laceration] 횟수 1증가 (최대 2)\n[DefeatDuel] 최종 피해량 -80%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 4 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124006,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "혈찬의 시간",
+          "desc": "[CantIdentify]\n[WhenUse] [BloodDinner]을 최대 300 소모하여 소모한 [BloodDinner] 10당 [RegainedStrength] 1 얻고 정신력 3 회복\n[WhenUse] [BloodDinner]을 소모했으면 정신력 30 회복\n[DefeatDuel] 최종 피해량 -80%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124007,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "돈키호테류 경혈 4식 - 도려내기",
+          "desc": "이 스킬을 사용하기 전까지 흐트러짐 상태가 되지 않음.\n[WhenUse] [BloodDinner]을 최대 100 소모하여 소모한 [BloodDinner] 10당 [RegainedStrength] 1 얻고 정신력 15 회복\n[WhenUse] 자신의 [BloodDinner_Accumulation] 수치 30당 합 위력 +1 (최대 15)\n[DefeatDuel] 피해량이 50%만큼 감소하고 이 스킬의 피해로 대상이 흐트러지지 않음.\n[EndSkill] 증가한 합 위력만큼 이번 턴과 다음 턴에 [AttackDown], [DefenseDown]를 얻음. (최대 15)\n[DefeatDuel] 최종 피해량 -80%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 8 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [RegainedStrength] 2 소모"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124008,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "돈키호테류 경혈 14식 망토",
+            "desc": "자신이 소모한 [BloodDinner] 100당 기본 위력 +1 (최대 10)\n[DuelGuard]\n[WinDuel] 대상에게 [Laceration] 4, [Burst] 4 부여\n[DefeatDuel] [RegainedStrength] 2 소모",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124009,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "약하디 약하구나",
+          "desc": "[DuelCounter]\n[RegainedStrength] 5당 기본 위력 +1\n대상의 [Laceration] 5당 코인 위력 +1 (최대 2)\n[DefeatDuel] 정신력 3 감소",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여, [Laceration] 횟수 2 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여, [Laceration] 횟수 2 증가"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124010,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "블러디 메리 고 라운드",
+          "desc": "[CantDuel]\n[WhenUse] 적에게 피해를 주지 않으며, 다음 턴에 굳어진 꿈을 생성함\n[WhenUse] [RegainedStrength] 5당 부여하는 [Laceration] 횟수 1증가 (최대 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 2 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124011,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "꿰어져라",
+          "desc": "[DefeatDuel] 정신력 3 감소\n[DefeatDuel] 최종 피해량 -50%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 흐트러짐 상태가 되고, 다음 턴에 [Penetration] 상태가 됨"
+                },
+                {
+                  "desc": "[EndCoin] 대상의 [Laceration] 위력 25 감소. 해당 수치만큼 [Laceration]을 얻고, [BloodDinner] 증가"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124012,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "돈키호테류 경혈 오의 - 구",
+          "desc": "이 스킬을 사용하기 전까지 흐트러짐 상태가 되지 않음.\n[BloodDinner_Common_Accumulation]만큼 피해량이 증가함.(최대 300%)\n[WhenUse] 정신력 30 회복\n[WhenUse] [RegainedStrength] 10당 합 위력 +1\n[EndSkill] [RegainedStrength] 모두 소모. 이번 턴과 다음 턴에 [Vulnerable] 5 얻음. 다음 턴에 [Binding] 2 얻음.\n[DefeatDuel] 최종 피해량 -80%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": 117501,
       "levelList": [
         {
@@ -511,6 +936,611 @@
             }
           ]
         }
+      ]
+    },
+    {
+      "id": 124105,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "폭쇄참 [爆碎斬]",
+          "desc": "[Prey]을 보유한 대상을 우선으로 지정\n속도에 상관없이 이 스킬과 합을 할 수 있음\n대상의 [Combustion]과 [Vibration]의 합 6당 코인 위력 +1 (최대 3)\n[DefeatDuel] 최종 피해량 -50%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[BulletPropellant] 1 소모"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 3 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 3 부여"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [Vibration] 4 부여, [Vibration] 횟수 4 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[BulletPropellant] 1 소모"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 횟수 3 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 횟수 3 증가"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [VibrationIgnition]로 [Switch_Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[BulletPropellant] 1 소모"
+                },
+                {
+                  "desc": "이 코인 효과로 [BulletPropellant]을 소모하였다면, 피해량 +50%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 3 부여, [Combustion] 횟수 3 증가"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [VibrationExplosion] 2회. 대상의 [Vibration] 횟수 2 감소"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124106,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "쾌도난마 [快刀亂麻]",
+          "desc": "[Prey]을 보유한 대상을 우선으로 지정\n속도에 상관없이 이 스킬과 합을 할 수 있으며, 이 스킬을 사용하기 전까지 흐트러짐 상태가 되지 않음\n[WhenUse] [BattleSense]을 전부 소모. 소모한 수치가\n- 10 이상이면, 10당 공격 가중치 +1 (최대 2)\n- 25일 경우, 메인 타겟의 [Combustion]과 [Vibration]의 합 4당 최종 위력 +1 (최대 5)\n[DefeatDuel] 피해량이 80%만큼 감소하고 이 스킬의 피해로 대상이 흐트러지지 않으며, [Combustion] 위력과 횟수, [Vibration] 위력과 횟수 부여량이 절반으로 감소 (다른 효과로 증가되는 수치 제외)\n[EndSkill] [FullReload] (턴당 1회)\n- [BulletPropellantSpecial]을 보유하였다면, 대신 [ReloadKeepAmmo] (턴당 1회)\n[DefeatDuel] 최종 피해량 -50%\n[EndSkill] 이번 턴 종료",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[BulletPropellant] 전부 소모"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 소모한 [BulletPropellant]만큼 [Combustion] 부여, [Combustion] 횟수 증가, [Vibration] 부여, [Vibration] 횟수 증가"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [VibrationIgnition]로 [Switch_Vibration]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [VibrationExplosion] 3회. 대상의 [Vibration] 횟수 3 감소"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124107,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "초절맹호살격난참 [超絕猛虎殺擊亂斬]",
+          "desc": "[Prey]을 보유한 대상을 우선으로 지정\n속도에 상관없이 이 스킬과 합을 할 수 있으며, 이 스킬을 사용하기 전까지 흐트러짐 상태가 되지 않음\n[WhenUse] [BattleSense]을 전부 소모. 소모한 수치가\n- 10 이상이면, 10당 공격 가중치 +1 (최대 4)\n- 25 이상이면, 메인 타겟의 [Combustion]과 [Vibration]의 합 4당 최종 위력 +1 (최대 6)\n- 50일 경우, 코인 위력 +1, 피해량 +50%\n[DefeatDuel] 피해량이 80%만큼 감소하고 이 스킬의 피해로 대상이 흐트러지지 않으며, [Combustion] 위력과 횟수, [Vibration] 위력과 횟수 부여량이 절반으로 감소 (다른 효과로 증가되는 수치 제외)\n[EndSkill] [FullReload] (턴당 1회)\n- [BulletPropellantSpecial]을 보유하였다면, 대신 [ReloadKeepAmmo] (턴당 1회)\n[DefeatDuel] 최종 피해량 -50%\n[EndSkill] 이번 턴 종료",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[BulletPropellant] 1 소모"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 6 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[BulletPropellant] 1 소모"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 횟수 6 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[BulletPropellant] 1 소모"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 6 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[BulletPropellant] 1 소모"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 횟수 6 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[BulletPropellant] 1 소모"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [VibrationIgnition]로 [Switch_Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[BulletPropellant] 1 소모"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [VibrationExplosion] 5회. 대상의 [Vibration] 횟수 5 감소"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124108,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "천퇴성도 장전",
+          "desc": "[WhenUse] 정신력 10 회복\n- 정신력이 0 미만이면, 정신력 5 추가로 회복\n[DuelCounter]\n[DefeatDuel] [BulletPropellant] 1 감소\n[EndSkill] [FullReload] (턴당 1회)\n- [BulletPropellantSpecial]을 보유하였다면, 대신 [ReloadKeepAmmo] (턴당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[BulletPropellant] 1 소모"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 3 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 횟수 3 증가"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124301,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "사탕 줘.",
+          "desc": "[GiveMeCandy]을 가진 대상 우선 공격\n[WhenUse] 대상의 [GiveMeCandy] 1당 코인 위력 +1 (최대 5)\n[DefeatDuel] 최종 피해량 -50%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[WinDuelAttack] 대상에게 [GiveMeCandy]이 있으면, 대상은 다음 턴 흐트러짐 상태가 됨."
+                },
+                {
+                  "desc": "[DefeatDuel] 대상의 [GiveMeCandy] 만큼 포만감 얻음."
+                },
+                {
+                  "desc": "[EndSkill] 합을 진행한 대상의 [GiveMeCandy] 모두 제거"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124302,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "없어. 사탕.",
+          "desc": "[BeforeAttack] [GiveMeCandy]을 가진 인격 수만큼 공격 가중치 증가 (최대 3)\n[WhenUse] [GiveMeCandy]을 가진 인격 수만큼 피해량 +10% (최대 50%)\n[WhenUse] 메인 타겟이 보유한 [GiveMeCandy] 1당 코인 위력 +1 (최대 5)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124303,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "너희들…",
+          "desc": "[WhenUse] 대상의 [GiveMeCandy] 1당 코인 위력 +1 (최대 5)\n[DefeatDuel] 최종 피해량 -50%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124304,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "부릉부릉",
+          "desc": "[CantDuel]\n[WhenUse] [GiveMeCandy]을 가진 인격 수만큼 피해량 +20% (최대 100%)",
+          "coindescs": [
+            {
+              "desc": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124305,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "나눠. 먹어.",
+          "desc": "[WhenUse] 무작위 적 2명([GiveMeCandy]이 없는 적 우선 순위)에게 [GiveMeCandy]을 1부여",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124306,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "…꼬미가, 화났어.",
+          "desc": "[BeforeAttack] [GiveMeCandy]을 가진 인격 수만큼 공격 가중치 증가\n[WhenUse] [GiveMeCandy]을 가진 인격 수만큼 피해량 +10% (최대 50%)\n[WhenUse] [GiveMeCandy]을 가진 인격 수만큼 합 위력 증가 (최대 5)\n[DefeatDuel] 최종 피해량 -80%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124307,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "때렸어. 꼬미를",
+          "desc": "[DuelCounter]\n[WhenUse] 다음 턴에 모든 부위 합 위력 증가 2 얻음\n[WhenUse] 다음 턴에 모든 부위 신속 2 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124201,
+      "levelList": [
+          {
+            "level": 1,
+            "name": "주먹질",
+            "desc": "",
+            "coinlist": [
+              {
+                  "coindescs": [
+                      {
+                          "desc": "[OnSucceedAttack] 타격 추가 피해 3"
+                      }
+                  ]
+              },
+              {
+                  "coindescs": [
+                      {
+                          "desc": "[OnSucceedAttack] 타격 추가 피해 3"
+                      }
+                  ]
+              },
+              {
+                  "coindescs": [
+                      {
+                          "desc": "[OnSucceedAttack] 마비 3 부여"
+                      }
+                  ]
+              }
+            ]
+          }
+      ]
+    },
+    {
+      "id": 124202,
+      "levelList": [
+          {
+              "level": 1,
+              "name": "발길질",
+              "desc": "",
+              "coinlist": [
+                  {
+                      "coindescs": [
+                          {
+                              "desc": "[OnSucceedAttack] 타격 추가 피해 5"
+                          }
+                      ]
+                  },
+                  {
+                      "coindescs": [
+                          {
+                              "desc": "[OnSucceedAttack] 타격 추가 피해 5"
+                          }
+                      ]
+                  },
+                  {
+                      "coindescs": [
+                          {
+                              "desc": "[OnSucceedAttack] 다음 턴에 마비 3 부여"
+                          }
+                      ]
+                  }
+              ]
+          }
+      ]
+    },
+    {
+      "id": 124203,
+      "levelList": [
+          {
+              "level": 1,
+              "name": "되갚기",
+              "desc": "",
+              "coinlist": [
+                  {},
+                  {
+                      "coindescs": [
+                          {
+                              "desc": "[OnSucceedAttack] 대상의 정신력 5 감소"
+                          }
+                      ]
+                  }
+              ]
+          }
+      ]
+    },
+    {
+      "id": 124204,
+      "levelList": [
+          {
+              "level": 1,
+              "name": "뒤통수 조심!",
+              "desc": "대상의 정신력이 0 미만인 경우, 코인 위력 +3",
+              "coinlist": [
+                  {
+                      "coindescs": [
+                          {
+                              "desc": "[OnSucceedAttack] 자신의 정신력 10 회복"
+                          },
+                          {
+                              "desc": "[OnSucceedAttack] 다음 턴에 속박 2, 공격 위력 감소 2 부여"
+                          }
+                      ]
+                  },
+                  {
+                      "coindescs": [
+                          {
+                              "desc": "[OnSucceedAttack] 대상의 정신력 20 감소"
+                          }
+                      ]
+                  }
+              ]
+          }
+      ]
+    },
+    {
+      "id": 124205,
+      "levelList": [
+          {
+              "level": 1,
+              "name": "다들 집합",
+              "desc": "[StartBattle] 다음 턴에 아군 2명 소환",
+              "coinlist": [
+                  {
+                      "coindescs": [
+                          {
+                              "desc": ""
+                          }
+                      ]
+                  }
+              ]
+          }
+      ]
+    },
+    {
+      "id": 124206,
+      "levelList": [
+          {
+              "level": 1,
+              "name": "시험은 끝났다",
+              "desc": "[WhenUse] 다음 턴에 [HitDamageUp] 3 얻음\n[WhenUse] 메인 타겟의 [MiddleFingerBook] 수치가 3 이상이면, 이 스킬의 모든 코인이 [SuperCoin]으로 변경됨\n[WhenUse] 메인 타겟이 보유한 [MiddleFingerBook]이 5 이상인 경우, 가중치 +1\n[DefeatDuel] 최종 피해량 -80%",
+              "coinlist": [
+                  {},
+                  {
+                      "coindescs": [
+                          {
+                              "desc": "[OnSucceedAttack] 다음 턴에 [Binding] 1 부여"
+                          }
+                      ]
+                  }
+              ]
+          }
+      ]
+    },
+    {
+      "id": 124207,
+      "levelList": [
+          {
+              "level": 1,
+              "name": "고통 새기기",
+              "desc": "[MiddleFingerBook] 수치가 가장 높은 대상을 우선 지정\n[WhenUse] 대상의 [MiddleFingerBook] 수치가 3 이상이면, 이 스킬의 모든 코인이 [SuperCoin]으로 변경됨\n[DefeatDuel] 최종 피해량 -50%",
+              "coinlist": [
+                  {
+                      "coindescs": [
+                          {
+                              "desc": "[OnSucceedAttack] 이번 턴과 다음 턴에 [Vulnerable] 1 부여"
+                          }
+                      ]
+                  },
+                  {
+                      "coindescs": [
+                          {
+                              "desc": "[OnSucceedAttack] 이번 턴과 다음 턴에 [Vulnerable] 1 부여"
+                          }
+                      ]
+                  },
+                  {
+                      "coindescs": [
+                          {
+                              "desc": "[OnSucceedAttack] (대상의 [MiddleFingerBook] 수치 x 3)만큼 타격 추가 피해"
+                          },
+                          {
+                              "desc": "[OnSucceedAttack] 대상의 모든 [MiddleFingerBook] 제거"
+                          }
+                      ]
+                  }
+              ]
+          }
+      ]
+    },
+    {
+      "id": 124208,
+      "levelList": [
+          {
+              "level": 1,
+              "name": "장난이 길었군",
+              "desc": "[StartBattle] 모든 아군의 정신력 10 회복\n[EndBattle] 패닉 상태인 아군이 있으면, 다음 턴 시작 시 패닉 상태를 해제하고, 정신력을 0으로 초기화함\n[EndBattle] 다음 턴에 자신을 포함한 모든 아군에게 [HitResultUp] 1 부여",
+              "coinlist": [
+                  {
+                      "coindescs": [
+                          {
+                              "desc": ""
+                          }
+                      ]
+                  }
+              ]
+          }
+      ]
+    },
+    {
+      "id": 124209,
+      "levelList": [
+          {
+              "level": 1,
+              "name": "전원, 처형이다!!!",
+              "desc": "속도에 상관없이 이 스킬과 합을 할 수 있음\n메인 타겟의 [MiddleFingerBook] 수치가 5 이상이면, 최종 위력 +5\n[DefeatDuel] 최종 피해량 -80%\n[EndSkill] 공격 당한 모든 대상의 [MiddleFingerBook] 제거",
+              "coinlist": [
+                  {
+                      "coindescs": [
+                          {
+                              "desc": "[SuperCoin]"
+                          },
+                          {
+                              "desc": "[OnSucceedAttack] (대상의 [MiddleFingerBook] 수치 x 10)만큼 타격 추가 피해"
+                          }
+                      ]
+                  }
+              ]
+          }
       ]
     }
   ]
