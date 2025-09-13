@@ -1,12 +1,437 @@
 {
   "dataList": [
     {
+      "id": 123901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "无尽庆典",
+          "desc": "[CantDuel]\n若目标使用了守备技能，则其不会受到伤害\n[WhenUse] 下回合生成1个座舱",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 123902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "永恒庆典",
+          "desc": "[CantDuel]\n若目标使用了守备技能，则其不会受到伤害\n[WhenUse] 下回合生成4个座舱",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            },
+            {
+              "coindescs": [
+                {}
+              ]
+            },
+            {
+              "coindescs": [
+                {}
+              ]
+            },
+            {
+              "coindescs": [
+                {}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "饿火焚身",
+          "desc": "自身每消耗100层[BloodDinner]，使本技能的最终威力+1(最多+5)\n[WhenUse] 目标每带有5级[Laceration]强度，使本技能的基础威力+1(最多+3)\n[WhenUse] 消耗至多30层[BloodDinner]，每消耗10层[BloodDinner]，使自身获得1层[RegainedStrength]\n[DefeatDuel] 使自身失去3点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Laceration]强度并对其施加2层[Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Laceration]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "被刺穿吧",
+          "desc": "[WhenUse] 消耗至多40层[BloodDinner]，每消耗10层[BloodDinner]，使自身获得1层[RegainedStrength]并恢复3点理智值\n\n[DefeatDuel] 使自身失去3点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标造成其体力上限20%的色欲伤害"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标造成其体力上限20%的色欲伤害"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124003,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "堂吉诃德派硬血2式-桩",
+          "desc": "优先指定[Laceration]最多的目标\n自身每消耗100层[BloodDinner]，使本技能的最终威力+1(最多+5)\n[WhenUse] 目标每带有5级[Laceration]强度，使本技能的硬币威力+1(最多+2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度并对其施加2层[Laceration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Burst]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Burst]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标造成(其[Laceration]强度×[Laceration]层数)点色欲伤害"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "硬血楔",
+          "desc": "自身每消耗100层[BloodDinner]，使本技能的最终威力+1(最多+5)\n[StartBattle] 自身每带有3层[RegainedStrength]，使本技能的攻击容量+1(最多+2)\n[EndSkill] 消耗3层[RegainedStrength]\n[DefeatDuel] 使本技能造成的最终伤害-80%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Laceration]强度并对其施加3层[Laceration]"
+                },
+                {
+                  "desc": "[WinDuelAttack] 使目标增加3级[Burst]强度"
+                },
+                {
+                  "desc": "[DefeatDuelAttack] 消耗1层[RegainedStrength]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]"
+                },
+                {
+                  "desc": "[WinDuelAttack] 使目标增加3级[Burst]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Laceration]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124005,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "血之欲望",
+          "desc": "[WhenUse] 消耗至多40层[BloodDinner]，每消耗10层[BloodDinner]，使自身获得1层[RegainedStrength]并恢复5点理智值\n[WhenUse] 自身每带有5层[RegainedStrength]，令本技能额外施加1层[Laceration](最多额外施加2层)\n[DefeatDuel] 使本技能造成的最终伤害-80%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Laceration]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124006,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "血宴时刻",
+          "desc": "[CantIdentify]\n[WhenUse] 消耗至多300层[BloodDinner]，每消耗10层[BloodDinner]，使自身获得1层[RegainedStrength]并恢复3点理智值\n[WhenUse] 若消耗了[BloodDinner]，则使自身恢复30点理智值\n[DefeatDuel] 使本技能造成的最终伤害-80%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124007,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "堂吉诃德派硬血4式-剜除",
+          "desc": "直到使用本技能时，自身不会陷入混乱。\n[WhenUse] 消耗至多100层[BloodDinner]，每消耗10层[BloodDinner]，使自身获得1层[RegainedStrength]并恢复15点理智值\n[WhenUse] 自身每带有30层[BloodDinner_Accumulation]，使本技能的拼点威力+1(最多+15)\n[DefeatDuel] 使本技能造成的伤害-50%，且本技能造成的伤害不会使目标陷入混乱。\n[EndSkill] 本回合与下回合内，对自身施加层数相当于本技能增加的拼点威力的[AttackDown]与[DefenseDown]。(最多15层)\n[DefeatDuel] 使本技能造成的最终伤害-80%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加8级[Laceration]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 消耗2层[RegainedStrength]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124008,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "堂吉诃德派硬血14式斗篷",
+          "desc": "自身每消耗100层[BloodDinner]，使本技能的基础威力+1(最多+10)\n[DuelGuard]\n[WinDuel] 使目标增加4级[Laceration]强度与4级[Burst]强度\n[DefeatDuel] 消耗2层[RegainedStrength]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124009,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "脆弱，脆弱不堪",
+          "desc": "[DuelCounter]\n自身每带有5层[RegainedStrength]，使本技能的基础威力+1\n目标每带有5级[Laceration]强度，使本技能的硬币威力+1(最多+2)\n[DefeatDuel] 使自身失去3点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度并对其施加2层[Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度并对其施加2层[Laceration]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124010,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "血腥旋转木马",
+          "desc": "[CantDuel]\n[WhenUse] 不会对敌方单位造成伤害，下回合生成凝结的梦\n[WhenUse] 自身每带有5层[RegainedStrength]，令本技能额外施加1层[Laceration](最多额外施加2层)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124011,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "被贯穿吧",
+          "desc": "[DefeatDuel] 使自身失去3点理智值\n[DefeatDuel] 使本技能造成的最终伤害-50%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {}
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标陷入混乱并在下回合对其施加[Penetration] "
+                },
+                {
+                  "desc": "[EndCoin] 使目标的[Laceration]强度减少25级，使自身增加相应的[Laceration]强度并获得相应层数的[BloodDinner]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124012,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "堂吉诃德派硬血奥义-球",
+          "desc": "直到使用本技能时，自身不会陷入混乱。\n根据[BloodDinner_Common_Accumulation]层数，相应使本技能造成的伤害增加(最多+300%)\n[WhenUse] 使自身恢复30点理智值\n[WhenUse] 自身每带有10层[RegainedStrength]，使本技能的拼点威力+1\n[EndSkill] 消耗所有[RegainedStrength]，在本回合与下回合对自身施加5层[Vulnerable]，并在下回合对自身施加2层[Binding]。\n[DefeatDuel] 使本技能造成的最终伤害-80%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": 117501,
       "levelList": [
         {
           "level": 1,
           "name": "执拗致伤",
-          "desc": "若目标的[Laceration]强度不低于6级，则使本技能的硬币威力+1，并使本技能增加的[Laceration]强度与施加的[Laceration]层数额外+1",
+          "desc": "若目标的[Laceration]强度不低于6级，则使本技能的硬币威力+1，并令本技能增加的[Laceration]强度与施加的[Laceration]层数额外+1",
           "coinlist": [
             {
               "coindescs": [
@@ -38,7 +463,7 @@
         {
           "level": 1,
           "name": "致伤",
-          "desc": "若目标的[Laceration]强度不低于6级，则使本技能的硬币威力+1，并使本技能增加的[Laceration]强度与施加的[Laceration]层数额外+1",
+          "desc": "若目标的[Laceration]强度不低于6级，则使本技能的硬币威力+1，并令本技能增加的[Laceration]强度与施加的[Laceration]层数额外+1",
           "coinlist": [
             {
               "coindescs": [
@@ -506,6 +931,611 @@
                 },
                 {
                   "desc": "[OnSucceedAttack] 使自身恢复8点理智值"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124105,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "爆碎斩",
+          "desc": "优先指定带有[Prey]的目标\n可无视速度值与本技能拼点\n目标的[Combustion]与[Vibration]强度之和每有6级，使本技能的硬币威力+1(最多+3)\n[DefeatDuel] 使本技能造成的最终伤害-50%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "消耗1发[BulletPropellant]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Combustion]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Vibration]强度"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 使目标增加4级[Vibration]强度并对其施加4层[Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "消耗1发[BulletPropellant]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Vibration]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 使目标[Switch_Vibration]为[VibrationIgnition]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "消耗1发[BulletPropellant]"
+                },
+                {
+                  "desc": "若本硬币效果消耗了[BulletPropellant]，则使本硬币造成的伤害+50%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Combustion]强度并对其施加3层[Combustion]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 使目标[VibrationExplosion]2次，并使其[Vibration]层数减少2层"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124106,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "快刀乱麻",
+          "desc": "优先指定带有[Prey]的目标\n可无视速度值与本技能拼点。直到使用本技能时，自身不会陷入混乱\n[WhenUse] 消耗所有[BattleSense]，若消耗的[BattleSense]层数\n- 不低于10层，则每消耗10层，使本技能的攻击容量+1(最多+2)\n- 为25层，则主要目标的[Combustion]与[Vibration]强度之和每有4级，使本技能的最终威力+1(最多+5)\n[DefeatDuel]  使本技能造成的伤害-80%，且本技能造成的伤害不会使目标陷入混乱，令本技能增加的[Combustion]与[Vibration]强度与施加的[Combustion]与[Vibration]层数减半(不包括其他效果增加的施加量)\n[EndSkill] 使自身[FullReload](每回合最多1次)\n- 若自身带有[BulletPropellantSpecial]，则改为使自身[ReloadKeepAmmo](每回合最多1次)\n[DefeatDuel] 使本技能造成的最终伤害-50%\n[EndSkill] 结束本回合",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "消耗自身所有[BulletPropellant]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 根据消耗的[BulletPropellant]层数，使目标增加相应的[Combustion]与[Vibration]强度并对其施加相应层数的[Combustion]与[Vibration]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 使目标[Switch_Vibration]为[VibrationIgnition]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 使目标[VibrationExplosion]3次，并使其[Vibration]层数减少3层"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124107,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "超绝猛虎杀击乱斩",
+          "desc": "优先指定带有[Prey]的目标\n可无视速度值与本技能拼点。直到使用本技能时，自身不会陷入混乱\n[WhenUse] 消耗所有[BattleSense]，若消耗的[BattleSense]层数\n- 不低于10层，则每消耗10层，使本技能的攻击容量+1(最多+4)\n- 不低于25层，则主要目标的[Combustion]与[Vibration]强度之和每有4级，使本技能的最终威力+1(最多+6)\n- 为50层，则使本技能的硬币威力+1，造成的伤害+50%\n[DefeatDuel] 使本技能造成的伤害-80%，且本技能造成的伤害不会使目标陷入混乱，令本技能增加的[Combustion]与[Vibration]强度与施加的[Combustion]与[Vibration]层数减半(不包括其他效果增加的施加量)\n[EndSkill] 使自身[FullReload](每回合最多1次)\n- 若自身带有[BulletPropellantSpecial]，则改为使自身[ReloadKeepAmmo](每回合最多1次)\n[DefeatDuel] 使本技能造成的最终伤害-50%\n[EndSkill] 结束本回合",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "消耗1发[BulletPropellant]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加6级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "消耗1发[BulletPropellant]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加6层[Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "消耗1发[BulletPropellant]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加6级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "消耗1发[BulletPropellant]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加6层[Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "消耗1发[BulletPropellant]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 使目标[Switch_Vibration]为[VibrationIgnition]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "消耗1发[BulletPropellant]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 使目标[VibrationExplosion]5次，并使其[Vibration]层数减少5层"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124108,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "天退星刀 装填",
+          "desc": "[WhenUse] 使自身恢复10点理智值\n- 若自身的理智值低于0点，则额外恢复5点理智值\n[DuelCounter] \n[DefeatDuel] 使自身的[BulletPropellant]减少1发\n[EndSkill] 使自身[FullReload](每回合最多1次)\n- 若自身带有[BulletPropellantSpecial]，则改为[ReloadKeepAmmo](每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发[BulletPropellant]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Combustion]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Combustion]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124301,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "给我糖果。",
+          "desc": "优先指定带有[GiveMeCandy]的目标\n[WhenUse] 目标每带有1层[GiveMeCandy]，使本技能的硬币威力+1(最多+5)\n[DefeatDuel] 使本技能造成的最终伤害-50%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[WinDuelAttack] 若目标带有[GiveMeCandy]，则下回合使其陷入混乱。"
+                },
+                {
+                  "desc": "[DefeatDuel] 对自身施加层数相当于目标[GiveMeCandy]层数的饱腹感 "
+                },
+                {
+                  "desc": "[EndSkill] 解除与自身拼点的目标的[GiveMeCandy]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124302,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "没有，糖果。",
+          "desc": "[BeforeAttack] 使本技能的攻击容量+(带有[GiveMeCandy]的人格数)(最多+3)\n[WhenUse] 每有1名带有[GiveMeCandy]的人格，使本技能造成的伤害+10%(最多+50%)\n[WhenUse] 主要目标每带有1层[GiveMeCandy]，使本技能的硬币威力+1(最多+5)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124303,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "你们…",
+          "desc": "[WhenUse] 目标每带有1层[GiveMeCandy]，使本技能的硬币威力+1(最多+5)\n[DefeatDuel] 使本技能造成的最终伤害-50%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124304,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "布隆布隆",
+          "desc": "[CantDuel]\n[WhenUse] 每有1名带有[GiveMeCandy]的人格，使本技能造成的伤害+20%(最多+100%)",
+          "coindescs": [
+            {
+              "desc": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124305,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "分着。吃吧。",
+          "desc": "[WhenUse] 随机对2名敌方单位施加1层[GiveMeCandy](优先对未带有[GiveMeCandy]的敌方单位施加)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124306,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "…可米，生气了。",
+          "desc": "[BeforeAttack] 使本技能的攻击容量+(带有[GiveMeCandy]的人格数)\n[WhenUse] 每有1名带有[GiveMeCandy]的人格，使本技能造成的伤害+10%(最多+50%)\n[WhenUse] 每有1名带有[GiveMeCandy]的人格，使本技能的拼点威力+1(最多+5)\n[DefeatDuel] 使本技能造成的最终伤害-80%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124307,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "你打了，可米。",
+          "desc": "[DuelCounter]\n[WhenUse] 下回合使所有部位获得2层拼点威力提升 \n[WhenUse] 下回合使所有部位获得2层迅捷 ",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124201,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "拳打",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标额外造成3点打击伤害"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标额外造成3点打击伤害"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层麻痹 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124202,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "脚踢",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标额外造成5点打击伤害"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标额外造成5点打击伤害"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加3层麻痹 "
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124203,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "偿还",
+          "desc": "",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标失去5点理智值"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124204,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "注意背后！",
+          "desc": "若目标的理智值低于0点，则使本技能的硬币威力+3",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身恢复10点理智值"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层束缚 与2层虚弱 "
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标失去20点理智值"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124205,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "全员集合",
+          "desc": "[StartBattle] 下回合召唤2名友方单位",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124206,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "试炼结束了",
+          "desc": "[WhenUse] 下回合使自身获得3层[HitDamageUp]\n[WhenUse] 若主要目标的[MiddleFingerBook]层数不低于3层，则使本技能的所有硬币转化为[SuperCoin]\n[WhenUse] 若主要目标的[MiddleFingerBook]层数不低于5层，则使本技能的攻击容量+1\n[DefeatDuel] 使本技能造成的最终伤害-80%",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层[Binding]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124207,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "铭刻痛苦",
+          "desc": "优先指定[MiddleFingerBook]层数最高的目标\n[WhenUse] 若目标的[MiddleFingerBook]层数不低于3层，则使本技能的所有硬币转化为[SuperCoin]\n[DefeatDuel] 使本技能造成的最终伤害-50%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 本回合与下回合中，对目标施加1层[Vulnerable]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 本回合与下回合中，对目标施加1层[Vulnerable]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标额外造成(其[MiddleFingerBook]层数×3)点打击伤害"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 解除目标的[MiddleFingerBook]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124208,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "游戏到此为止",
+          "desc": "[StartBattle] 使全体友方单位的理智值恢复10点\n[EndBattle] 若有陷入恐慌的友方单位，则下回合开始时解除其恐慌并使其理智值恢复为0点\n[EndBattle] 使全体友方单位获得1层[HitResultUp]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 124209,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "全员，处刑！！！",
+          "desc": "可无视速度值与本技能拼点\n若主要目标的[MiddleFingerBook]层数不低于5层，则使本技能的最终威力+5\n[DefeatDuel] 使本技能造成的最终伤害-80%\n[EndSkill] 解除全体受到攻击的目标的[MiddleFingerBook]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标额外造成(其[MiddleFingerBook]层数×10)点打击伤害"
                 }
               ]
             }

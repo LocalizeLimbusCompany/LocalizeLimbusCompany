@@ -15,7 +15,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加4级沉沦 强度"
                 },
                 {
-                  "desc": "[EnemyKill] 获得3个罪孽碎片，其属性为当前拥有的罪孽碎片中的其中一种"
+                  "desc": "[EnemyKill] 获得3个E.G.O资源，其属性为当前拥有的E.G.O资源中的其中一种"
                 }
               ]
             }
@@ -33,7 +33,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加5级沉沦 强度"
                 },
                 {
-                  "desc": "[EnemyKill] 获得3个罪孽碎片，其属性为当前拥有的罪孽碎片中的其中一种；使全体友方单位恢复3点理智值"
+                  "desc": "[EnemyKill] 获得3个E.G.O资源，其属性为当前拥有的E.G.O资源中的其中一种；使全体友方单位恢复3点理智值"
                 }
               ]
             }
@@ -51,7 +51,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加6级沉沦 强度"
                 },
                 {
-                  "desc": "[EnemyKill] 获得3个罪孽碎片，其属性为当前拥有的罪孽碎片中的其中一种；使全体友方单位恢复3点理智值"
+                  "desc": "[EnemyKill] 获得3个E.G.O资源，其属性为当前拥有的E.G.O资源中的其中一种；使全体友方单位恢复3点理智值"
                 }
               ]
             }
@@ -74,7 +74,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加4级沉沦 强度"
                 },
                 {
-                  "desc": "[EndSkill] 使全体友方单位获得1层罪孽碎片获取量提升 "
+                  "desc": "[EndSkill] 使全体友方单位获得1层E.G.O资源获取量提升 "
                 }
               ]
             }
@@ -92,7 +92,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加5级沉沦 强度"
                 },
                 {
-                  "desc": "[EndSkill] 使全体友方单位获得1层罪孽碎片获取量提升 "
+                  "desc": "[EndSkill] 使全体友方单位获得1层E.G.O资源获取量提升 "
                 }
               ]
             }
@@ -110,7 +110,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加6级沉沦 强度"
                 },
                 {
-                  "desc": "[EndSkill] 使全体友方单位获得1层罪孽碎片获取量提升 ，并在下回合获得1层迅捷 "
+                  "desc": "[EndSkill] 使全体友方单位获得1层E.G.O资源获取量提升 ，并在下回合获得1层迅捷 "
                 }
               ]
             }
@@ -269,7 +269,7 @@
           "level": 4,
           "name": "轻蔑，敬畏",
           "abName": "轻蔑螺旋",
-          "desc": "[BeforeAttack] 使本技能的攻击容量+(最大共鸣数)(最多+<style=\"highlight\">6</style>)\n[BeforeAttack] <style=\"highlight\">本回合与下回合</style>使自身获得(最大共鸣数+1)层[GazePersonality](最多7层)\n<style=\"highlight\">[EndSkill] 若本技能参与了色欲共鸣，则获得与自身拥有的各个基础攻击技能相同属性的罪孽碎片各1个</style>\n[EndSkill] 2回合内，回合结束时使自身失去10点理智值",
+          "desc": "[BeforeAttack] 使本技能的攻击容量+(最大共鸣数)(最多+<style=\"highlight\">6</style>)\n[BeforeAttack] <style=\"highlight\">本回合与下回合</style>使自身获得(最大共鸣数+1)层[GazePersonality](最多7层)\n<style=\"highlight\">[EndSkill] 若本技能参与了色欲共鸣，则获得与自身拥有的各个基础攻击技能相同属性的E.G.O资源各1个</style>\n[EndSkill] 2回合内，回合结束时使自身失去10点理智值",
           "coinlist": [
             {},
             {
@@ -332,7 +332,7 @@
           "level": 4,
           "name": "轻蔑，敬畏",
           "abName": "轻蔑螺旋",
-          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使自身获得7层[GazePersonality]\n<style=\"highlight\">[EndSkill] 若本技能参与了色欲共鸣，则获得与自身拥有的各个基础攻击技能相同属性的罪孽碎片各1个</style>",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使自身获得7层[GazePersonality]\n<style=\"highlight\">[EndSkill] 若本技能参与了色欲共鸣，则获得与自身拥有的各个基础攻击技能相同属性的E.G.O资源各1个</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -452,7 +452,7 @@
           "level": 4,
           "name": "胸痛",
           "abName": "往昔的睡袋",
-          "desc": "[CantIdentify]\n优先指定体力最低的目标(优先友方单位)\n若本技能指定了友方单位为目标，则使本技能造成的伤害+30%\n\n[BeforeAttack] 若自身的呼吸法 强度低于15级，则消耗自身体力上限10%的体力并使自身增加5级呼吸法 强度，获得5层呼吸法 \n- 不会因该效果陷入混乱或阵亡\n- 本技能每指定1名友方单位，使自身增加<style=\"highlight\">2</style>级呼吸法 强度(最多<style=\"highlight\">4</style>级)\n\n[EndSkill] 若击杀目标，则下回合使自身获得3层[HoldingBreath](每回合最多1次)。若该目标为友方单位，则触发以下效果：\n- 使因友方单位阵亡而参战或解除待命的友方单位增加4级呼吸法 强度并使其获得<style=\"highlight\">4</style>层呼吸法 \n<style=\"highlight\">- 使自身恢复本技能消耗的理智值并获得本技能消耗的每种罪孽碎片各1个</style>",
+          "desc": "[CantIdentify]\n优先指定体力最低的目标(优先友方单位)\n若本技能指定了友方单位为目标，则使本技能造成的伤害+30%\n\n[BeforeAttack] 若自身的呼吸法 强度低于15级，则消耗自身体力上限10%的体力并使自身增加5级呼吸法 强度，获得5层呼吸法 \n- 不会因该效果陷入混乱或阵亡\n- 本技能每指定1名友方单位，使自身增加<style=\"highlight\">2</style>级呼吸法 强度(最多<style=\"highlight\">4</style>级)\n\n[EndSkill] 若击杀目标，则下回合使自身获得3层[HoldingBreath](每回合最多1次)。若该目标为友方单位，则触发以下效果：\n- 使因友方单位阵亡而参战或解除待命的友方单位增加4级呼吸法 强度并使其获得<style=\"highlight\">4</style>层呼吸法 \n<style=\"highlight\">- 使自身恢复本技能消耗的理智值并获得本技能消耗的每种E.G.O资源各1个</style>",
           "coinlist": [
             {},
             {

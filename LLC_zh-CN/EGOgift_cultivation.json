@@ -125,6 +125,114 @@
           "simpleDesc": "根据已失去体力使自身造成的伤害增加"
         }
       ]
+    },
+    {
+      "id": 9827,
+      "name": "家人的怨恨",
+      "desc": "全体友方单位的加算硬币技能的硬币威力+(8/硬币数)，减算硬币技能的最终威力+(8/硬币数)(最少+1，包括E.G.O技能，向下取整)\n\n关卡内生成的血宴 变为2倍\n增加[Laceration]强度，施加[Laceration]层数与施加特殊流血的技能攻击后，使自身恢复造成伤害量30%的体力(最多20点)\n- 通过以上效果恢复体力时，下回合使自身获得1层[Enhancement](最多2层)\n\n[BloodDinner_Common_Accumulation]层数每有50层，下回合开始时使全体友方单位获得1层[AttackUp](最多5层)\n属于拉·曼却领的友方单位每带有30层[BloodDinner_Accumulation]，下回合开始时使其获得1层[AttackUp](最多3层)",
+      "simpleDesc": [
+        {
+          "abilityID": 98270,
+          "simpleDesc": "加算硬币技能的硬币威力增加，减算硬币技能的最终威力增加"
+        },
+        {
+          "abilityID": 9827,
+          "simpleDesc": "生成的血宴 增加"
+        },
+        {
+          "abilityID": 98271,
+          "simpleDesc": "恢复体力"
+        },
+        {
+          "abilityID": 98272,
+          "simpleDesc": "获得攻击等级提升 "
+        },
+        {
+          "abilityID": 98272,
+          "simpleDesc": "获得攻击等级提升 "
+        }
+      ]
+    },
+    {
+      "id": 9828,
+      "name": "为了指挥官",
+      "desc": "全体友方单位的加算硬币技能的硬币威力+(8/硬币数)，减算硬币技能的最终威力+(8/硬币数)(最少+1，包括E.G.O技能，向下取整)\n\n[第1顺位友方单位专属]\n使用消耗[Bullet]的技能时，触发以下效果\n- 下回合使自身获得3层[Agility](每回合最多1次)\n- 命中时使目标[VibrationExplosion]，消耗其1层[Vibration](每回合最多2次)\n- 拼点胜利后命中时，若目标带有[Combustion]与[Vibration](包括特殊震颤与特殊烧伤)，则对其造成相当于其[Combustion]强度与[Vibration]强度之和的暴怒伤害(每回合最多2次)\n\n暴怒共鸣数不低于4时，触发以下效果\n- 使用暴怒技能时，使其硬币威力+2\n- 命中时，若消耗了[Bullet]，则使造成的伤害+30%",
+      "simpleDesc": [
+        {
+          "abilityID": 98270,
+          "simpleDesc": "加算硬币技能的硬币威力增加，减算硬币技能的最终威力增加"
+        },
+        {
+          "abilityID": 9828,
+          "simpleDesc": "获得迅捷 "
+        },
+        {
+          "abilityID": 98281,
+          "simpleDesc": "触发震颤引爆 "
+        },
+        {
+          "abilityID": 98282,
+          "simpleDesc": "造成暴怒伤害"
+        },
+        {
+          "abilityID": 98283,
+          "simpleDesc": "硬币威力增加"
+        },
+        {
+          "abilityID": 98284,
+          "simpleDesc": "造成的伤害增加"
+        }
+      ]
+    },
+    {
+      "id": 9829,
+      "name": "中指规矩",
+      "desc": "全体友方单位的加算硬币技能的硬币威力+(8/硬币数)，减算硬币技能的最终威力+(8/硬币数)(最少+1，包括E.G.O技能，向下取整)\n\n打击基础技能的硬币威力+1，属于中指的友方单位改为硬币威力+2\n友方单位受到攻击时，下回合使全体友方单位获得2层[AttackUp](每回合最多3次)\n\n战斗中属于中指的友方单位不低于3名时，触发以下效果\n战斗开始时，嫉妒共鸣数每有3点，获得1层[Enhancement]与1层[Protection](最多3层)\n属于中指的友方单位使用嫉妒基础技能时，使该技能的所有硬币转化为[SuperCoin]，该友方单位受到的伤害-50%，并在本回合与下回合获得2层[HitDamageUp]",
+      "simpleDesc": [
+        {
+          "abilityID": 98270,
+          "simpleDesc": "加算硬币技能的硬币威力增加，减算硬币技能的最终威力增加"
+        },
+        {
+          "abilityID": 9829,
+          "simpleDesc": "硬币威力增加"
+        },
+        {
+          "abilityID": 98291,
+          "simpleDesc": "硬币威力增加"
+        },
+        {
+          "abilityID": 98292,
+          "simpleDesc": "增加攻击等级"
+        },
+        {
+          "abilityID": 98293,
+          "simpleDesc": "获得强壮 与守护 "
+        },
+        {
+          "abilityID": 98294,
+          "simpleDesc": "转化为不可摧毁的硬币，受到的伤害减少，获得打击伤害强化"
+        }
+      ]
+    },
+    {
+      "id": 9830,
+      "name": "可米的小小礼物",
+      "desc": "全体友方单位的加算硬币技能的硬币威力+(8/硬币数)，减算硬币技能的最终威力+(8/硬币数)(最少+1，包括E.G.O技能，向下取整)\n\n使关卡的首个回合开始时与解除待命的全体友方单位获得3层[VerEmergencyCandy]\n若友方单位上回合未消耗[VerEmergencyCandy]，则回合开始时使其获得1层[VerHunger]",
+      "simpleDesc": [
+        {
+          "abilityID": 98270,
+          "simpleDesc": "加算硬币技能的硬币威力增加，减算硬币技能的最终威力增加"
+        },
+        {
+          "abilityID": 9830,
+          "simpleDesc": "获得备用糖果 "
+        },
+        {
+          "abilityID": 98301,
+          "simpleDesc": "获得饥饿"
+        }
+      ]
     }
   ]
 }
