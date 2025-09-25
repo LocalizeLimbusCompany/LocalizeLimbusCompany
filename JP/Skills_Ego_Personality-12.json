@@ -588,6 +588,297 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2120911,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "輝かざる栄光 - 流水",
+          "abName": "ムリナール",
+          "desc": "[CantDuel]\n戦闘にて初めて使用時、必要なE.G.O資源が憤怒1, 怠惰2, 傲慢1現象\n[MlynarWaiting]が1以上なら、輝かざる栄光 - 光輝として発動\nこのスキルは敵に的中せず、守備スキルを発動させない。外部効果で再使用不可\n[EndSkill] [MlynarWaiting]1を得る\n[EndSkill] 精神力を25回復\n[EndSkill] 次のターンに[AttackUp]1を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "輝かざる栄光 - 流水",
+          "abName": "ムリナール",
+          "desc": "[CantDuel]\n戦闘にて初めて使用時、必要なE.G.O資源が憤怒1, 怠惰2, 傲慢1現象\n[MlynarWaiting]が1以上なら、輝かざる栄光 - 光輝として発動\nこのスキルは敵に的中せず、守備スキルを発動させない。外部効果で再使用不可\n[EndSkill] [MlynarWaiting]1を得る\n[EndSkill] 精神力を25回復\n[EndSkill] 次のターンに[AttackUp]<style=\"highlight\">2</style>を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "輝かざる栄光 - 流水",
+          "abName": "ムリナール",
+          "desc": "[CantDuel]\n戦闘にて初めて使用時、必要なE.G.O資源が憤怒1, 怠惰2, 傲慢1現象\n[MlynarWaiting]が1以上なら、輝かざる栄光 - 光輝として発動\nこのスキルは敵に的中せず、守備スキルを発動させない。外部効果で再使用不可\n[EndSkill] [MlynarWaiting]1を得る\n[EndSkill] 精神力を25回復\n[EndSkill] 次のターンに[AttackUp]2, <style=\"highlight\">[AttackDmgUp]1</style>を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120912,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "輝かざる栄光 - 光輝",
+          "abName": "ムリナール",
+          "desc": "[CantDuel]\nこのスキルは外部効果で再使用不可\n[MlynarWaiting]が40なら、マッチ可能に変更\n[WhenUse] [MlynarWaiting]が40なら、このスキル終了時までダメージによって混乱状態にならずマッチ威力 +20\n\n[BeforeAttack] [MlynarWaiting]を全て消耗して、下記の効果を適用 (全て小数点切り捨て)\n- (消耗した数値 ÷ 20)だけ使用したE.G.O資源を1ずつ返還 (傲慢・憤怒の順に返還)\n- (消耗した数値 ÷ 10)だけ加重値が増加 (最大4)\n- (消耗した数値 ÷ 10)だけ[DefenseUp]を得る (1ターンにつき1回)\n- 40消耗したなら、4番目に使用するコインのダメージ量 +50%, [Protection]2を得る (1ターンにつき1回)\n\n[BeforeAttack] メインターゲットの[Combustion]と[Vibration]の合計8につきダメージ量 +5% (最大25%)\n[EndSkill] このスキルのダメージで混乱・死亡した対象1名につき精神力を5回復 (最大25)\n[EndSkill] [MlynarWaiting]1を得る\n[EndBattle] このスキルで[MlynarWaiting]を40消耗できなかったなら、次のターンに操作パネル最左端のスキルスロットの[Aggro]が4増加 (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "(消耗した[MlynarWaiting]数値 ÷ 10) - 1だけ、このコインを再使用 (最大3回)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]1を付与"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 最後に使用するコインかつ、対象の[Vibration]威力が15以上なら[VibrationExplosion]。対象の[Vibration]回数が1減少"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] このコインを4回使用したなら、対象の[Vibration]だけ怠惰ダメージを与える (最大5)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "輝かざる栄光 - 光輝",
+          "abName": "ムリナール",
+          "desc": "[CantDuel]\nこのスキルは外部効果で再使用不可\n[MlynarWaiting]が40なら、マッチ可能に変更\n[WhenUse] [MlynarWaiting]が40なら、このスキル終了時までダメージによって混乱状態にならずマッチ威力 +20\n\n[BeforeAttack] [MlynarWaiting]を全て消耗して、下記の効果を適用 (全て小数点切り捨て)\n- (消耗した数値 ÷ 20)だけ使用したE.G.O資源を1ずつ返還 (傲慢・憤怒の順に返還)\n- (消耗した数値 ÷ 10)だけ加重値が増加 (最大4)\n- (消耗した数値 ÷ 10)だけ[DefenseUp]を得る (1ターンにつき1回)\n- 40消耗したなら、4番目に使用するコインのダメージ量 +<style=\"highlight\">80</style>%, [Protection]2を得る (1ターンにつき1回)\n\n[BeforeAttack] メインターゲットの[Combustion]と[Vibration]の合計8につきダメージ量 +5% (最大25%)\n[EndSkill] このスキルのダメージで混乱・死亡した対象1名につき精神力を5回復 (最大25)\n[EndSkill] [MlynarWaiting]1を得る\n[EndBattle] このスキルで[MlynarWaiting]を40消耗できなかったなら、次のターンに操作パネル最左端のスキルスロットの[Aggro]が4増加 (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "(消耗した[MlynarWaiting]数値 ÷ 10) - 1だけ、このコインを再使用 (最大3回)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnStartCoin] このコインが破壊されないかつ、攻撃対象が3名以上なら、最後に使用するコインのダメージ量 +10% (集中戦闘の場合、部位を対象1名として扱う)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 最後に使用するコインかつ、対象の[Vibration]威力が15以上なら[VibrationExplosion]。対象の[Vibration]回数が1減少<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] このコインを4回使用したなら、対象の[Vibration]だけ怠惰ダメージを与える (最大5)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "輝かざる栄光 - 光輝",
+          "abName": "ムリナール",
+          "desc": "[CantDuel]\nこのスキルは外部効果で再使用不可\n[MlynarWaiting]が40なら、マッチ可能に変更\n[WhenUse] [MlynarWaiting]が40なら、このスキル終了時までダメージによって混乱状態にならずマッチ威力 +20\n\n[BeforeAttack] [MlynarWaiting]を全て消耗して、下記の効果を適用 (全て小数点切り捨て)\n- (消耗した数値 ÷ 20)だけ使用したE.G.O資源を1ずつ返還 (傲慢・憤怒の順に返還)\n- (消耗した数値 ÷ 10)だけ加重値が増加 (最大4)\n- (消耗した数値 ÷ 10)だけ[DefenseUp]を得る (1ターンにつき1回)\n- 40消耗したなら、4番目に使用するコインのダメージ量 +<style=\"highlight\">100</style>%, [Protection]2を得る (1ターンにつき1回)\n\n[BeforeAttack] メインターゲットの[Combustion]と[Vibration]の合計8につきダメージ量 +5% (最大25%)\n[EndSkill] このスキルのダメージで混乱・死亡した対象1名につき精神力を5回復 (最大25)\n[EndSkill] [MlynarWaiting]1を得る\n[EndBattle] このスキルで[MlynarWaiting]を40消耗できなかったなら、次のターンに操作パネル最左端のスキルスロットの[Aggro]が4増加 (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "(消耗した[MlynarWaiting]数値 ÷ 10) - 1だけ、このコインを再使用 (最大3回)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnStartCoin] このコインが破壊されないかつ、攻撃対象が3名以上なら、最後に使用するコインのダメージ量 +<style=\"highlight\">20</style>% (集中戦闘の場合、部位を対象1名として扱う)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 最後に使用するコインかつ、対象の[Vibration]威力が15以上なら[VibrationExplosion]。対象の[Vibration]回数が1減少<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] このコインを4回使用したなら、対象の[Vibration]だけ怠惰ダメージを与える (最大<style=\"highlight\">10</style>)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120921,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "輝かざる栄光 - 流水",
+          "abName": "ムリナール",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n[WhenUse] [MlynarWaiting]が40なら、基本威力 +1\n\n[BeforeAttack] [MlynarWaiting]を全て消耗して下記の効果を適用 (全て小数点切り捨て)\n- (消耗した数値 ÷ 10)だけ[DefenseUp]を得る (1ターンにつき1回)\n- 40消耗したなら、最終コインのダメージ量 +110%, [Protection]2を得る (1ターンにつき1回)\n\n[BeforeAttack] メインターゲットの[Combustion]と[Vibration]の合計6につきダメージ量 +3% (最大15%)\n[BeforeAttack] 破壊されたコイン1枚につき基本威力 -4 (最大-16)\n[EndSkill] [MlynarWaiting]1を得る\n[EndBattle] このスキルで[MlynarWaiting]を40消耗したなら、次のターンに操作パネル最左端のスキルスロットの[Aggro]が8増加 (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]5を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]5を付与"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 対象の[Vibration]威力が15以上なら、[VibrationExplosion]。対象の[Vibration]回数が1減少"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "輝かざる栄光 - 流水",
+          "abName": "ムリナール",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n<style=\"highlight\">攻撃対象が3名以上なら、1～3コインが破壊されずに的中時、最終コインのダメージ量 +25% (コイン1枚につき1回発動。集中戦闘の場合、部位を対象1名として扱う)</style>\n[WhenUse] [MlynarWaiting]が40なら、基本威力 +1\n\n[BeforeAttack] [MlynarWaiting]を全て消耗して下記の効果を適用 (全て小数点切り捨て)\n- (消耗した数値 ÷ 10)だけ[DefenseUp]を得る (1ターンにつき1回)\n- 40消耗したなら、最終コインのダメージ量 +<style=\"highlight\">130</style>%, [Protection]2を得る (1ターンにつき1回)\n\n[BeforeAttack] メインターゲットの[Combustion]と[Vibration]の合計6につきダメージ量 +3% (最大15%)\n[BeforeAttack] 破壊されたコイン1枚につき基本威力 -4 (最大-16)\n[EndSkill] [MlynarWaiting]1を得る\n[EndBattle] このスキルで[MlynarWaiting]を40消耗したなら、次のターンに操作パネル最左端のスキルスロットの[Aggro]が8増加 (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]5を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]5を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 対象の[Vibration]威力が15以上なら、[VibrationExplosion]。対象の[Vibration]回数が1減少"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "輝かざる栄光 - 流水",
+          "abName": "ムリナール",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n攻撃対象が3名以上なら、1～3コインが破壊されずに的中時、最終コインのダメージ量 +<style=\"highlight\">30</style>% (コイン1枚につき1回発動。集中戦闘の場合、部位を対象1名として扱う)\n[WhenUse] [MlynarWaiting]が40なら、基本威力 +1\n\n[BeforeAttack] [MlynarWaiting]を全て消耗して下記の効果を適用 (全て小数点切り捨て)\n- (消耗した数値 ÷ 10)だけ[DefenseUp]を得る (1ターンにつき1回)\n- 40消耗したなら、最終コインのダメージ量 +<style=\"highlight\">160</style>%, [Protection]2を得る (1ターンにつき1回)\n\n[BeforeAttack] メインターゲットの[Combustion]と[Vibration]の合計6につきダメージ量 +3% (最大15%)\n[BeforeAttack] 破壊されたコイン1枚につき基本威力 -4 (最大-16)\n[EndSkill] [MlynarWaiting]1を得る\n[EndBattle] このスキルで[MlynarWaiting]を40消耗したなら、次のターンに操作パネル最左端のスキルスロットの[Aggro]が8増加 (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]5を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]5を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 対象の[Vibration]威力が15以上なら、[VibrationExplosion]。対象の[Vibration]回数が1減少"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -675,6 +675,184 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2020911,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "指令：メルトダウン",
+          "abName": "ケルシー",
+          "desc": "メインターゲットに[Combustion]または[Burst]があるなら、最終威力 +1\n[BeforeAttack] メインターゲットの[Burst]威力と[Burst]回数の合計1につき、ダメージ量 +1% (最大15%)\n[EndSkill] [CuredFilm]4を得る\n[EndSkill] 自分と、現在の体力の比率が最も低い味方1名の体力を、自分の最大体力の15%だけ回復\n- 自分の体力が最大なら、代わりに味方2名の体力を回復\n[EndSkill] 自分を含めて、現在の精神力が最も低い味方2名の精神力を10回復",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "指令：メルトダウン",
+          "abName": "ケルシー",
+          "desc": "メインターゲットに[Combustion]または[Burst]があるなら、最終威力 +<style=\"highlight\">2</style>\n[BeforeAttack] メインターゲットの[Burst]威力と[Burst]回数の合計1につき、ダメージ量 +1% (最大15%)\n<style=\"highlight\">- [CuredFilm]があるなら、この効果の最大値が1.5倍に増加</style>\n[EndSkill] [CuredFilm]<style=\"highlight\">7</style>を得る\n[EndSkill] 自分と、現在の体力の比率が最も低い味方1名の体力を、自分の最大体力の<style=\"highlight\">20</style>%だけ回復\n- 自分の体力が最大なら、代わりに味方2名の体力を回復\n[EndSkill] 自分を含めて、現在の精神力が最も低い味方2名の精神力を10回復",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]<style=\"highlight\">2</style>を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]<style=\"highlight\">2</style>を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "指令：メルトダウン",
+          "abName": "ケルシー",
+          "desc": "メインターゲットに[Combustion]または[Burst]があるなら、最終威力 +<style=\"highlight\">3</style>\n[BeforeAttack] メインターゲットの[Burst]威力と[Burst]回数の合計1につき、ダメージ量 +1% (最大<style=\"highlight\">25</style>%)\n- [CuredFilm]があるなら、この効果の最大値が<style=\"highlight\">2</style>倍に増加\n[EndSkill] [CuredFilm]<style=\"highlight\">10</style>を得る\n[EndSkill] 自分と、現在の体力の比率が最も低い味方1名の体力を、自分の最大体力の<style=\"highlight\">30</style>%だけ回復\n- 自分の体力が最大なら、代わりに味方2名の体力を回復\n[EndSkill] 自分を含めて、現在の精神力が最も低い味方2名の精神力を<style=\"highlight\">15</style>回復",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]<style=\"highlight\">3</style>を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]<style=\"highlight\">3</style>を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2020921,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "指令：メルトダウン",
+          "abName": "ケルシー",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n[BeforeAttack] 最大共鳴数が4以上なら、攻撃加重値 +1\n[EndSkill] [CuredFilm]4を得る\n[EndSkill] このスキルダメージで混乱・死亡した対象がいないなら、最大体力の20%だけダメージを受けてその数値だけバリアを得る\n- この効果で死亡しない。ターン終了時に[CuredFilm]が最大値になり、次のターンに[AttackDmgUp]2を得る (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "指令：メルトダウン",
+          "abName": "ケルシー",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n<style=\"highlight\">メインターゲットの[Burst]威力と[Burst]回数の合計が6以上なら、基本威力 +1</style>\n[BeforeAttack] 最大共鳴数が<style=\"highlight\">3</style>以上なら、攻撃加重値 +1\n[EndSkill] [CuredFilm]<style=\"highlight\">7</style>を得る\n[EndSkill] このスキルダメージで混乱・死亡した対象がいないなら、最大体力の20%だけダメージを受けてその数値だけバリアを得る\n- この効果で死亡しない。ターン終了時に[CuredFilm]が最大値になり、次のターンに[AttackDmgUp]2を得る (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Burst]回数が1増加</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]<style=\"highlight\">2</style>を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "指令：メルトダウン",
+          "abName": "ケルシー",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\nメインターゲットの[Burst]威力と[Burst]回数の<style=\"highlight\">合計6につき、基本威力 +1 (最大2)</style>\n<style=\"highlight\">[BeforeAttack] 最大共鳴数3につき、攻撃加重値 +1 (最大2)</style>\n[EndSkill] [CuredFilm]<style=\"highlight\">10</style>を得る\n[EndSkill] このスキルダメージで混乱・死亡した対象がいないなら、最大体力の20%だけダメージを受けてその<style=\"highlight\">(数値 × 2)</style>だけバリアを得る\n- この効果で死亡しない。ターン終了時に[CuredFilm]が最大値になり、次のターンに[AttackDmgUp]2を得る (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Burst]1を付与</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が<style=\"highlight\">2</style>増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnStartCoin] このスキルダメージで混乱・死亡した対象がいなければ、ダメージ量 +30%</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]<style=\"highlight\">3</style>を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

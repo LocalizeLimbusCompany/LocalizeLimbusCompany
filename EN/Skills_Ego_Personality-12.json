@@ -588,6 +588,297 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2120911,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Unbrilliant Glory - Flowing",
+          "abName": "Młynar",
+          "desc": "[CantDuel]\nWhen used for the first time in battle, consume 1 fewer Wrath, 2 fewer Sloth, and 1 fewer Pride E.G.O resources.\nAt 1+ [MlynarWaiting], activate <noparse>Unbrilliant Glory - Incandescence</noparse> instead\nThis Skill does not hit an enemy, does not trigger Defense Skills, and external effects cannot trigger this Skill to be Reused\n[EndSkill] Gain 1 [MlynarWaiting]\n[EndSkill] Heal 25 SP\n[EndSkill] Gain 1 [AttackUp] next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Unbrilliant Glory - Flowing",
+          "abName": "Młynar",
+          "desc": "[CantDuel]\nWhen used for the first time in battle, consume 1 fewer Wrath, 2 fewer Sloth, and 1 fewer Pride E.G.O resources.\nAt 1+ [MlynarWaiting], activate <noparse>Unbrilliant Glory - Incandescence</noparse> instead\nThis Skill does not hit an enemy, does not trigger Defense Skills, and external effects cannot trigger this Skill to be Reused\n[EndSkill] Gain 1 [MlynarWaiting]\n[EndSkill] Heal 25 SP\n[EndSkill] Gain <style=\"highlight\">2</style> [AttackUp] next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Unbrilliant Glory - Flowing",
+          "abName": "Młynar",
+          "desc": "[CantDuel]\nWhen used for the first time in battle, consume 1 fewer Wrath, 2 fewer Sloth, and 1 fewer Pride E.G.O resources.\nAt 1+ [MlynarWaiting], activate <noparse>Unbrilliant Glory - Incandescence</noparse> instead\nThis Skill does not hit an enemy, does not trigger Defense Skills, and external effects cannot trigger this Skill to be Reused\n[EndSkill] Gain 1 [MlynarWaiting]\n[EndSkill] Heal 25 SP\n[EndSkill] Gain 2 [AttackUp] <style=\"highlight\">and 1 [AttackDmgUp]</style> next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120912,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Unbrilliant Glory - Incandescence",
+          "abName": "Młynar",
+          "desc": "[CantDuel]\nExternal effects cannot trigger this Skill to be Reused\nAt 40 [MlynarWaiting], becomes Clashable\n[WhenUse] At 40 [MlynarWaiting], until this Skill ends, this unit cannot be Staggered from taking damage, and gains Clash Power +20\n\n[BeforeAttack] Consume all [MlynarWaiting] and gain the following effects(all of them rounded down):\n- For every (Stack consumed / 20), recuperate 1 E.G.O resource (in the following order: Pride, then Wrath)\n- For every (Stack consumed / 10), gain +1 Atk Weight (max 4)\n- For every (Stack consumed / 10), gain [DefenseUp] (once per turn)\n- If 40 Stack was consumed, the 4th Coin deals +50% damage, and this unit gains 2 [Protection] (once per turn)\n\n[BeforeAttack] Deal +5% damage for every 8 ([Combustion] + [Vibration]) on the main target (max 25%)\n[EndSkill] Heal 5 SP for every target that was Staggered or killed due to this Skill's damage (max 25)\n[EndSkill] Gain 1 [MlynarWaiting]\n[EndBattle] If this Skill did not consume 40 [MlynarWaiting], the leftmost Skill Slot on the Dashboard gains +4 [Aggro] next turn (once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "Reuse this Coin (([MlynarWaiting] Stack consumed / 10) - 1) times (3 times max)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] If this is the final Coin, and if target has 15+ [Vibration] Potency, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] If this Coin was used 4 times, deal Sloth damage equal to [Vibration] on target (max 5)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Unbrilliant Glory - Incandescence",
+          "abName": "Młynar",
+          "desc": "[CantDuel]\nExternal effects cannot trigger this Skill to be Reused\nAt 40 [MlynarWaiting], becomes Clashable\n[WhenUse] At 40 [MlynarWaiting], until this Skill ends, this unit cannot be Staggered from taking damage, and gains Clash Power +20\n\n[BeforeAttack] Consume all [MlynarWaiting] and gain the following effects(all of them rounded down):\n- For every (Stack consumed / 20), recuperate 1 E.G.O resource (in the following order: Pride, then Wrath)\n- For every (Stack consumed / 10), gain +1 Atk Weight (max 4)\n- For every (Stack consumed / 10), gain [DefenseUp] (once per turn)\n- If 40 Stack was consumed, the 4th Coin deals +<style=\"highlight\">80</style>% damage, and this unit gains 2 [Protection] (once per turn)\n\n[BeforeAttack] Deal +5% damage for every 8 ([Combustion] + [Vibration]) on the main target (max 25%)\n[EndSkill] Heal 5 SP for every target that was Staggered or killed due to this Skill's damage (max 25)\n[EndSkill] Gain 1 [MlynarWaiting]\n[EndBattle] If this Skill did not consume 40 [MlynarWaiting], the leftmost Skill Slot on the Dashboard gains +4 [Aggro] next turn (once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "Reuse this Coin (([MlynarWaiting] Stack consumed / 10) - 1) times (3 times max)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnStartCoin] If this Coin isn't Cracked, and if it targets 3+ enemies, the final Coin to be used deals +10% damage (for Focused Encounters, each Part counts as 1 target)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] If this is the final Coin, and if target has 15+ [Vibration] Potency, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] If this Coin was used 4 times, deal Sloth damage equal to [Vibration] on target (max 5)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Unbrilliant Glory - Incandescence",
+          "abName": "Młynar",
+          "desc": "[CantDuel]\nExternal effects cannot trigger this Skill to be Reused\nAt 40 [MlynarWaiting], becomes Clashable\n[WhenUse] At 40 [MlynarWaiting], until this Skill ends, this unit cannot be Staggered from taking damage, and gains Clash Power +20\n\n[BeforeAttack] Consume all [MlynarWaiting] and gain the following effects(all of them rounded down):\n- For every (Stack consumed / 20), recuperate 1 E.G.O resource (in the following order: Pride, then Wrath)\n- For every (Stack consumed / 10), gain +1 Atk Weight (max 4)\n- For every (Stack consumed / 10), gain [DefenseUp] (once per turn)\n- If 40 Stack was consumed, the 4th Coin deals +<style=\"highlight\">100</style>% damage, and this unit gains 2 [Protection] (once per turn)\n\n[BeforeAttack] Deal +5% damage for every 8 ([Combustion] + [Vibration]) on the main target (max 25%)\n[EndSkill] Heal 5 SP for every target that was Staggered or killed due to this Skill's damage (max 25)\n[EndSkill] Gain 1 [MlynarWaiting]\n[EndBattle] If this Skill did not consume 40 [MlynarWaiting], the leftmost Skill Slot on the Dashboard gains +4 [Aggro] next turn (once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "Reuse this Coin (([MlynarWaiting] Stack consumed / 10) - 1) times (3 times max)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnStartCoin] If this Coin isn't Cracked, and if it targets 3+ enemies, the final Coin to be used deals +<style=\"highlight\">20</style>% damage (for Focused Encounters, each Part counts as 1 target)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] If this is the final Coin, and if target has 15+ [Vibration] Potency, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] If this Coin was used 4 times, deal Sloth damage equal to [Vibration] on target (max <style=\"highlight\">10</style>)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120921,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Unbrilliant Glory - Flowing",
+          "abName": "Młynar",
+          "desc": "[CantIdentify]\nTargets randomly\n[WhenUse] At 40 [MlynarWaiting], Base Power +1\n\n[BeforeAttack] Consume all [MlynarWaiting] and gain the following effects(all of them rounded down):\n- Gain (Stack consumed / 10) [DefenseUp] (once per turn)\n- If 40 Stack was consumed, the final Coin deals +110% damage and this unit gains 2 [Protection] (once per turn)\n\n[BeforeAttack] Deal +3% damage for every 6 ([Combustion] + [Vibration]) on the main target (max 15%)\n[BeforeAttack] Base Power -4 for every Cracked Coin (max -16)\n[EndSkill] Gain 1 [MlynarWaiting]\n[EndBattle] If 40 [MlynarWaiting] was consumed by this Skill, the leftmost Skill Slot on the Dashboard gains +8 [Aggro] next turn (once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 [Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 [Vibration]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] If target has 15+ [Vibration] Potency, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Unbrilliant Glory - Flowing",
+          "abName": "Młynar",
+          "desc": "[CantIdentify]\nTargets randomly\n<style=\"highlight\">When attacking 3+ targets: If the Coins 1~3 hit without Cracking, the final Coin deals +25% damage (once per Coin; in Focused Encounters, each Part counts as 1 target)</style>\n[WhenUse] At 40 [MlynarWaiting], Base Power +1\n\n[BeforeAttack] Consume all [MlynarWaiting] and gain the following effects(all of them rounded down):\n- Gain (Stack consumed / 10) [DefenseUp] (once per turn)\n- If 40 Stack was consumed, the final Coin deals +<style=\"highlight\">130</style>% damage and this unit gains 2 [Protection] (once per turn)\n\n[BeforeAttack] Deal +3% damage for every 6 ([Combustion] + [Vibration]) on the main target (max 15%)\n[BeforeAttack] Base Power -4 for every Cracked Coin (max -16)\n[EndSkill] Gain 1 [MlynarWaiting]\n[EndBattle] If 40 [MlynarWaiting] was consumed by this Skill, the leftmost Skill Slot on the Dashboard gains +8 [Aggro] next turn (once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 [Combustion]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 [Vibration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] If target has 15+ [Vibration] Potency, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Unbrilliant Glory - Flowing",
+          "abName": "Młynar",
+          "desc": "[CantIdentify]\nTargets randomly\nIf there are 3+ targets: If the Coins 1~3 hit without Cracking, the final Coin deals +<style=\"highlight\">30</style>% damage (once per Coin; in Focused Encounters, each Part counts as 1 target)\n[WhenUse] At 40 [MlynarWaiting], Base Power +1\n\n[BeforeAttack] Consume all [MlynarWaiting] and gain the following effects(all of them rounded down):\n- Gain (Stack consumed / 10) [DefenseUp] (once per turn)\n- If 40 Stack was consumed, the final Coin deals +<style=\"highlight\">160</style>% damage and this unit gains 2 [Protection] (once per turn)\n\n[BeforeAttack] Deal +3% damage for every 6 ([Combustion] + [Vibration]) on the main target (max 15%)\n[BeforeAttack] Base Power -4 for every Cracked Coin (max -16)\n[EndSkill] Gain 1 [MlynarWaiting]\n[EndBattle] If 40 [MlynarWaiting] was consumed by this Skill, the leftmost Skill Slot on the Dashboard gains +8 [Aggro] next turn (once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 [Combustion]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 5 [Vibration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] If target has 15+ [Vibration] Potency, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

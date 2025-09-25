@@ -589,6 +589,297 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2120911,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "눈부시지 않은 영광 - 유수(流水)",
+          "abName": "무에나",
+          "desc": "[CantDuel]\n전투에서 처음 사용시 필요한 E.G.O 자원이 분노 1, 나태 2, 오만 1 감소\n[MlynarWaiting]이 1 이상이면, 눈부시지 않은 영광 - 광휘(光輝)로 발동됨\n이 스킬은 적에게 적중하지 않고, 수비 스킬을 발동시키지 않으며, 외부 효과로 재사용이 불가능함\n[EndSkill] [MlynarWaiting] 1 얻음\n[EndSkill] 정신력 25 회복\n[EndSkill] 다음 턴에 [AttackUp] 1 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "눈부시지 않은 영광 - 유수(流水)",
+          "abName": "무에나",
+          "desc": "[CantDuel]\n전투에서 처음 사용시 필요한 E.G.O 자원이 분노 1, 나태 2, 오만 1 감소\n[MlynarWaiting]이 1 이상이면, 눈부시지 않은 영광 - 광휘(光輝)로 발동됨\n이 스킬은 적에게 적중하지 않고, 수비 스킬을 발동시키지 않으며, 외부 효과로 재사용이 불가능함\n[EndSkill] [MlynarWaiting] 1 얻음\n[EndSkill] 정신력 25 회복\n[EndSkill] 다음 턴에 [AttackUp] <style=\"highlight\">2</style> 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "눈부시지 않은 영광 - 유수(流水)",
+          "abName": "무에나",
+          "desc": "[CantDuel]\n전투에서 처음 사용시 필요한 E.G.O 자원이 분노 1, 나태 2, 오만 1 감소\n[MlynarWaiting]이 1 이상이면, 눈부시지 않은 영광 - 광휘(光輝)로 발동됨\n이 스킬은 적에게 적중하지 않고, 수비 스킬을 발동시키지 않으며, 외부 효과로 재사용이 불가능함\n[EndSkill] [MlynarWaiting] 1 얻음\n[EndSkill] 정신력 25 회복\n[EndSkill] 다음 턴에 [AttackUp] 2, <style=\"highlight\">[AttackDmgUp] 1</style> 얻음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120912,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "눈부시지 않은 영광 - 광휘(光輝)",
+          "abName": "무에나",
+          "desc": "[CantDuel]\n이 스킬은 외부 효과로 재사용이 불가능함\n[MlynarWaiting]이 40이면, 합 가능으로 변경됨\n[WhenUse] [MlynarWaiting]이 40이면, 이 스킬 종료 시까지 피해로 인해 흐트러짐 상태가 되지 않고 합 위력 +20\n\n[BeforeAttack] [MlynarWaiting]을 전부 소모하고 아래 효과 적용 (모든 수치는 소수점 버림)\n- (소모한 수치 / 20) 만큼 사용한 E.G.O 자원을 1개씩 반환 (오만, 분노 순으로 반환)\n- (소모한 수치 / 10) 만큼 가중치 증가 (최대 4)\n- (소모한 수치 / 10) 만큼 [DefenseUp] 얻음 (턴당 1회)\n- 40 소모했다면, 4번째로 사용할 코인의 피해량 +50%, [Protection] 2 얻음 (턴당 1회)\n\n[BeforeAttack] 메인 타겟의 [Combustion]과 [Vibration]의 합 8 당 피해량 +5% (최대 25%)\n[EndSkill] 이 스킬의 피해로 흐트러졌거나 사망한 대상 1명당 정신력 5 회복 (최대 25)\n[EndSkill] [MlynarWaiting] 1 얻음\n[EndBattle] 이 스킬로 [MlynarWaiting]을 40 소모하지 못했다면, 다음 턴에 조작 패널에서 가장 왼쪽의 스킬 슬롯 [Aggro] 4 증가 (턴당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "(소모한 [MlynarWaiting] 수치 / 10) - 1만큼 이 코인 재사용 (최대 3회)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 1 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 1 부여"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 마지막에 사용하는 코인이고, 대상의 [Vibration] 위력이 15 이상이면, [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 이 코인을 4회 사용했으면, 대상의 [Vibration]만큼 나태 피해를 줌 (최대 5)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "눈부시지 않은 영광 - 광휘(光輝)",
+          "abName": "무에나",
+          "desc": "[CantDuel]\n이 스킬은 외부 효과로 재사용이 불가능함\n[MlynarWaiting]이 40이면, 합 가능으로 변경됨\n[WhenUse] [MlynarWaiting]이 40이면, 이 스킬 종료 시까지 피해로 인해 흐트러짐 상태가 되지 않고 합 위력 +20\n\n[BeforeAttack] [MlynarWaiting]을 전부 소모하고 아래 효과 적용 (모든 수치는 소수점 버림)\n- (소모한 수치 / 20) 만큼 사용한 E.G.O 자원을 1개씩 반환 (오만, 분노 순으로 반환)\n- (소모한 수치 / 10) 만큼 가중치 증가 (최대 4)\n- (소모한 수치 / 10) 만큼 [DefenseUp] 얻음 (턴당 1회)\n- 40 소모했다면, 4번째로 사용할 코인의 피해량 +<style=\"highlight\">80</style>%, [Protection] 2 얻음 (턴당 1회)\n\n[BeforeAttack] 메인 타겟의 [Combustion]과 [Vibration]의 합 8 당 피해량 +5% (최대 25%)\n[EndSkill] 이 스킬의 피해로 흐트러졌거나 사망한 대상 1명당 정신력 5 회복 (최대 25)\n[EndSkill] [MlynarWaiting] 1 얻음\n[EndBattle] 이 스킬로 [MlynarWaiting]을 40 소모하지 못했다면, 다음 턴에 조작 패널에서 가장 왼쪽의 스킬 슬롯 [Aggro] 4 증가 (턴당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "(소모한 [MlynarWaiting] 수치 / 10) - 1만큼 이 코인 재사용 (최대 3회)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnStartCoin] 이 코인이 파괴되지 않았고, 공격 대상이 3명 이상이면, 마지막에 사용할 코인의 피해량 +10% (집중 전투인 경우, 부위를 대상 1명으로 취급)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 1 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 1 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 마지막에 사용하는 코인이고, 대상의 [Vibration] 위력이 15 이상이면, [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 이 코인을 4회 사용했으면, 대상의 [Vibration]만큼 나태 피해를 줌 (최대 5)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "눈부시지 않은 영광 - 광휘(光輝)",
+          "abName": "무에나",
+          "desc": "[CantDuel]\n이 스킬은 외부 효과로 재사용이 불가능함\n[MlynarWaiting]이 40이면, 합 가능으로 변경됨\n[WhenUse] [MlynarWaiting]이 40이면, 이 스킬 종료 시까지 피해로 인해 흐트러짐 상태가 되지 않고 합 위력 +20\n\n[BeforeAttack] [MlynarWaiting]을 전부 소모하고 아래 효과 적용 (모든 수치는 소수점 버림)\n- (소모한 수치 / 20) 만큼 사용한 E.G.O 자원을 1개씩 반환 (오만, 분노 순으로 반환)\n- (소모한 수치 / 10) 만큼 가중치 증가 (최대 4)\n- (소모한 수치 / 10) 만큼 [DefenseUp] 얻음 (턴당 1회)\n- 40 소모했다면, 4번째로 사용할 코인의 피해량 +<style=\"highlight\">100</style>%, [Protection] 2 얻음 (턴당 1회)\n\n[BeforeAttack] 메인 타겟의 [Combustion]과 [Vibration]의 합 8 당 피해량 +5% (최대 25%)\n[EndSkill] 이 스킬의 피해로 흐트러졌거나 사망한 대상 1명당 정신력 5 회복 (최대 25)\n[EndSkill] [MlynarWaiting] 1 얻음\n[EndBattle] 이 스킬로 [MlynarWaiting]을 40 소모하지 못했다면, 다음 턴에 조작 패널에서 가장 왼쪽의 스킬 슬롯 [Aggro] 4 증가 (턴당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "(소모한 [MlynarWaiting] 수치 / 10) - 1만큼 이 코인 재사용 (최대 3회)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnStartCoin] 이 코인이 파괴되지 않았고, 공격 대상이 3명 이상이면, 마지막에 사용할 코인의 피해량 +<style=\"highlight\">20</style>% (집중 전투인 경우, 부위를 대상 1명으로 취급)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 1 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 1 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 마지막에 사용하는 코인이고, 대상의 [Vibration] 위력이 15 이상이면, [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 이 코인을 4회 사용했으면, 대상의 [Vibration]만큼 나태 피해를 줌 (최대 <style=\"highlight\">10</style>)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120921,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "눈부시지 않은 영광 - 유수(流水)",
+          "abName": "무에나",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n[WhenUse] [MlynarWaiting]이 40이면, 기본 위력 +1\n\n[BeforeAttack] [MlynarWaiting]을 전부 소모하고 아래 효과 적용 (모든 수치는 소수점 버림)\n- (소모한 수치 / 10) 만큼 [DefenseUp] 얻음 (턴당 1회)\n- 40 소모했다면, 마지막 코인의 피해량 +110%, [Protection] 2 얻음 (턴당 1회)\n\n[BeforeAttack] 메인 타겟의 [Combustion]과 [Vibration]의 합 6 당 피해량 +3% (최대 15%)\n[BeforeAttack] 파괴된 코인 수당 기본 위력 -4 (최대 -16)\n[EndSkill] [MlynarWaiting] 1 얻음\n[EndBattle] 이 스킬로 [MlynarWaiting]을 40 소모했다면, 다음 턴에 조작 패널에서 가장 왼쪽의 스킬 슬롯 [Aggro] 8 증가 (턴당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 5 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 5 부여"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 대상의 [Vibration] 위력이 15 이상이면, [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "눈부시지 않은 영광 - 유수(流水)",
+          "abName": "무에나",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n<style=\"highlight\">공격 대상이 3명 이상일 때, 1~3코인이 파괴되지 않고 적중시 마지막 코인의 피해량 +25% (코인당 1회 발동, 집중 전투인 경우, 부위를 대상 1명으로 취급)</style>\n[WhenUse] [MlynarWaiting]이 40이면, 기본 위력 +1\n\n[BeforeAttack] [MlynarWaiting]을 전부 소모하고 아래 효과 적용 (모든 수치는 소수점 버림)\n- (소모한 수치 / 10) 만큼 [DefenseUp] 얻음 (턴당 1회)\n- 40 소모했다면, 마지막 코인의 피해량 +<style=\"highlight\">130</style>%, 보호 2 얻음 (턴당 1회)\n\n[BeforeAttack] 메인 타겟의 [Combustion]과 [Vibration]의 합 6 당 피해량 +3% (최대 15%)\n[BeforeAttack] 파괴된 코인 수당 기본 위력 -4 (최대 -16)\n[EndSkill] [MlynarWaiting] 1 얻음\n[EndBattle] 이 스킬로 [MlynarWaiting]을 40 소모했다면, 다음 턴에 조작 패널에서 가장 왼쪽의 스킬 슬롯 [Aggro] 8 증가 (턴당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 5 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 5 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 대상의 [Vibration] 위력이 15 이상이면, [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "눈부시지 않은 영광 - 유수(流水)",
+          "abName": "무에나",
+          "desc": "[CantIdentify]\n무작위 대상 공격\n공격 대상이 3명 이상일 때, 1~3코인이 파괴되지 않고 적중시 마지막 코인의 피해량 +<style=\"highlight\">30</style>% (코인당 1회 발동, 집중 전투인 경우, 부위를 대상 1명으로 취급)\n[WhenUse] [MlynarWaiting]이 40이면, 기본 위력 +1\n\n[BeforeAttack] [MlynarWaiting]을 전부 소모하고 아래 효과 적용 (모든 수치는 소수점 버림)\n- (소모한 수치 / 10) 만큼 [DefenseUp] 얻음 (턴당 1회)\n- 40 소모했다면, 마지막 코인의 피해량 +<style=\"highlight\">160</style>%, 보호 2 얻음 (턴당 1회)\n\n[BeforeAttack] 메인 타겟의 [Combustion]과 [Vibration]의 합 6 당 피해량 +3% (최대 15%)\n[BeforeAttack] 파괴된 코인 수당 기본 위력 -4 (최대 -16)\n[EndSkill] [MlynarWaiting] 1 얻음\n[EndBattle] 이 스킬로 [MlynarWaiting]을 40 소모했다면, 다음 턴에 조작 패널에서 가장 왼쪽의 스킬 슬롯 [Aggro] 8 증가 (턴당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 5 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration] 5 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 대상의 [Vibration] 위력이 15 이상이면, [VibrationExplosion]. 대상의 [Vibration] 횟수 1 감소"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
