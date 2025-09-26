@@ -742,6 +742,226 @@
           ]
         }
       ]
+    },
+
+    {
+      "id": 130301,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "焦る自我の脇道",
+          "desc": "[CantDuel]\nこのスキルは敵にダメージを与えない\n[EndSkill] [AbyssalVitality]を100得る",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130302,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "安息のエコー",
+          "desc": "[CantIdentify]\n味方を優先指定し、その中で現体力が最も低い味方をメインターゲットに指定\n対象が味方ならダメージ量が0に固定\n対象の[Sinking]3につき、マッチ威力 +1 (最大4)\n[StartBattle] 対象が味方なら、対象の最大体力20%だけ体力を回復",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象が味方なら、対象召喚時に消耗した[AbyssalVitality]4につき、このターンと次のターンに[DefenseUp]1を付与 (最大5)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象が敵なら[Sinking]3, [NervousImpairment]2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130303,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "昇天のエコー",
+          "desc": "[CantIdentify]\n現体力が最も高い味方を優先指定\n対象が味方ならダメージ量が0に固定\n対象の[Sinking]3につき、マッチ威力 +1 (最大4)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象が味方なら、対象召喚時に消耗した[AbyssalVitality]4につき、このターンと次のターンに[AttackUp]1を付与 (最大5)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象が敵なら[Sinking]3, [NervousImpairment]2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130304,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "循環する生態系",
+          "desc": "[CanDuelGuard]\n[EndBattle] 生存している味方の数だけ[AbyssalVitality]を消耗する代わり、全ての味方へ対象が生存したターン数だけ、次のターンにて[AttackDmgUp]を付与 (最大3)\n- [DefeatDuel] 次のターンに[AttackDmgUp]を付与しない",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130305,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "深青なる温情で。",
+          "desc": "[CantIdentify]\nメインターゲットの[NervousImpairment]3につき、基本威力 +1 (最大9)\n対象が味方なら、ダメージ量が0に固定\n速度と関係なく、このスキルとマッチできる\n[DefeatDuel]\n- [ResultReduction]3, [Paralysis]3を得る\n- ダメージ量が80%だけ減少し、このスキルのダメージで対象が混乱しない\n- このスキルで付与する[NervousImpairment]付与量が半減して[Sinking]・[Sinking]回数を付与しない\n- このスキルで得る[AbyssalVitality]が半減\n[EndSkill] [AbyssalVitality]を100得る\n[EndBattle] 次のターン開始時、味方の戦場に[NetherseaBrandUnit]を生成",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象が味方なら、対象の体力を最大値の10%だけ回復"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象が敵なら[NervousImpairment]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象が味方なら、対象の体力を最大値の10%だけ回復"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象が敵なら[NervousImpairment]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象が味方なら、対象の体力を最大値の10%だけ回復"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象が敵なら[Sinking]4, [Sinking]回数4, [NervousImpairment]4を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130306,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "波の軌跡",
+          "desc": "[WhenUse] [AbyssalVitality]が50以上なら、数値を5消耗してこのスキルで付与する[NervousImpairment]付与値 +2\n[WhenUse] 対象の[NervousImpairment]10につき、[AbyssalVitality]を1消耗してマッチ威力 +1 (最大2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [NervousImpairment]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]4を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [NervousImpairment]2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130307,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "激しい乱流",
+          "desc": "[WhenUse] [AbyssalVitality]が50以上なら、数値を4消耗してコイン威力 +1\n[WhenUse] 対象の[NervousImpairment]10につき、[AbyssalVitality]を3消耗してコイン威力 +1 (最大2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [NervousImpairment]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [Sinking]回数が3増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [NervousImpairment]2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130308,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "揺らめく波",
+          "desc": "[WhenUse] メインターゲットの[NervousImpairment]5につき、コイン威力 +1 (最大5)\n[EndBattle] [AbyssalVitality]を最大10消耗する代わり、消耗した数値の半分だけ次のターンに[AttackUp]を得る (最大5, 小数点繰り上げ)\n- [DefeatDuel]次のターンに[AttackUp]を得られない",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [Sinking]3, [Sinking]回数2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [NervousImpairment]4 を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
