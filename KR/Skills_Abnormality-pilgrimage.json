@@ -744,6 +744,226 @@
           ]
         }
       ]
+    },
+
+    {
+      "id": 130301,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "조급한 자아의 샛길",
+          "desc": "[CantDuel]\n이 스킬로 대상에게 피해를 입히지 않음\n[EndSkill] [AbyssalVitality] 100 얻음",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130302,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "안식의 메아리",
+          "desc": "[CantIdentify]\n아군을 우선으로 지정하며, 그 중 현재 체력이 가장 낮은 아군을 메인 타겟으로 지정\n대상이 아군이면 피해량이 0으로 고정\n대상의 [Sinking] 3당 합 위력 +1 (최대 4)\n[StartBattle] 대상이 아군이면, 대상의 최대 체력 20%만큼 체력 회복",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상이 아군이면, 대상 소환 시 소모한 [AbyssalVitality] 4당, 이번 턴과 다음 턴에 [DefenseUp] 1 부여 (최대 5)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상이 적이면, [Sinking] 3, [NervousImpairment] 2 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130303,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "상승의 메아리",
+          "desc": "[CantIdentify]\n현재 체력이 가장 높은 아군을 우선으로 지정\n대상이 아군이면 피해량이 0으로 고정\n대상의 [Sinking] 3당 합 위력 +1 (최대 4)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 대상이 아군이면, 대상 소환 시 소모한 [AbyssalVitality] 4당, 이번 턴과 다음 턴에 [AttackUp] 1 부여 (최대 5)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상이 적이면, [Sinking] 3, [NervousImpairment] 2 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130304,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "순환하는 생태계",
+          "desc": "[CanDuelGuard]\n[EndBattle] 생존한 아군 수만큼 [AbyssalVitality]을 소모하는 대신, 모든 아군에게 대상이 생존한 턴 수만큼 다음 턴에 [AttackDmgUp] 부여 (최대 3)\n- [DefeatDuel] 다음 턴에 [AttackDmgUp]를 부여하지 않음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130305,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "짙푸른 온정으로.",
+          "desc": "[CantIdentify]\n메인 타겟 대상의 [NervousImpairment] 3당 기본 위력 +1 (최대 9)\n대상이 아군이면 피해량이 0으로 고정\n속도에 상관없이 이 스킬과 합을 할 수 있음\n[DefeatDuel]\n- [ResultReduction] 3, [Paralysis] 3 얻음\n- 피해량이 80%만큼 감소하고 이 스킬의 피해로 대상이 흐트러지지 않음\n- 이 스킬로 부여하는 [NervousImpairment] 부여량이 절반으로 감소하고 [Sinking], [Sinking] 횟수를 부여하지 않음\n- 이 스킬로 얻는 [AbyssalVitality]이 절반으로 감소\n[EndSkill] [AbyssalVitality] 100 얻음\n[EndBattle] 다음 턴 시작 시 아군 전장에 [NetherseaBrandUnit] 생성",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상이 아군이면, 대상의 최대 체력 10% 회복"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상이 적이면, [NervousImpairment] 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상이 아군이면, 대상의 최대 체력 10% 회복"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상이 적이면, [NervousImpairment] 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상이 아군이면, 대상의 최대 체력 10% 회복"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 대상이 적이면, [Sinking] 4, [Sinking] 횟수 4, [NervousImpairment] 4 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130306,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "파도의 궤적",
+          "desc": "[WhenUse] [AbyssalVitality]이 50 이상이면, 수치를 5 소모하여 이 스킬에서 부여하는 신경 손상 부여값 +2\n[WhenUse] 대상의 [NervousImpairment] 10당, [AbyssalVitality]을 1 소모하여 합 위력 +1 (최대 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking] 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [NervousImpairment] 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking] 4 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [NervousImpairment] 2 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130307,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "거센 난류",
+          "desc": "[WhenUse] [AbyssalVitality]이 50 이상이면, 수치를 4 소모하여 코인 위력 +1\n[WhenUse] 대상의 [NervousImpairment] 10당, [AbyssalVitality]을 3 소모하여 코인 위력 +1 (최대 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking] 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [NervousImpairment] 2 부여"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [Sinking] 횟수 3 증가"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [NervousImpairment] 2 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130308,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "일렁이는 파도",
+          "desc": "[WhenUse] 메인 타겟의 [NervousImpairment] 5당 코인 위력 +1 (최대 5)\n[EndBattle] [AbyssalVitality]을 최대 10만큼 소모하는 대신, 소모한 수치의 절반 만큼 다음 턴에 [AttackUp] 얻음 (최대 5, 소수점 올림)\n- [DefeatDuel] 다음 턴에 [AttackUp]를 얻지 않음",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [Sinking] 3, [Sinking] 횟수 2 부여"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [NervousImpairment] 4 부여"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

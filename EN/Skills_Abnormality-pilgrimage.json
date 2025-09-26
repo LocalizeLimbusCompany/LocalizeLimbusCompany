@@ -742,6 +742,226 @@
           ]
         }
       ]
+    },
+
+    {
+      "id": 130301,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "The Impatient Ego's Byway",
+          "desc": "[CantDuel]\nThis Skill does not deal damage against targets\n[EndSkill] Gain 100 [AbyssalVitality]",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130302,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Echoes of Respite",
+          "desc": "[CantIdentify]\nPrioritizes allies; among them, prioritize allies with the least current HP\nWhen targeting allies, deal 0 damage\nClash Power +1 for every 3 [Sinking] on target (max 4)\n[StartBattle] When targeting allies, heal (20% of target's max HP) HP",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] When targeting an ally, apply 1 [DefenseUp] this turn and next turn for every 4 [AbyssalVitality] consumed to summon the target (max 5)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] When targeting an enemy, inflict 3 [Sinking] and 2 [NervousImpairment]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130303,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Echoes of Ascending",
+          "desc": "[CantIdentify]\nPrioritize allies with the most current HP\nWhen targeting an ally, deal 0 damage\nClash Power +1 for every 3 [Sinking] on target (max 4)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] When targeting an ally, apply 1 [AttackUp] this turn and next turn for every 4 [AbyssalVitality] consumed to summon the target (max 5)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] When targeting an enemy, inflict 3 [Sinking] and 2 [NervousImpairment]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130304,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Cyclical Ecosystem",
+          "desc": "[CanDuelGuard]\n[EndBattle] Consume [AbyssalVitality] for every surviving ally; however, apply (# of turns target survived) [AttackDmgUp] next turn to all allies (max 3)\n- [DefeatDuel] Does not apply [AttackDmgUp] next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130305,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "With Deep Blue Charity.",
+          "desc": "[CantIdentify]\nBase Power +1 for every 3 [NervousImpairment] on the main target (max 9)\nWhen targeting allies, deal 0 damage\nCan Clash with this Skill regardless of Speed\n\n[DefeatDuel]\n- Gain 3 [ResultReduction] and 3 [Paralysis]\n- Deal -80% damage, and damage dealt by this Skill cannot Stagger the target\n- Halve the amount of [NervousImpairment] inflicted by this Skill, and does not inflict [Sinking] or [Sinking] Count\n- Halve the amount of [AbyssalVitality] gained from this Skill\n[EndSkill] Gain 100 [AbyssalVitality]\n[EndBattle] At the start of the next turn, generate [NetherseaBrandUnit] in the ally territory",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] When targeting an ally, heal 10% of their max HP"
+                },
+                {
+                  "desc": "[OnSucceedAttack] When targeting an enemy, inflict 2 [NervousImpairment]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] When targeting an ally, heal 10% of their max HP"
+                },
+                {
+                  "desc": "[OnSucceedAttack] When targeting an enemy, inflict 2 [NervousImpairment]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] When targeting an ally, heal 10% of their max HP"
+                },
+                {
+                  "desc": "[OnSucceedAttack] When targeting an enemy, inflict 4 [Sinking], +4 [Sinking] Count, and 4 [NervousImpairment]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130306,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Tidal Arc",
+          "desc": "[WhenUse] At 50+ [AbyssalVitality], consume 5 [AbyssalVitality] to inflict +2 more [NervousImpairment] with this Skill's effects\n[WhenUse] For every 10 [NervousImpairment] on target, consume 1 [AbyssalVitality] to gain Clash Power +1 (max 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [NervousImpairment]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [Sinking]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [NervousImpairment]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130307,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Fierce Currents",
+          "desc": "[WhenUse] At 50+ [AbyssalVitality], consume 4 [AbyssalVitality] to gain Coin Power +1\n[WhenUse] For every 10 [NervousImpairment] on target, consume 3 [AbyssalVitality] to gain Coin Power +1 (max 2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [NervousImpairment]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] Inflict +3 [Sinking] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [NervousImpairment]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 130308,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Undulating Waves",
+          "desc": "[WhenUse] Coin Power +1 for every 5 [NervousImpairment] on the main target (max 5)\n[EndBattle] Consume up to 10 [AbyssalVitality] and gain half of consumed Stack as [AttackUp] next turn (max 5, rounded up)\n- [DefeatDuel] Does not gain [AttackUp] next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] Inflict 3 [Sinking] and +2 [Sinking] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [NervousImpairment]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
