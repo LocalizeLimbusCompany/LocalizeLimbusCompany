@@ -675,6 +675,184 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2020911,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "指令：熔毁",
+          "abName": "凯尔希",
+          "desc": "若主要目标带有[Combustion]或[Burst]，则使本技能的最终威力+1\n[BeforeAttack] 主要目标的[Burst]强度与[Burst]层数之和每有1点，使本技能造成的伤害+1%(最多+15%)\n[EndSkill] 使自身获得4层[CuredFilm]\n[EndSkill] 使自身与现存体力比例最低的1名友方单位恢复自身体力上限15%的体力\n- 若自身体力为最大值，则改为使2名友方单位恢复体力\n[EndSkill] 使包括自身在内理智值最低的2名友方单位恢复10点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Burst]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "指令：熔毁",
+          "abName": "凯尔希",
+          "desc": "若主要目标带有[Combustion]或[Burst]，则使本技能的最终威力<style=\"highlight\">+2</style>\n[BeforeAttack] 主要目标的[Burst]强度与[Burst]层数之和每有1点，使本技能造成的伤害+1%(最多+15%)\n<style=\"highlight\">- 若自身带有[CuredFilm]，则使该效果与其上限变为1.5倍</style>\n[EndSkill] 使自身获得<style=\"highlight\">7</style>层[CuredFilm]\n[EndSkill] 使自身与现存体力比例最低的1名友方单位恢复自身体力上限<style=\"highlight\">20%</style>的体力\n- 若自身体力为最大值，则改为使2名友方单位恢复体力\n[EndSkill] 使包括自身在内理智值最低的2名友方单位恢复10点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">2</style>级[Burst]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">2</style>级[Combustion]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "指令：熔毁",
+          "abName": "凯尔希",
+          "desc": "若主要目标带有[Combustion]或[Burst]，则使本技能的最终威力<style=\"highlight\">+3</style>\n[BeforeAttack] 主要目标的[Burst]强度与[Burst]层数之和每有1点，使本技能造成的伤害+1%(最多+<style=\"highlight\">25%</style>)\n- 若自身带有[CuredFilm]，则使该效果与其上限变为<style=\"highlight\">2倍</style>\n[EndSkill] 使自身获得<style=\"highlight\">10</style>层[CuredFilm]\n[EndSkill] 使自身与现存体力比例最低的1名友方单位恢复自身体力上限<style=\"highlight\">30%</style>的体力\n- 若自身体力为最大值，则改为使2名友方单位恢复体力\n[EndSkill] 使包括自身在内理智值最低的2名友方单位恢复<style=\"highlight\">15</style>点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">3</style>级[Burst]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">3</style>级[Combustion]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2020921,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "指令：熔毁",
+          "abName": "凯尔希",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 若最大共鸣数不低于4，则使本技能的攻击容量+1\n[EndSkill] 使自身获得4层[CuredFilm]\n[EndSkill] 若没有目标因本技能伤害而陷入混乱或阵亡，则使自身受到体力上限20%的体力伤害并使自身获得等同于伤害量的护盾\n- 不会因本效果而阵亡，回合结束时使自身的[CuredFilm]层数变为最大值并在下回合获得2层[AttackDmgUp](每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Burst]强度"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "指令：熔毁",
+          "abName": "凯尔希",
+          "desc": "[CantIdentify]\n随机指定目标\n<style=\"highlight\">若主要目标的[Burst]强度与[Burst]层数之和不低于6点，则使本技能的基础威力+1</style>\n[BeforeAttack] 若最大共鸣数不低于<style=\"highlight\">3</style>，则使本技能的攻击容量+1\n[EndSkill] 使自身获得<style=\"highlight\">7</style>层[CuredFilm]\n[EndSkill] 若没有目标因本技能伤害而陷入混乱或阵亡，则使自身受到体力上限20%的体力伤害并使自身获得等同于伤害量的护盾\n- 不会因本效果而阵亡，回合结束时使自身的[CuredFilm]层数变为最大值并在下回合获得2层[AttackDmgUp](每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Burst]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 对目标施加1层[Burst]</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">2</style>级[Combustion]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "指令：熔毁",
+          "abName": "凯尔希",
+          "desc": "[CantIdentify]\n随机指定目标\n主要目标的[Burst]强度与[Burst]层数之和<style=\"highlight\">每有6点，使本技能的基础威力+1(最多+2)</style>\n<style=\"highlight\">[BeforeAttack] 每有3点最大共鸣数，使本技能的攻击容量+1(最多+2)</style>\n[EndSkill] 使自身获得<style=\"highlight\">10</style>层[CuredFilm]\n[EndSkill] 若没有目标因本技能伤害而陷入混乱或阵亡，则使自身受到体力上限20%的体力伤害并使自身获得等同于伤害量<style=\"highlight\">2倍</style>的护盾\n- 不会因本效果而阵亡，回合结束时使自身的[CuredFilm]层数变为最大值并在下回合获得2层[AttackDmgUp](每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Burst]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 使目标增加1级[Burst]强度</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加<style=\"highlight\">2</style>层[Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnStartCoin] 若没有目标因本技能伤害而陷入混乱或阵亡，则使本硬币造成的伤害+30%</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">3</style>级[Combustion]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

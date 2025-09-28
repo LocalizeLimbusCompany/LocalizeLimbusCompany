@@ -588,6 +588,297 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2120911,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "未照耀的荣光-流水",
+          "abName": "玛恩纳",
+          "desc": "[CantDuel]\n本场战斗中首次使用时，消耗的E.G.O资源减少1个暴怒、2个怠惰与1个傲慢\n若自身的[MlynarWaiting]层数不低于1层，则改为使用未照耀的荣光-<noparse>光辉</noparse>\n本技能不会命中敌方单位，不会触发守备技能，且不会因外部效果而重复使用\n[EndSkill] 使自身获得1层[MlynarWaiting]\n[EndSkill] 使自身恢复25点理智值\n[EndSkill] 下回合使自身获得1层[AttackUp]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "未照耀的荣光-流水",
+          "abName": "玛恩纳",
+          "desc": "[CantDuel]\n本场战斗中首次使用时，消耗的E.G.O资源减少1个暴怒、2个怠惰与1个傲慢\n若自身的[MlynarWaiting]层数不低于1层，则改为使用未照耀的荣光-<noparse>光辉</noparse>\n本技能不会命中敌方单位，不会触发守备技能，且不会因外部效果而重复使用\n[EndSkill] 使自身获得1层[MlynarWaiting]\n[EndSkill] 使自身恢复25点理智值\n[EndSkill] 下回合使自身获得<style=\"highlight\">2</style>层[AttackUp]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "未照耀的荣光-流水",
+          "abName": "玛恩纳",
+          "desc": "[CantDuel]\n本场战斗中首次使用时，消耗的E.G.O资源减少1个暴怒、2个怠惰与1个傲慢\n若自身的[MlynarWaiting]层数不低于1层，则改为使用未照耀的荣光-<noparse>光辉</noparse>\n本技能不会命中敌方单位，不会触发守备技能，且不会因外部效果而重复使用\n[EndSkill] 使自身获得1层[MlynarWaiting]\n[EndSkill] 使自身恢复25点理智值\n[EndSkill] 下回合使自身获得2层[AttackUp]<style=\"highlight\">与1层[AttackDmgUp]</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120912,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "未照耀的荣光-光辉",
+          "abName": "玛恩纳",
+          "desc": "[CantDuel]\n本技能不会因外部效果而重复使用\n若自身的[MlynarWaiting]层数为40层，则使本技能变为可拼点\n[WhenUse] 若自身的[MlynarWaiting]层数为40层，则直到本技能结束，自身不会因受到伤害而陷入混乱，使本技能的拼点威力+20\n\n[BeforeAttack] 消耗所有[MlynarWaiting]并获得以下效果(所有效果均向下取整)\n- 每消耗20层，返还1个E.G.O资源(按傲慢、暴怒的顺序返还)\n- 每消耗10层，使本技能的攻击容量+1(最多+4)\n- 每消耗10层，使自身获得1层[DefenseUp](每回合最多1次)\n- 若消耗了40层，则使第4枚硬币造成的伤害+50%，并使自身获得2层[Protection](每回合最多1次)\n\n[BeforeAttack] 主要目标的[Combustion]强度与[Vibration]强度之和每有8级，使本技能造成的伤害+5%(最多+25%)\n[EndSkill] 每有1个目标因本技能伤害而陷入混乱或阵亡，使自身恢复5点理智值(最多25点)\n[EndSkill] 使自身获得1层[MlynarWaiting]\n[EndBattle] 若本技能未消耗40层[MlynarWaiting]，则下回合使仪表盘上自身位于最左侧的行动槽的[Aggro]+4(每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "重复使用本硬币((消耗的[MlynarWaiting]层数/10)-1)次(最多3次)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 若本硬币为最后一枚硬币，且目标的[Vibration]强度不低于15级，则使其[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 若本硬币使用了4次，则对目标造成相当于其[Vibration]强度的怠惰伤害(最多5点)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "未照耀的荣光-光辉",
+          "abName": "玛恩纳",
+          "desc": "[CantDuel]\n本技能不会因外部效果而重复使用\n若自身的[MlynarWaiting]层数为40层，则使本技能变为可拼点\n[WhenUse] 若自身的[MlynarWaiting]层数为40层，则直到本技能结束，自身不会因受到伤害而陷入混乱，使本技能的拼点威力+20\n\n[BeforeAttack] 消耗所有[MlynarWaiting]并获得以下效果(所有效果均向下取整)\n- 每消耗20层，返还1个E.G.O资源(按傲慢、暴怒的顺序返还)\n- 每消耗10层，使本技能的攻击容量+1(最多+4)\n- 每消耗10层，使自身获得1层[DefenseUp](每回合最多1次)\n- 若消耗了40层，则使第4枚硬币造成的伤害+<style=\"highlight\">80</style>%，并使自身获得2层[Protection](每回合最多1次)\n\n[BeforeAttack] 主要目标的[Combustion]强度与[Vibration]强度之和每有8级，使本技能造成的伤害+5%(最多+25%)\n[EndSkill] 每有1个目标因本技能伤害而陷入混乱或阵亡，使自身恢复5点理智值(最多25点)\n[EndSkill] 使自身获得1层[MlynarWaiting]\n[EndBattle] 若本技能未消耗40层[MlynarWaiting]，则下回合使仪表盘上自身位于最左侧的行动槽的[Aggro]+4(每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "重复使用本硬币((消耗的[MlynarWaiting]层数/10)-1)次(最多3次)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnStartCoin] 若本硬币未摧毁，且指定不低于3名目标，则使最后一枚硬币造成的伤害+10%(若是集中遭遇战，则每个部位视作1名目标)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 若本硬币为最后一枚硬币，且目标的[Vibration]强度不低于15级，则使其[VibrationExplosion]，并使其[Vibration]层数减少1层<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 若本硬币使用了4次，则对目标造成相当于其[Vibration]强度的怠惰伤害(最多5点)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "未照耀的荣光-光辉",
+          "abName": "玛恩纳",
+          "desc": "[CantDuel]\n本技能不会因外部效果而重复使用\n若自身的[MlynarWaiting]层数为40层，则使本技能变为可拼点\n[WhenUse] 若自身的[MlynarWaiting]层数为40层，则直到本技能结束，自身不会因受到伤害而陷入混乱，使本技能的拼点威力+20\n\n[BeforeAttack] 消耗所有[MlynarWaiting]并获得以下效果(所有效果均向下取整)\n- 每消耗20层，返还1个E.G.O资源(按傲慢、暴怒的顺序返还)\n- 每消耗10层，使本技能的攻击容量+1(最多+4)\n- 每消耗10层，使自身获得1层[DefenseUp](每回合最多1次)\n- 若消耗了40层，则使第4枚硬币造成的伤害+<style=\"highlight\">100</style>%，并使自身获得2层[Protection](每回合最多1次)\n\n[BeforeAttack] 主要目标的[Combustion]强度与[Vibration]强度之和每有8级，使本技能造成的伤害+5%(最多+25%)\n[EndSkill] 每有1个目标因本技能伤害而陷入混乱或阵亡，使自身恢复5点理智值(最多25点)\n[EndSkill] 使自身获得1层[MlynarWaiting]\n[EndBattle] 若本技能未消耗40层[MlynarWaiting]，则下回合使仪表盘上自身位于最左侧的行动槽的[Aggro]+4(每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "重复使用本硬币((消耗的[MlynarWaiting]层数/10)-1)次(最多3次)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnStartCoin] 若本硬币未摧毁，且指定不低于3名目标，则使最后一枚硬币造成的伤害+<style=\"highlight\">20</style>%(若是集中遭遇战，则每个部位视作1名目标)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 若本硬币为最后一枚硬币，且目标的[Vibration]强度不低于15级，则使其[VibrationExplosion]，并使其[Vibration]层数减少1层<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 若本硬币使用了4次，则对目标造成相当于其[Vibration]强度的怠惰伤害(最多<style=\"highlight\">10</style>点)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2120921,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "未照耀的荣光-流水",
+          "abName": "玛恩纳",
+          "desc": "[CantIdentify]\n随机指定目标\n[WhenUse] 若自身的[MlynarWaiting]层数为40层，则使本技能的基础威力+1\n\n[BeforeAttack] 消耗所有[MlynarWaiting]并获得以下效果(所有效果均向下取整)\n- 每消耗10层，使自身获得1层[DefenseUp](每回合最多1次)\n- 若消耗了40层，则使最后一枚硬币造成的伤害+110%，并使自身获得2层[Protection](每回合最多1次)\n\n[BeforeAttack] 主要目标的[Combustion]强度与[Vibration]强度之和每有6级，则使本技能造成的伤害+3%(最多+15%)\n[BeforeAttack] 本技能每有1枚硬币被摧毁，使本技能的基础威力-4(最多-16)\n[EndSkill] 使自身获得1层[MlynarWaiting]\n[EndBattle] 若本技能消耗了40层[MlynarWaiting]，则下回合使仪表盘上自身位于最左侧的行动槽的[Aggro]+8(每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Combustion]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Vibration]强度"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 若目标的[Vibration]强度不低于15级，则使其[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "未照耀的荣光-流水",
+          "abName": "玛恩纳",
+          "desc": "[CantIdentify]\n随机指定目标\n<style=\"highlight\">指定不低于3名目标时，若第1~3枚硬币未摧毁并命中，则使最后一枚硬币造成的伤害+25%(每枚硬币最多1次，若是集中遭遇战，则每个部位视作1名目标)</style>\n[WhenUse] 若自身的[MlynarWaiting]层数为40层，则使本技能的基础威力+1\n\n[BeforeAttack] 消耗所有[MlynarWaiting]并获得以下效果(所有效果均向下取整)\n- 每消耗10层，使自身获得1层[DefenseUp](每回合最多1次)\n- 若消耗了40层，则使最后一枚硬币造成的伤害+<style=\"highlight\">130</style>%，并使自身获得2层[Protection](每回合最多1次)\n\n[BeforeAttack] 主要目标的[Combustion]强度与[Vibration]强度之和每有6级，则使本技能造成的伤害+3%(最多+15%)\n[BeforeAttack] 本技能每有1枚硬币被摧毁，使本技能的基础威力-4(最多-16)\n[EndSkill] 使自身获得1层[MlynarWaiting]\n[EndBattle] 若本技能消耗了40层[MlynarWaiting]，则下回合使仪表盘上自身位于最左侧的行动槽的[Aggro]+8(每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Combustion]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Vibration]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 若目标的[Vibration]强度不低于15级，则使其[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "未照耀的荣光-流水",
+          "abName": "玛恩纳",
+          "desc": "[CantIdentify]\n随机指定目标\n指定不低于3名目标时，若第1~3枚硬币未摧毁并命中，则使最后一枚硬币造成的伤害+<style=\"highlight\">30</style>%(每枚硬币最多1次，若是集中遭遇战，则每个部位视作1名目标)\n[WhenUse] 若自身的[MlynarWaiting]层数为40层，则使本技能的基础威力+1\n\n[BeforeAttack] 消耗所有[MlynarWaiting]并获得以下效果(所有效果均向下取整)\n- 每消耗10层，使自身获得1层[DefenseUp](每回合最多1次)\n- 若消耗了40层，则使最后一枚硬币造成的伤害+<style=\"highlight\">160</style>%，并使自身获得2层[Protection](每回合最多1次)\n\n[BeforeAttack] 主要目标的[Combustion]强度与[Vibration]强度之和每有6级，则使本技能造成的伤害+3%(最多+15%)\n[BeforeAttack] 本技能每有1枚硬币被摧毁，使本技能的基础威力-4(最多-16)\n[EndSkill] 使自身获得1层[MlynarWaiting]\n[EndBattle] 若本技能消耗了40层[MlynarWaiting]，则下回合使仪表盘上自身位于最左侧的行动槽的[Aggro]+8(每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Combustion]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Vibration]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 若目标的[Vibration]强度不低于15级，则使其[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
