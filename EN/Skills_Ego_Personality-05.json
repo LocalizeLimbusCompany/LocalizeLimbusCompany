@@ -437,7 +437,7 @@
           "level": 3,
           "name": "Yearning - Mircalla",
           "abName": "Four-hundred Roses",
-          "desc": "[CantIdentify]\nTargets randomly\n<style=\"highlight\">At 6+ (sum of [Laceration] on self and the target), Coin Power +1</style>\n[WhenUse] Consume up to 10% of this unit's max HP and deal (HP consumed / 2) damage to all enemies and allies\n- At less than 50% of this unit's max HP, inflict and activate 5 [Laceration] on all allies once instead (lose 1 [Laceration] Count). Heal HP equal to the amount of [Laceration] damage dealt to allies",
+          "desc": "[CantIdentify]\nTargets randomly\n<style=\"highlight\">At 6+ ([Laceration] on self + [Laceration] on target), Coin Power +1</style>\n[WhenUse] Consume up to 10% of this unit's max HP and deal (HP consumed / 2) damage to all enemies and allies\n- At less than 50% of this unit's max HP, inflict and activate 5 [Laceration] on all allies once instead (lose 1 [Laceration] Count). Heal HP equal to the amount of [Laceration] damage dealt to allies",
           "coinlist": [
             {
               "coindescs": [
@@ -485,7 +485,7 @@
           "level": 4,
           "name": "Yearning - Mircalla",
           "abName": "Four-hundred Roses",
-          "desc": "[CantIdentify]\nTargets randomly\nCoin Power +1 for every 6 (sum of [Laceration] on self and the target) <style=\"highlight\">(max 3)</style>\n[WhenUse] Consume up to 10% of this unit's max HP and deal (HP consumed / 2) damage to all enemies and allies\n- At less than 50% of this unit's max HP, inflict and activate 5 [Laceration] on all allies instead (lose 1 [Laceration] Count). Heal HP equal to the amount of [Laceration] damage dealt to allies",
+          "desc": "[CantIdentify]\nTargets randomly\nCoin Power +1 for every 6 ([Laceration] on self + [Laceration] on target) <style=\"highlight\">(max 3)</style>\n[WhenUse] Consume up to 10% of this unit's max HP and deal (HP consumed / 2) damage to all enemies and allies\n- At less than 50% of this unit's max HP, inflict and activate 5 [Laceration] on all allies instead (lose 1 [Laceration] Count). Heal HP equal to the amount of [Laceration] damage dealt to allies",
           "coinlist": [
             {
               "coindescs": [
@@ -579,7 +579,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnStartCoin] This Coin deals +1% damage for every (sum of [Vibration] Potency and [Vibration] Count on the main target) (max 100%)"
+                  "desc": "[OnStartCoin] This Coin deals +1% damage for every ([Vibration] + [Vibration] Count) on the main target (max 100%)"
                 },
                 {
                   "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
@@ -595,7 +595,7 @@
           "level": 3,
           "name": "Crushbound Past",
           "abName": "Steam Transport Machine",
-          "desc": "<style=\"highlight\">[BeforeAttack] If the main target has 30+ (sum of [Vibration] Potency and [Vibration] Count), gain +1 Atk Weight</style>\n[EndSkill] For 3 turns, lose 10 SP at Turn End\n[EndSkill] When activating odd-numbered (Sloth Reson.) in odd-numbered turns, or when activating even-numbered (Sloth Reson.) in even-numbered turns, heal 10 SP",
+          "desc": "<style=\"highlight\">[BeforeAttack] If the main target has 30+ ([Vibration] + [Vibration] Count), gain +1 Atk Weight</style>\n[EndSkill] For 3 turns, lose 10 SP at Turn End\n[EndSkill] When activating odd-numbered (Sloth Reson.) in odd-numbered turns, or when activating even-numbered (Sloth Reson.) in even-numbered turns, heal 10 SP",
           "coinlist": [
             {
               "coindescs": [
@@ -627,7 +627,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnStartCoin] This Coin deals +1% damage for every (sum of [Vibration] Potency and [Vibration] Count on the main target) (max 100%)<style=\"highlight\"></style>"
+                  "desc": "[OnStartCoin] This Coin deals +1% damage for every ([Vibration] + [Vibration] Count) on the main target (max 100%)<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
@@ -643,7 +643,7 @@
           "level": 4,
           "name": "Crushbound Past",
           "abName": "Steam Transport Machine",
-          "desc": "[BeforeAttack] If the main target has 30+ (sum of [Vibration] Potency and [Vibration] Count), gain +1 Atk Weight\n<style=\"highlight\">- At 100+, gain +3 Atk Weight instead</style>\n<style=\"highlight\">[BeforeAttack] For every 2 highest Reson., inflict 1 [Vibration] against all targets this unit attacks (max 3)</style>\n[EndSkill] For 3 turns, lose 10 SP at Turn End\n<style=\"highlight\">[EndSkill] Heal ([AccumulatedPastSinner] x 2)% HP</style>\n[EndSkill] When activating odd-numbered (Sloth Reson.) in odd-numbered turns, or when activating even-numbered (Sloth Reson.) in even-numbered turns, heal 10 SP",
+          "desc": "[BeforeAttack] If the main target has 30+ ([Vibration] + [Vibration] Count), gain +1 Atk Weight\n<style=\"highlight\">- At 100+, gain +3 Atk Weight instead</style>\n<style=\"highlight\">[BeforeAttack] For every 2 highest Reson., inflict 1 [Vibration] against all targets this unit attacks (max 3)</style>\n[EndSkill] For 3 turns, lose 10 SP at Turn End\n<style=\"highlight\">[EndSkill] Heal ([AccumulatedPastSinner] x 2)% HP</style>\n[EndSkill] When activating odd-numbered (Sloth Reson.) in odd-numbered turns, or when activating even-numbered (Sloth Reson.) in even-numbered turns, heal 10 SP",
           "coinlist": [
             {
               "coindescs": [
@@ -675,7 +675,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnStartCoin] This Coin deals +1% damage for every (sum of [Vibration] Potency and [Vibration] Count on the main target) (max 100%)<style=\"highlight\"></style>"
+                  "desc": "[OnStartCoin] This Coin deals +1% damage for every ([Vibration] + [Vibration] Count) on the main target (max 100%)<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
@@ -704,7 +704,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnStartCoin] This Coin deals +1% damage for every (sum of [Vibration] Potency and [Vibration] Count on the main target) (max 100%)"
+                  "desc": "[OnStartCoin] This Coin deals +1% damage for every ([Vibration] + [Vibration] Count) on the main target (max 100%)"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 5 [Vibration] and +2 [Vibration] Count "
@@ -729,12 +729,12 @@
           "level": 3,
           "name": "Crushbound Past",
           "abName": "Steam Transport Machine",
-          "desc": "[CantIdentify]\nTargets randomly\nDeal +10% damage for every highest Reson. (max 100%)\n- If the highest Reson. was a Sloth Reson., deal +20% damage for every highest Reson. instead (max 100%)\n<style=\"highlight\">[BeforeAttack] If the main target has 30+ (sum of [Vibration] Potency and [Vibration] Count), gain +2 Atk Weight</style>\n[BeforeAttack] When activating even-numbered (Sloth Reson.) in odd-numbered turns, or when activating odd-numbered (Sloth Reson.) in even-numbered turns, deal +12% damage",
+          "desc": "[CantIdentify]\nTargets randomly\nDeal +10% damage for every highest Reson. (max 100%)\n- If the highest Reson. was a Sloth Reson., deal +20% damage for every highest Reson. instead (max 100%)\n<style=\"highlight\">[BeforeAttack] If the main target has 30+ ([Vibration] + [Vibration] Count), gain +2 Atk Weight</style>\n[BeforeAttack] When activating even-numbered (Sloth Reson.) in odd-numbered turns, or when activating odd-numbered (Sloth Reson.) in even-numbered turns, deal +12% damage",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnStartCoin] This Coin deals +1% damage for every (sum of [Vibration] Potency and [Vibration] Count on the main target) (max 100%)<style=\"highlight\"></style>"
+                  "desc": "[OnStartCoin] This Coin deals +1% damage for every ([Vibration] + [Vibration] Count) on the main target (max 100%)<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 5 [Vibration] and +2 [Vibration] Count<style=\"highlight\"></style>"
@@ -759,12 +759,12 @@
           "level": 4,
           "name": "Crushbound Past",
           "abName": "Steam Transport Machine",
-          "desc": "[CantIdentify]\nTargets randomly\nDeal +10% damage for every highest Reson. (max 100%)\n- If the highest Reson. was a Sloth Reson., deal +20% damage for every highest Reson. instead (max 100%)\n[BeforeAttack] If the main target has 30+ (sum of [Vibration] Potency and [Vibration] Count), gain +2 Atk Weight\n[BeforeAttack] When activating even-numbered (Sloth Reson.) in odd-numbered turns, or when activating odd-numbered (Sloth Reson.) in even-numbered turns, deal +12% damage\n<style=\"highlight\">[EndSkill] Heal ([AccumulatedPastSinner] x 3)% HP</style>",
+          "desc": "[CantIdentify]\nTargets randomly\nDeal +10% damage for every highest Reson. (max 100%)\n- If the highest Reson. was a Sloth Reson., deal +20% damage for every highest Reson. instead (max 100%)\n[BeforeAttack] If the main target has 30+ ([Vibration] + [Vibration] Count), gain +2 Atk Weight\n[BeforeAttack] When activating even-numbered (Sloth Reson.) in odd-numbered turns, or when activating odd-numbered (Sloth Reson.) in even-numbered turns, deal +12% damage\n<style=\"highlight\">[EndSkill] Heal ([AccumulatedPastSinner] x 3)% HP</style>",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnStartCoin] This Coin deals <style=\"highlight\">+2%</style> damage for every (sum of [Vibration] Potency and [Vibration] Count on the main target) (max 100%)"
+                  "desc": "[OnStartCoin] This Coin deals <style=\"highlight\">+2%</style> damage for every ([Vibration] on the main target + [Vibration] Count on the main target) (max 100%)"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 5 [Vibration] and +2 [Vibration] Count<style=\"highlight\"></style>"
