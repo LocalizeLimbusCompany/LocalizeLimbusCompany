@@ -2380,13 +2380,33 @@
     {
       "id": 1041203,
       "name": "Let me show everyone something very interesting",
-      "desc": "Combat Start: N Corp. E.G.O::<noparse>Fell Bullet</noparse> Yi Sang's 'Target Readjustment Fire' Skill gains the following effects:\n- Before using the Skill, if N Corp. E.G.O::<noparse>Contempt</noparse>, Awe Ryōshū has [ContemptPersonality] and can use her base Skills, use 'I Shall Fire / Anytime' against Ryōshū (once per turn; 'I Shall Fire / Anytime' reflects Yi Sang's Uptie Tier)\n- Before using the Skill, if the Skill's main target isn't N Corp. E.G.O::<noparse>Contempt</noparse>, Awe Ryōshū, and if she can use her base Skills, Ryōshū uses her Skill 1 as an Unopposed Attack against the main target (once per turn; [CantIdentify]; Skill 1 deals -50% damage; the Skill does not kill the main target)"
+      "desc": "Combat Start: N Corp. E.G.O::<noparse>Fell Bullet</noparse> Yi Sang's 'Target Readjustment Fire' Skill gains the following effects:\n- Before using the Skill, if N Corp. E.G.O::<noparse>Contempt</noparse>, Awe Ryōshū has [ContemptPersonality] and can use her base Skills, use \"I Shall Fire / Anytime\" against Ryōshū (once per turn; 'I Shall Fire / Anytime' reflects Yi Sang's Uptie Tier)\n- Before using the Skill, if the Skill's main target isn't N Corp. E.G.O::<noparse>Contempt</noparse>, Awe Ryōshū, and if she can use her base Skills, Ryōshū uses her Skill 1 as an Unopposed Attack against the main target (once per turn; [CantIdentify]; Skill 1 deals -50% damage; the Skill does not kill the main target)"
     },
     {
       "id": 1041221,
       "name": "It flows and cries",
       "desc": "If the ally with the earliest Deployment order hits an enemy with its attack, inflict 1 [Laceration] (once per enemy per turn)\n- If target has [Laceration], inflict +1 [Laceration] Count as well\n\nIf the ally with the earliest Deployment order is hit by an enemy, inflict 1 [Vibration] against the attacker (3 times per turn)\n- If the attacker has [Vibration], inflict +1 [Vibration] Count as well",
       "summary": "On Hit, inflict [Laceration]; inflict Count as well if the target already has the effect\nWhen Hit, inflict [Vibration]; inflict Count as well if the target already has the effect"
+    },
+    {
+      "id": 1021301,
+      "name": "Shi-no-Yumi",
+      "desc": "At 4 [ArrowShiFau] Stack: when this unit gains [Breath] Potency from Base Attack Skill effects, gain +1 [Breath] Count (2 times per Encounter; per-Encounter cap resets when [ArrowShiFau] drops to 3)\nIf this unit used \"Bow's Glimmer\" Skill at 2+ [AimForTheGoal], gain 1 [SlashDamageUp] next turn"
+    },
+    {
+      "id": 1021311,
+      "name": "Shi-no-Yumi",
+      "desc": "At 4 [ArrowShiFau] Stack: when this unit gains [Breath] Potency from Base Attack Skill effects, gain +1 [Breath] Count (<style=\"highlight\">3</style> times per Encounter; per-Encounter cap resets when [ArrowShiFau] drops to 3)\nIf this unit used \"Bow's Glimmer\" Skill at 2+ [AimForTheGoal], gain <style=\"highlight\">2</style> [SlashDamageUp] next turn"
+    },
+    {
+      "id": 1021302,
+      "name": "Snipe - Archery",
+      "desc": "If this unit is in [SnipingArrowMode] state, convert the leftmost Base Attack Skill equipped on the Dashboard to \"Bow's Glimmer\", then use it at Combat Start\n- If, at max [AimForTheGoal] Stack, this unit's Skill 3 is on neither the Dashboard nor the upcoming list of Skills when this effect activates, the Defense Skill equipped on the leftmost Skill Slot counts as a Skill 3, and will be used to activate \"Bow's Glimmer\"\n\nGain the following effects based on which Base Attack Skill was converted (Sin Affinity carries over from the converted Skill)\n- Skill 1: Base Power +1, deal +11% damage\n- Skill 2: Base Power +1, Coin Power +1, deal +22% damage\n- Skill 3: Base Power +4, Coin Power +4, deal +44% damage\n\n※ If an E.G.O Skill was equipped at Combat Start, remove [SnipingArrowMode] and this unit does not use \"Bow's Glimmer\""
+    },
+    {
+      "id": 1021321,
+      "name": "Aiming for the Bullseye",
+      "desc": "Turn End: apply 1 [PenetrateDamageUp] next turn to the ally who inflicted the most [Laceration] Potency to enemies with its Skills and Passives (includes those from E.G.O Skills; if multiple Identities share the highest [Laceration] inflicted record for the turn, select the Identity earliest in the Deployment order. Does not activate if no one inflicted [Laceration] Potency that turn)"
     }
   ]
 }
