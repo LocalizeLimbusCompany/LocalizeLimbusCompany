@@ -59,7 +59,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若指定敌方单位，则使目标增加1级[Burst]强度"
+                  "desc": "[OnSucceedAttack] 若指定敌方单位，则使其增加1级[Burst]强度"
                 },
                 {
                   "desc": "[OnSucceedAttack] 若指定友方单位，则使其恢复5点体力"
@@ -69,7 +69,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若指定敌方单位，则使目标增加1级[Burst]强度"
+                  "desc": "[OnSucceedAttack] 若指定敌方单位，则使其增加1级[Burst]强度"
                 },
                 {
                   "desc": "[OnSucceedAttack] 若指定友方单位，则使其恢复5点体力"
@@ -79,7 +79,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若指定敌方单位，则使目标增加1级[Burst]强度"
+                  "desc": "[OnSucceedAttack] 若指定敌方单位，则使其增加1级[Burst]强度"
                 },
                 {
                   "desc": "[OnSucceedAttack] 若指定友方单位，则使其恢复5点体力"
@@ -113,7 +113,7 @@
         {
           "level": 1,
           "name": "咏唱-阿卡纳光破斩",
-          "desc": "[StartBattle] 使自身获得50点护盾\n[StartBattle] 下回合使自身的[Aggro]+20\n[EndBattle] 若护盾点数为0，则撤退",
+          "desc": "[StartBattle] 使自身获得50点护盾\n[StartBattle] 下回合使自身的[Aggro]+20\n[EndBattle] 若自身的护盾为0点，则使自身撤退",
           "coinlist": [
             {
               "coindescs": [
@@ -130,12 +130,12 @@
         {
           "level": 1,
           "name": "阿卡纳光破斩",
-          "desc": "[CantDuel]\n不会对遗忘骑士之剑造成伤害\n命中带有[WornOutKnight]的敌方单位时，结束回合\n[EndBattle] 对自身施加[UsedTooMuchPower]",
+          "desc": "[CantDuel]\n不会对遗忘骑士之剑造成伤害\n命中带有[WornOutKnight]的敌方单位时，结束本回合\n[EndBattle] 对自身施加[UsedTooMuchPower]",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标的体力降至其现存体力的(100 - (其[CollapsedPride]层数×33))%"
+                  "desc": "[OnSucceedAttack] 使目标的体力降至其现存体力的(100-(其[CollapsedPride]层数×33))%"
                 }
               ]
             }
@@ -149,7 +149,7 @@
         {
           "level": 1,
           "name": "阿卡纳光破斩",
-          "desc": "[CantDuel]\n仅通过硬币效果造成伤害\n不会对毁心之剑、裂心之剑、穿心之剑造成伤害\n命中带有[WornOutKnight]且体力不高于600点的敌方单位时，回合结束\n[EndBattle] 对自身施加[UsedTooMuchPower]",
+          "desc": "[CantDuel]\n仅通过硬币效果造成伤害\n不会对毁心之剑、裂心之剑与穿心之剑造成伤害\n命中带有[WornOutKnight]且体力不高于600点的敌方单位时，结束本回合\n[EndBattle] 对自身施加[UsedTooMuchPower]",
           "coinlist": [
             {
               "coindescs": [
