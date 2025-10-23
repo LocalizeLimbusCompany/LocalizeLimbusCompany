@@ -3,7 +3,7 @@
     {
       "id": 835001,
       "name": "Stored Blood",
-      "desc": "At Turn End, depending on the [KeptBlood] value on self:\n- At a value lesser than or equal to 5 [KeptBlood], gain 1 [Binding], 1 [Vulnerable], and 1 [AttackDown] next turn for every [KeptBlood] lost\n- At a value greater than 5 [KeptBlood], gain 2 [AttackUp] and 2 [DefenseUp] for every excess value"
+      "desc": "At Turn End, depending on the [KeptBlood] Stack on self:\n- At 5 or fewer Stack: gain 1 [Binding], 1 [Vulnerable], and 1 [AttackDown] next turn for every (6 - Stack)\n- At more than 5 Stack: gain 2 [AttackUp] and 2 [DefenseUp] next turn for every (Stack - 5)"
     },
     {
       "id": 835002,
@@ -48,7 +48,7 @@
     {
       "id": 9014802,
       "name": "Power Leakage",
-      "desc": "When hit, if the attacker used a Skill that gains [Charge], the attacker steals 1 [Charge] Count from this unit.\n(Once per Skill. Does not activate if this unit does not have [Charge])"
+      "desc": "Every time this unit is hit, if the attacker used a Skill that gains [Charge], the attacker steals 1 [Charge] Count from this unit.\n(Once per Skill. Does not activate if this unit does not have [Charge])"
     },
     {
       "id": 9015101,

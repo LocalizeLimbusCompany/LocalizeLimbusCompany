@@ -2346,6 +2346,47 @@
       "name": "Liferender",
       "desc": "- Offense Level +2\n- Final Power +1\n- Expires at Turn End",
       "undefined": "-"
+    },
+    {
+      "id": "WOverCharge",
+      "name": "Overcharge",
+      "desc": "- Max Value : 1\n- Become Immobilized\n- Take 10 + (Charge Potency on self x 5)% less damage (max 25%)\n- Turn Start: Gain Charge Barrier based on Charge Potency on self (max 5)\n- Turn End: Gain +10 Charge Count and 2 Attack Power Up next turn, and lose this effect\n- Gain Aggro to this unit's leftmost Slot based on Charge Potency on self (max 5)\n- When hit, gain +1 Charge Count and 1 Load next turn (max 5 per turn)\n- If this unit is in Panic or in E.G.O Corrosion at Turn Start, or if this unit is Staggered, lose this effect",
+      "summary": "Immobilized. Take less damage. Gain Aggro and Charge Barrier. Gain Charge Count next turn. When hit, gain Load and Charge Count",
+      "undefined": "-"
+    },
+    {
+      "id": "BloodArmorMeursault",
+      "name": "Hardblood Armor",
+      "desc": "- Max Stack: 5\n- If this unit isn't at max HP: after its Skill attack, heal 10% of HP damage dealt (once per turn; max 40 healing)\n- After Attack: if this unit dealt HP damage, lose 1 Stack (once per turn)\n• If Lust Reson. was activated, halve the amount of HP healed, but do not lose any Hardblood Armor Stack",
+      "undefined": "-"
+    },
+    {
+      "id": "FocusOnActing",
+      "name": "Focused Performance",
+      "desc": "- Max Stack: 3\n- <La Manchaland> Identities only; includes Empowered Skills\n- Skill 1 and Skill 2 gain Final Power +1; deal +5% damage for every Stack (max 15%)\n- Skill 3 gains Final Power +2; deals +10% damage for every Stack (max 30%)\n- After attacking with Skill 3, or at Turn Start, if this unit does not have Hardblood Armor, lose 1 Stack",
+      "summary": "On Hit, deal more damage",
+      "undefined": "-"
+    },
+    {
+      "id": "ParadeConcentration",
+      "name": "La Mancha Parade",
+      "desc": "- Max Stack: 4\n- Take +10% damage from Lust Skills\n• If the target is a <La Manchaland> Identity, take +20% damage regardless of the Skill's Affinity\n• At max Stack, deal -20% damage against <La Manchaland> Identities\n- Lose 1 Stack either after this unit's Skill hits and ends or after the Skill that attacked this unit hits and ends",
+      "summary": "<La Manchaland> Identities take less damage",
+      "undefined": "-"
+    },
+    {
+      "id": "EmergencyChargeForceField",
+      "name": "Emergency Barrier Battery",
+      "desc": "- Max Stack: 7\n- When Staggered, consume all Emergency Barrier Battery Stack and gain Charge Barrier by the Stack consumed",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "BloodArmorCasting",
+      "name": "Hardblood Cast",
+      "desc": "- Max Stack: 3\n- When clashing against enemies with Bleed or Unique Bleed, Clash Power +1\n- When consuming Bloodfeast with an Attack Skill, if there isn't enough Bloodfeast, consume 1 HP for every 1 missing Bloodfeast to generate it before consuming it (the damage from this effect does not Stagger or reduce this unit's HP below 1)\n- Reduced by 1 at Turn End",
+      "summary": "",
+      "undefined": "-"
     }
   ]
 }

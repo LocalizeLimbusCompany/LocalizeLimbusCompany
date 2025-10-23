@@ -1,0 +1,184 @@
+{
+  "dataList": [
+    {
+      "id": 9840,
+      "name": "W Corp. Standard Issue Cap",
+      "desc": "After using a Skill that gains [Charge] Count or <noparse>Unique Charge</noparse>, gain [EmergencyChargeForceField] equal to the Count gained (max 7 per Identity)",
+      "simpleDesc": [
+        {
+          "abilityID": 9840,
+          "simpleDesc": "Gain Emergency Barrier Battery"
+        }
+      ]
+    },
+    {
+      "id": 9841,
+      "name": "Cleanup Agent Gear Set C",
+      "desc": "After using a Skill that gains [Charge] Count or <noparse>Unique Charge</noparse>, gain [EmergencyChargeForceField] equal to Count gained (max 7 per Identity)\n\nSkills that consume [Charge] Count or <noparse>Unique Charge</noparse> deal +(number of Identities in the Team with Skills that gain or consume [Charge] Count or <noparse>Unique Charge</noparse>)% damage (counts all units in the Team)\n\nSkills that consume [Charge] Count or <noparse>Unique Charge</noparse> gain Clash Power +3 and deal +15% damage\n- When using said Skills, the unit gains +4 [Charge] Count and 1 [ChargeForceField] (once per Identity per turn)\n\nW Corp. Identities gain the following effects:\n- When dealing damage with a Skill(including E.G.O Skills), inflict 2 [TakeHpHealReduce] (cannot Stack)\n- During the combat phase, when this unit takes HP damage from sources other than direct Skill damage, gain 5 [ChargeForceField] (once per turn per Identity)\n- Skill 2 gains Clash Power +3 and deals +15% damage\n- Turn Start: for this turn, Skill 3 deals +(number of W Corp. Identities on the field x 6.25)% damage\n- Turn Start: W Corp. L2 Agents gain 1 [PlusCoinValueUp]\n- Turn Start: gain (number of W Corp. Identities on the field / 3) [ChargeLoad] (max 2; rounded down)",
+      "simpleDesc": [
+        {
+          "abilityID": 9841,
+          "simpleDesc": "Gain Emergency Barrier Battery"
+        },
+        {
+          "abilityID": 98411,
+          "simpleDesc": "Skills that consume Charge Count deal more damage"
+        },
+        {
+          "abilityID": 98412,
+          "simpleDesc": "Skill 1 gains Clash Power and deals more damage; gain Charge Count and Charge Barrier"
+        },
+        {
+          "abilityID": 98413,
+          "simpleDesc": "Inflict HP Healing Down"
+        },
+        {
+          "abilityID": 98414,
+          "simpleDesc": "Gain Charge Barrier"
+        },
+        {
+          "abilityID": 98415,
+          "simpleDesc": "Skill 2 gains Clash Power and deals more damage"
+        },
+        {
+          "abilityID": 98416,
+          "simpleDesc": "Skill 3 deals more damage"
+        },
+        {
+          "abilityID": 98417,
+          "simpleDesc": "Apply Plus Coin Boost"
+        },
+        {
+          "abilityID": 98418,
+          "simpleDesc": "Gain Load"
+        }
+      ]
+    },
+    {
+      "id": 9842,
+      "name": "Bloody Flesh, Fleshy Blood",
+      "desc": "This E.G.O Gift's effects are enhanced based on the number of Identities in the Team loadout with Attack Skills that consume [BloodDinner] (number of Identities that meet the condition represented by \"N\" below; except E.G.O Skills; counts all units in the Team)\n\nFirst Turn Start of a wave: increase [BloodDinner] by (N x 20); then, apply 3 [Laceration] and +3 [Laceration] Count to all targets ([BloodDinner] increased by this effect is capped to 100 per activation)\n\nAllies take -(N x 10%) [Laceration] damage (min 1 [Laceration] damage; max 40%)\n- Reduced damage does not affect the amount of [BloodDinner] increased\n\nEnemies take +(N x 5)% [Laceration] damage (max 20%)",
+      "simpleDesc": [
+        {
+          "abilityID": 9842,
+          "simpleDesc": "Increase Bloodfeast and inflict Bleed & Bleed Count"
+        },
+        {
+          "abilityID": 98421,
+          "simpleDesc": "Take less Bleed damage"
+        },
+        {
+          "abilityID": 98422,
+          "simpleDesc": "Deal more Bleed damage"
+        }
+      ]
+    },
+    {
+      "id": 9843,
+      "name": "Hardblood Glaive",
+      "desc": "This E.G.O Gift's effects are enhanced based on the number of Identities in the Team loadout with Attack Skills that consume [BloodDinner] (number of Identities that meet the condition represented by \"N\" below; except E.G.O Skills; counts all units in the Team)\n\nEncounter Start: all allies gain (N - 2)[BloodArmorCasting] (max 3)",
+      "simpleDesc": [
+        {
+          "abilityID": 9843,
+          "simpleDesc": "Gain Hardblood Cast"
+        }
+      ]
+    },
+    {
+      "id": 9205,
+      "name": "WB Flask",
+      "desc": "Activates when an ally with Attack Skills that inflict [Laceration] or <noparse>Unique Bleed</noparse> dies (once per wave; except E.G.O Skills; if more than 1 ally dies at once, use the highest-level ally among them)\n- All allies heal (9% of the dead Identity) HP and increase [BloodDinner] by (dead Identity's level + 9)\n- All allies gain (dead Identity's level / 9) [AttackUp] next turn (max 6; rounded down)",
+      "simpleDesc": [
+        {
+          "abilityID": 9205,
+          "simpleDesc": "Heal HP and increase Bloodfeast"
+        },
+        {
+          "abilityID": 92051,
+          "simpleDesc": "Gain Offense Level Up"
+        }
+      ]
+    },
+    {
+      "id": 9206,
+      "name": "Sanguine Fragrance Descends",
+      "desc": "The ally with the least HP before Combat Start heals 3% HP On Hit with Attack Skills that apply [Laceration] or <noparse>Unique Bleed</noparse> (2 times per turn)\n\nIn a Clash using Skills that apply [Laceration] or <noparse>Unique Bleed</noparse> against enemies with [Laceration] or <noparse>Unique Bleed</noparse>, Clash Power +1\n- If 5 or more Identities have Attack Skills that apply [Laceration] or <noparse>Unique Bleed</noparse>, Clash Power +1 and deal +10% damage instead (counts all units in the Team)\n- If there are 10 or more Identities that fit the above description, Clash Power +2 and deal +15% damage instead",
+      "simpleDesc": [
+        {
+          "abilityID": 9206,
+          "simpleDesc": "Heal HP"
+        },
+        {
+          "abilityID": 92061,
+          "simpleDesc": "Gain Clash Power or deal more damage"
+        }
+      ]
+    },
+    {
+      "id": 9818,
+      "name": "Discarded Dimensional Gauntlet",
+      "desc": "When dealing damage against enemies with Skills that consume [Charge] Count or <noparse>Unique Charge</noparse>, +0.1 to the lowest Attack Type Resist. for the turn (once per turn)",
+      "simpleDesc": [
+        {
+          "abilityID": 9818,
+          "simpleDesc": "Raise the lowest Attack Type Resistance"
+        }
+      ]
+    },
+    {
+      "id": 19818,
+      "name": "Discarded Dimensional Gauntlet+",
+      "desc": "When dealing damage against enemies with Skills that consume [Charge] Count or <noparse>Unique Charge</noparse>, +0.1 to the lowest Attack Type Resist. for the turn (once per turn)\n- Also, inflict 1 [VioletResistDown]",
+      "simpleDesc": [
+        {
+          "abilityID": 19818,
+          "simpleDesc": "Raise the lowest Attack Type Resistance"
+        }
+      ]
+    },
+    {
+      "id": 29818,
+      "name": "Discarded Dimensional Gauntlet++",
+      "desc": "When dealing damage against enemies with Skills that consume [Charge] Count or <noparse>Unique Charge</noparse>, +0.1 to the lowest Attack Type Resist. for the turn (2 times per turn)\n- Also, inflict 1 [VioletResistDown] and 1 [AzureResistDown]",
+      "simpleDesc": [
+        {
+          "abilityID": 29818,
+          "simpleDesc": "Raise the lowest Attack Type Resistance"
+        }
+      ]
+    },
+    {
+      "id": 9817,
+      "name": "Blue Starshard",
+      "desc": "Enemies in Low Morale or Panic states lose 1 Final Power (against targets without SP, when they have 25+ [Sinking])\n- When dealing damage against the affected enemies with Skills that apply [Sinking], [Sinking] Count, or <noparse>Unique Sinking</noparse>, inflict 2 [DefenseDown] (2 times per turn)",
+      "simpleDesc": [
+        {
+          "abilityID": 9817,
+          "simpleDesc": "Reduce target's Final Power; On Hit, inflict Defense Level Down"
+        }
+      ]
+    },
+    {
+      "id": 19817,
+      "name": "Blue Starshard+",
+      "desc": "Enemies in Low Morale or Panic states lose 2 Final Power (against targets without SP, when they have 15+ [Sinking])\n- When dealing damage against the affected enemies with Skills that apply [Sinking], [Sinking] Count, or <noparse>Unique Sinking</noparse>, inflict 3 [DefenseDown] (2 times per turn)",
+      "simpleDesc": [
+        {
+          "abilityID": 19817,
+          "simpleDesc": "Reduce target's Final Power; On Hit, inflict Defense Level Down"
+        }
+      ]
+    },
+    {
+      "id": 29817,
+      "name": "Blue Starshard++",
+      "desc": "Enemies in Low Morale or Panic states lose 3 Final Power (against targets without SP, when they have 10+ [Sinking])\n- When dealing damage against the affected enemies with Skills that apply [Sinking], [Sinking] Count, or <noparse>Unique Sinking</noparse>, inflict 3 [DefenseDown] (3 times per turn)",
+      "simpleDesc": [
+        {
+          "abilityID": 29817,
+          "simpleDesc": "Reduce target's Final Power; On Hit, inflict Defense Level Down"
+        }
+      ]
+    }
+  ]
+}

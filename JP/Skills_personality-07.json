@@ -1669,6 +1669,271 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1071301,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "混雑乗客の整理",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Charge]回数が3増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "混雑乗客の整理",
+          "desc": "<style=\"highlight\">[WhenUse] 自分の[Charge]回数が6以上なら、マッチ威力 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Charge]回数が3増加<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "混雑乗客の整理",
+          "desc": "<style=\"highlight\">[WhenUse] 自分の[Charge]が3以上なら、コイン威力 +1\n[WhenUse] 自分の[Charge]回数6につき、マッチ威力 +1(最大2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Charge]の回数が<style=\"highlight\">4</style>増加"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Burst]回数が1増加</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]<style=\"highlight\">2</style>を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071302,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ブースト・エルボーカッター",
+          "desc": "[StartBattle] [ChargeForceField]を(2 + 自分の[Charge]威力)だけ得る (最大6, 1ターンにつ1回)\n[WhenUse] 自分の[Charge]回数を6消耗し、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Charge]回数が4増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "ブースト・エルボーカッター",
+          "desc": "[StartBattle] [ChargeForceField]を(2 + 自分の[Charge]威力)だけ得る (最大6, 1ターンにつ1回)\n[WhenUse] 自分の[Charge]回数を6消耗し、コイン威力 +1<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Charge]の回数が<style=\"highlight\">5</style>増加"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Burst]回数が1増加</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]<style=\"highlight\">2</style>を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "ブースト・エルボーカッター",
+          "desc": "[StartBattle] [ChargeForceField]を(2 + 自分の[Charge]威力)だけ得る (最大6, 1ターンにつき1回)\n[WhenUse] 自分の[Charge]回数を6消耗し、コイン威力 +1\n<style=\"highlight\">[WhenUse] [Charge]が3以上なら、コイン威力 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Charge]の回数が<style=\"highlight\">6</style>増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が1増加<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]<style=\"highlight\">3</style>を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071303,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "空間切断 - CCAオーバードライブ",
+          "desc": "[StartBattle] 自分の[Charge]威力が3以上か、現在の体力が最大値の50%未満なら、このスキルの全コインが[SuperCoin]に変更される\n- この効果が発動した状態でマッチ敗北時、最終威力 +3\n[WhenUse] 自分の[Charge]回数が10以上なら、[Charge]回数を10消耗してコイン威力 +4",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 自分の[Charge]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] [Charge]回数を最大10まで消耗して(このコインで消耗した[Charge]回数)だけ、このコインの威力が増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] このコインの最終ダメージ量の([Charge]威力 × 5)%だけ斬撃ダメージ (最大25%)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "空間切断 - CCAオーバードライブ",
+          "desc": "[StartBattle] 自分の[Charge]威力が3以上か、現在の体力が最大値の50%未満なら、このスキルの全コインが[SuperCoin]に変更される\n- この効果が発動した状態でマッチ敗北時、最終威力 +3\n[WhenUse] 自分の[Charge]回数が10以上なら、[Charge]回数を10消耗してコイン威力 +4\n<style=\"highlight\">[WhenUse] 自分の[Charge]威力だけ、マッチ威力が増加 (最大5)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] 自分の[Charge]回数が1増加</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] 自分の[Charge]回数が1増加</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 自分の[Charge]回数が2増加<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] [Charge]回数を最大10まで消耗して(このコインで消耗した[Charge]回数)だけ、このコインの威力が増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] このコインの最終ダメージ量の([Charge]威力 × <style=\"highlight\">10</style>)%だけ斬撃ダメージ (最大<style=\"highlight\">50</style>%)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071304,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "CCA過充電",
+          "desc": "[CanDuelGuard]\n[StartBattle] 自分の[Charge]回数が15未満なら、下記の効果が発動\n- 次のターンに[WOverCharge]を得る (1ターンにつき1回)\n- ターン終了時、自分の最も手前の混乱区間を1つ除去 (戦闘ごとに1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "CCA過充電",
+          "desc": "[CanDuelGuard]\n[StartBattle] 自分の[Charge]回数が15未満なら、下記の効果が発動\n- 次のターンに[WOverCharge]を得る (1ターンにつき1回)\n- ターン終了時、自分の最も手前の混乱区間を1つ除去 (戦闘ごとに1回)\n<style=\"highlight\">- ターン終了時に「空間切断 - CCAオーバードライブ」1つを、次のターンに使用するスキルリストに追加 (1ターンにつき1回)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
