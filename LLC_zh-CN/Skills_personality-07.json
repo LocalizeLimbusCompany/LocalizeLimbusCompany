@@ -791,7 +791,7 @@
         {
           "level": 3,
           "name": "镇魂曲",
-          "desc": "[WinDuel] 使自身恢复10点理智值\n[BeforeUse] 若自身带有杜拉罕 ，则改为使用“悲叹、哀恸、破灭吧”\n[WhenUse] 目标每带有6级沉沦 强度，使本技能的硬币威力+1(最多+2)\n[WhenUse] 自身每带有1层棺 ，使本技能造成的伤害+7%(最多+70%)\n[WhenUse] 使自身获得1层棺 \n[EndSkill] 若本技能攻击击杀了目标，则使自身获得2层棺 ",
+          "desc": "[WinDuel] 使自身恢复10点理智值\n[BeforeUse] 若自身带有[NightPathfinding]，则改为使用“悲叹、哀恸、破灭吧”\n[WhenUse] 目标每带有6级[Sinking]强度，使本技能的硬币威力+1(最多+2)\n自身每带有1层[Coffin]，使本技能造成的伤害+7%(最多+70%)\n[WhenUse] 使自身获得1层[Coffin]\n[EndSkill] 若本技能攻击击杀了目标，则使自身获得2层[Coffin]",
           "coinlist": [
             {
               "coindescs": [
@@ -818,7 +818,7 @@
         {
           "level": 4,
           "name": "镇魂曲",
-          "desc": "[WinDuel] 使自身恢复10点理智值\n[BeforeUse] 若自身带有杜拉罕 ，则改为使用“悲叹、哀恸、破灭吧”\n[WhenUse] 目标<style=\"highlight\">每带有3级</style>沉沦 强度，使本技能的硬币威力+1(最多+<style=\"highlight\">4</style>)\n[WhenUse] 自身每带有1层棺 ，使本技能造成的伤害+12%(最多+120%)\n[WhenUse] 使自身获得1层棺 \n[EndSkill] 若本技能攻击击杀了目标，则使自身获得2层棺 ",
+          "desc": "[WinDuel] 使自身恢复10点理智值\n[BeforeUse] 若自身带有[NightPathfinding]，则改为使用“悲叹、哀恸、破灭吧”\n[WhenUse] 目标<style=\"highlight\">每带有3级</style>[Sinking]强度，使本技能的硬币威力+1(最多+<style=\"highlight\">4</style>)\n自身每带有1层[Coffin]，使本技能造成的伤害+12%(最多+120%)\n[WhenUse] 使自身获得1层[Coffin]\n[EndSkill] 若本技能攻击击杀了目标，则使自身获得2层[Coffin]",
           "coinlist": [
             {
               "coindescs": [
@@ -900,7 +900,7 @@
         {
           "level": 3,
           "name": "悲叹、哀恸、破灭吧",
-          "desc": "[WhenUse] 使自身失去15点理智值\n[WhenUse] 目标每带有5级[Sinking]强度，使本技能的基础威力+1(最多+2)\n[WhenUse] 自身理智值越低，本技能造成的伤害越高(每失去1点理智值，造成的伤害+0.3%，最多+21%)\n[WhenUse] 自身每带有1层[Coffin]，使本技能造成的伤害+7%(最多+70%)\n[WhenUse] 自身每带有1层[NightPathfinding]，使本技能造成的伤害+10%(最多+30%)\n[WhenUse] 使自身获得1层[Coffin]\n[EndSkill] 若本技能攻击击杀了目标，则使自身获得2层[Coffin]\n[EndSkill] 若自身理智值低于0点，则使自身恢复10点理智值。自身理智值低于0点时，根据相差的理智值，相应使自身额外恢复理智值(每相差1点，额外恢复1点理智值，最多25点)\n[EndBattle] 解除自身的[NightPathfinding]",
+          "desc": "[WhenUse] 使自身失去15点理智值\n[WhenUse] 目标每带有5级[Sinking]强度，使本技能的基础威力+1(最多+2)\n[WhenUse] 自身理智值越低，本技能造成的伤害越高(每失去1点理智值，造成的伤害+0.3%，最多+21%)\n自身每带有1层[Coffin]，使本技能造成的伤害+7%(最多+70%)\n自身每带有1层[NightPathfinding]，使本技能造成的伤害+10%(最多+30%)\n[WhenUse] 使自身获得1层[Coffin]\n[EndSkill] 若本技能攻击击杀了目标，则使自身获得2层[Coffin]\n[EndSkill] 若自身理智值低于0点，则使自身恢复10点理智值。自身理智值低于0点时，根据相差的理智值，相应使自身额外恢复理智值(每相差1点，额外恢复1点理智值，最多25点)\n[EndBattle] 解除自身的[NightPathfinding]",
           "coinlist": [
             {
               "coindescs": [
@@ -930,7 +930,7 @@
         {
           "level": 4,
           "name": "悲叹、哀恸、破灭吧",
-          "desc": "[WhenUse] 使自身失去15点理智值\n[WhenUse] 目标每带有5级[Sinking]强度，使本技能的基础威力+1(最多+<style=\"highlight\">4</style>)\n[WhenUse] 自身理智值越低，本技能造成的伤害越高(每失去1点理智值，造成的伤害+0.3%，最多+21%)\n[WhenUse] 自身每带有1层[Coffin]，使本技能造成的伤害+<style=\"highlight\">10</style>%(最多+<style=\"highlight\">100</style>%)\n[WhenUse] 自身每带有1层[NightPathfinding]，使本技能造成的伤害+<style=\"highlight\">20</style>%(最多+<style=\"highlight\">60</style>%)\n[WhenUse] 使自身获得<style=\"highlight\">2</style>层[Coffin]\n[EndSkill] 若本技能攻击击杀了目标，则使自身获得<style=\"highlight\">3</style>层[Coffin]\n[EndSkill] 若自身理智值低于0点，则使自身恢复10点理智值。自身理智值低于0点时，根据相差的理智值，相应使自身额外恢复理智值(每相差1点，额外恢复<style=\"highlight\">2</style>点理智值，最多<style=\"highlight\">50</style>点)\n[EndBattle] 解除自身的[NightPathfinding]",
+          "desc": "[WhenUse] 使自身失去15点理智值\n[WhenUse] 目标每带有5级[Sinking]强度，使本技能的基础威力+1(最多+<style=\"highlight\">4</style>)\n[WhenUse] 自身理智值越低，本技能造成的伤害越高(每失去1点理智值，造成的伤害+0.3%，最多+21%)\n自身每带有1层[Coffin]，使本技能造成的伤害+<style=\"highlight\">10</style>%(最多+<style=\"highlight\">100</style>%)\n自身每带有1层[NightPathfinding]，使本技能造成的伤害+<style=\"highlight\">20</style>%(最多+<style=\"highlight\">60</style>%)\n[WhenUse] 使自身获得<style=\"highlight\">2</style>层[Coffin]\n[EndSkill] 若本技能攻击击杀了目标，则使自身获得<style=\"highlight\">3</style>层[Coffin]\n[EndSkill] 若自身理智值低于0点，则使自身恢复10点理智值。自身理智值低于0点时，根据相差的理智值，相应使自身额外恢复理智值(每相差1点，额外恢复<style=\"highlight\">2</style>点理智值，最多<style=\"highlight\">50</style>点)\n[EndBattle] 解除自身的[NightPathfinding]",
           "coinlist": [
             {
               "coindescs": [
@@ -965,7 +965,7 @@
         {
           "level": 3,
           "name": "悲叹、哀恸、破灭吧",
-          "desc": "[WhenUse] 使自身失去15点理智值\n[WhenUse] 目标每带有5级[Sinking]强度，使本技能的基础威力+1(最多+2)\n[WhenUse] 自身理智值越低，本技能造成的伤害越高(每失去1点理智值，造成的伤害+0.3%，最多+21%)\n[WhenUse] 自身每带有1层[Coffin]，使本技能造成的伤害+7%(最多+70%)\n[WhenUse] 自身每带有1层[NightPathfinding]，使本技能造成的伤害+10%(最多+30%)\n[WhenUse] 使自身获得1层[Coffin]\n[EndSkill] 若本技能攻击击杀了目标，则使自身获得2层[Coffin]\n[EndSkill] 若自身理智值低于0点，则使自身恢复10点理智值。自身理智值低于0点时，根据相差的理智值，相应使自身额外恢复理智值(每相差1点，额外恢复1点理智值，最多25点)\n[EndBattle] 解除自身的[NightPathfinding]",
+          "desc": "[WhenUse] 使自身失去15点理智值\n[WhenUse] 目标每带有5级[Sinking]强度，使本技能的基础威力+1(最多+2)\n[WhenUse] 自身理智值越低，本技能造成的伤害越高(每失去1点理智值，造成的伤害+0.3%，最多+21%)\n自身每带有1层[Coffin]，使本技能造成的伤害+7%(最多+70%)\n自身每带有1层[NightPathfinding]，使本技能造成的伤害+10%(最多+30%)\n[WhenUse] 使自身获得1层[Coffin]\n[EndSkill] 若本技能攻击击杀了目标，则使自身获得2层[Coffin]\n[EndSkill] 若自身理智值低于0点，则使自身恢复10点理智值。自身理智值低于0点时，根据相差的理智值，相应使自身额外恢复理智值(每相差1点，额外恢复1点理智值，最多25点)\n[EndBattle] 解除自身的[NightPathfinding]",
           "coinlist": [
             {
               "coindescs": [
@@ -995,7 +995,7 @@
         {
           "level": 4,
           "name": "悲叹、哀恸、破灭吧",
-          "desc": "[WhenUse] 使自身失去15点理智值\n[WhenUse] 目标每带有5级[Sinking]强度，使本技能的基础威力+1(最多+<style=\"highlight\">4</style>)\n[WhenUse] 自身理智值越低，本技能造成的伤害越高(每失去1点理智值，造成的伤害+0.3%，最多+21%)\n[WhenUse] 自身每带有1层[Coffin]，使本技能造成的伤害+<style=\"highlight\">10</style>%(最多+<style=\"highlight\">100</style>%)\n[WhenUse] 自身每带有1层[NightPathfinding]，使本技能造成的伤害+<style=\"highlight\">20</style>%(最多+<style=\"highlight\">60</style>%)\n[WhenUse] 使自身获得<style=\"highlight\">2</style>层[Coffin]\n[EndSkill] 若本技能攻击击杀了目标，则使自身获得<style=\"highlight\">3</style>层[Coffin]\n[EndSkill] 若自身理智值低于0点，则使自身恢复10点理智值。自身理智值低于0点时，根据相差的理智值，相应使自身额外恢复理智值(每相差1点，额外恢复<style=\"highlight\">2</style>点理智值，最多<style=\"highlight\">50</style>点)\n[EndBattle] 解除自身的[NightPathfinding]",
+          "desc": "[WhenUse] 使自身失去15点理智值\n[WhenUse] 目标每带有5级[Sinking]强度，使本技能的基础威力+1(最多+<style=\"highlight\">4</style>)\n[WhenUse] 自身理智值越低，本技能造成的伤害越高(每失去1点理智值，造成的伤害+0.3%，最多+21%)\n自身每带有1层[Coffin]，使本技能造成的伤害+<style=\"highlight\">10</style>%(最多+<style=\"highlight\">100</style>%)\n自身每带有1层[NightPathfinding]，使本技能造成的伤害+<style=\"highlight\">20</style>%(最多+<style=\"highlight\">60</style>%)\n[WhenUse] 使自身获得<style=\"highlight\">2</style>层[Coffin]\n[EndSkill] 若本技能攻击击杀了目标，则使自身获得<style=\"highlight\">3</style>层[Coffin]\n[EndSkill] 若自身理智值低于0点，则使自身恢复10点理智值。自身理智值低于0点时，根据相差的理智值，相应使自身额外恢复理智值(每相差1点，额外恢复<style=\"highlight\">2</style>点理智值，最多<style=\"highlight\">50</style>点)\n[EndBattle] 解除自身的[NightPathfinding]",
           "coinlist": [
             {
               "coindescs": [
