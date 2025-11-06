@@ -1639,7 +1639,7 @@
         {
           "level": 1,
           "name": "反蹴",
-          "desc": "[CanDuelGuard] \n[StartBattle]次のターンに[SnakeStance]3を得る",
+          "desc": "[CanDuelGuard]\n[StartBattle]次のターンに[SnakeStance]3を得る",
           "coinlist": [
             {
               "coindescs": [
@@ -1653,12 +1653,458 @@
         {
           "level": 4,
           "name": "反蹴",
-          "desc": "[CanDuelGuard] \n[StartBattle] 次のターンに[SnakeStance]3を得る\n<style=\"highlight\">[WhenUse] 自分の[Breath]が10以上なら、コイン威力 +1</style>",
+          "desc": "[CanDuelGuard]\n[StartBattle] 次のターンに[SnakeStance]3を得る\n<style=\"highlight\">[WhenUse] 自分の[Breath]が10以上なら、コイン威力 +1</style>",
           "coinlist": [
             {
               "coindescs": [
                 {
                   "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1121301,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "隙を突く",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [HurtNightStiletto]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "隙を突く",
+          "desc": "[WhenUse] 対象の[Laceration]と[Vibration]の合計が6以上なら、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [HurtNightStiletto]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "隙を突く",
+          "desc": "<style=\"highlight\">[WhenUse] 次のターンに[Agility]1を得る (1ターンにつき1回)</style>\n[WhenUse] 対象の[Laceration]と[Vibration]の合計が6<style=\"highlight\">につき</style>、コイン威力 +1 <style=\"highlight\">(最大2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [HurtNightStiletto]1を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1121302,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "スティレット・ドッピオ",
+          "desc": "[WinDuel] [VibrationExplosion]。対象の[Vibration]回数が1減少",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [HurtNightStiletto]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "スティレット・ドッピオ",
+          "desc": "[WhenUse] 対象の[Laceration]と[Vibration]の合計が6以上なら、コイン威力 +1\n[WinDuel] [VibrationExplosion]。対象の[Vibration]回数が1減少",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]回数が1増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [HurtNightStiletto]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 敵(本体)の体力が20%以下なら、「メルチェ」を使用",
+                  "summary": "[OnSucceedAttack] 「メルチェ」を使用"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "スティレット・ドッピオ",
+          "desc": "[WhenUse] 対象の[Laceration]と[Vibration]の合計6<style=\"highlight\">につき</style>、コイン威力 +1 <style=\"highlight\">(最大2)</style>\n[WinDuel] <style=\"highlight\">[Vibration]1を付与。</style>[VibrationExplosion]。対象の[Vibration]回数が1減少",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]回数が1増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [HurtNightStiletto]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 敵(本体)の体力が20%以下か、<style=\"highlight\">対象に[HorrHurtNightStiletto]があるなら、</style>「メルチェ」を使用",
+                  "summary": "[OnSucceedAttack] 「メルチェ」を使用"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1121303,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "エクセキューション",
+          "desc": "[BeforeUse] 対象に[CriHurtNightStiletto]があるなら、代わりに「夜の錐」として発動 (1ターンにつき1回)\n[WhenUse] 対象の[Laceration]と[Vibration]の合計が6以上なら、コイン威力 +1\n[WinDuel] [VibrationExplosion]。対象の[Vibration]回数が1減少",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [HurtNightStiletto]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationBleeding]へ[Switch_Vibration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象が混乱状態か、敵(本体)の体力が20%以下か、対象に[HorrHurtNightStiletto]があるなら、「メルチェ」を使用",
+                  "summary": "[OnSucceedAttack] 「メルチェ」を使用"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "エクセキューション",
+          "desc": "[BeforeUse] 対象に[CriHurtNightStiletto]があるなら、代わりに「夜の錐」として発動 (1ターンにつき1回)\n[WhenUse] 対象の[Laceration]と[Vibration]の合計6<style=\"highlight\">につき</style>、コイン威力 +1 <style=\"highlight\">(最大2)</style>\n[WinDuel] <style=\"highlight\">[Vibration]2を付与。</style>[VibrationExplosion]。対象の[Vibration]回数が1減少",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]<style=\"highlight\">3</style>を付与、<style=\"highlight\">[Vibration]回数が1増加</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [HurtNightStiletto]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationBleeding]へ[Switch_Vibration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象が混乱状態か、敵(本体)の体力が20%以下か、対象に[HorrHurtNightStiletto]があるなら、「メルチェ」を使用",
+                  "summary": "[OnSucceedAttack] 「メルチェ」を使用"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1121304,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "窮地より",
+          "desc": "[CanDuelGuard]\n[StartBattle] 次のターンに[Agility]1を得る (1ターンにつき1回)\n[WhenUse] 対象の[Laceration]と[Vibration]の合計が6以上なら、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "窮地より",
+          "desc": "[CanDuelGuard]\n<style=\"highlight\">[StartBattle] このターンに「ファミリーの粛清人」効果で発動する「メルチェ」の使用可能回数が1ターンにつき2回に増加</style>\n[StartBattle] 次のターンに[Agility]1を得る (1ターンにつき1回)\n[WhenUse] 対象の[Laceration]と[Vibration]の合計6<style=\"highlight\">につき</style>、コイン威力 +1 <style=\"highlight\">(最大2)</style>\n[WinDuel] <style=\"highlight\">[Vibration]2を付与</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1121305,
+      "levelList": [
+        {
+          "level": 2,
+          "name": "メルチェ",
+          "desc": "[CantDuel]\nこのスキルは守備スキルを発動させず、E.G.O資源を獲得できない\n敵(本体)の失った体力20%につき、コイン威力 +1 (最大2)\n敵(本体)の体力が20%以下なら、ダメージ量 +80%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [HurtNightStiletto]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "メルチェ",
+          "desc": "[CantDuel]\nこのスキルは守備スキルを発動させず、E.G.O資源を獲得できない\n敵(本体)の失った体力20%につき、コイン威力 +1 (最大<style=\"highlight\">4</style>)\n<style=\"highlight\">敵(本体)の失った体力の比率だけ<noparse>ダメージ量が増加</noparse></style>\n- 敵(本体)の体力が20%以下なら、<style=\"highlight\">代わりに</style>ダメージ量 +<style=\"highlight\">120</style>%\n<style=\"highlight\">[WhenUse] 次のターンに[Agility]1を得る (1ターンにつき1回)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [HurtNightStiletto]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1121306,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "夜の錐",
+          "desc": "自分の[Agility]と対象の[Binding]の合計1につき、ダメージ量 +10% (最大40%)\n敵(本体)の体力が20%以下なら、ダメージ量 +50%\n[WhenUse] 対象の[Laceration]と[Vibration]の合計4につき、コイン威力 +1 (最大2)\n[WinDuel] [VibrationExplosion]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]4を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]4を付与、[Vibration]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationBleeding]へ[Switch_Vibration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象に[Binding]があるなら[VibrationExplosion]。対象の[Vibration]回数が1減少"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに対象の[CriHurtNightStiletto]を[HorrHurtNightStiletto]に変換"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "夜の錐",
+          "desc": "自分の[Agility]と対象の[Binding]の合計1につき、ダメージ量 +<style=\"highlight\">15</style>% (最大<style=\"highlight\">60</style>%)\n<style=\"highlight\">対象にバリアがあるなら、ダメージ量 +30% (集中戦闘の場合、本体または部位で判定)</style>\n<style=\"highlight\">敵(本体)の失った体力の比率だけ<noparse>ダメージ量が増加</noparse></style>\n- 敵(本体)の体力が20%以下なら、<style=\"highlight\">代わりに</style>ダメージ量 +<style=\"highlight\">100</style>%\n<style=\"highlight\">[WhenUse] [DefenseDown]5を付与</style>\n[WhenUse] 対象の[Laceration]と[Vibration]の合計4につき、コイン威力 +1 (最大<style=\"highlight\">3</style>)\n[WinDuel] <style=\"highlight\">[Vibration]4を付与。</style>[VibrationExplosion]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]4を付与、<style=\"highlight\">[Laceration]回数が1増加</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]4を付与、[Vibration]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationBleeding]へ[Switch_Vibration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象に[Binding]があるなら[VibrationExplosion]。対象の[Vibration]回数が1減少"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに対象の[CriHurtNightStiletto]を[HorrHurtNightStiletto]に変換"
                 }
               ]
             }
