@@ -830,6 +830,59 @@
           "simpleDesc": "体力回復"
         }
       ]
+    },
+    {
+      "id": 2080,
+      "name": "古びた柄",
+      "desc": "味方がターン開始時[ScarletResultUp]1を得る\n\n剣契・黒雲会所属なら効果が強化されて[ScarletResultUp]2, [SlashResultUp]1を得る",
+      "simpleDesc": [
+        {
+          "abilityID": 2080,
+          "simpleDesc": "色欲威力増加を得る"
+        },
+        {
+          "abilityID": 20801,
+          "simpleDesc": "色欲威力増加、斬撃威力増加 を得る"
+        }
+      ]
+    },
+    {
+      "id": 2081,
+      "name": "絶景",
+      "desc": "ターン開始時、黒雲会所属人格が3名以上のとき発動(出撃人員を基準とする)\n\n味方がターン開始時、[ScarletResultUp]2, [SlashResultUp]1を得る\n\n黒雲会所属人格が使用する基本攻撃スキルのコイン威力 +(4 ÷ コイン数、最低1), [Laceration]威力付与量 +1, [Laceration]回数付与量 +1, ダメージ量 +(80 ÷ コイン数)%\n\n黒雲会所属人格の最初の混乱区間を無効にし、体力が最大値の50%未満ならターン開始時[Protection]2を得る。このターンにて敵にダメージを受けた黒雲会所属人格が次のターンに[Agility]2を得る",
+      "simpleDesc": [
+        {
+          "abilityID": 2081,
+          "simpleDesc": "色欲威力増加、斬撃威力増加 を得る"
+        },
+        {
+          "abilityID": 20811,
+          "simpleDesc": "コイン威力、出血付与量、出血回数付与量、ダメージ量増加"
+        },
+        {
+          "abilityID": 20812,
+          "simpleDesc": "最初の混乱区間を無効、体力が一定未満なら保護を得る、被ダメージ時にクイックを得る"
+        }
+      ]
+    },
+    {
+      "id": 2082,
+      "name": "琢磨",
+      "desc": "ターン開始時、剣契所属人格が3名以上のとき発動(出撃人員を基準とする)\n\n味方がターン開始時に[SlashResultUp]2を得る、与ダメージ量 +35%\n\n剣契所属人格が敵にクリティカルダメージを与えるとき、保有する([Breath]威力 ÷ 2)だけ追加で傲慢ダメージを与える\n\n剣契所属人格がターン終了時、[Breath]威力を30以上保有しているなら[Breath]威力を10消耗し、次のターンに[SlashDamageUp]2を得る",
+      "simpleDesc": [
+        {
+          "abilityID": 2082,
+          "simpleDesc": "斬撃威力増加 を得る、ダメージ量増加"
+        },
+        {
+          "abilityID": 20821,
+          "simpleDesc": "([Breath]威力 ÷ 2)だけ追加傲慢ダメージ"
+        },
+        {
+          "abilityID": 20822,
+          "simpleDesc": "斬撃ダメージ量増加を得る"
+        }
+      ]
     }
   ]
 }

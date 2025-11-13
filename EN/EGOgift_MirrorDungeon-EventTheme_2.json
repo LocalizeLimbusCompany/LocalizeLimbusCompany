@@ -830,6 +830,59 @@
           "simpleDesc": "Heal HP"
         }
       ]
+    },
+    {
+      "id": 2080,
+      "name": "Worn Hilt",
+      "desc": "Turn Start: all allies gain 1 [ScarletResultUp].\n\nBlade Lineage or Kurokumo Clan Identities gain 2 [ScarletResultUp] and 1 [SlashResultUp] instead.",
+      "simpleDesc": [
+        {
+          "abilityID": 2080,
+          "simpleDesc": "Gain Lust Power Up"
+        },
+        {
+          "abilityID": 20801,
+          "simpleDesc": "Gain Lust Power Up and Slash Power Up"
+        }
+      ]
+    },
+    {
+      "id": 2081,
+      "name": "Resplendence",
+      "desc": "Turn Start: activates when there are 3 or more Kurokumo Clan Identities. (only counts Identities on the field)\n\nAll allies gain 2 [ScarletResultUp] and 1 [SlashResultUp] at Turn Start.\n\nKurokumo Clan Identities' Base Attack Skills: gain Coin Power +(4 / # of Coins; min. 1), inflict an additional 1 [Laceration], +1 [Laceration] Count, and deal +(80/# of Coins)% damage\n\nNullify Kurokumo Clan Identities' first Stagger Threshold; at less than 50% HP, gain 2 [Protection] at Turn Start. Identities that took damage from enemies this turn gain 2 [Agility] next turn.",
+      "simpleDesc": [
+        {
+          "abilityID": 2081,
+          "simpleDesc": "Gain Lust Power Up and Slash Power Up"
+        },
+        {
+          "abilityID": 20811,
+          "simpleDesc": "Gain Coin Power, inflict more Bleed and Bleed Count, and deal more damage"
+        },
+        {
+          "abilityID": 20812,
+          "simpleDesc": "Nullify the first Stagger Threshold; gain Protection at under certain HP; gain Haste after taking damage"
+        }
+      ]
+    },
+    {
+      "id": 2082,
+      "name": "Cultivation",
+      "desc": "Turn Start: activates when there are 3 or more Blade Lineage Identities. (only counts Identities on the field)\n\nTurn Start: all allies gain 2 [SlashResultUp], and deal +35% damage.\n\nTurn Start: when a Blade Lineage Identity hits critically, deal additional Pride damage equal to ([Breath] Potency / 2) on self.\n\nIf a Blade Lineage Identity has 30+ [Breath] Potency at Turn End, consume 10 [Breath] Potency and gain 2 [SlashDamageUp] next turn",
+      "simpleDesc": [
+        {
+          "abilityID": 2082,
+          "simpleDesc": "Gain Slash Power Up and deal more damage"
+        },
+        {
+          "abilityID": 20821,
+          "simpleDesc": "Deal an additional ([Breath] Potency/2) Pride damage."
+        },
+        {
+          "abilityID": 20822,
+          "simpleDesc": "Gain Slash DMG Up"
+        }
+      ]
     }
   ]
 }
