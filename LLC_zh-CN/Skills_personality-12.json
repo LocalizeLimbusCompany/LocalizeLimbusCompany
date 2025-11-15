@@ -1799,7 +1799,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若敌方单位(本体)的血量不高于20%，使用“慈悲”",
+                  "desc": "[OnSucceedAttack] 若敌方单位(本体)现存体力不高于20%，则对其使用“慈悲”",
                   "summary": "[OnSucceedAttack] 使用“慈悲”"
                 }
               ]
@@ -1809,7 +1809,7 @@
         {
           "level": 4,
           "name": "双锥",
-          "desc": "[WhenUse] 目标的[Laceration]强度与[Vibration]强度之和<style=\"highlight\">每有</style>6级，使本技能的硬币威力+1<style=\"highlight\">(最多+2)</style>\n[WinDuel] <style=\"highlight\">使目标增加1级[Vibration]强度</style>并使其[VibrationExplosion]，随后其[Vibration]层数减少1层",
+          "desc": "[WhenUse] 目标的[Laceration]强度与[Vibration]强度之和<style=\"highlight\">每有</style>6级，使本技能的硬币威力+1<style=\"highlight\">(最多+2)</style>\n[WinDuel] <style=\"highlight\">使目标增加1级[Vibration]强度</style>并使其[VibrationExplosion]，随后使其[Vibration]层数减少1层",
           "coinlist": [
             {
               "coindescs": [
@@ -1831,7 +1831,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若敌方单位(本体)的血量不高于20%或<style=\"highlight\">目标带有[HorrHurtNightStiletto]</style>，使用“慈悲”",
+                  "desc": "[OnSucceedAttack] 若敌方单位(本体)现存体力不高于20%或<style=\"highlight\">目标带有[HorrHurtNightStiletto]</style>，则对其使用“慈悲”",
                   "summary": "[OnSucceedAttack] 使用“慈悲”"
                 }
               ]
@@ -1878,7 +1878,7 @@
                   "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标陷入混乱、敌方单位(本体)的血量不高于20%或目标带有[HorrHurtNightStiletto]，使用“慈悲”",
+                  "desc": "[OnSucceedAttack] 若目标陷入混乱、敌方单位(本体)现存体力不高于20%或目标带有[HorrHurtNightStiletto]，则对其使用“慈悲”",
                   "summary": "[OnSucceedAttack] 使用“慈悲”"
                 }
               ]
@@ -1888,7 +1888,7 @@
         {
           "level": 4,
           "name": "处决",
-          "desc": "[BeforeUse] 若目标带有[CriHurtNightStiletto]，则改为使用“夜锥”(每回合最多1次)\n[WhenUse] 目标的[Laceration]强度与[Vibration]强度之和<style=\"highlight\">每有</style>6级，使本技能的硬币威力+1<style=\"highlight\">(最多+2)</style>\n[WinDuel] <style=\"highlight\">使目标增加2级[Vibration]强度</style>并使其[VibrationExplosion]，随后其[Vibration]层数减少1层",
+          "desc": "[BeforeUse] 若目标带有[CriHurtNightStiletto]，则改为使用“夜锥”(每回合最多1次)\n[WhenUse] 目标的[Laceration]强度与[Vibration]强度之和<style=\"highlight\">每有</style>6级，使本技能的硬币威力+1<style=\"highlight\">(最多+2)</style>\n[WinDuel] <style=\"highlight\">使目标增加2级[Vibration]强度</style>并使其[VibrationExplosion]，随后使其[Vibration]层数减少1层",
           "coinlist": [
             {
               "coindescs": [
@@ -1920,7 +1920,7 @@
                   "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标陷入混乱、敌方单位(本体)的血量不高于20%或目标带有[HorrHurtNightStiletto]，使用“慈悲”",
+                  "desc": "[OnSucceedAttack] 若目标陷入混乱、敌方单位(本体)现存体力不高于20%或目标带有[HorrHurtNightStiletto]，则对其使用“慈悲”",
                   "summary": "[OnSucceedAttack] 使用“慈悲”"
                 }
               ]
@@ -1968,7 +1968,7 @@
         {
           "level": 2,
           "name": "慈悲",
-          "desc": "[CantDuel]\n本技能不会触发守备技能且不会获得E.G.O资源\n敌方单位(本体)每损失20%的血量，使本技能的硬币威力+1(最多+2)\n若敌方单位(本体)的血量不高于20%，则使本技能造成的伤害+80%",
+          "desc": "[CantDuel]\n本技能不会触发守备技能且不会获得E.G.O资源\n敌方单位(本体)每失去20%的体力，使本技能的硬币威力+1(最多+2)\n若敌方单位(本体)现存体力不高于20%，则使本技能造成的伤害+80%",
           "coinlist": [
             {
               "coindescs": [
@@ -1982,7 +1982,7 @@
         {
           "level": 4,
           "name": "慈悲",
-          "desc": "[CantDuel]\n本技能不会触发守备技能且不会获得E.G.O资源\n敌方单位(本体)每损失20%的血量，使本技能的硬币威力+1(最多+<style=\"highlight\">4</style>)\n<style=\"highlight\">敌方单位(本体)每损失1%的血量，使本技能造成的伤害+1%</style>\n- 若敌方单位(本体)的血量不高于20%，则<style=\"highlight\">改为</style>使本技能造成的伤害+<style=\"highlight\">120</style>%\n<style=\"highlight\">[WhenUse] 下回合使自身获得1层[Agility]</style>",
+          "desc": "[CantDuel]\n本技能不会触发守备技能且不会获得E.G.O资源\n敌方单位(本体)每失去20%的体力，使本技能的硬币威力+1(最多+<style=\"highlight\">4</style>)\n<style=\"highlight\">敌方单位(本体)每失去1%的体力，使本技能造成的伤害+1%</style>\n- 若敌方单位(本体)现存体力不高于20%，则<style=\"highlight\">改为</style>使本技能造成的伤害+<style=\"highlight\">120</style>%\n<style=\"highlight\">[WhenUse] 下回合使自身获得1层[Agility]</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -2007,7 +2007,7 @@
         {
           "level": 3,
           "name": "夜锥",
-          "desc": "自身的[Agility]层数与目标的[Binding]层数之和每有1层，使本技能造成的伤害+10%(最多40%)\n若敌方单位(本体)的血量不高于20%，则使本技能造成的伤害+50%\n[WhenUse] 目标的[Laceration]强度与[Vibration]强度之和每有4级，使本技能的硬币威力+1(最多+2)\n[WinDuel] 使目标[VibrationExplosion]",
+          "desc": "自身的[Agility]层数与目标的[Binding]层数之和每有1层，使本技能造成的伤害+10%(最多+40%)\n若敌方单位(本体)现存体力不高于20%，则使本技能造成的伤害+50%\n[WhenUse] 目标的[Laceration]强度与[Vibration]强度之和每有4级，使本技能的硬币威力+1(最多+2)\n[WinDuel] 使目标[VibrationExplosion]",
           "coinlist": [
             {
               "coindescs": [
@@ -2060,7 +2060,7 @@
         {
           "level": 4,
           "name": "夜锥",
-          "desc": "自身的[Agility]层数与目标的[Binding]层数之和每有1层，使本技能造成的伤害+<style=\"highlight\">15</style>%(最多<style=\"highlight\">60</style>%)\n<style=\"highlight\">若目标带有护盾，则使本技能造成的伤害+30%(集中遭遇战中则为本体或部位)</style>\n<style=\"highlight\">敌方单位(本体)每损失1%的血量，使本技能造成的伤害+1%</style>\n- 若敌方单位(本体)的血量不高于20%，则<style=\"highlight\">改为</style>使本技能造成的伤害+<style=\"highlight\">100</style>%\n<style=\"highlight\">[WhenUse] 对目标施加5层[DefenseDown]</style>\n[WhenUse] 目标的[Laceration]强度与[Vibration]强度之和每有4级，使本技能的硬币威力+1(最多+<style=\"highlight\">3</style>)\n[WinDuel] <style=\"highlight\">使目标增加4级[Vibration]强度</style>并使其[VibrationExplosion]",
+          "desc": "自身的[Agility]层数与目标的[Binding]层数之和每有1层，使本技能造成的伤害+<style=\"highlight\">15</style>%(最多+<style=\"highlight\">60</style>%)\n<style=\"highlight\">若目标带有护盾，则使本技能造成的伤害+30%(若是集中遭遇战，则改为本体或部位)</style>\n<style=\"highlight\">敌方单位(本体)每失去1%的体力，使本技能造成的伤害+1%</style>\n- 若敌方单位(本体)现存体力不高于20%，则<style=\"highlight\">改为</style>使本技能造成的伤害+<style=\"highlight\">100</style>%\n<style=\"highlight\">[WhenUse] 对目标施加5层[DefenseDown]</style>\n[WhenUse] 目标的[Laceration]强度与[Vibration]强度之和每有4级，使本技能的硬币威力+1(最多+<style=\"highlight\">3</style>)\n[WinDuel] <style=\"highlight\">使目标增加4级[Vibration]强度</style>并使其[VibrationExplosion]",
           "coinlist": [
             {
               "coindescs": [
