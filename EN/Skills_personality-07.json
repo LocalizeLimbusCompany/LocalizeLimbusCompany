@@ -1934,6 +1934,456 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1071401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Peck 'em",
+          "desc": "[StartDuel] Apply 1 [Combustion] and +1 [Combustion] Count to target and self",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Peck 'em",
+          "desc": "<style=\"highlight\">[WhenUse] If target has 6+ ([Combustion] + [Burst]), Coin Power +1</style>\n[StartDuel] Apply 1 [Combustion] and +1 [Combustion] Count to target and self",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Peck 'em",
+          "desc": "[WhenUse] If target has 6+ ([Combustion] + [Burst]), Coin Power +1\n<style=\"highlight\">[WhenUse] Clash Power +1 for every 10 [Combustion] on self (max 2)</style>\n[StartDuel] Apply 1 [Combustion] and +1 [Combustion] Count to target and self",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion]"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] Inflict +1 [Burst] Count</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Mutilating Talons",
+          "desc": "[StartDuel] Apply 1 [Combustion] and +1 [Combustion] Count to target and self",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 3 [Combustion] and +1 [Combustion] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] If this unit has [ChickenStance], or if this unit has less than 50% HP, Reuse this Coin (once per Skill)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Mutilating Talons",
+          "desc": "<style=\"highlight\">[WhenUse] If target has 6+ ([Combustion] + [Burst]), Coin Power +1</style>\n[StartDuel] Apply 1 [Combustion] and +1 [Combustion] Count to target and self",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 3 [Combustion] and +1 [Combustion] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] If this unit has [ChickenStance], or if this unit has less than 50% HP, Reuse this Coin (once per Skill)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Mutilating Talons",
+          "desc": "[WhenUse] If target has 6+ ([Combustion] + [Burst]), Coin Power +1\n<style=\"highlight\">[WhenUse] Clash Power +1 for every 10 [Combustion] on self (max 2)</style>\n[StartDuel] Apply 1 [Combustion] and +1 [Combustion] Count to target and self",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] Inflict +1 [Combustion] Count</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion]"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] Inflict +1 [Burst] Count</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 3 [Combustion] and +1 [Combustion] Count"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Deal (([Combustion] on self x 2)% of this Coin's final damage) Wrath damage (max 20%)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] If this unit has [ChickenStance], or if this unit has less than 50% HP, Reuse this Coin (once per Skill)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Bloodflame Massacre [血炎亂舞]",
+          "desc": "[WideAreaRampage]\n[StartBattle] If this unit has [ChickenStance], or if this unit has less than 50% HP, convert all Coins to [SuperCoin]s\n[BeforeUse] At 20 [ChickenFightlust], activate 'Rooster's Rampaging Blades Under the Ensanguined Heaven' instead\n[WhenUse] Gain 3 [ChickenStance]\n[EndSkill] Gain +2 [Combustion] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Apply 2 [Combustion] to target and self"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] At 50%+ HP, take [Combustion] damage by [Combustion] Potency on self"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Apply 2 [Combustion] to target and self"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] At 50%+ HP, take [Combustion] damage by [Combustion] Potency on self"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Apply 2 [Combustion] to target and self"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] At 50%+ HP, take [Combustion] damage by [Combustion] Potency on self"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +3 [Burst] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Bloodflame Massacre [血炎亂舞]",
+          "desc": "[WideAreaRampage]\n<style=\"highlight\">Deal +1.5% damage for every [Combustion] on self (max 30%)</style>\n[StartBattle] If this unit has [ChickenStance], or if this unit has less than 50% HP, convert all Coins to [SuperCoin]s\n[BeforeUse] At 20 [ChickenFightlust], activate 'Rooster's Rampaging Blades Under the Ensanguined Heaven' instead\n[WhenUse] Gain 3 [ChickenStance]\n<style=\"highlight\">[WhenUse] Coin Power +1 for every 6 ([Combustion] + [Burst]) on the main target (max 2)\n[WhenUse] Clash Power +1 for every 20% missing HP on self (max 3)</style>\n[EndSkill] Gain +2 [Combustion] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Apply 2 [Combustion] to target and self"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] At 50%+ HP, take [Combustion] damage by [Combustion] Potency on self"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Apply 2 [Combustion] to target and self"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] At 50%+ HP, take [Combustion] damage by [Combustion] Potency on self"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Apply 2 [Combustion] to target and self"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] At 50%+ HP, take [Combustion] damage by [Combustion] Potency on self"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +3 [Burst] Count"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Deal (([Combustion] on self + [Combustion] on the main target)% of this Coin's final damage) Gluttony damage against all targets (max 20%)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "More Grub for Us",
+          "desc": "[DuelCounter]\n[WhenUse] Gain 3 [ChickenStance] next turn\n[WhenUse] If this unit has [ChickenStance], Coin Power +1\n[StartDuel] Gain +3 [Combustion] Count (once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "More Grub for Us",
+          "desc": "[DuelCounter]\n[WhenUse] Gain 3 [ChickenStance] next turn\n<style=\"highlight\">[WhenUse] If target has 10+ ([Combustion] + [Burst]), Base Power +1</style>\n[WhenUse] If this unit has [ChickenStance], Coin Power +1\n<style=\"highlight\">[WhenUse] This Skill deals +1% damage for every 3% HP this unit cumulatively lost in this Encounter (max 30%)</style>\n[StartDuel] Gain +3 [Combustion] Count (once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Burst] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071405,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Rooster's Rampaging Blades Under the Ensanguined Heaven [血天下鷄舞亂刀]",
+          "desc": "[WideAreaRampage]\n[WhenUse] Gain 3 [ChickenStance]\n[WinDuel] Gain 10 [Combustion]\n[EndSkill] Consume all [ChickenFightlust]\n[EndSkill] At more than 20 [Combustion], consume up to 25 excess [Combustion] and heal ([Combustion] consumed x 2)% HP",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If this unit has 20+ [Combustion], or if this unit has less than 50% HP, Reuse this Coin (once per Skill)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Rooster's Rampaging Blades Under the Ensanguined Heaven [血天下鷄舞亂刀]",
+          "desc": "[WideAreaRampage]\n<style=\"highlight\">Deal +3% damage for every [Combustion] on self (max 60%)\nDeal +1% damage for every 2% (missing HP percentage on target + missing HP percentage on self) (max 50%)</style>\n[WhenUse] Gain 3 [ChickenStance]\n<style=\"highlight\">[WhenUse] Coin Power +1 for every 6 ([Combustion] + [Burst]) on the main target (max 2)\n[WhenUse] Clash Power +1 for every 20% missing HP on self (max 3)</style>\n[WinDuel] Gain 10 [Combustion]\n[EndSkill] Consume all [ChickenFightlust]\n[EndSkill] At more than 20 [Combustion], consume up to 25 excess [Combustion] and heal ([Combustion] consumed x 2)% HP",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Burst] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] If this unit has 20+ [Combustion], or if this unit has less than 50% HP, Reuse this Coin (once per Skill)"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Deal (20% of this Coin's final damage) Wrath damage against all targets\n- If this is the final Coin, heal HP by the amount of damage the above effect dealt</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -2330,7 +2330,7 @@
     {
       "id": 1101401,
       "name": "싸움에 취해보죠",
-      "desc": "[Burst]이 7 이상 부여된 대상에게 적중 시 (최대 공명 수)x15% 확률로 [Combustion] 1 부여 (턴 당 4회)\n\n전투 종료시 자신에게 [Combustion]이 있으면, 다음 턴 시작시 [ChickenStance] 1, [CrimsonDamageUp] 1, [ShamrockDamageUp] 1 얻음\n\n전투 시작시 자신의 잃은 체력 20% 당 [AttackUp], [DefenseUp] 1 얻음 (최대 3)"
+      "desc": "[Burst]이 7 이상 부여된 대상에게 적중 시 (최대 공명 수)x15% 확률로 [Combustion] 1 부여 (턴 당 4회)\n\n전투 종료시 자신에게 [Combustion]이 있으면, 다음 턴 시작시 [ChickenStance] 1, [CrimsonDamageUp] 1, [ShamrockDamageUp] 1 얻음\n\n전투 시작시 자신의 잃은 체력 20%당 [AttackUp], [DefenseUp] 1 얻음 (최대 3)"
     },
     {
       "id": 1101421,
@@ -2496,6 +2496,54 @@
       "desc": "속도가 가장 빠른 아군 1명이 기본 공격 스킬 사용 시 메인 타겟의 속도가 자신보다 느리면 속도 차이 3당, 대상에게 [Disarming] 1 부여 (턴당 최대 2)",
       "summary": "[Disarming] 부여",
       "undefined": "-"
+    },
+    {
+      "id": 1071402,
+      "name": "투계",
+      "desc": "홍원 군주 홍루와 [HeishouCombo] 발동 시, 홍원 군주 홍루가 [HeishouComboCountHonglu]으로 아래 효과 얻음\n- 자신의 기본 스킬로 공격 적중 시 해당 적에게 가한 탐식 피해의 5%만큼 분노 피해를 줌\n\n[Combustion] 피해로 흐트러짐 상태가 되거나 체력이 1 미만으로 감소하지 않음\n\n대기 해제 또는 복귀로 등장한 턴에 [ChickenStance] 3, [Combustion] 횟수 3 얻음",
+      "summary": ""
+    },
+    {
+      "id": 1071401,
+      "name": "맞부딪치는 혈투",
+      "desc": "전투 시작시 자신의 잃은 체력 20%당 공격 레벨 증가, 방어 레벨 증가 1 얻음 (최대 3)\n\n아래의 조건 만족 시 [ChickenFightlust] 얻음 (턴당 최대 10)\n- 합 시작 시 3 얻음\n- 기본 공격 스킬 적중시 또는 자신이 [Combustion] 피해를 받을 때 1 얻음\n자신의 현재 체력이 50% 미만이면, 추가 1 얻음\n- 적 처치 시 5 얻음",
+      "summary": "[ChickenFightlust] 얻음."
+    },
+    {
+      "id": 1071403,
+      "name": "염조불사전[炎鳥不死戰]",
+      "desc": "이번 전투에서 체력이 0이 되는 피해를 받았을 때, 해당 피해를 받지 않고, 해당 턴 동안 체력이 1로 유지됨\n이후 다음 턴 시작 시 자신의 최대 체력의 (20 + 자신의 [Combustion])%만큼 체력 회복 후 자신의 [Combustion] 소멸 (최대 49%, 전투 당 1회)",
+      "summary": "불사 발동"
+    },
+    {
+      "id": 1071421,
+      "name": "배수의 진",
+      "desc": "턴 종료 시 체력 비율이 가장 낮은 아군 1명의 현재 체력이 최대 체력의 50% 미만이라면, 다음 턴에 [ParryingResultUp] 1 얻음",
+      "summary": ""
+    },
+    {
+      "id": 1031301,
+      "name": "발파각쇄",
+      "desc": "대상의 [Burst]과 [Sinking]의 합 2당 피해량 +1% (최대 15%)\n- 정신력이 없는 대상이면, 이 효과와 최댓값이 2배로 증가\n\n자신에게 [GrownHorns]이 있으면, 적을 공격할 때 기본 스킬 마지막 코인의 피해량 +10%\n- 수비 스킬을 장착한 스킬 슬롯 공격 시, 대신 마지막 코인의 피해량 +20%\n- 합 가능 수비 스킬과 합 진행 시, 추가로 합 위력 +1",
+      "summary": "대상의 [Burst], [Sinking]에 비례하여 피해량이 증가\n[GrownHorns]이 있으면, 기본 스킬 마지막 코인 피해량이 증가"
+    },
+    {
+      "id": 1031311,
+      "name": "발파각쇄",
+      "desc": "<style=\"highlight\">대상의 정신력이 0 미만이면, 피해량이 (-대상의 정신력/3)%만큼 증가 (최대 15%, 소수점 버림)</style>\n\n대상의 [Burst]과 [Sinking]의 합 2당 피해량 +1% (최대 15%)\n- 정신력이 없는 대상이면, 이 효과와 최댓값이 2배로 증가\n\n자신에게 [GrownHorns]이 있으면, 적을 공격할 때 기본 스킬 마지막 코인의 피해량 <style=\"highlight\">+15%</style>\n- 수비 스킬을 장착한 스킬 슬롯 공격 시, 대신 마지막 코인의 피해량 <style=\"highlight\">+30%</style>\n- 합 가능 수비 스킬과 합 진행 시, 추가로 합 위력 <style=\"highlight\">+3</style>",
+      "summary": "대상의 [Burst], [Sinking]에 비례하여 피해량이 증가\n[GrownHorns]이 있으면, 기본 스킬 마지막 코인 피해량이 증가"
+    },
+    {
+      "id": 1031321,
+      "name": "살을 뚫고 자라나는 뿔 ",
+      "desc": "속도가 가장 빠른 아군이 [Burst] 횟수 또는 [Sinking] 횟수를 2 이상 보유한 적에게 기본 공격 스킬 적중 시, [DefenseDown] 1 부여 (턴당 2회)",
+      "summary": "[Burst], [Sinking] 보유한 적에게 기본 공격 스킬 적중 시, [DefenseDown] 1 부여"
+    },
+    {
+      "id": 1031302,
+      "name": "망양지탄 [亡羊之嘆]",
+      "desc": "홍원 군주 홍루와 [HeishouCombo] 발동 시, 홍원 군주 홍루가 [HeishouComboCountHonglu]으로 아래 효과 얻음\n- 스킬로 [Burst] 위력 또는 횟수 부여 시, [Sinking] 1 부여 (턴당 3회)\n\n대기 해제 또는 복귀로 등장한 턴에 [GrownHorns] 3 얻음",
+      "summary": "홍원 군주 홍루가 특수 효과를 얻음"
     }
   ]
 }

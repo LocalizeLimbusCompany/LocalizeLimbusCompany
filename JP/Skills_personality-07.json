@@ -1934,6 +1934,456 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1071401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "啄んでやる",
+          "desc": "[StartDuel] 対象と自分に[Combustion]を1付与、[Combustion]回数が1増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "啄んでやる",
+          "desc": "<style=\"highlight\">[WhenUse] 対象の[Combustion]と[Burst]の合計が6以上なら、コイン威力 +1</style>\n[StartDuel] 対象と自分に[Combustion]1を付与、[Combustion]回数が1増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "啄んでやる",
+          "desc": "[WhenUse] 対象の[Combustion]と[Burst]の合計が6以上なら、コイン威力 +1\n<style=\"highlight\">[WhenUse] 自分の[Combustion]10につき、マッチ威力 +1 (最大2)</style>\n[StartDuel] 対象と自分に[Combustion]1を付与、[Combustion]回数が1増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] [Burst]回数が1増加</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "爪で引き裂いてやる",
+          "desc": "[StartDuel] 対象と自分に[Combustion]を1付与、[Combustion]回数が1増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]3を得る、自分の[Combustion]回数が1増加"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 自分に[ChickenStance]があるか、自分の現体力が最大値の50%未満なら、このコインを再使用(スキルごとに1回)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "爪で引き裂いてやる",
+          "desc": "<style=\"highlight\">[WhenUse] 対象の[Combustion]と[Burst]の合計が6以上なら、コイン威力 +1</style>\n[StartDuel] 対象と自分に[Combustion]1を付与、[Combustion]回数が1増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]3を得る、自分の[Combustion]回数が1増加"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 自分に[ChickenStance]があるか、自分の現体力が最大値の50%未満なら、このコインを再使用(スキルごとに1回)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "爪で引き裂いてやる",
+          "desc": "[WhenUse] 対象の[Combustion]と[Burst]の合計が6以上なら、コイン威力 +1\n<style=\"highlight\">[WhenUse] 自分の[Combustion]10につき、マッチ威力 +1 (最大2)</style>\n[StartDuel] 対象と自分に[Combustion]1を付与、[Combustion]回数が1増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] [Combustion]回数が1増加</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] [Burst]回数が1増加</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]3を得る、自分の[Combustion]回数が1増加"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] このコインの最終ダメージ量の(自分の[Combustion] × 2)%だけ憤怒ダメージ (最大20%)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 自分に[ChickenStance]があるか、自分の現体力が最大値の50%未満なら、このコインを再使用(スキルごとに1回)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "血炎乱舞",
+          "desc": "[WideAreaRampage]\n[StartBattle] 自分に[ChickenStance]があるか、自分の現体力が最大値の50%未満なら全コインが[SuperCoin]に変更される\n[BeforeUse] [ChickenFightlust]が20なら、「血天下鷄舞乱刀」として発動\n[WhenUse] [ChickenStance]3を得る\n[EndSkill] 自分の[Combustion]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象と自分に[Combustion]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 自分の現体力が最大値の50%以上なら、自分の[Combustion]威力だけ[Combustion]ダメージを受ける"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象と自分に[Combustion]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 自分の現体力が最大値の50%以上なら、自分の[Combustion]威力だけ[Combustion]ダメージを受ける"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象と自分に[Combustion]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 自分の現体力が最大値の50%以上なら、自分の[Combustion]威力だけ[Combustion]ダメージを受ける"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が3増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "血炎乱舞",
+          "desc": "[WideAreaRampage]\n<style=\"highlight\">自分の[Combustion]1につき、ダメージ量 +1.5% (最大30%)</style>\n[StartBattle] 自分に[ChickenStance]があるか、自分の現体力が最大値の50%未満なら全コインが[SuperCoin]に変更される\n[BeforeUse] [ChickenFightlust]が20なら、「血天下鷄舞乱刀」として発動\n[WhenUse] [ChickenStance]3を得る\n<style=\"highlight\">[WhenUse] メインターゲットの[Combustion]と[Burst]の合計6につき、コイン威力 +1 (最大2)\n[WhenUse] 自分の失った体力20%につき、マッチ威力 +1 (最大3)</style>\n[EndSkill] 自分の[Combustion]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象と自分に[Combustion]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 自分の現体力が最大値の50%以上なら、自分の[Combustion]威力だけ[Combustion]ダメージを受ける"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象と自分に[Combustion]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 自分の現体力が最大値の50%以上なら、自分の[Combustion]威力だけ[Combustion]ダメージを受ける"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象と自分に[Combustion]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 自分の現体力が最大値の50%以上なら、自分の[Combustion]威力だけ[Combustion]ダメージを受ける"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が3増加"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] このコインの最終ダメージ量の(自分の[Combustion] + メインターゲットの[Combustion])%だけ全攻撃対象へ暴食ダメージ (最大20%)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "獲物だな",
+          "desc": "[DuelCounter]\n[WhenUse] 次のターンに[ChickenStance]3を得る\n[WhenUse] 自分に[ChickenStance]があるなら、コイン威力 +1\n[StartDuel] 自分の[Combustion]回数が3増加 (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "獲物だな",
+          "desc": "[DuelCounter]\n[WhenUse] 次のターンに[ChickenStance]3を得る\n<style=\"highlight\">[WhenUse] 対象の[Combustion]と[Burst]の合計が10以上なら、基本威力 +1</style>\n[WhenUse] 自分に[ChickenStance]があるなら、コイン威力 +1\n<style=\"highlight\">[WhenUse] 自分がこの戦闘で失った体力累計3%につき、このスキルのダメージ量 +1% (最大30%)</style>\n[StartDuel] 自分の[Combustion]回数が3増加 (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071405,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "血天下鷄舞乱刀",
+          "desc": "[WideAreaRampage]\n[WhenUse] [ChickenStance]3を得る\n[WinDuel] [Combustion]10を得る\n[EndSkill] [ChickenFightlust]を全て消耗\n[EndSkill] 自分の[Combustion]が20を超過しているなら、超過した[Combustion]から最大25消耗して体力を最大値の(消耗した[Combustion] × 2)％だけ回復",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分に[Combustion]が20以上あるか、自分の現体力が最大値の50%未満なら、このコインを再使用 (スキルごとに1回)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "血天下鷄舞乱刀",
+          "desc": "[WideAreaRampage]\n<style=\"highlight\">自分の[Combustion]1につき、ダメージ量 +3% (最大60%)\n対象と自分の失った体力の合計2%につき、ダメージ量 +1% (最大50%)</style>\n[WhenUse] [ChickenStance]3を得る\n<style=\"highlight\">[WhenUse] メインターゲットの[Combustion]と[Burst]の合計6につき、コイン威力 +1 (最大2)\n[WhenUse] 自分の失った体力20%につき、マッチ威力 +1 (最大3)</style>\n[WinDuel] [Combustion]10を得る\n[EndSkill] [ChickenFightlust]を全て消耗\n[EndSkill] 自分の[Combustion]が20を超過しているなら、超過した[Combustion]から最大25消耗して体力を最大値の(消耗した[Combustion] × 2)％だけ回復",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分に[Combustion]が20以上あるか、自分の現体力が最大値の50%未満なら、このコインを再使用 (スキルごとに1回)"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] このコインの最終ダメージ量の20%だけ、全攻撃対象へ憤怒ダメージを与える\n- 最後に使用するコインなら、該当ダメージ量だけ体力を回復</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

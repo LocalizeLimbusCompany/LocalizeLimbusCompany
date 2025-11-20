@@ -752,7 +752,7 @@
     {
       "id": "Aggressive",
       "name": "Instincts",
-      "desc": "Turn End: At 4+ Count, change to an “aggressive” state."
+      "desc": "Turn End: At 4+ Stack, change to an “aggressive” state."
     },
     {
       "id": "Whistle_Courage",
@@ -931,7 +931,7 @@
     {
       "id": "Duress",
       "name": "Captivity",
-      "desc": "Become Staggered for 3 turns.\nTurn Start: If Kqe-1j-23 is Staggered, remove this status.",
+      "desc": "Become Staggered for 3 turns; disable any Retreat-related abilities\nTurn Start: If kqe-1j-23 is Staggered, remove this effect",
       "summary": "Kqe’s Passive"
     },
     {
@@ -2981,6 +2981,55 @@
       "name": "Fatal Wound",
       "desc": "- Base Stack: 3\n- On Tremor Burst, gain +3 Bleed Count (2 times per turn)\n- Cannot gain Open Wound (in Focused Encounters, the Part)\n- Turn End: Gain Bind equal to Stack next turn\n- Turn End: Reduce Stack by 1",
       "summary": "Gain Bleed Count\nGain Bind next turn",
+      "undefined": "-"
+    },
+    {
+      "id": "GrownHorns",
+      "name": "Burgeoning of Horns [發角]",
+      "desc": "- Max value: 3\n- This unit's Base Skills inflict +1 more of Rupture and Sinking Potency\n- Turn End: Lose 1 Stack",
+      "summary": "Inflict +1 more of Rupture and Sinking Potency",
+      "undefined": "-"
+    },
+    {
+      "id": "CrushMarks",
+      "name": "Shattermark",
+      "desc": "- Take +10% damage from Gluttony and Gloom Skills\n- Units with SP: change their Panic Type to \"Shattermark\"\n- Units without SP: Clash Power -1\n- Turn End: Reduce 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value\n- Apply the \"Units without SP\" conditional to certain enemies that have SP but can't change their Panic Types\n\n※ Shattermark Panic-type Effects\n- Low Morale: Clash Power -1, Defense Level -2 on self\n- Panic: Clash Power -2, Defense Level -3 on self",
+      "summary": "Take +10% damage from Gluttony and Gloom Skills\n- Units with SP: change their Panic Type to \"Shattermark\"\n- Units without SP: -10% chance to flip Heads for Plus Coins",
+      "undefined": "-"
+    },
+    {
+      "id": "CrushMarks_Main",
+      "name": "Shattermark",
+      "desc": "Take +10% damage from Gluttony and Gloom Skills\n- Units with SP: change their Panic Type to \"Shattermark\"\n- Turn End: Reduce 1 Stack",
+      "summary": "Take +10% damage from Gluttony and Gloom Skills\n- Change Panic Type to \"Shattermark\"",
+      "undefined": "-"
+    },
+    {
+      "id": "CrushMarks_Sub",
+      "name": "Shattermark",
+      "desc": "- Take +10% damage from Gluttony and Gloom Skills\n- Units without SP: Clash Power -1\n- Turn End: Reduce 1 Stack",
+      "summary": "Take +10% damage from Gluttony and Gloom Skills\n- Clash Power -1",
+      "undefined": "-"
+    },
+    {
+      "id": "CrushMarks_LowMorale",
+      "name": "Shattermark",
+      "desc": "- Low Morale\n- Clash Power -1, Defense Level -2",
+      "summary": "Clash Power -1, Defense Level -2",
+      "undefined": "-"
+    },
+    {
+      "id": "CrushMarks_Panic",
+      "name": "Shattermark",
+      "desc": "- Low Morale\n- Clash Power -2, Defense Level -3",
+      "summary": "Clash Power -2, Defense Level -3",
+      "undefined": "-"
+    },
+    {
+      "id": "ChickenFightlust",
+      "name": "Battleblood Instinct",
+      "desc": "- Max Stack: 20\n- For every Stack, deal +0.75% damage\n- For every 10 Stack, gain 1 Haste next turn",
+      "summary": "",
       "undefined": "-"
     }
   ]
