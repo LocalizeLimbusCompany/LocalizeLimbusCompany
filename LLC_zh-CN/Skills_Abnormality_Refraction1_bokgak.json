@@ -939,7 +939,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加1层[Paralysis]与破绽 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层[Paralysis]与1层破绽 "
                 }
               ]
             }
@@ -1053,7 +1053,7 @@
         {
           "level": 1,
           "name": "狂热的宣教",
-          "desc": "[DefeatDuel] 下回合对目标施加2层[Vulnerable]",
+          "desc": "[DefeatDuel] 下回合对自身施加2层[Vulnerable]",
           "coinlist": [
             {},
             {
@@ -1466,12 +1466,12 @@
         {
           "level": 1,
           "name": "异端抹杀",
-          "desc": "若目标带有[Nail]，使本技能造成的伤害+100%",
+          "desc": "若目标带有[Nail]，则使本技能造成的伤害+100%",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加10层[Burst]"
+                  "desc": "[OnSucceedAttack] 下回合使目标增加10级[Burst]强度"
                 }
               ]
             },
@@ -1491,7 +1491,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "利爪",
+          "name": "撕挠",
           "desc": "[WhenUse] 自身每带有1层[DogThunder]，使本技能的硬币威力+2(最多+6)\n[WhenUse] 目标的[Laceration]强度与[Burst]强度之和每有5级，使本技能造成的伤害+20%(最多+80%)",
           "coinlist": [
             {
@@ -1595,7 +1595,7 @@
                   "desc": "[UnBrokenCoinOnSucceedAttack] 对目标施加2层[Paralysis]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加10层[Burst]"
+                  "desc": "[OnSucceedAttack] 下回合使目标增加10级[Burst]强度"
                 }
               ]
             }
@@ -1640,7 +1640,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加10层[Burst]"
+                  "desc": "[OnSucceedAttack] 下回合使目标增加10级[Burst]强度"
                 }
               ]
             },
@@ -1741,7 +1741,7 @@
         {
           "level": 1,
           "name": "处理小镇移居申请",
-          "desc": "[WhenUse] 消耗所有[Charge]层数\n[DefeatDuel] 下回合展现出镇民之心",
+          "desc": "[WhenUse] 消耗所有[Charge]层数\n[DefeatDuel] 下回合暴露出镇民之心",
           "coinlist": [
             {
               "coindescs": [
@@ -1817,7 +1817,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "正在重新启动…",
+          "name": "重启中…",
           "desc": "",
           "coinlist": [
             {}
@@ -2505,7 +2505,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "暴力撕扯",
+          "name": "粗暴撕挠",
           "desc": "[WhenUse] 若目标的[Laceration]强度不低于3级，则使本技能的硬币威力+1",
           "coinlist": [
             {
@@ -2771,7 +2771,7 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加3级[Poison]强度"
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Poison]"
                 }
               ]
             },
@@ -2781,7 +2781,7 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加3级[Poison]强度"
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Poison]"
                 }
               ]
             },
@@ -2791,7 +2791,7 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加3级[Poison]强度"
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Poison]"
                 }
               ]
             }
