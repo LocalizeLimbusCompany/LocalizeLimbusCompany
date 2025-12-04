@@ -2256,6 +2256,286 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1041301,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "おい、下がれ",
+          "desc": "[WhenUse] 自分の[Breath]回数が1増加\n[OnDirectAttack] [Burst]回数が1増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "おい、下がれ",
+          "desc": "<style=\"highlight\">[WhenUse] 自分の[Breath]威力と対象の[Burst]威力の合計が6以上なら、コイン威力 +1</style>\n[WhenUse] 自分の[Breath]回数が1増加\n[OnDirectAttack] [Burst]回数が1増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]<style=\"highlight\">2</style>を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "おい、下がれ",
+          "desc": "<style=\"highlight\">[WhenUse] 自分の[Breath]威力と対象の[Burst]威力の合計6につき、コイン威力 +1 (最大2)</style>\n[WhenUse] 自分の[Breath]回数が1増加\n[OnDirectAttack] [Burst]回数が1増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">クリティカルダメージ量 +20%</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttack] [Burst]1を付与</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1041302,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "銘肌鏤骨",
+          "desc": "[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] (対象の[Burst] ÷ 5) + 1だけ[Breath]を得る (最大6, 小数点切り捨て)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "銘肌鏤骨",
+          "desc": "<style=\"highlight\">[WhenUse] 自分の[Breath]威力と対象の[Burst]威力の合計が6以上なら、コイン威力 +1</style>\n[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が<style=\"highlight\">2</style>増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] (対象の[Burst] ÷ 5) + 1だけ[Breath]を得る (最大6, 小数点切り捨て)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Burst]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "銘肌鏤骨",
+          "desc": "<style=\"highlight\">[WhenUse] 自分の[Breath]威力と対象の[Burst]威力の合計6につき、コイン威力 +1(最大2)</style>\n[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] (対象の[Burst] ÷ 5) + <style=\"highlight\">2</style>だけ[Breath]を得る (最大6, 小数点切り捨て)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">クリティカルダメージ量 +20%</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Burst]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1041303,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "加斥我援",
+          "desc": "[WhenUse] [ProtectStanceRyoshu]2を得る\n[WhenUse] 対象のマイナス効果が3種以上なら、最終威力 +1\n[WhenUse] 自分の[Breath]威力と対象の[Burst]威力の合計が6以上なら、コイン威力 +1\n[WhenUse] 自分の[Breath]回数が3増加\n[WhenUse] [Breath]3を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Burst]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] (自分の[Breath]威力 + 対象の[Burst]威力)1につき、クリティカルダメージ量 +2% (最大100%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "加斥我援",
+          "desc": "[WhenUse] [ProtectStanceRyoshu]2を得る\n[WhenUse] 対象のマイナス効果が3種以上なら、最終威力 +1\n<style=\"highlight\">[WhenUse] 自分の[Breath]威力と対象の[Burst]威力の合計6につき、コイン威力 +1 (最大2)</style>\n[WhenUse] 自分の[Breath]回数が3増加\n[WhenUse] [Breath]3を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]回数が2増加<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Burst]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Burst]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Burst]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnStartCoin] (自分の[Breath]威力 + 対象の[Burst]威力)1につき、クリティカルダメージ量 +2% <style=\"highlight\">(最大120%)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Burst]2を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1041304,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "護衛",
+          "desc": "[CanDuelGuard]\n[StartBattle] [ProtectStanceRyoshu]2を得る\n[WhenUse] 自分がこの戦闘にて失った累計体力10%につき、このスキルの防御レベル +1 (最大6, 発動時点の体力最大値を基準とする)\n[WinDuel] 対象の[Burst]だけ[Breath]を得る (最大5, 1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "護衛",
+          "desc": "[CanDuelGuard]\n[StartBattle] [ProtectStanceRyoshu]2を得る\n[WhenUse] 自分がこの戦闘にて失った累計体力10%につき、このスキルの防御レベル +1 (最大6, 発動時点の体力最大値を基準とする)\n[WinDuel] 対象の[Burst]だけ[Breath]を得る (最大5, 1ターンにつき1回)<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
