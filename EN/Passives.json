@@ -785,7 +785,7 @@
     {
       "id": 1010521,
       "name": "Cleaning Up the Mess",
-      "desc": "When 1 ally with the lowest Max HP triggers Tremor Burst on an enemy, inflict 1 Defense Level Down per 4 Stagger Threshold raised (Max 3 per 1 enemy every turn)"
+      "desc": "When 1 ally with the lowest Max HP triggers Tremor Burst on an enemy, inflict 1 Defense Level Down next turn per 4 Stagger Threshold raised (Max 3 per 1 enemy every turn)"
     },
     {
       "id": 1110501,
@@ -2561,6 +2561,23 @@
       "id": 1041321,
       "name": "Drifter",
       "desc": "Combat Start: The ally with the earliest Deployment order gains 1 Shield for every [Breath] on self (max 10)"
+    },
+    {
+      "id": 1091401,
+      "name": "Jolly Antlers",
+      "desc": "Gain 1 [Charge] every time this unit consumes 10 cumulative [Charge] Count in this Encounter\n\nWhen using a Base Attack Skill that inflicts [Sinking] Potency, if the main target does not have [Sinking], this unit gains 5 [Sinking] and doubles the amount of Sinking Potency the Skill applies (once per turn; in Focused Encounters, the Part)",
+      "summary": "If enemy does not have [Sinking], gain [Sinking] and inflict more [Sinking] Potency"
+    },
+    {
+      "id": 1091411,
+      "name": "Jolly Antlers",
+      "desc": "Gain 1 [Charge] every time this unit consumes 10 cumulative [Charge] Count in this Encounter\n\nWhen using a Base Attack Skill that inflicts [Sinking] Potency, if the main target does not have [Sinking], this unit gains 5 [Sinking] and doubles the amount of Sinking Potency the Skill applies (once per turn; in Focused Encounters, the Part)\n\n<style=\"highlight\">At less than 35% HP, Base Attack Skills gain Final Power +1</style>",
+      "summary": "If enemy does not have [Sinking], gain [Sinking] and inflict more [Sinking] Potency\nAt less than 35% HP, Final Power +1"
+    },
+    {
+      "id": 1091421,
+      "name": "Carol of Dying Comrades",
+      "desc": "1 ally with the lowest SP: Skills that consume [Charge] or Unique Charge[TabExplain] and have effects that inflict [Sinking] against enemies deal +10% damage (except E.G.O Skills)"
     }
   ]
 }
