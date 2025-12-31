@@ -2578,6 +2578,53 @@
       "id": 1091421,
       "name": "キャロルの中、死にゆく仲間たち",
       "desc": "精神力が最も低い味方1名の[Charge]または特殊充電を消耗し、敵に[Sinking]を付与する効果を持つスキルのダメージ量 +10％ (E.G.Oスキルを除く)"
+    },
+    {
+      "id": 1111401,
+      "name": "先鋒隊",
+      "desc": "自分の[Protection]1につき、ダメージ量が5%増加 (最大15%)\n\n戦闘開始時、[TheUdjatOutis]2を得る",
+      "summary": ""
+    },
+    {
+      "id": 1111402,
+      "name": "ホルスのセプター - レプリカ",
+      "desc": "ターン開始時、敵にパニックタイプ変更効果があるなら[TheUdjatOutis]1を得る\n\n自分に[TheUdjatOutis]があるなら、基本攻撃スキル的中時に[SheutFracture]1を付与 (1ターンにつき最大15)\n\n自分の基本スキル、[TheUdjatOutis]によって得る[Protection]数値の合計は1ターンにつき5を超えない",
+      "summary": ""
+    },
+    {
+      "id": 1111412,
+      "name": "ホルスのセプター - レプリカ",
+      "desc": "ターン開始時、敵にパニックタイプ変更効果があるなら[TheUdjatOutis]1を得る\n\n自分に[TheUdjatOutis]があるなら、基本攻撃スキル的中時に[SheutFracture]1を付与 (1ターンにつき最大15)\n<style=\"highlight\">- [LCA_Bullet]を消耗する場合、消耗した[LCA_Bullet]だけ追加で付与</style>\n\n自分の基本スキル、[TheUdjatOutis]によって得る[Protection]数値の合計は1ターンにつき5を超えない",
+      "summary": ""
+    },
+    {
+      "id": 1111421,
+      "name": "鷹の目",
+      "desc": "戦闘開始時、体力の比率が最も低い味方1名へ次のターンにて[Protection]1を付与",
+      "summary": "保護を得る"
+    },
+    {
+      "id": 1021402,
+      "name": "紙片で伝達された指令",
+      "desc": "ターン開始時\n- 自分の[BlessingOfIndexPrescriptAlly]数値によって[IndexPrescriptFaust_0] / [IndexPrescriptFaust_1] / [IndexPrescriptFaust_2] /[IndexPrescriptFaust_3]を得る\n- ランダムな敵1名へ[IndexPrescriptTargetToEnemy]を付与 (集中戦闘なら部位に付与)\n- 操作スロットにある自分の基本攻撃スキルに[IndexPrescriptTargetMarkToEnemy]を付与 (スロットごとに1つ、最大2つ付与)\n· [BlessingOfIndexPrescriptAlly]が6以上なら、スキル3に優先して付与\n- 混乱・行動不能[TabExplain]・パニック・E.G.O侵蝕状態なら、上記の全効果と[IndexPrescript_Base]遂行成否が適用されない",
+      "summary": "指令を得る\nランダムな敵に指令対象を付与\n自分のランダムな基本攻撃スキルに指令の印を付与"
+    },
+    {
+      "id": 1021403,
+      "name": "指令の意味",
+      "desc": "このターンに[IndexPrescript_Base]を遂行したなら、\nターン終了時に精神力を4回復、[BlessingOfIndexPrescriptAlly]1を得る (1ターンにつき1回)\n- [IndexPrescript_Base]を遂行時、メインターゲットに[IndexPrescriptTargetToEnemy]があるなら、\n代わりに精神力を8回復、[BlessingOfIndexPrescriptAlly]3を得る\n\nこのターンに[IndexPrescript_Base]を遂行できなかったなら、\nターン終了時に[KarmaOfIndexAlly]5を得る\n- [BlessingOfIndexPrescriptAlly]が9なら、[KarmaOfIndexAlly]を獲得しない\n- 戦闘開始時に[IndexPrescript_Base]の遂行を試みたが、戦闘中に対象をターゲティングできなくなった場合には[KarmaOfIndexAlly]を獲得しない",
+      "summary": "指令遂行時、精神力を回復して指令の加護を得る\n指令失敗時、カルマを得る"
+    },
+    {
+      "id": 1021401,
+      "name": "遂行者の剣",
+      "desc": "自分の[BlessingOfIndexPrescriptAlly]1につき、[IndexPrescriptTargetMarkToEnemy]スキルのダメージ量 +2% (最大16%)\n- [BlessingOfIndexPrescriptAlly]が9なら、代わりに基本攻撃スキルのダメージ量 +20%\n\n[IndexPrescriptTargetToEnemy]がある対象に基本攻撃スキルを的中時、\n[Breath]1を得て[Sinking]1を付与 (1ターンにつき1回)\n- [BlessingOfIndexPrescriptAlly]3につき、1ターンごとの発動可能回数 +1 (最大2)\n\n[BlessingOfIndexPrescriptAlly]が9なら、基本スキルの[Sinking]威力付与値 +1, [Breath]威力獲得値 +1",
+      "summary": "指令の印が刻まれたスキルなら、指令の加護に比例してダメージ量が増加\n的中時、呼吸を得て沈潜付与"
+    },
+    {
+      "id": 1021421,
+      "name": "指令の導くまま…。",
+      "desc": "編成順が最も早い味方に効果適用\n- 人差し指所属人格がいるなら、該当人格に優先して適用\n\n戦闘開始時、自分の操作スロットのうち最左端のスキルで指定した敵スロットを他の味方も指定したなら、当該スキルのダメージ量が自分以外の該当スロットをターゲティングした人員数1名につき、5%増加\n(最大15%, 自分と味方が、どちらも基本攻撃スキルでメインターゲットにした場合に適用)"
     }
   ]
 }

@@ -2114,6 +2114,285 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1021401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "指令に従い、確実に。",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、ダメージ量 +10%\n[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "指令に従い、確実に。",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、ダメージ量 +10%\n<style=\"highlight\">自分の[Breath]と対象の[Sinking]の合計が6以上なら、コイン威力 +1</style>\n[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]1を得る<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "指令に従い、確実に。",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、<style=\"highlight\">マッチ威力 +1</style>, ダメージ量<style=\"highlight\"> +20%</style>\n自分の[Breath]と対象の[Sinking]の合計<style=\"highlight\">6につき、コイン威力 +1 (最大2)</style>\n[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]1を得る<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttack] [Sinking]1を付与</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "指令を遂行しつつ修行します",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、マッチ威力 +1\n[WhenUse] [Breath]3を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]1を得る"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "指令を遂行しつつ修行します",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、マッチ威力 +1\n<style=\"highlight\">自分の[Breath]と対象の[Sinking]の合計が6以上なら、コイン威力 +1</style>\n[WhenUse] [Breath]3を得る、<style=\"highlight\">自分の[Breath]回数が1増加</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]1を得る<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Sinking]1を付与</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "指令を遂行しつつ修行します",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、<style=\"highlight\">最終威力 +1</style>\n自分の[Breath]と対象の[Sinking]の合計<style=\"highlight\">6につき、コイン威力 +1 (最大2)</style>\n[WhenUse] [Breath]3を得る、自分の[Breath]回数が<style=\"highlight\">2</style>増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]<style=\"highlight\">2</style>を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttack] [Sinking]回数が2増加</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "指令に従い貴方を処断いたします。",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、クリティカルダメージ量 +20%\n自分の[Breath]と対象の[Sinking]の合計が6以上なら、コイン威力 +1\n[StartBattle] [BlessingOfIndexPrescriptAlly]が6以上なら、このスキルの全コインが[SuperCoin]に変更\n[WhenUse] 自分の[Breath]回数が3増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[BlessingOfIndexPrescriptAlly]1につき、ダメージ量 +2.5% (最大20%)\n- [BlessingOfIndexPrescriptAlly]が9なら、代わりにダメージ量 +30%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Sinking]回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "指令に従い貴方を処断いたします。",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、<style=\"highlight\">最終威力+1</style>, クリティカルダメージ量 <style=\"highlight\">+30%</style>\n自分の[Breath]と対象の[Sinking]の合計<style=\"highlight\">6につき、コイン威力 +1 (最大2)</style>\n[StartBattle] [BlessingOfIndexPrescriptAlly]が6以上なら、このスキルの全コインが[SuperCoin]に変更されて<style=\"highlight\">ダメージ量 +30%</style>\n[WhenUse] 自分の[Breath]回数が3増加\n<style=\"highlight\">- ([BlessingOfIndexPrescriptAlly] ÷ 3)だけ[Breath]を得る (小数点切り捨て)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]1を得る<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[BlessingOfIndexPrescriptAlly]1につき、ダメージ量 <style=\"highlight\">+5%</style> (最大<style=\"highlight\">40%</style>)\n- [BlessingOfIndexPrescriptAlly]が9なら、代わりにダメージ量 <style=\"highlight\">+60%</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Sinking]回数が<style=\"highlight\">3</style>増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "指令が下賜した指令によって作られた布",
+          "desc": "[BlessingOfIndexPrescriptAlly]3につき、最終威力 +1 (最大3)\n[StartBattle] 自分の体力最大値の10%だけ、バリアを得る (1ターンにつき1回)\n- [KarmaOfIndexAlly]5につき、この効果で得るバリア数値が1%減少、[KarmaOfIndexAlly]数値が50以上ならバリアを得ない\n[WhenUse] [Breath]2を得る",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "指令が下賜した指令によって作られた布",
+          "desc": "[BlessingOfIndexPrescriptAlly]3につき、最終威力 +1, <style=\"highlight\">ダメージ量 +10%</style> (それぞれ最大3, <style=\"highlight\">最大30%</style>)\n[StartBattle] 自分の体力最大値の<style=\"highlight\">15%</style>だけ、バリアを得る (1ターンにつき1回)\n- [KarmaOfIndexAlly]5につき、この効果で得るバリア数値が<style=\"highlight\">1.5%</style>減少、[KarmaOfIndexAlly]数値が50以上ならバリアを得ない\n[WhenUse] [Breath]2を得る",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

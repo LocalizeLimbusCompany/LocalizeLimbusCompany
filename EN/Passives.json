@@ -2578,6 +2578,53 @@
       "id": 1091421,
       "name": "Carol of Dying Comrades",
       "desc": "1 ally with the lowest SP: Skills that consume [Charge] or Unique Charge[TabExplain] and have effects that inflict [Sinking] against enemies deal +10% damage (except E.G.O Skills)"
+    },
+    {
+      "id": 1111401,
+      "name": "Vanguard Team",
+      "desc": "Deal +5% damage for every [Protection] on self (max 15%)\n\nCombat Start: gain 2 [TheUdjatOutis]",
+      "summary": ""
+    },
+    {
+      "id": 1111402,
+      "name": "The Scepter of Horus - Replica",
+      "desc": "Turn Start: If an enemy has any of the Panic type changing effects, gain 1 [TheUdjatOutis]\n\nIf this unit has [TheUdjatOutis], inflict 1 [SheutFracture] On Hit with a Base Attack Skill (15 per turn)\n\n[Protection] Stack gained from this unit's Base Skills and [TheUdjatOutis] effect is capped at 5 per turn",
+      "summary": ""
+    },
+    {
+      "id": 1111412,
+      "name": "The Scepter of Horus - Replica",
+      "desc": "Turn Start: If an enemy has any of the Panic type changing effects, gain 1 [TheUdjatOutis]\n\nIf this unit has [TheUdjatOutis], inflict 1 [SheutFracture] On Hit with a Base Attack Skill (15 per turn)\n<style=\"highlight\">- If [LCA_Bullet] was spent, inflict additional [SheutFracture] per [LCA_Bullet] spent</style>\n\n[Protection] Stack gained from this unit's Base Skills and [TheUdjatOutis] effect is capped at 5 per turn",
+      "summary": ""
+    },
+    {
+      "id": 1111421,
+      "name": "Eagle Eye",
+      "desc": "Combat Start: apply 1 [Protection] next turn to 1 ally with the lowest HP percentage",
+      "summary": "Gain Protection"
+    },
+    {
+      "id": 1021402,
+      "name": "Prescript Delivered on Paper Slips",
+      "desc": "Turn Start:\n- Gain [IndexPrescriptFaust_0] / [IndexPrescriptFaust_1] / [IndexPrescriptFaust_2] / [IndexPrescriptFaust_3] based on [BlessingOfIndexPrescriptAlly] on self\n- Inflict [IndexPrescriptTargetToEnemy] to a random enemy (in Focused Encounters, the Part)\n- Apply [IndexPrescriptTargetMarkToEnemy] to Base Attack Skills on this unit's Dashboard (1 per Slot, max 2 Skills)\n· At 6+ [BlessingOfIndexPrescriptAlly], the effect above prioritizes Skill 3\n- All of the effects above and [IndexPrescript_Base] execution checks do not trigger when this unit is Staggered, Immobilized[TabExplain], in Panic, or in E.G.O Corrosion[TabExplain]",
+      "summary": "Gain Prescript\nInflict 'The Prescript's Target' to random target\nApply 'Mark of the Prescript' on a Base Attack Skill"
+    },
+    {
+      "id": 1021403,
+      "name": "Will of the Prescript",
+      "desc": "Turn End: If [IndexPrescript_Base] was executed this turn, heal 4 SP and gain 1 [BlessingOfIndexPrescriptAlly] (once per turn)\n- When executing [IndexPrescript_Base], if the main target has [IndexPrescriptTargetToEnemy], heal 8 SP and gain 3 [BlessingOfIndexPrescriptAlly] instead\n\nTurn End: If [IndexPrescript_Base] was not executed this turn, gain 5 [KarmaOfIndexAlly]\n- At 9 [BlessingOfIndexPrescriptAlly], does not gain [KarmaOfIndexAlly]\n- If this unit attempted to execute [IndexPrescript_Base] at Combat Start, but could not target the enemy during the combat phase, does not gain [KarmaOfIndexAlly]",
+      "summary": "Upon executing Prescript, heal SP and gain Grace of the Prescript\nUpon failing Prescript, gain Karmic Consequence"
+    },
+    {
+      "id": 1021401,
+      "name": "Proselyte's Blade",
+      "desc": "Deal +2% damage with Skills marked with [IndexPrescriptTargetMarkToEnemy] for every [BlessingOfIndexPrescriptAlly] on self (max 16%)\n- At 9 [BlessingOfIndexPrescriptAlly], deal +20% damage with Base Skills instead\n\nOn Hit with a Base Skill against target with [IndexPrescriptTargetToEnemy], gain 1 [Breath] and inflict 1 [Sinking] (once per turn)\n- Increase the number of times this effect can trigger per turn by 1 for every 3 [BlessingOfIndexPrescriptAlly] (max 2)\n\n- At 9 [BlessingOfIndexPrescriptAlly], Base Skills inflict +1 more [Sinking] Potency and this unit gains +1 more [Breath] Potency",
+      "summary": "Skills marked with Mark of the Prescript deal more damage based on Grace of the Prescript Stack\nOn Hit, gain Poise and inflict Sinking"
+    },
+    {
+      "id": 1021421,
+      "name": "As the Prescript Orders...",
+      "desc": "Effects apply to the Identity with the earliest Deployment order\n- Prioritizes The Index Identities\n\nCombat Start: If this unit's leftmost Skill on the Dashboard and other allies target the same enemy Slot, said Skill deals +5% damage for every ally targeting the same Slot excluding this unit (max 15%, applies when this unit and allies both use Base Attack Skills to main-target enemy Slot)"
     }
   ]
 }

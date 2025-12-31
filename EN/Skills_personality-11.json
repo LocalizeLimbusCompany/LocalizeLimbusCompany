@@ -2094,6 +2094,309 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1111401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Khopesh Swordplay",
+          "desc": "[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Sinking] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Khopesh Swordplay",
+          "desc": "[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn\n<style=\"highlight\">[WhenUse] Coin Power +1 for every 6 ([Sinking] + [Vibration]) on target (max 2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Sinking] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Khopesh Swordplay",
+          "desc": "[WhenUse] Gain +3 [Aggro] to this Skill Slot next turn\n[WhenUse] Coin Power +1 for every 6 ([Sinking] + [Vibration]) on target (max 2)\n<style=\"highlight\">[WhenUse] If this unit has [TheUdjatOutis], Clash Power +1\n[WinDuel] Inflict 2 [SheutFracture]</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Sinking] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 1 [Protection] next turn (once per turn)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1111402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Mirage Incision",
+          "desc": "[WhenUse] Gain +5 [Aggro] to this Skill Slot next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Sinking] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Mirage Incision",
+          "desc": "[WhenUse] Gain +5 [Aggro] to this Skill Slot next turn\n<style=\"highlight\">[WhenUse] Coin Power +1 for every 6 ([Sinking] + [Vibration]) on target (max 2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Sinking] Count<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Mirage Incision",
+          "desc": "[WhenUse] Gain +5 [Aggro] to this Skill Slot next turn\n[WhenUse] Coin Power +1 for every 6 ([Sinking] + [Vibration]) on target (max 2)\n<style=\"highlight\">[WhenUse] If this unit has [TheUdjatOutis], Clash Power +2 and deal +30% damage\n[WinDuel] Inflict 2 [SheutFracture]</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Sinking] Count<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Gain 1 [Protection] next turn (once per turn)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1111403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "The Vanguard will See it Done",
+          "desc": "[WhenUse] Gain +8 [Aggro] to this Skill Slot next turn\n[WhenUse] Base Power +1 for every [LCA_Bullet] about to be spent by this Skill\n[EndSkill] Gain 2 [Protection] next turn (once per turn)\n[EndSkill] At 2 or fewer [LCA_Bullet], [FullReload] (5 times per Encounter)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 2 [LCA_Bullet]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Sinking] Count"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Vibration] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [BlueSand] next turn"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [AzureResistDown] (once per turn)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 2 [LCA_Bullet]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "The Vanguard will See it Done",
+          "desc": "<style=\"highlight\">If this unit has [TheUdjatOutis], deal +50% damage</style>\n[WhenUse] Gain +8 [Aggro] to this Skill Slot next turn\n[WhenUse] At 6+ ([Sinking] + [Vibration]) on target, Coin Power +1\n[WhenUse] Base Power +1 for every [LCA_Bullet] about to be spent by this Skill\n[EndSkill] Gain 2 [Protection] next turn (once per turn)\n[EndSkill] At 2 or fewer [LCA_Bullet], [FullReload] (5 times per Encounter)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 2 [LCA_Bullet]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">Deal +([LCA_Bullet] spent x 30)% damage</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Sinking] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Vibration] Count<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [BlueSand] next turn<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [AzureResistDown] (once per turn)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 2 [LCA_Bullet]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">Deal +([LCA_Bullet] spent x 30)% damage</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] If target has SP, trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1\nIf target has less than 0 SP, inflict 1 [AzureTakeDamageUp] (once per turn)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1111404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Composure",
+          "desc": "When hit while this unit has Shield, inflict 3 [Sinking] against the attacker (3 times per turn)\n[WhenUse] For every [Protection] on self, gain Shield equal to 5% of this unit's max HP (max 15%; once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Composure",
+          "desc": "When hit while this unit has Shield, inflict 3 [Sinking] against the attacker (3 times per turn)\n<style=\"highlight\">[WhenUse] If this unit has [TheUdjatOutis], gain 1 [Protection] (once per turn)</style>\n[WhenUse] For every [Protection] on self, gain Shield equal to 5% of this unit's max HP (max 15%; once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
