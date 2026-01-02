@@ -2578,6 +2578,53 @@
       "id": 1091421,
       "name": "于颂歌声中，死去的同伴们",
       "desc": "使理智值最低的1名友方单位消耗[Charge]或特殊充能且拥有对敌方单位施加[Sinking]的效果的技能造成的伤害+10%(不包括E.G.O技能)"
+    },
+    {
+      "id": 1111401,
+      "name": "先锋队",
+      "desc": "自身每带有1层[Protection]，使自身造成的伤害+5%(最多+15%)\n\n战斗开始时，使自身获得2层[TheUdjatOutis]",
+      "summary": ""
+    },
+    {
+      "id": 1111402,
+      "name": "荷鲁斯之杖-仿制",
+      "desc": "回合开始时，若有敌方单位带有改变恐慌类型的效果，使自身获得1层[TheUdjatOutis]\n\n若自身带有[TheUdjatOutis]，则令自身基础攻击技能命中时对目标施加1层[SheutFracture](每回合最多15层)\n\n自身每回合通过基础技能与[TheUdjatOutis]最多获得5层[Protection]",
+      "summary": ""
+    },
+    {
+      "id": 1111412,
+      "name": "荷鲁斯之杖-仿制",
+      "desc": "回合开始时，若有敌方单位带有改变恐慌类型的效果，使自身获得1层[TheUdjatOutis]\n\n若自身带有[TheUdjatOutis]，则令自身基础攻击技能命中时对目标施加1层[SheutFracture](每回合最多15层)\n<style=\"highlight\">- 若消耗了[LCA_Bullet]，则每消耗1发[LCA_Bullet]，额外施加1层[SheutFracture]</style>\n\n自身每回合通过基础技能与[TheUdjatOutis]最多获得5层[Protection]",
+      "summary": ""
+    },
+    {
+      "id": 1111421,
+      "name": "苍鹰之眼",
+      "desc": "战斗开始时，使现存体力比例最低的1名友方单位在下回合获得1层[Protection]",
+      "summary": "获得守护 "
+    },
+    {
+      "id": 1021402,
+      "name": "由纸条所传达的指令",
+      "desc": "回合开始时\n- 根据自身的[BlessingOfIndexPrescriptAlly]层数，使自身获得[IndexPrescriptFaust_0]/[IndexPrescriptFaust_1]/[IndexPrescriptFaust_2]/[IndexPrescriptFaust_3]\n- 随机对1名敌方单位施加[IndexPrescriptTargetToEnemy](若是集中遭遇战，则改为1个部位)\n- 使仪表盘上自身的基础攻击技能获得[IndexPrescriptTargetMarkToEnemy](每个行动槽最多1个，最多2个技能)\n· 若自身的[BlessingOfIndexPrescriptAlly]层数不低于6层，则该效果优先适用于3技能\n- 自身陷入混乱、无法行动、陷入恐慌或E.G.O侵蚀时，以上所有效果与执行[IndexPrescript_Base]的判定不会生效",
+      "summary": "获得指令\n随机对敌方单位施加指令对象\n随机使自身的基础攻击技能获得指令的印记"
+    },
+    {
+      "id": 1021403,
+      "name": "指令之意",
+      "desc": "若本回合自身执行了[IndexPrescript_Base]，\n则回合结束时使自身恢复4点理智值并获得1层[BlessingOfIndexPrescriptAlly](每回合最多1次)\n- 执行[IndexPrescript_Base]时，若主要目标带有[IndexPrescriptTargetToEnemy]，\n则改为恢复8点理智值并获得3层[BlessingOfIndexPrescriptAlly]\n\n若本回合自身未执行[IndexPrescript_Base]，\n则回合结束时对自身施加5层[KarmaOfIndexAlly]\n- 若自身的[BlessingOfIndexPrescriptAlly]层数为9层，则不会施加[KarmaOfIndexAlly]\n- 若自身在战斗开始时试图执行[IndexPrescript_Base]，但在战斗中无法指定目标，则不会施加[KarmaOfIndexAlly]",
+      "summary": "执行指令时，使自身恢复理智值并获得指令加护 \n执行失败时，对自身施加业 "
+    },
+    {
+      "id": 1021401,
+      "name": "苦行之刃",
+      "desc": "自身每带有1层[BlessingOfIndexPrescriptAlly]，使自身被[IndexPrescriptTargetMarkToEnemy]标记的技能造成的伤害+2%(最多+16%)\n- 若自身的[BlessingOfIndexPrescriptAlly]层数为9层，则改为使自身基础技能造成的伤害+20%\n\n自身基础技能命中带有[IndexPrescriptTargetToEnemy]的敌方单位时，\n使自身增加1级[Breath]强度并使该敌方单位增加1级[Sinking]强度\n- 自身每带有3层[BlessingOfIndexPrescriptAlly]，使该效果每回合可触发的次数+1(最多+2)\n\n若自身的[BlessingOfIndexPrescriptAlly]层数为9层，则令自身基础技能增加的[Sinking]强度与[Breath]强度额外+1级",
+      "summary": "根据自身的指令加护 层数，使自身被指令的印记 标记的技能造成的伤害增加\n命中时，使自身增加呼吸法 强度，使目标增加沉沦 强度"
+    },
+    {
+      "id": 1021421,
+      "name": "正如指令所引导的…",
+      "desc": "该效果适用于最先编入的友方单位\n- 优先适用于属于食指的友方单位\n\n战斗开始时，若仪表盘上该单位位于最左侧的技能与其他友方单位指定了敌方单位的同一行动槽，则除该单位以外每有1名友方单位指定了同一行动槽，使该技能造成的伤害+5%\n(最多+15%，仅在该单位与友方单位均使用基础攻击技能指定敌方单位行动槽为主要目标时适用)"
     }
   ]
 }

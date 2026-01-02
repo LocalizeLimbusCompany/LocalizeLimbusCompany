@@ -2114,6 +2114,285 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1021401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "务必保证，遵从指令",
+          "desc": "若本技能被[IndexPrescriptTargetMarkToEnemy]标记，则使本技能造成的伤害+10%\n[WhenUse] 使自身获得2层[Breath]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加1级[Breath]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Sinking]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "务必保证，遵从指令",
+          "desc": "若本技能被[IndexPrescriptTargetMarkToEnemy]标记，则使本技能造成的伤害+10%\n<style=\"highlight\">若自身的[Breath]强度与目标的[Sinking]强度之和不低于6级，则使本技能的硬币威力+1</style>\n[WhenUse] 使自身获得2层[Breath]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加1级[Breath]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Sinking]强度<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "务必保证，遵从指令",
+          "desc": "若本技能被[IndexPrescriptTargetMarkToEnemy]标记，则使本技能<style=\"highlight\">的拼点威力+1</style>，造成的伤害<style=\"highlight\">+20%</style>\n自身的[Breath]强度与目标的[Sinking]强度之和<style=\"highlight\">每有6级，使本技能的硬币威力+1(最多+2)</style>\n[WhenUse] 使自身获得2层[Breath]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加1级[Breath]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Sinking]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttack] 使目标增加1级[Sinking]强度</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "执行指令并修行",
+          "desc": "若本技能被[IndexPrescriptTargetMarkToEnemy]标记，则使本技能的拼点威力+1\n[WhenUse] 使自身增加3级[Breath]强度",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加1级[Breath]强度"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Sinking]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "执行指令并修行",
+          "desc": "若本技能被[IndexPrescriptTargetMarkToEnemy]标记，则使本技能的拼点威力+1\n<style=\"highlight\">若自身的[Breath]强度与目标的[Sinking]强度之和不低于6级，则使本技能的硬币威力+1</style>\n[WhenUse] 使自身增加3级[Breath]强度<style=\"highlight\">并获得1层[Breath]</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加1级[Breath]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 使目标增加1级[Sinking]强度</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Sinking]强度<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "执行指令并修行",
+          "desc": "若本技能被[IndexPrescriptTargetMarkToEnemy]标记，则使本技能的<style=\"highlight\">最终威力+1</style>\n自身的[Breath]强度与目标的[Sinking]强度之和<style=\"highlight\">每有6级，使本技能的硬币威力+1(最多+2)</style>\n[WhenUse] 使自身增加3级[Breath]强度并获得<style=\"highlight\">2</style>层[Breath]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加<style=\"highlight\">2</style>级[Breath]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Sinking]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Sinking]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttack] 对目标施加2层[Sinking]</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "我将遵照指令将你处决。",
+          "desc": "若本技能被[IndexPrescriptTargetMarkToEnemy]标记，则使本技能暴击时造成的伤害+20%\n若自身的[Breath]强度与目标的[Sinking]强度之和不低于6级，则使本技能的硬币威力+1\n[StartBattle] 若自身的[BlessingOfIndexPrescriptAlly]层数不低于6层，则使本技能的所有硬币转化为[SuperCoin]\n[WhenUse] 使自身获得3层[Breath]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加1级[Breath]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Sinking]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "自身每带有1层[BlessingOfIndexPrescriptAlly]，使本硬币造成的伤害+2.5%(最多20%)\n- 若自身的[BlessingOfIndexPrescriptAlly]层数为9层，则改为造成的伤害+30%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Sinking]强度"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 对目标施加2层[Sinking]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "我将遵照指令将你处决。",
+          "desc": "若本技能被[IndexPrescriptTargetMarkToEnemy]标记，则使本技能<style=\"highlight\">的最终威力+1</style>，暴击时造成的伤害<style=\"highlight\">+30%</style>\n自身的[Breath]强度与目标的[Sinking]强度之和<style=\"highlight\">每有6级，使本技能的硬币威力+1(最多+2)</style>\n[StartBattle] 若自身的[BlessingOfIndexPrescriptAlly]层数不低于6层，则使本技能的所有硬币转化为[SuperCoin]<style=\"highlight\">且造成的伤害+30%</style>\n[WhenUse] 使自身获得3层[Breath]\n<style=\"highlight\">- 使自身增加(自身的[BlessingOfIndexPrescriptAlly]层数/3)级[Breath]强度(向下取整)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加1级[Breath]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Sinking]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "自身每带有1层[BlessingOfIndexPrescriptAlly]，使本硬币造成的伤害<style=\"highlight\">+5%</style>(最多<style=\"highlight\">40%</style>)\n- 若自身的[BlessingOfIndexPrescriptAlly]层数为9层，则改为造成的伤害<style=\"highlight\">+60%</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Sinking]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 对目标施加<style=\"highlight\">3</style>层[Sinking]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "指令所赐、指令织就之布",
+          "desc": "自身每带有3层[BlessingOfIndexPrescriptAlly]，使本技能的最终威力+1(最多+3)\n[StartBattle] 使自身获得自身体力上限10%的护盾(每回合最多1次)\n- 自身每带有5层[KarmaOfIndexAlly]，使该效果获得的护盾减少1%，若自身的[KarmaOfIndexAlly]层数不低于50层，则不会获得护盾\n[WhenUse] 使自身增加2级[Breath]强度",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Sinking]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Sinking]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "指令所赐、指令织就之布",
+          "desc": "自身每带有3层[BlessingOfIndexPrescriptAlly]，使本技能的最终威力+1，<style=\"highlight\">造成的伤害+10%</style>(最多+3；<style=\"highlight\">最多+30%</style>)\n[StartBattle] 使自身获得自身体力上限<style=\"highlight\">15%</style>的护盾(每回合最多1次)\n- 自身每带有5层[KarmaOfIndexAlly]，使该效果获得的护盾减少<style=\"highlight\">1.5%</style>，若自身的[KarmaOfIndexAlly]层数不低于50层，则不会获得护盾\n[WhenUse] 使自身增加2级[Breath]强度",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Sinking]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Sinking]强度<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
