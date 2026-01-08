@@ -2644,6 +2644,594 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1031401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "頭を潰す",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、ダメージ量 +10%\n[WhenUse] 自分の[Breath]回数が1増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]1を得る"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "頭を潰す",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、ダメージ量 +10%\n<style=\"highlight\">自分の[Breath]と対象の[Sinking]の合計が6以上なら、コイン威力 +1</style>\n[WhenUse] 自分の[Breath]回数が<style=\"highlight\">2</style>増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]2を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]1を得る<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "頭を潰す",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、<style=\"highlight\">最終威力 +1</style>, ダメージ量<style=\"highlight\"> +15%</style>\n自分の[Breath]と対象の[Sinking]の合計<style=\"highlight\">6につき、コイン威力 +1 (最大2)</style>\n[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]2を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]1を得る<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttack] 自分の[Breath]回数が1増加</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1031402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "し、静かになされよ",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、マッチ威力 +1\n[WhenUse] [Breath]3を得る",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "し、静かになされよ",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、マッチ威力 +1\n<style=\"highlight\">自分の[Breath]と対象の[Sinking]の合計が6以上なら、コイン威力 +1</style>\n[WhenUse] [Breath]3を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Sinking]1を付与</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が1増加<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "し、静かになされよ",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、<style=\"highlight\">最終威力 +1</style>\n自分の[Breath]と対象の[Sinking]の合計<style=\"highlight\">6につき、コイン威力 +1 (最大2)</style>\n[WhenUse] [Breath]3を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]<style=\"highlight\">2</style>を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が1増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttack] [Sinking]回数が1増加</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1031403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "は、はやく指令を遂行せねば…",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、クリティカルダメージ量 +20%\n自分の[Breath]と対象の[Sinking]の合計4につき、最終威力 +1 (最大2)\n[StartBattle] [UnlockBuff_Base]段階が2以上なら、このスキルの全コインが[SuperCoin]に変更\n[WhenUse] 自分の[Breath]回数が3増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[UnlockBuff_Base]段階1につきダメージ量 +20% (最大60%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]2を付与、[Sinking]回数が1増加"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Sinking]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "は、はやく指令を遂行せねば…",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、<style=\"highlight\">コイン威力+1</style>, クリティカルダメージ量 <style=\"highlight\">+40%</style>\n自分の[Breath]と対象の[Sinking]の合計4につき、最終威力 +1 (最大<style=\"highlight\">4</style>)\n[StartBattle] [UnlockBuff_Base]段階が2以上なら、このスキルの全コインが[SuperCoin]に変更されて<style=\"highlight\">[UnlockBuff_Base]段階1につきダメージ量 +20% (最大60%)</style>\n[WhenUse] 自分の[Breath]回数が3増加\n<style=\"highlight\">- [UnlockBuff_Base]段階だけ[Breath]を追加で得る</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[UnlockBuff_Base]段階1につき、ダメージ量 +<style=\"highlight\">40%</style>(最大<style=\"highlight\">120%</style>)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]2を付与、[Sinking]回数が1増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Sinking]1を付与, <style=\"highlight\">[Sinking]回数が1増加</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1031404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "指令が下賜した指令によって作られた布",
+          "desc": "[UnlockBuff_Base]段階1につき、最終威力 +1 (最大3)\n[StartBattle] 自分の体力最大値の10%だけ、バリアを得る (1ターンにつき1回)\n- [KarmaOfIndexAlly]5につき、この効果で得るバリア数値が1%ずつ減少し、[KarmaOfIndexAlly]数値が50以上ならバリアを獲得しない\n[WhenUse] 自分の[Breath]回数が2増加\n[EndBattle] [UnlockBuff_Base]が無いなら、[UnlockBuffAlly_1]を得る (1ターンにつき1回)\n- [BlessingOfIndexPrescriptAlly]が3に変更される\n- 増加した[BlessingOfIndexPrescriptAlly]1につき、次のターン開始時に[KarmaOfIndexAlly]5を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]1を得る"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "指令が下賜した指令によって作られた布",
+          "desc": "[UnlockBuff_Base]段階1につき、最終威力 +1, <style=\"highlight\">ダメージ量 +15%</style> (それぞれ最大3, <style=\"highlight\">最大45%</style>)\n[StartBattle] 自分の体力最大値の<style=\"highlight\">15%</style>だけ、バリアを得る (1ターンにつき1回)\n- [KarmaOfIndexAlly]5につき、この効果で得るバリア数値が<style=\"highlight\">1.5%</style>ずつ減少し、[KarmaOfIndexAlly]数値が50以上ならバリアを獲得しない\n[WhenUse] 自分の[Breath]回数が2増加\n[EndBattle] [UnlockBuff_Base]が無いなら、[UnlockBuffAlly_1]を得る (1ターンにつき1回)\n- [BlessingOfIndexPrescriptAlly]が3に変更される\n- 増加した[BlessingOfIndexPrescriptAlly]1につき、次のターン開始時に[KarmaOfIndexAlly]5を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]1を得る<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Sinking]1を付与</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1031405,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "この手で代わりに…",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、ダメージ量 +10%\n[WhenUse] 自分の[Breath]の回数が1増加\n[EndSkill] 精神力が3減少 (1ターンにつき2回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "この手で代わりに…",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、ダメージ量 +10%\n<style=\"highlight\">自分の[Breath]と対象の[Sinking]の合計が6以上なら、コイン威力 +1</style>\n[WhenUse] 自分の[Breath]回数が<style=\"highlight\">2</style>増加\n[EndSkill] 精神力が3減少 (1ターンにつき2回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]2を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]回数が1増加<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "この手で代わりに…",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、ダメージ量<style=\"highlight\"> +15%</style>\n自分の[Breath]と対象の[Sinking]の合計<style=\"highlight\">6につき、コイン威力 +1 (最大2)</style>\n[WhenUse] 自分の[Breath]回数が2増加\n[EndSkill] 精神力が3減少 (1ターンにつき2回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]2を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]回数が1増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttack] 自分の[Breath]回数が1増加</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1031406,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "代行: 刻む",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、ダメージ量 +5%\n[WhenUse] [Breath]3を得る\n[EndSkill] 精神力が6減少 (1ターンにつき2回)",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "代行: 刻む",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、ダメージ量 +5%\n<style=\"highlight\">自分の[Breath]と対象の[Sinking]の合計が6以上なら、コイン威力 +1</style>\n[WhenUse] [Breath]3を得る\n[EndSkill] 精神力が6減少 (1ターンにつき2回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Sinking]2を付与</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が1増加<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "代行: 刻む",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、ダメージ量<style=\"highlight\"> +10%</style>\n自分の[Breath]と対象の[Sinking]の合計<style=\"highlight\">6につき、コイン威力 +1 (最大2)</style>\n[WhenUse] [Breath]3を得る\n[EndSkill] 精神力が6減少 (1ターンにつき2回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]2を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]<style=\"highlight\">2</style>を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が1増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttack] [Sinking]回数が1増加</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1031407,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "代行: 抹殺",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、ダメージ量 +15%\n自分の[Breath]と対象の[Sinking]の合計が6以上なら、コイン威力 +1\n[WhenUse] 自分の[Breath]回数が3増加\n[EndSkill] 精神力が15減少 (1ターンにつき2回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[UnlockBuff_Base]段階1につき、このコインのダメージ量 +20% (最大60%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Sinking]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "代行: 抹殺",
+          "desc": "このスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、ダメージ量 <style=\"highlight\">+25%</style>\n自分の[Breath]と対象の[Sinking]の合計<style=\"highlight\">6につき、コイン威力 +1 (最大2)</style>\n[WhenUse] 自分の[Breath]回数が3増加\n<style=\"highlight\">- [UnlockBuff_Base]段階だけ、[Breath]を追加で得る</style>\n[EndSkill] 精神力が15減少 (1ターンにつき2回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnlockBuff_Base]段階1につき、このコインの<style=\"highlight\">威力 +1</style>, ダメージ量 <style=\"highlight\">+40%</style> <style=\"highlight\">(それぞれ最大3, 最大120%)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Sinking]回数が<style=\"highlight\">2</style>増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1031408,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "強制解禁",
+          "desc": "[DuelCounter]\n[WhenUse] [Breath]3を得る\n[EndBattle] [UnlockBuff_Base]が3未満なら、下記の効果が発動 (1ターンにつき1回)\n- 自分に[UnlockBuff_Base]があるなら、段階が1増加\n- 6/9未満の[BlessingOfIndexPrescriptAlly]が6/9に変更される\n- 増加した[BlessingOfIndexPrescriptAlly]1につき、次のターン開始時に[KarmaOfIndexAlly]5を得る",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "強制解禁",
+          "desc": "[DuelCounter]\n<style=\"highlight\">[UnlockBuff_Base]段階1につき、最終威力 +1 (最大3)</style>\n[WhenUse] [Breath]3を得る\n[EndBattle] [UnlockBuff_Base]が3未満なら、下記の効果が発動 (1ターンにつき1回)\n- 自分に[UnlockBuff_Base]があるなら、段階が1増加\n- 6/9未満の[BlessingOfIndexPrescriptAlly]が6/9に変更される\n- 増加した[BlessingOfIndexPrescriptAlly]1につき、次のターン開始時に[KarmaOfIndexAlly]5を得る",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

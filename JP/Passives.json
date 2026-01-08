@@ -1343,7 +1343,7 @@
     },
     {
       "id": 999906,
-      "name": "シン(心)",
+      "name": "シン(心) - 赤い視線",
       "desc": "精神力に比例してマン(望)を生成できる",
       "summary": ""
     },
@@ -2618,13 +2618,41 @@
     {
       "id": 1021401,
       "name": "遂行者の剣",
-      "desc": "自分の[BlessingOfIndexPrescriptAlly]1につき、[IndexPrescriptTargetMarkToEnemy]スキルのダメージ量 +2% (最大16%)\n- [BlessingOfIndexPrescriptAlly]が9なら、代わりに基本攻撃スキルのダメージ量 +20%\n\n[IndexPrescriptTargetToEnemy]がある対象に基本攻撃スキルを的中時、\n[Breath]1を得て[Sinking]1を付与 (1ターンにつき1回)\n- [BlessingOfIndexPrescriptAlly]3につき、1ターンごとの発動可能回数 +1 (最大2)\n\n[BlessingOfIndexPrescriptAlly]が9なら、基本スキルの[Sinking]威力付与値 +1, [Breath]威力獲得値 +1",
+      "desc": "自分の[BlessingOfIndexPrescriptAlly]1につき、[IndexPrescriptTargetMarkToEnemy]が刻まれたスキルのダメージ量 +2% (最大16%)\n- [BlessingOfIndexPrescriptAlly]が9なら、代わりに基本攻撃スキルのダメージ量 +20%\n\n[IndexPrescriptTargetToEnemy]がある対象に基本攻撃スキルを的中時、\n[Breath]1を得て[Sinking]1を付与 (1ターンにつき1回)\n- [BlessingOfIndexPrescriptAlly]3につき、1ターンごとの発動可能回数 +1 (最大2)\n\n[BlessingOfIndexPrescriptAlly]が9なら、基本スキルの[Sinking]威力付与値 +1, [Breath]威力獲得値 +1",
       "summary": "指令の印が刻まれたスキルなら、指令の加護に比例してダメージ量が増加\n的中時、呼吸を得て沈潜付与"
     },
     {
       "id": 1021421,
       "name": "指令の導くまま…。",
       "desc": "編成順が最も早い味方に効果適用\n- 人差し指所属人格がいるなら、該当人格に優先して適用\n\n戦闘開始時、自分の操作スロットのうち最左端のスキルで指定した敵スロットを他の味方も指定したなら、当該スキルのダメージ量が自分以外の該当スロットをターゲティングした人員数1名につき、5%増加\n(最大15%, 自分と味方が、どちらも基本攻撃スキルでメインターゲットにした場合に適用)"
+    },
+    {
+      "id": 1031402,
+      "name": "端末機で伝達された指令",
+      "desc": "ターン開始時\n- 自分の[UnlockBuff_Base]段階によって[IndexPrescriptDon_0] / [IndexPrescriptDon_1] / [IndexPrescriptDon_2] / [IndexPrescriptDon_3]を得る\n- ランダムな敵1名へ[IndexPrescriptTargetToEnemy]を付与 (集中戦闘なら部位に付与)\n- 操作スロットにある自分の基本攻撃スキルに[IndexPrescriptTargetMarkToEnemy]を付与 (スロットごとに1つ、最大2つ付与)\n· [UnlockBuffAlly_2]が以上なら、スキル3に優先して付与\n- 混乱・行動不能[TabExplain]・パニック・E.G.O侵蝕状態なら、上記の全効果と[IndexPrescript_Base_2nd]遂行成否が適用されない\n\nターン開始時に[UnlockBuffAlly_3]なら、[Blandishment_Shin]を得る",
+      "summary": "指令を得る\nランダムな敵に指令対象を付与\n自分のランダムな基本攻撃スキルに指令の印を付与"
+    },
+    {
+      "id": 1031403,
+      "name": "指令の意味",
+      "desc": "このターンに[IndexPrescript_Base_2nd]を遂行したなら、\nターン終了時に精神力を4回復、[BlessingOfIndexPrescriptAlly]1を得る (1ターンにつき1回)\n- [IndexPrescript_Base_2nd]を遂行時、メインターゲットに[IndexPrescriptTargetToEnemy]があるなら、\n代わりに精神力を8回復、[BlessingOfIndexPrescriptAlly]3を得る\n\nこのターンに[IndexPrescript_Base_2nd]を遂行できなかったなら、\nターン終了時に[KarmaOfIndexAlly]5を得る\n- [UnlockBuffAlly_3]なら、[KarmaOfIndexAlly]を獲得しない\n- 戦闘開始時に[IndexPrescript_Base_2nd]の遂行を試みたが、戦闘中に対象をターゲティングできなくなった場合には、ターン終了時に[KarmaOfIndexAlly]を獲得しない",
+      "summary": "指令遂行時、精神力を回復して指令の加護を得る\n指令失敗時、カルマを得る"
+    },
+    {
+      "id": 1031404,
+      "name": "解禁/開花 E.G.O::代行",
+      "desc": "ターン終了時に[BlessingOfIndexPrescriptAlly]が3/6/9なら、[UnlockBuffAlly_1]/[UnlockBuffAlly_2]/[UnlockBuffAlly_3]を得る\n\n[UnlockBuffAlly_1]を得るなら、精神力を15消耗して<noparse>開花</noparse>E.G.O::代行状態になる\n- 精神力が消耗する前に精神力が25まで増加して(増加した精神力 ÷ 5)だけ[KarmaOfIndexAlly]を得る (小数点繰り上げ)\n- 以降、ターン開始時に[UnlockBuff_Base]があるかつ精神力が25以上なら、\n精神力を15消耗して当該状態になる\n\n<noparse>開花</noparse>E.G.O::代行状態になるとき、\n- そのターンの混乱を解除\n(解除できない混乱なら、この状態になれない)\n- 当該状態の時、[Blandishment]を得る\n\nターン開始時に精神力が0以下なら、この状態が解除される"
+    },
+    {
+      "id": 1031401,
+      "name": "やはり魔法のピピ様は当人が望むことを分かってくれるのだな！",
+      "desc": "自分の[BlessingOfIndexPrescriptAlly]1につき、[IndexPrescriptTargetMarkToEnemy]が刻まれたスキルのダメージ量 +2% (最大16%)\n- [BlessingOfIndexPrescriptAlly]が9なら、代わりに基本攻撃スキルのダメージ量 +20%\n\n[IndexPrescriptTargetToEnemy]がある対象に基本攻撃スキルを的中時、\n精神力を3回復 (スキルごとに1回、1ターンにつき2回)\n- [UnlockBuff_Base]段階だけ精神力を追加で回復",
+      "summary": "指令の印が刻まれたスキルなら、指令の加護に比例してダメージ量が増加\n的中時、精神力を回復"
+    },
+    {
+      "id": 1031421,
+      "name": "これもまた魔法のピピ様のご恩であろう",
+      "desc": "戦闘開始時、精神力が最も低い味方1名の精神力を15回復\n- 加算コインを使用する人格へ優先して適用\n- 対象が人差し指所属なら効果が強化され、追加で[AttackDmgUp]を1付与\n- 侵蝕、パニックなど精神力を回復できない対象には適用されない"
     }
   ]
 }

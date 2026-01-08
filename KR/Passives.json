@@ -1343,7 +1343,7 @@
     },
     {
       "id": 999906,
-      "name": "신(心)",
+      "name": "신(心) - 붉은시선",
       "desc": "정신력에 비례하여 망을 생성할 수 있음",
       "summary": ""
     },
@@ -2625,6 +2625,34 @@
       "id": 1021421,
       "name": "지령이 이끄는 대로…",
       "desc": "편성 순서가 가장 빠른 인격에게 효과 적용\n- 검지 소속 인격이 있으면, 해당 인격에게 우선 적용\n\n전투 시작 시 자신의 조작 슬롯 중 가장 왼쪽 스킬로 지정한 적 슬롯을 다른 아군이 같이 지정했으면, 해당 스킬의 피해량이 자신을 제외하고 해당 슬롯을 타겟한 인원 수 1명당 5% 증가\n(최대 15%, 자신과 아군 모두 기본 공격 스킬로 메인 타겟할 때 적용)"
+    },
+    {
+      "id": 1031402,
+      "name": "단말기로 전해진 지령",
+      "desc": "턴 시작 시\n- 자신의 [UnlockBuff_Base] 단계에 따라 [IndexPrescriptDon_0] / [IndexPrescriptDon_1] / [IndexPrescriptDon_2] / [IndexPrescriptDon_3] 얻음\n- 무작위 적 1명에게 [IndexPrescriptTargetToEnemy] 부여 (집중 전투면, 부위에 부여)\n- 조작 슬롯의 자신의 기본 공격 스킬에 [IndexPrescriptTargetMarkToEnemy] 부여 (슬롯당 1개, 최대 2개 부여)\n· [UnlockBuffAlly_2] 이상이면, 스킬 3에 우선 부여\n- 흐트러짐, 행동 불가[TabExplain], 패닉, E.G.O 침식 상태면, 위의 모든 효과와 [IndexPrescript_Base_2nd] 수행 여부가 적용되지 않음\n\n턴 시작 시 [UnlockBuffAlly_3]이면, [Blandishment_Shin] 얻음",
+      "summary": "지령 얻음\n무작위 적에 지령 대상 부여\n자신의 무작위 기본 공격 스킬에 지령 표식 부여"
+    },
+    {
+      "id": 1031403,
+      "name": "지령의 뜻",
+      "desc": "이번 턴에 [IndexPrescript_Base_2nd]을 수행했으면,\n턴 종료 시 정신력 4 회복, [BlessingOfIndexPrescriptAlly] 1 얻음 (턴당 1회)\n- [IndexPrescript_Base_2nd] 수행 시 메인 타겟에게 [IndexPrescriptTargetToEnemy]이 있으면,\n대신 정신력 8 회복, [BlessingOfIndexPrescriptAlly] 3 얻음\n\n이번 턴에 [IndexPrescript_Base_2nd]을 수행하지 못했으면,\n 턴 종료 시 [KarmaOfIndexAlly] 5 얻음\n- [UnlockBuffAlly_3]이면, [KarmaOfIndexAlly]를 얻지 않음\n- 전투 시작 시 [IndexPrescript_Base_2nd] 수행을 시도했으나, 전투 중에 대상을 타겟할 수 없게 되었으면, 턴 종료 시 [KarmaOfIndexAlly]를 얻지 않음",
+      "summary": "지령 수행 시, 정신력 회복하고 지령의 가호 얻음\n지령 실패 시, 카르마 얻음"
+    },
+    {
+      "id": 1031404,
+      "name": "해금/개화 E.G.O::대행",
+      "desc": "턴 종료 시 [BlessingOfIndexPrescriptAlly]가 3/6/9이면, [UnlockBuffAlly_1]/[UnlockBuffAlly_2]/[UnlockBuffAlly_3] 얻음\n\n[UnlockBuffAlly_1]을 얻으면, 정신력을 15 소모하여 <noparse>개화</noparse> E.G.O::대행 상태가 됨\n- 정신력 소모 전 정신력이 25까지 증가하고 (증가한 정신력/5)만큼 [KarmaOfIndexAlly] 얻음 (소수점 올림)\n- 이후 턴 시작 시 [UnlockBuff_Base]이 있고, 정신력이 25 이상이면,\n정신력을 15 소모하여 해당 상태가 됨\n\n<noparse>개화</noparse> E.G.O::대행 상태가 될 때,\n- 해당 턴의 흐트러짐 해제\n(해제할 수 없는 흐트러짐이면 해당 상태가 될 수 없음)\n- 해당 상태일 때, [Blandishment] 얻음\n\n턴 시작 시 정신력이 0 이하면, 해당 상태 해제"
+    },
+    {
+      "id": 1031401,
+      "name": "역시 마법의 삐삐님은 본인이 원하는 걸 알아주시는 군!",
+      "desc": "자신의 [BlessingOfIndexPrescriptAlly] 1당 [IndexPrescriptTargetMarkToEnemy] 스킬 피해량 +2% (최대 16%)\n- [BlessingOfIndexPrescriptAlly]가 9면, 대신 기본 스킬의 피해량 +20%\n\n[IndexPrescriptTargetToEnemy]이 있는 대상에게 기본 스킬 공격 적중 시,\n정신력 3 회복 (스킬당 1회, 턴당 2회)\n- [UnlockBuff_Base] 단계만큼 정신력 추가 회복",
+      "summary": "지령 표식이 새겨진 스킬이면, 지령의 가호에 비례하여 피해량이 증가\n적중 시 정신력 회복"
+    },
+    {
+      "id": 1031421,
+      "name": "이 또한 마법의 삐삐님의 은혜일테지",
+      "desc": "전투 시작 시, 정신력이 가장 낮은 아군 1명의 정신력 15 회복\n- 더하기 코인을 사용하는 인격에게 우선으로 적용\n- 대상이 검지 소속이면 효과가 강화되어 추가로 [AttackDmgUp] 1 부여\n- 침식, 패닉 등 정신력을 회복할 수 없는 대상에게는 적용되지 않음"
     }
   ]
 }
