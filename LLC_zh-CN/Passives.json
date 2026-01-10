@@ -1343,7 +1343,7 @@
     },
     {
       "id": 999906,
-      "name": "心",
+      "name": "心-猩红凝视",
       "desc": "根据理智值生成望",
       "summary": ""
     },
@@ -2012,7 +2012,7 @@
     {
       "id": 1121101,
       "name": "只有我活下来了…",
-      "desc": "本场战斗自身每消耗1层[FirePunchFuel]与[FirePunchFuelOverheated]，使自身造成的伤害+0.2%(最多+40%)\n- 若主要目标属于<血魔>或<血袋>，或目标的[Combustion]强度与[Combustion]层数之和不低于30点，则改为造成的伤害+0.3%(最多+60%）\n\n若自身的[FirePunchFuel]或[FirePunchFuelOverheated]层数不低于1层，则自身使带有[Combustion]的敌方单位陷入混乱或击杀带有[Combustion]的敌方单位时，随机对未带有[Combustion]或[Combustion]层数最低的2名敌方单位施加2层[Combustion](每回合最多1次)\n- 若是集中遭遇战，则改为对部位施加"
+      "desc": "本场战斗自身每消耗1层[FirePunchFuel]与[FirePunchFuelOverheated]，使自身造成的伤害+0.2%(最多+40%)\n- 若主要目标属于<血魔>或<血袋>，或目标的[Combustion]强度与[Combustion]层数之和不低于30点，则改为造成的伤害+0.3%(最多+60%)\n\n若自身的[FirePunchFuel]或[FirePunchFuelOverheated]层数不低于1层，则自身使带有[Combustion]的敌方单位陷入混乱或击杀带有[Combustion]的敌方单位时，随机对未带有[Combustion]或[Combustion]层数最低的2名敌方单位施加2层[Combustion](每回合最多1次)\n- 若是集中遭遇战，则改为对部位施加"
     },
     {
       "id": 1121121,
@@ -2553,7 +2553,7 @@
     },
     {
       "id": 1041302,
-      "name": "君·可·旁·好\n（君主吗…若能在那种可能性里护在其身旁，该有多好。）",
+      "name": "君·可·旁·好\n(君主吗…若能在那种可能性里护在其身旁，该有多好。)",
       "desc": "除自身以外的友方单位的技能命中敌方单位时，该攻击结束后自身使用“喂，退下”进行单方面攻击(每回合最多1次)\n\n自身解除待命或重返战斗的回合，使自身获得2层[ProtectStanceRyoshu]\n自身通过鸿园的君主 鸿璐的被动技能“黑兽君主”效果进行单方面攻击时，自身被视为属于黑兽或贾家",
       "summary": "对友方单位攻击的敌方单位使用1技能进行单方面攻击"
     },
@@ -2625,6 +2625,34 @@
       "id": 1021421,
       "name": "正如指令所引导的…",
       "desc": "该效果适用于最先编入的友方单位\n- 优先适用于属于食指的友方单位\n\n战斗开始时，若仪表盘上该单位位于最左侧的技能与其他友方单位指定了敌方单位的同一行动槽，则除该单位以外每有1名友方单位指定了同一行动槽，使该技能造成的伤害+5%\n(最多+15%，仅在该单位与友方单位均使用基础攻击技能指定敌方单位行动槽为主要目标时适用)"
+    },
+    {
+      "id": 1031402,
+      "name": "由终端所传达的指令",
+      "desc": "回合开始时\n- 根据自身的[UnlockBuff_Base]阶段，使自身获得[IndexPrescriptDon_0]/[IndexPrescriptDon_1]/[IndexPrescriptDon_2]/[IndexPrescriptDon_3]\n- 随机对1名敌方单位施加[IndexPrescriptTargetToEnemy](若是集中遭遇战，则改为1个部位)\n- 使仪表盘上自身的基础攻击技能获得[IndexPrescriptTargetMarkToEnemy](每个行动槽最多1个，最多2个技能)\n· 若自身的[UnlockBuff_Base]阶段不低于2，则该效果优先适用于3技能\n- 自身陷入混乱、无法行动、陷入恐慌或E.G.O侵蚀时，以上所有效果与执行[IndexPrescript_Base_2nd]的判定不会生效\n\n回合开始时，若自身带有[UnlockBuffAlly_3]，则使自身获得[Blandishment_Shin]",
+      "summary": "获得指令\n随机对敌方单位施加指令对象\n随机使自身的基础攻击技能获得指令的印记"
+    },
+    {
+      "id": 1031403,
+      "name": "指令之意",
+      "desc": "若本回合自身执行了[IndexPrescript_Base_2nd]，\n则回合结束时使自身恢复4点理智值并获得1层[BlessingOfIndexPrescriptAlly](每回合最多1次)\n- 执行[IndexPrescript_Base_2nd]时，若主要目标带有[IndexPrescriptTargetToEnemy]，\n则改为恢复8点理智值并获得3层[BlessingOfIndexPrescriptAlly]\n\n若本回合自身未执行[IndexPrescript_Base_2nd]，\n则回合结束时对自身施加5层[KarmaOfIndexAlly]\n- 若自身带有[UnlockBuffAlly_3]，则不会施加[KarmaOfIndexAlly]\n- 若自身在战斗开始时试图执行[IndexPrescript_Base_2nd]，但在战斗中无法指定目标，则回合结束时不会施加[KarmaOfIndexAlly]",
+      "summary": "执行指令时，使自身恢复理智值并获得指令加护 \n执行失败时，对自身施加业 "
+    },
+    {
+      "id": 1031404,
+      "name": "解放/绽放E.G.O::代行",
+      "desc": "回合结束时，若自身的[BlessingOfIndexPrescriptAlly]层数为3层/6层/9层，则使自身获得[UnlockBuffAlly_1]/[UnlockBuffAlly_2]/[UnlockBuffAlly_3]\n\n若自身获得[UnlockBuffAlly_1]，则消耗15点理智值并进入<noparse>绽放</noparse>E.G.O::代行状态\n- 消耗理智值前，使自身理智值恢复至25点并对自身施加(自身恢复的理智值/5)层[KarmaOfIndexAlly](向上取整)\n- 此后回合开始时，若自身带有[UnlockBuff_Base]且理智值不低于25点，\n则消耗15点理智值并进入该状态\n\n进入<noparse>绽放</noparse>E.G.O::代行状态时\n- 本回合解除自身的混乱\n(该混乱无法解除，则无法进入该状态)\n- 处于该状态时，使自身获得[Blandishment]\n\n回合开始时，若自身的理智值不高于0点，则解除该状态"
+    },
+    {
+      "id": 1031401,
+      "name": "魔法哔哔大人果真明白吾之心愿呢！",
+      "desc": "自身每带有1层[BlessingOfIndexPrescriptAlly]，使自身被[IndexPrescriptTargetMarkToEnemy]标记的技能造成的伤害+2%(最多+16%)\n- 若自身的[BlessingOfIndexPrescriptAlly]层数为9层，则改为使自身基础技能造成的伤害+20%\n\n自身基础技能命中带有[IndexPrescriptTargetToEnemy]的敌方单位时，\n使自身恢复3点理智值(每个技能最多1次，每回合最多2次)\n- 根据自身的[UnlockBuff_Base]阶段，使自身额外恢复相应的理智值",
+      "summary": "根据自身的指令加护 层数，使自身被指令的印记 标记的技能造成的伤害增加\n命中时，使自身恢复理智值"
+    },
+    {
+      "id": 1031421,
+      "name": "此亦为魔法哔哔大人之恩惠吧",
+      "desc": "战斗开始时，使理智值最低的1名友方单位恢复15点理智值\n- 该效果优先适用于加算硬币人格\n- 若适用的单位属于食指，则使其获得1层[AttackDmgUp]\n- E.G.O侵蚀、陷入恐慌等无法恢复理智值的单位不适用"
     }
   ]
 }
