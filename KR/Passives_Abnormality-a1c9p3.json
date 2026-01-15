@@ -1,0 +1,508 @@
+{
+  "dataList": [
+    {
+      "id": 133303,
+      "name": "아이언메이든- 재세동",
+      "desc": "흐트러짐 상태가 되면, 흐트러짐 상태를 해제하고 이번 턴을 종료함 (전투당 1회)"
+    },
+    {
+      "id": 133101,
+      "name": "제 모든 신체 요소는 이미 티비아에",
+      "desc": "[Combustion], [Vibration], [Burst], [Sinking]으로 받는 체력, 정신력 피해량 -30%\n[Laceration]로 받는 피해량 -50%\n\n턴 시작 시, 흐트러짐 상태면 흐트러짐 해제. 이후 [CrimsonTakeDamageUp] 2 얻고 다음 턴까지 ‘설치 미술 제 3호 ‘간이늑골’’ 사용 불가능 (전투당 1회)\n\n턴 종료 시 자신의 [Combustion] 4당, 다음 턴에 [DefenseDown] 1 얻음 (최대 15)"
+    },
+    {
+      "id": 133102,
+      "name": "신체중심미술",
+      "desc": "등장 시 정신력 30 회복\n\n공격 스킬 적중 시 부정적인 효과를 부여하고 동시에 긍정적인 효과를 얻으면, 공격 종료 시 정신력 4 회복\n- 이 효과로 정신력 회복 시 자신의 정신력이 최대면 다음 턴에 [ResultEnhancement] 1 얻음 (턴당 1회)",
+      "flavor": "현장에서 상대의 뼈와 근육을 재료로 삼아 전투를 조형하고, 그 과정이 이어질수록 작은 뼛조각마저 정교한 무기가 되어가는 미술."
+    },
+    {
+      "id": 133103,
+      "name": "재료는 언제나 현장에서 수급하고 가공하는 것이 미학",
+      "desc": "스킬 종료 시 자신의 스킬로 피해를 줬으면, 대상 하나당 [HumanBoneTheRings] 30, [HumanBloodTheRings] 1 얻음"
+    },
+    {
+      "id": 133104,
+      "name": "일생의 작품 티비아",
+      "desc": "턴 종료시 [HumanBoneTheRings]가 206이고 [HumanBloodTheRings]가 5면 각각 수치만큼 감소하고 [MineTheRings] 1 얻음\n\n턴 시작시 [MineTheRings]가 있으면, 이번 턴에 강력한 공격 사용\n\n강력한 공격 사용 전에 <color=#ff6000><mark=#ff000040><b><u>공격 스킬로 피격 시, [PlusCoinValueDown] 1, [ResultReduction] 1 얻음</u></b></mark></color> (스킬당 1회. 턴당 최대 3회)",
+      "flavor": "자신의 모든 육체를 쏟아붓고 깎아내어 완성한 역작, 티비아"
+    },
+    {
+      "id": 133105,
+      "name": "만족스러운 예술",
+      "desc": "[MineTheRings] 소멸 시 아래 대상의 정신력을 30 회복하고 다음 턴에 아래 대상이 [AttackUp] 2, [DefenseUp] 2 얻음\n- 약지 아비 - 칼리스토\n- 약지 제자 - 알비나\n- 신체관극[TabExplain]"
+    },
+    {
+      "id": 133106,
+      "name": "제자의 전시를 잠시 감상해 볼까요",
+      "desc": "자신에게 [SupportProtect]가 있으면, <color=#ff6000><mark=#ff000040><b><u>합 시작 시 [SupportProtect] 1 감소</u></b></mark></color> (스킬당 1회)"
+    },
+    {
+      "id": 133107,
+      "name": "신체극복",
+      "desc": "자신의 체력이 50% 미만인 경우, 흐트러짐 상태를 해제하고 이번 턴을 종료함\n- 이 효과가 발동한 다음 턴 시작 시 마지막 스킬 슬롯에 ‘폐장 - 설치미술 제 1호 ‘당신들이 흩뿌린 살과 뼈가 객석이 되어’’ 장착"
+    },
+    {
+      "id": 133109,
+      "name": "뛰어다니는 관객은 의자에 앉아 감상하시죠",
+      "desc": "턴 종료 시 속도가 가장 빠른 수감자 및 조력자에게 다음 턴에 [RedemptionTheRings] 부여"
+    },
+    {
+      "id": 133201,
+      "name": "구속",
+      "desc": "신체관극과 연결된 캐릭터에게 아래의 효과가 적용됨\n- 행동 불가능 상태가 됨\n- 버프, 체력, 정신력이 갱신되지 않음"
+    },
+    {
+      "id": 133202,
+      "name": "재료 수확",
+      "desc": "신체관극이 약지 아비에게 처치되면, 연결된 캐릭터는 전투 불가 상태가 됨"
+    },
+    {
+      "id": 133203,
+      "name": "예술로부터의 생존",
+      "desc": "신체관극이 약지 아비 외 다른 캐릭터에게 처치되면, 아래의 효과가 발동됨\n- 다음 턴에 연결된 캐릭터가 전투에 복귀하고 정신력이 10 미만이면, 정신력이 10이 됨\n- 약지 아비와 약지 제자의 정신력 10 감소\n- 모든 E.G.O 자원 2개씩 획득"
+    },
+    {
+      "id": 133204,
+      "name": "가연성 소재",
+      "desc": "[Combustion]으로 받는 피해가 2배가 됨"
+    },
+    {
+      "id": 133601,
+      "name": "재료가 된 육체의 맥동",
+      "desc": "[Combustion], [Vibration], [Burst], [Sinking]으로 받는 체력, 정신력, 흐트러짐 손상 피해량 -30%\n[Laceration]로 받는 피해량 -50%\n\n턴 종료 시 자신의 [Combustion] 4당, 다음 턴에 [DefenseDown] 1 얻음 (최대 15)",
+      "flavor": "알비나의 피와 살로 만들어진 파시아.\n뇌만 남은 알비나와, 뇌만 없는 파시아.\n어떤 존재가 진정한 육체를 소유하고 있는가에 대한 질문을 던진다."
+    },
+    {
+      "id": 133602,
+      "name": "신체파",
+      "desc": "공격 스킬 적중 시 부정적인 효과를 부여하고 동시에 긍정적인 효과를 얻으면, 정신력 4 회복\n- 이 효과로 정신력 회복 시 자신의 정신력이 최대면 다음 턴에 [Agility] 1 얻음 (턴당 2회)"
+    },
+    {
+      "id": 133603,
+      "name": "소중한 작품 파시아",
+      "desc": "턴 종료 시 [HumanFleshTheRings]가 2면, 다음 턴에 [HumanFleshTheRings] 소멸 후 [BoneBladeTheRings] 얻음\n\n턴 시작 시 [BoneBladeTheRings]가 있으면, 이번 턴에 강력한 공격 사용\n\n강력한 공격 사용 전에 <color=#ff6000><mark=#ff000040><b><u>공격 스킬로 피격 시, [PlusCoinValueDown] 1, [ResultReduction] 1 얻음</u></b></mark></color> (스킬당 1회. 턴당 최대 3회)"
+    },
+    {
+      "id": 133604,
+      "name": "갤러리에서는 갤러리만의 감상 규칙이 있는 법",
+      "desc": "자신에게 [SupportProtect]가 있으면, <color=#ff6000><mark=#ff000040><b><u>합 시작 시 [SupportProtect] 1 감소</u></b></mark></color> (스킬당 1회)"
+    },
+    {
+      "id": 133606,
+      "name": "마에스트로님의 앞에서 작품으로 증명해 보이겠어",
+      "desc": "약지 아비 등장 시 자신의 정신력이 20미만이면, 정신력이 20이 됨"
+    },
+    {
+      "id": 132701,
+      "name": "원한 문신 [<s>큰 형님</s>]",
+      "desc": "[Combustion], [Laceration], [Vibration], [Burst]로 받는 피해량 -30% (소수점 버림)\n받는 흐트러짐 피해량 - 50% (소수점 버림)",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132702,
+      "name": "앙갚음 장부",
+      "desc": "스테이지 시작시 모든 수감자와 LCD 캐릭터에게 [VengeanceBookSpider]를 부여함\n\n이번 턴 적중한 스킬 수가 3개를 초과 했으면, 초과된 스킬 수만큼 다음 턴에 [ReinforcedTattooSpider] 얻음",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132703,
+      "name": "딸램 교육",
+      "desc": "합 승리시 [DaughterEducationSpider] 1 얻음\n\n스킬 적중시 [DaughterEducationSpider] 1 얻음 (스킬당 1회, 파괴된 코인일 경우 얻지 않음)\n\n턴의 가장 처음 사용하는 스킬의 합 승리시 [DaughterEducationSpider]을 1 추가로 얻고, 해당 스킬의 코인 위력 +1",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132704,
+      "name": "원한",
+      "desc": "스킬 2회 피격 시 [ResentmentSpider] 1 얻음, [DaughterEducationSpider] 1 감소 (피격 횟수는 누적됨)\n\n자신의 [ResentmentSpider]이 최댓값이면 강력한 공격을 사용함\n\n턴 종료시 자신의 체력이 80%, 60%, 40% 미만이면, [ResentmentSpider] 최댓값으로 얻음",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132706,
+      "name": "???",
+      "desc": "???",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 134101,
+      "name": "원한 문신 최고 출력… 레바테인 봉인 해제다!",
+      "desc": "[MiddleFatherSwordFour] 해방 시 [MiddleFatherGuts]을 얻음\n\n[MosesRedBreathCharge]을 보유한 캐릭터를 타겟팅함",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132801,
+      "name": "이렇게 하면 되는거죠 아빠!",
+      "desc": "스테이지 시작시 [HeatingWireOffSpider]를 가지고 시작함\n\n턴 시작 시 자신이 보유한 [GotACompliment]가 3 이상이면 해당 턴 동안 [HeatingWireOnSpider]으로 바뀌고, [Laceration]을 부여하는 스킬로 [Combustion]을 추가로 부여함\n\n턴 종료시 자신이 보유한 [GotACompliment]가 3 미만이면 [HeatingWireOnSpider]이 [HeatingWireOffSpider]로 전환됨",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "‘아빠는 늘 칭찬해 주고 만화책도 사줘서 좋아.’"
+    },
+    {
+      "id": 132802,
+      "name": "중지식 문신",
+      "desc": "이번 턴 적중한 스킬 수가 2개를 초과했으면, 초과된 스킬 수만큼 다음 턴에 [ReinforcedTattooSpiderDaughter] 얻음",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "“나도 언젠간 중지에서 가족으로 인정받고, 누님이랑 형님들이랑 계속 같이 살 수 있는 거야?”"
+    },
+    {
+      "id": 132803,
+      "name": "칭찬은 키라도 춤추게 한다",
+      "desc": "합 승리시 [GotACompliment] 1 얻음\n\n스킬 적중시 [GotACompliment] 1 얻음 (스킬당 1회, 파괴된 코인일 경우 얻지 않음)\n\n턴의 가장 처음 사용하는 스킬의 합 승리시 [GotACompliment]를 1 추가로 얻고, 해당 스킬의 코인 위력 +1",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132804,
+      "name": "중지는 반드시 갚는 거라 했어",
+      "desc": "스킬 2회 피격 시 [ResentmentSpiderDaughter] 1 얻음, [GotACompliment] 1 감소 (피격 횟수는 누적됨)\n\n자신의 [ResentmentSpiderDaughter]이 최댓값이면 강력한 공격을 사용함\n\n턴 종료시 자신의 체력이 80%, 60%, 40% 미만이면, [ResentmentSpiderDaughter] 최댓값으로 얻음",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 134201,
+      "name": "이렇게 하면 되는거죠 아빠!",
+      "desc": "스테이지 시작시 [HeatingWireOffSpider]를 가지고 시작함\n\n턴 시작 시 자신이 보유한 [GotACompliment]가 3 이상이면 해당 턴 동안 [HeatingWireOnSpider]으로 바뀌고, [Laceration]을 부여하는 스킬로 [Combustion]을 추가로 부여함\n\n턴 종료시 자신이 보유한 [GotACompliment]가 3 미만이면 [HeatingWireOnSpider]이 [HeatingWireOffSpider]로 전환됨",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 134202,
+      "name": "저거... 욜라 위험해보이는데?",
+      "desc": "중지 아비가 [MiddleFatherSwordFour] 보유 시, [HeatingWireOffSpider] 상태가 되지 않음\n\n[MosesRedBreathCharge]을 보유한 캐릭터를 타겟팅함",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "그녀의 동물적인 직감과 선천적인 전투 센스가 본능적으로 말하고 있다. 저게 뭔지는 몰라도, 당하면 반드시 죽는다고."
+    },
+    {
+      "id": 132601,
+      "name": "고된 전투",
+      "desc": "최대 체력의 20%가 감소한 상태로 전투를 시작\n스테이지 시작 시 3턴간 [ResultReduction] 2 얻음",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "특색과의 전투는 그를 분명 강하게 만들었을것이다.\n살아남아 그 경험을 양분으로 삼을수만 있다면"
+    },
+    {
+      "id": 132602,
+      "name": "무너져가는 자세",
+      "desc": "[DuelEdge] 수치에 따라 다음 효과를 얻음 (중복 적용)\n- 수치 1당 부여된 대상에게 가하는 피해량 +10%, 받는 피해량 +10%\n- 3 이상이면, 부여된 대상과 합 진행 시 합 위력 +1\n- 5 이상이면, 부여된 대상과 합 진행 시 기본 위력 +1\n- 7 이상이면, 부여된 대상과 합 진행 시 코인 위력 +1\n- 10 이상이면, 부여된 대상과 합 진행 시 최종 위력 +1",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132603,
+      "name": "필사의 분전",
+      "desc": "엄지 아비가 참전한 이후부터 패시브‘사냥 표식’을 사용하지 않으며, 다음 효과가 추가됨\n- 정신력이 30미만인 경우 정신력이 30으로 회복\n- 턴 시작 시 [SupportProtect] 3 얻음\n<color=#ff6000><mark=#ff000040><b><u>- 속도에 관계없이 합을 할 수 있음\n- 베르길리우스와 우선으로 합을 진행</u></b></mark></color>\n- 엄지 아비가 합에서 승리하면, 해당 공격 종료 시 '콜피 소타니'로 일방 공격 (턴당 2회)",
+      "summary": "",
+      "undefined": "",
+      "flavor": "‘지금이라면, 죽일 수 있지 않을까.’\n\n잠에 든 스승을 보며, 루치오는 항상 같은 상념에 빠졌다.\n그 생각을 행동으로 옮기지 않는 것은, 이미 학습된 공포와 뒷골목에서 자신을 데려와 준 은혜 때문이었다.\n하지만 쌓여버린 원한이 너무나 깊다. 진심을 다해 명령을 따르겠다 말하면서도 루치오는 다짐했다.\n이 전투가 끝나면 반드시 죽이자. 남은 눈 하나까지 베고 찔러 죽여버리자.\n온몸에 멍이 든 소년의 눈에 처음으로 생기가 돌기 시작했다."
+    },
+    {
+      "id": 132604,
+      "name": "사냥 표식",
+      "desc": "무작위 적 1명을 지정하여, 속도를 1로 만들고 모든 스킬의 타겟으로 지정한다\n이후 4턴마다 발동한다",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132606,
+      "name": "듀엘로 디스페라토",
+      "desc": "합 종료 시 합을 진행한 대상에게 [DuelEdge] 1 부여\n[DuelEdge]를 가진 대상과 합 진행 시 대상의 [DuelEdge] 수치 1당, 정신력 2 증가 (최대 10)"
+    },
+    {
+      "id": 131401,
+      "name": "예지안",
+      "desc": "스테이지 등장 시, [FutureEyeOn] 30 얻음\n[FutureEyeOn] 수치가 0이 되면, [FutureEyeOn]이 [FutureEyeOff]로 변경됨",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "오딘의 눈이라 불린 이 유물은, 사실 세 갈래로 쪼개진 어떤 유물의 파편 중 하나다."
+    },
+    {
+      "id": 131402,
+      "name": "가속하는 미래",
+      "desc": "합 진행 시 <color=#ff6000><mark=#ff000040><b><u>매 합마다 자신에게 [LookingFuture] 1 부여</u></b></mark></color>\n[LookingFuture]는 턴당 (턴 시작 시 보유한 [FutureEyeOn]/3)까지 얻을 수 있음\n[FutureEyeOn]이 있을 때, <color=#ff6000><mark=#ff000040><b><u>일방공격을 당하거나 합 패배 시 ‘예지’ 스킬 발동</u></b></mark></color>",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "“맞대고 부딪힐수록 이 검은 가열되고, 내가 본 미래에 도달할 때까지 가속할 거다.”"
+    },
+    {
+      "id": 131408,
+      "name": "과부하",
+      "desc": "다음 조건에 따라 [FutureEyeOn] 감소\n- [LookingFuture]를 얻지 못하면, 매 합마다 [FutureEyeOn] 1 감소\n- 일방 공격을 당할 시 [FutureEyeOn] 1 감소\n- 합 패배 시 [FutureEyeOn] 3 감소",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "‘눈이 지끈거리며 뜨거워지고, 시야가 붉어진다’"
+    },
+    {
+      "id": 131405,
+      "name": "팔레르모 스파다",
+      "desc": "메인 타겟의 화상 1당, 보호막에 입히는 피해량 15% 증가 (최대 300%)\n스킬 사용 시 대상의 공격 스킬이 참격 혹은 관통 속성이면, 합 위력 +1\n자신의 스킬 효과로 [VibrationExplosion]이 발동되었다면, 다음 턴 [AttackDmgUp] 2 얻음 (턴당 3회)\n자신의 스킬 효과로 크리티컬이 발동되었다면, 정신력 5 회복",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 131404,
+      "name": "보냐텔리 가문의 수치",
+      "desc": "[Combustion], [Laceration], [Vibration], [Burst], [Sinking]으로 받는 체력, 정신력, 흐트러짐 손상 피해량 -30%\n[AccelBullet]이 1 이상이면, [AccelBullet]을 소모하는 스킬의 피해량 +30%, 보호막에 입히는 피해량 +150%\n[AccelBullet] 소모한 수치 1당, [Breath] 4 얻음\n[AccelBullet]을 소모하는 코인을 굴릴 때, 가속탄이 없는 경우에도 공격을 취소하지 않음",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "“팔레르모를 전수 받고, 가보까지 계승 받았음에도 이런 추태를 보이다니.”\n“네가 물려 받은 유물과 검은, 네 불명예스러운 잔향이 배어 있으니 회수하지 않겠다.”\n“언더보스로 승격한지 사흘 만에 파면 당한 건 발렌치나, 네가 유일할 테지.”\n“너는 가문의 수치다. 보냐텔리는 너에게서 사랑을 거두겠다.”"
+    },
+    {
+      "id": 131409,
+      "name": "신(心) - 발렌치나",
+      "desc": "피격 시 혹은 ‘엄지 제자 - 루치오’가 전투 불능이 되면, 다음 턴에 [ObsessionAndGreed] 얻음",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "“후… 결국 그 광신도 놈이 짜 놓은 작전대로 들어가서 깽판을 치면 된다는 건데… 이런다고 진짜 티켓이 돌아오는 거 맞아?”"
+    },
+    {
+      "id": 131406,
+      "name": "루치오. 이 쓸모없는 것",
+      "desc": "‘엄지 제자 - 루치오’가 전투 불능이 되면, 패시브 ‘사냥 시간’이 발동",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 131410,
+      "name": "사냥 시간",
+      "desc": "턴 시작 시 흐트러짐 상태면 흐트러짐을 해제\n\n무작위 수감자 1명을 지정하여, [TeachersPrey]을 부여\n- 이후 4턴마다 1번씩 발동\n- 스킬 ‘처분’으로 대상을 처치할 시 다음 턴에 다시 발동",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "팔레르모는 보냐텔리 가문의 성향을 그대로 빼닮은 검술이다.\n하나의 사냥감을 집요하게 노려, 사냥하고 해체한다. 은밀함은 배제한다. 명예롭고 당당하게, 모두의 시선 앞에서 상대를 죽인다.\n그 화려한 검술은 수많은 영예를 낳았고, 보냐텔리 가문을 뒷골목의 7대 명문가로 만들었다.\n팔레르모를 완전히 터득한 발렌치나는 연기전쟁에서 수많은 장교와 베테랑 병사들의 목을 떨구며 연기전쟁의 영웅 중 한 명이 되었다.\n하지만 누가 예상이나 했을까. 그 명성이 그녀의 발목을 잡을 줄이야."
+    },
+    {
+      "id": 134501,
+      "name": "제 모든 신체 요소는 이미 티비아에",
+      "desc": "[Combustion], [Vibration], [Burst], [Sinking]으로 받는 체력, 정신력, 흐트러짐 손상 피해량 -30%\n[Laceration]로 받는 피해량 -50%\n\n턴 시작 시, 흐트러짐 상태면 흐트러짐 해제. 이후 [CrimsonTakeDamageUp] 2 얻음 (전투당 1회)\n\n턴 종료 시 자신의 [Combustion] 4당, 다음 턴에 [DefenseDown] 1 얻음 (최대 15)",
+      "flavor": "거미집의 존재 이유이자, 손가락이 그토록 기다려 온 걸작이 곧 완성될 것 같군요.\n황금가지는 흥미로운 물건이지만, 사실 작품을 완성하는 데 필요한 재료는 아니었답니다.\n림버스 컴퍼니라는 회사를 적으로 돌리면서까지 가져온 이유는 여전히 모르겠지만… \n결과가 확실하니 이 난잡한 과정도 납득할 수 밖에 없네요.\n이 모든 상황은 뤼엔… 아니, 그자가 신봉하는 신이 원한 것.\n신이라 불리는 존재의 사랑을 한몸에 받는다면, 그것은 과연 축복일까요, 아니면 저주일까요. 후훗."
+    },
+    {
+      "id": 134502,
+      "name": "신체파",
+      "desc": "공격 스킬 적중 시 부정적인 효과를 부여하고 동시에 긍정적인 효과를 얻으면, 공격 종료 시 정신력 4 회복\n- 이 효과로 정신력 회복 시 자신의 정신력이 최대면 다음 턴에 [ResultEnhancement] 1 얻음 (턴당 1회)"
+    },
+    {
+      "id": 134506,
+      "name": "제자의 전시를 잠시 감상해 볼까요",
+      "desc": "자신에게 [SupportProtect]가 있으면, <color=#ff6000><mark=#ff000040><b><u>합 시작 시 [SupportProtect] 1 감소</u></b></mark></color> (스킬당 1회)"
+    },
+    {
+      "id": 134509,
+      "name": "좋은 소재는 좋은 육체로부터",
+      "desc": "이 캐릭터는 레벨이 가장 높은 수감자 및 조력자에게 가하는 피해량이 150% 증가하고 우선 공격함",
+      "flavor": "“하지만 예술적인 감각이 어느 정도 무르익었다면, 가장 뛰어난 신체를 먼저 노리는 게 좋답니다.”\n“좋은 신체에서 떨어진 살점과 뼛조각을 베이스로, 작품의 스케일을 크게 잡을 수 있거든요.”\n“기대되지 않나요, 알비나?”"
+    },
+    {
+      "id": 134510,
+      "name": "일생의 작품 티비아",
+      "desc": "턴 종료시 [HumanBoneTheRings]가 206이고 [HumanBloodTheRings]가 5면 각각 수치만큼 감소하고 [MineTheRings] 1 얻음\n\n턴 시작시 [MineTheRings]가 있으면, 이번 턴에 강력한 공격 사용\n\n강력한 공격 사용 전에 <color=#ff6000><mark=#ff000040><b><u>공격 스킬로 피격 시, [PlusCoinValueDown] 1, [ResultReduction] 1 얻음</u></b></mark></color> (스킬당 1회. 턴당 최대 3회)",
+      "flavor": "자신의 모든 육체를 쏟아붓고 깎아내어 완성한 역작, 티비아"
+    },
+    {
+      "id": 134604,
+      "name": "갤러리에서는 갤러리만의 감상 규칙이 있는 법",
+      "desc": "자신에게 [SupportProtect]가 있으면, <color=#ff6000><mark=#ff000040><b><u>합 시작 시 [SupportProtect] 1 감소</u></b></mark></color> (스킬당 1회)"
+    },
+    {
+      "id": 134605,
+      "name": "재료선정",
+      "desc": "이 캐릭터는 레벨이 가장 낮은 수감자 및 조력자를 우선 공격함",
+      "flavor": "“제일 약한 사람의 근육과 뼈부터 꺼내야겠어.”\n“보잘것없는 재료일 테지만, 그렇게 하나씩 작품을 만들고 전시하다 보면 더 좋은 재료도 얻을 수 있을 거야.”\n“기대되지 않니, 파시아?”"
+    },
+    {
+      "id": 132218,
+      "name": "132218",
+      "desc": "(미사용 패시브)",
+      "flavor": ""
+    },
+    {
+      "id": 132214,
+      "name": "미래 잔상",
+      "desc": "특정 턴마다 '확정된 상대' 스킬 사용\n<color=#ff6000><mark=#ff000040><b><u>공격 대상으로 지정된 대상만 해당 스킬에 합 가능</u></b></mark></color>\n\n자신의 '확정된 상대' 스킬이 합에서 패배하면, 36 ~ 60의 고정 피해 받음\n\n전투 종료시 자신이 이번 턴에 사용한 <color=#ff6000><mark=#ff000040><b><u>모든 '확정된 상대' 스킬이 합에서 패배</u></b></mark></color>했다면, 다음 턴에 [Vulnerable] 1 얻음"
+    },
+    {
+      "id": 132217,
+      "name": "132217",
+      "desc": "(미사용 패시브)"
+    },
+    {
+      "id": 132219,
+      "name": "천살성상[天殺星傷]",
+      "desc": "스테이지 시작시, [LvDownLittleFingerBossTwo], [TimeEntangleUnstable] 4 얻음"
+    },
+    {
+      "id": 132222,
+      "name": "새벽에서 황혼까지",
+      "desc": "턴 시작시 정신력이 0 이상이면, [SojiAbiAgeFuture] 1 얻음\n0보다 높은 정신력 2당, [SojiAbiAgeFuture] 1 얻음\n\n턴 시작시 정신력이 0 미만이면, [SojiAbiAgePast] 1 얻음\n0보다 낮은 정신력 2당, [SojiAbiAgePast] 1 얻음",
+      "flavor": "과거와 현재, 미래가 하나로 겹쳐지며 시간의 구분은 의미를 잃고, 어린 시절이든 세월을 보낸 어느 시점이든, 모든 때는 한곳으로 불려 와진다."
+    },
+    {
+      "id": 132223,
+      "name": "시공간 잔상 분열",
+      "desc": "턴 종료시, 이번 턴 시작시와의 정신력 차이 5당 [TimeEntangleUnstable] 1 증가 (턴당 최대 5 증가)\n누적으로 피해 100을 받을 때마다 [TimeEntangleUnstable] 1 감소 (보호막 피해 포함)",
+      "flavor": "‘나를 감싼 잔상들이 한 꺼풀씩 벗겨질 때마다 상실과 후련함이 동시에 찾아와’"
+    },
+    {
+      "id": 133701,
+      "name": "지령의 뜻",
+      "desc": "스테이지 시작 시, 최대 체력의 20%만큼 보호막 얻음 (이번 전투 동안 유지)\n\n턴 시작 시\n- [UnlockBuff_Base] 단계에 따라 [IndexPrescript_Base_2nd] 얻음\n- 무작위 적에게 [IndexPrescriptTargetToPersonality]을 부여하고, 우선 공격함 (특정 패턴 제외)\n\n[BlessingOfIndexPrescriptEnemy]당 [IndexPrescriptTargetToPersonality]에게 가하는 피해량 +2.5% (최대 20%)\n- [BlessingOfIndexPrescriptEnemy]가 9면, 대신 모든 대상에게 가하는 피해량 +30%",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 133702,
+      "name": "지령 수행",
+      "desc": "이번 턴에 [IndexPrescript_Base_2nd]을 수행했으면,\n턴 종료 시 정신력 15 회복, ([UnlockBuff_Base] 단계+1)만큼 [BlessingOfIndexPrescriptEnemy] 얻음 (턴당 1회)\n\n이번 턴에 [IndexPrescript_Base_2nd]을 수행하지 못했으면,\n턴 종료 시 [PressureOfPrescript] 1, [KarmaOfIndexStudent] 10 얻음\n- [UnlockBuff_Base] 단계가 2 미만이면, 턴 종료 시 [BlessingOfIndexPrescriptEnemy] 1 얻음\n- [BlessingOfIndexPrescriptEnemy]가 9면, [KarmaOfIndexStudent]를 얻지 않음\n\n- [PressureOfPrescript]을 얻을 때마다 그 수치만큼 [EsteemNeeds]를 얻음",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 133703,
+      "name": "해금",
+      "desc": "턴 종료 시 [BlessingOfIndexPrescriptEnemy]가 6/9거나 체력이 80%/60% 이하면,\n- [UnlockBuff_2]/[UnlockBuff_3] 얻음\n- 정신력이 45로 증가\n- 보유한 [PressureOfPrescript] 전부 소모, 흐트러짐 해제\n\n체력 조건으로 [UnlockBuff_Base] 획득 시\n- (증가한 정신력/15)만큼 [KarmaOfIndexStudent] 얻음\n- [BlessingOfIndexPrescriptEnemy]가 6/9 미만이면, 6/9로 변경\n증가한 수치 1당 다음 턴 시작 시 [DefenseDown] 1, [KarmaOfIndexStudent] 2 얻음\n\n강력한 공격을 사용하는 턴의 속도 최솟값, 최댓값 +10",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 133704,
+      "name": "개화 E.G.O::대행",
+      "desc": "이번 전투 동안 개화[TabExplain] E.G.O::대행 상태로 전투를 진행함\n- 스테이지 시작 시, [UnlockBuff_1], [BlessingOfIndexPrescriptEnemy] 3 얻음\n- 해당 상태 동안 내성 변경, [Blandishment_Enemy] 얻음\n- 정신력이 0 미만으로 내려가지 않음",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 133705,
+      "name": "몰입",
+      "desc": "[UnlockBuff_3]을 얻으면 다음 효과 적용\n- [Blandishment_Shin_Enemy], 최대 체력의 50%만큼 보호막 얻음 (이번 전투 동안 유지)\n- [PressureOfPrescript]이 [PressureOfPrescript_2nd]으로 변경되고, 최대로 증가\n- 턴 시작 시 [PressureOfPrescript_2nd] 1 얻음",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 133801,
+      "name": "정검[整劍]",
+      "desc": "스테이지 시작시 [DicipleLittleFinger] 50을 얻음"
+    },
+    {
+      "id": 133802,
+      "name": "별의 이름을 받기 위한 수행",
+      "desc": "공격 스킬 종료시, 각 대상에게 (크리티컬로 적중한 참격 코인 개수 x 10)만큼 참격 피해 (해당 피해로는 흐트러지지 않음)"
+    },
+    {
+      "id": 133803,
+      "name": "정신일도",
+      "desc": "[Breath] 위력이 최대 25로 제한됨\n25를 초과하여 얻는 [Breath] 위력은 [DicipleLittleFinger]로 전환됨\n\n[DicipleLittleFinger]가 감소할 때마다 그 수치만큼 [Fugacious]을 얻음"
+    },
+    {
+      "id": 133804,
+      "name": "정념[靜念]",
+      "desc": "자신에게 [DicipleLittleFinger]가 있으면 아래 효과 적용\n- 정신력이 0 미만으로 감소하지 않음. 0 미만이었으면 0이 됨\n- 받는 정신력 피해가 우울 피해로 전환됨 (기본 정신력 증감조건 제외)"
+    },
+    {
+      "id": 133805,
+      "name": "은혜",
+      "desc": "료슈 외 대상과 합을 진행할 때, 합 위력 -2\n료슈 외 대상에게 받는 피해량 -20%"
+    },
+    {
+      "id": 133901,
+      "name": "황제의 백성",
+      "desc": "턴 시작 시 [DefenseBug]를 50 얻음 (턴당 얻는 수치 3 감소, 최대 20 감소)\n- 자신에게 [Combustion], [Laceration], [Vibration], [Burst], [Sinking]이 있으면,\n<color=#ff6000><mark=#ff000040><b><u>위력을 무작위로 감소시키고, 감소된 수치만큼 [DefenseBug] 감소</u></b></mark></color>\n- 해당 효과의 위력이 1이고 횟수가 2 이상이면, 대신 횟수 감소\n\n전투 중 <color=#ff6000><mark=#ff000040><b><u>[DefenseBug]가 모두 감소되면,</u></b></mark></color> 다음 턴에 아래 효과 적용\n- [DefenseBug] 대신 [DefenseDown] 10 얻음\n- 적에게 가장 부족한 속성의 E.G.O 자원 3종을 2개씩 생성\n- 턴 종료 시 자신의 부정적인 효과 모두 제거. [DefenseBug] 얻음",
+      "flavor": "어느 곳에서나 어느 순간에나, 그들은 면과 면이 만나는 선으로부터 기어 나온다."
+    },
+    {
+      "id": 133902,
+      "name": "황제의 망토",
+      "desc": "턴 시작 시 ([DefenseBug] x 40)만큼 보호막 얻음",
+      "flavor": "바퀴벌레들의 군집은, 황제 단 하나만을 위해 움직인다."
+    },
+    {
+      "id": 133903,
+      "name": "황제의 군세",
+      "desc": "- 합 승리 시 대상에게 [OffenseBug] 3 부여\n- 스킬 적중 시 대상에게 [OffenseBug] 1 부여",
+      "flavor": "파고들고 스며들고 침투하여, 갉아내고 뜯어내고 포식한다."
+    },
+    {
+      "id": 133904,
+      "name": "황제의 피",
+      "desc": "[Combustion], [Laceration], [Vibration], [Burst], [Sinking]으로 받는 체력, 정신력, 흐트러짐 손상 피해량 -50%\n해당 피해로는 흐트러짐이 발생하지 않음\n본체 잃은 체력 25%당, 턴 시작 시 [ResultReduction] 2 얻음",
+      "flavor": "‘모든 것에 적응하고 무뎌진다’"
+    },
+    {
+      "id": 133905,
+      "name": "뜯겨진 포장지",
+      "desc": "정신력과 무관하게 코인 확률이 50%로 고정\n\n<color=#ff6000><mark=#ff000040><b><u>수감자와의 합에서 승리 시,</u></b></mark></color> 정신력 5 감소, 수감자에게 가하는 피해량 -40%\n\n<color=#ff6000><mark=#ff000040><b><u>사기저하 또는 패닉 상태가 되면,</u></b></mark></color> [ParryingResultDown], [ResultReduction] 얻음\n패닉 상태 해제 시 [ResultReduction] 2 얻음",
+      "flavor": "‘하지만 이게 정말 다 뜯어진 걸까?’"
+    },
+    {
+      "id": 133906,
+      "name": "황제의 진노",
+      "desc": "체력이 50%가 되거나 흐트러짐 상태가 되면, 자신에게 걸린 부정적인 효과와 흐트러짐 상태를 해제하고 패턴이 변경됨\n이후 다음 효과 적용\n- 정신력이 0이 됨\n- [DefenseBug] 50 얻음\n- 패시브‘황제의 군세’를 통한 [OffenseBug] 부여량이 2배로 증가함"
+    },
+    {
+      "id": 134701,
+      "name": "검지 아비 뤼엔",
+      "desc": "<color=#ff6000><mark=#ff000040><b><u>일방 공격으로 받는 피해량 -50%</u></b></mark></color>\n[Vibration], [Burst], [Sinking]으로 받는 피해량 -50%\n[UnlockBuff_Base]으로 정신력 회복 시 정신력이 0 미만이면, 정신력을 0까지 회복\n\n스테이지 시작 시, [BurningWoundRien_Mask] 얻음\n\n체력이 55% 이하면, 페이즈 변경\n- 자신의 고유 효과 외 나머지 효과 전부 소멸\n- [StackRienSpecialSkill] 0으로 초기화",
+      "flavor": "지령이 말한 대로 그때를 기다렸다고.\n딸이 나가도 기다리고 기다렸지.\n\n그러다 림버스 컴퍼니에서 연락이 왔고 뒷문이 열려있더구나.\n그리고 단말기가 울려서 딸을 데리러 가야 할 때가 되었다는 것을 알았지."
+    },
+    {
+      "id": 134702,
+      "name": "신탁 단말기 [카두세우스]",
+      "desc": "<color=#ff6000><mark=#ff000040><b><u>코인마다 무기가 무작위로 정해지며 특수 효과 적용</u></b></mark></color>\n- [RienWeapon01Hatchet]\n- [RienWeapon02Stiletto]\n- [RienWeapon03Greatsword]\n- [RienWeapon04Rapier]\n- [RienWeapon05Sledgehammer]\n- [RienWeapon06Ultragreatsword]\n- [RienWeapon07Lance]\n- [RienWeapon08Chain]\n- [RienWeapon09Scythe]\n\n공격 스킬 사용 시, [StackRienSpecialSkill] 1 얻음 (최대 9)\n- 스킬별 1회 획득 가능 (동일한 스킬로 2를 초과하여 얻을 수 없음)\n\n<color=#ff6000><mark=#ff000040><b><u>턴 시작 시 [StackRienSpecialSkill]가 9면, 강력한 스킬 사용</u></b></mark></color>\n- 첫 사용 후 공격 종료 시, [Shin_Rien] 얻음\n- 스킬 종류별 [StackRienSpecialSkill] 획득 여부 초기화\n- 속도 최솟값, 최댓값 +25\n- 턴 종료 시 다음 턴에, [Vulnerable] 1, [ResultReduction] 2 얻음\n\n다섯 번째 턴 시작 시, [StackRienSpecialSkill]가 9 미만이면, 9까지 증가하고 (증가한 수치 x 5)만큼 [KarmaOfIndexRien] 얻음\n- 이후 네 턴마다 이 효과 발동",
+      "flavor": "단말기 안에는 특이점과 유사한 기술을 이용해 형태와 질량을 변동시킬 수 있는, 금속 같은 액체가 들어 있다.\n이 액체는 단말기가 수령한 지령에 따라 모습을 바꾸며, 살해 대상의 정보와 주어진 제한 시간에 맞춰 무기로 변환된다.\n어느 날에는 지나치게 작은 단검이 배정되어 다른 무기로 바뀌기를 기다렸지만, 살해 제한 시간이 다가올 때까지 쓸만한 무기가 나오지 않았다. 결국, 마지막까지 기다려 나온 것이 포크였기에, 그 포크로 대상을 죽여야만 했다."
+    },
+    {
+      "id": 134703,
+      "name": "지령의 뜻",
+      "desc": "턴 시작 시,\n- [UnlockBuff_Base] 단계에 따라 [IndexPrescript_Base_2nd] 얻음\n- 료슈를 제외한 무작위 수감자에게 [IndexPrescriptTargetToPersonality]을 부여하고, 우선 공격함\n<color=#ff6000><mark=#ff000040><b><u>- [IndexPrescriptTargetToPersonality]에게 사용하는 스킬의 코인이 전부 [SuperCoin]으로 변경됨</u></b></mark></color>\n· [IndexPrescriptTargetToPersonality]이 사망하거나 대상을 공격하지 못하게 될 경우,\n<color=#ff6000><mark=#ff000040><b><u>사용하지 않은 나머지 스킬을 료슈 제외 무작위 수감자 한 명에게 사용\n(현재 체력이 가장 낮은 대상 우선)</u></b></mark></color>\n· 다른 모든 수감자 사망 시, 료슈에게 부여\n\n[BlessingOfIndexPrescriptEnemy]당 [IndexPrescriptTargetToPersonality]에게 가하는 피해량 +2.5% (최대 20%)\n- [BlessingOfIndexPrescriptEnemy]가 9면, 대신 모든 대상에게 가하는 피해량 +30%",
+      "flavor": "제가 가족을 꾸리길 원하십니까. \n\n“당신 같은 남편을 어쩜 이렇게 운명적으로 만날 수 있었을까요.”"
+    },
+    {
+      "id": 134704,
+      "name": "지령 수행",
+      "desc": "이번 턴에 [IndexPrescript_Base_2nd]을 수행했으면,\n턴 종료 시 정신력 10 회복, [BlessingOfIndexPrescriptEnemy] 3 얻음 (턴당 1회)\n\n이번 턴에<color=#ff6000><mark=#ff000040><b><u>[IndexPrescript_Base_2nd]을 수행하지 못했으면,\n턴 종료 시 [KarmaOfIndexRien] 8 얻고,\n[IndexPrescriptTargetToPersonality]이었던 수감자가 다음 턴에 [ParryingResultUp] 1 얻음</u></b></mark></color>\n- [UnlockBuff_Base]이 없으면, 턴 종료 시 [BlessingOfIndexPrescriptEnemy] 1 얻음\n- [BlessingOfIndexPrescriptEnemy]가 9면, [KarmaOfIndexRien]를 얻지 않음",
+      "flavor": "제가 가족을 잃기를 원하십니까.\n\n“여보. 잠시 북부에 좀 다녀올게.”\n“아, 오후에 택배가 오기로 했으니 대신 받아줄 수 있겠니, 딸?”"
+    },
+    {
+      "id": 134705,
+      "name": "해금",
+      "desc": "턴 종료 시 [BlessingOfIndexPrescriptEnemy]가 3/6/9거나 체력이 95%/85%/75% 이하면,\n- [UnlockBuff_Rien1]/[UnlockBuff_Rien2]/[UnlockBuff_Rien3] 얻음\n\n첫 번째 턴 종료 시 [UnlockBuff_Base] 단계가 1 미만이면, [UnlockBuff_Rien1] 얻음\n네 번째 턴 종료 시 [UnlockBuff_Base] 단계가 2 미만이면, [UnlockBuff_Rien2] 얻음\n\n체력 또는 턴 조건으로 [UnlockBuff_Base] 시,\n- [BlessingOfIndexPrescriptEnemy]가 3/6/9 미만이면, 3/6/9로 변경,\n증가한 수치 1당 다음 턴 시작 시 [KarmaOfIndexRien] 10 얻음",
+      "flavor": "“지령을 따라가다 보면 닫힌 것들이 풀리기 마련.”"
+    },
+    {
+      "id": 134801,
+      "name": "아비 뤼엔 [모조품]",
+      "desc": "<color=#ff6000><mark=#ff000040><b><u>일방 공격으로 받는 피해량 -75%</u></b></mark></color>\n[Vibration], [Burst], [Sinking]으로 받는 피해량 -75%\n[UnlockBuff_Base]으로 정신력 회복 시 정신력이 15 미만이면, 정신력을 15까지 회복\n\n체력이 55% 이하가 되어 페이즈 변경 시, 다음 효과 적용\n- 자신의 고유 효과 외 나머지 효과 전부 소멸\n- [StackRienSpecialSkill] 0으로 초기화\n- [IndexPrescript_RienSecondPhase] 얻음\n- [BurningWoundRien_Mask]이 [BurningWoundRien]로 변경\n- [KarmaOfIndexRien]가 [KarmaOfIndexRien_2Phase]로 변경되고 10 얻음\n- [Shin_Rien]이 없으면 즉시 얻음\n\n체력이 25% 이하면 패턴이 변경되어 특정 스킬이 더욱 강력해짐",
+      "flavor": "누군가를 따라해야 하는 것만 같았고 그게 누군지 몰라 지령을 의심하고 거스를 뻔했지만, 뒤늦게 자신이 누구를 닮게 되었는지 깨닫고, 지령의 뜻을 받아들여 완성된 거짓 아비."
+    },
+    {
+      "id": 134802,
+      "name": "신탁 단말기 [카두세우스] - 완전 해금",
+      "desc": "<color=#ff6000><mark=#ff000040><b><u>코인마다 무기가 무작위로 정해지며 특수 효과 적용</u></b></mark></color>\n- [RienWeapon01Hatchet2phase]\n- [RienWeapon02Stiletto2phase]\n- [RienWeapon03Greatsword2phase]\n- [RienWeapon04Rapier2phase]\n- [RienWeapon05Sledgehammer2phase]\n- [RienWeapon06Ultragreatsword2phase]\n- [RienWeapon07Lance2phase]\n- [RienWeapon08Chain2phase]\n- [RienWeapon09Scythe2phase]\n\n공격 스킬 사용 시, [StackRienSpecialSkill] 1 얻음 (최대 9)\n- 스킬별 1회 획득 가능 (동일한 스킬로 2 이상 획득 불가)\n- 특수 패턴에서만 사용하는 스킬로는 얻지 않음\n\n턴 시작 시 [StackRienSpecialSkill]가 9면, 강력한 스킬 사용\n- 스킬 종류별 [StackRienSpecialSkill] 획득 여부 초기화\n- 속도 최솟값, 최댓값 +25\n- 턴 종료 시 다음 턴에, [Vulnerable] 2, [ResultReduction] 3 얻음\n\n페이즈가 변경된 턴부터 효과 발동\n- 네 턴마다 [StackRienSpecialSkill]가 9 미만이면,\n9까지 증가하고 (증가한 수치 x 5)만큼 [KarmaOfIndexRien_2Phase] 얻음",
+      "flavor": "전파를 통해 지령을 보내는 도시의 신, 헤르메스가 선사한 최고의 무기이자 저주."
+    },
+    {
+      "id": 134803,
+      "name": "지령의 뜻",
+      "desc": "턴 시작 시,\n- 료슈를 제외한 무작위 수감자에게 [IndexPrescriptTargetToPersonality]을 부여하고, 우선 공격함\n<color=#ff6000><mark=#ff000040><b><u>- [IndexPrescriptTargetToPersonality]에게 사용하는 스킬의 코인이 전부 [SuperCoin]으로 변경됨</u></b></mark></color>\n· [IndexPrescriptTargetToPersonality]이 사망하거나 대상을 공격하지 못하게 될 경우,<color=#ff6000><mark=#ff000040><b><u>사용하지 않은 나머지 스킬을 료슈 제외 무작위 수감자 한 명에게 사용 (현재 체력이 가장 낮은 대상 우선, 체력 1인 경우 제외)</u></b></mark></color>\n· 다른 모든 수감자 사망 시, 료슈에게 부여\n- [BlessingOfIndexPrescriptEnemy]만큼 [Protection] 얻음 (최대 9)\n<color=#ff6000><mark=#ff000040><b><u>· [KarmaOfIndexRien_2Phase] 20당, 1 감소</u></b></mark></color>\n\n[BlessingOfIndexPrescriptEnemy]당 [IndexPrescriptTargetToPersonality]에게 가하는 피해량 +5% (최대 40%)\n- [BlessingOfIndexPrescriptEnemy]가 9면, 대신 모든 대상에게 가하는 피해량 +50%\n\n페이즈가 변경된 턴부터 효과 발동\n- 두 턴마다 [BlackNightmare] 얻음.\n- [BlackNightmare]을 얻을 때 [StackRienSpecialSkill]가 9 미만이면, 특수 패턴 발동",
+      "flavor": "가족을 꾸렸습니다.\n\n“당신은 지금 이곳에 있으면 안될 텐데.”\n“아직 작업이 한창이다. 무엇보다 섬세하고 아름답게 장식하고 있거든.”\n“…네놈, 설마 지령을 거스를 셈인가.”"
+    },
+    {
+      "id": 134804,
+      "name": "지령 수행",
+      "desc": "이번 턴에 [IndexPrescript_Base_2nd]을 수행했으면,\n턴 종료 시 정신력 15 회복, [BlessingOfIndexPrescriptEnemy] 1 얻음 (턴당 1회)\n\n이번 턴에 <color=#ff6000><mark=#ff000040><b><u>[IndexPrescript_Base_2nd]을 수행하지 못했으면,\n턴 종료 시 [KarmaOfIndexRien_2Phase] 10 얻고 [BlessingOfIndexPrescriptEnemy] 1 잃음,\n[IndexPrescriptTargetToPersonality]이었던 수감자가 다음 턴에 [ParryingResultUp] 2 얻음</u></b></mark></color>\n- 강력한 스킬을 사용한 턴일 경우, 대신 [KarmaOfIndexRien_2Phase] 15 얻고 [BlessingOfIndexPrescriptEnemy] 3 잃음",
+      "flavor": "가족을… 잃었습니다.\n \n“가지마…”\n“이대로 가지마… 아빠…  우리… 살려줘…”"
+    },
+    {
+      "id": 132224,
+      "name": "마지막 전투",
+      "desc": "이번 전투에서 체력이 0이 되는 피해를 받았을 때, 해당 피해를 받지 않고 아래 효과를 적용 (전투 당 1회)\n- 체력을 최대로 회복하고, 자신의 해제 가능한 모든 부정적인 효과를 해제\n- 이번 전투 동안 [Vulnerable] 1을 얻고, [TimeEntangleUnstable]이 1로 고정됨.\n- 매 턴 종료시 (현재 턴 수 x 10)만큼 고정 피해 받음\n- 이후 턴을 종료하고, 패턴이 강화됨",
+      "flavor": "“당신은 잊었고, 나는 모든 걸 기억하게 됐어.”"
+    }
+  ]
+}

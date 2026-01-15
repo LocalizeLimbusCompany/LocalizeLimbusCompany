@@ -3,7 +3,7 @@
     {
       "id": 132203,
       "name": "중첩된 잔상",
-      "desc": "스테이지 시작시, [TimeEntangleFour] 얻음\n패턴의 첫 턴 시작시 [TimeGapAb]를 ([TimeEntangleDesc] 단계 x 400)만큼 얻음\n([TimeEntangleDesc] 단계 당 1회)\n\n[TimeEntangleDesc] 3, 4단계에서 [TimeGapAb]를 모두 잃으면 패턴이 변경되고, 다음 턴 동안 흐트러짐\n\n[Combustion], [Laceration], [Vibration], [Burst], [Sinking]으로 받는 체력, 정신력, 흐트러짐 손상 피해량 -30%",
+      "desc": "스테이지 시작시, [TimeEntangleFour] 얻음\n패턴의 첫 턴 시작시 [TimeGapAb]를 ([TimeEntangleDesc] 단계 x 400)만큼 얻음\n([TimeEntangleDesc] 단계 당 1회)\n\n[TimeEntangleDesc] 3, 4단계에서 <color=#ff6000><mark=#ff000040><b><u>[TimeGapAb]를 모두 잃으면 패턴이 변경되고, 다음 턴 동안 흐트러짐</u></b></mark></color>\n\n[Combustion], [Laceration], [Vibration], [Burst], [Sinking]으로 받는 체력, 정신력, 흐트러짐 손상 피해량 -30%",
       "summary": "",
       "undefined": "-"
     },
@@ -116,7 +116,7 @@
     {
       "id": 132503,
       "name": "해금",
-      "desc": "턴 종료 시 [BlessingOfIndexPrescriptEnemy]가 3/6/9거나 체력이 90%/75%/60% 이하면,\n- [UnlockBuff_1]/[UnlockBuff_2]/[UnlockBuff_3] 얻음\n- 정신력이 45로 증가\n- <color=#ff6000><mark=#ff000040><b><u>보유한 [PressureOfPrescript] 전부 소모</u></b></mark></color>, 흐트러짐 해제\n\n체력 조건으로 [UnlockBuff_Base] 획득 시\n- (증가한 정신력/15)만큼 [KarmaOfIndexStudent] 얻음\n- [BlessingOfIndexPrescriptEnemy]가 3/6/9 미만이면, 3/6/9로 변경,\n증가한 수치 1당 다음 턴 시작 시 [DefenseDown] 1, [KarmaOfIndexStudent] 2 얻음\n\n강력한 공격을 사용하는 턴의 속도 최솟값, 최댓값 +10",
+      "desc": "턴 종료 시 [BlessingOfIndexPrescriptEnemy]가 3/6/9거나 체력이 90%/75%/60% 이하면,\n- [UnlockBuff_1]/[UnlockBuff_2]/[UnlockBuff_3] 얻음\n- 정신력이 45로 증가\n- <color=#ff6000><mark=#ff000040><b><u>보유한 [PressureOfPrescript] 전부 소모</u></b></mark></color>, 흐트러짐 해제\n- 처음으로 [UnlockBuff_Base] 획득한 다음 턴에 [BlessingOfIndexPrescriptEnemy] 1 얻음\n\n체력 조건으로 [UnlockBuff_Base] 획득 시\n- (증가한 정신력/15)만큼 [KarmaOfIndexStudent] 얻음\n- [BlessingOfIndexPrescriptEnemy]가 3/6/9 미만이면, 3/6/9로 변경,\n증가한 수치 1당 다음 턴 시작 시 [DefenseDown] 1, [KarmaOfIndexStudent] 2 얻음\n\n강력한 공격을 사용하는 턴의 속도 최솟값, 최댓값 +10",
       "summary": "",
       "undefined": "-",
       "flavor": "“지령이 전해주는 검과 천은 지령이 수행될 때 비로소 그 힘이 해금되며 발현된다고 하더군.”"
@@ -131,7 +131,7 @@
     {
       "id": 132505,
       "name": "말살 태세",
-      "desc": "전장에 베스파 등장 시,\n- [UnlockBuff_Base] 단계가 2 미만이면, [UnlockBuff_2] 얻고 [BlessingOfIndexPrescriptEnemy]가 6으로 변경. 증가한 수치 1당 턴 시작 시 [DefenseDown] 1, [KarmaOfIndexStudent] 2 얻음\n- [Blandishment_Shin_Enemy], 최대 체력의 50%만큼 보호막 얻음 (이번 전투 동안 유지)\n- '해금[TabExplain]' 패시브의 [PressureOfPrescript] 소모 효과 비활성화\n- [PressureOfPrescript]이 [PressureOfPrescript_2nd]으로 변경되고, 최대로 증가\n- 턴 시작 시 [PressureOfPrescript_2nd] 1 얻음\n- 정신력이 최대 30까지 증가. (증가한 정신력/10)만큼 [KarmaOfIndexStudent] 얻음\n- 이후 정신력이 0 미만으로 감소하지 않음\n\n체력이 20% 이하가 될 때, [PressureOfPrescript_2nd]이 최대로 증가",
+      "desc": "전장에 베스파 등장 시,\n- 특정 턴이 되어 등장 시 [UnlockBuff_Base] 단계가 2 미만이면, [UnlockBuff_3] 얻고, 정신력을 45까지 회복, 흐트러짐 해제\n- [Blandishment_Shin_Enemy], 최대 체력의 50%만큼 보호막 얻음 (이번 전투 동안 유지)\n- '해금[TabExplain]' 패시브의 [PressureOfPrescript] 소모 효과 비활성화\n- [PressureOfPrescript]이 [PressureOfPrescript_2nd]으로 변경되고, 최대로 증가\n- 턴 시작 시 [PressureOfPrescript_2nd] 1 얻음\n- 이후 정신력이 0 미만으로 감소하지 않음\n\n체력이 20% 이하가 될 때, [PressureOfPrescript_2nd]이 최대로 증가",
       "summary": "",
       "undefined": "-",
       "flavor": "‘위, 위험한 사람... 지령이 수행되지 모, 못할 수도 있겠어요.’"

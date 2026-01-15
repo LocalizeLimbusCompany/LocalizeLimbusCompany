@@ -3,7 +3,7 @@
     {
       "id": 132203,
       "name": "重畳した残像",
-      "desc": "ステージ開始時、[TimeEntangleFour]を得る\nパターンの最初のターン開始時、[TimeGapAb]を([TimeEntangleDesc]段階 × 400)だけ得る。\n([TimeEntangleDesc]段階1につき1回)\n\n[TimeEntangleDesc]3, 4段階で[TimeGapAb]を全て失うとパターンが変更され、次のターンの間混乱する\n\n[Combustion]・[Laceration]・[Vibration]・[Burst]・[Sinking]による体力、精神力、混乱区間前進量 -30%",
+      "desc": "ステージ開始時、[TimeEntangleFour]を得る\nパターンの最初のターン開始時、[TimeGapAb]を([TimeEntangleDesc]段階 × 400)だけ得る。\n([TimeEntangleDesc]段階1につき1回)\n\n[TimeEntangleDesc]3, 4段階で<color=#ff6000><mark=#ff000040><b><u>[TimeGapAb]を全て失うとパターンが変更され、次のターンの間混乱する</u></b></mark></color>\n\n[Combustion]・[Laceration]・[Vibration]・[Burst]・[Sinking]による体力、精神力、混乱区間前進量 -30%",
       "summary": "",
       "undefined": "-"
     },
@@ -17,7 +17,7 @@
     {
       "id": 132205,
       "name": "幾重もの時間から斬り込む残像",
-      "desc": "攻撃スキル終了時、各対象へ(クリティカル的中した斬撃コインの個数 × 10)だけ斬撃ダメージ (このダメージで混乱しない)\n\n攻撃スキル終了時、自分蛾保有した20を超過する[Breath]を全て消耗し、消耗値だけ対象へ[PhantomIncision]を付与",
+      "desc": "攻撃スキル終了時、各対象へ(クリティカル的中した斬撃コインの個数 × 10)だけ斬撃ダメージ (このダメージで混乱しない)\n\n攻撃スキル終了時、自分が保有した20を超過する[Breath]を全て消耗し、消耗値だけ対象へ[PhantomIncision]を付与",
       "summary": "",
       "undefined": "-"
     },
@@ -116,7 +116,7 @@
     {
       "id": 132503,
       "name": "解禁",
-      "desc": "ターン終了時、[BlessingOfIndexPrescriptEnemy]が3/6/9か体力が90%/75%/60%以下なら、\n- [UnlockBuff_1]/[UnlockBuff_2]/[UnlockBuff_3]を得る\n- 精神力が45に増加\n- <color=#ff6000><mark=#ff000040><b><u>保有した[PressureOfPrescript]を全て消耗、混乱を解除</u></b></mark></color>\n\n体力を条件に[UnlockBuff_Base]獲得時、\n- (増加した精神力 ÷ 15)だけ[KarmaOfIndexStudent]を得る\n- [BlessingOfIndexPrescriptEnemy]が3/6/9未満なら、3/6/9に変更\n増加した数値1につき、次のターン開始時に[DefenseDown]1, [KarmaOfIndexStudent]2を得る\n\n強力な攻撃を使用するターンの速度最大・最小値 +10",
+      "desc": "ターン終了時、[BlessingOfIndexPrescriptEnemy]が3/6/9か体力が90%/75%/60%以下なら、\n- [UnlockBuff_1]/[UnlockBuff_2]/[UnlockBuff_3]を得る\n- 精神力が45に増加\n- <color=#ff6000><mark=#ff000040><b><u>保有した[PressureOfPrescript]を全て消耗、混乱を解除</u></b></mark></color>\n- 最初に[UnlockBuff_Base]を獲得した次のターンに、[BlessingOfIndexPrescriptEnemy]1を得る\n\n体力を条件に[UnlockBuff_Base]獲得時、\n- (増加した精神力 ÷ 15)だけ[KarmaOfIndexStudent]を得る\n- [BlessingOfIndexPrescriptEnemy]が3/6/9未満なら、3/6/9に変更\n増加した数値1につき、次のターン開始時に[DefenseDown]1, [KarmaOfIndexStudent]2を得る\n\n強力な攻撃を使用するターンの速度最大・最小値 +10",
       "summary": "",
       "undefined": "-",
       "flavor": "「指令が授ける剣と布は、指令が遂行されたときに初めてその力が解禁され、発現するそうだ。」"
@@ -131,7 +131,7 @@
     {
       "id": 132505,
       "name": "抹殺態勢",
-      "desc": "戦場にベスパ登場時、\n- [UnlockBuff_Base]段階が2未満なら、[UnlockBuff_2]を得て[BlessingOfIndexPrescriptEnemy]が6に変更。増加した数値1につき、ターン開始時[DefenseDown]1, [KarmaOfIndexStudent]2を得る\n- [Blandishment_Shin_Enemy]、体力最大値の50%だけバリアを得る (この戦闘の間維持される)\n- 「解禁[TabExplain]」パッシブの[PressureOfPrescript]消耗効果が非活性化\n- [PressureOfPrescript]が[PressureOfPrescript_2nd]に変更され、最大値に増加\n- ターン開始時、[PressureOfPrescript_2nd]1を得る\n- 精神力が最大30まで増加。(増加した精神力 ÷ 10)だけ[KarmaOfIndexStudent]を得る\n- 以降、精神力が0未満に減少しない\n\n体力が20%以下になるとき、[PressureOfPrescript_2nd]が最大値に増加",
+      "desc": "戦場にベスパ登場時、\n- 特定ターンになって登場時、[UnlockBuff_Base]段階が2未満なら、[UnlockBuff_3]を得て精神力を45まで回復、混乱を解除\n- [Blandishment_Shin_Enemy]、体力最大値の50%だけバリアを得る (この戦闘の間維持される)\n- 「解禁[TabExplain]」パッシブの[PressureOfPrescript]消耗効果が非活性化\n- [PressureOfPrescript]が[PressureOfPrescript_2nd]に変更され、最大値に増加\n- ターン開始時、[PressureOfPrescript_2nd]1を得る\n- 以降、精神力が0未満に減少しない\n\n体力が20%以下になるとき、[PressureOfPrescript_2nd]が最大値に増加",
       "summary": "",
       "undefined": "-",
       "flavor": "「あ、危ない人…。指令が遂行できないかもし、しれません。」"

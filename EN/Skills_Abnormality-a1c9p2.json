@@ -670,7 +670,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "Rend Space - Multitudes [空間斬-緣]",
+          "name": "Rend Space - String Connection [空間斬-緣]",
           "desc": "[WhenUse] At 10+ SP, generate 1 Mang. Final Power +5\nCan Clash with this Skill regardless of Speed; cannot be Staggered until this Skill ends\n[DefeatDuel] Deal -80% damage and damage dealt by this Skill cannot Stagger the target\n[EndSkill] If this skill generated 1 Mang, lose 10 SP\n[EndSkill] End this turn",
           "flavor": "A technique that cuts through space itself. Sundering the fabric of space has long been the ambition of those who live by the sword—a hard-won feat reached through divergent disciplines.",
           "coinlist": [
@@ -1029,6 +1029,76 @@
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 877311,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Envying Roots",
+          "desc": "This Skill does not deal damage\n[WhenUse] Consume all [HowDareYouApple] on self and Reuse its Coins by [HowDareYouApple] Stack consumed (max 4)\n[DefeatDuel] This Skill does not activate [Burst] on target",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 877205,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Ardor Blossom Star",
+          "desc": "Gain Clash Power equal to (# of Wrath Skills that the Ardor Blossom Moth will use this turn x2)\n[WhenUse] Inflict (# of Wrath Skills that the Ardor Blossom Moth will use this turn x2) [Combustion] to all enemies\n[DefeatDuel] Gain the following effects:\n- This Attack Skill deals 0 damage\n- Remove [Combustion] from all targets\n- Halve the amount of [Combustion] and [Combustion] Count this Skill inflicts",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict [Combustion] equal to the number of Wrath Skills that the Ardor Blossom Moth will use this turn"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] Against the enemy with the slowest Speed, Inflict [Combustion] and [Combustion] Count equal to the number of Wrath Skills that the Ardor Blossom Moth will use this turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict [Combustion] equal to the number of Wrath Skills that the Ardor Blossom Moth will use this turn"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] Against the enemy with the slowest Speed, inflict [Combustion] and [Combustion] Count equal to the number of Wrath Skills that the Ardor Blossom Moth will use this turn"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] Raise the target's Stagger Threshold by 70% of damage dealt"
+                },
+                {
+                  "desc": "- Inflict 10 [Combustion] against targets that have been Staggered by this"
                 }
               ]
             }

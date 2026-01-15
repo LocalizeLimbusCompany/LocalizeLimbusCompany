@@ -428,7 +428,7 @@
         {
           "level": 1,
           "name": "蠢く尾",
-          "desc": "体力が最も低い敵を優先して攻撃\n対象に[Paralysis]があるなら、ダメージ量 +50%\n<color=#ff6000><mark color=#ff000040><b><u>対象が守備スキルを使用したなあら、ダメージ量 -100%</color></mark></b></u>\n[SelfCharge]1につき、基本威力 +1\n[WhenUse] [SelfCharge]1を消耗\n[EndSkill] 一方攻撃だったなら、[SelfCharge]を1消耗\n- 攻撃した対象が守備スキルを使用したなら、[SelfCharge]を1追加で消耗",
+          "desc": "体力が最も低い敵を優先して攻撃\n対象に[Paralysis]があるなら、ダメージ量 +50%\n<color=#ff6000><mark color=#ff000040><b><u>対象が守備スキルを使用したなら、ダメージ量 -100%</color></mark></b></u>\n[SelfCharge]1につき、基本威力 +1\n[WhenUse] [SelfCharge]1を消耗\n[EndSkill] 一方攻撃だったなら、[SelfCharge]を1消耗\n- 攻撃した対象が守備スキルを使用したなら、[SelfCharge]を1追加で消耗",
           "coinlist": [
             {
               "coindescs": [
@@ -672,7 +672,7 @@
           "level": 1,
           "name": "空間斬 - 縁",
           "desc": "[WhenUse] 自分の精神力が10以上なら、望 を1つ生成。最終威力 +5\n速度に関係なくこのスキルとマッチができ、このスキルを使用するまで混乱状態にならない\n[DefeatDuel] ダメージ量が80%だけ減少し、このスキルダメージ対象が混乱しない\n[EndSkill] このスキルで望 を生成したなら、精神力 -10\n[EndSkill] このターンが終了",
-          "flavor": "空間を斬る技術。空間斬。空間を斬ることは剣士たちの宿念であり、様々な方法でその境地に到達した。",
+          "flavor": "空間を斬る技術。空間斬。空間を斬ることは剣士たちの宿念であり、様々な方法でその宿念に至った。",
           "coinlist": [
             {
               "coindescs": [
@@ -1029,6 +1029,76 @@
                 },
                 {
                   "desc": "[OnSucceedAttack] [Sinking]1を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 877311,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "嫉妬する根",
+          "desc": "このスキルはダメージを与えない\n[WhenUse] 自分の[HowDareYouApple]を全て消耗し、消耗しただけコインを再使用する (最大4回)\n[DefeatDuel] このスキルで[Burst]効果を発動しない",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 877205,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "紅炎殺",
+          "desc": "(このターンに紅炎蛾が使用する憤怒スキルの数 × 2)だけマッチ威力が増加\n[WhenUse] 全ての敵へ(紅炎蛾が使用する憤怒スキル数 × 2)だけ[Combustion]を付与\n[DefeatDuel] 下記の効果を適用\n- このスキルの与ダメージ量が0になる\n- 全対象の[Combustion]を除去\n- この[Combustion]、[Combustion]回数付与量が半減",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] このターンに紅炎蛾が使用する憤怒スキルの数だけ[Combustion]付与"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 速度が最も低い敵へ、このターンに紅炎蛾が使用する憤怒スキルの数だけ[Combustion]付与、 [Combustion]回数が増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] このターンに紅炎蛾が使用する憤怒スキルの数だけ[Combustion]付与"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 速度が最も低い敵へ、このターンに紅炎蛾が使用する憤怒スキルの数だけ[Combustion]付与、 [Combustion]回数が増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] ダメージ量の70%分、混乱区間を前進"
+                },
+                {
+                  "desc": "- このダメージで混乱状態になった敵へ[Combustion]10を付与"
                 }
               ]
             }

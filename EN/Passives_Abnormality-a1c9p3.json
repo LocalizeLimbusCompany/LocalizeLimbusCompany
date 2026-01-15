@@ -1,0 +1,508 @@
+{
+  "dataList": [
+    {
+      "id": 133303,
+      "name": "Iron Maiden - Defibrillation",
+      "desc": "When Staggered, recover from Stagger and end this turn (once per Encounter)"
+    },
+    {
+      "id": 133101,
+      "name": "All of My Corpus has been Given to Tibia",
+      "desc": "Take -30% HP, SP damage from [Combustion], [Burst], and [Sinking]; -30% to Stagger Threshold raised by [Vibration]\nTake -50% damage from [Laceration]\n\nTurn Start: If this unit is Staggered, recover from Stagger. Afterward, gain 2 [CrimsonTakeDamageUp] and becomes unable to use 'Installation Art no. 3: Improvised Ribcage' until next turn (once per Encounter)\n\nTurn End: Gain 1 [DefenseDown] next turn for every 4 [Combustion] on self (max 15)"
+    },
+    {
+      "id": 133102,
+      "name": "Corpus-centric Art",
+      "desc": "When this unit enters the Encounter, heal 30 SP\n\nOn Hit with Attack Skill: If this unit inflicts negative effect and gains beneficial effect simultaneously, heal 4 SP at Attack End\n- If this unit is at max SP when healing SP with the above effect, gain 1 [ResultEnhancement] next turn (once per turn)",
+      "flavor": "A form of art that sculpts and exhibits artworks using bones and muscles as the material. Each act of creation incorporates even the tiniest of bone shards into the artist's intricately-crafted weapon."
+    },
+    {
+      "id": 133103,
+      "name": "The Aesthetics of Harvesting and Trimming the Ingredient On-site",
+      "desc": "After using a Skill, gain 30 [HumanBoneTheRings] and 1 [HumanBloodTheRings] for every target damaged by this unit's Skill"
+    },
+    {
+      "id": 133104,
+      "name": "Magnum Opus: Tibia",
+      "desc": "Turn End: At 206 [HumanBoneTheRings] and 5 [HumanBloodTheRings], reduce the Stack of each effect equal to those numbers respectively and gain 1 [MineTheRings]\n\nTurn Start: If this unit has [MineTheRings], use a powerful attack this turn\n\n<color=#ff6000><mark=#ff000040><b><u>When hit by an Attack Skill before using the powerful attack, gain 1 [PlusCoinValueDown] and 1 [ResultReduction]</u></b></mark></color> (once per Skill; max 3 times per turn)",
+      "flavor": "Tibia, the work of the artist's life, completed by breaking his own corpus and pouring his blood to the last drop—in the most literal sense."
+    },
+    {
+      "id": 133105,
+      "name": "Artwork Pleasing to the Senses",
+      "desc": "When [MineTheRings] expires, the following units heal 30 SP and gain 2 [AttackUp] and 2 [DefenseUp] next turn:\n- The Ring Nursefather - Callisto\n- The Ring Apprentice - Albina\n- Corpus Theater[TabExplain]"
+    },
+    {
+      "id": 133106,
+      "name": "Allow Me to Briefly Enjoy My Pupil's Exhibition",
+      "desc": "If this unit has [SupportProtect], <color=#ff6000><mark=#ff000040><b><u>lose 1 [SupportProtect] on Clash Start</u></b></mark></color> (once per Skill)"
+    },
+    {
+      "id": 133107,
+      "name": "Transcend the Corpus",
+      "desc": "At less than 50% HP, recover from Stagger and end this turn\n- Following the activation of this effect, equip 'Closing Time - Installation Art no. 1: Your Flesh and Bones as the Gallery's Seats' on this unit's last Skill Slot at the start of the next turn"
+    },
+    {
+      "id": 133109,
+      "name": "Please, Do Stop Running and Be Seated",
+      "desc": "Turn End: Inflict [RedemptionTheRings] to the Sinner and Assist Unit with the fastest Speed"
+    },
+    {
+      "id": 133201,
+      "name": "Bondage",
+      "desc": "Apply the following effects to the unit tethered to Corpus Theater:\n- Become 'immobilized'\n- This unit's buffs, HP, and SP cannot be changed"
+    },
+    {
+      "id": 133202,
+      "name": "Ingredient Harvest",
+      "desc": "If Corpus Theater is destroyed by the Ring Nursefather, the tethered unit becomes unavailable for the Encounter"
+    },
+    {
+      "id": 133203,
+      "name": "Escape from the Art",
+      "desc": "If Corpus Theater is destroyed by units other than the Ring Nursefather, activate the following effects:\n- The tethered unit returns to battle next turn; if the unit is at less than 10 SP, heal SP to 10\n- The Ring Nursefather and The Ring Apprentice lose 10 SP\n- Gain 2 E.G.O Resource for all Affinities"
+    },
+    {
+      "id": 133204,
+      "name": "Flammable Material",
+      "desc": "Take x2 damage from [Combustion]"
+    },
+    {
+      "id": 133601,
+      "name": "The Pulse and Beat of Corpus-turned-Ingredient",
+      "desc": "Take -30% HP, SP damage from [Combustion], [Burst], and [Sinking]; -30% to Stagger Threshold raised by [Vibration]\nTake -50% damage from [Laceration]\n\nTurn End: Gain 1 [DefenseDown] next turn for every 4 [Combustion] on self (max 15)",
+      "flavor": "Fascia is made of Albina's flesh and blood.\nNow, Albina has only the brain, while Fascia lacks only the brain.\nFood for thought: Which of them possesses the true corpus?"
+    },
+    {
+      "id": 133602,
+      "name": "Corporism",
+      "desc": "On Hit with Attack Skills: If this unit inflicts negative effect and gains beneficial effect simultaneously, heal 4 SP\n- If this unit is at max SP when healing SP with the above effect, gain 1 [Agility] next turn (2 times per turn)"
+    },
+    {
+      "id": 133603,
+      "name": "Fascia, My Precious Artwork",
+      "desc": "Turn End: At 2 [HumanFleshTheRings], remove [HumanFleshTheRings] and gain [BoneBladeTheRings] next turn\n\nTurn Start: If this unit has [BoneBladeTheRings], use a powerful attack this turn\n\n<color=#ff6000><mark=#ff000040><b><u>When hit by an Attack Skill before using the powerful attack, gain 1 [PlusCoinValueDown] and 1 [ResultReduction]</u></b></mark></color> (once per Skill; max 3 times per turn)"
+    },
+    {
+      "id": 133604,
+      "name": "Visitors Must Respect the Rules of the Gallery",
+      "desc": "If this unit has [SupportProtect], <color=#ff6000><mark=#ff000040><b><u>lose 1 [SupportProtect] on Clash Start</u></b></mark></color> (once per Skill)"
+    },
+    {
+      "id": 133606,
+      "name": "With this Artwork, I will Prove Myself before the Maestro",
+      "desc": "At less than 20 SP when the Ring Nursefather enters the Encounter, heal SP to 20"
+    },
+    {
+      "id": 132701,
+      "name": "Vengeance Tattoos [<s>Great Brother</s>]",
+      "desc": "Takes -30% damage from [Combustion], [Laceration], [Vibration], and [Burst] (rounded down)\n-50% to the amount of Stagger Threshold raised (rounded down)",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132702,
+      "name": "The Book of Vengeance",
+      "desc": "Encounter Start: Inflict [VengeanceBookSpider] on all Sinners and LCD units\n\nIf this unit hit with more than 3 Skills this turn, gain 1 [ReinforcedTattooSpider] next turn for every excess Skill that hit",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132703,
+      "name": "My Daughter's Education",
+      "desc": "On Clash Win, gain 1 [DaughterEducationSpider]\n\nOn Hit with a Skill, gain 1 [DaughterEducationSpider] (once per Skill; this effect does not activate for Cracked Coins)\n\nOn Clash Win with the first-used Skill in a turn, gain 1 more [DaughterEducationSpider] and the Skill gains Coin Power +1",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132704,
+      "name": "Resentment",
+      "desc": "When hit by 2 Skills, gain 1 [ResentmentSpider] and lose 1 [DaughterEducationSpider] (number of hits taken is always tracked)\n\nAt max [ResentmentSpider] Stack, use a powerful attack\n\nTurn End: At less than 80% / 60% / 40% HP, max out this unit's [ResentmentSpider] Stack",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132706,
+      "name": "???",
+      "desc": "???",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 134101,
+      "name": "Vengeance Tattoos Max Output... Unseal Lævateinn!",
+      "desc": "When [MiddleFatherSwordFour] is unsealed, this unit gains [MiddleFatherGuts]\n\nTargets the unit with [MosesRedBreathCharge]",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132801,
+      "name": "Am I doing this right, Papa?!",
+      "desc": "Begins Encounter with [HeatingWireOffSpider]\n\nTurn Start: At 3+ [GotACompliment], gain [HeatingWireOnSpider] for the turn and also inflict [Combustion] with Skills that inflict [Laceration]\n\nTurn End: At less than 3 [GotACompliment], convert this unit's [HeatingWireOnSpider] to [HeatingWireOffSpider]",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "'I like my papa because he always praises me and buys me comic books.'"
+    },
+    {
+      "id": 132802,
+      "name": "The Middle Styled Tattoos",
+      "desc": "If this unit hit with more than 2 Skills, gain 1 [ReinforcedTattooSpiderDaughter] next turn for every excess Skill that hit",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "'Will the bigger Sisters and Brothers of the Middle accept me as their family one day, so I can continue to live with them?'"
+    },
+    {
+      "id": 132803,
+      "name": "Praise is the Wind in Her Sail",
+      "desc": "On Clash Win, gain 1 [GotACompliment]\n\nOn Hit with a Skill, gain 1 [GotACompliment] (once per Skill; this effect does not activate for Cracked Coins)\n\nOn Clash Win with the first-used Skill in a turn, gain 1 more [GotACompliment] and the Skill gains Coin Power +1",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132804,
+      "name": "I'm pretty sure the Middle never forgets",
+      "desc": "When hit by 2 Skills, gain 1 [ResentmentSpiderDaughter] and lose 1 [GotACompliment] (number of hits taken is always tracked)\n\nAt max [ResentmentSpiderDaughter] Stack, use a powerful attack\n\nTurn End: At less than 80% / 60% / 40% HP, max out this unit's [ResentmentSpiderDaughter] Stack",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 134201,
+      "name": "Am I doing this right, Papa?!",
+      "desc": "Begins Encounter with [HeatingWireOffSpider]\n\nTurn Start: At 3+ [GotACompliment], gain [HeatingWireOnSpider] for the turn and also inflict [Combustion] with Skills that inflict [Laceration]\n\nTurn End: At less than 3 [GotACompliment], convert this unit's [HeatingWireOnSpider] to [HeatingWireOffSpider]",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 134202,
+      "name": "Whoa... That looks mad dangerous!",
+      "desc": "If the Middle Nursefather has [MiddleFatherSwordFour], does not enter [HeatingWireOffSpider] state\n\nTargets the unit with [MosesRedBreathCharge]",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "The combination of her animalistic instincts and battle experience is screaming at her in unison:\nWhatever that red thing is, if she can't stop that attack from going off, it <b>will</b> kill."
+    },
+    {
+      "id": 132601,
+      "name": "Grueling Battle",
+      "desc": "Begins battle with 20% missing HP\nFor the first 3 turns of the Encounter, gain 2 [ResultReduction]",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "Meeting a Color Fixer in battle is doubtless an experience that will elevate his skills to the next level.\nIf he survives this battle, that is."
+    },
+    {
+      "id": 132602,
+      "name": "Crumbling Form",
+      "desc": "Gain the following effects based on the target's [DuelEdge] Stack\n- For every Stack, deal +10% damage against and take -10% damage from the target with [DuelEdge]\n- At 3+ Stack, in a Clash against targets with [DuelEdge], gain Clash Power +1\n- At 5+ Stack, in a Clash against targets with [DuelEdge], gain Base Power +1\n- At 7+ Stack, in a Clash against targets with [DuelEdge], gain Coin Power +1\n- At 10+ Stack, in a Clash against targets with [DuelEdge], gain Final Power +1",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132603,
+      "name": "Desperate Struggle",
+      "desc": "After the Thumb Nursefather enters the field, deactivate the \"Hunter's Mark\" Passive and gain the following effects instead:\n- At less than 30 SP, heal up to 30 SP\n- Turn Start: Gain 3 [SupportProtect]\n<color=#ff6000><mark=#ff000040><b><u>- Can Clash regardless of Speed\n- Prioritize Clashing against Vergilius</u></b></mark></color>\n- When the Thumb Nursefather wins a Clash, and uses an Attack against the target, follow up with \"Colpi Sottani\" as an Unopposed Attack against the same target (2 times per turn)",
+      "summary": "",
+      "undefined": "",
+      "flavor": "'Maybe I can kill her now. Maybe this is my chance.'\n\nOnce again, the same contemplation comes to seize Lucio as he looms over his master, who lies fast asleep.\nBut this impulse remains an unactioned thought, for he had both fear born from experience and gratitude for his deliverance from the Backstreets.\nYet, his resentment runs too deep. Lucio makes a promise with himself, even as he swears utter fealty without a trace of deception:\n'Once this battle is behind us, I will kill her. I will gouge out her other eye and stab and slash at her, again and again, until she no longer moves.'\nFor the first time, fire burns in the eyes of the boy whose body is covered in bruises."
+    },
+    {
+      "id": 132604,
+      "name": "Hunter's Mark",
+      "desc": "Randomly select an enemy, reduce their Speed to 1, and target it with all of this unit's Skills\nActivates every 4 turns after the initial activation",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132606,
+      "name": "Duello Disperato",
+      "desc": "After Clashing, inflict 1 [DuelEdge] against the target this unit Clashed against\nIn a Clash against targets with [DuelEdge], heal 2 SP for every [DuelEdge] Stack on target (max 10)"
+    },
+    {
+      "id": 131401,
+      "name": "The Eye of Precognition",
+      "desc": "When this unit enters the Encounter, gain 30 [FutureEyeOn]\nAt 0 [FutureEyeOn] Stack, convert [FutureEyeOn] to [FutureEyeOff]",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "This Relic, known as the Eye of Odin, is but a third of a whole Relic that was broken into three parts."
+    },
+    {
+      "id": 131402,
+      "name": "Accelerating Future",
+      "desc": "In a Clash, <color=#ff6000><mark=#ff000040><b><u>gain 1 [LookingFuture] with every Clash</u></b></mark></color>\nCan gain up to ([FutureEyeOn] Stack at Turn Start / 3) [LookingFuture] per turn\nWhile this unit has [FutureEyeOn], <color=#ff6000><mark=#ff000040><b><u>getting attacked by Unopposed Attacks or losing a Clash activates the \"Precognition\" Skill</u></b></mark></color>",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "\"The more we clash, the hotter my sword will become... and accelerate to bring us to the future I foresaw.\""
+    },
+    {
+      "id": 131408,
+      "name": "Overloaded",
+      "desc": "The following causes this unit to lose [FutureEyeOn] Stack:\n- If this unit fails to gain [LookingFuture], lose 1 [FutureEyeOn] with every Clash\n- When this unit is attacked by an Unopposed Attack, lose 1 [FutureEyeOn]\n- On Clash Lose, lose 3 [FutureEyeOn]",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "'The eye's heating up, its socket is starting to ache, and my vision is turning red.'"
+    },
+    {
+      "id": 131405,
+      "name": "La Spada di Palermo",
+      "desc": "Deal +15% more damage against Shields for every Burn on the main target (max 300%)\nOn Skill Use, if target's Attack Skill is either a Slash or a Pierce Skill, Clash Power +1\nIf this unit's Skill effects triggered [VibrationExplosion], gain 2 [AttackDmgUp] next turn (3 times per turn)\nIf this unit hit Critically with its Skill effects, heal 5 SP",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 131404,
+      "name": "The Shame of Famiglia Bognatelli",
+      "desc": "Take -30% HP, SP damage from [Combustion], [Laceration], [Burst], [Sinking]; -30% to Stagger Threshold raised by [Vibration]\nAt 1+ [AccelBullet], Skills that spend [AccelBullet] deal +30% damage and deal +150% damage against Shields\nGain 4 [Breath] for every [AccelBullet] spent\nWhen flipping a Coin that spends [AccelBullet], does not cancel the attack even if this unit does not have Acceleration Round",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "\"You were an inheritor of the Palermitan style and a wielder of our family heirloom—you had every privilege one could ever hope for. How dare you embarrass yourself like this?\"\n\"We'll let you keep the Relic and the sword, for they have been defiled by your dishonorable stench.\"\n\"To be promoted to the station of a Sottocapo, an Underboss... only to be ousted in a mere 3 days. No one else has suffered such pathetic humiliation apart from you, Valencina.\"\n\"You are the shame of our family. La Famiglia Bognatelli withdraws its love from you.\""
+    },
+    {
+      "id": 131409,
+      "name": "Shin (心) - Valencina",
+      "desc": "When hit, or when \"The Thumb Apprentice - Lucio\" is defeated, gain [ObsessionAndGreed] next turn",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "\"*sigh* Okay. So, you're saying we can get Ticket back by going in and wrecking the place according to that fanatic's plan... Is this really going to bring Ticket back to us?\""
+    },
+    {
+      "id": 131406,
+      "name": "Lucio, you useless little shit!",
+      "desc": "When \"The Thumb Apprentice - Lucio\" is defeated, activate \"Time to Hunt\" Passive",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 131410,
+      "name": "Time to Hunt",
+      "desc": "Turn Start: If this unit is Staggered, recover from Stagger\n\nSelect a random Sinner and inflict [TeachersPrey]\n- Activates every 4 turns after the initial activation\n- If this unit kills the target with the Skill \"Disposal,\" activate it again next turn",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "The Palermitan Style has much in common with the originator of the sword technique—La Famiglia Bognatelli.\nBoth the Famiglia and the sword style are renowned for relentlessly focusing on a single prey during a hunt, which is concluded with a Coup de Grâce that may as well be called a dissection. These executions are not carried out in the shadows, but instead, proudly put on display for all to behold.\nThe spectacular and formidable sword style has granted the Famiglia much honor and prestige, eventually securing them a place among the Sette Famiglie of the Backstreets.\nValencina, a master of the Palermitan Style, used it to hunt and execute many officers and so-called battle-hardened soldiers during the Smoke War, becoming a veritable \"War Hero.\"\nIronically, no one could have imagined her fall would sink as low as her fame once soared."
+    },
+    {
+      "id": 134501,
+      "name": "All of My Corpus has been Given to Tibia",
+      "desc": "Take -30% HP, SP damage from [Combustion], [Burst], and [Sinking]; -30% to Stagger Threshold raised by [Vibration]\nTake -50% damage from [Laceration]\n\nTurn Start: If this unit is Staggered, recover from Stagger. Afterward, gain 2 [CrimsonTakeDamageUp] (once per Encounter)\n\nTurn End: Gain 1 [DefenseDown] next turn for every 4 [Combustion] on self (max 15)",
+      "flavor": "Soon, the masterpiece shall be completed—the raison d'être of the House of Spiders.\nThe Golden Boughs are... interesting objet, to be sure, but the fact remains that they are not essential to the perfection of the masterpiece.\nI doubt if it was truly necessary to seize them and risk making an enemy out of Limbus Company... although I do admit these sloppy dance steps did, in the end, come together to form a rather acceptable finale.\nIn any case, this series of circumstances we find ourselves in was Rien's desire—or more precisely, the pleasure of the so-called god he puts his faith in.\nOne must wonder, however... Is it a blessing or a curse to be so compellingly <i>loved</i> by such a thing referred to as \"god\"? Fuhuhu..."
+    },
+    {
+      "id": 134502,
+      "name": "Corporism",
+      "desc": "On Hit with Attack Skills: If this unit inflicts negative effect and gains positive effect simultaneously, heal 4 SP at Attack End\n- If this unit is at max SP when healing SP with the above effect, gain 1 [ResultEnhancement] next turn (once per turn)"
+    },
+    {
+      "id": 134506,
+      "name": "Allow Me to Briefly Enjoy My Pupil's Exhibition",
+      "desc": "If this unit has [SupportProtect], <color=#ff6000><mark=#ff000040><b><u>lose 1 [SupportProtect] on Clash Start</u></b></mark></color> (once per Skill)"
+    },
+    {
+      "id": 134509,
+      "name": "Healthy Corpus Leads to Healthy Ingredient",
+      "desc": "This unit deals +150% damage to the Sinner and Assist Unit with the highest level and prioritizes attacking them",
+      "flavor": "\"But once you have reached a certain level of mastery, it is best to aim for the most robust corpus among your ingredients.\"\n\"You see, a healthy corpus may provide ample pieces of muscles and bones to broaden the scope and scale of the artwork.\"\n\"Such exciting prospects, yes, dear Albina?\""
+    },
+    {
+      "id": 134510,
+      "name": "Magnum Opus: Tibia",
+      "desc": "Turn End: At 206 [HumanBoneTheRings] and 5 [HumanBloodTheRings], reduce Stack of each effect equal to those numbers and gain 1 [MineTheRings]\n\nTurn Start: If this unit has [MineTheRings], use a powerful attack this turn\n\n<color=#ff6000><mark=#ff000040><b><u>When hit by an Attack Skill before using the powerful attack, gain 1 [PlusCoinValueDown] and 1 [ResultReduction]</u></b></mark></color> (once per Skill; max 3 times per turn)",
+      "flavor": "Tibia, the work of the artist's life, completed by breaking his own corpus and pouring his blood to the last drop—in the most literal sense."
+    },
+    {
+      "id": 134604,
+      "name": "Visitors Must Respect the Rules of the Gallery",
+      "desc": "If this unit has [SupportProtect], <color=#ff6000><mark=#ff000040><b><u>lose 1 [SupportProtect] on Clash Start</u></b></mark></color> (once per Skill)"
+    },
+    {
+      "id": 134605,
+      "name": "Ingredient Selection",
+      "desc": "This character prioritizes attacking the Sinner and Assist Unit with the lowest level",
+      "flavor": "\"I'll harvest the muscles and bones of the weakest one first.\"\n\"The ingredients might not cut it, but I'll be able to harvest better ones as I craft and display more artworks.\"\n\"What an exciting prospect, right, dear Fascia?\""
+    },
+    {
+      "id": 132218,
+      "name": "132218",
+      "desc": "(미사용 패시브)",
+      "flavor": ""
+    },
+    {
+      "id": 132214,
+      "name": "Afterimage of the Future",
+      "desc": "Every few turns, use the \"Destinated Opponent\" Skill\n<color=#ff6000><mark=#ff000040><b><u>Only the target of this unit's attack can Clash with the said Skill Slot</u></b></mark></color>\n\nIf this unit's \"Destinated Opponent\" Skill loses a Clash, take 36 ~ 60 fixed damage\n\nCombat End: <color=#ff6000><mark=#ff000040><b><u>If every \"Destinated Opponent\" Skill this unit used in this turn lost a Clash</u></b></mark></color>, gain 1 [Vulnerable] next turn"
+    },
+    {
+      "id": 132217,
+      "name": "132217",
+      "desc": "(미사용 패시브)"
+    },
+    {
+      "id": 132219,
+      "name": "Tiansha Star's Bladewound [天殺星傷]",
+      "desc": "Encounter Start: Gain [LvDownLittleFingerBossTwo] and 4 [TimeEntangleUnstable]"
+    },
+    {
+      "id": 132222,
+      "name": "From Dawn till Dusk",
+      "desc": "Turn Start: At 0+ SP, gain 1 [SojiAbiAgeFuture]\nGain 1 [SojiAbiAgeFuture] for every 2 SP above 0\n\nTurn Start: At less than 0 SP, gain 1 [SojiAbiAgePast]\nGain 1 [SojiAbiAgePast] for every 2 SP below 0",
+      "flavor": "The past, the present, the future—the myriad moments converge together, rendering the distinction of time meaningless. Youthful and aged selves alike are pulled into the here and now from every point along the continuum of time."
+    },
+    {
+      "id": 132223,
+      "name": "Spacetime Afterimage Collapse",
+      "desc": "Turn End: Gain 1 [TimeEntangleUnstable] for every 5 SP difference between this unit's current SP and SP at Turn Start (max 5 per turn)\n\nFor every 100 damage taken cumulatively, lose 1 [TimeEntangleUnstable] (including Shield damage)",
+      "flavor": "'The afterimages that have long wrapped me in their folds are stripped away, layer by layer... and I am left standing in both loss and liberation.'"
+    },
+    {
+      "id": 133701,
+      "name": "Will of the Prescript",
+      "desc": "Encounter Start: Gain Shield equal to 20% of max HP (remains throughout this Encounter)\n\nTurn Start:\n- Gain [IndexPrescript_Base_2nd] based on [UnlockBuff_Base] stage on self\n- Inflict [IndexPrescriptTargetToPersonality] to a random enemy and prioritize attacking that enemy (excluding certain pattern)\n\nDeal +2.5% damage to [IndexPrescriptTargetToPersonality] for every [BlessingOfIndexPrescriptEnemy] (max 20%)\n- At 9 [BlessingOfIndexPrescriptEnemy], deal +30% damage to all targets instead",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 133702,
+      "name": "Undertake Prescript",
+      "desc": "Turn End: If [IndexPrescript_Base_2nd] was executed this turn, heal 15 SP and gain [BlessingOfIndexPrescriptEnemy] by ([UnlockBuff_Base] stage + 1) (once per turn)\n\nTurn End: If [IndexPrescript_Base_2nd] was not executed this turn, gain 1 [PressureOfPrescript] and 10 [KarmaOfIndexStudent]\n- If this unit's [UnlockBuff_Base] stage is below 2, gain 1 [BlessingOfIndexPrescriptEnemy]\n- At 9 [BlessingOfIndexPrescriptEnemy], does not gain [KarmaOfIndexStudent]\n\n- Gain [EsteemNeeds] equal to [PressureOfPrescript] gained every time this unit gains [PressureOfPrescript]",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 133703,
+      "name": "Unlock",
+      "desc": "Turn End: At 6/9 [BlessingOfIndexPrescriptEnemy] or at 80%-/60%- HP,\n- Gain [UnlockBuff_2]/[UnlockBuff_3]\n- Heal to 45 SP\n- Consume all [PressureOfPrescript] and recover from Stagger\n\nIf [UnlockBuff_Base] was gained based on HP conditional above,\n- Gain [KarmaOfIndexStudent] by (sum of healed SP / 15)\n- Increase [BlessingOfIndexPrescriptEnemy] to 6/9 if this unit had less than 6/9 [BlessingOfIndexPrescriptEnemy]; gain 1 [DefenseDown] and 2 [KarmaOfIndexStudent] next turn for every [BlessingOfIndexPrescriptEnemy] gained\n\nMin & Max Speed +10 in the turn this unit uses its powerful attack",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 133704,
+      "name": "Effloresced E.G.O::Procuration",
+      "desc": "For this Encounter, maintain Effloresced[TabExplain] E.G.O::Procuration state\n- Encounter Start: Gain [UnlockBuff_1] and 3 [BlessingOfIndexPrescriptEnemy]\n- Gain [Blandishment_Enemy] and a different set of Resistance values while in this state\n- SP does not drop below 0",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 133705,
+      "name": "Concentration",
+      "desc": "At [UnlockBuff_3], apply the following effects:\n- [Blandishment_Shin_Enemy], gain Shield equal to 50% of max HP (lasts for the rest of this Encounter)\n- Intensify [PressureOfPrescript] to [PressureOfPrescript_2nd] and max out its Stack\n- Turn Start: Gain 1 [PressureOfPrescript_2nd]",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 133801,
+      "name": "The Orthodox Blade [整劍]",
+      "desc": "Encounter Start: gain 50 [DicipleLittleFinger]"
+    },
+    {
+      "id": 133802,
+      "name": "Training to Inherit the Name of a Star",
+      "desc": "After Attack Skill End, deal (# of Slash Coins that hit Critically x 10) Slash damage against each target (cannot be Staggered due to this damage)"
+    },
+    {
+      "id": 133803,
+      "name": "Singular Focus of the Mind",
+      "desc": "This unit's [Breath] Potency is capped at 25\nAny excess [Breath] Potency gained past 25 will be converted to [DicipleLittleFinger]\n\nGain [Fugacious] equal to [DicipleLittleFinger] lost every time this unit loses [DicipleLittleFinger] Stack"
+    },
+    {
+      "id": 133804,
+      "name": "Tranquility [靜念]",
+      "desc": "If this unit has [DicipleLittleFinger], gain the following effects:\n- SP does not drop below 0; if it was below 0, recover to 0\n- Convert any SP damage taken into Gloom damage (save for SP changes due to \"Base factors increasing/decreasing Sanity\")"
+    },
+    {
+      "id": 133805,
+      "name": "Grace",
+      "desc": "In a Clash against targets that aren't Ryōshū, Clash Power -2\nTake -20% damage from targets other than Ryōshū"
+    },
+    {
+      "id": 133901,
+      "name": "The Emperor's Subjects",
+      "desc": "Turn Start: Gain 50 [DefenseBug] (Gain 3 fewer [DefenseBug] with every subsequent turn; max reduction 20)\n- If this unit has [Combustion], [Laceration], [Vibration], [Burst], or [Sinking], <color=#ff6000><mark=#ff000040><b><u>reduce their Potency by a random value; then, lose the same Stacks of [DefenseBug] as that random value</u></b></mark></color>\n- If the above effects are at 1 Potency but has 2+ Count, reduce their Count instead\n\n<color=#ff6000><mark=#ff000040><b><u>If all [DefenseBug] was lost</u></b></mark></color> during the combat phase, gain the following effects next turn:\n- Gain 10 [DefenseDown] instead of gaining [DefenseBug]\n- Generate 2 E.G.O resources for each of the 3 least-owned Affinities\n- Turn End: Remove all negative effects from this unit and start gaining [DefenseBug] again",
+      "flavor": "They crawl out unheralded from betwixt all the lines that form where walls meet."
+    },
+    {
+      "id": 133902,
+      "name": "The Emperor's Mantle",
+      "desc": "Turn Start: Gain ([DefenseBug] x 40) Shield",
+      "flavor": "The Legion of Roaches moves for no one but its Emperor."
+    },
+    {
+      "id": 133903,
+      "name": "The Emperor's Legion",
+      "desc": "- On Clash Win, inflict 3 [OffenseBug] on target\n- On Hit with a Skill, inflict 1 [OffenseBug] on target",
+      "flavor": "Rip, seep, trickle, carve, tear, devour."
+    },
+    {
+      "id": 133904,
+      "name": "The Emperor's Blood",
+      "desc": "Take -50% HP, SP damage from [Combustion], [Laceration], [Burst], and [Sinking]; -50% to Stagger Threshold raised by [Vibration]\nCannot be Staggered due to this damage\nTurn Start: Gain 2 [ResultReduction] for every 25% missing HP on the Core",
+      "flavor": "'Become dulled and inured to all things.'"
+    },
+    {
+      "id": 133905,
+      "name": "The Unwrapped Present",
+      "desc": "This unit's SP value cannot affect the outcome of Coin flips, which is fixed to 50-50\n\n<color=#ff6000><mark=#ff000040><b><u>On Clash Win against Sinners,</u></b></mark></color> lose 5 SP and deal -40% damage against them\n\n<color=#ff6000><mark=#ff000040><b><u>When in Low Morale or Panic states</u></b></mark></color>, gain [ParryingResultDown] and [ResultReduction]\nWhen recovering from Panic, gain 2 [ResultReduction]",
+      "flavor": "'Are there really no more wrappings underneath?'"
+    },
+    {
+      "id": 133906,
+      "name": "The Emperor's Wrath",
+      "desc": "At 50% HP, or when Staggered, recover from Stagger and remove all negative effects on this unit and gain a new pattern\nThen, gain the following effects:\n- Reset SP to 0\n- Gain 50 [DefenseBug]\n- Double the amount of [OffenseBug] inflicted by the Passive \"The Emperor's Legion\""
+    },
+    {
+      "id": 134701,
+      "name": "Rien, The Index Nursefather",
+      "desc": "<color=#ff6000><mark=#ff000040><b><u>Take -50% damage from Unopposed Attacks</u></b></mark></color>\nTake -50% damage from [Vibration], [Burst], and [Sinking]\nWhen healing SP from [UnlockBuff_Base], if this unit's SP is below 0, heal up to 0 SP\n\nEncounter Start: Gain [BurningWoundRien_Mask]\n\nAt 55% HP, gain a new pattern\n- Remove all effects other than those exclusive to this unit\n- Reset [StackRienSpecialSkill] Stack to 0",
+      "flavor": "I waited for \"the moment\" as the Prescript told me to.\nEven after my darling daughter left, I waited.\n\nAnd after a while, I was contacted by Limbus Company, and saw that the Backdoor was open.\nThat's when the device beeped and let me know that it was finally time to bring my daughter home."
+    },
+    {
+      "id": 134702,
+      "name": "Oracle Device [Caduceus]",
+      "desc": "<color=#ff6000><mark=#ff000040><b><u>A random weapon is assigned to every Coin. Each weapon has a unique effect.</u></b></mark></color>\n- [RienWeapon01Hatchet]\n- [RienWeapon02Stiletto]\n- [RienWeapon03Greatsword]\n- [RienWeapon04Rapier]\n- [RienWeapon05Sledgehammer]\n- [RienWeapon06Ultragreatsword]\n- [RienWeapon07Lance]\n- [RienWeapon08Chain]\n- [RienWeapon09Scythe]\n\nWhen using an Attack Skill, gain 1 [StackRienSpecialSkill] (max 9)\n- Can be gained once per Skill; does not gain Stack from the same Skill twice\n\n<color=#ff6000><mark=#ff000040><b><u>Turn Start: At 9 [StackRienSpecialSkill] Stacks, use a powerful Skill</u></b></mark></color>\n- After Attack using the powerful Skill for the first time, gain [Shin_Rien]\n- Reset the per-Skill [StackRienSpecialSkill] cap\n- Min & Max Speed +25\n- Turn End: Gain 1 [Vulnerable] and 2 [ResultReduction] next turn\n\nTurn 5 Start: At less than 9 [StackRienSpecialSkill], bring its Stack to 9; then, gain (Stack gained x 5) [KarmaOfIndexRien]\n- Then, activate this effect every 4 turns",
+      "flavor": "A vial of what looks like liquid metal capable of changing its shape and mass, its qualities almost like those of Singularities, swishes inside the Device.\nThe form the fluid takes is contingent on the Prescript the Device receives. The weapons it produces depend on the information regarding the target and the time limit given to carry out the assassination.\nOne day, as he received a dagger too small for the task, he elected to wait until it produced a different weapon. However, despite the approaching deadline, it refused to provide him a proper weapon; he had no choice but to kill his target with a fork."
+    },
+    {
+      "id": 134703,
+      "name": "Will of the Prescript",
+      "desc": "Turn Start:\n- Gain [IndexPrescript_Base_2nd] based on [UnlockBuff_Base] stage on self\n- Apply [IndexPrescriptTargetToPersonality] against a random non-Ryōshū Sinner, and prioritize attacking them\n<color=#ff6000><mark=#ff000040><b><u>- When using a Skill against [IndexPrescriptTargetToPersonality], convert all Coins on that Skill to [SuperCoin]s</u></b></mark></color>\n· If [IndexPrescriptTargetToPersonality] is killed, or if this unit can no longer attack that target, <color=#ff6000><mark=#ff000040><b><u>use the remaining Skills against a random non-Ryōshū Sinner (prioritizes targets with the least current HP)</u></b></mark></color>\n· When all other Sinners are killed, apply it to Ryōshū\n\nDeal +2.5% damage against [IndexPrescriptTargetToPersonality] for every [BlessingOfIndexPrescriptEnemy] (max 20%)\n- At 9 [BlessingOfIndexPrescriptEnemy], deal +30% damage against all targets",
+      "flavor": "Do you wish me to raise a family?\n\n\"It must've been fate that brought us together. To think that I'd ever meet a husband like you...\""
+    },
+    {
+      "id": 134704,
+      "name": "Undertake Prescript",
+      "desc": "Turn End: If [IndexPrescript_Base_2nd] was executed this turn, heal 10 SP and gain 3 [BlessingOfIndexPrescriptEnemy] (once per turn)\n\n<color=#ff6000><mark=#ff000040><b><u>Turn End: If [IndexPrescript_Base_2nd] was not executed this turn, gain 8 [KarmaOfIndexRien], and the Sinner who had [IndexPrescriptTargetToPersonality] gains 1 [ParryingResultUp] next turn</u></b></mark></color>\n- If this unit does not have [UnlockBuff_Base], gain 1 [BlessingOfIndexPrescriptEnemy] at Turn End\n- At 9 [BlessingOfIndexPrescriptEnemy], does not gain [KarmaOfIndexRien]",
+      "flavor": "Do you wish me to lose my family?\n\n\"Honey, I gotta take a quick trip up north today.\"\n\"Ah, also—hey, buddy. I'm expecting a package this afternoon, so would you be a dear and pick it up for me, sweetheart?\""
+    },
+    {
+      "id": 134705,
+      "name": "Unlock",
+      "desc": "Turn End: At 3/6/9 [BlessingOfIndexPrescriptEnemy] or at 95%-/85%-/75%- HP,- Gain [UnlockBuff_Rien1]/[UnlockBuff_Rien2]/[UnlockBuff_Rien3]\n\nTurn 1 End: At lower than [UnlockBuff_Base] stage 1, gain [UnlockBuff_Rien1]\nTurn 4 End: At lower than [UnlockBuff_Base] stage 2, gain [UnlockBuff_Rien2]\n\nWhen [UnlockBuff_Base] is activated due to HP or Turn conditionals:\n- At less than 3/6/9 [BlessingOfIndexPrescriptEnemy] Stack, raise them to 3/6/9\nGain 10 [KarmaOfIndexRien] at the next Turn Start for every Stack gained",
+      "flavor": "\"Following the Prescripts is to unlock what is locked.\""
+    },
+    {
+      "id": 134801,
+      "name": "Rien, the Father [Imitation]",
+      "desc": "<color=#ff6000><mark=#ff000040><b><u>Take -75% damage from Unopposed Attacks</u></b></mark></color>\nTake -75% damage from [Vibration], [Burst], and [Sinking]\nWhen healing SP from [UnlockBuff_Base], if this unit's SP is below 15, heal up to 15 SP\n\nWhen this unit enters a new phase at 55% HP, gain the following effects:\n- Remove all effects other than those exclusive to this unit\n- Reset [StackRienSpecialSkill] Stack to 0\n- Gain [IndexPrescript_RienSecondPhase]\n- Convert [BurningWoundRien_Mask] to [BurningWoundRien]\n- Convert [KarmaOfIndexRien] to [KarmaOfIndexRien_2Phase]; then gain 10 Stacks of that effect\n- If this unit does not have [Shin_Rien], immediately gain that effect\n\nAt 25% or lower HP, gain a new pattern and greatly enhance a certain Skill",
+      "flavor": "Once, he harbored a suspicion that he was being shaped into an imitation of someone; he doubted the Will and nearly defied it, for he did not know whom he was to mimic. Only when it was too late did he understand its intent and come to accept the Prescript's will.\nOnly then was the false father completed."
+    },
+    {
+      "id": 134802,
+      "name": "Oracle Device [Caduceus] - Full Unlock",
+      "desc": "<color=#ff6000><mark=#ff000040><b><u>A random weapon is assigned to every Coin. Each weapon has a unique effect.</u></b></mark></color>\n- [RienWeapon01Hatchet2phase]\n- [RienWeapon02Stiletto2phase]\n- [RienWeapon03Greatsword2phase]\n- [RienWeapon04Rapier2phase]\n- [RienWeapon05Sledgehammer2phase]\n- [RienWeapon06Ultragreatsword2phase]\n- [RienWeapon07Lance2phase]\n- [RienWeapon08Chain2phase]\n- [RienWeapon09Scythe2phase]\n\nWhen using an Attack Skill, gain 1 [StackRienSpecialSkill] (max 9)\n- Can be gained once per Skill; does not gain Stack from the same Skill twice\n- Does not gain Stack from a Skill used only in a special pattern\n\nTurn Start: At 9 [StackRienSpecialSkill] Stacks, use a powerful Skill\n- Reset the per-Skill [StackRienSpecialSkill] cap\n- Min & Max Speed +25\n- Turn End: Gain 2 [Vulnerable] and 3 [ResultReduction] next turn\n\nActivate the following, starting from the turn in which the phase changed\n- Every 4 turns, at less than 9 [StackRienSpecialSkill], bring its Stack to 9; then, gain (Stack gained x 5) [KarmaOfIndexRien_2Phase]",
+      "flavor": "An unparalleled weapon and a curse bestowed by Hermes, a god of the City whose Prescripts are distributed by radio waves."
+    },
+    {
+      "id": 134803,
+      "name": "Will of the Prescript",
+      "desc": "Turn Start:\n- Apply [IndexPrescriptTargetToPersonality] against a random non-Ryōshū Sinner, and prioritize attacking them\n<color=#ff6000><mark=#ff000040><b><u>- When using a Skill against [IndexPrescriptTargetToPersonality], convert all Coins on that Skill to [SuperCoin]s</u></b></mark></color>\n· If [IndexPrescriptTargetToPersonality] is killed, or if this unit can no longer attack that target, <color=#ff6000><mark=#ff000040><b><u>use the remaining Skills against a random non-Ryōshū Sinner (prioritizes targets with the least current HP, unless they have 1 HP)</u></b></mark></color>\n· When all other Sinners are killed, apply it to Ryōshū\n- Gain [Protection] equal to [BlessingOfIndexPrescriptEnemy] (max 9)\n<color=#ff6000><mark=#ff000040><b><u>· Lose 1 Stack for every 20 [KarmaOfIndexRien_2Phase]</u></b></mark></color>\n\nDeal +5% damage against [IndexPrescriptTargetToPersonality] for every [BlessingOfIndexPrescriptEnemy] (max 40%)\n- At 9 [BlessingOfIndexPrescriptEnemy], deal +50% damage against all targets\n\nStarting from the first turn after the phase change, activate the following effects:\n- Gain [BlackNightmare] every 2 turns.\n- When gaining [BlackNightmare], if this unit has fewer than 9 [StackRienSpecialSkill] Stack, activate a unique pattern",
+      "flavor": "I raised a family.\n\n\"You're not supposed to be here right now.\"\n\"My work is still much underway, and I'd like to carve them up in peace so they can attain the most exquisite beauty I can sculpt.\"\n\"... Don't tell me, are you here to defy the Prescript?\""
+    },
+    {
+      "id": 134804,
+      "name": "Undertake Prescript",
+      "desc": "Turn End: If [IndexPrescript_Base_2nd] was executed this turn, heal 15 SP and gain 1 [BlessingOfIndexPrescriptEnemy] (once per turn)\n\n<color=#ff6000><mark=#ff000040><b><u>Turn End: If [IndexPrescript_Base_2nd] was not executed this turn, gain 10 [KarmaOfIndexRien_2Phase], lose 1 [BlessingOfIndexPrescriptEnemy], and the Sinner who had [IndexPrescriptTargetToPersonality] gains 2 [ParryingResultUp] next turn</u></b></mark></color>\n- If this unit used a powerful Skill this turn, gain 15 [KarmaOfIndexRien_2Phase] and lose 3 [BlessingOfIndexPrescriptEnemy] instead",
+      "flavor": "I... lost my family.\n\n\"Don't go...\"\n\"Don't go... Not... like this... Daddy... Please... help us...\""
+    },
+    {
+      "id": 132224,
+      "name": "The Final Battle",
+      "desc": "In this Encounter, when this unit takes damage that brings their HP down to 0, nullify that damage and apply the following effects (once per Encounter):\n- Heal max HP and remove all removable negative effects from this unit\n- For this Encounter, gain 1 [Vulnerable] and fix [TimeEntangleUnstable] to 1. Take (# of current turn x 10) fixed damage at the end of every turn\n- Afterward, end turn and the attack pattern becomes empowered",
+      "flavor": "\"You have been made to forget all, and I to remember all.\""
+    }
+  ]
+}
