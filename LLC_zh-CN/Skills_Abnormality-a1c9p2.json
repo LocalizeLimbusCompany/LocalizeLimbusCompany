@@ -402,7 +402,7 @@
         {
           "level": 1,
           "name": "蠕动的头",
-          "desc": "优先指定体力最低的敌方单位\n若目标带有[Paralysis]，使本技能造成的伤害+50%\n<color=#ff6000><mark color=#ff000040><b><u>若目标使用了守备技能，使本技能造成的伤害-100%</color></mark></b></u>\n自身每带有1层[SelfCharge]，使本技能的基础威力+1\n[WhenUse] 消耗1层[SelfCharge]\n[EndSkill] 若本技能进行单方面攻击，则消耗1层[SelfCharge]\n- 若攻击目标使用了守备技能，则额外消耗1层[SelfCharge]",
+          "desc": "优先指定体力最低的敌方单位\n若目标带有[Paralysis]，使本技能造成的伤害+50%\n<color=#ff6000><mark color=#ff000040><b><u>若目标使用了守备技能，使本技能造成的伤害-100%</u></b></mark></color>\n自身每带有1层[SelfCharge]，使本技能的基础威力+1\n[WhenUse] 消耗1层[SelfCharge]\n[EndSkill] 若本技能进行单方面攻击，则消耗1层[SelfCharge]\n- 若攻击目标使用了守备技能，则额外消耗1层[SelfCharge]",
           "coinlist": [
             {
               "coindescs": [
@@ -428,7 +428,7 @@
         {
           "level": 1,
           "name": "蠕动的尾",
-          "desc": "优先指定体力最低的敌方单位\n若目标带有[Paralysis]，使本技能造成的伤害+50%\n<color=#ff6000><mark color=#ff000040><b><u>若目标使用了守备技能，使本技能造成的伤害-100%</color></mark></b></u>\n自身每带有1层[SelfCharge]，使本技能的基础威力+1\n[WhenUse] 消耗1层[SelfCharge]\n[EndSkill] 若本技能进行单方面攻击，则消耗1层[SelfCharge]\n- 若攻击目标使用了守备技能，则额外消耗1层[SelfCharge]",
+          "desc": "优先指定体力最低的敌方单位\n若目标带有[Paralysis]，使本技能造成的伤害+50%\n<color=#ff6000><mark color=#ff000040><b><u>若目标使用了守备技能，使本技能造成的伤害-100%</u></b></mark></color>\n自身每带有1层[SelfCharge]，使本技能的基础威力+1\n[WhenUse] 消耗1层[SelfCharge]\n[EndSkill] 若本技能进行单方面攻击，则消耗1层[SelfCharge]\n- 若攻击目标使用了守备技能，则额外消耗1层[SelfCharge]",
           "coinlist": [
             {
               "coindescs": [
@@ -1029,6 +1029,76 @@
                 },
                 {
                   "desc": "[OnSucceedAttack] 使目标增加1级[Sinking]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 877311,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "嫉妒之根",
+          "desc": "本技能不会造成伤害\n[WhenUse] 消耗自身所有[HowDareYouApple]并重复使用本技能的硬币(消耗的[HowDareYouApple]层数)次(最多4次)\n[DefeatDuel] 本技能不会触发目标的[Burst]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 877205,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "红艳煞",
+          "desc": "使本技能的拼点威力+(红焰蛾本回合使用的暴怒技能数×2)\n[WhenUse] 使全体敌方单位增加(红焰蛾本回合使用的暴怒技能数×2)级[Combustion]强度\n[DefeatDuel] 触发以下效果\n- 使本技能造成的伤害变为0点\n- 解除全体目标的[Combustion]\n- 令本技能增加的[Combustion]强度与施加的[Combustion]层数减半",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 根据红焰蛾本回合使用的暴怒技能数，使目标增加相应的[Combustion]强度"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 根据红焰蛾本回合使用的暴怒技能数，使速度值最低的1名敌方单位增加相应的[Combustion]强度并对该敌方单位施加相应层数的[Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 根据红焰蛾本回合使用的暴怒技能数，使目标增加相应的[Combustion]强度"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 根据红焰蛾本回合使用的暴怒技能数，使速度值最低的1名敌方单位增加相应的[Combustion]强度并对该敌方单位施加相应层数的[Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的70%"
+                },
+                {
+                  "desc": "- 使因该效果而陷入混乱的敌方单位增加10级[Combustion]强度"
                 }
               ]
             }

@@ -1,0 +1,508 @@
+{
+  "dataList": [
+    {
+      "id": 133303,
+      "name": "铁处女-除颤",
+      "desc": "陷入混乱时，解除自身的混乱并结束本回合(每场战斗最多1次)"
+    },
+    {
+      "id": 133101,
+      "name": "我全部的身体要素已给予提比娅",
+      "desc": "受到[Combustion]、[Vibration]、[Burst]与[Sinking]的体力伤害与理智伤害-30%\n受到[Laceration]的伤害-50%\n\n回合开始时，若自身陷入混乱，则解除自身的混乱并使自身获得2层[CrimsonTakeDamageUp]，直到下回合自身无法使用装置艺术第3号 “简易肋骨”(每场战斗最多1次)\n\n回合结束时，自身每带有4级[Combustion]强度，下回合对自身施加1层[DefenseDown](最多15层)"
+    },
+    {
+      "id": 133102,
+      "name": "以人体为中心的美术",
+      "desc": "登场时，使自身恢复30点理智值\n\n若攻击技能命中时对目标施加负面状态并使自身获得正面状态，则攻击结束后使自身恢复4点理智值\n- 通过该效果恢复理智值时，若自身理智值为最大值，则下回合使自身获得1层[ResultEnhancement](每回合最多1次)",
+      "flavor": "现场以对手的骨骼与肌肉作为素材来塑形的战斗，是随着那过程的持续，连细小的骨片都会变成精巧的武器的艺术。"
+    },
+    {
+      "id": 133103,
+      "name": "在现场获取并加工材料的美学",
+      "desc": "技能结束时，该技能每对1名目标造成伤害，使自身获得30层[HumanBoneTheRings]与1层[HumanBloodTheRings]"
+    },
+    {
+      "id": 133104,
+      "name": "一生之作：提比娅",
+      "desc": "回合结束时，若自身的[HumanBoneTheRings]层数为206层且自身的[HumanBloodTheRings]层数为5层，则将其全部消耗并使自身获得1层[MineTheRings]\n\n回合开始时，若自身带有[MineTheRings]，则本回合使用强力攻击\n\n强力攻击使用前，<color=#ff6000><mark=#ff000040><b><u>自身受到攻击技能攻击时，对自身施加1层[PlusCoinValueDown]与1层[ResultReduction]</u></b></mark></color>(每个技能最多1次，每回合最多3次)",
+      "flavor": "倾注自身全部肉体完成的杰作，提比娅"
+    },
+    {
+      "id": 133105,
+      "name": "令人满意的艺术",
+      "desc": "[MineTheRings]解除时，使以下单位恢复30点理智值并在下回合使其获得2层[AttackUp]与2层[DefenseUp]\n- 环指 父辈 - 卡利斯托\n- 环指 子辈 - 阿尔比娜\n- 人体观剧[TabExplain]"
+    },
+    {
+      "id": 133106,
+      "name": "让我来欣赏一下徒弟的作品吧",
+      "desc": "若自身带有[SupportProtect]，<color=#ff6000><mark=#ff000040><b><u>则拼点开始时使自身的[SupportProtect]层数减少1层</u></b></mark></color>(每个技能最多1次)"
+    },
+    {
+      "id": 133107,
+      "name": "克服肉体",
+      "desc": "若现存体力低于50%，则解除自身的混乱并结束本回合\n- 触发该效果的下回合开始时，在自身最后的行动槽中装备闭馆-装置艺术第1号“各位四散的肉与骨将化为观众席”"
+    },
+    {
+      "id": 133109,
+      "name": "四处走动的观众，请坐在椅子上欣赏",
+      "desc": "回合结束时，对速度值最高的罪人与援助单位在下回合施加[RedemptionTheRings]"
+    },
+    {
+      "id": 133201,
+      "name": "拘束",
+      "desc": "与人体观剧相连的单位获得以下效果\n- 处于无法行动状态\n- 自身的状态效果、体力与理智值不会改变"
+    },
+    {
+      "id": 133202,
+      "name": "收获材料",
+      "desc": "若人体观剧被环指 父辈击杀，则使与人体观剧相连的单位变为无法战斗状态"
+    },
+    {
+      "id": 133203,
+      "name": "从艺术中生还",
+      "desc": "若人体观剧被除环指 父辈以外的单位击杀，则触发以下效果\n- 下回合使与人体观剧相连的单位重返战斗，若该单位理智值低于10点，则使该单位理智值恢复为10点\n- 使环指 父辈与环指 子辈失去10点理智值\n- 获得所有属性的E.G.O资源各2个"
+    },
+    {
+      "id": 133204,
+      "name": "可燃性素材",
+      "desc": "受到的[Combustion]伤害变为2倍"
+    },
+    {
+      "id": 133601,
+      "name": "作为材料的肉体的搏动",
+      "desc": "受到[Combustion]、[Vibration]、[Burst]与[Sinking]的体力伤害、理智伤害与混乱阈值前移量-30%\n受到[Laceration]的伤害-50%\n\n回合结束时，自身每带有4级[Combustion]强度，下回合对自身施加1层[DefenseDown](最多15层)",
+      "flavor": "由阿尔比娜的血肉制作而成的法西娅。\n只剩下大脑的阿尔比娜，和只缺少大脑的法西娅。\n究竟哪一个存在才拥有真正的肉体呢，这是一个问题。"
+    },
+    {
+      "id": 133602,
+      "name": "人体派",
+      "desc": "若攻击技能命中时对目标施加负面状态并使自身获得正面状态，则使自身恢复4点理智值\n- 通过该效果恢复理智值时，若自身理智值为最大值，则下回合使自身获得1层[Agility](每回合最多2次)"
+    },
+    {
+      "id": 133603,
+      "name": "我珍贵的作品，法西娅",
+      "desc": "回合结束时，若自身的[HumanFleshTheRings]层数为2层，则下回合解除自身的[HumanFleshTheRings]并使自身获得[BoneBladeTheRings]\n\n回合开始时，若自身带有[BoneBladeTheRings]，则本回合使用强力攻击\n\n使用强力攻击前<color=#ff6000><mark=#ff000040><b><u>受到攻击技能攻击时，对自身施加1层[PlusCoinValueDown]与1层[ResultReduction]</u></b></mark></color>(每个技能最多1次，每回合最多3次)"
+    },
+    {
+      "id": 133604,
+      "name": "画廊有其独有的欣赏规则",
+      "desc": "若自身带有[SupportProtect]，<color=#ff6000><mark=#ff000040><b><u>则拼点开始时使自身的[SupportProtect]层数减少1层</u></b></mark></color>(每个技能最多1次)"
+    },
+    {
+      "id": 133606,
+      "name": "我会在大师面前，用作品证明自己",
+      "desc": "环指 父辈登场时，若自身的理智值低于20点，则使自身的理智值恢复至20点"
+    },
+    {
+      "id": 132701,
+      "name": "仇怨纹身[<s>长兄</s>]",
+      "desc": "受到的[Combustion]、[Laceration]、[Vibration]与[Burst]伤害-30%(向下取整)\n受到的混乱阈值前移量-50%(向下取整)",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132702,
+      "name": "复仇账簿",
+      "desc": "关卡开始时，对全体罪人与LCD单位施加[VengeanceBookSpider]\n\n若本回合自身命中的技能数高于3个，则每超出1个，下回合使自身获得1层[ReinforcedTattooSpider]",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132703,
+      "name": "闺女的教育",
+      "desc": "拼点胜利时，使自身获得1层[DaughterEducationSpider]\n\n技能命中时，使自身获得1层[DaughterEducationSpider](每个技能最多1次，被摧毁的硬币不会触发)\n\n每回合首个使用的技能拼点胜利时，使自身额外获得1层[DaughterEducationSpider]并使该技能的硬币威力+1",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132704,
+      "name": "怨恨",
+      "desc": "每当自身被2个技能攻击时，使自身获得1层[ResentmentSpider]并使自身的[DaughterEducationSpider]层数减少1层(受到攻击次数累计计算)\n\n若自身的[ResentmentSpider]层数为最大值，则使用强力攻击\n\n回合结束时，若现存体力低于80%、60%或40%，使自身的[ResentmentSpider]层数变为最大值",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132706,
+      "name": "？？？",
+      "desc": "？？？",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 134101,
+      "name": "仇怨纹身最大输出…莱瓦汀封印解除！",
+      "desc": "[MiddleFatherSwordFour]解放时，使自身获得[MiddleFatherGuts]\n\n指定带有[MosesRedBreathCharge]的单位",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132801,
+      "name": "这样做就可以了吧，老爸！",
+      "desc": "关卡开始时带有[HeatingWireOffSpider]\n\n回合开始时，若自身的[GotACompliment]层数不低于3层，则本回合使自身获得[HeatingWireOnSpider]，令施加[Laceration]的技能额外施加[Combustion]\n\n回合结束时，若自身的[GotACompliment]层数低于3层，则使自身的[HeatingWireOnSpider]转化为[HeatingWireOffSpider]",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "“老爸会夸我还会给我买漫画，世界第一好。”"
+    },
+    {
+      "id": 132802,
+      "name": "中指式纹身",
+      "desc": "若本回合自身命中的技能数高于2个，则每超出1个，下回合使自身获得1层[ReinforcedTattooSpiderDaughter]",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "“总有一天咱也能被承认是中指的家人，永远和哥哥姐姐们一起生活吗？”"
+    },
+    {
+      "id": 132803,
+      "name": "给她个好脸就上天",
+      "desc": "拼点胜利时，使自身获得1层[GotACompliment]\n\n技能命中时，使自身获得1层[GotACompliment](每个技能最多1次，被摧毁的硬币不会触发)\n\n每回合首个使用的技能拼点胜利时，使自身额外获得1层[GotACompliment]并使该技能的硬币威力+1",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132804,
+      "name": "我说过，中指永不遗忘",
+      "desc": "每当自身被2个技能攻击时，使自身获得1层[ResentmentSpiderDaughter]并使自身的[GotACompliment]层数减少1层(受到攻击次数累计计算)\n\n若自身的[ResentmentSpiderDaughter]层数为最大值，则使用强力攻击\n\n回合结束时，若现存体力低于80%、60%或40%，使自身的[ResentmentSpiderDaughter]层数变为最大值",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 134201,
+      "name": "这样做就可以了吧，老爸！",
+      "desc": "关卡开始时带有[HeatingWireOffSpider]\n\n回合开始时，若自身的[GotACompliment]层数不低于3层，则本回合使自身获得[HeatingWireOnSpider]，令施加[Laceration]的技能额外施加[Combustion]\n\n回合结束时，若自身的[GotACompliment]层数低于3层，则使自身的[HeatingWireOnSpider]转化为[HeatingWireOffSpider]",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 134202,
+      "name": "呜哇…好像超不妙的？",
+      "desc": "中指 父辈带有[MiddleFatherSwordFour]时，自身不会进入[HeatingWireOffSpider]状态\n\n指定带有[MosesRedBreathCharge]的单位",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "她那野兽般的直觉和与生俱来的战斗本能告诉她。无论那是什么东西，只要被其击中，就一定会死。"
+    },
+    {
+      "id": 132601,
+      "name": "苦战",
+      "desc": "以失去体力上限20%的体力的状态开始战斗\n关卡开始时，3回合内对自身施加2层[ResultReduction]",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "与特色的战斗无疑让他变得更强。\n若是能够活下来，并将那份经验作为自身的食粮的话。"
+    },
+    {
+      "id": 132602,
+      "name": "摇摇欲坠的姿势",
+      "desc": "根据目标的[DuelEdge]层数触发以下效果(可叠加)\n- 每带有1层[DuelEdge]，对其造成的伤害+10%，受到其伤害-10%\n- 若[DuelEdge]层数不低于3层，则与其拼点时使自身的拼点威力+1\n- 若[DuelEdge]层数不低于5层，则与其拼点时使自身的基础威力+1\n- 若[DuelEdge]层数不低于7层，则与其拼点时使自身的硬币威力+1\n- 若[DuelEdge]层数不低于10层，则与其拼点时使自身的最终威力+1",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132603,
+      "name": "拼死奋战",
+      "desc": "拇指 父辈登场时，禁用被动“狩猎标记”并触发以下效果\n- 若自身的理智值低于30点，则使自身的理智值恢复至30点\n- 回合开始时，使自身获得3层[SupportProtect]\n<color=#ff6000><mark=#ff000040><b><u>- 可无视速度值进行拼点\n- 优先与维吉里乌斯进行拼点</u></b></mark></color>\n- 拇指 父辈拼点胜利后，在其攻击后对相同目标使用“纵斩”进行单方面攻击(每回合最多2次)",
+      "summary": "",
+      "undefined": "",
+      "flavor": "“现在出手的话，说不定能把她杀掉吧。”\n\n看着入睡的师父，卢西奥的心中总是浮现出同样的念头。\n没有付诸行动的原因，是限于早已被深深灌输的恐惧，以及被对方从后巷带走的恩情。\n但不断积累的怨恨实在太过深厚。即便嘴上说着会真心服从命令，卢西奥仍在自己心中立下誓言。\n等这场战斗结束，一定要杀了她。连剩下的那只眼睛一起，砍下、刺穿、直到彻底杀死为止。\n浑身淤青的少年眼中，第一次浮现出了活力。"
+    },
+    {
+      "id": 132604,
+      "name": "狩猎印记",
+      "desc": "随机选择1名敌方单位，使其速度值变为1且自身所有技能指定其为目标\n此后，每4回合触发一次",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 132606,
+      "name": "绝望的决斗",
+      "desc": "拼点结束后，对与自身进行拼点的目标施加1层[DuelEdge]\n与带有[DuelEdge]的目标进行拼点时，其每带有1层[DuelEdge]，使自身恢复2点理智值(最多10点)"
+    },
+    {
+      "id": 131401,
+      "name": "预知眼",
+      "desc": "在战斗中登场时，使自身获得30层[FutureEyeOn]\n若自身的[FutureEyeOn]层数为0层，则使自身的[FutureEyeOn]转化为[FutureEyeOff]",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "被称为奥丁之眼的这件遗物，实际上是被分为三份的某件遗物的碎片之一。"
+    },
+    {
+      "id": 131402,
+      "name": "加速的未来",
+      "desc": "进行拼点时，<color=#ff6000><mark=#ff000040><b><u>每次拼点使自身获得1层[LookingFuture]</u></b></mark></color>\n每回合最多获得(回合开始时自身的[FutureEyeOn]层数/3)层[LookingFuture]\n自身带有[FutureEyeOn]时，<color=#ff6000><mark=#ff000040><b><u>受到单方面攻击或拼点失败时，使用技能“预知”</u></b></mark></color>",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "“越是相互碰撞，这把剑就越发灼热，并将不断加速，直至抵达我所预见的未来。”"
+    },
+    {
+      "id": 131408,
+      "name": "过载",
+      "desc": "满足以下条件时，使自身的[FutureEyeOn]层数减少\n- 若自身未获得[LookingFuture]，则每次拼点使自身的[FutureEyeOn]层数减少1层\n- 受到单方面攻击时，使自身的[FutureEyeOn]层数减少1层\n- 拼点失败时，使自身的[FutureEyeOn]层数减少3层",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "“眼睛会发热疼痛，视野也会被染成红色。”"
+    },
+    {
+      "id": 131405,
+      "name": "巴勒莫之剑",
+      "desc": "主要目标每带有1级烧伤 强度，使自身对护盾造成的伤害+15%(最多+300%)\n使用技能时，若目标的攻击技能为斩击技能或突刺技能，则使自身的拼点威力+1\n自身的技能效果触发[VibrationExplosion]时，下回合使自身获得2层[AttackDmgUp](每回合最多3次)\n自身的技能效果触发暴击时，使自身恢复5点理智值",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 131404,
+      "name": "伯纳特利家族之耻",
+      "desc": "受到的[Combustion]、[Laceration]、[Vibration]、[Burst]与[Sinking]的体力伤害、理智伤害与混乱阈值前移量-30%\n若自身的[AccelBullet]数不低于1发，则使自身消耗[AccelBullet]的技能造成的伤害+30%，对护盾造成的伤害+150%\n每消耗1发[AccelBullet]，使自身增加4级[Breath]强度\n掷出消耗[AccelBullet]的硬币时，即使自身消耗了所有加速弹 ，攻击也不会取消",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "“继承了巴勒莫和家传的遗物，却露出如此丑态。”\n“你继承的遗物和剑上，已经沾染了你那不光彩的余味，因此不予回收。”\n“成为二老板第三天就被罢免的人，恐怕只有瓦伦希娜你一个了吧。”\n“你是我们家族的耻辱。伯纳特利家族将收回对你的爱。”"
+    },
+    {
+      "id": 131409,
+      "name": "心-瓦伦希娜",
+      "desc": "受到攻击或“拇指 子辈 - 卢西奥”失去战斗能力时，下回合使自身获得[ObsessionAndGreed]",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "“呼……说到底就是按那狂信徒的计划潜入进去，然后大闹一通就行了吧……这样做真能把券券弄回来吗？”"
+    },
+    {
+      "id": 131406,
+      "name": "卢西奥，你这没用的废物",
+      "desc": "“拇指 子辈 - 卢西奥”失去战斗能力时，启用被动“狩猎时刻”",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 131410,
+      "name": "狩猎时刻",
+      "desc": "回合开始时，若自身陷入混乱，则解除自身的混乱\n\n随机指定1名罪人，对其施加[TeachersPrey]\n- 此后，每4回合触发1次该效果\n- 技能“处置”击杀目标时，下回合触发该效果",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "巴勒莫是一种完全继承了伯纳特利家族特质的剑术。\n它执着地锁定某个猎物，并对其进行狩猎和解体。并不追求行动的隐秘。光明正大地，在众人见证之下杀死对手。\n这华丽的剑术带来了无数的荣誉，使得伯纳特利家族成为了后巷七大名门之一。\n完全习得了巴勒莫的瓦伦希娜，在烟霾战争中斩下了无数将校和老兵的首级，成为了烟霾战争的英雄之一。\n但又有谁能预想到呢，这份荣誉最终会成为她的枷锁。"
+    },
+    {
+      "id": 134501,
+      "name": "我全部的身体要素已给予提比娅",
+      "desc": "受到[Combustion]、[Vibration]、[Burst]与[Sinking]的体力伤害、理智伤害与混乱阈值前移量-30%\n受到[Laceration]的伤害-50%\n\n回合开始时，若自身陷入混乱，则解除自身的混乱并使自身获得2层[CrimsonTakeDamageUp](每场战斗最多1次)\n\n回合结束时，自身每带有4级[Combustion]强度，下回合对自身施加1层[DefenseDown](最多15层)",
+      "flavor": "作为蜘蛛巢所存在的理由，手指们所一直等待的杰作就要完成了。\n金枝虽是种有意思的东西，但实际上并非完成作品所必须的材料。\n至于不惜与名为边狱公司的企业为敌也要将其带回的理由，我至今没能弄懂……\n不过，既然结果足够明了，也只能接受这样杂乱的过程了。\n这一切，都是里恩……不，是那男人所信奉的神所期望的。\n如果能独享被称为神的存在的爱于一身，那究竟是恩典，还是诅咒呢。呼呼。"
+    },
+    {
+      "id": 134502,
+      "name": "人体派",
+      "desc": "若攻击技能命中时对目标施加负面状态并使自身获得正面状态，则攻击结束后使自身恢复4点理智值\n- 通过该效果恢复理智值时，若自身理智值为最大值，则下回合使自身获得1层[ResultEnhancement](每回合最多1次)"
+    },
+    {
+      "id": 134506,
+      "name": "让我来欣赏一下徒弟的作品吧",
+      "desc": "若自身带有[SupportProtect]，<color=#ff6000><mark=#ff000040><b><u>则拼点开始时使自身的[SupportProtect]层数减少1层</u></b></mark></color>(每个技能最多1次)"
+    },
+    {
+      "id": 134509,
+      "name": "优良的素材来自于优良的肉体",
+      "desc": "自身优先攻击等级最高的罪人与援助单位，且对其造成的伤害+150%",
+      "flavor": "“然而，若你的艺术已成熟至一定的水平，还是索求最上乘的躯体作为素材为佳。”\n“以优质躯体上削下的肉块与骨片作为基础，方能更好地把握作品的整体规模。”\n“这难道不令人兴奋吗，阿尔比娜？”"
+    },
+    {
+      "id": 134510,
+      "name": "一生之作：提比娅",
+      "desc": "回合结束时，若自身的[HumanBoneTheRings]层数为206层且自身的[HumanBloodTheRings]层数为5层，则将其全部消耗并使自身获得1层[MineTheRings]\n\n回合开始时，若自身带有[MineTheRings]，则本回合使用强力攻击\n\n强力攻击使用前，<color=#ff6000><mark=#ff000040><b><u>自身受到攻击技能攻击时，对自身施加1层[PlusCoinValueDown]与1层[ResultReduction]</u></b></mark></color>(每个技能最多1次，每回合最多3次)",
+      "flavor": "倾注自身全部肉体完成的杰作，提比娅"
+    },
+    {
+      "id": 134604,
+      "name": "画廊有其独有的欣赏规则",
+      "desc": "若自身带有[SupportProtect]，<color=#ff6000><mark=#ff000040><b><u>则拼点开始时使自身的[SupportProtect]层数减少1层</u></b></mark></color>(每个技能最多1次)"
+    },
+    {
+      "id": 134605,
+      "name": "材料选定",
+      "desc": "自身优先攻击等级最低的罪人与援助单位",
+      "flavor": "“我会先取出最为弱小之人的肌肉与骨骼。”\n“虽然会是些不足为道的材料，但这样一件件创作并展示下去，或许也能得到更好的材料吧。”\n“这难道不令人兴奋吗，法西娅？”"
+    },
+    {
+      "id": 132218,
+      "name": "132218",
+      "desc": "（未使用被动）",
+      "flavor": ""
+    },
+    {
+      "id": 132214,
+      "name": "未来的残像",
+      "desc": "在特定回合使用技能“已确定的对手”\n<color=#ff6000><mark=#ff000040><b><u>仅有被指定为攻击目标的单位可与该技能拼点</u></b></mark></color>\n\n若自身的技能“已确定的对手”拼点失败，则使自身受到36~60点固定伤害\n\n战斗结束时，若本回合自身使用的<color=#ff6000><mark=#ff000040><b><u>所有技能“已确定的对手”均拼点失败</u></b></mark></color>，则下回合对自身施加1层[Vulnerable]"
+    },
+    {
+      "id": 132217,
+      "name": "132217",
+      "desc": "（未使用被动）"
+    },
+    {
+      "id": 132219,
+      "name": "天杀星伤",
+      "desc": "关卡开始时，对自身施加[LvDownLittleFingerBossTwo]并使自身获得4层[TimeEntangleUnstable]"
+    },
+    {
+      "id": 132222,
+      "name": "自夜明直至黄昏",
+      "desc": "回合开始时，若自身理智值不低于0点，则使自身获得1层[SojiAbiAgeFuture]\n每高于2点，使自身获得1层[SojiAbiAgeFuture]\n\n回合开始时，若自身理智值低于0点，则使自身获得1层[SojiAbiAgePast]\n每低于2点，使自身获得1层[SojiAbiAgePast]",
+      "flavor": "过去、现在与未来重叠为一体，时间的区分失去了意义，无论是童年，还是所度过的岁月的某个时点，所有的时间都被召集到同一个场所。"
+    },
+    {
+      "id": 132223,
+      "name": "时空残像分裂",
+      "desc": "回合结束时，自身的理智值与回合开始时每相差5点，使自身获得1层[TimeEntangleUnstable](每回合最多5层)\n每当自身累计受到100点伤害，使自身的[TimeEntangleUnstable]层数减少1层(包括护盾受到的伤害)",
+      "flavor": "“当包裹着我的残像一层层剥落之时，失落感与释然感同时到来。”"
+    },
+    {
+      "id": 133701,
+      "name": "指令之意",
+      "desc": "关卡开始时，使自身获得体力上限20%的护盾(在本场战斗期间维持)\n\n回合开始时\n- 根据自身的[UnlockBuff_Base]阶段，相应使自身获得[IndexPrescript_Base_2nd]\n- 随机对1名敌方单位施加[IndexPrescriptTargetToPersonality]并优先攻击该敌方单位(不包括特定阶段)\n\n自身每带有1层[BlessingOfIndexPrescriptEnemy]，使自身对[IndexPrescriptTargetToPersonality]造成的伤害+2.5%(最多+20%)\n- 若自身的[BlessingOfIndexPrescriptEnemy]层数为9层，则改为对全体目标造成的伤害+30%",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 133702,
+      "name": "指令执行",
+      "desc": "若本回合自身执行了[IndexPrescript_Base_2nd]，\n则回合结束时使自身恢复15点理智值并获得(自身的[UnlockBuff_Base]阶段+1)层[BlessingOfIndexPrescriptEnemy](每回合最多1次)\n\n若本回合自身未执行[IndexPrescript_Base_2nd]，\n则回合结束时使自身获得1层[PressureOfPrescript]并对自身施加10层[KarmaOfIndexStudent]\n- 若自身的[UnlockBuff_Base]阶段低于2，则回合结束时使自身获得1层[BlessingOfIndexPrescriptEnemy]\n- 若自身的[BlessingOfIndexPrescriptEnemy]层数为9层，则不会施加[KarmaOfIndexStudent]\n\n- 每当自身获得[PressureOfPrescript]时，使自身获得相应层数的[EsteemNeeds]",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 133703,
+      "name": "解放",
+      "desc": "回合结束时，若自身的[BlessingOfIndexPrescriptEnemy]层数为6层/9层或现存体力不高于80%/60%，\n- 使自身获得[UnlockBuff_2]/[UnlockBuff_3]\n- 使自身理智值恢复为45点\n- 消耗所有[PressureOfPrescript]并解除自身的混乱\n\n通过体力条件获得[UnlockBuff_Base]时\n- 对自身施加(恢复的理智值/15)层[KarmaOfIndexStudent]\n- 若自身的[BlessingOfIndexPrescriptEnemy]层数低于6层/9层，则使其层数变为6层/9层，\n每获得1层[BlessingOfIndexPrescriptEnemy]，下回合开始时对自身施加1层[DefenseDown]与2层[KarmaOfIndexStudent] \n\n自身使用强力攻击的回合，使自身的最小与最大速度值+10",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 133704,
+      "name": "绽放E.G.O::代行",
+      "desc": "本场战斗期间，以绽放[TabExplain]E.G.O::代行状态进行战斗\n- 关卡开始时，使自身获得[UnlockBuff_1]与3层[BlessingOfIndexPrescriptEnemy]\n- 处于该状态时，改变自身抗性并使自身获得[Blandishment_Enemy]\n- 自身的理智值不会低于0点",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 133705,
+      "name": "沉浸",
+      "desc": "获得[UnlockBuff_3]后，触发以下效果\n- 使自身获得[Blandishment_Shin_Enemy]与体力上限50%的护盾(在本场战斗期间维持)\n- 使自身的[PressureOfPrescript]转化为[PressureOfPrescript_2nd]并获得至最大值\n- 回合开始时，使自身获得1层[PressureOfPrescript_2nd]",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": 133801,
+      "name": "整剑",
+      "desc": "关卡开始时，使自身获得50层[DicipleLittleFinger]"
+    },
+    {
+      "id": 133802,
+      "name": "为承星名之修行",
+      "desc": "攻击技能结束时，对全体目标造成(暴击命中的斩击硬币数×10)点斩击伤害(不会因该伤害而陷入混乱)"
+    },
+    {
+      "id": 133803,
+      "name": "精神一到",
+      "desc": "自身的[Breath]强度无法超过25级\n增加的超过25级的[Breath]强度将转化为[DicipleLittleFinger]\n\n自身的[DicipleLittleFinger]层数减少时，使自身获得相应层数的[Fugacious]"
+    },
+    {
+      "id": 133804,
+      "name": "静念",
+      "desc": "若自身带有[DicipleLittleFinger]，则触发以下效果\n- 自身的理智值不会降至0点以下，低于0点时，使自身理智值恢复为0点\n- 受到的理智伤害转化为忧郁伤害(不包括基础理智值增减条件)"
+    },
+    {
+      "id": 133805,
+      "name": "恩义",
+      "desc": "与除良秀以外的目标进行拼点时，使自身的拼点威力-2\n受到除良秀以外的目标的伤害-20%"
+    },
+    {
+      "id": 133901,
+      "name": "皇帝的臣民",
+      "desc": "回合开始时，使自身获得50层[DefenseBug](每经过1回合使自身获得的[DefenseBug]层数减少3层，最多减少20层)\n- 若自身带有[Combustion]、[Laceration]、[Vibration]、[Burst]或[Sinking]，\n<color=#ff6000><mark=#ff000040><b><u>则随机使该效果强度减少，并使自身的[DefenseBug]层数相应减少</u></b></mark></color>\n- 若该效果强度为1级，层数不低于2层，则改为减少层数\n\n战斗中，<color=#ff6000><mark=#ff000040><b><u>若自身失去所有[DefenseBug]</u></b></mark></color>，则下回合触发以下效果\n- 自身不会获得[DefenseBug]，而改为对自身施加10层[DefenseDown]\n- 获得持有量最少的3种E.G.O资源各2个\n- 回合结束时，解除自身所有负面状态并获得[DefenseBug]",
+      "flavor": "无论何处、无论何时，它们都会从面与面相交的那条线上爬出来。"
+    },
+    {
+      "id": 133902,
+      "name": "皇帝的披风",
+      "desc": "回合开始时，使自身获得(自身的[DefenseBug]层数×40)点护盾",
+      "flavor": "群集的蜚蠊，只为唯一的皇帝而行动。"
+    },
+    {
+      "id": 133903,
+      "name": "皇帝的军势",
+      "desc": "- 拼点胜利时，对目标施加3层[OffenseBug]\n- 技能命中时，对目标施加1层[OffenseBug]",
+      "flavor": "钻入、渗入、侵入，啃噬、撕裂、吞食。"
+    },
+    {
+      "id": 133904,
+      "name": "皇帝之血",
+      "desc": "受到[Combustion]、[Laceration]、[Vibration]、[Burst]与[Sinking]的体力伤害、理智伤害与混乱阈值前移量-50%\n不会因以上伤害而陷入混乱\n自身本体每失去25%的体力，回合开始时对自身施加2层[ResultReduction]",
+      "flavor": "“适应一切，变得迟钝。”"
+    },
+    {
+      "id": 133905,
+      "name": "撕开的包装纸",
+      "desc": "自身的硬币概率固定为50%，不受理智值影响\n\n<color=#ff6000><mark=#ff000040><b><u>与罪人拼点胜利时，</u></b></mark></color>使自身失去5点理智值，对该罪人造成的伤害-40%\n\n<color=#ff6000><mark=#ff000040><b><u>士气低落或陷入恐慌时，</u></b></mark></color>对自身施加[ParryingResultDown]与[ResultReduction]\n解除恐慌时，对自身施加2层[ResultReduction]",
+      "flavor": "“但这真的已经全部撕开了吗？”"
+    },
+    {
+      "id": 133906,
+      "name": "皇帝的震怒",
+      "desc": "体力降至50%或陷入混乱时，解除自身的混乱与所有负面状态并改变自身模式\n此后，触发以下效果\n- 使自身的理智值变为0点\n- 使自身获得50层[DefenseBug]\n- 令被动技能“皇帝的军势”施加的[OffenseBug]层数变为2倍"
+    },
+    {
+      "id": 134701,
+      "name": "食指父辈 里恩",
+      "desc": "<color=#ff6000><mark=#ff000040><b><u>受到单方面攻击的伤害-50%</u></b></mark></color>\n受到[Vibration]、[Burst]与[Sinking]造成的伤害-50%\n通过[UnlockBuff_Base]恢复理智值时，若自身的理智值低于0点，则使自身的理智值恢复至0点\n\n关卡开始时，对自身施加[BurningWoundRien_Mask]\n\n若现存体力不高于55%，则改变自身模式\n- 解除除自身固有状态以外的所有状态\n- 使自身的[StackRienSpecialSkill]层数变为0层",
+      "flavor": "按着指令之言，我一直在等待那个时刻。\n女儿离开之后，我也一直、一直在继续等待。\n\n有一天，我收到了来自边狱公司的联络，后门也开启了。\n终端发出了声响，我明白，是该把女儿接回家的时候了。"
+    },
+    {
+      "id": 134702,
+      "name": "神谕终端[双蛇杖]",
+      "desc": "<color=#ff6000><mark=#ff000040><b><u>自身每枚硬币的武器均会随机决定，且带有特殊效果</u></b></mark></color>\n- [RienWeapon01Hatchet]\n- [RienWeapon02Stiletto]\n- [RienWeapon03Greatsword]\n- [RienWeapon04Rapier]\n- [RienWeapon05Sledgehammer]\n- [RienWeapon06Ultragreatsword]\n- [RienWeapon07Lance]\n- [RienWeapon08Chain]\n- [RienWeapon09Scythe]\n\n使用攻击技能时，使自身获得1层[StackRienSpecialSkill](最多9层)\n- 每个技能仅可获得1次(相同技能不能获得2次)\n\n<color=#ff6000><mark=#ff000040><b><u>回合开始时，若自身的[StackRienSpecialSkill]层数为9层，则使用强力技能</u></b></mark></color>\n- 首次使用的攻击结束后，使自身获得[Shin_Rien]\n- 重置每种技能获得[StackRienSpecialSkill]的上限\n- 最小与最大速度值+25\n- 回合结束时，下回合对自身施加1层[Vulnerable]与2层[ResultReduction]\n\n第5回合开始时，若自身的[StackRienSpecialSkill]层数低于9层，则使自身的[StackRienSpecialSkill]层数变为9层并对自身施加(获得的[StackRienSpecialSkill]层数×5)层[KarmaOfIndexRien]\n- 此后，每4回合触发一次该效果",
+      "flavor": "终端内部装有一种类似金属的液体，使用与奇点相似的技术，可以改变其形状与质量。\n这种液体会随着终端所接收到的指令改变其外形，根据暗杀对象的情报与限制时间变换成合适的武器。\n有一天，他收到了一把过短的匕首，只能等待它变成其他武器，但直到时限即将结束也没能出现可用的武器。最终出现的只有一把叉子，因此只能用那把叉子杀死目标。"
+    },
+    {
+      "id": 134703,
+      "name": "指令之意",
+      "desc": "回合开始时\n- 根据自身的[UnlockBuff_Base]阶段，相应使自身获得[IndexPrescript_Base_2nd]\n- 随机对除良秀以外的1名罪人施加[IndexPrescriptTargetToPersonality]并优先攻击该罪人\n<color=#ff6000><mark=#ff000040><b><u>- 使自身对[IndexPrescriptTargetToPersonality]使用的技能的所有硬币转化为[SuperCoin]</u></b></mark></color>\n· [IndexPrescriptTargetToPersonality]阵亡或自身无法攻击目标时，\n<color=#ff6000><mark=#ff000040><b><u>随机对除良秀以外的1名罪人使用剩余的技能\n(优先指定现存体力最低的目标)</u></b></mark></color>\n· 其他罪人全部阵亡时，对良秀施加\n\n自身每带有1层[BlessingOfIndexPrescriptEnemy]，使自身对[IndexPrescriptTargetToPersonality]造成的伤害+2.5%(最多+20%)\n- 若自身的[BlessingOfIndexPrescriptEnemy]层数为9层，则改为对全体目标造成的伤害+30%",
+      "flavor": "您希望我组建家庭吗。\n\n“我怎么会和你这样的丈夫，有如此命中注定的邂逅呢。”"
+    },
+    {
+      "id": 134704,
+      "name": "指令执行",
+      "desc": "若本回合自身执行了[IndexPrescript_Base_2nd]，\n则回合结束时使自身恢复10点理智值并获得3层[BlessingOfIndexPrescriptEnemy](每回合最多1次)\n\n若本回合<color=#ff6000><mark=#ff000040><b><u>自身未执行[IndexPrescript_Base_2nd]，\n则对自身施加8层[KarmaOfIndexRien]，\n使带有[IndexPrescriptTargetToPersonality]的罪人在下回合获得1层[ParryingResultUp]</u></b></mark></color>\n- 若自身未带有[UnlockBuff_Base]，则回合结束时使自身获得1层[BlessingOfIndexPrescriptEnemy]\n- 若自身的[BlessingOfIndexPrescriptEnemy]层数为9层，则不会施加[KarmaOfIndexRien]",
+      "flavor": "您希望我失去家庭吗。\n\n“亲爱的。我今天要去北部一趟。”\n“啊，下午会有快递送来，能替我收一下吗，女儿？”"
+    },
+    {
+      "id": 134705,
+      "name": "解放",
+      "desc": "回合结束时，若自身的[BlessingOfIndexPrescriptEnemy]层数为3层/6层/9层或现存体力不高于95%/85%/75%，\n- 使自身获得[UnlockBuff_Rien1]/[UnlockBuff_Rien2]/[UnlockBuff_Rien3]\n\n第1回合结束时，若自身的[UnlockBuff_Base]阶段低于1，则使自身获得[UnlockBuff_Rien1]\n第4回合结束时，若自身的[UnlockBuff_Base]阶段低于2，则使自身获得[UnlockBuff_Rien2]\n\n通过体力条件获得[UnlockBuff_Base]时\n- 若自身的[BlessingOfIndexPrescriptEnemy]层数低于3层/6层/9层，则使其层数变为3层/6层/9层，\n每获得1层[BlessingOfIndexPrescriptEnemy]，下回合开始时对自身施加10层[KarmaOfIndexRien]",
+      "flavor": "“只要遵从指令前进，封闭的东西自然就会被解开。”"
+    },
+    {
+      "id": 134801,
+      "name": "父辈 里恩[仿造品]",
+      "desc": "<color=#ff6000><mark=#ff000040><b><u>受到单方面攻击的伤害-75%</u></b></mark></color>\n受到[Vibration]、[Burst]与[Sinking]造成的伤害-75%\n通过[UnlockBuff_Base]恢复理智值时，若自身的理智值低于15点，则使自身的理智值恢复至15点\n\n现存体力不高于55%并改变自身模式时，触发以下效果\n- 解除除自身固有状态以外的所有状态\n- 使自身的[StackRienSpecialSkill]层数变为0层\n- 使自身获得[IndexPrescript_RienSecondPhase]\n- 使自身的[BurningWoundRien_Mask]转化为[BurningWoundRien]\n- 使自身的[KarmaOfIndexRien]转化为[KarmaOfIndexRien_2Phase]并对自身施加10层该状态\n- 若自身未带有，则使自身获得[Shin_Rien]\n\n现存体力不高于25%时，改变自身模式并大幅强化特定技能",
+      "flavor": "他总是觉得自己像是在模仿某个人，却不知道所模仿的究竟是谁，曾经一度产生怀疑并几乎违背指令。后来，他意识到了自己变得与谁相似，因而接受了指令之意，成为了完成态的虚假的父辈。"
+    },
+    {
+      "id": 134802,
+      "name": "神谕终端[双蛇杖]-完全解放",
+      "desc": "<color=#ff6000><mark=#ff000040><b><u>自身每枚硬币的武器均会随机决定，且带有特殊效果</u></b></mark></color>\n- [RienWeapon01Hatchet2phase]\n- [RienWeapon02Stiletto2phase]\n- [RienWeapon03Greatsword2phase]\n- [RienWeapon04Rapier2phase]\n- [RienWeapon05Sledgehammer2phase]\n- [RienWeapon06Ultragreatsword2phase]\n- [RienWeapon07Lance2phase]\n- [RienWeapon08Chain2phase]\n- [RienWeapon09Scythe2phase]\n\n使用攻击技能时，使自身获得1层[StackRienSpecialSkill](最多9层)\n- 每个技能仅可获得1次(相同技能不能获得2次)\n- 仅在特殊模式使用的技能不会获得\n\n回合开始时，若自身的[StackRienSpecialSkill]层数为9层，则使用强力技能\n- 重置每种技能获得[StackRienSpecialSkill]的上限\n- 最小与最大速度值+25\n- 回合结束时，下回合对自身施加2层[Vulnerable]与3层[ResultReduction]\n\n从改变模式的回合起触发效果\n- 每4回合，若自身的[StackRienSpecialSkill]层数低于9层，则使自身的[StackRienSpecialSkill]层数变为9层并对自身施加(获得的[StackRienSpecialSkill]层数×5)层[KarmaOfIndexRien_2Phase]",
+      "flavor": "由通过电波传达指令的都市之神赫尔墨斯所赐的最强的武器，同时也是诅咒。"
+    },
+    {
+      "id": 134803,
+      "name": "指令之意",
+      "desc": "回合开始时\n- 随机对除良秀以外的1名罪人施加[IndexPrescriptTargetToPersonality]并优先攻击该罪人\n<color=#ff6000><mark=#ff000040><b><u>- 使自身对[IndexPrescriptTargetToPersonality]使用的技能的所有硬币转化为[SuperCoin]</u></b></mark></color>\n· [IndexPrescriptTargetToPersonality]阵亡或自身无法攻击目标时，<color=#ff6000><mark=#ff000040><b><u>随机对除良秀以外的1名罪人使用剩余的技能(优先指定现存体力最低的目标，不包括体力为1点的单位)</u></b></mark></color>\n· 其他罪人全部阵亡时，对良秀施加\n- 使自身获得层数相当于自身[BlessingOfIndexPrescriptEnemy]层数的[Protection](最多9层)\n<color=#ff6000><mark=#ff000040><b><u>· 自身每带有20层[KarmaOfIndexRien_2Phase]，使获得的[Protection]减少1层</u></b></mark></color>\n\n自身每带有1层[BlessingOfIndexPrescriptEnemy]，使自身对[IndexPrescriptTargetToPersonality]造成的伤害+5%(最多+40%)\n- 若自身的[BlessingOfIndexPrescriptEnemy]层数为9层，则改为对全体目标造成的伤害+50%\n\n从改变模式的回合起触发效果\n- 每2回合使自身获得[BlackNightmare]\n- 获得[BlackNightmare]时，若自身的[StackRienSpecialSkill]层数低于9层，则触发特殊模式",
+      "flavor": "我组建了家庭。\n\n“你现在不该在这里的。”\n“我的工作还在进行之中。更重要的是，我正在把它装饰得精致而美丽。”\n“……你这混蛋，难道是想违抗指令吗。”"
+    },
+    {
+      "id": 134804,
+      "name": "指令执行",
+      "desc": "若本回合自身执行了[IndexPrescript_Base_2nd]，\n则回合结束时使自身恢复15点理智值并获得1层[BlessingOfIndexPrescriptEnemy](每回合最多1次)\n\n若本回合<color=#ff6000><mark=#ff000040><b><u>自身未执行[IndexPrescript_Base_2nd]，\n则对自身施加10层[KarmaOfIndexRien_2Phase]并使自身的[BlessingOfIndexPrescriptEnemy]层数减少1层，\n使带有[IndexPrescriptTargetToPersonality]的罪人在下回合获得2层[ParryingResultUp]</u></b></mark></color>\n- 使用强力技能的回合改为对自身施加15层[KarmaOfIndexRien_2Phase]并使自身的[BlessingOfIndexPrescriptEnemy]层数减少3层",
+      "flavor": "我失去了……家庭。\n\n“别走……”\n“不要就这样走掉……爸爸……救救……我们……”"
+    },
+    {
+      "id": 132224,
+      "name": "最后一战",
+      "desc": "本场战斗中，受到使自身体力降至0点的伤害时，无视该伤害并触发以下效果(每场战斗最多1次)\n- 使自身体力恢复至上限，解除自身所有可解除的负面状态\n- 本场战斗期间对自身施加1层[Vulnerable]，自身的[TimeEntangleUnstable]层数固定为1层\n- 每回合结束时，使自身受到(当前回合数×10)点固定伤害\n- 结束本回合，并强化自身模式",
+      "flavor": "“你已然忘记，而我记住了一切。”"
+    }
+  ]
+}

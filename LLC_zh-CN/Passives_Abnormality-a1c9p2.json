@@ -3,7 +3,7 @@
     {
       "id": 132203,
       "name": "重叠的残像",
-      "desc": "关卡开始时，使自身获得[TimeEntangleFour]\n每个阶段的首个回合开始时，使自身获得(自身的[TimeEntangleDesc]阶段×400)层[TimeGapAb]\n(每个[TimeEntangleDesc]阶段最多1次)\n\n在第3与第4阶段[TimeEntangleDesc]，若自身失去所有[TimeGapAb]，则改变自身模式并在下回合使自身陷入混乱\n\n受到来自[Combustion]、[Laceration]、[Vibration]、[Burst]与[Sinking]的体力伤害、理智伤害与混乱阈值前移量-30%",
+      "desc": "关卡开始时，使自身获得[TimeEntangleFour]\n每个阶段的首个回合开始时，使自身获得(自身的[TimeEntangleDesc]阶段×400)层[TimeGapAb]\n(每个[TimeEntangleDesc]阶段最多1次)\n\n在第3与第4阶段[TimeEntangleDesc]，<color=#ff6000><mark=#ff000040><b><u>若自身失去所有[TimeGapAb]，则改变自身模式并在下回合使自身陷入混乱</u></b></mark></color>\n\n受到来自[Combustion]、[Laceration]、[Vibration]、[Burst]与[Sinking]的体力伤害、理智伤害与混乱阈值前移量-30%",
       "summary": "",
       "undefined": "-"
     },
@@ -27,7 +27,7 @@
       "desc": "每4回合使用强力技能\n- 若自身的[PhantomIncisionTotal]层数不低于50层，则强化使用的技能",
       "summary": "",
       "undefined": "-",
-      "flavor": "“……令人厌恶，如同烙印一般的剑。”"
+      "flavor": "“……令人厌恶，如同烙印一般的刀。”"
     },
     {
       "id": 132216,
@@ -116,7 +116,7 @@
     {
       "id": 132503,
       "name": "解放",
-      "desc": "回合结束时，若自身的[BlessingOfIndexPrescriptEnemy]层数为3层/6层/9层或现存体力不高于90%/75%/60%\n- 使自身获得[UnlockBuff_1]/[UnlockBuff_2]/[UnlockBuff_3]\n- 使自身理智值恢复为45点\n- <color=#ff6000><mark=#ff000040><b><u>消耗所有[PressureOfPrescript]</u></b></mark></color>并解除自身的混乱\n\n通过体力条件获得[UnlockBuff_Base]时\n- 对自身施加(恢复的理智值/15)层[KarmaOfIndexStudent]\n- 若自身的[BlessingOfIndexPrescriptEnemy]层数低于3层/6层/9层，则使其层数变为3层/6层/9层\n每获得1层[BlessingOfIndexPrescriptEnemy]，下回合对自身施加1层[DefenseDown]与2层[KarmaOfIndexStudent] \n\n自身使用强力攻击的回合，使自身的最小与最大速度值+10",
+      "desc": "回合结束时，若自身的[BlessingOfIndexPrescriptEnemy]层数为3层/6层/9层或现存体力不高于90%/75%/60%，\n- 使自身获得[UnlockBuff_1]/[UnlockBuff_2]/[UnlockBuff_3]\n- 使自身理智值恢复为45点\n- <color=#ff6000><mark=#ff000040><b><u>消耗所有[PressureOfPrescript]</u></b></mark></color>并解除自身的混乱\n- 首次获得[UnlockBuff_Base]的下回合，使自身获得[BlessingOfIndexPrescriptEnemy]\n\n通过体力条件获得[UnlockBuff_Base]时\n- 对自身施加(恢复的理智值/15)层[KarmaOfIndexStudent]\n- 若自身的[BlessingOfIndexPrescriptEnemy]层数低于3层/6层/9层，则使其层数变为3层/6层/9层，\n每获得1层[BlessingOfIndexPrescriptEnemy]，下回合开始时对自身施加1层[DefenseDown]与2层[KarmaOfIndexStudent] \n\n自身使用强力攻击的回合，使自身的最小与最大速度值+10",
       "summary": "",
       "undefined": "-",
       "flavor": "“据说指令授予的剑与布只有在执行指令时才会解放并显现其力量。”"
@@ -131,7 +131,7 @@
     {
       "id": 132505,
       "name": "抹杀姿态",
-      "desc": "韦斯帕登场时，\n- 若自身的[UnlockBuff_Base]阶段低于2，则使自身获得[UnlockBuff_2]并使自身的[BlessingOfIndexPrescriptEnemy]层数变为6层，每获得1层[BlessingOfIndexPrescriptEnemy]，回合开始时对自身施加1层[DefenseDown]与2层[KarmaOfIndexStudent]\n- 使自身获得1层[Blandishment_Shin_Enemy]与体力上限50%的护盾(该护盾在本场战斗期间维持)\n- 禁用被动“解放[TabExplain]”的[PressureOfPrescript]消耗效果\n- 使自身的[PressureOfPrescript]变为[PressureOfPrescript_2nd]并获得至最大值\n- 回合开始时，使自身获得1层[PressureOfPrescript_2nd]\n- 使自身理智值恢复为30点并对自身施加(恢复的理智值/10)层[KarmaOfIndexStudent]\n- 此后自身的理智值不会低于0点\n\n现存体力不高于20%时，使自身获得[PressureOfPrescript_2nd]至最大值",
+      "desc": "韦斯帕登场时，\n- 若自身的[UnlockBuff_Base]阶段低于2，则使自身获得[UnlockBuff_3]，使自身理智值恢复至45点，并解除自身的混乱\n- 使自身获得1层[Blandishment_Shin_Enemy]与体力上限50%的护盾(该护盾在本场战斗期间维持)\n- 禁用被动“解放[TabExplain]”的[PressureOfPrescript]消耗效果\n- 使自身的[PressureOfPrescript]变为[PressureOfPrescript_2nd]并获得至最大值\n- 回合开始时，使自身获得1层[PressureOfPrescript_2nd]\n- 此后自身的理智值不会低于0点\n\n现存体力不高于20%时，使自身获得[PressureOfPrescript_2nd]至最大值",
       "summary": "",
       "undefined": "-",
       "flavor": "“危、危险的人……指令或许没、没法执行。”"
