@@ -1972,6 +1972,277 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1081401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Totally Badass Ass-kicking",
+          "desc": "[WhenUse] Heal 5 SP",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]"
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Totally Badass Ass-kicking",
+          "desc": "<style=\"highlight\">If target has 6+ ([Combustion] + [Laceration]), Coin Power +1</style>\n[WhenUse] Heal 5 SP",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">2</style> [Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Deal 5 Blunt bonus damage</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Totally Badass Ass-kicking",
+          "desc": "If target has 6+ ([Combustion] + [Laceration]), Coin Power +1\n[WhenUse] Heal 5 SP<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Laceration]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Deal 5 Blunt bonus damage<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] If this unit has [ReinforcedTattooIshmael], inflict +1 [Laceration] Count</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Crossing Dervish",
+          "desc": "[StartBattle] This Skill gains Offense Level by (highest Reson./2) (max 3; rounded down)\n[WhenUse] Gain +5 [Aggro] to this Slot next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {}
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Crossing Dervish",
+          "desc": "<style=\"highlight\">If target has 6+ ([Combustion] + [Laceration]), Coin Power +1</style>\n[StartBattle] This Skill gains Offense Level by (highest Reson. / 2) (max 3; rounded down)\n[WhenUse] Gain +5 [Aggro] to this Slot next turn\n<style=\"highlight\">[WhenUse] If this unit has [HeatingWireIshmael], On Hit with 1st and 2nd Coins, inflict [Combustion] by the base amount of [Laceration] the Skill inflicts</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">2</style> [Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Laceration] Count<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Deal 5 Blunt bonus damage</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Crossing Dervish",
+          "desc": "If target has 6+ ([Combustion] + [Laceration]), Coin Power +1\n[StartBattle] This Skill gains Offense Level by (highest Reson. / 2) (max 3; rounded down)\n<style=\"highlight\">- If there was an A-Reson. in the Reson. chain, double the amount of Offense Level gained from the above effect</style>\n[WhenUse] Gain +5 [Aggro] to this Slot next turn\n[WhenUse] If this unit has [HeatingWireIshmael], On Hit with 1st and 2nd Coins, inflict [Combustion] by the base amount of [Laceration] the Skill inflicts",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Laceration]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Laceration] Count<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Deal 5 Blunt bonus damage<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] If this unit has [ReinforcedTattooIshmael], inflict 1 [Paralysis] and 1 [Binding] next turn (2 times per turn)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Violet~ Breaking Slam",
+          "desc": "If target has 6+ ([Combustion] + [Laceration]), Coin Power +1\n[StartBattle] This Skill gains Offense Level by (highest Reson. / 2) (max 3; rounded down)\n[WhenUse] If this unit has [HeatingWireIshmael], On Hit with 1st, 2nd, and 4th Coins, inflict [Combustion] by the base amount of [Laceration] this Skill inflicts\n[WhenUse] At 5+ [ResentmentIshmael], Final Power +1\n[EndSkill] Consume all [ResentmentIshmael] on self",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Deal (Envy Reson. x 5)% of this Coin's final damage as Slash bonus damage (max 30%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Violet~ Breaking Slam",
+          "desc": "If target has 6+ ([Combustion] + [Laceration]), Coin Power +1\n[StartBattle] This Skill gains Offense Level by (highest Reson. / 2) (max 3; rounded down)\n<style=\"highlight\">- If there was an A-Reson. in the Reson. chain, double the amount of Offense Level gained from the above effect</style>\n[WhenUse] If this unit has [HeatingWireIshmael], On Hit with 1st, 2nd, and 4th Coins, inflict [Combustion] by the base amount of [Laceration] this Skill inflicts\n[WhenUse] <style=\"highlight\">Final Power +1 for every 5 [ResentmentIshmael] on self (max 3)</style>\n[EndSkill] Consume all [ResentmentIshmael] on self\n<style=\"highlight\">[EndSkill] If this Skill was activated as a Counter Skill, gain 1 [HitDamageUp] next turn (once per turn)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">2</style> [Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +<style=\"highlight\">2</style> [Laceration] Count"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Deal (Envy Reson. x 5)% of this Coin's final damage as Slash bonus damage (max 30%)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "I'll Get You Back for This, Man",
+          "desc": "[StartBattle] Gain 25% of missing HP as Shield (once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Lower user's Stagger Threshold by 6"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "I'll Get You Back for This, Man",
+          "desc": "<style=\"highlight\">[StartBattle] At 6+ sum of Envy A-Reson., use 'Violet~ Breaking Slam' as Counter\n(Activates from the leftmost Skill Slot. Activates 2 times per turn)</style>\n[StartBattle] Gain 25% of missing HP as Shield (once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Lower user's Stagger Threshold by 6<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

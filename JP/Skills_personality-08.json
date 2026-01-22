@@ -1972,6 +1972,277 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1081401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ガチ殴り",
+          "desc": "[WhenUse] 自分の精神力を5回復",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          "level": 2,
+          "name": "ガチ殴り",
+          "desc": "<style=\"highlight\">対象の[Combustion]と[Laceration]の合計が6以上なら、コイン威力 +1</style>\n[WhenUse] 自分の精神力を5回復",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]<style=\"highlight\">2</style>を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 追加打撃ダメージ5</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "ガチ殴り",
+          "desc": "対象の[Combustion]と[Laceration]の合計が6以上なら、コイン威力 +1\n[WhenUse] 自分の精神力を5回復<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 追加打撃ダメージ5<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [ReinforcedTattooIshmael]があれば、[Laceration]回数が1増加</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "十字乱舞",
+          "desc": "[StartBattle] (最も高い共鳴数 ÷ 2)だけ、このスキルの攻撃レベルが増加 (最大3, 小数点切り捨て)\n[WhenUse] 次のターンにて、このスロットが[Aggro]5を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {}
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "十字乱舞",
+          "desc": "<style=\"highlight\">対象の[Combustion]と[Laceration]の合計が6以上なら、コイン威力 +1</style>\n[StartBattle] (最も高い共鳴数 ÷ 2)だけこのスキルの攻撃レベルが増加(最大3, 小数点切り捨て)\n[WhenUse] 次のターンにこのスロットが[Aggro]5を得る\n<style=\"highlight\">[WhenUse] 自分に[HeatingWireIshmael]があるなら1, 2枚目のコインが的中時、スキルによって付与する[Laceration]の基本値だけ[Combustion]を付与</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]<style=\"highlight\">2</style>を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 追加打撃ダメージ5</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "十字乱舞",
+          "desc": "対象の[Combustion]と[Laceration]の合計が6以上なら、コイン威力 +1\n[StartBattle] (最も高い共鳴数 ÷ 2)だけこのスキルの攻撃レベルが増加(最大3, 小数点切り捨て)\n<style=\"highlight\">- この共鳴に完全共鳴が含まれているなら、上記の効果で増加した値が2倍で適用</style>\n[WhenUse] 次のターンにこのスロットが[Aggro]5を得る\n[WhenUse] 自分に[HeatingWireIshmael]があるなら1, 2枚目のコインが的中時、スキルによって付与する[Laceration]の基本値だけ[Combustion]を付与",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 追加打撃ダメージ5<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [ReinforcedTattooIshmael]があるなら、次のターンに[Paralysis]1, [Binding]1を付与 (1ターンにつき2回)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "ヴァイオレット・ブレイク・スラム",
+          "desc": "対象の[Combustion]と[Laceration]の合計が6以上なら、コイン威力 +1\n[StartBattle] (最も高い共鳴数 ÷ 2)だけこのスキルの攻撃レベルが増加(最大3, 小数点切り捨て)\n[WhenUse] 自分に[HeatingWireIshmael]があるなら1, 2, 4枚目のコインが的中時、スキルによって付与する[Laceration]の基本値だけ[Combustion]を付与\n[WhenUse] 自分の[ResentmentIshmael]が5以上なら、最終威力 +1\n[EndSkill] 自分の[ResentmentIshmael]を全て消耗",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] このコインの最終ダメージ量の(嫉妬共鳴数 × 5)%だけ追加で斬撃ダメージ (最大30%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "ヴァイオレット・ブレイク・スラム",
+          "desc": "対象の[Combustion]と[Laceration]の合計が6以上なら、コイン威力 +1\n[StartBattle] (最も高い共鳴数 ÷ 2)だけこのスキルの攻撃レベルが増加 (最大3, 小数点切り捨て)\n<style=\"highlight\">- その共鳴に完全共鳴が含まれているなら、上記の効果で増加する値が2倍で適用</style>\n[WhenUse] 自分に[HeatingWireIshmael]があるなら1, 2, 4枚目のコインが的中時、スキルによって付与する[Laceration]の基本値だけ[Combustion]を付与\n[WhenUse] 自分の[ResentmentIshmael]5<style=\"highlight\">につき、最終威力 +1 (最大3)</style>\n[EndSkill] 自分の[ResentmentIshmael]を全て消耗\n<style=\"highlight\">[EndSkill] このスキルを反撃スキルとしたなら、次のターンに[HitDamageUp]1を得る (1ターンにつき1回)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]<style=\"highlight\">2</style>を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が<style=\"highlight\">2</style>増加"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] このコインの最終ダメージ量の(嫉妬共鳴数 × 5)%だけ追加で斬撃ダメージ (最大30%)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ただじゃ置きませんからね",
+          "desc": "[StartBattle] 失った体力の25%だけバリアを得る(1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 混乱区間を6後退"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "ただじゃ置きませんからね",
+          "desc": "<style=\"highlight\">[StartBattle] 嫉妬完全共鳴数の合計が6以上なら、反撃時に「ヴァイオレット・ブレイク・スラム」を使用\n(操作パネルの左側のスロットスキルから発動、1ターンにつき最大2回発動)</style>\n[StartBattle] 失った体力の25%だけバリアを得る(1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 混乱区間を6後退<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
