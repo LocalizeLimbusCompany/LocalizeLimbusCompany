@@ -1972,6 +1972,277 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1081401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "暴揍",
+          "desc": "[WhenUse] 使自身恢复5点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          "level": 2,
+          "name": "暴揍",
+          "desc": "<style=\"highlight\">若目标的[Combustion]强度与[Laceration]强度之和不低于6级，则使本技能的硬币威力+1</style>\n[WhenUse] 使自身恢复5点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">2</style>级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 对目标额外造成5点打击伤害</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "暴揍",
+          "desc": "若目标的[Combustion]强度与[Laceration]强度之和不低于6级，则使本技能的硬币威力+1\n[WhenUse] 使自身恢复5点理智值<style=\"highlight\"></style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标额外造成5点打击伤害<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 若自身带有[ReinforcedTattooIshmael]，则对目标施加1层[Laceration]</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "十字乱舞",
+          "desc": "[StartBattle] 使本技能增加(最大共鸣数/2)级攻击等级(最多3级，向下取整)\n[WhenUse] 下回合使本技能对应行动槽的[Aggro]+5",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {}
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "十字乱舞",
+          "desc": "<style=\"highlight\">若目标的[Combustion]强度与[Laceration]强度之和不低于6级，则使本技能的硬币威力+1</style>\n[StartBattle] 使本技能增加(最大共鸣数/2)级攻击等级(最多3级，向下取整)\n[WhenUse] 下回合使本技能对应行动槽的[Aggro]+5\n<style=\"highlight\">[WhenUse] 若自身带有[HeatingWireIshmael]，则令本技能第1、2枚硬币额外增加相当于基础[Laceration]强度增加量的[Combustion]强度，施加层数相当于基础[Laceration]层数施加量的[Combustion]</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">2</style>级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Laceration]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 对目标额外造成5点打击伤害</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "十字乱舞",
+          "desc": "若目标的[Combustion]强度与[Laceration]强度之和不低于6级，则使本技能的硬币威力+1\n[StartBattle] 使本技能增加(最大共鸣数/2)级攻击等级(最多3级，向下取整)\n<style=\"highlight\">- 若该共鸣包括完全共鸣，则使以上效果增加的攻击等级变为2倍</style>\n[WhenUse] 下回合使本技能对应行动槽的[Aggro]+5\n[WhenUse] 若自身带有[HeatingWireIshmael]，则令本技能第1、2枚硬币额外增加相当于基础[Laceration]强度增加量的[Combustion]强度，施加层数相当于基础[Laceration]层数施加量的[Combustion]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Laceration]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标额外造成5点打击伤害<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 若自身带有[ReinforcedTattooIshmael]，则下回合对目标施加1层[Paralysis]与1层[Binding](每回合最多2次)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "紫罗兰破坏猛击",
+          "desc": "若目标的[Combustion]强度与[Laceration]强度之和不低于6级，则使本技能的硬币威力+1\n[StartBattle] 使本技能增加(最大共鸣数/2)级攻击等级(最多3级，向下取整)\n[WhenUse] 若自身带有[HeatingWireIshmael]，则令本技能第1、2、4枚硬币额外增加相当于基础[Laceration]强度增加量的[Combustion]强度，施加层数相当于基础[Laceration]层数施加量的[Combustion]\n[WhenUse] 若自身的[ResentmentIshmael]层数不低于5层，则使本技能的最终威力+1\n[EndSkill] 消耗自身所有[ResentmentIshmael]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Laceration]"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标额外造成本硬币最终伤害量(嫉妒共鸣数×5)%的斩击伤害(最多30%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "紫罗兰破坏猛击",
+          "desc": "若目标的[Combustion]强度与[Laceration]强度之和不低于6级，则使本技能的硬币威力+1\n[StartBattle] 使本技能增加(最大共鸣数/2)级攻击等级(最多3级，向下取整)\n<style=\"highlight\">- 若该共鸣包括完全共鸣，则使以上效果增加的攻击等级变为2倍</style>\n[WhenUse] 若自身带有[HeatingWireIshmael]，则令本技能第1、2、4枚硬币额外增加相当于基础[Laceration]强度增加量的[Combustion]强度，施加层数相当于基础[Laceration]层数施加量的[Combustion]\n[WhenUse] 自身<style=\"highlight\">每带有5层[ResentmentIshmael]，使本技能的最终威力+1(最多+3)</style>下回合\n[EndSkill] 消耗自身所有[ResentmentIshmael]\n<style=\"highlight\">[EndSkill] 若本技能以反击技能被使用，则下回合使自身获得1层[HitDamageUp](每回合最多1次)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">2</style>级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加<style=\"highlight\">2</style>层[Laceration]"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标额外造成本硬币最终伤害量(嫉妒共鸣数×5)%的斩击伤害(最多30%)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "给我等着",
+          "desc": "[StartBattle] 使自身获得自身已失去体力25%的护盾(每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身的混乱阈值后移6"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "给我等着",
+          "desc": "<style=\"highlight\">[StartBattle] 若嫉妒完全共鸣数总计不低于6，则反击时改为以“紫罗兰破坏猛击”进行反击\n(仪表盘上位于左侧的技能优先触发，每回合最多触发2次)</style>\n[StartBattle] 使自身获得自身已失去体力25%的护盾(每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身的混乱阈值后移6<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
