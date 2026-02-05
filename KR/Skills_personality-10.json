@@ -2094,6 +2094,301 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1101501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "연격[連擊]",
+          "desc": "[WhenUse] 자신의 [Breath] 횟수 2 증가",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath] 1 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath] 2 얻음"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 1 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "연격[連擊]",
+          "desc": "[WhenUse] 자신의 [Breath] 횟수 <style=\"highlight\">3</style> 증가\n<style=\"highlight\">[WhenUse] 자신의 [Breath]이 6 이상이면, 코인 위력 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath] <style=\"highlight\">2</style> 얻음"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath] 2 얻음<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 1 증가<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 다음 턴에 [Agility] 1 얻음 (턴당 1회)</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "연격[連擊]",
+          "desc": "[WhenUse] 자신의 [Breath] 횟수 3 증가\n<style=\"highlight\">[WhenUse] 자신의 [Breath] 6당, 코인 위력 +1 (최대 2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath] 2 얻음<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath] 2 얻음<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 횟수 2 증가<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 다음 턴에 [Agility] 1 얻음 (턴당 1회)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttackHead] 다음 턴에 [Agility] 1 얻음 (턴당 1회)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "무명참[無名斬]",
+          "desc": "[WideAreaRampage]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath] 3 얻음"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Breath] 횟수 1 증가"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "크리티컬 피해량 +10%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 1 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "무명참[無名斬]",
+          "desc": "[WideAreaRampage]\n<style=\"highlight\">[WhenUse] 자신의 [Breath]이 6 이상이면, 기본 위력 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath] 3 얻음<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Breath] 횟수 1 증가<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "크리티컬 피해량 +10%<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 1 부여<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttackHead] 이 코인 재사용 (스킬당 1회)</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "무명참[無名斬]",
+          "desc": "[WideAreaRampage]\n<style=\"highlight\">[WhenUse] 자신의 [Breath] 6당, 기본 위력 +1 (최대 2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath] 3 얻음<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 자신의 [Breath] 횟수 1 증가<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "크리티컬 피해량 +10%<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 자신의 [Breath] 횟수 1 증가</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] <style=\"highlight\">2 부여</style>"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttackHead] 이 코인 재사용 (스킬당 1회)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[ReUseOnSucceedAttackHead] 자신의 [LittleFingerID]가 10 이상이면, 이 코인 재사용 (스킬당 1회)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "낙성일살[落星一殺]",
+          "desc": "이 스킬 공격 가중치보다 낮은 공격 대상 1당 피해량 +30% (집중 전투의 경우, 부위로 판정)\n[WhenUse] 자신의 [LittleFingerID]가 20이면, 모든 코인이 [SuperCoin]으로 변경됨\n[WhenUse] 자신의 [Breath] 4당 코인 위력 +1 (최대 3)\n[WhenUse] 자신의 [LittleFingerID] 4당 기본 위력 +1 (최대 3)\n[WhenUse] [Breath] 5 얻음\n\n[BeforeAttack] 자신의 [LittleFingerID] 10 당 가중치 +1 (최대 2)\n[EndSkill] 이 스킬 효과로 증가한 가중치 1당 [LittleFingerID] 7 소모",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "크리티컬 피해량 +50%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] 3 부여"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttackHead] 이 코인 최종 피해량의 25%만큼 참격 피해"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "낙성일살[落星一殺]",
+          "desc": "이 스킬 공격 가중치보다 낮은 공격 대상 1당 피해량 <style=\"highlight\">+50%</style> (집중 전투의 경우, 부위로 판정)\n[WhenUse] 자신의 [LittleFingerID]가 20이면, 모든 코인이 [SuperCoin]으로 변경됨\n[WhenUse] 자신의 [Breath] 4당 코인 위력 +1 (최대 <style=\"highlight\">5</style>)\n[WhenUse] 자신의 [LittleFingerID] 4당 기본 위력 +1 (최대 <style=\"highlight\">5</style>)\n[WhenUse] [Breath] <style=\"highlight\">7</style> 얻음\n\n[BeforeAttack] 자신의 [LittleFingerID] 10 당 가중치 +1 (최대 2)\n[EndSkill] 이 스킬 효과로 증가한 가중치 1당 [LittleFingerID] <style=\"highlight\">5</style> 소모",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "크리티컬 피해량 <style=\"highlight\">+70%</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration] <style=\"highlight\">5</style> 부여"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttackHead] 이 코인 최종 피해량의 25%만큼 참격 피해<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "수[守]",
+          "desc": "[CanDuelGuard]\n턴 시작시 자신의 [Breath] 위력이 25 이상이면 ‘회’로 변경됨\n\n[StartBattle] [Breath] 6 얻음 (턴당 1회)\n[StartBattle] 자신의 [Breath] 횟수 1 증가 (턴당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "수[守]",
+          "desc": "[CanDuelGuard]\n턴 시작시 자신의 [Breath] 위력이 25 이상이면 ‘회’로 변경됨\n\n[StartBattle] [Breath] 8 얻음 (턴당 1회)\n[StartBattle] 자신의 [Breath] 횟수 <style=\"highlight\">2</style> 증가 (턴당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101505,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "회[回]",
+          "desc": "[StartBattle] 자신의 [LittleFingerID] 수치만큼 보호막 얻음 (턴당 1회)\n[StartBattle] 자신의 [Breath] 횟수 4 증가 (턴당 1회)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "회[回]",
+          "desc": "[StartBattle] 자신의 [LittleFingerID] 수치만큼 보호막 얻음 (턴당 1회)\n[StartBattle] 자신의 [Breath] 횟수 4 증가 (턴당 1회)\n<style=\"highlight\">[OnSucceedEvade] 다음 턴에 [CriticalDamageUp] 1 얻음 (턴당 최대 2회)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

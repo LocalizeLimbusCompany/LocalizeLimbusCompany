@@ -2092,6 +2092,301 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1101501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "連撃",
+          "desc": "[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "連撃",
+          "desc": "[WhenUse] 自分の[Breath]回数が<style=\"highlight\">3</style>増加\n<style=\"highlight\">[WhenUse] 自分の[Breath]が6以上なら、コイン威力 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]<style=\"highlight\">2</style>を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 次のターンに[Agility]1を得る(1ターンにつき1回)</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "連撃",
+          "desc": "[WhenUse] 自分の[Breath]回数が3増加\n<style=\"highlight\">[WhenUse] 自分の[Breath]6につき、コイン威力 +1 (最大2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Agility]1を得る(1ターンにつき1回)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttackHead] 次のターンに[Agility]1を得る(1ターンにつき1回)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "無名斬",
+          "desc": "[WideAreaRampage]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]3を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "クリティカルダメージ量 +10%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "無名斬",
+          "desc": "[WideAreaRampage]\n<style=\"highlight\">[WhenUse] 自分の[Breath]が6以上なら、基本威力 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]3を得る<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が1増加<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "クリティカルダメージ量 +10%<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttackHead] このコインを再使用 (スキルごとに1回)</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "無名斬",
+          "desc": "[WideAreaRampage]\n<style=\"highlight\">[WhenUse] 自分の[Breath]6につき、基本威力 +1 (最大2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]3を得る<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が1増加<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "クリティカルダメージ量 +10%<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 自分の[Breath]回数が1増加</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]<style=\"highlight\">2を付与</style>"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttackHead] このコインを再使用(スキルごとに1回)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[ReUseOnSucceedAttackHead] 自分の[LittleFingerID]が10以上なら、このコインを再使用(スキルごとに1回)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "落星一殺",
+          "desc": "このスキルの攻撃加重値より攻撃対象数が少ない場合、1体につきダメージ量 +30% (集中戦闘の場合は部位で判定)\n[WhenUse] 自分の[LittleFingerID]が20なら、全コインが[SuperCoin]に変更される\n[WhenUse] 自分の[Breath]4につき、コイン威力 +1 (最大3)\n[WhenUse] 自分の[LittleFingerID]4につき、基本威力 +1 (最大3)\n[WhenUse] [Breath]5を得る\n\n[BeforeAttack] 自分の[LittleFingerID]10につき、加重値 +1 (最大2)\n[EndSkill] このスキル効果で増加した加重値1につき、[LittleFingerID]を7消耗",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "クリティカルダメージ量 +50%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttackHead] このコインの最終ダメージ量の25%だけ、斬撃ダメージを与える"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "落星一殺",
+          "desc": "このスキルの攻撃加重値より攻撃対象数が少ない場合、1体につきダメージ量 <style=\"highlight\">+50%</style> (集中戦闘の場合は部位で判定)\n[WhenUse] 自分の[LittleFingerID]が20なら、全コインが[SuperCoin]に変更される\n[WhenUse] 自分の[Breath]4につき、コイン威力 +1 (最大<style=\"highlight\">5</style>)\n[WhenUse] 自分の[LittleFingerID]4につき、基本威力 +1 (最大<style=\"highlight\">5</style>)\n[WhenUse] [Breath]<style=\"highlight\">7</style>を得る\n\n[BeforeAttack] 自分の[LittleFingerID]10につき、加重値 +1 (最大2)\n[EndSkill] このスキル効果で増加した加重値1につき、[LittleFingerID]を<style=\"highlight\">5</style>消耗",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "クリティカルダメージ量 <style=\"highlight\">+70%</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]<style=\"highlight\">5</style>を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttackHead] このコインの最終ダメージ量の25%だけ、斬撃ダメージを与える<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "守",
+          "desc": "[CanDuelGuard]\nターン開始時、自分の[Breath]威力が25以上なら「回」に変更される\n\n[StartBattle] [Breath]6を得る (1ターンにつき1回)\n[StartBattle] 自分の[Breath]回数が1増加 (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "守",
+          "desc": "[CanDuelGuard]\nターン開始時、自分の[Breath]威力が25以上なら「回」に変更される\n\n[StartBattle] [Breath]8を得る (1ターンにつき1回)\n[StartBattle] 自分の[Breath]回数が<style=\"highlight\">2</style>増加 (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101505,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "回",
+          "desc": "[StartBattle] 自分の[LittleFingerID]の数値だけバリアを得る (1ターンにつき1回)\n[StartBattle] 自分の[Breath]回数が4増加 (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "回",
+          "desc": "[StartBattle] 自分の[LittleFingerID]の数値だけバリアを得る (1ターンにつき1回)\n[StartBattle] 自分の[Breath]回数が4増加 (1ターンにつき1回)\n<style=\"highlight\">[OnSucceedEvade] 次のターンに[CriticalDamageUp]1を得る (1ターンにつき最大2回)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -2092,6 +2092,301 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1101501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Chainstrike [連擊]",
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 1 [Breath]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Chainstrike [連擊]",
+          "desc": "[WhenUse] Gain <style=\"highlight\">+3</style> [Breath] Count\n<style=\"highlight\">[WhenUse] At 6+ [Breath], Coin Power +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain <style=\"highlight\">2</style> [Breath]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Laceration] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Gain 1 [Agility] next turn (once per turn)</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Chainstrike [連擊]",
+          "desc": "[WhenUse] Gain +3 [Breath] Count\n<style=\"highlight\">[WhenUse] Coin Power +1 for every 6 [Breath] on self (max 2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Laceration] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain 1 [Agility] next turn (once per turn)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttackHead] Gain 1 [Agility] next turn (once per turn)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Nameless Slash [無名斬]",
+          "desc": "[WideAreaRampage]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 3 [Breath]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 [Breath] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Deal +10% damage on Critical Hit"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Nameless Slash [無名斬]",
+          "desc": "[WideAreaRampage]\n<style=\"highlight\">[WhenUse] At 6+ [Breath], Base Power +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 3 [Breath]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 [Breath] Count<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Deal +10% damage on Critical Hit<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttackHead] Reuse this Coin (once per Skill)</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Nameless Slash [無名斬]",
+          "desc": "[WideAreaRampage]\n<style=\"highlight\">[WhenUse] Base Power +1 for every 6 [Breath] on self (max 2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Gain 3 [Breath]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Gain +1 [Breath] Count<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Deal +10% damage on Critical Hit<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Gain +1 [Breath] Count</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">2</style> [Laceration]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttackHead] Reuse this Coin (once per Skill)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[ReUseOnSucceedAttackHead] At 10+ [LittleFingerID], Reuse this Coin (once per Skill)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Fallstar Slayer [落星一殺]",
+          "desc": "Deal +30% damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Part)\n[WhenUse] At 20 [LittleFingerID], convert all Coins of this Skill into [SuperCoin]s\n[WhenUse] Coin Power +1 for every 4 [Breath] on self (max 3)\n[WhenUse] Base Power +1 for every 4 [LittleFingerID] on self (max 3)\n[WhenUse] Gain 5 [Breath]\n\n[BeforeAttack] Atk Weight +1 for every 10 [LittleFingerID] on self (max 2)\n[EndSkill] Consume 7 [LittleFingerID] for every Atk Weight gained due to this Skill's effect",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "Deal +50% damage on Critical Hit"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 3 [Laceration]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttackHead] Deal (25% of this Coin's final damage) Slash damage"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Fallstar Slayer [落星一殺]",
+          "desc": "Deal <style=\"highlight\">+50%</style> damage for every excess Atk Weight beyond the # of actual targets (in Focused Encounters, the Part)\n[WhenUse] At 20 [LittleFingerID], convert all Coins of this Skill into [SuperCoin]s\n[WhenUse] Coin Power +1 for every 4 [Breath] on self (max <style=\"highlight\">5</style>)\n[WhenUse] Base Power +1 for every 4 [LittleFingerID] on self (max <style=\"highlight\">5</style>)\n[WhenUse] Gain <style=\"highlight\">7</style> [Breath]\n\n[BeforeAttack] Atk Weight +1 for every 10 [LittleFingerID] on self (max 2)\n[EndSkill] Consume <style=\"highlight\">5</style> [LittleFingerID] for every Atk Weight gained due to this Skill's effect",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "Deal <style=\"highlight\">+70%</style> damage on Critical Hit"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">5</style> [Laceration]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttackHead] Deal (25% of this Coin's final damage) Slash damage<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Defend [守]",
+          "desc": "[CanDuelGuard]\nTurn Start: At 25+ [Breath], change this Skill to 'Swerve'\n\n[StartBattle] Gain 6 [Breath] (once per turn)\n[StartBattle] Gain +1 [Breath] Count (once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Defend [守]",
+          "desc": "[CanDuelGuard]\nTurn Start: At 25+ [Breath], change this Skill to 'Swerve'\n\n[StartBattle] Gain 8 [Breath] (once per turn)\n[StartBattle] Gain <style=\"highlight\">+2</style> [Breath] Count (once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101505,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Swerve [回]",
+          "desc": "[StartBattle] Gain Shield equal to [LittleFingerID] Stack (once per turn)\n[StartBattle] Gain +4 [Breath] Count (once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Swerve [回]",
+          "desc": "[StartBattle] Gain Shield equal to [LittleFingerID] Stack (once per turn)\n[StartBattle] Gain +4 [Breath] Count (once per turn)\n<style=\"highlight\">[OnSucceedEvade] Gain 1 [CriticalDamageUp] next turn (max 2 times per turn)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

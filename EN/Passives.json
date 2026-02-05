@@ -2624,7 +2624,8 @@
     {
       "id": 1021421,
       "name": "As the Prescript Orders...",
-      "desc": "Effects apply to the Identity with the earliest Deployment order\n- Prioritizes The Index Identities\n\nCombat Start: If this unit's leftmost Skill on the Dashboard and other allies target the same enemy Slot, said Skill deals +5% damage for every ally targeting the same Slot excluding this unit (max 15%, applies when this unit and allies both use Base Attack Skills to main-target enemy Slot)"
+      "desc": "Effects apply to the Identity with the earliest Deployment order\n- Prioritizes The Index Identities\n\nCombat Start: If this unit's leftmost Skill on the Dashboard and other allies target the same enemy Slot, said Skill deals +5% damage for every ally targeting the same Slot excluding this unit (max 15%, applies when this unit and allies both use Base Attack Skills to main-target enemy Slot)",
+      "summary": "Deal more damage based on number of other units that targeted the slot"
     },
     {
       "id": 1031402,
@@ -2674,6 +2675,46 @@
       "name": "Hey, Are Ya Into Fixers, Too?",
       "desc": "Clash Power +1 for #1 Deployed Identity's Base Attack Skills (once per turn)\nIf the Dashboard has Envy A-Reson., #1 Deployed Identity deals +10% damage with Base Skills",
       "summary": "Clash Power +1 for Base Attack Skills\nIf the Dashboard has Envy A-Reson., deal +10% damage with Base Skills"
+    },
+    {
+      "id": 1121402,
+      "name": "Dazzling Lamp",
+      "desc": "Turn Start: Gain 1 [LanternGregBigBird]\n\nExternal effects cannot change this unit's Min. and Max. Speeds\n\nWhen chaining Skills, this unit can redirect the Attack Skills' targeting to itself regardless of Speed (Focused Encounters only)\n\nWhen gaining [Agility], gain 1 [ParryingResultUp] instead (once per turn)\n- Once the above effect activates, cannot gain [Agility] for the rest of the turn"
+    },
+    {
+      "id": 1121403,
+      "name": "E.G.O Gear Proficiency Manual",
+      "desc": "Turn Start: Gain 1 [DefenseUp] for every ally wearing E.G.O Gears (max 3)\n\nWhen an ally dies, gain 2 [PenetrateDamageUp] next turn (once per turn)"
+    },
+    {
+      "id": 1121401,
+      "name": "Eyes Bright Like Lamps",
+      "desc": "Combat Start: Gain 1 [LanternGregBigBird]\n\nCombat Start: If an enemy has [DelusionGregBigBird], heal 3 SP\n\nTurn End: Apply [ObedienceGregBigBird] next turn to the ally with the earliest Deployment order among those that do not fit the following conditions:\n- Is this unit\n- Is an ally with [ObedienceGregBigBird]\n- Is an ally that cannot heal SP due to conditions such as Panic or Corrosion"
+    },
+    {
+      "id": 1121411,
+      "name": "Eyes Bright Like Lamps",
+      "desc": "Combat Start: Gain 1 [LanternGregBigBird] <style=\"highlight\">for every 2 Gloom Reson. (max 3)</style>\n\nCombat Start: If an enemy has [DelusionGregBigBird], heal <style=\"highlight\">5</style> SP\n\nTurn End: Apply [ObedienceGregBigBird] next turn to the ally with the earliest Deployment order among those that do not fit the following conditions:\n- Is this unit\n- Is an ally with [ObedienceGregBigBird]\n- Is an ally that cannot heal SP due to conditions such as Panic or Corrosion"
+    },
+    {
+      "id": 1121421,
+      "name": "Were There More Lives to be Saved?",
+      "desc": "Turn End: Apply the following to the ally with the earliest Deployment order among those with negative effects\n- Gain +4 [Aggro] to the leftmost Slot next turn\n- Gain 1 [HitDamageUp] next turn"
+    },
+    {
+      "id": 1101501,
+      "name": "The Orthodox Blade [整劍]",
+      "desc": "Combat Start: Gain ((Pride Reson. / 2) + 1) [Breath] (max 4, rounded down)\n\nCombat End: At 20+ [Breath], gain +1 [Breath] Count"
+    },
+    {
+      "id": 1101502,
+      "name": "Singular Focus of the Mind",
+      "desc": "Turn End: Any excess [Breath] Potency gained past 25 will be converted to [LittleFingerID] (max 15)\n\nCombat Start: If this unit did not equip Attack Skills (including E.G.O Skills) this turn, heal 5 SP and gain 1 [SlashResultUp] next turn"
+    },
+    {
+      "id": 1101521,
+      "name": "Tranquility [靜念]",
+      "desc": "The ally with the fastest Speed heals 5 SP and gains 5 Shield when starting combat with a Defense Skill equipped"
     }
   ]
 }

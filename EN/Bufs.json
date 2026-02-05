@@ -2386,22 +2386,26 @@
     {
       "id": "BlackCloud",
       "name": "Dark Cloud",
-      "desc": "Max Stack: 1\nConverts all of this unit's Base Attack Skill Coins used this turn to [Unbreakable Coins], prevents damage from Staggering this unit until Skill End, and inflict +1 more of Bleed effects\nOn Clash Lose: gain Final Power +3\nTurn End: this effect expires"
+      "desc": "Max Stack: 1\nConverts all of this unit's Base Attack Skill Coins used this turn to Unbreakable Coins, prevents damage from Staggering this unit until Skill End, and inflict +1 more of Bleed effects\nOn Clash Lose: gain Final Power +3\nTurn End: this effect expires",
+      "summary": "Converts Attack Skill to Unbreakable Coin and gains a new effect"
     },
     {
       "id": "BlackCloudBlade",
       "name": "Dark Cloud Blade",
-      "desc": "Max Stack: 1\nGain 1 Slash Power\nInflict 1 Bleed On Hit with Slash Skills"
+      "desc": "Max Stack: 1\nGain 1 Slash Power\nInflict 1 Bleed On Hit with Slash Skills",
+      "summary": "Enhance Slash Skills"
     },
     {
       "id": "EngageToBattle",
       "name": "Battle Ready",
-      "desc": "Max Value: 1\nBleed Potency and Count inflicted with this unit's Skill or Coin effects: +1\nGain 1 Slash Power Up and 3 Slash DMG Up for the duration of this Encounter"
+      "desc": "Max Value: 1\nBleed Potency and Count inflicted with this unit's Skill or Coin effects: +1\nGain 1 Slash Power Up and 3 Slash DMG Up for the duration of this Encounter",
+      "summary": "Enhance Slash Skills and inflict more Bleed"
     },
     {
       "id": "CloudWall",
       "name": "Cumulus Wall",
-      "desc": "Max Stack: 1\nDefense Skill Final Power +1\nThis effect expires at Turn End or after the following attack ends: 'Rules of the Backstreets'"
+      "desc": "Max Stack: 1\nDefense Skill Final Power +1\nThis effect expires at Turn End or after the following attack ends: 'Rules of the Backstreets'",
+      "summary": "Enhance Defense Skill"
     },
     {
       "id": "NebulizerExhale",
@@ -3133,6 +3137,62 @@
       "id": "HeatingWireIshmael",
       "name": "Thermal Blades",
       "desc": "- Max Stack: 2\n- If target hit by Base Skills has Burn, heal 3 SP (2 times per turn)\n- Inflict Burn when inflicting Bleed with certain Skill Coins\n- Turn End: Lose 1 Stack",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "LanternGregBigBird",
+      "name": "Lamp",
+      "desc": "- Max Stack: 8\n- Turn End: Gain 1 Bind next turn for every 2 Stack (max 4)\n- Turn End: At max Stack, if there are enemies on the field, consume all Stack to activate the following effects next turn:\n• Gain +10 Aggro to the leftmost Slot\n• Inflict 3 Dazzle to the enemy(Core) with the most current HP",
+      "summary": "Gain Bind next turn",
+      "undefined": "-"
+    },
+    {
+      "id": "ObedienceGregBigBird",
+      "name": "Guardians of the Forest",
+      "desc": "Before Attack, activate the following effects:\n- Plus Coin Skills heal 4 SP (if already at max SP, gain 2 Offense Level Up next turn)\n- Minus Coin Skills lose 8 SP (this effect cannot reduce the unit's SP below -40)\n- Lose this effect",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "DelusionGregBigBird",
+      "name": "Dazzle",
+      "desc": "- For every 1 (Sinking + Burn), take +0.5% damage from Base Attack Skills (max 10%)\n- Units with SP: Change their Panic Type to \"Dazzle\"\n- Units without SP: Defense Level -2\n- Turn End: Lose 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value\n- Apply the \"Units without SP\" conditional to certain enemies that have SP but can't change their Panic Types\n\n※ Dazzle Panic-type Effects\n- Low Morale: Turn End: Gain 1 Bind and 2 Offense Level Down next turn\n- Panic: Turn End: Gain 1 Bind and 4 Offense Level Down next turn",
+      "summary": "For every 1 (Sinking + Burn), take +0.5% damage from Base Attack Skills (max 10%)\nUnits with SP: Change their Panic Type to \"Dazzle\"\nUnits without SP: Defense Level -2",
+      "undefined": "-"
+    },
+    {
+      "id": "DelusionGregBigBird_Main",
+      "name": "Dazzle",
+      "desc": "- For every 1 (Sinking + Burn), take +0.5% damage from Base Attack Skills (max 10%)\n- Units with SP: Change their Panic Type to \"Dazzle\"\n- Turn End: Lose 1 Stack",
+      "summary": "For every 1 (Sinking + Burn), take +0.5% damage from Base Attack Skills (max 10%)\nChange Panic Type to \"Dazzle\"",
+      "undefined": "-"
+    },
+    {
+      "id": "DelusionGregBigBird_Sub",
+      "name": "Dazzle",
+      "desc": "- For every 1 (Sinking + Burn), take +0.5% damage from Base Attack Skills (max 10%)\n- Units without SP: Defense Level -2\n- Turn End: Lose 1 Stack",
+      "summary": "For every 1 (Sinking + Burn), take +0.5% damage from Base Attack Skills (max 10%)\nDefense Level -2",
+      "undefined": "-"
+    },
+    {
+      "id": "DelusionGregBigBird_LowMorale",
+      "name": "Dazzle",
+      "desc": "- Low Morale\n- Turn End: Gain 1 Bind and 2 Offense Level Down next turn",
+      "summary": "Turn End: Gain 1 Bind and 2 Offense Level Down next turn",
+      "undefined": "-"
+    },
+    {
+      "id": "DelusionGregBigBird_Panic",
+      "name": "Dazzle",
+      "desc": "- Panic\n- Turn End: Gain 1 Bind and 4 Offense Level Down next turn",
+      "summary": "Turn End: Gain 1 Bind and 4 Offense Level Down next turn",
+      "undefined": "-"
+    },
+    {
+      "id": "LittleFingerID",
+      "name": "Moonlit Azure Blade",
+      "desc": "- Max Stack: 20\n- Turn Start: Gain 2 Shield for every Stack\n- Deal +1% damage on Critical Hit for every Stack",
       "summary": "",
       "undefined": "-"
     }
