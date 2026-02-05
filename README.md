@@ -14,7 +14,7 @@
 [![Discord](https://img.shields.io/discord/1362288434978357329?logo=Discord&label=LLC%20Discord&color=%233AAD6F&style=for-the-badge)](https://discord.gg/mnjjw6bW77)
 [![Bilibili](https://img.shields.io/badge/BiliBili-%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7-%233AAD6F?style=for-the-badge&logo=bilibili)](https://space.bilibili.com/1247764479)
 [![Afdian](https://img.shields.io/badge/%E7%88%B1%E5%8F%91%E7%94%B5-%E6%94%AF%E6%8C%81%E6%88%91%E4%BB%AC-%233AAD6F?style=for-the-badge&logo=afdian)](https://afdian.com/a/Limbus_zero)
-[![Paratranz](https://img.shields.io/badge/Paratranz-%E7%BF%BB%E8%AF%91%E5%B9%B3%E5%8F%B0-%233AAD6F?style=for-the-badge&logo=paradoxinteractive)](https://afdian.com/a/Limbus_zero)
+[![Paratranz](https://img.shields.io/badge/Paratranz-%E7%BF%BB%E8%AF%91%E5%B9%B3%E5%8F%B0-%233AAD6F?style=for-the-badge&logo=paradoxinteractive)](https://paratranz.cn/projects/6860)
 
 [![Offical](https://img.shields.io/badge/%E5%AE%98%E7%BD%91-Official%20Site-%237A4AE0?style=for-the-badge)](https://www.zeroasso.top)
 [![Status](https://img.shields.io/badge/%E7%8A%B6%E6%80%81%E7%9B%91%E6%B5%8B-Status-%237A4AE0?style=for-the-badge)](https://status.zeroasso.top/status/page)
