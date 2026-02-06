@@ -2092,6 +2092,301 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1101501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "连击",
+          "desc": "[WhenUse] 使自身获得2层[Breath]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加1级[Breath]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加2级[Breath]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Laceration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "连击",
+          "desc": "[WhenUse] 使自身获得<style=\"highlight\">3</style>层[Breath]\n<style=\"highlight\">[WhenUse] 若自身的[Breath]强度不低于6级，则使本技能的硬币威力+1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加<style=\"highlight\">2</style>级[Breath]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加2级[Breath]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Laceration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 下回合使自身获得1层[Agility](每回合最多1次)</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "连击",
+          "desc": "[WhenUse] 使自身获得3层[Breath]\n<style=\"highlight\">[WhenUse] 自身每带有6级[Breath]强度，使本技能的硬币威力+1(最多+2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加2级[Breath]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加2级[Breath]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合使自身获得1层[Agility](每回合最多1次)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttackHead] 下回合使自身获得1层[Agility](每回合最多1次)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "无名斩",
+          "desc": "[WideAreaRampage]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加3级[Breath]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得1层[Breath]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "使本硬币暴击时造成的伤害+10%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "无名斩",
+          "desc": "[WideAreaRampage]\n<style=\"highlight\">[WhenUse] 若自身的[Breath]强度不低于6级，则使本技能的基础威力+1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加3级[Breath]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得1层[Breath]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "使本硬币暴击时造成的伤害+10%<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttackHead] 重复使用本硬币(每个技能最多1次)</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "无名斩",
+          "desc": "[WideAreaRampage]\n<style=\"highlight\">[WhenUse] 自身每带有6级[Breath]强度，使本技能的基础威力+1(最多+2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加3级[Breath]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得1层[Breath]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "使本硬币暴击时造成的伤害+10%<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 使自身获得1层[Breath]</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">2</style>级[Laceration]强度"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttackHead] 重复使用本硬币(每个技能最多1次)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[ReUseOnSucceedAttackHead] 若自身的[LittleFingerID]层数不低于10层，则重复使用本硬币(每个技能最多1次)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "落星一杀",
+          "desc": "本技能的攻击容量高于攻击目标数时，每高于1点，使本技能造成的伤害+30%(若是集中遭遇战，则改为以部位判定)\n[WhenUse] 若自身的[LittleFingerID]层数为20层，则使本技能的所有硬币转化为[SuperCoin]\n[WhenUse] 自身每带有4级[Breath]强度，使本技能的硬币威力+1(最多+3)\n[WhenUse] 自身每带有4层[LittleFingerID]，使本技能的基础威力+1(最多+3)\n[WhenUse] 使自身增加5级[Breath]强度\n\n[BeforeAttack] 自身每带有10层[LittleFingerID]，使本技能的攻击容量+1(最多+2)\n[EndSkill] 通过本技能效果每增加1点攻击容量，使自身消耗7层[LittleFingerID]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "使本硬币暴击时造成的伤害+50%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Laceration]强度"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttackHead] 对目标造成本硬币最终伤害量25%的斩击伤害"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "落星一杀",
+          "desc": "本技能的攻击容量高于攻击目标数时，每高于1点，使本技能造成的伤害<style=\"highlight\">+50%</style>(若是集中遭遇战，则改为以部位判定)\n[WhenUse] 若自身的[LittleFingerID]层数为20层，则使本技能的所有硬币转化为[SuperCoin]\n[WhenUse] 自身每带有4级[Breath]强度，使本技能的硬币威力+1(最多+<style=\"highlight\">5</style>)\n[WhenUse] 自身每带有4层[LittleFingerID]，使本技能的基础威力+1(最多+<style=\"highlight\">5</style>)\n[WhenUse] 使自身增加<style=\"highlight\">7</style>级[Breath]强度\n\n[BeforeAttack] 自身每带有10层[LittleFingerID]，使本技能的攻击容量+1(最多+2)\n[EndSkill] 通过本技能效果每增加1点攻击容量，使自身消耗<style=\"highlight\">5</style>层[LittleFingerID]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "使本硬币暴击时造成的伤害<style=\"highlight\">+70%</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">5</style>级[Laceration]强度"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttackHead] 对目标造成本硬币最终伤害量25%的斩击伤害<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "守",
+          "desc": "[CanDuelGuard]\n回合开始时，若自身的[Breath]强度不低于25级，则使本技能转化为“回”\n\n[StartBattle] 使自身增加6级[Breath]强度(每回合最多1次)\n[StartBattle] 使自身获得1层[Breath](每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "守",
+          "desc": "[CanDuelGuard]\n回合开始时，若自身的[Breath]强度不低于25级，则使本技能转化为“回”\n\n[StartBattle] 使自身增加8级[Breath]强度(每回合最多1次)\n[StartBattle] 使自身获得<style=\"highlight\">2</style>层[Breath](每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1101505,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "回",
+          "desc": "[StartBattle] 使自身获得相当于自身[LittleFingerID]层数的护盾(每回合最多1次)\n[StartBattle] 使自身获得4层[Breath](每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "回",
+          "desc": "[StartBattle] 使自身获得相当于自身[LittleFingerID]层数的护盾(每回合最多1次)\n[StartBattle] 使自身获得4层[Breath](每回合最多1次)\n<style=\"highlight\">[OnSucceedEvade] 下回合使自身获得1层[CriticalDamageUp](每回合最多2次)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
