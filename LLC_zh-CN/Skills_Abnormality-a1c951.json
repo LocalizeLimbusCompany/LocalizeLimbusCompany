@@ -6,15 +6,15 @@
         {
           "level": 1,
           "name": "愿为欢乐",
-          "desc": "[WhenUse] 使自身获得2层充能 ",
+          "desc": "[WhenUse] 使自身获得2层[Charge]",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加3层束缚 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加3层[Binding]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加2级呼吸法 强度"
+                  "desc": "[OnSucceedAttack] 使自身增加2级[Breath]强度"
                 }
               ]
             }
@@ -28,25 +28,25 @@
         {
           "level": 1,
           "name": "愿为安宁",
-          "desc": "[WhenUse] 使自身获得2层充能 ",
+          "desc": "[WhenUse] 使自身获得2层[Charge]",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身获得3层呼吸法 "
+                  "desc": "[OnSucceedAttack] 使自身获得3层[Breath]"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 使自身增加3级呼吸法 强度"
+                  "desc": "[OnSucceedAttackHead] 使自身增加3级[Breath]强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[CriticalOnSucceedAttack] 自身每带有1级呼吸法 强度，使自身增加1级呼吸法 强度"
+                  "desc": "[CriticalOnSucceedAttack] 自身每带有1级[Breath]强度，使自身增加1级[Breath]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使自身获得3层呼吸法 "
+                  "desc": "[OnSucceedAttack] 使自身获得3层[Breath]"
                 }
               ]
             }
@@ -60,7 +60,7 @@
         {
           "level": 1,
           "name": "这是礼物",
-          "desc": "若目标带有束缚 ，且自身的速度值高于目标，则根据速度值之差，相应使本技能的拼点威力增加",
+          "desc": "若目标带有[Binding]，且自身的速度值高于目标，则根据速度值之差，相应使本技能的拼点威力增加",
           "coinlist": [
             {
               "coindescs": [
@@ -68,10 +68,10 @@
                   "desc": "[OnSucceedAttack] 使目标失去5点理智值"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加2级呼吸法 强度并获得3层呼吸法 "
+                  "desc": "[OnSucceedAttack] 使自身增加2级[Breath]强度并获得3层[Breath]"
                 },
                 {
-                  "desc": "[CriticalOnSucceedAttack] 下回合对目标施加3层麻痹 "
+                  "desc": "[CriticalOnSucceedAttack] 下回合对目标施加3层[Paralysis]"
                 }
               ]
             }
@@ -85,12 +85,12 @@
         {
           "level": 1,
           "name": "来包装吧",
-          "desc": "若自身带有[AaCeSeBa]，则使本技能的硬币效果增加“下回合对目标施加1层麻痹 ”\n优先指定速度值最低的单位\n[EndBattle] 消耗所有充能 层数",
+          "desc": "若自身带有[AaCeSeBa]，则使本技能的硬币效果增加“下回合对目标施加1层[Paralysis]”\n优先指定速度值最低的单位\n[EndBattle] 消耗所有[Charge]层数",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加3级呼吸法 强度。"
+                  "desc": "[OnSucceedAttack] 使自身增加3级[Breath]强度。"
                 }
               ]
             },
@@ -100,23 +100,23 @@
                   "desc": "[OnSucceedAttack] 对目标额外造成相当于自身[Breath]强度的伤害"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加1级呼吸法 强度并获得3层呼吸法 "
+                  "desc": "[OnSucceedAttack] 使自身增加1级[Breath]强度并获得3层[Breath]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加3层某1种随机效果，该效果可能为守护 、强壮 、易损 或麻痹 "
+                  "desc": "[OnSucceedAttack] 对目标施加3层某1种随机效果，该效果可能为[Protection]、[Enhancement]、[Vulnerable]或[Paralysis]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 根据自身带有的充能 层数，使目标失去相应的理智值"
+                  "desc": "[OnSucceedAttack] 根据自身带有的[Charge]层数，使目标失去相应的理智值"
                 },
                 {
                   "desc": "[EnemyKill] 使全体敌方单位失去10点理智值。"
                 },
                 {
-                  "desc": "[EnemyKillFail] 下回合对自身施加2层麻痹 。"
+                  "desc": "[EnemyKillFail] 下回合对自身施加2层[Paralysis]。"
                 }
               ]
             }
@@ -130,7 +130,7 @@
         {
           "level": 1,
           "name": "是时候准备礼物了",
-          "desc": "若消耗了全部护盾，则下回合使自身陷入混乱。\n若自身带有护盾，则下回合使自身获得2层强壮 ",
+          "desc": "若消耗了全部护盾，则下回合使自身陷入混乱。\n若自身带有护盾，则下回合使自身获得2层[Enhancement]",
           "coinlist": [
             {}
           ]

@@ -136,7 +136,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标未带有烧伤 ，则使其增加4级烧伤 强度"
+                  "desc": "[OnSucceedAttack] 若目标未带有[Combustion]，则使其增加4级[Combustion]强度"
                 },
                 {
                   "desc": "[OnSucceedAttack] 使目标增加4级烧伤 强度"
@@ -154,7 +154,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标未带有烧伤 ，则使其增加4级烧伤 强度"
+                  "desc": "[OnSucceedAttack] 若目标未带有[Combustion]，则使其增加4级[Combustion]强度"
                 },
                 {
                   "desc": "[OnSucceedAttack] 使目标增加4级烧伤 强度"
@@ -172,13 +172,13 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标未带有烧伤 ，则使其增加4级烧伤 强度"
+                  "desc": "[OnSucceedAttack] 若目标未带有[Combustion]，则使其增加4级[Combustion]强度"
                 },
                 {
                   "desc": "[OnSucceedAttack] 使目标增加4级烧伤 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttackTail] 若目标的烧伤 强度不低于10级，则下回合对其施加1层虚弱 与1层破绽 "
+                  "desc": "[OnSucceedAttackTail] 若目标的[Combustion]强度不低于10级，则下回合对其施加1层虚弱 与1层破绽 "
                 }
               ]
             }
@@ -198,7 +198,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标未带有烧伤 ，则使其增加6级烧伤 强度"
+                  "desc": "[OnSucceedAttack] 若目标未带有[Combustion]，则使其增加6级[Combustion]强度"
                 },
                 {
                   "desc": "[OnSucceedAttack] 使目标增加4级烧伤 强度"
@@ -216,13 +216,13 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标未带有烧伤 ，则使其增加6级烧伤 强度"
+                  "desc": "[OnSucceedAttack] 若目标未带有[Combustion]，则使其增加6级[Combustion]强度"
                 },
                 {
                   "desc": "[OnSucceedAttack] 使目标增加4级烧伤 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttackTail] 若目标的烧伤 强度不低于10级，则下回合对其施加1层色欲易损 "
+                  "desc": "[OnSucceedAttackTail] 若目标的[Combustion]强度不低于10级，则下回合对其施加1层色欲易损 "
                 }
               ]
             }
@@ -237,13 +237,13 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标未带有烧伤 ，则使其增加6级烧伤 强度"
+                  "desc": "[OnSucceedAttack] 若目标未带有[Combustion]，则使其增加6级[Combustion]强度"
                 },
                 {
                   "desc": "[OnSucceedAttack] 使目标增加4级烧伤 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttackTail] 若目标的烧伤 强度不低于10级，则下回合对其施加2层色欲易损 "
+                  "desc": "[OnSucceedAttackTail] 若目标的[Combustion]强度不低于10级，则下回合对其施加2层色欲易损 "
                 }
               ]
             }
@@ -329,12 +329,12 @@
           "level": 1,
           "name": "低泣",
           "abName": "悲泣蟾蜍",
-          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 若最大共鸣数不低于4，则使本技能的攻击容量+1\n[BeforeAttack] 下回合使本技能对应行动槽的挑衅值 +5",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 若最大共鸣数不低于4，则使本技能的攻击容量+1\n[BeforeAttack] 下回合使本技能对应行动槽的[Aggro]+5",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Sinking]强度"
                 },
                 {
                   "desc": "[EndSkill] 使自身获得自身体力上限(15+2.5×(最大共鸣数))%的护盾与2层[ShieldManagerCryingToad](最多25%)"
@@ -353,12 +353,12 @@
           "level": 3,
           "name": "低泣",
           "abName": "悲泣蟾蜍",
-          "desc": "[CantIdentify]\n随机指定目标\n<style=\"highlight\">[BeforeAttack] 使本技能的攻击容量+(最大共鸣数-2)(最多+2)</style>\n[BeforeAttack] 下回合使本技能对应行动槽的<style=\"highlight\">挑衅值 +10</style>",
+          "desc": "[CantIdentify]\n随机指定目标\n<style=\"highlight\">[BeforeAttack] 使本技能的攻击容量+(最大共鸣数-2)(最多+2)</style>\n[BeforeAttack] 下回合使本技能对应行动槽的<style=\"highlight\">[Aggro]+10</style>",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Sinking]强度<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "[EndSkill] 使自身获得自身体力上限(<style=\"highlight\">18</style>+<style=\"highlight\">3</style>×(最大共鸣数))%的护盾与2层[ShieldManagerCryingToad](最多<style=\"highlight\">30%</style>)"
@@ -377,12 +377,12 @@
           "level": 4,
           "name": "低泣",
           "abName": "悲泣蟾蜍",
-          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大共鸣数-2)(最多+2)\n[BeforeAttack] 下回合使本技能对应行动槽的挑衅值 +10<style=\"highlight\"></style>",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大共鸣数-2)(最多+2)\n[BeforeAttack] 下回合使本技能对应行动槽的[Aggro]+10<style=\"highlight\"></style>",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度<style=\"highlight\">并对其施加3层沉沦 </style>"
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Sinking]强度<style=\"highlight\">并对其施加3层[Sinking]</style>"
                 },
                 {
                   "desc": "[EndSkill] 使自身获得自身体力上限(<style=\"highlight\">20</style>+<style=\"highlight\">5</style>×(最大共鸣数))%的护盾与2层[ShieldManagerCryingToad](最多<style=\"highlight\">40%</style>)"
@@ -414,17 +414,17 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 使目标增加2级流血 强度"
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级[Laceration]强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层诅咒 \n- 目标每带有3种除诅咒 与尖钉 以外的负面状态，额外对其施加1层诅咒 (最多2层)"
+                  "desc": "[OnSucceedAttack] 对目标施加2层诅咒 \n- 目标每带有3种除诅咒 与[NailPersonality]以外的负面状态，额外对其施加1层诅咒 (最多2层)"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层尖钉 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[NailPersonality]"
                 }
               ]
             }
@@ -439,20 +439,20 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 使目标增加2级流血 强度<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级[Laceration]强度<style=\"highlight\"></style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层诅咒 \n- 目标每带有3种除诅咒 与尖钉 以外的负面状态，额外对其施加1层诅咒 (最多2层)<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 对目标施加2层诅咒 \n- 目标每带有3种除诅咒 与[NailPersonality]以外的负面状态，额外对其施加1层诅咒 (最多2层)<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加<style=\"highlight\">3</style>层尖钉 "
+                  "desc": "[OnSucceedAttack] 对目标施加<style=\"highlight\">3</style>层[NailPersonality]"
                 },
                 {
-                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] 下回合对目标施加2层束缚 (每回合最多1次)</style>"
+                  "desc": "<style=\"highlight\">[OnSucceedAttackHead] 下回合对目标施加2层[Binding](每回合最多1次)</style>"
                 }
               ]
             }
@@ -467,23 +467,23 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] 使目标增加2级流血 强度<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttackHead] 使目标增加2级[Laceration]强度<style=\"highlight\"></style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层诅咒 \n- 目标每带有<style=\"highlight\">2</style>种除诅咒 与尖钉 以外的负面状态，额外对其施加1层诅咒 (最多2层)"
+                  "desc": "[OnSucceedAttack] 对目标施加2层诅咒 \n- 目标每带有<style=\"highlight\">2</style>种除诅咒 与[NailPersonality]以外的负面状态，额外对其施加1层诅咒 (最多2层)"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加3层尖钉 <style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 对目标施加3层[NailPersonality]<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "<style=\"highlight\">[OnSucceedAttack] 若目标的诅咒 层数不低于4层，则对其施加1层拼点威力降低 (每回合最多1次)</style>"
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 若目标的[Curse]层数不低于4层，则对其施加1层[ParryingResultDown](每回合最多1次)</style>"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 下回合对目标施加2层束缚 (每回合最多1次)<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加2层[Binding](每回合最多1次)<style=\"highlight\"></style>"
                 }
               ]
             }
@@ -503,7 +503,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackTail] 使目标增加2级流血 强度"
+                  "desc": "[OnSucceedAttackTail] 使目标增加2级[Laceration]强度"
                 }
               ]
             },
@@ -513,7 +513,7 @@
                   "desc": "[OnSucceedAttack] 对目标施加4层诅咒 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层尖钉 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[NailPersonality]"
                 }
               ]
             }
@@ -528,7 +528,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackTail] 使目标增加<style=\"highlight\">3</style>级流血 强度"
+                  "desc": "[OnSucceedAttackTail] 使目标增加<style=\"highlight\">3</style>级[Laceration]强度"
                 }
               ]
             },
@@ -538,10 +538,10 @@
                   "desc": "[OnSucceedAttack] 对目标施加4层诅咒 <style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加<style=\"highlight\">3</style>层尖钉 "
+                  "desc": "[OnSucceedAttack] 对目标施加<style=\"highlight\">3</style>层[NailPersonality]"
                 },
                 {
-                  "desc": "<style=\"highlight\">[OnSucceedAttackTail] 下回合对目标施加2层束缚 (每回合最多1次)</style>"
+                  "desc": "<style=\"highlight\">[OnSucceedAttackTail] 下回合对目标施加2层[Binding](每回合最多1次)</style>"
                 }
               ]
             }
@@ -556,7 +556,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackTail] 使目标增加3级流血 强度<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttackTail] 使目标增加3级[Laceration]强度<style=\"highlight\"></style>"
                 }
               ]
             },
@@ -566,16 +566,16 @@
                   "desc": "[OnSucceedAttack] 对目标施加4层诅咒 <style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加3层尖钉 <style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 对目标施加3层[NailPersonality]<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "<style=\"highlight\">[OnSucceedAttack] 若包括本技能在内嫉妒共鸣数不低于4，则对目标施加1层拼点威力降低 (每回合最多1次)</style>"
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 若包括本技能在内嫉妒共鸣数不低于4，则对目标施加1层[ParryingResultDown](每回合最多1次)</style>"
                 },
                 {
-                  "desc": "[OnSucceedAttackTail] 下回合对目标施加2层束缚 (每回合最多1次)<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttackTail] 下回合对目标施加2层[Binding](每回合最多1次)<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "<style=\"highlight\">[OnSucceedAttackTail] 下回合对目标施加2层防御等级降低 (每回合最多1次)</style>"
+                  "desc": "<style=\"highlight\">[OnSucceedAttackTail] 下回合对目标施加2层[DefenseDown](每回合最多1次)</style>"
                 }
               ]
             }

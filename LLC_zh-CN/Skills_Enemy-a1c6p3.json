@@ -6,25 +6,25 @@
         {
           "level": 1,
           "name": "…击",
-          "desc": "[WhenUse] 若目标的沉沦 强度不低于5级，则对其施加1层攻击等级降低 ",
+          "desc": "[WhenUse] 若目标的[Sinking]强度不低于5级，则对其施加1层[AttackDown]",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加4级沉沦 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Sinking]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加1层束缚 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层[Binding]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加4级沉沦 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Sinking]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加1层麻痹 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层[Paralysis]"
                 }
               ]
             }
@@ -43,17 +43,17 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加1层加算硬币弱化 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层[PlusCoinValueDown]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加3层沉沦 "
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Sinking]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加2层易损 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层[Vulnerable]"
                 }
               ]
             }
@@ -72,30 +72,30 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加8级沉沦 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加8级[Sinking]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 对目标施加2层沉沦 "
+                  "desc": "[OnSucceedAttackHead] 对目标施加2层[Sinking]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加8级沉沦 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加8级[Sinking]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 对目标施加2层沉沦 "
+                  "desc": "[OnSucceedAttackHead] 对目标施加2层[Sinking]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加8级沉沦 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加8级[Sinking]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 对目标施加2层沉沦 "
+                  "desc": "[OnSucceedAttackHead] 对目标施加2层[Sinking]"
                 }
               ]
             }
@@ -114,27 +114,27 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 根据目标带有的沉沦 强度，对其造成相应的忧郁伤害。使其沉沦 层数减少1层"
+                  "desc": "[OnSucceedAttack] 根据目标带有的[Sinking]强度，对其造成相应的忧郁伤害。使其[Sinking]层数减少1层"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 根据目标带有的沉沦 强度，对其造成相应的忧郁伤害。使其沉沦 层数减少1层"
+                  "desc": "[OnSucceedAttack] 根据目标带有的[Sinking]强度，对其造成相应的忧郁伤害。使其[Sinking]层数减少1层"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 根据目标带有的沉沦 强度，对其造成相应的忧郁伤害"
+                  "desc": "[OnSucceedAttack] 根据目标带有的[Sinking]强度，对其造成相应的忧郁伤害"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加4级沉沦 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Sinking]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标的沉沦 层数不低于3层，则重复使用本硬币(最多2次)"
+                  "desc": "[OnSucceedAttack] 若目标的[Sinking]层数不低于3层，则重复使用本硬币(最多2次)"
                 }
               ]
             }
@@ -166,14 +166,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合使自身获得1层攻击等级提升 "
+                  "desc": "[OnSucceedAttack] 下回合使自身获得1层[AttackUp]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合使自身获得1层攻击等级提升 "
+                  "desc": "[OnSucceedAttack] 下回合使自身获得1层[AttackUp]"
                 }
               ]
             }
@@ -192,14 +192,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标带有攻击等级降低 ，则对目标造成本硬币伤害量20%的打击伤害"
+                  "desc": "[OnSucceedAttack] 若目标带有[AttackDown]，则对目标造成本硬币伤害量20%的打击伤害"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标带有攻击等级降低 ，则对目标造成本硬币伤害量20%的打击伤害"
+                  "desc": "[OnSucceedAttack] 若目标带有[AttackDown]，则对目标造成本硬币伤害量20%的打击伤害"
                 }
               ]
             }
@@ -252,20 +252,20 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层易损 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Vulnerable]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加1层易损 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层[Vulnerable]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加2层麻痹 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层[Paralysis]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 目标每带有2层攻击等级降低 ，使本硬币造成的伤害+30%(最多+120%)"
+                  "desc": "[OnSucceedAttack] 目标每带有2层[AttackDown]，使本硬币造成的伤害+30%(最多+120%)"
                 },
                 {
                   "desc": "[OnSucceedAttackHead] 若目标带有的负面状态不少于3种，则重复使用本硬币(1次)"
@@ -306,7 +306,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加2层防御等级降低 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层[DefenseDown]"
                 }
               ]
             }
@@ -325,7 +325,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加3层防御等级降低 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加3层[DefenseDown]"
                 }
               ]
             }
@@ -344,7 +344,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加1层束缚 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层[Binding]"
                 },
                 {
                   "desc": "[OnSucceedAttack] 下回合对目标施加1层突刺易损 "
@@ -354,7 +354,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加2层束缚 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层[Binding]"
                 }
               ]
             }
@@ -373,14 +373,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层易损 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Vulnerable]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加2层易损 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层[Vulnerable]"
                 },
                 {
                   "desc": "[OnSucceedAttack] 若目标带有的负面状态不少于5种，则重复使用本硬币(最多2次)"

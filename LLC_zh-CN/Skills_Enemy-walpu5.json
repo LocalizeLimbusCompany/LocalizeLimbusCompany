@@ -6,13 +6,13 @@
         {
           "level": 1,
           "name": "齿轮指引",
-          "desc": "[WhenUse] 使自身增加2级烟气 强度",
+          "desc": "[WhenUse] 使自身增加2级[Smoke]强度",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对自身施加1层烟气 "
+                  "desc": "[OnSucceedAttack] 对自身施加1层[Smoke]"
                 }
               ]
             }
@@ -26,25 +26,25 @@
         {
           "level": 1,
           "name": "血肉齿轮-停止",
-          "desc": "[WhenUse] 使自身增加4级烟气 强度并对自身施加2层烟气 ",
+          "desc": "[WhenUse] 使自身增加4级[Smoke]强度并对自身施加2层[Smoke]",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级烟气 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Smoke]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层麻痹 "
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层[Paralysis]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级烟气 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Smoke]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层麻痹 "
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层[Paralysis]"
                 }
               ]
             }
@@ -58,19 +58,19 @@
         {
           "level": 1,
           "name": "蒸汽喷发",
-          "desc": "目标每带有3级烟气 强度，使本技能的拼点威力+1(最多+2)\n自身每带有3级烟气 强度，使本技能造成的伤害+10%(最多+20%)\n[WhenUse] 若自身的烟气 强度不低于10级，则使本技能的硬币威力+2\n[EndSkill] 消耗自身所有烟气 ",
+          "desc": "目标每带有3级[Smoke]强度，使本技能的拼点威力+1(最多+2)\n自身每带有3级[Smoke]强度，使本技能造成的伤害+10%(最多+20%)\n[WhenUse] 若自身的[Smoke]强度为10级，则使本技能的硬币威力+2\n[EndSkill] 消耗自身所有[Smoke]",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加3级烟气 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Smoke]强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 目标每带有3级烟气 强度，重复使用本硬币1次(最多3次)"
+                  "desc": "[OnSucceedAttack] 目标每带有3级[Smoke]强度，重复使用本硬币1次(最多3次)"
                 }
               ]
             }
@@ -84,7 +84,7 @@
         {
           "level": 1,
           "name": "闪避指示",
-          "desc": "[OnSucceedEvade] 使自身增加3级烟气 强度并对自身施加1层烟气 \n[OnSucceedEvade] 若自身的烟气 强度不低于10级，则下回合使自身获得1层拼点威力提升 与3层守护 (每回合最多1次)",
+          "desc": "[OnSucceedEvade] 使自身增加3级[Smoke]强度并对自身施加1层[Smoke]\n[OnSucceedEvade] 若自身的[Smoke]强度为10级，则下回合使自身获得1层[ParryingResultUp]与3层[Protection](每回合最多1次)",
           "coinlist": [
             {
               "coindescs": [
@@ -103,13 +103,13 @@
         {
           "level": 1,
           "name": "遵循齿轮",
-          "desc": "[WhenUse] 使自身增加2级烟气 强度",
+          "desc": "[WhenUse] 使自身增加2级[Smoke]强度",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对自身施加1层烟气 "
+                  "desc": "[OnSucceedAttack] 对自身施加1层[Smoke]"
                 }
               ]
             }
@@ -123,25 +123,25 @@
         {
           "level": 1,
           "name": "血肉齿轮-紧勒",
-          "desc": "[WhenUse] 使自身增加4级烟气 强度并对自身施加2层烟气 ",
+          "desc": "[WhenUse] 使自身增加4级[Smoke]强度并对自身施加2层[Smoke]",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层烟气 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Smoke]"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层束缚 "
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层[Binding]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层烟气 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Smoke]"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层束缚 "
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层[Binding]"
                 }
               ]
             }
@@ -155,19 +155,19 @@
         {
           "level": 1,
           "name": "突袭指示",
-          "desc": "目标每带有3级烟气 强度，使本技能的拼点威力+1(最多+2)\n自身每带有3级烟气 强度，使本技能造成的伤害+10%(最多+20%)\n[WhenUse] 若自身的烟气 强度不低于10级，则使本技能的硬币威力+2\n[EndSkill] 消耗自身所有烟气 ",
+          "desc": "目标每带有3级[Smoke]强度，使本技能的拼点威力+1(最多+2)\n自身每带有3级[Smoke]强度，使本技能造成的伤害+10%(最多+20%)\n[WhenUse] 若自身的[Smoke]强度为10级，则使本技能的硬币威力+2\n[EndSkill] 消耗自身所有[Smoke]",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层烟气 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Smoke]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 目标每带有3级烟气 强度，重复使用本硬币1次(最多3次)"
+                  "desc": "[OnSucceedAttack] 目标每带有3级[Smoke]强度，重复使用本硬币1次(最多3次)"
                 }
               ]
             }
@@ -181,7 +181,7 @@
         {
           "level": 1,
           "name": "闪避指示",
-          "desc": "[OnSucceedEvade] 使自身增加3级烟气 强度并对自身施加1层烟气 \n[OnSucceedEvade] 若自身的烟气 强度不低于10级，则下回合使自身获得1层拼点威力提升 与3层守护 (每回合最多1次)",
+          "desc": "[OnSucceedEvade] 使自身增加3级[Smoke]强度并对自身施加1层[Smoke]\n[OnSucceedEvade] 若自身的[Smoke]强度为10级，则下回合使自身获得1层[ParryingResultUp]与3层[Protection](每回合最多1次)",
           "coinlist": [
             {
               "coindescs": [
@@ -200,12 +200,12 @@
         {
           "level": 1,
           "name": "血肉齿轮-命令",
-          "desc": "[WhenUse] 使自身增加3级烟气 强度并对自身施加2层烟气 ",
+          "desc": "[WhenUse] 使自身增加3级[Smoke]强度并对自身施加2层[Smoke]",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加3级烟气 强度并对其施加2层烟气 "
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Smoke]强度并对其施加2层[Smoke]"
                 }
               ]
             }
@@ -219,15 +219,15 @@
         {
           "level": 1,
           "name": "思想齿轮-接受",
-          "desc": "[WhenUse] 使自身增加4级烟气 强度并对自身施加2层烟气 ",
+          "desc": "[WhenUse] 使自身增加4级[Smoke]强度并对自身施加2层[Smoke]",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加4级烟气 强度并对其施加2层烟气 "
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Smoke]强度并对其施加2层[Smoke]"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层麻痹 "
+                  "desc": "[OnSucceedAttackHead] 下回合对目标施加1层[Paralysis]"
                 }
               ]
             }
@@ -241,19 +241,19 @@
         {
           "level": 1,
           "name": "血肉齿轮-限制",
-          "desc": "目标每带有3级烟气 强度，使本技能的硬币威力+1\n自身每带有3级烟气 强度，使本技能造成的伤害+10%\n本技能重复使用硬币时，消耗自身的3级烟气 强度\n[WhenUse] 若自身的烟气 强度不低于10级，则使本技能的硬币威力+1",
+          "desc": "目标每带有3级[Smoke]强度，使本技能的硬币威力+1\n自身每带有3级[Smoke]强度，使本技能造成的伤害+10%\n本技能重复使用硬币时，消耗自身的3级[Smoke]强度\n[WhenUse] 若自身的[Smoke]强度不低于10级，则使本技能的硬币威力+1",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层烟气 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Smoke]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 目标每带有5级烟气 强度，重复使用本硬币1次(最多2次)"
+                  "desc": "[OnSucceedAttack] 目标每带有5级[Smoke]强度，重复使用本硬币1次(最多2次)"
                 }
               ]
             }
@@ -267,26 +267,26 @@
         {
           "level": 1,
           "name": "思想齿轮-解除",
-          "desc": "目标每带有3级烟气 强度，使本技能的拼点威力+1\n自身每带有3级烟气 强度，使本技能造成的伤害+20%\n[WhenUse] 若自身的烟气 强度不低于10级，则使本技能的硬币威力+2\n[EndSkill] 消耗自身所有烟气 ",
+          "desc": "目标每带有3级[Smoke]强度，使本技能的拼点威力+1\n自身每带有3级[Smoke]强度，使本技能造成的伤害+20%\n[WhenUse] 若自身的[Smoke]强度为10级，则使本技能的硬币威力+2\n[EndSkill] 消耗自身所有[Smoke]",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加3级烟气 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Smoke]强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层烟气 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Smoke]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 目标每带有3级烟气 强度，重复使用本硬币1次(最多3次)"
+                  "desc": "[OnSucceedAttack] 目标每带有3级[Smoke]强度，重复使用本硬币1次(最多3次)"
                 }
               ]
             }
@@ -300,7 +300,7 @@
         {
           "level": 1,
           "name": "思想齿轮-蒸汽",
-          "desc": "[WhenUse] 使自身增加5级烟气 强度并对自身施加2层烟气\n[WhenUse] 若自身的烟气 强度不低于10级，则下回合使自身获得2层加算硬币强化 与3层守护 (每回合最多1次)",
+          "desc": "[WhenUse] 使自身增加5级[Smoke]强度并对自身施加2层[Smoke]\n[WhenUse] 若自身的[Smoke]强度不低于10级，则下回合使自身获得2层[PlusCoinValueUp]与3层[Protection](每回合最多1次)",
           "coinlist": [
             {}
           ]

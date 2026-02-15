@@ -6,12 +6,12 @@
         {
           "level": 1,
           "name": "无法洗清的罪…",
-          "desc": "[WhenUse] 使自身增加20级流血 强度并对自身施加1层流血 ",
+          "desc": "[WhenUse] 使自身增加20级[Laceration]强度并对自身施加1层[Laceration]",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Laceration]强度"
                 }
               ]
             }
@@ -25,19 +25,19 @@
         {
           "level": 1,
           "name": "应得的惩罚…",
-          "desc": "[WhenUse] 使自身增加20级流血 强度并对自身施加1层流血 ",
+          "desc": "[WhenUse] 使自身增加20级[Laceration]强度并对自身施加1层[Laceration]",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层流血 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]"
                 }
               ]
             }
@@ -51,12 +51,12 @@
         {
           "level": 1,
           "name": "今天有想过血吗？",
-          "desc": "[WhenUse] 使自身增加10级流血 强度\n[WhenUse] 消耗至多30层血宴 ，并使现存体力最低的1名友方单位(本体与部位)恢复(消耗的血宴 层数×2)点体力(不包括自身；向下取整)",
+          "desc": "[WhenUse] 使自身增加10级[Laceration]强度\n[WhenUse] 消耗至多30层[BloodDinner]，并使现存体力最低的1名友方单位(本体与部位)恢复(消耗的[BloodDinner]层数×2)点体力(不包括自身；向下取整)",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
                 }
               ]
             },
@@ -77,7 +77,7 @@
         {
           "level": 1,
           "name": "还在想着血吗？",
-          "desc": "[WhenUse] 使自身增加10级流血 强度\n[WhenUse] 消耗至多20层血宴 ，并使自身与现存体力最低的1名友方单位(本体与部位)恢复(消耗的血宴 层数×2)点体力\n- 若没有剩余友方单位存活，则改为使自身恢复的体力变为2倍",
+          "desc": "[WhenUse] 使自身增加10级[Laceration]强度\n[WhenUse] 消耗至多20层[BloodDinner]，并使自身与现存体力最低的1名友方单位(本体与部位)恢复(消耗的[BloodDinner]层数×2)点体力\n- 若没有剩余友方单位存活，则改为使自身恢复的体力变为2倍",
           "coinlist": [
             {
               "coindescs": [
@@ -85,10 +85,10 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层流血 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若现存体力不低于50%，则触发自身的流血 。消耗自身的1层流血 "
+                  "desc": "[OnSucceedAttack] 若现存体力不低于50%，则触发自身的[Laceration]。消耗自身的1层[Laceration]"
                 }
               ]
             },
@@ -98,7 +98,7 @@
                   "desc": "[OnSucceedAttack] 使自身获得3层[WornHeart]与3层[BloodyHand]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若[WornHeart]的层数为10层，则使自身额外获得3层[BloodyHand]，下回合使自身获得1层攻击等级提升 "
+                  "desc": "[OnSucceedAttack] 若[WornHeart]的层数为10层，则使自身额外获得3层[BloodyHand]，下回合使自身获得1层[AttackUp]"
                 }
               ]
             }
@@ -112,12 +112,12 @@
         {
           "level": 1,
           "name": "更多的血…！",
-          "desc": "[WhenUse] 消耗至多50层血宴 ，每消耗10层血宴 ，使自身获得1层[BloodyHand]\n[WhenUse] 使自身增加10级流血 强度\n[WhenUse] 使自身获得3层[BloodyHand]",
+          "desc": "[WhenUse] 消耗至多50层[BloodDinner]，每消耗10层[BloodDinner]，使自身获得1层[BloodyHand]\n[WhenUse] 使自身增加10级[Laceration]强度\n[WhenUse] 使自身获得3层[BloodyHand]",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 目标每带有5级流血 强度，使自身获得1层[BloodyHand](最多5层)"
+                  "desc": "[OnSucceedAttack] 目标每带有5级[Laceration]强度，使自身获得1层[BloodyHand](最多5层)"
                 }
               ]
             }
@@ -131,7 +131,7 @@
         {
           "level": 1,
           "name": "如此丰富…",
-          "desc": "[WhenUse] 若目标的流血 强度不低于6级，则使本技能的硬币威力+1\n[WhenUse] 消耗至多30层血宴 ，每消耗10层血宴 ，使本技能的硬币威力+1(第1枚硬币攻击结束后解除本效果)\n[DefeatDuel] 下回合对自身施加1层易损 ",
+          "desc": "[WhenUse] 若目标的[Laceration]强度不低于6级，则使本技能的硬币威力+1\n[WhenUse] 消耗至多30层[BloodDinner]，每消耗10层[BloodDinner]，使本技能的硬币威力+1(第1枚硬币攻击结束后解除本效果)\n[DefeatDuel] 下回合对自身施加1层[Vulnerable]",
           "coinlist": [
             {
               "coindescs": [
@@ -139,14 +139,14 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加4级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Laceration]强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层流血 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]"
                 }
               ]
             },
@@ -156,10 +156,10 @@
                   "desc": "[OnSucceedAttack] 使自身恢复相当于本硬币伤害量的体力(最多30点)"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若本技能消耗了30层血宴 ，且自身带有的[BloodyHand_3rd]的层数不低于30层，则重复使用本硬币1次"
+                  "desc": "[OnSucceedAttack] 若本技能消耗了30层[BloodDinner]，且自身带有的[BloodyHand_3rd]的层数不低于30层，则重复使用本硬币1次"
                 },
                 {
-                  "desc": "- 若本技能未消耗血宴 ，则使自身增加20级流血 强度"
+                  "desc": "- 若本技能未消耗[BloodDinner]，则使自身增加20级[Laceration]强度"
                 }
               ]
             }
@@ -173,7 +173,7 @@
         {
           "level": 1,
           "name": "为家族的牺牲",
-          "desc": "[StartBattle] 若现存体力不低于50%，则触发自身的流血 (最多3次；根据触发的流血 次数，相应使自身的流血 层数减少；不会因该伤害而陷入混乱)\n[StartBattle] 使全体友方单位恢复5点理智值(包括自身)",
+          "desc": "[StartBattle] 若现存体力不低于50%，则触发自身的[Laceration](最多3次；根据触发的[Laceration]次数，相应使自身的[Laceration]层数减少；不会因该伤害而陷入混乱)\n[StartBattle] 使全体友方单位恢复5点理智值(包括自身)",
           "coinlist": [
             {
               "coindescs": [
@@ -192,19 +192,19 @@
         {
           "level": 1,
           "name": "血…",
-          "desc": "[WhenUse] 若目标的流血 强度不低于6级，则使本技能造成的伤害+20%",
+          "desc": "[WhenUse] 若目标的[Laceration]强度不低于6级，则使本技能造成的伤害+20%",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层流血 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]"
                 }
               ]
             }
@@ -229,7 +229,7 @@
                   "desc": "[OnSucceedAttack] 对目标施加4层[AffectionTeddy]"
                 },
                 {
-                  "desc": "[WinDuelAttack] 下回合对目标施加2层易损 "
+                  "desc": "[WinDuelAttack] 下回合对目标施加2层[Vulnerable]"
                 }
               ]
             }
@@ -248,10 +248,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Laceration]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层尖钉 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[NailPersonality]"
                 }
               ]
             }
@@ -270,7 +270,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层流血 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]"
                 }
               ]
             },
@@ -291,7 +291,7 @@
         {
           "level": 1,
           "name": "谨慎示爱",
-          "desc": "[DuelCounter]\n[WhenUse] 下回合对目标施加2层破绽 \n[WhenUse] 对目标施加1层诅咒 ",
+          "desc": "[DuelCounter]\n[WhenUse] 下回合对目标施加2层[Disarming]\n[WhenUse] 对目标施加1层诅咒 ",
           "coinlist": [
             {
               "coindescs": [
@@ -299,7 +299,7 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标带有[AffectionTeddy]，则消耗目标的[AffectionTeddy]并对其施加相应层数的诅咒 与尖钉 (最多消耗4层)"
+                  "desc": "[OnSucceedAttack] 若目标带有[AffectionTeddy]，则消耗目标的[AffectionTeddy]并对其施加相应层数的诅咒 与[NailPersonality](最多消耗4层)"
                 },
                 {
                   "desc": "[OnSucceedAttack] 若目标的诅咒 层数不低于4层，则消耗目标的4层诅咒 并对其施加1层[CursePackage]"
@@ -330,7 +330,7 @@
                   "desc": "[OnSucceedAttack] 对目标施加3层诅咒 "
                 },
                 {
-                  "desc": "[WinDuelAttack] 对目标施加6层尖钉 "
+                  "desc": "[WinDuelAttack] 对目标施加6层[NailPersonality]"
                 }
               ]
             }
@@ -381,7 +381,7 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加4层尖钉 "
+                  "desc": "[OnSucceedAttack] 对目标施加4层[NailPersonality]"
                 },
                 {
                   "desc": "[OnSucceedAttack] 消耗目标所有[AffectionTeddy]\n- 若自身拼点胜利，则使目标的混乱阈值前移(消耗的[AffectionTeddy]层数×10)"
@@ -578,7 +578,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合使自身获得2层呼吸法 "
+                  "desc": "[OnSucceedAttack] 下回合使自身获得2层[Breath]"
                 }
               ]
             }
@@ -812,7 +812,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加8级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加8级[Laceration]强度"
                 }
               ]
             },
@@ -838,14 +838,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层流血 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层流血 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]"
                 }
               ]
             },
@@ -874,7 +874,7 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] 使目标增加8级流血 强度"
+                  "desc": "[OnSucceedAttackHead] 使目标增加8级[Laceration]强度"
                 },
                 {
                   "desc": "[OnSucceedAttackHead] 使自身恢复相当于本技能伤害量的体力"
@@ -899,13 +899,13 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 目标每带有1级流血 强度，使本硬币造成的伤害+10%(最多+200%)"
+                  "desc": "[OnSucceedAttack] 目标每带有1级[Laceration]强度，使本硬币造成的伤害+10%(最多+200%)"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 每有1层血宴 ，使本硬币造成的伤害+10%(最多+100%)"
+                  "desc": "[OnSucceedAttack] 每有1层[BloodDinner]，使本硬币造成的伤害+10%(最多+100%)"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加3级流血 强度并对其施加2层流血 "
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Laceration]强度并对其施加2层[Laceration]"
                 }
               ]
             }
@@ -924,14 +924,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合使自身获得2层防御等级提升 "
+                  "desc": "[OnSucceedAttack] 下回合使自身获得2层[DefenseUp]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合使自身获得2层防御等级提升 "
+                  "desc": "[OnSucceedAttack] 下回合使自身获得2层[DefenseUp]"
                 }
               ]
             }
@@ -950,21 +950,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合使自身获得2层防御等级提升 "
+                  "desc": "[OnSucceedAttack] 下回合使自身获得2层[DefenseUp]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合使自身获得2层防御等级提升 "
+                  "desc": "[OnSucceedAttack] 下回合使自身获得2层[DefenseUp]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合使自身获得2层防御等级提升 "
+                  "desc": "[OnSucceedAttack] 下回合使自身获得2层[DefenseUp]"
                 }
               ]
             }
@@ -985,7 +985,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 根据自身的防御等级提升 层数，在下回合使自身获得相应层数的攻击等级提升 "
+                  "desc": "[OnSucceedAttack] 根据自身的[DefenseUp]层数，在下回合使自身获得相应层数的攻击等级提升 "
                 }
               ]
             }
@@ -999,7 +999,7 @@
         {
           "level": 1,
           "name": "叽叽",
-          "desc": "[StartBattle] 使自身获得(自身的防御等级提升 层数×2)点护盾(最多20点，每回合最多2次)",
+          "desc": "[StartBattle] 使自身获得(自身的[DefenseUp]层数×2)点护盾(最多20点，每回合最多2次)",
           "coinlist": [
             {
               "coindescs": [
@@ -1018,12 +1018,12 @@
         {
           "level": 1,
           "name": "荆棘之鞭",
-          "desc": "[WhenUse] 若目标的破裂 强度不低于6级，则使本技能的拼点威力+1",
+          "desc": "[WhenUse] 若目标的[Burst]强度不低于6级，则使本技能的拼点威力+1",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加4级破裂 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Burst]强度"
                 }
               ]
             }
@@ -1136,13 +1136,13 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加4级破裂 强度并对其施加2层破裂 "
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Burst]强度并对其施加2层[Burst]"
                 },
                 {
                   "desc": "[OnSucceedAttack] 若目标陷入混乱或带有[ThornNoose]，则使本硬币造成的伤害+30%"
                 },
                 {
-                  "desc": "[EnemyKill] 使全体敌方单位增加(目标的破裂 层数×2)级破裂 强度(最多10级)"
+                  "desc": "[EnemyKill] 使全体敌方单位增加(目标的[Burst]层数×2)级[Burst]强度(最多10级)"
                 }
               ]
             }
@@ -1183,7 +1183,7 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层破裂 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]"
                 }
               ]
             }
@@ -1202,7 +1202,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加4级破裂 强度并对其施加2层破裂 "
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Burst]强度并对其施加2层[Burst]"
                 }
               ]
             }
@@ -1216,19 +1216,19 @@
         {
           "level": 1,
           "name": "高贵地…",
-          "desc": "[WhenUse] 若目标的流血 强度不低于6级，则使本技能的硬币威力+1",
+          "desc": "[WhenUse] 若目标的[Laceration]强度不低于6级，则使本技能的硬币威力+1",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加4级破裂 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Burst]强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加4级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Laceration]强度"
                 }
               ]
             }
@@ -1351,14 +1351,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Laceration]强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Laceration]强度"
                 }
               ]
             }
@@ -1403,27 +1403,27 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级破裂 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Burst]强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级破裂 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Burst]强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标造成(其流血 强度×流血 层数)点色欲伤害"
+                  "desc": "[OnSucceedAttack] 对目标造成(其[Laceration]强度×[Laceration]层数)点色欲伤害"
                 }
               ]
             }
@@ -1445,10 +1445,10 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Laceration]强度"
                 },
                 {
-                  "desc": "[WinDuelAttack] 使目标增加3级破裂 强度"
+                  "desc": "[WinDuelAttack] 使目标增加3级[Burst]强度"
                 },
                 {
                   "desc": "[DefeatDuelAttack] 消耗1层[RegainedStrength]"
@@ -1461,10 +1461,10 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层流血 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]"
                 },
                 {
-                  "desc": "[WinDuelAttack] 使目标增加3级破裂 强度"
+                  "desc": "[WinDuelAttack] 使目标增加3级[Burst]强度"
                 },
                 {
                   "desc": "[DefeatDuelAttack] 消耗1层[RegainedStrength]"
@@ -1474,7 +1474,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Laceration]强度"
                 }
               ]
             }
@@ -1488,7 +1488,7 @@
         {
           "level": 1,
           "name": "血之欲望",
-          "desc": "[WhenUse] 消耗至多40层血宴 ，每消耗10层血宴 ，使自身获得1层[RegainedStrength]并恢复5点理智值",
+          "desc": "[WhenUse] 消耗至多40层[BloodDinner]，每消耗10层[BloodDinner]，使自身获得1层[RegainedStrength]并恢复5点理智值",
           "coinlist": [
             {
               "coindescs": [
@@ -1496,7 +1496,7 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层流血 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Laceration]"
                 }
               ]
             },
@@ -1506,7 +1506,7 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层流血 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Laceration]"
                 }
               ]
             },
@@ -1516,7 +1516,7 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层流血 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Laceration]"
                 }
               ]
             },
@@ -1526,7 +1526,7 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加4级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Laceration]强度"
                 }
               ]
             }
@@ -1567,7 +1567,7 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加8级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加8级[Laceration]强度"
                 },
                 {
                   "desc": "[OnSucceedAttack] 消耗2层[RegainedStrength]"
@@ -1608,14 +1608,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度并对其施加2层流血 "
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度并对其施加2层[Laceration]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度并对其施加2层流血 "
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度并对其施加2层[Laceration]"
                 }
               ]
             }
@@ -1634,28 +1634,28 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层流血 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Laceration]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层流血 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Laceration]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
                 }
               ]
             }
@@ -1685,7 +1685,7 @@
                   "desc": "[OnSucceedAttack] 使目标陷入混乱并在下回合对其施加[Penetration] "
                 },
                 {
-                  "desc": "[EndCoin] 使目标的流血 强度减少25级，使自身增加相应的流血 强度并获得相应层数的血宴 "
+                  "desc": "[EndCoin] 使目标的[Laceration]强度减少25级，使自身增加相应的[Laceration]强度并获得相应层数的[BloodDinner]"
                 }
               ]
             }
@@ -1744,25 +1744,25 @@
         {
           "level": 1,
           "name": "叽咿咿咿",
-          "desc": "[WhenUse] 使自身增加2级呼吸法 强度",
+          "desc": "[WhenUse] 使自身增加2级[Breath]强度",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身获得2层呼吸法 "
+                  "desc": "[OnSucceedAttack] 使自身获得2层[Breath]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若自身的速度值不低于7，则使目标增加3级破裂 强度"
+                  "desc": "[OnSucceedAttack] 若自身的速度值不低于7，则使目标增加3级[Burst]强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加3级呼吸法 强度"
+                  "desc": "[OnSucceedAttack] 使自身增加3级[Breath]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若自身的速度值不低于7，则使目标增加3级破裂 强度"
+                  "desc": "[OnSucceedAttack] 若自身的速度值不低于7，则使目标增加3级[Burst]强度"
                 }
               ]
             }
@@ -1781,10 +1781,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加3级呼吸法 强度"
+                  "desc": "[OnSucceedAttack] 使自身增加3级[Breath]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若自身的速度值不低于7，则对目标施加3层破裂 "
+                  "desc": "[OnSucceedAttack] 若自身的速度值不低于7，则对目标施加3层[Burst]"
                 },
                 {
                   "desc": "[CriticalOnSucceedAttack] 使本硬币暴击时造成的伤害+50%"
@@ -1806,30 +1806,30 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身获得4层呼吸法 "
+                  "desc": "[OnSucceedAttack] 使自身获得4层[Breath]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若自身的速度值不低于7，则使目标增加3级破裂 强度并对目标施加1层破裂 "
+                  "desc": "[OnSucceedAttack] 若自身的速度值不低于7，则使目标增加3级[Burst]强度并对目标施加1层[Burst]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加5级呼吸法 强度"
+                  "desc": "[OnSucceedAttack] 使自身增加5级[Breath]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若自身的速度值不低于7，则使目标增加3级破裂 强度并对目标施加1层破裂 "
+                  "desc": "[OnSucceedAttack] 若自身的速度值不低于7，则使目标增加3级[Burst]强度并对目标施加1层[Burst]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使自身增加5级呼吸法 强度"
+                  "desc": "[OnSucceedAttack] 使自身增加5级[Breath]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若自身的速度值不低于7，则使目标增加3级破裂 强度并对目标施加1层破裂 "
+                  "desc": "[OnSucceedAttack] 若自身的速度值不低于7，则使目标增加3级[Burst]强度并对目标施加1层[Burst]"
                 }
               ]
             },
@@ -1839,7 +1839,7 @@
                   "desc": "[CriticalOnSucceedAttack] 使本硬币暴击时造成的伤害+100%"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 目标每带有1级破裂 强度，使本硬币造成的伤害+5%(最多+50%)"
+                  "desc": "[OnSucceedAttack] 目标每带有1级[Burst]强度，使本硬币造成的伤害+5%(最多+50%)"
                 }
               ]
             }
@@ -1858,7 +1858,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 下回合对目标施加1层易损 "
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层[Vulnerable]"
                 }
               ]
             }
@@ -1872,7 +1872,7 @@
         {
           "level": 1,
           "name": "叽叽叽叽",
-          "desc": "[OnSucceedEvade] 下回合使自身获得1层迅捷 ",
+          "desc": "[OnSucceedEvade] 下回合使自身获得1层[Agility]",
           "coinlist": [
             {
               "coindescs": [
@@ -1890,7 +1890,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "堂吉诃德派硬血奥义- La Sangre",
+          "name": "堂吉诃德派硬血奥义-La Sangre",
           "desc": "",
           "coinlist": [
             {

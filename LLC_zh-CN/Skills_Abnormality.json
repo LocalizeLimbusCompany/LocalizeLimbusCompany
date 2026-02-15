@@ -439,7 +439,7 @@
                   "desc": "[DefeatDuel] 对自身造成20点伤害"
                 },
                 {
-                  "desc": "[DefeatDuel] 使自身失去1层光辉 "
+                  "desc": "[DefeatDuel] 使自身失去1层金光 "
                 }
               ]
             }
@@ -4668,7 +4668,7 @@
                   "desc": "[OnSucceedAttack] 根据目标带有的破裂 强度，相应使其增加震颤 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标震颤引爆 "
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]"
                 }
               ]
             }
@@ -4795,7 +4795,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 目标每带有1级流血 强度，则使自身恢复体力上限1%的体力\n消耗所有流血 层数"
+                  "desc": "[OnSucceedAttack] 目标每带有1级[Laceration]强度，则使自身恢复体力上限1%的体力\n消耗所有[Laceration]层数"
                 }
               ]
             }
@@ -5029,14 +5029,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层流血 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层流血 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]"
                 }
               ]
             }
@@ -5050,7 +5050,7 @@
         {
           "level": 1,
           "name": "捕食",
-          "desc": "若目标的流血 强度不低于5级，则使本技能的硬币威力+1",
+          "desc": "若目标的[Laceration]强度不低于5级，则使本技能的硬币威力+1",
           "coinlist": [
             {
               "coindescs": [
@@ -5069,26 +5069,26 @@
         {
           "level": 1,
           "name": "饥饿之翼",
-          "desc": "若自身的[Hunger]层数不低于3层，则使本技能的硬币威力+1\n若目标的流血 强度不低于5级，则使本技能的硬币威力+1",
+          "desc": "若自身的[Hunger]层数不低于3层，则使本技能的硬币威力+1\n若目标的[Laceration]强度不低于5级，则使本技能的硬币威力+1",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Laceration]强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Laceration]强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Laceration]强度"
                 }
               ]
             }
@@ -5102,7 +5102,7 @@
         {
           "level": 1,
           "name": "饥饿狂暴",
-          "desc": "[CantIdentify]\n优先指定带有[PreparedMeat]的目标\n若目标的流血 强度不低于5级，则使本技能的硬币威力+1\n若目标带有[PreparedMeat]，则使本技能的硬币威力+10\n每有1条手臂部位被破坏，使本技能的硬币威力-5\n[TargetKill] 本场战斗中，使所有部位获得2层强壮 (可叠加)",
+          "desc": "[CantIdentify]\n优先指定带有[PreparedMeat]的目标\n若目标的[Laceration]强度不低于5级，则使本技能的硬币威力+1\n若目标带有[PreparedMeat]，则使本技能的硬币威力+10\n每有1条手臂部位被破坏，使本技能的硬币威力-5\n[TargetKill] 本场战斗中，使所有部位获得2层[Enhancement](可叠加)",
           "coinlist": [
             {
               "coindescs": [
@@ -5174,7 +5174,7 @@
         {
           "level": 1,
           "name": "贪食",
-          "desc": "若目标的流血 强度不低于5级，则使本技能的硬币威力+1",
+          "desc": "若目标的[Laceration]强度不低于5级，则使本技能的硬币威力+1",
           "coinlist": [
             {
               "coindescs": [
@@ -5182,7 +5182,7 @@
                   "desc": "[OnSucceedAttack] 使本体恢复10点体力"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层流血 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]"
                 }
               ]
             }
@@ -5196,26 +5196,26 @@
         {
           "level": 1,
           "name": "小小翅振",
-          "desc": "若目标的流血 强度不低于5级，则使本技能的硬币威力+1",
+          "desc": "若目标的[Laceration]强度不低于5级，则使本技能的硬币威力+1",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加1级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
                 }
               ]
             }

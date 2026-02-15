@@ -7,12 +7,12 @@
           "level": 1,
           "name": "往昔",
           "abName": "某日的肖像",
-          "desc": "[EndSkill] 随机使目标增加共计6+(忧郁共鸣数)级沉沦 强度",
+          "desc": "[EndSkill] 随机使目标增加共计6+(忧郁共鸣数)级[Sinking]强度",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标的沉沦 强度不低于6级，则下回合对其施加1层束缚 "
+                  "desc": "[OnSucceedAttack] 若目标的[Sinking]强度不低于6级，则下回合对其施加1层[Binding]"
                 }
               ]
             }
@@ -22,12 +22,12 @@
           "level": 3,
           "name": "往昔",
           "abName": "某日的肖像",
-          "desc": "[EndSkill] 随机使目标增加共计6+(忧郁共鸣数)级沉沦 强度",
+          "desc": "[EndSkill] 随机使目标增加共计6+(忧郁共鸣数)级[Sinking]强度",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标的沉沦 强度不低于6级，则下回合对其施加2层束缚 "
+                  "desc": "[OnSucceedAttack] 若目标的[Sinking]强度不低于6级，则下回合对其施加2层[Binding]"
                 }
               ]
             }
@@ -37,12 +37,12 @@
           "level": 4,
           "name": "往昔",
           "abName": "某日的肖像",
-          "desc": "[EndSkill] 随机使目标增加共计6+(忧郁共鸣数<style=\"highlight\">×1.5</style>)级沉沦 强度",
+          "desc": "[EndSkill] 随机使目标增加共计6+(忧郁共鸣数<style=\"highlight\">×1.5</style>)级[Sinking]强度",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标的沉沦 强度不低于6级，则下回合对其施加2层束缚 "
+                  "desc": "[OnSucceedAttack] 若目标的[Sinking]强度不低于6级，则下回合对其施加2层[Binding]"
                 }
               ]
             }
@@ -62,10 +62,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度，并在下回合对其施加2层束缚 "
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Sinking]强度，并在下回合对其施加2层[Binding]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标的沉沦 强度不低于6级，则下回合对其施加1层束缚 "
+                  "desc": "[OnSucceedAttack] 若目标的[Sinking]强度不低于6级，则下回合对其施加1层[Binding]"
                 }
               ]
             }
@@ -80,10 +80,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度，并在下回合对其施加2层束缚 "
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Sinking]强度，并在下回合对其施加2层[Binding]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标的沉沦 强度不低于6级，则下回合对其施加1层束缚 "
+                  "desc": "[OnSucceedAttack] 若目标的[Sinking]强度不低于6级，则下回合对其施加1层[Binding]"
                 }
               ]
             }
@@ -98,10 +98,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级沉沦 强度，并在下回合对其施加2层束缚 "
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Sinking]强度，并在下回合对其施加2层[Binding]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标的沉沦 强度不低于6级，则下回合对其施加2层束缚 "
+                  "desc": "[OnSucceedAttack] 若目标的[Sinking]强度不低于6级，则下回合对其施加2层[Binding]"
                 }
               ]
             }
@@ -116,7 +116,7 @@
           "level": 1,
           "name": "凶弹",
           "abName": "凶弹射手",
-          "desc": "指定体力最低的目标(优先友方单位)\n[BeforeAttack] 使自身获得(最大共鸣数+1)层[BoseProjektil](最多7层)\n[BeforeAttack] 自身每带有1层[BoseProjektil]，使自身增加1级呼吸法 强度(最多7级)\n[EndSkill] 消耗所有[BoseProjektil]",
+          "desc": "指定体力最低的目标(优先友方单位)\n[BeforeAttack] 使自身获得(最大共鸣数+1)层[BoseProjektil](最多7层)\n[BeforeAttack] 自身每带有1层[BoseProjektil]，使自身增加1级[Breath]强度(最多7级)\n[EndSkill] 消耗所有[BoseProjektil]",
           "coinlist": [
             {
               "coindescs": [
@@ -127,10 +127,10 @@
                   "desc": "若主要目标为友方单位，则自身每带有1层[BoseProjektil]，使本硬币造成的伤害+8%(最多+56%)"
                 },
                 {
-                  "desc": "[AllyKill] 使自身与随机2名友方单位增加2级呼吸法 强度"
+                  "desc": "[AllyKill] 使自身与随机2名友方单位增加2级[Breath]强度"
                 },
                 {
-                  "desc": "[AllyKillFail] 使自身增加1级呼吸法 强度"
+                  "desc": "[AllyKillFail] 使自身增加1级[Breath]强度"
                 }
               ]
             },
@@ -143,7 +143,7 @@
                   "desc": "自身每带有1层[BoseProjektil]，使本硬币暴击时造成的伤害+2%(最多+14%)"
                 },
                 {
-                  "desc": "[CriticalOnSucceedAttack] 使目标增加2级流血 强度"
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加2级[Laceration]强度"
                 }
               ]
             }
@@ -153,7 +153,7 @@
           "level": 3,
           "name": "凶弹",
           "abName": "凶弹射手",
-          "desc": "指定体力最低的目标(优先友方单位)\n[BeforeAttack] 使自身获得(最大共鸣数+1)层[BoseProjektil](最多7层)\n[BeforeAttack] 自身每带有1层[BoseProjektil]，使自身增加1级呼吸法 强度(最多7级)\n[EndSkill] 消耗所有[BoseProjektil]<style=\"highlight\"></style>",
+          "desc": "指定体力最低的目标(优先友方单位)\n[BeforeAttack] 使自身获得(最大共鸣数+1)层[BoseProjektil](最多7层)\n[BeforeAttack] 自身每带有1层[BoseProjektil]，使自身增加1级[Breath]强度(最多7级)\n[EndSkill] 消耗所有[BoseProjektil]<style=\"highlight\"></style>",
           "coinlist": [
             {
               "coindescs": [
@@ -164,13 +164,13 @@
                   "desc": "若主要目标为友方单位，则自身每带有1层[BoseProjektil]，使本硬币造成的伤害<style=\"highlight\">+10%(最多+70%)</style>"
                 },
                 {
-                  "desc": "[AllyKill] 使自身与随机2名友方单位增加3级呼吸法 强度<style=\"highlight\"></style>"
+                  "desc": "[AllyKill] 使自身与随机2名友方单位增加3级[Breath]强度<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "<style=\"highlight\">[AllyKill] 获得被击杀友方单位的1技能对应的1个E.G.O资源</style>"
                 },
                 {
-                  "desc": "[AllyKillFail] 使自身增加<style=\"highlight\">3</style>级呼吸法 强度"
+                  "desc": "[AllyKillFail] 使自身增加<style=\"highlight\">3</style>级[Breath]强度"
                 }
               ]
             },
@@ -183,7 +183,7 @@
                   "desc": "自身每带有1层[BoseProjektil]，使本硬币暴击时造成的伤害<style=\"highlight\">+5%(最多+35%)</style>"
                 },
                 {
-                  "desc": "[CriticalOnSucceedAttack] 使目标增加2级流血 强度<style=\"highlight\"></style>"
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加2级[Laceration]强度<style=\"highlight\"></style>"
                 }
               ]
             }
@@ -193,7 +193,7 @@
           "level": 4,
           "name": "凶弹",
           "abName": "凶弹射手",
-          "desc": "指定体力最低的目标(优先友方单位)\n[BeforeAttack] 使自身获得(最大共鸣数+1)层[BoseProjektil](最多7层)\n<style=\"highlight\">- 若该共鸣为傲慢共鸣，则改为使自身获得(最大共鸣数×2)层[BoseProjektil](最多7层)</style>\n[BeforeAttack] 自身每带有1层[BoseProjektil]，使自身增加1级呼吸法 强度(最多7级)\n[EndSkill] 消耗所有[BoseProjektil]",
+          "desc": "指定体力最低的目标(优先友方单位)\n[BeforeAttack] 使自身获得(最大共鸣数+1)层[BoseProjektil](最多7层)\n<style=\"highlight\">- 若该共鸣为傲慢共鸣，则改为使自身获得(最大共鸣数×2)层[BoseProjektil](最多7层)</style>\n[BeforeAttack] 自身每带有1层[BoseProjektil]，使自身增加1级[Breath]强度(最多7级)\n[EndSkill] 消耗所有[BoseProjektil]",
           "coinlist": [
             {
               "coindescs": [
@@ -204,13 +204,13 @@
                   "desc": "若主要目标为友方单位，则自身每带有1层[BoseProjektil]，使本硬币造成的伤害<style=\"highlight\">+15%(最多+105%)</style>"
                 },
                 {
-                  "desc": "[AllyKill] 使自身与随机2名友方单位增加3级呼吸法 强度<style=\"highlight\"></style>"
+                  "desc": "[AllyKill] 使自身与随机2名友方单位增加3级[Breath]强度<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "<style=\"highlight\">[AllyKill] 获得被击杀友方单位的1、2技能对应的E.G.O资源各1个</style>"
                 },
                 {
-                  "desc": "[AllyKillFail] 使自身增加<style=\"highlight\">3</style>级呼吸法 强度"
+                  "desc": "[AllyKillFail] 使自身增加<style=\"highlight\">3</style>级[Breath]强度"
                 }
               ]
             },
@@ -223,7 +223,7 @@
                   "desc": "自身每带有1层[BoseProjektil]，使本硬币暴击时造成的伤害<style=\"highlight\">+9%(最多+63%)</style>"
                 },
                 {
-                  "desc": "[CriticalOnSucceedAttack] 使目标增加<style=\"highlight\">3</style>级流血 强度"
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加<style=\"highlight\">3</style>级[Laceration]强度"
                 }
               ]
             }
@@ -238,7 +238,7 @@
           "level": 1,
           "name": "凶弹",
           "abName": "凶弹射手",
-          "desc": "[CantIdentify]\n指定体力最低的目标(优先友方单位)\n[BeforeAttack] 使自身获得(最大共鸣数+1)层[BoseProjektil](最多7层)\n[BeforeAttack] 自身每带有1层[BoseProjektil]，使本技能造成的伤害+2%(最多+14%)\n[BeforeAttack] 自身每带有1层[BoseProjektil]，使自身增加1级呼吸法 强度(最多7级)\n[EndSkill] 消耗所有[BoseProjektil]",
+          "desc": "[CantIdentify]\n指定体力最低的目标(优先友方单位)\n[BeforeAttack] 使自身获得(最大共鸣数+1)层[BoseProjektil](最多7层)\n[BeforeAttack] 自身每带有1层[BoseProjektil]，使本技能造成的伤害+2%(最多+14%)\n[BeforeAttack] 自身每带有1层[BoseProjektil]，使自身增加1级[Breath]强度(最多7级)\n[EndSkill] 消耗所有[BoseProjektil]",
           "coinlist": [
             {
               "coindescs": [
@@ -249,10 +249,10 @@
                   "desc": "若主要目标为友方单位，则自身每带有1层[BoseProjektil]，使本硬币造成的伤害+10%(最多+70%)"
                 },
                 {
-                  "desc": "若主要目标为友方单位，则自身每带有1级呼吸法 强度，使本硬币造成的伤害+2%(最多+50%)"
+                  "desc": "若主要目标为友方单位，则自身每带有1级[Breath]强度，使本硬币造成的伤害+2%(最多+50%)"
                 },
                 {
-                  "desc": "[AllyKill] 使自身与随机3名友方单位增加2级呼吸法 强度"
+                  "desc": "[AllyKill] 使自身与随机3名友方单位增加2级[Breath]强度"
                 },
                 {
                   "desc": "[AllyKill] 自身每带有1层[BoseProjektil]，使本技能下一枚硬币造成的伤害+2%(最多+14%)"
@@ -261,7 +261,7 @@
                   "desc": "[AllyKill] 获得被击杀友方单位的1、2技能对应的E.G.O资源各1个"
                 },
                 {
-                  "desc": "[AllyKillFail] 使自身增加1级呼吸法 强度"
+                  "desc": "[AllyKillFail] 使自身增加1级[Breath]强度"
                 }
               ]
             },
@@ -274,7 +274,7 @@
                   "desc": "自身每带有1层[BoseProjektil]，使本技能暴击时造成的伤害+2%(最多+14%)"
                 },
                 {
-                  "desc": "[CriticalOnSucceedAttack] 使目标增加3级流血 强度"
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加3级[Laceration]强度"
                 }
               ]
             }
@@ -284,7 +284,7 @@
           "level": 3,
           "name": "凶弹",
           "abName": "凶弹射手",
-          "desc": "[CantIdentify]\n指定体力最低的目标(优先友方单位)\n[BeforeAttack] 使自身获得(最大共鸣数+1)层[BoseProjektil](最多7层)\n[BeforeAttack] 自身每带有1层[BoseProjektil]，使本技能造成的伤害<style=\"highlight\">+3%(最多+21%)</style>\n[BeforeAttack] 自身每带有1层[BoseProjektil]，使自身增加1级呼吸法 强度(最多7级)\n[EndSkill] 消耗所有[BoseProjektil]",
+          "desc": "[CantIdentify]\n指定体力最低的目标(优先友方单位)\n[BeforeAttack] 使自身获得(最大共鸣数+1)层[BoseProjektil](最多7层)\n[BeforeAttack] 自身每带有1层[BoseProjektil]，使本技能造成的伤害<style=\"highlight\">+3%(最多+21%)</style>\n[BeforeAttack] 自身每带有1层[BoseProjektil]，使自身增加1级[Breath]强度(最多7级)\n[EndSkill] 消耗所有[BoseProjektil]",
           "coinlist": [
             {
               "coindescs": [
@@ -295,10 +295,10 @@
                   "desc": "若主要目标为友方单位，则自身每带有1层[BoseProjektil]，使本硬币造成的伤害<style=\"highlight\">+12%(最多+84%)</style>"
                 },
                 {
-                  "desc": "若主要目标为友方单位，则自身每带有1级呼吸法 强度，使本硬币造成的伤害+2%(最多+50%)<style=\"highlight\"></style>"
+                  "desc": "若主要目标为友方单位，则自身每带有1级[Breath]强度，使本硬币造成的伤害+2%(最多+50%)<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[AllyKill] 使自身与随机3名友方单位增加<style=\"highlight\">3</style>级呼吸法 强度"
+                  "desc": "[AllyKill] 使自身与随机3名友方单位增加<style=\"highlight\">3</style>级[Breath]强度"
                 },
                 {
                   "desc": "[AllyKill] 自身每带有1层[BoseProjektil]，使本技能下一枚硬币造成的伤害<style=\"highlight\">+5%(最多+35%)</style>"
@@ -307,7 +307,7 @@
                   "desc": "<style=\"highlight\">[AllyKill] 获得被击杀友方单位的1、2、3技能对应的E.G.O资源各1个</style>"
                 },
                 {
-                  "desc": "[AllyKillFail] 使自身增加<style=\"highlight\">2</style>级呼吸法 强度"
+                  "desc": "[AllyKillFail] 使自身增加<style=\"highlight\">2</style>级[Breath]强度"
                 }
               ]
             },
@@ -320,7 +320,7 @@
                   "desc": "自身每带有1层[BoseProjektil]，使本技能暴击时造成的伤害<style=\"highlight\">+3%(最多+21%)</style>"
                 },
                 {
-                  "desc": "[CriticalOnSucceedAttack] 使目标增加<style=\"highlight\">4</style>级流血 强度"
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加<style=\"highlight\">4</style>级[Laceration]强度"
                 }
               ]
             }
@@ -330,7 +330,7 @@
           "level": 4,
           "name": "凶弹",
           "abName": "凶弹射手",
-          "desc": "[CantIdentify]\n指定体力最低的目标(优先友方单位)\n[BeforeAttack] 使自身获得(最大共鸣数+1)层[BoseProjektil](最多7层)\n<style=\"highlight\">- 若该共鸣为傲慢共鸣，则改为使自身获得(最大共鸣数×2)层[BoseProjektil](最多7层)</style>\n[BeforeAttack] 自身每带有1层[BoseProjektil]，使本技能造成的伤害<style=\"highlight\">+4%(最多+28%)</style>\n[BeforeAttack] 自身每带有1层[BoseProjektil]，使自身增加1级呼吸法 强度(最多7级)\n[EndSkill] 消耗所有[BoseProjektil]",
+          "desc": "[CantIdentify]\n指定体力最低的目标(优先友方单位)\n[BeforeAttack] 使自身获得(最大共鸣数+1)层[BoseProjektil](最多7层)\n<style=\"highlight\">- 若该共鸣为傲慢共鸣，则改为使自身获得(最大共鸣数×2)层[BoseProjektil](最多7层)</style>\n[BeforeAttack] 自身每带有1层[BoseProjektil]，使本技能造成的伤害<style=\"highlight\">+4%(最多+28%)</style>\n[BeforeAttack] 自身每带有1层[BoseProjektil]，使自身增加1级[Breath]强度(最多7级)\n[EndSkill] 消耗所有[BoseProjektil]",
           "coinlist": [
             {
               "coindescs": [
@@ -341,13 +341,13 @@
                   "desc": "若主要目标为友方单位，则自身每带有1层[BoseProjektil]，使本硬币造成的伤害+15%(最多+105%)<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "若主要目标为友方单位，则自身每带有1级呼吸法 强度，使本硬币造成的伤害+2%(最多+50%)<style=\"highlight\"></style>"
+                  "desc": "若主要目标为友方单位，则自身每带有1级[Breath]强度，使本硬币造成的伤害+2%(最多+50%)<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "<style=\"highlight\">使本硬币暴击时造成的伤害+30%</style>"
                 },
                 {
-                  "desc": "[AllyKill] 使自身与随机3名友方单位增加<style=\"highlight\">4</style>级呼吸法 强度"
+                  "desc": "[AllyKill] 使自身与随机3名友方单位增加<style=\"highlight\">4</style>级[Breath]强度"
                 },
                 {
                   "desc": "[AllyKill] 自身每带有1层[BoseProjektil]，使本技能下一枚硬币造成的伤害<style=\"highlight\">+7%(最多+49%)</style>"
@@ -356,7 +356,7 @@
                   "desc": "[AllyKill] 获得被击杀友方单位的1、2、3技能对应的E.G.O资源各1个<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[AllyKillFail] 使自身增加<style=\"highlight\">3</style>级呼吸法 强度"
+                  "desc": "[AllyKillFail] 使自身增加<style=\"highlight\">3</style>级[Breath]强度"
                 }
               ]
             },
@@ -369,7 +369,7 @@
                   "desc": "<style=\"highlight\">自身每带有1层[BoseProjektil]，使本技能暴击时造成的伤害+4%(最多+28%)</style>"
                 },
                 {
-                  "desc": "[CriticalOnSucceedAttack] 使目标增加<style=\"highlight\">5</style>级流血 强度"
+                  "desc": "[CriticalOnSucceedAttack] 使目标增加<style=\"highlight\">5</style>级[Laceration]强度"
                 }
               ]
             }

@@ -7,12 +7,12 @@
           "level": 1,
           "name": "荆棘花园",
           "abName": "玫瑰告示牌",
-          "desc": "[BeforeAttack] 若最大共鸣数不低于3，则使本技能的攻击容量+1\n[WhenUse] 使(1+最大共鸣数)名友方单位获得1层该罪孽属性的伤害强化 与1层该罪孽属性的威力提升 \n- 若该共鸣数不低于4，则使其额外获得1层该罪孽属性的伤害强化 ",
+          "desc": "[BeforeAttack] 若最大共鸣数不低于3，则使本技能的攻击容量+1\n[WhenUse] 使(1+最大共鸣数)名友方单位获得1层该罪孽属性的伤害强化与1层该罪孽属性的威力提升\n- 若该共鸣数不低于4，则使其额外获得1层该罪孽属性的伤害强化",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[EndSkill] 使现存体力比例最低的1名友方单位恢复其体力上限15%的体力\n- 额外使(最大共鸣数-2)名友方单位恢复体力 (最多3名)"
+                  "desc": "[EndSkill] 使现存体力比例最低的1名友方单位恢复其体力上限15%的体力\n- 额外使(最大共鸣数-2)名友方单位恢复体力(最多3名)"
                 }
               ]
             }
@@ -22,12 +22,12 @@
           "level": 3,
           "name": "荆棘花园",
           "abName": "玫瑰告示牌",
-          "desc": "[BeforeAttack] 使本技能的攻击容量+(最大共鸣数-2)(最多+2)\n[WhenUse] 使(2+最大共鸣数)名友方单位获得1层该罪孽属性的伤害强化 与1层该罪孽属性的威力提升 \n- 若该共鸣数不低于4，则使其额外获得1层该罪孽属性的伤害强化 \n- 若该共鸣数不低于5，则使其额外获得1层该罪孽属性的威力提升 ",
+          "desc": "[BeforeAttack] 使本技能的攻击容量+(最大共鸣数-2)(最多+2)\n[WhenUse] 使(2+最大共鸣数)名友方单位获得1层该罪孽属性的伤害强化与1层该罪孽属性的威力提升\n- 若该共鸣数不低于4，则使其额外获得1层该罪孽属性的伤害强化\n- 若该共鸣数不低于5，则使其额外获得1层该罪孽属性的威力提升",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[EndSkill] 使现存体力比例最低的2名友方单位恢复其体力上限18%的体力\n- 额外使(最大共鸣数-2)名友方单位恢复体力 (最多3名)"
+                  "desc": "[EndSkill] 使现存体力比例最低的2名友方单位恢复其体力上限18%的体力\n- 额外使(最大共鸣数-2)名友方单位恢复体力(最多3名)"
                 }
               ]
             }
@@ -37,12 +37,12 @@
           "level": 4,
           "name": "荆棘花园",
           "abName": "玫瑰告示牌",
-          "desc": "[BeforeAttack] 使本技能的攻击容量+(最大共鸣数-2)(最多+3)\n[WhenUse] 使(4+最大共鸣数)名友方单位获得1层该罪孽属性的伤害强化 与1层该罪孽属性的威力提升 \n- 若该共鸣数不低于4，则使其额外获得1层该罪孽属性的伤害强化 \n- 若该共鸣数不低于5，则使其额外获得1层该罪孽属性的威力提升 \n- 若该完全共鸣数不低于6，则下回合使其再次获得以上状态",
+          "desc": "[BeforeAttack] 使本技能的攻击容量+(最大共鸣数-2)(最多+3)\n[WhenUse] 使(4+最大共鸣数)名友方单位获得1层该罪孽属性的伤害强化与1层该罪孽属性的威力提升\n- 若该共鸣数不低于4，则使其额外获得1层该罪孽属性的伤害强化\n- 若该共鸣数不低于5，则使其额外获得1层该罪孽属性的威力提升\n- 若该完全共鸣数不低于6，则下回合使其再次获得以上状态",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[EndSkill] 使现存体力比例最低的4名友方单位恢复其体力上限22%的体力\n- 额外使(最大共鸣数-2)名友方单位恢复体力 (最多3名)"
+                  "desc": "[EndSkill] 使现存体力比例最低的4名友方单位恢复其体力上限22%的体力\n- 额外使(最大共鸣数-2)名友方单位恢复体力(最多3名)"
                 }
               ]
             }
@@ -62,10 +62,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层伤害弱化 ，下回合对其施加2层束缚 。"
+                  "desc": "[OnSucceedAttack] 对目标施加1层[AttackDmgDown]，下回合对其施加2层[Binding]。"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层该罪孽属性的易损 与1层该罪孽属性的威力降低 \n- 若该共鸣数不低于4，则对其额外施加1层该罪孽属性的易损 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层最大共鸣罪孽属性的易损与1层该罪孽属性的威力降低\n- 若该共鸣数不低于4，则对其额外施加1层该罪孽属性的易损"
                 }
               ]
             }
@@ -80,10 +80,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层伤害弱化 ，下回合对其施加2层束缚 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层[AttackDmgDown]，下回合对其施加2层[Binding]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层该罪孽属性的易损 与1层该罪孽属性的威力降低 \n- 若该共鸣数不低于4，则对其额外施加1层该罪孽属性的易损 \n- 若该共鸣数不低于5，则对其额外施加1层该罪孽属性的威力降低 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层最大共鸣罪孽属性的易损与1层该罪孽属性的威力降低\n- 若该共鸣数不低于4，则对其额外施加1层该罪孽属性的易损\n- 若该共鸣数不低于5，则对其额外施加1层该罪孽属性的威力降低"
                 }
               ]
             }
@@ -98,10 +98,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层伤害弱化 ，下回合对其施加2层束缚 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层[AttackDmgDown]，下回合对其施加2层[Binding]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层该罪孽属性的易损 与1层该罪孽属性的威力降低 \n- 若该共鸣数不低于4，则对其额外施加1层该罪孽属性的易损 \n- 若该共鸣数不低于5，则对其额外施加1层该罪孽属性的威力降低 \n- 若该完全共鸣数不低于6，则下回合对其再次施加以上状态"
+                  "desc": "[OnSucceedAttack] 对目标施加1层最大共鸣罪孽属性的易损与1层该罪孽属性的威力降低\n- 若该共鸣数不低于4，则对其额外施加1层该罪孽属性的易损\n- 若该共鸣数不低于5，则对其额外施加1层该罪孽属性的威力降低\n- 若该完全共鸣数不低于6，则下回合对其再次施加以上状态"
                 }
               ]
             }
@@ -116,7 +116,7 @@
           "level": 1,
           "name": "往昔",
           "abName": "某日的肖像",
-          "desc": "[EndSkill] 使自身与除自身以外理智值最低的2名友方单位恢复10点理智值\n- 若目标受到攻击后存活，则消耗其5层沉沦 并额外恢复相当于其沉沦 强度点理智值(最大恢复量：20点)\n- 若击杀目标，则随机使2名敌方单位增加3级沉沦 强度(若是集中遭遇战，则改为随机部位)",
+          "desc": "[EndSkill] 使自身与除自身以外理智值最低的2名友方单位恢复10点理智值\n- 若目标受到攻击后存活，则消耗其5层[Sinking]并额外恢复相当于其[Sinking]强度点理智值(最大恢复量：20点)\n- 若击杀目标，则随机使2名敌方单位增加3级[Sinking]强度(若是集中遭遇战，则改为随机部位)",
           "coinlist": [
             {
               "coindescs": [
@@ -129,7 +129,7 @@
           "level": 3,
           "name": "往昔",
           "abName": "某日的肖像",
-          "desc": "[EndSkill] 使自身与除自身以外理智值最低的2名友方单位恢复<style=\"highlight\">12</style>点理智值\n- 若目标受到攻击后存活，则消耗其5层沉沦 并额外恢复相当于其沉沦 强度点理智值(最大恢复量：20点)\n- 若击杀目标，则随机使2名敌方单位增加3级沉沦 强度<style=\"highlight\">并对其施加1层诅咒 </style>(若是集中遭遇战，则改为随机部位)",
+          "desc": "[EndSkill] 使自身与除自身以外理智值最低的2名友方单位恢复<style=\"highlight\">12</style>点理智值\n- 若目标受到攻击后存活，则消耗其5层[Sinking]并额外恢复相当于其[Sinking]强度点理智值(最大恢复量：20点)\n- 若击杀目标，则随机使2名敌方单位增加3级[Sinking]强度<style=\"highlight\">并对其施加1层诅咒 </style>(若是集中遭遇战，则改为随机部位)",
           "coinlist": [
             {
               "coindescs": [
@@ -142,7 +142,7 @@
           "level": 4,
           "name": "往昔",
           "abName": "某日的肖像",
-          "desc": "[EndSkill] 使自身与除自身以外理智值最低的2名友方单位恢复<style=\"highlight\">15</style>点理智值\n- 若目标受到攻击后存活，则消耗其<style=\"highlight\">3</style>层沉沦 并额外恢复相当于其沉沦 强度点理智值(最大恢复量：20点)\n- 若击杀目标，则随机使3名敌方单位增加<style=\"highlight\">3</style>级沉沦 强度并对其施加1层诅咒 (若是集中遭遇战，则改为随机部位)",
+          "desc": "[EndSkill] 使自身与除自身以外理智值最低的2名友方单位恢复<style=\"highlight\">15</style>点理智值\n- 若目标受到攻击后存活，则消耗其<style=\"highlight\">3</style>层[Sinking]并额外恢复相当于其[Sinking]强度点理智值(最大恢复量：20点)\n- 若击杀目标，则随机使3名敌方单位增加<style=\"highlight\">3</style>级[Sinking]强度并对其施加1层诅咒 (若是集中遭遇战，则改为随机部位)",
           "coinlist": [
             {
               "coindescs": [
@@ -165,10 +165,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层忧郁易损 。若忧郁共鸣数不低于3，则对其额外施加1层忧郁易损 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[AzureTakeDamageUp]。若忧郁共鸣数不低于3，则对其额外施加1层[AzureTakeDamageUp]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加3层沉沦 "
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] 对目标施加1层诅咒 "
@@ -186,10 +186,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层忧郁易损 。每有3点忧郁共鸣数，对其额外施加1层忧郁易损 (最多2层)"
+                  "desc": "[OnSucceedAttack] 对目标施加2层[AzureTakeDamageUp]。每有3点忧郁共鸣数，对其额外施加1层[AzureTakeDamageUp](最多2层)"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加3层沉沦 "
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] 对目标施加2层诅咒 "
@@ -207,10 +207,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层忧郁易损 。每有2点忧郁共鸣数，对其额外施加1层忧郁易损 (最多2层)"
+                  "desc": "[OnSucceedAttack] 对目标施加2层[AzureTakeDamageUp]。每有2点忧郁共鸣数，对其额外施加1层[AzureTakeDamageUp](最多2层)"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加3层沉沦 "
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] 对目标施加3层诅咒 "
@@ -367,7 +367,7 @@
                   "desc": "[OnSucceedAttack] 对目标施加4层[SinkingWhite](亡蝶)<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "<style=\"highlight\">[OnSucceedAttack] 对目标施加3层沉沦 </style>"
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 对目标施加3层[Sinking]</style>"
                 }
               ]
             }
@@ -388,7 +388,7 @@
                   "desc": "[OnSucceedAttack] 对目标施加5层[SinkingWhite](亡蝶)<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加3层沉沦 <style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Sinking]<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "<style=\"highlight\">[OnSucceedAttack] 若目标现存体力不高于50%，则对目标造成相当于其所有[SinkingWhite]点数的忧郁伤害\n- 以生蝶与亡蝶之和计算</style>"
@@ -406,22 +406,22 @@
           "level": 1,
           "name": "圣诞梦魇",
           "abName": "舒适卧床",
-          "desc": "[EndSkill] 若自身体力为最大值，则在回合结束时使自身恢复10点理智值并在下回合使自身获得1层强壮 ",
+          "desc": "[EndSkill] 若自身体力为最大值，则在回合结束时使自身恢复10点理智值并在下回合使自身获得1层[Enhancement]",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加5级震颤 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Vibration]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加4级沉沦 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Sinking]强度"
                 },
                 {
                   "desc": "[OnSucceedAttack] 若目标陷入混乱、士气低落或陷入恐慌，则下回合对其施加1层[Reduction]"
@@ -434,15 +434,15 @@
           "level": 3,
           "name": "圣诞梦魇",
           "abName": "舒适卧床",
-          "desc": "<style=\"highlight\">若目标的理智值低于0点，则每相差1点，使本技能造成的伤害+1%(最多+45%)</style>\n[EndSkill] 若自身体力为最大值，则在回合结束时使自身恢复10点理智值并在下回合使自身获得1层强壮 ",
+          "desc": "<style=\"highlight\">若目标的理智值低于0点，则每相差1点，使本技能造成的伤害+1%(最多+45%)</style>\n[EndSkill] 若自身体力为最大值，则在回合结束时使自身恢复10点理智值并在下回合使自身获得1层[Enhancement]",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加5级震颤 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Vibration]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
                 }
               ]
             },
@@ -452,7 +452,7 @@
                   "desc": "[OnSucceedAttack] 使自身恢复自身已失去体力(2+最大共鸣数)%的体力(每个技能最多30%)"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加4级沉沦 强度<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Sinking]强度<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "[OnSucceedAttack] 若目标陷入混乱、士气低落或陷入恐慌，则下回合对其施加1层[Reduction]<style=\"highlight\"></style>"
@@ -465,15 +465,15 @@
           "level": 4,
           "name": "圣诞梦魇",
           "abName": "舒适卧床",
-          "desc": "若目标的理智值低于0点，则每相差1点，使本技能造成的伤害+1%(最多+45%)\n[EndSkill] 若自身体力为最大值，则在回合结束时使自身恢复<style=\"highlight\">15</style>点理智值并在下回合使自身获得1层强壮 <style=\"highlight\"></style>",
+          "desc": "若目标的理智值低于0点，则每相差1点，使本技能造成的伤害+1%(最多+45%)\n[EndSkill] 若自身体力为最大值，则在回合结束时使自身恢复<style=\"highlight\">15</style>点理智值并在下回合使自身获得1层[Enhancement]<style=\"highlight\"></style>",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加5级震颤 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Vibration]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
                 }
               ]
             },
@@ -483,7 +483,7 @@
                   "desc": "[OnSucceedAttack] 使自身恢复自身已失去体力(<style=\"highlight\">3</style>+最大共鸣数)%的体力(每个技能最多30%)"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加4级沉沦 强度<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Sinking]强度<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "[OnSucceedAttack] 若目标陷入混乱、士气低落或陷入恐慌，则下回合对其施加1层[Reduction]<style=\"highlight\">与1层最大共鸣数罪孽属性的易损。</style>"
@@ -501,22 +501,22 @@
           "level": 1,
           "name": "圣诞梦魇",
           "abName": "舒适卧床",
-          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使自身恢复10点体力\n[EndSkill] 若自身体力为最大值，则在回合结束时使自身恢复10点理智值并在下回合使自身获得1层强壮 ",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使自身恢复10点体力\n[EndSkill] 若自身体力为最大值，则在回合结束时使自身恢复10点理智值并在下回合使自身获得1层[Enhancement]",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加5级震颤 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Vibration]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加4级沉沦 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Sinking]强度"
                 },
                 {
                   "desc": "[OnSucceedAttack] 若目标陷入混乱、士气低落或陷入恐慌，则下回合对其施加1层[Reduction]"
@@ -529,15 +529,15 @@
           "level": 3,
           "name": "圣诞梦魇",
           "abName": "舒适卧床",
-          "desc": "[CantIdentify]\n随机指定目标\n<style=\"highlight\">若目标的理智值低于0点，则每相差1点，使本技能造成的伤害+1%(最多+45%)</style>\n[BeforeAttack] 使自身恢复10点体力\n[EndSkill] 若自身体力为最大值，则在回合结束时使自身恢复<style=\"highlight\">15</style>点理智值并在下回合使自身获得1层强壮 ",
+          "desc": "[CantIdentify]\n随机指定目标\n<style=\"highlight\">若目标的理智值低于0点，则每相差1点，使本技能造成的伤害+1%(最多+45%)</style>\n[BeforeAttack] 使自身恢复10点体力\n[EndSkill] 若自身体力为最大值，则在回合结束时使自身恢复<style=\"highlight\">15</style>点理智值并在下回合使自身获得1层[Enhancement]",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加5级震颤 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Vibration]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
                 }
               ]
             },
@@ -547,7 +547,7 @@
                   "desc": "[OnSucceedAttack] 使自身恢复自身已失去体力(2+最大共鸣数)%的体力(每个技能最多30%)"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加4级沉沦 强度<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Sinking]强度<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "[OnSucceedAttack] 若目标陷入混乱、士气低落或陷入恐慌，则下回合对其施加1层[Reduction]<style=\"highlight\"></style>"
@@ -560,15 +560,15 @@
           "level": 4,
           "name": "圣诞梦魇",
           "abName": "舒适卧床",
-          "desc": "[CantIdentify]\n随机指定目标\n若目标的理智值低于0点，则每相差1点，使本技能造成的伤害+1%(最多+45%)\n[BeforeAttack] 使自身恢复10点体力\n[EndSkill] 若自身体力为最大值，则在回合结束时使自身恢复<style=\"highlight\">20</style>点理智值并在下回合使自身获得1层强壮 ",
+          "desc": "[CantIdentify]\n随机指定目标\n若目标的理智值低于0点，则每相差1点，使本技能造成的伤害+1%(最多+45%)\n[BeforeAttack] 使自身恢复10点体力\n[EndSkill] 若自身体力为最大值，则在回合结束时使自身恢复<style=\"highlight\">20</style>点理智值并在下回合使自身获得1层[Enhancement]",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加5级震颤 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Vibration]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
                 }
               ]
             },
@@ -578,7 +578,7 @@
                   "desc": "[OnSucceedAttack] 使自身恢复自身已失去体力(<style=\"highlight\">3</style>+最大共鸣数)%的体力(每个技能最多30%)"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加4级沉沦 强度<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Sinking]强度<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "[OnSucceedAttack] 若目标陷入混乱、士气低落或陷入恐慌，则下回合对其施加1层[Reduction]<style=\"highlight\">与2层最大共鸣数罪孽属性的易损。</style>"
@@ -596,7 +596,7 @@
           "level": 1,
           "name": "未照耀的荣光-流水",
           "abName": "玛恩纳",
-          "desc": "[CantDuel]\n本场战斗中首次使用时，消耗的E.G.O资源减少1个暴怒、2个怠惰与1个傲慢\n若自身的[MlynarWaiting]层数不低于1层，则改为使用未照耀的荣光-<noparse>光辉</noparse>\n本技能不会命中敌方单位，不会触发守备技能，且不会因外部效果而重复使用\n[EndSkill] 使自身获得1层[MlynarWaiting]\n[EndSkill] 使自身恢复25点理智值\n[EndSkill] 下回合使自身获得1层[AttackUp]",
+          "desc": "[CantDuel]\n本场战斗中首次使用时，消耗的E.G.O资源减少1个暴怒、2个怠惰与1个傲慢\n若自身的[MlynarWaiting]层数不低于1层，则改为使用未照耀的荣光-光辉\n本技能不会命中敌方单位，不会触发守备技能，且不会因外部效果而重复使用\n[EndSkill] 使自身获得1层[MlynarWaiting]\n[EndSkill] 使自身恢复25点理智值\n[EndSkill] 下回合使自身获得1层[AttackUp]",
           "coinlist": [
             {
               "coindescs": [
@@ -611,7 +611,7 @@
           "level": 3,
           "name": "未照耀的荣光-流水",
           "abName": "玛恩纳",
-          "desc": "[CantDuel]\n本场战斗中首次使用时，消耗的E.G.O资源减少1个暴怒、2个怠惰与1个傲慢\n若自身的[MlynarWaiting]层数不低于1层，则改为使用未照耀的荣光-<noparse>光辉</noparse>\n本技能不会命中敌方单位，不会触发守备技能，且不会因外部效果而重复使用\n[EndSkill] 使自身获得1层[MlynarWaiting]\n[EndSkill] 使自身恢复25点理智值\n[EndSkill] 下回合使自身获得<style=\"highlight\">2</style>层[AttackUp]",
+          "desc": "[CantDuel]\n本场战斗中首次使用时，消耗的E.G.O资源减少1个暴怒、2个怠惰与1个傲慢\n若自身的[MlynarWaiting]层数不低于1层，则改为使用未照耀的荣光-光辉\n本技能不会命中敌方单位，不会触发守备技能，且不会因外部效果而重复使用\n[EndSkill] 使自身获得1层[MlynarWaiting]\n[EndSkill] 使自身恢复25点理智值\n[EndSkill] 下回合使自身获得<style=\"highlight\">2</style>层[AttackUp]",
           "coinlist": [
             {
               "coindescs": [
@@ -626,7 +626,7 @@
           "level": 4,
           "name": "未照耀的荣光-流水",
           "abName": "玛恩纳",
-          "desc": "[CantDuel]\n本场战斗中首次使用时，消耗的E.G.O资源减少1个暴怒、2个怠惰与1个傲慢\n若自身的[MlynarWaiting]层数不低于1层，则改为使用未照耀的荣光-<noparse>光辉</noparse>\n本技能不会命中敌方单位，不会触发守备技能，且不会因外部效果而重复使用\n[EndSkill] 使自身获得1层[MlynarWaiting]\n[EndSkill] 使自身恢复25点理智值\n[EndSkill] 下回合使自身获得2层[AttackUp]<style=\"highlight\">与1层[AttackDmgUp]</style>",
+          "desc": "[CantDuel]\n本场战斗中首次使用时，消耗的E.G.O资源减少1个暴怒、2个怠惰与1个傲慢\n若自身的[MlynarWaiting]层数不低于1层，则改为使用未照耀的荣光-光辉\n本技能不会命中敌方单位，不会触发守备技能，且不会因外部效果而重复使用\n[EndSkill] 使自身获得1层[MlynarWaiting]\n[EndSkill] 使自身恢复25点理智值\n[EndSkill] 下回合使自身获得2层[AttackUp]<style=\"highlight\">与1层[AttackDmgUp]</style>",
           "coinlist": [
             {
               "coindescs": [

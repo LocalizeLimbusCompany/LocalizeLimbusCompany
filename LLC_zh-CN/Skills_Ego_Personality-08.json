@@ -36,7 +36,7 @@
                   "desc": "[OnSucceedAttack] 随机使1名友方单位获得1层呼吸法 "
                 },
                 {
-                  "desc": "[EndSkillHead] 使理智值最高的4名友方单位获得1层突刺威力提升 与1层伤害强化 "
+                  "desc": "[EndSkillHead] 使理智值最高的4名友方单位获得1层[PenetrateResultUp]与1层[AttackDmgUp]"
                 }
               ]
             }
@@ -57,7 +57,7 @@
                   "desc": "[OnSucceedAttack] 随机使1名友方单位获得2层呼吸法 "
                 },
                 {
-                  "desc": "[EndSkill] 使理智值最高的4名友方单位获得2层突刺威力提升 与2层伤害强化 "
+                  "desc": "[EndSkill] 使理智值最高的4名友方单位获得2层[PenetrateResultUp]与2层[AttackDmgUp]"
                 }
               ]
             }
@@ -164,10 +164,10 @@
                   "desc": "[OnSucceedAttack] 使自身恢复本硬币伤害量4~8%的体力"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层暴食易损 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层[ShamrockTakeDamageUp]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加1~3级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加1~3级[Laceration]强度"
                 }
               ]
             }
@@ -198,10 +198,10 @@
                   "desc": "[OnSucceedAttack] 使自身恢复本硬币伤害量<style=\"highlight\">6~10</style>%的体力"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层暴食易损 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层[ShamrockTakeDamageUp]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加1~3级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加1~3级[Laceration]强度"
                 }
               ]
             }
@@ -232,10 +232,10 @@
                   "desc": "[OnSucceedAttack] 使自身恢复本硬币伤害量<style=\"highlight\">8~12</style>%的体力"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加1层暴食易损 "
+                  "desc": "[OnSucceedAttack] 对目标施加1层[ShamrockTakeDamageUp]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加1~<style=\"highlight\">4</style>级流血 强度"
+                  "desc": "[OnSucceedAttack] 使目标增加1~<style=\"highlight\">4</style>级[Laceration]强度"
                 }
               ]
             }
@@ -250,7 +250,7 @@
           "level": 1,
           "name": "翅振",
           "abName": "精灵盛宴",
-          "desc": "[CantIdentify]\n指定本体体力最低的单位\n[BeforeAttack] 随机对除自身以外的至多5名友方单位造成体力上限5%的体力伤害\n- 使自身恢复相当于对友方单位造成伤害量的体力\n- 若自身对友方单位造成了伤害，则本回合使自身获得2层强壮 并在下回合使自身获得2层迅捷 \n(每回合最多1次。造成伤害包括对护盾造成伤害。本效果造成的伤害能够击杀友方单位)",
+          "desc": "[CantIdentify]\n指定本体体力最低的单位\n[BeforeAttack] 随机对除自身以外的至多5名友方单位造成体力上限5%的体力伤害\n- 使自身恢复相当于对友方单位造成伤害量的体力\n- 若自身对友方单位造成了伤害，则本回合使自身获得2层[Enhancement]并在下回合使自身获得2层[Agility]\n(每回合最多1次。造成伤害包括对护盾造成伤害。本效果造成的伤害能够击杀友方单位)",
           "coinlist": [
             {
               "coindescs": [
@@ -258,7 +258,7 @@
                   "desc": "[OnSucceedAttackTail] 使自身恢复本硬币伤害量10%的体力"
                 },
                 {
-                  "desc": "[OnSucceedAttackTail] 使目标增加1~4级流血 强度"
+                  "desc": "[OnSucceedAttackTail] 使目标增加1~4级[Laceration]强度"
                 }
               ]
             }
@@ -268,7 +268,7 @@
           "level": 3,
           "name": "翅振",
           "abName": "精灵盛宴",
-          "desc": "[CantIdentify]\n指定本体体力最低的单位\n<style=\"highlight\">[BeforeAttack] 使本技能的攻击容量+(最大共鸣数-2)(最多+1)</style>\n[BeforeAttack] 随机对除自身以外的至多5名友方单位造成体力上限5%的体力伤害\n- 使自身恢复相当于对友方单位造成伤害量的体力\n- 若自身对友方单位造成了伤害，则本回合使自身获得2层强壮 并在下回合使自身获得2层迅捷 \n(每回合最多1次。造成伤害包括对护盾造成伤害。本效果造成的伤害能够击杀友方单位)\n<style=\"highlight\">[EndSkill] 若本技能恢复的体力超过自身体力上限，则下回合使自身获得(溢出恢复量/体力上限)×10层攻击等级提升 (每回合最多3层)</style>",
+          "desc": "[CantIdentify]\n指定本体体力最低的单位\n<style=\"highlight\">[BeforeAttack] 使本技能的攻击容量+(最大共鸣数-2)(最多+1)</style>\n[BeforeAttack] 随机对除自身以外的至多5名友方单位造成体力上限5%的体力伤害\n- 使自身恢复相当于对友方单位造成伤害量的体力\n- 若自身对友方单位造成了伤害，则本回合使自身获得2层[Enhancement]并在下回合使自身获得2层[Agility]\n(每回合最多1次。造成伤害包括对护盾造成伤害。本效果造成的伤害能够击杀友方单位)\n<style=\"highlight\">[EndSkill] 若本技能恢复的体力超过自身体力上限，则下回合使自身获得(溢出恢复量/体力上限)×10层[AttackUp](每回合最多3层)</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -276,7 +276,7 @@
                   "desc": "[OnSucceedAttackTail] 使自身恢复本硬币伤害量<style=\"highlight\">15</style>%的体力"
                 },
                 {
-                  "desc": "[OnSucceedAttackTail] 使目标增加<style=\"highlight\">2~5</style>级流血 强度"
+                  "desc": "[OnSucceedAttackTail] 使目标增加<style=\"highlight\">2~5</style>级[Laceration]强度"
                 }
               ]
             }
@@ -286,7 +286,7 @@
           "level": 4,
           "name": "翅振",
           "abName": "精灵盛宴",
-          "desc": "[CantIdentify]\n指定本体体力最低的单位\n[BeforeAttack] 使本技能的攻击容量+(最大共鸣数-2)(最多+<style=\"highlight\">2</style>)\n[BeforeAttack] 随机对除自身以外的至多5名友方单位造成体力上限5%的体力伤害\n- 使自身恢复相当于对友方单位造成伤害量的体力\n- 若自身对友方单位造成了伤害，则本回合使自身获得2层强壮 并在下回合使自身获得2层迅捷 \n(每回合最多1次。造成伤害包括对护盾造成伤害。本效果造成的伤害能够击杀友方单位)\n[EndSkill] 若本技能恢复的体力超过自身体力上限，则下回合使自身获得(溢出恢复量/体力上限)×10层攻击等级提升 (每回合最多<style=\"highlight\">6</style>层)",
+          "desc": "[CantIdentify]\n指定本体体力最低的单位\n[BeforeAttack] 使本技能的攻击容量+(最大共鸣数-2)(最多+<style=\"highlight\">2</style>)\n[BeforeAttack] 随机对除自身以外的至多5名友方单位造成体力上限5%的体力伤害\n- 使自身恢复相当于对友方单位造成伤害量的体力\n- 若自身对友方单位造成了伤害，则本回合使自身获得2层[Enhancement]并在下回合使自身获得2层[Agility]\n(每回合最多1次。造成伤害包括对护盾造成伤害。本效果造成的伤害能够击杀友方单位)\n[EndSkill] 若本技能恢复的体力超过自身体力上限，则下回合使自身获得(溢出恢复量/体力上限)×10层[AttackUp](每回合最多<style=\"highlight\">6</style>层)",
           "coinlist": [
             {
               "coindescs": [
@@ -294,10 +294,10 @@
                   "desc": "[OnSucceedAttackTail] 使自身恢复本硬币伤害量<style=\"highlight\">20</style>%的体力"
                 },
                 {
-                  "desc": "[OnSucceedAttackTail] 使目标增加<style=\"highlight\">3~6</style>级流血 强度"
+                  "desc": "[OnSucceedAttackTail] 使目标增加<style=\"highlight\">3~6</style>级[Laceration]强度"
                 },
                 {
-                  "desc": "[EnemyKill] 下回合使自身获得1层强壮 (最多3层)"
+                  "desc": "[EnemyKill] 下回合使自身获得1层[Enhancement](最多3层)"
                 }
               ]
             }
@@ -312,12 +312,12 @@
           "level": 1,
           "name": "往昔",
           "abName": "某日的肖像",
-          "desc": "[BeforeAttack] 若最大共鸣数不低于4，则使本技能的攻击容量+1\n[EndSkill] 使现存体力比例最低的2名友方单位恢复其体力上限(5+(主要目标的沉沦 强度与层数之和)/3)%的体力(最多15%)",
+          "desc": "[BeforeAttack] 若最大共鸣数不低于4，则使本技能的攻击容量+1\n[EndSkill] 使现存体力比例最低的2名友方单位恢复其体力上限(5+(主要目标的[Sinking]强度与层数之和)/3)%的体力(最多15%)",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层沉沦 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] 对目标施加1层诅咒 "
@@ -333,18 +333,18 @@
           "level": 3,
           "name": "往昔",
           "abName": "某日的肖像",
-          "desc": "[BeforeAttack] 若最大共鸣数不低于4，则使本技能的攻击容量+1\n<style=\"highlight\">- 若该共鸣为忧郁共鸣，则使本技能的攻击容量+1</style>\n[EndSkill] 使现存体力比例最低的2名友方单位恢复其体力上限(<style=\"highlight\">10</style>+(主要目标的沉沦 强度与层数之和)/3)%的体力(最多15%)",
+          "desc": "[BeforeAttack] 若最大共鸣数不低于4，则使本技能的攻击容量+1\n<style=\"highlight\">- 若该共鸣为忧郁共鸣，则使本技能的攻击容量+1</style>\n[EndSkill] 使现存体力比例最低的2名友方单位恢复其体力上限(<style=\"highlight\">10</style>+(主要目标的[Sinking]强度与层数之和)/3)%的体力(最多15%)",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层沉沦 <style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Sinking]<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "[OnSucceedAttack] 对目标施加1层诅咒 <style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "<style=\"highlight\">[OnSucceedAttack] 若忧郁共鸣数不低于4，则对目标施加1层忧郁易损 </style>"
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 若忧郁共鸣数不低于4，则对目标施加1层[AzureTakeDamageUp]</style>"
                 },
                 {
                   "desc": "[OnSucceedAttack] 对目标施加2层[UninvitedGuestPersonality]<style=\"highlight\"></style>"
@@ -357,18 +357,18 @@
           "level": 4,
           "name": "往昔",
           "abName": "某日的肖像",
-          "desc": "[BeforeAttack] 若最大共鸣数不低于4，则使本技能的攻击容量+1\n- 若该共鸣为忧郁共鸣，则使本技能的攻击容量+1\n[EndSkill] 使现存体力比例最低的2名友方单位恢复其体力上限(10+(主要目标的沉沦 强度与层数之和)/3)%的体力(最多<style=\"highlight\">20</style>%)\n<style=\"highlight\">- 若最大共鸣为共鸣数不低于4的忧郁共鸣，则使其额外恢复体力上限10%的体力</style>",
+          "desc": "[BeforeAttack] 若最大共鸣数不低于4，则使本技能的攻击容量+1\n- 若该共鸣为忧郁共鸣，则使本技能的攻击容量+1\n[EndSkill] 使现存体力比例最低的2名友方单位恢复其体力上限(10+(主要目标的[Sinking]强度与层数之和)/3)%的体力(最多<style=\"highlight\">20</style>%)\n<style=\"highlight\">- 若最大共鸣为共鸣数不低于4的忧郁共鸣，则使其额外恢复体力上限10%的体力</style>",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加<style=\"highlight\">3</style>层沉沦 "
+                  "desc": "[OnSucceedAttack] 对目标施加<style=\"highlight\">3</style>层[Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] 对目标施加<style=\"highlight\">2</style>层诅咒 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若忧郁共鸣数不低于4，则对目标施加1层忧郁易损 <style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 若忧郁共鸣数不低于4，则对目标施加1层[AzureTakeDamageUp]<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "[OnSucceedAttack] 对目标施加2层[UninvitedGuestPersonality]<style=\"highlight\"></style>"
@@ -386,18 +386,18 @@
           "level": 1,
           "name": "往昔",
           "abName": "某日的肖像",
-          "desc": "[CantIdentify]\n优先指定沉沦 最多的目标\n[BeforeAttack] 使自身失去体力上限10%的体力(不会因该效果而陷入混乱)\n[EndSkill] 使除自身以外现存体力比例最低的3名友方单位恢复其体力上限(5+(主要目标的沉沦 强度与层数之和)/3)%的体力(最多10%)\n- 若最大共鸣数不低于4，则额外使1名友方单位恢复体力",
+          "desc": "[CantIdentify]\n优先指定[Sinking]最多的目标\n[BeforeAttack] 使自身失去体力上限10%的体力(不会因该效果而陷入混乱)\n[EndSkill] 使除自身以外现存体力比例最低的3名友方单位恢复其体力上限(5+(主要目标的[Sinking]强度与层数之和)/3)%的体力(最多10%)\n- 若最大共鸣数不低于4，则额外使1名友方单位恢复体力",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层沉沦 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] 对目标施加1层诅咒 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若忧郁共鸣数不低于3，则对目标施加1层忧郁易损 "
+                  "desc": "[OnSucceedAttack] 若忧郁共鸣数不低于3，则对目标施加1层[AzureTakeDamageUp]"
                 },
                 {
                   "desc": "[OnSucceedAttack] 对目标施加2层[UninvitedGuestPersonality]"
@@ -410,18 +410,18 @@
           "level": 3,
           "name": "往昔",
           "abName": "某日的肖像",
-          "desc": "[CantIdentify]\n优先指定沉沦 最多的目标\n[BeforeAttack] 使自身失去体力上限10%的体力(不会因该效果而陷入混乱)\n[EndSkill] 使除自身以外现存体力比例最低的3名友方单位恢复其体力上限(<style=\"highlight\">10</style>+(主要目标的沉沦 强度与层数之和)/3)%的体力(最多<style=\"highlight\">15</style>%)\n- 若最大共鸣数不低于4，则额外使1名友方单位恢复体力",
+          "desc": "[CantIdentify]\n优先指定[Sinking]最多的目标\n[BeforeAttack] 使自身失去体力上限10%的体力(不会因该效果而陷入混乱)\n[EndSkill] 使除自身以外现存体力比例最低的3名友方单位恢复其体力上限(<style=\"highlight\">10</style>+(主要目标的[Sinking]强度与层数之和)/3)%的体力(最多<style=\"highlight\">15</style>%)\n- 若最大共鸣数不低于4，则额外使1名友方单位恢复体力",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层沉沦 "
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] 对目标施加2层诅咒 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若忧郁共鸣数不低于3，则对目标施加1层忧郁易损 "
+                  "desc": "[OnSucceedAttack] 若忧郁共鸣数不低于3，则对目标施加1层[AzureTakeDamageUp]"
                 },
                 {
                   "desc": "[OnSucceedAttack] 对目标施加2层[UninvitedGuestPersonality]"
@@ -437,18 +437,18 @@
           "level": 4,
           "name": "往昔",
           "abName": "某日的肖像",
-          "desc": "[CantIdentify]\n优先指定沉沦 最多的目标\n[BeforeAttack] 使自身失去体力上限10%的体力(不会因该效果而陷入混乱)\n[EndSkill] 使除自身以外现存体力比例最低的3名友方单位恢复其体力上限(10+(主要目标的沉沦 强度与层数之和)/3)%的体力(最多15%)\n- 若最大共鸣数不低于4，则额外使1名友方单位恢复体力\n<style=\"highlight\">- 若该共鸣为忧郁共鸣，则使其额外恢复体力上限5%的体力</style>",
+          "desc": "[CantIdentify]\n优先指定[Sinking]最多的目标\n[BeforeAttack] 使自身失去体力上限10%的体力(不会因该效果而陷入混乱)\n[EndSkill] 使除自身以外现存体力比例最低的3名友方单位恢复其体力上限(10+(主要目标的[Sinking]强度与层数之和)/3)%的体力(最多15%)\n- 若最大共鸣数不低于4，则额外使1名友方单位恢复体力\n<style=\"highlight\">- 若该共鸣为忧郁共鸣，则使其额外恢复体力上限5%的体力</style>",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加<style=\"highlight\">3</style>层沉沦 "
+                  "desc": "[OnSucceedAttack] 对目标施加<style=\"highlight\">3</style>层[Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] 对目标施加2层诅咒 "
                 },
                 {
-                  "desc": "[OnSucceedAttack] <style=\"highlight\">每有3点</style>忧郁共鸣数，对目标施加1层忧郁易损 <style=\"highlight\">(最多2层)</style>"
+                  "desc": "[OnSucceedAttack] <style=\"highlight\">每有3点</style>忧郁共鸣数，对目标施加1层[AzureTakeDamageUp]<style=\"highlight\">(最多2层)</style>"
                 },
                 {
                   "desc": "[OnSucceedAttack] 对目标施加2层[UninvitedGuestPersonality]"
@@ -469,19 +469,19 @@
           "level": 1,
           "name": "圣诞梦魇",
           "abName": "舒适卧床",
-          "desc": "[BeforeAttack] 对自身施加(最大共鸣数+5)层震颤 (最多10层)\n[EndSkill] 若有目标陷入混乱、士气低落或陷入恐慌，则使自身恢复10点理智值",
+          "desc": "[BeforeAttack] 对自身施加(最大共鸣数+5)层[Vibration](最多10层)\n[EndSkill] 若有目标陷入混乱、士气低落或陷入恐慌，则使自身恢复10点理智值",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加5层震颤 "
+                  "desc": "[OnSucceedAttack] 对目标施加5层[Vibration]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
                 }
               ]
             }
@@ -491,25 +491,25 @@
           "level": 3,
           "name": "圣诞梦魇",
           "abName": "舒适卧床",
-          "desc": "<style=\"highlight\">若目标的理智值低于0点，则每相差1点，使本技能造成的伤害+1%(最多+45%)</style>\n[BeforeAttack] 对自身施加(最大共鸣数+5)层震颤 (最多10层)\n[EndSkill] 若有目标陷入混乱、士气低落或陷入恐慌，则使自身恢复10点理智值",
+          "desc": "<style=\"highlight\">若目标的理智值低于0点，则每相差1点，使本技能造成的伤害+1%(最多+45%)</style>\n[BeforeAttack] 对自身施加(最大共鸣数+5)层[Vibration](最多10层)\n[EndSkill] 若有目标陷入混乱、士气低落或陷入恐慌，则使自身恢复10点理智值",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加5层震颤 <style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 对目标施加5层[Vibration]<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标未陷入混乱、士气低落或陷入恐慌，则使其增加5级沉沦 强度"
+                  "desc": "[OnSucceedAttack] 若目标未陷入混乱、士气低落或陷入恐慌，则使其增加5级[Sinking]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标未陷入混乱、士气低落或陷入恐慌，则使其震颤引爆 ，并使其震颤 层数减少2层"
+                  "desc": "[OnSucceedAttack] 若目标未陷入混乱、士气低落或陷入恐慌，则使其[VibrationExplosion]，并使其[Vibration]层数减少2层"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层<style=\"highlight\"></style>"
                 }
               ]
             }
@@ -519,25 +519,25 @@
           "level": 4,
           "name": "圣诞梦魇",
           "abName": "舒适卧床",
-          "desc": "若目标的理智值低于0点，则每相差1点，使本技能造成的伤害+1%(最多+45%)\n[BeforeAttack] 对自身施加(最大共鸣数+5)层震颤 (最多10层)\n[EndSkill] 若有目标陷入混乱、士气低落或陷入恐慌，则使自身恢复10点理智值<style=\"highlight\"></style>",
+          "desc": "若目标的理智值低于0点，则每相差1点，使本技能造成的伤害+1%(最多+45%)\n[BeforeAttack] 对自身施加(最大共鸣数+5)层[Vibration](最多10层)\n[EndSkill] 若有目标陷入混乱、士气低落或陷入恐慌，则使自身恢复10点理智值<style=\"highlight\"></style>",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加5层震颤 <style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 对目标施加5层[Vibration]<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标未陷入混乱、士气低落或陷入恐慌，则使其增加5级沉沦 强度<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 若目标未陷入混乱、士气低落或陷入恐慌，则使其增加5级[Sinking]强度<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标未陷入混乱、士气低落或陷入恐慌，则使其震颤引爆 <style=\"highlight\">2次</style>，并使其震颤 层数减少2层"
+                  "desc": "[OnSucceedAttack] 若目标未陷入混乱、士气低落或陷入恐慌，则使其[VibrationExplosion]<style=\"highlight\">2次</style>，并使其[Vibration]层数减少2层"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层<style=\"highlight\"></style>"
                 }
               ]
             }
@@ -552,26 +552,26 @@
           "level": 1,
           "name": "圣诞梦魇",
           "abName": "舒适卧床",
-          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 对自身施加(最大共鸣数+5)层震颤 (最多10层)\n[BeforeAttack] 使自身恢复10点体力",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 对自身施加(最大共鸣数+5)层[Vibration](最多10层)\n[BeforeAttack] 使自身恢复10点体力",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加5层震颤 "
+                  "desc": "[OnSucceedAttack] 对目标施加5层[Vibration]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
                 }
               ]
             }
@@ -581,32 +581,32 @@
           "level": 3,
           "name": "圣诞梦魇",
           "abName": "舒适卧床",
-          "desc": "[CantIdentify]\n随机指定目标\n<style=\"highlight\">若主要目标陷入混乱、士气低落或陷入恐慌，则使本技能的基础威力+1</style>\n[BeforeAttack] 对自身施加(最大共鸣数+5)层震颤 (最多10层)\n[BeforeAttack] 使自身恢复10点体力\n<style=\"highlight\">[EndSkill] 每有1名敌方单位陷入混乱、士气低落或陷入恐慌，使自身恢复5点理智值</style>",
+          "desc": "[CantIdentify]\n随机指定目标\n<style=\"highlight\">若主要目标陷入混乱、士气低落或陷入恐慌，则使本技能的基础威力+1</style>\n[BeforeAttack] 对自身施加(最大共鸣数+5)层[Vibration](最多10层)\n[BeforeAttack] 使自身恢复10点体力\n<style=\"highlight\">[EndSkill] 每有1名敌方单位陷入混乱、士气低落或陷入恐慌，使自身恢复5点理智值</style>",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加5层震颤 "
+                  "desc": "[OnSucceedAttack] 对目标施加5层[Vibration]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标未陷入混乱、士气低落或陷入恐慌，则使其增加5级沉沦 强度并对其施加2层沉沦 "
+                  "desc": "[OnSucceedAttack] 若目标未陷入混乱、士气低落或陷入恐慌，则使其增加5级[Sinking]强度并对其施加2层[Sinking]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标未陷入混乱、士气低落或陷入恐慌，则使其震颤引爆 ，并使其震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 若目标未陷入混乱、士气低落或陷入恐慌，则使其[VibrationExplosion]，并使其[Vibration]层数减少1层"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层<style=\"highlight\"></style>"
                 }
               ]
             }
@@ -616,35 +616,35 @@
           "level": 4,
           "name": "圣诞梦魇",
           "abName": "舒适卧床",
-          "desc": "[CantIdentify]\n随机指定目标\n若主要目标陷入混乱、士气低落或陷入恐慌，则使本技能的基础威力+<style=\"highlight\">2</style>\n[BeforeAttack] 对自身施加(最大共鸣数+5)层震颤 (最多10层)\n[BeforeAttack] 使自身恢复10点体力\n[EndSkill] 每有1名敌方单位陷入混乱、士气低落或陷入恐慌，使自身恢复5点理智值<style=\"highlight\"></style>",
+          "desc": "[CantIdentify]\n随机指定目标\n若主要目标陷入混乱、士气低落或陷入恐慌，则使本技能的基础威力+<style=\"highlight\">2</style>\n[BeforeAttack] 对自身施加(最大共鸣数+5)层[Vibration](最多10层)\n[BeforeAttack] 使自身恢复10点体力\n[EndSkill] 每有1名敌方单位陷入混乱、士气低落或陷入恐慌，使自身恢复5点理智值<style=\"highlight\"></style>",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加5层震颤 "
+                  "desc": "[OnSucceedAttack] 对目标施加5层[Vibration]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标未陷入混乱、士气低落或陷入恐慌，则使其增加5级沉沦 强度并对其施加2层沉沦 "
+                  "desc": "[OnSucceedAttack] 若目标未陷入混乱、士气低落或陷入恐慌，则使其增加5级[Sinking]强度并对其施加2层[Sinking]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标未陷入混乱、士气低落或陷入恐慌，则使其震颤引爆 ，并使其震颤 层数减少1层"
+                  "desc": "[OnSucceedAttack] 若目标未陷入混乱、士气低落或陷入恐慌，则使其[VibrationExplosion]，并使其[Vibration]层数减少1层"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层<style=\"highlight\"></style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 若目标未陷入混乱、士气低落或陷入恐慌，则使其震颤引爆 ，并使其震颤 层数减少1层<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 若目标未陷入混乱、士气低落或陷入恐慌，则使其[VibrationExplosion]，并使其[Vibration]层数减少1层<style=\"highlight\"></style>"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标震颤引爆 ，并使其震颤 层数减少1层<style=\"highlight\"></style>"
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层<style=\"highlight\"></style>"
                 }
               ]
             }

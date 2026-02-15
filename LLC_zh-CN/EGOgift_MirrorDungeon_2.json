@@ -3,7 +3,7 @@
     {
       "id": 9156,
       "name": "万年炉火",
-      "desc": "回合结束时，烧伤 层数不低于3层的敌方单位额外触发1次烧伤 (使其烧伤 层数减少1层)",
+      "desc": "回合结束时，[Combustion]层数不低于3层的敌方单位额外触发1次[Combustion](使其[Combustion]层数减少1层)",
       "simpleDesc": [
         {
           "abilityID": 9156,
@@ -18,19 +18,19 @@
       "simpleDesc": [
         {
           "abilityID": 9158,
-          "simpleDesc": "触发1次烧伤 "
+          "simpleDesc": "触发1次[Combustion]"
         },
         {
           "abilityID": 91581,
-          "simpleDesc": "额外触发1次烧伤 "
+          "simpleDesc": "额外触发1次[Combustion]"
         },
         {
           "abilityID": 91582,
-          "simpleDesc": "施加阵亡单位一半的烧伤 强度"
+          "simpleDesc": "施加阵亡单位一半的[Combustion]强度"
         },
         {
           "abilityID": 91583,
-          "simpleDesc": "施加4层攻击等级降低 "
+          "simpleDesc": "施加4层[AttackDown]"
         },
         {
           "abilityID": 91583,
@@ -79,11 +79,11 @@
       "simpleDesc": [
         {
           "abilityID": 9163,
-          "simpleDesc": "消耗震颤 层数的技能拼点胜利时，对目标施加2层震颤 "
+          "simpleDesc": "消耗[Vibration]层数的技能拼点胜利时，对目标施加2层[Vibration]"
         },
         {
           "abilityID": 91631,
-          "simpleDesc": "消耗震颤 层数的技能拼点胜利且包括该技能在内怠惰共鸣数不低于3时，对目标施加3层震颤 "
+          "simpleDesc": "消耗[Vibration]层数的技能拼点胜利且包括该技能在内怠惰共鸣数不低于3时，对目标施加3层[Vibration]"
         }
       ]
     },
@@ -109,11 +109,11 @@
       "simpleDesc": [
         {
           "abilityID": 9166,
-          "simpleDesc": "消耗自身的震颤 层数的技能拼点胜利时，若目标未带有震颤 ，则对其施加3层震颤 "
+          "simpleDesc": "消耗自身的[Vibration]层数的技能拼点胜利时，若目标未带有[Vibration]，则对其施加3层[Vibration]"
         },
         {
           "abilityID": 91661,
-          "simpleDesc": "回合开始时，使自身的拼点威力+(自身的震颤 层数/5)"
+          "simpleDesc": "回合开始时，使自身的拼点威力+(自身的[Vibration]层数/5)"
         },
         {
           "abilityID": 91662,
@@ -128,7 +128,7 @@
       "simpleDesc": [
         {
           "abilityID": 9167,
-          "simpleDesc": "拼点胜利时，使目标增加(剩余硬币数)级震颤 强度，若目标未带有震颤 ，则对其施加震颤 层数"
+          "simpleDesc": "拼点胜利时，使目标增加(剩余硬币数)级[Vibration]强度，若目标未带有[Vibration]，则对其施加[Vibration]层数"
         },
         {
           "abilityID": 91671,
@@ -151,11 +151,11 @@
     {
       "id": 9168,
       "name": "终末的碎片",
-      "desc": "若目标的破裂 强度低于15级，则增加破裂 强度时额外增加1级破裂 强度",
+      "desc": "若目标的[Burst]强度低于15级，则增加[Burst]强度时额外增加1级[Burst]强度",
       "simpleDesc": [
         {
           "abilityID": 9168,
-          "simpleDesc": "增加破裂 强度时，额外增加1级破裂 强度"
+          "simpleDesc": "增加[Burst]强度时，额外增加1级[Burst]强度"
         }
       ]
     },
@@ -170,11 +170,11 @@
         },
         {
           "abilityID": 91701,
-          "simpleDesc": "增加破裂 强度时，额外增加2级破裂 强度"
+          "simpleDesc": "增加[Burst]强度时，额外增加2级[Burst]强度"
         },
         {
           "abilityID": 91702,
-          "simpleDesc": "若技能因其效果不会施加破裂 ，则使该技能的硬币威力+1"
+          "simpleDesc": "若技能因其效果不会施加[Burst]，则使该技能的硬币威力+1"
         }
       ]
     },
@@ -185,15 +185,15 @@
       "simpleDesc": [
         {
           "abilityID": 9171,
-          "simpleDesc": "破裂 效果对护盾造成的伤害+150%"
+          "simpleDesc": "[Burst]效果对护盾造成的伤害+150%"
         },
         {
           "abilityID": 91711,
-          "simpleDesc": "带有破裂 的敌方单位减少攻击等级与防御等级"
+          "simpleDesc": "带有[Burst]的敌方单位减少攻击等级与防御等级"
         },
         {
           "abilityID": 91712,
-          "simpleDesc": "通过技能效果增加破裂 强度时，使目标增加2级破裂 强度并对其施加1层破裂 "
+          "simpleDesc": "通过技能效果增加[Burst]强度时，使目标增加2级[Burst]强度并对其施加1层[Burst]"
         },
         {
           "abilityID": 91713,
@@ -204,7 +204,7 @@
     {
       "id": 9172,
       "name": "如歌",
-      "desc": "使用基础攻击技能时，若目标的沉沦 强度不低于5级，则使自身恢复(目标的沉沦 强度/10)点理智值(最多3点)",
+      "desc": "使用基础攻击技能时，若目标的[Sinking]强度不低于5级，则使自身恢复(目标的[Sinking]强度/10)点理智值(最多3点)",
       "simpleDesc": [
         {
           "abilityID": 9172,
@@ -215,11 +215,11 @@
     {
       "id": 9173,
       "name": "褪色的外套",
-      "desc": "回合结束时, 若理智值为-45点的敌方单位不低于3名, 则下回合使全体友方单位获得2层攻击等级提升 ",
+      "desc": "回合结束时, 若理智值为-45点的敌方单位不低于3名, 则下回合使全体友方单位获得2层[AttackUp]",
       "simpleDesc": [
         {
           "abilityID": 9173,
-          "simpleDesc": "使全体友方单位获得2层攻击等级提升 "
+          "simpleDesc": "使全体友方单位获得2层[AttackUp]"
         }
       ]
     },
@@ -234,7 +234,7 @@
         },
         {
           "abilityID": 91751,
-          "simpleDesc": "每有1名敌方单位理智值为-45点，下回合使全体友方单位获得1层攻击等级提升 "
+          "simpleDesc": "每有1名敌方单位理智值为-45点，下回合使全体友方单位获得1层[AttackUp]"
         }
       ]
     },
@@ -322,7 +322,7 @@
       "simpleDesc": [
         {
           "abilityID": 9181,
-          "simpleDesc": "根据消耗的充能 层数相应获得充能 层数"
+          "simpleDesc": "根据消耗的[Charge]层数相应获得[Charge]层数"
         }
       ]
     },
@@ -333,26 +333,26 @@
       "simpleDesc": [
         {
           "abilityID": 9183,
-          "simpleDesc": "根据消耗的充能 层数相应获得充能 层数"
+          "simpleDesc": "根据消耗的[Charge]层数相应获得[Charge]层数"
         },
         {
           "abilityID": 91831,
-          "simpleDesc": "根据充能 层数相应获得1层伤害强化 或充能 层数"
+          "simpleDesc": "根据[Charge]层数相应获得1层伤害强化 或[Charge]层数"
         }
       ]
     },
     {
       "id": 9184,
       "name": "第五类永动机",
-      "desc": "回合开始时，若拥有获得[Charge]层数或特殊充能的攻击技能的友方单位不低于5名，则在本场战斗期间触发该效果。(不包括E.G.O技能，不包括待命人员)\n\n回合开始时，若自身的充能 层数低于3层，则使自身获得5层[Charge]。回合开始时，若自身的[Charge]层数不低于5层，则使自身的最小与最大速度值+2并获得1层[Enhancement]与2层[AttackDmgUp]。(包括特殊充能)\n\n参战的全体友方单位在回合开始时获得[ShareCharge]\n\n消耗自身的[Charge]层数或使自身获得[Charge]层数的3技能攻击后，若击杀目标或自身的[Charge]强度不低于3级，则添加1个3技能到下回合将要使用的技能池中。(每回合每名友方单位最多1次；包括特殊充能)",
+      "desc": "回合开始时，若拥有获得[Charge]层数或特殊充能的攻击技能的友方单位不低于5名，则在本场战斗期间触发该效果。(不包括E.G.O技能，不包括待命人员)\n\n回合开始时，若自身的[Charge]层数低于3层，则使自身获得5层[Charge]。回合开始时，若自身的[Charge]层数不低于5层，则使自身的最小与最大速度值+2并获得1层[Enhancement]与2层[AttackDmgUp]。(包括特殊充能)\n\n参战的全体友方单位在回合开始时获得[ShareCharge]\n\n消耗自身的[Charge]层数或使自身获得[Charge]层数的3技能攻击后，若击杀目标或自身的[Charge]强度不低于3级，则添加1个3技能到下回合将要使用的技能池中。(每回合每名友方单位最多1次；包括特殊充能)",
       "simpleDesc": [
         {
           "abilityID": 9184,
-          "simpleDesc": "根据充能 层数相应获得1层伤害强化 或充能 层数"
+          "simpleDesc": "根据[Charge]层数相应获得1层伤害强化 或[Charge]层数"
         },
         {
           "abilityID": 91841,
-          "simpleDesc": "根据消耗的充能 层数相应获得充能 层数。下回合获得加算硬币强化 "
+          "simpleDesc": "根据消耗的[Charge]层数相应获得[Charge]层数。下回合获得[PlusCoinValueUp]"
         },
         {
           "abilityID": 91842,
