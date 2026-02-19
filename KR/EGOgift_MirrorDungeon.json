@@ -815,7 +815,7 @@
     {
       "id": 9034,
       "name": "일점타격논리회로",
-      "desc": "[Combustion] 위력 또는 특수 화상을 부여하는 스킬 또는 질투 속성 스킬을 사용하여 적에게 적중 시, 대상에게 해당 스킬의 코인 수 절반만큼 추가로 [Combustion] 위력 부여(소수는 올림하여 계산).\n- [중첩 발동 불가] 입주 신고 히스클리프 E.G.O의 패시브 「회로 연결」 발동 시, 이 효과가 발동하지 않음",
+      "desc": "[Combustion] 위력 또는 특수 화상을 부여하는 스킬 또는 질투 속성 스킬을 사용하여 적에게 적중 시, 대상에게 해당 스킬의 코인 수 절반만큼 추가로 [Combustion] 위력 부여(소수는 올림하여 계산).\n- [중첩 발동 불가] 입주 신고 히스클리프 E.G.O의 패시브 「회로 연결」 발동 시, 이 효과가 발동하지 않음\n\n적중시 대상의 [Combustion] 위력이 99면, [IDMicroChip] 1 부여 (적당 1회, 턴당 3회)",
       "simpleDesc": [
         {
           "abilityID": 9034,
@@ -1772,11 +1772,11 @@
     {
       "id": 9065,
       "name": "미적 감각",
-      "desc": "정신력 감소로 인하여 부정적 효과(사기저하, 패닉)를 얻은 적에게 입히는 피해량 35% 증가.\n\n정신력이 없는 적에게 [Sinking] 효과가 적용될 경우, 우울 속성 피해를 입히는 대신 이를 포함한 죄악 속성 중 가장 효과적인 속성 피해로 변경.",
+      "desc": "정신력 감소로 인하여 부정적 효과(사기저하, 패닉)를 얻은 적에게 입히는 피해량 35% 증가.\n\n[Sinking] 위력을 부여하거나 횟수를 증가시키는 스킬일 경우, 추가로 피해량 10% 증가 (특수 <noparse>침잠</noparse> 포함)\n\n정신력이 없는 적에게 [Sinking] 효과가 적용될 경우, 우울 속성 피해를 입히는 대신 이를 포함한 죄악 속성 중 가장 효과적인 속성 피해로 변경.",
       "simpleDesc": [
         {
           "abilityID": 9065,
-          "simpleDesc": "입히는 피해량 35% 증가"
+          "simpleDesc": "입히는 피해량 증가"
         },
         {
           "abilityID": 90651,
@@ -1787,11 +1787,11 @@
     {
       "id": 19065,
       "name": "미적 감각+",
-      "desc": "<style=\"upgradeHighlight\">정신력이 0 미만인 적에게 입히는 피해량 40% 증가.</style>\n\n정신력이 없는 적에게 [Sinking] 효과가 적용될 경우, 우울 속성 피해를 입히는 대신 이를 포함한 죄악 속성 중 가장 효과적인 속성 피해로 변경.",
+      "desc": "<style=\"upgradeHighlight\">정신력이 0 미만인 적에게 입히는 피해량 40% 증가.</style>\n\n[Sinking] 위력을 부여하거나 횟수를 증가시키는 스킬일 경우, 추가로 피해량 <style=\"upgradeHighlight\">10%</style> 증가 (특수 <noparse>침잠</noparse> 포함)\n\n정신력이 없는 적에게 [Sinking] 효과가 적용될 경우, 우울 속성 피해를 입히는 대신 이를 포함한 죄악 속성 중 가장 효과적인 속성 피해로 변경.",
       "simpleDesc": [
         {
           "abilityID": 19065,
-          "simpleDesc": "입히는 피해량 40% 증가"
+          "simpleDesc": "입히는 피해량 증가"
         },
         {
           "abilityID": 90651,
@@ -1802,11 +1802,11 @@
     {
       "id": 29065,
       "name": "미적 감각++",
-      "desc": "<style=\"upgradeHighlight\">정신력이 없거나 0 미만인 적에게 입히는 피해량 50% 증가.</style>\n\n정신력이 없는 적에게 [Sinking] 효과가 적용될 경우, 우울 속성 피해를 입히는 대신 이를 포함한 죄악 속성 중 가장 효과적인 속성 피해로 변경.",
+      "desc": "<style=\"upgradeHighlight\">정신력이 없거나 0 미만인 적에게 입히는 피해량 50% 증가.</style>\n\n[Sinking] 위력을 부여하거나 횟수를 증가시키는 스킬일 경우, 추가로 피해량 <style=\"upgradeHighlight\">10%</style> 증가 (특수 <noparse>침잠</noparse> 포함)\n\n정신력이 없는 적에게 [Sinking] 효과가 적용될 경우, 우울 속성 피해를 입히는 대신 이를 포함한 죄악 속성 중 가장 효과적인 속성 피해로 변경.",
       "simpleDesc": [
         {
           "abilityID": 29065,
-          "simpleDesc": "입히는 피해량 50% 증가"
+          "simpleDesc": "입히는 피해량 증가"
         },
         {
           "abilityID": 90651,
@@ -2353,7 +2353,7 @@
     {
       "id": 9088,
       "name": "진혼",
-      "desc": "턴 시작 시, [Combustion] 위력, [Combustion] 횟수 또는 특수 화상을 부여하는 공격 스킬을 보유한 인격이 5인 이상이면, 이번 전투 동안 발동 (E.G.O 스킬 제외. 대기 인원 제외)\n\n턴 시작 시, 모든 적(환상체일 경우, 모든 부위)에게 [Combustion] 횟수 3을 부여하고 [Combustion] 위력 15를 무작위로 나누어 부여. (웨이브 당 최대 1회)\n\n[Combustion] 위력, [Combustion] 횟수 또는 특수 화상을 부여하는 스킬의 최종 위력 +1, 코인 위력 +1, [Combustion] 위력 부여 값 +1, [Combustion] 횟수 부여 값 +1.\n\n[Combustion] 위력, 횟수, 특수 화상을 부여하는 스킬로 합 승리 시, (남은 코인 수 + 1)만큼 대상 적에게 [Combustion] 위력을 부여",
+      "desc": "턴 시작 시, [Combustion] 위력, [Combustion] 횟수 또는 특수 화상을 부여하는 공격 스킬을 보유한 인격이 5인 이상이면, 이번 전투 동안 발동 (E.G.O 스킬 제외. 대기 인원 제외)\n\n턴 시작 시, 모든 적(환상체일 경우, 모든 부위)에게 [Combustion] 횟수 3을 부여하고 [Combustion] 위력 15를 무작위로 나누어 부여. (웨이브 당 최대 1회)\n\n[Combustion] 위력, [Combustion] 횟수 또는 특수 화상을 부여하는 더하기 코인 스킬의 최종 위력 +1, 코인 위력 +1, [Combustion] 위력 부여 값 +1, [Combustion] 횟수 부여 값 +1.\n- 빼기 코인 스킬일 경우, 코인 위력 대신 기본 위력 +(4/코인 수) (최소 1, 소수점 버림)\n\n[Combustion] 위력, 횟수, 특수 화상을 부여하는 스킬로 합 승리 시, (남은 코인 수 + 1)만큼 대상 적에게 [Combustion] 위력을 부여",
       "simpleDesc": [
         {
           "abilityID": 9088,
@@ -2361,7 +2361,7 @@
         },
         {
           "abilityID": 90881,
-          "simpleDesc": "스킬 최종 위력 +1, 코인 위력 +1, [Combustion] 위력 부여 값 +1, [Combustion] 횟수 부여 값 +1"
+          "simpleDesc": "스킬 최종 위력 +1, 코인/기본 위력 증가, [Combustion] 위력 부여 값 +1, [Combustion] 횟수 부여 값 +1"
         },
         {
           "abilityID": 90882,
@@ -2417,7 +2417,7 @@
     {
       "id": 9090,
       "name": "피안개",
-      "desc": "턴 시작 시, [Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 공격 스킬을 보유한 인격이 5인 이상이면, 이번 전투 동안 발동 (E.G.O 스킬 제외. 대기 인원 제외)\n\n아군이 스킬 효과로 적에게 부여하는 [Laceration] 위력과 [Laceration] 횟수가 2배로 적용.\n\n턴 시작 시 편성 순서가 제일 빠른 인격의 [Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 스킬의 코인 위력 +2, 피해량 +100%. 해당 캐릭터가 공격하거나, 합을 진행한 적이 사망했으면, 사망한 적의 남은 [Laceration] 위력을 모든 적에게 무작위로 나눠서 부여. (집중 전투인 경우, 부위로 판정)\n\n[Laceration] 위력, 횟수 또는 특수 출혈을 부여하는 스킬의 코인 위력 +1",
+      "desc": "턴 시작 시, [Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 공격 스킬을 보유한 인격이 5인 이상이면, 이번 전투 동안 발동 (E.G.O 스킬 제외. 대기 인원 제외)\n\n아군이 스킬 효과로 적에게 부여하는 [Laceration] 위력과 [Laceration] 횟수가 2배로 적용.\n\n턴 시작 시 편성 순서가 제일 빠른 인격의 [Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 더하기 코인 스킬의 코인 위력 +2, 피해량 +100%.\n- 빼기 코인 스킬일 경우, 코인 위력 대신 기본 위력 +(8/코인 수) (최소 1, 소수점 버림)\n해당 캐릭터가 공격하거나, 합을 진행한 적이 사망했으면, 사망한 적의 남은 [Laceration] 위력을 모든 적에게 무작위로 나눠서 부여. (집중 전투인 경우, 부위로 판정)\n\n[Laceration] 위력, 횟수 또는 특수 출혈을 부여하는 더하기 코인 스킬의 코인 위력 +1, 피해량 +30%\n- 빼기 코인 스킬일 경우, 코인 위력 대신 기본 위력 +(4/코인 수) (최소 1, 소수점 버림)",
       "simpleDesc": [
         {
           "abilityID": 9090,
@@ -2425,11 +2425,11 @@
         },
         {
           "abilityID": 90901,
-          "simpleDesc": "스킬 코인 위력 +2, 피해량 100% 증가"
+          "simpleDesc": "스킬 코인/기본 위력 증가, 피해량 100% 증가"
         },
         {
           "abilityID": 90902,
-          "simpleDesc": "[Laceration] 위력, 횟수 또는 특수 출혈을 부여하는 스킬의 코인 위력 +1"
+          "simpleDesc": "[Laceration] 위력, 횟수 또는 특수 출혈을 부여하는 스킬의 코인/기본 위력 증가, 피해량 30% 증가"
         },
         {
           "abilityID": 90903,
@@ -2645,7 +2645,7 @@
     {
       "id": 9098,
       "name": "복주머니",
-      "desc": "턴 시작 시, [Breath] 위력 또는 [Breath] 횟수를 부여하거나 획득하는 공격 스킬을 보유한 인격이 5인 이상이면, 이번 전투 동안 발동 (E.G.O 스킬 제외. 대기 인원 제외)\n\n전투 시작 단계에서 [Breath] 상태인 무작위 아군이 스킬을 사용하여 적에게 치명타 피해를 입힐 경우, 다음 턴 시작 시 모든 아군이 [Breath] 위력 7 얻고 [Breath] 횟수 7 증가 (턴 당 1회 발동).\n\n스킬을 사용(E.G.O 스킬 제외)하여 [Breath] 위력 또는 [Breath] 횟수를 부여하거나 획득하는 인격이 사용하는 스킬 3의 최종 위력 +3, 코인 위력 +(12/코인 수), 피해량 +(50/코인 수)%.\n\n전투 시작 시, 무작위 아군 하나가 [Breath] 위력 3 얻음 (공격 스킬을 사용하여 [Breath] 위력 또는 [Breath] 횟수를 부여하거나 획득하는 인격을 우선으로 지정). 우울 속성 공격 스킬을 보유한 아군에게 우선으로 적용되며, 이 경우에는 [Breath] 위력 3 얻고 [Breath] 횟수 2 증가.",
+      "desc": "턴 시작 시, [Breath] 위력 또는 [Breath] 횟수를 부여하거나 획득하는 공격 스킬을 보유한 인격이 5인 이상이면, 이번 전투 동안 발동 (E.G.O 스킬 제외. 대기 인원 제외)\n\n전투 시작 단계에서 [Breath] 상태인 무작위 아군이 스킬을 사용하여 적에게 치명타 피해를 입힐 경우, 다음 턴 시작 시 모든 아군이 [Breath] 위력 7 얻고 [Breath] 횟수 7 증가 (턴 당 1회 발동).\n\n스킬을 사용(E.G.O 스킬 제외)하여 [Breath] 위력 또는 [Breath] 횟수를 부여하거나 획득하는 인격이 사용하는 스킬 3의 최종 위력 +3, 더하기 코인 위력 +(12/코인 수), 피해량 +(50/코인 수)%.\n- 빼기 코인 스킬일 경우, 더하기 코인 위력 대신 최종 위력 +(12/코인수) (최소 1, 소수점 버림)\n\n전투 시작 시, 무작위 아군 하나가 [Breath] 위력 3 얻음 (공격 스킬을 사용하여 [Breath] 위력 또는 [Breath] 횟수를 부여하거나 획득하는 인격을 우선으로 지정). 우울 속성 공격 스킬을 보유한 아군에게 우선으로 적용되며, 이 경우에는 [Breath] 위력 3 얻고 [Breath] 횟수 2 증가.",
       "simpleDesc": [
         {
           "abilityID": 9098,
@@ -2653,7 +2653,7 @@
         },
         {
           "abilityID": 90981,
-          "simpleDesc": "최종 위력 +3, 코인 위력 +(12/코인 수), 피해량 +(50/코인 수)%"
+          "simpleDesc": "최종 위력 +3, 코인/최종 위력 증가, 피해량 +(50/코인 수)%"
         },
         {
           "abilityID": 90982,
@@ -2790,40 +2790,40 @@
     {
       "id": 9103,
       "name": "울화통",
-      "desc": "[편성 1번, 2번 인격 전용 효과]\n\n[Combustion] 또는 특수 화상에 걸린 적에게 스킬 효과로 [Combustion] 또는 특수 화상을 부여할 경우, 다음 턴에 [Agility] 1 얻음. (스킬 당 1회, 턴 당 최대 2회)\n\n[Agility]을 이미 보유한 경우, 효과가 강화되어 [Agility] 1, [AttackUp] 2 얻음. (스킬 당 1회, 턴 당 최대 2회)",
+      "desc": "[Combustion] 또는 특수 화상에 걸린 적에게 스킬 효과로 [Combustion] 위력이나 횟수 또는 특수 화상을 부여할 경우, 다음 턴에 [Agility] 1 얻음. (스킬 당 1회, 턴 당 최대 2회)\n\n[Agility]을 이미 보유한 경우, 효과가 강화되어 [Agility] 1, [AttackUp] 2 얻음.",
       "simpleDesc": [
         {
           "abilityID": 9103,
-          "simpleDesc": "스킬 효과로 [Combustion] 또는 특수 화상을 부여할 경우, 다음 턴에 [Agility] 1 얻음."
+          "simpleDesc": "스킬 효과로 [Combustion] 위력이나 횟수 또는 특수 화상을 부여할 경우, 다음 턴에 [Agility] 1 얻음."
         }
       ]
     },
     {
       "id": 19103,
       "name": "울화통+",
-      "desc": "[편성 1번, 2번, <style=\"upgradeHighlight\">3번</style> 인격 전용 효과]\n\n[Combustion] 또는 특수 화상에 걸린 적에게 스킬 효과로 [Combustion] 또는 특수 화상을 부여할 경우, 다음 턴에 [Agility] 1 얻음. (스킬 당 1회, 턴 당 최대 2회)\n\n[Agility]을 이미 보유한 경우, 효과가 강화되어 <style=\"upgradeHighlight\">[Agility] 2</style>, [AttackUp] 2 얻음. (스킬 당 1회, 턴 당 최대 2회)",
+      "desc": "[Combustion] 또는 특수 화상에 걸린 적에게 스킬 효과로 [Combustion] 위력이나 횟수 또는 특수 화상을 부여할 경우, 다음 턴에 [Agility] 1 얻음. (스킬 당 1회, 턴 당 최대 3회)\n\n[Agility]을 이미 보유한 경우, 효과가 강화되어 <style=\"upgradeHighlight\">[Agility] 2</style>, [AttackUp] 2 얻음.",
       "simpleDesc": [
         {
           "abilityID": 19103,
-          "simpleDesc": "스킬 효과로 [Combustion] 또는 특수 화상을 부여할 경우, 다음 턴에 [Agility] 1 얻음."
+          "simpleDesc": "스킬 효과로 [Combustion] 위력이나 횟수 또는 특수 화상을 부여할 경우, 다음 턴에 [Agility] 1 얻음."
         }
       ]
     },
     {
       "id": 29103,
       "name": "울화통++",
-      "desc": "[편성 1번, 2번, 3번 인격 전용 효과]\n\n[Combustion] 또는 특수 화상에 걸린 적에게 스킬 효과로 [Combustion] 또는 특수 화상을 부여할 경우, 다음 턴에 [Agility] 1 얻음. (스킬 당 1회, 턴 당 최대 2회)\n\n[Agility]을 이미 보유한 경우, 효과가 강화되어 [Agility] 2, [AttackUp] 2, <style=\"upgradeHighlight\">[AttackDmgUp] 2</style> 얻음. (스킬 당 1회, 턴 당 최대 2회)",
+      "desc": "[Combustion] 또는 특수 화상에 걸린 적에게 스킬 효과로 [Combustion] 위력이나 횟수 또는 특수 화상을 부여할 경우, 다음 턴에 [Agility] 1 얻음. (스킬 당 1회, 턴 당 최대 3회)\n\n[Agility]을 이미 보유한 경우, 효과가 강화되어 [Agility] 2, [AttackUp] 2, <style=\"upgradeHighlight\">[AttackDmgUp] 2</style> 얻음.",
       "simpleDesc": [
         {
           "abilityID": 29103,
-          "simpleDesc": "[Combustion] 또는 특수 화상에 걸린 적에게 스킬 효과로 [Combustion] 또는 특수 화상을 부여할 경우, 다음 턴에 [Agility] 1 얻음."
+          "simpleDesc": "[Combustion] 또는 특수 화상에 걸린 적에게 스킬 효과로 [Combustion] 위력이나 횟수 또는 특수 화상을 부여할 경우, 다음 턴에 [Agility] 1 얻음."
         }
       ]
     },
     {
       "id": 9104,
       "name": "불빛꽃",
-      "desc": "[편성 1번, 2번 인격 전용 효과]\n\n아군이 적을 공격할 때 대상의 남은 체력이 최대 체력의 (보유한 [Combustion] 위력)% 이하일 경우 (환상체일 경우, 본체 체력으로 계산), [Combustion] 위력 또는 [Combustion] 횟수 또는 특수 화상을 부여하는 공격 스킬로 입히는 피해량 +50%",
+      "desc": "분노 공명이 3 이상이면 [Combustion] 위력, 횟수 또는 특수 화상을 부여하는 스킬의 합 위력 +1\n- 분노 완전 공명 3 이상이거나 분노 공명이 6 이상이면, 대신 합 위력 +2\n\n[편성 1번, 2번 인격 전용 효과]\n\n아군이 적을 공격할 때 대상의 남은 체력이 최대 체력의 (보유한 [Combustion] 위력)% 이하일 경우 (환상체일 경우, 본체 체력으로 계산), [Combustion] 위력 또는 [Combustion] 횟수 또는 특수 화상을 부여하는 공격 스킬로 입히는 피해량 +50%",
       "simpleDesc": [
         {
           "abilityID": 9104,
@@ -2948,7 +2948,7 @@
     {
       "id": 9109,
       "name": "안식처",
-      "desc": "[편성 1번, 2번 인격 전용 효과]\n\n[Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 스킬을 사용하여 합 승리 시 발동\n\n(남은 코인 수/2)만큼 대상에게 [Laceration] 횟수를 부여하고 다음 턴에 그 수치만큼 [AttackUp] 얻음\n\n코인 수가 2 이하인 스킬의 경우, 효과가 강화되어 그 수치가 (남은 코인 수+3)로 적용됨",
+      "desc": "[Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 스킬을 사용하여 합 승리 시 발동\n\n(남은 코인 수/2)만큼 대상에게 [Laceration] 횟수를 부여하고 다음 턴에 그 수치만큼 [AttackUp] 얻음\n\n코인 수가 2 이하인 스킬의 경우, 효과가 강화되어 그 수치가 (남은 코인 수+3)로 적용됨",
       "simpleDesc": [
         {
           "abilityID": 9109,
@@ -3656,15 +3656,15 @@
     {
       "id": 9135,
       "name": "모조발전기",
-      "desc": "[편성 1번, 2번 인격 전용 효과]\n\n턴 시작 시 [Charge] 횟수와 특수 충전의 합이 10 이상인 경우 발동. \n\n[Charge] 횟수 또는 특수 충전을 획득하거나 소모하는 스킬 3의 코인 위력 +1.\n\n해당 스킬의 기본 위력이 5 미만일 경우 피해량 +25%, 기본 위력이 5 이상일 경우 코인 위력 추가로 +1.",
+      "desc": "[편성 1번, 2번 인격 전용 효과]\n\n턴 시작 시 [Charge] 횟수와 특수 충전의 합이 10 이상인 경우 발동. \n\n[Charge] 횟수 또는 특수 충전을 획득하거나 소모하는 스킬 3의 더하기 코인 위력 +1.\n- 빼기 코인 스킬일 경우, 더하기 코인 위력 대신 기본 위력 +(4/코인 수). (최소 1, 소수점 버림)\n\n해당 스킬의 기본 위력이 5 미만일 경우 피해량 +25%, 기본 위력이 5 이상일 경우 더하기 코인 위력 추가로 +1.\n- 빼기 코인 스킬일 경우, 더하기 코인 위력 대신 기본 위력 +(4/코인 수). (최소 1, 소수점 버림)",
       "simpleDesc": [
         {
           "abilityID": 9135,
-          "simpleDesc": "[Charge] 횟수 또는 특수 충전을 소모하는 스킬 3의 코인 위력 +1"
+          "simpleDesc": "[Charge] 횟수 또는 특수 충전을 소모하는 스킬 3의 코인/기본 위력 증가"
         },
         {
           "abilityID": 91351,
-          "simpleDesc": "피해량 +25% 혹은 코인 위력 추가로 +1"
+          "simpleDesc": "피해량 +25% 혹은 코인/기본 위력 추가로 증가"
         }
       ]
     },
@@ -3939,41 +3939,29 @@
       "simpleDesc": [
         {
           "abilityID": 9144,
-          "simpleDesc": "다음 턴에 [Agility] 1, [PenetrateDamageUp] 1 얻음"
-        },
-        {
-          "abilityID": 91441,
-          "simpleDesc": "다음 턴에 [Agility] 1 추가로 얻음"
+          "simpleDesc": "다음 턴에 [Agility] , [PenetrateDamageUp] 얻음"
         }
       ]
     },
     {
       "id": 19144,
       "name": "축복이었던+",
-      "desc": "[편성 <style=\"upgradeHighlight\">5번</style>, 6번 인격 전용 효과]\n\n관통 스킬을 사용하여 적에게 적중 시, 다음 턴에 [Agility] 1, [PenetrateDamageUp] 1 얻음 (턴 당 1회).\n\n해당 스킬로 적 처치 시, 다음 턴에 [Agility] 1, <style=\"upgradeHighlight\">[PenetrateDamageUp] 1</style> 추가로 얻음 (턴 당 1회).",
+      "desc": "[편성 <style=\"upgradeHighlight\">5번</style>, 6번 인격 전용 효과]\n\n관통 스킬을 사용하여 적에게 적중 시, 다음 턴에 [Agility] 1, [PenetrateDamageUp] 1 얻음 (인격 별로 턴 당 1회).\n\n해당 스킬로 적 처치 시, 다음 턴에 [Agility] 1, <style=\"upgradeHighlight\">[PenetrateDamageUp] 1</style> 추가로 얻음 (인격 별로 턴 당 1회).",
       "simpleDesc": [
         {
           "abilityID": 19144,
-          "simpleDesc": "다음 턴에 [Agility] 1, [PenetrateDamageUp] 1 얻음"
-        },
-        {
-          "abilityID": 191441,
-          "simpleDesc": "다음 턴에 [Agility] 1, [PenetrateDamageUp] 1 추가로 얻음"
+          "simpleDesc": "다음 턴에 [Agility] , [PenetrateDamageUp] 얻음"
         }
       ]
     },
     {
       "id": 29144,
       "name": "축복이었던++",
-      "desc": "[편성 5번, 6번 인격 전용 효과]\n\n관통 스킬을 사용하여 적에게 적중 시, 다음 턴에 [Agility] 1, [PenetrateDamageUp] 1 얻음 (턴 당 <style=\"upgradeHighlight\">2</style>회).\n\n해당 스킬로 적 처치 시, 다음 턴에 [Agility] 1, [PenetrateDamageUp] <style=\"upgradeHighlight\">2</style> 추가로 얻음 (턴 당 1회).",
+      "desc": "[편성 5번, 6번 인격 전용 효과]\n\n관통 스킬을 사용하여 적에게 적중 시, 다음 턴에 [Agility] 1, [PenetrateDamageUp] 1 얻음 (인격 별로 턴 당 <style=\"upgradeHighlight\">2</style>회).\n\n해당 스킬로 적 처치 시, 다음 턴에 [Agility] 1, [PenetrateDamageUp] <style=\"upgradeHighlight\">2</style> 추가로 얻음 (인격 별로 턴 당 1회).",
       "simpleDesc": [
         {
           "abilityID": 29144,
-          "simpleDesc": "다음 턴에 [Agility] 1, [PenetrateDamageUp] 1 얻음"
-        },
-        {
-          "abilityID": 291441,
-          "simpleDesc": " 다음 턴에 [Agility] 1, [PenetrateDamageUp] 2 추가로 얻음"
+          "simpleDesc": "다음 턴에 [Agility] , [PenetrateDamageUp] 얻음"
         }
       ]
     },
@@ -4413,11 +4401,11 @@
     {
       "id": 9161,
       "name": "치성",
-      "desc": "턴 시작 시, [Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 공격 스킬을 보유한 인격이 5인 이상이면, 이번 전투 동안 발동 (E.G.O 스킬 제외. 대기 인원 제외)\n\n속도가 가장 빠른 아군 1명의 [Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 스킬의 코인 위력 +1, 피해량 +50%\n\n[Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 스킬의 최종 위력 +1.",
+      "desc": "턴 시작 시, [Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 공격 스킬을 보유한 인격이 5인 이상이면, 이번 전투 동안 발동 (E.G.O 스킬 제외. 대기 인원 제외)\n\n속도가 가장 빠른 아군 1명의 [Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 더하기 코인 스킬의 코인 위력 +1, 피해량 +50%\n- 빼기 코인 스킬일 경우, 코인 위력 대신 기본 위력 +(4/코인 수) (최소 1, 소수점 버림)\n\n[Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 스킬의 최종 위력 +1.",
       "simpleDesc": [
         {
           "abilityID": 9161,
-          "simpleDesc": "코인 위력 +1, 피해량 +50%"
+          "simpleDesc": "코인/기본 위력 증가, 피해량 +50%"
         },
         {
           "abilityID": 91611,
@@ -4484,11 +4472,11 @@
     {
       "id": 9179,
       "name": "추억",
-      "desc": "턴 시작 시, [Breath] 위력 또는 [Breath] 횟수를 부여하거나 획득하는 공격 스킬을 보유한 인격이 5인 이상이면, 이번 전투 동안 발동 (E.G.O 스킬 제외. 대기 인원 제외)\n\n스킬을 사용(E.G.O 스킬 제외)하여 [Breath] 위력 또는 [Breath] 횟수를 획득하는 인격이 사용하는 스킬 3의 코인 위력 +1.\n\n전투 시작 시, 무작위 아군 하나가 [Breath] 위력 3 얻음 (공격 스킬을 사용하여 [Breath] 횟수를 획득하는 인격을 우선으로 지정). 우울 속성 공격 스킬을 보유한 아군에게 우선으로 적용되며, 이 경우에는 [Breath] 위력 3 얻고 [Breath] 횟수 2 증가.",
+      "desc": "턴 시작 시, [Breath] 위력 또는 [Breath] 횟수를 부여하거나 획득하는 공격 스킬을 보유한 인격이 5인 이상이면, 이번 전투 동안 발동 (E.G.O 스킬 제외. 대기 인원 제외)\n\n스킬을 사용(E.G.O 스킬 제외)하여 [Breath] 위력 또는 [Breath] 횟수를 획득하는 인격이 사용하는 스킬 3의 더하기 코인 위력 +1.\n- 빼기 코인 스킬일 경우, 더하기 코인 위력 대신 기본 위력 +(4/코인 수) (최소 1, 소수점 버림)\n\n전투 시작 시, 무작위 아군 하나가 [Breath] 위력 3 얻음 (공격 스킬을 사용하여 [Breath] 횟수를 획득하는 인격을 우선으로 지정). 우울 속성 공격 스킬을 보유한 아군에게 우선으로 적용되며, 이 경우에는 [Breath] 위력 3 얻고 [Breath] 횟수 2 증가.",
       "simpleDesc": [
         {
           "abilityID": 9179,
-          "simpleDesc": "코인 위력 +1"
+          "simpleDesc": "코인/기본 위력 증가"
         },
         {
           "abilityID": 91791,
@@ -4573,7 +4561,7 @@
     {
       "id": 9190,
       "name": "체험형 플랜 가이드",
-      "desc": "상점에서 스킬 교체 비용 30% 감소",
+      "desc": "상점에서 스킬 교체 비용 30% 감소 (스킬 관측 비용 제외)",
       "simpleDesc": [
         {
           "abilityID": 29190,

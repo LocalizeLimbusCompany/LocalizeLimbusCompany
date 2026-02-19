@@ -33,7 +33,7 @@
     {
       "id": 1030101,
       "name": "正義の成敗",
-      "desc": "マッチ終了時、該当スキルの与ダメージ量 +10%"
+      "desc": "マッチ勝利時、該当スキルの与ダメージ量 +10%"
     },
     {
       "id": 1030201,
@@ -98,7 +98,7 @@
     {
       "id": 1070201,
       "name": "呼吸",
-      "desc": "このターンの間、攻撃でダメージを受けなければダメージ量 +10%"
+      "desc": "このターンの間、攻撃でダメージを受けたならダメージ量 +10%"
     },
     {
       "id": 1070301,
@@ -468,7 +468,7 @@
     {
       "id": 1090421,
       "name": "満ちゆく信仰",
-      "desc": "敵が死亡した場合、精神力が最も低い味方1名が次のターンにクイック 1、ダメージ量増加 1を得る(1ターンにつき1回発動)"
+      "desc": "敵が死亡した場合、精神力が最も高い味方1名が次のターンにクイック 1、ダメージ量増加 1を得る (1ターンにつき1回発動)"
     },
     {
       "id": 1020401,
@@ -800,7 +800,7 @@
     {
       "id": 1090701,
       "name": "悟りの光",
-      "desc": "このターンの間受けたダメージ量に比例し、次のターンに<sprite name=\"HitDamageUp\"><color=#f8c200><u><link=\"HitDamageUp\">打撃ダメージ量増加</link></u></color>を得る。\n(バリアで受けたダメージを含む。ターン開始時に体力の25%だけダメージを受けたときに最大で獲得。最大獲得値 : 5)\nターン終了時、[KnowledgeExplored]が3以下なら、自分に付与されたマイナス効果のうち1つを除去"
+      "desc": "このターンの間受けたダメージ量に比例し、次のターンに<sprite name=\"HitDamageUp\"><color=#f8c200><u><link=\"HitDamageUp\">打撃ダメージ量増加</link></u></color>を得る。\n(バリアで受けたダメージを含む。ターン開始時に体力の25%だけダメージを受けたときに最大で獲得。最大獲得値 : 5)\nターン終了時、[KnowledgeExplored]が3なら、自分に付与されたマイナス効果のうち1つを除去"
     },
     {
       "id": 1090721,
@@ -1242,7 +1242,7 @@
     {
       "id": 1110811,
       "name": "奥様の声が…！",
-      "desc": "- 精神力が0未満の対象とマッチ進行時にマッチ威力 +1, ダメージ量 +30%\n- [EchoOfMansion]がある対象への与ダメージ量 +30%\n- 全コインが残っている状態でマッチ勝利時に精神力を10回復。精神力が既に最大なら、次のターンに[AttackUp]3を得る(1ターンにつき2回)",
+      "desc": "- 精神力が0未満の対象とマッチ進行時にマッチ威力 +1, ダメージ量 +20%\n- [EchoOfMansion]がある対象への与ダメージ量 +30%\n- 全コインが残っている状態でマッチ勝利時に精神力を10回復。精神力が既に最大なら、次のターンに[AttackUp]3を得る(1ターンにつき2回)",
       "summary": "精神力が-低い対象とマッチ進行時にマッチ威力 +1, ダメージ量 +20%\n対象に[EchoOfMansion]あれば与ダメージ量 +30%\nマッチ勝利時に精神力を回復"
     },
     {
@@ -1410,7 +1410,7 @@
     {
       "id": 1100902,
       "name": "不安定な自我の殻",
-      "desc": "ターン開始時に精神力が40なら、精神力を20消耗して不安定E.G.O::蜜蝋の翼 状態になる。(これ以降、ターン開始時効果が追加発動しない)\nあるいは1ターンに味方が2名以上死亡したとき、ターン終了時に精神力が-45でなければ、精神力を20にして不安定E.G.O::蜜蝋の翼 状態になる。(2つの条件が同時に発動した場合、精神力の値が高い方に決定される。)\n\n不安定E.G.O状態になるとき、ダメージや混乱区間前進で混乱状態になった場合、混乱状態を解除。解除できない混乱状態の場合、不安定E.G.O状態になれない。\n\n不安定E.G.O状態の間、[UnstableFeeling]を得る。\n\nターン開始時に精神力が0以下なら、不安定E.G.O状態が解除される。",
+      "desc": "ターン開始時に精神力が40以上なら、精神力を20消耗して不安定E.G.O::蜜蝋の翼 状態になる。(これ以降、ターン開始時効果が追加発動しない)\nあるいは1ターンに味方が2名以上死亡したとき、ターン終了時に精神力が-45でなければ、精神力を20にして不安定E.G.O::蜜蝋の翼 状態になる。(2つの条件が同時に発動した場合、精神力の値が高い方に決定される。)\n\n不安定E.G.O状態になるとき、ダメージや混乱区間前進で混乱状態になった場合、混乱状態を解除。解除できない混乱状態の場合、不安定E.G.O状態になれない。\n\n不安定E.G.O状態の間、[UnstableFeeling]を得る。\n\nターン開始時に精神力が0以下なら、不安定E.G.O状態が解除される。",
       "summary": " "
     },
     {
@@ -2186,7 +2186,7 @@
     {
       "id": 1051202,
       "name": "揷翅虎",
-      "desc": "常時適用 : [BulletPropellantAlly]を12個保有\n\n[BulletPropellantAlly]、[BulletPropellantSpecialAlly]を消耗するコインをトスするとき、該当する特殊弾丸がない場合も攻撃がキャンセルされない代わりに該当コインの的中時[Combustion]付与、[Combustion]回数増加効果が発動しない\n\nこの戦闘にて初めて守備スキルを装着するか[BulletPropellantAlly]を全て使用、または混乱したなら、該当ターン終了時に[BulletPropellantSpecialAlly]8発を装填して[IrritationAlly]1を得る(戦闘につき1回)\n- 混乱状態で効果発動時、混乱状態を解除 (強制混乱を除外)\n- [BulletPropellantAlly]が残っているなら全て消滅\n- 自分が消耗した[BulletPropellantAlly]と[BulletPropellantSpecialAlly]の合計が8以上なら、[IrritationAlly]が[HugeIrritationAlly]へ変更\n\n[BulletPropellantSpecialAlly]の最後の弾丸を消耗する基本攻撃スキルを使用する場合、\n- 攻撃開始前に攻撃加重値 +2\n- 次のターンに[BeastEyesAlly]1を得る",
+      "desc": "常時適用 : [BulletPropellantAlly]を12個保有\n\n[BulletPropellantAlly]、[BulletPropellantSpecialAlly]を消耗するコインをトスするとき、該当する特殊弾丸がない場合も攻撃がキャンセルされない代わりに該当コインの的中時[Combustion]付与、[Combustion]回数増加効果が発動しない\n\nこの戦闘にて初めて守備スキルを装着するか[BulletPropellantAlly]を全て使用、または混乱したなら、該当ターン終了時に[BulletPropellantSpecialAlly]8発を装填して[IrritationAlly]1を得る(戦闘につき1回)\n- 混乱状態で効果発動時、混乱状態を解除 (強制混乱を除く)\n- [BulletPropellantAlly]が残っているなら全て消滅\n- 自分が消耗した[BulletPropellantAlly]と[BulletPropellantSpecialAlly]の合計が8以上なら、[IrritationAlly]が[HugeIrritationAlly]へ変更\n\n[BulletPropellantSpecialAlly]の最後の弾丸を消耗する基本攻撃スキルを使用する場合、\n- 攻撃開始前に攻撃加重値 +2\n- 次のターンに[BeastEyesAlly]1を得る",
       "summary": ""
     },
     {
@@ -2417,7 +2417,7 @@
     {
       "id": 1071311,
       "name": "コンジェスチョンクリーニング・アーマー",
-      "desc": "- 戦闘開始時、自分の体力が50%未満なら、([Charge]威力 × 5)だけバリアを獲得 (最大25)\n- 被ダメージ直前、(自分の[Charge]回数)だけバリアを獲得 (最大5, 1ターンにつき最大3回)\n- 自分のスキルで[Charge]回数最大値を超過して[Charge]回数を得たなら、最大値を超過した[Charge]回数1につき該当スキルのダメージ量 +3% (最大15%)"
+      "desc": "- 戦闘開始時、自分の体力が50%未満なら、([Charge]威力 × 5)だけバリアを獲得 (最大25)\n- 被ダメージ直前、(自分の[Charge]威力)だけバリアを獲得 (最大5, 1ターンにつき最大3回)\n- 自分のスキルで[Charge]回数最大値を超過して[Charge]回数を得たなら、最大値を超過した[Charge]回数1につき該当スキルのダメージ量 +3% (最大15%)"
     },
     {
       "id": 1071321,
@@ -2607,7 +2607,7 @@
     {
       "id": 1021402,
       "name": "紙片で伝達された指令",
-      "desc": "ターン開始時\n- 自分の[BlessingOfIndexPrescriptAlly]数値によって[IndexPrescriptFaust_0] / [IndexPrescriptFaust_1] / [IndexPrescriptFaust_2] /[IndexPrescriptFaust_3]を得る\n- ランダムな敵1名へ[IndexPrescriptTargetToEnemy]を付与 (集中戦闘なら部位に付与)\n- 操作スロットにある自分の基本攻撃スキルに[IndexPrescriptTargetMarkToEnemy]を付与 (スロットごとに1つ、最大2つ付与)\n· [BlessingOfIndexPrescriptAlly]が6以上なら、スキル3に優先して付与\n- 混乱・行動不能[TabExplain]・パニック・E.G.O侵蝕状態なら、上記の全効果と[IndexPrescript_Base]遂行成否が適用されない",
+      "desc": "ターン開始時\n- 自分の[BlessingOfIndexPrescriptAlly]数値によって[IndexPrescriptFaust_0] / [IndexPrescriptFaust_1] / [IndexPrescriptFaust_2] / [IndexPrescriptFaust_3]を得る\n- ランダムな敵1名へ[IndexPrescriptTargetToEnemy]を付与 (集中戦闘なら部位に付与)\n- 操作スロットにある自分の基本攻撃スキルに[IndexPrescriptTargetMarkToEnemy]を付与 (スロットごとに1つ、最大2つ付与)\n· [BlessingOfIndexPrescriptAlly]が6以上なら、スキル3に優先して付与\n- 混乱・行動不能[TabExplain]・パニック・E.G.O侵蝕状態なら、上記の全効果と[IndexPrescript_Base]遂行成否が適用されない",
       "summary": "指令を得る\nランダムな敵に指令対象を付与\n自分のランダムな基本攻撃スキルに指令の印を付与"
     },
     {
@@ -2716,6 +2716,54 @@
       "id": 1101521,
       "name": "静念",
       "desc": "速度が最も高い味方1名が守備スキルを装着している場合、戦闘開始時に精神力を5回復、バリア5を得る"
+    },
+    {
+      "id": 1011502,
+      "name": "端末機で伝達された指令",
+      "desc": "ターン開始時、\n- 自分の[UnlockBuff_Base]段階によって[IndexPrescriptYi_0] / [IndexPrescriptYi_1] / [IndexPrescriptYi_2] / [IndexPrescriptYi_3]を得る\n- ランダムな敵1名へ[IndexPrescriptTargetToEnemy]を付与 (集中戦闘なら部位に付与)\n- 操作スロットにある自分の基本攻撃スキルに[IndexPrescriptTargetMarkToEnemy]を付与 (スロットごとに1つ、最大2つ付与)\n· [UnlockBuffAlly_2]以上なら、スキル3に優先して付与 (強化されたスキル優先)\n- 混乱・行動不能[TabExplain]・パニック・E.G.O侵蝕状態なら、上記の全効果と[IndexPrescript_Base_2nd]遂行成否が適用されない",
+      "summary": "指令遂行時、精神力を回復して指令の加護を得る\n指令失敗時、カルマを得る"
+    },
+    {
+      "id": 1011503,
+      "name": "神託代行者 / 解禁",
+      "desc": "[UnlockBuffAlly_2]未満のとき、このターンに[IndexPrescript_Base_2nd]を遂行したなら、\nターン終了時に精神力を4回復、[BlessingOfIndexPrescriptAlly]1を得る (1ターンにつき1回)\n- [IndexPrescript_Base_2nd]を遂行時、メインターゲットに[IndexPrescriptTargetToEnemy]があるなら、\n代わりに精神力を8回復、[BlessingOfIndexPrescriptAlly]3を得る\n\n[UnlockBuffAlly_2]のとき、このターンに[IndexPrescriptYi_2]を遂行したなら\nターン終了時に精神力を4回復 (1ターンにつき1回)\n- [IndexPrescript_Base_2nd]遂行時、[StackYisangSpecialSkill]が9になったなら\n代わりに精神力を8回復、[BlessingOfIndexPrescriptAlly]3を得る\n\nこのターンに[IndexPrescript_Base_2nd]を遂行できなかったなら、\nターン終了時に[KarmaOfIndexAlly]5を得る\n- [UnlockBuffAlly_3]なら、[KarmaOfIndexAlly]を獲得しない\n- 戦闘開始時に[IndexPrescript_Base_2nd]の遂行を試みたが、戦闘中に対象をターゲティングできなくなった場合には、ターン終了時に[KarmaOfIndexAlly]を獲得しない ([UnlockBuffAlly_2]未満のときに適用)\n\nターン終了時、[BlessingOfIndexPrescriptAlly]が3/6/9なら、[UnlockBuffAlly_1] / [UnlockBuffAlly_2] / [UnlockBuffAlly_3]を得る\nターン開始時、[UnlockBuffAlly_3]なら[Shin_IndexFingerYisang]を得る",
+      "summary": ""
+    },
+    {
+      "id": 1011504,
+      "name": "人差し指の親方",
+      "desc": "ステージに初めて登場したとき、[BurningWoundYisangMask]を得る\n- この効果を保有しているときにこの戦闘にて最初に混乱したなら、\nターン終了時に混乱(強制混乱を除く)を解除して\n[BurningWoundYisangMask]が[BurningWoundYisang]に変更される\n\n人差し指代行者 - <noparse>開花</noparse>E.G.O::代行 ドンキホーテが自分と一緒に戦場にいるなら、ドンキホーテに[SatisfyingEsteemNeeds]を付与",
+      "summary": ""
+    },
+    {
+      "id": 1011505,
+      "name": "神託端末機 [カドゥケウス]",
+      "desc": "基本攻撃スキルのコインごとに武器がランダムに決まり、特殊効果が適用される\n- [YisangWeapon01Hatchet]\n- [YisangWeapon02Stiletto]\n- [YisangWeapon03Greatsword]\n- [YisangWeapon04Rapier]\n- [YisangWeapon05Sledgehammer]\n- [YisangWeapon06Ultragreatsword]\n- [YisangWeapon07Lance]\n- [YisangWeapon08Chain]\n- [YisangWeapon09Scythe]\n\n[IndexPrescriptTargetMarkToEnemy]スキル使用時、[StackYisangSpecialSkill]1を得る",
+      "summary": "武器がランダムに決まる\n「Furioso-Replica」使用時に特殊効果を得る"
+    },
+    {
+      "id": 1011506,
+      "name": "神託端末機 [カドゥケウス]",
+      "desc": "基本攻撃スキルのコインごとに武器がランダムに決まり、特殊効果が適用される\n- [YisangWeapon01Hatchet]\n- [YisangWeapon02Stiletto]\n- [YisangWeapon03Greatsword]\n- [YisangWeapon04Rapier]\n- [YisangWeapon05Sledgehammer]\n- [YisangWeapon06Ultragreatsword]\n- [YisangWeapon07Lance]\n- [YisangWeapon08Chain]\n- [YisangWeapon09Scythe]\n\n[IndexPrescriptTargetMarkToEnemy]スキル使用時、[StackYisangSpecialSkill]1を得る\n\n<style=\"highlight\">この戦闘にて、「Furioso-Replica」を初めて使用したなら\n当該ターン終了時に[BurningWoundYisangMask]が[BurningWoundYisang]に変更される\n\nターン開始時に[BurningWoundYisang]を保有しているとき、\n操作スロットに「Furioso-Replica」があるなら[BlackNightmareYisang]を得る</style>",
+      "summary": "武器がランダムに決まる\n「Furioso-Replica」使用時に特殊効果を得る"
+    },
+    {
+      "id": 1011501,
+      "name": "模造された生",
+      "desc": "自分の[BlessingOfIndexPrescriptAlly]1につき、[IndexPrescriptTargetMarkToEnemy]スキルのダメージ量 +2% (最大16%)\n- [BlessingOfIndexPrescriptAlly]が9なら、代わりに基本スキルのダメージ量 +20%\n\n基本攻撃スキルの[SuperCoin]が的中時、[StackYisangSpecialSkill]1を得る\n- 攻撃終了時、残った[SuperCoin]の数だけ[StackYisangSpecialSkill]を得る",
+      "summary": "指令の印が刻まれたスキルなら、\n指令の加護に比例してダメージ量が増加\n的中時、精神力を回復\n条件を満たしたとき、[StackYisangSpecialSkill]を得る"
+    },
+    {
+      "id": 1011511,
+      "name": "模造された生",
+      "desc": "自分の[BlessingOfIndexPrescriptAlly]1につき、[IndexPrescriptTargetMarkToEnemy]スキルのダメージ量 +2% (最大16%)\n- [BlessingOfIndexPrescriptAlly]が9なら、代わりに基本スキルのダメージ量 +20%\n\n基本攻撃スキルの[SuperCoin]が的中時、[StackYisangSpecialSkill]1を得る\n- 攻撃終了時、残った[SuperCoin]の数だけ[StackYisangSpecialSkill]を得る\n<style=\"highlight\">- 「Furioso-Replica」の攻撃終了時、当該スキルの(残り[SuperCoin]数 ÷ 2)だけ次のターンに[StackYisangSpecialSkill]を得る (小数点切り捨て)</style>\n\n<style=\"highlight\">ターン終了時、このターンに[StackYisangSpecialSkill]が増加して9になったとき、\n次のターン開始時に操作スロットにスキル3がないなら、基本スキル1つをスキル3に変更 (最左端スロットの下のスキルを優先)</style>",
+      "summary": "指令の印が刻まれたスキルなら、\n指令の加護に比例してダメージ量が増加\n的中時、精神力を回復\n条件を満たしたとき、[StackYisangSpecialSkill]を得る"
+    },
+    {
+      "id": 1011521,
+      "name": "神の加護",
+      "desc": "このターンに味方が敵に初めて使用した斬撃・貫通・打撃基本攻撃スキルのダメージ量がそれぞれ +5%\n- 効果が適用されたスキルが人差し指所属人格のスキルなら、代わりに +10%\n- 攻撃開始前を基準に適用される",
+      "summary": "このターンにて最初に使用した斬撃・貫通・打撃スキルのダメージ量増加"
     }
   ]
 }

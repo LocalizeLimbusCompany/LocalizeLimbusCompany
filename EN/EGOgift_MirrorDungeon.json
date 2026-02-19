@@ -812,7 +812,7 @@
     {
       "id": 9034,
       "name": "Pinpoint Logic Circuit",
-      "desc": "When hitting an enemy with an Envy Affinity Skill or a Skill that inflicts [Combustion] Potency or 'Unique Burn', inflict additional [Combustion] Potency by half the Skill's total Coins. (rounded up)\n\n[Cannot Stack] When Move-in Reg. Heathcliff E.G.O Passive 「Circuit Wiring」 activates, this effect does not activate",
+      "desc": "When hitting an enemy with an Envy Affinity Skill or a Skill that inflicts [Combustion] Potency or 'Unique Burn', inflict additional [Combustion] Potency by half the Skill's total Coins. (rounded up)\n- [Cannot Stack] When Move-in Reg. Heathcliff E.G.O Passive 「Circuit Wiring」 activates, this effect does not activate)\n\nOn Hit, if target has 99 [Combustion] Potency, inflict 1 [IDMicroChip] (once per enemy, 3 times per turn)",
       "simpleDesc": [
         {
           "abilityID": 9034,
@@ -1769,11 +1769,11 @@
     {
       "id": 9065,
       "name": "Artistic Sense",
-      "desc": "Deal +35% damage against enemies suffering negative effects (Low Morale, Panic) from SP loss.\n\nWhen [Sinking]'s effect applies to enemies without Sanity, the Affinity of the damage inflicted changes to whatever is the most effective.",
+      "desc": "Deal +35% damage against enemies suffering negative effects (Low Morale, Panic) from SP loss.\n\nIf the Skill inflicts [Sinking] Potency or Count(including Unique 'Sinking'), deal +10% damage in addition to the above.\n\nWhen [Sinking]'s effect applies to enemies without Sanity, the Affinity of the damage inflicted changes to whatever is the most effective.",
       "simpleDesc": [
         {
           "abilityID": 9065,
-          "simpleDesc": "Deal +35% damage"
+          "simpleDesc": "Deal more damage"
         },
         {
           "abilityID": 90651,
@@ -1784,11 +1784,11 @@
     {
       "id": 19065,
       "name": "Artistic Sense+",
-      "desc": "<style=\"upgradeHighlight\">Deal +40% damage against enemies with 0 or less SP.</style>\n\nWhen [Sinking]'s effect applies to enemies without Sanity, the Affinity of the damage inflicted changes to whatever is the most effective.",
+      "desc": "<style=\"upgradeHighlight\">Deal +40% damage against enemies with less than 0 SP.</style>\n\nIf the Skill inflicts [Sinking] Potency or Count(including Unique 'Sinking'), deal +<style=\"upgradeHighlight\">10</style>% damage in addition to the above.\n\nWhen [Sinking]'s effect applies to enemies without Sanity, the Affinity of the damage inflicted changes to whatever is the most effective.",
       "simpleDesc": [
         {
           "abilityID": 19065,
-          "simpleDesc": "Deal +40% damage"
+          "simpleDesc": "Deal more damage"
         },
         {
           "abilityID": 90651,
@@ -1799,11 +1799,11 @@
     {
       "id": 29065,
       "name": "Artistic Sense++",
-      "desc": "<style=\"upgradeHighlight\">Deal +50% damage against enemies without Sanity or ones with 0 or less SP.</style>\n\nWhen [Sinking]'s effect applies to enemies without Sanity, the Affinity of the damage inflicted changes to whatever is the most effective.",
+      "desc": "<style=\"upgradeHighlight\">Deal +50% damage against enemies without SP or with less than 0 SP.</style>\n\nIf the Skill inflicts [Sinking] Potency or Count(including Unique 'Sinking'), deal +<style=\"upgradeHighlight\">10</style>% damage in addition to the above.\n\nWhen [Sinking]'s effect applies to enemies without Sanity, the Affinity of the damage inflicted changes to whatever is the most effective.",
       "simpleDesc": [
         {
           "abilityID": 29065,
-          "simpleDesc": "Deal +50% damage"
+          "simpleDesc": "Deal more damage"
         },
         {
           "abilityID": 90651,
@@ -2350,7 +2350,7 @@
     {
       "id": 9088,
       "name": "Soothe the Dead",
-      "desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply [Combustion] Potency, Count, or 'Unique Burn'. (except E.G.O Skills; except Backup Units)\n\nInflict 3 [Combustion] Count to all enemies and randomly inflict a total of 15 [Combustion] Potency between all enemies (or all Abnormality parts; once per wave)\n\nTo Skills that inflict [Combustion] Potency, Count, or 'Unique Burn': Final Power +1, Coin Power +1, inflicted [Combustion] Potency +1, inflicted [Combustion] Count +1.\n\nWhen winning a Clash with a Skill that inflicts [Combustion] Potency, Count, or 'Unique Burn', inflict (# of remaining Coins + 1) [Combustion] Potency to the target enemy.",
+      "desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply [Combustion] Potency, Count, or 'Unique Burn'. (except E.G.O Skills; except Backup Units)\n\nInflict 3 [Combustion] Count to all enemies and randomly inflict a total of 15 [Combustion] Potency between all enemies (or all Abnormality parts; once per wave)\n\nPlus Coin Skills that inflict [Combustion] Potency, Count, or 'Unique Burn': Final Power +1, Coin Power +1, inflicted [Combustion] Potency +1, inflicted [Combustion] Count +1.\n- Minus Coin Base Attack Skills: Instead of gaining Coin Power, gain Base Power +(4 / # of Coins) (min 1; rounded down)\n\nWhen winning a Clash with a Skill that inflicts [Combustion] Potency, Count, or 'Unique Burn', inflict (# of remaining Coins + 1) [Combustion] Potency to the target enemy.",
       "simpleDesc": [
         {
           "abilityID": 9088,
@@ -2358,7 +2358,7 @@
         },
         {
           "abilityID": 90881,
-          "simpleDesc": "Skill Final Power +1, Coin Power +1, inflicted [Combustion] Potency +1, inflicted [Combustion] Count +1."
+          "simpleDesc": "Skill Final Power +1, gain Coin/Base Power, inflicted [Combustion] Potency +1, inflicted [Combustion] Count +1."
         },
         {
           "abilityID": 90882,
@@ -2414,7 +2414,7 @@
     {
       "id": 9090,
       "name": "Bloody Mist",
-      "desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply [Laceration] Potency, Count, or 'Unique Bleed'. (except E.G.O Skills; except Backup Units)\n\nAllies inflict double the amount of [Laceration] Potency and Count with Skill effects against enemies.\n\nThe ally highest in the Deployment order) Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed': Coin Power +2, damage dealt +100%. If the enemy attacked by or Clashed with the said ally dies, inflict the remaining [Laceration] Potency on the enemy randomly between all enemies. (for Focused Encounters, Parts)\n\nCoin Power +1 to all Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed'",
+      "desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply [Laceration] Potency, Count, or 'Unique Bleed'. (except E.G.O Skills; except Backup Units)\n\nAllies inflict double the amount of [Laceration] Potency and Count with Skill effects against enemies.\n\nThe ally with the earliest Deployment order: Plus Coin Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed': Coin Power +2 and deal +100% damage.\n- Minus Coin Skills: Instead of gaining Coin Power, gain Base Power +(8 / # of Coins) (min 1; rounded down)\nIf the enemy attacked by or Clashed with the said ally dies, inflict the defeated enemy's remaining [Laceration] Potency randomly between all enemies. (for Focused Encounters, Parts)\n\nPlus Coin Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed': Coin Power +1, deal +30% damage\n- Minus Coin Skills: Instead of gaining Coin Power, gain Base Power +(4 / # of Coins) (min 1; rounded down)",
       "simpleDesc": [
         {
           "abilityID": 9090,
@@ -2422,11 +2422,11 @@
         },
         {
           "abilityID": 90901,
-          "simpleDesc": "Skill Coin Power +2 and deal +100% damage"
+          "simpleDesc": "Skills gain Coin/Base Power and deal +100% damage"
         },
         {
           "abilityID": 90902,
-          "simpleDesc": "Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed' gain Coin Power +1."
+          "simpleDesc": "Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed' gain Coin/Base Power and deal +30% damage"
         },
         {
           "abilityID": 90903,
@@ -2642,7 +2642,7 @@
     {
       "id": 9098,
       "name": "Lucky Pouch",
-      "desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply or gain [Breath] Potency or Count. (except E.G.O Skills; except Backup Units)\n\nCombat Start: If a random ally with [Breath] Critical Hits on an enemy with a Skill, all allies gain 7 [Breath] Potency and +7 [Breath] Count at the next Turn Start. (Once per turn)\n\nSkill 3 of Identities with Skills that apply or gain [Breath] Potency or Count(not counting E.G.O Skills): Final Power +3, Coin Power +(12/# of Coins), damage dealt +(50/# of Coins)%.\n\nCombat Start: a random ally gains 3 [Breath] Potency. (prioritizes Identities that apply or gain [Breath] Potency or Count with their Attack Skills) Prioritizes allies with Gloom Affinity Attack Skills; they gain 3 [Breath] Potency and +2 [Breath] Count.",
+      "desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply or gain [Breath] Potency or Count. (except E.G.O Skills; except Backup Units)\n\nCombat Start: If a random ally with [Breath] Critical Hits on an enemy with a Skill, all allies gain 7 [Breath] Potency and +7 [Breath] Count at the next Turn Start. (Once per turn)\n\nSkill 3 of Identities with Skills that apply or gain [Breath] Potency or Count(not counting E.G.O Skills): Final Power +3, Plus Coin Power +(12 / # of Coins), damage dealt +(50 / # of Coins)%.\n- Minus Coin Skills: Instead of gaining Plus Coin Power, gain Final Power +(12 / # of Coins) (min 1; rounded down)\n\nCombat Start: a random ally gains 3 [Breath] Potency. (prioritizes Identities that apply or gain [Breath] Potency or Count with their Attack Skills) Prioritizes allies with Gloom Affinity Attack Skills; they gain 3 [Breath] Potency and +2 [Breath] Count.",
       "simpleDesc": [
         {
           "abilityID": 9098,
@@ -2650,7 +2650,7 @@
         },
         {
           "abilityID": 90981,
-          "simpleDesc": "Skill 3: Final Power +3, Coin Power +(12/# of Coins), damage dealt +(50/# of Coins)%"
+          "simpleDesc": "Final Power +3, gain Coin/Final Power, and deal +(50 / # of Coins)% damage"
         },
         {
           "abilityID": 90982,
@@ -2787,40 +2787,40 @@
     {
       "id": 9103,
       "name": "Pain of Stifled Rage",
-      "desc": "[Effects apply only to #1, #2 Deployed Identities]\n\nWhen inflicting [Combustion] or 'Unique Burn' with a Skill effect to an enemy that has [Combustion] or 'Unique Burn', gain 1 [Agility] next turn. (2 times per Skill, 2 times per turn)\n\nIf the affected unit already has [Agility], gain 1 [Agility] and 2 [AttackUp] instead. (once per Skill, 2 times per turn)",
+      "desc": "When inflicting [Combustion] Potency, Count, or 'Unique Burn' with a Skill effect to an enemy that has [Combustion] or 'Unique Burn', gain 1 [Agility] next turn. (once per Skill, 2 times per turn)\n\nIf the affected unit already has [Agility], gain 1 [Agility] and 2 [AttackUp] instead.",
       "simpleDesc": [
         {
           "abilityID": 9103,
-          "simpleDesc": "When inflicting [Combustion] or 'Unique Burn' with a Skill effect, gain 1 [Agility] next turn."
+          "simpleDesc": "When inflicting [Combustion] Potency, Count, or 'Unique Burn' with a Skill effect, gain 1 [Agility] next turn."
         }
       ]
     },
     {
       "id": 19103,
       "name": "Pain of Stifled Rage+",
-      "desc": "[Effects apply only to #1, #2, <style=\"upgradeHighlight\">and #3</style> Deployed Identities]\n\nWhen inflicting [Combustion] or 'Unique Burn' with a Skill effect to an enemy that has [Combustion] or 'Unique Burn', gain 1 [Agility] next turn. (2 times per Skill, 2 times per turn)\n\nIf the affected unit already has [Agility], gain <style=\"upgradeHighlight\">2 [Agility]</style> and 2 [AttackUp] instead. (once per Skill, 2 times per turn)",
+      "desc": "When inflicting [Combustion] Potency, Count, or 'Unique Burn' with a Skill effect to an enemy that has [Combustion] or 'Unique Burn', gain 1 [Agility] next turn. (once per Skill, 3 times per turn)\n\nIf the affected unit already has [Agility], gain <style=\"upgradeHighlight\">2 [Agility]</style> and 2 [AttackUp] instead.",
       "simpleDesc": [
         {
           "abilityID": 19103,
-          "simpleDesc": "When inflicting [Combustion] or 'Unique Burn' with a Skill effect, gain 1 [Agility] next turn."
+          "simpleDesc": "When inflicting [Combustion] Potency, Count, or 'Unique Burn' with a Skill effect, gain 1 [Agility] next turn."
         }
       ]
     },
     {
       "id": 29103,
       "name": "Pain of Stifled Rage++",
-      "desc": "[Effects apply only to #1, #2, and #3 Deployed Identities]\n\nWhen inflicting [Combustion] or 'Unique Burn' with a Skill effect to an enemy that has [Combustion] or 'Unique Burn', gain 1 [Agility] next turn. (2 times per Skill, 2 times per turn)\n\nIf the affected unit already has [Agility], gain 2 [Agility], 2 [AttackUp], and <style=\"upgradeHighlight\">2 [AttackDmgUp]</style> instead. (once per Skill, 2 times per turn)",
+      "desc": "When inflicting [Combustion] Potency, Count, or 'Unique Burn' with a Skill effect to an enemy that has [Combustion] or 'Unique Burn', gain 1 [Agility] next turn. (once per Skill, 3 times per turn)\n\nIf the affected unit already has [Agility], gain 2 [Agility], 2 [AttackUp], and <style=\"upgradeHighlight\">2 [AttackDmgUp]</style> instead.",
       "simpleDesc": [
         {
           "abilityID": 29103,
-          "simpleDesc": "When inflicting [Combustion] or 'Unique Burn' with a Skill effect to an enemy that has [Combustion] or 'Unique Burn', gain 1 [Agility] next turn."
+          "simpleDesc": "When inflicting [Combustion] Potency, Count, or 'Unique Burn' with a Skill effect to an enemy that has [Combustion] or 'Unique Burn', gain 1 [Agility] next turn."
         }
       ]
     },
     {
       "id": 9104,
       "name": "Ardent Flower",
-      "desc": "[Effect applies only to #1, #2 Deployed Identities]\n\nWhen an ally attacks an enemy, if the target has ([Combustion] Potency on self)% or less HP(for Abnormalities, Core HP), deal +50% damage with Attack Skills that inflict [Combustion] Potency, Count, or 'Unique Burn'.",
+      "desc": "At 3+ Wrath Reson., Skills that inflict [Combustion] Potency, Count, or Unique 'Burn' gain Clash Power +1\n- At 3+ Wrath A-Reson., or at 6+ Wrath Reson., gain +2 Clash Power instead\n\n[Effect applies only to #1, #2 Deployed Identities]\n\nWhen an ally attacks an enemy, if the target has ([Combustion] Potency on self)% or less HP(for Abnormalities, Core HP), deal +50% damage with Attack Skills that inflict [Combustion] Potency, Count, or 'Unique Burn'.",
       "simpleDesc": [
         {
           "abilityID": 9104,
@@ -2945,7 +2945,7 @@
     {
       "id": 9109,
       "name": "Respite",
-      "desc": "[Effects apply only to #1, #2 Deployed Identities]\n\nActivates upon Clash Win using a Skill that inflicts [Laceration] Potency, Count, or 'Unique Bleed'\n\nInflict +(# of remaining Coins/2) [Laceration] Count to the target, and gain [AttackUp] equal to that value next turn\n\nFor Skills with 2- Coins, use (# of remaining Coins+3) to calculate instead",
+      "desc": "Activates upon Clash Win using a Skill that inflicts [Laceration] Potency, Count, or 'Unique Bleed'\n\nInflict +(# of remaining Coins/2) [Laceration] Count to the target, and gain [AttackUp] equal to that value next turn\n\nFor Skills with 2- Coins, use (# of remaining Coins+3) to calculate instead",
       "simpleDesc": [
         {
           "abilityID": 9109,
@@ -3653,15 +3653,15 @@
     {
       "id": 9135,
       "name": "Imitative Generator",
-      "desc": "[Effects apply only to #1, #2 Deployed Identities]\n\nActivates when the unit has 10+ ([Charge] Count + 'Unique Charge') at Turn Start.\n\nCoin Power +1 to Skill 3 that gains or consumes [Charge] Count or 'Unique Charge'.\n\nIf the said Skill has less than 5 Base Power, deal +25% damage; if it has 5+ Base Power, gain an additional Coin Power +1.",
+      "desc": "[Effects apply only to #1, #2 Deployed Identities]\n\nActivates when the unit has 10+ ([Charge] Count + 'Unique Charge') at Turn Start.\n\nPlus Coin Power +1 to Skill 3 that gains or consumes [Charge] Count or 'Unique Charge'.\n- Minus Coin Skills: Instead of gaining Plus Coin Power, gain Base Power +(4 / # of Coins) (min 1; rounded down)\n\nIf the said Skill has less than 5 Base Power, deal +25% damage; if it has 5+ Base Power, gain an additional Plus Coin Power +1.\n- Minus Coin Skills: Instead of gaining Plus Coin Power, gain Base Power +(4 / # of Coins) (min 1; rounded down)",
       "simpleDesc": [
         {
           "abilityID": 9135,
-          "simpleDesc": "Coin Power +1 to Skill 3 that consumes [Charge] Count or 'Unique Charge'"
+          "simpleDesc": "Skill 3 that consumes [Charge] Count or 'Unique Charge' gain Coin/Base Power"
         },
         {
           "abilityID": 91351,
-          "simpleDesc": "Deal +25% damage or gain an additional Coin Power +1"
+          "simpleDesc": "Deal +25% damage or gain additional Coin/Base Power"
         }
       ]
     },
@@ -3936,41 +3936,29 @@
       "simpleDesc": [
         {
           "abilityID": 9144,
-          "simpleDesc": "Gain 1 [Agility] and 1 [PenetrateDamageUp] next turn"
-        },
-        {
-          "abilityID": 91441,
-          "simpleDesc": "Gain 1 additional [Agility] next turn"
+          "simpleDesc": "Gain [Agility] and [PenetrateDamageUp] next turn"
         }
       ]
     },
     {
       "id": 19144,
       "name": "Once, A Blessing+",
-      "desc": "[Effects apply only to <style=\"upgradeHighlight\">#5</style>, #6 Deployed Identities]\n\nWhen hitting an enemy with a Pierce Skill, gain 1 [Agility] and 1 [PenetrateDamageUp] next turn. (once per turn)\n\nWhen defeating an enemy with the said Skill, gain 1 additional [Agility] and <style=\"upgradeHighlight\">1 additional [PenetrateDamageUp]</style> next turn. (once per turn)",
+      "desc": "[Effects apply only to <style=\"upgradeHighlight\">#5</style>, #6 Deployed Identities]\n\nWhen hitting an enemy with a Pierce Skill, gain 1 [Agility] and 1 [PenetrateDamageUp] next turn (once per turn for each Identity).\n\nWhen defeating an enemy with the said Skill, gain 1 additional [Agility] and <style=\"upgradeHighlight\">1 additional [PenetrateDamageUp]</style> next turn (once per turn for each Identity).",
       "simpleDesc": [
         {
           "abilityID": 19144,
-          "simpleDesc": "Gain 1 [Agility] and 1 [PenetrateDamageUp] next turn"
-        },
-        {
-          "abilityID": 191441,
-          "simpleDesc": "Gain 1 [Agility] and 1 [PenetrateDamageUp] next turn"
+          "simpleDesc": "Gain [Agility] and [PenetrateDamageUp] next turn"
         }
       ]
     },
     {
       "id": 29144,
       "name": "Once, A Blessing++",
-      "desc": "[Effects apply only to #5, #6 Deployed Identities]\n\nWhen hitting an enemy with a Pierce Skill, gain 1 [Agility] and 1 [PenetrateDamageUp] next turn. (<style=\"upgradeHighlight\">2 times</style> per turn)\n\nWhen defeating an enemy with the said Skill, gain 1 additional [Agility] and <style=\"upgradeHighlight\">2</style> additional [PenetrateDamageUp] next turn. (once per turn)",
+      "desc": "[Effects apply only to #5, #6 Deployed Identities]\n\nWhen hitting an enemy with a Pierce Skill, gain 1 [Agility] and 1 [PenetrateDamageUp] next turn (<style=\"upgradeHighlight\">2</style> times per turn for each Identity).\n\nWhen defeating an enemy with the said Skill, gain 1 additional [Agility] and <style=\"upgradeHighlight\">2</style> additional [PenetrateDamageUp] next turn (once per turn for each Identity).",
       "simpleDesc": [
         {
           "abilityID": 29144,
-          "simpleDesc": "Gain 1 [Agility] and 1 [PenetrateDamageUp] next turn"
-        },
-        {
-          "abilityID": 291441,
-          "simpleDesc": "Gain 1 [Agility] and 2 [PenetrateDamageUp] next turn"
+          "simpleDesc": "Gain [Agility] and [PenetrateDamageUp] next turn"
         }
       ]
     },
@@ -4408,11 +4396,11 @@
     {
       "id": 9161,
       "name": "Devotion",
-      "desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply [Laceration] Potency, Count, or 'Unique Bleed'. (except E.G.O Skills; except Backup Units)\n\n1 ally with the fastest Speed) Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed': Coin Power +1, damage dealt +50%\n\nFinal Power +1 to all Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed'.",
+      "desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply [Laceration] Potency, Count, or 'Unique Bleed'. (except E.G.O Skills; except Backup Units)\n\n1 ally with the fastest Speed) Plus Coin Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed': Coin Power +1, damage dealt +50%\n- Minus Coin Skills: Instead of gaining Coin Power, gain Base Power +(4 / # of Coins) (min 1; rounded down)\n\nFinal Power +1 to all Skills that inflict [Laceration] Potency, Count, or 'Unique Bleed'.",
       "simpleDesc": [
         {
           "abilityID": 9161,
-          "simpleDesc": "Coin Power +1, deal +50% damage"
+          "simpleDesc": "Gain Coin/Base Power and deals +50% damage"
         },
         {
           "abilityID": 91611,
@@ -4479,11 +4467,11 @@
     {
       "id": 9179,
       "name": "Reminiscence",
-      "desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply or gain [Breath] Potency or Count. (except E.G.O Skills; except Backup Units)\n\nSkill 3 of Identities with Skills(except E.G.O Skills) that gain [Breath] Potency or Count: Coin Power +1\n\nCombat Start: a random ally gains 3 [Breath] Potency. (prioritizes Identities that gain [Breath] Potency or Count with their Attack Skills) Prioritizes allies with Gloom Affinity Attack Skills; they gain 3 [Breath] Potency and +2 [Breath] Count instead.",
+      "desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply or gain [Breath] Potency or Count. (except E.G.O Skills; except Backup Units)\n\nSkill 3 of Identities with Skills(except E.G.O Skills) that gain [Breath] Potency or Count: Plus Coin Power +1\n- Minus Coin Skills: Instead of gaining Plus Coin Power, gain Base Power +(4 / # of Coins) (min 1; rounded down)\n\nCombat Start: a random ally gains 3 [Breath] Potency. (prioritizes Identities that gain [Breath] Count with their Attack Skills) Prioritizes allies with Gloom Affinity Attack Skills; they gain 3 [Breath] Potency and +2 [Breath] Count instead.",
       "simpleDesc": [
         {
           "abilityID": 9179,
-          "simpleDesc": "Coin Power +1"
+          "simpleDesc": "Gain Coin/Base Power"
         },
         {
           "abilityID": 91791,
@@ -4568,7 +4556,7 @@
     {
       "id": 9190,
       "name": "Trial Plan Guide",
-      "desc": "Shop Skill Replacement Cost -30%",
+      "desc": "Shop Skill Replacement Cost -30% (excluding Skill Search fee)",
       "simpleDesc": [
         {
           "abilityID": 29190,

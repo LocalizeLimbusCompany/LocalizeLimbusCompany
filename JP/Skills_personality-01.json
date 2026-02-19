@@ -21,7 +21,7 @@
         {
           "level": 2,
           "name": "落ち着いて",
-          "desc": "このスキルが捨てられると、自分の振動 回数が3増加\n[WhenUse] 自分の振動 回数が2増加",
+          "desc": "このスキルが捨てられると、自分の振動 回数が4増加\n[WhenUse] 自分の振動 回数が2増加",
           "coinlist": [
             {},
             {
@@ -2647,6 +2647,299 @@
                 },
                 {
                   "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "凍りついた血を三百三十巻きつけて",
+          "desc": "(75 - [KarmaOfIndexAlly] ÷ 2)%の確率で打撃武器が出現\n- 打撃武器のコインダメージ量 +10%\nこのスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、ダメージ量 +15%\n[WhenUse] ([UnlockBuff_Base]段階 - 1)だけ、最終コインから[SuperCoin]に変更される\n[WhenUse] 自分の[Breath]回数が1増加",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [Sinking]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "凍りついた血を三百三十巻きつけて",
+          "desc": "(75 - [KarmaOfIndexAlly] ÷ 2)%の確率で打撃武器が出現\n- 打撃武器のコインダメージ量 +10%\nこのスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、ダメージ量 +15%\n<style=\"highlight\">自分の[Breath]と対象の[Sinking]の合計が6以上なら、コイン威力 +1</style>\n[WhenUse] ([UnlockBuff_Base]段階 - 1)だけ、最終コインから[SuperCoin]に変更される\n[WhenUse] 自分の[Breath]回数が<style=\"highlight\">2</style>増加",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [Sinking]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "凍りついた血を三百三十巻きつけて",
+          "desc": "(75 - [KarmaOfIndexAlly] ÷ 2)%の確率で打撃武器が出現\n- 打撃武器のコインダメージ量 <style=\"highlight\">+15%</style>\nこのスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、<style=\"highlight\">マッチ威力 +1</style>, ダメージ量 <style=\"highlight\">+20%</style>\n自分の[Breath]と対象の[Sinking]の合計<style=\"highlight\">6につき、コイン威力 +1 (最大2)</style>\n[WhenUse] ([UnlockBuff_Base]段階 - 1)だけ、最終コインから[SuperCoin]に変更される\n[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [Sinking]<style=\"highlight\">2</style>を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "音のしない手を拍き愉しみ、声を出さず憂く貫き",
+          "desc": "(75 - [KarmaOfIndexAlly] ÷ 2)%の確率で貫通武器が出現\n- 貫通武器のコインダメージ量 +10%\nこのスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、マッチ威力 +1\n[WhenUse] [UnlockBuff_Base]段階だけ、最終コインから[SuperCoin]に変更される\n[WhenUse] [Breath]3を得る",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が1増加"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [Sinking]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "音のしない手を拍き愉しみ、声を出さず憂く貫き",
+          "desc": "(75 - [KarmaOfIndexAlly] ÷ 2)%の確率で貫通武器が出現\n- 貫通武器のコインダメージ量 +10%\nこのスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、マッチ威力 +1\n<style=\"highlight\">自分の[Breath]と対象の[Sinking]の合計が6以上なら、コイン威力 +1</style>\n[WhenUse] [UnlockBuff_Base]段階だけ、最終コインから[SuperCoin]に変更される\n[WhenUse] [Breath]3を得る",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]2を付与<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が1増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [Sinking]回数が1増加<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "音のしない手を拍き愉しみ、声を出さず憂く貫き",
+          "desc": "(75 - [KarmaOfIndexAlly] ÷ 2)%の確率で貫通武器が出現\n- 貫通武器のコインダメージ量 <style=\"highlight\">+15%</style>\nこのスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、<style=\"highlight\">最終威力 +1</style>\n自分の[Breath]と対象の[Sinking]の合計<style=\"highlight\">6につき、コイン威力 +1 (最大2)</style>\n[WhenUse] [UnlockBuff_Base]段階だけ、最終コインから[SuperCoin]に変更される\n[WhenUse] [Breath]3を得る",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]<style=\"highlight\">3</style>を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が<style=\"highlight\">2</style>増加"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [Sinking]回数が1増加<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "刃を立て刀を笑いたまえ、落葉の匂のように滝を泣きたまえ",
+          "desc": "ターン開始時、[StackYisangSpecialSkill]が9なら、「Furioso-Replica」に変更される (1ターンにつき1回)\n- 最左端スロットの下のスキルが優先して変更される\n- [BeforeUse] [StackYisangSpecialSkill]が9未満なら、スキル3として発動\n(75 - [KarmaOfIndexAlly] ÷ 2)%の確率で斬撃武器が出現\n- 斬撃武器のコインダメージ量 +12.5%\nこのスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、ダメージ量 +10%\n自分の[Breath]と対象の[Sinking]の合計が6以上なら、コイン威力 +1\n[WhenUse] [UnlockBuff_Base]段階だけ、最終コインから[SuperCoin]に変更される\n[WhenUse] 自分の[Breath]回数が3増加",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[UnlockBuff_Base]段階1につき、ダメージ量 +10%(最大30%)"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 自分の[Breath]回数が1増加"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [Sinking]回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "刃を立て刀を笑いたまえ、落葉の匂のように滝を泣きたまえ",
+          "desc": "ターン開始時、[StackYisangSpecialSkill]が9なら、「Furioso-Replica」に変更される (1ターンにつき1回)\n- 最左端スロットの下のスキルが優先して変更される\n- [BeforeUse] [StackYisangSpecialSkill]が9未満なら、スキル3として発動\n(75 - [KarmaOfIndexAlly] ÷ 2)%の確率で斬撃武器が出現\n- 斬撃武器のコインダメージ量 <style=\"highlight\">+25%</style>\nこのスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、ダメージ量 <style=\"highlight\">+20%</style>\n自分の[Breath]と対象の[Sinking]の合計<style=\"highlight\">6につき、コイン威力 +1 (最大2)</style>\n[WhenUse] ([UnlockBuff_Base]段階 <style=\"highlight\">+ 1</style>)だけ、最終コインから[SuperCoin]に変更される\n[WhenUse] 自分の[Breath]回数が3増加\n<style=\"highlight\">- [UnlockBuff_Base]段階だけ、[Breath]を追加で得る</style>",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]<style=\"highlight\">3</style>を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Sinking]<style=\"highlight\">3</style>を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[UnlockBuff_Base]段階1につき、ダメージ量 +<style=\"highlight\">20%</style>(最大<style=\"highlight\">60%</style>)"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 自分の[Breath]回数が1増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [Sinking]回数が<style=\"highlight\">3</style>増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "予測できぬ気まぐれで",
+          "desc": "[StartBattle] 自分の[Breath]回数が2増加 (1ターンにつき1回)\n[OnSucceedEvade] [Breath]1を得る (1ターンにつき2回)\n[EndBattle] [UnlockBuffAlly_2]未満なら、下記の効果が発動 (戦闘ごとに1回)\n- [UnlockBuffAlly_2]を得る\n- 6未満の[BlessingOfIndexPrescriptAlly]が6に変更される\n- 増加した[BlessingOfIndexPrescriptAlly]1につき、次のターン開始時に[KarmaOfIndexAlly]5を得る",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "予測できぬ気まぐれで",
+          "desc": "<style=\"highlight\">[UnlockBuffAlly_3]なら、コイン威力 +2</style>\n[StartBattle] 自分の[Breath]回数が2増加 (1ターンにつき1回)\n[OnSucceedEvade] [Breath]<style=\"highlight\">2</style>を得る (1ターンにつき2回)\n[EndBattle] [UnlockBuffAlly_2]未満なら、下記の効果が発動 (戦闘ごとに1回)\n- [UnlockBuffAlly_2]を得る\n- 6未満の[BlessingOfIndexPrescriptAlly]が6に変更される\n- 増加した[BlessingOfIndexPrescriptAlly]1につき、次のターン開始時に[KarmaOfIndexAlly]5を得る",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011505,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Furioso-Replica",
+          "desc": "[WideAreaRampage]\n操作スロットに1つだけ配置可能\nこのスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、ダメージ量 +10%\nコイン威力が変わらない代わり、コイン威力が最終的に増加するとき数値1につき最終威力 +5 (このスキルは[Paralysis]の影響を受けない)\n自分の[Breath]とメインターゲットの[Sinking]の合計が6以上なら、最終威力 +1\n[StartBattle]\n- 全コインが[SuperCoin]に変更される\n- このスキルが的中するたびに[Sinking]1を付与または[Breath]1を得る\n- このターンの間、[StackYisangSpecialSkill]を獲得しない\n[WhenUse]\n- マッチ威力 +3\n- [Breath]3を得る、自分の[Breath]回数が3増加\n[EndSkill]\n- 的中した全対象へ次のターンに[Combustion]5, [Binding]3, [Vulnerable]3を付与\n- [StackYisangSpecialSkill]を全て消耗",
+          "coinlist": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "このコインの武器は鎌に確定"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 沈潜 回数が3増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Furioso-Replica",
+          "desc": "[WideAreaRampage]\n操作スロットに1つだけ配置可能\nこのスキルに[IndexPrescriptTargetMarkToEnemy]が刻まれているなら、ダメージ量 +10%\nコイン威力が変わらない代わり、コイン威力が最終的に増加するとき数値1につき最終威力 +5, <style=\"highlight\">ダメージ量 +25%</style> (このスキルは[Paralysis]の影響を受けない)\n自分の[Breath]とメインターゲットの[Sinking]の合計<style=\"highlight\">6につき、最終威力 +1 (最大2)</style>\n[StartBattle]\n- 全コインが[SuperCoin]に変更される\n- このスキルが的中するたびに[Sinking]1を付与または[Breath]1を得る\n- このターンの間、[StackYisangSpecialSkill]を獲得しない\n[WhenUse]\n- マッチ威力 +3\n- [Breath]3を得る、自分の[Breath]回数が3増加\n[EndSkill]\n- 的中した全対象へ次のターンに[Combustion]5, [Binding]3, [Vulnerable]3を付与\n- [StackYisangSpecialSkill]を全て消耗",
+          "coinlist": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "このコインの武器は鎌に確定<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">クリティカルダメージ量 +90%</style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 沈潜 回数が3増加<style=\"highlight\"></style>"
                 }
               ]
             }

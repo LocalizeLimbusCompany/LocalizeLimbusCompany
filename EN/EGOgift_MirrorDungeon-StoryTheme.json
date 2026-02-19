@@ -18,7 +18,7 @@
     {
       "id": 9404,
       "name": "Contained Maggots",
-      "desc": "When using a Gluttony Affinity Attack Skill(except E.G.O Skills) against an enemy, inflict 2 [Muckworm] on target.\n\nIf the said Skill applies [Laceration] Potency, Count, or 'Unique Bleed', inflict 3 [Muckworm] instead.",
+      "desc": "On Hit with a Lust or Gluttony Attack Skill(except E.G.O Skills) against an enemy, inflict 2 [Muckworm] on target.\n\nIf the said Skill applies [Laceration] Potency, Count, or 'Unique Bleed', inflict 3 [Muckworm] instead.",
       "simpleDesc": [
         {
           "abilityID": 9404,
@@ -104,7 +104,7 @@
     {
       "id": 9414,
       "name": "Blood-red Mane",
-      "desc": "Effects apply to all Identities with Wrath or Lust Affinity Attack Skills.\n\nTurn End: if this unit did not take any damage from enemy Attack Skills this turn, gain 2 [Agility] and 2 [Endurance].\n\nTurn End: if this unit did take damage from enemy Attack Skills this turn, gain 2 [Binding] and Clash Power +2 next turn.",
+      "desc": "Effects apply to all Identities with Wrath or Lust Attack Skills.\n\nTurn End: if this unit did not take any damage from enemy Attack Skills this turn, gain 2 [Agility] and 2 [Endurance].\n\nTurn End: if this unit did take damage from enemy Attack Skills this turn, gain 2 [Binding] and Clash Power +2 next turn.",
       "simpleDesc": [
         {
           "abilityID": 9414,
@@ -134,7 +134,7 @@
     {
       "id": 9416,
       "name": "Wholeness",
-      "desc": "If the ally wins a Clash using a Skill that inflicts [Laceration] Potency, Count, or 'Unique Bleed', inflict 2~3 [NailPersonality].\n\n'N Corp. Fanatic' Identities deal +25% damage against targets with [Laceration] and gain 1 Fanatic at Turn Start.\nIf the said ally's SP is maxed, also gain 3 [AttackDmgUp].\n\n'N Corp. Fanatic' Identities gain Final Power +1, Plus Coin Power +1, Minus Coin Power -1, and their Attack Skills inflict +1 more [NailPersonality].",
+      "desc": "If the ally wins a Clash using a Skill that inflicts [Laceration] Potency, Count, or 'Unique Bleed', inflict 2~3 [NailPersonality].\n\n'N Corp. Fanatic' Identities deal +25% damage against enemies and gain 1 Fanatic at Turn Start. If the said ally's SP is maxed, or if a 3+ Lust Reson. was formed last turn, the said ally additionally gains 3 [AttackDmgUp].\n\n'N Corp. Fanatic' Identities gain Final Power +2, Plus Coin Power +1, Minus Coin Power -1, and their Attack Skills inflict +1 more [NailPersonality].\n\n'N Corp. Fanatic' Identities deal +50% damage against <Mechanical Amalgam> enemies with Base Skills",
       "simpleDesc": [
         {
           "abilityID": 9416,
@@ -142,11 +142,15 @@
         },
         {
           "abilityID": 94161,
-          "simpleDesc": "Deal +25% damage against Bleed enemies and gain 1 Fanatic. At max SP, gain 3 Damage Up"
+          "simpleDesc": "Deal +25% damage and gain 1 Fanatic. If conditions are met, gain 3 [AttackDmgUp]"
         },
         {
           "abilityID": 94162,
-          "simpleDesc": "Final Power +1, Plus Coin Power +1, Minus Coin Power -1, Attack Skills inflict +1 more Nails"
+          "simpleDesc": "Final Power +2, Plus Coin Power +1, Minus Coin Power -1, Attack Skills inflict +1 more [NailPersonality]"
+        },
+        {
+          "abilityID": 94163,
+          "simpleDesc": "Base Skills deal +50% damage"
         }
       ]
     },

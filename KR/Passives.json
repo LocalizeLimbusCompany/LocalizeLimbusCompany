@@ -2716,6 +2716,54 @@
       "id": 1101521,
       "name": "정념[靜念]",
       "desc": "속도가 가장 빠른 아군 1명이 수비 스킬을 장착하고 전투 시작시 정신력 5 회복, 보호막 5 얻음"
+    },
+    {
+      "id": 1011502,
+      "name": "단말기로 전해진 지령",
+      "desc": "턴 시작 시,\n- 자신의 [UnlockBuff_Base] 단계에 따라 [IndexPrescriptYi_0]/[IndexPrescriptYi_1]/[IndexPrescriptYi_2]/[IndexPrescriptYi_3] 얻음\n- 무작위 적 1명에게 [IndexPrescriptTargetToEnemy] 부여 (집중 전투면, 부위에 부여)\n- 조작 슬롯의 자신의 기본 공격 스킬에 [IndexPrescriptTargetMarkToEnemy] 부여 (슬롯당 1개, 최대 2개 부여)\n· [UnlockBuffAlly_2] 이상이면, 스킬 3에 우선 부여 (강화된 스킬 우선)\n- 흐트러짐, 행동 불가[TabExplain], 패닉, E.G.O 침식 상태면, 위의 모든 효과와 [IndexPrescript_Base_2nd] 수행 여부가 적용되지 않음",
+      "summary": "지령 수행 시, 정신력 회복하고 지령의 가호 얻음\n지령 실패 시, 카르마 얻음"
+    },
+    {
+      "id": 1011503,
+      "name": "신탁 대행자 / 해금",
+      "desc": "[UnlockBuffAlly_2] 미만일 때 이번 턴에 [IndexPrescript_Base_2nd]을 수행했으면,\n턴 종료 시 정신력 4 회복, [BlessingOfIndexPrescriptAlly] 1 얻음 (턴당 1회)\n- [IndexPrescript_Base_2nd] 수행 시 메인 타겟에게 [IndexPrescriptTargetToEnemy]이 있으면,\n대신 정신력 8 회복, [BlessingOfIndexPrescriptAlly] 3 얻음\n\n[UnlockBuffAlly_2]일 때 이번 턴에 [IndexPrescriptYi_2]을 수행했으면,\n턴 종료 시 정신력 4 회복 (턴당 1회)\n- [IndexPrescript_Base_2nd] 수행 시 [StackYisangSpecialSkill]가 9가 되었으면,\n대신 정신력 8 회복, [BlessingOfIndexPrescriptAlly] 3 얻음\n\n이번 턴에 [IndexPrescript_Base_2nd]을 수행하지 못했으면,\n턴 종료 시 [KarmaOfIndexAlly] 5 얻음\n- [UnlockBuffAlly_3]이면, [KarmaOfIndexAlly]를 얻지 않음\n- 전투 시작 시 [IndexPrescript_Base_2nd] 수행을 시도했으나, 전투 중에 대상을 타겟할 수 없게 되었으면, 턴 종료 시 [KarmaOfIndexAlly]를 얻지 않음 ([UnlockBuffAlly_2] 미만일 때 적용)\n\n턴 종료 시 [BlessingOfIndexPrescriptAlly]가 3/6/9이면, [UnlockBuffAlly_1]/[UnlockBuffAlly_2]/[UnlockBuffAlly_3] 얻음\n턴 시작 시 [UnlockBuffAlly_3]이면, [Shin_IndexFingerYisang] 얻음",
+      "summary": ""
+    },
+    {
+      "id": 1011504,
+      "name": "검지 아비",
+      "desc": "스테이지에 첫 등장 시, [BurningWoundYisangMask] 얻음\n- 이 효과를 보유 중일 때 이번 전투에서 처음으로 흐트러지면,\n턴 종료 시 흐트러짐을 해제(강제 흐트러짐 제외)하고\n[BurningWoundYisangMask]이 [BurningWoundYisang]로 변경됨\n\n검지 대행자 - <noparse>개화</noparse> E.G.O::대행 돈키호테가 자신과 함께 전장에 있으면, 돈키호테에게 [SatisfyingEsteemNeeds] 부여",
+      "summary": ""
+    },
+    {
+      "id": 1011505,
+      "name": "신탁 단말기 [카두세우스]",
+      "desc": "기본 공격 스킬의 코인마다 무기가 무작위로 정해져 특수한 효과가 적용됨\n- [YisangWeapon01Hatchet]\n- [YisangWeapon02Stiletto]\n- [YisangWeapon03Greatsword]\n- [YisangWeapon04Rapier]\n- [YisangWeapon05Sledgehammer]\n- [YisangWeapon06Ultragreatsword]\n- [YisangWeapon07Lance]\n- [YisangWeapon08Chain]\n- [YisangWeapon09Scythe]\n\n[IndexPrescriptTargetMarkToEnemy] 스킬 사용 시, [StackYisangSpecialSkill] 1 얻음",
+      "summary": "무기가 무작위로 정해짐\n‘Furioso-Replica’ 사용 시 특수 효과 얻음"
+    },
+    {
+      "id": 1011506,
+      "name": "신탁 단말기 [카두세우스]",
+      "desc": "기본 공격 스킬의 코인마다 무기가 무작위로 정해져 특수한 효과가 적용됨\n- [YisangWeapon01Hatchet]\n- [YisangWeapon02Stiletto]\n- [YisangWeapon03Greatsword]\n- [YisangWeapon04Rapier]\n- [YisangWeapon05Sledgehammer]\n- [YisangWeapon06Ultragreatsword]\n- [YisangWeapon07Lance]\n- [YisangWeapon08Chain]\n- [YisangWeapon09Scythe]\n\n[IndexPrescriptTargetMarkToEnemy] 스킬 사용 시, [StackYisangSpecialSkill] 1 얻음\n\n<style=\"highlight\">이번 전투에서 ‘Furioso-Replica’를 처음 사용하였다면,\n해당 턴 종료 시 [BurningWoundYisangMask]이 [BurningWoundYisang]로 변경됨\n\n턴 시작 시 [BurningWoundYisang]를 보유 중일 때,\n조작 슬롯에 ‘Furioso-Replica’가 있으면 [BlackNightmareYisang] 얻음</style>",
+      "summary": "무기가 무작위로 정해짐\n‘Furioso-Replica’ 사용 시 특수 효과 얻음"
+    },
+    {
+      "id": 1011501,
+      "name": "모조된 삶",
+      "desc": "자신의 [BlessingOfIndexPrescriptAlly] 1당 [IndexPrescriptTargetMarkToEnemy] 스킬 피해량 +2% (최대 16%)\n - [BlessingOfIndexPrescriptAlly]가 9일 경우, 대신 기본 스킬의 피해량 +20%\n\n기본 공격 스킬의 [SuperCoin] 적중 시, [StackYisangSpecialSkill] 1 얻음\n- 공격 종료 시, 남은 [SuperCoin] 수만큼 [StackYisangSpecialSkill] 얻음",
+      "summary": "지령 표식이 새겨진 스킬이면,\n지령의 가호에 비례하여 피해량이 증가\n적중 시 정신력 회복\n조건 만족 시, [StackYisangSpecialSkill] 얻음"
+    },
+    {
+      "id": 1011511,
+      "name": "모조된 삶",
+      "desc": "자신의 [BlessingOfIndexPrescriptAlly] 1당 [IndexPrescriptTargetMarkToEnemy] 스킬 피해량 +2% (최대 16%)\n - [BlessingOfIndexPrescriptAlly]가 9일 경우, 대신 기본 스킬의 피해량 +20%\n\n기본 공격 스킬의 [SuperCoin] 적중 시, [StackYisangSpecialSkill] 1 얻음\n- 공격 종료 시, 남은 [SuperCoin] 수만큼 [StackYisangSpecialSkill] 얻음\n<style=\"highlight\">- ‘Furioso-Replica’ 공격 종료 시, 해당 스킬의 (남은 [SuperCoin] 수/2)만큼 다음 턴에 [StackYisangSpecialSkill] 얻음 (소수점 버림)</style>\n\n<style=\"highlight\">턴 종료 시 이번 턴에 [StackYisangSpecialSkill]가 증가하여 9가 되었을 때,\n다음 턴 시작 시 조작 슬롯에 스킬 3이 없으면, 기본 스킬 하나를 스킬 3으로 변경 (가장 왼쪽 슬롯의 아래 스킬 우선)</style>",
+      "summary": "지령 표식이 새겨진 스킬이면,\n지령의 가호에 비례하여 피해량이 증가\n적중 시 정신력 회복\n조건 만족 시, [StackYisangSpecialSkill] 얻음"
+    },
+    {
+      "id": 1011521,
+      "name": "신의 가호",
+      "desc": "이번 턴에 아군이 적에게 처음으로 사용한 참격, 관통, 타격 기본 공격 스킬의 피해량이 각각 +5%\n- 효과가 적용된 스킬이 검지 소속 인격의 스킬이면, 대신 +10%\n- 공격 시작 전 기준으로 적용됨",
+      "summary": "이번 턴에 처음 사용한, 참격, 관통, 타격 스킬 피해량 증가"
     }
   ]
 }

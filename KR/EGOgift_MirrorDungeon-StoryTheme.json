@@ -18,7 +18,7 @@
     {
       "id": 9404,
       "name": "갇힌 구더기",
-      "desc": "적에게 탐식 속성 공격 스킬 사용 시, 대상에게 [Muckworm] 2 부여 (E.G.O 스킬 제외).\n\n[Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 스킬일 경우에는 효과가 강화되어 [Muckworm] 3 부여.",
+      "desc": "적에게 색욕 또는 탐식 속성 공격 스킬 적중시, 대상에게 [Muckworm] 2 부여 (E.G.O 스킬 제외).\n\n[Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 스킬일 경우에는 효과가 강화되어 [Muckworm] 3 부여.",
       "simpleDesc": [
         {
           "abilityID": 9404,
@@ -134,7 +134,7 @@
     {
       "id": 9416,
       "name": "완전함",
-      "desc": "아군이 [Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 스킬로 적과 합하여 승리 시, [NailPersonality] 2 ~ 3 부여.\n\nN사 광신도 소속 인격이 [Laceration] 상태인 적을 공격할 때 피해량 +25%, 턴 시작 시 광신 1 얻음. 해당 소속 인격의 정신력이 최대일 경우, [AttackDmgUp] 3을 추가로 얻음.\n\nN사 광신도 소속 인격의 최종 위력 +1, 더하기 코인 위력 +1, 빼기 코인 위력 -1, 공격 스킬의 [NailPersonality] 부여량 +1.",
+      "desc": "아군이 [Laceration] 위력, [Laceration] 횟수 또는 특수 출혈을 부여하는 스킬로 적과 합하여 승리 시, [NailPersonality] 2 ~ 3 부여.\n\nN사 광신도 소속 인격이 적을 공격할 때 피해량 +25%, 턴 시작 시 광신 1 얻음. 해당 소속 인격의 정신력이 최대이거나 이전 턴에 색욕 공명을 3 이상 했으면, 해당 인격이 [AttackDmgUp] 3을 추가로 얻음.\n\nN사 광신도 소속 인격의 최종 위력 +2, 더하기 코인 위력 +1, 빼기 코인 위력 -1, 공격 스킬의 [NailPersonality] 부여량 +1.\n\nN사 광신도 소속 인격이 <기계 융화 생명체>인 적에게 가하는 기본 스킬 피해량 +50%",
       "simpleDesc": [
         {
           "abilityID": 9416,
@@ -142,11 +142,15 @@
         },
         {
           "abilityID": 94161,
-          "simpleDesc": "출혈 상태 적에게 피해량 +25%, 광신 1 얻음. 정신력 최대면 피해량 증가 3 얻음"
+          "simpleDesc": "피해량 +25%, 광신 1 얻음. 조건 만족 시 [AttackDmgUp] 3 얻음"
         },
         {
           "abilityID": 94162,
-          "simpleDesc": "최종 위력 +1, 더하기 코인 위력 +1, 빼기 코인 위력 -1, 공격 스킬의 못 부여량 +1"
+          "simpleDesc": "최종 위력 +2, 더하기 코인 위력 +1, 빼기 코인 위력 -1, 공격 스킬의 [NailPersonality] 부여량 +1"
+        },
+        {
+          "abilityID": 94163,
+          "simpleDesc": "기본 스킬 피해량 +50%"
         }
       ]
     },

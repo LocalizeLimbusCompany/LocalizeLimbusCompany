@@ -1,0 +1,29 @@
+{
+  "dataList": [
+    {
+      "id": 131911,
+      "name": "아이언메이든 - 재세동",
+      "desc": "등장 시 정신력 30 회복"
+    },
+    {
+      "id": 135201,
+      "name": "사냥 표식",
+      "desc": "3턴마다 무작위 1명을 지정하여, 속도를 1로 만들고 모든 스킬의 타겟으로 지정함\n(흐트러짐으로 발동되지 못한 경우, 다음 턴에 발동함)"
+    },
+    {
+      "id": 135501,
+      "name": "지령 수행",
+      "desc": "이번 턴에 [IndexPrescript_Base_2nd]을 수행했으면,\n턴 종료 시 정신력 15 회복, ([UnlockBuff_Base] 단계 +1)만큼 [BlessingOfIndexPrescriptEnemy] 얻음 (턴당 1회)\n\n이번 턴에 [IndexPrescript_Base_2nd]을 수행하지 못했으면,\n턴 종료 시 [PressureOfPrescript] 1, [KarmaOfIndexStudent] 5 얻음\n- [UnlockBuff_Base]이 없으면, 턴 종료 시 [BlessingOfIndexPrescriptEnemy] 1 얻음\n- [BlessingOfIndexPrescriptEnemy]가 9면, [KarmaOfIndexStudent]를 얻지 않음\n- 개화[TabExplain] E.G.O::대행 상태면, 얻는 [KarmaOfIndexStudent] 2배 증가"
+    },
+    {
+      "id": 135503,
+      "name": "해금",
+      "desc": "턴 종료 시 [BlessingOfIndexPrescriptEnemy]가 3/6/9거나 체력이 90%/70%/50% 이하면,\n- [UnlockBuff_1]/[UnlockBuff_2]/[UnlockBuff_3] 얻음\n- 정신력이 45로 증가\n- 보유한 [PressureOfPrescript] 전부 소모, 흐트러짐 해제\n- 처음으로 [UnlockBuff_Base] 획득한 다음 턴에 [BlessingOfIndexPrescriptEnemy] 1 얻음\n\n체력 조건으로 [UnlockBuff_Base] 획득 시\n- (증가한 정신력/15)만큼 [KarmaOfIndexStudent] 얻음\n- [BlessingOfIndexPrescriptEnemy]가 3/6/9 미만이면, 3/6/9로 변경,\n증가한 수치 1당 다음 턴 시작 시 [DefenseDown] 1, [KarmaOfIndexStudent] 2 얻음\n\n강력한 공격을 사용하는 턴의 속도 최솟값, 최댓값 +10"
+    },
+    {
+      "id": 135505,
+      "name": "몰입",
+      "desc": "[UnlockBuff_3]을 얻으면 다음 효과 적용\n- [BlandishmentShinEnemyDelete], 최대 체력의 50%만큼 보호막 얻음 (이번 전투 동안 유지)\n- [PressureOfPrescript]이 [PressureOfPrescript_2nd]으로 변경되고, 최대로 증가\n- 턴 시작 시 [PressureOfPrescript_2nd] 1 얻음"
+    }
+  ]
+}

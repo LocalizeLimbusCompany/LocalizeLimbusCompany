@@ -87,15 +87,15 @@
     {
       "id": 9205,
       "name": "WB Flask",
-      "desc": "Activates when an ally with Attack Skills that inflict [Laceration] or <noparse>Unique Bleed</noparse> dies (once per wave; except E.G.O Skills; if more than 1 ally dies at once, use the highest-level ally among them)\n- All allies heal (9% of the dead Identity) HP and increase [BloodDinner] by (dead Identity's level + 9)\n- All allies gain (dead Identity's level / 9) [AttackUp] next turn (max 6; rounded down)",
+      "desc": "On enemy kill, increase [BloodDinner] by the killed enemy's (max HP / 10) (max 50)\nTurn End: If an ally has been defeated this turn, all allies gain 2 [Enhancement] next turn",
       "simpleDesc": [
         {
           "abilityID": 9205,
-          "simpleDesc": "Heal HP and increase Bloodfeast"
+          "simpleDesc": "Increase Bloodfeast"
         },
         {
           "abilityID": 92051,
-          "simpleDesc": "Gain Offense Level Up"
+          "simpleDesc": "Gain Attack Power Up"
         }
       ]
     },

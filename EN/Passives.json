@@ -2716,6 +2716,54 @@
       "id": 1101521,
       "name": "Tranquility [靜念]",
       "desc": "The ally with the fastest Speed heals 5 SP and gains 5 Shield when starting combat with a Defense Skill equipped"
+    },
+    {
+      "id": 1011502,
+      "name": "Prescript Delivered on a Device",
+      "desc": "Turn Start:\n- Gain [IndexPrescriptYi_0] / [IndexPrescriptYi_1] / [IndexPrescriptYi_2] / [IndexPrescriptYi_3] based on [UnlockBuff_Base] stage on self\n- Inflict [IndexPrescriptTargetToEnemy] to a random enemy (in Focused Encounters, a Part)\n- Apply [IndexPrescriptTargetMarkToEnemy] to Base Attack Skills on this unit's Dashboard (1 per Slot, max 2 Skills)\n· At [UnlockBuffAlly_2]+, the effect above prioritizes Skill 3 (prioritizes empowered Skill)\n- All of the effects above and [IndexPrescript_Base_2nd] execution checks do not trigger when this unit is Staggered, Immobilized[TabExplain], in Panic, or in E.G.O Corrosion[TabExplain]",
+      "summary": "Upon executing Prescript, heal SP and gain Grace of the Prescript\nUpon failing Prescript, gain Karmic Consequence"
+    },
+    {
+      "id": 1011503,
+      "name": "The Oracle's Proxy / Unlock",
+      "desc": "Turn End: If [IndexPrescript_Base_2nd] was executed this turn at below [UnlockBuffAlly_2], heal 4 SP and gain 1 [BlessingOfIndexPrescriptAlly] (once per turn)\n- When executing [IndexPrescript_Base_2nd], if the main target has [IndexPrescriptTargetToEnemy], heal 8 SP and gain 3 [BlessingOfIndexPrescriptAlly] instead\n\nTurn End: If this unit is at [UnlockBuffAlly_2] and [IndexPrescriptYi_2] was executed this turn, heal 4 SP (once per turn)\n- When executing [IndexPrescript_Base_2nd], if [StackYisangSpecialSkill] has reached 9 Stacks, heal 8 SP and gain 3 [BlessingOfIndexPrescriptAlly]\n\nTurn End: If [IndexPrescript_Base_2nd] was not executed this turn, gain 5 [KarmaOfIndexAlly]\n- At [UnlockBuffAlly_3], does not gain [KarmaOfIndexAlly]\n- If this unit attempted to execute [IndexPrescript_Base_2nd] at Combat Start, but could not target the enemy during the combat phase, does not gain [KarmaOfIndexAlly] at Turn End (applies at below [UnlockBuffAlly_2])\n\nTurn End: At 3/6/9 [BlessingOfIndexPrescriptAlly], gain [UnlockBuffAlly_1]/[UnlockBuffAlly_2]/[UnlockBuffAlly_3]\nTurn Start: At [UnlockBuffAlly_3], gain [Shin_IndexFingerYisang]",
+      "summary": ""
+    },
+    {
+      "id": 1011504,
+      "name": "The Index Nursefather",
+      "desc": "Upon entering the Encounter for the first time, gain [BurningWoundYisangMask]\n- Turn End: If this unit was Staggered for the first time in this Encounter while under this effect, recover from Stagger (excluding forced Stagger) and convert [BurningWoundYisangMask] to [BurningWoundYisang]\n\nApply [SatisfyingEsteemNeeds] to The Index Proxy - Effloresced E.G.O::Procuration Don Quixote when both units are on the field",
+      "summary": ""
+    },
+    {
+      "id": 1011505,
+      "name": "Oracle Device [Caduceus]",
+      "desc": "A random weapon is assigned to every Coin for Base Attack Skills. Each weapon has a unique effect.\n- [YisangWeapon01Hatchet]\n- [YisangWeapon02Stiletto]\n- [YisangWeapon03Greatsword]\n- [YisangWeapon04Rapier]\n- [YisangWeapon05Sledgehammer]\n- [YisangWeapon06Ultragreatsword]\n- [YisangWeapon07Lance]\n- [YisangWeapon08Chain]\n- [YisangWeapon09Scythe]\n\nGain 1 [StackYisangSpecialSkill] when using Skills with [IndexPrescriptTargetMarkToEnemy]",
+      "summary": "A random weapon is assigned\nGain special effect when using 'Furioso-Replica'"
+    },
+    {
+      "id": 1011506,
+      "name": "Oracle Device [Caduceus]",
+      "desc": "A random weapon is assigned to every Coin for Base Attack Skills. Each weapon has a unique effect.\n- [YisangWeapon01Hatchet]\n- [YisangWeapon02Stiletto]\n- [YisangWeapon03Greatsword]\n- [YisangWeapon04Rapier]\n- [YisangWeapon05Sledgehammer]\n- [YisangWeapon06Ultragreatsword]\n- [YisangWeapon07Lance]\n- [YisangWeapon08Chain]\n- [YisangWeapon09Scythe]\n\nGain 1 [StackYisangSpecialSkill] when using Skills with [IndexPrescriptTargetMarkToEnemy]\n\n<style=\"highlight\">Convert [BurningWoundYisangMask] to [BurningWoundYisang] at the end of the turn this unit used 'Furioso-Replica' for the first time in this Encounter\n\nTurn Start: If this unit has [BurningWoundYisang] and has 'Furioso-Replica' on the Dashboard, gain [BlackNightmareYisang]</style>",
+      "summary": "A random weapon is assigned\nGain special effect when using 'Furioso-Replica'"
+    },
+    {
+      "id": 1011501,
+      "name": "Imitation of a Life",
+      "desc": "Deal +2% damage with Skills marked with [IndexPrescriptTargetMarkToEnemy] for every [BlessingOfIndexPrescriptAlly] on self (max 16%)\n- At 9 [BlessingOfIndexPrescriptAlly], deal +20% damage with Base Skills instead\n\nOn Hit with Base Attack Skill's [SuperCoin]s, gain 1 [StackYisangSpecialSkill]\n- Attack End: Gain [StackYisangSpecialSkill] equal to (# of remaining [SuperCoin]s)",
+      "summary": "Deal more damage with Skills marked with Mark of the Prescript based on Grace of the Prescript on self\nOn Hit: Heal SP\nGain [StackYisangSpecialSkill] when certain conditions are met"
+    },
+    {
+      "id": 1011511,
+      "name": "Imitation of a Life",
+      "desc": "Deal +2% damage with Skills marked with [IndexPrescriptTargetMarkToEnemy] for every [BlessingOfIndexPrescriptAlly] on self (max 16%)\n- At 9 [BlessingOfIndexPrescriptAlly], deal +20% damage with Base Skills instead\n\nOn Hit with Base Attack Skill's [SuperCoin]s, gain 1 [StackYisangSpecialSkill]\n- Attack End: Gain [StackYisangSpecialSkill] equal to (# of remaining [SuperCoin]s)\n<style=\"highlight\">- 'Furioso-Replica' Attack End: Gain [StackYisangSpecialSkill] next turn equal to (# of this Skill's remaining [SuperCoin]s / 2) (rounded down)</style>\n\n<style=\"highlight\">If [StackYisangSpecialSkill] reached 9 Stacks this turn at Turn End, and if this unit does not have a Skill 3 on the Dashboard at the start of the next turn, convert a Base Skill to Skill 3 (prioritizes the Skill on the leftmost Slot's bottom row)</style>",
+      "summary": "Deal more damage with Skills marked with Mark of the Prescript based on Grace of the Prescript on self\nOn Hit: Heal SP\nGain [StackYisangSpecialSkill] when certain conditions are met"
+    },
+    {
+      "id": 1011521,
+      "name": "Grace of God",
+      "desc": "Deal +5% damage with Slash, Pierce, and Blunt Base Attack Skills that are used for the first time by any ally each turn (once per type across all allies)\n- The Index Identities deal +10% damage instead\n- This effect's application is determined Before Attack",
+      "summary": "Deal more damage with Slash, Pierce, and Blunt Skills used for the first time this turn"
     }
   ]
 }

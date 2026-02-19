@@ -1,0 +1,29 @@
+{
+  "dataList": [
+    {
+      "id": 131911,
+      "name": "Iron Maiden - Defibrillation",
+      "desc": "Upon entry, heal 30 SP"
+    },
+    {
+      "id": 135201,
+      "name": "Hunter's Mark",
+      "desc": "Every 3 turns, select a random enemy, reduce their Speed to 1, and target it with all of this unit's Skills\n(If this effect could not be activated due to Stagger, activate it next turn)"
+    },
+    {
+      "id": 135501,
+      "name": "Undertake Prescript",
+      "desc": "Turn End: If [IndexPrescript_Base_2nd] was executed this turn, heal 15 SP and gain [BlessingOfIndexPrescriptEnemy] by ([UnlockBuff_Base] stage + 1) (once per turn)\n\nTurn End: If [IndexPrescript_Base_2nd] was not executed this turn, gain 1 [PressureOfPrescript] and 5 [KarmaOfIndexStudent]\n- If this unit does not have [UnlockBuff_Base], gain 1 [BlessingOfIndexPrescriptEnemy] at Turn End\n- At 9 [BlessingOfIndexPrescriptEnemy], does not gain [KarmaOfIndexStudent]\n- If this unit is under the effect of Effloresced[TabExplain] E.G.O::Procuration, double [KarmaOfIndexStudent] this unit will gain"
+    },
+    {
+      "id": 135503,
+      "name": "Unlock",
+      "desc": "Turn End: At 3/6/9 [BlessingOfIndexPrescriptEnemy] or at 90%-/70%-/50%- HP,\n- Gain [UnlockBuff_1]/[UnlockBuff_2]/[UnlockBuff_3]\n- Heal to 45 SP\n- Consume all [PressureOfPrescript] and recover from Stagger\n- Gain 1 [BlessingOfIndexPrescriptEnemy] in the turn after [UnlockBuff_Base] was gained for the first time\n\nIf [UnlockBuff_Base] was gained based on HP conditional above,\n- Gain [KarmaOfIndexStudent] by (sum of healed SP / 15)\n- Increase [BlessingOfIndexPrescriptEnemy] to 3/6/9 if this unit had less than 3/6/9 [BlessingOfIndexPrescriptEnemy]; gain 1 [DefenseDown] and 2 [KarmaOfIndexStudent] next turn for every [BlessingOfIndexPrescriptEnemy] Stack gained\n\nMin & Max Speed +10 in the turn this unit uses its powerful attack"
+    },
+    {
+      "id": 135505,
+      "name": "Concentration",
+      "desc": "At [UnlockBuff_3], apply the following effects:\n- [BlandishmentShinEnemyDelete], gain Shield equal to 50% of max HP (lasts for the rest of this Encounter)\n- Intensify [PressureOfPrescript] to [PressureOfPrescript_2nd] and max out its Stack\n- Turn Start: Gain 1 [PressureOfPrescript_2nd]"
+    }
+  ]
+}
