@@ -800,7 +800,7 @@
     {
       "id": 1090701,
       "name": "开悟之光",
-      "desc": "根据本回合自身受到的伤害，下回合使自身获得相应层数的打击伤害强化 。\n(计入护盾受到的伤害。受到自身体力上限25%的伤害时，回合开始时获得最多层数。打击伤害强化 最多获得层数：5)\n回合结束时，若自身带有3层所解真知 ，则解除自身带有的1种负面状态"
+      "desc": "根据本回合自身受到的伤害，下回合使自身获得相应层数的打击伤害强化 。\n(计入护盾受到的伤害。受到自身体力上限25%的伤害时，回合开始时获得最多层数。打击伤害强化 最多获得层数：5)\n回合结束时，若自身带有3层[KnowledgeExplored]，则解除自身带有的1种负面状态"
     },
     {
       "id": 1090721,
@@ -1525,7 +1525,7 @@
     {
       "id": 1051021,
       "name": "勤勉学习",
-      "desc": "体力上限最高的1名友方单位丢弃 技能时，使其获得体力上限(5×被丢弃技能的级别)%的护盾(每回合最多1次) \n若其带有所解真知 ，则使其获得的护盾变为1.5倍"
+      "desc": "体力上限最高的1名友方单位丢弃 技能时，使其获得体力上限(5×被丢弃技能的级别)%的护盾(每回合最多1次) \n若其带有[KnowledgeExplored]，则使其获得的护盾变为1.5倍"
     },
     {
       "id": 1111001,
@@ -1632,7 +1632,7 @@
     {
       "id": 1011001,
       "name": "射吧，扣下扳机。",
-      "desc": "自身获得生蝶·亡蝶 时，下回合使自身获得2层[Agility](每回合最多1次)",
+      "desc": "自身获得[BulletLament]时，下回合使自身获得2层[Agility](每回合最多1次)",
       "summary": "自身获得弹药 时，下回合获得迅捷 "
     },
     {
@@ -1644,13 +1644,13 @@
     {
       "id": 1011011,
       "name": "射吧，扣下扳机。",
-      "desc": "攻击后，若通过自身的技能击杀目标，则使自身[ReloadLament]\n当自身获得生蝶·亡蝶 时，下回合使自身获得2层[Agility](每回合最多1次)",
+      "desc": "攻击后，若通过自身的技能击杀目标，则使自身[ReloadLament]\n自身获得[BulletLament]时，下回合使自身获得2层[Agility](每回合最多1次)",
       "summary": "自身获得弹药 时，下回合获得迅捷 。击杀目标时，使自身[ReloadLament]"
     },
     {
       "id": 1011021,
       "name": "救赎之手",
-      "desc": "友方单位技能命中时，消耗目标2级[Sinking]强度并对目标施加1点蝶 (每回合最多3次)",
+      "desc": "友方单位技能命中时，消耗目标2级[Sinking]强度并对目标施加1点[SinkingWhite](每回合最多3次)",
       "summary": "将目标的沉沦 转换为蝶 "
     },
     {
@@ -1868,7 +1868,7 @@
     {
       "id": 1061101,
       "name": "集中精神",
-      "desc": "掷出消耗弹药 的硬币时，即使自身消耗了所有弹药 ，攻击也不会取消，但该硬币的命中时效果不会生效"
+      "desc": "掷出消耗[Bullet]的硬币时，即使自身消耗了所有[Bullet]，攻击也不会取消，但该硬币的命中时效果不会生效"
     },
     {
       "id": 1061102,
@@ -1883,12 +1883,12 @@
     {
       "id": 1061121,
       "name": "压制射击",
-      "desc": "弹药 数最多的友方单位消耗弹药 的技能造成的伤害+10%\n(不对未带有弹药 的目标生效)"
+      "desc": "[Bullet]数最多的友方单位消耗[Bullet]的技能造成的伤害+10%\n(不对未带有[Bullet]的目标生效)"
     },
     {
       "id": 1071101,
       "name": "远程狙杀",
-      "desc": "关卡开始时，使自身获得3层[PenetrateResultUp]\n\n回合结束时，若自身所有类型的弹药 数均为0，则激活[Retreat_FullStop](每场战斗最多1次)\n\n若自身解除待命，或激活[Retreat_FullStop]后重返战斗，则获得[LogicAtelierAM]至最大值，获得3层[PenetrateResultUp]并使自身[FullReload](不包括[Bullet_LogicAtelier]，每场战斗最多1次)"
+      "desc": "关卡开始时，使自身获得3层[PenetrateResultUp]\n\n回合结束时，若自身所有类型的[Bullet]数均为0，则激活[Retreat_FullStop](每场战斗最多1次)\n\n若自身解除待命，或激活[Retreat_FullStop]后重返战斗，则获得[LogicAtelierAM]至最大值，获得3层[PenetrateResultUp]并使自身[FullReload](不包括[Bullet_LogicAtelier]，每场战斗最多1次)"
     },
     {
       "id": 1071102,
@@ -1898,7 +1898,7 @@
     {
       "id": 1071103,
       "name": "远程狙杀",
-      "desc": "关卡开始时，使自身获得3层[PenetrateResultUp]\n\n<style=\"highlight\">自身在战斗中登场时，使自身获得1发[Bullet_LogicAtelier](每场战斗最多1次)</style>\n\n回合结束时，若自身所有类型的弹药 数均为0，则激活[Retreat_FullStop](每场战斗最多1次)\n\n若自身解除待命，或激活[Retreat_FullStop]后重返战斗，则获得[LogicAtelierAM]至最大值，获得3层[PenetrateResultUp]并使自身[FullReload]\n(不包括[Bullet_LogicAtelier]，每场战斗最多1次)"
+      "desc": "关卡开始时，使自身获得3层[PenetrateResultUp]\n\n<style=\"highlight\">自身在战斗中登场时，使自身获得1发[Bullet_LogicAtelier](每场战斗最多1次)</style>\n\n回合结束时，若自身所有类型的[Bullet]数均为0，则激活[Retreat_FullStop](每场战斗最多1次)\n\n若自身解除待命，或激活[Retreat_FullStop]后重返战斗，则获得[LogicAtelierAM]至最大值，获得3层[PenetrateResultUp]并使自身[FullReload]\n(不包括[Bullet_LogicAtelier]，每场战斗最多1次)"
     },
     {
       "id": 1071111,
@@ -2716,6 +2716,54 @@
       "id": 1101521,
       "name": "静念",
       "desc": "若速度值最高的1名友方单位装备了守备技能，则战斗开始时使其恢复5点理智值并获得5点护盾"
+    },
+    {
+      "id": 1011502,
+      "name": "由终端所传达的指令",
+      "desc": "回合开始时\n- 根据自身的[UnlockBuff_Base]阶段，使自身获得[IndexPrescriptYi_0]/[IndexPrescriptYi_1]/[IndexPrescriptYi_2]/[IndexPrescriptYi_3]\n- 随机对1名敌方单位施加[IndexPrescriptTargetToEnemy](若是集中遭遇战，则改为1个部位)\n- 使仪表盘上自身的基础攻击技能获得[IndexPrescriptTargetMarkToEnemy](每个行动槽最多1个，最多2个技能)\n· 若自身的[UnlockBuff_Base]阶段不低于2，则该效果优先适用于3技能(优先强化技能)\n- 自身陷入混乱、无法行动[TabExplain]、陷入恐慌或E.G.O侵蚀时，以上所有效果与执行[IndexPrescript_Base_2nd]的判定不会生效",
+      "summary": "执行指令时，使自身恢复理智值并获得指令加护 \n执行失败时，对自身施加业 "
+    },
+    {
+      "id": 1011503,
+      "name": "神谕代行者/解放",
+      "desc": "自身的[UnlockBuff_Base]阶段低于2时，若本回合自身执行了[IndexPrescript_Base_2nd]，\n则回合结束时使自身恢复4点理智值并获得1层[BlessingOfIndexPrescriptAlly](每回合最多1次)\n- 执行[IndexPrescript_Base_2nd]时，若主要目标带有[IndexPrescriptTargetToEnemy]，\n则改为恢复8点理智值并获得3层[BlessingOfIndexPrescriptAlly]\n\n带有[UnlockBuffAlly_2]时，若本回合自身执行了[IndexPrescriptYi_2]，\n则回合结束时使自身恢复4点理智值(每回合最多1次)\n- 执行[IndexPrescript_Base_2nd]时，若自身的[StackYisangSpecialSkill]层数为9层，\n则改为恢复8点理智值并获得3层[BlessingOfIndexPrescriptAlly]\n\n若本回合自身未执行[IndexPrescript_Base_2nd]，\n则回合结束时对自身施加5层[KarmaOfIndexAlly]\n- 若自身带有[UnlockBuffAlly_3]，则不会施加[KarmaOfIndexAlly]\n- 若自身在战斗开始时试图执行[IndexPrescript_Base_2nd]，但在战斗中无法指定目标，则回合结束时不会施加[KarmaOfIndexAlly](自身的[UnlockBuff_Base]阶段低于2时生效)\n\n回合结束时，若自身的[BlessingOfIndexPrescriptAlly]层数为3层/6层/9层，则使自身获得[UnlockBuffAlly_1]/[UnlockBuffAlly_2]/[UnlockBuffAlly_3]\n回合开始时，若自身带有[UnlockBuffAlly_3]，则使自身获得[Shin_IndexFingerYisang]",
+      "summary": ""
+    },
+    {
+      "id": 1011504,
+      "name": "食指 父辈",
+      "desc": "战斗中首次登场时，使自身获得[BurningWoundYisangMask]\n- 若带有该效果时自身首次陷入混乱，\n则回合结束时解除自身的混乱(不包括强制混乱)\n使自身的[BurningWoundYisangMask]转化为[BurningWoundYisang]\n\n若食指 代行者 - <noparse>绽放</noparse>E.G.O::代行 堂吉诃德与自身同时在场，则使堂吉诃德获得[SatisfyingEsteemNeeds]",
+      "summary": ""
+    },
+    {
+      "id": 1011505,
+      "name": "神谕终端[双蛇杖]",
+      "desc": "自身基础攻击技能的每枚硬币的武器均会随机决定，且带有特殊效果\n- [YisangWeapon01Hatchet]\n- [YisangWeapon02Stiletto]\n- [YisangWeapon03Greatsword]\n- [YisangWeapon04Rapier]\n- [YisangWeapon05Sledgehammer]\n- [YisangWeapon06Ultragreatsword]\n- [YisangWeapon07Lance]\n- [YisangWeapon08Chain]\n- [YisangWeapon09Scythe]\n\n使用被[IndexPrescriptTargetMarkToEnemy]标记的技能时，使自身获得1层[StackYisangSpecialSkill]",
+      "summary": "随机决定武器\n使用“Furioso-Replica”时获得特殊效果"
+    },
+    {
+      "id": 1011506,
+      "name": "神谕终端[双蛇杖]",
+      "desc": "自身基础攻击技能的每枚硬币的武器均会随机决定，且带有特殊效果\n- [YisangWeapon01Hatchet]\n- [YisangWeapon02Stiletto]\n- [YisangWeapon03Greatsword]\n- [YisangWeapon04Rapier]\n- [YisangWeapon05Sledgehammer]\n- [YisangWeapon06Ultragreatsword]\n- [YisangWeapon07Lance]\n- [YisangWeapon08Chain]\n- [YisangWeapon09Scythe]\n\n使用被[IndexPrescriptTargetMarkToEnemy]标记的技能时，使自身获得1层[StackYisangSpecialSkill]\n\n<style=\"highlight\">本场战斗期间，自身首次使用“Furioso-Replica”的回合结束时，\n使自身的[BurningWoundYisangMask]转化为[BurningWoundYisang]\n\n回合开始时，若自身带有[BurningWoundYisang]，\n且仪表盘上存在“Furioso-Replica”，则使自身获得[BlackNightmareYisang]</style>",
+      "summary": "随机决定武器\n使用“Furioso-Replica”时获得特殊效果"
+    },
+    {
+      "id": 1011501,
+      "name": "仿造的一生",
+      "desc": "自身每带有1层[BlessingOfIndexPrescriptAlly]，使自身带有[IndexPrescriptTargetMarkToEnemy]的技能造成的伤害+2%(最多+16%)\n- 若自身的[BlessingOfIndexPrescriptAlly]层数为9层，则改为使自身基础技能造成的伤害+20%\n\n自身基础攻击技能的[SuperCoin]命中时，使自身获得1层[StackYisangSpecialSkill]\n- 攻击后，使自身获得(剩余的[SuperCoin]数)层[StackYisangSpecialSkill]",
+      "summary": "根据自身的指令加护 层数，\n使自身被指令的印记 标记的技能造成的伤害增加\n命中时，使自身恢复理智值\n满足条件时，使自身获得[StackYisangSpecialSkill]"
+    },
+    {
+      "id": 1011511,
+      "name": "仿造的一生",
+      "desc": "自身每带有1层[BlessingOfIndexPrescriptAlly]，使自身带有[IndexPrescriptTargetMarkToEnemy]的技能造成的伤害+2%(最多+16%)\n- 若自身的[BlessingOfIndexPrescriptAlly]层数为9层，则改为使自身基础技能造成的伤害+20%\n\n自身基础攻击技能的[SuperCoin]命中时，使自身获得1层[StackYisangSpecialSkill]\n- 攻击后，使自身获得(剩余的[SuperCoin]数)层[StackYisangSpecialSkill]\n<style=\"highlight\">- “Furioso-Replica”攻击后，使自身获得(剩余的[SuperCoin]数/2)层[StackYisangSpecialSkill](向下取整)</style>\n\n<style=\"highlight\">回合结束时，若自身的[StackYisangSpecialSkill]层数为9层，\n且下回合开始时仪表盘上不存在自身的3技能，则使自身的1个基础技能转化为3技能(优先转化位于仪表盘最左侧行动槽下方一行的技能)</style>",
+      "summary": "根据自身的指令加护 层数，\n使自身被指令的印记 标记的技能造成的伤害增加\n命中时，使自身恢复理智值\n满足条件时，使自身获得[StackYisangSpecialSkill]"
+    },
+    {
+      "id": 1011521,
+      "name": "神的加护",
+      "desc": "本回合友方单位对敌方单位使用的首个斩击、突刺与打击基础攻击技能造成的伤害+5%(全体友方单位共同判定)\n- 若该友方单位属于食指，则改为造成的伤害+10%\n- 该效果于攻击前判定",
+      "summary": "本回合使用的首个斩击、突刺与打击技能造成的伤害增加"
     }
   ]
 }

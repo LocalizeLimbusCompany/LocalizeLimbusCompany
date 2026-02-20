@@ -277,7 +277,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加3层诅咒 "
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Curse]"
                 }
               ]
             }
@@ -302,7 +302,7 @@
                   "desc": "[OnSucceedAttack] 若目标带有[AffectionTeddy]，则消耗目标的[AffectionTeddy]并对其施加相应层数的诅咒 与[NailPersonality](最多消耗4层)"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若目标的诅咒 层数不低于4层，则消耗目标的4层诅咒 并对其施加1层[CursePackage]"
+                  "desc": "[OnSucceedAttack] 若目标的[Curse]层数不低于4层，则消耗其4层[Curse]并对其施加1层[CursePackage]"
                 }
               ]
             }
@@ -327,7 +327,7 @@
                   "desc": "若目标未带有负面状态，则使本硬币造成的伤害+100%"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加3层诅咒 "
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Curse]"
                 },
                 {
                   "desc": "[WinDuelAttack] 对目标施加6层[NailPersonality]"
@@ -344,7 +344,7 @@
         {
           "level": 1,
           "name": "悲伤的拥抱",
-          "desc": "[CantChangeTarget]\n指定上回合与“表达爱意”拼点的目标\n对该目标造成的伤害固定为0点\n[StartBattle] 直到下回合结束对自身施加2层[Vulnerable]\n[EndBattle] 使自身陷入混乱",
+          "desc": "[CantChangeTarget]\n指定上回合与“表达爱意”拼点的目标\n对该目标造成的伤害固定为0点\n[StartBattle] 直到下回合对自身施加2层[Vulnerable]\n[EndBattle] 使自身陷入混乱",
           "coinlist": [
             {
               "coindescs": [
@@ -371,7 +371,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加4层诅咒 "
+                  "desc": "[OnSucceedAttack] 对目标施加4层[Curse]"
                 }
               ]
             },

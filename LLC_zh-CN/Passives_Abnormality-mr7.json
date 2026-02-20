@@ -1,0 +1,29 @@
+{
+  "dataList": [
+    {
+      "id": 131911,
+      "name": "铁处女-除颤",
+      "desc": "登场时，使自身恢复30点理智值"
+    },
+    {
+      "id": 135201,
+      "name": "狩猎印记",
+      "desc": "每3回合，随机指定1名敌方单位，使其速度值变为1点，自身所有技能指定其为目标\n(若该效果因陷入混乱而无法触发，则改为下回合触发)"
+    },
+    {
+      "id": 135501,
+      "name": "指令执行",
+      "desc": "若本回合自身执行了[IndexPrescript_Base_2nd]，\n则回合结束时使自身恢复15点理智值并获得(自身的[UnlockBuff_Base]阶段+1)层[BlessingOfIndexPrescriptEnemy](每回合最多1次)\n\n若本回合自身未执行[IndexPrescript_Base_2nd]，\n则回合结束时使自身获得1层[PressureOfPrescript]并对自身施加5层[KarmaOfIndexStudent]\n- 若自身未带有[UnlockBuff_Base]，则回合结束时使自身获得1层[BlessingOfIndexPrescriptEnemy]\n- 若自身的[BlessingOfIndexPrescriptEnemy]层数为9层，则不会施加[KarmaOfIndexStudent]\n- 若自身处于绽放[TabExplain]E.G.O::代行状态，则令施加的[KarmaOfIndexStudent]变为2倍"
+    },
+    {
+      "id": 135503,
+      "name": "解放",
+      "desc": "回合结束时，若自身的[BlessingOfIndexPrescriptEnemy]层数为3层/6层/9层或现存体力不高于90%/70%/50%，\n- 使自身获得[UnlockBuff_1]/[UnlockBuff_2]/[UnlockBuff_3]\n- 使自身理智值恢复为45点\n- 消耗所有[PressureOfPrescript]并解除自身的混乱\n- 首次获得[UnlockBuff_Base]的下回合，使自身获得[BlessingOfIndexPrescriptEnemy]\n\n通过体力条件获得[UnlockBuff_Base]时\n- 对自身施加(恢复的理智值/15)层[KarmaOfIndexStudent]\n- 若自身的[BlessingOfIndexPrescriptEnemy]层数低于3层/6层/9层，则使其层数变为3层/6层/9层，\n每获得1层[BlessingOfIndexPrescriptEnemy]，下回合开始时对自身施加1层[DefenseDown]与2层[KarmaOfIndexStudent] \n\n自身使用强力攻击的回合，使自身的最小与最大速度值+10"
+    },
+    {
+      "id": 135505,
+      "name": "沉浸",
+      "desc": "获得[UnlockBuff_3]后，触发以下效果\n- 使自身获得[BlandishmentShinEnemyDelete]与体力上限50%的护盾(在本场战斗期间维持)\n- 使自身的[PressureOfPrescript]转化为[PressureOfPrescript_2nd]并获得至最大值\n- 回合开始时，使自身获得1层[PressureOfPrescript_2nd]"
+    }
+  ]
+}

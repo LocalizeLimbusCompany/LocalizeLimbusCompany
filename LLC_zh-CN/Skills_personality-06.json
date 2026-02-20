@@ -446,7 +446,7 @@
         {
           "level": 2,
           "name": "知识消耗",
-          "desc": "[WhenUse] 丢弃 自身所有行动槽中级别最高的1个技能\n[WhenUse] 若自身的所解真知 层数不低于3层，则使本技能的拼点威力+1",
+          "desc": "[WhenUse] 丢弃 自身所有行动槽中级别最高的1个技能\n[WhenUse] 若自身的[KnowledgeExplored]层数不低于3层，则使本技能的拼点威力+1",
           "coinlist": [
             {
               "coindescs": [
@@ -454,7 +454,7 @@
                   "desc": "[OnSucceedAttackHead] 对目标施加1层[Sinking]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 若自身的所解真知 层数不低于3层，则重复使用本硬币1次"
+                  "desc": "[OnSucceedAttack] 若自身的[KnowledgeExplored]层数不低于3层，则重复使用本硬币1次"
                 }
               ]
             }
@@ -463,7 +463,7 @@
         {
           "level": 4,
           "name": "知识消耗",
-          "desc": "[WhenUse] 丢弃 自身所有行动槽中级别最高的1个技能\n[WhenUse] 使本技能的拼点威力+(自身的所解真知 层数-1)",
+          "desc": "[WhenUse] 丢弃 自身所有行动槽中级别最高的1个技能\n[WhenUse] 使本技能的拼点威力+(自身的[KnowledgeExplored]层数-1)",
           "coinlist": [
             {
               "coindescs": [
@@ -471,7 +471,7 @@
                   "desc": "[OnSucceedAttackHead] 对目标施加1层[Sinking]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 重复使用本硬币(自身的所解真知 层数-1)次"
+                  "desc": "[OnSucceedAttack] 重复使用本硬币(自身的[KnowledgeExplored]层数-1)次"
                 }
               ]
             }
@@ -501,7 +501,7 @@
         {
           "level": 2,
           "name": "入匙解封",
-          "desc": "[WhenUse] 按技能级别由低到高随机丢弃 自身所有行动槽中的2个技能\n[WhenUse] 若自身的所解真知 层数不低于3层，则使本技能的硬币威力+1",
+          "desc": "[WhenUse] 按技能级别由低到高随机丢弃 自身所有行动槽中的2个技能\n[WhenUse] 若自身的[KnowledgeExplored]层数不低于3层，则使本技能的硬币威力+1",
           "coinlist": [
             {},
             {},
@@ -517,7 +517,7 @@
         {
           "level": 4,
           "name": "入匙解封",
-          "desc": "[WhenUse] 按技能级别由低到高随机丢弃 自身所有行动槽中的2个技能\n[WhenUse] 使本技能的硬币威力+(自身的所解真知 层数-1)",
+          "desc": "[WhenUse] 按技能级别由低到高随机丢弃 自身所有行动槽中的2个技能\n[WhenUse] 使本技能的硬币威力+(自身的[KnowledgeExplored]层数-1)",
           "coinlist": [
             {},
             {},
@@ -1093,14 +1093,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 "
+                  "desc": "消耗1发[Bullet]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 "
+                  "desc": "消耗1发[Bullet]"
                 },
                 {
                   "desc": "[OnSucceedAttack] 使自身增加1级[Breath]强度"
@@ -1110,7 +1110,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 "
+                  "desc": "消耗1发[Bullet]"
                 },
                 {
                   "desc": "[OnSucceedAttack] 使自身增加1级[Breath]强度"
@@ -1127,14 +1127,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 <style=\"highlight\"></style>"
+                  "desc": "消耗1发[Bullet]<style=\"highlight\"></style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 <style=\"highlight\"></style>"
+                  "desc": "消耗1发[Bullet]<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "[OnSucceedAttack] 使自身增加<style=\"highlight\">2</style>级[Breath]强度"
@@ -1144,7 +1144,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 <style=\"highlight\"></style>"
+                  "desc": "消耗1发[Bullet]<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "[OnSucceedAttack] 使自身增加<style=\"highlight\">2</style>级[Breath]强度"
@@ -1161,14 +1161,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 <style=\"highlight\"></style>"
+                  "desc": "消耗1发[Bullet]<style=\"highlight\"></style>"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 <style=\"highlight\"></style>"
+                  "desc": "消耗1发[Bullet]<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "[OnSucceedAttack] 使自身增加2级[Breath]强度<style=\"highlight\"></style>"
@@ -1178,7 +1178,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 <style=\"highlight\"></style>"
+                  "desc": "消耗1发[Bullet]<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "[OnSucceedAttack] 使自身增加2级[Breath]强度<style=\"highlight\"></style>"
@@ -1195,7 +1195,7 @@
         {
           "level": 1,
           "name": "标记目标",
-          "desc": "本技能每将消耗1发弹药 ，使本技能的基础威力+1\n[WhenUse] 若句点事务所 收尾人 希斯克利夫在场，则以(最大共鸣数×20)%的概率激活[CoveringFire]\n[WhenUse] 使自身获得1层[Breath]",
+          "desc": "本技能每将消耗1发[Bullet]，使本技能的基础威力+1\n[WhenUse] 若句点事务所 收尾人 希斯克利夫在场，则以(最大共鸣数×20)%的概率激活[CoveringFire]\n[WhenUse] 使自身获得1层[Breath]",
           "coinlist": [
             {
               "coindescs": [
@@ -1207,7 +1207,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "消耗至多3发弹药 "
+                  "desc": "消耗至多3发[Bullet]"
                 },
                 {
                   "desc": "使本硬币造成的伤害+(消耗的弹药 数×10)%"
@@ -1226,7 +1226,7 @@
         {
           "level": 2,
           "name": "标记目标",
-          "desc": "本技能每将消耗1发弹药 ，使本技能的基础威力+1\n[WhenUse] 若句点事务所 收尾人 希斯克利夫在场，则以(最大共鸣数×20)%的概率激活[CoveringFire]\n[WhenUse] 使自身获得<style=\"highlight\">2</style>层[Breath]",
+          "desc": "本技能每将消耗1发[Bullet]，使本技能的基础威力+1\n[WhenUse] 若句点事务所 收尾人 希斯克利夫在场，则以(最大共鸣数×20)%的概率激活[CoveringFire]\n[WhenUse] 使自身获得<style=\"highlight\">2</style>层[Breath]",
           "coinlist": [
             {
               "coindescs": [
@@ -1238,7 +1238,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "消耗至多3发弹药 <style=\"highlight\"></style>"
+                  "desc": "消耗至多3发[Bullet]<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "使本硬币造成的伤害+(消耗的弹药 数×10)%<style=\"highlight\"></style>"
@@ -1260,7 +1260,7 @@
         {
           "level": 4,
           "name": "标记目标",
-          "desc": "本技能每将消耗1发弹药 ，使本技能的基础威力+1\n[WhenUse] 若句点事务所 收尾人 希斯克利夫在场，则以(最大共鸣数×25)%的概率激活[CoveringFire]\n[WhenUse] 使自身获得<style=\"highlight\">3</style>层[Breath]",
+          "desc": "本技能每将消耗1发[Bullet]，使本技能的基础威力+1\n[WhenUse] 若句点事务所 收尾人 希斯克利夫在场，则以(最大共鸣数×25)%的概率激活[CoveringFire]\n[WhenUse] 使自身获得<style=\"highlight\">3</style>层[Breath]",
           "coinlist": [
             {
               "coindescs": [
@@ -1272,7 +1272,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "消耗至多3发弹药 <style=\"highlight\"></style>"
+                  "desc": "消耗至多3发[Bullet]<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "使本硬币造成的伤害+(消耗的弹药 数×10)%<style=\"highlight\"></style>"
@@ -1305,12 +1305,12 @@
         {
           "level": 3,
           "name": "命之句点",
-          "desc": "本技能每将消耗1发弹药 ，使本技能的基础威力+1\n[WhenUse] 若句点事务所 收尾人 希斯克利夫在场，则激活[CoveringFire]\n[WhenUse] 使自身增加5级[Breath]强度",
+          "desc": "本技能每将消耗1发[Bullet]，使本技能的基础威力+1\n[WhenUse] 若句点事务所 收尾人 希斯克利夫在场，则激活[CoveringFire]\n[WhenUse] 使自身增加5级[Breath]强度",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 "
+                  "desc": "消耗1发[Bullet]"
                 },
                 {
                   "desc": "使本硬币造成的伤害+(消耗的弹药 数×10)%"
@@ -1323,7 +1323,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "消耗至多2发弹药 "
+                  "desc": "消耗至多2发[Bullet]"
                 },
                 {
                   "desc": "使本硬币造成的伤害+(消耗的弹药 数×10)%"
@@ -1351,12 +1351,12 @@
         {
           "level": 4,
           "name": "命之句点",
-          "desc": "本技能每将消耗1发弹药 ，使本技能的基础威力+1\n[WhenUse] 若句点事务所 收尾人 希斯克利夫在场，则激活[CoveringFire]\n[WhenUse] 使自身增加5级[Breath]强度\n<style=\"highlight\">[WinDuel] 使自身获得2层[Breath]</style>",
+          "desc": "本技能每将消耗1发[Bullet]，使本技能的基础威力+1\n[WhenUse] 若句点事务所 收尾人 希斯克利夫在场，则激活[CoveringFire]\n[WhenUse] 使自身增加5级[Breath]强度\n<style=\"highlight\">[WinDuel] 使自身获得2层[Breath]</style>",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 <style=\"highlight\"></style>"
+                  "desc": "消耗1发[Bullet]<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "使本硬币造成的伤害+(消耗的弹药 数×<style=\"highlight\">15</style>)%"
@@ -1369,7 +1369,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "消耗至多2发弹药 <style=\"highlight\"></style>"
+                  "desc": "消耗至多2发[Bullet]<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "使本硬币造成的伤害+(消耗的弹药 数×<style=\"highlight\">15</style>)%"
@@ -1435,7 +1435,7 @@
         {
           "level": 2,
           "name": "联合：标记目标",
-          "desc": "本技能每将消耗1发弹药 ，使本技能的基础威力+1\n[WhenUse] 使自身获得2层[Breath]\n[DefeatDuel] 使本技能的最终威力+5",
+          "desc": "本技能每将消耗1发[Bullet]，使本技能的基础威力+1\n[WhenUse] 使自身获得2层[Breath]\n[DefeatDuel] 使本技能的最终威力+5",
           "coinlist": [
             {
               "coindescs": [
@@ -1447,7 +1447,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "消耗至多3发弹药 "
+                  "desc": "消耗至多3发[Bullet]"
                 },
                 {
                   "desc": "使本硬币造成的伤害+(消耗的弹药 数×10)%"
@@ -1479,7 +1479,7 @@
         {
           "level": 4,
           "name": "联合：标记目标",
-          "desc": "本技能每将消耗1发弹药 ，使本技能的基础威力+1\n[WhenUse] 使自身获得<style=\"highlight\">3</style>层[Breath]\n[DefeatDuel] 使本技能的最终威力+5",
+          "desc": "本技能每将消耗1发[Bullet]，使本技能的基础威力+1\n[WhenUse] 使自身获得<style=\"highlight\">3</style>层[Breath]\n[DefeatDuel] 使本技能的最终威力+5",
           "coinlist": [
             {
               "coindescs": [
@@ -1491,7 +1491,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "消耗至多3发弹药 <style=\"highlight\"></style>"
+                  "desc": "消耗至多3发[Bullet]<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "使本硬币造成的伤害+(消耗的弹药 数×10)%<style=\"highlight\"></style>"
@@ -1534,12 +1534,12 @@
         {
           "level": 3,
           "name": "联合：命之句点",
-          "desc": "本技能每将消耗1发弹药 ，使本技能的基础威力+1\n[WhenUse] 使自身增加5级[Breath]强度\n[DefeatDuel] 使本技能的最终威力+5",
+          "desc": "本技能每将消耗1发[Bullet]，使本技能的基础威力+1\n[WhenUse] 使自身增加5级[Breath]强度\n[DefeatDuel] 使本技能的最终威力+5",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 "
+                  "desc": "消耗1发[Bullet]"
                 },
                 {
                   "desc": "使本硬币造成的伤害+(消耗的弹药 数×10)%"
@@ -1552,7 +1552,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "消耗至多2发弹药 "
+                  "desc": "消耗至多2发[Bullet]"
                 },
                 {
                   "desc": "使本硬币造成的伤害+(消耗的弹药 数×10)%"
@@ -1593,12 +1593,12 @@
         {
           "level": 4,
           "name": "联合：命之句点",
-          "desc": "本技能每将消耗1发弹药 ，使本技能的基础威力+1\n[WhenUse] 使自身增加5级[Breath]强度\n<style=\"highlight\">[WinDuel] 使自身获得2层[Breath]</style>\n[DefeatDuel] 使本技能的最终威力+5",
+          "desc": "本技能每将消耗1发[Bullet]，使本技能的基础威力+1\n[WhenUse] 使自身增加5级[Breath]强度\n<style=\"highlight\">[WinDuel] 使自身获得2层[Breath]</style>\n[DefeatDuel] 使本技能的最终威力+5",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "消耗1发弹药 <style=\"highlight\"></style>"
+                  "desc": "消耗1发[Bullet]<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "使本硬币造成的伤害+(消耗的弹药 数×<style=\"highlight\">15</style>)%"
@@ -1611,7 +1611,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "消耗至多2发弹药 <style=\"highlight\"></style>"
+                  "desc": "消耗至多2发[Bullet]<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "使本硬币造成的伤害+(消耗的弹药 数×<style=\"highlight\">15</style>)%"
