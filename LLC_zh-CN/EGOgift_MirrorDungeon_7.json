@@ -45,6 +45,193 @@
       ]
     },
     {
+      "id": 9207,
+      "name": "概率与选择",
+      "desc": "随机使最左侧行动槽装备的E.G.O技能造成的伤害-50%或+150%(每回合最多1次)",
+      "simpleDesc": [
+        {
+          "abilityID": 9207,
+          "simpleDesc": "E.G.O技能造成的伤害增加或减少"
+        }
+      ]
+    },
+    {
+      "id": 9208,
+      "name": "纠缠的缘分",
+      "desc": "战斗开始时，若完全共鸣数不低于7，则本回合使全体友方单位的最终威力+5(每场战斗最多1次)",
+      "simpleDesc": [
+        {
+          "abilityID": 9208,
+          "simpleDesc": "最终威力增加"
+        }
+      ]
+    },
+    {
+      "id": 9211,
+      "name": "乌云",
+      "desc": "回合开始时，若全体敌方单位的[Sinking]强度与[Sinking]层数之和不低于30点，则触发以下效果\n\n- 增加[Sinking]强度或施加[Sinking]层数的技能的最终威力+1(包括特殊沉沦，不包括E.G.O技能)\n\n- 若拥有增加[Sinking]强度，施加[Sinking]层数或施加特殊沉沦的攻击技能的友方单位不低于6名，则使额外增加[Sinking]强度或施加[Sinking]层数的技能造成的伤害+20%(包括特殊沉沦与待命人员，不包括E.G.O技能)\n· 若目标的理智值为-45点，则使造成的伤害额外+10%\n\n- 若拥有增加[Sinking]强度，施加[Sinking]层数或施加特殊沉沦的攻击技能的友方单位不低于10名，则使增加[Sinking]强度或施加[Sinking]层数的加算硬币技能的硬币威力+1(包括特殊沉沦与待命人员，不包括E.G.O技能)\n· 减算硬币技能改为基础威力+(4/硬币数)，而非硬币威力(最少+1，向下取整)",
+      "simpleDesc": [
+        {
+          "abilityID": 9211,
+          "simpleDesc": "沉沦 技能的最终威力增加"
+        },
+        {
+          "abilityID": 92111,
+          "simpleDesc": "沉沦 技能造成的伤害增加"
+        },
+        {
+          "abilityID": 92112,
+          "simpleDesc": "沉沦 技能的硬币/基础威力增加"
+        }
+      ]
+    },
+    {
+      "id": 9212,
+      "name": "一切邪恶之终结",
+      "desc": "若属于裴廓德号的友方单位不低于3名，则触发该效果(包括待命人员)\n\n攻击技能命中带有[Laceration]的敌方单位时，以50%的概率使自身增加3级[Breath]强度并获得2层[Breath](每回合每名单位最多3次)\n\n技能命中并触发暴击时，以80%的概率不消耗[Breath]层数(每回合每名单位最多1次，包括E.G.O技能与反击技能)\n基础技能暴击正面命中时，令该硬币施加的负面状态额外+1(每回合每名单位最多1次，包括反击技能，不包括E.G.O技能)\n\n若第1顺位友方单位击杀敌方单位，则在本场战斗中使属于裴廓德号的友方单位获得1层[PenetrateResultUp]、1层[Protection]与1层[CriticalDamageUp](每场战斗最多3次)\n\n若属于裴廓德号的友方单位攻击命中了敌方单位，则使最先编入的属于裴廓德号的友方单位恢复7点理智值(每个技能最多1次)\n友方单位击杀敌方单位时，若最先编入的属于裴廓德号的友方单位失去了理智值，则使后者恢复15点理智值",
+      "simpleDesc": [
+        {
+          "abilityID": 9212,
+          "simpleDesc": "获得呼吸法 "
+        },
+        {
+          "abilityID": 92121,
+          "simpleDesc": "暴击命中时，有概率不消化呼吸法 层数。施加的负面状态增加"
+        },
+        {
+          "abilityID": 92122,
+          "simpleDesc": "获得迅捷 、攻击等级提升 与伤害强化 "
+        },
+        {
+          "abilityID": 92123,
+          "simpleDesc": "恢复理智值"
+        }
+      ]
+    },
+    {
+      "id": 9213,
+      "name": "微型摩天轮",
+      "desc": "使全体属于血魔的友方单位基础技能的硬币威力+1，自身技能造成的伤害+(自身的[BloodDinner_Accumulation]/10)%\n\n回合结束时，使带有[Laceration]的友方单位中现存体力最低的2名友方单位恢复其体力上限5%的体力并在下回合使其获得10层[SwirlingBloodPersonality]\n\n击杀敌方单位时，获得(其本体体力上限/10)层[BloodDinner](最多50层)\n\n回合结束时，若本回合有友方单位阵亡，则下回合使全体友方单位获得2层[Enhancement]\n\n遭遇战中新的敌方单位增援时，战斗开始时使其增加5级[Laceration]强度并对其施加3层[Laceration]。\n若友方单位中存在<血魔>，则新的敌方单位增援时触发全体敌方单位的[Laceration]2次，并使全体敌方单位的[Laceration]层数减少2层",
+      "simpleDesc": [
+        {
+          "abilityID": 9213,
+          "simpleDesc": "基础技能的硬币威力增加"
+        },
+        {
+          "abilityID": 92131,
+          "simpleDesc": "恢复体力，获得[SwirlingBloodPersonality]"
+        },
+        {
+          "abilityID": 92132,
+          "simpleDesc": "获得强壮 "
+        },
+        {
+          "abilityID": 92133,
+          "simpleDesc": "增加流血 强度并施加流血 层数"
+        }
+      ]
+    },
+    {
+      "id": 9214,
+      "name": "加热锤",
+      "desc": "若敌方单位带有[VibrationIgnition]，则触发以下效果\n- 基础技能命中时，使其增加1级[Combustion]强度(每个技能最多3次)\n- 基础技能命中时，若其[VibrationIgnition]强度不低于15级，则对其施加1层[Combustion](每个技能最多2次)\n- 其每带有3级[Combustion]，使其受到[VibrationExplosion]时造成的混乱阈值前移量+1%(最多+15%)",
+      "simpleDesc": [
+        {
+          "abilityID": 9214,
+          "simpleDesc": "施加烧伤 "
+        },
+        {
+          "abilityID": 92141,
+          "simpleDesc": "震颤引爆 伤害增加"
+        }
+      ]
+    },
+    {
+      "id": 9215,
+      "name": "红领带",
+      "desc": "使增加[Combustion]强度，施加[Combustion]层数或施加特殊烧伤的3技能拼点威力+2，造成的伤害+30%",
+      "simpleDesc": [
+        {
+          "abilityID": 9215,
+          "simpleDesc": "拼点威力与造成的伤害增加"
+        }
+      ]
+    },
+    {
+      "id": 9216,
+      "name": "制式服装-六协会",
+      "desc": "回合开始时，若拥有增加[Combustion]强度，施加[Combustion]层数或施加特殊烧伤的攻击技能的友方单位不低于5名，则在本场战斗期间触发该效果(不包括E.G.O技能，不包括待命人员)\n\n属于六协会的友方单位基础攻击技能的加算硬币威力+2(减算硬币技能改为基础威力+(8/硬币数)(最少+1，向下取整))\n\n增加[Combustion]强度，施加[Combustion]层数或施加特殊烧伤的3技能以外的技能造成的伤害+20%(包括E.G.O技能)\n\n增加[Combustion]强度，施加[Combustion]层数或施加特殊烧伤的3技能的加算硬币威力+1(减算硬币技能改为基础威力+(4/硬币数)(最少+1，向下取整))，造成的伤害+30%\n- 编队中每有1名友方单位与自身属于同一阵营，使造成的伤害+5%(最多+20%，包括待命人员)\n\n回合结束时，使理智值最低的2名友方单位恢复8点理智值\n- 若其理智值不高于0点，则使其额外恢复5点理智值",
+      "simpleDesc": [
+        {
+          "abilityID": 9216,
+          "simpleDesc": "技能威力与造成的伤害增加"
+        }
+      ]
+    },
+    {
+      "id": 9217,
+      "name": "某人的终端",
+      "desc": "攻击结束时，若[IndexPrescriptTargetToEnemy]阵亡，则使击杀[IndexPrescriptTargetToEnemy]的友方单位在下回合获得1层[AzureResultUp]；随机对1名存活的敌方单位施加3层[Sinking](每回合最多1次)\n- 若击杀[IndexPrescriptTargetToEnemy]的友方单位属于食指，则改为下回合获得1层[Enhancement]，而非[AzureResultUp](每回合最多1次)\n\n回合结束时，对属于食指的友方单位造成其体力上限(其[KarmaOfIndexAlly]层数)%的伤害\n(不会因该效果而陷入混乱，且不会使友方单位的体力降至体力上限的20%以下)\n下回合使受到以上伤害的友方单位获得(其[KarmaOfIndexAlly]层数/5)层[ResultEnhancement](最多2层)",
+      "simpleDesc": [
+        {
+          "abilityID": 9217,
+          "simpleDesc": "获得忧郁威力提升 。属于食指的友方单位改为获得强壮 "
+        },
+        {
+          "abilityID": 92171,
+          "simpleDesc": "属于食指的友方单位受到伤害并在下回合获得威力提升 "
+        }
+      ]
+    },
+    {
+      "id": 9218,
+      "name": "指令的庇护",
+      "desc": "上回合若通过技能效果增加[Sinking]强度，施加[Sinking]层数或施加特殊沉沦，则回合开始时使自身增加3级[Breath]强度并获得2层[Breath](每回合每名友方单位最多1次)\n\n本场战斗中，若有友方单位通过该效果获得了3次[Breath]，则从下回合起，使其暴击时造成的伤害+30%",
+      "simpleDesc": [
+        {
+          "abilityID": 9218,
+          "simpleDesc": "增加呼吸法 强度并获得呼吸法 层数"
+        },
+        {
+          "abilityID": 92181,
+          "simpleDesc": "暴击时造成的伤害增加"
+        }
+      ]
+    },
+    {
+      "id": 9219,
+      "name": "万能工具",
+      "desc": "相同攻击类型的技能命中敌方单位12次时，使其对应类型的物理抗性+0.1(若是异想体，则改为所有部位，每场战斗每个敌方单位最多3次，该效果不会使敌方单位的抗性高于2.0)",
+      "simpleDesc": [
+        {
+          "abilityID": 9219,
+          "simpleDesc": "物理抗性弱化"
+        }
+      ]
+    },
+    {
+      "id": 19219,
+      "name": "万能工具+",
+      "desc": "相同攻击类型的技能命中敌方单位9次时，使其对应类型的物理抗性+0.1(若是异想体，则改为所有部位，每场战斗每个敌方单位最多3次，该效果不会使敌方单位的抗性高于2.0)",
+      "simpleDesc": [
+        {
+          "abilityID": 19219,
+          "simpleDesc": "物理抗性弱化"
+        }
+      ]
+    },
+    {
+      "id": 29219,
+      "name": "万能工具++",
+      "desc": "相同攻击类型的技能命中敌方单位6次时，使其对应类型的物理抗性+0.1(若是异想体，则改为所有部位，每场战斗每个敌方单位最多3次，该效果不会使敌方单位的抗性高于2.0)",
+      "simpleDesc": [
+        {
+          "abilityID": 29219,
+          "simpleDesc": "物理抗性弱化"
+        }
+      ]
+    },
+    {
       "id": 9220,
       "name": "被盗的收尾人杂志",
       "desc": "回合开始时，使自身获得1层[HitResultUp]\n\n若激活嫉妒完全共鸣，则战斗开始时使自身获得1层[HitDamageUp]\n\n若属于中指的友方单位不低于4名，则关卡开始时随机对1名敌方单位施加[RetaliationBook]",
@@ -67,6 +254,165 @@
         {
           "abilityID": 92211,
           "simpleDesc": "烧伤 层数减少"
+        }
+      ]
+    },
+    {
+      "id": 9222,
+      "name": "空白画布",
+      "desc": "加算硬币攻击技能命中[Laceration]强度不低于15级的敌方单位时，使自身恢复3点理智值(每回合每名友方单位最多1次)\n- 若自身或该敌方单位带有的负面状态不少于3种，则改为恢复6点理智值",
+      "simpleDesc": [
+        {
+          "abilityID": 9222,
+          "simpleDesc": "恢复理智值"
+        }
+      ]
+    },
+    {
+      "id": 9223,
+      "name": "凡作",
+      "desc": "使属于环指的友方单位获得[Inspire]\n\n带有[Inspire]且属于环指的友方单位的色欲或斩击技能命中敌方单位时，下回合对该敌方单位施加[ObjectOfExploration]\n- 若敌方单位带有[ObjectOfExploration]，则使其[ObjectOfExploration]转化为[PaintingMaterial]\n\n带有[Inspire]且属于环指的友方单位击杀带有[PaintingMaterial]的敌方单位时，下回合使该友方单位获得1层[PlusCoinValueUp](每回合最多1次)",
+      "simpleDesc": [
+        {
+          "abilityID": 9223,
+          "simpleDesc": "施加[ObjectOfExploration]"
+        },
+        {
+          "abilityID": 92231,
+          "simpleDesc": "获得[PlusCoinValueUp]"
+        }
+      ]
+    },
+    {
+      "id": 9224,
+      "name": "杰作",
+      "desc": "使属于环指的友方单位获得[Inspire]\n\n带有[Inspire]且属于环指的友方单位命中敌方单位时，对该敌方单位施加[ObjectOfExploration]\n- 若敌方单位带有[ObjectOfExploration]，则使其[ObjectOfExploration]转化为[PaintingMaterial]\n\n带有[Inspire]且属于环指的友方单位击杀带有[PaintingMaterial]的敌方单位时，\n使该友方单位失去[Inspire]并获得[GreatAesthetics]",
+      "simpleDesc": [
+        {
+          "abilityID": 9224,
+          "simpleDesc": "获得[Inspire]"
+        },
+        {
+          "abilityID": 92241,
+          "simpleDesc": "施加[ObjectOfExploration]"
+        },
+        {
+          "abilityID": 92242,
+          "simpleDesc": "获得[GreatAesthetics]"
+        }
+      ]
+    },
+    {
+      "id": 9225,
+      "name": "蜘蛛网",
+      "desc": "使用守备技能时，下回合使自身3技能造成的伤害+10%(每回合最多1次)",
+      "simpleDesc": [
+        {
+          "abilityID": 9225,
+          "simpleDesc": "3技能造成的伤害增加"
+        }
+      ]
+    },
+    {
+      "id": 19225,
+      "name": "蜘蛛网+",
+      "desc": "使用守备技能时，下回合使自身3技能造成的伤害+15%(每回合最多1次)",
+      "simpleDesc": [
+        {
+          "abilityID": 19225,
+          "simpleDesc": "3技能造成的伤害增加"
+        }
+      ]
+    },
+    {
+      "id": 29225,
+      "name": "蜘蛛网++",
+      "desc": "使用守备技能时，下回合使自身3技能造成的伤害+20%(每回合最多1次)",
+      "simpleDesc": [
+        {
+          "abilityID": 29225,
+          "simpleDesc": "3技能造成的伤害增加"
+        }
+      ]
+    },
+    {
+      "id": 9226,
+      "name": "某人的青刀",
+      "desc": "战斗开始时，使带有护盾的友方单位获得1层[CriticalDamageUp]\n友方单位的技能暴击命中时，下回合使该友方单位在当回合获得(自身的[Breath]强度/5)点护盾(最多15点)",
+      "simpleDesc": [
+        {
+          "abilityID": 9226,
+          "simpleDesc": "获得[CriticalDamageUp]"
+        },
+        {
+          "abilityID": 92261,
+          "simpleDesc": "获得护盾"
+        }
+      ]
+    },
+    {
+      "id": 9227,
+      "name": "寄宿鬼气的环刀",
+      "desc": "本E.G.O饰品在6场战斗胜利后转化\n{0}\n\n全体友方单位受到的伤害+20%，拼点威力-1",
+      "simpleDesc": [
+        {
+          "abilityID": 9227,
+          "simpleDesc": "受到的伤害增加，拼点威力减少"
+        }
+      ]
+    },
+    {
+      "id": 9228,
+      "name": "人剑合一",
+      "desc": "全体友方单位造成的伤害+25%",
+      "simpleDesc": [
+        {
+          "abilityID": 9228,
+          "simpleDesc": "造成的伤害增加"
+        }
+      ]
+    },
+    {
+      "id": 9229,
+      "name": "褪色的护手",
+      "desc": "本E.G.O饰品在6场战斗胜利后转化\n{0}\n\n全体友方单位的最小与最大速度值-5(该效果不会使速度值低于1)",
+      "simpleDesc": [
+        {
+          "abilityID": 9229,
+          "simpleDesc": "速度值减少"
+        }
+      ]
+    },
+    {
+      "id": 9230,
+      "name": "黄金时间",
+      "desc": "全体友方单位的最小与最大速度值+3\n若目标的速度值低于自身至少4点，则使自身技能的最终威力+2\n攻击命中敌方单位时，下回合对其施加1层束缚 (每回合最多4次)",
+      "simpleDesc": [
+        {
+          "abilityID": 9230,
+          "simpleDesc": "速度值与最终威力增加"
+        }
+      ]
+    },
+    {
+      "id": 9231,
+      "name": "那一日的记录",
+      "desc": "本E.G.O饰品在6场战斗胜利后转化\n{0}\n\n回合开始时，随机使1名未陷入混乱的友方单位陷入强制混乱",
+      "simpleDesc": [
+        {
+          "abilityID": 9231,
+          "simpleDesc": "陷入混乱"
+        }
+      ]
+    },
+    {
+      "id": 9232,
+      "name": "可能性",
+      "desc": "因受到伤害而陷入混乱时，解除自身的混乱。使自身获得自身体力上限50%的护盾，随机解除自身带有的1种可解除的负面状态\n(不包括强制混乱，每场战斗最多2次)\n触发以上效果后，下回合开始时使自身增加20级呼吸法 强度(每回合最多1次)",
+      "simpleDesc": [
+        {
+          "abilityID": 9232,
+          "simpleDesc": "解除混乱，解除负面状态"
         }
       ]
     }
