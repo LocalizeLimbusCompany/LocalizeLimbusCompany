@@ -45,6 +45,193 @@
       ]
     },
     {
+      "id": 9207,
+      "name": "Chance & Choice",
+      "desc": "Random chance for the leftmost Slot's E.G.O Skill to deal -50% damage or +150% damage (once per turn)",
+      "simpleDesc": [
+        {
+          "abilityID": 9207,
+          "simpleDesc": "E.G.O Skills deal more(or less) damage"
+        }
+      ]
+    },
+    {
+      "id": 9208,
+      "name": "Entangled Fate",
+      "desc": "Combat Start: At 7+ A-Reson., all allies gain Final Power +5 for this turn (once per Encounter)",
+      "simpleDesc": [
+        {
+          "abilityID": 9208,
+          "simpleDesc": "Gain Final Power"
+        }
+      ]
+    },
+    {
+      "id": 9211,
+      "name": "Raincloud",
+      "desc": "Turn Start: At 30+ total sum of [Sinking] Potency and [Sinking] Count on all enemies, apply the following effects:\n\n- Skills that inflict [Sinking] Potency or Count: Final Power +1 (including 'Unique Sinking'; excluding E.G.O Skills)\n\n- When 6 or more Identities have Attack Skills that inflict [Sinking] Potency, Count, or 'Unique Sinking', Skills that inflict [Sinking] Potency or Count also deal +20% damage (including 'Unique Sinking' and Backup Units; excluding E.G.O Skills)\n · If the target is at -45 SP, deal additional +10% damage\n\n- When 10 or more Identities have Attack Skills that inflict [Sinking] Potency, Count, or 'Unique Sinking', Plus Coin Skills that inflict [Sinking] Potency or Count also gain Coin Power +1 (including 'Unique Sinking' and Backup Units; excluding E.G.O Skills)\n · Minus Coin Skills: Instead of gaining Coin Power, gain Base Power +(4 / # of Coins) (min 1; rounded down)",
+      "simpleDesc": [
+        {
+          "abilityID": 9211,
+          "simpleDesc": "Sinking Skills gain Final Power"
+        },
+        {
+          "abilityID": 92111,
+          "simpleDesc": "Sinking Skills deal more damage"
+        },
+        {
+          "abilityID": 92112,
+          "simpleDesc": "Sinking Skills gain Coin/Base Power"
+        }
+      ]
+    },
+    {
+      "id": 9212,
+      "name": "The End of all Evil",
+      "desc": "Activates when there are 3 or more The Pequod-faction Identities (counting Backup units)\n\nOn Hit with an Attack Skill against enemies with [Laceration]: 50% chance to gain 3 [Breath] or +2 [Breath] Count (3 times per turn for each character)\n\nOn Crit: 80% chance to not consume [Breath] Count (once per turn for each character; including E.G.O Skills and Counter Skills)\nOn Crit Heads Hit with a Base Skill: Inflict +1 more of the negative effect with that Coin (once per turn for each character; including Counter Skills and excluding E.G.O Skills)\n\nIf #1 Deployed Identity kills an enemy, The Pequod-faction Identities gain 1 [PenetrateResultUp], 1 [Protection], and 1 [CriticalDamageUp] each turn for the rest of this Encounter (max 3 times per Encounter)\n\nIf one of The Pequod-faction Identities attacks and hits an enemy, heal 7 SP for The Pequod-faction Identity with the earliest Deployment order (once per Skill)\nWhen an ally kills an enemy, heal 15 SP for The Pequod-faction Identity with the earliest Deployment order if said Identity lost SP",
+      "simpleDesc": [
+        {
+          "abilityID": 9212,
+          "simpleDesc": "Gain Poise"
+        },
+        {
+          "abilityID": 92121,
+          "simpleDesc": "On Crit: Chance to not lose Poise Count. Increase the amount of negative effect inflicted"
+        },
+        {
+          "abilityID": 92122,
+          "simpleDesc": "Gain Haste, Offense Level Up, Damage Up"
+        },
+        {
+          "abilityID": 92123,
+          "simpleDesc": "Heal SP"
+        }
+      ]
+    },
+    {
+      "id": 9213,
+      "name": "Miniature Ferris Wheel",
+      "desc": "All Bloodfiend allies: Base Skill Coin Power +1, deal +([BloodDinner_Accumulation] / 10)% Skill damage\n\nTurn End: Among allies with [Laceration], 2 allies with the least HP heal 5% HP and gain 10 [SwirlingBloodPersonality] at next Turn Start\n\nOn enemy Kill, increase [BloodDinner] by (enemy Core max HP / 10) (max 50)\n\nTurn End: If an ally died this turn, all allies gain 2 [Enhancement] next turn\n\nIn Encounters where backup enemies appear: When new enemies appear, inflict 5 [Laceration] and +3 [Laceration] Count against them at Combat Start.\nIf there is a <Bloodfiend> among allies: When new enemies enter the battle, activate [Laceration] on all enemies twice and reduce their [Laceration] Count by 2",
+      "simpleDesc": [
+        {
+          "abilityID": 9213,
+          "simpleDesc": "Gain Base Skill Coin Power"
+        },
+        {
+          "abilityID": 92131,
+          "simpleDesc": "Heal HP and gain [SwirlingBloodPersonality]"
+        },
+        {
+          "abilityID": 92132,
+          "simpleDesc": "Gain Attack Power Up"
+        },
+        {
+          "abilityID": 92133,
+          "simpleDesc": "Inflict Bleed Potency and Count"
+        }
+      ]
+    },
+    {
+      "id": 9214,
+      "name": "Searing Hammer",
+      "desc": "If the enemy has [VibrationIgnition], apply the following effects:\n- On Base Skill Hit, inflict 1 [Combustion] (3 times per Skill)\n- On Base Skill Hit, if the enemy has 15+ [VibrationIgnition], inflict +1 [Combustion] Count (2 times per Skill)\n- For every 3 [Combustion], +1% to Stagger Threshold raised by [VibrationExplosion] (max 15%)",
+      "simpleDesc": [
+        {
+          "abilityID": 9214,
+          "simpleDesc": "Inflict Burn"
+        },
+        {
+          "abilityID": 92141,
+          "simpleDesc": "Tremor Burst increases Stagger threshold further"
+        }
+      ]
+    },
+    {
+      "id": 9215,
+      "name": "Red Necktie",
+      "desc": "Skill 3 that inflicts [Combustion] Potency, Count, or 'Unique Burn': Clash Power +2 and deal +30% damage",
+      "simpleDesc": [
+        {
+          "abilityID": 9215,
+          "simpleDesc": "Gain Clash Power and deal more damage"
+        }
+      ]
+    },
+    {
+      "id": 9216,
+      "name": "Uniform - Liu Assoc.",
+      "desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply [Combustion] Potency, Count, or 'Unique Burn'. (except E.G.O Skills; except Backup Units)\n\nLiu Association Identities: Base Attack Skills gain Plus Coin Power +2 (Minus Coin Skills gain Base Power +(8 / # of Coins) (min 1; rounded down))\n\nNon-Skill 3 Skills (including E.G.O Skills) that inflict [Combustion] Potency, Count or 'Unique Burn' deal +20% damage\n\nSkill 3 that inflicts [Combustion] Potency, Count, or 'Unique Burn' gain Plus Coin Power +1 (Minus Coin Skills gain Base Power +(4 / # of Coins) (min 1; rounded down)) and deal +30% damage \n- Identities in a faction deal +5% damage for every same-faction Identity in the Team (max 20%; including Backup Units)\n\nTurn End: 2 allies with the least SP heal 8 SP\n- If affected allies are at 0 SP or lower, heal 5 additional SP",
+      "simpleDesc": [
+        {
+          "abilityID": 9216,
+          "simpleDesc": "Gain Skill Power and deal more damage"
+        }
+      ]
+    },
+    {
+      "id": 9217,
+      "name": "Someone's Device",
+      "desc": "Attack End: If [IndexPrescriptTargetToEnemy] is killed, the Identity who attacked and killed [IndexPrescriptTargetToEnemy] gains 1 [AzureResultUp] next turn; inflict +3 [Sinking] Count to 1 random surviving enemy (once per turn)\n- If the unit that killed [IndexPrescriptTargetToEnemy] is in The Index faction, gain 1 [Enhancement] instead of [AzureResultUp] next turn (once per turn)\n\nTurn End: The Index faction units take ([KarmaOfIndexAlly] Stack on self)% HP damage.\n(Does not get Staggered due to this effect; this damage does not reduce the allies' HP below 20% HP)\nThen, Identities who took damage due to the above effect gain ([KarmaOfIndexAlly] Stack on self / 5) [ResultEnhancement] next turn (max 2)",
+      "simpleDesc": [
+        {
+          "abilityID": 9217,
+          "simpleDesc": "Gain Gloom Power Up. The Index Identities gain Attack Power Up instead"
+        },
+        {
+          "abilityID": 92171,
+          "simpleDesc": "The Index Identities take damage and gain Power Up next turn"
+        }
+      ]
+    },
+    {
+      "id": 9218,
+      "name": "Providence of the Prescript",
+      "desc": "Identities that inflicted [Sinking], [Sinking] Count, or 'Unique Sinking', gain 3 [Breath] or +2 [Breath] Count at Turn Start (once per turn per Identity)\n\nDuring the Encounter, if an Identity has gained [Breath] 3 times due to the above effect, starting from the next turn, the said Sinner deals +30% damage on Critical Hit",
+      "simpleDesc": [
+        {
+          "abilityID": 9218,
+          "simpleDesc": "Gain Poise Potency and Count"
+        },
+        {
+          "abilityID": 92181,
+          "simpleDesc": "Deal more Damage on Critical Hit"
+        }
+      ]
+    },
+    {
+      "id": 9219,
+      "name": "Omni-tool",
+      "desc": "When Skills of the same Attack Type hit an enemy 12 times, the enemy gains +0.1 Resistance against that Attack Type (3 times per Encounter per enemy/Abnormality Parts; this effect cannot raise Resistance value over 2.0)",
+      "simpleDesc": [
+        {
+          "abilityID": 9219,
+          "simpleDesc": "Target becomes more vulnerable to an Attack Type"
+        }
+      ]
+    },
+    {
+      "id": 19219,
+      "name": "Omni-tool+",
+      "desc": "When Skills of the same Attack Type hit an enemy 9 times, the enemy gains +0.1 Resistance against that Attack Type (3 times per Encounter per enemy/Abnormality Parts; this effect cannot raise Resistance value over 2.0)",
+      "simpleDesc": [
+        {
+          "abilityID": 19219,
+          "simpleDesc": "Target becomes more vulnerable to an Attack Type"
+        }
+      ]
+    },
+    {
+      "id": 29219,
+      "name": "Omni-tool++",
+      "desc": "When Skills of the same Attack Type hit an enemy 6 times, the enemy gains +0.1 Resistance against that Attack Type (3 times per Encounter per enemy/Abnormality Parts; this effect cannot raise Resistance value over 2.0)",
+      "simpleDesc": [
+        {
+          "abilityID": 29219,
+          "simpleDesc": "Target becomes more vulnerable to an Attack Type"
+        }
+      ]
+    },
+    {
       "id": 9220,
       "name": "Stolen Fixer Magazine",
       "desc": "Turn Start: Gain 1 [HitResultUp]\n\nCombat Start: Gain 1 [HitDamageUp] if Envy A-Reson. is activated\n\nEncounter Start: If there are 4 or more The Middle-faction Identities on the battlefield, apply [RetaliationBook] to a random enemy",
@@ -67,6 +254,165 @@
         {
           "abilityID": 92211,
           "simpleDesc": "Reduce Burn Count"
+        }
+      ]
+    },
+    {
+      "id": 9222,
+      "name": "Pure-white Canvas",
+      "desc": "On Hit with Plus Coin Attack Skills against an enemy with 15+ [Laceration], heal 3 SP (once per turn for each Identity)\n- If said Identity or target has 3+ types of negative effects, heal 6 SP instead",
+      "simpleDesc": [
+        {
+          "abilityID": 9222,
+          "simpleDesc": "Heal SP"
+        }
+      ]
+    },
+    {
+      "id": 9223,
+      "name": "Average Artwork",
+      "desc": "The Ring-faction Identities gain [Inspire]\n\nIf The Ring-faction Identity with [Inspire] hits an enemy with Lust or Slash Skills, inflict [ObjectOfExploration] on said enemy next turn\n- If the enemy already has [ObjectOfExploration], replace [ObjectOfExploration] with [PaintingMaterial]\n\nIf The Ring-faction Identity with [Inspire] kills an enemy that has [PaintingMaterial], said Identity gains 1 [PlusCoinValueUp] next turn (once per turn)",
+      "simpleDesc": [
+        {
+          "abilityID": 9223,
+          "simpleDesc": "Inflict [ObjectOfExploration]"
+        },
+        {
+          "abilityID": 92231,
+          "simpleDesc": "Gain [PlusCoinValueUp]"
+        }
+      ]
+    },
+    {
+      "id": 9224,
+      "name": "Exquisite Artwork",
+      "desc": "The Ring-faction Identities gain [Inspire]\n\nIf The Ring-faction Identity with [Inspire] hits an enemy, inflict [ObjectOfExploration] on said enemy\n- If the enemy already has [ObjectOfExploration], replace [ObjectOfExploration] with [PaintingMaterial]\n\nIf The Ring-faction Identity with [Inspire] kills an enemy that has [PaintingMaterial], said Identity loses [Inspire] and gains [GreatAesthetics]",
+      "simpleDesc": [
+        {
+          "abilityID": 9224,
+          "simpleDesc": "Gain [Inspire]"
+        },
+        {
+          "abilityID": 92241,
+          "simpleDesc": "Inflict [ObjectOfExploration]"
+        },
+        {
+          "abilityID": 92242,
+          "simpleDesc": "Gain [GreatAesthetics]"
+        }
+      ]
+    },
+    {
+      "id": 9225,
+      "name": "The Spider's Thread",
+      "desc": "Allies who use Defense Skill deal +10% damage with Skill 3 next turn (once per turn)",
+      "simpleDesc": [
+        {
+          "abilityID": 9225,
+          "simpleDesc": "Skill 3 deals more damage"
+        }
+      ]
+    },
+    {
+      "id": 19225,
+      "name": "The Spider's Thread+",
+      "desc": "Allies who use Defense Skill deal +15% damage with Skill 3 next turn (once per turn)",
+      "simpleDesc": [
+        {
+          "abilityID": 19225,
+          "simpleDesc": "Skill 3 deals more damage"
+        }
+      ]
+    },
+    {
+      "id": 29225,
+      "name": "The Spider's Thread++",
+      "desc": "Allies who use Defense Skill deal +20% damage with Skill 3 next turn (once per turn)",
+      "simpleDesc": [
+        {
+          "abilityID": 29225,
+          "simpleDesc": "Skill 3 deals more damage"
+        }
+      ]
+    },
+    {
+      "id": 9226,
+      "name": "Someone's Azure Blade",
+      "desc": "Combat Start: Allies with Shield gain 1 [CriticalDamageUp]\nOn Crit with ally Skill, said ally gains Shield equal to ([Breath] / 5) for the next turn (max 15)",
+      "simpleDesc": [
+        {
+          "abilityID": 9226,
+          "simpleDesc": "Gain [CriticalDamageUp]"
+        },
+        {
+          "abilityID": 92261,
+          "simpleDesc": "Gain Shield"
+        }
+      ]
+    },
+    {
+      "id": 9227,
+      "name": "Baleful Hwando",
+      "desc": "This E.G.O Gift changes after 6 Encounter wins\n{0}\n\nFor all allies: Take +20% damage, Clash Power -1",
+      "simpleDesc": [
+        {
+          "abilityID": 9227,
+          "simpleDesc": "Take more damage and lose Clash Power"
+        }
+      ]
+    },
+    {
+      "id": 9228,
+      "name": "One with the Blade",
+      "desc": "All allies deal +25% damage",
+      "simpleDesc": [
+        {
+          "abilityID": 9228,
+          "simpleDesc": "Deal more damage"
+        }
+      ]
+    },
+    {
+      "id": 9229,
+      "name": "Tarnished Gauntlet",
+      "desc": "This E.G.O Gift changes after 6 Encounter wins\n{0}\n\nMin & Max Speed -5 for all allies (this effect cannot reduce Speed below 1)",
+      "simpleDesc": [
+        {
+          "abilityID": 9229,
+          "simpleDesc": "Reduce Speed"
+        }
+      ]
+    },
+    {
+      "id": 9230,
+      "name": "Golden Hour",
+      "desc": "Min & Max Speed +3 for all allies\nFinal Power +2 when using Skills against slower targets with 4+ Speed difference\nOn Hit against an enemy, inflict 1 Bind next turn (4 times per turn)",
+      "simpleDesc": [
+        {
+          "abilityID": 9230,
+          "simpleDesc": "Gain Speed and Final Power"
+        }
+      ]
+    },
+    {
+      "id": 9231,
+      "name": "Record Logs of That Day",
+      "desc": "This E.G.O Gift changes after 6 Encounter wins\n{0}\n\nTurn Start: A random ally who is not Staggered enters a forced Stagger state",
+      "simpleDesc": [
+        {
+          "abilityID": 9231,
+          "simpleDesc": "Gets Staggered"
+        }
+      ]
+    },
+    {
+      "id": 9232,
+      "name": "Potentialities",
+      "desc": "When Staggered due to damage, recover from Stagger; then gain Shield equal to 50% of Max HP and remove 1 random removable negative effect on self (excluding forced Staggers, 2 times per Encounter)\n\nGain 20 Poise at the start of the next turn after activating the above effect (once per turn)",
+      "simpleDesc": [
+        {
+          "abilityID": 9232,
+          "simpleDesc": "Recover from Stagger; remove negative effect"
         }
       ]
     }
