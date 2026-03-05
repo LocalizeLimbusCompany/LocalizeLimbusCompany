@@ -2063,7 +2063,7 @@
     {
       "id": "FireBulletPropellant",
       "name": "Scorch Propellant Ammo",
-      "desc": "- Max Capacity: 15\n- Unique Ammo\n- Spent by certain Skills",
+      "desc": "- Unique Ammo\n- Max Stack : 15\n- Consumed when using certain Skills",
       "summary": "",
       "undefined": "-"
     },
@@ -2486,14 +2486,14 @@
     {
       "id": "SheutFracture",
       "name": "Sheut Fracture",
-      "desc": "- Max Stack: 10\n- Unique Sinking\n- For every Stack, take +1% more damage from Sloth and Gloom Skills\n- At max Stack, gain 1 Gloom Fragility (once per turn), take Gloom damage equal to Sinking Potency on self(lose 1 Sinking Count), then expires\n- If the unit with this effect dies, transfer half of its Stack to its ally with the highest SP (rounded down)\n- Turn Start: If there are no LCA Identities on the field, expires",
+      "desc": "- Unique Sinking\n- Max Stack: 10\n- For every Stack, take +1% more damage from Sloth and Gloom Skills\n- At max Stack, gain 1 Gloom Fragility (once per turn), take Gloom damage equal to Sinking Potency on self (lose 1 Sinking Count), then expires\n- If the unit with this effect dies, transfer half of its Stack to its ally with the highest SP (rounded down)\n- Turn Start: If there are no LCA Identities on the field, expires",
       "summary": "",
       "undefined": "-"
     },
     {
       "id": "LCA_Bullet",
       "name": "LCA Fracture Round",
-      "desc": "- Max Capacity: 16\n- Unique Ammo\n- Spent by certain Skills\n- Some attacks cancel if lacking Ammo",
+      "desc": "- Unique Ammo\n- Max Capacity: 16\n- Spent by certain Skills\n- Some attacks cancel if lacking Ammo",
       "summary": "",
       "undefined": "-"
     },
@@ -2745,6 +2745,119 @@
       "summary": "",
       "undefined": "-",
       "flavor": ""
+    },
+    {
+      "id": "ThatIsRhythm",
+      "name": "Rhythm",
+      "desc": "- Max Stack: 5\n- Deal +2% damage for every Stack (max 10%)\n- Offense Level +1 for every Stack (max 5)\n- Defense Level -1 for every Stack (max -5)\n- Turn End: This effect expires",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "MeursaultBeeSpore",
+      "name": "Spore",
+      "desc": "- Max Stack: 15\n- Turn End: Gain +1 Burn Count for every 5 Stack\n- Gain 1 Bind next turn",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "MeursaultWorkerBee",
+      "name": "Loyalty Pheromone",
+      "desc": "- Max Stack: 3\n- Gain the following effects next turn based on Stack at Turn End:\n1+ Stack: 1 Protection\n2+ Stack: 1 Haste\n3 Stack: 1 Clash Power Up",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "MeursaultSporeBulletLong",
+      "name": "Spore Round [Base]",
+      "desc": "- Unique Ammo\n- Max Stack: 10\n- Spent when using certain Skills\n- Some attacks cancel if lacking Ammo\n- When spent, inflict 2 Spore on target On Hit",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "MeursaultSporeBulletShort",
+      "name": "Spore Round [Buckshot]",
+      "desc": "- Unique Ammo\n- Max Stack: 6\n- Spent when using certain Skills\n- Some attacks cancel if lacking Ammo\n- When spent, inflict 3 Spore on target On Hit",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "MeursaultSporeBulletReloading",
+      "name": "Reload [Germination]",
+      "desc": "- Effect applied to Spore Round (Unique Ammo)\n- Consume ((16 - sum of Spore Round) / 2) SP(rounded down), reset both Spore Round [Base] and Spore Round [Buckshot] to 0 Stacks, and gain them up to max Stacks",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "MeursaultBeeGunLong",
+      "name": "Hornet [Rifle]",
+      "desc": "Current Mode: Hornet [Rifle]",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "MeursaultBeeGunShort",
+      "name": "Hornet [Shotgun]",
+      "desc": "Current Mode: Hornet [Shotgun]",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "Instead of deferring the definition to its rifle-form, gaze into the core essence of \"Hornet.\"\nepoché"
+    },
+    {
+      "id": "BulletGodok",
+      "name": "Bullet - Solitude",
+      "desc": "- Unique Ammo\n- Max Capacity: 6\nSpent when using certain Skills\n\n- This Ammo's count cannot be gained or lost due to external effects",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "AlriuneEGOThey",
+      "name": "Faint Aroma",
+      "desc": "- Max Stack: 30\n- Gain 1 Stack if this unit takes Sinking damage\n- Upon Tremor Burst, apply 1~2 Faint Aroma on 3 other random allies (for Abnormalities, the Part)\n- At max Stack, gain 2 Tremor and trigger Tremor Burst on self; then, take Gloom damage equal to Sinking on self and lose all Faint Aroma. Cannot gain Faint Aroma for the rest of the turn.\n- If this unit is killed, inflict (remaining Faint Aroma on this unit / 2) Faint Aroma randomly between this unit's allies (rounded down)",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "AlriuneEGOWe",
+      "name": "Petals",
+      "desc": "- Max Stack: 30\n- Offense Level +1 for every 10 Stack\n- Can be gained up to 15 Stacks per turn",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "GodokPanicType",
+      "name": "Solitude",
+      "desc": "- Take +10% damage from Gloom Skills\n- Units with SP: Change their Panic Type to 'Solitude'\n- Units without SP: Gain +2 Sinking Count at Turn End\n\n- Turn End: Lose 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value\n- Apply the \"Units without SP\" conditional to certain enemies that have SP but cannot change their Panic Types\n\n※ Solitude Panic Effect:\n- Low Morale: Gain +2 Sinking Count at Turn End\n- Panic: Gain +3 Sinking Count at Turn End",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "Godok_Lowmorale",
+      "name": "Solitude",
+      "desc": "- Low Morale\n- Turn End: Gain +2 Sinking Count",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "Godok_Panic",
+      "name": "Solitude",
+      "desc": "- Panic\n- Turn End: Gain +3 Sinking Count",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "GodokPanicType_Sub",
+      "name": "Solitude",
+      "desc": "- Take +10% damage from Gloom Skills\n- Turn End: Gain +2 Sinking Count\n\n- Turn End: Lose 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value",
+      "summary": "",
+      "undefined": "-"
+    },
+    {
+      "id": "GodokPanicType_Main",
+      "name": "Solitude",
+      "desc": "- Take +10% damage from Gloom Skills\n- Change Panic Type to 'Solitude'\n\n- Turn End: Lose 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value",
+      "summary": "",
+      "undefined": "-"
     }
   ]
 }

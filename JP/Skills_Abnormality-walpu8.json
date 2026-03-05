@@ -1,0 +1,313 @@
+{
+  "dataList": [
+    {
+      "id": 136601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "飛び掛かる",
+          "desc": "体力の比率が最も高い敵を優先して攻撃\n[WhenUse] 対象に[Laceration]が4以上あるなら、基本威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 136602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "かじって食べる",
+          "desc": "体力の比率が最も高い敵を優先して攻撃\n[WhenUse] 対象に[Laceration]が4以上あるなら、基本威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack]対象に[Laceration]があるなら、次のターンに[PenetrateResistDown]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が3増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 136603,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "オレンジ味バブル補充",
+          "desc": "体力の比率が最も高い敵を優先して攻撃\n[WhenUse] 対象に[Laceration]が4以上あるなら、コイン威力 +1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 136604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "バブルの風味をプラス",
+          "desc": "[WhenUse] 対象の[Laceration]4につき、コイン威力 +1 (最大2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack]対象に[Laceration]があるなら、次のターンに[PenetrateResistDown]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 136605,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "群れ移動",
+          "desc": "[OnSucceedEvade] 次のターンに[Binding]2を付与\n[EndBattle] 自分の[RunHallway]消滅後、[NextHallway]が発動",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 136901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "噛んで食べる",
+          "desc": "速度が最も低い対象を優先して攻撃\n[WhenUse] 対象に[Laceration]が4以上あるなら、基本威力 +1\n[BeforeAttack] 破壊されたコイン数1枚につき、基本威力 -1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与、[Laceration]回数が3増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 136902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "中サイズのオレンジバブルを満たす",
+          "desc": "速度が最も低い対象を優先して攻撃\n[WhenUse] 対象に[Laceration]が4以上あるなら、コイン威力 +1\n[BeforeAttack] 破壊されたコイン数1枚につき、基本威力 -1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Vulnerable]2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 136903,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "もっと濃く、もっと沢山",
+          "desc": "速度が最も低い対象を優先して攻撃\n[WhenUse] 対象の[Laceration]3につき、コイン威力 +1 (最大2)\n[BeforeAttack] 破壊されたコイン数1枚につき、基本威力 -1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が4増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[PenetrateResistDown]2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 136904,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ぷにゅにゅん繁殖のための飼料捕食",
+          "desc": "速度が最も低い対象を優先して攻撃\n[WhenUse] 対象の[Laceration]3につき、コイン威力 +1 (最大2)\n[BeforeAttack] 破壊されたコイン数1枚につき、基本威力 -1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 136905,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "群れ移動",
+          "desc": "[CanDuelGuard]\n[EndBattle] 自分の[RunHallway]消滅後、「自分」と「自分が召喚した完全食品」へ[NextHallway]を発動",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

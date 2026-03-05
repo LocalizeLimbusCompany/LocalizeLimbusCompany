@@ -2764,6 +2764,51 @@
       "name": "Grace of God",
       "desc": "Deal +5% damage with Slash, Pierce, and Blunt Base Attack Skills that are used for the first time by any ally each turn (once per type across all allies)\n- The Index Identities deal +10% damage instead\n- This effect's application is determined Before Attack",
       "summary": "Deal more damage with Slash, Pierce, and Blunt Skills used for the first time this turn"
+    },
+    {
+      "id": 1051401,
+      "name": "Spore Diffusion",
+      "desc": "On Kill against targets with [MeursaultBeeSpore], inflict double the [MeursaultBeeSpore] for the next turn"
+    },
+    {
+      "id": 1051411,
+      "name": "Spore Diffusion",
+      "desc": "On Kill against targets with [MeursaultBeeSpore], gain the following effects:\n- Inflict double the [MeursaultBeeSpore] for the next turn\n<style=\"highlight\">- On Kill with a Base Attack Skill, gain (<noparse>Spore</noparse> Round the Skill spends / 2) <noparse>Spore</noparse> Round (rounded up; once per Skill)</style>"
+    },
+    {
+      "id": 1051402,
+      "name": "E.G.O Alteration / Spore Round",
+      "desc": "Always Active: Begin Encounters with 10 [MeursaultSporeBulletLong] and 6 [MeursaultSporeBulletShort]\n\nOn Hit with Coins that spend <noparse>Spore</noparse> Round:\n- If [MeursaultSporeBulletLong] was spent, inflict 2 [MeursaultBeeSpore]\n- If [MeursaultSporeBulletShort] was spent, inflict 3 [MeursaultBeeSpore]\n- This counts as \"inflicting negative effects with the Skill\"\n\nBefore Coin Use of a Coin that spends [MeursaultSporeBulletShort], if this unit does not have [MeursaultSporeBulletShort], consume 2 SP and 2 [MeursaultSporeBulletLong] to gain 1 [MeursaultSporeBulletShort]\n\nIf this unit runs out of <noparse>Spore</noparse> Round mid-Skill, cancel all subsequent Coins and [MeursaultSporeBulletReloading]\n\nWhen targets with [MeursaultBeeSpore] are killed, gain 1 [MeursaultWorkerBee]",
+      "flavor": "\"The research team's—that's us—examination has confirmed that even gears that were outcomes of stable, refined extractions may undergo slight mutations depending on the user.\nNo, I wouldn't attribute that to incompleteness. Rather, such changes may even be a process of these gears reaching their own completion, like real E.G.O.\nLet us label this phenomenon \"Alteration\" for now.\""
+    },
+    {
+      "id": 1051421,
+      "name": "Worker Bee",
+      "desc": "Ally Pierce Base Attack Skill End: The said ally heals HP equal to 10% of HP damage dealt with the attack (2 times per Encounter)\n- For this turn, if all Base Attack Skills equipped on allied Skill Slots are Pierce Skills, all allies heal 10 SP at Turn End"
+    },
+    {
+      "id": 1041401,
+      "name": "Unwithering Flower",
+      "desc": "Gain 1 [AlriuneEGOWe] if the enemy takes [Sinking] damage\nGain [AlriuneEGOWe] equal to [AlriuneEGOThey] inflicted every time enemies gain [AlriuneEGOThey]\nGain 2 [AlriuneEGOWe] every time Tremor Burst is triggered regardless of the unit",
+      "summary": "Gain [AlriuneEGOWe]"
+    },
+    {
+      "id": 1041402,
+      "name": "A Void that Cannot be Filled",
+      "desc": "Always Active: Begin Encounters with 6 [BulletGodok]\n\nAt 1+ [BulletGodok], if the enemy has less than -40 SP or is Staggered at this unit or an ally's Attack End, use 'Bang. Bang.' as an Unopposed Attack (once per turn)\n\nAttack End: At 0 [BulletGodok], use 'Stories that Never Cease' as an Unopposed Attack against the target and consume 10 SP to [FullReload]",
+      "summary": "Trigger 'Skill 1-1' and [FullReload]"
+    },
+    {
+      "id": 1041411,
+      "name": "Unwithering Flower",
+      "desc": "Gain 1 [AlriuneEGOWe] if the enemy takes [Sinking] damage\nGain [AlriuneEGOWe] equal to [AlriuneEGOThey] inflicted every time enemies gain [AlriuneEGOThey]\nGain 2 [AlriuneEGOWe] every time Tremor Burst is triggered regardless of the unit\n\nAttack Skill End: At 30+ [AlriuneEGOWe], use 'Magnificent End' against the target with the highest [AlriuneEGOThey] Stack\n\nDeal +([AlriuneEGOThey] on the target)% damage against Staggered targets\n\nIf this unit lost 10%+ HP this turn, heal 3% HP and 10 SP (once per turn)",
+      "summary": " "
+    },
+    {
+      "id": 1041421,
+      "name": "Spring's Genesis",
+      "desc": "When the ally with the fastest Speed hits an enemy with a Skill that inflicts [Sinking] Potency, Count, or 'Unique Sinking', inflict 2 [Vibration] and trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1 (once per turn)",
+      "summary": "Inflict [Vibration], trigger [VibrationExplosion]"
     }
   ]
 }

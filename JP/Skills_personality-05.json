@@ -2028,6 +2028,362 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1051401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "威嚇射撃",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[MeursaultSporeBulletLong]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[MeursaultSporeBulletLong]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "威嚇射撃",
+          "desc": "<style=\"highlight\">[BeforeUse] 自分の[MeursaultSporeBulletLong]が最大値なら、的中時に[PenetrateTakeDamageUp]1を付与 (1ターンにつき1回)\n[WhenUse] 対象の[Combustion]と[Laceration]の合計が6以上なら、コイン威力 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[MeursaultSporeBulletLong]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[MeursaultSporeBulletLong]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "威嚇射撃",
+          "desc": "<style=\"highlight\">対象の[MeursaultBeeSpore]5につき、ダメージ量 +10% (最大30%)</style>\n[BeforeUse] 自分の[MeursaultSporeBulletLong]が最大値なら、的中時に[PenetrateTakeDamageUp]1を付与 (1ターンにつき1回)\n[WhenUse] 対象の[Combustion]と[Laceration]の合計<style=\"highlight\">6につき、コイン威力 +1 (最大2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[MeursaultSporeBulletLong]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[MeursaultSporeBulletLong]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]<style=\"highlight\">2</style>を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1051402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "E.G.O変調 - 散弾",
+          "desc": "サブターゲットへの与ダメージ量 -50%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[MeursaultSporeBulletShort]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[MeursaultSporeBulletShort]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[MeursaultSporeBulletShort]を1消耗"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "E.G.O変調 - 散弾",
+          "desc": "サブターゲットへの与ダメージ量 -50%\n<style=\"highlight\">対象の[MeursaultBeeSpore]5につき、ダメージ量 +7% (最大21%)\n[WhenUse] メインターゲットの[Combustion]と[Laceration]の合計が6以上なら、コイン威力 +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[MeursaultSporeBulletShort]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[MeursaultSporeBulletShort]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が<style=\"highlight\">2</style>増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[MeursaultSporeBulletShort]を1消耗"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "E.G.O変調 - 散弾",
+          "desc": "サブターゲットへの与ダメージ量 -50%\n対象の[MeursaultBeeSpore]5につき、ダメージ量 <style=\"highlight\">+15% (最大45%)</style>\n[WhenUse] メインターゲットの[Combustion]と[Laceration]の合計が6以上なら、コイン威力 +1\n<style=\"highlight\">[WhenUse] 自分に[MeursaultWorkerBee]があるなら、マッチ威力 +1\n[WhenUse] 自分の[MeursaultWorkerBee]だけ、最終コインから[SuperCoin]に変更される\n[EndSkill] 自分の[MeursaultSporeBulletLong]が1個以下なら、[MeursaultSporeBulletReloading]</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[MeursaultSporeBulletShort]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[MeursaultSporeBulletShort]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[MeursaultSporeBulletShort]を1消耗"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Combustion]回数が1増加</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1051403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "臨床実験 - 粉塵灼熱",
+          "desc": "対象の[MeursaultBeeSpore]5につき、ダメージ量 +5% (最大15%)\n[WhenUse] メインターゲットの[Combustion]と[Laceration]の合計6につき、コイン威力 +1 (最大2)\n[EndSkill] [MeursaultSporeBulletReloading]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "このコインは1名の対象にのみ的中する (メインターゲットに優先適用)"
+                },
+                {
+                  "desc": "[MeursaultSporeBulletLong]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "このコインは1名の対象にのみ的中する (メインターゲットに優先適用)"
+                },
+                {
+                  "desc": "[MeursaultSporeBulletLong]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "このコインは1名の対象にのみ的中する (メインターゲットに優先適用)"
+                },
+                {
+                  "desc": "[MeursaultSporeBulletLong]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[MeursaultSporeBulletShort]を1消耗"
+                },
+                {
+                  "desc": "サブターゲットへの与ダメージ量 -50%"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 対象の[MeursaultBeeSpore]が最大値なら、下記の効果を適用\n- ([Combustion]威力 × [MeursaultBeeSpore]数値 ÷ 10)だけ憤怒ダメージ (小数点切り捨て)\nこの効果で憤怒ダメージを与えたなら、[Combustion]が発動したものとみなす\n- [Combustion]回数が1減少\n- [MeursaultBeeSpore]が消滅<style=\"highlight\"></style>",
+                  "summary": "憤怒ダメージ。[Combustion]回数が1減少、[MeursaultBeeSpore]が消滅"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が1増加、[Laceration]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "臨床実験 - 粉塵灼熱",
+          "desc": "<style=\"highlight\">このスキルの攻撃加重値よりも少ない攻撃対象1名につき、ダメージ量 +50% (集中戦闘の場合は部位で判定)</style>\n対象の[MeursaultBeeSpore]5につき、ダメージ量 <style=\"highlight\">+10% (最大30%)</style>\n<style=\"highlight\">[BeforeUse] 自分の[MeursaultSporeBulletLong]が2以下なら、精神力を6消耗して[MeursaultSporeBulletLong]を3得る</style>\n[WhenUse] メインターゲットの[Combustion]と[Laceration]の合計6につき、コイン威力 +1 <style=\"highlight\">(最大3)\n[WhenUse] 自分に[MeursaultWorkerBee]があるなら、マッチ威力 +1\n[WhenUse] 自分の[MeursaultWorkerBee]だけ、3枚目のコインから[SuperCoin]に変更される\n[WhenUse] 自分の[MeursaultWorkerBee]が3なら、加重値 +1</style>\n[EndSkill] [MeursaultSporeBulletReloading]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "このコインは1名の対象にのみ的中する (メインターゲットに優先適用)"
+                },
+                {
+                  "desc": "[MeursaultSporeBulletLong]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]<style=\"highlight\">3</style>を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "このコインは1名の対象にのみ的中する (メインターゲットに優先適用)"
+                },
+                {
+                  "desc": "[MeursaultSporeBulletLong]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "このコインは1名の対象にのみ的中する (メインターゲットに優先適用)"
+                },
+                {
+                  "desc": "[MeursaultSporeBulletLong]を1消耗"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[MeursaultSporeBulletShort]を1消耗"
+                },
+                {
+                  "desc": "サブターゲットへの与ダメージ量 -50%"
+                },
+                {
+                  "desc": "<style=\"highlight\">自分の[MeursaultWorkerBee]1につき、このコインのダメージ量 +5%(最大15%)</style>"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 対象の[MeursaultBeeSpore]が最大値なら、下記の効果を適用\n- ([Combustion]威力 × [MeursaultBeeSpore]数値 ÷ 10)だけ憤怒ダメージ (小数点切り捨て)\nこの効果で憤怒ダメージを与えたなら、[Combustion]が発動したものとみなす\n- [Combustion]回数が1減少\n- [MeursaultBeeSpore]が消滅<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が1増加、[Laceration]回数が<style=\"highlight\">2</style>増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1051404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "胞子補充",
+          "desc": "[StartBattle] [MeursaultSporeBulletReloading] (1ターンにつき1回)\n[OnSucceedEvade] 自分の体力を10回復 (1ターンにつき1回)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "胞子補充",
+          "desc": "[StartBattle] [MeursaultSporeBulletReloading] (1ターンにつき1回)\n<style=\"highlight\">[WhenUseEvade] 攻撃者の[Combustion]と[Laceration]の合計6につき、コイン威力 +1 (最大3)</style>\n[OnSucceedEvade] 自分の体力を10回復 (1ターンにつき1回)\n<style=\"highlight\">- [MeursaultWorkerBee]を保有しているなら、数値1につき5ずつ回復量が増加</style>",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }

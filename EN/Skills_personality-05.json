@@ -2028,6 +2028,362 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1051401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Warning Shot",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Warning Shot",
+          "desc": "<style=\"highlight\">[BeforeUse] At max [MeursaultSporeBulletLong], inflict 1 [PenetrateTakeDamageUp] On Hit (once per turn)\n[WhenUse] If target has 6+ ([Combustion] + [Laceration]), Coin Power +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Warning Shot",
+          "desc": "<style=\"highlight\">Deal +10% damage for every 5 [MeursaultBeeSpore] on target (max 30%)</style>\n[BeforeUse] At max [MeursaultSporeBulletLong], inflict 1 [PenetrateTakeDamageUp] On Hit (once per turn)\n[WhenUse] <style=\"highlight\">Coin Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">2</style> [Laceration]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1051402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "E.G.O Alteration - Buckshot",
+          "desc": "Deal -50% damage against sub-targets",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletShort]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Combustion] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletShort]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Laceration] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletShort]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "E.G.O Alteration - Buckshot",
+          "desc": "Deal -50% damage against sub-targets\n<style=\"highlight\">Deal +7% damage for every 5 [MeursaultBeeSpore] on target (max 21%)\n[WhenUse] If the main target has 6+ ([Combustion] + [Laceration]), Coin Power +1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletShort]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Combustion] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletShort]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +<style=\"highlight\">2</style> [Laceration] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletShort]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "E.G.O Alteration - Buckshot",
+          "desc": "Deal -50% damage against sub-targets\nDeal +<style=\"highlight\">15</style>% damage for every 5 [MeursaultBeeSpore] on target (max <style=\"highlight\">45</style>%)\n[WhenUse] If the main target has 6+ ([Combustion] + [Laceration]), Coin Power +1\n<style=\"highlight\">[WhenUse] If this unit has [MeursaultWorkerBee], Clash Power +1\n[WhenUse] Convert Coins equal to [MeursaultWorkerBee] into [SuperCoin]s, beginning with the final Coin\n[EndSkill] At 1 or fewer [MeursaultSporeBulletLong], [MeursaultSporeBulletReloading]</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletShort]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Combustion] Count"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletShort]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Laceration] Count<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletShort]"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Inflict +1 [Combustion] Count</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1051403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Field Test - Dust Spark",
+          "desc": "Deal +5% damage for every 5 [MeursaultBeeSpore] on target (max 15%)\n[WhenUse] Coin Power +1 for every 6 ([Combustion] + [Laceration]) on the main target (max 2)\n[EndSkill] [MeursaultSporeBulletReloading]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "This Coin hits only a single Target (prioritizes the main target)"
+                },
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "This Coin hits only a single Target (prioritizes the main target)"
+                },
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "This Coin hits only a single Target (prioritizes the main target)"
+                },
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletShort]"
+                },
+                {
+                  "desc": "Deal -50% damage against sub-targets"
+                },
+                {
+                  "desc": "\n[UnBrokenCoinOnSucceedAttack] If target's [MeursaultBeeSpore] is at max Stack, activate the following:\n- Deal ([Combustion] Potency x [MeursaultBeeSpore] Stack / 10) Wrath damage (rounded down)\n  - Dealing Wrath damage with this effect counts as activating [Combustion]\n- Target loses 1 [Combustion] Count\n- [MeursaultBeeSpore] on target expires<style=\"highlight\"></style>\n",
+                  "summary": "Deal Wrath damage, reduce target's [Combustion] Count by 1, [MeursaultBeeSpore] on target expires"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Combustion] Count and +1 [Laceration] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Field Test - Dust Spark",
+          "desc": "<style=\"highlight\">Deal +50% damage for every excess Atk Weight beyond the # of actual targets (for Focused Encounters, the part)</style>\nDeal +<style=\"highlight\">10</style>% damage for every 5 [MeursaultBeeSpore] on target (max <style=\"highlight\">30</style>%)\n<style=\"highlight\">[BeforeUse] At 2 or fewer [MeursaultSporeBulletLong], consume 6 SP to gain 3 [MeursaultSporeBulletLong]</style>\n[WhenUse] Coin Power +1 for every 6 ([Combustion] + [Laceration]) on the main target (max <style=\"highlight\">3)\n[WhenUse] If this unit has [MeursaultWorkerBee], Clash Power +1\n[WhenUse] Convert Coins equal to [MeursaultWorkerBee] into [SuperCoin]s, beginning with the 3rd Coin\n[WhenUse] At 3 [MeursaultWorkerBee], gain Atk Weight +1</style>\n[EndSkill] [MeursaultSporeBulletReloading]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "This Coin hits only a single Target (prioritizes the main target)"
+                },
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">3</style> [Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "This Coin hits only a single Target (prioritizes the main target)"
+                },
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "This Coin hits only a single Target (prioritizes the main target)"
+                },
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "Spend 1 [MeursaultSporeBulletShort]"
+                },
+                {
+                  "desc": "Deal -50% damage against sub-targets"
+                },
+                {
+                  "desc": "<style=\"highlight\">This Coin deals +5% damage for every [MeursaultWorkerBee] on self (max 15%)</style>"
+                },
+                {
+                  "desc": "\n[UnBrokenCoinOnSucceedAttack] If target's [MeursaultBeeSpore] is at max Stack, activate the following:\n- Deal ([Combustion] Potency x [MeursaultBeeSpore] Stack / 10) Wrath damage (rounded down)\n  - Dealing Wrath damage with this effect counts as activating [Combustion]\n- Target loses 1 [Combustion] Count\n- [MeursaultBeeSpore] on target expires<style=\"highlight\"></style>\n"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Combustion] Count and +<style=\"highlight\">2</style> [Laceration] Count"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1051404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Spore Germination",
+          "desc": "[StartBattle][MeursaultSporeBulletReloading] (once per turn)\n[OnSucceedEvade] Heal 10 HP (once per turn)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Spore Germination",
+          "desc": "[StartBattle] [MeursaultSporeBulletReloading] (once per turn)\n<style=\"highlight\">[WhenUseEvade] Coin Power +1 for every 6 ([Combustion] + [Laceration]) on the attacker (max 3)</style>\n[OnSucceedEvade] Heal 10 HP (once per turn)\n<style=\"highlight\">- If this unit has [MeursaultWorkerBee], heal an additional 5 HP for every Stack</style>",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }
