@@ -1608,7 +1608,7 @@
     {
       "id": 1041001,
       "name": "蜘蛛头/骷髅头",
-      "desc": "使用获得赤瞳 的硬币攻击敌方单位时，\n- 造成的伤害+(自身的赤瞳 层数/2)%\n- 若目标带有[Laceration]，则使自身获得1层赤瞳 (每回合最多3层)\n\n使用获得忏悔 的硬币攻击敌方单位时，\n- 造成的伤害+(自身的忏悔 层数/2)%\n- 若自身的理智值不低于20点，则使自身获得1层忏悔 (每回合最多3层)",
+      "desc": "使用获得[RedEyeFirst]的硬币攻击敌方单位时，\n- 造成的伤害+(自身的[RedEyeFirst]层数/2)%\n- 若目标带有[Laceration]，则使自身获得1层[RedEyeFirst](每回合最多3层)\n\n使用获得[PenanceFirst]的硬币攻击敌方单位时，\n- 造成的伤害+(自身的[PenanceFirst]层数/2)%\n- 若自身的理智值不低于20点，则使自身获得1层[PenanceFirst](每回合最多3层)",
       "summary": "获得赤瞳 的硬币造成的伤害增加。若目标带有流血 ，则使自身获得1层赤瞳 \n获得忏悔 的硬币造成的伤害增加。若自身的理智值不低于20点，则使自身获得1层忏悔 "
     },
     {
@@ -1620,7 +1620,7 @@
     {
       "id": 1041002,
       "name": "E.G.O 同化",
-      "desc": "获得[Charge]层数时，改为获得赤瞳 或忏悔 \n- 赤瞳 与忏悔 不受[Charge]强度影响",
+      "desc": "获得[Charge]层数时，改为获得[RedEyeFirst]或[PenanceFirst]\n- [RedEyeFirst]与[PenanceFirst]不受[Charge]强度影响",
       "summary": "获得充能 层数时，改为获得赤瞳 或忏悔 "
     },
     {
@@ -2764,6 +2764,51 @@
       "name": "神的加护",
       "desc": "本回合友方单位对敌方单位使用的首个斩击、突刺与打击基础攻击技能造成的伤害+5%(全体友方单位共同判定)\n- 若该友方单位属于食指，则改为造成的伤害+10%\n- 该效果于攻击前判定",
       "summary": "本回合使用的首个斩击、突刺与打击技能造成的伤害增加"
+    },
+    {
+      "id": 1051401,
+      "name": "孢子扩散",
+      "desc": "击杀带有[MeursaultBeeSpore]的敌方单位时，下回合内令自身施加的[MeursaultBeeSpore]层数变为2倍"
+    },
+    {
+      "id": 1051411,
+      "name": "孢子扩散",
+      "desc": "击杀带有[MeursaultBeeSpore]的敌方单位时，触发以下效果\n- 下回合内令自身施加的[MeursaultBeeSpore]层数变为2倍\n<style=\"highlight\">- 基础攻击技能击杀时，使自身获得(该技能消耗的孢子弹数/2)发孢子弹(向下取整，每个技能最多1次)</style>"
+    },
+    {
+      "id": 1051402,
+      "name": "E.G.O变调/孢子弹",
+      "desc": "常驻效果：关卡开始时带有10发[MeursaultSporeBulletLong]与6发[MeursaultSporeBulletShort]\n\n消耗<noparse>孢子</noparse>弹的硬币命中时\n- 若消耗了[MeursaultSporeBulletLong]，则对目标施加2层[MeursaultBeeSpore]\n- 若消耗了[MeursaultSporeBulletShort]，则对目标施加3层[MeursaultBeeSpore]\n- 该效果视作通过技能施加负面状态\n\n消耗[MeursaultSporeBulletShort]的硬币使用前，若自身未带有[MeursaultSporeBulletShort]，\n则消耗2点理智值与2发[MeursaultSporeBulletLong]并使自身获得1发[MeursaultSporeBulletShort]\n\n若技能使用中自身消耗了所有孢子弹，则取消之后的所有硬币并使自身[MeursaultSporeBulletReloading]\n\n带有[MeursaultBeeSpore]的目标阵亡时，使自身获得1层[MeursaultWorkerBee]",
+      "flavor": "“根据我们研究团队确认到的结果，即使是从异想体中精炼提取出的稳定装备，似乎也会根据使用者而产生些许变形。\n与其说这是不完整……更像是真正的E.G.O，所以反而应该将这当做趋向完整的过程吧。\n姑且将其称作‘变调’好了。”"
+    },
+    {
+      "id": 1051421,
+      "name": "工蜂",
+      "desc": "友方单位的突刺基础攻击技能结束时，使其恢复造成体力伤害量10%的体力(每场战斗最多2次)\n- 若该回合行动槽中装备的基础攻击技能均为突刺技能，则回合结束时使全体友方单位恢复10点理智值"
+    },
+    {
+      "id": 1041401,
+      "name": "不凋花",
+      "desc": "敌方单位受到[Sinking]伤害时，使自身获得1层[AlriuneEGOWe]\n对敌方单位施加[AlriuneEGOThey]时，使自身获得相应层数的[AlriuneEGOWe]\n触发[VibrationExplosion]时，使自身获得2层[AlriuneEGOWe]",
+      "summary": "获得[AlriuneEGOWe]"
+    },
+    {
+      "id": 1041402,
+      "name": "无法填满的空虚",
+      "desc": "常驻效果：关卡开始时带有6发[BulletGodok]\n\n自身的[BulletGodok]数不低于1发时，若敌方单位在自身或其他友方单位攻击后理智值低于-40点或陷入混乱，则使用使用“砰。砰。”进行单方面攻击(每回合最多1次)\n\n自身攻击结束时，若自身的[BulletGodok]数为0发，则使用“无尽的故事”对目标进行单方面攻击，消耗10点理智值并使自身[FullReload]",
+      "summary": "触发“1-1技能”并[FullReload]"
+    },
+    {
+      "id": 1041411,
+      "name": "不凋花",
+      "desc": "敌方单位受到[Sinking]伤害时，使自身获得1层[AlriuneEGOWe]\n对敌方单位施加[AlriuneEGOThey]时，使自身获得相应层数的[AlriuneEGOWe]\n触发[VibrationExplosion]时，使自身获得2层[AlriuneEGOWe]\n\n攻击技能结束时，若自身的[AlriuneEGOWe]层数不低于30层，则对[AlriuneEGOThey]层数最高的目标使用“恍惚的终局”\n\n对陷入混乱的目标造成的伤害+(其[AlriuneEGOThey]层数)%\n\n若本回合自身失去的体力不低于体力上限的10%，则使自身恢复体力上限3%体力与10点理智值(每回合最多1次)",
+      "summary": " "
+    },
+    {
+      "id": 1041421,
+      "name": "春之诞",
+      "desc": "速度值最高的1名友方单位增加[Sinking]强度，施加[Sinking]层数或施加特殊沉沦[TabExplain]的技能技能命中敌方单位时，使该敌方单位增加2级[Vibration]强度，[VibrationExplosion]，并使该敌方单位的[Vibration]层数减少1层(每回合最多1次)",
+      "summary": "增加[Vibration]强度，[VibrationExplosion]"
     }
   ]
 }

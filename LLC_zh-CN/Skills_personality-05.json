@@ -2028,6 +2028,362 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1051401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "威慑射击",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "威慑射击",
+          "desc": "<style=\"highlight\">[BeforeUse] 若自身[MeursaultSporeBulletLong]数为最大值，则令本技能命中时对目标施加1层[PenetrateTakeDamageUp](每回合最多1次)\n[WhenUse] 若目标的[Combustion]强度与[Laceration]强度之和不低于6级，则使本技能的硬币威力+1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "威慑射击",
+          "desc": "<style=\"highlight\"> 目标每带有5层[MeursaultBeeSpore]，使本技能造成的伤害+10%(最多+30%)</style>\n[BeforeUse] 若自身[MeursaultSporeBulletLong]数为最大值，则令本技能命中时对目标施加1层[PenetrateTakeDamageUp](每回合最多1次)\n[WhenUse] 目标的[Combustion]强度与[Laceration]强度之和<style=\"highlight\">每有6级，使本技能的硬币威力+1(最多+2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">2</style>级[Laceration]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1051402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "E.G.O变调-霰弹",
+          "desc": "使本技能对次要目标造成的伤害-50%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletShort]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletShort]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletShort]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "E.G.O变调-霰弹",
+          "desc": "使本技能对次要目标造成的伤害-50%\n<style=\"highlight\">目标每带有5层[MeursaultBeeSpore]，使本技能造成的伤害+7%(最多+21%)\n[WhenUse] 若主要目标的[Combustion]强度与[Laceration]强度之和不低于6级，则使本技能的硬币威力+1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletShort]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletShort]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加<style=\"highlight\">2</style>层[Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletShort]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "E.G.O变调-霰弹",
+          "desc": "使本技能对次要目标造成的伤害-50%\n目标每带有5层[MeursaultBeeSpore]，使本技能造成的伤害<style=\"highlight\">+15%(最多+45%)</style>\n[WhenUse] 若主要目标的[Combustion]强度与[Laceration]强度之和不低于6级，则使本技能的硬币威力+1\n<style=\"highlight\">[WhenUse] 若自身带有[MeursaultWorkerBee]，则使本技能的拼点威力+1\n[WhenUse] 从本技能的最后一枚硬币起，使(自身的[MeursaultWorkerBee]层数)枚硬币转化为[SuperCoin]\n[EndSkill] 若自身的[MeursaultSporeBulletLong]数不高于1发，则使自身[MeursaultSporeBulletReloading]</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletShort]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletShort]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletShort]"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 对目标施加1层[Combustion]</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1051403,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "临床试验-粉尘灼热",
+          "desc": "目标每带有5层[MeursaultBeeSpore]，使本技能造成的伤害+5%(最多+15%)\n[WhenUse] 目标的[Combustion]强度与[Laceration]强度之和每有6级，使本技能的硬币威力+1(最多+2)\n[EndSkill] 使自身[MeursaultSporeBulletReloading]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "本硬币仅命中1名目标(优先命中主要目标)"
+                },
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "本硬币仅命中1名目标(优先命中主要目标)"
+                },
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "本硬币仅命中1名目标(优先命中主要目标)"
+                },
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletShort]"
+                },
+                {
+                  "desc": "使本技能对次要目标造成的伤害-50%"
+                },
+                {
+                  "desc": "\n[UnBrokenCoinOnSucceedAttack] 若目标的[MeursaultBeeSpore]层数为最大值，则触发以下效果\n- 对其造成(其[Combustion]强度×[MeursaultBeeSpore]层数/10)点暴怒伤害(向下取整)\n该效果造成的暴怒伤害视作触发[Combustion]\n- 使其[Combustion]层数减少1层\n- 解除其[MeursaultBeeSpore]<style=\"highlight\"></style>\n",
+                  "summary": "造成暴怒伤害，[Combustion]层数减少1层，解除[MeursaultBeeSpore]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Combustion]与1层[Laceration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "临床试验-粉尘灼热",
+          "desc": "<style=\"highlight\">本技能的攻击容量高于攻击目标数时，每高于1点，使本技能造成的伤害+50%(若是集中遭遇战，则以部位判定)</style>\n目标每带有5层[MeursaultBeeSpore]，使本技能造成的伤害<style=\"highlight\">+10%(最多+30%)</style>\n<style=\"highlight\">[BeforeUse] 若自身的[MeursaultSporeBulletLong]数不高于2发，则消耗6点理智值并使自身获得3发[MeursaultSporeBulletLong]</style>\n[WhenUse] 目标的[Combustion]强度与[Laceration]强度之和每有6级，使本技能的硬币威力+1<style=\"highlight\">(最多+3)\n[WhenUse] 若自身带有[MeursaultWorkerBee]，则使本技能的拼点威力+1\n[WhenUse] 从本技能的第3枚硬币起，使(自身的[MeursaultWorkerBee]层数)枚硬币转化为[SuperCoin]\n[WhenUse] 若自身的[MeursaultWorkerBee]层数为3层，则使本技能的攻击容量+1</style>\n[EndSkill] 使自身[MeursaultSporeBulletReloading]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "本硬币仅命中1名目标(优先命中主要目标)"
+                },
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">3</style>级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "本硬币仅命中1名目标(优先命中主要目标)"
+                },
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "本硬币仅命中1名目标(优先命中主要目标)"
+                },
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletLong]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "消耗1发[MeursaultSporeBulletShort]"
+                },
+                {
+                  "desc": "使本技能对次要目标造成的伤害-50%"
+                },
+                {
+                  "desc": "<style=\"highlight\">自身每带有1层[MeursaultWorkerBee]，使本硬币造成的伤害+5%(最多+15%)</style>"
+                },
+                {
+                  "desc": "\n[UnBrokenCoinOnSucceedAttack] 若目标的[MeursaultBeeSpore]层数为最大值，则触发以下效果\n- 对其造成(其[Combustion]强度×[MeursaultBeeSpore]层数/10)点暴怒伤害(向下取整)\n该效果造成的暴怒伤害视作触发[Combustion]\n- 使其[Combustion]层数减少1层\n- 解除其[MeursaultBeeSpore]<style=\"highlight\"></style>\n"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Combustion]与<style=\"highlight\">2</style>层[Laceration]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1051404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "孢子补充",
+          "desc": "[StartBattle] 使自身[MeursaultSporeBulletReloading](每回合最多1次)\n[OnSucceedEvade] 使自身恢复10点体力(每回合最多1次)",
+          "coinlist": [
+            {}
+          ]
+        },
+        {
+          "level": 4,
+          "name": "孢子补充",
+          "desc": "[StartBattle] 使自身[MeursaultSporeBulletReloading](每回合最多1次)\n<style=\"highlight\">[WhenUseEvade] 攻击者的[Combustion]强度与[Laceration]强度之和每有6级，使本技能的硬币威力+1(最多+3)</style>\n[OnSucceedEvade] 使自身恢复10点体力(每回合最多1次)\n<style=\"highlight\">- 若自身带有[MeursaultWorkerBee]，则自身每带有1层[MeursaultWorkerBee]，使自身额外恢复5点理智值</style>",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
     }
   ]
 }

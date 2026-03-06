@@ -263,13 +263,13 @@
             {
               "coindescs": [
                 {
-                  "desc": "[EndSkill] 使自身与现存体力最低的1名友方单位获得自身体力上限10%的护盾与2层泪珠 "
+                  "desc": "[EndSkill] 使自身与现存体力最低的1名友方单位获得自身体力上限10%的护盾与2层[ShieldManagerCryingToad]"
                 },
                 {
                   "desc": "- 若最大共鸣数不低于4，则额外使1名友方单位获得以上效果"
                 },
                 {
-                  "desc": "- 若以上友方单位带有泪珠 ，则使其泪珠 层数变为2层"
+                  "desc": "- 若以上友方单位带有[ShieldManagerCryingToad]，则使其[ShieldManagerCryingToad]层数变为2层"
                 },
                 {
                   "desc": "- 若最大忧郁完全共鸣数不低于4，则使本技能以上效果改为“获得3层[ShieldManagerCryingToad]”与“使其[ShieldManagerCryingToad]层数变为3层”"
@@ -287,10 +287,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[EndSkill] 使自身与现存体力最低的<style=\"highlight\">(1+(最大共鸣数-2))</style>名友方单位获得自身体力上限<style=\"highlight\">14%</style>的护盾与2层泪珠 <style=\"highlight\">(除自身以外最大友方单位获取数：3名)</style>"
+                  "desc": "[EndSkill] 使自身与现存体力最低的<style=\"highlight\">(1+(最大共鸣数-2))</style>名友方单位获得自身体力上限<style=\"highlight\">14%</style>的护盾与2层[ShieldManagerCryingToad]<style=\"highlight\">(除自身以外最大友方单位获取数：3名)</style>"
                 },
                 {
-                  "desc": "- 若以上友方单位带有泪珠 ，则使其泪珠 层数变为2层<style=\"highlight\"></style>"
+                  "desc": "- 若以上友方单位带有[ShieldManagerCryingToad]，则使其[ShieldManagerCryingToad]层数变为2层<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "- 若最大忧郁完全共鸣数不低于4，则使本技能以上效果改为“获得3层[ShieldManagerCryingToad]”与“使其[ShieldManagerCryingToad]层数变为3层”<style=\"highlight\"></style>"
@@ -308,10 +308,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[EndSkill] 使自身与现存体力最低的(1+(最大共鸣数-2))名友方单位获得自身体力上限<style=\"highlight\">20%</style>的护盾与2层泪珠 (除自身以外最大友方单位获取数：3名)"
+                  "desc": "[EndSkill] 使自身与现存体力最低的(1+(最大共鸣数-2))名友方单位获得自身体力上限<style=\"highlight\">20%</style>的护盾与2层[ShieldManagerCryingToad](除自身以外最大友方单位获取数：3名)"
                 },
                 {
-                  "desc": "- 若以上友方单位带有泪珠 ，则使其泪珠 层数变为2层<style=\"highlight\"></style>"
+                  "desc": "- 若以上友方单位带有[ShieldManagerCryingToad]，则使其[ShieldManagerCryingToad]层数变为2层<style=\"highlight\"></style>"
                 },
                 {
                   "desc": "- 若最大忧郁完全共鸣数不低于4，则使本技能以上效果改为“获得3层[ShieldManagerCryingToad]”与“使其[ShieldManagerCryingToad]层数变为3层”<style=\"highlight\"></style>"
@@ -760,6 +760,277 @@
                 },
                 {
                   "desc": "[ReUseOnSucceedAttack] 消耗自身所有体力并使本硬币造成的伤害+20%(每回合最多1次)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2100911,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "和声",
+          "abName": "歌唱机",
+          "desc": "主要目标的[Laceration]强度与[Combustion]之和每有2级，使本技能的拼点威力+1(最多+6)\n根据自身已失去体力比例，使本技能造成的伤害相应增加(最多+10%)\n使本技能对次要目标造成的伤害-50%\n[TargetKill] 下回合对全体友方单位施加2层[ThatIsRhythm](每个技能最多1次)\n[EndSkill] 使除自身以外理智值最低的(1+最大共鸣数)名其他友方单位恢复8点理智值(最多4名)\n[EndSkill] 2回合内，战斗结束时使自身失去8点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 若现存体力不低于10%，则使自身受到4~8点体力伤害(每个硬币最多1次)\n- 并重复使用本硬币(每个技能最多4次)\n- 自身不会因该伤害而陷入混乱或使体力降至1点以下",
+                  "summary": "[OnSucceedAttackHead] 消耗自身体力后，重复使用本硬币"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合随机对1名友方单位施加1层[ThatIsRhythm](每个硬币最多1次)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "和声",
+          "abName": "歌唱机",
+          "desc": "主要目标的[Laceration]强度与[Combustion]之和每有2级，使本技能的拼点威力+1(最多+<style=\"highlight\">8</style>)\n根据自身已失去体力比例，使本技能造成的伤害相应增加(最多+<style=\"highlight\">15</style>%)\n使本技能对次要目标造成的伤害-50%\n[TargetKill] 下回合对全体友方单位施加2层[ThatIsRhythm](每个技能最多1次)\n[EndSkill] 使除自身以外理智值最低的(1+最大共鸣数)名其他友方单位恢复<style=\"highlight\">10</style>点理智值(最多4名)\n[EndSkill] 2回合内，战斗结束时使自身失去8点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 若现存体力不低于10%，则使自身受到4~8点体力伤害(每个硬币最多1次)\n- 并重复使用本硬币(每个技能最多4次)\n- 自身不会因该伤害而陷入混乱或使体力降至1点以下",
+                  "summary": "[OnSucceedAttackHead] 消耗自身体力后，重复使用本硬币"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合随机对1名友方单位施加<style=\"highlight\">1~2</style>层[ThatIsRhythm](每个硬币最多1次)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "和声",
+          "abName": "歌唱机",
+          "desc": "主要目标的[Laceration]强度与[Combustion]之和每有2级，使本技能的拼点威力+1(最多+<style=\"highlight\">10</style>)\n根据自身已失去体力比例，使本技能造成的伤害相应增加(最多+<style=\"highlight\">20</style>%)\n使本技能对次要目标造成的伤害-50%\n[TargetKill] 下回合对全体友方单位施加2层[ThatIsRhythm](每个技能最多1次)\n[EndSkill] 使除自身以外理智值最低的(1+最大共鸣数)名其他友方单位恢复<style=\"highlight\">12</style>点理智值(最多4名)\n[EndSkill] 2回合内，战斗结束时使自身失去8点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 若现存体力不低于10%，则使自身受到4~8点体力伤害(每个硬币最多1次)\n- 并重复使用本硬币(每个技能最多4次)\n- 自身不会因该伤害而陷入混乱或使体力降至1点以下",
+                  "summary": "[OnSucceedAttackHead] 消耗自身体力后，重复使用本硬币"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合随机对1名友方单位施加1~<style=\"highlight\">3</style>层[ThatIsRhythm](每个硬币最多1次)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2100921,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "和声",
+          "abName": "歌唱机",
+          "desc": "[CantIdentify]\n随机指定目标\n主要目标的[Laceration]强度与[Combustion]之和每有2级，使本技能的拼点威力+1(最多+6)\n根据自身已失去体力比例，使本技能造成的伤害相应增加(最多+10%)\n使本技能对次要目标造成的伤害-50%\n[BeforeAttack] 使本技能的攻击容量+(最大共鸣数/2)(最多+2，向下取整)\n[BeforeAttack] 本技能每有1枚硬币被摧毁，使本技能的基础威力-2(最多-6)\n[EndSkill] 使理智值最低的4名友方单位恢复10点理智值\n[EndSkill] 下回合使全体友方单位获得1层[CrimsonDamageUp]、1层[ScarletDamageUp]与1层[VioletDamageUp]并对其施加2层[ThatIsRhythm]与1层[Vulnerable]\n- 若击杀目标，则额外触发1次该效果",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若现存体力不低于10%，则使自身受到10~20点体力伤害(每个硬币最多1次)\n- 若自身因该效果消耗的体力低于50点，则重复使用本硬币(每个技能最多4次)\n- 自身不会因该伤害而陷入混乱或使体力降至1点以下",
+                  "summary": "[OnSucceedAttack] 消耗自身体力\n满足条件时重复使用本硬币"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合随机对1名友方单位施加1层[ThatIsRhythm](每个硬币最多1次)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "和声",
+          "abName": "歌唱机",
+          "desc": "[CantIdentify]\n随机指定目标\n主要目标的[Laceration]强度与[Combustion]之和每有2级，使本技能的拼点威力+1(最多+<style=\"highlight\">8</style>)\n根据自身已失去体力比例，使本技能造成的伤害相应增加(最多+<style=\"highlight\">15</style>%)\n使本技能对次要目标造成的伤害-50%\n[BeforeAttack] 使本技能的攻击容量+(最大共鸣数/2)(最多+2，向下取整)\n[BeforeAttack] 本技能每有1枚硬币被摧毁，使本技能的基础威力-2(最多-6)\n[EndSkill] 使理智值最低的4名友方单位恢复<style=\"highlight\">12</style>点理智值\n[EndSkill] 下回合使全体友方单位获得1层[CrimsonDamageUp]、1层[ScarletDamageUp]与1层[VioletDamageUp]并对其施加2层[ThatIsRhythm]与1层[Vulnerable]\n- 若击杀目标，则额外触发1次该效果",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若现存体力不低于10%，则使自身受到10~20点体力伤害(每个硬币最多1次)\n- 若自身因该效果消耗的体力低于50点，则重复使用本硬币(每个技能最多4次)\n- 自身不会因该伤害而陷入混乱或使体力降至1点以下",
+                  "summary": "[OnSucceedAttack] 消耗自身体力\n满足条件时重复使用本硬币"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合随机对1名友方单位施加<style=\"highlight\">1~2</style>层[ThatIsRhythm](每个硬币最多1次)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "和声",
+          "abName": "歌唱机",
+          "desc": "[CantIdentify]\n随机指定目标\n主要目标的[Laceration]强度与[Combustion]之和每有2级，使本技能的拼点威力+1(最多+<style=\"highlight\">10</style>)\n根据自身已失去体力比例，使本技能造成的伤害相应增加(最多+<style=\"highlight\">20</style>%)\n使本技能对次要目标造成的伤害-50%\n[BeforeAttack] 使本技能的攻击容量+(最大共鸣数/2)(最多+2，向下取整)\n[BeforeAttack] 本技能每有1枚硬币被摧毁，使本技能的基础威力-2(最多-6)\n[EndSkill] 使理智值最低的4名友方单位恢复<style=\"highlight\">15</style>点理智值\n[EndSkill] 下回合使全体友方单位获得1层[CrimsonDamageUp]、1层[ScarletDamageUp]与1层[VioletDamageUp]并对其施加2层[ThatIsRhythm]与1层[Vulnerable]\n- 若击杀目标，则额外触发1次该效果",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若现存体力不低于10%，则使自身受到10~20点体力伤害(每个硬币最多1次)\n- 若自身因该效果消耗的体力低于50点，则重复使用本硬币(每个技能最多4次)\n- 自身不会因该伤害而陷入混乱或使体力降至1点以下",
+                  "summary": "[OnSucceedAttack] 消耗自身体力\n满足条件时重复使用本硬币"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合随机对1名友方单位施加1~<style=\"highlight\">3</style>层[ThatIsRhythm](每个硬币最多1次)"
                 }
               ]
             }
