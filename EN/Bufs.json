@@ -289,7 +289,7 @@
     {
       "id": "Sinking",
       "name": "Sinking",
-      "desc": "The next {1} time(s) the unit is hit, take {0} fixed SP damage. (Units with no Sanity take Gloom damage.)",
+      "desc": "The next {1} time(s) the unit is hit, take {0} fixed SP damage. (Non-SP Units take Gloom damage.)",
       "summary": "{0} Sinking DMG"
     },
     {
@@ -1320,7 +1320,7 @@
     {
       "id": "SinkingSurge",
       "name": "Sinking Deluge",
-      "desc": "Deal SP damage by (Sinking Count * Sinking Potency), then remove Sinking\nIf target's SP is -45 or lower, the excess SP damage is dealt as Gloom-affinity HP damage\n(Units with no Sanity take all of it as Gloom HP damage)"
+      "desc": "Deal SP damage by (Sinking Count * Sinking Potency), then remove Sinking\nIf target's SP is -45 or lower, the excess SP damage is dealt as Gloom-affinity HP damage\n(Non-SP Units take all of it as Gloom HP damage)"
     },
     {
       "id": "Blue",
@@ -2686,7 +2686,7 @@
     {
       "id": "WaveSinking",
       "name": "Reflux",
-      "desc": "- Max Stack: 3\nWhen hit, gain Sinking Potency equal to Stack\n\nTurn End: if this unit has -30 or less SP, activate the following effects (for units without SP, activates at 60+ Sinking Potency)\n- Take (Sinking Potency on self x Stack) Gloom damage\n- Inflict 1 Reflux against 2 other targets with the least SP (for Abnormalities, Parts); then, deal (Sinking Potency x Stack) Gloom damage to both targets, respectively\nIf the unit with Reflux dies, transfer its Reflux Stack to its ally with the highest Reflux stack",
+      "desc": "- Max Stack: 3\nWhen hit, gain Sinking Potency equal to Stack\n\nTurn End: if this unit has -30 or less SP, activate the following effects (for Non-SP Units, activates at 60+ Sinking Potency)\n- Take (Sinking Potency on self x Stack) Gloom damage\n- Inflict 1 Reflux against 2 other targets with the least SP (for Abnormalities, Parts); then, deal (Sinking Potency x Stack) Gloom damage to both targets, respectively\nIf the unit with Reflux dies, transfer its Reflux Stack to its ally with the highest Reflux stack",
       "summary": "",
       "undefined": "-"
     },
@@ -2997,21 +2997,21 @@
     {
       "id": "CrushMarks",
       "name": "Shattermark",
-      "desc": "- Take +10% damage from Gluttony and Gloom Skills\n- Units with SP: change their Panic Type to \"Shattermark\"\n- Units without SP: Clash Power -1\n- Turn End: Reduce 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value\n- Apply the \"Units without SP\" conditional to certain enemies that have SP but can't change their Panic Types\n\n※ Shattermark Panic-type Effects\n- Low Morale: Clash Power -1, Defense Level -2 on self\n- Panic: Clash Power -2, Defense Level -3 on self",
-      "summary": "Take +10% damage from Gluttony and Gloom Skills\n- Units with SP: change their Panic Type to \"Shattermark\"\n- Units without SP: -10% chance to flip Heads for Plus Coins",
+      "desc": "- Take +10% damage from Gluttony and Gloom Skills\n- SP Units: change their Panic Type to \"Shattermark\"\n- Non-SP Units: Clash Power -1\n- Turn End: Reduce 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value\n- Apply the \"Non-SP Units\" conditional to certain enemies that have SP but can't change their Panic Types\n\n※ Shattermark Panic-type Effects\n- Low Morale: Clash Power -1, Defense Level -2 on self\n- Panic: Clash Power -2, Defense Level -3 on self",
+      "summary": "Take +10% damage from Gluttony and Gloom Skills\n- SP Units: change their Panic Type to \"Shattermark\"\n- Non-SP Units: -10% chance to flip Heads for Plus Coins",
       "undefined": "-"
     },
     {
       "id": "CrushMarks_Main",
       "name": "Shattermark",
-      "desc": "Take +10% damage from Gluttony and Gloom Skills\n- Units with SP: change their Panic Type to \"Shattermark\"\n- Turn End: Reduce 1 Stack",
+      "desc": "Take +10% damage from Gluttony and Gloom Skills\n- SP Units: change their Panic Type to \"Shattermark\"\n- Turn End: Reduce 1 Stack",
       "summary": "Take +10% damage from Gluttony and Gloom Skills\n- Change Panic Type to \"Shattermark\"",
       "undefined": "-"
     },
     {
       "id": "CrushMarks_Sub",
       "name": "Shattermark",
-      "desc": "- Take +10% damage from Gluttony and Gloom Skills\n- Units without SP: Clash Power -1\n- Turn End: Reduce 1 Stack",
+      "desc": "- Take +10% damage from Gluttony and Gloom Skills\n- Non-SP Units: Clash Power -1\n- Turn End: Reduce 1 Stack",
       "summary": "Take +10% damage from Gluttony and Gloom Skills\n- Clash Power -1",
       "undefined": "-"
     },
@@ -3053,22 +3053,22 @@
     {
       "id": "BlueSand",
       "name": "Blue Sand",
-      "desc": "- On Clash Lose, gain +1 Sinking Count (3 times per turn)\n- Units with SP: change their Panic Type to \"Blue Sand\"\n- Units without SP: Min & Max Speed -1\n- Turn End: Reduce 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value\n- Apply the \"Units without SP\" conditional to certain enemies that have SP but can't change their Panic Types\n\n※ Blue Sand Panic Effects\n- Low Morale: Clash Power -1, Min & Max Speed -1\n- Panic: Clash Power -2, Min & Max Speed -1",
+      "desc": "- On Clash Lose, gain +1 Sinking Count (3 times per turn)\n- SP Units: change their Panic Type to \"Blue Sand\"\n- Non-SP Units: Min & Max Speed -1\n- Turn End: Reduce 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value\n- Apply the \"Non-SP Units\" conditional to certain enemies that have SP but can't change their Panic Types\n\n※ Blue Sand Panic Effects\n- Low Morale: Clash Power -1, Min & Max Speed -1\n- Panic: Clash Power -2, Min & Max Speed -1",
       "summary": "",
       "undefined": "-"
     },
     {
       "id": "BlueSand_Main",
       "name": "Blue Sand",
-      "desc": "- On Clash Lose, gain +1 Sinking Count (3 times per turn)\n- Units with SP: change their Panic Type to \"Blue Sand\"\n- Turn End: Reduce 1 Stack",
-      "summary": "On Clash Lose, gain +1 Sinking Count (3 times per turn)\n- Units with SP: change their Panic Type to \"Blue Sand\"",
+      "desc": "- On Clash Lose, gain +1 Sinking Count (3 times per turn)\n- SP Units: change their Panic Type to \"Blue Sand\"\n- Turn End: Reduce 1 Stack",
+      "summary": "On Clash Lose, gain +1 Sinking Count (3 times per turn)\n- SP Units: change their Panic Type to \"Blue Sand\"",
       "undefined": "-"
     },
     {
       "id": "BlueSand_Sub",
       "name": "Blue Sand",
-      "desc": "- On Clash Lose, gain +1 Sinking Count (3 times per turn)\n- Units without SP: Min & Max Speed -1\n- Turn End: Reduce 1 Stack",
-      "summary": "On Clash Lose, gain +1 Sinking Count (3 times per turn)\n- Units without SP: Min & Max Speed -1",
+      "desc": "- On Clash Lose, gain +1 Sinking Count (3 times per turn)\n- Non-SP Units: Min & Max Speed -1\n- Turn End: Reduce 1 Stack",
+      "summary": "On Clash Lose, gain +1 Sinking Count (3 times per turn)\n- Non-SP Units: Min & Max Speed -1",
       "undefined": "-"
     },
     {
@@ -3239,7 +3239,7 @@
     {
       "id": "Shin_IndexFingerYisang",
       "name": "Shin (心) - Fate",
-      "desc": "- Min & Max Speed +1\n- Gain +1 more Poise Potency and Count from Base Skills\n- If this unit's SP is higher than the target's, deal +1% damage for every 3 SP difference (max 15%; units without SP are considered to be at 0 SP)",
+      "desc": "- Min & Max Speed +1\n- Gain +1 more Poise Potency and Count from Base Skills\n- If this unit's SP is higher than the target's, deal +1% damage for every 3 SP difference (max 15%; Non-SP Units are considered to be at 0 SP)",
       "summary": "",
       "undefined": "-",
       "flavor": ""
@@ -3429,7 +3429,7 @@
     {
       "id": "GodokPanicType",
       "name": "Solitude",
-      "desc": "- Take +10% damage from Gloom Skills\n- Units with SP: Change their Panic Type to 'Solitude'\n- Units without SP: Gain +2 Sinking Count at Turn End\n\n- Turn End: Lose 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value\n- Apply the \"Units without SP\" conditional to certain enemies that have SP but cannot change their Panic Types\n\n※ Solitude Panic Effect:\n- Low Morale: Gain +2 Sinking Count at Turn End\n- Panic: Gain +3 Sinking Count at Turn End",
+      "desc": "- Take +10% damage from Gloom Skills\n- SP Units: Change their Panic Type to 'Solitude'\n- Non-SP Units: Gain +2 Sinking Count at Turn End\n\n- Turn End: Lose 1 Stack\n- This effect is not cumulative; inflicting it will replace the current value with the inflicted value\n- Apply the \"Non-SP Units\" conditional to certain enemies that have SP but cannot change their Panic Types\n\n※ Solitude Panic Effect:\n- Low Morale: Gain +2 Sinking Count at Turn End\n- Panic: Gain +3 Sinking Count at Turn End",
       "summary": "",
       "undefined": "-"
     },
@@ -3616,55 +3616,28 @@
       "undefined": "-"
     },
     {
-      "id": "FavorBuffTwth1stPhaseForUI",
-      "name": "Shade of Reflection [Rouge]",
-      "desc": "- The Identities' Attack Skills that are <color=#f8c200>Lust Skills</color> or <color=#f8c200>Skills that inflict Bleed or 'Unique Bleed'</color> deal +25% damage (for E.G.O Skills, deal +100% damage instead)\n- Enemies take x1.5 damage from <color=#f8c200>Bleed</color> (rounded down)\n- Upon <color=#f8c200>A-Reson.</color>, gain 1 random least-owned E.G.O resource and 1 E.G.O resource of the Affinity used for A-Reson. (2 times per turn)"
+      "id": "VengeanceBookHeathcliff",
+      "name": "Book of Vengeance [Heathcliff]",
+      "desc": "- Max Stack: 30\n- Offense Level +1, Defense Level +1 for every 5 Stack",
+      "summary": "",
+      "undefined": "-",
+      "flavor": ""
     },
     {
-      "id": "FavorBuffTwth2ndPhaseForUI",
-      "name": "Shade of Reflection [Bleu]",
-      "desc": "- The Identities' Attack Skills that are <color=#f8c200>Gloom Skills</color> or <color=#f8c200>Skills that inflict Sinking or 'Unique Sinking'</color> deal +25% damage (for E.G.O Skills, deal +100% damage instead)\n- Turn Start: Enemies in <color=#f8c200>Panic</color> gain 3 Fragile\n- <color=#f8c200>The Finger-faction Identities</color> deal +15% damage to and take -15% damage from enemies"
+      "id": "MiddleFingerTattooID",
+      "name": "Vengeance Tattoo",
+      "desc": "- Max Stack: 20\n- Base Skills deal +1% damage for every Stack",
+      "summary": "",
+      "undefined": "-",
+      "flavor": ""
     },
     {
-      "id": "FavorBuffTwthHardForUI",
-      "name": "Tribulation",
-      "desc": "- <color=#ff0000>Max HP</color> +25%\n- Skills inflict +1 more <color=#ff0000>Bleed Potency, Sinking Potency, Mauled Color [Rouge], and Mauled Color [Bleu]</color>\n- If target has <color=#ff0000>Palette Vibrante</color>, Clash Power +2 and Base Power +1\n- [Phase 2 exclusive effect] Turn Start: If this unit will use \"Burst Forth the Pulsing Crimson under Your Skin\" this turn, <color=#ff0000>heal 10 SP on self</color> for every Sinner that has <color=#ff0000>Palette Vibrante</color> (max 30 SP)"
-    },
-    {
-      "id": "FavorBuffTwth",
-      "name": "Shade of Reflection [Rouge]",
-      "desc": "- Attack Skills that are Lust Skills or Skills that inflict Bleed or 'Unique Bleed' deal +25% damage (for E.G.O Skills, deal +100% damage instead)\n- Upon A-Reson., gain 1 random least-owned E.G.O resource and 1 E.G.O resource of the Affinity used for A-Reson. (2 times per turn)",
-      "summary": "Bleed Skills, 'Unique Bleed' Skills, and Lust Skills deal more damage"
-    },
-    {
-      "id": "FavorBuffTwthEnemy",
-      "name": "Shade of Reflection [Rouge]",
-      "desc": "- Take x1.5 damage from Bleed (rounded down)",
-      "summary": "Take more damage from Bleed"
-    },
-    {
-      "id": "FavorBuffTwthTwo",
-      "name": "Shade of Reflection [Bleu]",
-      "desc": "- Attack Skills that are Gloom Skills or Skills that inflict Sinking or 'Unique Sinking' deal +25% damage (for E.G.O Skills, deal +100% damage instead)\n- The Finger-faction Identities deal +15% damage to and take -15% damage from enemies",
-      "summary": "Sinking Skills, 'Unique Sinking' Skills, and Gloom Skills deal more damage"
-    },
-    {
-      "id": "FavorBuffTwthEnemyTwo",
-      "name": "Shade of Reflection [Bleu]",
-      "desc": "- Turn Start: When Panicked, gain 3 Fragile",
-      "summary": "When Panicked, gain Fragile"
-    },
-    {
-      "id": "FavorBuffTwthHard",
-      "name": "Tribulation",
-      "desc": "- Max HP +25%\n- Skills inflict +1 more Bleed Potency, Sinking Potency, Mauled Color [Rouge], and Mauled Color [Bleu]\n- If target has Palette Vibrante, Clash Power +2 and Base Power +1",
-      "summary": "Inflict more Bleed Potency, Sinking Potency, and Mauled Color\nIf target has Palette Vibrante, gain Clash Power and Base Power"
-    },
-    {
-      "id": "FavorBuffTwthHardTwo",
-      "name": "Tribulation",
-      "desc": "- Max HP +25%\n- Skills inflict +1 more Bleed Potency, Sinking Potency, Mauled Color [Rouge], and Mauled Color [Bleu]\n- If target has Palette Vibrante, Clash Power +2 and Base Power +1\n- [Phase 2 exclusive effect] Turn Start: If this unit will use \"Burst Forth the Pulsing Crimson under Your Skin\" this turn, heal 10 SP on self for every Sinner that has Palette Vibrante (max 30 SP)",
-      "summary": "Inflict more Bleed Potency, Sinking Potency, and Mauled Color\nIf target has Palette Vibrante, gain Clash Power and Base Power"
+      "id": "ScarletMothRodion",
+      "name": "Scarlet Moth",
+      "desc": "- Max Stack: 3\n- Turn End: Heal (Stack)% HP (minimum HP healed: 1)\n- Turn End: Heal SP equal to Stack\n- Turn End: Lose 1 Stack",
+      "summary": "",
+      "undefined": "-",
+      "flavor": ""
     }
   ]
 }

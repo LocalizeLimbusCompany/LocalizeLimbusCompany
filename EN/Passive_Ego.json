@@ -38,7 +38,7 @@
     {
       "id": 2030211,
       "name": "Wave of Depression",
-      "desc": "The target of the rightmost Skill on the Dashboard loses (2 x Gloom A-Reson.) SP at the Skill's Attack End (targets that do not have SP take Gloom damage instead)"
+      "desc": "The target of the rightmost Skill on the Dashboard loses (2 x Gloom A-Reson.) SP at the Skill's Attack End (targets that are Non-SP Units take Gloom damage instead)"
     },
     {
       "id": 2040111,
@@ -278,7 +278,7 @@
     {
       "id": 2100511,
       "name": "Prophecy of Ruin",
-      "desc": "On Heads Hit with a Lust affinity Skill, lower this unit and the target's SP by 4.\n(Does not work against targets without Sanity)\nGain 5 Lust E.G.O resources On Kill with a Lust affinity Skill"
+      "desc": "On Heads Hit with a Lust affinity Skill, lower this unit and the target's SP by 4.\n(Does not work against targets that are Non-SP Units)\nGain 5 Lust E.G.O resources On Kill with a Lust affinity Skill"
     },
     {
       "id": 2090511,
@@ -549,6 +549,11 @@
       "id": 2021011,
       "name": "Unsnuffed Embers",
       "desc": "This effect triggers immediately after using E.G.O Skill\n\nFor every 10 [Combustion] on self, increase [Combustion] Potency inflicted on enemies with this unit's Base Attack Skill effects and Coin effects by 1 (max 2, excluding 'Unique Burn')\n\nWhen this unit uses 'A.B.S Max Attunement 【Degraded Corrosion】'  Skill, this unit does not die at the Skill's Attack End; instead, heal 40% HP and gain 2 [HitDamageUp] and 1 [CrimsonDamageUp] next turn (once per Encounter)"
+    },
+    {
+      "id": 2090911,
+      "name": "What Distinguishes Moths from Butterflies",
+      "desc": "If this unit's leftmost Base Attack Skill on the Dashboard is a Wrath or a Lust Skill, at Attack End, deal 30% of the damage dealt against the main target with that Skill as its corresponding Affinity damage to a random enemy (max 30 damage; for Focused Encounters, a Part)\n\nIf this unit dealt the maximum possible damage with the above effect, gain 1 Affinity DMG Up for the corresponding Affinity next turn, and disable the above effect from triggering for 2 turns"
     }
   ]
 }

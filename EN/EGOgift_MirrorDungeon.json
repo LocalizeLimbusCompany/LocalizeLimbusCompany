@@ -1769,7 +1769,7 @@
     {
       "id": 9065,
       "name": "Artistic Sense",
-      "desc": "Deal +35% damage against enemies suffering negative effects (Low Morale, Panic) from SP loss.\n\nIf the Skill inflicts [Sinking] Potency or Count(including Unique 'Sinking'), deal +10% damage in addition to the above.\n\nWhen [Sinking]'s effect applies to enemies without Sanity, the Affinity of the damage inflicted changes to whatever is the most effective.",
+      "desc": "Deal +35% damage against enemies suffering negative effects (Low Morale, Panic) from SP loss.\n\nIf the Skill inflicts [Sinking] Potency or Count(including 'Unique Sinking'), deal +10% damage in addition to the above.\n\nWhen [Sinking]'s effect applies to enemies that are Non-SP Units, the Affinity of the damage inflicted changes to whatever is the most effective.",
       "simpleDesc": [
         {
           "abilityID": 9065,
@@ -1784,7 +1784,7 @@
     {
       "id": 19065,
       "name": "Artistic Sense+",
-      "desc": "<style=\"upgradeHighlight\">Deal +40% damage against enemies with less than 0 SP.</style>\n\nIf the Skill inflicts [Sinking] Potency or Count(including Unique 'Sinking'), deal +10% damage in addition to the above.\n\nWhen [Sinking]'s effect applies to enemies without Sanity, the Affinity of the damage inflicted changes to whatever is the most effective.",
+      "desc": "<style=\"upgradeHighlight\">Deal +40% damage against enemies with less than 0 SP.</style>\n\nIf the Skill inflicts [Sinking] Potency or Count(including 'Unique Sinking'), deal +10% damage in addition to the above.\n\nWhen [Sinking]'s effect applies to enemies that are Non-SP Units, the Affinity of the damage inflicted changes to whatever is the most effective.",
       "simpleDesc": [
         {
           "abilityID": 19065,
@@ -1799,7 +1799,7 @@
     {
       "id": 29065,
       "name": "Artistic Sense++",
-      "desc": "<style=\"upgradeHighlight\">Deal +50% damage against enemies without SP or with less than 0 SP.</style>\n\nIf the Skill inflicts [Sinking] Potency or Count(including Unique 'Sinking'), deal +10% damage in addition to the above.\n\nWhen [Sinking]'s effect applies to enemies without Sanity, the Affinity of the damage inflicted changes to whatever is the most effective.",
+      "desc": "<style=\"upgradeHighlight\">Deal +50% damage against enemies that are non-SP units or have less than 0 SP.</style>\n\nIf the Skill inflicts [Sinking] Potency or Count(including 'Unique Sinking'), deal +10% damage in addition to the above.\n\nWhen [Sinking]'s effect applies to enemies that are Non-SP Units, the Affinity of the damage inflicted changes to whatever is the most effective.",
       "simpleDesc": [
         {
           "abilityID": 29065,
@@ -2280,22 +2280,26 @@
     {
       "id": 9084,
       "name": "Ancient Effigy",
-      "desc": "Turn Start: select one of the fastest allies and apply 5 [Agility] to them next turn.\n\nNext Turn Start: select one of the other fastest allies (allies without the Ancient Effigy effect) and re-apply the Gift effect to them. (effect expires if no other allies can be selected)",
+      "desc": "Turn Start: select one of the fastest allies and apply 5 [Agility] to them next turn.\n\nNext Turn Start: select one of the other fastest allies (allies without the Ancient Effigy effect) and re-apply the Gift effect to them. (effect expires if no other allies can be selected)\n\nAt 10+ Speed, the ally gains (Speed difference with the target / 2) Offense Level (max 5; rounded down)",
       "simpleDesc": [
         {
           "abilityID": 9084,
           "simpleDesc": "Gain 5 [Agility]"
+        },
+        {
+          "abilityID": 90841,
+          "simpleDesc": "Gain (Speed difference with the target / 2) Offense Level"
         }
       ]
     },
     {
       "id": 9085,
       "name": "Non-disclosure Agreement",
-      "desc": "Turn Start: A random ally deals +10% damage (effective until Non-disclosure Agreement effect expires).\n\nThe ally deals additional +10% damage every time it hits with a Skill and deals HP damage to an enemy (Max +40% damage). If the ally takes HP damage, the Gift's effect expires. At the next Turn Start, apply the same Gift effect to another random ally. (effect expires if no other allies can be selected)",
+      "desc": "Turn Start: A random ally deals +10% damage and gains Shield equal to 49% of max HP (effective until Non-disclosure Agreement effect expires)\n\nThe ally deals additional +10% damage every time it hits with a Skill and deals HP damage to an enemy (max +40% damage)\n\nIf the ally takes HP damage, the Gift's effect expires. At the next Turn Start, apply the same Gift effect to another random ally. (accumulated damage boost carries over; effect expires if no other allies can be selected)",
       "simpleDesc": [
         {
           "abilityID": 9085,
-          "simpleDesc": "Deal +10% damage"
+          "simpleDesc": "Deal +10% damage; gain Shield equal to 49% of max HP"
         }
       ]
     },
@@ -2522,7 +2526,7 @@
     {
       "id": 9094,
       "name": "Enrapturing Trance",
-      "desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply [Burst] Potency or Count. (except E.G.O Skills; except Backup Units)\n\nWhen hitting an enemy with a Skill, inflict 5 [Burst] Potency.\n\nWhen [Burst] Count on an enemy drops below 1, consume 10 [Burst] Potency instead of [Burst] Count. (This effect ends when [Burst] Potency drops below 10)\n\nIf the target has less than 3 [Burst] Count, inflict +1 more Count when inflicting [Burst] Count. (3 times per Encounter)",
+      "desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply [Burst] Potency or Count. (except E.G.O Skills; except Backup Units)\n\nWhen hitting an enemy with a Skill, inflict 5 [Burst] Potency\n- Skills that inflict [Burst] Potency or Count: Inflict an additional 3 [Burst] Potency and +1 [Burst] Count (once per Skill)\n\nWhen [Burst] Count on an enemy drops below 1, consume 10 [Burst] Potency instead of [Burst] Count. (This effect ends when [Burst] Potency drops below 10)\n\nIf the target has less than 3 [Burst] Count, inflict +1 more Count when inflicting [Burst] Count. (3 times per Encounter)",
       "simpleDesc": [
         {
           "abilityID": 9094,
@@ -2574,7 +2578,7 @@
     {
       "id": 9096,
       "name": "Black Sheet Music",
-      "desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills; except Backup Units)\n\nOn Hit against an enemy with a Skill: inflict 5 [Sinking] Potency.\n\nTurn Start: enemies or Parts with [Sinking] regain ([Sinking] Count each enemy lost On Hit last turn / 2) [Sinking] Count.\n\nOn Hit with a Base Attack Skill: deal ([Sinking] Potency on target / 10) Gloom damage (min 1 damage)\n\nOn Hit with an Attack Skill: if the target's SP is below 0, Skill deals more damage the further the target's SP is from 0 (+1% damage per SP)\n- If the target is Panicked, deal +50% damage instead\n- If the target does not have SP, deal +1% damage for every 2 [Sinking] Potency on target. If target has 90+ [Sinking] Potency, deal +50% damage instead",
+      "desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills; except Backup Units)\n\nOn Hit against an enemy with a Skill: inflict 5 [Sinking] Potency.\n\nTurn Start: enemies or Parts with [Sinking] regain ([Sinking] Count each enemy lost On Hit last turn / 2) [Sinking] Count.\n\nOn Hit with a Base Attack Skill: deal ([Sinking] Potency on target / 10) Gloom damage (min 1 damage)\n\nOn Hit with an Attack Skill: if the target's SP is below 0, Skill deals more damage the further the target's SP is from 0 (+1% damage per SP)\n- If the target is Panicked, deal +50% damage instead\n- For targets that are Non-SP Units: Deal +1% damage for every 2 [Sinking] Potency on target. If target has 90+ [Sinking] Potency, deal +50% damage instead",
       "simpleDesc": [
         {
           "abilityID": 9096,
@@ -2754,7 +2758,7 @@
     {
       "id": 9102,
       "name": "Polarization",
-      "desc": "If the ally has 30 or more SP than the target, deal +7.5% damage with Skills that inflict [Combustion] Potency, Count, or 'Unique Burn'. (For enemies without SP, their 'SP' counts as 0)",
+      "desc": "If the ally has 30 or more SP than the target, deal +7.5% damage with Skills that inflict [Combustion] Potency, Count, or 'Unique Burn'. (for enemies that are Non-SP Units, their 'SP' counts as 0)",
       "simpleDesc": [
         {
           "abilityID": 9102,
@@ -2765,7 +2769,7 @@
     {
       "id": 19102,
       "name": "Polarization+",
-      "desc": "If the ally has <style=\"upgradeHighlight\">25</style> or more SP than the target, deal <style=\"upgradeHighlight\">+12.5%</style> damage with Skills that inflict [Combustion] Potency, Count, or 'Unique Burn'. (For enemies without SP, their 'SP' counts as 0)",
+      "desc": "If the ally has <style=\"upgradeHighlight\">25</style> or more SP than the target, deal <style=\"upgradeHighlight\">+12.5%</style> damage with Skills that inflict [Combustion] Potency, Count, or 'Unique Burn'. (for enemies that are Non-SP Units, their 'SP' counts as 0)",
       "simpleDesc": [
         {
           "abilityID": 19102,
@@ -2776,7 +2780,7 @@
     {
       "id": 29102,
       "name": "Polarization++",
-      "desc": "If the ally has <style=\"upgradeHighlight\">15</style> or more SP than the target, deal <style=\"upgradeHighlight\">+20%</style> damage with Skills that inflict [Combustion] Potency, Count, or 'Unique Burn'. (For enemies without SP, their 'SP' counts as 0)",
+      "desc": "If the ally has <style=\"upgradeHighlight\">15</style> or more SP than the target, deal <style=\"upgradeHighlight\">+20%</style> damage with Skills that inflict [Combustion] Potency, Count, or 'Unique Burn'. (for enemies that are Non-SP Units, their 'SP' counts as 0)",
       "simpleDesc": [
         {
           "abilityID": 29102,
@@ -4157,11 +4161,11 @@
     {
       "id": 29149,
       "name": "Compression Bandage++",
-      "desc": "[Effects apply only to #5, #6 Deployed Identities]\n\nWhen hitting an enemy with a Blunt Skill, deal <style=\"upgradeHighlight\">3~7</style> Blunt bonus Damage.\n\nGloom Affinity Attack Skill: heal an additional <style=\"upgradeHighlight\">6</style> HP as well.",
+      "desc": "[Effects apply only to #5, #6 Deployed Identities]\n\nWhen hitting an enemy with a Blunt Skill, deal <style=\"upgradeHighlight\">5~7</style> Blunt bonus Damage\n\nGloom Attack Skills: Heal <style=\"upgradeHighlight\">6</style> HP as well",
       "simpleDesc": [
         {
           "abilityID": 29149,
-          "simpleDesc": "Inflict 3~7 bonus Blunt damage"
+          "simpleDesc": "Inflict 5~7 bonus Blunt damage"
         },
         {
           "abilityID": 291491,
@@ -4441,7 +4445,7 @@
     {
       "id": 9174,
       "name": "Tangled Bones",
-      "desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills; except Backup Units)\n\nTurn Start: enemies with [Sinking](for Abnormalities, all Parts) regain ([Sinking] Count lost on hit last turn / 3) [Sinking] Count.\n\nIf the Base Attack Skill hits against a target with less than 0 SP(for enemies without SP, if they have 1.5+ Gloom Resist.), inflict ([Sinking] Potency / 10) Gloom Affinity damage (min 1, 10 times per turn for this effect)",
+      "desc": "Turn Start: This Gift activates for the whole Encounter when 5 or more Identities have Attack Skills that apply [Sinking] Potency, Count, or 'Unique Sinking'. (except E.G.O Skills; except Backup Units)\n\nTurn Start: enemies with [Sinking](for Abnormalities, all Parts) regain ([Sinking] Count lost on hit last turn / 3) [Sinking] Count.\n\nIf the Base Attack Skill hits against a target with less than 0 SP(for enemies that are Non-SP units, if they have 1.5+ Gloom Resist.), inflict ([Sinking] Potency / 10) Gloom Affinity damage (min 1, 10 times per turn for this effect)",
       "simpleDesc": [
         {
           "abilityID": 9174,

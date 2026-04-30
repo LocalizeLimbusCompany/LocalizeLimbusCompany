@@ -1290,7 +1290,7 @@
     {
       "id": 1120901,
       "name": "Endless Nightmares",
-      "desc": "- Combat Start: Gain 1 [AttackDmgUp] and 1 [Vulnerable] for every 5 SP difference between Combat Start and the last Turn Start (max 5)\n- Deal +1% damage for every [Sinking] Potency on target (max 20%)",
+      "desc": "- Combat Start: Gain 1 [AttackDmgUp] and 1 [Vulnerable] for every 5 SP difference between Combat Start and the last Turn Start (max 3)\n- Deal +1% damage for every [Sinking] Potency on target (max 20%)",
       "summary": ""
     },
     {
@@ -1596,7 +1596,7 @@
     {
       "id": 1071021,
       "name": "Endless Lamentation",
-      "desc": "1 ally that has the highest SP deals +5% damage to targets that have less than 0 SP\nIf the target has less than 0 SP: Deal even more damage the further the target's SP is from 0 (+0.5% damage per SP, max 20%)\nIf the target does not have SP, the said ally inflicts +1 more [Sinking] Potency and Count using their Skill and Coin Effects of their Attack Skills (2 times per turn)",
+      "desc": "1 ally that has the highest SP deals +5% damage to targets that have less than 0 SP\nIf the target has less than 0 SP: Deal even more damage the further the target's SP is from 0 (+0.5% damage per SP, max 20%)\nFor targets that are Non-SP Units, the said ally inflicts +1 more [Sinking] Potency and Count using their Skill and Coin Effects of their Attack Skills (2 times per turn)",
       "summary": "Deal more damage to targets with less than 0 SP"
     },
     {
@@ -1614,7 +1614,7 @@
     {
       "id": 1041011,
       "name": "Spiderhead/Skullface",
-      "desc": "When hitting an enemy with a Coin that gains [RedEyeFirst]:\n- Deal +([RedEyeFirst]/2)% damage\n<style=\"highlight\">- If this unit's Speed is faster than the target's by 3 or more, deal an additional +([RedEyeFirst]/2)% damage</style>\n- If the target has [Laceration], gain 1 [RedEyeFirst] (3 times per turn)\n\nWhen hitting an enemy with a Coin that gains [PenanceFirst]:\n- Deal +([PenanceFirst]/2)% damage\n<style=\"highlight\">- If the target's SP is lower than this unit's, deal an additional +([PenanceFirst]/2)% damage(targets without SP: their SP counts as 0)</style>\n- At 20+ SP, gain 1 [PenanceFirst] (3 times per turn)\n\n<style=\"highlight\">When hit by an enemy, gain 1 [PenanceFirst] (max 3)</style>",
+      "desc": "When hitting an enemy with a Coin that gains [RedEyeFirst]:\n- Deal +([RedEyeFirst]/2)% damage\n<style=\"highlight\">- If this unit's Speed is faster than the target's by 3 or more, deal an additional +([RedEyeFirst]/2)% damage</style>\n- If the target has [Laceration], gain 1 [RedEyeFirst] (3 times per turn)\n\nWhen hitting an enemy with a Coin that gains [PenanceFirst]:\n- Deal +([PenanceFirst]/2)% damage\n<style=\"highlight\">- If the target's SP is lower than this unit's, deal an additional +([PenanceFirst]/2)% damage(for targets that are Non-SP Units, their SP counts as 0)</style>\n- At 20+ SP, gain 1 [PenanceFirst] (3 times per turn)\n\n<style=\"highlight\">When hit by an enemy, gain 1 [PenanceFirst] (max 3)</style>",
       "summary": "Coins that gain Red Eyes deal more damage; if the target has Bleed, gain 1 Red Eyes\nCoins that gain Penitence deal more damage; at 20+ SP, gain 1 Penitence\nWhen hit by an enemy, gain 1 Penitence (max 3)"
     },
     {
@@ -1705,7 +1705,7 @@
     {
       "id": 1051101,
       "name": "Duel Livestream",
-      "desc": "Gain 1 [Agility] next turn for every 3 [Breath] Potency on self at Turn End (max 2)\nOn Hit using Base Attack Skills: Inflict [ConcentratedAttackMeursault] next turn (once per Skill)",
+      "desc": "Gain 1 [Agility] next turn for every 3 [Breath] Potency on self at Turn End (max 2)\nOn Hit using Base Skills: Inflict [ConcentratedAttackMeursault] next turn (once per Skill)",
       "summary": "Turn End: Gain [Agility] based on [Breath] Count on self. On Hit using a Base Skill, inflict [ConcentratedAttackMeursault] next turn"
     },
     {
@@ -2933,6 +2933,31 @@
       "id": 1091521,
       "name": "Nice and Slow, Don't Let It Break...",
       "desc": "Apply the following effects to the Identity with the earliest Deployment order:\n- If Lust Reson. is of an odd number, inflict +1 more [Laceration] Potency\n- If Lust Reson. is of an even number, inflict +1 more [Sinking] Potency\n- If the said Identity is in The Ring faction, it gains 1 [AttackUp] or 1 [DefenseUp] at Combat Start"
+    },
+    {
+      "id": 1071502,
+      "name": "The Book of Vengeance",
+      "desc": "When this unit or any of The Middle-faction allies are hit by an enemy, inflict 1 [VendettaMark] on the said enemy and gain 1 [VengeanceBookHeathcliff] (once per Skill)\nAlly Death: Gain 3 [VengeanceBookHeathcliff]"
+    },
+    {
+      "id": 1071512,
+      "name": "The Book of Vengeance",
+      "desc": "When this unit or any of The Middle-faction allies are hit by an enemy, inflict 1 [VendettaMark] on the said enemy and gain 1 [VengeanceBookHeathcliff] (once per Skill)\nAlly Death: Gain 3 [VengeanceBookHeathcliff]\n\n<style=\"highlight\">Turn Start: At 15+ [MiddleFingerTattooID], apply the following effects:\n- Replace a Base Skill with \"COMPLETE AND TOTAL EXTERMINATION!!\" (prioritizes the Skill on the leftmost Slot's bottom row on the Dashboard)\n· If the replaced Skill becomes inaccessible due to being replaced by a different Skill, activate the above effect again\n- Change battle music until Turn End (excluding certain Encounters)\n\nCombat Start in the Turn this unit Substituted in or Returned to the field: Use \"MY HAIR COUPOOOOOOOOOOONS!!!!\" on a random target\n- Attack End of the said Skill: Apply 1 [AttackUp] and 1 [DefenseUp] on all The Middle-faction allies</style>"
+    },
+    {
+      "id": 1071503,
+      "name": "Vengeance Tattoo Resonance",
+      "desc": "Combat Start: The Middle-faction allies that have equipped Defense Skills take -20% damage from Unopposed Attacks for this turn\n\nCombat Start: At 4+ Envy Reson., The Middle-faction allies adjacent to this unit on the Dashboard cannot be Staggered by damage as long as they have usable Counter Skills equipped in their Slots (excluding Forced Staggers)\n- At 6+ Envy Reson., this effect applies to all of The Middle-faction allies"
+    },
+    {
+      "id": 1071501,
+      "name": "The Big Brother",
+      "desc": "Combat Start: Gain 1 [MiddleFingerTattooID] for every Envy Reson. (max 7)\n\nIf an enemy attacked any of The Middle-faction allies including this unit, use \"Kicking\" on the said enemy as an Unopposed Attack at Attack End of the said enemy's Skill (once per turn)"
+    },
+    {
+      "id": 1071521,
+      "name": "Chains of Loyalty",
+      "desc": "If any of The Middle-faction allies are killed during combat this turn, all The Middle-faction allies gain 1 [Enhancement] this turn and next turn (once per turn)"
     }
   ]
 }
