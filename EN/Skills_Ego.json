@@ -864,6 +864,24 @@
               ]
             }
           ]
+        },
+        {
+          "level": 5,
+          "name": "4th Match Flame",
+          "abName": "Scorched Girl",
+          "desc": "Skill Power +2 against units that have [Combustion]\n<style=\"highlight\">[BeforeAttack]</style> Deal +5% damage for every <style=\"highlight\">1 total sum of [Combustion] on all targets</style> (max 100%)\n[EnemyKill] Gain 2 [Enhancement] next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Deal (([Combustion] on target x 2)% of this Coin's final damage) Wrath damage (max 20%)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [Combustion]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -910,6 +928,27 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Inflict 4 [Combustion]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "4th Match Flame",
+          "abName": "Scorched Girl",
+          "desc": "[CantIdentify]\nTargets randomly\nSkill Power +4 against units that have [Combustion]\n<style=\"highlight\">[BeforeAttack]</style> Deal +5% damage for every <style=\"highlight\">1 total sum of [Combustion] on all targets</style> (max 100%)\n<style=\"highlight\">[DefeatDuel] Base Power -16</style>\n[EnemyKill] Gain 3 [Enhancement] next turn\n[EnemyKillFail] Gain 3 [Enhancement] and 10 [Combustion] next turn",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[SuperCoin]</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Deal (([Combustion] on target x 3)% of this Coin's final damage) Wrath damage (max 30%)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict 4 [Combustion]<style=\"highlight\"></style>"
                 }
               ]
             }
