@@ -42,7 +42,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Sinking]"
                 }
               ]
             }
@@ -57,7 +57,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [Sinking]"
                 }
               ]
             }
@@ -72,7 +72,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
                 }
               ]
             }
@@ -93,7 +93,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict +1 Sinking Count"
+                  "desc": "[OnSucceedAttackHead] Inflict +1 [Sinking] Count"
                 }
               ]
             }
@@ -109,7 +109,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking; Inflict +1 Sinking Count"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking] and +1 [Sinking] Count"
                 }
               ]
             }
@@ -125,7 +125,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking; Inflict +1 Sinking Count"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking] and +1 [Sinking] Count"
                 }
               ]
             }
@@ -147,7 +147,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] If target’s SP is below 0, inflict 1 Fragile next turn"
+                  "desc": "[OnSucceedAttack] If target’s SP is below 0, inflict 1 [Vulnerable] next turn"
                 }
               ]
             }
@@ -162,21 +162,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] If target’s SP is below 0, inflict 1 Fragile next turn"
+                  "desc": "[OnSucceedAttack] If target has less than 0 SP, inflict 1 [Vulnerable] next turn"
                 }
               ]
             }
@@ -209,7 +209,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Burst]"
                 }
               ]
             }
@@ -224,7 +224,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [Burst]"
                 }
               ]
             }
@@ -260,7 +260,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Pierce Fragility next turn"
+                  "desc": "[OnSucceedAttack] Inflict 1 [PenetrateTakeDamageUp] next turn"
                 }
               ]
             }
@@ -277,24 +277,24 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Final Coin inflicts +1 more Stack of its effect"
+                  "desc": "[OnSucceedAttack] Final Coin inflicts +1 more Stack of its effects"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Final Coin inflicts +1 more Stack of its effect"
+                  "desc": "[OnSucceedAttack] Final Coin inflicts +1 more Stack of its effects"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Pierce Fragility next turn"
+                  "desc": "[OnSucceedAttack] Inflict 1 [PenetrateTakeDamageUp] next turn"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]"
                 }
               ]
             }
@@ -308,7 +308,7 @@
         {
           "level": 1,
           "name": "Riposte",
-          "desc": "[WinDuel] Inflict 3 Paralyze next turn",
+          "desc": "[WinDuel] Inflict 3 [Paralysis] next turn",
           "keywords": [
             "Paralysis"
           ],
@@ -332,7 +332,7 @@
         {
           "level": 2,
           "name": "Riposte",
-          "desc": "[WinDuel] Inflict 3 Paralyze next turn",
+          "desc": "[WinDuel] Inflict 3 [Paralysis] next turn",
           "keywords": [
             "Paralysis"
           ],
@@ -347,7 +347,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Fragile next turn"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vulnerable] next turn"
                 }
               ]
             }
@@ -356,7 +356,7 @@
         {
           "level": 4,
           "name": "Riposte",
-          "desc": "[WinDuel] Inflict 3 Paralyze next turn\n[WinDuel] Inflict 1 Rupture Count",
+          "desc": "[WinDuel] Inflict 3 [Paralysis] next turn\n[WinDuel] Inflict +1 [Burst] Count",
           "keywords": [
             "Paralysis"
           ],
@@ -371,10 +371,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Fragile next turn"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vulnerable] next turn"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Burst]"
                 }
               ]
             }
@@ -407,7 +407,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttackHead] Gain 1 [Breath] next turn"
                 }
               ]
             }
@@ -422,7 +422,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 3 Poise next turn"
+                  "desc": "[OnSucceedAttack] Gain 3 [Breath] next turn"
                 }
               ]
             }
@@ -431,13 +431,13 @@
         {
           "level": 4,
           "name": "Striker’s Stance",
-          "desc": "[WhenUse] Gain +2 Poise Count",
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
           "keywords": [],
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 3 Poise next turn"
+                  "desc": "[OnSucceedAttack] Gain 3 [Breath] next turn"
                 }
               ]
             }
@@ -451,7 +451,7 @@
         {
           "level": 1,
           "name": "Heel Turn",
-          "desc": "[WinDuel] Gain +1 Poise Count next turn",
+          "desc": "[WinDuel] Gain +1 [Breath] Count next turn",
           "keywords": [],
           "coinlist": [
             {},
@@ -461,7 +461,7 @@
         {
           "level": 2,
           "name": "Heel Turn",
-          "desc": "[WinDuel] Gain +2 Poise Count next turn",
+          "desc": "[WinDuel] Gain +2 [Breath] Count next turn",
           "keywords": [],
           "coinlist": [
             {},
@@ -471,7 +471,7 @@
         {
           "level": 4,
           "name": "Heel Turn",
-          "desc": "[WinDuel] Gain +2 Poise Count next turn",
+          "desc": "[WinDuel] Gain +2 [Breath] Count next turn",
           "keywords": [],
           "coinlist": [
             {},
@@ -492,7 +492,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Poise next turn"
+                  "desc": "[OnSucceedAttackHead] Gain 2 [Breath] next turn"
                 }
               ]
             },
@@ -500,7 +500,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "+50% Damage on Critical Hit"
+                  "desc": "Deal +50% damage on Critical Hit"
                 }
               ]
             }
@@ -509,13 +509,13 @@
         {
           "level": 4,
           "name": "Flank Thrust",
-          "desc": "[WhenUse] Gain 2 Poise",
+          "desc": "[WhenUse] Gain 2 [Breath]",
           "keywords": [],
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Poise next turn"
+                  "desc": "[OnSucceedAttackHead] Gain 2 [Breath] next turn"
                 }
               ]
             },
@@ -523,7 +523,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "+70% Damage on Critical Hit"
+                  "desc": "Deal +70% damage on Critical Hit"
                 }
               ]
             }
@@ -552,7 +552,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "+70% Damage on Critical Hit"
+                  "desc": "Deal +70% damage on Critical Hit"
                 }
               ]
             }
@@ -572,7 +572,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Paralyze"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Paralysis]"
                 }
               ]
             }
@@ -587,7 +587,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Paralyze"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Paralysis]"
                 }
               ]
             }
@@ -608,7 +608,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Offense Level Down next turn"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [AttackDown] next turn"
                 }
               ]
             }
@@ -624,7 +624,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Offense Level Down next turn"
+                  "desc": "[OnSucceedAttack] Inflict 3 [AttackDown] next turn"
                 }
               ]
             }
@@ -644,14 +644,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Attack Power Down next turn"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Reduction] next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Attack Power Down next turn"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Reduction] next turn"
                 }
               ]
             }
@@ -683,7 +683,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +1 Charge Count"
+                  "desc": "[OnSucceedAttack] Gain +1 [Charge] Count"
                 }
               ]
             }
@@ -697,7 +697,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +2 Charge Count"
+                  "desc": "[OnSucceedAttack] Gain +2 [Charge] Count"
                 }
               ]
             }
@@ -706,12 +706,12 @@
         {
           "level": 4,
           "name": "Energy Cycle",
-          "desc": "[WhenUse] Gain +2 Charge Count",
+          "desc": "[WhenUse] Gain +2 [Charge] Count",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +2 Charge Count"
+                  "desc": "[OnSucceedAttack] Gain +2 [Charge] Count"
                 }
               ]
             }
@@ -731,7 +731,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Spend 3 Charge Count to inflict 4 Bind next turn"
+                  "desc": "[OnSucceedAttack] Consume 3 [Charge] Count to inflict 4 [Binding] next turn"
                 }
               ]
             }
@@ -746,7 +746,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Spend 3 Charge Count to inflict 4 Bind next turn"
+                  "desc": "[OnSucceedAttack] Consume 3 [Charge] Count to inflict 4 [Binding] next turn"
                 }
               ]
             }
@@ -755,19 +755,19 @@
         {
           "level": 4,
           "name": "Leap",
-          "desc": "[WhenUse] Gain +3 Charge Count",
+          "desc": "[WhenUse] Gain +3 [Charge] Count",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +3 Charge Count"
+                  "desc": "[OnSucceedAttack] Gain +3 [Charge] Count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Spend 3 Charge Count to inflict 4 Bind next turn"
+                  "desc": "[OnSucceedAttack] Consume 3 [Charge] Count to inflict 4 [Binding] next turn"
                 }
               ]
             }
@@ -788,7 +788,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Spend 5 Charge Count to inflict 2 Attack Power Down and 3 Paralyze next turn"
+                  "desc": "[OnSucceedAttack] Consume 5 [Charge] Count to inflict 2 [Reduction] and 3 [Paralysis] next turn"
                 }
               ]
             }
@@ -797,14 +797,14 @@
         {
           "level": 4,
           "name": "Overcharge",
-          "desc": "At 5+ Charge Count, Clash Power +2",
+          "desc": "At 5+ [Charge] Count, Clash Power +2",
           "coinlist": [
             {},
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Spend 5 Charge Count to inflict 2 Attack Power Down and 3 Paralyze next turn"
+                  "desc": "[OnSucceedAttack] Consume 5 [Charge] Count to inflict 2 [Reduction] and 3 [Paralysis] next turn"
                 }
               ]
             }
@@ -836,7 +836,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Rupture"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Burst]"
                 }
               ]
             }
@@ -850,7 +850,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Burst]"
                 }
               ]
             }
@@ -859,12 +859,12 @@
         {
           "level": 4,
           "name": "Sole Strike",
-          "desc": "[WhenUse] Gain +2 Poise Count",
+          "desc": "[WhenUse] Gain +2 [Breath] Count",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Burst]"
                 }
               ]
             }
@@ -883,21 +883,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttackHead] Gain 1 [Breath] next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttackHead] Gain 1 [Breath] next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Haste next turn"
+                  "desc": "[OnSucceedAttackHead] Gain 2 [Agility] next turn"
                 }
               ]
             }
@@ -911,21 +911,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttack] Gain 1 [Breath] next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttack] Gain 1 [Breath] next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 4 Haste next turn"
+                  "desc": "[OnSucceedAttack] Gain 4 [Agility] next turn"
                 }
               ]
             }
@@ -939,24 +939,24 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttack] Gain 1 [Breath] next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttack] Gain 1 [Breath] next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 4 Haste next turn"
+                  "desc": "[OnSucceedAttack] Gain 4 [Agility] next turn"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttack] Gain 1 [Breath] next turn"
                 }
               ]
             }
@@ -970,13 +970,13 @@
         {
           "level": 3,
           "name": "Opportunistic Slash",
-          "desc": "If user took no damage last turn, Coin Power +3",
+          "desc": "If this unit took no damage last turn, Coin Power +3",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 5 Rupture"
+                  "desc": "[OnSucceedAttackHead] Inflict 5 [Burst]"
                 }
               ]
             }
@@ -1304,7 +1304,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Poise next turn"
+                  "desc": "[OnSucceedAttackHead] Gain 2 [Breath] next turn"
                 }
               ]
             }
@@ -1318,7 +1318,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise next turn"
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath] next turn"
                 }
               ]
             }
@@ -1332,7 +1332,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 3 Poise next turn"
+                  "desc": "[OnSucceedAttack] Gain 3 [Breath] next turn"
                 }
               ]
             }
@@ -1351,7 +1351,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttackHead] Gain 1 [Breath] next turn"
                 }
               ]
             },
@@ -1372,7 +1372,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttack] Gain 1 [Breath] next turn"
                 }
               ]
             },
@@ -1393,7 +1393,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise next turn"
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath] next turn"
                 }
               ]
             },
@@ -1453,7 +1453,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 1 Poise next turn"
+                  "desc": "[OnSucceedAttackHead] Gain 1 [Breath] next turn"
                 }
               ]
             }
@@ -1467,7 +1467,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise next turn"
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath] next turn"
                 }
               ]
             }
@@ -1544,7 +1544,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise next turn"
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath] next turn"
                 }
               ]
             },
@@ -1876,14 +1876,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Vibration]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Vibration]"
                 }
               ]
             }
@@ -1897,14 +1897,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]"
                 }
               ]
             }
@@ -1923,7 +1923,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Trigger Tremor Burst"
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]"
                 }
               ]
             }
@@ -1937,7 +1937,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Trigger Tremor Burst"
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]"
                 }
               ]
             }
@@ -1959,7 +1959,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict +2 Tremor Count"
+                  "desc": "[OnSucceedAttackHead] Inflict +2 [Vibration] Count"
                 }
               ]
             }
@@ -1973,28 +1973,28 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Vibration]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Vibration]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Vibration]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +2 Tremor Count"
+                  "desc": "[OnSucceedAttack] Inflict +2 [Vibration] Count"
                 }
               ]
             }
@@ -2486,7 +2486,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [Sinking]"
                 }
               ]
             }
@@ -2500,7 +2500,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
                 }
               ]
             }
@@ -2519,7 +2519,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Sinking]"
                 }
               ]
             },
@@ -2540,7 +2540,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
                 }
               ]
             },
@@ -2561,7 +2561,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
                 }
               ]
             },
@@ -2606,7 +2606,7 @@
                   "desc": "[OnSucceedAttackHead] Inflict 2 Attack Power Down"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 2 Rupture"
@@ -2993,7 +2993,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 3 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 3 [Vibration]"
                 }
               ]
             }
@@ -3007,7 +3007,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 3 [Vibration]"
                 }
               ]
             }
@@ -3054,7 +3054,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [Vibration]"
                 }
               ]
             }
@@ -3080,7 +3080,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Trigger Tremor Burst"
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]"
                 }
               ]
             }
@@ -3123,7 +3123,7 @@
         {
           "level": 4,
           "name": "Extreme Edge",
-          "desc": "At less than 50% HP, Skill Power +2\n[WhenUse] Gain +3 Poise Count",
+          "desc": "At less than 50% HP, Skill Power +2\n[WhenUse] Gain +3 [Breath] Count",
           "coinlist": [
             {}
           ]
@@ -3152,7 +3152,7 @@
         {
           "level": 4,
           "name": "Flying Sword",
-          "desc": "At less than 50% HP, +2 Skill Power\n[WhenUse] Gain 3 Poise",
+          "desc": "At less than 50% HP, +2 Skill Power\n[WhenUse] Gain 3 [Breath]",
           "coinlist": [
             {}
           ]
@@ -3186,7 +3186,7 @@
         {
           "level": 4,
           "name": "Flashing Strike",
-          "desc": "At 10+ Poise Count, Skill Power +2\nAt less than 50% HP, Atk Weight +1",
+          "desc": "At 10+ [Breath] Count, Skill Power +2\nAt less than 50% HP, Atk Weight +1",
           "coinlist": [
             {
               "coindescs": [
@@ -3220,7 +3220,7 @@
         {
           "level": 4,
           "name": "Counter",
-          "desc": "[WhenUse] Lose 5 HP\nAt 3+ Poise Count, Damage +50%",
+          "desc": "[WhenUse] Lose 5 HP\nAt 3+ [Breath] Count, Damage +50%",
           "coinlist": [
             {}
           ]
@@ -3433,7 +3433,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict +1 Tremor Count"
+                  "desc": "[OnSucceedAttackHead] Inflict +1 [Vibration] Count"
                 }
               ]
             }
@@ -3447,7 +3447,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
                 }
               ]
             }
@@ -3482,7 +3482,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 3 [Vibration]"
                 }
               ]
             }
@@ -3501,7 +3501,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Trigger Tremor Burst; Inflict 1 Blunt Fragility"
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; Inflict 1 Blunt Fragility"
                 }
               ]
             }
@@ -3533,14 +3533,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Sinking]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Sinking]"
                 }
               ]
             }
@@ -3554,7 +3554,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttackHead] Gain +2 Charge Count"
@@ -3564,7 +3564,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttackHead] Gain +2 Charge Count"
@@ -3581,7 +3581,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Gain +2 Charge Count"
@@ -3591,7 +3591,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Gain +2 Charge Count"
@@ -3613,7 +3613,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict +3 Sinking Count"
+                  "desc": "[OnSucceedAttackHead] Inflict +3 [Sinking] Count"
                 }
               ]
             }
@@ -3627,7 +3627,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict +3 Sinking Count"
+                  "desc": "[OnSucceedAttackHead] Inflict +3 [Sinking] Count"
                 }
               ]
             }
@@ -3641,7 +3641,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +3 Sinking Count"
+                  "desc": "[OnSucceedAttack] Inflict +3 [Sinking] Count"
                 }
               ]
             }
@@ -3660,7 +3660,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Raise Stagger Threshold by 40% of damage dealt"
@@ -3670,7 +3670,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Raise Stagger Threshold by 30% of damage dealt"
@@ -3680,7 +3680,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Raise Stagger Threshold by 20% of damage dealt"
@@ -3690,7 +3690,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Raise Stagger Threshold by 10% of damage dealt"
@@ -3707,7 +3707,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Raise Stagger Threshold by 40% of damage dealt"
@@ -3717,7 +3717,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Raise Stagger Threshold by 30% of damage dealt"
@@ -3727,7 +3727,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Raise Stagger Threshold by 20% of damage dealt"
@@ -3737,7 +3737,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Raise Stagger Threshold by 10% of damage dealt"
@@ -3788,7 +3788,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 2 [Breath]"
                 }
               ]
             }
@@ -3797,7 +3797,7 @@
         {
           "level": 2,
           "name": "Flying Sword",
-          "desc": "At less than 50% HP, this skill gives 1 additional Poise",
+          "desc": "At less than 50% HP, this skill gives 1 additional [Breath]",
           "keywords": [],
           "coinlist": [
             {
@@ -3810,7 +3810,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath]"
                 }
               ]
             }
@@ -3819,7 +3819,7 @@
         {
           "level": 4,
           "name": "Flying Sword",
-          "desc": "At less than 50% HP, this skill gives 3 additional Poise",
+          "desc": "At less than 50% HP, this skill gives 3 additional [Breath]",
           "keywords": [],
           "coinlist": [
             {
@@ -3832,7 +3832,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath]"
                 }
               ]
             }
@@ -3852,14 +3852,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttackHead] Gain +1 [Breath] Count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttackHead] Gain +1 [Breath] Count"
                 }
               ]
             }
@@ -3874,14 +3874,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttack] Gain +1 [Breath] Count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttack] Gain +1 [Breath] Count"
                 }
               ]
             }
@@ -3896,14 +3896,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +2 Poise Count "
+                  "desc": "[OnSucceedAttack] Gain +2 [Breath] Count "
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +2 Poise Count "
+                  "desc": "[OnSucceedAttack] Gain +2 [Breath] Count "
                 }
               ]
             }
@@ -3923,7 +3923,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 2 [Breath]"
                 }
               ]
             },
@@ -3939,13 +3939,13 @@
         {
           "level": 4,
           "name": "Catch Breath",
-          "desc": "At 5+ Poise Count, +50% Critical Damage",
+          "desc": "At 5+ [Breath] Count, +50% Critical Damage",
           "keywords": [],
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 2 [Breath]"
                 }
               ]
             },
@@ -3976,13 +3976,13 @@
         {
           "level": 4,
           "name": "Counter",
-          "desc": "At 5+ Poise Count, +50% Critical Damage",
+          "desc": "At 5+ [Breath] Count, +50% Critical Damage",
           "keywords": [],
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttack] Gain +1 [Breath] Count"
                 }
               ]
             }
@@ -4055,14 +4055,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo\n[OnSucceedAttack] Inflict 4 Tremor"
+                  "desc": "Spend 1 Ammo\n[OnSucceedAttack] Inflict 4 [Vibration]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo\n[OnSucceedAttack] Inflict 4 Tremor"
+                  "desc": "Spend 1 Ammo\n[OnSucceedAttack] Inflict 4 [Vibration]"
                 }
               ]
             }
@@ -4083,14 +4083,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo\n[OnSucceedAttack] Inflict 8 Tremor; Inflict +2 Tremor Count"
+                  "desc": "Spend 1 Ammo\n[OnSucceedAttack] Inflict 8 [Vibration]; Inflict +2 [Vibration] Count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "Spend 1 Ammo\n[OnSucceedAttack] Inflict 8 Tremor; Inflict +2 Tremor Count"
+                  "desc": "Spend 1 Ammo\n[OnSucceedAttack] Inflict 8 [Vibration]; Inflict +2 [Vibration] Count"
                 }
               ]
             }
@@ -4109,7 +4109,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Trigger Tremor Burst"
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]"
                 }
               ]
             },
@@ -4139,12 +4139,12 @@
         {
           "level": 4,
           "name": "Suppress",
-          "desc": "If target has 5+ Tremor Count, Coin Power +1",
+          "desc": "If target has 5+ [Vibration] Count, Coin Power +1",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Trigger Tremor Burst"
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]"
                 }
               ]
             },
@@ -4379,7 +4379,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 2 [Breath]"
                 }
               ]
             }
@@ -4393,7 +4393,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 4 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 4 [Breath]"
                 }
               ]
             }
@@ -4407,7 +4407,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 4 Poise"
+                  "desc": "[OnSucceedAttack] Gain 4 [Breath]"
                 }
               ]
             }
@@ -4426,7 +4426,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 1 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 1 [Breath]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 1 Bleed"
@@ -4436,7 +4436,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 2 [Breath]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 2 Bleed"
@@ -4448,12 +4448,12 @@
         {
           "level": 2,
           "name": "Scattering Slash",
-          "desc": "[WhenUse] Gain +1 Poise Count",
+          "desc": "[WhenUse] Gain +1 [Breath] Count",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 2 Bleed"
@@ -4463,7 +4463,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 3 Poise"
+                  "desc": "[OnSucceedAttack] Gain 3 [Breath]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 3 Bleed"
@@ -4475,12 +4475,12 @@
         {
           "level": 4,
           "name": "Scattering Slash",
-          "desc": "[WhenUse] Gain +2 Poise Count\nAt 5+ [Breath], Coin Power +2",
+          "desc": "[WhenUse] Gain +2 [Breath] Count\nAt 5+ [Breath], Coin Power +2",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 2 Bleed"
@@ -4490,7 +4490,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 3 Poise"
+                  "desc": "[OnSucceedAttack] Gain 3 [Breath]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 3 Bleed"
@@ -4548,7 +4548,7 @@
         {
           "level": 4,
           "name": "Counter",
-          "desc": "[WhenUse] Gain 1 Protection\n[WhenUse] Gain +2 Poise Count",
+          "desc": "[WhenUse] Gain 1 Protection\n[WhenUse] Gain +2 [Breath] Count",
           "coinlist": [
             {}
           ]
@@ -4877,7 +4877,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttackHead] Gain +1 [Breath] Count"
                 }
               ]
             }
@@ -4892,7 +4892,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +2 Poise Count"
+                  "desc": "[OnSucceedAttack] Gain +2 [Breath] Count"
                 }
               ]
             }
@@ -4901,13 +4901,13 @@
         {
           "level": 4,
           "name": "Slice then Stab",
-          "desc": "If at 3+ Poise Count, Coin Power +1",
+          "desc": "If at 3+ [Breath] Count, Coin Power +1",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +2 Poise Count "
+                  "desc": "[OnSucceedAttack] Gain +2 [Breath] Count "
                 }
               ]
             }
@@ -4926,21 +4926,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 2 [Breath]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 1 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 1 [Breath]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 1 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 1 [Breath]"
                 }
               ]
             }
@@ -4954,21 +4954,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 1 Poise"
+                  "desc": "[OnSucceedAttack] Gain 1 [Breath]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 1 Poise"
+                  "desc": "[OnSucceedAttack] Gain 1 [Breath]"
                 }
               ]
             }
@@ -4977,26 +4977,26 @@
         {
           "level": 4,
           "name": "Slash Series",
-          "desc": "[DefeatDuel] Gain 2 Attack Power Up next turn\n[WinDuel] Do not spend Poise Count with critical attacks landed with this skill",
+          "desc": "[DefeatDuel] Gain 2 Attack Power Up next turn\n[WinDuel] Do not spend [Breath] Count with critical attacks landed with this skill",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 1 Poise"
+                  "desc": "[OnSucceedAttack] Gain 1 [Breath]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 1 Poise"
+                  "desc": "[OnSucceedAttack] Gain 1 [Breath]"
                 }
               ]
             }
@@ -5027,7 +5027,7 @@
         {
           "level": 4,
           "name": "To Claim Their Bones",
-          "desc": "At 10+ Poise Count, +150% Critical Damage",
+          "desc": "At 10+ [Breath] Count, +150% Critical Damage",
           "coinlist": [
             {
               "coindescs": [
@@ -5057,7 +5057,7 @@
         {
           "level": 4,
           "name": "Newsprung Counter",
-          "desc": "[WhenUse] Gain 1 Damage Up next turn\n[WhenUse] Gain +3 Poise Count",
+          "desc": "[WhenUse] Gain 1 Damage Up next turn\n[WhenUse] Gain +3 [Breath] Count",
           "coinlist": [
             {}
           ]
@@ -5075,7 +5075,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [Vibration]"
                 }
               ]
             }
@@ -5089,7 +5089,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]"
                 }
               ]
             }
@@ -5103,7 +5103,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]"
                 }
               ]
             }
@@ -5123,7 +5123,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 3 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 3 [Vibration]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 1 Damage Down next turn"
@@ -5141,7 +5141,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 6 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 6 [Vibration]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 2 Damage Down next turn"
@@ -5153,13 +5153,13 @@
         {
           "level": 4,
           "name": "Suppress",
-          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[DefeatDuel] Inflict 6 Tremor",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[DefeatDuel] Inflict 6 [Vibration]",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 6 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 6 [Vibration]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 2 Damage Down next turn"
@@ -5181,7 +5181,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Trigger Tremor Burst"
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 2 Blunt Fragility"
@@ -5198,10 +5198,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Trigger Tremor Burst"
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] If target has 5+ Tremor upon [VibrationExplosion], gain 2 Protection next turn"
+                  "desc": "[OnSucceedAttack] If target has 5+ [Vibration] upon [VibrationExplosion], gain 2 Protection next turn"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 2 Blunt Fragility"
@@ -5244,7 +5244,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [Sinking]"
                 }
               ]
             },
@@ -5259,7 +5259,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 4 Sinking"
+                  "desc": "[OnSucceedAttackHead] Inflict 4 [Sinking]"
                 }
               ]
             },
@@ -5274,7 +5274,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 4 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 4 [Sinking]"
                 }
               ]
             },
@@ -5294,21 +5294,21 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
                 }
               ]
             }
@@ -5322,27 +5322,27 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath]"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttackHead] Gain +1 [Breath] Count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict +1 Sinking Count"
+                  "desc": "[OnSucceedAttackHead] Inflict +1 [Sinking] Count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
                 }
               ]
             }
@@ -5356,27 +5356,27 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 2 Poise"
+                  "desc": "[OnSucceedAttack] Gain 2 [Breath]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttack] Gain +1 [Breath] Count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Sinking Count"
+                  "desc": "[OnSucceedAttack] Inflict +1 [Sinking] Count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
                 }
               ]
             }
@@ -5404,7 +5404,7 @@
         {
           "level": 4,
           "name": "Pañata Party",
-          "desc": "If target's SP is below 0, boost crit chance proportional to target's SP\nIf user has 5+ Poise Count, +30% Critical Damage",
+          "desc": "If target's SP is below 0, boost crit chance proportional to target's SP\nIf user has 5+ [Breath] Count, +30% Critical Damage",
           "coinlist": [
             {
               "coindescs": [
@@ -5431,7 +5431,7 @@
         {
           "level": 4,
           "name": "Evade",
-          "desc": "[OnSucceedEvade] Gain +1 Poise Count",
+          "desc": "[OnSucceedEvade] Gain +1 [Breath] Count",
           "coinlist": [
             {}
           ]
@@ -5595,7 +5595,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 2 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 2 [Breath]"
                 }
               ]
             }
@@ -5609,7 +5609,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain 4 Poise"
+                  "desc": "[OnSucceedAttackHead] Gain 4 [Breath]"
                 }
               ]
             }
@@ -5623,7 +5623,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain 4 Poise"
+                  "desc": "[OnSucceedAttack] Gain 4 [Breath]"
                 }
               ]
             }
@@ -5652,7 +5652,7 @@
         {
           "level": 2,
           "name": "Acupuncture",
-          "desc": "[WinDuel] Gain +1 Poise Count",
+          "desc": "[WinDuel] Gain +1 [Breath] Count",
           "coinlist": [
             {},
             {
@@ -5667,7 +5667,7 @@
         {
           "level": 4,
           "name": "Acupuncture",
-          "desc": "[WinDuel] Gain +2 Poise Count",
+          "desc": "[WinDuel] Gain +2 [Breath] Count",
           "coinlist": [
             {},
             {
@@ -5842,7 +5842,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 5 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 5 [Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 2 Attack Power Down"
@@ -5859,13 +5859,13 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 5 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 5 [Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 2 Attack Power Down"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 4 Sinking"
+                  "desc": "[OnSucceedAttackHead] Inflict 4 [Sinking]"
                 }
               ]
             }
@@ -6899,14 +6899,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Nails"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [NailPersonality]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Bleed"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Laceration]"
                 }
               ]
             }
@@ -6920,14 +6920,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Nails"
+                  "desc": "[OnSucceedAttack] Inflict 1 [NailPersonality]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Bleed"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Laceration]"
                 }
               ]
             }
@@ -6947,14 +6947,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Nails"
+                  "desc": "[OnSucceedAttack] Inflict 3 [NailPersonality]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict Gaze next turn"
+                  "desc": "[OnSucceedAttackHead] Inflict [MarkOfHeresy] next turn"
                 }
               ]
             }
@@ -6969,17 +6969,17 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Nails"
+                  "desc": "[OnSucceedAttack] Inflict 3 [NailPersonality]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Paralyze next turn"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Paralysis] next turn"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict Gaze next turn"
+                  "desc": "[OnSucceedAttack] Inflict [MarkOfHeresy] next turn"
                 }
               ]
             }
@@ -6993,24 +6993,24 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Nails"
+                  "desc": "[OnSucceedAttack] Inflict 2 [NailPersonality]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Nails"
+                  "desc": "[OnSucceedAttack] Inflict 3 [NailPersonality]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Paralyze next turn"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Paralysis] next turn"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict Gaze next turn"
+                  "desc": "[OnSucceedAttack] Inflict [MarkOfHeresy] next turn"
                 }
               ]
             }
@@ -7024,26 +7024,26 @@
         {
           "level": 3,
           "name": "Execution",
-          "desc": "On kill, heal all allies for 10 SP and apply 1 Pierce DMG Up and Blunt DMG Up",
+          "desc": "On kill, heal 10 SP for all allies and apply 1 [PenetrateDamageUp] and [HitDamageUp]",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Nails"
+                  "desc": "[OnSucceedAttack] Inflict 2 [NailPersonality]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Nails"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [NailPersonality]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "+50% Damage to targets with 5+ Nails"
+                  "desc": "Deal +50% damage to targets that have 5+ [NailPersonality]"
                 }
               ]
             }
@@ -7052,26 +7052,26 @@
         {
           "level": 4,
           "name": "Execution",
-          "desc": "On kill, heal all allies for 10 SP and apply 1 Pierce DMG Up and Blunt DMG Up",
+          "desc": "On kill, heal 10 SP for all allies and apply 1 [PenetrateDamageUp] and [HitDamageUp]",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Nails"
+                  "desc": "[OnSucceedAttack] Inflict 2 [NailPersonality]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Nails"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [NailPersonality]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "+70% damage to targets with 5+ Nails"
+                  "desc": "Deal +70% damage to targets that have 5+ [NailPersonality]"
                 }
               ]
             }
@@ -8248,14 +8248,14 @@
                   "desc": "[OnSucceedAttackHead] Inflict 1 Nails"
                 },
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Vibration]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Vibration]"
                 }
               ]
             }
@@ -8272,14 +8272,14 @@
                   "desc": "[OnSucceedAttackHead] Inflict 1 Nails"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]"
                 }
               ]
             }
@@ -8296,14 +8296,14 @@
                   "desc": "[OnSucceedAttackHead] Inflict 2 Nails"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]"
                 }
               ]
             }
@@ -8322,7 +8322,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Trigger Tremor Burst"
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]"
                 }
               ]
             }
@@ -8336,7 +8336,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Trigger Tremor Burst"
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]"
                 },
                 {
                   "desc": "+20% Damage to targets that have 5+ Nails"
@@ -8353,7 +8353,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Trigger Tremor Burst"
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]"
                 },
                 {
                   "desc": "+30% damage to targets that have 5+ Nails"
@@ -8385,7 +8385,7 @@
                   "desc": "[OnSucceedAttackHead] Inflict 1 Nails"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
                 }
               ]
             },
@@ -8398,7 +8398,7 @@
                   "desc": "[OnSucceedAttackHead] If target has 5+ Nails, inflict 2 Paralyze next turn"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
                 }
               ]
             }
@@ -8422,7 +8422,7 @@
                   "desc": "[OnSucceedAttackHead] Inflict 2 Nails"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
                 }
               ]
             },
@@ -8435,7 +8435,7 @@
                   "desc": "[OnSucceedAttackHead] If target has 5+ Nails, inflict 2 Paralyze next turn"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
                 }
               ]
             }
@@ -8467,7 +8467,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Vibration]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Gain +4 Charge Count"
@@ -8477,7 +8477,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict +1 Tremor Count"
+                  "desc": "[OnSucceedAttackHead] Inflict +1 [Vibration] Count"
                 }
               ]
             }
@@ -8491,7 +8491,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Vibration]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Gain +4 Charge Count"
@@ -8501,7 +8501,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
                 }
               ]
             }
@@ -8515,7 +8515,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Vibration]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Gain +4 Charge Count"
@@ -8525,7 +8525,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
                 }
               ]
             }
@@ -8544,15 +8544,15 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Tremor\nAt 3+ Charge Count, reuse this Coin if it lands Heads (Up to 2 times)\nIf the Coin is reused twice, inflict Tremor, then trigger Tremor Burst\nAfter Tremor Burst, reduce Tremor Count by 1",
-                  "summary": "[OnSucceedAttack] Trigger Tremor Burst.\nReuse Coin if conditions are met; Inflict +2 Tremor if reused.\nIf the Coin is reused twice, trigger Tremor Burst, then reduce Tremor Count"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]\nAt 3+ Charge Count, reuse this Coin if it lands Heads (Up to 2 times)\nIf the Coin is reused twice, inflict [Vibration], then trigger [VibrationExplosion]\nAfter [VibrationExplosion], reduce [Vibration] Count by 1",
+                  "summary": "[OnSucceedAttack] Trigger [VibrationExplosion].\nReuse Coin if conditions are met; Inflict +2 [Vibration] if reused.\nIf the Coin is reused twice, trigger [VibrationExplosion], then reduce [Vibration] Count"
                 }
               ]
             }
@@ -8566,15 +8566,15 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Tremor\nAt 3+ Charge Count, reuse this Coin if it lands Heads (Up to 2 times)\nInflict 2 more Tremor each time the Coin is reused\nIf the Coin is reused twice, inflict Tremor, then trigger Tremor Burst\nAfter Tremor Burst, reduce Tremor Count by 1",
-                  "summary": "[OnSucceedAttack] Trigger Tremor Burst.\nReuse Coin if conditions are met; Inflict +2 Tremor if reused.\nIf the Coin is reused twice, trigger Tremor Burst, then reduce Tremor Count"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]\nAt 3+ Charge Count, reuse this Coin if it lands Heads (Up to 2 times)\nInflict 2 more [Vibration] each time the Coin is reused\nIf the Coin is reused twice, inflict [Vibration], then trigger [VibrationExplosion]\nAfter [VibrationExplosion], reduce [Vibration] Count by 1",
+                  "summary": "[OnSucceedAttack] Trigger [VibrationExplosion].\nReuse Coin if conditions are met; Inflict +2 [Vibration] if reused.\nIf the Coin is reused twice, trigger [VibrationExplosion], then reduce [Vibration] Count"
                 }
               ]
             }
@@ -8583,20 +8583,20 @@
         {
           "level": 4,
           "name": "Vibration Compression",
-          "desc": "If target has 10+ Tremor Count, Coin Power +1",
+          "desc": "If target has 10+ [Vibration] Count, Coin Power +1",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Tremor\nAt 3+ Charge Count, reuse this Coin if it lands Heads (Up to 2 times)\nInflict 2 more Tremor each time the Coin is reused\nIf the Coin is reused twice, inflict Tremor, then trigger Tremor Burst\nAfter Tremor Burst, reduce Tremor Count by 1",
-                  "summary": "[OnSucceedAttack] Trigger Tremor Burst\nReuse Coin if conditions are met; Inflict +2 Tremor if reused.\nIf the Coin is reused twice, trigger Tremor Burst, then reduce Tremor Count"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]\nAt 3+ Charge Count, reuse this Coin if it lands Heads (Up to 2 times)\nInflict 2 more [Vibration] each time the Coin is reused\nIf the Coin is reused twice, inflict [Vibration], then trigger [VibrationExplosion]\nAfter [VibrationExplosion], reduce [Vibration] Count by 1",
+                  "summary": "[OnSucceedAttack] Trigger [VibrationExplosion]\nReuse Coin if conditions are met; Inflict +2 [Vibration] if reused.\nIf the Coin is reused twice, trigger [VibrationExplosion], then reduce [Vibration] Count"
                 }
               ]
             }
@@ -8615,24 +8615,24 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +2 Tremor Count"
+                  "desc": "[OnSucceedAttack] Inflict +2 [Vibration] Count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [Vibration]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Trigger Tremor Burst.\nAfter Tremor Burst, reduce Tremor Count by 1"
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion].\nAfter [VibrationExplosion], reduce [Vibration] Count by 1"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Trigger Tremor Burst.\nAfter Tremor Burst, reduce Tremor Count by 1"
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion].\nAfter [VibrationExplosion], reduce [Vibration] Count by 1"
                 },
                 {
                   "desc": "[OnSucceedAttack] If target is Staggered, deal 25% of damage dealt as bonus damage"
@@ -8667,7 +8667,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]"
                 }
               ]
             }
@@ -8681,10 +8681,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [Vibration]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]"
                 }
               ]
             }
@@ -8693,15 +8693,15 @@
         {
           "level": 4,
           "name": "Saddled Tasks",
-          "desc": "If target has 5+ Tremor Count, Coin Power +2",
+          "desc": "If target has 5+ [Vibration] Count, Coin Power +2",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [Vibration]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]"
                 }
               ]
             }
@@ -8720,7 +8720,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 3 [Vibration]"
                 }
               ]
             },
@@ -8741,10 +8741,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [Vibration]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 3 [Vibration]"
                 }
               ]
             },
@@ -8760,15 +8760,15 @@
         {
           "level": 4,
           "name": "Forced Break",
-          "desc": "If target has 7+ Tremor Count, Final Power +1",
+          "desc": "If target has 7+ [Vibration] Count, Final Power +1",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [Vibration]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 3 [Vibration]"
                 }
               ]
             },
@@ -8797,7 +8797,7 @@
                   "desc": "[OnSucceedAttackHead] Gain +1 Charge Count"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]"
                 }
               ]
             },
@@ -8807,7 +8807,7 @@
                   "desc": "[OnSucceedAttackHead] Gain +2 Charge Count"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]"
                 }
               ]
             },
@@ -8817,15 +8817,15 @@
                   "desc": "[OnSucceedAttackHead] Gain +2 Charge Count"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 3 [Vibration]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]\nWhen triggering [VibrationExplosion], reduce Tremor Count by 3, then spend all Charge Count to further raise Stagger Threshold by (Charge Count x 5)% (Max 50%)",
-                  "summary": "[OnSucceedAttack] Trigger [VibrationExplosion], then reduce Tremor Count by 3; Spend Charge Count to further raise Stagger Threshold"
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]\nWhen triggering [VibrationExplosion], reduce [Vibration] Count by 3, then spend all Charge Count to further raise Stagger Threshold by (Charge Count x 5)% (Max 50%)",
+                  "summary": "[OnSucceedAttack] Trigger [VibrationExplosion], then reduce [Vibration] Count by 3; Spend Charge Count to further raise Stagger Threshold"
                 }
               ]
             }
@@ -8834,7 +8834,7 @@
         {
           "level": 4,
           "name": "Finishing Runup",
-          "desc": "If target has 10+ Tremor Count, Coin Power +1",
+          "desc": "If target has 10+ [Vibration] Count, Coin Power +1",
           "coinlist": [
             {
               "coindescs": [
@@ -8842,7 +8842,7 @@
                   "desc": "[OnSucceedAttackHead] Gain +1 Charge Count"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]"
                 }
               ]
             },
@@ -8852,7 +8852,7 @@
                   "desc": "[OnSucceedAttackHead] Gain +2 Charge Count"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]"
                 }
               ]
             },
@@ -8862,15 +8862,15 @@
                   "desc": "[OnSucceedAttackHead] Gain +2 Charge Count"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 3 [Vibration]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]\nWhen triggering [VibrationExplosion], reduce Tremor Count by 3, then spend all Charge Count to further raise Stagger Threshold by (Charge Count x 5)% (Max 50%)",
-                  "summary": "[OnSucceedAttack] Trigger [VibrationExplosion], then reduce Tremor Count by 3; Spend Charge Count to further raise Stagger Threshold"
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]\nWhen triggering [VibrationExplosion], reduce [Vibration] Count by 3, then spend all Charge Count to further raise Stagger Threshold by (Charge Count x 5)% (Max 50%)",
+                  "summary": "[OnSucceedAttack] Trigger [VibrationExplosion], then reduce [Vibration] Count by 3; Spend Charge Count to further raise Stagger Threshold"
                 }
               ]
             }
@@ -8936,7 +8936,7 @@
                   "desc": "[OnSucceedAttack] Inflict 2 Rupture"
                 },
                 {
-                  "desc": "[OnSucceedAttack] If target has 5+ Tremor Count, inflict 3 Rupture"
+                  "desc": "[OnSucceedAttack] If target has 5+ [Vibration] Count, inflict 3 Rupture"
                 }
               ]
             }
@@ -8955,7 +8955,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +2 Tremor Count"
+                  "desc": "[OnSucceedAttack] Inflict +2 [Vibration] Count"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict +1 Rupture Count"
@@ -8972,7 +8972,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +2 Tremor Count"
+                  "desc": "[OnSucceedAttack] Inflict +2 [Vibration] Count"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict +1 Rupture Count"
@@ -8989,7 +8989,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +2 Tremor Count"
+                  "desc": "[OnSucceedAttack] Inflict +2 [Vibration] Count"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict +2 Rupture Count"
@@ -9011,7 +9011,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Trigger Tremor Burst, then reduce Tremor Count by 2 and consume up to 4 Charge Count on self to inflict Rupture Count equal to Charge Count consumed"
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion], then reduce [Vibration] Count by 2 and consume up to 4 Charge Count on self to inflict Rupture Count equal to Charge Count consumed"
                 }
               ]
             },
@@ -9040,12 +9040,12 @@
         {
           "level": 4,
           "name": "Let's Grind 'Em",
-          "desc": "If target has 5+ Tremor Count, Coin Power +1",
+          "desc": "If target has 5+ [Vibration] Count, Coin Power +1",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Trigger Tremor Burst, then reduce Tremor Count by 2 and consume up to 4 Charge Count on self to inflict Rupture Count equal to Charge Count consumed"
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion], then reduce [Vibration] Count by 2 and consume up to 4 Charge Count on self to inflict Rupture Count equal to Charge Count consumed"
                 }
               ]
             },
@@ -9058,7 +9058,7 @@
                   "desc": "[OnSucceedAttack] If target is Staggered, deal +10% damage"
                 },
                 {
-                  "desc": "[OnSucceedAttack] If target has 5+ Tremor Count, inflict 3 Rupture"
+                  "desc": "[OnSucceedAttack] If target has 5+ [Vibration] Count, inflict 3 Rupture"
                 }
               ]
             },
@@ -9071,7 +9071,7 @@
                   "desc": "[OnSucceedAttack] If target is Staggered, deal +10% damage"
                 },
                 {
-                  "desc": "[OnSucceedAttack] If target has 5+ Tremor Count, inflict 3 Rupture"
+                  "desc": "[OnSucceedAttack] If target has 5+ [Vibration] Count, inflict 3 Rupture"
                 }
               ]
             }
@@ -9098,17 +9098,17 @@
         {
           "level": 1,
           "name": "Umbrella Thwack",
-          "desc": "[WhenUse] Gain +1 Sinking Count",
+          "desc": "[WhenUse] Gain +1 [Sinking] Count",
           "coinlist": [
             {},
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Sinking]"
                 },
                 {
-                  "desc": "[OnSucceedAttackTail] Inflict +1 Sinking Count"
+                  "desc": "[OnSucceedAttackTail] Inflict +1 [Sinking] Count"
                 }
               ]
             }
@@ -9117,17 +9117,17 @@
         {
           "level": 2,
           "name": "Umbrella Thwack",
-          "desc": "[WhenUse] Gain +1 Sinking Count",
+          "desc": "[WhenUse] Gain +1 [Sinking] Count",
           "coinlist": [
             {},
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
                 },
                 {
-                  "desc": "[OnSucceedAttackTail] Inflict +2 Sinking Count"
+                  "desc": "[OnSucceedAttackTail] Inflict +2 [Sinking] Count"
                 }
               ]
             }
@@ -9136,17 +9136,17 @@
         {
           "level": 4,
           "name": "Umbrella Thwack",
-          "desc": "[WhenUse] Gain +1 Sinking Count\n[DefeatDuel] Gain 3 Sinking",
+          "desc": "[WhenUse] Gain +1 [Sinking] Count\n[DefeatDuel] Gain 3 [Sinking]",
           "coinlist": [
             {},
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking]"
                 },
                 {
-                  "desc": "[OnSucceedAttackTail] Inflict +2 Sinking Count"
+                  "desc": "[OnSucceedAttackTail] Inflict +2 [Sinking] Count"
                 }
               ]
             }
@@ -9180,7 +9180,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackTail] Trigger Tremor Burst"
+                  "desc": "[OnSucceedAttackTail] Trigger [VibrationExplosion]"
                 }
               ]
             }
@@ -9209,10 +9209,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "Spend 5 Sinking to deal +20% damage"
+                  "desc": "Spend 5 [Sinking] to deal +20% damage"
                 },
                 {
-                  "desc": "[OnSucceedAttackTail] Trigger Tremor Burst"
+                  "desc": "[OnSucceedAttackTail] Trigger [VibrationExplosion]"
                 }
               ]
             }
@@ -9241,10 +9241,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "Spend 5 Sinking to deal +20% damage"
+                  "desc": "Spend 5 [Sinking] to deal +20% damage"
                 },
                 {
-                  "desc": "[OnSucceedAttackTail] Trigger Tremor Burst"
+                  "desc": "[OnSucceedAttackTail] Trigger [VibrationExplosion]"
                 }
               ]
             }
@@ -9258,7 +9258,7 @@
         {
           "level": 1,
           "name": "Spread Out!",
-          "desc": "[WhenUse] Gain 6 Sinking and +3 Sinking Count",
+          "desc": "[WhenUse] Gain 6 [Sinking] and +3 [Sinking] Count",
           "coinlist": [
             {
               "coindescs": [
@@ -9288,7 +9288,7 @@
         {
           "level": 1,
           "name": "Warning",
-          "desc": "[WhenUse] Gain 3 Sinking",
+          "desc": "[WhenUse] Gain 3 [Sinking]",
           "coinlist": [
             {
               "coindescs": [
@@ -9300,7 +9300,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 5 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 5 [Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 5 Rupture"
@@ -9312,7 +9312,7 @@
         {
           "level": 4,
           "name": "Warning",
-          "desc": "[WhenUse] Gain 5 Sinking",
+          "desc": "[WhenUse] Gain 5 [Sinking]",
           "coinlist": [
             {
               "coindescs": [
@@ -9324,7 +9324,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 5 Sinking"
+                  "desc": "[OnSucceedAttack] Inflict 5 [Sinking]"
                 },
                 {
                   "desc": "[OnSucceedAttack] Inflict 5 Rupture"
@@ -9341,20 +9341,20 @@
         {
           "level": 1,
           "name": "Sprouting Bud",
-          "desc": "[WhenUse] Gain +2 Tremor Count",
+          "desc": "[WhenUse] Gain +2 [Vibration] Count",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict +1 Sinking Count next turn"
+                  "desc": "[OnSucceedAttackHead] Inflict +1 [Sinking] Count next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict +1 Sinking Count next turn"
+                  "desc": "[OnSucceedAttackHead] Inflict +1 [Sinking] Count next turn"
                 }
               ]
             }
@@ -9363,20 +9363,20 @@
         {
           "level": 2,
           "name": "Sprouting Bud",
-          "desc": "[WhenUse] Gain +3 Tremor Count",
+          "desc": "[WhenUse] Gain +3 [Vibration] Count",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Sinking Count next turn"
+                  "desc": "[OnSucceedAttack] Inflict +1 [Sinking] Count next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Sinking Count next turn"
+                  "desc": "[OnSucceedAttack] Inflict +1 [Sinking] Count next turn"
                 }
               ]
             }
@@ -9385,20 +9385,20 @@
         {
           "level": 4,
           "name": "Sprouting Bud",
-          "desc": "[WhenUse] Gain +3 Tremor Count",
+          "desc": "[WhenUse] Gain +3 [Vibration] Count",
           "coinlist": [
             {},
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Sinking Count next turn"
+                  "desc": "[OnSucceedAttack] Inflict +1 [Sinking] Count next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +2 Sinking Count next turn"
+                  "desc": "[OnSucceedAttack] Inflict +2 [Sinking] Count next turn"
                 }
               ]
             }
@@ -9412,26 +9412,26 @@
         {
           "level": 1,
           "name": "Moment's Floral Breeze",
-          "desc": "[StartBattle] Spend 6 Tremor Count to turn this into an AoE skill with 3 Atk Weight",
+          "desc": "[StartBattle] Consume 6 [Vibration] Count on self to turn this into an AoE skill with 3 Atk Weight",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Sinking next turn"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [Sinking] next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Sinking next turn"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [Sinking] next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Sinking next turn"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [Sinking] next turn"
                 }
               ]
             }
@@ -9440,26 +9440,26 @@
         {
           "level": 2,
           "name": "Moment's Floral Breeze",
-          "desc": "[StartBattle] Spend 6 Tremor Count to turn this into an AoE skill with 3 Atk Weight",
+          "desc": "[StartBattle] Consume 6 [Vibration] Count on self to turn this into an AoE skill with 3 Atk Weight",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking next turn"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking] next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking next turn"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking] next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking next turn"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking] next turn"
                 }
               ]
             }
@@ -9468,26 +9468,26 @@
         {
           "level": 4,
           "name": "Moment's Floral Breeze",
-          "desc": "[StartBattle] Spend 6 Tremor Count to turn this into an AoE skill with 3 Atk Weight\nIf main target has 6+ Sinking Count, Coin Power +1",
+          "desc": "[StartBattle] Consume 6 [Vibration] Count on self to turn this into an AoE skill with 3 Atk Weight\nIf main target has 6+ [Sinking] Count, Coin Power +1",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking next turn"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking] next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking next turn"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking] next turn"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Sinking next turn"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Sinking] next turn"
                 }
               ]
             }
@@ -9501,29 +9501,29 @@
         {
           "level": 1,
           "name": "Bloodsteeped Scent",
-          "desc": "[DefeatDuel] Lose 20 SP\n[WhenUse] Gain 6 Tremor Count",
+          "desc": "[DefeatDuel] Lose 20 SP\n[WhenUse] Gain +6 [Vibration] Count",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Sinking Count"
+                  "desc": "[OnSucceedAttack] Inflict +1 [Sinking] Count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Sinking Count"
+                  "desc": "[OnSucceedAttack] Inflict +1 [Sinking] Count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] If target has 6+ [Sinking], cause Sinking Deluge"
+                  "desc": "[OnSucceedAttack] If target has 6+ [Sinking], cause [SinkingSurge]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] If user has 10+ Tremor Count, deal 30% of damage dealt as bonus damage"
+                  "desc": "[OnSucceedAttack] If this unit has 10+ [Vibration] Count, deal 30% of damage dealt as bonus damage"
                 }
               ]
             }
@@ -9532,29 +9532,29 @@
         {
           "level": 4,
           "name": "Bloodsteeped Scent",
-          "desc": "[DefeatDuel] Lose 20 SP\n[WhenUse] Gain 6 Tremor Count",
+          "desc": "[DefeatDuel] Lose 20 SP\n[WhenUse] Gain +6 [Vibration] Count",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Sinking Count"
+                  "desc": "[OnSucceedAttack] Inflict +1 [Sinking] Count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Sinking Count"
+                  "desc": "[OnSucceedAttack] Inflict +1 [Sinking] Count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] If target has 6+ [Sinking], cause Sinking Deluge"
+                  "desc": "[OnSucceedAttack] If target has 6+ [Sinking], cause [SinkingSurge]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] If user has 10+ Tremor Count, deal 40% of damage dealt as bonus damage"
+                  "desc": "[OnSucceedAttack] If this unit has 10+ [Vibration] Count, deal 40% of damage dealt as bonus damage"
                 }
               ]
             }
@@ -9568,7 +9568,7 @@
         {
           "level": 1,
           "name": "Scattering Aroma",
-          "desc": "[OnSucceedEvade] Inflict 1 Sinking",
+          "desc": "[OnSucceedEvade] Inflict 1 [Sinking]",
           "coinlist": [
             {}
           ]
@@ -9586,7 +9586,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict +1 Tremor Count"
+                  "desc": "[OnSucceedAttackHead] Inflict +1 [Vibration] Count"
                 }
               ]
             }
@@ -9600,10 +9600,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Vibration]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
                 }
               ]
             }
@@ -9612,15 +9612,15 @@
         {
           "level": 4,
           "name": "It's Heavy...!",
-          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[DefeatDuel] Inflict 2 Tremor and 2 Rupture",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[DefeatDuel] Inflict 2 [Vibration] and 2 Rupture",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Vibration]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Inflict +1 Tremor Count"
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count"
                 }
               ]
             }
@@ -9639,14 +9639,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 1 [Vibration]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttackHead] Inflict 2 [Vibration]"
                 }
               ]
             }
@@ -9660,14 +9660,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]"
                 }
               ]
             }
@@ -9676,19 +9676,19 @@
         {
           "level": 4,
           "name": "It's Churning...!",
-          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[DefeatDuel] Inflict 3 Tremor and 3 Rupture",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[DefeatDuel] Inflict 3 [Vibration] and 3 Rupture",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 1 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 2 Tremor"
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]"
                 }
               ]
             }
@@ -9707,7 +9707,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Trigger Tremor Burst\nAfter triggering Tremor Burst, reduce Tremor Count by 4. Inflict 5 Rupture"
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]\nAfter triggering [VibrationExplosion], reduce [Vibration] Count by 4. Inflict 5 Rupture"
                 }
               ]
             }
@@ -9716,12 +9716,12 @@
         {
           "level": 4,
           "name": "Corrosive Splash",
-          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[DefeatDuel] Inflict 5 Tremor and 5 Rupture",
+          "desc": "[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[DefeatDuel] Inflict 5 [Vibration] and 5 Rupture",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Trigger Tremor Burst\nAfter triggering Tremor Burst, reduce Tremor Count by 4. Inflict 5 Rupture"
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]\nAfter triggering [VibrationExplosion], reduce [Vibration] Count by 4. Inflict 5 Rupture"
                 }
               ]
             }
@@ -10621,14 +10621,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttackHead] Gain +1 [Breath] Count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttackHead] Gain +1 [Breath] Count"
                 }
               ]
             }
@@ -10642,14 +10642,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttackHead] Gain +1 [Breath] Count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttack] Gain +1 [Breath] Count"
                 }
               ]
             }
@@ -10658,19 +10658,19 @@
         {
           "level": 4,
           "name": "Careful Obstruction",
-          "desc": "[WhenUse] Gain +2 Aggro to this Skill Slot next turn\n[DefeatDuel] Gain +2 Poise Count",
+          "desc": "[WhenUse] Gain +2 Aggro to this Skill Slot next turn\n[DefeatDuel] Gain +2 [Breath] Count",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttack] Gain +1 [Breath] Count"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +1 Poise Count"
+                  "desc": "[OnSucceedAttack] Gain +1 [Breath] Count"
                 }
               ]
             }
@@ -10684,7 +10684,7 @@
         {
           "level": 1,
           "name": "Focused Defense",
-          "desc": "[WhenUse] At 15+ Shield, gain +2 Poise Count",
+          "desc": "[WhenUse] At 15+ Shield, gain +2 [Breath] Count",
           "coinlist": [
             {}
           ]
@@ -10692,12 +10692,12 @@
         {
           "level": 2,
           "name": "Focused Defense",
-          "desc": "[WhenUse] At 15+ Shield, gain +2 Poise Count",
+          "desc": "[WhenUse] At 15+ Shield, gain +2 [Breath] Count",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +2 Poise Count"
+                  "desc": "[OnSucceedAttack] Gain +2 [Breath] Count"
                 }
               ]
             },
@@ -10707,12 +10707,12 @@
         {
           "level": 4,
           "name": "Focused Defense",
-          "desc": "[WhenUse] At 15+ Shield, gain +2 Poise Count\n[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[WhenUse] Gain +2 Poise Count",
+          "desc": "[WhenUse] At 15+ Shield, gain +2 [Breath] Count\n[WhenUse] Gain +4 Aggro to this Skill Slot next turn\n[WhenUse] Gain +2 [Breath] Count",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Gain +2 Poise Count"
+                  "desc": "[OnSucceedAttack] Gain +2 [Breath] Count"
                 }
               ]
             },
@@ -11198,7 +11198,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 3 [Burst]"
                 }
               ]
             }
@@ -11219,7 +11219,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 3 [Burst]"
                 }
               ]
             }
@@ -11228,7 +11228,7 @@
         {
           "level": 4,
           "name": "Predictive Analysis",
-          "desc": "Coin Power +1 for every 3 Rupture on target (Max 2)",
+          "desc": "Coin Power +1 for every 3 [Burst] on target (max 2)",
           "coinlist": [
             {
               "coindescs": [
@@ -11240,7 +11240,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 3 [Burst]"
                 }
               ]
             }
@@ -11259,7 +11259,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttackHead] Inflict 3 Rupture"
+                  "desc": "[OnSucceedAttackHead] Inflict 3 [Burst]"
                 }
               ]
             },
@@ -11267,7 +11267,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] If target has 6+ <sprite name=\"Burst\"><color=#e30000><u><link=\"Burst\">Rupture</color></link></u>, inflict Weakness Analyzed next turn"
+                  "desc": "[OnSucceedAttack] If target has 6+ <sprite name=\"Burst\"><color=#e30000><u><link=\"Burst\">Rupture</color></link></u>, inflict [WeaknessAnalysis] next turn"
                 }
               ]
             }
@@ -11276,12 +11276,12 @@
         {
           "level": 2,
           "name": "Dissect Target",
-          "desc": "If target has 6+ <sprite name=\"Burst\"><color=#e30000><u><link=\"Burst\">Rupture</color></link></u>, Coin Power +1\n[WinDuel] Inflict +3 Rupture Count",
+          "desc": "If target has 6+ <sprite name=\"Burst\"><color=#e30000><u><link=\"Burst\">Rupture</color></link></u>, Coin Power +1\n[WinDuel] Inflict +3 [Burst] Count",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 3 [Burst]"
                 }
               ]
             },
@@ -11289,7 +11289,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] If target has 6+ <sprite name=\"Burst\"><color=#e30000><u><link=\"Burst\">Rupture</color></link></u>, inflict Weakness Analyzed next turn"
+                  "desc": "[OnSucceedAttack] If target has 6+ <sprite name=\"Burst\"><color=#e30000><u><link=\"Burst\">Rupture</color></link></u>, inflict [WeaknessAnalysis] next turn"
                 }
               ]
             }
@@ -11298,12 +11298,12 @@
         {
           "level": 4,
           "name": "Dissect Target",
-          "desc": "Coin Power +1 for every 6 Rupture on target (Max 2)\n[WinDuel] Inflict +3 Rupture Count",
+          "desc": "Coin Power +1 for every 6 [Burst] on target (max 2)\n[WinDuel] Inflict +3 [Burst] Count",
           "coinlist": [
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 3 [Burst]"
                 }
               ]
             },
@@ -11311,7 +11311,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] If target has 6+ <sprite name=\"Burst\"><color=#e30000><u><link=\"Burst\">Rupture</color></link></u>, inflict Weakness Analyzed next turn"
+                  "desc": "[OnSucceedAttack] If target has 6+ <sprite name=\"Burst\"><color=#e30000><u><link=\"Burst\">Rupture</color></link></u>, inflict [WeaknessAnalysis] next turn"
                 }
               ]
             }
@@ -11325,7 +11325,7 @@
         {
           "level": 3,
           "name": "Profiling",
-          "desc": "Deal +10% damage for every 3 Rupture on target (Max 20%)",
+          "desc": "Deal +10% damage for every 3 [Burst] on target (max 20%)",
           "coinlist": [
             {
               "coindescs": [
@@ -11344,7 +11344,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[EndSkill] If target is Staggered or defeated, gain 1 Haste, 1 Slash Power Up next turn"
+                  "desc": "[EndSkill] If target is Staggered or defeated, gain 1 [Agility], 1 [SlashResultUp] next turn"
                 }
               ]
             }
@@ -11353,7 +11353,7 @@
         {
           "level": 4,
           "name": "Profiling",
-          "desc": "Deal +10% damage for every 3 Rupture on target (Max 50%)\n[WinDuel] Inflict +2 Rupture Count",
+          "desc": "Deal +10% damage for every 3 [Burst] on target (max 50%)\n[WinDuel] Inflict +2 [Burst] Count",
           "coinlist": [
             {
               "coindescs": [
@@ -11365,14 +11365,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] Inflict 3 Rupture"
+                  "desc": "[OnSucceedAttack] Inflict 3 [Burst]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[EndSkill] If target is Staggered or defeated, gain 1 Haste, 1 Slash Power Up next turn"
+                  "desc": "[EndSkill] If target is Staggered or defeated, gain 1 [Agility], 1 [SlashResultUp] next turn"
                 }
               ]
             }
@@ -11386,7 +11386,7 @@
         {
           "level": 1,
           "name": "Let's Wrap It Up",
-          "desc": "[WhenUse] Gain 1 Haste next turn (3 times per turn)",
+          "desc": "[WhenUse] Gain 1 [Agility] next turn (3 times per turn)",
           "coinlist": [
             {
               "coindescs": [
@@ -11400,7 +11400,7 @@
         {
           "level": 4,
           "name": "Let's Wrap It Up",
-          "desc": "[WhenUse] Gain 1 Haste next turn (3 times per turn)",
+          "desc": "[WhenUse] Gain 1 [Agility] next turn (3 times per turn)",
           "coinlist": [
             {
               "coindescs": [
