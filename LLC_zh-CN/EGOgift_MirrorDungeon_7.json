@@ -223,7 +223,7 @@
     {
       "id": 29219,
       "name": "万能工具++",
-      "desc": "相同攻击类型的技能命中敌方单位<style=\"upgradeHighlight\">6次</style>敌方单位时，使其对应类型的物理抗性+0.1(若是异想体，则改为所有部位，每场战斗每个敌方单位最多3次，该效果不会使敌方单位的抗性高于2.0)",
+      "desc": "相同攻击类型的技能命中敌方单位<style=\"upgradeHighlight\">6次</style>时，使其对应类型的物理抗性+0.1(若是异想体，则改为所有部位，每场战斗每个敌方单位最多3次，该效果不会使敌方单位的抗性高于2.0)",
       "simpleDesc": [
         {
           "abilityID": 29219,
@@ -476,6 +476,77 @@
       "desc": "全体友方单位的加算硬币技能的硬币威力+(8/硬币数)，减算硬币技能的最终威力+(8/硬币数)(最少+1，包括E.G.O技能，向下取整)\n\n属于环指的人格使用基础攻击技能时，根据目标带有的负面状态数获得以下效果\n- 不少于2种：拼点威力+2\n- 不少于4种：造成的伤害+15%\n- 不少于6种：硬币效果增加的负面状态强度与施加的负面状态层数额外+1\n- 不少于7种：基础威力+2\n- 不少于8种：造成的伤害+35%",
       "simpleDesc": [
         {}
+      ]
+    },
+    {
+      "id": 9250,
+      "name": "量产型K公司安瓿",
+      "desc": "[第1顺位人格专属]\n关卡开始时，使自身获得1层[KAmpouleMirror]",
+      "simpleDesc": [
+        {}
+      ]
+    },
+    {
+      "id": 9251,
+      "name": "燃烧的命运",
+      "desc": "与带有[Combustion]的目标拼点胜利时，以(20+(暴怒共鸣数×10))%的概率触发目标的[Combustion]1次，并使目标的[Combustion]层数减少1层(每回合最多4次)\n- 若目标的[Combustion]强度不低于90级，则100%概率触发以上效果(若是集中遭遇战，则改为以部位判定)",
+      "simpleDesc": [
+        {}
+      ]
+    },
+    {
+      "id": 9252,
+      "name": "钉与锤",
+      "desc": "属于N公司狂信徒的友方单位基础威力+3\n\n属于N公司狂信徒的人格获得[AssemblePersonality]时，使全体属于N公司狂信徒的人格获得相应层数的[AssemblePersonality](每回合最多1次；包括自身)\n- 激活色欲完全共鸣时，令获得的[AssemblePersonality]层数变为3倍\n\n关卡开始时，对全体敌方单位施加2层[NailPersonality]\n\n属于N公司狂信徒的人格的基础技能与带有[NailPersonality]的目标进行拼点时，使该目标增加3级[Laceration]强度(每个技能最多1次)\n\n属于N公司狂信徒的人格的基础技能对带有[NailPersonality]的目标造成的伤害+100%",
+      "simpleDesc": [
+        {}
+      ]
+    },
+    {
+      "id": 9253,
+      "name": "旋转木马模型",
+      "desc": "首个回合开始时，获得300层[BloodDinner]\n令[Laceration]效果生成的[BloodDinner]变为2倍\n使用消耗[BloodDinner]的技能时，在该技能攻击后额外消耗相应层数的[BloodDinner]\n\n[属于拉·曼却领的人格专属]\n属于拉·曼却领的人格参战时，根据人格触发以下效果\n- 拉·曼却领 总督 堂吉诃德：获得15层[BloodArmorPersonalityFirst]\n- 拉·曼却领 公主 罗佳：获得15层[BloomingThornsRodionFirst]\n- 拉·曼却领 神父 格里高尔：获得15层[BloodyHandGregFirst]\n- 拉·曼却领 理发师 奥提斯：获得15层[BloodScissorPersonalityFirst]\n- 拉·曼却领 王子 默尔索：获得3层[BloodArmorMeursault]\n\n[拉·曼却领 总督 堂吉诃德专属]\n- 除自身以外每有1名属于拉·曼却领的人格，使拉·曼却领 总督 堂吉诃德的基础技能的最终威力+1，造成的伤害+30%(最多+4；最多+120%；包括待命人员，包括阵亡的单位，不包括未编入的单位)",
+      "simpleDesc": [
+        {}
+      ]
+    },
+    {
+      "id": 9254,
+      "name": "再来一杯！",
+      "desc": "消耗[Vibration]层数或[Charge]层数的基础技能造成的伤害+20%(包括特殊<noparse>充能</noparse>，不包括固定强度的特殊<noparse>充能</noparse>)\n\n通过基础技能消耗[Vibration]层数或[Charge]层数时，该技能结束时对自身重新施加相当于消耗层数一半的[Vibration]层数或[Charge]层数(最少1层，向下取整；包括特殊<noparse>充能</noparse>，不包括固定强度的特殊<noparse>充能</noparse>)",
+      "simpleDesc": [
+        {}
+      ]
+    },
+    {
+      "id": 9255,
+      "name": "拍手啪啪！",
+      "desc": "使敌方单位增加[Vibration]强度，对敌方单位施加[Vibration]层数或对敌方单位施加特殊<noparse>震颤</noparse>的基础技能拼点胜利时，随机使目标以以下的特殊<noparse>震颤</noparse>[FusionVibration](每回合最多1次)\n- [VibrationIgnition]\n- [VibrationBleeding]\n- [VibrationEcho]\n- [VibrationCollapse]\n- [VibrationChainPersonality]",
+      "simpleDesc": [
+        {}
+      ]
+    },
+    {
+      "id": 9273,
+      "name": "赤红纠缠的蜘蛛巢",
+      "desc": "每有1名友方人格阵亡，使全体友方单位增加1级攻击等级与1级防御等级(最多10级)\n\n编入蜘蛛巢之刃 良秀时，除蜘蛛巢之刃 良秀以外的人格阵亡时不会在通过关卡后复活(头目与隐藏节点)\n\n[第1顺位人格专属]\n\n回合开始时，若除自身以外的全体友方单位均阵亡，则使自身获得[RedButterfly]\n\n[蜘蛛巢之刃 良秀专属]\n\n自身在战斗中首次登场时，每有1名属于蜘蛛巢的友方人格阵亡，使自身获得5层[PhantomIncisionTotalID]\n每有2名属于蜘蛛巢的友方人格阵亡，使自身的最终威力+1，硬币威力+1，造成的伤害+10%(分别最多+3与+30%)\n除蜘蛛巢之刃 良秀以外的全体友方单位均阵亡时，所有选项变动值+12",
+      "simpleDesc": [
+        {
+          "abilityID": 9273,
+          "simpleDesc": "增加攻击等级与防御等级"
+        },
+        {
+          "abilityID": 92731,
+          "simpleDesc": "获得[RedButterfly]"
+        },
+        {
+          "abilityID": 92732,
+          "simpleDesc": "获得[PhantomIncisionTotalID]"
+        },
+        {
+          "abilityID": 92733,
+          "simpleDesc": "最终威力，硬币威力与造成的伤害增加"
+        }
       ]
     }
   ]

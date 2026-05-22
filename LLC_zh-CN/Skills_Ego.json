@@ -864,6 +864,24 @@
               ]
             }
           ]
+        },
+        {
+          "level": 5,
+          "name": "终末火柴之光",
+          "abName": "焦化少女",
+          "desc": "若目标带有[Combustion]，则使本技能威力+2\n<style=\"highlight\">[BeforeAttack] 全体攻击目标的[Combustion]强度之和每有1级</style>，使本技能造成的伤害+5%(最多+100%)\n[EnemyKill] 下回合使自身获得2层[Enhancement]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] <style=\"highlight\">对目标造成本硬币最终伤害量(其[Combustion]强度×2)%的暴怒伤害(最多20%)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Combustion]强度<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -910,6 +928,27 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] 使目标增加4级烧伤 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "终末火柴之光",
+          "abName": "焦化少女",
+          "desc": "[CantIdentify]\n随机指定目标\n若目标带有[Combustion]，则使本技能威力+4\n<style=\"highlight\">[BeforeAttack] 全体攻击目标的[Combustion]强度之和每有1级</style>，使本技能造成的伤害+5%(最多+100%)\n<style=\"highlight\">[DefeatDuel] 使本技能的基础威力-16</style>\n[EnemyKill] 下回合使自身获得3层[Enhancement]\n[EnemyKillFail] 下回合使自身获得3层[Enhancement]并使自身增加10级[Combustion]强度",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[SuperCoin]</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] <style=\"highlight\">对目标造成本硬币最终伤害量(其[Combustion]强度×3)%的暴怒伤害(最多30%)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Combustion]强度<style=\"highlight\"></style>"
                 }
               ]
             }

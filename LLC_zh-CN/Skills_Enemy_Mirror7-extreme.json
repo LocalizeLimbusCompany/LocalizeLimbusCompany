@@ -1,0 +1,867 @@
+{
+  "dataList": [
+    {
+      "id": 7104701,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "突击",
+          "desc": "[WhenUse] 若目标的[Vibration]强度不低于3级，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Vibration]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7104702,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "目标失能",
+          "desc": "[WhenUse] 若目标的[Vibration]强度不低于3级，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Vibration]强度"
+                }
+              ]
+            },
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7104703,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "激活HP弹",
+          "desc": "[WhenUse] 使自身恢复20点体力",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7104704,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "镇压",
+          "desc": "[WhenUse] 若目标的[Vibration]强度不低于4级，则使本技能的基础威力+2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Vibration]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7104801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "激活HP弹",
+          "desc": "[WhenUse] 使自身恢复20点体力",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7104802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "防护",
+          "desc": "[WinDuel] 下回合随机使2名友方单位获得1层[ResultEnhancement]",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7104803,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "掩护",
+          "desc": "[WhenUse] 下回合随机使除自身以外的2名友方单位获得2层[Protection]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Vulnerable]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7104901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "禁止入内",
+          "desc": "[WhenUse] 若目标的[Burst]强度不低于4级，则使本技能的基础威力+2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Burst]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7104902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "镇压",
+          "desc": "[WhenUse] 目标每带有3级[Burst]强度，使本技能的硬币威力+1(最多+2)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Burst]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Burst]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7104903,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "禁止通行",
+          "desc": "[WhenUse] 目标每带有3级[Burst]强度，使本技能的硬币威力+1(最多+2)\n[DefeatDuel] 使自身恢复10点体力",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标造成(其[Burst]强度×其[Burst]层数)点体力伤害，并消耗其所有[Burst]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "发现可疑目标",
+          "desc": "[WhenUse] 若目标的[Burst]强度不低于3级，则使本技能的基础威力+2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Burst]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "制服",
+          "desc": "[WhenUse] 若目标的[Burst]强度不低于3级，则使本技能的基础威力+2",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Burst]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Burst]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105003,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "拦截可疑目标",
+          "desc": "优先攻击[Burst]强度最高的目标\n[WhenUse] 若目标带有[Burst]，则使本技能的硬币威力+1",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Burst]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "若第1枚硬币的朝向为正面，则使本硬币造成的伤害+10%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Burst]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "若第2枚硬币的朝向为正面，则使本硬币造成的伤害+10%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Burst]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "若第2和第3枚硬币的朝向为正面，则使本硬币造成的伤害+30%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标造成(其[Burst]强度×其[Burst]层数)点体力伤害，并消耗其所有[Burst]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105101,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "叽",
+          "desc": "[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+2(最多+6)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加5层[Burst]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105102,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "叽伊",
+          "desc": "[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+2(最多+6)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Burst]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Burst]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105103,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "防御",
+          "desc": "[StartBattle] 本回合内使自身获得(自身已失去体力/10)点护盾",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105201,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "叽伊",
+          "desc": "[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+2(最多+6)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加6级[Burst]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105202,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "叽伊伊伊",
+          "desc": "[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+2(最多+6)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Burst]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Burst]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105203,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "防御",
+          "desc": "[StartBattle] 本回合内使自身获得(自身已失去体力/10)点护盾",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105301,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "叽叽！",
+          "desc": "[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+2(最多+6)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Laceration]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105302,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "叽伊！",
+          "desc": "[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+2(最多+6)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[DefenseDown]与5层[Laceration]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105303,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "防御",
+          "desc": "[StartBattle] 本回合内使自身获得(自身已失去体力/10)点护盾",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105401,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "叽叽叽叽",
+          "desc": "若目标在上回合未受到伤害，则使本技能的硬币威力+1\n[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+2(最多+6)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Vibration]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Vibration]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105402,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "叽叽叽叽",
+          "desc": "[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+2(最多+6)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Vibration]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加1层[Binding]与2层[DefenseDown]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105403,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "叽伊叽叽",
+          "desc": "[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+2(最多+6)\n[WhenUse] 使自身获得2层[Protection]\n[WinDuel] 使目标增加5级[Vibration]强度",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                },
+                {
+                  "desc": "- 触发[VibrationExplosion]时，随机使目标增加10级某一种随机效果的强度，该效果可能为[Laceration]、[Vibration]或[Burst]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105404,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "防御",
+          "desc": "[StartBattle] 本回合内使自身获得(自身已失去体力/10)点护盾",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "突击",
+          "desc": "[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+2(最多+6)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Sinking]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Sinking]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Sinking]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "目标失能",
+          "desc": "[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+2(最多+6)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Sinking]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Sinking]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若目标的[Sinking]强度不低于10级，则使其增加5级[Sinking]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105503,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "激活HP弹",
+          "desc": "[WhenUse] 使自身恢复已失去体力5%的体力(最多150点；每回合最多1次)",
+          "coinlist": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "防护",
+          "desc": "[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+2(最多+6)\n[WhenUse] 下回合随机使2名友方单位获得2层[Protection]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加5层[Sinking]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "阻截",
+          "desc": "[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+2(最多+6)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Sinking]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Sinking]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105603,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "掩护",
+          "desc": "[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+2(最多+6)\n[WinDuel] 随机使除自身以外的1名友方单位在下回合获得1层[AmberDamageUp]与1层[ShamrockDamageUp]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Sinking]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105701,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "禁止入内",
+          "desc": "[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+2(最多+6)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Sinking]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105702,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "镇压",
+          "desc": "[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+2(最多+6)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Sinking]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加5层[Sinking]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105703,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "禁止通行",
+          "desc": "[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+2(最多+6)\n[DefeatDuel] 使自身恢复已失去体力5%的体力(最多100点；每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加5层[Sinking]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标造成相当于其[Sinking]强度的忧郁伤害并使其[Sinking]层数减少1层"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "发现可疑目标",
+          "desc": "[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+2(最多+6)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加5层[Sinking]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "制服",
+          "desc": "[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+2(最多+6)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加5层[Sinking]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Sinking]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7105803,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "拦截可疑目标",
+          "desc": "优先指定[Sinking]强度最高的目标\n[WhenUse] 若目标带有[Sinking]，则使本技能的基础威力+2\n[WhenUse] 目标每带有1种负面状态，使本技能的拼点威力+2(最多+6)\n[DefeatDuel] 使自身恢复已失去体力5%的体力(最多100点；每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Sinking]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "若第1枚硬币的朝向为正面，则使本硬币造成的伤害+10%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Sinking]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "若第2枚硬币的朝向为正面，则使本硬币造成的伤害+10%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Sinking]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "若第2和第3枚硬币的朝向为正面，则使本硬币造成的伤害+30%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标造成(其[Sinking]强度×其[Sinking]层数)点忧郁伤害并使其[Sinking]层数减少1层"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

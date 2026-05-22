@@ -1125,7 +1125,7 @@
         {
           "level": 1,
           "name": "一枪爆头",
-          "desc": "[WhenUse] 使自身增加3级[Breath]强度并获得1层[Breath]",
+          "desc": "[WhenUse] 使自身增加3级[Breath]强度并使自身获得1层[Breath]",
           "coinlist": [
             {
               "coindescs": [
@@ -1142,7 +1142,7 @@
         {
           "level": 2,
           "name": "一枪爆头",
-          "desc": "<style=\"highlight\">若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%(最多+30%)</style>\n[WhenUse] 使自身增加3级[Breath]强度并获得1层[Breath]\n<style=\"highlight\">[WhenUse] 下回合使自身获得2层[Agility](每回合最多1次)</style>",
+          "desc": "<style=\"highlight\">若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%(最多+30%)</style>\n[WhenUse] 使自身增加3级[Breath]强度并使自身获得1层[Breath]\n<style=\"highlight\">[WhenUse] 下回合使自身获得2层[Agility](每回合最多1次)</style>",
           "coinlist": [
             {
               "coindescs": [
@@ -1165,7 +1165,7 @@
         {
           "level": 4,
           "name": "一枪爆头",
-          "desc": "若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%<style=\"highlight\">(最多+50%)</style>\n[WhenUse] 使自身增加3级[Breath]强度并获得<style=\"highlight\">2</style>层[Breath]\n[WhenUse] 下回合使自身获得2层[Agility](每回合最多1次)",
+          "desc": "若自身的速度值高于目标，则每相差1点，使本技能造成的伤害+10%<style=\"highlight\">(最多+50%)</style>\n[WhenUse] 使自身增加3级[Breath]强度并使自身获得<style=\"highlight\">2</style>层[Breath]\n[WhenUse] 下回合使自身获得2层[Agility](每回合最多1次)",
           "coinlist": [
             {
               "coindescs": [
@@ -2333,7 +2333,7 @@
         {
           "level": 4,
           "name": "血天下鸡舞乱刀",
-          "desc": "[WideAreaRampage]\n<style=\"highlight\">自身每带有1级[Combustion]强度，使本技能造成的伤害+3%(最多+60%)\n自身与目标的已失去体力比例之和每有2%，使本技能造成的伤害+1%(最多+50%)</style>\n[WhenUse] 使自身获得3层[ChickenStance]\n<style=\"highlight\">[WhenUse] 目标的[Combustion]强度与[Burst]强度之和每有6级，使本技能的硬币威力+1(最多+2)\n[WhenUse] 自身每失去20%的体力，使本技能的拼点威力+1(最多+3)</style>\n[WinDuel] 使自身增加10级[Combustion]强度\n[EndSkill] 消耗自身所有[ChickenFightlust]\n[EndSkill] 若自身的[Combustion]强度高于20级，则消耗至多25级超出的[Combustion]强度并使自身恢复体力上限(消耗的[Combustion]强度×2)%的体力",
+          "desc": "[WideAreaRampage]\n<style=\"highlight\">自身每带有1级[Combustion]强度，使本技能造成的伤害+3%(最多+60%)\n自身与目标的已失去体力比例之和每有2%，使本技能造成的伤害+1%(最多+50%)</style>\n[WhenUse] 使自身获得3层[ChickenStance]\n<style=\"highlight\">[WhenUse] 主要目标的[Combustion]强度与[Burst]强度之和每有6级，使本技能的硬币威力+1(最多+2)\n[WhenUse] 自身每失去20%的体力，使本技能的拼点威力+1(最多+3)</style>\n[WinDuel] 使自身增加10级[Combustion]强度\n[EndSkill] 消耗自身所有[ChickenFightlust]\n[EndSkill] 若自身的[Combustion]强度高于20级，则消耗至多25级超出的[Combustion]强度并使自身恢复体力上限(消耗的[Combustion]强度×2)%的体力",
           "coinlist": [
             {
               "coindescs": [
@@ -2378,6 +2378,349 @@
                 },
                 {
                   "desc": "<style=\"highlight\">[OnSucceedAttack] 对全体目标额外造成本硬币最终伤害量20%的暴怒伤害\n- 若本硬币为最后一枚硬币，则使自身恢复相当于该效果伤害量的体力</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "脚踢",
+          "desc": "[WhenUse] 下回合使本技能对应行动槽的[Aggro]+3",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Combustion]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "脚踢",
+          "desc": "<style=\"highlight\">若目标的[Combustion]强度与[Laceration]强度之和不低于6级，则使本技能的硬币威力+1</style>\n[WhenUse] 下回合使本技能对应行动槽的[Aggro]+3",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 使自身的混乱阈值后移5</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Combustion]强度<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "脚踢",
+          "desc": "若目标的[Combustion]强度与[Laceration]强度之和不低于6级，则使本技能的硬币威力+1\n<style=\"highlight\">[WhenUse] 若目标带有[RetaliationBook]，则使本技能的最终威力+1</style>\n[WhenUse] 下回合使本技能对应行动槽的[Aggro]+3",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身的混乱阈值后移5<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">- 若目标带有[RetaliationBook]，则使自身恢复3点理智值</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Combustion]强度<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "注意背后！",
+          "desc": "[StartBattle] 使仪表盘上位于自身两侧的友方单位获得2层[AttackUp]\n[StartBattle] 使本技能增加(最大共鸣数/2)级攻击等级(最多3级，向下取整)\n[WhenUse] 下回合使本技能对应行动槽的[Aggro]+5",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Laceration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Paralysis]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Combustion]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "注意背后！",
+          "desc": "<style=\"highlight\">若目标的[Combustion]强度与[Laceration]强度之和不低于6级，则使本技能的硬币威力+1</style>\n[StartBattle] 使仪表盘上位于自身两侧的友方单位获得2层[AttackUp]\n[StartBattle] 使本技能增加(最大共鸣数/2)级攻击等级(最多3级，向下取整)\n[WhenUse] 下回合使本技能对应行动槽的[Aggro]+5",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Laceration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Combustion]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Paralysis]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Combustion]强度<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "注意背后！",
+          "desc": "若目标的[Combustion]强度与[Laceration]强度之和不低于6级，则使本技能的硬币威力+1\n[StartBattle] 使仪表盘上位于自身两侧的友方单位获得2层[AttackUp]\n[StartBattle] 使本技能增加(最大共鸣数/2)级攻击等级(最多3级，向下取整)\n<style=\"highlight\">[WhenUse] 若目标带有[RetaliationBook]，则使本技能的最终威力+2</style>\n[WhenUse] 下回合使本技能对应行动槽的[Aggro]+5",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Laceration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Combustion]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Paralysis]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Combustion]强度<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "我的理发啊啊啊券！！！！",
+          "desc": "主要目标的[Combustion]强度与[Laceration]强度之和每有4级，使本技能的最终威力+1(最多+3)\n[StartBattle] 使本技能增加(最大共鸣数)级攻击等级(最多6级)\n[WhenUse] 若嫉妒完全共鸣数不低于6，则使本技能的攻击容量+1\n[WhenUse] 本技能的攻击容量高于攻击目标数时，每高于1点，使本技能造成的伤害+30%(若是集中遭遇战，则改为以部位判定)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Laceration]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Combustion]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "我的理发啊啊啊券！！！！",
+          "desc": "主要目标的[Combustion]强度与[Laceration]强度之和每有4级，使本技能的最终威力+1(最多+3)\n每有2点嫉妒共鸣数，使本技能的最终威力+1(最多+3)\n[StartBattle] 使本技能增加(最大共鸣数)级攻击等级(最多6级)\n<style=\"highlight\">[WhenUse] 若主要目标带有[RetaliationBook]，则使本技能的最终威力+2</style>\n[WhenUse] 若嫉妒完全共鸣数不低于6，则使本技能的攻击容量+1\n<style=\"highlight\">[WhenUse] 若自身的[VengeanceBookHeathcliff]层数不低于20层，则使本技能的攻击容量+1</style>\n[WhenUse] 本技能的攻击容量高于攻击目标数时，每高于1点，使本技能造成的伤害+<style=\"highlight\">60</style>%(若是集中遭遇战，则改为以部位判定)\n<style=\"highlight\">[EnemyKill] 本技能每击杀1名敌方单位，使自身获得2层仇怨纹身 (每回合最多6层)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Laceration]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Combustion]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 对目标额外造成本硬币最终伤害量(嫉妒共鸣数×5)%的打击伤害(最多30%)</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "偿还",
+          "desc": "[StartBattle] 使自身获得已失去体力25%的护盾(每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "偿还",
+          "desc": "<style=\"highlight\">[StartBattle] 若嫉妒完全共鸣数总计不低于6，则反击时改为使用“我的理发啊啊啊券！！！！”进行反击(仪表盘上位于左侧的技能优先触发，每回合最多触发2次)\n[StartBattle] 使包括自身在内的属于中指的友方单位中理智值最低的3名友方单位恢复(嫉妒共鸣数+3)点理智值(每回合最多1次，最多10点，不包括理智值不高于-40点的友方单位)</style>\n[StartBattle] 使自身获得已失去体力25%的护盾(每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071505,
+      "levelList": [
+        {
+          "level": 4,
+          "name": "全员，处刑！！",
+          "desc": "本技能不会因外部效果而重复使用\n自身每失去1%的体力，使本技能造成的伤害+1%\n主要目标的[Combustion]强度与[Laceration]强度之和每有4级，使本技能的最终威力+1(最多+5)\n[StartBattle] 使本技能增加(最大共鸣数)级攻击等级(最多+6)\n[WhenUse] 若主要目标带有[RetaliationBook]，使本技能的最终威力+3\n[WhenUse] 若自身的[VengeanceBookHeathcliff]层数不低于20层，则使本技能的攻击容量+1\n[WhenUse] 本技能的攻击容量高于攻击目标数时，每高于1点，使本技能造成的伤害+60%(若是集中遭遇战，则改为以部位判定)\n[EnemyKill] 本技能每击杀1名敌方单位，随机获得1个持有量最少的E.G.O资源(最多4个)\n[EndSkill] 消耗自身15层[MiddleFingerTattooID]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "若目标陷入混乱，则使本技能造成的伤害+20%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Laceration]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Combustion]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Vibration]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标额外造成本硬币最终伤害量(嫉妒共鸣数×7)%的打击伤害(最多42%)"
                 }
               ]
             }

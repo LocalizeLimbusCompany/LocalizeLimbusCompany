@@ -62,6 +62,74 @@
       "desc": "阵亡时，获得2个持有量最少的E.G.O资源",
       "summary": "阵亡时，获得E.G.O资源",
       "flavor": ""
+    },
+    {
+      "id": 500601,
+      "name": "映射战斗",
+      "desc": "最多累计到若与同一目标拼点不低于10次，则随机使自身的拼点威力增加或减少(拼点次数/10)(向下取整)\n\n[Combustion]、[Laceration]、[Vibration]、[Burst]与[Sinking]强度最多累计到30级，层数最多累计到10层",
+      "flavor": ""
+    },
+    {
+      "id": 500602,
+      "name": "环指 野兽派讲解员",
+      "desc": "回合开始时，每有1名属于环指 野兽派 学徒的友方单位，<color=#ff6000><mark=#ff000040><b><u>使自身获得2层[Protection]</u></b></mark></color>\n- 若本场战斗中自身使用了“批评”，则从下回合起改为获得2层[Protection]并恢复5点理智值\n(若自身理智值低于-15点，则使恢复的理智值变为2倍)\n- 若没有属于环指 野兽派 学徒的友方单位，则改为对自身施加2层[Vulnerable]并使自身的理智值变为0点\n\n受到攻击容量为1的技能攻击前，若有其他属于学徒的友方单位，\n则<color=#ff6000><mark=#ff000040><b><u>使其获得2层[Protection]并令其代替自身受到攻击(每回合最多2次)</u></b></mark></color>\n\n自身使用“批评”的回合结束时，若本场战斗中有属于环指 野兽派 学徒的友方单位阵亡，则在对应位置<color=#ff6000><mark=#ff000040><b><u>以相同的学徒单位填补空缺</u></b></mark></color>\n- 每回合开始时对以该效果登场的属于学徒的单位施加层数相当于本场战斗中阵亡的友方单位数的[Vulnerable]与[AttackDown](分别最多10层)",
+      "summary": "受到攻击前，令其他属于学徒的友方单位代替受到攻击",
+      "flavor": ""
+    },
+    {
+      "id": 500603,
+      "name": "指导与鞭策",
+      "desc": "回合开始时，使属于环指 野兽派 学徒的友方单位\n随机获得层数共计相当于其存活回合数(包括本回合)\n的[AttackUp]或[DefenseUp](最多5层)\n\n若有属于学徒的友方单位陷入混乱，则<color=#ff6000><mark=#ff000040><b><u>回合结束时解除其混乱</u></b></mark></color>\n- 下回合使因该效果而解除混乱的属于学徒的单位所有物理属性与罪孽属性的抗性变为“致命”\n\n若有属于学徒的单位陷入恐慌，则回合结束时使其理智值恢复至45点",
+      "summary": "",
+      "flavor": ""
+    },
+    {
+      "id": 500604,
+      "name": "野兽派-野性色彩",
+      "desc": "战斗结束时，对同时带有[BearClawWound]，[EagleClawWound]与[BoldBrushstrokes]\n的罪人<color=#ff6000><mark=#ff000040><b><u>在下回合施加1层[IntenseColors]</u></b></mark></color>\n- 若目标带有的[BearClawWound]与[EagleClawWound]\n各不低于3/6/9层，则改为施加2/3/4层[IntenseColors](以层数更低的效果为基准)",
+      "summary": "施加强烈色彩 ",
+      "flavor": "“动物的外表各有各的目的。其中，唤醒并表露出我们称之为野兽的东西所具有的野性的，便是野兽派。”"
+    },
+    {
+      "id": 500605,
+      "name": "寄宿着人生的兽面",
+      "desc": "适用于[PanicChangeLock]效果，\n回合结束时，若自身陷入恐慌，则使自身的理智值变为45点\n\n<color=#ff6000><mark=#ff000040><b><u>若现存体力不高于70%，则改变自身模式</u></b></mark></color>\n- 解除除自身固有状态以外的所有状态\n- 使场上的全体罪人<color=#ff6000><mark=#ff000040><b><u>增加8级[Laceration]强度与8级[Sinking]强度并对其施加8层[Laceration]与8层[Sinking]</u></b></mark></color>\n- 该回合开始时，使自身获得[FaubismWolfMask]并使自身的理智值恢复至45点",
+      "summary": "",
+      "flavor": ""
+    },
+    {
+      "id": 500701,
+      "name": "映射战斗",
+      "desc": "最多累计到若与同一目标拼点不低于10次，则随机使自身的拼点威力增加或减少(拼点次数/10)(向下取整)\n\n[Combustion]、[Laceration]、[Vibration]、[Burst]与[Sinking]强度最多累计到30级，层数最多累计到10层",
+      "flavor": ""
+    },
+    {
+      "id": 500702,
+      "name": "环指 野兽派讲解员 卢佛",
+      "desc": "使用强力攻击的回合使自身的最小与最大速度值+15\n\n受到单方面攻击的伤害-50%\n单方面攻击造成的伤害+50%\n- 若攻击的行动槽的[Aggro]不低于2，则每带有1点[Aggro]，使增加的伤害减少5%(最低0%)\n\n拼点失败时，使自身获得1层[AttackDmgUp](每回合最多5次)\n- 回合结束时或使用技能攻击罪人时，在该技能攻击后解除该效果获得的[AttackDmgUp]",
+      "summary": "受到单方面攻击的伤害减少，单方面攻击造成的伤害增加\n拼点失败时获得伤害强化 ",
+      "flavor": ""
+    },
+    {
+      "id": 500703,
+      "name": "野兽派-狼面：觉醒的野性",
+      "desc": "回合开始时，<color=#ff6000><mark=#ff000040><b><u>使自身获得10层[Protection]</u></b></mark></color>\n- 每带有<color=#ff6000><mark=#ff000040><b><u>1种负面状态</u></b></mark></color>，回合开始时使自身获得的[Protection]层数减少1层\n- “令你皮肤下搏动着的那赤红色彩更加狂野。”<color=#ff6000><mark=#ff000040><b><u>拼点失败时，</u></b></mark></color>该效果在下回合<color=#ff6000><mark=#ff000040><b><u>改为施加2层[Vulnerable]</u></b></mark></color>\n\n<color=#ff6000><mark=#ff000040><b><u>每次受到技能硬币攻击时，使自身增加1级防御等级</u></b></mark></color>(每回合最多20级)\n- 回合结束时，解除该效果增加的防御等级\n- “令你皮肤下搏动着的那赤红色彩更加狂野。”<color=#ff6000><mark=#ff000040><b><u>拼点失败时，</u></b></mark></color>该效果在下回合改为每次受到技能硬币攻击时，<color=#ff6000><mark=#ff000040><b><u>使自身减少1级防御等级</u></b></mark></color>(最多20级，回合结束时解除)",
+      "summary": "受到攻击时，增加防御等级\n上回合特定技能拼点失败时，改为减少防御等级",
+      "flavor": ""
+    },
+    {
+      "id": 500704,
+      "name": "野兽派-野性色彩",
+      "desc": "战斗结束时，对同时带有[BearClawWound]，[EagleClawWound]与[BoldBrushstrokes]\n的罪人<color=#ff6000><mark=#ff000040><b><u>在下回合施加1层[IntenseColors]</u></b></mark></color>\n- 若目标带有的[BearClawWound]与[EagleClawWound]\n各不低于3/6/9层，则改为施加2/3/4层[IntenseColors](以层数更低的效果为基准)",
+      "summary": "施加强烈色彩 ",
+      "flavor": "“动物的外表各有各的目的。其中，唤醒并表露出我们称之为野兽的东西所具有的野性的，便是野兽派。”"
+    },
+    {
+      "id": 500705,
+      "name": "野兽派-颜料注入极限值",
+      "desc": "适用于[PanicChangeLock]效果，\n回合结束时，若自身陷入恐慌，则使自身的理智值变为45点\n\n<color=#ff6000><mark=#ff000040><b><u>若现存体力不高于35%，则使自身的[FaubismWolfMask]转化为[FaubismWolfMaskBlooded]并使自身的理智值恢复至45点</u></b></mark></color>",
+      "summary": "",
+      "flavor": ""
     }
   ]
 }

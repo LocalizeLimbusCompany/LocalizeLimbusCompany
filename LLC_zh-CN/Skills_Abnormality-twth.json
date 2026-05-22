@@ -249,7 +249,7 @@
         {
           "level": 1,
           "name": "灵感的战栗",
-          "desc": "可无视速度值与本技能拼点\n[WhenUse] 目标<color=#ff6000><mark=#ff000040><b><u>每带有1种负面状态</u></b></mark></color>，使本技能的最终威力+1，造成的伤害+10%(分别最多+6，+60%)\n[WinDuel]\n- 目标<color=#ff6000><mark=#ff000040><b><u>每带有1种负面状态</u></b></mark></color>，使本技能对其造成的伤害+10%(最多+60%，每名目标分别判定)\n[DefeatDuel]\n- 使本技能造成的伤害-75%\n- 使本技能施加的[BearClawWound]与[EagleClawWound]层数减少至1/3(向上取整)\n- 使本技能造成的伤害不会使目标陷入混乱，且命中时不会触发目标的[Sinking]",
+          "desc": "可无视速度值与本技能拼点\n[WhenUse] 主要目标<color=#ff6000><mark=#ff000040><b><u>每带有1种负面状态</u></b></mark></color>，使本技能的最终威力+1，造成的伤害+10%(分别最多+6，+60%)\n[WinDuel]\n- 目标<color=#ff6000><mark=#ff000040><b><u>每带有1种负面状态</u></b></mark></color>，使本技能对其造成的伤害+10%(最多+60%，每名目标分别判定)\n[DefeatDuel]\n- 使本技能造成的伤害-75%\n- 使本技能施加的[BearClawWound]与[EagleClawWound]层数减少至1/3(向上取整)\n- 使本技能造成的伤害不会使目标陷入混乱，且命中时不会触发目标的[Sinking]",
           "coinlist": [
             {
               "coindescs": [
@@ -284,6 +284,130 @@
           "level": 1,
           "name": "令你皮肤下搏动着的那赤红色彩更加狂野。",
           "desc": "[WideAreaRampage]\n优先指定带有[IntenseColors]的目标\n本技能不会触发守备技能(不包括可拼点守备)\n可无视速度值与本技能拼点\n[WhenUse]\n- 主要目标<color=#ff6000><mark=#ff000040><b><u>每带有1种负面状态</u></b></mark></color>，使本技能的最终威力+1(最多+6)\n- <color=#ff6000><mark=#ff000040><b><u>若主要目标带有[IntenseColors]，</u></b></mark></color>则使本技能的拼点威力+6\n- <color=#ff6000><mark=#ff000040><b><u>若目标带有[IntenseColors]，</u></b></mark></color>则使本技能对其造成的伤害+100%\n(每名目标分别判定)\n· 若目标带有[IntenseColors]且<color=#ff6000><mark=#ff000040><b><u>装备了守备技能</u></b></mark></color>，则改为使本技能造成的伤害-90%\n[WinDuel]\n- 目标<color=#ff6000><mark=#ff000040><b><u>每带有1种负面状态</u></b></mark></color>，使本技能对其造成的伤害+10%(最多+60%，每名目标分别判定)\n[DefeatDuel]\n- 对自身施加5层[AttackDmgDown]与5层[Paralysis]\n- 使本技能造成的伤害不会使目标陷入混乱，且命中时不会触发目标的[Sinking]\n[EndSkill] 结束本回合",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 使目标增加3级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 对目标施加3层[Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 使目标增加3级[Sinking]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 对目标施加3层[Sinking]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "<color=#ff6000><mark=#ff000040><b><u>本硬币会命中全体目标</u></b></mark></color>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 500604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "批评",
+          "desc": "[CantChangeTarget]\n[WhenUse]\n- 目标<color=#ff6000><mark=#ff000040><b><u>每带有1种负面状态</u></b></mark></color>，使本技能的拼点威力+2(最多+12)\n- 场上<color=#ff6000><mark=#ff000040><b><u>每有1名属于环指 野兽派 学徒的友方单位</u></b></mark></color>，使本技能造成的伤害+12.5%(最多+50%)\n- <color=#ff6000><mark=#ff000040><b><u>若目标带有[IntenseColors]，</u></b></mark></color>则使本技能的拼点威力+6，造成的伤害+200%\n· 若目标带有[IntenseColors]且<color=#ff6000><mark=#ff000040><b><u>装备了守备技能</u></b></mark></color>，则改为使本技能的拼点威力+6，造成的伤害-90%，造成的伤害不会使目标陷入混乱，且命中时不会触发目标的[Sinking]\n[DefeatDuel]\n- 使本技能造成的伤害不会使目标陷入混乱，且命中时不会触发目标的[Sinking]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 重复使用本硬币(最多2次)\n- 拼点失败后命中时，改为重复使用本硬币(最多1次)\n- 若目标装备了守备技能，则不会触发该效果"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度并对其施加2层[Laceration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Sinking]强度并对其施加2层[Sinking]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 500704,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "灵感的战栗",
+          "desc": "可无视速度值与本技能拼点\n[WhenUse] 主要目标<color=#ff6000><mark=#ff000040><b><u>每带有1种负面状态</u></b></mark></color>，使本技能的最终威力+1，造成的伤害+10%(分别最多+6，+60%)\n[WinDuel]\n- 目标<color=#ff6000><mark=#ff000040><b><u>每带有1种负面状态</u></b></mark></color>，使本技能对其造成的伤害+10%(最多+60%，每名目标分别判定)\n[DefeatDuel]\n- 使本技能造成的伤害-75%\n- 使本技能施加的[BearClawWound]与[EagleClawWound]层数减少至1/3(向上取整)\n- 使本技能造成的伤害不会使目标陷入混乱，且命中时不会触发目标的[Sinking]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 使目标增加3级[Laceration]强度并对其施加3层[Laceration]"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] 使目标增加3级[Sinking]强度并对其施加3层[Sinking]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>对目标施加9层[BearClawWound]</u></b></mark></color>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>对目标施加9层[EagleClawWound]</u></b></mark></color>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] <color=#ff6000><mark=#ff000040><b><u>对目标施加1层[BoldBrushstrokes]</u></b></mark></color>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 500705,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "令你皮肤下搏动着的那赤红色彩更加狂野。",
+          "desc": "[WideAreaRampage]\n优先指定带有[IntenseColors]的目标\n本技能不会触发守备技能(不包括可拼点守备)\n可无视速度值与本技能拼点\n[WhenUse]\n- 主要目标<color=#ff6000><mark=#ff000040><b><u>每带有1种负面状态</u></b></mark></color>，使本技能的最终威力+1(最多+6)\n- <color=#ff6000><mark=#ff000040><b><u>若主要目标带有[IntenseColors]，</u></b></mark></color>则使本技能的拼点威力+6\n- <color=#ff6000><mark=#ff000040><b><u>若目标带有[IntenseColors]，</u></b></mark></color>则使本技能对其造成的伤害+200%\n(每名目标分别判定)\n· 若目标带有[IntenseColors]且<color=#ff6000><mark=#ff000040><b><u>装备了守备技能</u></b></mark></color>，则改为使本技能造成的伤害-90%\n[WinDuel]\n- 目标<color=#ff6000><mark=#ff000040><b><u>每带有1种负面状态</u></b></mark></color>，使本技能对其造成的伤害+10%(最多+60%，每名目标分别判定)\n[DefeatDuel]\n- 对自身施加5层[AttackDmgDown]与5层[Paralysis]\n- 使本技能造成的伤害不会使目标陷入混乱，且命中时不会触发目标的[Sinking]\n[EndSkill] 结束本回合",
           "coinlist": [
             {
               "coindescs": [
