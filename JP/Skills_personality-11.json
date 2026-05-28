@@ -265,7 +265,7 @@
         {
           "level": 2,
           "name": "マルシュ",
-          "desc": "[WhenUse] 次のターンに[Agility]2を得る\n[WhenUse] 次のターンにこのスロットが挑発値1を得る",
+          "desc": "[WhenUse] 次のターンに[Agility]2を得る\n[WhenUse] 次のターンにこのスロットが[Aggro]1を得る",
           "coinlist": [
             {
               "coindescs": [
@@ -286,7 +286,7 @@
         {
           "level": 4,
           "name": "マルシュ",
-          "desc": "[WhenUse] 次のターンに[Agility]2を得る\n[WhenUse] 次のターンにこのスロットが挑発値3を得る",
+          "desc": "[WhenUse] 次のターンに[Agility]2を得る\n[WhenUse] 次のターンにこのスロットが[Aggro]3を得る",
           "coinlist": [
             {
               "coindescs": [
@@ -333,7 +333,7 @@
         {
           "level": 2,
           "name": "ピュニスィオン",
-          "desc": "自分の速度が対象より高ければコイン威力 +1\n[WhenUse] 自分の[Breath]回数が2増加\n[WhenUse] 次のターンにこのスロットが挑発値2を得る",
+          "desc": "自分の速度が対象より高ければコイン威力 +1\n[WhenUse] 自分の[Breath]回数が2増加\n[WhenUse] 次のターンにこのスロットが[Aggro]2を得る",
           "coinlist": [
             {
               "coindescs": [
@@ -354,7 +354,7 @@
         {
           "level": 4,
           "name": "ピュニスィオン",
-          "desc": "自分の速度が対象より高ければコイン威力 +2\n[WhenUse] 自分の[Breath]回数が2増加\n[WhenUse] 次のターンにこのスロットが挑発値4を得る",
+          "desc": "自分の速度が対象より高ければコイン威力 +2\n[WhenUse] 自分の[Breath]回数が2増加\n[WhenUse] 次のターンにこのスロットが[Aggro]4を得る",
           "coinlist": [
             {
               "coindescs": [
@@ -2391,6 +2391,818 @@
               "coindescs": [
                 {
                   "desc": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1111501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "踏み潰す",
+          "desc": "[WhenUse] 自分の精神力を5回復",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "踏み潰す",
+          "desc": "<style=\"highlight\">対象の[Combustion]と[Laceration]の合計6につき、コイン威力 +1 (最大2)</style>\n[WhenUse] 自分の精神力を5回復",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が<style=\"highlight\">2</style>増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "踏み潰す",
+          "desc": "対象の[Combustion]と[Laceration]の合計6につき、コイン威力 +1 (最大2)\n<style=\"highlight\">[BeforeUse] 自分の剣が[MiddleFatherSwordFourOutis]状態なら、「腹をかっ開いてやる」として発動</style>\n[WhenUse] 自分の精神力を5回復",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 自分に[ReinforcedTattooSpiderOutis]があれば、次のターンに[Binding]1を付与 (1ターンにつき1回)</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "踏み潰す",
+          "desc": "対象の[Combustion]と[Laceration]の合計6につき、コイン威力 +1 (最大2)\n[BeforeUse] 自分の剣が[MiddleFatherSwordFourOutis]状態なら、「腹をかっ開いてやる」として発動\n<style=\"highlight\">[WhenUse] 自分に[ReinforcedTattooSpiderOutis]があるなら、2コインが[SuperCoin]に変更される</style>\n[WhenUse] 自分の精神力を5回復",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 混乱区間を5前進</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分に[ReinforcedTattooSpiderOutis]があれば、次のターンに[Binding]1を付与 (1ターンにつき1回)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1111502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "たかがこれしきで壊れるなよ！",
+          "desc": "[WhenUse] (最も高い共鳴数 ÷ 2)だけ、このスキルの攻撃レベルが増加 (最大3, 小数点切り捨て)\n[WhenUse] 自分の剣が[MiddleFatherSwordTwoOutis]状態なら、このスキルのコイン的中時にスキルで付与する[Laceration]の基本値と同量の[Combustion]を付与\n[WhenUse] 次のターンにて、このスロットが[Aggro]5を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "たかがこれしきで壊れるなよ！",
+          "desc": "<style=\"highlight\">対象の[Combustion]と[Laceration]の合計6につき、コイン威力 +1 (最大2)</style>\n[WhenUse] (最も高い共鳴数 ÷ 2)だけ、このスキルの攻撃レベルが増加 (最大3, 小数点切り捨て)\n[WhenUse] 自分の剣が[MiddleFatherSwordTwoOutis]状態なら、このスキルのコイン的中時にスキルで付与する[Laceration]の基本値と同量の[Combustion]を付与\n[WhenUse] 次のターンにて、このスロットが[Aggro]5を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 次のターンに[Binding]1を付与 (1ターンにつき1回)</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "たかがこれしきで壊れるなよ！",
+          "desc": "対象の[Combustion]と[Laceration]の合計6につき、コイン威力 +1 (最大2)\n<style=\"highlight\">[BeforeUse] 自分の剣が[MiddleFatherSwordFourOutis]状態なら、「ナイフキル」として発動</style>\n[WhenUse] (最も高い共鳴数 ÷ 2)だけ、このスキルの攻撃レベルが増加 (最大3, 小数点切り捨て)\n[WhenUse] 自分の剣が[MiddleFatherSwordTwoOutis]<style=\"highlight\">または[MiddleFatherSwordThreeOutis]</style>状態なら、このスキルのコイン的中時にスキルで付与する[Laceration]の基本値と同量の[Combustion]を付与\n[WhenUse] 次のターンにて、このスロットが[Aggro]5を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]1を付与 (1ターンにつき1回)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 自分に[ReinforcedTattooSpiderOutis]があれば、このコインの最終ダメージ量の(対象の[Combustion]と[Laceration]の合計)%だけ打撃ダメージ (最大20%)</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "たかがこれしきで壊れるなよ！",
+          "desc": "対象の[Combustion]と[Laceration]の合計6につき、コイン威力 +1 (最大2)\n[BeforeUse] 自分の剣が[MiddleFatherSwordFourOutis]状態なら、「ナイフキル」として発動\n[WhenUse] (最も高い共鳴数 ÷ 2)だけ、このスキルの攻撃レベルが増加 (最大3, 小数点切り捨て)\n<style=\"highlight\">[WhenUse] 自分の[ReinforcedTattooSpiderOutis]の数だけ、3コイン目から[SuperCoin]に変更される</style>\n[WhenUse] 自分の剣が[MiddleFatherSwordTwoOutis]または[MiddleFatherSwordThreeOutis]状態なら、このスキルのコイン的中時にスキルで付与する[Laceration]の基本値と同量の[Combustion]を付与\n[WhenUse] 次のターンにて、このスロットが[Aggro]5を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]1を付与 (1ターンにつき1回)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 次のターンに[Paralysis]1を付与 (1ターンにつき1回)</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分に[ReinforcedTattooSpiderOutis]があれば、このコインの最終ダメージ量の(対象の[Combustion]と[Laceration]の合計)%だけ打撃ダメージ (最大20%)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1111503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "怨念スタンピング",
+          "desc": "対象の[Combustion]と[Laceration]の合計4につき、最終威力 +1 (最大3)\n[BeforeUse] 自分の剣が[MiddleFatherSwordFourOutis]状態なら、「即決処刑」として発動\n[WhenUse] (最も高い共鳴数)だけ、このスキルの攻撃レベルが増加 (最大6)\n[WhenUse] 自分の[ReinforcedTattooSpiderOutis]1につき、最終威力 +1 (最大3)\n[WhenUse] 自分の剣が[MiddleFatherSwordTwoOutis]または[MiddleFatherSwordThreeOutis]状態なら、このスキルのコイン的中時にスキルで付与する[Laceration]の基本値と同量の[Combustion]を付与\n[EndSkill] 自分の[ResentmentSpiderOutis]を全て消耗",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "怨念スタンピング",
+          "desc": "対象の[Combustion]と[Laceration]の合計4につき、最終威力 +1 (最大3)\n<style=\"highlight\">嫉妬完全共鳴の数が6以上なら、コイン威力 +1</style>\n[BeforeUse] 自分の剣が[MiddleFatherSwordFourOutis]状態なら、「即決処刑」として発動\n[WhenUse] (最も高い共鳴数)だけ、このスキルの攻撃レベルが増加 (最大6)\n[WhenUse] 自分の[ReinforcedTattooSpiderOutis]1につき、最終威力 +1 (最大3)\n<style=\"highlight\">[WhenUse] 自分の[ReinforcedTattooSpiderOutis]の数だけ、3コイン目から[SuperCoin]に変更される</style>\n[WhenUse] 自分の剣が[MiddleFatherSwordTwoOutis]または[MiddleFatherSwordThreeOutis]状態なら、このスキルのコイン的中時にスキルで付与する[Laceration]の基本値と同量の[Combustion]を付与\n[EndSkill] 自分の[ResentmentSpiderOutis]を全て消耗\n<style=\"highlight\">[EndSkill] このスキルを反撃スキルで発動したなら、次のターンに[HitDamageUp]1を得る (1ターンにつき1回)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]<style=\"highlight\">3</style>を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1111504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ルール違反",
+          "desc": "[StartBattle] 失った体力の15%だけバリアを得る(1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 混乱区間を5後退"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "ルール違反",
+          "desc": "<style=\"highlight\">[StartBattle] 嫉妬完全共鳴数の合計が6以上なら、反撃時に「怨念スタンピング」または「即決処刑」を使用(操作パネルの左側のスロットから発動、1ターンにつき最大2回発動)</style>\n[StartBattle] 失った体力の<style=\"highlight\">30%</style>だけバリアを得る(1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 混乱区間を<style=\"highlight\">10</style>後退"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1111505,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "腹をかっ開いてやる",
+          "desc": "[MiddleFatherSwordFourOutis]専用スキル\n対象の[Combustion]と[Laceration]の合計6につき、コイン威力 +1 (最大2)\n[WhenUse] (最も高い共鳴数 ÷ 2)だけ、このスキルの攻撃レベルが増加 (最大3, 小数点切り捨て)\n[BeforeAttack] このスキルのコイン数だけ、[Combustion]を得る\n[EndSkill] 自分の精神力が5減少",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 混乱区間を5前進"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]を4付与、[Combustion]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分に[ReinforcedTattooSpiderOutis]があれば、次のターンに[Binding]1を付与 (1ターンにつき1回)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "腹をかっ開いてやる",
+          "desc": "[MiddleFatherSwordFourOutis]専用スキル\n対象の[Combustion]と[Laceration]の合計6につき、コイン威力 +1 (最大2)\n[WhenUse] (最も高い共鳴数 ÷ 2)だけ、このスキルの攻撃レベルが増加 (最大3, 小数点切り捨て)\n<style=\"highlight\">[WhenUse] 自分に[ReinforcedTattooSpiderOutis]があるなら、このスキルのコイン的中時に[Laceration]威力1を付与</style>\n[BeforeAttack] このスキルのコイン数だけ、[Combustion]を得る\n[EndSkill] 自分の精神力が5減少",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 混乱区間を<style=\"highlight\">10</style>前進"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]を4付与、[Combustion]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 自分に[ReinforcedTattooSpiderOutis]があるなら、次のターンに[Binding]1<style=\"highlight\">, [Paralysis]1</style>を付与 (1ターンにつき1回)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1111506,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "ナイフキル [レーヴァテイン]",
+          "desc": "[MiddleFatherSwordFourOutis]専用スキル\n対象の[Combustion]と[Laceration]の合計が4以上なら、最終威力 +1\n[WhenUse] (最も高い共鳴数 ÷ 2)だけ、このスキルの攻撃レベルが増加 (最大3, 小数点切り捨て)\n[WhenUse] 次のターンにこのスロットが[Aggro]5を得る\n[BeforeAttack] このスキルのコイン数だけ、[Combustion]を得る\n[EndSkill] 自分の精神力が5減少",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]1を付与 (1ターンにつき1回)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "ナイフキル [レーヴァテイン]",
+          "desc": "[MiddleFatherSwordFourOutis]専用スキル\n対象の[Combustion]と[Laceration]の合計が4以上なら、最終威力 +1\n[WhenUse] (最も高い共鳴数 ÷ 2)だけ、このスキルの攻撃レベルが増加 (最大3, 小数点切り捨て)\n[WhenUse] 次のターンにこのスロットが[Aggro]5を得る\n[BeforeAttack] このスキルのコイン数だけ、[Combustion]を得る\n[EndSkill] 自分の精神力が5減少",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]<style=\"highlight\">4</style>を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]<style=\"highlight\">4</style>を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が1増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]1<style=\"highlight\">, [Paralysis]1</style>を付与 (1ターンにつき1回)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1111507,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "即決処刑 [レーヴァテイン]",
+          "desc": "[MiddleFatherSwordFourOutis]専用スキル\n対象の[Combustion]と[Laceration]の合計4につき、最終威力 +1 (最大3)\n対象の[Combustion]と[Laceration]の合計1につき、ダメージ量 +1% (最大20%)\n[WhenUse] (最も高い共鳴数)だけ、このスキルの攻撃レベルが増加 (最大6)\n[WhenUse] 自分に[ReinforcedTattooSpiderOutis]があるなら、コイン威力 +1\n[BeforeAttack] このスキルのコイン数だけ[Combustion]を得る\n[EndSkill] 自分の精神力が5減少\n[EndSkill] 自分の[ResentmentSpiderOutis]を全て消耗",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] このコイン最終ダメージ量の(対象の[Combustion]と[Laceration]の合計)%だけ貫通ダメージ (最大25%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] このコイン最終ダメージ量の(対象の[Combustion]と[Laceration]の合計)%だけ打撃ダメージ (最大25%)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "即決処刑 [レーヴァテイン]",
+          "desc": "[MiddleFatherSwordFourOutis]専用スキル\n対象の[Combustion]と[Laceration]の合計4につき、最終威力 +1 (最大3)\n対象の[Combustion]と[Laceration]の合計1につき、ダメージ量 +1% (最大<style=\"highlight\">40%</style>)\n[WhenUse] (最も高い共鳴数)だけ、このスキルの攻撃レベルが増加 (最大6)\n[WhenUse] 自分に[ReinforcedTattooSpiderOutis]があるなら、コイン威力 +1\n<style=\"highlight\">[WhenUse] 自分に[ReinforcedTattooSpiderOutis]があるなら、このスキルのコイン的中時に[Laceration]威力1を付与</style>\n[BeforeAttack] このスキルのコイン数だけ[Combustion]を得る\n[EndSkill] 自分の精神力が5減少\n[EndSkill] 自分の[ResentmentSpiderOutis]を全て消耗\n<style=\"highlight\">[EndSkill] このスキルを反撃スキルとして発動したなら、次のターンに[HitDamageUp]1を得る (1ターンにつき1回)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]<style=\"highlight\">4</style>を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]4を付与"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] このコイン最終ダメージ量の(対象の[Combustion]と[Laceration]の合計 × 2)%だけ斬撃ダメージ (最大50%)</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] このコイン最終ダメージ量の(対象の[Combustion]と[Laceration]の合計 × 2)%だけ斬撃ダメージ (最大50%)</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] このコイン最終ダメージ量の(対象の[Combustion]と[Laceration]の合計)%だけ貫通ダメージ (最大25%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] このコイン最終ダメージ量の(対象の[Combustion]と[Laceration]の合計)%だけ打撃ダメージ (最大25%)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1111508,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ラッピングを剥がしてみるか",
+          "desc": "このスキルは外部効果で再使用できない\n[EndSkill] 現在の剣の状態を次の状態へ変更する",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 混乱区間を10前進"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[VioletTakeDamageUp]2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "ラッピングを剥がしてみるか",
+          "desc": "このスキルは外部効果で再使用できない\n<style=\"highlight\">[WhenUse] 自分に[ReinforcedTattooSpiderOutis]があるなら、このスキルのコイン的中時に各コイン最終ダメージ量の25%だけ斬撃ダメージ</style>\n[EndSkill] 現在の剣の状態を次の状態へ変更する",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 混乱区間を10前進"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[VioletTakeDamageUp]2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1111509,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "家族のために犠牲になる娘ちゃんの気持ち、忘れずにお返ししてやる",
+          "desc": "[MiddleFatherSwordFourOutis]専用スキル\n[CantDuel]\n[CantChangeTarget]\nこのスキルは外部効果で再使用できず、守備スキルを発動させない\nメインターゲットの[Combustion]と[Laceration]の合計4につき、最終威力 +1 (最大3)\n[WhenUse] 自分の[ReinforcedTattooSpiderOutis]1につき、最終威力 +1, ダメージ量 +10% (最大3, 最大100%)\n[WhenUse] 攻撃対象に「蜘蛛の巣 中指の子方 イシュメール」がいるなら、与ダメージ量 +100%\n[EndSkill] 自分の[ResentmentSpiderOutis]を全て消耗、[ResentmentSpiderOutis]5を得る\n[EndSkill] 攻撃対象である味方が死亡したなら、[ResentmentSpiderOutis]10を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "対象の打撃耐性が普通(1.0)未満なら、普通(1.0)として扱う"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]を3付与、[Combustion]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与、[Laceration]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] このコイン最終ダメージ量の100%だけ、打撃ダメージを与える"
                 }
               ]
             }

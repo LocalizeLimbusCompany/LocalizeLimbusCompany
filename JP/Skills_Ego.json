@@ -112,6 +112,24 @@
               ]
             }
           ]
+        },
+        {
+          "level": 5,
+          "name": "4本目のマッチの火",
+          "abName": "燃え尽きた少女",
+          "desc": "<style=\"highlight\">[BeforeAttack] 全攻撃対象の[Combustion]の合計\n- 6につき、最終威力 +1 (最大4)\n- 1につき、ダメージ量 +1% (最大30%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]4を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] [Combustion]6を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -161,6 +179,27 @@
                 },
                 {
                   "desc": "[OnSucceedAttackHead] 火傷 6を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "4本目のマッチの火",
+          "abName": "燃え尽きた少女",
+          "desc": "[CantIdentify]\nランダムな対象を攻撃\n<style=\"highlight\">[BeforeAttack] 全攻撃対象の[Combustion]の合計\n- 6につき、最終威力 +1 (最大6)\n- 1につき、ダメージ量 +1.5% (最大45%)\n[DefeatDuel] 基本威力 -12\n[EndSkill] 次のターンに[MatchesPersonality]を得る (1ターンにつき1回)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[SuperCoin]</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]4を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[UnBrokenCoinOnSucceedAttack]</style> [Combustion]6を付与"
                 }
               ]
             }
