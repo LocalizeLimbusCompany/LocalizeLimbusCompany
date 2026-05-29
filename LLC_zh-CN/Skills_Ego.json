@@ -112,6 +112,24 @@
               ]
             }
           ]
+        },
+        {
+          "level": 5,
+          "name": "终末火柴之光",
+          "abName": "焦化少女",
+          "desc": "<style=\"highlight\">[BeforeAttack] 全体攻击目标的[Combustion]强度之和\n- 每有6级，使本技能的最终威力+1(最多+4)\n- 每有1级，使本技能造成的伤害+1%(最多+30%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Combustion]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttackHead] 使目标增加6级[Combustion]强度<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -161,6 +179,27 @@
                 },
                 {
                   "desc": "[OnSucceedAttackHead] 使目标增加6级烧伤 强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "终末火柴之光",
+          "abName": "焦化少女",
+          "desc": "[CantIdentify]\n随机指定目标\n<style=\"highlight\">[BeforeAttack] 全体攻击目标的[Combustion]强度之和\n- 每有6级，使本技能的最终威力+1(最多+6)\n- 每有1级，使本技能造成的伤害+1.5%(最多+45%)\n[DefeatDuel] 使本技能的基础威力-12\n[EndSkill] 下回合使自身获得[MatchesPersonality](每回合最多1次)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[SuperCoin]</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Combustion]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[UnBrokenCoinOnSucceedAttack]</style> 使目标增加6级[Combustion]强度"
                 }
               ]
             }

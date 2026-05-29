@@ -28,7 +28,7 @@
     {
       "id": 1020301,
       "name": "觉悟",
-      "desc": "回合开始时，若自身的呼吸法 层数不低于4层，则使自身获得2层迅捷 。"
+      "desc": "下回合开始时，若自身的呼吸法 层数不低于4层，则使自身获得2层迅捷 。"
     },
     {
       "id": 1030101,
@@ -1079,12 +1079,12 @@
     {
       "id": 1080821,
       "name": "船长的命令",
-      "desc": "理智值最高的1名友方单位攻击结束时，若目标阵亡则使该友方单位增加2级呼吸法 强度(每回合最多2次)"
+      "desc": "理智值最高的1名友方单位攻击后，若目标阵亡则使该友方单位增加2级呼吸法 强度(每回合最多2次)"
     },
     {
       "id": 1080831,
       "name": "船长的命令",
-      "desc": "理智值最高的1名友方单位攻击结束时，若目标阵亡则使该友方单位增加2级呼吸法 强度<style=\"highlight\">并使其获得2层呼吸法 </style>(每回合最多2次)"
+      "desc": "理智值最高的1名友方单位攻击后，若目标阵亡则使该友方单位增加2级呼吸法 强度<style=\"highlight\">并使该友方单位获得2层呼吸法 </style>(每回合最多2次)"
     },
     {
       "id": 1050801,
@@ -2549,7 +2549,7 @@
     {
       "id": 1041301,
       "name": "游侠",
-      "desc": "敌方单位攻击其他友方单位后，若该友方单位阵亡或体力低于25%，则该攻击结束时鸿园的流浪武者 良秀对攻击者使用“勠力同心”进行单方面攻击(每场战斗最多1次)\n- 鸿园的君主 鸿璐可超过上限额外触发1次该效果\n\n通过被动技能“君·可·旁·好”效果使用“喂，退下”时，使该技能暴击时造成的伤害+30%。并使1名理智值最低的1名其他友方单位恢复2~4点理智值(每回合最多1次。不包括理智值不高于-40点的友方单位)",
+      "desc": "敌方单位攻击其他友方单位后，若该友方单位阵亡或体力低于25%，则该攻击后鸿园的流浪武者 良秀对攻击者使用“勠力同心”进行单方面攻击(每场战斗最多1次)\n- 鸿园的君主 鸿璐可超过上限额外触发1次该效果\n\n通过被动技能“君·可·旁·好”效果使用“喂，退下”时，使该技能暴击时造成的伤害+30%。并使1名理智值最低的1名其他友方单位恢复2~4点理智值(每回合最多1次。不包括理智值不高于-40点的友方单位)",
       "summary": "友方单位受到致命伤害时，对攻击者使用3技能。触发常驻被动时，1技能效果强化"
     },
     {
@@ -2795,7 +2795,7 @@
     {
       "id": 1041402,
       "name": "无法填满的空虚",
-      "desc": "常驻效果：关卡开始时带有6发[BulletGodok]\n\n自身的[BulletGodok]数不低于1发时，若敌方单位在自身或其他友方单位攻击后理智值低于-40点或陷入混乱，则使用“砰。砰。”进行单方面攻击(每回合最多1次)\n\n自身攻击结束时，若自身的[BulletGodok]数为0发，则使用“无尽的故事”对目标进行单方面攻击，消耗10点理智值并使自身[FullReload]",
+      "desc": "常驻效果：关卡开始时带有6发[BulletGodok]\n\n自身的[BulletGodok]数不低于1发时，若敌方单位在自身或其他友方单位攻击后理智值低于-40点或陷入混乱，则使用“砰。砰。”进行单方面攻击(每回合最多1次)\n\n自身攻击后，若自身的[BulletGodok]数为0发，则使用“无尽的故事”对目标进行单方面攻击，消耗10点理智值并使自身[FullReload]",
       "summary": "触发“1-1技能”并[FullReload]"
     },
     {
@@ -2984,13 +2984,55 @@
       "id": 1041501,
       "name": "残像回响",
       "desc": "自身每带有1级超过20级的[Breath]强度，使自身基础攻击技能暴击时造成的伤害+1%(最多+10%)\n自身的基础攻击技能暴击命中时，对目标施加1层[PhantomIncisionID]\n\n以友方单位为目标的攻击技能可触发三千大世界的E.G.O被动效果[TabExplain]",
-      "summary": "暴击时造成的伤害增加，暴击命中时施加[PhantomIncisionID]"
+      "summary": "暴击时造成的伤害增加[TabExplain]，暴击命中时施加[PhantomIncisionID]"
     },
     {
       "id": 1041521,
       "name": "师事",
       "desc": "最先编入的友方单位使用基础技能时，使其增加2级[Breath]强度(每回合最多3次)",
       "summary": ""
+    },
+    {
+      "id": 1111501,
+      "name": "复仇账簿-蜘蛛巢特别条款",
+      "desc": "回合结束时\n- 对本回合对友方单位造成最高技能伤害的1名敌方单位施加[RetaliationBook]\n- 对本回合对自身造成最高技能伤害的1名敌方单位施加[RetaliationBookSpiderOutis]\n\n战斗开始时，每有1点嫉妒共鸣数，使自身获得1层[ResentmentSpiderOutis](最多7层)\n\n战斗中满足以下条件时，使自身获得2层[ResentmentSpiderOutis]\n- 自身受到其他单位的攻击时(每回合最多2次)\n- 蜘蛛巢 中指 子辈 以实玛利受到其他单位的攻击时(每回合最多1次)\n\n战斗中满足以下条件时，使自身获得1层[ResentmentSpiderOutis](触发目标不包括自身与蜘蛛巢 中指 子辈 以实玛利)\n- 属于中指的友方单位受到其他单位的攻击时(每回合每名人格最多1次)\n- 属于蜘蛛巢的友方单位受到其他单位的攻击时(每回合每名人格最多1次)\n\n自身获得[ResentmentSpiderOutis]时，若目标带有[RetaliationBook]，则使自身额外获得1层[ResentmentSpiderOutis]\n\n每当自身消耗5层[ResentmentSpiderOutis]时，使自身获得1层[ReinforcedTattooSpiderOutis]\n\n【蜘蛛巢 中指 子辈 以实玛利专属】\n蜘蛛巢 中指 父辈 奥提斯受到其他单位的攻击时，使以实玛利获得2层[ResentmentIshmael](每回合最多1次)"
+    },
+    {
+      "id": 1111502,
+      "name": "血与火的气息",
+      "desc": "自身视作施加[Combustion]与[Laceration]的人格\n若自身的剑处于[MiddleFatherSwordTwoOutis]或[MiddleFatherSwordThreeOutis]状态，则自身施加[Laceration]的技能视作施加[Combustion]与[Laceration]的技能"
+    },
+    {
+      "id": 1111503,
+      "name": "封印之剑[莱瓦汀]",
+      "desc": "战斗中首次登场时，使自身获得[MiddleFatherSwordOneOutis]\n\n若现存体力低于80%，则自身的技能结束后使用“拆开包装吧”进行单方面攻击并使自身的[MiddleFatherSwordOneOutis]转化为[MiddleFatherSwordTwoOutis]",
+      "flavor": "“都市深处的废墟。超过一定深度之后，其下已不再属于都市的范畴。它是在这样的废墟之中，等待终结的存在所挥动的剑的碎片，一片力量全部处于休眠之中的残滓。\n……跟你和我讲过的一样。与传说中一样，真的是一把超帅的剑。大哥、大姐。”"
+    },
+    {
+      "id": 1111513,
+      "name": "封印之剑[莱瓦汀]",
+      "desc": "战斗中首次登场时，使自身获得[MiddleFatherSwordOneOutis]\n\n<style=\"highlight\">根据获得的剑的阶段，相应使自身获得以下的[CountSkillMidOutis]\n- [MiddleFatherSwordOneOutis]：获得1层[CountSkillMidOutis]\n- [MiddleFatherSwordTwoOutis]：获得2层[CountSkillMidOutis]\n- [MiddleFatherSwordThreeOutis]：获得2层[CountSkillMidOutis]\n\n满足以下条件时，使自身的[CountSkillMidOutis]层数减少1层(每回合最多1次)\n- 使用技能“<noparse>仇怨</noparse>重踏”时(包括通过反击使用)\n- 嫉妒完全共鸣数总计不低于6的回合结束时\n\n若自身的[CountSkillMidOutis]层数为0层，则自身的技能结束后使用“拆开包装吧”进行单方面攻击\n- 回合结束时，若自身的[CountSkillMidOutis]层数为0层，且本回合自身未使用“拆开包装吧”，则下回合战斗开始时使用“拆开包装吧” \n- 若自身的剑处于[MiddleFatherSwordOneOutis]状态且现存体力低于80%，则无视[CountSkillMidOutis]层数使用“拆开包装吧”\n\n若现存体力不高于50%，则使自身获得3层[MiddleFatherGutsOutis](每场战斗最多1次)\n\n战斗中自身首次陷入混乱时，回合结束时解除自身的混乱并使自身获得15层[ResentmentSpiderOutis](不包括强制混乱)\n\n回合开始时，若自身的[ResentmentSpiderOutis]层数为15层，则使自身的1个基础技能转化为“<noparse>仇怨</noparse>重踏”或“即刻处刑”(每场战斗最多3次)\n- 仅对位于仪表盘最左侧行动槽下方一行的技能生效\n- 若该行动槽已有该技能，则不会触发该效果</style>",
+      "flavor": "“都市深处的废墟。超过一定深度之后，其下已不再属于都市的范畴。它是在这样的废墟之中，等待终结的存在所挥动的剑的碎片，一片力量全部处于休眠之中的残滓。\n……跟你和我讲过的一样。与传说中一样，真的是一把超帅的剑。大哥、大姐。”"
+    },
+    {
+      "id": 1111504,
+      "name": "孩子的教育",
+      "desc": "若蜘蛛巢 中指 子辈 以实玛利与自身同时登场，则触发以下效果\n- 拼点胜利时，使自身获得1层[DaughterEducationSpiderOutis](每回合最多1次；若该技能为本回合自身使用的首个技能，则使自身额外获得1层[DaughterEducationSpiderOutis])\n- 自身的技能命中时，使自身获得1层[DaughterEducationSpiderOutis](每回合最多1次；被摧毁的硬币不会获得[DaughterEducationSpiderOutis])\n\n【蜘蛛巢 中指 子辈 以实玛利专属】\n- 以实玛利拼点胜利时，使其获得1层[GotAComplimentIshmael](每回合最多1次；若该技能为本回合以实玛利使用的首个技能，则使其额外获得1层[GotAComplimentIshmael])\n- 以实玛利的技能命中时，使其获得1层[GotAComplimentIshmael](每回合最多1次；被摧毁的硬币不会获得[GotAComplimentIshmael]；若该技能为通过反击使用的3技能，则使其额外获得1层[GotAComplimentIshmael])"
+    },
+    {
+      "id": 1111505,
+      "name": "再会-中指",
+      "desc": "若自身在关卡开始时阵亡或在战斗中阵亡，则使蜘蛛巢之刃 良秀获得以下效果\n- 获得1层[SojiRyoshuEchoPast]\n- 受到的伤害-20%\n- 受到攻击时，使自身获得1层[AttackUp](每回合最多2次)"
+    },
+    {
+      "id": 1111506,
+      "name": "闺女……谢了。",
+      "desc": "若自身的剑处于[MiddleFatherSwordFourOutis]状态，则现存体力低于20%的友方单位与敌方单位拼点失败时，指定该敌方单位为主要目标，该友方单位为次要目标，使用“永不遗忘闺女为家人牺牲的心意，我会如数奉还”(每场战斗最多1次)\n- 蜘蛛巢 中指 子辈 以实玛利判定触发的体力条件改为30%\n\n该技能击杀属于中指的友方单位时，下回合使自身获得1层[VioletDamageUp]\n- 击杀蜘蛛巢 中指 子辈以 实玛利时，改为在下回合获得[MidFamilyOutis]"
+    },
+    {
+      "id": 1111521,
+      "name": "谁对我的家人动手了",
+      "desc": "战斗开始时，使装备了反击技能的友方单位获得1层[AttackDmgUp]与1层[Protection](每场战斗最多2次，不包括可拼点反击)\n- 若适用该效果的友方单位属于中指，则改为获得2层[VioletDamageUp]与2层[Protection]"
     }
   ]
 }
