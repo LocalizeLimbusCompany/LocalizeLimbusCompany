@@ -489,7 +489,7 @@
     {
       "id": 9251,
       "name": "燃える運命",
-      "desc": "[Combustion]を保有した対象とマッチ勝利時、20+(憤怒共鳴数 × 10)%の確率で[Combustion]を1回発動。対象の[Combustion]回数が1減少 (1ターンにつき最大4回発動)\n- 対象の[Combustion]威力が90以上なら、確率を100%に固定する (集中戦闘の場合は部位で判定)",
+      "desc": "[Combustion]威力の最大値 +30\n\n[Combustion]を保有した対象とマッチ勝利時、対象の[Combustion]を1回発動し、対象の[Combustion]回数が1減少 (人格ごとに1回)\n\n[Combustion]を保有した敵へスキル使用時、メインターゲットの([Combustion]威力 ÷ 10)だけ、そのスキルの攻撃レベルが増加 (最大8)",
       "simpleDesc": [
         {}
       ]
@@ -546,6 +546,83 @@
         {
           "abilityID": 92733,
           "simpleDesc": "最終威力、コイン威力、与ダメージ量が増加"
+        }
+      ]
+    },
+    {
+      "id": 9274,
+      "name": "投げ縄",
+      "desc": "敵にクリティカル的中時、次のターンに[Binding]1を付与 (1ターンにつき2回)\n[Binding]を保有した敵にスキル的中時、[Breath]1を得る (人格ごとに1ターンにつき2回)\n\nターン開始時、[Laceration]を保有した全ての敵が自身の[Binding]数値だけ[AttackDown]を得る (最大5)\n\nターン開始時、全ての敵(集中戦闘の場合は部位で判定)に[Binding]が付与されているなら、全味方が[Breath]3を得る",
+      "simpleDesc": [
+        {
+          "abilityID": 9274,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9275,
+      "name": "N社固定チームの鞄",
+      "desc": "[Laceration]威力・[Laceration]回数または特殊出血を付与するスキルで敵に的中時、[NailPersonality]1を付与 (スキルごとに1回)\n[NailPersonality]を保有した敵に[VibrationExplosion]を適用したなら、次のターンに[Binding]1を付与 (1ターンにつき3回)",
+      "simpleDesc": [
+        {
+          "abilityID": 9275,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9276,
+      "name": "白磁の硯滴",
+      "desc": "味方人格が[SupportProtect]を得るとき、[AttackDmgUp]2, [Protection]2を得る\n\n[編成1番人格専用効果]\nターン終了時、次のターンに[Agility]2を得る\n人格の速度が敵より速ければ、速度差1につきダメージ量 +3% (最大30%)",
+      "simpleDesc": [
+        {
+          "abilityID": 9276,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9277,
+      "name": "菖蒲剣",
+      "desc": "味方がこのターンに敵から攻撃を受けなかったなら、次のターンに[SlashDamageUp]1を得る\n味方が敵から攻撃を受けた場合、[Breath]を4得て、このターンと次のターンに[CriticalDamageUp]1を得る (人格ごとに1ターンにつき1回)\n- 剣契所属人格なら、このギフトの効果が2倍で適用される",
+      "simpleDesc": [
+        {
+          "abilityID": 9277,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9278,
+      "name": "砕けた木製刑具",
+      "desc": "斬撃スキルを使用して敵に的中時、次のターンに[DefenseDown]1を付与 (スキルごとに2回)\n味方が攻撃する敵より速度が速ければ、速度差1につき基本攻撃スキルのダメージ量 +3% (最大12%)\n- 敵が[Binding]状態なら、ダメージ量増加量と最大値が2倍で適用される",
+      "simpleDesc": [
+        {
+          "abilityID": 9278,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9279,
+      "name": "無文の鍔",
+      "desc": "[Breath]1につき、斬撃スキルのダメージ量 +1% (最大15%)",
+      "simpleDesc": [
+        {
+          "abilityID": 9279,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9280,
+      "name": "本国剣譜",
+      "desc": "敵の斬撃耐性が1.5以下の場合、斬撃耐性 +0.3\n斬撃スキルの攻撃レベル +2\n斬撃耐性が弱点(耐性1.0超過、混乱状態を除く)である敵を攻撃時、斬撃ダメージ量 +(5 + 対象の斬撃耐性 × 10)% (最大25%)\n\n[Breath]1につき、斬撃スキルのダメージ量 +1.5% (最大30%)\n\nターン開始時、剣契所属人格が3名以上なら発動 (出撃人員を基準とする)\n戦闘開始時、憤怒・傲慢スキルを装着した剣契所属の味方人格へ[BongukGiftEnhance]1を付与\n\n剣契所属人格を除く、編成順が最も早いS社所属人格1名を剣契所属として扱い、毎ターン[BongukGiftEnhance]を付与",
+      "simpleDesc": [
+        {
+          "abilityID": 9280,
+          "simpleDesc": ""
         }
       ]
     }

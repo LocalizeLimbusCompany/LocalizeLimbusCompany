@@ -1,0 +1,474 @@
+{
+  "dataList": [
+    {
+      "id": 40003801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "勢法",
+          "desc": "[WhenUse] 自分の[Breath]と対象の[Laceration]の合計6につき、コイン威力 +1 (最大2)\n[WhenUse] 自分の[Agility]が3以上なら、基本威力 +2\n[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]3を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40003802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "刺法",
+          "desc": "[WhenUse] 自分の[Breath]と対象の[Laceration]の合計6につき、コイン威力 +1 (最大2)\n[WhenUse] 自分の[Agility]が3以上なら、基本威力 +2\n[WhenUse] 自分の[Breath]回数が2増加\n[WinDuel] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 次のターンに[Agility]2を得る"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40003803,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "清燐火",
+          "desc": "自分の失った体力1%につき、ダメージ量 +0.5% (最大25%)\n自分の[Agility]1につき、クリティカルダメージ量 +25% (最大150%)\n[WhenUse] 自分の[Breath]と対象の[Laceration]の合計が6以上なら、コイン威力 +1 (最大2)\n[WhenUse] [WindBlade]数値が5以上なら、[SuperCoin]に変更される\n[WinDuel] [Breath]5を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が3増加"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [WindBlade]1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [WindBlade]1を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [WindBlade]1を得る"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40003804,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "相戦清燐火",
+          "desc": "[CantDuel]\nこのスキルは守備スキルを発動させない\n自分の失った体力1%につき、ダメージ量 +0.5% (最大25%)\n自分の[Agility]1につき、クリティカルダメージ量 +20% (最大100%)\n[EndSkill] [WindBlade]を全て消耗",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]5を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 自分の[Agility]が5以上なら、コインを再使用 (スキルごとに1回)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40003805,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "骨断",
+          "desc": "[CantDuel]\nこのスキルは守備スキルを発動させない\n自分の失った体力1%につき、ダメージ量 +0.5% (最大25%)\n自分の[Agility]1につき、クリティカルダメージ量 +10% (最大50%)\n[WhenUse] 自分の[Breath]と対象の[Laceration]の合計4につき、基本威力 +1 (最大4)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]3を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Paralysis]2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40003806,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "行く先を照らさん",
+          "desc": "[CanDuelGuard]\n[StartBattle] [SupportProtect]1を得る\n[WhenUse] [Breath]5を得る\n[WinDuel] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40003807,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "形勢判断",
+          "desc": "[CanDuelGuard]\n[SupportProtect] 専用スキル\n[WhenUse] [Breath]5を得る\n[WhenUse] [Breath]が25を超過したなら、[Breath]5を消耗して[WindBlade]3を得る\n[WinDuel] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40004001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "抜剣",
+          "desc": "[WhenUse] 自分の[Breath]が5以上なら、コイン威力 +1\n[WhenUse] 自分の[Breath]回数が2増加\n[WinDuel] [Breath]3を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]3を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]5を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [Laceration]回数が2増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40004002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "刺法",
+          "desc": "[WhenUse] 自分の[Breath]が7以上なら、コイン威力 +1\n[WhenUse] 自分の[Breath]回数が3増加\n[WinDuel] [Breath]2を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]4を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "クリティカルダメージ量 +20%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "クリティカルダメージ量 +40%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が3増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40004003,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "殺主",
+          "desc": "[DuelCounter]\n[StartBattle] このターンと次のターンに[SlashDamageUp]2を得る\n[WhenUse] 自分の[Breath]が8以上なら、コイン威力 +1\n[WhenUse] 自分の[Breath]回数が3増加\n[WinDuel] [Breath]4を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]5を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "クリティカルダメージ量 +80%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]8を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40004004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "肉斬",
+          "desc": "最大威力が最も高いスキルスロットを優先指定する\n[WhenUse] このスキルの終了時まで\n- 自分の[Breath]1につき、攻撃による被ダメージ量 -2% (最小 -80%)\n- 自分の[Breath]1につき、マッチ威力 -1 (最小 -30)\n- ダメージによって混乱状態にならない\n[WinDuel] [Breath]5を得る\n[DefeatDuel] 被ダメージ後に「骨断」を使用\n[EndBattle] 次のターンまで「肉斬」が使用不能",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "クリティカルダメージ量 +150%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[SlashResistDown]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[DefenseDown]4を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40004005,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "骨断",
+          "desc": "[WhenUse] 自分の[Breath]が10以上なら、コイン威力 +1\n[WhenUse] このスキルの攻撃加重値よりも低い攻撃対象1につき、ダメージ量 +40% (集中戦闘の場合は部位で判定)\n[WhenUse] 自分の[Breath]回数が4増加\n[EndSkill] 自分の[Breath]を全て消耗",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] 最終コインの威力 +2 (コインごとに1回)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] 最終コインの威力 +2 (コインごとに1回)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] 最終コインの威力 +2 (コインごとに1回)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]10を付与、[Laceration]回数が2増加"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Paralysis]2を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40003901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "ユリア工房 - 総攻撃モード、マーク17！",
+          "desc": "対象のマイナス効果1種につき、ダメージ量 +50% (最大100%)\n[WhenUse] 対象の[Vibration]が6以上なら、基本威力 +3",
+          "flavor": "特製の手作りゴールデンレトリバー専用斧。",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]3を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象の[Laceration]を1回発動。対象の[Laceration]回数が1減少"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40003902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "援護したげる！後ろに下がってて！",
+          "desc": "[CanDuelGuard]\n[SupportProtect]専用スキル\n[WinDuel] 味方の精神力を4回復 (自分を含む)\n- LCD所属なら、代わりに精神力が8回復",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

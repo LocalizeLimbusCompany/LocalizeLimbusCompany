@@ -566,6 +566,12 @@
       "name": "火の粉",
       "desc": "<style=\"highlight\">憤怒属性または[Combustion]威力・回数を付与するスキル使用時、全攻撃対象の[Combustion]の合計が6以上なら、マッチ威力 +1</style>\n\nマッチ勝利時、<style=\"highlight\">メインターゲット</style>に(憤怒<style=\"highlight\">共鳴数 × 2</style>)だけ[Combustion]を付与 (スキルごとに<style=\"highlight\">最大8</style>)",
       "summary": "マッチ威力が増加\n条件を満たすと[Combustion]を付与"
+    },
+    {
+      "id": 2050911,
+      "name": "剣先にしたたる酒滴",
+      "desc": "[AlwaysUseEGOPassive2050911]\n\n基本スキルの攻撃的中時、対象に[Laceration]2を付与 (スキルごとに1回)\n\nこの人格は[Laceration]・[Breath]を付与する人格として扱われる\n- この効果により、基本スキルが[Laceration]・[Breath]を付与するスキルとして扱われる\n\n[WhenUseEGOPassive]\n\n味方死亡時、次のターンに[AlcoholKimPersonal]1を得る\n- 死亡した味方が剣契所属なら、代わりに[AlcoholKimPersonal]2を得る\n\nターン開始時、自分に[AlcoholKimPersonal]があるなら、[GhostKimPersonal]状態になる\n- 剣契頭目ムルソーなら、追加で[RootSoupKimPersonal]を得る\n\nターン開始時、自分に[AlcoholKimPersonal]がなければ、自分の[GhostKimPersonal]・[GrudgePersonal]・[RootSoupKimPersonal]が消滅する\n\n[AlcoholKimPersonal]があるときに体力が0になるダメージを受けると、自分の体力を最大値の([AlcoholKimPersonal]数値 × 25)%だけ回復し、[AlcoholKimPersonal]が消滅する (戦闘ごとに1回、人格パッシブが優先して発動)\n- 混乱状態なら、混乱状態を解除 (強制混乱を除く)",
+      "summary": "[AlcoholKimPersonal]を得る"
     }
   ]
 }

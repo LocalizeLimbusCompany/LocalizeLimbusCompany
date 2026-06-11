@@ -489,7 +489,7 @@
     {
       "id": 9251,
       "name": "Burning Fate",
-      "desc": "On Clash Win against targets that have [Combustion], (20 + (Wrath Reson. x 10))% chance to activate [Combustion] once and reduce the target's [Combustion] Count by 1 (4 times per turn)\n- If target has 90+ [Combustion] Potency, the above effect activates at 100% chance (for Focused Encounters, the Part)",
+      "desc": "Max [Combustion] Potency +30\n \nOn Clash Win against targets that have [Combustion], activate [Combustion] on target once and reduce the target's [Combustion] Count by 1 (once per Identity)\n\nOn Skill Use against enemies that have [Combustion], the said Skill gains Offense Level equal to ([Combustion] Potency on the main target / 10) (max 8)",
       "simpleDesc": [
         {}
       ]
@@ -546,6 +546,83 @@
         {
           "abilityID": 92733,
           "simpleDesc": "Gain Final Power, Coin Power, deal more damage"
+        }
+      ]
+    },
+    {
+      "id": 9274,
+      "name": "Ohra Bond",
+      "desc": "On Crit against an enemy, inflict 1 [Binding] next turn (2 times per turn)\nOn Hit using a Skill against an enemy that has [Binding], gain 1 [Breath] (2 times per turn per Identity)\n\nTurn Start: All enemies that have [Laceration] gain [AttackDown] equal to [Binding] on themselves (max 5)\n\nTurn Start: If all enemies(for Focused Encounters, all Parts) have [Binding], all allies gain 3 [Breath]",
+      "simpleDesc": [
+        {
+          "abilityID": 9274,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9275,
+      "name": "N Corp. Service des Clous Briefcase",
+      "desc": "When hitting an enemy using a Skill that inflicts [Laceration] Potency, Count, or 'Unique Bleed', inflict 1 [NailPersonality] (once per Skill)\nWhen triggering [VibrationExplosion] on an enemy that has [NailPersonality], inflict 1 [Binding] next turn (3 times per turn)",
+      "simpleDesc": [
+        {
+          "abilityID": 9275,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9276,
+      "name": "Baekja Water Dropper",
+      "desc": "When an allied Identity gains [SupportProtect], the said ally gains 2 [AttackDmgUp] and 2 [Protection]\n\n[Effects apply only to #1 Deployed Identity]\nTurn End: Gain 2 [Agility] next turn\nWhen an Identity's Speed is faster than the enemy's, deal +3% damage for every Speed difference (max 30%)",
+      "simpleDesc": [
+        {
+          "abilityID": 9276,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9277,
+      "name": "Flagroot Cane Sword",
+      "desc": "If an ally was not hit by an enemy this turn, the said ally gains 1 [SlashDamageUp] next turn\nWhen an ally is hit by an enemy, the said ally gains 4 [Breath], and gains 1 [CriticalDamageUp] this turn and next turn (once per turn per Identity)\n- If the affected ally is a Blade Lineage Identity, gain double the effects of this E.G.O Gift",
+      "simpleDesc": [
+        {
+          "abilityID": 9277,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9278,
+      "name": "Crushed Wooden Manacle",
+      "desc": "On Hit against an enemy using a Slash Skill, inflict 1 [DefenseDown] next turn (2 times per Skill)\nIf an ally is faster than the enemy, the said ally deals +3% damage using Base Attack Skills for every 1 Speed Difference (max 12%)\n- If the enemy has [Binding], double the above damage boost and its maximum cap",
+      "simpleDesc": [
+        {
+          "abilityID": 9278,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9279,
+      "name": "Unadorned Sword-guard",
+      "desc": "Slash Skills deal +1% damage for every [Breath] (max 15%)",
+      "simpleDesc": [
+        {
+          "abilityID": 9279,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9280,
+      "name": "The Book of the Homeland Swordplay [本國劍譜]",
+      "desc": "If an enemy has 1.5 or lower Slash Resist., Slash Resist. +0.3\nSlash Skills gain Offense Level +2\nWhen attacking enemies that are Weak (greater than 1.0 Resist.; Staggered states do not count) to Slash, deal +(5 + (target's Slash Resist. x 10))% damage (max 25%)\n\nSlash Skills deal +1.5% damage for every [Breath] (max 30%)\n\nTurn Start: Activates when there are 3 or more Blade Lineage Identities (only counts Identities on the field at Encounter Start)\nCombat Start: Apply 1 [BongukGiftEnhance] on allied Blade Lineage Identities that have equipped Wrath or Pride Skills\n\nCount 1 non-Blade Lineage S Corp. Identity with the earliest Deployment order as a Blade Lineage Identity and apply [BongukGiftEnhance] on it every turn",
+      "simpleDesc": [
+        {
+          "abilityID": 9280,
+          "simpleDesc": ""
         }
       ]
     }

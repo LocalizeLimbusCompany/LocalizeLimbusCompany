@@ -566,6 +566,12 @@
       "name": "불티",
       "desc": "<style=\"highlight\">분노 속성 또는 [Combustion] 위력, 횟수를 부여하는 스킬 사용 시 모든 공격 대상의 [Combustion]의 합이 6 이상이면, 합 위력 +1</style>\n\n합 승리 시 <style=\"highlight\">메인 타겟</style>에게 (분노 <style=\"highlight\">공명 수 x 2</style>)만큼 [Combustion] 부여 (스킬당 <style=\"highlight\">최대 8</style>)",
       "summary": "합 위력이 증가함\n조건 만족 시 [Combustion] 부여"
+    },
+    {
+      "id": 2050911,
+      "name": "칼끝에 맺힌 술방울",
+      "desc": "[AlwaysUseEGOPassive2050911]\n\n기본 스킬의 공격 적중 시 대상에게 [Laceration] 2 부여 (스킬당 1회)\n\n이 인격은 [Laceration], [Breath]을 부여하는 인격으로 취급됨\n- 이 효과로 인해서 기본 스킬이 [Laceration]과 [Breath]을 부여하는 스킬로 취급됨\n\n[WhenUseEGOPassive]\n\n아군 사망 시 다음 턴에 [AlcoholKimPersonal] 1 얻음\n- 사망한 아군이 검계 소속이면, 대신 [AlcoholKimPersonal] 2 얻음\n\n턴 시작 시 자신에게 [AlcoholKimPersonal]가 있으면, [GhostKimPersonal] 상태가 됨\n- 검계 우두머리 뫼르소면, 추가로 [RootSoupKimPersonal] 얻음\n\n턴 시작 시 자신에게 [AlcoholKimPersonal]가 없으면, 자신의 [GhostKimPersonal], [GrudgePersonal], [RootSoupKimPersonal] 소멸함\n\n[AlcoholKimPersonal]가 있을 때 체력이 0이 되는 피해를 받으면, 자신의 체력을 최대 체력의 ([AlcoholKimPersonal] 수치 x 25)%만큼 회복하고 [AlcoholKimPersonal] 소멸함 (전투당 1회, 인격 패시브 우선 발동)\n- 흐트러짐 상태면, 흐트러짐 해제 (강제 흐트러짐 제외)",
+      "summary": "[AlcoholKimPersonal] 얻음"
     }
   ]
 }

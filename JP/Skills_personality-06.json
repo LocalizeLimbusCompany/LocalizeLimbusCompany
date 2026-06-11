@@ -471,7 +471,7 @@
                   "desc": "[OnSucceedAttackHead] [Sinking]回数が1増加"
                 },
                 {
-                  "desc": "[OnSucceedAttack] ([KnowledgeExplored] - 1)以上だけ、コイン再使用"
+                  "desc": "[OnSucceedAttack] ([KnowledgeExplored] - 1)だけ、コイン再使用"
                 }
               ]
             }
@@ -1069,7 +1069,7 @@
         {
           "level": 4,
           "name": "緊急止血",
-          "desc": "[StartBattle] 自分の[Laceration]威力を2減少(1ターンにつき3回。[Laceration]が減少し0になると、[Laceration]が消滅)",
+          "desc": "[StartBattle] 自分の[Laceration]威力を2減少(1ターンにつき3回。[Laceration]が減少し0以下になると、[Laceration]が消滅)",
           "coinlist": [
             {
               "coindescs": [
@@ -2218,7 +2218,7 @@
         {
           "level": 3,
           "name": "黒獣たちよ、応えろ",
-          "desc": "このスキルは守備スキルを発動させない\n\n[WhenUse] [Breath]3を得る、[Breath]回数が1増加\n\n[EndSkill] 現在行動可能な[HeishouComboCount]の最も低い黒獣へ[HeishouComboCount]を1付与して、[HeishouCombo]を命令。(1ターンにつき1回)\n- [HeishouCombo]が終了すると、「君主の道を拓こうぞ」を使用\n- [HeishouCombo]が発動しないか、[HeishouCombo]終了前に連携中の人格が混乱・死亡した場合、代わりに「孑孑単身、舎生取園」を使用",
+          "desc": "このスキルは守備スキルを発動させない\n\n[WhenUse] [Breath]3を得る、[Breath]回数が1増加\n\n[EndSkill] 現在行動可能な味方の黒獣のうち、[HeishouComboCount]が最も低い対象へ[HeishouComboCount]を1付与して、[HeishouCombo]を命令。(1ターンにつき1回)\n- [HeishouCombo]が終了すると、「君主の道を拓こうぞ」を使用\n- [HeishouCombo]が発動しないか、[HeishouCombo]終了前に連携中の人格が混乱・死亡した場合、代わりに「孑孑単身、捨生取園」を使用",
           "coinlist": [
             {
               "coindescs": [
@@ -2238,7 +2238,7 @@
         {
           "level": 4,
           "name": "黒獣たちよ、応えろ",
-          "desc": "このスキルは守備スキルを発動させない\n\n<style=\"highlight\">[WhenUse] 対象の[Burst]と自分の[Breath]の合計4につき、コイン威力 +1 (最大3)</style>\n[WhenUse] [Breath]<style=\"highlight\">5</style>を得る、[Breath]回数が<style=\"highlight\">3</style>増加\n\n[EndSkill] 現在行動可能な[HeishouComboCount]の最も低い黒獣へ[HeishouComboCount]を1付与して、[HeishouCombo]を命令。(1ターンにつき1回)\n- [HeishouCombo]が終了すると、「君主の道を拓こうぞ」を使用\n- [HeishouCombo]が発動しないか、[HeishouCombo]終了前に連携中の人格が混乱・死亡した場合、代わりに「孑孑単身、舎生取園」を使用",
+          "desc": "このスキルは守備スキルを発動させない\n\n<style=\"highlight\">[WhenUse] 対象の[Burst]と自分の[Breath]の合計4につき、コイン威力 +1 (最大3)</style>\n[WhenUse] [Breath]<style=\"highlight\">5</style>を得る、[Breath]回数が<style=\"highlight\">3</style>増加\n\n[EndSkill] 現在行動可能な味方の黒獣のうち、[HeishouComboCount]が最も低い対象へ[HeishouComboCount]を1付与して、[HeishouCombo]を命令。(1ターンにつき1回)\n- [HeishouCombo]が終了すると、「君主の道を拓こうぞ」を使用\n- [HeishouCombo]が発動しないか、[HeishouCombo]終了前に連携中の人格が混乱・死亡した場合、代わりに「孑孑単身、捨生取園」を使用",
           "coinlist": [
             {
               "coindescs": [
@@ -2296,7 +2296,7 @@
         {
           "level": 1,
           "name": "君主の道を拓こうぞ",
-          "desc": "[WhenUse] 黒獣筆頭人格と連携したなら、基本威力 +1, コイン威力 +1\n\n[WhenUse] 対象の[Burst]と自分の[Breath]の合計が6以上なら、コイン威力 +1\n[WhenUse] [HeishouComboCountHonglu]1につき、ダメージ量 +5%\n[EndSkill] [HeishouCombo]を発動した黒獣人格に応じて[HeishouComboCountHonglu]を1得る",
+          "desc": "[WhenUse] 黒獣筆頭人格と連携したなら、基本威力 +1, コイン威力 +1\n\n[WhenUse] 対象の[Burst]と自分の[Breath]の合計が6以上なら、コイン威力 +1\n[WhenUse] [HeishouComboCountHonglu]1につき、ダメージ量 +5%\n[EndSkill] [HeishouCombo]を発動した黒獣人格に応じて[HeishouComboCountHonglu]を得る",
           "coinlist": [
             {
               "coindescs": [
@@ -2320,7 +2320,7 @@
         {
           "level": 4,
           "name": "君主の道を拓こうぞ",
-          "desc": "[WhenUse] 黒獣筆頭人格と連携したなら、基本威力 +1, コイン威力 +1\n\n<style=\"highlight\">対象と自分の失った体力の合計1%につき、ダメージ量 +1% (最大50%)</style>\n<style=\"highlight\">[WhenUse] 対象の[Burst]と自分の[Breath]の合計6につき、コイン威力 +1 (最大3)</style>\n<style=\"highlight\">[WhenUse] 対象のマイナス効果2種につき、ダメージ量 +10% (最大30%)</style>\n[WhenUse] [HeishouComboCountHonglu]1につき、ダメージ量 <style=\"highlight\">+10%</style>\n[EndSkill] [HeishouCombo]を発動した黒獣人格に応じて[HeishouComboCountHonglu]を1得る",
+          "desc": "[WhenUse] 黒獣筆頭人格と連携したなら、基本威力 +1, コイン威力 +1\n\n<style=\"highlight\">対象と自分の失った体力の合計1%につき、ダメージ量 +1% (最大50%)</style>\n<style=\"highlight\">[WhenUse] 対象の[Burst]と自分の[Breath]の合計6につき、コイン威力 +1 (最大3)</style>\n<style=\"highlight\">[WhenUse] 対象のマイナス効果2種につき、ダメージ量 +10% (最大30%)</style>\n[WhenUse] [HeishouComboCountHonglu]1につき、ダメージ量 <style=\"highlight\">+10%</style>\n[EndSkill] [HeishouCombo]を発動した黒獣人格に応じて[HeishouComboCountHonglu]を得る",
           "coinlist": [
             {
               "coindescs": [
@@ -2354,7 +2354,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "孑孑単身、舎生取園",
+          "name": "孑孑単身、捨生取園",
           "desc": "自分の[HeishouDeathCount]1につき、ダメージ量 +10%\n対象と自分の失った体力の合計1%につき、ダメージ量 +1% (最大50%)\n[WhenUse] [HeishouDeathCount]が3以上なら、このスキルの加重値 +1\n[WhenUse] 対象の[Burst]と自分の[Breath]の合計が6以上なら、コイン威力 +1\n[WhenUse] [HeishouComboCountHonglu]1につき、ダメージ量 +5%",
           "coinlist": [
             {
@@ -2391,7 +2391,7 @@
         },
         {
           "level": 4,
-          "name": "孑孑単身、舎生取園",
+          "name": "孑孑単身、捨生取園",
           "desc": "自分の[HeishouDeathCount]1につき、ダメージ量 +10%\n対象と自分の失った体力の合計1%につき、ダメージ量 +1% (最大50%)\n[WhenUse] [HeishouDeathCount]が3以上なら、このスキルの加重値 +1\n<style=\"highlight\">[WhenUse] 対象の[Burst]と自分の[Breath]の合計6につき、コイン威力 +1 (最大3)</style>\n<style=\"highlight\">[WhenUse] 対象のマイナス効果2種につき、ダメージ量 +10% (最大30%)</style>\n[WhenUse] [HeishouComboCountHonglu]1につき、ダメージ量 <style=\"highlight\">+10%</style>",
           "coinlist": [
             {
@@ -2563,7 +2563,7 @@
         {
           "level": 2,
           "name": "材料獲得 - 血で沐浴するオブジェ",
-          "desc": "<style=\"highlight\">対象のマイナス効果1種につき、ダメージ量 +5% (最大20%)</style>\n<style=\"highlight\">[WhenUse] 対象の[Laceration]4につき、最終威力 +1 (最大2)</style>\n[WhenUse] 自分の[ChargeBodyArt]回数が10以上なら、[ChargeBodyArt]回数を5消耗して下記の効果を適用\n- マッチ威力 +1\n- 最終コインが[SuperCoin]になる　",
+          "desc": "<style=\"highlight\">対象のマイナス効果1種につき、ダメージ量 +5% (最大20%)</style>\n<style=\"highlight\">[WhenUse] 対象の[Laceration]4につき、最終威力 +1 (最大2)</style>\n[WhenUse] 自分の[ChargeBodyArt]回数が10以上なら、[ChargeBodyArt]回数を5消耗して下記の効果を適用\n- マッチ威力 +1\n- 最終コインが[SuperCoin]になる",
           "coinlist": [
             {
               "coindescs": [
@@ -2597,7 +2597,7 @@
         {
           "level": 4,
           "name": "材料獲得 - 血で沐浴するオブジェ",
-          "desc": "対象のマイナス効果1種につき、ダメージ量 +<style=\"highlight\">10</style>% (最大<style=\"highlight\">30</style>%)\n[WhenUse] 対象の[Laceration]4につき、最終威力 +1 (最大<style=\"highlight\">4</style>)\n[WhenUse] 自分の[ChargeBodyArt]回数が10以上なら、[ChargeBodyArt]回数を5消耗して下記の効果を適用\n- マッチ威力 +1\n- 最終コインが[SuperCoin]になる　",
+          "desc": "対象のマイナス効果1種につき、ダメージ量 +<style=\"highlight\">10</style>% (最大<style=\"highlight\">30</style>%)\n[WhenUse] 対象の[Laceration]4につき、最終威力 +1 (最大<style=\"highlight\">4</style>)\n[WhenUse] 自分の[ChargeBodyArt]回数が10以上なら、[ChargeBodyArt]回数を5消耗して下記の効果を適用\n- マッチ威力 +1\n- 最終コインが[SuperCoin]になる",
           "coinlist": [
             {
               "coindescs": [
@@ -3028,6 +3028,361 @@
                 },
                 {
                   "desc": "[OnSucceedAttack] [LivingSpecimenPersonality]を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "捕縄で締め上げる",
+          "desc": "[WhenUse] 自分の[Breath]回数が3増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]3を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象に[TiedRopeHonglu]があれば、[TiedRopeHonglu]の数値が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "捕縄で締め上げる",
+          "desc": "[WhenUse] 自分の[Breath]と対象の[Laceration]の合計が6以上なら、コイン威力 +1\n[WhenUse] 自分の[Breath]回数が3増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]4を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象に[TiedRopeHonglu]があれば、[TiedRopeHonglu]の数値が1増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "捕縄で締め上げる",
+          "desc": "[WhenUse] 自分の[Breath]と対象の[Laceration]の合計6につき、コイン威力 +1 (最大2)\n[WhenUse] 対象に[TiedRopeHonglu]があるなら、最終威力 +1\n[WhenUse] 自分の[Breath]回数が3増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]4を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象に[TiedRopeHonglu]があれば、[TiedRopeHonglu]の数値が1増加"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "裂き斬る",
+          "desc": "[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[TiedRopeHonglu]が2以上なら、[TiedRopeHonglu]を1消耗してこのコインを再使用 (スキルごとに1回)"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [ScratchesHurtID]1を付与"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] 次のターンに[Agility]2を得る"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] 対象の[Laceration]を発動、[Laceration]回数が1減少"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "裂き斬る",
+          "desc": "[WhenUse] 自分の[Breath]と対象の[Laceration]の合計が6以上なら、コイン威力 +1\n[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[TiedRopeHonglu]が2以上なら、[TiedRopeHonglu]を1消耗してこのコインを再使用 (スキルごとに1回)"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [ScratchesHurtID]1を付与"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] 次のターンに[Agility]2を得る"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] 対象の[Laceration]を発動、[Laceration]回数が1減少"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "裂き斬る",
+          "desc": "[WhenUse] 自分の[Breath]と対象の[Laceration]の合計6につき、コイン威力 +1 (最大2)\n[WhenUse] 対象に[TiedRopeHonglu]があるなら、最終威力 +1\n[WhenUse] 自分の[Breath]回数が2増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]3を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 対象の[TiedRopeHonglu]が2以上なら、[TiedRopeHonglu]を1消耗してこのコインを再使用 (スキルごとに1回)"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [ScratchesHurtID]1を付与"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] 次のターンに[Agility]2を得る"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] 対象の[Laceration]を発動、[Laceration]回数が1減少"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061503,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "推刷執行",
+          "desc": "[WhenUse] 自分の[Breath]と対象の[Laceration]の合計が6以上なら、コイン威力 +1\n[WhenUse] 対象に[TiedRopeHonglu]があるなら、\nこのスキルの全コインが[SuperCoin]に変更されて最終威力 +1, 最終コイン的中時に下記の効果を適用\n- [Laceration]回数が2増加\n- 次のターンに[Reduction]1を付与\n[WhenUse] [Breath]5を得る\n[WhenUse] 自分の[Breath]回数が3増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象に[TiedRopeHonglu]がなければ、[TiedRopeHonglu]を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [ScratchesHurtID]1を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [ScratchesHurtID]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "推刷執行",
+          "desc": "[WhenUse] 自分の[Breath]と対象の[Laceration]の合計6につき、コイン威力 +1 (最大2)\n[WhenUse] 対象に[ScratchesHurtID]があるなら、ダメージ量 +20%\n[WhenUse] 対象に[TiedRopeHonglu]があるなら、\nこのスキルの全コインが[SuperCoin]に変更されて最終威力 +1, 最終コイン的中時に下記の効果を適用\n- [Laceration]回数が2増加\n- 次のターンに[Reduction]1を付与\n[WhenUse] [Breath]5を得る\n[WhenUse] 自分の[Breath]回数が3増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Binding]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 対象に[TiedRopeHonglu]がなければ、[TiedRopeHonglu]を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が2増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "クリティカルダメージ量 +50%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]3を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [ScratchesHurtID]1を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] [ScratchesHurtID]1を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 次のターンに[IndigoTakeDamageUp]1を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "捕縄を掛ける",
+          "desc": "[DuelCounter]\n[WhenUse] 自分の[Breath]と対象の[Laceration]の合計が6以上なら、マッチ威力 +2\n[WhenUse] [Breath]5を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [TiedRopeHonglu]を付与"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "捕縄を掛ける",
+          "desc": "[DuelCounter]\n[WhenUse] 自分の[Breath]と対象の[Laceration]の合計が6以上なら、マッチ威力 +2\n[WhenUse] [Breath]5を得る\n[WinDuel] [Breath]回数が3増加",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [TiedRopeHonglu]を付与"
+                },
+                {
+                  "desc": "[UnBrokenCoinOnSucceedAttack] [Laceration]1を付与"
                 }
               ]
             }

@@ -1257,7 +1257,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "赤擊",
+          "name": "赤撃",
           "desc": "[WhenUse] 対象のマイナス効果の種類の合計が5個以上なら、マッチ威力 +1\n[WinDuel] [Breath]1を得る、自分の[Breath]回数が1増加",
           "coinlist": [
             {
@@ -1281,7 +1281,7 @@
         },
         {
           "level": 2,
-          "name": "赤擊",
+          "name": "赤撃",
           "desc": "[WhenUse] 対象のマイナス効果の種類の合計が5個以上なら、マッチ威力 +1\n<style=\"highlight\">[WhenUse] 対象の[Burst]が3以上なら、コイン威力 +1</style>\n[WinDuel] [Breath]2を得る、自分の[Breath]回数が1増加",
           "coinlist": [
             {
@@ -1305,7 +1305,7 @@
         },
         {
           "level": 4,
-          "name": "赤擊",
+          "name": "赤撃",
           "desc": "[WhenUse] 対象のマイナス効果の種類の合計が5個以上なら、マッチ威力 +1\n[WhenUse] 対象の[Burst]<style=\"highlight\">3に</style>つき、コイン威力 +1<style=\"highlight\">(最大2)</style>\n[WinDuel] [Breath]<style=\"highlight\">3</style>を得る、自分の[Breath]回数が<style=\"highlight\">2</style>増加",
           "coinlist": [
             {
@@ -2237,6 +2237,535 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] [Laceration]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081501,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "勢法",
+          "desc": "[WhenUse] 自分の[Breath]回数が2増加\n[EndSkill] 自分に[Agility]があるなら、[WindBladeIshmael]1を得る (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]1を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "勢法",
+          "desc": "<style=\"highlight\">[WhenUse] 自分の[Agility]が3以上なら、マッチ威力 +1</style>\n[WhenUse] 自分の[Breath]回数が2増加\n[EndSkill] 自分に[Agility]があるなら、[WindBladeIshmael]1を得る (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]1を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "勢法",
+          "desc": "<style=\"highlight\">[WhenUse] 自分の[Breath]が5以上なら、コイン威力 +1\n[WhenUse] 対象の[Laceration]5につき、マッチ威力 +1 (最大2)</style>\n[WhenUse] 自分の[Agility]が3以上なら、マッチ威力 +1\n[WhenUse] 自分の[Breath]回数が2増加\n[EndSkill] 自分に[Agility]があるなら、[WindBladeIshmael]1を得る (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]1を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [AengduNewArmIshmael]を保有した状態で自分の[Agility]が3以上なら、このコインを再使用 (1ターンにつき1回)</style>\""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081502,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "刺法",
+          "desc": "[WhenUse] 自分の[Breath]回数が3増加\n[EndSkill] 自分の[Agility]1につき、[WindBladeIshmael]1を得る (最大2, 1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 次のターンに[Agility]2を得る(1ターンにつき1回)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "刺法",
+          "desc": "<style=\"highlight\">[WhenUse] 自分の[Agility]が3以上なら、マッチ威力 +2</style>\n[WhenUse] 自分の[Breath]回数が3増加\n[EndSkill] 自分の[Agility]1につき、[WindBladeIshmael]1を得る (最大2, 1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 次のターンに[Agility]2を得る(1ターンにつき1回)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "刺法",
+          "desc": "<style=\"highlight\">[WhenUse] 自分の[Breath]が5以上なら、コイン威力 +1\n[WhenUse] 対象の[Laceration]5につき、マッチ威力 +1 (最大2)</style>\n[WhenUse] 自分の[Agility]が3以上なら、マッチ威力 +2\n[WhenUse] 自分の[Breath]回数が3増加\n[EndSkill] 自分の[Agility]1につき、[WindBladeIshmael]1を得る (最大2, 1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]回数が1増加"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [AengduNewArmIshmael]を保有した状態で自分の[Agility]が3以上なら、このコインを再使用 (1ターンにつき1回)</style>\""
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 次のターンに[Agility]2を得る(1ターンにつき1回)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081503,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "清燐火",
+          "desc": "自分の[Breath]1につき、クリティカルダメージ量 +1.5% (最大30%)\n[WhenUse] 自分の[Agility]2につき、最終威力 +1 (最大2)\n[WhenUse] 自分の[WindBladeIshmael]数値が10以上なら、全コインが[SuperCoin]に変更される\n[WhenUse] [Breath]3を得る\n[WhenUse] 次のターンに[Agility]2を得る (1ターンにつき1回)\n[EndSkill] 自分の[Agility]1につき、[WindBladeIshmael]1を得る (最大3, 1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が3増加"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "自分の[WindBladeIshmael]数値1につき、クリティカルダメージ量 +2% (最大20%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [SlashTakeDamageUp]1を付与 (1ターンにつき1回)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "清燐火",
+          "desc": "自分の[Breath]1につき、クリティカルダメージ量 +1.5% (最大30%)\n[WhenUse] 自分の[Agility]2につき、最終威力 +1 (最大2)\n<style=\"highlight\">[WhenUse] 自分の[Breath]と対象の[Laceration]の合計6につき、コイン威力 +1 (最大2)</style>\n[WhenUse] 自分の[WindBladeIshmael]数値が10以上なら、全コインが[SuperCoin]に変更される\n[WhenUse] [Breath]3を得る\n[WhenUse] 次のターンに[Agility]2を得る (1ターンにつき1回)\n[EndSkill] 自分の[Agility]1につき、[WindBladeIshmael]1を得る (最大3, 1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 自分の[Breath]回数が3増加"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttack] [WindBladeIshmael]1を得る</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]2を得る"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttack] [WindBladeIshmael]1を得る</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "自分の[WindBladeIshmael]数値1につき、クリティカルダメージ量 +2% (最大20%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [SlashTakeDamageUp]1を付与(1ターンにつき1回)"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttack] [WindBladeIshmael]1を得る</style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081504,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "行く先を照らします",
+          "desc": "[CanDuelGuard]\n[StartBattle] [SupportProtect]1を得る (1ターンにつき1回)\n[WhenUse] 次のターンに[Agility]2を得る (1ターンにつき1回)\n[WhenUse] 自分の[Breath]回数が2増加 (1ターンにつき1回)\n[WinDuel] [Breath]3を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "行く先を照らします",
+          "desc": "[CanDuelGuard]\n[StartBattle] [SupportProtect]1を得る (1ターンにつき1回)\n[WhenUse] 次のターンに[Agility]2を得る (1ターンにつき1回)\n[WhenUse] 自分の[Breath]回数が2増加 (1ターンにつき1回)\n[WinDuel] [Breath]3を得る\n<style=\"highlight\">[EndSkillAll] 自分に[Agility]があるなら、[WindBladeIshmael]2を得る (1ターンにつき1回)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081505,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "骨断",
+          "desc": "[CantDuel]\nこのスキルは守備スキルを発動させない\n自分の失った体力1%につき、ダメージ量+ 0.5% (最大20%)\n自分の[Agility]1につき、クリティカルダメージ量 +3% (最大15%)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]3を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [SlashTakeDamageUp]1を付与(1ターンにつき1回)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Paralysis]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "骨断",
+          "desc": "[CantDuel]\nこのスキルは守備スキルを発動させない\n自分の失った体力1%につき、ダメージ量 +0.5% (最大20%)\n自分の[Agility]1につき、クリティカルダメージ量 +3% (最大15%)\n<style=\"highlight\">[WhenUse] 自分の[WindBladeIshmael]数値1につき、ダメージ量 +1% (最大15%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]3を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [SlashTakeDamageUp]1を付与(1ターンにつき1回)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Paralysis]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "骨断",
+          "desc": "[CantDuel]\nこのスキルは守備スキルを発動させない\n自分の失った体力1%につき、ダメージ量 +0.5% (最大20%)\n自分の[Agility]1につき、クリティカルダメージ量 +3% (最大15%)\n[WhenUse] 自分の[WindBladeIshmael]数値1につき、ダメージ量 +1% (最大15%)\n<style=\"highlight\">[WhenUse] 自分の[Breath]1につき、クリティカルダメージ量 +1.5% (最大30%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]3を得る"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [SlashTakeDamageUp]1を付与(1ターンにつき1回)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]2を付与"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 次のターンに[Paralysis]1を付与"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081506,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "相戦清燐火",
+          "desc": "[CantDuel]\nこのスキルは守備スキルを発動させない\n自分の[Breath]1につき、クリティカルダメージ量 +1.5% (最大30%)\n[WhenUse] 自分の[Breath]回数が3増加\n[EndSkill] 自分の[WindBladeIshmael]を全て消耗",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]3を得る"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "自分の[WindBladeIshmael]数値が15を超過したなら、超過した数値1につき、クリティカルダメージ量 +5% (最大25%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 自分の[Agility]が5以上なら、このコインを再使用 (スキルごとに1回)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "相戦清燐火",
+          "desc": "[CantDuel]\nこのスキルは守備スキルを発動させない\n自分の[Breath]1につき、クリティカルダメージ量 +1.5% (最大30%)\n<style=\"highlight\">自分の[Agility]1につき、クリティカルダメージ量 +5% (最大25%)</style>\n[WhenUse] [Breath]回数が3増加\n[EndSkill] 自分の[WindBladeIshmael]を全て消耗",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Breath]3を得る"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttack] [WindBladeIshmael]1を得る</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttack] [WindBladeIshmael]1を得る</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                },
+                {
+                  "desc": "<style=\"highlight\">[CriticalOnSucceedAttack] [WindBladeIshmael]1を得る</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "自分の[WindBladeIshmael]数値が15を超過したなら、超過した数値1につき、クリティカルダメージ量 +5% (最大25%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Laceration]1を付与"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 自分の[Agility]が5以上なら、このコインを再使用 (スキルごとに1回)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1081507,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "形勢判断",
+          "desc": "[CanDuelGuard]\n[SupportProtect]専用スキル\n\n[WhenUse] [Breath]3を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "形勢判断",
+          "desc": "[CanDuelGuard]\n[SupportProtect]専用スキル\n<style=\"highlight\">[WhenUse] [SupportProtect]で保護[TabExplain]した対象の精神力を5回復</style>\n[WhenUse] [Breath]3を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
                 }
               ]
             }
