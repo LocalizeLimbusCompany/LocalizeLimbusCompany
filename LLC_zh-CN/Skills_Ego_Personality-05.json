@@ -175,7 +175,7 @@
           "level": 1,
           "name": "电子哀鸣",
           "abName": "梦中的电子羊",
-          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大嫉妒共鸣数-2)(最多+2)\n[BeforeAttack] 若自身的[Charge]层数不低于10层，则消耗至多20层[Charge]，每消耗1层[Charge]，使本技能造成的伤害+2%(最多+40%)",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大嫉妒共鸣数-2)(最多+2)\n[BeforeAttack] 若自身的[Charge]层数不低于10层，则消耗最多20层[Charge]，每消耗1层[Charge]，使本技能造成的伤害+2%(最多+40%)",
           "coinlist": [
             {
               "coindescs": [
@@ -193,7 +193,7 @@
           "level": 3,
           "name": "电子哀鸣",
           "abName": "梦中的电子羊",
-          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大嫉妒共鸣数-2)(最多+<style=\"highlight\">3</style>)\n[BeforeAttack] 若自身的[Charge]层数不低于10层，则消耗至多20层[Charge]，每消耗1层[Charge]，使本技能造成的伤害+<style=\"highlight\">2.5</style>%(最多+<style=\"highlight\">50</style>%)",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大嫉妒共鸣数-2)(最多+<style=\"highlight\">3</style>)\n[BeforeAttack] 若自身的[Charge]层数不低于10层，则消耗最多20层[Charge]，每消耗1层[Charge]，使本技能造成的伤害+<style=\"highlight\">2.5</style>%(最多+<style=\"highlight\">50</style>%)",
           "coinlist": [
             {
               "coindescs": [
@@ -211,7 +211,7 @@
           "level": 4,
           "name": "电子哀鸣",
           "abName": "梦中的电子羊",
-          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大嫉妒共鸣数-2)(最多+3)\n<style=\"highlight\">[BeforeAttack] 若自身的[Charge]层数不低于10层，则使本技能命中时施加的状态施加2次</style>\n[BeforeAttack] 若自身的[Charge]层数不低于10层，则消耗至多20层[Charge]，每消耗1层[Charge]，使本技能造成的伤害+<style=\"highlight\">3</style>%(最多+<style=\"highlight\">60</style>%)",
+          "desc": "[CantIdentify]\n随机指定目标\n[BeforeAttack] 使本技能的攻击容量+(最大嫉妒共鸣数-2)(最多+3)\n<style=\"highlight\">[BeforeAttack] 若自身的[Charge]层数不低于10层，则使本技能命中时施加的状态施加2次</style>\n[BeforeAttack] 若自身的[Charge]层数不低于10层，则消耗最多20层[Charge]，每消耗1层[Charge]，使本技能造成的伤害+<style=\"highlight\">3</style>%(最多+<style=\"highlight\">60</style>%)",
           "coinlist": [
             {
               "coindescs": [
@@ -780,6 +780,253 @@
                 },
                 {
                   "desc": "[OnSucceedAttack] 若本硬币的效果增加的伤害不低于100%，则使目标[VibrationExplosion]2次，并使其[Vibration]层数减少2层<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2050911,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "着影挥刀",
+          "abName": "巨影妖",
+          "desc": "本场战斗中首次使用时，消耗的理智值减少15点\n- 剑契组 头领 默尔索使用时，消耗的E.G.O资源减少1个暴怒、1个傲慢与1个嫉妒\n自身每带有4级[Breath]强度，使本技能的拼点威力+1，造成的伤害+6%(分别最多+4，+12%)\n若自身在本场战斗获得了[AlcoholKimPersonal]，则使本技能对主要目标造成的伤害+60%\n- 剑契组 头领 默尔索使用时，改为造成的伤害+120%\n[BeforeAttack] 使本技能的攻击容量+(最大共鸣数/2)(最多+2，向下取整)\n[BeforeAttack] 使最先编入的(3+最大共鸣数)名友方单位获得4层[Breath]\n[EndSkill] 使除自身以外属于剑契组的人格中理智值最低的4名人格恢复10点理智值\n[EndSkill] 下回合使自身获得4层[AlcoholKimPersonal]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "着影挥刀",
+          "abName": "巨影妖",
+          "desc": "本场战斗中首次使用时，消耗的理智值减少15点\n- 剑契组 头领 默尔索使用时，消耗的E.G.O资源减少1个暴怒、1个傲慢与1个嫉妒\n自身每带有4级[Breath]强度，使本技能的拼点威力+1，造成的伤害+6%(分别最多+<style=\"highlight\">6</style>，+<style=\"highlight\">24</style>%)\n若自身在本场战斗获得了[AlcoholKimPersonal]，则使本技能对主要目标造成的伤害+<style=\"highlight\">80</style>%\n- 剑契组 头领 默尔索使用时，改为造成的伤害+<style=\"highlight\">160</style>%\n[BeforeAttack] 使本技能的攻击容量+(最大共鸣数/2)(最多+2，向下取整)\n[BeforeAttack] 使最先编入的(3+最大共鸣数)名友方单位获得4层[Breath]\n[EndSkill] 使除自身以外属于剑契组的人格中理智值最低的4名人格恢复10点理智值\n[EndSkill] 下回合使自身获得4层[AlcoholKimPersonal]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "着影挥刀",
+          "abName": "巨影妖",
+          "desc": "本场战斗中首次使用时，消耗的理智值减少15点\n- 剑契组 头领 默尔索使用时，消耗的E.G.O资源减少1个暴怒、1个傲慢与1个嫉妒\n自身每带有4级[Breath]强度，使本技能的拼点威力+1，造成的伤害+6%(分别最多+<style=\"highlight\">8</style>，+<style=\"highlight\">30</style>%)\n若自身在本场战斗获得了[AlcoholKimPersonal]，则使本技能对主要目标造成的伤害+<style=\"highlight\">100</style>%\n- 剑契组 头领 默尔索使用时，改为造成的伤害+<style=\"highlight\">200</style>%\n[BeforeAttack] 使本技能的攻击容量+(最大共鸣数/2)(最多+2，向下取整)\n[BeforeAttack] 使最先编入的(3+最大共鸣数)名友方单位获得4层[Breath]\n[EndSkill] 使除自身以外属于剑契组的人格中理智值最低的4名人格恢复10点理智值\n[EndSkill] 下回合使自身获得4层[AlcoholKimPersonal]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2050921,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "着影挥刀",
+          "abName": "巨影妖",
+          "desc": "[CantIdentify]\n随机指定目标\n自身每带有4级[Breath]强度，使本技能的拼点威力+2，造成的伤害+6%(分别最多+8，+12%)\n若自身在本场战斗获得了[AlcoholKimPersonal]，则使本技能对主要目标造成的伤害+60%\n- 剑契组 头领 默尔索使用时，改为造成的伤害+120%\n[BeforeAttack] 本技能每有1枚硬币被摧毁，使本技能的基础威力-2(最多-8)\n[BeforeAttack] 使全体敌方单位与友方单位获得4层[Breath]、1层[SlashDamageUp]并对其施加1层[SlashTakeDamageUp]\n[EndSkill] 使除自身以外属于剑契组的人格中理智值最低的4名人格恢复10点理智值\n[EndSkill] 下回合使自身获得4层[AlcoholKimPersonal]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使本技能最后一枚硬币的最终威力+2(每个硬币最多1次)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使本技能最后一枚硬币的最终威力+2(每个硬币最多1次)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使本技能最后一枚硬币的最终威力+2(每个硬币最多1次)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "着影挥刀",
+          "abName": "巨影妖",
+          "desc": "[CantIdentify]\n随机指定目标\n自身每带有4级[Breath]强度，使本技能的拼点威力+2，造成的伤害+6%(分别最多+<style=\"highlight\">12</style>，+<style=\"highlight\">24</style>%)\n若自身在本场战斗获得了[AlcoholKimPersonal]，则使本技能对主要目标造成的伤害+<style=\"highlight\">80</style>%\n- 剑契组 头领 默尔索使用时，改为造成的伤害+<style=\"highlight\">160</style>%\n[BeforeAttack] 本技能每有1枚硬币被摧毁，使本技能的基础威力-2(最多-8)\n[BeforeAttack] 使全体敌方单位与友方单位获得4层[Breath]、1层[SlashDamageUp]并对其施加1层[SlashTakeDamageUp]\n[EndSkill] 使除自身以外属于剑契组的人格中理智值最低的4名人格恢复10点理智值\n[EndSkill] 下回合使自身获得4层[AlcoholKimPersonal]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使本技能最后一枚硬币的最终威力+2(每个硬币最多1次)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使本技能最后一枚硬币的最终威力+2(每个硬币最多1次)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使本技能最后一枚硬币的最终威力+2(每个硬币最多1次)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "着影挥刀",
+          "abName": "巨影妖",
+          "desc": "[CantIdentify]\n随机指定目标\n自身每带有4级[Breath]强度，使本技能的拼点威力+2，造成的伤害+6%(分别最多+<style=\"highlight\">16</style>，+<style=\"highlight\">30</style>%)\n若自身在本场战斗获得了[AlcoholKimPersonal]，则使本技能对主要目标造成的伤害+<style=\"highlight\">100</style>%\n- 剑契组 头领 默尔索使用时，改为造成的伤害+<style=\"highlight\">200</style>%\n[BeforeAttack] 本技能每有1枚硬币被摧毁，使本技能的基础威力-2(最多-8)\n[BeforeAttack] 使全体敌方单位与友方单位获得4层[Breath]、1层[SlashDamageUp]并对其施加1层[SlashTakeDamageUp]\n[EndSkill] 使除自身以外属于剑契组的人格中理智值最低的4名人格恢复10点理智值\n[EndSkill] 下回合使自身获得4层[AlcoholKimPersonal]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使本技能最后一枚硬币的最终威力+2(每个硬币最多1次)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使本技能最后一枚硬币的最终威力+2(每个硬币最多1次)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使本技能最后一枚硬币的最终威力+2(每个硬币最多1次)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]"
                 }
               ]
             }

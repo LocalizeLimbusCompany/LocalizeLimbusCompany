@@ -489,7 +489,7 @@
     {
       "id": 9251,
       "name": "燃烧的命运",
-      "desc": "与带有[Combustion]的目标拼点胜利时，以(20+(暴怒共鸣数×10))%的概率触发目标的[Combustion]1次，并使目标的[Combustion]层数减少1层(每回合最多4次)\n- 若目标的[Combustion]强度不低于90级，则100%概率触发以上效果(若是集中遭遇战，则改为以部位判定)",
+      "desc": "最大[Combustion]强度+30\n\n与带有[Combustion]的目标拼点胜利时，触发其[Combustion]1次，并使其[Combustion]层数减少1层(每名人格最多1次)\n\n对带有[Combustion]的敌方单位使用技能时，使该技能增加(主要目标的[Combustion]强度/10)级攻击等级(最多8级)",
       "simpleDesc": [
         {}
       ]
@@ -546,6 +546,83 @@
         {
           "abilityID": 92733,
           "simpleDesc": "最终威力，硬币威力与造成的伤害增加"
+        }
+      ]
+    },
+    {
+      "id": 9274,
+      "name": "捕绳",
+      "desc": "暴击命中敌方单位时，下回合对其施加1层[Binding](每回合最多2次)\n技能命中带有[Binding]的敌方单位时，使自身增加1级[Breath]强度(每回合每名人格最多2次)\n\n回合开始时，对带有[Laceration]的全体敌方单位施加层数相当于其[Binding]层数的[AttackDown](最多5层)\n\n回合开始时，若全体敌方单位(若是集中遭遇战，则改为以部位判定)均带有[Binding]，则使全体友方单位增加3级[Breath]强度",
+      "simpleDesc": [
+        {
+          "abilityID": 9274,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9275,
+      "name": "N公司定格小队的包",
+      "desc": "增加[Laceration]强度，施加[Laceration]层数或施加特殊流血的技能命中敌方单位时，对其施加1层[NailPersonality](每个技能最多1次)\n对带有[NailPersonality]的敌方单位触发[VibrationExplosion]时，下回合对其施加2层[Binding](每回合最多3次)",
+      "simpleDesc": [
+        {
+          "abilityID": 9275,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9276,
+      "name": "白瓷砚滴",
+      "desc": "友方人格获得[SupportProtect]时，使其获得2层[AttackDmgUp]与2层[Protection]\n\n[第1顺位友方单位专属]\n回合结束时，下回合使自身获得2层[Agility]\n若人格的速度值高于敌方单位，则速度值每相差1点，使该人格造成的伤害+3%(最多+30%)",
+      "simpleDesc": [
+        {
+          "abilityID": 9276,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9277,
+      "name": "菖蒲剑",
+      "desc": "若友方单位在本回合未受到敌方单位攻击，则下回合使该友方单位获得1层[SlashDamageUp]\n友方单位受到敌方单位攻击时，使该友方单位增加4级[Breath]强度并在本回合与下回合中使该友方单位获得1层[CriticalDamageUp](每回合每名人格最多1次)\n- 对于属于剑契组的人格，本饰品的效果变为2倍",
+      "simpleDesc": [
+        {
+          "abilityID": 9277,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9278,
+      "name": "粉碎的木制刑具",
+      "desc": "使用斩击技能命中敌方单位时，下回合对其施加1层[DefenseDown](每个技能最多2次)\n友方单位攻击速度值低于自身的敌方单位时，速度值每相差1点，使该友方单位基础攻击技能造成的伤害+3%(最多+12%)\n- 若敌方单位带有[Binding]，则使增加的伤害与其最大值变为2倍",
+      "simpleDesc": [
+        {
+          "abilityID": 9278,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9279,
+      "name": "无纹的刀镡",
+      "desc": "自身每带有1级[Breath]强度，使自身斩击技能造成的伤害+1%(最多+15%)",
+      "simpleDesc": [
+        {
+          "abilityID": 9279,
+          "simpleDesc": ""
+        }
+      ]
+    },
+    {
+      "id": 9280,
+      "name": "故土剑谱",
+      "desc": "若敌方单位的斩击抗性不高于1.5，则使其斩击抗性+0.3\n斩击技能的攻击等级+2\n攻击斩击抗性为脆弱(抗性超过1.0；不包括陷入混乱)的敌方单位时，使自身造成的斩击伤害+(5+目标的斩击抗性×10)%(最多+25%)\n\n自身每带有1级[Breath]强度，使自身斩击技能造成的伤害+1.5%(最多+30%)\n\n回合开始时，若属于剑契组的人格不低于3名，则触发该效果(以参战人员为基准)\n战斗开始时使装备了暴怒或傲慢技能且属于剑契组的人格获得1层[BongukGiftEnhance]\n\n使不属于剑契组且属于S公司的人格中最先编入的1名人格视作属于剑契组的人格并使其在每回合获得[BongukGiftEnhance]",
+      "simpleDesc": [
+        {
+          "abilityID": 9280,
+          "simpleDesc": ""
         }
       ]
     }

@@ -1,0 +1,474 @@
+{
+  "dataList": [
+    {
+      "id": 40003801,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "势法",
+          "desc": "[WhenUse] 自身的[Breath]强度与目标的[Laceration]之和每有6级，使本技能的硬币威力+1(最多+2)\n[WhenUse] 若自身的[Agility]层数不低于3层，则使本技能的基础威力+2\n[WhenUse] 使自身获得2层[Breath]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加3级[Breath]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40003802,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "刺法",
+          "desc": "[WhenUse] 自身的[Breath]强度与目标的[Laceration]之和每有6级，使本技能的硬币威力+1(最多+2)\n[WhenUse] 若自身的[Agility]层数不低于3层，则使本技能的基础威力+2\n[WhenUse] 使自身获得2层[Breath]\n[WinDuel] 使自身获得2层[Breath]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加2级[Breath]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加2级[Breath]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加2级[Breath]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 下回合使自身获得2层[Agility]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40003803,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "清潾火",
+          "desc": "自身每失去1%的体力，使本技能造成的伤害+0.5%(最多25%)\n自身每带有1层[Agility]，是本技能暴击时造成的伤害+25%(最多+150%)\n[WhenUse] 若自身的[Breath]强度与目标的[Laceration]强度之和不低于6级，则使本技能的硬币威力+1(最多+2)\n[WhenUse] 若自身的[WindBlade]层数不低于5层，则使本技能的所有硬币转化为[SuperCoin]\n[WinDuel] 使自身增加5级[Breath]强度",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得3层[Breath]"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使自身获得1层[WindBlade]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加2级[Breath]强度"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使自身获得1层[WindBlade]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使自身获得1层[WindBlade]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40003804,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "相战清潾火",
+          "desc": "[CantDuel]\n本技能不会触发守备技能\n自身每失去1%的体力，使本技能造成的伤害+0.5%(最多25%)\n自身每带有1层[Agility]，使本技能暴击时造成的伤害+20%(最多+100%)\n[EndSkill] 消耗自身所有[WindBlade]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加5级[Breath]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 若自身的[Agility]层数不低于5层，则重复使用本硬币1次(每个技能最多1次)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40003805,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "骨断",
+          "desc": "[CantDuel]\n本技能不会触发守备技能\n自身每失去1%的体力，使本技能造成的伤害+0.5%(最多25%)\n自身每带有1层[Agility]，使本技能暴击时造成的伤害+10%(最多+50%)\n[WhenUse] 自身的[Breath]强度与目标的[Laceration]强度之和每有4级，使本技能的基础威力+1(最多+4)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加3级[Breath]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层[Paralysis]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40003806,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "照亮前路",
+          "desc": "[CanDuelGuard]\n[StartBattle] 使自身获得1层[SupportProtect]\n[WhenUse] 使自身增加5级[Breath]强度\n[WinDuel] 使自身获得2层[Breath]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40003807,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "形势判断",
+          "desc": "[CanDuelGuard]\n[SupportProtect]专用技能 \n[WhenUse] 使自身增加5级[Breath]强度\n[WhenUse] 若自身的[Breath]强度不低于25级，则消耗5级[Breath]强度并使自身获得3层[WindBlade]\n[WinDuel] 使自身获得2层[Breath]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40004001,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "寒芒出鞘",
+          "desc": "[WhenUse] 若自身的[Breath]强度不低于5级，则使本技能的硬币威力+1\n[WhenUse] 使自身获得2层[Breath]\n[WinDuel] 使自身增加3级[Breath]强度",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加3级[Breath]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Laceration]强度"
+                },
+                {
+                  "desc": "[CriticalOnSucceedAttack] 对目标施加2层[Laceration]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40004002,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "刺法",
+          "desc": "[WhenUse] 若自身的[Breath]强度不低于7级，则使本技能的硬币威力+1\n[WhenUse] 使自身获得3层[Breath]\n[WinDuel] 使自身增加2级[Breath]强度",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加4级[Breath]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "使本硬币暴击时造成的伤害+20%"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "使本硬币暴击时造成的伤害+40%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Laceration]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40004003,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "弑主",
+          "desc": "[DuelCounter]\n[StartBattle] 本回合与下回合使自身获得2层[SlashDamageUp]\n[WhenUse] 若自身的[Breath]强度不低于8级，则使本技能的硬币威力+1\n[WhenUse] 使自身获得3层[Breath]\n[WinDuel] 使自身增加4级[Breath]强度",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身增加5级[Breath]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使自身获得2层[Breath]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "使本硬币暴击时造成的伤害+80%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加8级[Laceration]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40004004,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "肉斩",
+          "desc": "优先指定具有最高最大威力的行动槽\n[WhenUse] 直到本技能结束\n- 自身每带有1级[Breath]强度，使自身受到的攻击伤害-2%(最少-80%)\n- 自身每带有1级[Breath]强度，使本技能的拼点威力-1(最少-30)\n- 自身不会因受到伤害而陷入混乱\n[WinDuel] 使自身增加5级[Breath]强度\n[DefeatDuel] 受到攻击后使用“骨断”\n[EndBattle] 直到下回合无法使用“肉斩”",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "使本硬币暴击时造成的伤害+150%"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层[SlashResistDown]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加4层[DefenseDown]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40004005,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "骨断",
+          "desc": "[WhenUse] 若自身的[Breath]强度不低于10级，则使本技能的硬币威力+1\n[WhenUse] 本技能的攻击容量高于攻击目标数时，每高于1点，使本技能造成的伤害+40%(若是集中遭遇战，则改为以部位判定)\n[WhenUse] 使自身获得4层[Breath]\n[EndSkill] 消耗自身所有[Breath]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使本技能最后一枚硬币的威力+2(每个硬币最多1次)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使本技能最后一枚硬币的威力+2(每个硬币最多1次)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[CriticalOnSucceedAttack] 使本技能最后一枚硬币的威力+2(每个硬币最多1次)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加10级[Laceration]强度并对目标施加2层[Laceration]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 下回合对目标施加2层[Paralysis]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40003901,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "尤里亚工坊-总攻击模式，Mark 17！",
+          "desc": "目标每带有1种负面状态，使本技能造成的伤害+50%(最多+100%)\n[WhenUse] 若目标的[Vibration]强度不低于6级，则使本技能的基础威力+3",
+          "flavor": "手工特制的金毛寻回犬专用斧。",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Laceration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Laceration]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 触发目标的[Laceration]1次，并使其[Laceration]层数减少1层"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40003902,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "我来掩护你！往后撤！",
+          "desc": "[CanDuelGuard]\n[SupportProtect]专用技能\n[WinDuel] 使全体友方单位恢复4点理智值(包括自身)\n- 若其属于LCD，则改为恢复8点理智值",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
