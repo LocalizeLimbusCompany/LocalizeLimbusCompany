@@ -49,6 +49,73 @@
       "id": 500110,
       "name": "Brush it Off",
       "desc": "Gain the Fixed Panic attribute\nTurn End: If this unit is in Panic, reset SP to 0"
+    },
+    {
+      "id": 501401,
+      "name": "Location-type Distortion: Photo Lab",
+      "desc": "This unit cannot be killed, and does not take any damage from sources other than Skill damage from Skills attacking this unit as the main target\n\nThis unit's Speed is fixed to 1\n\nTurn Start after entering the Encounter: Gain 3 [PhotoTransitionChoiCamera]\n\n<color=#ff6000><mark color=#ff000040><b><u>If this unit's HP reaches 1, or if [PhotoTransitionChoiCamera] reaches 0 Stack at Turn Start</color></mark></b></u>, activate the following:\n- Remove self and N Corp. Class 2 Staff from the Encounter\n- Return Im Gyeong-eop to the Encounter\n- Move the battle to a different location"
+    },
+    {
+      "id": 501201,
+      "name": "Swordplay of the Homeland [Sal] - Great Hwando",
+      "desc": "Encounter Start: Gain 5 [ChoiSwordsmanship]\n\n<color=#ff6000><mark color=#ff000040><b><u>Assume a different Battleform of the Homeland every 3 turns</color></mark></b></u>\n\nTurn End: If this unit has Shield, gain 5 [Breath] and +2 [Breath] Count next turn\n\nWhen Im Gyeong-eop meets the following conditions, she uses a pattern that includes the \"Bow of the Homeland - Arrowloose\" Skill\n- When this unit lost all Clashes for 2 turns in a row (does not check for Unopposed Attacks)\n- In the turn after the turn in which this unit spent in Stagger\n- When in Low Morale or Panic",
+      "flavor": "The Sword of the Homeland, S Corp.'s traditional art of swordsmanship, is also divided into three branches: Sal, Pi, and Ppyeo.\nWithin their teachings exist techniques to hew and cleave through creatures of colossal stature such as Sanguns.\nTo perform them in full, a swordsman must wield a great hwando capable of bearing the strain of the techniques."
+    },
+    {
+      "id": 501202,
+      "name": "Dujeong Brigandine [Sal] - Iron Bulwark",
+      "desc": "Take -30% damage from [Laceration], [Burst], and [Sinking] (rounded down)\n\nGain the effects of [PanicChangeLock]; If this unit is Panicked at Turn End, reset SP to 45\n\nUpon entering the Encounter for the first time, gain 5 [ChoiSwordsmanshipShield]\n\n<color=#ff6000><mark color=#ff000040><b><u>When [ChoiSwordsmanshipShield] expires, become Staggered next turn\nAt the end of the turn this unit was Staggered, enter a new phase</color></mark></b></u>\n- Phase 1: This unit's HP cannot drop <color=#ff6000><mark color=#ff000040><b><u>below 70%</color></mark></b></u>\n- At less than 70% HP, end the turn <color=#ff6000><mark color=#ff000040><b><u>immediately</color></mark></b></u> and enter a new phase\n- At the start of the turn the phase changed, heal up to 45 SP\n",
+      "flavor": "The Eastern Warstride Armors are not so much \"equipped\" as they are \"piloted.\" S Corp.'s Dujeong Brigandine is one example of such armor.\nMuch like R Corp.'s Powered Armor Suit and the Full Plate Armor used by the Knights of the West, the Dujeong Brigandine greatly augments the user's offensive and defensive combat capabilities.\nYet these advantages do not mean that armors of such potency are readily supplied for combat personnel. Each unit has its own unique controls and comes with the limitation of requiring separate fuels.\nWhat remains certain, however, is that, as with all the aforementioned armors, once a rider has familiarized himself with the Dujeong Brigandine's extended reach and heightened power output, he becomes a machine of war that strides across battlefields with the promise of slaughter."
+    },
+    {
+      "id": 501203,
+      "name": "Martial Arts of Perseverance",
+      "desc": "On Clash Win, gain +2 [Breath] Count (2 times per turn)\n\nIf the target this unit's Skill hit has less than 5 [Laceration] Potency, inflict 1 [Laceration] and +2 [Laceration] Count at Attack End (once per Skill, 2 times per turn, prioritize the main target)",
+      "flavor": "'There are those who persevere in training for lack of talent. Then there are those blessed with talent, only to let it rust.'\n'All men say that the title of Apex Blade can only be seized by the gifted.'\n'It matters not. Until the day comes for this blade of mine to rise high enough to meet the clouds, I shall persevere in honing my prowess.'"
+    },
+    {
+      "id": 501204,
+      "name": "Headsplitting Memory",
+      "desc": "On Clash Lose, gain 1 [RegretSCorp] (once per turn)"
+    },
+    {
+      "id": 501205,
+      "name": "Developed Memories",
+      "desc": "Upon entering the Encounter, gain 3 [PhotoTransitionChoi]\n\n<color=#ff6000><mark color=#ff000040><b><u>Turn Start: At 0 [PhotoTransitionChoi] Stack, Retreat and transition into a different location</color></mark></b></u>\n\nWhen Returning to the field, based on current Battleform of the Homeland, gain or lose [ChoiSwordsmanship]\n- When in [ChoiSwordsmanshipOne]: Gain Stack\n- When in [ChoiSwordsmanshipMany]: Lose Stack\n\nIf [ChoiSwordsmanshipShield] expires, [PhotoTransitionChoi] expires"
+    },
+    {
+      "id": 501206,
+      "name": "Reflectrial",
+      "desc": "At 10+ Clashes against the same enemy, randomly gain or lose Clash Power by (Clash Count/10) in a Clash (rounded down)\n\nMax Potency cap for [Laceration], [Burst], and [Sinking]: 30\nMax Count cap for [Laceration], [Burst], and [Sinking]: 10\n\n<color=#ff6000><mark color=#ff000040><b><u>Max Potency cap for [Combustion] and [Vibration]: 50\nMax Count cap for [Combustion] and [Vibration]: 30</color></mark></b></u>",
+      "flavor": ""
+    },
+    {
+      "id": 501207,
+      "name": "Mismatched Memories",
+      "desc": "Turn Start: Gain the following effects:\n- When in [ChoiSwordsmanshipOne]: At less than 5 [ChoiSwordsmanship] Stack, gain (5 - [ChoiSwordsmanship] Stack) <color=#ff6000><mark color=#ff000040><b><u>[Vulnerable]</color></mark></b></u>\n- When in [ChoiSwordsmanshipMany]: At more than 5 [ChoiSwordsmanship] Stack, gain <color=#ff6000><mark color=#ff000040><b><u>[Vulnerable]</color></mark></b></u> equal to surplus [ChoiSwordsmanship] Stack past 5 "
+    },
+    {
+      "id": 501301,
+      "name": "Swordplay of the Homeland [Sal] - Rend Flesh from Flesh",
+      "desc": "Encounter Start: Gain 5 [ChoiSwordsmanship]\n\nAssume a different Battleform of the Homeland every 3 turns\n\nOn Hit using a Slash Skill, gain 1 [Breath] Potency (once per Skill)\n\nWhen the following conditions are met, use a pattern that includes the \"Bow of the Homeland - Arrowloose\" Skill\n- When this unit lost all Clashes for 2 turns in a row (does not check for Unopposed Attacks)\n- Turn after Stagger\n- When in Low Morale or Panic\n\nTurn Start: At Min or Max [ChoiSwordsmanship] Stacks, use a powerful Skill\nIf this unit used the \"Bow of the Homeland - Arrowloose\" Skill in the last turn, use a powerful Skill regardless of [ChoiSwordsmanship] Stack on self\nAt 60% or lower HP, use a powerful Skill regardless of [ChoiSwordsmanship] Stack on self",
+      "flavor": "The Sword of the Homeland passed down in the Sal Court Circle is not, at its heart, an art of killing.\nTo cut and cut again until blood runs dry and the bone is laid bare—that is the essence of this art that strips the opponent's flesh into ribbons.\nThat is the Sword of the Homeland practiced by \"Sal.\""
+    },
+    {
+      "id": 501304,
+      "name": "Swordplay of the Homeland [Sal] - Shift Battleform",
+      "desc": "<color=#ff6000><mark color=#ff000040><b><u>Turn Start: Gain or lose 2 [ChoiSwordsmanship] Stack based on Battleform of the Homeland on self (does not activate in the first turn of the Encounter)</color></mark></b></u>\n- [ChoiSwordsmanshipOne]: Gain Stack\n- [ChoiSwordsmanshipMany]: Lose Stack\n\nIn the turn where this unit equipped Envy Skills, this unit will not be affected by [ChoiSwordsmanship] Stack adjustment effects, and will <color=#ff6000><mark color=#ff000040><b><u>reset [ChoiSwordsmanship] Stack to 5 next turn</color></mark></b></u>"
+    },
+    {
+      "id": 501305,
+      "name": "Dujeong Brigandine [Sal] - Great Mountain",
+      "desc": "Take -30% damage from [Combustion], [Laceration], [Vibration], [Burst], [Sinking] (rounded down, excluding Stagger Threshold raised by [VibrationExplosion])\n\nGain the effects of [PanicChangeLock]; If this unit is Panicked at Turn End, reset SP to 45\n\nTurn Start: Gain the following effects:\n- When in [ChoiSwordsmanshipOne]: At less than 5 [ChoiSwordsmanship] Stack, gain (5 - [ChoiSwordsmanship] Stack) <color=#ff6000><mark color=#ff000040><b><u>[Vulnerable]</color></mark></b></u>\n- When in [ChoiSwordsmanshipMany]: At more than 5 [ChoiSwordsmanship] Stack, gain <color=#ff6000><mark color=#ff000040><b><u>[Vulnerable]</color></mark></b></u> equal to surplus [ChoiSwordsmanship] Stack past 5",
+      "flavor": "The three Court Circles of Sal, Pi, and Ppyeo each remade the standard Dujeong Brigandine of S Corp. into forms suited to their own doctrines.\nThe olden tales say that the \"Sal\" has ever been the first to spearhead a slaughter, eager to cleave the enemy's flesh before any other.\nThe \"Pi\" harvests the blood that spills forth from each opened flesh wound and turns it into endurance on the battlefield.\nThe \"Ppyeo\" takes the close of a slaughter. They part one joint from the other, bringing the enemy to their knees. Then, a blade through the neckbone finishes the collective act of killing."
+    },
+    {
+      "id": 501501,
+      "name": "Scattering Memories",
+      "desc": "On death, give +1 E.G.O resource of the least-owned Affinity",
+      "summary": "Give E.G.O resource on death"
     }
   ]
 }
