@@ -265,7 +265,7 @@
         {
           "level": 1,
           "name": "堂吉诃德派硬血4式-剜除",
-          "desc": "直到使用本技能时，自身不会陷入混乱。\n[WhenUse] 消耗最多100层[BloodDinner]，每消耗10层[BloodDinner]，使自身获得1层[RegainedStrength]并恢复15点理智值\n[WhenUse] 自身每带有30层[BloodDinner_Accumulation]，使本技能的拼点威力+1(最多+15)\n[DefeatDuel] 使本技能造成的伤害-50%，且本技能造成的伤害不会使目标陷入混乱。\n[EndSkill] 本回合与下回合内，对自身施加层数相当于本技能增加的拼点威力的[AttackDown]与[DefenseDown]。(最多15层)\n[DefeatDuel] 使本技能造成的最终伤害-80%",
+          "desc": "直到使用本技能时，自身不会陷入混乱。\n[WhenUse] 消耗最多100层[BloodDinner]，每消耗10层[BloodDinner]，使自身获得1层[RegainedStrength]并恢复15点理智值\n[WhenUse] 自身每带有30层[BloodDinner_Accumulation]，使本技能的拼点威力+1(最多+15)\n[DefeatDuel] 使本技能造成的伤害-50%，且本技能造成的伤害不会使目标陷入混乱。\n[EndSkill] 本回合与下回合对自身施加层数相当于本技能增加的拼点威力的[AttackDown]与[DefenseDown]。(最多15层)\n[DefeatDuel] 使本技能造成的最终伤害-80%",
           "coinlist": [
             {
               "coindescs": [
@@ -405,7 +405,7 @@
         {
           "level": 1,
           "name": "堂吉诃德派硬血奥义-球",
-          "desc": "直到使用本技能时，自身不会陷入混乱。\n根据[BloodDinner_Common_Accumulation]层数，相应使本技能造成的伤害增加(最多+300%)\n[WhenUse] 使自身恢复30点理智值\n[WhenUse] 自身每带有10层[RegainedStrength]，使本技能的拼点威力+1\n[EndSkill] 消耗所有[RegainedStrength]，在本回合与下回合对自身施加5层[Vulnerable]，并在下回合对自身施加2层[Binding]。\n[DefeatDuel] 使本技能造成的最终伤害-80%",
+          "desc": "直到使用本技能时，自身不会陷入混乱。\n根据[BloodDinner_Common_Accumulation]层数，相应使本技能造成的伤害增加(最多+300%)\n[WhenUse] 使自身恢复30点理智值\n[WhenUse] 自身每带有10层[RegainedStrength]，使本技能的拼点威力+1\n[EndSkill] 消耗所有[RegainedStrength]，本回合与下回合对自身施加5层[Vulnerable]，并在下回合对自身施加2层[Binding]。\n[DefeatDuel] 使本技能造成的最终伤害-80%",
           "coinlist": [
             {
               "coindescs": [
@@ -606,7 +606,7 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加24级[Laceration]强度"
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Laceration]强度"
                 },
                 {
                   "desc": "[UnBrokenCoinOnSucceedAttack] 对目标施加1层[Laceration]"
@@ -619,7 +619,7 @@
                   "desc": "[SuperCoin]"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加2级[Laceration]强度"
+                  "desc": "[OnSucceedAttack] 使目标增加4级[Laceration]强度"
                 },
                 {
                   "desc": "[UnBrokenCoinOnSucceedAttack] 对目标施加1层[Laceration]"
@@ -1477,14 +1477,14 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 本回合与下回合中，对目标施加1层[Vulnerable]"
+                  "desc": "[OnSucceedAttack] 本回合与下回合对目标施加1层[Vulnerable]"
                 }
               ]
             },
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 本回合与下回合中，对目标施加1层[Vulnerable]"
+                  "desc": "[OnSucceedAttack] 本回合与下回合对目标施加1层[Vulnerable]"
                 }
               ]
             },

@@ -49,6 +49,73 @@
       "id": 500110,
       "name": "梳理发型",
       "desc": "适用于固定恐慌 效果，\n回合结束时，若自身陷入恐慌，则使自身的理智值变为0点"
+    },
+    {
+      "id": 501401,
+      "name": "场所型扭曲：显影室",
+      "desc": "自身不会阵亡，且仅受到以自身为主要目标的技能的伤害，而不会受到其他伤害\n\n速度值固定为1\n\n关卡中登场的回合开始时，使自身获得3层[PhotoTransitionChoiCamera]\n\n<color=#ff6000><mark color=#ff000040><b><u>若现存体力为1点或回合开始时自身的[PhotoTransitionChoiCamera]层数为0层</color></mark></b></u>，则触发以下效果\n- 移除N公司2级员工与自身\n- 使林庆业重返战斗\n- 改变战斗场地</color></mark></b></u>"
+    },
+    {
+      "id": 501201,
+      "name": "本国剑术[肉]-大环刀",
+      "desc": "关卡开始时，使自身获得5层[ChoiSwordsmanship]\n\n<color=#ff6000><mark color=#ff000040><b><u>每3回合改变自身的本国姿态</color></mark></b></u>\n\n若回合结束时自身带有护盾，则下回合使自身增加5级[Breath]强度并使自身获得2层[Breath]\n\n林庆业满足以下条件时，使用包括“本国弓-放箭”的模式\n- 连续2回合自身所有拼点均失败时(不计入单方面攻击)\n- 陷入混乱的下回合\n- 士气低落或陷入恐慌时",
+      "flavor": "S公司所传承下来的本国剑也分为肉、血、骨三种。\n在那之中还有为令山君那等巨大的存在伏首而传下的剑术。\n为了能将此等剑术完全施展出来，需要使用与之相配的巨大环刀才行。"
+    },
+    {
+      "id": 501202,
+      "name": "布面甲[肉]-铁壁",
+      "desc": "受到的[[Laceration]、[Burst]与[Sinking]伤害-30%(向下取整)\n\n适用于[PanicChangeLock]效果，回合结束时，若自身陷入恐慌，则使自身的理智值变为45点\n\n关卡中首次登场时，使自身获得5层[ChoiSwordsmanshipShield]\n\n<color=#ff6000><mark color=#ff000040><b><u>自身的[ChoiSwordsmanshipShield]被解除后，下回合使自身陷入混乱\n因该效果而陷入混乱的回合结束时，改变自身阶段</color></mark></b></u>\n- 第1阶段内自身的体力不会<color=#ff6000><mark color=#ff000040><b><u>低于70%</color></mark></b></u>\n- 现存体力低于70%时，<color=#ff6000><mark color=#ff000040><b><u>立即结束</color></mark></b></u>本回合并改变自身阶段\n- 改变阶段的回合开始时，使自身的理智值恢复至45点",
+      "flavor": "东部的骑乘甲是一种比起“穿着”更接近于“搭乘”这一概念的武具，S公司的布面甲也是骑乘甲的一种。就像R公司的动力装甲和西部骑士们的全身板甲一样，布面甲能令使用者的攻防能力得到飞跃性的提升。\n但性能如此优异的骑乘甲并不容易提供，另外，每种甲胄的操作方式也有不同，还存在需要加入额外燃料的制约。\n\n但可以确定的是，像动力装甲和全身板甲以及其他骑乘甲一样，当骑乘者习惯了布面甲所带来的攻击距离增加与输出强化的瞬间，其在战场上的杀伤力将得到飞跃性的提升。"
+    },
+    {
+      "id": 501203,
+      "name": "饱经磨炼的武艺",
+      "desc": "拼点胜利时，使自身获得2层[Breath](每回合最多2次)\n\n若自身技能命中的目标的[Laceration]强度低于5级，则攻击后使该目标增加1级[Laceration]强度并对该目标施加2层[Laceration](每个技能最多1次，每回合最多2次，优先适用于主要目标)",
+      "flavor": "“有些人因没有才能而努力。而另一些人虽具才能，却并不努力。”\n“最终，第一剑的美名将由最为天赋异禀之人所得，所有人都这么说。”\n“但，没关系。直到这把剑触及云端的那一日，我都将不断地磨炼自己。”"
+    },
+    {
+      "id": 501204,
+      "name": "刺痛的记忆",
+      "desc": "拼点失败时，使自身获得1层[RegretSCorp](每回合最多1次)"
+    },
+    {
+      "id": 501205,
+      "name": "显影的记忆",
+      "desc": "关卡中登场时，使自身获得3层[PhotoTransitionChoi]\n\n<color=#ff6000><mark color=#ff000040><b><u>回合开始时，若自身的[PhotoTransitionChoi]层数为0层，则使自身撤退并改变战斗场地</color></mark></b></u>\n\n重返战斗时，根据撤退的回合数与自身的本国姿态，使自身获得或失去相应层数的[ChoiSwordsmanship]\n- [ChoiSwordsmanshipOne]：获得\n- [ChoiSwordsmanshipMany]：失去\n\n自身的[ChoiSwordsmanshipShield]被解除时，解除自身的[PhotoTransitionChoi]"
+    },
+    {
+      "id": 501206,
+      "name": "映射战斗",
+      "desc": "若与同一目标拼点不低于10次，则随机使自身的拼点威力增加或减少(拼点次数/10)(向下取整)\n\n[Laceration]、[Burst]与[Sinking]强度最多累计到30级，层数最多累计到10层\n\n[Combustion]与[Vibration]<color=#ff6000><mark color=#ff000040><b><u>强度最多累计到50级，层数最多累计到30层</color></mark></b></u>",
+      "flavor": ""
+    },
+    {
+      "id": 501207,
+      "name": "错位的记忆",
+      "desc": "回合开始时，触发以下效果\n- 处于[ChoiSwordsmanshipOne]状态时，若自身的[ChoiSwordsmanship]层数低于5层，\n则对自身施加(5-自身的[ChoiSwordsmanship]层数)层<color=#ff6000><mark color=#ff000040><b><u>[Vulnerable]</color></mark></b></u>\n- 处于[ChoiSwordsmanshipMany]状态时，若自身的[ChoiSwordsmanship]层数高于5层，\n则每超过1层，对自身施加1层<color=#ff6000><mark color=#ff000040><b><u>[Vulnerable]</color></mark></b></u>"
+    },
+    {
+      "id": 501301,
+      "name": "本国剑术[肉]-斩肉[Sal]于箭[Sal]",
+      "desc": "关卡开始时，使自身获得5层[ChoiSwordsmanship]\n\n每3回合改变自身的本国姿态\n\n斩击技能命中时，使自身增加1级[Breath]强度(每个技能最多1次)\n\n满足以下条件时，使用包括“本国弓-放箭”的模式\n- 连续2回合自身所有拼点均失败时(不计入单方面攻击)\n- 陷入混乱的下回合\n- 士气低落或陷入恐慌时\n\n回合开始时，若自身的[ChoiSwordsmanship]层数为最小值或最大值，则使用强力技能\n若上回合自身使用了“本国弓-放箭”，则无视自身的[ChoiSwordsmanship]层数使用强力技能\n若现存体力不高于66%，则无视自身的[ChoiSwordsmanship]层数使用强力技能",
+      "flavor": "肉党所用的本国剑，其本质并不在于杀戮。\n到使敌人流出鲜血、露出骨头为止，不断地去斩击并削落肉片。这才是“肉”之本国剑。"
+    },
+    {
+      "id": 501304,
+      "name": "本国剑术[肉]-姿态变化",
+      "desc": "<color=#ff6000><mark color=#ff000040><b><u>回合开始时，根据自身的本国姿态，使自身获得或失去2层[ChoiSwordsmanship](首个回合不会触发)</color></mark></b></u>\n- [ChoiSwordsmanshipOne]：获得\n- [ChoiSwordsmanshipMany]：失去\n\n自身装备了嫉妒技能的回合中，自身不会受到[ChoiSwordsmanship]的数值调整效果影响，<color=#ff6000><mark color=#ff000040><b><u>下回合使自身的[ChoiSwordsmanship]层数重置为5层</color></mark></b></u>"
+    },
+    {
+      "id": 501305,
+      "name": "布面甲[肉]-泰山",
+      "desc": "受到的[Combustion]、[Laceration]、[Vibration]、[Burst]与[Sinking]伤害-30%(向下取整，不包括[VibrationExplosion]造成的混乱阈值前移)\n\n适用于[PanicChangeLock]效果，回合结束时，若自身陷入恐慌，则使自身的理智值变为45点\n\n回合开始时，触发以下效果\n- 处于[ChoiSwordsmanshipOne]状态时，若自身的[ChoiSwordsmanship]层数低于5层，则对自身施加(5-自身的[ChoiSwordsmanship]层数)层<color=#ff6000><mark color=#ff000040><b><u>[Vulnerable]</color></mark></b></u>\n- 处于[ChoiSwordsmanshipMany]状态时，若自身的[ChoiSwordsmanship]层数高于5层，则每超过1层，对自身施加1层<color=#ff6000><mark color=#ff000040><b><u>[Vulnerable]</color></mark></b></u>",
+      "flavor": "以S公司最基本的布面甲为基础，肉、血、骨三党派都以各自的思想融入其中，创造了自己的布面甲。\n按古代的说法而言，“肉”是杀生的第一步。他们会先于任何人将敌人的肉斩裂。\n“血”则会利用肉被斩裂时所流出的血，并用这些血来确保战斗的持续性。\n而“骨”负责杀生的结尾部分。节节断骨，令敌人在他们面前屈膝，最后斩断颈骨，终结生命。"
+    },
+    {
+      "id": 501501,
+      "name": "散落的记忆",
+      "desc": "阵亡时，获得持有量最少的1个E.G.O资源",
+      "summary": "阵亡时，获得E.G.O资源"
     }
   ]
 }

@@ -5,7 +5,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "势法",
+          "name": "洗法",
           "desc": "[WhenUse] 自身的[Breath]强度与目标的[Laceration]之和每有6级，使本技能的硬币威力+1(最多+2)\n[WhenUse] 若自身的[Agility]层数不低于3层，则使本技能的基础威力+2\n[WhenUse] 使自身获得2层[Breath]",
           "coinlist": [
             {
@@ -77,7 +77,7 @@
         {
           "level": 1,
           "name": "清潾火",
-          "desc": "自身每失去1%的体力，使本技能造成的伤害+0.5%(最多25%)\n自身每带有1层[Agility]，是本技能暴击时造成的伤害+25%(最多+150%)\n[WhenUse] 若自身的[Breath]强度与目标的[Laceration]强度之和不低于6级，则使本技能的硬币威力+1(最多+2)\n[WhenUse] 若自身的[WindBlade]层数不低于5层，则使本技能的所有硬币转化为[SuperCoin]\n[WinDuel] 使自身增加5级[Breath]强度",
+          "desc": "自身每失去1%的体力，使本技能造成的伤害+0.5%(最多+25%)\n自身每带有1层[Agility]，使本技能暴击时造成的伤害+25%(最多+150%)\n[WhenUse] 若自身的[Breath]强度与目标的[Laceration]强度之和不低于6级，则使本技能的硬币威力+1(最多+2)\n[WhenUse] 若自身的[WindBlade]层数不低于5层，则使本技能的所有硬币转化为[SuperCoin]\n[WinDuel] 使自身增加5级[Breath]强度",
           "coinlist": [
             {
               "coindescs": [
@@ -119,7 +119,7 @@
         {
           "level": 1,
           "name": "相战清潾火",
-          "desc": "[CantDuel]\n本技能不会触发守备技能\n自身每失去1%的体力，使本技能造成的伤害+0.5%(最多25%)\n自身每带有1层[Agility]，使本技能暴击时造成的伤害+20%(最多+100%)\n[EndSkill] 消耗自身所有[WindBlade]",
+          "desc": "[CantDuel]\n本技能不会触发守备技能\n自身每失去1%的体力，使本技能造成的伤害+0.5%(最多+25%)\n自身每带有1层[Agility]，使本技能暴击时造成的伤害+20%(最多+100%)\n[EndSkill] 消耗自身所有[WindBlade]",
           "coinlist": [
             {
               "coindescs": [
@@ -148,7 +148,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加1级[Laceration]强度"
                 },
                 {
-                  "desc": "[CriticalOnSucceedAttack] 若自身的[Agility]层数不低于5层，则重复使用本硬币1次(每个技能最多1次)"
+                  "desc": "[CriticalOnSucceedAttack] 若自身的[Agility]层数不低于5层，则重复使用本硬币(每个技能最多1次)"
                 }
               ]
             }
@@ -162,7 +162,7 @@
         {
           "level": 1,
           "name": "骨断",
-          "desc": "[CantDuel]\n本技能不会触发守备技能\n自身每失去1%的体力，使本技能造成的伤害+0.5%(最多25%)\n自身每带有1层[Agility]，使本技能暴击时造成的伤害+10%(最多+50%)\n[WhenUse] 自身的[Breath]强度与目标的[Laceration]强度之和每有4级，使本技能的基础威力+1(最多+4)",
+          "desc": "[CantDuel]\n本技能不会触发守备技能\n自身每失去1%的体力，使本技能造成的伤害+0.5%(最多+25%)\n自身每带有1层[Agility]，使本技能暴击时造成的伤害+10%(最多+50%)\n[WhenUse] 自身的[Breath]强度与目标的[Laceration]强度之和每有4级，使本技能的基础威力+1(最多+4)",
           "coinlist": [
             {
               "coindescs": [
@@ -228,7 +228,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "寒芒出鞘",
+          "name": "拔剑",
           "desc": "[WhenUse] 若自身的[Breath]强度不低于5级，则使本技能的硬币威力+1\n[WhenUse] 使自身获得2层[Breath]\n[WinDuel] 使自身增加3级[Breath]强度",
           "coinlist": [
             {
@@ -330,7 +330,7 @@
         {
           "level": 1,
           "name": "肉斩",
-          "desc": "优先指定具有最高最大威力的行动槽\n[WhenUse] 直到本技能结束\n- 自身每带有1级[Breath]强度，使自身受到的攻击伤害-2%(最少-80%)\n- 自身每带有1级[Breath]强度，使本技能的拼点威力-1(最少-30)\n- 自身不会因受到伤害而陷入混乱\n[WinDuel] 使自身增加5级[Breath]强度\n[DefeatDuel] 受到攻击后使用“骨断”\n[EndBattle] 直到下回合无法使用“肉斩”",
+          "desc": "优先指定最大威力最高的行动槽\n[WhenUse] 直到本技能结束\n- 自身每带有1级[Breath]强度，使自身受到的攻击伤害-2%(最少-80%)\n- 自身每带有1级[Breath]强度，使本技能的拼点威力-1(最少-30)\n- 自身不会因受到伤害而陷入混乱\n[WinDuel] 使自身增加5级[Breath]强度\n[DefeatDuel] 受到攻击后使用“骨断”\n[EndBattle] 直到下回合无法使用“肉斩”",
           "coinlist": [
             {
               "coindescs": [
@@ -381,7 +381,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 使目标增加10级[Laceration]强度并对目标施加2层[Laceration]"
+                  "desc": "[OnSucceedAttack] 使目标增加10级[Laceration]强度并对其施加2层[Laceration]"
                 },
                 {
                   "desc": "[OnSucceedAttack] 下回合对目标施加2层[Paralysis]"
