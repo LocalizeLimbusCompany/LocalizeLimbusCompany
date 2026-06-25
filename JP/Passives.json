@@ -3083,6 +3083,71 @@
       "id": 1081521,
       "name": "斬り、殺すのみ",
       "desc": "速度が最も高い味方1名の、執念斬撃スキル与ダメージ量 +10%\n- その味方に[Agility]があるなら、代わりに斬撃スキルダメージ量 +15%"
+    },
+    {
+      "id": 1071602,
+      "name": "デュエロ・ディスペラート",
+      "desc": "敵への基本スキル終了時、\n- 対象が(他の部位を含めて)[DuelEdgeAlly]を保有した状態で死亡したなら、[EvolvingManual]1を得る\n- メインターゲットが死亡しなかったなら、メインターゲットに[DuelEdgeAlly]1を付与。その対象とマッチを行ったなら、代わりに2を付与\n\n[DuelEdgeAlly]を保有した対象とマッチ開始時、\n対象の[DuelEdgeAlly]数値だけ精神力を回復 (1ターンにつき最大5)",
+      "summary": "",
+      "flavor": ""
+    },
+    {
+      "id": 1071603,
+      "name": "必死の奮戦",
+      "desc": "蜘蛛の巣 親指の親方ロージャが戦場にいる場合、下記の効果が発動\n(自分がパニックまたは混乱したターンを除く)\n- 蜘蛛の巣 親指の親方ロージャが[FutureEyeOnRodion]を保有するときに敵へ基本スキル的中時、\n当該攻撃終了時点で対象に「パレルモ・スパーダ」で一方攻撃 (1ターンにつき1回)\n- 戦闘開始時、蜘蛛の巣 親指の親方ロージャが[FutureEyeOffRodion]を保有している状態で敵から一方攻撃されているスキルがあるなら、\n蜘蛛の巣 親指の子方ヒースクリフが[SupportProtect]1を得る\n(この[SupportProtect]は、蜘蛛の巣 親指の親方ロージャを対象としてのみ発動)",
+      "summary": "",
+      "flavor": ""
+    },
+    {
+      "id": 1071604,
+      "name": "再会 - 親指",
+      "desc": "ステージ開始時に死亡した状態または、戦闘中に死亡時、\n蜘蛛の巣の刀 良秀人格が下記の効果を得る\n- [SojiRyoshuEchoPast]1を得る\n- 基本スキルでマッチ勝利時、[Vibration]2を付与して[VibrationExplosion]。対象の[Vibration]回数が1減少 (1ターンにつき2回)",
+      "summary": "",
+      "flavor": ""
+    },
+    {
+      "id": 1071601,
+      "name": "パレルモ剣術",
+      "desc": "自分の[EvolvingManual]とメインターゲットの敵の[DuelEdgeAlly]数値の合計に応じて、下記の効果をすべて得る\n- 数値1につき、基本スキルでの与ダメージ量 +3% (最大15%)\n- 1 : マッチ威力 +1\n- 2 : 基本スキルの基本威力 +1\n- 3 : 基本スキル攻撃的中時、次のターンに[SeveredTendonAlly]1を付与\n- 4 : 基本スキルの最終威力 +1\n- 5 : 基本スキルのダメージ量 +15%\n\n自分の[EvolvingManual]と自分を攻撃する敵の[DuelEdgeAlly]数値の合計1につき、被ダメージ量 -3% (最大-15%)",
+      "summary": "",
+      "flavor": ""
+    },
+    {
+      "id": 1071621,
+      "name": "一対一の決闘なら…。",
+      "desc": "速度が最も高い味方1名が基本攻撃スキルでマッチ勝利時、\n対象の敵の[Combustion]回数が1増加 (1ターンにつき1回)\n- 親指所属人格に優先して適用\n- 親指所属人格なら効果が強化され、代わりに対象の[Combustion]回数と[Vibration]回数が1増加\n- 戦闘開始時、敵が1名のみなら(幻想体の場合は本体を基準とする)、このパッシブ効果で付与する[Combustion]回数と[Vibration]回数 +1",
+      "summary": "",
+      "flavor": ""
+    },
+    {
+      "id": 1091601,
+      "name": "パレルモ・スパーダ",
+      "desc": "保有する[AccelBullet]が1以上なら、スキル3のコイン威力 +1、ダメージ量 +25%\n\nメインターゲットの[Combustion]2につき、基本スキルでの与ダメージ量 +1% (最大15%)\n- メインターゲットにバリアがあるなら、代わりに基本スキルでの与ダメージ量 +3% (最大45%)"
+    },
+    {
+      "id": 1091602,
+      "name": "予知眼",
+      "desc": "ステージに初めて登場時、[FutureEyeOnRodion]30を得る\n自分の[FutureEyeOnRodion]数値が0になると、[FutureEyeOnRodion]が[FutureEyeOffRodion]へ変更される\n\n[FutureEyeOnRodion]があるとき、下記の効果が発動\n- マッチ進行時、マッチ1発ごとに[LookingFutureRodion]1を得る (スキルごとに5回)\n- 一方攻撃または[SuperCoin]攻撃を受けるか、攻撃スキルとのマッチに敗北時、「予知」スキルを発動 (1ターンにつき1回)\n\n[FutureEyeOnRodion]は下記の条件に応じて数値が減少\n- マッチ1発ごとに[FutureEyeOnRodion]が1減少\n- 一方攻撃または[SuperCoin]攻撃を受け、パッシブ効果によって「予知」スキル発動時、[FutureEyeOnRodion]が3減少\n- マッチ敗北時、パッシブ効果によって「予知」スキル発動時、[FutureEyeOnRodion]が5減少\n\n戦闘中、自分の[FutureEyeOnRodion]が0になるか、混乱状態になるか、蜘蛛の巣 親指の子方ヒースクリフが死亡したなら、次のターンに[ObsessionAndGreedRodion]を得る\n(待機解除時、蜘蛛の巣 親指の子方ヒースクリフが死亡した状態なら、ターン開始時に[ObsessionAndGreedRodion]を得る)\n\nターン終了時、今回の戦闘で初めて混乱状態になったなら、混乱状態を解除 (強制混乱を除く)\n "
+    },
+    {
+      "id": 1091612,
+      "name": "予知眼",
+      "desc": "ステージに初めて登場時、[FutureEyeOnRodion]30を得る\n自分の[FutureEyeOnRodion]数値が0になると、[FutureEyeOnRodion]が[FutureEyeOffRodion]へ変更される\n\n[FutureEyeOnRodion]があるとき、下記の効果が発動\n- マッチ進行時、マッチ1発ごとに[LookingFutureRodion]1を得る (スキルごとに5回)\n- 一方攻撃または[SuperCoin]攻撃を受けるか、攻撃スキルとのマッチに敗北時、「予知」スキルを発動 (1ターンにつき1回)\n\n[FutureEyeOnRodion]は下記の条件に応じて数値が減少\n- マッチ1発ごとに[FutureEyeOnRodion]が1減少\n- 一方攻撃または[SuperCoin]攻撃を受け、パッシブ効果によって「予知」スキル発動時、[FutureEyeOnRodion]が3減少\n- マッチ敗北時、パッシブ効果によって「予知」スキル発動時、[FutureEyeOnRodion]が5減少\n\n<style=\"highlight\">自分の[FutureEyeOnRodion]が[FutureEyeOffRodion]へ変更されたターン終了時、下記の効果が発動\n- [FullReload] (戦闘ごとに1回)\n- 次のターン開始時、操作スロットに「処分」がなければ、基本スキル1つを「処分」へ変更 (最左端スロットの上段スキルに優先して適用)</style>\n\n戦闘中、自分の[FutureEyeOnRodion]が0になるか、混乱状態になるか、蜘蛛の巣 親指の子方ヒースクリフが死亡したなら、次のターンに[ObsessionAndGreedRodion]を得る\n(待機解除時、蜘蛛の巣 親指の子方ヒースクリフが死亡した状態なら、ターン開始時に[ObsessionAndGreedRodion]を得る)\n\nターン終了時、今回の戦闘で初めて混乱状態になったなら、混乱状態を解除 (強制混乱を除く)\n "
+    },
+    {
+      "id": 1091603,
+      "name": "ボニャテッリ家の恥",
+      "desc": "[AccelBullet]を消耗した数値1につき、[Breath]2を得て、自分の[Breath]回数が2増加\n[AccelBullet]を消耗するコインをトスするとき、[AccelBullet]がない場合でも攻撃がキャンセルされない\n\nこの人格は[Combustion]、[Vibration]を付与する人格としてのみ扱われる\n\nターン開始時、スロット内に「処分」スキルがあるなら、前のターンに自分が最後に攻撃した敵へ[TeachersPreyRodion]を付与 (集中戦闘の場合は部位で判定)\n- 対象がいない場合、体力が最も低い敵へ[TeachersPreyRodion]を付与"
+    },
+    {
+      "id": 1091604,
+      "name": "再会 - 親指",
+      "desc": "ステージ開始時に死亡した状態または、戦闘中に死亡時、蜘蛛の巣の刀 良秀人格が下記の効果を得る\n- [SojiRyoshuEchoPast]1を得る\n- 守備スキルのコイン威力 +1、バリアを保有する対象に与える基本攻撃スキルのダメージ量 +10%"
+    },
+    {
+      "id": 1091621,
+      "name": "弱っちい連中め",
+      "desc": "速度が最も高い味方1名が敵へ[VibrationExplosion]発動時、次のターンに攻撃レベル増加2を得る (1ターンにつき1回)\n- 親指所属の場合、追加で[Agility]1を得る (1ターンにつき1回)"
     }
   ]
 }
