@@ -2727,6 +2727,421 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1071601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "巴勒莫之剑",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "巴勒莫之剑",
+          "desc": "<style=\"highlight\">[WhenUse] 若目标的[Combustion]强度与[Vibration]强度之和不低于6级，则使本技能的硬币威力+1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "巴勒莫之剑",
+          "desc": "[WhenUse] 目标的[Combustion]强度与[Vibration]强度之和<style=\"highlight\">每有6级，使本技能的硬币威力+1(最多+2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">2</style>级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "纵斩",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Vibration]"
+                }
+              ]
+            },
+            {}
+          ]
+        },
+        {
+          "level": 2,
+          "name": "纵斩",
+          "desc": "<style=\"highlight\">[WhenUse] 若目标的[Combustion]强度与[Vibration]强度之和不低于6级，则使本技能的硬币威力+1</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加<style=\"highlight\">2</style>层[Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加<style=\"highlight\">2</style>层[Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 若自身带有[EvolvingManual]或目标带有[DuelEdgeAlly]，则使目标[VibrationExplosion]，并使目标的[Vibration]层数减少1层</style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "纵斩",
+          "desc": "[WhenUse] 目标的[Combustion]强度与[Vibration]强度之和<style=\"highlight\">每有6级，使本技能的硬币威力+1(最多+2)\n[WinDuel] 若目标带有[DuelEdgeAlly]，则对其施加1层震颤 </style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] <style=\"highlight\">使目标增加2级[Combustion]强度</style>并对其施加2层[Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] <style=\"highlight\">使目标增加2级[Vibration]强度</style>并对其施加2层[Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 若自身带有[EvolvingManual]或目标带有[DuelEdgeAlly]，则使目标[VibrationExplosion]，并使目标的[Vibration]层数减少1层<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "猎人",
+          "desc": "[BeforeUse] 若目标的[DuelEdgeAlly]层数为5层，则改为使用“解鹿”(每回合最多1次)\n[WhenUse] 若目标的[Combustion]强度与[Vibration]强度之和不低于6级，则使本技能的硬币威力+1\n[WhenUse] 根据目标的[DuelEdgeAlly]层数，相应使本技能获得以下效果\n- 不低于1层：增加的[Vibration]强度额外+1级\n- 不低于2层：施加的[Vibration]层数额外+1层\n- 不低于3层：增加的[Combustion]强度额外+1级\n- 不低于4层：施加的[Combustion]层数额外+1层\n[WhenUse] 若自身带有[EvolvingManual]或目标的[DuelEdgeAlly]层数不低于3层，则使本技能的所有硬币转化为[SuperCoin]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Combustion]强度并对其施加2层[Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Vibration]强度并对其施加2层[Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "自身每带有1层[EvolvingManual]，使本硬币造成的伤害+10%(最多+30%)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[Switch_Vibration]为[VibrationIgnition]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若自身带有[EvolvingManual]或目标的[DuelEdgeAlly]层数不低于3层，则使目标[VibrationExplosion]，并使目标的[Vibration]层数减少1层"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "猎人",
+          "desc": "[BeforeUse] 若目标的[DuelEdgeAlly]层数为5层，则改为使用“解鹿”(每回合最多1次)\n[WhenUse] 目标的[Combustion]强度与[Vibration]强度之和<style=\"highlight\">每有6级，使本技能的硬币威力+1(最多+2)</style>\n[WhenUse] 根据目标的[DuelEdgeAlly]层数，相应使本技能获得以下效果\n<style=\"highlight\">- 每带有1层[DuelEdgeAlly]，使本技能造成的伤害+6%(最多+30%)</style>\n- 不低于1层：增加的[Vibration]强度额外+1级\n- 不低于2层：施加的[Vibration]层数额外+1层\n- 不低于3层：增加的[Combustion]强度额外+1级\n- 不低于4层：施加的[Combustion]层数额外+1层\n[WhenUse] 若自身带有[EvolvingManual]或目标的[DuelEdgeAlly]层数不低于3层，则使本技能的所有硬币转化为[SuperCoin]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">3</style>级[Combustion]强度并对其施加2层[Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">3</style>级[Vibration]强度并对其施加2层[Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "自身每带有1层[EvolvingManual]，使本硬币造成的伤害<style=\"highlight\">+25%</style>(最多+<style=\"highlight\">75%</style>)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[Switch_Vibration]为[VibrationIgnition]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 若自身带有[EvolvingManual]或目标的[DuelEdgeAlly]层数不低于3层，则使目标[VibrationExplosion]<style=\"highlight\">2次</style>，并使目标的[Vibration]层数减少<style=\"highlight\">2</style>层"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "以剑锋测量",
+          "desc": "[DuelCounter]\n目标每带有1层[DuelEdgeAlly]，使本技能造成的伤害+10%(最多+50%)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度(每回合最多2次)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度(每回合最多2次)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "以剑锋测量",
+          "desc": "[DuelCounter]\n目标每带有1层[DuelEdgeAlly]，使本技能造成的伤害<style=\"highlight\">+20%</style>(最多+<style=\"highlight\">100%</style>)\n<style=\"highlight\">[WhenUse] 目标的[Combustion]强度与[Vibration]强度之和每有4级，使本技能的最终威力+1(最多+2)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度(每回合最多2次)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度(每回合最多2次)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071605,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "我将守护。",
+          "desc": "[CanDuelGuard]\n[SupportProtect]专用技能",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "我将守护。",
+          "desc": "[CanDuelGuard]\n[SupportProtect]专用技能\n<style=\"highlight\">[WhenUse]\n- 使自身获得2层[Protection](每回合最多1次)\n- 使[SupportProtect]保护的目标恢复5点理智值</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071606,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "解鹿",
+          "desc": "[WhenUse]\n- 使本技能的攻击容量+(自身的[EvolvingManual]层数-1)(最多+2)\n- 主要目标的[Combustion]强度与[Vibration]强度之和每有6级，使本技能的硬币威力+1(最多+2)\n- 仅攻击1名目标时，使本技能造成的伤害+15%(若是集中遭遇战，则改为以部位判定)\n- 本技能的攻击容量高于攻击目标数时，每高于1点，使本技能造成的伤害+15%(若是集中遭遇战，则改为以部位判定)\n[EndSkill]\n- 消耗主要目标的所有[DuelEdgeAlly]\n- 使自身获得1层[EvolvingManual]。若主要目标阵亡，则改为获得2层[EvolvingManual]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Combustion]强度并对其施加3层[Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Vibration]强度并对其施加3层[Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnStartCoin] 自身每带有1层[EvolvingManual]，使本硬币的威力+1(最多+3)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[Switch_Vibration]为[VibrationIgnition]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]2次，并使其[Vibration]层数减少2层"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "解鹿",
+          "desc": "[WhenUse]\n- 使本技能的攻击容量+(自身的[EvolvingManual]层数-1)(最多+2)\n- 主要目标的[Combustion]强度与[Vibration]强度之和每有6级，使本技能的硬币威力+1(最多+<style=\"highlight\">3</style>)\n- 仅攻击1名目标时，使本技能造成的伤害<style=\"highlight\">+25%</style>(若是集中遭遇战，则改为以部位判定)\n- 本技能的攻击容量高于攻击目标数时，每高于1点，使本技能造成的伤害<style=\"highlight\">+25%</style>(若是集中遭遇战，则改为以部位判定)\n[EndSkill]\n- 消耗主要目标的所有[DuelEdgeAlly]\n- 使自身获得1层[EvolvingManual]。若主要目标阵亡，则改为获得2层[EvolvingManual]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">4</style>级[Combustion]强度并对其施加3层[Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">4</style>级[Vibration]强度并对其施加3层[Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnStartCoin] 自身每带有1层[EvolvingManual]，使本硬币的威力+1(最多+3)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[Switch_Vibration]为[VibrationIgnition]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]<style=\"highlight\">3次</style>，并使其[Vibration]层数减少<style=\"highlight\">3</style>层"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
