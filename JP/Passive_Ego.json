@@ -572,6 +572,12 @@
       "name": "剣先にしたたる酒滴",
       "desc": "[AlwaysUseEGOPassive2050911]\n\n基本スキルの攻撃的中時、対象に[Laceration]2を付与 (スキルごとに1回)\n\nこの人格は[Laceration]・[Breath]を付与する人格として扱われる\n- この効果により、基本スキルが[Laceration]・[Breath]を付与するスキルとして扱われる\n\n[WhenUseEGOPassive]\n\n味方死亡時、次のターンに[AlcoholKimPersonal]1を得る\n- 死亡した味方が剣契所属なら、代わりに[AlcoholKimPersonal]2を得る\n\nターン開始時、自分に[AlcoholKimPersonal]があるなら、[GhostKimPersonal]状態になる\n- 剣契頭目ムルソーなら、追加で[RootSoupKimPersonal]を得る\n\nターン開始時、自分に[AlcoholKimPersonal]がなければ、自分の[GhostKimPersonal]・[GrudgePersonal]・[RootSoupKimPersonal]が消滅する\n\n[AlcoholKimPersonal]があるときに体力が0になるダメージを受けると、自分の体力を最大値の([AlcoholKimPersonal]数値 × 25)%だけ回復し、[AlcoholKimPersonal]が消滅する (戦闘ごとに1回、人格パッシブが優先して発動)\n- 混乱状態なら、混乱状態を解除 (強制混乱を除く)",
       "summary": "[AlcoholKimPersonal]を得る"
+    },
+    {
+      "id": 2010911,
+      "name": "翼ガ垂レ下ツタ蝶ハ息ニ凝結スル貧シイ露ヲ食フ",
+      "desc": "対象が[SinkingWhite]を保有しているなら、マッチ威力 +1\n\n[Sinking]と全ての[SinkingWhite]の合計が15以上の対象に攻撃的中時、[SinkingWhite](生きた蝶)1, [SinkingWhite](死んだ蝶)1を付与 (1ターンにつき1回。集中戦闘の場合は部位で判定)\n\n[AlwaysUseEGOPassive2010911]\n\n基本スキルの攻撃的中時、対象に[Vibration]2を付与 (スキルごとに1回)\n\nこの人格は[Vibration]・[Sinking]を付与する人格として扱われる\n- この効果により、基本スキルが[Vibration]・[Sinking]を付与するスキルとして扱われる\n\n[WhenUseEGOPassive2010911]\n\n自分の[BulletLament](威力 + 回数)最大値 +10\n[ReloadLament]後に精神力を10回復し、自分の全スキルスロットから「葬儀はイサンより、以上。」を除いたランクが最も低い基本攻撃スキル1つを[Discard] (1ターンにつき2回)\n守備スキルを装着したターン終了時、精神力を10回復\nターン終了時に混乱状態なら、混乱を解除して[ReloadLament] (戦闘につき1回。強制混乱を除く)",
+      "summary": "マッチ威力増加、[SinkingWhite]を付与"
     }
   ]
 }

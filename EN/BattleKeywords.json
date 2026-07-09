@@ -1567,7 +1567,7 @@
     {
       "id": "Retreat",
       "name": "Strategic R&R Mode",
-      "desc": "- Turn End: recover from Stagger and Retreat from the Encounter (excluding forced Staggers; does not count as death)\n· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
+      "desc": "- Turn End: Recover from Stagger and Retreat from the Encounter (excluding forced Staggers; does not count as death)\n· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
       "summary": "",
       "undefined": "-"
     },
@@ -1788,7 +1788,7 @@
     {
       "id": "Retreat_FullStop",
       "name": "Overwatch Assignment",
-      "desc": "- Turn End: recover from Stagger and Retreat from the Encounter (excluding forced Staggers; does not count as death)\n· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)"
+      "desc": "- Turn End: Recover from Stagger and Retreat from the Encounter (excluding forced Staggers; does not count as death)\n· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)"
     },
     {
       "id": "LogicAtelierAM",
@@ -2056,7 +2056,7 @@
     {
       "id": "RetreatForCommon",
       "name": "Battlefield Retreat",
-      "desc": "- Turn End: recover from Stagger and Retreat from the Encounter (excluding forced Staggers; does not count as death)\n· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
+      "desc": "- Turn End: Recover from Stagger and Retreat from the Encounter (excluding forced Staggers; does not count as death)\n· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
       "summary": "",
       "undefined": "-"
     },
@@ -3328,6 +3328,129 @@
       "desc": "- Take +15% damage from Base Skills used by The House of Spiders: The Thumb Nursefather Rodion",
       "summary": "",
       "undefined": "-"
+    },
+    {
+      "id": "StigmaWorkshopHandStep1",
+      "name": "Light of Daybreak",
+      "desc": "- Max Stack: 30\n- Can gain up to 20 Stack per turn\n- Turn Start: Gain 1 Burn for every 5 Stack; then, gain +1 Burn Count for every 10 Stack\n- On Hit using a Base Attack Skill, gain (1 + (Burn on target / 3)) Stack (max 3)\n- At 10+ Stack, Base Skills inflict +1 more Burn Potency on enemies\n- At 20+ Stack, Base Skills inflict +1 more Burn Count on enemies",
+      "summary": "Gain Stack On Hit\nWhen conditions are met, inflict more Burn Potency and Count",
+      "undefined": "-",
+      "flavor": "The first flare of dawn is not a fire that scorches, but one that casts its glow on people."
+    },
+    {
+      "id": "StigmaWorkshopHandStep2",
+      "name": "Light of Daybreak",
+      "desc": "- Max Stack: 30\n- Can gain up to 20 Stack per turn\n- Turn Start: Gain 1 Burn for every 5 Stack; then, gain +1 Burn Count for every 10 Stack\n- On Hit using a Base Attack Skill, gain (1 + (Burn on target / 3)) Stack (max 3)\n- At 10+ Stack, Base Skills inflict +1 more Burn Potency on enemies\n- At 20+ Stack, Base Skills inflict +1 more Burn Count on enemies",
+      "summary": "Gain Stack On Hit\nWhen conditions are met, inflict more Burn Potency and Count",
+      "undefined": "-",
+      "flavor": "The first flare of dawn is not a fire that scorches, but one that casts its glow on people."
+    },
+    {
+      "id": "StigmaWorkshopHandStep3",
+      "name": "Light of Daybreak",
+      "desc": "- Max Stack: 30\n- Can gain up to 20 Stack per turn\n- Turn Start: Gain 1 Burn for every 5 Stack; then, gain +1 Burn Count for every 10 Stack\n- On Hit using a Base Attack Skill, gain (1 + (Burn on target / 3)) Stack (max 3)\n- At 10+ Stack, Base Skills inflict +1 more Burn Potency on enemies\n- At 20+ Stack, Base Skills inflict +1 more Burn Count on enemies",
+      "summary": "Gain Stack On Hit\nWhen conditions are met, inflict more Burn Potency and Count",
+      "undefined": "-",
+      "flavor": "The first flare of dawn is not a fire that scorches, but one that casts its glow on people."
+    },
+    {
+      "id": "DawnLight",
+      "name": "Dawnherald",
+      "desc": "- Max Stack: 3\n- Base Skills that inflict Burn Potency, Count, or 'Unique Burn' deal +10% damage\n· If the said Skill is a Wrath Skill, deal +15% damage instead\n\n- Base Skills that inflict Burn Potency, Count, or 'Unique Burn', gain Clash Power +1\n· If this unit is a Dawn Office Identity, gain Base Power +1 instead\n- Turn End: Lose 1 Stack",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "\"Burn, burn, burn—y'see, Kid, fire's not the be-all, end-all solution to every problem you've got. When it comes to using heat-modulating weapons like these, the deciding factors often come down to <i>when</i> to spark the flame, and <i>how hot</i> you let it burn.\n\"Yeah, that's why I'm always chewing your ear off about how important it is to feel the 'moment' that comes with the territory of using heat-modulating weapons. But on the other hand... when that 'moment' tells you to burn it all down, don't hold back and just let it rip. ... Hm? Oh, you want to know who's the best in the field?\"\n\"Hmm, let's see... Well, the best of the best's got to be the Vermilion Cross, I'd wager.\""
+    },
+    {
+      "id": "RunSinclair",
+      "name": "Escape Apparatus",
+      "desc": "- When this unit takes damage that brings its HP down to 10, this unit's HP does not drop below 10 for the turn\n- Turn End: Recover from Stagger and Retreat from the Encounter (excluding forced Staggers; does not count as death)\n  · In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)\n  · When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "'... Live.'"
+    },
+    {
+      "id": "FireField",
+      "name": "Scorchfield",
+      "desc": "- Max Value: 999\n- Stores all Burn damage dealt in this zone\n- Resets when moving to a different zone\n- This value is shared by all characters",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "Heat turns air into a breeze, a gust, a firestorm, scorching the forest with abandon as men and beasts alike depart."
+    },
+    {
+      "id": "DawnGregor",
+      "name": "From Dawnbreak to Sunset",
+      "desc": "- If this unit has 3+ Stagger Thresholds, remove the first Stagger Threshold\n- Turn End: If this unit is Staggered, recover from Stagger; if this unit is at Uptie 3 or higher, replace 1 of its Base Skills with Skill 3\n(excluding forced Staggers; once per Encounter; prioritizes the Skill of lowest rank)\n\n- Turn Start: Heal 5 SP\n- Passive \"Unstable Shell of Ego\" effects, Base Attack Skill effects, and Volatile Passion effects cannot reduce this unit's SP below 25\n\n- When in Volatile E.G.O::Waxen Pinion state, gain the following effects:\n  · Turn Start: Gain Shield equal to 15% of max HP\n  · When hit while this unit has Shield, inflict 1 Burn against the attacker (2 times per turn)\n  · Activate Scorchfield on this field\n\n※ Scorchfield effects\n- Stores all Burn damage dealt in this zone\n- Resets when moving to a different zone\n- This value is shared by all characters",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "\"Ah... What a pleasant aroma. You're practically a Color Fixer when it comes to brewing ssanghwa-cha, you know that? I hereby anoint you Color Fixer \"The Yellow Ssanghwa...\"\n\"That's settled, then. I'll be tutoring you myself, so you'd better keep up. I see real potential in you, Kid—your ssanghwa-cha brewing skills have this instinctive grasp of the 'moment'... And being able to recognize that 'moment' is the key to just about everything.\""
+    },
+    {
+      "id": "DawnFaust",
+      "name": "High Noon",
+      "desc": "- Min Speed +2\n- On Base Attack Skill Use: Gain Base Power +2 and deal +(45 / # of Coins)% damage\n\n- Apply the following effects to \"Sunset Blade\"\n· On final Coin Hit: If target has 15+ Burn, activate Burn on target; then, reduce target's Burn Count by 1\n\n- Apply the following effects to \"Blazing Strike\"\n· Deal +100% damage\n· On Use: Convert all Coins into Unbreakable Coins\n· On Hit against an enemy, activate Burn on target; then, reduce target's Burn Count by 1\n· On Use: At 3+ Volatile Passion, consume up to 100 Scorchfield\n· Deal +1% damage for every Scorchfield consumed (max 100%)\n\n* Scorchfield Effects\n- Stores all Burn damage dealt in this zone\n- Resets when moving to a different zone\n- This value is shared by all characters",
+      "summary": "Strengthen Base Attack Skills",
+      "undefined": "-",
+      "flavor": "\"The request has been resolved ahead of schedule, and the weather conditions are optimal today for a team lunch. Shall we all proceed?\""
+    },
+    {
+      "id": "DawnGregorDying",
+      "name": "Blazing Sunset",
+      "desc": "- If this unit has 3+ Stagger Thresholds, remove the first Stagger Threshold\n- Turn End: If this unit is Staggered, recover from Stagger; if this unit is at Uptie 3 or higher, replace 1 of its Base Skills with Skill 3\n(excluding forced Staggers; once per Encounter; prioritizes the Skill of lowest rank)\n\n- Turn Start: Heal 8 SP\n- Passive \"Unstable Shell of Ego\" effects, Base Attack Skill effects, and Volatile Passion effects cannot reduce this unit's SP below 45\n\n- Turn Start: enter the Volatile E.G.O::Waxen Pinion State, heal 50% HP, and heal SP to max (once per Encounter)\n- Volatile E.G.O::Waxen Pinion State is maintained even when this unit has 0 or lower SP at Turn Start\n\n- When in Volatile E.G.O::Waxen Pinion state, gain the following effects:\n  · Turn Start: Gain Shield equal to 20% of max HP\n  · When hit while this unit has Shield, inflict 2 Burn against the attacker (2 times per turn)\n  · Activate Scorchfield on this field\n\n※ Scorchfield effects\n- Stores all Burn damage dealt in this zone\n- Resets when moving to a different zone\n- This value is shared by all characters",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "\"Master, please... I still have so much to learn... You said it yourself...\"\nDawn is a fleeting thing; it soon gives way to morning and fades into daylight, with a promise of sunset that will bring about the evening."
+    },
+    {
+      "id": "DawnFaustDying",
+      "name": "Loneliness at High Noon",
+      "desc": "- Min Speed +2\n- On Base Attack Skill Use: Gain Base Power +3 and deal +(90 / # of Coins)% damage\n\n- Apply the following effects to \"Sunset Blade\"\n· On final Coin Hit: If target has 15+ Burn, activate Burn on target; then, reduce target's Burn Count by 1\n\n- Apply the following effects to \"Blazing Strike\"\n· Deal +150% damage\n· On Use: Convert all Coins into Unbreakable Coins\n· On Hit against an enemy, activate Burn on target; then, reduce target's Burn Count by 1\n· On Use: Consume up to 100 Scorchfield and deal +1% damage for every Scorchfield consumed (max 150%)\n\n- When this unit takes damage that brings its HP down to 0 this turn, this unit's HP cannot drop below 1 for the turn, and recovers from Stagger when Staggered due to damage (once per Encounter)\n\n* Scorchfield Effects\n- Stores all Burn damage dealt in this zone\n- Resets when moving to a different zone\n- This value is shared by all characters",
+      "summary": "Strengthen Base Attack Skills",
+      "undefined": "-",
+      "flavor": "\"Do you understand what 'loneliness' means, Sinclair? Loneliness is being bathed in the light of the sun at high noon, only to realize that the ones you would have shared a luncheon with have departed you. That is how I would put into words the concept of 'loneliness'—for me, at least. I do hope, Sinclair, that you will never have cause to understand that concept.\""
+    },
+    {
+      "id": "DawnTeam",
+      "name": "Dawn Office",
+      "desc": "- Max Stack: 3\n- Gain 1 Offense Level for every Stack\n- Turn Start: At 3 Stack, heal 5 SP\n- Turn Start: If all other allied Identities that have \"Dawn Office\" are defeated, expires",
+      "summary": "",
+      "undefined": "-",
+      "flavor": "The Dawn Office of this Mirror World, unlike that of others, has yet to completely lose its fervor. One can reasonably conjecture that the two leading Fixers of this Office have sufficient competence to find work as Grade 1 of the vocation.\n\nHowever, it must be stated that the Office and its Fixers' grades do not vary from those of other observed Mirror Worlds, as combat capability is hardly the sole criterion by which the Grades are assigned. Failure to meet the conditions stipulated by the contract clauses to the client's satisfaction, eschewal of high-risk contracts that contribute to the advancement of Fixer Grades—these are all conditions that limit one's mobility along the ladder of Fixer Grades."
+    },
+    {
+      "id": "StigmaWorkshopCelloCaseOne",
+      "name": "Fire Butterfly Coffin",
+      "desc": "- Max Stack: 30\n- Can gain up to 20 Stacks per turn\n- On Hit using a Base Skill, gain 2 Stacks\n- Turn End: At 20+ Stacks, gain Burn next turn equal to half of surplus Stacks past 20 (rounded down)\n· At 30 Stacks, gain 5 Burn and +2 Burn Count instead",
+      "summary": "Gain Stack On Hit, gain Burn next turn based on Stack",
+      "flavor": "Heated to a smoldering temperature within the coffin are butterflies, the kaleidoscope spilling forth to melt and tear the target apart.\n\n\"This type of weapon is still too premature for you to wield, Sinclair, but it is advisable that you familiarize yourself with its properties.\"\n\n\"The array of blades within the coffin affords considerable convenience in circumstances where time constraints prove solitary handling of requests impossible, or in combat against multiple adversaries.\""
+    },
+    {
+      "id": "StigmaWorkshopCelloCaseTwo",
+      "name": "Fire Butterfly Coffin",
+      "desc": "- Max Stack: 30\n- Can gain up to 20 Stacks per turn\n- On Hit using a Base Skill, gain 2 Stacks\n- Turn End: At 20+ Stacks, gain Burn next turn equal to half of surplus Stacks past 20 (rounded down)\n· At 30 Stacks, gain 5 Burn and +2 Burn Count instead",
+      "summary": "Gain Stack On Hit, gain Burn next turn based on Stack",
+      "flavor": "Heated to a smoldering temperature within the coffin are butterflies, the kaleidoscope spilling forth to melt and tear the target apart.\n\n\"This type of weapon is still too premature for you to wield, Sinclair, but it is advisable that you familiarize yourself with its properties.\"\n\n\"The array of blades within the coffin affords considerable convenience in circumstances where time constraints prove solitary handling of requests impossible, or in combat against multiple adversaries.\""
+    },
+    {
+      "id": "StigmaWorkshopCelloCaseThree",
+      "name": "Fire Butterfly Coffin",
+      "desc": "- Max Stack: 30\n- Can gain up to 20 Stacks per turn\n- On Hit using a Base Skill, gain 2 Stacks\n- Turn End: At 20+ Stacks, gain Burn next turn equal to half of surplus Stacks past 20 (rounded down)\n· At 30 Stacks, gain 5 Burn and +2 Burn Count instead",
+      "summary": "Gain Stack On Hit, gain Burn next turn based on Stack",
+      "flavor": "Heated to a smoldering temperature within the coffin are butterflies, the kaleidoscope spilling forth to melt and tear the target apart.\n\n\"This type of weapon is still too premature for you to wield, Sinclair, but it is advisable that you familiarize yourself with its properties.\"\n\n\"The array of blades within the coffin affords considerable convenience in circumstances where time constraints prove solitary handling of requests impossible, or in combat against multiple adversaries.\""
+    },
+    {
+      "id": "Firstlight",
+      "name": "Battle Instinct",
+      "desc": "- Max Stack: 3\n- Min & Max Speed +2\n- Base Skills inflict +1 more Burn Potency and Burn Count on enemies\n- Skill \"Eject\" deals +(Stack x 5)% damage\n- Skills \"Eject - High Noon\" and \"Dismemberment at High Noon\" deal +(Stack x 10)% damage",
+      "summary": "Deal more damage using \"Eject\", \"Eject - High Noon\", \"Dismemberment at High Noon\"",
+      "flavor": "\"To resume the subject at hand: aside from Singularities, there exists a means of overcoming the penalties incurred by using this type of weaponry. Namely, effort.\"\n\n\"This may go without saying, but it is recommended that you focus on honing your body and battle instinct whenever time permits—both during downtime and when handling requests.\"\n\n\"Granted, battle instinct, in most cases, can only be properly demonstrated in the heat of battle. One might refer to this process as a \"warm up,\" although that term is perhaps <i>too</i> simple. In any case, a heightened natural battle instinct will help you offset the gear's structural and technical vulnerabilities. This is how you may raise the baseline of your performance threshold. Are you able to comprehend this explanation, Sinclair?\""
+    },
+    {
+      "id": "CaseOverheating",
+      "name": "Overheated Coffin",
+      "desc": "- Max Stack: 1\n- Turn End:\n· Gain 3 Burn next turn\n· This effect expires",
+      "summary": "",
+      "flavor": "\"Keep in mind, however, that convenience is always accompanied by a trade-off. A weapon of this structure comes with drawbacks that standard Stigma Workshop weapons would not possess—inevitable penalties that can only be mitigated by Singularities, the pinnacle of the myriad technological innovations of the City.\"\n\n\"It would do justice to properly acknowledge the extraordinary qualities of Singulari—ahem. That was tangential to the subject. Let us return to the subject, Sinclair.\""
     }
   ]
 }

@@ -2991,6 +2991,509 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1021601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Flash of Sunup",
+          "desc": "[WhenUse] Clash Power +1 for every 10 [StigmaWorkshopCelloCaseOne] (max 2)\n[WhenUse] At 20+ [StigmaWorkshopCelloCaseOne], Reuse the final Coin once",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Flash of Sunup",
+          "desc": "<style=\"highlight\">[WhenUse] Final Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 2)</style>\n[WhenUse] Clash Power +1 for every 10 [StigmaWorkshopCelloCaseOne] (max 2)\n[WhenUse] At 20+ [StigmaWorkshopCelloCaseOne], Reuse the final Coin once",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">2</style> [Combustion]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Flash of Sunup",
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Combustion] + [Vibration]) on target (max <style=\"highlight\">3</style>)\n<style=\"highlight\">[WhenUse] Gain 4 [StigmaWorkshopCelloCaseOne]</style>\n[WhenUse] Clash Power +1 for every 10 [StigmaWorkshopCelloCaseOne] (max <style=\"highlight\">3</style>)\n[WhenUse] At 20+ [StigmaWorkshopCelloCaseOne], Reuse the final Coin once",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Combustion] and <style=\"highlight\">+1 [Combustion] Count</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Butterfly Slash",
+          "desc": "[WhenUse] For every 10 [StigmaWorkshopCelloCaseOne], gain the following effects:\n- Clash Power +1 (max 2)\n- Reuse the final Coin once (2 times per Skill)",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] Inflict 1 [Combustion]"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1 (once per Skill)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "Butterfly Slash",
+          "desc": "<style=\"highlight\">[WhenUse] Final Power +1 for every 4 ([Combustion] + [Vibration]) on target (max 2)\n[WhenUse] Gain 3 [StigmaWorkshopCelloCaseOne]</style>\n[WhenUse] For every 10 [StigmaWorkshopCelloCaseOne], gain the following effects:\n- Clash Power +1 (max 2)\n- Reuse the final Coin once (2 times per Skill)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] At 10+ [StigmaWorkshopCelloCaseOne], gain the following effects:\n- Inflict +1 [Combustion] Count\n- Inflict +1 [Vibration] Count</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] Inflict 1 [Combustion]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1 (once per Skill)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Butterfly Slash",
+          "desc": "[WhenUse] Final Power +1 for every 4 ([Combustion] + [Vibration]) on target (max <style=\"highlight\">3</style>)\n[WhenUse] Gain <style=\"highlight\">6</style> [StigmaWorkshopCelloCaseOne]\n[WhenUse] For every 10 [StigmaWorkshopCelloCaseOne], gain the following effects:\n- Clash Power +1 (max <style=\"highlight\">3</style>)\n- Reuse the final Coin once (2 times per Skill)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] <style=\"highlight\">For every 10 [StigmaWorkshopCelloCaseOne], gain the following effects:\n- Inflict +1 [Combustion] Count (max 2)\n- Inflict +1 [Vibration] Count (max 2)</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] Inflict 1 [Combustion]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1 (once per Skill)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Eject",
+          "desc": "[BeforeUse] At 30 [StigmaWorkshopCelloCaseOne], activate \"Eject - High Noon[TabExplain]\" instead (once per turn)\n[WhenUse] If target has 6+ ([Combustion] + [Vibration]), Coin Power +1\n[WhenUse] Gain 5 [StigmaWorkshopCelloCaseOne]\n[WhenUse] For every 10 [StigmaWorkshopCelloCaseOne], gain the following effects:\n- Clash Power +1 (max 2)\n- Inflict +1 [Combustion] Count (max 2)\n- Inflict +1 [Vibration] Count (max 2)\n- Reuse the final Coin once (2 times per Skill)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 2 [Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1 (2 times per Skill)"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] Inflict 1 [Combustion]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Eject",
+          "desc": "[BeforeUse] At 30 [StigmaWorkshopCelloCaseOne], activate \"Eject - High Noon[TabExplain]\" instead (once per turn)\n[WhenUse] <style=\"highlight\">Coin Power +1 for every 6 ([Combustion] + [Vibration]) on target (max 2)</style>\n[WhenUse] Gain <style=\"highlight\">8</style> [StigmaWorkshopCelloCaseOne]\n[WhenUse] For every 10 [StigmaWorkshopCelloCaseOne], gain the following effects:\n- Clash Power +1 (max <style=\"highlight\">3</style>)\n- Inflict +1 [Combustion] Count (max <style=\"highlight\">3</style>)\n- Inflict +1 [Vibration] Count (max <style=\"highlight\">3</style>)\n- Reuse the final Coin once (2 times per Skill)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict <style=\"highlight\">3</style> [Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Trigger [Switch_Vibration] into [VibrationIgnition]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1 (<style=\"highlight\">3</style> times per Skill)"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] Inflict 1 [Combustion]<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "Stigmatize",
+          "desc": "[DuelCounter]\n[WhenUse] At 5+ [Combustion], Coin Power +1\n[WhenUse] Lose 5 [Combustion] (once per turn)\n[WinDuel] Lose 3 [Combustion] (once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion] (2 times per turn)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration] (2 times per turn)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Stigmatize",
+          "desc": "[DuelCounter]\n<style=\"highlight\">[BeforeUse] At 30 [StigmaWorkshopCelloCaseOne], activate \"Dismemberment at High Noon[TabExplain]\" instead (once per turn)\n- If this unit has [CaseOverheating], the effect above does not activate\n[WhenUse] At 5+ [Combustion], Coin Power +1</style>\n[WhenUse] Lose 5 [Combustion] (once per turn)\n[WinDuel] Lose 3 [Combustion] (once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion] (2 times per turn)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration] (2 times per turn)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Stigmatize",
+          "desc": "[DuelCounter]\n<style=\"highlight\">[StartBattle] Gain 6 [StigmaWorkshopCelloCaseOne] (once per Encounter)</style>\n[BeforeUse] At 30 [StigmaWorkshopCelloCaseOne], activate \"Dismemberment at High Noon[TabExplain]\" instead (once per turn)\n- If this unit has [CaseOverheating], the effect above does not activate\n[WhenUse] <style=\"highlight\">Coin Power +1 for every 5 [Combustion] on self (max 2)</style>\n[WhenUse] Lose 5 [Combustion] (once per turn)\n[WinDuel] Lose 3 [Combustion] (once per turn)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Combustion] (2 times per turn)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict 1 [Vibration] (2 times per turn)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021605,
+      "levelList": [
+        {
+          "level": 2,
+          "name": "Seconded Offensive",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count (2 times per turn)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Combustion] Count (2 times per turn)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "Seconded Offensive",
+          "desc": "<style=\"highlight\">[WhenUse] Deal +1% damage for every [StigmaWorkshopCelloCaseOne] on self (max 30%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count (2 times per turn)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Combustion] Count (2 times per turn)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Seconded Offensive",
+          "desc": "<style=\"highlight\">[WhenUse] Gain the following effects based on [StigmaWorkshopCelloCaseOne] Stack:\n- Deal +2% damage for every Stack (max 60%)\n- Final Power +1 for every 10 Stacks (max 3)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Vibration] Count (2 times per turn)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +1 [Combustion] Count (2 times per turn)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021606,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Eject - High Noon",
+          "desc": "[WideAreaRampage]\nActivate the following effects on target with every hit of this Skill:\n- Inflict 1 [Combustion] or 1 [Vibration]\n- If target has no [VibrationIgnition], trigger [Switch_Vibration] into [VibrationIgnition] (once per target)\n[WhenUse]\n- Clash Power +3\n- If the main target has 6+ ([Combustion] + [Vibration]), Coin Power +1 and Clash Power +2\n- Inflict +2 [Combustion] Count on all targets\n- Inflict +2 [Vibration] Count on all targets\n[EndSkill]\n- Inflict 1 [ResultReduction] next turn on all targets hit (once per turn)\n- Gain 1 [Firstlight]\n- Gain 1 [CaseOverheating]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "Reuse this Coin (max 2 times)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1 (2 times per Skill)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Eject - High Noon",
+          "desc": "[WideAreaRampage]\n<style=\"highlight\">Deal +([Combustion] on self + [Combustion] on target)% damage (max 20%, counted per target)</style>\nActivate the following effects on target with every hit of this Skill:\n- Inflict 1 [Combustion] or 1 [Vibration]\n- If target has no [VibrationIgnition], trigger [Switch_Vibration] into [VibrationIgnition] (once per target)\n[WhenUse]\n- Clash Power +3\n<style=\"highlight\">- Coin Power +1 and Clash Power +2 for every 6 ([Combustion] + [Vibration]) on the main target (max 2 and 4 respectively)</style>\n- Inflict +<style=\"highlight\">3</style> [Combustion] Count on all targets\n- Inflict +<style=\"highlight\">3</style> [Vibration] Count on all targets\n[EndSkill]\n- Inflict 1 [ResultReduction] next turn on all targets hit (once per turn)\n- Gain 1 [Firstlight]\n- Gain 1 [CaseOverheating]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "Reuse this Coin (max 2 times)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">If this unit has [Firstlight], deal +([Combustion] Potency on target / 2)% damage (max 20%)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1 (<style=\"highlight\">3</style> times per Skill)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021607,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "Dismemberment at High Noon",
+          "desc": "[WideAreaRampage]\nDeal +(missing HP percentage on self / 2)% damage (max 25%)\nActivate the following effects on target with every hit of this Skill:\n- Inflict 1 [Combustion] or 1 [Vibration]\n- If target does not have [VibrationIgnition], trigger [Switch_Vibration] into [VibrationIgnition] (once per target)\n[WhenUse]\n- Clash Power +3\n- If the main target has 6+ ([Combustion] + [Vibration]), Coin Power +1 and Clash Power +2\n- Inflict +2 [Combustion] Count on all targets\n- Inflict +2 [Vibration] Count on all targets\n[EndSkill]\n- Consume up to 30 [Combustion] on self and heal (5 + [Combustion] consumed)% HP (max 35%)\n- Consume all [StigmaWorkshopCelloCaseOne] on self\n- Gain 3 [Firstlight]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "Reuse this Coin (max 2 times)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1 (2 times per Skill)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Dismemberment at High Noon",
+          "desc": "[WideAreaRampage]\nDeal +(<style=\"highlight\">missing HP percentage on self</style>)% damage (max <style=\"highlight\">50%</style>)\n<style=\"highlight\">Deal +([Combustion] Potency on target)% damage (max 20%, counted per target)</style>\nActivate the following effects on target with every hit of this Skill:\n- Inflict 1 [Combustion] or 1 [Vibration]\n- If target does not have [VibrationIgnition], trigger [Switch_Vibration] into [VibrationIgnition] (once per target)\n[WhenUse]\n- Clash Power +3\n- <style=\"highlight\">Coin Power +1 and Clash Power +2 for every 6 ([Combustion] + [Vibration]) on the main target (max 2 and 4 respectively)</style>\n- Inflict +<style=\"highlight\">3</style> [Combustion] Count on all targets\n- Inflict +<style=\"highlight\">3</style> [Vibration] Count on all targets\n[EndSkill]\n- Consume up to 30 [Combustion] on self and heal (<style=\"highlight\">20</style> + [Combustion] consumed)% HP (max <style=\"highlight\">50%</style>)\n- Consume all [StigmaWorkshopCelloCaseOne] on self\n- Gain 3 [Firstlight]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "Reuse this Coin (max 2 times)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">If this unit has [Firstlight], deal +([Combustion] Potency on target)% damage (max 20%)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion]; then, reduce target's [Vibration] Count by 1 (<style=\"highlight\">3</style> times per Skill)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

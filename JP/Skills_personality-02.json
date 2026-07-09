@@ -2991,6 +2991,509 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1021601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "黎明の閃光",
+          "desc": "[WhenUse] [StigmaWorkshopCelloCaseOne]10につき、マッチ威力 +1 (最大2)\n[WhenUse] [StigmaWorkshopCelloCaseOne]が20以上なら、最終コインを1回再使用",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "黎明の閃光",
+          "desc": "<style=\"highlight\">[WhenUse] 対象の[Combustion]と[Vibration]の合計4につき、最終威力 +1 (最大2)</style>\n[WhenUse] [StigmaWorkshopCelloCaseOne]10につき、マッチ威力 +1 (最大2)\n[WhenUse] [StigmaWorkshopCelloCaseOne]が20以上なら、最終コインを1回再使用",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]<style=\"highlight\">2</style>を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "黎明の閃光",
+          "desc": "[WhenUse] 対象の[Combustion]と[Vibration]の合計4につき、最終威力 +1 (最大<style=\"highlight\">3</style>)\n<style=\"highlight\">[WhenUse] [StigmaWorkshopCelloCaseOne]4を得る</style>\n[WhenUse] [StigmaWorkshopCelloCaseOne]10につき、マッチ威力 +1 (最大<style=\"highlight\">3</style>)\n[WhenUse] [StigmaWorkshopCelloCaseOne]が20以上なら、最終コインを1回再使用",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]を2付与、<style=\"highlight\">[Combustion]回数が1増加</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "蝶斬り",
+          "desc": "[WhenUse] [StigmaWorkshopCelloCaseOne]10につき、\n- マッチ威力 +1 (最大2)\n- 最終コインを1回再使用 (スキルごとに最大2回)",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]1を付与"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] [Combustion]1を付与"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少 (スキルごとに1回)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "蝶斬り",
+          "desc": "<style=\"highlight\">[WhenUse] 対象の[Combustion]と[Vibration]の合計4につき、最終威力 +1 (最大2)\n[WhenUse] [StigmaWorkshopCelloCaseOne]3を得る</style>\n[WhenUse] [StigmaWorkshopCelloCaseOne]10につき、\n- マッチ威力 +1 (最大2)\n- 最終コインを1回再使用 (スキルごとに最大2回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [StigmaWorkshopCelloCaseOne]が10以上なら、\n- [Combustion]回数が1増加\n- [Vibration]回数が1増加</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] [Combustion]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少 (スキルごとに1回)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "蝶斬り",
+          "desc": "[WhenUse] 対象の[Combustion]と[Vibration]の合計4につき、最終威力 +1 (最大<style=\"highlight\">3</style>)\n[WhenUse] [StigmaWorkshopCelloCaseOne]<style=\"highlight\">6</style>を得る\n[WhenUse] [StigmaWorkshopCelloCaseOne]10につき、\n- マッチ威力 +1 (最大<style=\"highlight\">3</style>)\n- 最終コインを1回再使用 (スキルごとに最大2回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [StigmaWorkshopCelloCaseOne]<style=\"highlight\">10につき、\n- [Combustion]回数が1増加 (最大2)\n- [Vibration]回数が1増加 (最大2)</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] [Combustion]1を付与<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少 (スキルごとに1回)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "射出",
+          "desc": "[BeforeUse] [StigmaWorkshopCelloCaseOne]が30なら、「<noparse>射出-正午</noparse>」として発動 (1ターンにつき1回)\n[WhenUse] 対象の[Combustion]と[Vibration]の合計が6以上なら、コイン威力 +1\n[WhenUse] [StigmaWorkshopCelloCaseOne]5を得る\n[WhenUse] [StigmaWorkshopCelloCaseOne]10につき、\n- マッチ威力 +1 (最大2)\n- 対象の[Combustion]回数が1増加 (最大2)\n- 対象の[Vibration]回数が1増加 (最大2)\n- 最終コインを1回再使用 (スキルごとに最大2回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]2を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationIgnition]へ[Switch_Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少  (スキルごとに2回)"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] [Combustion]1を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "射出",
+          "desc": "[BeforeUse] [StigmaWorkshopCelloCaseOne]が30なら、「<noparse>射出-正午</noparse>」として発動 (1ターンにつき1回)\n[WhenUse] 対象の[Combustion]と[Vibration]の合計<style=\"highlight\">6につき、コイン威力 +1 (最大2)</style>\n[WhenUse] [StigmaWorkshopCelloCaseOne]<style=\"highlight\">8</style>を得る\n[WhenUse] [StigmaWorkshopCelloCaseOne]10につき、\n- マッチ威力 +1 (最大<style=\"highlight\">3</style>)\n- 対象の[Combustion]回数が1増加 (最大<style=\"highlight\">3</style>)\n- 対象の[Vibration]回数が1増加 (最大<style=\"highlight\">3</style>)\n- 最終コインを1回再使用 (スキルごとに最大2回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]<style=\"highlight\">3</style>を付与"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationIgnition]へ[Switch_Vibration]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の[Vibration]回数が1減少  (スキルごとに<style=\"highlight\">3</style>回)"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] [Combustion]1を付与<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "烙印",
+          "desc": "[DuelCounter]\n[WhenUse] 自分の[Combustion]が5以上なら、コイン威力 +1\n[WhenUse] 自分の[Combustion]が5減少 (1ターンにつき1回)\n[WinDuel] 自分の[Combustion]が3減少 (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]1を付与 (1ターンにつき2回)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]1を付与 (1ターンにつき2回)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "烙印",
+          "desc": "[DuelCounter]\n<style=\"highlight\">[BeforeUse] [StigmaWorkshopCelloCaseOne]が30なら、「正午の解体」として発動 (1ターンにつき1回)\n- [CaseOverheating]があれば、この効果は発動しない\n[WhenUse] 自分の[Combustion]が5以上なら、コイン威力 +1</style>\n[WhenUse] 自分の[Combustion]が5減少 (1ターンにつき1回)\n[WinDuel] 自分の[Combustion]が3減少 (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]を1付与 (1ターンにつき2回)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]を1付与 (1ターンにつき2回)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "烙印",
+          "desc": "[DuelCounter]\n<style=\"highlight\">[StartBattle] [StigmaWorkshopCelloCaseOne]6を得る (戦闘ごとに1回)</style>\n[BeforeUse] [StigmaWorkshopCelloCaseOne]が30なら、「正午の解体」として発動 (1ターンにつき1回)\n- [CaseOverheating]があれば、この効果は発動しない\n[WhenUse] 自分の[Combustion]<style=\"highlight\">5につき、コイン威力 +1 (最大2)</style>\n[WhenUse] 自分の[Combustion]が5減少 (1ターンにつき1回)\n[WinDuel] 自分の[Combustion]が3減少 (1ターンにつき1回)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]を1付与 (1ターンにつき2回)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]を1付与 (1ターンにつき2回)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021605,
+      "levelList": [
+        {
+          "level": 2,
+          "name": "連携",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]回数が1増加(1ターンにつき2回)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が1増加(1ターンにつき2回)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "連携",
+          "desc": "<style=\"highlight\">[WhenUse] [StigmaWorkshopCelloCaseOne]1につき、ダメージ量 +1% (最大30%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]回数が1増加(1ターンにつき2回)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が1増加(1ターンにつき2回)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "連携",
+          "desc": "[WhenUse] [StigmaWorkshopCelloCaseOne]<style=\"highlight\">数値に応じて\n- 1につき、ダメージ量 +2% (最大60%)\n- 10につき、最終威力 +1 (最大3)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Vibration]回数が1増加(1ターンにつき2回)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が1増加(1ターンにつき2回)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021606,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "射出-正午",
+          "desc": "[WideAreaRampage]\nこのスキルが的中するたびに対象へ\n- [Combustion]1または[Vibration]1を付与\n- [VibrationIgnition]がなければ、[VibrationIgnition]へ[Switch_Vibration] (対象ごとに1回)\n[WhenUse]\n- マッチ威力 +3\n- メインターゲットの[Combustion]と[Vibration]の合計が6以上なら、コイン威力 +1、マッチ威力 +2\n- 全ターゲットの[Combustion]回数が2増加\n- 全ターゲットの[Vibration]回数が2増加\n[EndSkill]\n- 的中した全ての対象へ、次のターンに[ResultReduction]1を付与 (1ターンにつき1回)\n- [Firstlight]1を得る\n- [CaseOverheating]1を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "このコインを再使用 (最大2回)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の振動回数が1減少  (スキルごとに2回)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "射出-正午",
+          "desc": "[WideAreaRampage]\n<style=\"highlight\">ダメージ量 +(自分とターゲットの[Combustion]威力の合計)% (最大20%、対象ごとに適用)</style>\nこのスキルが的中するたびに対象へ\n- [Combustion]1または[Vibration]1を付与\n- [VibrationIgnition]がなければ、[VibrationIgnition]へ[Switch_Vibration] (対象ごとに1回)\n[WhenUse]\n- マッチ威力 +3\n- メインターゲットの[Combustion]と[Vibration]の合計<style=\"highlight\">6につき、コイン威力 +1、マッチ威力 +2 (それぞれ最大2, 4)</style>\n- 全ターゲットの[Combustion]回数が<style=\"highlight\">3</style>増加\n- 全ターゲットの[Vibration]回数が<style=\"highlight\">3</style>増加\n[EndSkill]\n- 的中した全ての対象へ、次のターンに[ResultReduction]1を付与 (1ターンにつき1回)\n- [Firstlight]1を得る\n- [CaseOverheating]1を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "このコインを再使用 (最大2回)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[Firstlight]があれば、ダメージ量 +(対象の[Combustion]威力÷2)% (最大20%)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の振動回数が1減少  (スキルごとに<style=\"highlight\">3</style>回)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021607,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "正午の解体",
+          "desc": "[WideAreaRampage]\nダメージ量 +(自分の失った体力の比率÷2)% (最大25%)\nこのスキルが的中するたびに対象へ\n- [Combustion]1または[Vibration]1を付与\n- [VibrationIgnition]がなければ、[VibrationIgnition]へ[Switch_Vibration] (対象ごとに1回)\n[WhenUse]\n- マッチ威力 +3\n- メインターゲットの[Combustion]と[Vibration]の合計が6以上なら、コイン威力 +1、マッチ威力 +2\n- 全ターゲットの[Combustion]回数が2増加\n- 全ターゲットの[Vibration]回数が2増加\n[EndSkill]\n- 保有した[Combustion]を最大30消耗して、体力を最大値の(5 + 消耗した[Combustion])%だけ回復 (最大35%)\n- [StigmaWorkshopCelloCaseOne]を全て消耗\n- [Firstlight]3を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "このコインを再使用 (最大2回)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の振動回数が1減少  (スキルごとに2回)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "正午の解体",
+          "desc": "[WideAreaRampage]\nダメージ量 +(<style=\"highlight\">自分の失った体力の比率</style>)% (最大<style=\"highlight\">50%</style>)\n<style=\"highlight\">ダメージ量 +(ターゲットの[Combustion]威力)% (最大20%, 対象ごとに適用)</style>\nこのスキルが的中するたびに対象へ\n- [Combustion]1または[Vibration]1を付与\n- [VibrationIgnition]がなければ、[VibrationIgnition]へ[Switch_Vibration] (対象ごとに1回)\n[WhenUse]\n- マッチ威力 +3\n- メインターゲットの[Combustion]と[Vibration]の合計<style=\"highlight\">6につき、コイン威力 +1、マッチ威力 +2 (それぞれ最大2, 4)</style>\n- 全ターゲットの[Combustion]回数が<style=\"highlight\">3</style>増加\n- 全ターゲットの[Vibration]回数が<style=\"highlight\">3</style>増加\n[EndSkill]\n- 保有した[Combustion]を最大30消耗して、体力を最大値の(<style=\"highlight\">20</style> + 消耗した[Combustion])%だけ回復 (最大<style=\"highlight\">50%</style>)\n- [StigmaWorkshopCelloCaseOne]を全て消耗\n- [Firstlight]3を得る",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "このコインを再使用 (最大2回)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[Firstlight]があれば、ダメージ量 +(対象の[Combustion]威力)% (最大20%)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [VibrationExplosion]。対象の振動回数が1減少  (スキルごとに<style=\"highlight\">3</style>回)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
