@@ -2991,6 +2991,509 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1021601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "黎明闪光",
+          "desc": "[WhenUse] 自身每带有10层[StigmaWorkshopCelloCaseOne]，使本技能的拼点威力+1(最多+2)\n[WhenUse] 若自身的[StigmaWorkshopCelloCaseOne]层数不低于20层，则重复使用本技能的最后一枚硬币1次",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "黎明闪光",
+          "desc": "<style=\"highlight\">[WhenUse] 目标的[Combustion]强度与[Vibration]强度之和每有4级，使本技能的最终威力+1(最多+2)</style>\n[WhenUse] 自身每带有10层[StigmaWorkshopCelloCaseOne]，使本技能的拼点威力+1(最多+2)\n[WhenUse] 若自身的[StigmaWorkshopCelloCaseOne]层数不低于20层，则重复使用本技能的最后一枚硬币1次",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">2</style>级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "黎明闪光",
+          "desc": "[WhenUse] 目标的[Combustion]强度与[Vibration]强度之和每有4级，使本技能的最终威力+1(最多<style=\"highlight\">+3</style>)\n<style=\"highlight\">[WhenUse] 使自身获得4层[StigmaWorkshopCelloCaseOne]</style>\n[WhenUse] 自身每带有10层[StigmaWorkshopCelloCaseOne]，使本技能的拼点威力+1(最多<style=\"highlight\">+3</style>)\n[WhenUse] 若自身的[StigmaWorkshopCelloCaseOne]层数不低于20层，则重复使用本技能的最后一枚硬币1次",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Combustion]强度<style=\"highlight\">并对其施加1层[Combustion]</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "蝶斩",
+          "desc": "[WhenUse] 自身每带有10层[StigmaWorkshopCelloCaseOne]，\n- 使本技能的拼点威力+1(最多+2)\n- 重复使用本技能的最后一枚硬币1次(每个技能最多2次)",
+          "coinlist": [
+            {},
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] 使目标增加1级[Combustion]强度"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层(每个技能最多1次)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "蝶斩",
+          "desc": "<style=\"highlight\">[WhenUse] 目标的[Combustion]强度与[Vibration]强度之和每有4级，使本技能的最终威力+1(最多+2)\n[WhenUse] 使自身获得3层[StigmaWorkshopCelloCaseOne]</style>\n[WhenUse] 自身每带有10层[StigmaWorkshopCelloCaseOne]，\n- 使本技能的拼点威力+1(最多+2)\n- 重复使用本技能的最后一枚硬币1次(每个技能最多2次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 若自身的[StigmaWorkshopCelloCaseOne]层数不低于10层，则\n- 对目标施加1层[Combustion]\n- 对目标施加1层[Vibration]</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] 使目标增加1级[Combustion]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层(每个技能最多1次)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "蝶斩",
+          "desc": "[WhenUse] 目标的[Combustion]强度与[Vibration]强度之和每有4级，使本技能的最终威力+1(最多<style=\"highlight\">+3</style>)\n[WhenUse] 使自身获得<style=\"highlight\">6</style>层[StigmaWorkshopCelloCaseOne]\n[WhenUse] 自身每带有10层[StigmaWorkshopCelloCaseOne]，\n- 使本技能的拼点威力+1(最多<style=\"highlight\">+3</style>)\n- 重复使用本技能的最后一枚硬币1次(每个技能最多2次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] <style=\"highlight\">自身每带有10层[StigmaWorkshopCelloCaseOne]，\n- 对目标施加1层[Combustion](最多2层)\n- 对目标施加1层[Vibration](最多2层)</style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] 使目标增加1级[Combustion]强度<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层(每个技能最多1次)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "迸射",
+          "desc": "[BeforeUse] 若自身的[StigmaWorkshopCelloCaseOne]层数为30层，则改为使用“迸射-正午”(每回合最多1次)\n[WhenUse] 若目标的[Combustion]强度与[Vibration]强度之和不低于6级，则使本技能的硬币威力+1\n[WhenUse] 使自身获得5层[StigmaWorkshopCelloCaseOne]\n[WhenUse] 自身每带有10层[StigmaWorkshopCelloCaseOne]，\n- 使本技能的拼点威力+1(最多+2)\n- 对目标施加1层[Combustion](最多2层)\n- 对目标施加1层[Vibration](最多2层)\n- 重复使用本技能的最后一枚硬币1次(每个技能最多2次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标[Switch_Vibration]为[VibrationIgnition]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层(每个技能最多2次)"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] 使目标增加1级[Combustion]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "迸射",
+          "desc": "[BeforeUse] 若自身的[StigmaWorkshopCelloCaseOne]层数为30层，则改为使用“迸射-正午”(每回合最多1次)\n[WhenUse] 目标的[Combustion]强度与[Vibration]强度之和<style=\"highlight\">每有6级，使本技能的硬币威力+1(最多+2)</style>\n[WhenUse] 使自身获得<style=\"highlight\">8</style>层[StigmaWorkshopCelloCaseOne]\n[WhenUse] 自身每带有10层[StigmaWorkshopCelloCaseOne]，\n- 使本技能的拼点威力+1(最多<style=\"highlight\">+3</style>)\n- 对目标施加1层[Combustion](最多<style=\"highlight\">3</style>层)\n- 对目标施加1层[Vibration](最多<style=\"highlight\">3</style>层)\n- 重复使用本技能的最后一枚硬币1次(每个技能最多2次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加<style=\"highlight\">3</style>级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标[Switch_Vibration]为[VibrationIgnition]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层(每个技能最多<style=\"highlight\">3</style>次)"
+                },
+                {
+                  "desc": "[ReUseOnSucceedAttack] 使目标增加1级[Combustion]强度<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "烙印",
+          "desc": "[DuelCounter]\n[WhenUse] 若自身的[Combustion]强度不低于5级，则使本技能的硬币威力+1\n[WhenUse] 使自身的[Combustion]强度减少5级(每回合最多1次)\n[WinDuel] 使自身的[Combustion]强度减少3级(每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度(每回合最多2次)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度(每回合最多2次)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "烙印",
+          "desc": "[DuelCounter]\n<style=\"highlight\">[BeforeUse] 若自身的[StigmaWorkshopCelloCaseOne]层数为30层，则改为使用“正午的解体”(每回合最多1次)\n- 若自身带有[CaseOverheating]，则该效果不会触发\n[WhenUse] 若自身的[Combustion]强度不低于5级，则使本技能的硬币威力+1</style>\n[WhenUse] 使自身的[Combustion]强度减少5级(每回合最多1次)\n[WinDuel] 使自身的[Combustion]强度减少3级(每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度(每回合最多2次)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度(每回合最多2次)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "烙印",
+          "desc": "[DuelCounter]\n<style=\"highlight\">[StartBattle] 使自身获得6层[StigmaWorkshopCelloCaseOne](每场战斗最多1次)</style>\n[BeforeUse] 若自身的[StigmaWorkshopCelloCaseOne]层数为30层，则改为使用“正午的解体”(每回合最多1次)\n-若自身带有[CaseOverheating]，则该效果不会触发\n[WhenUse] <style=\"highlight\">自身每带有5级[Combustion]强度，使本技能的硬币威力+1(最多+2)</style>\n[WhenUse] 使自身的[Combustion]强度减少5级(每回合最多1次)\n[WinDuel] 使自身的[Combustion]强度减少3级(每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度(每回合最多2次)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度(每回合最多2次)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021605,
+      "levelList": [
+        {
+          "level": 2,
+          "name": "联合",
+          "desc": "",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Vibration](每回合最多2次)"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Combustion](每回合最多2次)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "联合",
+          "desc": "<style=\"highlight\">[WhenUse] 自身每带有1层[StigmaWorkshopCelloCaseOne]，使本技能造成的伤害+1%(最多+30%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Vibration](每回合最多2次)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Combustion](每回合最多2次)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "联合",
+          "desc": "[WhenUse] <style=\"highlight\">根据自身的[StigmaWorkshopCelloCaseOne]层数，相应获得以下效果\n- 自身每带有1层[StigmaWorkshopCelloCaseOne]，使本技能造成的伤害+2%(最多60%)\n- 自身每带有10层[StigmaWorkshopCelloCaseOne]，使本技能的最终威力+1(最多+3)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Vibration](每回合最多2次)<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Combustion](每回合最多2次)<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021606,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "迸射-正午",
+          "desc": "[WideAreaRampage]\n本技能每次命中时，对目标触发以下效果\n- 使目标增加1级[Combustion]强度或1级[Vibration]强度\n- 若目标未带有[VibrationIgnition]，则使其[Switch_Vibration]为[VibrationIgnition](每个目标最多1次)\n[WhenUse]\n- 使本技能的拼点威力+3\n- 若主要目标的[Combustion]强度与[Vibration]强度之和不低于6级，则使本技能的硬币威力+1，拼点威力+2\n- 对全体目标施加2层[Combustion]\n- 对全体目标施加2层[Vibration]\n[EndSkill]\n- 下回合对命中的全体目标施加1层[ResultReduction](每回合最多1次)\n- 使自身获得1层[Firstlight]\n- 对自身施加1层[CaseOverheating]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "重复使用本硬币(最多2次)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层(每个技能最多2次)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "迸射-正午",
+          "desc": "[WideAreaRampage]\n<style=\"highlight\">使本技能造成的伤害+(自身与目标的[Combustion]强度之和)%(最多20%，不同目标分别计算)</style>\n本技能每次命中时，对目标触发以下效果\n- 使目标增加1级[Combustion]强度或1级[Vibration]强度\n- 若目标未带有[VibrationIgnition]，则使其[Switch_Vibration]为[VibrationIgnition](每个目标最多1次)\n[WhenUse]\n- 使本技能的拼点威力+3\n- 主要目标的[Combustion]强度与[Vibration]强度之和<style=\"highlight\">每有6级，使本技能的硬币威力+1，拼点威力+2(分别最多+2，+4)</style>\n- 对全体目标施加<style=\"highlight\">3</style>层[Combustion]\n- 对全体目标施加<style=\"highlight\">3</style>层[Vibration]\n[EndSkill]\n- 下回合对命中的全体目标施加1层[ResultReduction](每回合最多1次)\n- 使自身获得1层[Firstlight]\n- 对自身施加1层[CaseOverheating]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "重复使用本硬币(最多2次)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">若自身带有[Firstlight]，则使本硬币造成的伤害+(目标的[Combustion]强度/2)%(最多+20%)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层(每个技能最多<style=\"highlight\">3</style>次)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1021607,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "正午的解体",
+          "desc": "[WideAreaRampage]\n使本技能造成的伤害+(自身已失去体力比例/2)%(最多+25%)\n本技能每次命中时，对目标触发以下效果\n- 使目标增加1级[Combustion]强度或1级[Vibration]强度\n- 若目标未带有[VibrationIgnition]，则使其[Switch_Vibration]为[VibrationIgnition](每个目标最多1次)\n[WhenUse]\n- 使本技能的拼点威力+3\n- 若主要目标的[Combustion]强度与[Vibration]强度之和不低于6级，则使本技能的硬币威力+1，拼点威力+2\n- 对全体目标施加2层[Combustion]\n- 对全体目标施加2层[Vibration]\n[EndSkill]\n- 消耗自身最多30级[Combustion]强度并使自身恢复体力上限(5+消耗的[Combustion]强度)%的体力(最多35%)\n- 消耗自身所有[StigmaWorkshopCelloCaseOne]\n- 使自身获得3层[Firstlight]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "重复使用本硬币(最多2次)"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层(每个技能最多2次)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "正午的解体",
+          "desc": "[WideAreaRampage]\n使本技能造成的伤害+(<style=\"highlight\">自身已失去体力比例</style>)%(最多<style=\"highlight\">+50%</style>)\n<style=\"highlight\">使本技能造成的伤害+(目标的[Combustion]强度)%(最多+20%，不同目标分别计算)</style>\n本技能每次命中时，对目标触发以下效果\n- 使目标增加1级[Combustion]强度或1级[Vibration]强度\n- 若目标未带有[VibrationIgnition]，则使其[Switch_Vibration]为[VibrationIgnition](每个目标最多1次)\n[WhenUse]\n- 使本技能的拼点威力+3\n- 主要目标的[Combustion]强度与[Vibration]强度之和<style=\"highlight\">每有6级，使本技能的硬币威力+1，拼点威力+2(分别最多+2，+4)</style>\n- 对全体目标施加<style=\"highlight\">3</style>层[Combustion]\n- 对全体目标施加<style=\"highlight\">3</style>层[Vibration]\n[EndSkill]\n- 消耗自身最多30级[Combustion]强度并使自身恢复体力上限(<style=\"highlight\">20</style>+消耗的[Combustion]强度)%的体力(最多<style=\"highlight\">50%</style>)\n- 消耗自身所有[StigmaWorkshopCelloCaseOne]\n- 使自身获得3层[Firstlight]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "重复使用本硬币(最多2次)<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">若自身带有[Firstlight]，则使本硬币造成的伤害+(目标的[Combustion]强度)%(最多+20%)</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层(每个技能最多<style=\"highlight\">3</style>次)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

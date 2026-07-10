@@ -572,6 +572,12 @@
       "name": "剑锋淌落的酒滴",
       "desc": "[AlwaysUseEGOPassive2050911]\n\n基础技能攻击命中时，使目标增加2级[Laceration]强度(每个技能最多1次)\n\n该人格视作施加[Laceration]与获得[Breath]的人格\n- 基础技能视作施加[Laceration]与获得[Breath]的技能\n\n[WhenUseEGOPassive]\n\n友方单位阵亡时，下回合使自身获得1层[AlcoholKimPersonal]\n- 若阵亡的友方单位属于剑契组，则改为获得2层[AlcoholKimPersonal]\n\n回合开始时，若自身带有[AlcoholKimPersonal]，则进入[GhostKimPersonal]状态\n- 剑契组 头领 默尔索额外获得[RootSoupKimPersonal]\n\n回合开始时，若自身未带有[AlcoholKimPersonal]，则解除自身的[GhostKimPersonal]、[GrudgePersonal]与[RootSoupKimPersonal]\n\n若自身带有[AlcoholKimPersonal]，则自身受到使自身体力降至0点的伤害时，使自身恢复体力上限(自身的[AlcoholKimPersonal]层数×25)%的体力，并解除自身的[AlcoholKimPersonal](每场战斗最多1次；人格被动优先触发)\n- 若自身陷入混乱，则解除自身的混乱(不包括强制混乱)",
       "summary": "获得[AlcoholKimPersonal]"
+    },
+    {
+      "id": 2010911,
+      "name": "翅翼垂落DE蝴蝶YI凝结YU气息中DE贫瘠露水WEI食",
+      "desc": "若目标带有[SinkingWhite]，则使自身的拼点威力+1\n\n自身命中[Sinking]强度与两种[SinkingWhite]的点数之和不低于15点的目标时，使该目标增加1级[SinkingWhite]强度(生蝶)并对目标施加1层[SinkingWhite](亡蝶)(每回合最多1次。若是集中遭遇战，则改为以部位判定)\n\n[AlwaysUseEGOPassive2010911]\n\n基础攻击技能命中时，使目标增加2级[Vibration]强度(每个技能最多1次)\n\n该人格视作施加[Vibration]与[Sinking]的人格\n- 基础技能视作施加[Vibration]与[Sinking]的技能\n\n[WhenUseEGOPassive2010911]\n\n使自身[BulletLament]的强度与层数之和的最大值+10\n自身[ReloadLament]后，使自身恢复10点理智值并[Discard]除“葬仪师李箱，以上”以外自身所有行动槽中级别最低的1个基础攻击技能(每回合最多2次)\n回合结束时，若本回合自身装备了守备技能，则使自身恢复10点理智值\n回合结束时，若自身陷入混乱，则解除自身的混乱并使自身[ReloadLament](每场战斗最多1次，不包括强制混乱)",
+      "summary": "拼点威力增加，施加[SinkingWhite]"
     }
   ]
 }

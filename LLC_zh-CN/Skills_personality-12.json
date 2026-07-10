@@ -147,7 +147,7 @@
       "levelList": [
         {
           "level": 3,
-          "name": "人民卫士",
+          "name": "守护者",
           "desc": "[WhenUse] 使全体友方单位获得2层忍耐 与3层防御等级提升 \n若自身的防御等级提升 层数不低于6层，则使本技能的硬币威力+1\n若自身的防御等级提升 层数不低于10层，则使本技能造成的伤害+30%",
           "coinlist": [
             {},
@@ -163,7 +163,7 @@
         },
         {
           "level": 4,
-          "name": "人民卫士",
+          "name": "守护者",
           "desc": "[WhenUse] 使全体友方单位获得2层忍耐 与3层防御等级提升 \n自身每带有6层防御等级提升 ，使本技能的硬币威力+1(最多+3)\n若自身的防御等级提升 层数不低于10层，则使本技能造成的伤害+50%",
           "coinlist": [
             {},
@@ -2780,6 +2780,520 @@
                 },
                 {
                   "desc": "[OnSucceedAttack] 下回合对目标施加层数相当于自身[Charge]强度的[ChargedSting](最多<style=\"highlight\">5</style>层)\n- 若自身的[Charge]强度不低于5级，则改为本回合与下回合对目标施加<style=\"highlight\">5</style>层[ChargedSting](每回合最多1次)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1121601,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "黎明闪光",
+          "desc": "[WhenUse] 若自身的[StigmaWorkshopHandStep1]层数不低于30层，则额外使用本技能的第2枚硬币1次，且额外使用的硬币为[SuperCoin]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "黎明闪光",
+          "desc": "<style=\"highlight\">[WhenUse] 目标的[Combustion]强度与[Vibration]强度之和每有4级，使本技能的最终威力+1(最多+3)</style>\n[WhenUse] 若自身的[StigmaWorkshopHandStep1]层数不低于30层，则额外使用本技能的第2枚硬币1次，且额外使用的硬币为[SuperCoin]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "黎明闪光",
+          "desc": "[WhenUse] 目标的[Combustion]强度与[Vibration]强度之和每有4级，使本技能的最终威力+1(最多+3)\n[WhenUse] 若自身的[StigmaWorkshopHandStep1]层数不低于<style=\"highlight\">20</style>层，则额外使用本技能的第2枚硬币1次，且额外使用的硬币为[SuperCoin]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1121602,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "霞光剑刃",
+          "desc": "[WhenUse] 若自身的[StigmaWorkshopHandStep1]层数不低于20层，则额外使用本技能的第3枚硬币1次，且额外使用的硬币为[SuperCoin]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Vibration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "name": "霞光剑刃",
+          "desc": "<style=\"highlight\">[WhenUse] 目标的[Combustion]强度与[Vibration]强度之和每有4级，使本技能的最终威力+1(最多+4)</style>\n[WhenUse] 若自身的[StigmaWorkshopHandStep1]层数不低于20层，则额外使用本技能的第3枚硬币1次，且额外使用的硬币为[SuperCoin]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Vibration]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "霞光剑刃",
+          "desc": "[WhenUse] 目标的[Combustion]强度与[Vibration]强度之和每有4级，使本技能的最终威力+1(最多+4)\n[WhenUse] 若自身的[StigmaWorkshopHandStep1]层数不低于20层，则触发以下效果\n- 额外使用本技能的第3枚硬币1次，且额外使用的硬币为[SuperCoin]\n- <style=\"highlight\">额外使用的硬币命中时，使目标[VibrationExplosion]，并使其[Vibration]层数减少1层</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加2级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Vibration]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1121603,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "撕裂黎明之剑",
+          "desc": "[StartBattle] 随机使除自身以外的2名友方单位获得2层[Protection]\n(优先使未带有[Protection]的人格中属于黎明事务所[TabExplain]的友方单位获得。每回合最多1次)\n[BeforeUse] 若自身的[StigmaWorkshopHandStep1]层数为30层，则改为使用“黎明将至”(每回合最多1次)\n[WhenUse] 若自身的[StigmaWorkshopHandStep1]层数不低于20层，则触发以下效果\n- 使本技能的最终威力+1\n- 使本技能的所有硬币转化为[SuperCoin]\n[EndSkill] 下回合使全体友方单位获得1层[DawnLight]\n- 若自身的[StigmaWorkshopHandStep1]层数不低于20层，则额外获得1层[DawnLight]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标[Switch_Vibration]为[VibrationIgnition]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "撕裂黎明之剑",
+          "desc": "<style=\"highlight\">使本技能造成的伤害+(自身与目标的[Combustion]强度之和)%(最多+30%)</style>\n[StartBattle] 随机使除自身以外的2名友方单位获得2层[Protection]\n(优先使未带有[Protection]的人格中属于黎明事务所[TabExplain]的友方单位获得。每回合最多1次)\n[BeforeUse] 若自身的[StigmaWorkshopHandStep1]层数为30层，则改为使用“黎明将至”(每回合最多1次)\n<style=\"highlight\">[WhenUse] 目标的[Combustion]强度与[Vibration]强度之和每有6级，使本技能的硬币威力+1(最多+2)</style>\n[WhenUse] 若自身的[StigmaWorkshopHandStep1]层数不低于20层，则触发以下效果\n- 使本技能的最终威力+1\n- 使本技能的所有硬币转化为[SuperCoin]\n<style=\"highlight\">- 本技能的最后一枚硬币命中时，触发目标的烧伤 ，并使其烧伤 层数减少1层</style>\n[EndSkill] 下回合使全体友方单位获得1层[DawnLight]\n- 若自身的[StigmaWorkshopHandStep1]层数不低于20层，则额外获得1层[DawnLight]",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标[Switch_Vibration]为[VibrationIgnition]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1121604,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "守护者",
+          "desc": "[DuelCounter]\n[StartBattle] 使自身获得1层[SupportProtect](每回合最多1次)\n[WhenUse] 使自身获得5层[StigmaWorkshopHandStep1](每回合最多1次)\n[WinDuel] 使自身的[Combustion]层数减少2层(每回合最多1次)\n[EndSkillAll] 使自身的[Combustion]强度减少5级(每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Combustion]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "name": "守护者",
+          "desc": "[DuelCounter]\n[StartBattle] 使自身获得1层[SupportProtect](每回合最多1次)\n<style=\"highlight\">[BeforeUse] 若自身的[StigmaWorkshopHandStep1]层数为30层，则改为使用“黎明将至”(每回合最多1次)</style>\n[WhenUse] 使自身获得5层[StigmaWorkshopHandStep1](每回合最多1次)\n[WinDuel] 使自身的[Combustion]层数减少2层(每回合最多1次)\n[EndSkillAll] 使自身的[Combustion]强度减少5级(每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Combustion]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "守护者",
+          "desc": "[DuelCounter]\n[StartBattle] 使自身获得1层[SupportProtect](每回合最多1次)\n[BeforeUse] 若自身的[StigmaWorkshopHandStep1]层数为30层，则改为使用“黎明将至”(每回合最多1次)\n[WhenUse] 使自身获得5层[StigmaWorkshopHandStep1](每回合最多1次)\n<style=\"highlight\">[WhenUse] 目标的[Combustion]强度与[Vibration]强度之和每有4级，使本技能的最终威力+1(最多+2)</style>\n[WinDuel] 使自身的[Combustion]层数减少2层(每回合最多1次)\n[EndSkillAll] 使自身的[Combustion]强度减少5级(每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加1层[Combustion]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1121605,
+      "levelList": [
+        {
+          "level": 3,
+          "name": "黎明将至",
+          "desc": "本技能的攻击容量高于攻击目标数时，每高于1点，使本技能造成的伤害+50%(若是集中遭遇战，则改为以部位判定)\n[WhenUse] 下回合使除自身以外的2名友方单位获得2层[Protection]\n(优先使未带有[Protection]的人格中属于黎明事务所[TabExplain]的友方单位获得。每回合最多1次)\n[WhenUse] 若自身的[Combustion]强度不低于15级，则使本技能的硬币威力+1\n[EndSkill] 触发以下效果\n- 下回合使全体友方单位获得3层[DawnLight]\n- 消耗自身最多15级[Combustion]强度并使自身恢复体力上限(15+消耗的[Combustion]强度)%的体力\n- 消耗所有[StigmaWorkshopHandStep1]",
+          "flavor": "烟霾战争那些激战中的战场之一。于该处，将某位决战兵器所剩的最后一对翅膀与空间一同熔化的，宣告黎明终结的技术。\n\n“哈……差点就死了……”\n“喂。那个怪物……你能……搞得定吗？”",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加3级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[Switch_Vibration]为[VibrationIgnition]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 触发目标的[Combustion]，并使其[Combustion]层数减少1层"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "黎明将至",
+          "desc": "本技能的攻击容量高于攻击目标数时，每高于1点，使本技能造成的伤害<style=\"highlight\">+75%</style>(若是集中遭遇战，则改为以部位判定)\n[WhenUse] 下回合使除自身以外的2名友方单位获得2层[Protection]\n(优先使未带有[Protection]的人格中属于黎明事务所[TabExplain]的友方单位获得。每回合最多1次)\n[WhenUse] 若自身的[Combustion]强度不低于15级，则使本技能的硬币威力+1\n<style=\"highlight\">[WhenUse] 主要目标的[Combustion]强度与[Vibration]强度之和每有6级，使本技能的硬币威力+1(最多+2)</style>\n[EndSkill] 触发以下效果\n- 下回合使全体友方单位获得3层[DawnLight]\n- 消耗自身最多15级[Combustion]强度并使自身恢复体力上限(15+消耗的[Combustion]强度)%的体力\n- 消耗所有[StigmaWorkshopHandStep1]",
+          "flavor": "烟霾战争那些激战中的战场之一。于该处，将某位决战兵器所剩的最后一对翅膀与空间一同熔化的，宣告黎明终结的技术。\n\n“哈……差点就死了……”\n“喂。那个怪物……你能……搞得定吗？”",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Combustion]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Vibration]"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Vibration]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加5级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[SuperCoin]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[Switch_Vibration]为[VibrationIgnition]"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 使目标[VibrationExplosion]，并使其[Vibration]层数减少1层"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 触发目标的[Combustion]，并使其[Combustion]层数减少1层<style=\"highlight\"></style>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1121606,
+      "levelList": [
+        {
+          "level": 1,
+          "name": "热浪",
+          "desc": "[DuelCounter]\n[SupportProtect]专用技能\n[WhenUse] 使自身获得5层[StigmaWorkshopHandStep1](每回合最多1次)\n[WhenUse] 使自身获得2层[Protection](每回合最多1次)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "热浪",
+          "desc": "[DuelCounter]\n[SupportProtect]专用技能\n[WhenUse] 使自身获得5层[StigmaWorkshopHandStep1](每回合最多1次)\n[WhenUse] 使自身获得2层[Protection](每回合最多1次)\n<style=\"highlight\">[WhenUse] 目标的[Combustion]强度与[Vibration]强度之和每有6级，使本技能的硬币威力+1(最多+2)\n[WhenUse] 若自身的[StigmaWorkshopHandStep1]层数不低于20层，或本回合自身使用了技能“黎明将至”，则使本技能的所有硬币转化为[SuperCoin]</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Combustion]强度"
+                }
+              ]
+            },
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 使目标增加1级[Vibration]强度"
                 }
               ]
             }
