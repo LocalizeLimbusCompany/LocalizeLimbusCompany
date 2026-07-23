@@ -1015,8 +1015,8 @@
     {
       "id": "WrappedCurseTag",
       "name": "Entangled Curse Talisman",
-      "desc": "Deal +{0}% damage\nAt 9+ Count, gain 2 Attack Power Down at turn start",
-      "summary": "Deal +{0}% damage; at 9+ Count, gain 2 Attack Power Down at turn start"
+      "desc": "Deal +{0}% damage\nAt 9+ Stack, gain 2 Attack Power Down at turn start",
+      "summary": "Deal +{0}% damage; at 9+ Stack, gain 2 Attack Power Down at turn start"
     },
     {
       "id": "ReattachedCurseTag",
@@ -1046,7 +1046,7 @@
       "id": "Tipsiness",
       "name": "Tipsy",
       "desc": "Clash Power -{0} (Max 5)",
-      "summary": "Lose Clash Power by the effect's Count"
+      "summary": "Lose Clash Power equal to Stack"
     },
     {
       "id": "Predation",
@@ -1099,14 +1099,14 @@
     {
       "id": "InterlockingTime",
       "name": "Interlocking Time",
-      "desc": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 1.5 times the accumulated damage, and gain 3 Bind next turn.",
-      "summary": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 1.5 times the accumulated damage, and gain 3 Bind next turn."
+      "desc": "Reduce final damage by 30% and store it. At 3 Stacks, take fixed damage equal to 1.5 times the accumulated damage",
+      "summary": "Reduce final damage by 30% and store it. At 3 Stacks, take fixed damage equal to 1.5 times the accumulated damage"
     },
     {
       "id": "TimeRental",
       "name": "Borrowed Time of the Fathoms",
-      "desc": "Turn End: Gain 3 Haste and 2 Damage Up; If only 1 Count remains, gain 4 Bind and 1 Attack Power Down",
-      "summary": "Turn End: Gain 3 Haste and 2 Damage Up; If only 1 Count remains, gain 4 Bind and 1 Attack Power Down"
+      "desc": "Turn End: Gain 3 Haste and 2 Damage Up; If only 1 Stack remains, gain 4 Bind and 1 Attack Power Down",
+      "summary": "Turn End: Gain 3 Haste and 2 Damage Up; If only 1 Stack remains, gain 4 Bind and 1 Attack Power Down"
     },
     {
       "id": "Bull_FadedHeat",
@@ -4053,6 +4053,18 @@
       "desc": "- Max Stack: 1\n- Turn End:\n· Gain 3 Burn next turn\n· This effect expires",
       "summary": "",
       "flavor": "\"Keep in mind, however, that convenience is always accompanied by a trade-off. A weapon of this structure comes with drawbacks that standard Stigma Workshop weapons would not possess—inevitable penalties that can only be mitigated by Singularities, the pinnacle of the myriad technological innovations of the City.\"\n\n\"It would do justice to properly acknowledge the extraordinary qualities of Singulari—ahem. That was tangential to the subject. Let us return to the subject, Sinclair.\""
+    },
+    {
+      "id": "DriftingDimensionYisang",
+      "name": "Dimensional Castaway",
+      "desc": "Max Stack: 3\nBefore Getting Hit, gain Shield equal to (Stack)% HP (3 times per turn)",
+      "summary": ""
+    },
+    {
+      "id": "FourDimensionYisang",
+      "name": "Quadricolor Dimensions",
+      "desc": "- Max Stack: 4\n- Gain the following effects based on Stack:\n· 1+: Offense Level +1\n· 2+: Defense Level +2\n· 3+: Gain +1 more Charge Count from this unit's Skills\n· 4+: This unit's Skills deal +(Charge Potency x 4)% damage (max 20%)\n\n- If this unit gains this effect past its max cap, this unit gains the surplus Stack next turn\n- Turn End: Lose 1 Stack",
+      "summary": ""
     }
   ]
 }

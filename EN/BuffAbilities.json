@@ -3,7 +3,7 @@
     {
       "id": "AtkDamageMultiplier",
       "desc": "{0}% to damage dealt",
-      "variation": "{1}% to {0} damage dealt"
+      "variation": "{1}% to damage dealt with {0} Affinity"
     },
     {
       "id": "AtkAndTakeAtkDamageMultiplier",
@@ -55,6 +55,10 @@
       "desc": "Heal {0}% of Damage dealt"
     },
     {
+      "id": "RecoverSelfHpOnSucceedAttackByDmgRR2",
+      "desc": "Heal {0}% of Damage dealt"
+    },
+    {
       "id": "RailEnemyBuffF",
       "desc": "{0} to amount of E.G.O resources consumed by Sinners when using E.G.O Skills"
     },
@@ -68,25 +72,25 @@
     },
     {
       "id": "GiveBuffOnRoundStartToAllAlly",
-      "desc": "At the start of the turn, apply {1} {0} and +{2} {0} Count to all allies",
-      "variation": "At the start of the turn, apply {1} {0} to all allies.",
-      "variation2": "At the start of the turn, apply +{1} {0} Count to all allies"
+      "desc": "Turn Start: Apply {1} {0} and +{2} {0} Count to all allies",
+      "variation": "Turn Start: Apply {1} {0} to all allies",
+      "variation2": "Turn Start: Apply +{1} {0} Count to all allies"
     },
     {
       "id": "GiveBuffOnRoundStartToAllAllyExtra",
-      "desc": "At the start of the turn, apply {1} {0} to all allies and apply +{2} more {0} Count to allies with {0}"
+      "desc": "Turn Start: Apply {1} {0} to all allies and apply +{2} more {0} Count to allies with {0}"
     },
     {
       "id": "GiveBuffOnRoundStartToAllEnemyExtra",
-      "desc": "At the start of the turn, apply {1} {0} to all enemies and apply +{2} more {0} Count to all enemies with {0}"
+      "desc": "Turn Start: Apply {1} {0} to all enemies and apply +{2} more {0} Count to all enemies with {0}"
     },
     {
       "id": "LoseTurnOnRoundEnd",
-      "desc": "Turn End: lose {0} Count"
+      "desc": "Turn End: Lose {0} Count"
     },
     {
       "id": "Vibration",
-      "desc": "When hit by attacks that trigger Tremor Burst, raise the Stagger Threshold by {0}. Lasts {1} turn(s)."
+      "desc": "When hit by attacks that trigger Tremor Burst, raise the Stagger Threshold by {0}. Lasts {1} turn(s)"
     },
     {
       "id": "DefAdderByStackCeilToInt",
@@ -98,11 +102,11 @@
     },
     {
       "id": "VibrationEcho",
-      "desc": "When hit by attacks that trigger Tremor Burst, take {0} Sloth damage."
+      "desc": "When hit by attacks that trigger Tremor Burst, take {0} Sloth damage"
     },
     {
       "id": "VibrationDistribution",
-      "desc": "- Turn End: Gain ((sum of all allies' Tremor - Distribution Count) / (# of allies with Tremor - Distribution)) Offense Level Up next turn (max 5)"
+      "desc": "Turn End: Gain ((sum of all allies' Tremor - Distribution Count) / (# of allies with Tremor - Distribution)) Offense Level Up next turn (max 5)"
     },
     {
       "id": "VibrationChain",
@@ -178,7 +182,7 @@
     },
     {
       "id": "MRR525",
-      "desc": "Turn End: lose {1} {0} Count"
+      "desc": "Turn End: Lose {1} {0} Count"
     },
     {
       "id": "CoinScaleAdderByAtkType",
@@ -190,7 +194,7 @@
     },
     {
       "id": "MRR532",
-      "desc": "After using an Awakening E.G.O, also consume 1 E.G.O resource from 3 random Sin Affinities with more than 1 E.G.O resource."
+      "desc": "After using an Awakening E.G.O, also consume 1 E.G.O Resource from 3 random Sin Affinities with more than 1 E.G.O resource"
     },
     {
       "id": "LacerationStackAndTurnAdder",
@@ -198,7 +202,7 @@
     },
     {
       "id": "MRR536",
-      "desc": "When hit by a Skill, randomly gain 1 of the following next turn: {0}, {1} (4 times max)"
+      "desc": "When hit by a Skill, randomly gain 1 of the following next turn: {0}, {1} (max 4 times)"
     },
     {
       "id": "MRR540",
@@ -206,7 +210,7 @@
     },
     {
       "id": "MRR541",
-      "desc": "When mainly targeting the unit with the lowest {1}, Skill Final Power +{0}"
+      "desc": "When mainly targeting the unit that has the lowest {1}, Skill Final Power +{0}"
     },
     {
       "id": "MRR518P",
@@ -230,7 +234,7 @@
     },
     {
       "id": "MRR506",
-      "desc": "Turn End: for each Keyword, against all enemy Parts with 2+ Count, inflict {1} damage equal to {0} Potency on each Part; then, reduce their {0} Count by 1, trigger {2} once, and reduce their {3} Count by 1"
+      "desc": "Turn End: For each Keyword, against all enemy Parts with 2+ Count, inflict {1} damage equal to {0} Potency on each Part; then, reduce their {0} Count by 1, trigger {2} once, and reduce their {3} Count by 1"
     },
     {
       "id": "MRR507",
@@ -246,11 +250,11 @@
     },
     {
       "id": "GiveBuffOnFirstRoundStartPerWave",
-      "desc": "First Turn Start of a wave: gain {1} {0} Potency and +{2} {0} Count"
+      "desc": "First Turn Start of a wave: Gain {1} {0} Potency and +{2} {0} Count"
     },
     {
       "id": "GiveBuffOnBattleStartAR",
-      "desc": "If {0} Reson. was activated, all allies gain {2} {1} Potency and +{3} {1} Count at Combat Start"
+      "desc": "Combat Start: If {0} Reson. was activated, all allies gain {2} {1} Potency and +{3} {1} Count"
     },
     {
       "id": "MRR511PMaxSpeedAdder",
@@ -262,7 +266,7 @@
     },
     {
       "id": "MRR511PMinSpeedChangeSkill",
-      "desc": "#1 Deployed Ally: lose a Skill 1, but gain a Skill 3"
+      "desc": "#1 Deployed Ally: Lose a Skill 1, but gain a Skill 3"
     },
     {
       "id": "MRR512",
@@ -274,7 +278,7 @@
     },
     {
       "id": "MRR514",
-      "desc": "When backup enemies enter the battle, inflict 5 Bleed and +3 Bleed against them at Combat Start. If there is a <Bloodfiend> among allies: when above conditions are met: activate Bleed on all enemies once and reduce their Bleed Count by 1"
+      "desc": "When Backup enemies enter the battle, inflict 5 Bleed and +3 Bleed against them at Combat Start. If there is a <Bloodfiend> among allies: when above conditions are met: activate Bleed on all enemies once and reduce their Bleed Count by 1"
     },
     {
       "id": "EnemyLevelTextOnly",
@@ -290,7 +294,7 @@
     },
     {
       "id": "MRR503",
-      "desc": "{0} allies with the least SP heal {1} SP at Turn End (excluding: allies that are Panicked or Corroded)"
+      "desc": "{0} allies that have the lowest SP heal {1} SP at Turn End (excluding allies that are Panicked or Corroded)"
     },
     {
       "id": "CriticalDamageBoostWithBuffUse",
@@ -310,11 +314,11 @@
     },
     {
       "id": "MRR551",
-      "desc": "Turn Start: at max HP, gain {1} {0} Potency and +{2} Count (once per enemy per Part per Encounter)"
+      "desc": "Turn Start: At max HP, gain {1} {0} Potency and +{2} Count (once per enemy per Part per Encounter)"
     },
     {
       "id": "MRR552",
-      "desc": "On death, 1 ally with the least current HP gains {1} {0} next turn"
+      "desc": "On death, 1 ally with the lowest current HP gains {1} {0} next turn"
     },
     {
       "id": "MRR553",
@@ -354,27 +358,27 @@
     },
     {
       "id": "Heishou10212",
-      "desc": "Heishou Pack - Mao Branch Adept Faust: take -5% damage from Skills"
+      "desc": "Heishou Pack - Mao Branch Adept Faust: Take -5% damage from Skills"
     },
     {
       "id": "Heishou10411",
-      "desc": "Heishou Pack - Mao Branch Ryōshū: if this unit's Speed is faster than the target's, deal +5% damage"
+      "desc": "Heishou Pack - Mao Branch Ryōshū: If this unit's Speed is faster than the target's, deal +5% damage"
     },
     {
       "id": "Heishou11112",
-      "desc": "Heishou Pack - Mao Branch Outis: inflict +1 Rupture Count On Hit with an Unopposed Attack (once per turn)"
+      "desc": "Heishou Pack - Mao Branch Outis: Inflict +1 Rupture Count On Hit with an Unopposed Attack (once per turn)"
     },
     {
       "id": "Heishou10912",
-      "desc": "Heishou Pack - Si Branch Rodion: inflict 1 Rupture On Critical Hit (3 times per turn)"
+      "desc": "Heishou Pack - Si Branch Rodion: Inflict 1 Rupture On Critical Hit (3 times per turn)"
     },
     {
       "id": "Heishou11212",
-      "desc": "Heishou Pack - Si Branch Gregor: when dealing Rupture damage, gain +1 Poise Count (once per turn)"
+      "desc": "Heishou Pack - Si Branch Gregor: When dealing Rupture damage, gain +1 Poise Count (once per turn)"
     },
     {
       "id": "Heishou11014",
-      "desc": "Heishou Pack - You Branch Sinclair: when inflicting Rupture with Skills, inflict 1 Burn (3 times per turn)"
+      "desc": "Heishou Pack - You Branch Sinclair: When inflicting Rupture with Skills, inflict 1 Burn (3 times per turn)"
     },
     {
       "id": "Heishou10114",
@@ -382,11 +386,11 @@
     },
     {
       "id": "GiveMpDmgAsValueOnRESelf",
-      "desc": "Every Turn End: allies lose {0} SP"
+      "desc": "Every Turn End: Allies lose {0} SP"
     },
     {
       "id": "GiveHpDmgAsValueAndIncreaseOnRESelf",
-      "desc": "Turn End: allies take {0} fixed HP damage. Fixed damage increases by {1} every turn. (max {2})"
+      "desc": "Turn End: Allies take {0} fixed HP damage. Fixed damage increases by {1} every turn. (max {2})"
     },
     {
       "id": "CantRecoverMpOverValue",
@@ -422,11 +426,11 @@
     },
     {
       "id": "Heishou10714",
-      "desc": "Heishou Pack - You Branch Adept Heathcliff: deal 5% of Gluttony damage dealt by Base Skills as Wrath damage"
+      "desc": "Heishou Pack - You Branch Adept Heathcliff: Deal 5% of Gluttony damage dealt by Base Skills as Wrath damage"
     },
     {
       "id": "Heishou10313",
-      "desc": "Heishou Pack - Wei Branch Don Quixote: when inflicting Rupture with Skills, inflict 1 Sinking (3 times per turn)"
+      "desc": "Heishou Pack - Wei Branch Don Quixote: When inflicting Rupture with Skills, inflict 1 Sinking (3 times per turn)"
     },
     {
       "id": "MD7LimitGiveBuffAllyDie",

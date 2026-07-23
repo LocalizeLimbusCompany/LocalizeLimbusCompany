@@ -256,7 +256,7 @@
         {
           "level": 1,
           "name": "6463",
-          "desc": "Deal +10% damage for every 50 [AccumulatedPast]\n[WhenUse] Base Power +1 for every 10 ([Vibration] Potency + Count) on target (max 3)\n[WhenUse] If this unit's [AccumulatedPast] is an odd number, this Skill deals +30% damage",
+          "desc": "Deal +10% damage for every 50 [AccumulatedPastMirror]\n[WhenUse] Base Power +1 for every 10 ([Vibration] Potency + Count) on target (max 3)\n[WhenUse] If this unit's [AccumulatedPastMirror] is an odd number, this Skill deals +30% damage",
           "coinlist": [
             {
               "coindescs": [
@@ -278,7 +278,7 @@
         {
           "level": 1,
           "name": "6753",
-          "desc": "Deal +10% damage for every 50 [AccumulatedPast]\n[WhenUse] Base Power +1 for every 10 ([Vibration] Potency + Count) on target (max 3)\n[WhenUse] If this unit's [AccumulatedPast] is an even number, gain 3 [Protection] (once per turn)",
+          "desc": "Deal +10% damage for every 50 [AccumulatedPastMirror]\n[WhenUse] Base Power +1 for every 10 ([Vibration] Potency + Count) on target (max 3)\n[WhenUse] If this unit's [AccumulatedPastMirror] is an even number, gain 3 [Protection] (once per turn)",
           "coinlist": [
             {
               "coindescs": [
@@ -318,7 +318,7 @@
                   "desc": "[OnSucceedAttack] Raise Stagger Threshold by 50% of damage dealt"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Deal +1% damage for every [AccumulatedPast] (max 50%)"
+                  "desc": "[OnSucceedAttack] Deal +1% damage for every [AccumulatedPastMirror] (max 50%)"
                 }
               ]
             }
@@ -398,10 +398,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "Deal +1% damage for every [AccumulatedPast] (max 200%)"
+                  "desc": "Deal +1% damage for every [AccumulatedPastMirror] (max 200%)"
                 },
                 {
-                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion] for every 50 [AccumulatedPast]; then, reduce target's [Vibration] Count by 1 (max 5 times)"
+                  "desc": "[OnSucceedAttack] Trigger [VibrationExplosion] for every 50 [AccumulatedPastMirror]; then, reduce target's [Vibration] Count by 1 (max 5 times)"
                 }
               ]
             }

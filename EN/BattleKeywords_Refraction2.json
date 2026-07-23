@@ -3,8 +3,8 @@
     {
       "id": "TipsinessRail",
       "name": "Tipsy",
-      "desc": "Lose Clash Power by the effect's Count (Max 5)",
-      "summary": "Lose Clash Power by the effect's Count"
+      "desc": "Lose Clash Power equal to Stack (max 5)",
+      "summary": "Lose Clash Power equal to Stack"
     },
     {
       "id": "PassedPortal_Red",
@@ -21,7 +21,7 @@
     {
       "id": "PassedPortal_Yellow",
       "name": "Tremoring Dimension",
-      "desc": "Boost Speed by 1",
+      "desc": "Min & Max Speed +1",
       "summary": "Boost Speed by 1"
     },
     {
@@ -33,66 +33,66 @@
     {
       "id": "FairyCharm",
       "name": "Charmed",
-      "desc": "- All damage dealt to Fairy reduced to 0.\n- Expires when Fairy dies.",
+      "desc": "- All damage dealt to Fairy reduced to 0\n- Expires when Fairy dies",
       "summary": "Damage fixed to 0"
     },
     {
       "id": "DecoyRegenerated",
       "name": "Regenerate",
-      "desc": "Gain 1 every time a part is restored",
+      "desc": "Gain 1 every time a Part is restored",
       "summary": ""
     },
     {
       "id": "WaveFoxUmbrella",
       "name": "Protection Umbrella",
-      "desc": "All parts gain Protection equal to the value\nWhen using Waiting Skill, Summon Old Umbrella equal to the value\n1 Spent every time an Umbrella is broken."
+      "desc": "All parts gain Protection equal to Stack\nWhen using the \"Waiting\" Skill, spawn Old Umbrella equal to Stack\n1 Spent every time an Umbrella is broken"
     },
     {
       "id": "InterlockingTime_Re",
       "name": "Interlocking Time",
-      "desc": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 2 times the accumulated damage, and gain 3 Bind next turn.",
-      "summary": "Reduce final damage by 30% and store it. At 3 Count, take fixed damage by 2 times the accumulated damage, and gain 3 Bind next turn."
+      "desc": "Reduce final damage by 30% and store it. At 3 Stacks, take fixed damage equal to 2 times the accumulated damage. Gain Bind next turn equal to Stack",
+      "summary": "Reduce final damage by 30% and store it. At 3 Stacks, take fixed damage equal to 2 times the accumulated damage. Gain Bind next turn equal to Stack"
     },
     {
       "id": "TimeRental_Re",
       "name": "Borrowed Time",
-      "desc": "At the end of the turn, gain 3 Haste, 2 Damage Up, and 2 Offense Level Up; If only 1 Count remains, gain 3 Bind 1 Attack Power Down, and 2 Fragile next turn",
-      "summary": "At the end of the turn, gain 3 Haste, 2 Damage Up, and 2 Offense Level Up; If only 1 Count remains, gain 3 Bind 1 Attack Power Down, and 2 Fragile next turn"
+      "desc": "Turn End:\n- Gain 3 Haste, 2 Damage Up, and 2 Offense Level Up\n- If only 1 Stack remains, gain 3 Bind, 1 Attack Power Down, and 2 Fragile next turn\n- Lose 1 Stack",
+      "summary": "-"
     },
     {
       "id": "ReattachedCurseTag_Re",
       "name": "Reattached Curse Talisman",
-      "desc": "At 9+, gain 5 Bind at the start of the turn.\nAt 12+, gain 5 Attack Power Down at the start of the turn. (Max 12)",
-      "summary": "At 9+, gain 5 Bind at the start of the turn.\nAt 12+, gain 5 Attack Power Down at the start of the turn."
+      "desc": "- Max Stack: 12\n- At 8- Stacks, deal +30% damage\n- At 9+ Stacks, gain 5 Bind at Turn Start\n- At 12 Stacks, gain 5 Attack Power Down at Turn Start",
+      "summary": "At 9+, gain 5 Bind at Turn Start\nAt 12+, gain 5 Attack Power Down at Turn Start"
     },
     {
       "id": "WrappedCurseTagRe",
       "name": "Entangled Curse Talisman",
-      "desc": "Deal +1% damage per Count\nAt 9+ Count, gain 2 Attack Power Down at turn start (Max 9)",
-      "summary": "Deal +1% damage per Count; at 9+ Count, gain 2 Attack Power Down at turn start"
+      "desc": "- Max Stack: 9\n- Deal +1% damage for every Stack\n- At 9 Stacks, gain 2 Attack Power Down at Turn Start\nRemove this effect at the end of the wave",
+      "summary": "Deal +1% damage per Stack; at 9 Stacks, gain 2 Attack Power Down at Turn Start"
     },
     {
       "id": "AccumulatedPast",
       "name": "Accumulated Past",
-      "desc": "Gain 11 at the end of the Turn.\nSpent completely when the Body Part is broken.",
+      "desc": "This displays the Total Turns taken in the Refraction Railway\nThe number goes up by 1 at the end of the turn\nSpent completely when Body is broken",
       "summary": ""
     },
     {
       "id": "PrepareSinRose",
       "name": "Crown of Thorns",
-      "desc": "Generates a Rose unit whose Affinity corresponds to the most-owned Skill Affinity of the target inflicted with this effect",
+      "desc": "Generates a Rose unit whose Affinity corresponds to the most-owned Skill Affinity of the target inflicted with this effect\n- If this effect causes the number of Rose units on the field to exceed 7, remove Rose units that are bound with defeated Sinners equal to the excess amount (does not count as death)",
       "summary": ""
     },
     {
       "id": "BloomingRose",
       "name": "Blooming Sin",
-      "desc": "At the end of the turn\n- Gain 1 Count.\n- Bound Identity loses HP equal to 25% of Max HP.\n- Lose 10% of E.G.O resource corresponding to the Rose's.\n- The Sign of Roses heals HP equal to 5% of its Max HP.\n\nAt 4 Count,\n- Bound Identity dies.\n- Lose all of E.G.O resource corresponding to the Rose's.",
+      "desc": "Turn End:\n- Gain 1 Stack\n- Bound Identity loses HP equal to 25% of max HP\n- Lose 10% of E.G.O Resource corresponding to the Rose's (rounded down)\n- The Sign of Roses's Core heals HP equal to 5% of the Core's max HP\n\nAt 4 Stacks,\n- Bound Identity dies\n- Lose all of E.G.O Resource corresponding to the Rose's",
       "summary": ""
     },
     {
       "id": "EatingSin",
       "name": "Drenched Sin",
-      "desc": "Max HP increases by (E.G.O resource drained)%\n\nOn Death\n- Recover E.G.O resource it drained.\n- Heal bound Identity's HP by (25% of Identity's Max HP * Blooming Sin Count).",
+      "desc": "Max HP increases by (E.G.O resource drained)%\n\nOn Death\n- Recover E.G.O Resource it drained\n- Heal bound Identity's HP by (25% of Identity's Max HP * Blooming Sin Stack)",
       "summary": ""
     },
     {
@@ -146,8 +146,14 @@
     {
       "id": "KalpaVine",
       "name": "Brambles of Eternity",
-      "desc": "All characters deal less damage\nAll characters receive less damage",
+      "desc": "All characters deal less damage\nAll characters take less damage",
       "summary": ""
+    },
+    {
+      "id": "InterlockingTimeBokGak",
+      "name": "Interlocking Time",
+      "desc": "- Reduce final damage by 30% and store it\n- At 3 Stacks, take fixed damage equal to 2 times the accumulated damage and remove this effect\n- Turn End: Gain Bind next turn equal to Stack\n- Remove this effect in waves that do not feature Refracted T Corp. Class 3 Collector",
+      "summary": "Reduce final damage by 30% and store it. At 3 Stacks, take fixed damage equal to 2 times the accumulated damage. Gain Bind next turn equal to Stack"
     }
   ]
 }
