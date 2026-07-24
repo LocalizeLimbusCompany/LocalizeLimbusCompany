@@ -182,7 +182,7 @@
         {
           "level": 1,
           "name": "哀求的哭声",
-          "desc": "拼点时，每存活1把旧伞，使本技能的拼点威力 +2\n每把旧伞使本技能造成的伤害+25%",
+          "desc": "拼点时，每有1把旧伞存活，使本技能的拼点威力+2\n每把旧伞使本技能造成的伤害+25%",
           "coinlist": [
             {
               "coindescs": [
@@ -423,7 +423,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 根据目标带有的震颤 层数，相应使其[VibrationExplosion]"
+                  "desc": "[OnSucceedAttack] 根据目标的震颤 层数，相应使其[VibrationExplosion]"
                 },
                 {
                   "desc": "[OnSucceedAttack] 消耗目标所有震颤 层数"
@@ -823,7 +823,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 根据目标带有的震颤 层数，相应使其[VibrationExplosion]"
+                  "desc": "[OnSucceedAttack] 根据目标的震颤 层数，相应使其[VibrationExplosion]"
                 },
                 {
                   "desc": "[OnSucceedAttack] 消耗目标所有震颤 层数"
@@ -927,7 +927,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加3级流血 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使本体、躯干恢复15点体力"
+                  "desc": "[OnSucceedAttack] 使本体与躯干部位恢复15点体力"
                 }
               ]
             }
@@ -1164,7 +1164,7 @@
         {
           "level": 1,
           "name": "呕吐副产物",
-          "desc": "[WhenUse] 若目标带有次元裂痕 ，则使本技能造成的伤害+10%\n[DefeatDuel] 消耗2层充能 ",
+          "desc": "[WhenUse] 若目标带有次元裂痕 ，则使本技能造成的伤害+10%\n[DefeatDuel] 消耗自身2层充能 ",
           "coinlist": [
             {
               "coindescs": [
@@ -1402,7 +1402,7 @@
         {
           "level": 1,
           "name": "5384",
-          "desc": "[WhenUse] 使所有部位增加3级[Breath]强度并获得3层[Breath]",
+          "desc": "[WhenUse] 使所有部位增加3级[Breath]强度并使所有部位获得3层[Breath]",
           "coinlist": [
             {
               "coindescs": [
@@ -1439,7 +1439,7 @@
                   "desc": "[OnSucceedAttack] 若自身的[Breath]强度不低于5级，则使目标的混乱阈值前移本硬币伤害量的50%"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使所有部位增加8级[Breath]强度并获得4层[Breath]"
+                  "desc": "[OnSucceedAttack] 使所有部位增加8级[Breath]强度并使所有部位获得4层[Breath]"
                 }
               ]
             }
@@ -1471,7 +1471,7 @@
       "levelList": [
         {
           "level": 1,
-          "name": "前往永恒的庭院",
+          "name": "前往永劫的庭院",
           "desc": "[CantDuel]\n[WhenUse] 对目标施加冠冕 。解除自身所带有的所有效果\n若自身本体体力低于40%，下回合将会生成被强化的玫瑰单位",
           "coinlist": [
             {}
@@ -1579,7 +1579,7 @@
         {
           "level": 1,
           "name": "隔绝之壁",
-          "desc": "每有1个存活的玫瑰单位，使本技能威力+2\n场上没有玫瑰时，下回合对自身施加2层易损 ",
+          "desc": "每有1朵玫瑰存活，使本技能威力+2\n若没有玫瑰存活，则下回合对自身施加2层易损 ",
           "coinlist": [
             {
               "coindescs": [
@@ -1598,7 +1598,7 @@
         {
           "level": 1,
           "name": "祈盼永恒",
-          "desc": "[StartBattle] 下回合随机使1个玫瑰获得1层强壮 \n若自身带有护盾时受到攻击，则使攻击者增加1级沉沦 强度",
+          "desc": "[StartBattle] 下回合随机使1朵玫瑰获得1层强壮 \n若自身带有护盾时受到攻击，则使攻击者增加1级沉沦 强度",
           "coinlist": [
             {
               "coindescs": [
@@ -1617,7 +1617,7 @@
         {
           "level": 1,
           "name": "一同在此",
-          "desc": "[StartBattle] 下回合随机使1个玫瑰获得1层忍耐 \n若自身带有护盾时受到攻击，则使攻击者增加1级沉沦 强度",
+          "desc": "[StartBattle] 下回合随机使1朵玫瑰获得1层忍耐 \n若自身带有护盾时受到攻击，则使攻击者增加1级沉沦 强度",
           "coinlist": [
             {
               "coindescs": [
@@ -1703,7 +1703,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使自身混乱阈值后移本硬币伤害量的50%"
+                  "desc": "[OnSucceedAttack] 使自身的混乱阈值后移本硬币伤害量的50%"
                 }
               ]
             },
@@ -1713,7 +1713,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使自身混乱阈值后移本硬币伤害量的50%"
+                  "desc": "[OnSucceedAttack] 使自身的混乱阈值后移本硬币伤害量的50%"
                 }
               ]
             },
@@ -1723,7 +1723,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加2级流血 强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使自身混乱阈值后移本硬币伤害量的50%"
+                  "desc": "[OnSucceedAttack] 使自身的混乱阈值后移本硬币伤害量的50%"
                 }
               ]
             }
@@ -1794,7 +1794,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 对目标施加2层震颤 "
+                  "desc": "[OnSucceedAttack] 使目标增加8级震颤 强度"
                 },
                 {
                   "desc": "[OnSucceedAttackHead] 使目标震颤引爆 "
@@ -1868,7 +1868,7 @@
         {
           "level": 1,
           "name": "不息的暴食",
-          "desc": "[WhenUse] 若目标带有破裂 ，则使本技能恢复量+50%",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
@@ -2017,7 +2017,7 @@
         {
           "level": 1,
           "name": "尖锐的傲慢",
-          "desc": "自身的呼吸法 强度不低于5级时，使本技能的硬币威力+3",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [

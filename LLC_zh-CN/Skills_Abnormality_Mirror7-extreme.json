@@ -256,7 +256,7 @@
         {
           "level": 1,
           "name": "6463",
-          "desc": "自身每带有50层[AccumulatedPast]，使本技能造成的伤害+10%\n[WhenUse] 目标的[Vibration]强度与[Vibration]层数之和每有10点，使本技能的基础威力+1(最多+3)\n[WhenUse] 若自身的[AccumulatedPast]层数为奇数，则使本技能造成的伤害+30%",
+          "desc": "自身每带有50层[AccumulatedPastMirror]，使本技能造成的伤害+10%\n[WhenUse] 目标的[Vibration]强度与[Vibration]层数之和每有10点，使本技能的基础威力+1(最多+3)\n[WhenUse] 若自身的[AccumulatedPastMirror]层数为奇数，则使本技能造成的伤害+30%",
           "coinlist": [
             {
               "coindescs": [
@@ -278,7 +278,7 @@
         {
           "level": 1,
           "name": "6753",
-          "desc": "自身每带有50层[AccumulatedPast]，使本技能造成的伤害+10%\n[WhenUse] 目标的[Vibration]强度与[Vibration]层数之和每有10点，使本技能的基础威力+1(最多+3)\n[WhenUse] 若自身的[AccumulatedPast]层数为偶数，则使自身获得3层[Protection](每回合最多1次)",
+          "desc": "自身每带有50层[AccumulatedPastMirror]，使本技能造成的伤害+10%\n[WhenUse] 目标的[Vibration]强度与[Vibration]层数之和每有10点，使本技能的基础威力+1(最多+3)\n[WhenUse] 若自身的[AccumulatedPastMirror]层数为偶数，则使自身获得3层[Protection](每回合最多1次)",
           "coinlist": [
             {
               "coindescs": [
@@ -318,7 +318,7 @@
                   "desc": "[OnSucceedAttack] 使目标的混乱阈值前移本硬币伤害量的50%"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 自身每带有1层[AccumulatedPast]，使本技能造成的伤害+1%(最多+50%)"
+                  "desc": "[OnSucceedAttack] 自身每带有1层[AccumulatedPastMirror]，使本技能造成的伤害+1%(最多+50%)"
                 }
               ]
             }
@@ -369,7 +369,7 @@
                   "desc": "[OnSucceedAttack] 若自身的[Breath]强度不低于5级，则使目标的混乱阈值前移本硬币伤害量的50%"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使所有部位增加8级[Breath]强度并获得4层[Breath]"
+                  "desc": "[OnSucceedAttack] 使所有部位增加8级[Breath]强度并使所有部位获得4层[Breath]"
                 }
               ]
             },
@@ -398,10 +398,10 @@
             {
               "coindescs": [
                 {
-                  "desc": "自身每带有1层[AccumulatedPast]，使本硬币造成的伤害+1%(最多+200%)"
+                  "desc": "自身每带有1层[AccumulatedPastMirror]，使本硬币造成的伤害+1%(最多+200%)"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 自身每带有50层[AccumulatedPast]，使目标[VibrationExplosion]1次。使目标的[Vibration]层数减少1层(最多5次)"
+                  "desc": "[OnSucceedAttack] 自身每带有50层[AccumulatedPastMirror]，使目标[VibrationExplosion]1次。使目标的[Vibration]层数减少1层(最多5次)"
                 }
               ]
             }
@@ -2109,7 +2109,7 @@
                   "desc": "[OnSucceedAttack] 使目标增加3级[Laceration]强度"
                 },
                 {
-                  "desc": "[OnSucceedAttack] 使本体、躯干恢复15点体力"
+                  "desc": "[OnSucceedAttack] 使本体与躯干部位恢复15点体力"
                 }
               ]
             }
@@ -2357,7 +2357,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 根据目标带有的[Vibration]层数，相应使其[VibrationExplosion]"
+                  "desc": "[OnSucceedAttack] 根据目标的[Vibration]层数，相应使其[VibrationExplosion]"
                 }
               ]
             }
