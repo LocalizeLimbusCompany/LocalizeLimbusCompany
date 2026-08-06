@@ -3100,6 +3100,39 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "평생 스튜",
+          "abName": "바질리스프크",
+          "desc": "[BeforeAttack] 보유한 색욕 E.G.O 자원에 비례하여 피해량이 증가함 (최대 50%)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 화상 횟수 3 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "평생 스튜",
+          "abName": "바질리스프크",
+          "desc": "<style=\"highlight\">메인 타겟의 [Combustion]과 [Laceration]의 합 4당 최종 위력 +1 (최대 3)\n[BeforeAttack] 보유한 색욕 E.G.O 자원 6당 편성 순서 순으로 다음 턴에 [ScarletResultUp] 1 부여 (최대 5명)\n[BeforeAttack] 보유한 색욕 E.G.O 자원 1개당 피해량 +6% (최대 120%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 횟수 3 증가<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Laceration] 횟수 3 증가</style>"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3131,6 +3164,42 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] 화상 횟수 4 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "평생 스튜",
+          "abName": "바질리스프크",
+          "desc": "[CantIdentify]\n현재 체력이 가장 많은 대상 공격\n\n[BeforeAttack] 보유한 색욕 E.G.O 자원에 비례하여 피해량이 증가함 (최대 50%)\n이후 (색욕 공명 수)만큼 색욕 자원 소모. 소모한 자원 1개당 피해량 +10%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 화상 횟수 4 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "평생 스튜",
+          "abName": "바질리스프크",
+          "desc": "[CantIdentify]\n현재 체력이 가장 많은 대상 공격\n\n<style=\"highlight\">메인 타겟의 [Combustion]과 [Laceration]의 합 4당 최종 위력 +1 (최대 3)\n[BeforeAttack] 보유한 색욕 E.G.O 자원 6당 편성 순서 순으로 다음 턴에 [ScarletResultUp] 1, [ScarletDamageUp] 1 부여 (최대 5명)\n[BeforeAttack]\n- 보유한 색욕 E.G.O 자원 1개당 피해량 +5% (최대 100%)\n- 이후 (색욕 공명 수 x 2)만큼 색욕 자원 소모 (최대 8)\n- 소모한 자원 1개당 피해량 +20% (최대 160%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[SuperCoin]</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 횟수 4 증가<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Laceration] 횟수 4 증가</style>"
                 }
               ]
             }
@@ -3172,6 +3241,51 @@
                 },
                 {
                   "desc": "[OnSucceedAttackTail] 화상 7 부여. 대상이 아군인 경우, 다음 턴에 <sprite name=\"GainSinStockAdder\"><color=#f8c200><u><link=\"GainSinStockAdder\">E.G.O 자원 획득량 +</color></link></u> 1, 신속 2 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "평생 스튜",
+          "abName": "바질리스프크",
+          "desc": "[CantIdentify]\n체력이 가장 낮은 대상 공격\n대상이 아군인 경우, 피해량이 항상 0으로 고정",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 대상이 아군인 경우, 자신의 최대 체력의 10% 만큼 대상의 체력 회복"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 화상 7 부여. 대상이 아군인 경우, 다음 턴에 <sprite name=\"GainSinStockAdder\"><color=#f8c200><u><link=\"GainSinStockAdder\">E.G.O 자원 획득량 +</color></link></u> 1, 신속 2 부여"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "평생 스튜",
+          "abName": "바질리스프크",
+          "desc": "[CantIdentify]\n현재 체력이 가장 낮은 대상 공격\n<style=\"highlight\">스킬 사용 시 필요한 탐식 E.G.O 자원이 0으로 변경됨\n대상이 아군인 경우, 피해량이 항상 0으로 고정되고 수비 스킬을 발동하지 않음 (합 가능 수비 포함)\n[DefeatDuel] 기본 위력 -8\n[EndSkill] 이 스킬이 아군에게 적중했으면, 자신의 정신력을 이 스킬의 타겟으로 지정된 아군의 수만큼 회복\n[EndSkill] 자신의 최대 체력의 (5 x 이 스킬의 타겟으로 지정된 아군 수)% 만큼 자신의 체력 회복 (최소 5%, 최대 20%)\n[EndSkill] 다음 턴에 [GainSinStockAdder] 1, [Agility] 2 얻음</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[SuperCoin]</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 대상이 아군인 경우,</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">- 자신의 최대 체력의 (5 x 이 스킬의 타겟으로 지정된 아군 수)%만큼 대상의 체력 회복 (최대 20%)</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">- 다음 턴에 [GainSinStockAdder] 1, [Agility] 2 부여</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] [Combustion] 7 부여<style=\"highlight\"></style>"
                 }
               ]
             }
@@ -3222,6 +3336,30 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] 화상 횟수 2 증가"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "평생 스튜",
+          "abName": "바질리스프크",
+          "desc": "[CantIdentify]\n현재 체력이 가장 낮은 대상 공격\n<style=\"highlight\">스킬 사용 시 필요한 탐식 E.G.O 자원이 0으로 변경됨\n[DefeatDuel] 기본 위력 -12\n[BeforeAttack] 모든 공격 대상의 [Combustion] 위력 합 4당 피해량 +15% (최대 60%)\n[BeforeAttack] 가장 많은 E.G.O 자원을 최대 3개 소모하여, 소모한 자원 1당 피해량 +10% (최대 30%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[SuperCoin]</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Combustion] 2 부여</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion] 횟수 2 증가<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[UnBrokenCoinOnSucceedAttack] 스킬 효과로 E.G.O 자원을 소모했을 경우, 이 코인 최종 피해량의 50% 만큼 색욕 피해</style>"
                 }
               ]
             }

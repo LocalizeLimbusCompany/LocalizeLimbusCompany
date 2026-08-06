@@ -3100,6 +3100,39 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "一生シチュー",
+          "abName": "バジリスープク",
+          "desc": "[BeforeAttack] 保有している色欲E.G.Oコストに比例してダメージ量が増加(最大50%)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 火傷 回数が3増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "一生シチュー",
+          "abName": "バジリスープク",
+          "desc": "<style=\"highlight\">メインターゲットの[Combustion]と[Laceration]の合計4につき、最終威力 +1 (最大3)\n[BeforeAttack] 保有している色欲E.G.O資源6つにつき、編成順に味方1名へ次のターンに[ScarletResultUp]1を付与 (最大5名)\n[BeforeAttack] 保有している色欲E.G.O資源1つにつき、ダメージ量 +6% (最大120%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が3増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Laceration]回数が3増加</style>"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3131,6 +3164,42 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] 火傷 回数が4増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "一生シチュー",
+          "abName": "バジリスープク",
+          "desc": "[CantIdentify]\n現体力が最も高い対象を攻撃\n\n[BeforeAttack] 保有している色欲E.G.O資源に比例してダメージ量が増加(最大50%)\n以降、(色欲共鳴数)だけ色欲コストを消耗。消耗したコスト1つにつきダメージ量+10%",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 火傷 回数が4増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "一生シチュー",
+          "abName": "バジリスープク",
+          "desc": "[CantIdentify]\n現体力が最も高い対象を攻撃\n\n<style=\"highlight\">メインターゲットの[Combustion]と[Laceration]の合計4につき、最終威力 +1 (最大3)\n[BeforeAttack] 保有している色欲E.G.O資源6つにつき、編成順に味方1名へ次のターンに[ScarletResultUp]1, [ScarletDamageUp]1を付与 (最大5名)\n[BeforeAttack]\n- 保有している色欲E.G.O資源1つにつき、ダメージ量 +5% (最大100%)\n- 以降、(色欲共鳴数 × 2)だけ色欲資源を消耗 (最大8)\n- 消耗した資源1つにつき、ダメージ量 +20% (最大160%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[SuperCoin]</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が4増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Laceration]回数が4増加</style>"
                 }
               ]
             }
@@ -3172,6 +3241,51 @@
                 },
                 {
                   "desc": "[OnSucceedAttackTail] 火傷 7を付与。対象が味方の場合、次のターンに <sprite name=\"GainSinStockAdder\"><color=#f8c200><u><link=\"GainSinStockAdder\">E.G.O資源獲得量+</color></link></u> 1, クイック 2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "一生シチュー",
+          "abName": "バジリスープク",
+          "desc": "[CantIdentify]\n体力が最も低い対象を攻撃\n対象が味方の場合、ダメージ量が常に0へ固定",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 対象が味方の場合、自分の体力最大値の10%分対象の体力を回復"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 火傷 7を付与。対象が味方の場合、次のターンに <sprite name=\"GainSinStockAdder\"><color=#f8c200><u><link=\"GainSinStockAdder\">E.G.Oコスト獲得量+</color></link></u> 1, クイック 2を付与"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "一生シチュー",
+          "abName": "バジリスープク",
+          "desc": "[CantIdentify]\n現体力が最も低い対象を攻撃\n<style=\"highlight\">スキル使用時に必要な暴食E.G.O資源が0に変更される\n対象が味方ならダメージ量が常に0に固定され、対象は守備スキルを発動しない (マッチ可能守備スキルを含む)\n[DefeatDuel] 基本威力 -8\n[EndSkill] このスキルが味方に的中したなら、このスキルの対象に指定された味方の数だけ自分の精神力を回復\n[EndSkill] 自分の体力を、最大値の(5 × このスキルの対象に指定された味方の数)%だけ回復 (最小5%, 最大20%)\n[EndSkill] 次のターンに[GainSinStockAdder]1, [Agility]2を得る</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[SuperCoin]</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 対象が味方なら、</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">- 自分の体力最大値の(5 × このスキルの対象に指定された味方の数)%だけ、対象の体力を回復 (最大20%)</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">- 次のターンに[GainSinStockAdder]1, [Agility]2を付与</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] [Combustion]7を付与<style=\"highlight\"></style>"
                 }
               ]
             }
@@ -3222,6 +3336,30 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] 火傷 回数が2増加"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "一生シチュー",
+          "abName": "バジリスープク",
+          "desc": "[CantIdentify]\n現体力が最も低い対象を攻撃\n<style=\"highlight\">スキル使用時に必要な暴食E.G.O資源が0に変更される\n[DefeatDuel] 基本威力 -12\n[BeforeAttack] 全攻撃対象の[Combustion]威力の合計4につき、ダメージ量 +15% (最大60%)\n[BeforeAttack] 最も多く保有しているE.G.O資源を最大3つ消耗し、消耗した資源1つにつきダメージ量 +10% (最大30%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[SuperCoin]</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] [Combustion]2を付与</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] [Combustion]回数が2増加<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[UnBrokenCoinOnSucceedAttack] スキル効果でE.G.O資源を消耗したなら、このコインの最終ダメージ量の50%だけ色欲ダメージ</style>"
                 }
               ]
             }

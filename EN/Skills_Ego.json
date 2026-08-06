@@ -3100,6 +3100,39 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "Lifetime Stew",
+          "abName": "Basilisoup",
+          "desc": "[BeforeAttack] Boost damage based on current Lust resources (Up to 50%)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +3 [Combustion] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Lifetime Stew",
+          "abName": "Basilisoup",
+          "desc": "<style=\"highlight\">Final Power +1 for every 4 ([Combustion] + [Laceration]) on the main target (max 3)\n[BeforeAttack] Apply 1 [ScarletResultUp] next turn to allies according to their Deployment Order for every 6 Lust E.G.O resource owned (max 5 units)\n[BeforeAttack] Deal +6% damage for every 1 Lust E.G.O resource owned (max 120%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +3 [Combustion] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Inflict +3 [Laceration] Count</style>"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3131,6 +3164,42 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Inflict +4 [Combustion] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Lifetime Stew",
+          "abName": "Basilisoup",
+          "desc": "[CantIdentify]\nTargets the unit with the most HP\n\n[BeforeAttack] Boost damage based on current Lust resources (up to 50%)\nThen spend Lust resources by (Lust Reson.); further boost damage by 10% per resource spent",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] Inflict +4 [Combustion] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Lifetime Stew",
+          "abName": "Basilisoup",
+          "desc": "[CantIdentify]\nTargets the unit with the most HP\n\n<style=\"highlight\">Final Power +1 for every 4 ([Combustion] + [Laceration]) on the main target (max 3)\n[BeforeAttack] Apply 1 [ScarletResultUp] and 1 [ScarletDamageUp] next turn to allies according to their Deployment Order for every 6 Lust E.G.O resource owned (max 5 units)\n[BeforeAttack]\n- Deal +5% damage for every 1 Lust E.G.O resource owned (max 100%)\n- Then, consume (Lust Reson. x 2) Lust E.G.O resource (max 8)\n- Deal +20% damage for every 1 Lust E.G.O resource consumed (max 160%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[SuperCoin]</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +4 [Combustion] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Inflict +4 [Laceration] Count</style>"
                 }
               ]
             }
@@ -3172,6 +3241,51 @@
                 },
                 {
                   "desc": "[OnSucceedAttackTail] Inflict 7 [Combustion]; if target is an ally, give 2 [Agility] and 1 <sprite name=\"GainSinStockAdder\"><color=#f8c200><u><link=\"GainSinStockAdder\">E.G.O Resource Amp</color></link></u> next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "Lifetime Stew",
+          "abName": "Basilisoup",
+          "desc": "[CantIdentify]\nTargets the unit with the least HP\nIf target is an ally, this deals 0 damage",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] If target is an ally, heal them for 10% of user’s Max HP"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict 7 [Combustion]; if target is an ally, give 2 [Agility] and 1 <sprite name=\"GainSinStockAdder\"><color=#f8c200><u><link=\"GainSinStockAdder\">E.G.O Resource Amp</color></link></u> next turn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Lifetime Stew",
+          "abName": "Basilisoup",
+          "desc": "[CantIdentify]\nTargets the unit with the least HP\n<style=\"highlight\">Required Gluttony E.G.O resource to use this Skill is reduced to 0\nIf target is an ally, this Skill deals 0 damage and does not trigger Defense Skills (including Clashable Defense Skills)\n[DefeatDuel] Base Power -8\n[EndSkill] If this Skill hit an ally, this unit heals SP equal to the number of allies targeted by this Skill\n[EndSkill] Heal this unit for (5 x number of allies targeted by this Skill)% Max HP (min 5%, max 20%)\n[EndSkill] Gain 1 [GainSinStockAdder] and 2 [Agility] next turn</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[SuperCoin]</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] If target is an ally,</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">- Heal target for (5 x number of allies targeted by this Skill)% of user's Max HP (max 20%)</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">- Gain 1 [GainSinStockAdder] and 2 [Agility] next turn</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] Inflict 7 [Combustion]<style=\"highlight\"></style>"
                 }
               ]
             }
@@ -3222,6 +3336,30 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] Inflict +2 [Combustion] Count"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "Lifetime Stew",
+          "abName": "Basilisoup",
+          "desc": "[CantIdentify]\nTargets the unit with the least HP\n<style=\"highlight\">Required Gluttony E.G.O resource to use this Skill is reduced to 0\n[DefeatDuel] Base Power -12\n[BeforeAttack] Deal +15% damage for every 4 ([Combustion] Potency on all targets) (max 60%)\n[BeforeAttack] Consume up to 3 of the most-owned E.G.O resource, and deal +10% damage for every 1 of the said E.G.O resource consumed (max 30%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[SuperCoin]</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] Inflict 2 [Combustion]</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] Inflict +2 [Combustion] Count<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[UnBrokenCoinOnSucceedAttack] If E.G.O resource was spent due to this Skill's effect, deal Lust damage equal to 50% of this Coin's final damage</style>"
                 }
               ]
             }
