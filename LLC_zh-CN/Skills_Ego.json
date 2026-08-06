@@ -3100,6 +3100,39 @@
               ]
             }
           ]
+        },
+        {
+          "level": 4,
+          "name": "一生炖菜",
+          "abName": "冠汤翼蜥",
+          "desc": "[BeforeAttack] 根据当前色欲E.G.O资源数增加伤害(最多+50%)",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层烧伤 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "一生炖菜",
+          "abName": "冠汤翼蜥",
+          "desc": "<style=\"highlight\">主要目标的[Combustion]强度与[Laceration]强度之和每有4级，使本技能的最终威力+1(最多+3)\n[BeforeAttack] 每持有6个色欲E.G.O资源，下回合按编队顺序使1名友方单位获得1层[ScarletResultUp](最多5名)\n[BeforeAttack] 每持有1个色欲E.G.O资源，使本技能造成的伤害+6%(最多+120%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加3层[Combustion]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 对目标施加3层[Laceration]</style>"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3131,6 +3164,42 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] 对目标施加4层烧伤 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "一生炖菜",
+          "abName": "冠汤翼蜥",
+          "desc": "[CantIdentify]\n指定体力最高的单位\n\n[BeforeAttack] 根据当前色欲E.G.O资源数增加伤害(最多+50%)\n随后消耗(色欲共鸣数)的色欲E.G.O资源。每消耗1个资源增加10%伤害",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加4层烧伤 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "一生炖菜",
+          "abName": "冠汤翼蜥",
+          "desc": "[CantIdentify]\n指定体力最高的单位\n\n<style=\"highlight\">主要目标的[Combustion]强度与[Laceration]强度之和每有4级，使本技能的最终威力+1(最多+3)\n[BeforeAttack] 每持有6个色欲E.G.O资源，下回合按编队顺序使1名友方单位获得1层[ScarletResultUp]与1层[ScarletDamageUp](最多5名)\n[BeforeAttack] \n- 每持有1个色欲E.G.O资源，使本技能造成的伤害+5%(最多+100%)\n- 消耗(色欲共鸣数×2)个色欲E.G.O资源(最多8个)\n- 每消耗1个E.G.O资源，使本技能造成的伤害+20%(最多+160%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[SuperCoin]</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加4层[Combustion]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 对目标施加4层[Laceration]</style>"
                 }
               ]
             }
@@ -3172,6 +3241,51 @@
                 },
                 {
                   "desc": "[OnSucceedAttackTail] 使目标增加7级烧伤 强度；若指定友方单位，则下回合使其获得2层迅捷 和1层E.G.O资源获取量提升 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": "一生炖菜",
+          "abName": "冠汤翼蜥",
+          "desc": "[CantIdentify]\n指定体力最低的单位\n若指定友方单位，则不会造成伤害",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "[OnSucceedAttackHead] 若指定友方单位，则使其恢复自身体力上限10%的体力"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 使目标增加7级烧伤 强度；若指定友方单位，则下回合使其获得2层迅捷 和1层E.G.O资源获取量提升 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "一生炖菜",
+          "abName": "冠汤翼蜥",
+          "desc": "[CantIdentify]\n指定体力最低的单位\n<style=\"highlight\">使用本技能所消耗的暴食E.G.O资源减少至0个\n若指定友方单位，则不会造成伤害且不会触发其守备技能(包括可拼点守备技能)\n[DefeatDuel] 使本技能的基础威力-8\n[EndSkill] 若本技能命中了友方单位，则使自身恢复相当于本技能指定的友方单位数的理智值\n[EndSkill] 使自身恢复体力上限(5×本技能指定的友方单位数)%的体力(最少5%，最多20%)\n[EndSkill] 下回合使自身获得1层[GainSinStockAdder]与2层[Agility]</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[SuperCoin]</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 若目标为友方单位，则</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\"> - 使目标恢复自身体力上限(5×本技能指定的友方单位数)%的体力(最多20%)</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\"> - 下回合使目标获得1层[GainSinStockAdder]与2层[Agility]</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttackTail] 使目标增加7级[Combustion]强度<style=\"highlight\"></style>"
                 }
               ]
             }
@@ -3222,6 +3336,30 @@
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] 对目标施加2层烧伤 "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "name": "一生炖菜",
+          "abName": "冠汤翼蜥",
+          "desc": "[CantIdentify]\n指定体力最低的单位\n<style=\"highlight\"> 使用本技能所消耗的暴食E.G.O资源减少至0个\n[DefeatDuel] 使本技能的基础威力-12\n[BeforeAttack] 全体目标的[Combustion]强度之和每有4级，使本技能造成的伤害+15%(最多+60%)\n[BeforeAttack] 消耗最多3个持有量最多的E.G.O资源，每消耗1个，使本技能造成的伤害+10%(最多+30%)</style>",
+          "coinlist": [
+            {
+              "coindescs": [
+                {
+                  "desc": "<style=\"highlight\">[SuperCoin]</style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[OnSucceedAttack] 使目标增加2级[Combustion]强度</style>"
+                },
+                {
+                  "desc": "[OnSucceedAttack] 对目标施加2层[Combustion]<style=\"highlight\"></style>"
+                },
+                {
+                  "desc": "<style=\"highlight\">[UnBrokenCoinOnSucceedAttack] 若通过本技能效果消耗了E.G.O资源，则对目标造成本硬币最终伤害量50%的色欲伤害</style>"
                 }
               ]
             }
